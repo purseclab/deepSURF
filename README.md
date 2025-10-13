@@ -26,7 +26,7 @@ This table lists memory-safety bugs identified by **deepSURF** on the _SURFBench
 | ERASan  | 11* | RUSTSEC-2025-0044 | slice-deque  | `SliceRingBuffer::extend_from_slice`   |   DF     |
 | ERASan  | 12* | RUSTSEC-2025-0044 | slice-deque  | `SliceRingBuffer::shrink_to_fit`       |   DF     |
 | ERASan  | 13 | RUSTSEC-2021-0048 | stackvector  | `StackVec::extend`                     |  SBOF    |
-| ERASan  | 14 | RUSTSEC-2021-0042 | insert_many  | `Insert_many::Vec::insert_many`        |  HBOF    |
+| ERASan  | 14 | RUSTSEC-2021-0042 | insert_many  | `Insert_many::Vec::insert_many`        |  DF    |
 | ERASan  | 15 | RUSTSEC-2019-0009 | smallvec-0.6.6 | `SmallVec::grow`                      |   DF     |
 | ERASan  | 16 | RUSTSEC-2021-0003 | smallvec-1.6.0 | `SmallVec::insert_many`               |  HBOF    |
 | ERASan  | 17 | RUSTSEC-2020-0039 | simple-slab  | `Slab::index`                          | MEMCRP   |
@@ -46,7 +46,7 @@ This table lists memory-safety bugs identified by **deepSURF** on the _SURFBench
 | RustSan | 31 | RUSTSEC-2020-0041 | sized-chunks | `Chunk::insert_from`                   |  SBOF    |
 | RustSan | 32 | RUSTSEC-2020-0006 | bumpalo-3.2.0 | `bumpalo::realloc`                    | HBOF |
 | RustSan | 33 | RUSTSEC-2020-0047 | array-queue  | `array_queue::ArrayQueue::pop_back`    | MEMCRP |
-| RustSan | 34* | RUSTSEC-2025-0044| array-queue  | `array_queue::ArrayQueue::push_front`  | MEMCRP |
+| RustSan | 34* | RUSTSEC-2025-0054| array-queue  | `array_queue::ArrayQueue::push_front`  | MEMCRP |
 | RustSan | 35* | RUSTSEC-2025-0049 | scratchpad   | `scratchpad::Tracking`                 |  HBOF    |
 | RustSan | 36* | RUSTSEC-2025-0053 | arenavec     | `arenavec::common::SliceVec::split_off` |   DF    |
 | RustSan | 37* | RUSTSEC-2025-0053 | arenavec     | `arenavec::common::allocate_inner`     |  HBOF    |
