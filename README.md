@@ -1,6 +1,6 @@
 # Memory Corruption Vulnerabilities Found by deepSURF
 
-This table lists memory-safety bugs identified by **deepSURF** on the _SURFBench_ dataset.
+This table lists memory-safety bugs identified by **deepSURF** on our dataset.
 
 *Columns:* **Dataset**, **No**, **RustSec ID** (if assigned), **Crate**, **Affected Function/Trait**, **Bug Type**.  
 *Bug type codes:* DF = double free, HBOF = heap buffer overflow, SBOF = stack buffer overflow, UAF = use-after-free, MEMCRP = other memory corruption violations such as arbitrary memory access and dropping of uninitialized memory.
