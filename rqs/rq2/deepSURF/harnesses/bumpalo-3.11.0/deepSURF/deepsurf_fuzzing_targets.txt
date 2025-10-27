@@ -1,0 +1,320 @@
+deepSURF: Generated Targets to be Fuzzed
+------------------------------------------------------------------------------------------------------------------------------------
+  StableURAPI: alloc_slice_fill_iter::/home/cdc/SURF/deepSURF-big-experiment-harnesses/bumpalo-3.11.0/src/lib.rs::1351,
+    - URAPI: DefId(0:171 ~ bumpalo[9aa9]::{impl#8}::alloc_slice_fill_iter),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * bumpalo_fuzz_6015136296209974725_deepseek-r1_turn3
+      * bumpalo_fuzz_1874174024740745322_deepseek-r1_turn3
+      * bumpalo_fuzz_6015136296209974725
+      * bumpalo_fuzz_9072631806103520954
+      * bumpalo_fuzz_7792896036859950859
+      * bumpalo_fuzz_2918639919672471598
+  StableURAPI: alloc_slice_copy::/home/cdc/SURF/deepSURF-big-experiment-harnesses/bumpalo-3.11.0/src/lib.rs::1169,
+    - URAPI: DefId(0:156 ~ bumpalo[9aa9]::{impl#8}::alloc_slice_copy),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * bumpalo_fuzz_1619006235460184034
+      * bumpalo_fuzz_10627925072891245914
+      * bumpalo_fuzz_10506156439358204222
+      * bumpalo_fuzz_976142584321051045_deepseek-r1_turn3
+      * bumpalo_fuzz_10482038517639736333_deepseek-r1_turn4
+      * bumpalo_fuzz_1874174024740745322_deepseek-r1_turn3
+      * bumpalo_fuzz_3608096832405391848
+      * bumpalo_fuzz_10195540977497515460_deepseek-r1_turn2
+      * bumpalo_fuzz_13342756394755960806_deepseek-r1_turn3
+      * bumpalo_fuzz_2263841652955257434_deepseek-r1_turn2
+      * bumpalo_fuzz_10627925072891245914_deepseek-r1_turn5
+  StableURAPI: next::/home/cdc/SURF/deepSURF-big-experiment-harnesses/bumpalo-3.11.0/src/lib.rs::1807,
+    - URAPI: DefId(0:196 ~ bumpalo[9aa9]::{impl#9}::next),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * bumpalo_fuzz_13342756394755960806_deepseek-r1_turn3
+      * bumpalo_fuzz_1874174024740745322_deepseek-r1_turn3
+      * bumpalo_fuzz_976142584321051045_deepseek-r1_turn3
+      * bumpalo_fuzz_10195540977497515460_deepseek-r1_turn2
+      * bumpalo_fuzz_15550931033291664209_deepseek-r1_turn3
+      * bumpalo_fuzz_6264733404987964180_deepseek-r1_turn1
+      * bumpalo_fuzz_2842761433075450817_deepseek-r1_turn3
+      * bumpalo_fuzz_10482038517639736333_deepseek-r1_turn4
+      * bumpalo_fuzz_9800402828280506069_deepseek-r1_turn3
+      * bumpalo_fuzz_10627925072891245914_deepseek-r1_turn5
+      * bumpalo_fuzz_6015136296209974725_deepseek-r1_turn3
+      * bumpalo_fuzz_2263841652955257434_deepseek-r1_turn2
+  StableURAPI: try_new::/home/cdc/SURF/deepSURF-big-experiment-harnesses/bumpalo-3.11.0/src/lib.rs::506,
+    - URAPI: DefId(0:117 ~ bumpalo[9aa9]::{impl#8}::try_new),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * bumpalo_fuzz_13342756394755960806_deepseek-r1_turn3
+      * bumpalo_fuzz_6015136296209974725_deepseek-r1_turn3
+      * bumpalo_fuzz_10482038517639736333_deepseek-r1_turn4
+      * bumpalo_fuzz_15550931033291664209_deepseek-r1_turn3
+      * bumpalo_fuzz_2263841652955257434_deepseek-r1_turn2
+      * bumpalo_fuzz_6264733404987964180_deepseek-r1_turn1
+      * bumpalo_fuzz_10627925072891245914_deepseek-r1_turn5
+      * bumpalo_fuzz_976142584321051045_deepseek-r1_turn3
+      * bumpalo_fuzz_10195540977497515460_deepseek-r1_turn2
+      * bumpalo_fuzz_2842761433075450817_deepseek-r1_turn3
+      * bumpalo_fuzz_1874174024740745322_deepseek-r1_turn3
+  StableURAPI: alloc_try_with::/home/cdc/SURF/deepSURF-big-experiment-harnesses/bumpalo-3.11.0/src/lib.rs::975,
+    - URAPI: DefId(0:148 ~ bumpalo[9aa9]::{impl#8}::alloc_try_with),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * bumpalo_fuzz_10627925072891245914_deepseek-r1_turn5
+      * bumpalo_fuzz_1874174024740745322_deepseek-r1_turn3
+      * bumpalo_fuzz_15550931033291664209_deepseek-r1_turn3
+  StableURAPI: try_alloc_try_with::/home/cdc/SURF/deepSURF-big-experiment-harnesses/bumpalo-3.11.0/src/lib.rs::1084,
+    - URAPI: DefId(0:152 ~ bumpalo[9aa9]::{impl#8}::try_alloc_try_with),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * bumpalo_fuzz_10482038517639736333_deepseek-r1_turn4
+  StableURAPI: alloc::/home/cdc/SURF/deepSURF-big-experiment-harnesses/bumpalo-3.11.0/src/lib.rs::805,
+    - URAPI: DefId(0:130 ~ bumpalo[9aa9]::{impl#8}::alloc),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * bumpalo_fuzz_6015136296209974725_deepseek-r1_turn3
+      * bumpalo_fuzz_1874174024740745322_deepseek-r1_turn3
+      * bumpalo_fuzz_10482038517639736333_deepseek-r1_turn4
+      * bumpalo_fuzz_2263841652955257434_deepseek-r1_turn2
+      * bumpalo_fuzz_976142584321051045_deepseek-r1_turn3
+      * bumpalo_fuzz_15550931033291664209_deepseek-r1_turn3
+      * bumpalo_fuzz_10195540977497515460_deepseek-r1_turn2
+      * bumpalo_fuzz_6264733404987964180_deepseek-r1_turn1
+  StableURAPI: reset::/home/cdc/SURF/deepSURF-big-experiment-harnesses/bumpalo-3.11.0/src/lib.rs::751,
+    - URAPI: DefId(0:129 ~ bumpalo[9aa9]::{impl#8}::reset),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * bumpalo_fuzz_1874174024740745322_deepseek-r1_turn3
+      * bumpalo_fuzz_976142584321051045_deepseek-r1_turn3
+      * bumpalo_fuzz_10195540977497515460_deepseek-r1_turn2
+      * bumpalo_fuzz_6015136296209974725_deepseek-r1_turn3
+  StableURAPI: chunk_capacity::/home/cdc/SURF/deepSURF-big-experiment-harnesses/bumpalo-3.11.0/src/lib.rs::1463,
+    - URAPI: DefId(0:182 ~ bumpalo[9aa9]::{impl#8}::chunk_capacity),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * bumpalo_fuzz_976142584321051045_deepseek-r1_turn3
+  StableURAPI: allocated_bytes::/home/cdc/SURF/deepSURF-big-experiment-harnesses/bumpalo-3.11.0/src/lib.rs::1689,
+    - URAPI: DefId(0:188 ~ bumpalo[9aa9]::{impl#8}::allocated_bytes),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * bumpalo_fuzz_10195540977497515460_deepseek-r1_turn2
+      * bumpalo_fuzz_1874174024740745322_deepseek-r1_turn3
+      * bumpalo_fuzz_9800402828280506069_deepseek-r1_turn3
+      * bumpalo_fuzz_2842761433075450817_deepseek-r1_turn3
+      * bumpalo_fuzz_10627925072891245914_deepseek-r1_turn5
+  StableURAPI: alloc_slice_fill_copy::/home/cdc/SURF/deepSURF-big-experiment-harnesses/bumpalo-3.11.0/src/lib.rs::1303,
+    - URAPI: DefId(0:165 ~ bumpalo[9aa9]::{impl#8}::alloc_slice_fill_copy),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * bumpalo_fuzz_9800402828280506069_deepseek-r1_turn3
+      * bumpalo_fuzz_6426152023858459176
+      * bumpalo_fuzz_976142584321051045_deepseek-r1_turn3
+      * bumpalo_fuzz_976142584321051045
+      * bumpalo_fuzz_13512943334504954955
+      * bumpalo_fuzz_2842761433075450817_deepseek-r1_turn3
+      * bumpalo_fuzz_6015136296209974725_deepseek-r1_turn3
+      * bumpalo_fuzz_1874174024740745322_deepseek-r1_turn3
+      * bumpalo_fuzz_15823384283313494722
+      * bumpalo_fuzz_15550931033291664209_deepseek-r1_turn3
+  StableURAPI: with_capacity::/home/cdc/SURF/deepSURF-big-experiment-harnesses/bumpalo-3.11.0/src/lib.rs::518,
+    - URAPI: DefId(0:118 ~ bumpalo[9aa9]::{impl#8}::with_capacity),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * bumpalo_fuzz_2263841652955257434_deepseek-r1_turn2
+      * bumpalo_fuzz_15550931033291664209_deepseek-r1_turn3
+      * bumpalo_fuzz_6264733404987964180_deepseek-r1_turn1
+      * bumpalo_fuzz_10627925072891245914_deepseek-r1_turn5
+      * bumpalo_fuzz_2842761433075450817_deepseek-r1_turn3
+      * bumpalo_fuzz_10195540977497515460_deepseek-r1_turn2
+      * bumpalo_fuzz_9800402828280506069_deepseek-r1_turn3
+      * bumpalo_fuzz_976142584321051045_deepseek-r1_turn3
+      * bumpalo_fuzz_1874174024740745322_deepseek-r1_turn3
+      * bumpalo_fuzz_13342756394755960806_deepseek-r1_turn3
+      * bumpalo_fuzz_10482038517639736333_deepseek-r1_turn4
+      * bumpalo_fuzz_6015136296209974725_deepseek-r1_turn3
+  StableURAPI: try_alloc_with::/home/cdc/SURF/deepSURF-big-experiment-harnesses/bumpalo-3.11.0/src/lib.rs::903,
+    - URAPI: DefId(0:142 ~ bumpalo[9aa9]::{impl#8}::try_alloc_with),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * bumpalo_fuzz_17613850789121379337
+      * bumpalo_fuzz_17151298416019404428
+      * bumpalo_fuzz_6445765771781107386
+      * bumpalo_fuzz_2263841652955257434_deepseek-r1_turn2
+      * bumpalo_fuzz_2263841652955257434
+  StableURAPI: iter_allocated_chunks::/home/cdc/SURF/deepSURF-big-experiment-harnesses/bumpalo-3.11.0/src/lib.rs::1638,
+    - URAPI: DefId(0:186 ~ bumpalo[9aa9]::{impl#8}::iter_allocated_chunks),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * bumpalo_fuzz_13342756394755960806_deepseek-r1_turn3
+      * bumpalo_fuzz_2263841652955257434_deepseek-r1_turn2
+      * bumpalo_fuzz_976142584321051045_deepseek-r1_turn3
+      * bumpalo_fuzz_6264733404987964180_deepseek-r1_turn1
+      * bumpalo_fuzz_6015136296209974725_deepseek-r1_turn3
+      * bumpalo_fuzz_15550931033291664209_deepseek-r1_turn3
+      * bumpalo_fuzz_2842761433075450817_deepseek-r1_turn3
+      * bumpalo_fuzz_1874174024740745322_deepseek-r1_turn3
+      * bumpalo_fuzz_10482038517639736333_deepseek-r1_turn4
+      * bumpalo_fuzz_10195540977497515460_deepseek-r1_turn2
+      * bumpalo_fuzz_10627925072891245914_deepseek-r1_turn5
+      * bumpalo_fuzz_9800402828280506069_deepseek-r1_turn3
+  StableURAPI: alloc_layout::/home/cdc/SURF/deepSURF-big-experiment-harnesses/bumpalo-3.11.0/src/lib.rs::1396,
+    - URAPI: DefId(0:178 ~ bumpalo[9aa9]::{impl#8}::alloc_layout),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * bumpalo_fuzz_6015136296209974725_deepseek-r1_turn3
+      * bumpalo_fuzz_13342756394755960806_deepseek-r1_turn3
+      * bumpalo_fuzz_10482038517639736333_deepseek-r1_turn4
+      * bumpalo_fuzz_10627925072891245914_deepseek-r1_turn5
+      * bumpalo_fuzz_15550931033291664209_deepseek-r1_turn3
+      * bumpalo_fuzz_976142584321051045_deepseek-r1_turn3
+      * bumpalo_fuzz_1874174024740745322_deepseek-r1_turn3
+  StableURAPI: alloc_str::/home/cdc/SURF/deepSURF-big-experiment-harnesses/bumpalo-3.11.0/src/lib.rs::1240,
+    - URAPI: DefId(0:160 ~ bumpalo[9aa9]::{impl#8}::alloc_str),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * bumpalo_fuzz_2263841652955257434_deepseek-r1_turn2
+      * bumpalo_fuzz_15550931033291664209_deepseek-r1_turn3
+      * bumpalo_fuzz_1874174024740745322_deepseek-r1_turn3
+      * bumpalo_fuzz_10482038517639736333_deepseek-r1_turn4
+      * bumpalo_fuzz_10195540977497515460_deepseek-r1_turn2
+      * bumpalo_fuzz_9800402828280506069_deepseek-r1_turn3
+      * bumpalo_fuzz_6264733404987964180_deepseek-r1_turn1
+      * bumpalo_fuzz_2842761433075450817_deepseek-r1_turn3
+      * bumpalo_fuzz_10627925072891245914_deepseek-r1_turn5
+      * bumpalo_fuzz_976142584321051045_deepseek-r1_turn3
+      * bumpalo_fuzz_13342756394755960806_deepseek-r1_turn3
+      * bumpalo_fuzz_6015136296209974725_deepseek-r1_turn3
+  StableURAPI: new::/home/cdc/SURF/deepSURF-big-experiment-harnesses/bumpalo-3.11.0/src/lib.rs::494,
+    - URAPI: DefId(0:116 ~ bumpalo[9aa9]::{impl#8}::new),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * bumpalo_fuzz_6264733404987964180_deepseek-r1_turn1
+      * bumpalo_fuzz_976142584321051045_deepseek-r1_turn3
+      * bumpalo_fuzz_13342756394755960806_deepseek-r1_turn3
+      * bumpalo_fuzz_10482038517639736333_deepseek-r1_turn4
+      * bumpalo_fuzz_10627925072891245914_deepseek-r1_turn5
+      * bumpalo_fuzz_10195540977497515460_deepseek-r1_turn2
+      * bumpalo_fuzz_6015136296209974725_deepseek-r1_turn3
+      * bumpalo_fuzz_1874174024740745322_deepseek-r1_turn3
+      * bumpalo_fuzz_9800402828280506069_deepseek-r1_turn3
+      * bumpalo_fuzz_15550931033291664209_deepseek-r1_turn3
+      * bumpalo_fuzz_2263841652955257434_deepseek-r1_turn2
+      * bumpalo_fuzz_2842761433075450817_deepseek-r1_turn3
+  StableURAPI: default::/home/cdc/SURF/deepSURF-big-experiment-harnesses/bumpalo-3.11.0/src/lib.rs::380,
+    - URAPI: DefId(0:93 ~ bumpalo[9aa9]::{impl#5}::default),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * bumpalo_fuzz_9800402828280506069_deepseek-r1_turn3
+  StableURAPI: alloc_slice_fill_default::/home/cdc/SURF/deepSURF-big-experiment-harnesses/bumpalo-3.11.0/src/lib.rs::1382,
+    - URAPI: DefId(0:130 ~ bumpalo[9aa9]::{impl#8}::alloc),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * bumpalo_fuzz_6264733404987964180_deepseek-r1_turn1
+      * bumpalo_fuzz_1874174024740745322_deepseek-r1_turn3
+      * bumpalo_fuzz_10195540977497515460_deepseek-r1_turn2
+  StableURAPI: alloc_slice_clone::/home/cdc/SURF/deepSURF-big-experiment-harnesses/bumpalo-3.11.0/src/lib.rs::1209,
+    - URAPI: DefId(0:158 ~ bumpalo[9aa9]::{impl#8}::alloc_slice_clone),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * bumpalo_fuzz_11463710956905808856
+      * bumpalo_fuzz_2842761433075450817_deepseek-r1_turn3
+      * bumpalo_fuzz_13342756394755960806_deepseek-r1_turn3
+      * bumpalo_fuzz_13342756394755960806
+      * bumpalo_fuzz_7570188436932504339
+      * bumpalo_fuzz_17258576887288763975
+  StableURAPI: alloc_slice_fill_with::/home/cdc/SURF/deepSURF-big-experiment-harnesses/bumpalo-3.11.0/src/lib.rs::1267,
+    - URAPI: DefId(0:161 ~ bumpalo[9aa9]::{impl#8}::alloc_slice_fill_with),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * bumpalo_fuzz_15842905124992499707
+      * bumpalo_fuzz_11058010074299480007
+      * bumpalo_fuzz_9800402828280506069
+      * bumpalo_fuzz_9800402828280506069_deepseek-r1_turn3
+      * bumpalo_fuzz_13014221009935089591
+  StableURAPI: try_alloc::/home/cdc/SURF/deepSURF-big-experiment-harnesses/bumpalo-3.11.0/src/lib.rs::825,
+    - URAPI: DefId(0:133 ~ bumpalo[9aa9]::{impl#8}::try_alloc),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * bumpalo_fuzz_6264733404987964180_deepseek-r1_turn1
+  StableURAPI: try_with_capacity::/home/cdc/SURF/deepSURF-big-experiment-harnesses/bumpalo-3.11.0/src/lib.rs::530,
+    - URAPI: DefId(0:120 ~ bumpalo[9aa9]::{impl#8}::try_with_capacity),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * bumpalo_fuzz_976142584321051045_deepseek-r1_turn3
+      * bumpalo_fuzz_6264733404987964180_deepseek-r1_turn1
+      * bumpalo_fuzz_10482038517639736333_deepseek-r1_turn4
+      * bumpalo_fuzz_15550931033291664209_deepseek-r1_turn3
+      * bumpalo_fuzz_6015136296209974725_deepseek-r1_turn3
+      * bumpalo_fuzz_2263841652955257434_deepseek-r1_turn2
+      * bumpalo_fuzz_10195540977497515460_deepseek-r1_turn2
+      * bumpalo_fuzz_2842761433075450817_deepseek-r1_turn3
+      * bumpalo_fuzz_9800402828280506069_deepseek-r1_turn3
+      * bumpalo_fuzz_10627925072891245914_deepseek-r1_turn5
+      * bumpalo_fuzz_1874174024740745322_deepseek-r1_turn3
+      * bumpalo_fuzz_13342756394755960806_deepseek-r1_turn3
+  StableURAPI: alloc_with::/home/cdc/SURF/deepSURF-big-experiment-harnesses/bumpalo-3.11.0/src/lib.rs::850,
+    - URAPI: DefId(0:136 ~ bumpalo[9aa9]::{impl#8}::alloc_with),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * bumpalo_fuzz_17795353330446753883
+      * bumpalo_fuzz_673284093688013829
+      * bumpalo_fuzz_15550931033291664209_deepseek-r1_turn3
+      * bumpalo_fuzz_15550931033291664209
+      * bumpalo_fuzz_10345542660961001844
+  StableURAPI: drop::/home/cdc/SURF/deepSURF-big-experiment-harnesses/bumpalo-3.11.0/src/lib.rs::386,
+    - URAPI: DefId(0:95 ~ bumpalo[9aa9]::{impl#6}::drop),
+    - Macro-expanded: false,
+    - LLM-improved: false,
+    - Fuzzing Targets:
+      * bumpalo_fuzz_13117492460919467125
+      * bumpalo_fuzz_6264733404987964180
+      * bumpalo_fuzz_5443701413058841166
+      * bumpalo_fuzz_16475823291575149311
+  StableURAPI: try_alloc_layout::/home/cdc/SURF/deepSURF-big-experiment-harnesses/bumpalo-3.11.0/src/lib.rs::1411,
+    - URAPI: DefId(0:180 ~ bumpalo[9aa9]::{impl#8}::try_alloc_layout),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * bumpalo_fuzz_2842761433075450817_deepseek-r1_turn3
+      * bumpalo_fuzz_9800402828280506069_deepseek-r1_turn3
+      * bumpalo_fuzz_1874174024740745322_deepseek-r1_turn3
+      * bumpalo_fuzz_6264733404987964180_deepseek-r1_turn1
+      * bumpalo_fuzz_10195540977497515460_deepseek-r1_turn2
+      * bumpalo_fuzz_15550931033291664209_deepseek-r1_turn3
+      * bumpalo_fuzz_2263841652955257434_deepseek-r1_turn2
+  StableURAPI: alloc_slice_fill_clone::/home/cdc/SURF/deepSURF-big-experiment-harnesses/bumpalo-3.11.0/src/lib.rs::1328,
+    - URAPI: DefId(0:168 ~ bumpalo[9aa9]::{impl#8}::alloc_slice_fill_clone),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * bumpalo_fuzz_15121009958712828263
+      * bumpalo_fuzz_17826886974706730553
+      * bumpalo_fuzz_17681314164368246680
+      * bumpalo_fuzz_2842761433075450817_deepseek-r1_turn3
+      * bumpalo_fuzz_1874174024740745322_deepseek-r1_turn3
+      * bumpalo_fuzz_2842761433075450817
+------------------------------------------------------------------------------------------------------------------------------------

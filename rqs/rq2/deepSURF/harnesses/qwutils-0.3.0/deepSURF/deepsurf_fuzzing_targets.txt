@@ -1,0 +1,44 @@
+deepSURF: Generated Targets to be Fuzzed
+------------------------------------------------------------------------------------------------------------------------------------
+  StableURAPI: extend_from_slice_copy::/home/cdc/SURF/deepSURF-big-experiment-harnesses/qwutils-0.3.0/src/imp/vec.rs::96,
+    - URAPI: DefId(0:25 ~ qwutils[d7d7]::imp::vec::{impl#0}::extend_from_slice_copy),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * qwutils_fuzz_5441091034537593312_deepseek-r1_turn3
+      * qwutils_fuzz_12976976694431655139
+  StableURAPI: insert_slice::/home/cdc/SURF/deepSURF-big-experiment-harnesses/qwutils-0.3.0/src/arc_slice/imp.rs::173,
+    - URAPI: DefId(0:244 ~ qwutils[d7d7]::arc_slice::imp::{impl#0}::insert_slice),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * qwutils_fuzz_3863007537564520346_deepseek-r1_turn2
+      * qwutils_fuzz_12976976694431655139_deepseek-r1_turn4
+      * qwutils_fuzz_5441091034537593312_deepseek-r1_turn3
+      * qwutils_fuzz_3863007537564520346
+      * qwutils_fuzz_16634572428333231003_deepseek-r1_turn5
+      * qwutils_fuzz_2249377158105559971_deepseek-r1_turn3
+      * qwutils_fuzz_2707079516328854402
+      * qwutils_fuzz_6770463383449035990
+  StableURAPI: insert_slice_clone::/home/cdc/SURF/deepSURF-big-experiment-harnesses/qwutils-0.3.0/src/imp/vec.rs::72,
+    - URAPI: DefId(0:24 ~ qwutils[d7d7]::imp::vec::{impl#0}::insert_slice_clone),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * qwutils_fuzz_2249377158105559971_deepseek-r1_turn3
+      * qwutils_fuzz_2249377158105559971
+      * qwutils_fuzz_16634572428333231003_deepseek-r1_turn5
+  StableURAPI: insert_slice_copy::/home/cdc/SURF/deepSURF-big-experiment-harnesses/qwutils-0.3.0/src/imp/vec.rs::49,
+    - URAPI: DefId(0:23 ~ qwutils[d7d7]::imp::vec::{impl#0}::insert_slice_copy),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * qwutils_fuzz_5441091034537593312
+      * qwutils_fuzz_5441091034537593312_deepseek-r1_turn3
+  StableURAPI: if_type::/home/cdc/SURF/deepSURF-big-experiment-harnesses/qwutils-0.3.0/src/if_type.rs::4,
+    - URAPI: DefId(0:516 ~ qwutils[d7d7]::if_type::if_type),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * qwutils_fuzz_16634572428333231003_deepseek-r1_turn5
+------------------------------------------------------------------------------------------------------------------------------------

@@ -1,0 +1,16 @@
+[workspace]
+
+[package]
+name = "array-queue_fuzz_14037188400585498771"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "array-queue_fuzz_14037188400585498771"
+path = "src/array-queue_fuzz_14037188400585498771.rs"
+
+[dependencies]
+afl = "=0.15.7"
+home = "=0.5.9"
+global_data = { path = "../../../../code/global_data" }
+array-queue = { path = "../../../../dataset/rustsan_crates/array-queue-0.3.3" }

@@ -1,0 +1,658 @@
+
+Total Stats:
+------------------------------------------------------------------------------------------------------------------------------------
+* URAPI Coverage: 58/101 (57.43%).
+* Targets Compiled: 215/6508 (3.30%) in [7725.256720834s].
+------------------------------------------------------------------------------------------------------------------------------------
+
+Target Stats:
+------------------------------------------------------------------------------------------------------------------------------------
+* URAPIs w/ ≥ 1ft: 58/101 (57.43%).
+* Average Generation Time per Target: 6981.084902255s/58 (120.363532797s).
+
+* URAPIs w/ ≥ 2ft: 53/101 (52.48%).
+* Average Generation Time per Target: 12744.543079839s/53 (240.463076978s).
+
+* URAPIs w/ ≥ 3ft: 53/101 (52.48%).
+* Average Generation Time per Target: 17892.163013496s/53 (337.587981386s).
+
+* URAPIs w/ ≥ 4ft: 51/101 (50.50%).
+* Average Generation Time per Target: 22270.693996422s/51 (436.680274439s).
+
+* URAPIs w/o any compilable targets: 43/101 (42.57%).
+------------------------------------------------------------------------------------------------------------------------------------
+
+Detailed Results: 
+------------------------------------------------------------------------------------------------------------------------------------
+  URAPI: DefId(0:97 ~ rusqlite[8877]::busy::{impl#0}::busy_timeout),
+    - Compilable Targets (4/25 ~ 16.00%):
+        * rusqlite_fuzz_16692162419235050871 [147.873516334s]
+        * rusqlite_fuzz_4294520300865615150 [568.903845534s]
+        * rusqlite_fuzz_14875467869831448965 [624.611179814s]
+        * rusqlite_fuzz_16493088261466866061 [783.451947998s]
+  URAPI: DefId(0:329 ~ rusqlite[8877]::pragma::{impl#2}::pragma_update),
+    - Compilable Targets (4/18 ~ 22.22%):
+        * rusqlite_fuzz_7493121694840647337 [95.132885348s]
+        * rusqlite_fuzz_16994029556116132615 [263.693989051s]
+        * rusqlite_fuzz_9621479707312451691 [362.639736354s]
+        * rusqlite_fuzz_8694204436700690199 [590.663339746s]
+  URAPI: DefId(0:1564 ~ rusqlite[8877]::params::{impl#161}::__bind_in),
+    - Compilable Targets (0/50 ~ 0.00%):
+  URAPI: DefId(0:478 ~ rusqlite[8877]::row::{impl#10}::idx),
+    - Compilable Targets (4/16 ~ 25.00%):
+        * rusqlite_fuzz_5115498555793899015 [86.77242827s]
+        * rusqlite_fuzz_16248124119729635163 [282.956238983s]
+        * rusqlite_fuzz_3971687327336571432 [444.974455588s]
+        * rusqlite_fuzz_16138635281942172449 [505.178399392s]
+  URAPI: DefId(0:1767 ~ rusqlite[8877]::row::{impl#14}::try_from),
+    - 0 targets generated.
+  URAPI: DefId(0:1263 ~ rusqlite[8877]::params::{impl#75}::__bind_in),
+    - Compilable Targets (0/50 ~ 0.00%):
+  URAPI: DefId(0:1319 ~ rusqlite[8877]::params::{impl#91}::__bind_in),
+    - Compilable Targets (0/50 ~ 0.00%):
+  URAPI: DefId(0:948 ~ rusqlite[8877]::{impl#6}::next),
+    - Compilable Targets (4/13 ~ 30.77%):
+        * rusqlite_fuzz_16461839562500751049 [207.940544226s]
+        * rusqlite_fuzz_7051263376646873208 [283.238204934s]
+        * rusqlite_fuzz_16351080453339714933 [359.729675034s]
+        * rusqlite_fuzz_4640728699879886973 [453.666567523s]
+  URAPI: DefId(0:1798 ~ rusqlite[8877]::row::{impl#16}::try_from),
+    - 0 targets generated.
+  URAPI: DefId(0:118 ~ rusqlite[8877]::cache::{impl#0}::prepare_cached),
+    - Compilable Targets (4/13 ~ 30.77%):
+        * rusqlite_fuzz_10980350294055038318 [151.433573163s]
+        * rusqlite_fuzz_5831101143022480897 [223.533787873s]
+        * rusqlite_fuzz_10188922028628170819 [292.287572965s]
+        * rusqlite_fuzz_11008025957620305713 [445.860144961s]
+  URAPI: DefId(0:1228 ~ rusqlite[8877]::params::{impl#65}::__bind_in),
+    - Compilable Targets (0/50 ~ 0.00%):
+  URAPI: DefId(0:596 ~ rusqlite[8877]::transaction::{impl#0}::new_unchecked),
+    - Compilable Targets (4/13 ~ 30.77%):
+        * rusqlite_fuzz_17272032651547189299 [123.243758886s]
+        * rusqlite_fuzz_2565034527950789699 [187.848992045s]
+        * rusqlite_fuzz_7111296190805021640 [250.000681615s]
+        * rusqlite_fuzz_13730548495262020710 [335.680383442s]
+  URAPI: DefId(0:462 ~ rusqlite[8877]::row::{impl#7}::get_raw_checked),
+    - 0 targets generated.
+  URAPI: DefId(0:1347 ~ rusqlite[8877]::params::{impl#99}::__bind_in),
+    - Compilable Targets (0/50 ~ 0.00%):
+  URAPI: DefId(0:1466 ~ rusqlite[8877]::params::{impl#133}::__bind_in),
+    - Compilable Targets (0/50 ~ 0.00%):
+  URAPI: DefId(0:464 ~ rusqlite[8877]::row::{impl#7}::get_raw),
+    - 0 targets generated.
+  URAPI: DefId(0:1186 ~ rusqlite[8877]::params::{impl#53}::__bind_in),
+    - Compilable Targets (0/50 ~ 0.00%):
+  URAPI: DefId(0:1200 ~ rusqlite[8877]::params::{impl#57}::__bind_in),
+    - Compilable Targets (0/50 ~ 0.00%):
+  URAPI: DefId(0:896 ~ rusqlite[8877]::{impl#3}::open),
+    - Compilable Targets (0/1 ~ 0.00%):
+  URAPI: DefId(0:1305 ~ rusqlite[8877]::params::{impl#87}::__bind_in),
+    - Compilable Targets (0/50 ~ 0.00%):
+  URAPI: DefId(0:1221 ~ rusqlite[8877]::params::{impl#63}::__bind_in),
+    - Compilable Targets (0/50 ~ 0.00%):
+  URAPI: DefId(0:1648 ~ rusqlite[8877]::params::{impl#185}::__bind_in),
+    - Compilable Targets (0/50 ~ 0.00%):
+  URAPI: DefId(0:518 ~ rusqlite[8877]::statement::{impl#0}::execute_named),
+    - Compilable Targets (0/50 ~ 0.00%):
+  URAPI: DefId(0:913 ~ rusqlite[8877]::{impl#3}::execute_named),
+    - Compilable Targets (0/50 ~ 0.00%):
+  URAPI: DefId(0:1284 ~ rusqlite[8877]::params::{impl#81}::__bind_in),
+    - Compilable Targets (0/50 ~ 0.00%):
+  URAPI: DefId(0:1130 ~ rusqlite[8877]::params::{impl#37}::__bind_in),
+    - Compilable Targets (0/50 ~ 0.00%):
+  URAPI: DefId(0:570 ~ rusqlite[8877]::statement::{impl#0}::reset_status),
+    - Compilable Targets (4/16 ~ 25.00%):
+        * rusqlite_fuzz_17419806684545202254 [94.62300837s]
+        * rusqlite_fuzz_17210102306557480388 [278.983001868s]
+        * rusqlite_fuzz_455855497497359209 [445.043906841s]
+        * rusqlite_fuzz_13698400847905846105 [505.882454602s]
+  URAPI: DefId(0:1783 ~ rusqlite[8877]::row::{impl#15}::try_from),
+    - 0 targets generated.
+  URAPI: DefId(0:1452 ~ rusqlite[8877]::params::{impl#129}::__bind_in),
+    - Compilable Targets (0/50 ~ 0.00%):
+  URAPI: DefId(0:516 ~ rusqlite[8877]::statement::{impl#0}::execute),
+    - 0 targets generated.
+  URAPI: DefId(0:388 ~ rusqlite[8877]::row::{impl#0}::next),
+    - Compilable Targets (1/50 ~ 2.00%):
+        * rusqlite_fuzz_16310431998189236606 [460.607114413s]
+  URAPI: DefId(0:1431 ~ rusqlite[8877]::params::{impl#123}::__bind_in),
+    - Compilable Targets (0/50 ~ 0.00%):
+  URAPI: DefId(0:1875 ~ rusqlite[8877]::row::{impl#23}::try_from),
+    - 0 targets generated.
+  URAPI: DefId(0:100 ~ rusqlite[8877]::busy::{impl#0}::busy_handler),
+    - 0 targets generated.
+  URAPI: DefId(0:824 ~ rusqlite[8877]::version::version),
+    - Compilable Targets (1/1 ~ 100.00%):
+        * rusqlite_fuzz_7525749143003505076 [35.598037308s]
+  URAPI: DefId(0:1867 ~ rusqlite[8877]::row::{impl#22}::try_from),
+    - 0 targets generated.
+  URAPI: DefId(0:426 ~ rusqlite[8877]::row::{impl#4}::next),
+    - Compilable Targets (0/50 ~ 0.00%):
+  URAPI: DefId(0:614 ~ rusqlite[8877]::transaction::{impl#2}::drop),
+    - Compilable Targets (4/16 ~ 25.00%):
+        * rusqlite_fuzz_9174874665649661397 [62.530143522s]
+        * rusqlite_fuzz_13607100223320362770 [216.655749364s]
+        * rusqlite_fuzz_2006257039350389713 [353.058053004s]
+        * rusqlite_fuzz_16783710667706225260 [515.183752186s]
+  URAPI: DefId(0:1046 ~ rusqlite[8877]::params::{impl#13}::__bind_in),
+    - Compilable Targets (0/50 ~ 0.00%):
+  URAPI: DefId(0:1354 ~ rusqlite[8877]::params::{impl#101}::__bind_in),
+    - Compilable Targets (0/50 ~ 0.00%):
+  URAPI: DefId(0:823 ~ rusqlite[8877]::version::version_number),
+    - Compilable Targets (1/1 ~ 100.00%):
+        * rusqlite_fuzz_18138798661975417833 [32.284958188s]
+  URAPI: DefId(0:331 ~ rusqlite[8877]::pragma::{impl#2}::pragma_update_and_check),
+    - Compilable Targets (4/18 ~ 22.22%):
+        * rusqlite_fuzz_6542749198875314019 [96.167368947s]
+        * rusqlite_fuzz_12847949628901230266 [314.138508921s]
+        * rusqlite_fuzz_13682355593252713464 [391.225423066s]
+        * rusqlite_fuzz_10336274635736215657 [540.938477626s]
+  URAPI: DefId(0:603 ~ rusqlite[8877]::transaction::{impl#0}::commit),
+    - Compilable Targets (4/16 ~ 25.00%):
+        * rusqlite_fuzz_10709790400165688905 [68.672903402s]
+        * rusqlite_fuzz_1531872881174898651 [193.314471691s]
+        * rusqlite_fuzz_1598544097154768631 [291.734140265s]
+        * rusqlite_fuzz_5682471574290804457 [537.048082601s]
+  URAPI: DefId(0:1151 ~ rusqlite[8877]::params::{impl#43}::__bind_in),
+    - Compilable Targets (0/50 ~ 0.00%):
+  URAPI: DefId(0:917 ~ rusqlite[8877]::{impl#3}::query_row),
+    - 0 targets generated.
+  URAPI: DefId(0:270 ~ rusqlite[8877]::params::{impl#1}::__bind_in),
+    - Compilable Targets (0/50 ~ 0.00%):
+  URAPI: DefId(0:1620 ~ rusqlite[8877]::params::{impl#177}::__bind_in),
+    - Compilable Targets (0/50 ~ 0.00%):
+  URAPI: DefId(0:560 ~ rusqlite[8877]::statement::{impl#0}::raw_bind_parameter),
+    - Compilable Targets (4/14 ~ 28.57%):
+        * rusqlite_fuzz_16259440386170294502 [18.555953141s]
+        * rusqlite_fuzz_10813266446549885928 [127.988103457s]
+        * rusqlite_fuzz_9758399699309783974 [192.797130372s]
+        * rusqlite_fuzz_13369315838752150046 [352.992802867s]
+  URAPI: DefId(0:1081 ~ rusqlite[8877]::params::{impl#23}::__bind_in),
+    - Compilable Targets (0/50 ~ 0.00%):
+  URAPI: DefId(0:1473 ~ rusqlite[8877]::params::{impl#135}::__bind_in),
+    - Compilable Targets (0/50 ~ 0.00%):
+  URAPI: DefId(0:599 ~ rusqlite[8877]::transaction::{impl#0}::savepoint_with_name),
+    - Compilable Targets (0/50 ~ 0.00%):
+  URAPI: DefId(0:542 ~ rusqlite[8877]::statement::{impl#0}::exists),
+    - 0 targets generated.
+  URAPI: DefId(0:640 ~ rusqlite[8877]::transaction::{impl#6}::transaction),
+    - Compilable Targets (4/13 ~ 30.77%):
+        * rusqlite_fuzz_16333150931229039599 [141.210790359s]
+        * rusqlite_fuzz_17736766859236216217 [202.553074381s]
+        * rusqlite_fuzz_12506918764156829924 [267.23463751s]
+        * rusqlite_fuzz_11470163618427919896 [412.478951099s]
+  URAPI: DefId(0:164 ~ rusqlite[8877]::column::{impl#1}::column_index),
+    - Compilable Targets (4/16 ~ 25.00%):
+        * rusqlite_fuzz_3367748654034018327 [89.801579465s]
+        * rusqlite_fuzz_13871910606434507364 [388.282750207s]
+        * rusqlite_fuzz_14776791515634435622 [562.462746047s]
+        * rusqlite_fuzz_16983012969305948004 [617.140482009s]
+  URAPI: DefId(0:1116 ~ rusqlite[8877]::params::{impl#33}::__bind_in),
+    - Compilable Targets (0/50 ~ 0.00%):
+  URAPI: DefId(0:521 ~ rusqlite[8877]::statement::{impl#0}::query),
+    - 0 targets generated.
+  URAPI: DefId(0:916 ~ rusqlite[8877]::{impl#3}::last_insert_rowid),
+    - Compilable Targets (4/13 ~ 30.77%):
+        * rusqlite_fuzz_14841367669609313553 [112.233851388s]
+        * rusqlite_fuzz_1668778719180327248 [181.58503614s]
+        * rusqlite_fuzz_9205725500615811045 [252.404619896s]
+        * rusqlite_fuzz_16702447503544253433 [335.661633724s]
+  URAPI: DefId(0:1326 ~ rusqlite[8877]::params::{impl#93}::__bind_in),
+    - Compilable Targets (0/50 ~ 0.00%):
+  URAPI: DefId(0:644 ~ rusqlite[8877]::transaction::{impl#6}::savepoint_with_name),
+    - Compilable Targets (0/16 ~ 0.00%):
+  URAPI: DefId(0:1172 ~ rusqlite[8877]::params::{impl#49}::__bind_in),
+    - Compilable Targets (0/50 ~ 0.00%):
+  URAPI: DefId(0:605 ~ rusqlite[8877]::transaction::{impl#0}::rollback),
+    - Compilable Targets (4/16 ~ 25.00%):
+        * rusqlite_fuzz_15946443429781867623 [36.363163855s]
+        * rusqlite_fuzz_11820690846802972110 [140.965802864s]
+        * rusqlite_fuzz_14230270448495038415 [244.299615374s]
+        * rusqlite_fuzz_13308009516694419215 [384.165723848s]
+  URAPI: DefId(0:907 ~ rusqlite[8877]::{impl#3}::execute_batch),
+    - Compilable Targets (4/13 ~ 30.77%):
+        * rusqlite_fuzz_4328899059265073227 [112.161510954s]
+        * rusqlite_fuzz_7813146947060142521 [172.514854117s]
+        * rusqlite_fuzz_15673031525088507800 [239.220090055s]
+        * rusqlite_fuzz_1615099909734981076 [322.063967041s]
+  URAPI: DefId(0:284 ~ rusqlite[8877]::params::{impl#7}::__bind_in),
+    - Compilable Targets (0/50 ~ 0.00%):
+  URAPI: DefId(0:607 ~ rusqlite[8877]::transaction::{impl#0}::finish),
+    - Compilable Targets (4/16 ~ 25.00%):
+        * rusqlite_fuzz_18303384782548388908 [36.500088124s]
+        * rusqlite_fuzz_5120935307130350631 [141.251263917s]
+        * rusqlite_fuzz_491101221682830812 [246.608637903s]
+        * rusqlite_fuzz_2585166828415365182 [388.523016288s]
+  URAPI: DefId(0:628 ~ rusqlite[8877]::transaction::{impl#3}::commit),
+    - Compilable Targets (4/33 ~ 12.12%):
+        * rusqlite_fuzz_12334744053099630743 [313.837323142s]
+        * rusqlite_fuzz_12580726297444167960 [454.447349069s]
+        * rusqlite_fuzz_13262763938022615585 [653.195468916s]
+        * rusqlite_fuzz_13281569965742988764 [717.262266195s]
+  URAPI: DefId(0:1750 ~ rusqlite[8877]::row::{impl#13}::try_from),
+    - 0 targets generated.
+  URAPI: DefId(0:958 ~ rusqlite[8877]::{impl#10}::interrupt),
+    - Compilable Targets (4/13 ~ 30.77%):
+        * rusqlite_fuzz_6187348261845580489 [111.300895755s]
+        * rusqlite_fuzz_2677295820713573563 [173.718126996s]
+        * rusqlite_fuzz_8858701991881715682 [235.298471087s]
+        * rusqlite_fuzz_15672331097739728740 [316.405337483s]
+  URAPI: DefId(0:1424 ~ rusqlite[8877]::params::{impl#121}::__bind_in),
+    - Compilable Targets (0/50 ~ 0.00%):
+  URAPI: DefId(0:1214 ~ rusqlite[8877]::params::{impl#61}::__bind_in),
+    - Compilable Targets (0/50 ~ 0.00%):
+  URAPI: DefId(0:899 ~ rusqlite[8877]::{impl#3}::open_with_flags),
+    - Compilable Targets (0/4 ~ 0.00%):
+  URAPI: DefId(0:1109 ~ rusqlite[8877]::params::{impl#31}::__bind_in),
+    - Compilable Targets (0/50 ~ 0.00%):
+  URAPI: DefId(0:1837 ~ rusqlite[8877]::row::{impl#19}::try_from),
+    - 0 targets generated.
+  URAPI: DefId(0:1662 ~ rusqlite[8877]::params::{impl#189}::__bind_in),
+    - Compilable Targets (0/50 ~ 0.00%):
+  URAPI: DefId(0:1291 ~ rusqlite[8877]::params::{impl#83}::__bind_in),
+    - Compilable Targets (0/50 ~ 0.00%):
+  URAPI: DefId(0:1060 ~ rusqlite[8877]::params::{impl#17}::__bind_in),
+    - Compilable Targets (0/50 ~ 0.00%):
+  URAPI: DefId(0:902 ~ rusqlite[8877]::{impl#3}::open_with_flags_and_vfs),
+    - Compilable Targets (0/4 ~ 0.00%):
+  URAPI: DefId(0:1627 ~ rusqlite[8877]::params::{impl#179}::__bind_in),
+    - Compilable Targets (0/50 ~ 0.00%):
+  URAPI: DefId(0:276 ~ rusqlite[8877]::params::{impl#5}::__bind_in),
+    - Compilable Targets (0/50 ~ 0.00%):
+  URAPI: DefId(0:574 ~ rusqlite[8877]::statement::{impl#1}::fmt),
+    - Compilable Targets (4/16 ~ 25.00%):
+        * rusqlite_fuzz_828134452694340424 [55.116529129s]
+        * rusqlite_fuzz_13582652999343541926 [230.429798521s]
+        * rusqlite_fuzz_12962659554441541781 [333.479617714s]
+        * rusqlite_fuzz_17506934217887935464 [379.762955992s]
+  URAPI: DefId(0:1340 ~ rusqlite[8877]::params::{impl#97}::__bind_in),
+    - Compilable Targets (0/50 ~ 0.00%):
+  URAPI: DefId(0:324 ~ rusqlite[8877]::pragma::{impl#2}::pragma_query),
+    - Compilable Targets (4/13 ~ 30.77%):
+        * rusqlite_fuzz_13993123350600316118 [112.893330621s]
+        * rusqlite_fuzz_18321054881818275469 [180.54388539s]
+        * rusqlite_fuzz_5327971451169577230 [248.143864213s]
+        * rusqlite_fuzz_14091872570678981962 [335.039094105s]
+  URAPI: DefId(0:1403 ~ rusqlite[8877]::params::{impl#115}::__bind_in),
+    - Compilable Targets (0/50 ~ 0.00%):
+  URAPI: DefId(0:1410 ~ rusqlite[8877]::params::{impl#117}::__bind_in),
+    - Compilable Targets (0/50 ~ 0.00%):
+  URAPI: DefId(0:405 ~ rusqlite[8877]::row::{impl#2}::drop),
+    - Compilable Targets (1/50 ~ 2.00%):
+        * rusqlite_fuzz_7540104343075682740 [473.16212218s]
+  URAPI: DefId(0:905 ~ rusqlite[8877]::{impl#3}::open_in_memory_with_flags),
+    - Compilable Targets (3/4 ~ 75.00%):
+        * rusqlite_fuzz_3573453734726388585 [18.875313238s]
+        * rusqlite_fuzz_4521711804545190468 [80.463109344s]
+        * rusqlite_fuzz_8992586252294415084 [125.922077725s]
+  URAPI: DefId(0:1529 ~ rusqlite[8877]::params::{impl#151}::__bind_in),
+    - Compilable Targets (0/50 ~ 0.00%):
+  URAPI: DefId(0:624 ~ rusqlite[8877]::transaction::{impl#3}::savepoint_with_name),
+    - Compilable Targets (0/50 ~ 0.00%):
+  URAPI: DefId(0:1713 ~ rusqlite[8877]::row::{impl#11}::try_from),
+    - 0 targets generated.
+  URAPI: DefId(0:598 ~ rusqlite[8877]::transaction::{impl#0}::savepoint),
+    - Compilable Targets (4/16 ~ 25.00%):
+        * rusqlite_fuzz_8780315798220708499 [39.165018129s]
+        * rusqlite_fuzz_4364400644357737236 [141.639943555s]
+        * rusqlite_fuzz_11879484796869001203 [249.011289556s]
+        * rusqlite_fuzz_11543772482203061638 [387.591083236s]
+  URAPI: DefId(0:1074 ~ rusqlite[8877]::params::{impl#21}::__bind_in),
+    - Compilable Targets (0/50 ~ 0.00%):
+  URAPI: DefId(0:562 ~ rusqlite[8877]::statement::{impl#0}::raw_execute),
+    - Compilable Targets (4/16 ~ 25.00%):
+        * rusqlite_fuzz_17690592895798697395 [81.266432626s]
+        * rusqlite_fuzz_9497313996538942012 [261.873225665s]
+        * rusqlite_fuzz_16087718992850495868 [367.291499966s]
+        * rusqlite_fuzz_7881461840085913976 [413.271928519s]
+  URAPI: DefId(0:930 ~ rusqlite[8877]::{impl#3}::close),
+    - Compilable Targets (4/13 ~ 30.77%):
+        * rusqlite_fuzz_5778422235176949304 [118.245228806s]
+        * rusqlite_fuzz_10841974901790040329 [178.396587643s]
+        * rusqlite_fuzz_10575559936402793094 [241.843839084s]
+        * rusqlite_fuzz_3058667444169388227 [324.744916404s]
+  URAPI: DefId(0:631 ~ rusqlite[8877]::transaction::{impl#3}::finish),
+    - Compilable Targets (4/33 ~ 12.12%):
+        * rusqlite_fuzz_9028477670433776341 [347.524568825s]
+        * rusqlite_fuzz_11954459892943682272 [487.013547384s]
+        * rusqlite_fuzz_15613377224788740867 [686.873740297s]
+        * rusqlite_fuzz_10765711168721850138 [752.656217838s]
+  URAPI: DefId(0:1494 ~ rusqlite[8877]::params::{impl#141}::__bind_in),
+    - Compilable Targets (0/50 ~ 0.00%):
+  URAPI: DefId(0:458 ~ rusqlite[8877]::row::{impl#7}::get_ref),
+    - 0 targets generated.
+  URAPI: DefId(0:1053 ~ rusqlite[8877]::params::{impl#15}::__bind_in),
+    - Compilable Targets (0/50 ~ 0.00%):
+  URAPI: DefId(0:1438 ~ rusqlite[8877]::params::{impl#125}::__bind_in),
+    - Compilable Targets (0/50 ~ 0.00%):
+  URAPI: DefId(0:444 ~ rusqlite[8877]::row::{impl#6}::advance),
+    - Compilable Targets (0/50 ~ 0.00%):
+  URAPI: DefId(0:1825 ~ rusqlite[8877]::row::{impl#18}::try_from),
+    - 0 targets generated.
+  URAPI: DefId(0:595 ~ rusqlite[8877]::transaction::{impl#0}::new),
+    - Compilable Targets (4/13 ~ 30.77%):
+        * rusqlite_fuzz_16567295868750089767 [109.697694159s]
+        * rusqlite_fuzz_12099013318629446229 [171.588528119s]
+        * rusqlite_fuzz_17455926547278325120 [235.005085083s]
+        * rusqlite_fuzz_14011536174044260552 [312.55983122s]
+  URAPI: DefId(0:1858 ~ rusqlite[8877]::row::{impl#21}::try_from),
+    - 0 targets generated.
+  URAPI: DefId(0:159 ~ rusqlite[8877]::column::{impl#1}::column_names),
+    - Compilable Targets (4/16 ~ 25.00%):
+        * rusqlite_fuzz_11659230840788413241 [54.864308103s]
+        * rusqlite_fuzz_16160738532603416384 [231.82537157s]
+        * rusqlite_fuzz_6788151778660891187 [324.993448982s]
+        * rusqlite_fuzz_5671557278112867467 [364.910462021s]
+  URAPI: DefId(0:1417 ~ rusqlite[8877]::params::{impl#119}::__bind_in),
+    - Compilable Targets (0/50 ~ 0.00%):
+  URAPI: DefId(0:1102 ~ rusqlite[8877]::params::{impl#29}::__bind_in),
+    - Compilable Targets (0/50 ~ 0.00%):
+  URAPI: DefId(0:1893 ~ rusqlite[8877]::row::{impl#26}::try_from),
+    - 0 targets generated.
+  URAPI: DefId(0:1144 ~ rusqlite[8877]::params::{impl#41}::__bind_in),
+    - Compilable Targets (0/50 ~ 0.00%):
+  URAPI: DefId(0:908 ~ rusqlite[8877]::{impl#3}::execute),
+    - 0 targets generated.
+  URAPI: DefId(0:1179 ~ rusqlite[8877]::params::{impl#51}::__bind_in),
+    - Compilable Targets (0/50 ~ 0.00%):
+  URAPI: DefId(0:921 ~ rusqlite[8877]::{impl#3}::query_row_named),
+    - Compilable Targets (0/50 ~ 0.00%):
+  URAPI: DefId(0:454 ~ rusqlite[8877]::row::{impl#7}::get),
+    - 0 targets generated.
+  URAPI: DefId(0:1641 ~ rusqlite[8877]::params::{impl#183}::__bind_in),
+    - Compilable Targets (0/50 ~ 0.00%):
+  URAPI: DefId(0:1368 ~ rusqlite[8877]::params::{impl#105}::__bind_in),
+    - Compilable Targets (0/50 ~ 0.00%):
+  URAPI: DefId(0:1487 ~ rusqlite[8877]::params::{impl#139}::__bind_in),
+    - Compilable Targets (0/50 ~ 0.00%):
+  URAPI: DefId(0:906 ~ rusqlite[8877]::{impl#3}::open_in_memory_with_flags_and_vfs),
+    - Compilable Targets (3/4 ~ 75.00%):
+        * rusqlite_fuzz_7572351409369938889 [18.908316469s]
+        * rusqlite_fuzz_13227713160757675850 [81.281274977s]
+        * rusqlite_fuzz_5200122720516559575 [126.63109297s]
+  URAPI: DefId(0:924 ~ rusqlite[8877]::{impl#3}::query_row_and_then),
+    - 0 targets generated.
+  URAPI: DefId(0:524 ~ rusqlite[8877]::statement::{impl#0}::query_map),
+    - 0 targets generated.
+  URAPI: DefId(0:623 ~ rusqlite[8877]::transaction::{impl#3}::savepoint),
+    - Compilable Targets (4/33 ~ 12.12%):
+        * rusqlite_fuzz_4352175727942331650 [306.2745995s]
+        * rusqlite_fuzz_9709233248155178472 [446.507663204s]
+        * rusqlite_fuzz_16033743182641993717 [652.277162191s]
+        * rusqlite_fuzz_15517948952016468988 [714.851952036s]
+  URAPI: DefId(0:476 ~ rusqlite[8877]::row::{impl#9}::idx),
+    - Compilable Targets (4/16 ~ 25.00%):
+        * rusqlite_fuzz_10165467311953390070 [56.014862733s]
+        * rusqlite_fuzz_1979702421728538986 [230.148263556s]
+        * rusqlite_fuzz_2412263837386699164 [331.31965791s]
+        * rusqlite_fuzz_13737202265080443742 [375.113304414s]
+  URAPI: DefId(0:2315 ~ rusqlite[8877]::{impl#39}::from_iter),
+    - Compilable Targets (0/1 ~ 0.00%):
+  URAPI: DefId(0:1732 ~ rusqlite[8877]::row::{impl#12}::try_from),
+    - 0 targets generated.
+  URAPI: DefId(0:1207 ~ rusqlite[8877]::params::{impl#59}::__bind_in),
+    - Compilable Targets (0/50 ~ 0.00%):
+  URAPI: DefId(0:438 ~ rusqlite[8877]::row::{impl#5}::next),
+    - Compilable Targets (0/50 ~ 0.00%):
+  URAPI: DefId(0:519 ~ rusqlite[8877]::statement::{impl#0}::insert),
+    - 0 targets generated.
+  URAPI: DefId(0:1550 ~ rusqlite[8877]::params::{impl#157}::__bind_in),
+    - Compilable Targets (0/50 ~ 0.00%):
+  URAPI: DefId(0:641 ~ rusqlite[8877]::transaction::{impl#6}::transaction_with_behavior),
+    - Compilable Targets (4/13 ~ 30.77%):
+        * rusqlite_fuzz_7498399606342920223 [111.459997516s]
+        * rusqlite_fuzz_14654045566339696824 [172.486607751s]
+        * rusqlite_fuzz_11188911773113399806 [236.254083167s]
+        * rusqlite_fuzz_17007775730807383969 [319.031005753s]
+  URAPI: DefId(0:529 ~ rusqlite[8877]::statement::{impl#0}::query_map_named),
+    - Compilable Targets (0/50 ~ 0.00%):
+  URAPI: DefId(0:273 ~ rusqlite[8877]::params::{impl#3}::__bind_in),
+    - Compilable Targets (0/50 ~ 0.00%):
+  URAPI: DefId(0:1888 ~ rusqlite[8877]::row::{impl#25}::try_from),
+    - 0 targets generated.
+  URAPI: DefId(0:1193 ~ rusqlite[8877]::params::{impl#55}::__bind_in),
+    - Compilable Targets (0/50 ~ 0.00%):
+  URAPI: DefId(0:638 ~ rusqlite[8877]::transaction::{impl#5}::drop),
+    - Compilable Targets (4/33 ~ 12.12%):
+        * rusqlite_fuzz_12895102765163007940 [301.255224763s]
+        * rusqlite_fuzz_3246265905939336003 [444.830971842s]
+        * rusqlite_fuzz_5836493307954320307 [636.297162947s]
+        * rusqlite_fuzz_11105991455372048979 [713.561456125s]
+  URAPI: DefId(0:195 ~ rusqlite[8877]::config::{impl#0}::db_config),
+    - Compilable Targets (4/13 ~ 30.77%):
+        * rusqlite_fuzz_9194461901995292143 [205.970628262s]
+        * rusqlite_fuzz_10617186109485941684 [298.214387318s]
+        * rusqlite_fuzz_10758412929105790643 [369.692073411s]
+        * rusqlite_fuzz_4521065609306426935 [470.776773553s]
+  URAPI: DefId(0:929 ~ rusqlite[8877]::{impl#3}::prepare),
+    - Compilable Targets (4/13 ~ 30.77%):
+        * rusqlite_fuzz_11748494121422067666 [121.168705497s]
+        * rusqlite_fuzz_5912648518654090256 [185.973448554s]
+        * rusqlite_fuzz_17278443381824579953 [251.44888978s]
+        * rusqlite_fuzz_4561922523673485121 [332.852523404s]
+  URAPI: DefId(0:1242 ~ rusqlite[8877]::params::{impl#69}::__bind_in),
+    - Compilable Targets (0/50 ~ 0.00%):
+  URAPI: DefId(0:196 ~ rusqlite[8877]::config::{impl#0}::set_db_config),
+    - Compilable Targets (4/13 ~ 30.77%):
+        * rusqlite_fuzz_16457943627886377714 [115.39932565s]
+        * rusqlite_fuzz_2134224710182495996 [178.331685398s]
+        * rusqlite_fuzz_833204822885041299 [242.491802381s]
+        * rusqlite_fuzz_3857128685485287653 [329.601060651s]
+  URAPI: DefId(0:1298 ~ rusqlite[8877]::params::{impl#85}::__bind_in),
+    - Compilable Targets (0/50 ~ 0.00%):
+  URAPI: DefId(0:1396 ~ rusqlite[8877]::params::{impl#113}::__bind_in),
+    - Compilable Targets (0/50 ~ 0.00%):
+  URAPI: DefId(0:162 ~ rusqlite[8877]::column::{impl#1}::column_name),
+    - Compilable Targets (4/16 ~ 25.00%):
+        * rusqlite_fuzz_11275553257795298831 [54.482574796s]
+        * rusqlite_fuzz_11935216616245741114 [235.522432764s]
+        * rusqlite_fuzz_8491660499548596237 [362.706618198s]
+        * rusqlite_fuzz_9300764477357852380 [411.603925941s]
+  URAPI: DefId(0:1361 ~ rusqlite[8877]::params::{impl#103}::__bind_in),
+    - Compilable Targets (0/50 ~ 0.00%):
+  URAPI: DefId(0:451 ~ rusqlite[8877]::row::{impl#7}::get_unwrap),
+    - 0 targets generated.
+  URAPI: DefId(0:1571 ~ rusqlite[8877]::params::{impl#163}::__bind_in),
+    - Compilable Targets (0/50 ~ 0.00%):
+  URAPI: DefId(0:621 ~ rusqlite[8877]::transaction::{impl#3}::with_name),
+    - Compilable Targets (0/16 ~ 0.00%):
+  URAPI: DefId(0:1165 ~ rusqlite[8877]::params::{impl#47}::__bind_in),
+    - Compilable Targets (0/50 ~ 0.00%):
+  URAPI: DefId(0:1557 ~ rusqlite[8877]::params::{impl#159}::__bind_in),
+    - Compilable Targets (0/50 ~ 0.00%):
+  URAPI: DefId(0:551 ~ rusqlite[8877]::statement::{impl#0}::finalize),
+    - Compilable Targets (4/16 ~ 25.00%):
+        * rusqlite_fuzz_15648045394580602649 [56.807161969s]
+        * rusqlite_fuzz_11231717926230236671 [234.783961956s]
+        * rusqlite_fuzz_14955763533189114665 [336.874446694s]
+        * rusqlite_fuzz_783579754135408104 [382.363910687s]
+  URAPI: DefId(0:559 ~ rusqlite[8877]::statement::{impl#0}::parameter_count),
+    - Compilable Targets (4/16 ~ 25.00%):
+        * rusqlite_fuzz_11338304795196046924 [67.209256041s]
+        * rusqlite_fuzz_10747727857265863304 [249.479479202s]
+        * rusqlite_fuzz_9671364098897265696 [350.346016434s]
+        * rusqlite_fuzz_2772619319756750770 [396.758488745s]
+  URAPI: DefId(0:1039 ~ rusqlite[8877]::params::{impl#11}::__bind_in),
+    - Compilable Targets (0/50 ~ 0.00%):
+  URAPI: DefId(0:1032 ~ rusqlite[8877]::params::{impl#9}::__bind_in),
+    - Compilable Targets (0/50 ~ 0.00%):
+  URAPI: DefId(0:1613 ~ rusqlite[8877]::params::{impl#175}::__bind_in),
+    - Compilable Targets (0/50 ~ 0.00%):
+  URAPI: DefId(0:553 ~ rusqlite[8877]::statement::{impl#0}::parameter_name),
+    - Compilable Targets (4/16 ~ 25.00%):
+        * rusqlite_fuzz_10357925701960576690 [56.227208642s]
+        * rusqlite_fuzz_14417368991033962706 [235.540389347s]
+        * rusqlite_fuzz_17513632773741502718 [337.263375377s]
+        * rusqlite_fuzz_3977812378708717674 [383.916338344s]
+  URAPI: DefId(0:1445 ~ rusqlite[8877]::params::{impl#127}::__bind_in),
+    - Compilable Targets (0/50 ~ 0.00%):
+  URAPI: DefId(0:1270 ~ rusqlite[8877]::params::{impl#77}::__bind_in),
+    - Compilable Targets (0/50 ~ 0.00%):
+  URAPI: DefId(0:1536 ~ rusqlite[8877]::params::{impl#153}::__bind_in),
+    - Compilable Targets (0/50 ~ 0.00%):
+  URAPI: DefId(0:944 ~ rusqlite[8877]::{impl#5}::next),
+    - Compilable Targets (4/13 ~ 30.77%):
+        * rusqlite_fuzz_1334675891568458407 [109.763463573s]
+        * rusqlite_fuzz_18140859342273390551 [172.156135275s]
+        * rusqlite_fuzz_8659094746407541797 [239.672167826s]
+        * rusqlite_fuzz_423841908005896443 [320.724237212s]
+  URAPI: DefId(0:1515 ~ rusqlite[8877]::params::{impl#147}::__bind_in),
+    - Compilable Targets (0/50 ~ 0.00%):
+  URAPI: DefId(0:548 ~ rusqlite[8877]::statement::{impl#0}::query_row_named),
+    - Compilable Targets (0/50 ~ 0.00%):
+  URAPI: DefId(0:1158 ~ rusqlite[8877]::params::{impl#45}::__bind_in),
+    - Compilable Targets (0/50 ~ 0.00%):
+  URAPI: DefId(0:1095 ~ rusqlite[8877]::params::{impl#27}::__bind_in),
+    - Compilable Targets (0/50 ~ 0.00%):
+  URAPI: DefId(0:576 ~ rusqlite[8877]::statement::{impl#2}::drop),
+    - Compilable Targets (4/16 ~ 25.00%):
+        * rusqlite_fuzz_4474088279540666994 [103.167989613s]
+        * rusqlite_fuzz_5369253860693893574 [359.505037127s]
+        * rusqlite_fuzz_3463322498941092853 [469.073890722s]
+        * rusqlite_fuzz_15589029696308394645 [517.814189728s]
+  URAPI: DefId(0:620 ~ rusqlite[8877]::transaction::{impl#3}::new),
+    - Compilable Targets (4/13 ~ 30.77%):
+        * rusqlite_fuzz_6660911690412533725 [117.590831652s]
+        * rusqlite_fuzz_17277026869193917314 [183.131205662s]
+        * rusqlite_fuzz_8218476115353413478 [247.755743996s]
+        * rusqlite_fuzz_13458445953420572115 [330.405052833s]
+  URAPI: DefId(0:1137 ~ rusqlite[8877]::params::{impl#39}::__bind_in),
+    - Compilable Targets (0/50 ~ 0.00%):
+  URAPI: DefId(0:1277 ~ rusqlite[8877]::params::{impl#79}::__bind_in),
+    - Compilable Targets (0/50 ~ 0.00%):
+  URAPI: DefId(0:160 ~ rusqlite[8877]::column::{impl#1}::column_count),
+    - Compilable Targets (4/16 ~ 25.00%):
+        * rusqlite_fuzz_11424579185532396580 [59.873697461s]
+        * rusqlite_fuzz_14339209225274495782 [238.206996036s]
+        * rusqlite_fuzz_16177212764443737987 [349.218670856s]
+        * rusqlite_fuzz_4672248800174713180 [393.165971979s]
+  URAPI: DefId(0:569 ~ rusqlite[8877]::statement::{impl#0}::get_status),
+    - Compilable Targets (4/16 ~ 25.00%):
+        * rusqlite_fuzz_6876110719251169775 [57.110038629s]
+        * rusqlite_fuzz_14045795529378401886 [229.955897548s]
+        * rusqlite_fuzz_17085735843062029732 [336.604967773s]
+        * rusqlite_fuzz_8871053906369361167 [380.536964603s]
+  URAPI: DefId(0:1382 ~ rusqlite[8877]::params::{impl#109}::__bind_in),
+    - Compilable Targets (0/50 ~ 0.00%):
+  URAPI: DefId(0:937 ~ rusqlite[8877]::{impl#3}::is_autocommit),
+    - Compilable Targets (4/13 ~ 30.77%):
+        * rusqlite_fuzz_15065957108424003493 [113.379874459s]
+        * rusqlite_fuzz_5893508049768611772 [178.725662411s]
+        * rusqlite_fuzz_2307137145505310388 [242.82024874s]
+        * rusqlite_fuzz_7464921693168690798 [326.163464967s]
+  URAPI: DefId(0:1375 ~ rusqlite[8877]::params::{impl#107}::__bind_in),
+    - Compilable Targets (0/50 ~ 0.00%):
+  URAPI: DefId(0:1480 ~ rusqlite[8877]::params::{impl#137}::__bind_in),
+    - Compilable Targets (0/50 ~ 0.00%):
+  URAPI: DefId(0:1634 ~ rusqlite[8877]::params::{impl#181}::__bind_in),
+    - Compilable Targets (0/50 ~ 0.00%):
+  URAPI: DefId(0:416 ~ rusqlite[8877]::row::{impl#3}::next),
+    - Compilable Targets (0/50 ~ 0.00%):
+  URAPI: DefId(0:1459 ~ rusqlite[8877]::params::{impl#131}::__bind_in),
+    - Compilable Targets (0/50 ~ 0.00%):
+  URAPI: DefId(0:1389 ~ rusqlite[8877]::params::{impl#111}::__bind_in),
+    - Compilable Targets (0/50 ~ 0.00%):
+  URAPI: DefId(0:1592 ~ rusqlite[8877]::params::{impl#169}::__bind_in),
+    - Compilable Targets (0/50 ~ 0.00%):
+  URAPI: DefId(0:1848 ~ rusqlite[8877]::row::{impl#20}::try_from),
+    - 0 targets generated.
+  URAPI: DefId(0:321 ~ rusqlite[8877]::pragma::{impl#2}::pragma_query_value),
+    - Compilable Targets (4/13 ~ 30.77%):
+        * rusqlite_fuzz_16548864798179868294 [115.21557096s]
+        * rusqlite_fuzz_11027336211298195787 [179.39258285s]
+        * rusqlite_fuzz_1711686084007466323 [243.895052442s]
+        * rusqlite_fuzz_6481709747474457567 [321.869648013s]
+  URAPI: DefId(0:1543 ~ rusqlite[8877]::params::{impl#155}::__bind_in),
+    - Compilable Targets (0/50 ~ 0.00%):
+  URAPI: DefId(0:1088 ~ rusqlite[8877]::params::{impl#25}::__bind_in),
+    - Compilable Targets (0/50 ~ 0.00%):
+  URAPI: DefId(0:1669 ~ rusqlite[8877]::params::{impl#191}::__bind_in),
+    - Compilable Targets (0/50 ~ 0.00%):
+  URAPI: DefId(0:1312 ~ rusqlite[8877]::params::{impl#89}::__bind_in),
+    - Compilable Targets (0/50 ~ 0.00%):
+  URAPI: DefId(0:1599 ~ rusqlite[8877]::params::{impl#171}::__bind_in),
+    - Compilable Targets (0/50 ~ 0.00%):
+  URAPI: DefId(0:1812 ~ rusqlite[8877]::row::{impl#17}::try_from),
+    - 0 targets generated.
+  URAPI: DefId(0:1256 ~ rusqlite[8877]::params::{impl#73}::__bind_in),
+    - Compilable Targets (0/50 ~ 0.00%):
+  URAPI: DefId(0:1655 ~ rusqlite[8877]::params::{impl#187}::__bind_in),
+    - Compilable Targets (0/50 ~ 0.00%):
+  URAPI: DefId(0:1882 ~ rusqlite[8877]::row::{impl#24}::try_from),
+    - 0 targets generated.
+  URAPI: DefId(0:1123 ~ rusqlite[8877]::params::{impl#35}::__bind_in),
+    - Compilable Targets (0/50 ~ 0.00%):
+  URAPI: DefId(0:1501 ~ rusqlite[8877]::params::{impl#143}::__bind_in),
+    - Compilable Targets (0/50 ~ 0.00%):
+  URAPI: DefId(0:1578 ~ rusqlite[8877]::params::{impl#165}::__bind_in),
+    - Compilable Targets (0/50 ~ 0.00%):
+  URAPI: DefId(0:544 ~ rusqlite[8877]::statement::{impl#0}::query_row),
+    - 0 targets generated.
+  URAPI: DefId(0:1508 ~ rusqlite[8877]::params::{impl#145}::__bind_in),
+    - Compilable Targets (0/50 ~ 0.00%):
+  URAPI: DefId(0:538 ~ rusqlite[8877]::statement::{impl#0}::query_and_then_named),
+    - Compilable Targets (0/50 ~ 0.00%):
+  URAPI: DefId(0:1585 ~ rusqlite[8877]::params::{impl#167}::__bind_in),
+    - Compilable Targets (0/50 ~ 0.00%):
+  URAPI: DefId(0:643 ~ rusqlite[8877]::transaction::{impl#6}::savepoint),
+    - Compilable Targets (4/13 ~ 30.77%):
+        * rusqlite_fuzz_15888147835300043452 [119.404893139s]
+        * rusqlite_fuzz_5000681867317456949 [187.363788689s]
+        * rusqlite_fuzz_12180734077404475821 [250.824002968s]
+        * rusqlite_fuzz_11671690206937072997 [337.191061678s]
+  URAPI: DefId(0:898 ~ rusqlite[8877]::{impl#3}::open_in_memory),
+    - Compilable Targets (1/1 ~ 100.00%):
+        * rusqlite_fuzz_12508202637453298756 [16.632582868s]
+  URAPI: DefId(0:1606 ~ rusqlite[8877]::params::{impl#173}::__bind_in),
+    - Compilable Targets (0/50 ~ 0.00%):
+  URAPI: DefId(0:1235 ~ rusqlite[8877]::params::{impl#67}::__bind_in),
+    - Compilable Targets (0/50 ~ 0.00%):
+  URAPI: DefId(0:630 ~ rusqlite[8877]::transaction::{impl#3}::rollback),
+    - Compilable Targets (4/33 ~ 12.12%):
+        * rusqlite_fuzz_6336566973234570275 [306.670107265s]
+        * rusqlite_fuzz_12322221612836627146 [445.709692129s]
+        * rusqlite_fuzz_15908121614906575795 [642.754220397s]
+        * rusqlite_fuzz_7692425561604587464 [705.909447279s]
+  URAPI: DefId(0:326 ~ rusqlite[8877]::pragma::{impl#2}::pragma),
+    - Compilable Targets (4/18 ~ 22.22%):
+        * rusqlite_fuzz_12070985253212303630 [56.516908979s]
+        * rusqlite_fuzz_14151487278701186370 [216.820593268s]
+        * rusqlite_fuzz_17935802521909350883 [282.495930642s]
+        * rusqlite_fuzz_5178370451866432695 [420.880180317s]
+  URAPI: DefId(0:460 ~ rusqlite[8877]::row::{impl#7}::get_ref_unwrap),
+    - 0 targets generated.
+  URAPI: DefId(0:532 ~ rusqlite[8877]::statement::{impl#0}::query_and_then),
+    - 0 targets generated.
+  URAPI: DefId(0:1522 ~ rusqlite[8877]::params::{impl#149}::__bind_in),
+    - Compilable Targets (0/50 ~ 0.00%):
+  URAPI: DefId(0:552 ~ rusqlite[8877]::statement::{impl#0}::parameter_index),
+    - Compilable Targets (4/16 ~ 25.00%):
+        * rusqlite_fuzz_13339624173744360096 [56.159693344s]
+        * rusqlite_fuzz_7754972701229432085 [237.897248453s]
+        * rusqlite_fuzz_13619126570606035992 [341.675293057s]
+        * rusqlite_fuzz_18005875669235972838 [391.447266814s]
+  URAPI: DefId(0:1333 ~ rusqlite[8877]::params::{impl#95}::__bind_in),
+    - Compilable Targets (0/50 ~ 0.00%):
+  URAPI: DefId(0:1249 ~ rusqlite[8877]::params::{impl#71}::__bind_in),
+    - Compilable Targets (0/50 ~ 0.00%):
+  URAPI: DefId(0:136 ~ rusqlite[8877]::cache::{impl#3}::drop),
+    - Compilable Targets (4/13 ~ 30.77%):
+        * rusqlite_fuzz_4584380785286817290 [116.513068444s]
+        * rusqlite_fuzz_17408044094500110453 [180.646726547s]
+        * rusqlite_fuzz_15628968612274388839 [241.24139351s]
+        * rusqlite_fuzz_13301910629946163260 [326.94603331s]
+  URAPI: DefId(0:523 ~ rusqlite[8877]::statement::{impl#0}::query_named),
+    - Compilable Targets (0/50 ~ 0.00%):
+  URAPI: DefId(0:642 ~ rusqlite[8877]::transaction::{impl#6}::unchecked_transaction),
+    - Compilable Targets (4/13 ~ 30.77%):
+        * rusqlite_fuzz_12445100841051341615 [116.252377655s]
+        * rusqlite_fuzz_9466153871549031208 [181.583799372s]
+        * rusqlite_fuzz_16102322799140174406 [249.138344781s]
+        * rusqlite_fuzz_2961267223911555264 [336.42551807s]
+  URAPI: DefId(0:2312 ~ rusqlite[8877]::{impl#38}::extend),
+    - Compilable Targets (0/4 ~ 0.00%):
+  URAPI: DefId(0:1676 ~ rusqlite[8877]::params::{impl#193}::__bind_in),
+    - Compilable Targets (0/50 ~ 0.00%):
+  URAPI: DefId(0:1067 ~ rusqlite[8877]::params::{impl#19}::__bind_in),
+    - Compilable Targets (0/50 ~ 0.00%):
+------------------------------------------------------------------------------------------------------------------------------------

@@ -1,0 +1,10 @@
+[package]
+name = "test_bumpalo1"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+afl = "=0.11.1"
+bumpalo = { path = "/home/cdc/Fuzzing-Target-Generator/erasan_dataset/bumpalo-3.11.0" }

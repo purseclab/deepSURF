@@ -1,0 +1,102 @@
+     Removed 124 files, 53.6MiB total
+   Compiling libc v0.2.175
+   Compiling semver v1.0.26
+   Compiling home v0.5.5
+   Compiling xdg v2.5.2
+   Compiling global_data v0.1.0 (/home/cdc/deepSURF-sp26-artifacts/artifact_code/global_data)
+   Compiling afl v0.15.7
+   Compiling rustc_version v0.4.1
+   Compiling arenavec v0.1.1 (/home/cdc/deepSURF-sp26-artifacts/artifact_data/dataset/rustsan_crates/arenavec-0.1.1)
+   Compiling arenavec_fuzz_14164823723381308391 v0.1.0 (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#36-arenavec/harness)
+warning: unused import: `arenavec::*`
+ --> src/arenavec_fuzz_14164823723381308391.rs:5:5
+  |
+5 | use arenavec::*;
+  |     ^^^^^^^^^^^
+  |
+  = note: `#[warn(unused_imports)]` on by default
+
+warning: unused import: `std::str::FromStr`
+ --> src/arenavec_fuzz_14164823723381308391.rs:7:5
+  |
+7 | use std::str::FromStr;
+  |     ^^^^^^^^^^^^^^^^^
+
+warning: unused imports: `DerefMut`, `Deref`
+ --> src/arenavec_fuzz_14164823723381308391.rs:8:16
+  |
+8 | use std::ops::{Deref, DerefMut};
+  |                ^^^^^  ^^^^^^^^
+
+warning: the item `TryInto` is imported redundantly
+   --> src/arenavec_fuzz_14164823723381308391.rs:141:9
+    |
+141 |     use std::convert::TryInto;
+    |         ^^^^^^^^^^^^^^^^^^^^^
+   --> /rustc/11f32b73e0dc9287e305b5b9980d24aecdc8c17f/library/std/src/prelude/mod.rs:129:13
+    |
+    = note: the item `TryInto` is already defined here
+
+warning: the item `TryInto` is imported redundantly
+   --> src/arenavec_fuzz_14164823723381308391.rs:148:9
+    |
+148 |     use std::convert::TryInto;
+    |         ^^^^^^^^^^^^^^^^^^^^^
+   --> /rustc/11f32b73e0dc9287e305b5b9980d24aecdc8c17f/library/std/src/prelude/mod.rs:129:13
+    |
+    = note: the item `TryInto` is already defined here
+
+warning: field `0` is never read
+  --> src/arenavec_fuzz_14164823723381308391.rs:11:20
+   |
+11 | struct CustomType0(String);
+   |        ----------- ^^^^^^
+   |        |
+   |        field in this struct
+   |
+   = note: `CustomType0` has a derived impl for the trait `Debug`, but this is intentionally ignored during dead code analysis
+   = note: `#[warn(dead_code)]` on by default
+help: consider changing the field to be of unit type to suppress this warning while preserving the field numbering, or remove the field
+   |
+11 | struct CustomType0(());
+   |                    ~~
+
+warning: variable `GLOBAL_DATA` should have a snake case name
+  --> src/arenavec_fuzz_14164823723381308391.rs:18:13
+   |
+18 |         let GLOBAL_DATA = global_data.first_half;
+   |             ^^^^^^^^^^^ help: convert the identifier to snake case: `global_data`
+   |
+   = note: `#[warn(non_snake_case)]` on by default
+
+warning: `arenavec_fuzz_14164823723381308391` (bin "arenavec_fuzz_14164823723381308391") generated 7 warnings (run `cargo fix --bin "arenavec_fuzz_14164823723381308391"` to apply 3 suggestions)
+    Finished dev [unoptimized + debuginfo] target(s) in 2.41s
+=================================================================
+==1413851==ERROR: AddressSanitizer: attempting double-free on 0x502000000030 in thread T0:
+    #0 0x560b8b338756  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#36-arenavec/harness/target/x86_64-unknown-linux-gnu/debug/arenavec_fuzz_14164823723381308391+0x96756) (BuildId: e9014f95a78c3d9fa049efaf31953a89fe751604)
+    #1 0x560b8b36321a  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#36-arenavec/harness/target/x86_64-unknown-linux-gnu/debug/arenavec_fuzz_14164823723381308391+0xc121a) (BuildId: e9014f95a78c3d9fa049efaf31953a89fe751604)
+    #2 0x560b8b36a72a  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#36-arenavec/harness/target/x86_64-unknown-linux-gnu/debug/arenavec_fuzz_14164823723381308391+0xc872a) (BuildId: e9014f95a78c3d9fa049efaf31953a89fe751604)
+    #3 0x560b8b369381  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#36-arenavec/harness/target/x86_64-unknown-linux-gnu/debug/arenavec_fuzz_14164823723381308391+0xc7381) (BuildId: e9014f95a78c3d9fa049efaf31953a89fe751604)
+    #4 0x560b8b361e01  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#36-arenavec/harness/target/x86_64-unknown-linux-gnu/debug/arenavec_fuzz_14164823723381308391+0xbfe01) (BuildId: e9014f95a78c3d9fa049efaf31953a89fe751604)
+    #5 0x560b8b361e50  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#36-arenavec/harness/target/x86_64-unknown-linux-gnu/debug/arenavec_fuzz_14164823723381308391+0xbfe50) (BuildId: e9014f95a78c3d9fa049efaf31953a89fe751604)
+    #6 0x560b8b385540  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#36-arenavec/harness/target/x86_64-unknown-linux-gnu/debug/arenavec_fuzz_14164823723381308391+0xe3540) (BuildId: e9014f95a78c3d9fa049efaf31953a89fe751604)
+    #7 0x560b8b36a8e5  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#36-arenavec/harness/target/x86_64-unknown-linux-gnu/debug/arenavec_fuzz_14164823723381308391+0xc88e5) (BuildId: e9014f95a78c3d9fa049efaf31953a89fe751604)
+    #8 0x7fe2ed732d8f  (/lib/x86_64-linux-gnu/libc.so.6+0x29d8f) (BuildId: 490fef8403240c91833978d494d39e537409b92e)
+    #9 0x7fe2ed732e3f  (/lib/x86_64-linux-gnu/libc.so.6+0x29e3f) (BuildId: 490fef8403240c91833978d494d39e537409b92e)
+    #10 0x560b8b2b2264  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#36-arenavec/harness/target/x86_64-unknown-linux-gnu/debug/arenavec_fuzz_14164823723381308391+0x10264) (BuildId: e9014f95a78c3d9fa049efaf31953a89fe751604)
+
+0x502000000030 is located 0 bytes inside of 14-byte region [0x502000000030,0x50200000003e)
+freed by thread T0 here:
+    #0 0x560b8b338756  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#36-arenavec/harness/target/x86_64-unknown-linux-gnu/debug/arenavec_fuzz_14164823723381308391+0x96756) (BuildId: e9014f95a78c3d9fa049efaf31953a89fe751604)
+    #1 0x560b8b363614  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#36-arenavec/harness/target/x86_64-unknown-linux-gnu/debug/arenavec_fuzz_14164823723381308391+0xc1614) (BuildId: e9014f95a78c3d9fa049efaf31953a89fe751604)
+    #2 0x560b8b36a72a  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#36-arenavec/harness/target/x86_64-unknown-linux-gnu/debug/arenavec_fuzz_14164823723381308391+0xc872a) (BuildId: e9014f95a78c3d9fa049efaf31953a89fe751604)
+    #3 0x560b8b361e01  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#36-arenavec/harness/target/x86_64-unknown-linux-gnu/debug/arenavec_fuzz_14164823723381308391+0xbfe01) (BuildId: e9014f95a78c3d9fa049efaf31953a89fe751604)
+
+previously allocated by thread T0 here:
+    #0 0x560b8b3389fe  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#36-arenavec/harness/target/x86_64-unknown-linux-gnu/debug/arenavec_fuzz_14164823723381308391+0x969fe) (BuildId: e9014f95a78c3d9fa049efaf31953a89fe751604)
+    #1 0x560b8b362c3d  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#36-arenavec/harness/target/x86_64-unknown-linux-gnu/debug/arenavec_fuzz_14164823723381308391+0xc0c3d) (BuildId: e9014f95a78c3d9fa049efaf31953a89fe751604)
+    #2 0x560b8b36a72a  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#36-arenavec/harness/target/x86_64-unknown-linux-gnu/debug/arenavec_fuzz_14164823723381308391+0xc872a) (BuildId: e9014f95a78c3d9fa049efaf31953a89fe751604)
+    #3 0x560b8b361e01  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#36-arenavec/harness/target/x86_64-unknown-linux-gnu/debug/arenavec_fuzz_14164823723381308391+0xbfe01) (BuildId: e9014f95a78c3d9fa049efaf31953a89fe751604)
+
+SUMMARY: AddressSanitizer: double-free (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#36-arenavec/harness/target/x86_64-unknown-linux-gnu/debug/arenavec_fuzz_14164823723381308391+0x96756) (BuildId: e9014f95a78c3d9fa049efaf31953a89fe751604) 
+==1413851==ABORTING

@@ -1,0 +1,38 @@
+[package]
+name = "scratchpad"
+version = "1.3.0"
+authors = ["Theodore Cipicchio <okready@users.noreply.github.com>"]
+license = "MIT/Apache-2.0"
+description = "Stack-like memory allocator with double-ended allocation support"
+documentation = "https://docs.rs/scratchpad"
+homepage = "https://github.com/okready/scratchpad"
+repository = "https://github.com/okready/scratchpad"
+readme = "README.md"
+categories = ["data-structures", "embedded", "memory-management", "no-std"]
+keywords = ["stack", "pool", "memory", "allocator", "no_std"]
+
+[badges]
+travis-ci = { repository = "okready/scratchpad" }
+
+[features]
+default = ["std"]
+
+# Enables `std` library use. This is required for `Box` and `Vec` support on
+# stable toolchains prior to Rust 1.36.0.
+std = []
+
+# Enables stable `alloc` library use for `Box` and `Vec` support. Requires
+# Rust 1.36.0 or later. Ignored if `std` is enabled.
+alloc = []
+
+# Enables unstable features (requires a nightly toolchain).
+unstable = []
+
+[dependencies]
+stable_deref_trait = { version = "1.0", default-features = false }
+
+[build-dependencies]
+rustc_version = "0.2"
+
+[dev-dependencies]
+arrayvec = { version = "0.4", default-features = false }

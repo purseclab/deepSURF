@@ -1,0 +1,16 @@
+[workspace]
+
+[package]
+name = "bumpalo_fuzz_73242652636878448"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "bumpalo_fuzz_73242652636878448"
+path = "src/bumpalo_fuzz_73242652636878448.rs"
+
+[dependencies]
+afl = "=0.15.7"
+home = "=0.5.9"
+global_data = { path = "../../../../code/global_data" }
+bumpalo = { path = "../../../../dataset/rustsan_crates/bumpalo-3.2.0", features = ["collections"] }

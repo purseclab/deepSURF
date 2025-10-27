@@ -1,0 +1,171 @@
+
+Total Stats:
+------------------------------------------------------------------------------------------------------------------------------------
+* URAPI Coverage: 0/72 (0.00%).
+* Targets Compiled: 0/292 (0.00%) in [116.523844307s].
+------------------------------------------------------------------------------------------------------------------------------------
+
+Target Stats:
+------------------------------------------------------------------------------------------------------------------------------------
+* URAPIs w/ ≥ 1ft: 0/72 (0.00%).
+* Average Generation Time per Target: 0ns/0 (Na).
+
+* URAPIs w/ ≥ 2ft: 0/72 (0.00%).
+* Average Generation Time per Target: 0ns/0 (Na).
+
+* URAPIs w/ ≥ 3ft: 0/72 (0.00%).
+* Average Generation Time per Target: 0ns/0 (Na).
+
+* URAPIs w/ ≥ 4ft: 0/72 (0.00%).
+* Average Generation Time per Target: 0ns/0 (Na).
+
+* URAPIs w/o any compilable targets: 72/72 (100.00%).
+------------------------------------------------------------------------------------------------------------------------------------
+
+Detailed Results: 
+------------------------------------------------------------------------------------------------------------------------------------
+  URAPI: DefId(0:311 ~ smallvec[d7e8]::{impl#49}::into_iter),
+    - Compilable Targets (0/3 ~ 0.00%):
+  URAPI: DefId(0:241 ~ smallvec[d7e8]::{impl#29}::from_iter),
+    - Compilable Targets (0/1 ~ 0.00%):
+  URAPI: DefId(0:144 ~ smallvec[d7e8]::{impl#14}::append),
+    - Compilable Targets (0/9 ~ 0.00%):
+  URAPI: DefId(0:147 ~ smallvec[d7e8]::{impl#14}::try_grow),
+    - Compilable Targets (0/3 ~ 0.00%):
+  URAPI: DefId(0:245 ~ smallvec[d7e8]::{impl#30}::extend),
+    - Compilable Targets (0/3 ~ 0.00%):
+  URAPI: DefId(0:135 ~ smallvec[d7e8]::{impl#14}::capacity),
+    - Compilable Targets (0/3 ~ 0.00%):
+  URAPI: DefId(0:191 ~ smallvec[d7e8]::{impl#15}::from_slice),
+    - Compilable Targets (0/1 ~ 0.00%):
+  URAPI: DefId(0:216 ~ smallvec[d7e8]::{impl#22}::borrow_mut),
+    - Compilable Targets (0/3 ~ 0.00%):
+  URAPI: DefId(0:156 ~ smallvec[d7e8]::{impl#14}::swap_remove),
+    - Compilable Targets (0/3 ~ 0.00%):
+  URAPI: DefId(0:323 ~ smallvec[d7e8]::{impl#51}::into_iter),
+    - Compilable Targets (0/3 ~ 0.00%):
+  URAPI: DefId(0:172 ~ smallvec[d7e8]::{impl#14}::into_boxed_slice),
+    - Compilable Targets (0/3 ~ 0.00%):
+  URAPI: DefId(0:188 ~ smallvec[d7e8]::{impl#14}::as_mut_ptr),
+    - Compilable Targets (0/3 ~ 0.00%):
+  URAPI: DefId(0:249 ~ smallvec[d7e8]::{impl#31}::fmt),
+    - 0 targets generated.
+  URAPI: DefId(0:139 ~ smallvec[d7e8]::{impl#14}::drain),
+    - Compilable Targets (0/27 ~ 0.00%):
+  URAPI: DefId(0:270 ~ smallvec[d7e8]::{impl#38}::cmp),
+    - Compilable Targets (0/9 ~ 0.00%):
+  URAPI: DefId(0:267 ~ smallvec[d7e8]::{impl#37}::partial_cmp),
+    - Compilable Targets (0/9 ~ 0.00%):
+  URAPI: DefId(0:317 ~ smallvec[d7e8]::{impl#50}::into_iter),
+    - Compilable Targets (0/3 ~ 0.00%):
+  URAPI: DefId(0:210 ~ smallvec[d7e8]::{impl#20}::as_mut),
+    - Compilable Targets (0/3 ~ 0.00%):
+  URAPI: DefId(0:298 ~ smallvec[d7e8]::{impl#45}::next_back),
+    - 0 targets generated.
+  URAPI: DefId(0:284 ~ smallvec[d7e8]::{impl#41}::fmt),
+    - 0 targets generated.
+  URAPI: DefId(0:173 ~ smallvec[d7e8]::{impl#14}::into_inner),
+    - Compilable Targets (0/3 ~ 0.00%):
+  URAPI: DefId(0:149 ~ smallvec[d7e8]::{impl#14}::try_reserve),
+    - Compilable Targets (0/3 ~ 0.00%):
+  URAPI: DefId(0:152 ~ smallvec[d7e8]::{impl#14}::shrink_to_fit),
+    - Compilable Targets (0/3 ~ 0.00%):
+  URAPI: DefId(0:231 ~ smallvec[d7e8]::{impl#26}::index),
+    - 0 targets generated.
+  URAPI: DefId(0:159 ~ smallvec[d7e8]::{impl#14}::remove),
+    - Compilable Targets (0/3 ~ 0.00%):
+  URAPI: DefId(0:153 ~ smallvec[d7e8]::{impl#14}::truncate),
+    - Compilable Targets (0/3 ~ 0.00%):
+  URAPI: DefId(0:258 ~ smallvec[d7e8]::{impl#34}::clone),
+    - Compilable Targets (0/3 ~ 0.00%):
+  URAPI: DefId(0:306 ~ smallvec[d7e8]::{impl#48}::as_mut_slice),
+    - 0 targets generated.
+  URAPI: DefId(0:143 ~ smallvec[d7e8]::{impl#14}::pop),
+    - Compilable Targets (0/3 ~ 0.00%):
+  URAPI: DefId(0:174 ~ smallvec[d7e8]::{impl#14}::retain),
+    - Compilable Targets (0/3 ~ 0.00%):
+  URAPI: DefId(0:213 ~ smallvec[d7e8]::{impl#21}::borrow),
+    - Compilable Targets (0/3 ~ 0.00%):
+  URAPI: DefId(0:193 ~ smallvec[d7e8]::{impl#15}::extend_from_slice),
+    - Compilable Targets (0/3 ~ 0.00%):
+  URAPI: DefId(0:184 ~ smallvec[d7e8]::{impl#14}::resize_with),
+    - Compilable Targets (0/3 ~ 0.00%):
+  URAPI: DefId(0:180 ~ smallvec[d7e8]::{impl#14}::dedup_by_key),
+    - Compilable Targets (0/3 ~ 0.00%):
+  URAPI: DefId(0:204 ~ smallvec[d7e8]::{impl#18}::deref_mut),
+    - Compilable Targets (0/3 ~ 0.00%):
+  URAPI: DefId(0:126 ~ smallvec[d7e8]::{impl#14}::from_vec),
+    - Compilable Targets (0/1 ~ 0.00%):
+  URAPI: DefId(0:262 ~ smallvec[d7e8]::{impl#35}::eq),
+    - Compilable Targets (0/9 ~ 0.00%):
+  URAPI: DefId(0:148 ~ smallvec[d7e8]::{impl#14}::reserve),
+    - Compilable Targets (0/3 ~ 0.00%):
+  URAPI: DefId(0:134 ~ smallvec[d7e8]::{impl#14}::is_empty),
+    - Compilable Targets (0/3 ~ 0.00%):
+  URAPI: DefId(0:178 ~ smallvec[d7e8]::{impl#14}::dedup_by),
+    - Compilable Targets (0/3 ~ 0.00%):
+  URAPI: DefId(0:155 ~ smallvec[d7e8]::{impl#14}::as_mut_slice),
+    - Compilable Targets (0/3 ~ 0.00%):
+  URAPI: DefId(0:96 ~ smallvec[d7e8]::{impl#10}::drop),
+    - Compilable Targets (0/27 ~ 0.00%):
+  URAPI: DefId(0:158 ~ smallvec[d7e8]::{impl#14}::clear),
+    - Compilable Targets (0/3 ~ 0.00%):
+  URAPI: DefId(0:161 ~ smallvec[d7e8]::{impl#14}::insert_many),
+    - Compilable Targets (0/3 ~ 0.00%):
+  URAPI: DefId(0:150 ~ smallvec[d7e8]::{impl#14}::reserve_exact),
+    - Compilable Targets (0/3 ~ 0.00%):
+  URAPI: DefId(0:201 ~ smallvec[d7e8]::{impl#17}::deref),
+    - Compilable Targets (0/3 ~ 0.00%):
+  URAPI: DefId(0:305 ~ smallvec[d7e8]::{impl#48}::as_slice),
+    - 0 targets generated.
+  URAPI: DefId(0:125 ~ smallvec[d7e8]::{impl#14}::with_capacity),
+    - Compilable Targets (0/1 ~ 0.00%):
+  URAPI: DefId(0:142 ~ smallvec[d7e8]::{impl#14}::push),
+    - Compilable Targets (0/3 ~ 0.00%):
+  URAPI: DefId(0:192 ~ smallvec[d7e8]::{impl#15}::insert_from_slice),
+    - Compilable Targets (0/3 ~ 0.00%):
+  URAPI: DefId(0:223 ~ smallvec[d7e8]::{impl#24}::from),
+    - Compilable Targets (0/1 ~ 0.00%):
+  URAPI: DefId(0:345 ~ smallvec[d7e8]::{impl#54}::to_smallvec),
+    - Compilable Targets (0/1 ~ 0.00%):
+  URAPI: DefId(0:160 ~ smallvec[d7e8]::{impl#14}::insert),
+    - Compilable Targets (0/3 ~ 0.00%):
+  URAPI: DefId(0:146 ~ smallvec[d7e8]::{impl#14}::grow),
+    - Compilable Targets (0/3 ~ 0.00%):
+  URAPI: DefId(0:133 ~ smallvec[d7e8]::{impl#14}::len),
+    - Compilable Targets (0/3 ~ 0.00%):
+  URAPI: DefId(0:171 ~ smallvec[d7e8]::{impl#14}::into_vec),
+    - Compilable Targets (0/3 ~ 0.00%):
+  URAPI: DefId(0:78 ~ smallvec[d7e8]::{impl#6}::next),
+    - Compilable Targets (0/27 ~ 0.00%):
+  URAPI: DefId(0:294 ~ smallvec[d7e8]::{impl#44}::next),
+    - 0 targets generated.
+  URAPI: DefId(0:187 ~ smallvec[d7e8]::{impl#14}::as_ptr),
+    - Compilable Targets (0/3 ~ 0.00%):
+  URAPI: DefId(0:196 ~ smallvec[d7e8]::{impl#16}::resize),
+    - Compilable Targets (0/3 ~ 0.00%):
+  URAPI: DefId(0:273 ~ smallvec[d7e8]::{impl#39}::hash),
+    - Compilable Targets (0/3 ~ 0.00%):
+  URAPI: DefId(0:84 ~ smallvec[d7e8]::{impl#7}::next_back),
+    - Compilable Targets (0/27 ~ 0.00%):
+  URAPI: DefId(0:154 ~ smallvec[d7e8]::{impl#14}::as_slice),
+    - Compilable Targets (0/3 ~ 0.00%):
+  URAPI: DefId(0:151 ~ smallvec[d7e8]::{impl#14}::try_reserve_exact),
+    - Compilable Targets (0/3 ~ 0.00%):
+  URAPI: DefId(0:255 ~ smallvec[d7e8]::{impl#33}::drop),
+    - Compilable Targets (0/3 ~ 0.00%):
+  URAPI: DefId(0:197 ~ smallvec[d7e8]::{impl#16}::from_elem),
+    - Compilable Targets (0/1 ~ 0.00%):
+  URAPI: DefId(0:176 ~ smallvec[d7e8]::{impl#14}::dedup),
+    - Compilable Targets (0/3 ~ 0.00%):
+  URAPI: DefId(0:235 ~ smallvec[d7e8]::{impl#27}::index_mut),
+    - 0 targets generated.
+  URAPI: DefId(0:128 ~ smallvec[d7e8]::{impl#14}::from_buf_and_len),
+    - 0 targets generated.
+  URAPI: DefId(0:287 ~ smallvec[d7e8]::{impl#42}::clone),
+    - 0 targets generated.
+  URAPI: DefId(0:238 ~ smallvec[d7e8]::{impl#28}::extend_from_slice),
+    - Compilable Targets (0/3 ~ 0.00%):
+  URAPI: DefId(0:207 ~ smallvec[d7e8]::{impl#19}::as_ref),
+    - Compilable Targets (0/3 ~ 0.00%):
+------------------------------------------------------------------------------------------------------------------------------------

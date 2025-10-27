@@ -1,0 +1,196 @@
+     Removed 125 files, 60.6MiB total
+   Compiling semver v1.0.26
+   Compiling libc v0.2.175
+   Compiling home v0.5.5
+   Compiling xdg v2.5.2
+   Compiling global_data v0.1.0 (/home/cdc/deepSURF-sp26-artifacts/artifact_code/global_data)
+   Compiling bumpalo v3.2.0 (/home/cdc/deepSURF-sp26-artifacts/artifact_data/dataset/rustsan_crates/bumpalo-3.2.0)
+warning: use of deprecated type alias `core::alloc::LayoutErr`: Name does not follow std convention, use LayoutError
+  --> /home/cdc/deepSURF-sp26-artifacts/artifact_data/dataset/rustsan_crates/bumpalo-3.2.0/src/collections/mod.rs:52:30
+   |
+52 | use crate::alloc::{AllocErr, LayoutErr};
+   |                              ^^^^^^^^^
+   |
+   = note: `#[warn(deprecated)]` on by default
+
+warning: use of deprecated type alias `core::alloc::LayoutErr`: Name does not follow std convention, use LayoutError
+  --> /home/cdc/deepSURF-sp26-artifacts/artifact_data/dataset/rustsan_crates/bumpalo-3.2.0/src/collections/mod.rs:74:11
+   |
+74 | impl From<LayoutErr> for CollectionAllocErr {
+   |           ^^^^^^^^^
+
+warning: use of deprecated type alias `core::alloc::LayoutErr`: Name does not follow std convention, use LayoutError
+  --> /home/cdc/deepSURF-sp26-artifacts/artifact_data/dataset/rustsan_crates/bumpalo-3.2.0/src/collections/mod.rs:76:16
+   |
+76 |     fn from(_: LayoutErr) -> Self {
+   |                ^^^^^^^^^
+
+warning: use of deprecated type alias `core::alloc::LayoutErr`: Name does not follow std convention, use LayoutError
+  --> /home/cdc/deepSURF-sp26-artifacts/artifact_data/dataset/rustsan_crates/bumpalo-3.2.0/src/alloc.rs:22:31
+   |
+22 | pub use core::alloc::{Layout, LayoutErr};
+   |                               ^^^^^^^^^
+
+warning: use of deprecated type alias `core::alloc::LayoutErr`: Name does not follow std convention, use LayoutError
+  --> /home/cdc/deepSURF-sp26-artifacts/artifact_data/dataset/rustsan_crates/bumpalo-3.2.0/src/alloc.rs:24:24
+   |
+24 | fn new_layout_err() -> LayoutErr {
+   |                        ^^^^^^^^^
+
+warning: use of deprecated type alias `core::alloc::LayoutErr`: Name does not follow std convention, use LayoutError
+  --> /home/cdc/deepSURF-sp26-artifacts/artifact_data/dataset/rustsan_crates/bumpalo-3.2.0/src/alloc.rs:34:59
+   |
+34 |     fn repeat(&self, n: usize) -> Result<(Layout, usize), LayoutErr>;
+   |                                                           ^^^^^^^^^
+
+warning: use of deprecated type alias `core::alloc::LayoutErr`: Name does not follow std convention, use LayoutError
+  --> /home/cdc/deepSURF-sp26-artifacts/artifact_data/dataset/rustsan_crates/bumpalo-3.2.0/src/alloc.rs:35:45
+   |
+35 |     fn array<T>(n: usize) -> Result<Layout, LayoutErr>;
+   |                                             ^^^^^^^^^
+
+warning: use of deprecated type alias `core::alloc::LayoutErr`: Name does not follow std convention, use LayoutError
+  --> /home/cdc/deepSURF-sp26-artifacts/artifact_data/dataset/rustsan_crates/bumpalo-3.2.0/src/alloc.rs:65:59
+   |
+65 |     fn repeat(&self, n: usize) -> Result<(Layout, usize), LayoutErr> {
+   |                                                           ^^^^^^^^^
+
+warning: use of deprecated type alias `core::alloc::LayoutErr`: Name does not follow std convention, use LayoutError
+  --> /home/cdc/deepSURF-sp26-artifacts/artifact_data/dataset/rustsan_crates/bumpalo-3.2.0/src/alloc.rs:82:45
+   |
+82 |     fn array<T>(n: usize) -> Result<Layout, LayoutErr> {
+   |                                             ^^^^^^^^^
+
+   Compiling afl v0.15.7
+   Compiling rustc_version v0.4.1
+warning: `bumpalo` (lib) generated 9 warnings
+   Compiling bumpalo_fuzz_73242652636878448 v0.1.0 (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#32-bumpalo-3.2.0/harness)
+warning: unused import: `std::str::FromStr`
+ --> src/bumpalo_fuzz_73242652636878448.rs:8:5
+  |
+8 | use std::str::FromStr;
+  |     ^^^^^^^^^^^^^^^^^
+  |
+  = note: `#[warn(unused_imports)]` on by default
+
+warning: unused imports: `DerefMut`, `Deref`, `IndexMut`, `Index`
+ --> src/bumpalo_fuzz_73242652636878448.rs:9:16
+  |
+9 | use std::ops::{Deref, DerefMut, Index, IndexMut};
+  |                ^^^^^  ^^^^^^^^  ^^^^^  ^^^^^^^^
+
+warning: the item `TryInto` is imported redundantly
+   --> src/bumpalo_fuzz_73242652636878448.rs:158:9
+    |
+158 |     use std::convert::TryInto;
+    |         ^^^^^^^^^^^^^^^^^^^^^
+   --> /rustc/11f32b73e0dc9287e305b5b9980d24aecdc8c17f/library/std/src/prelude/mod.rs:129:13
+    |
+    = note: the item `TryInto` is already defined here
+
+warning: the item `TryInto` is imported redundantly
+   --> src/bumpalo_fuzz_73242652636878448.rs:165:9
+    |
+165 |     use std::convert::TryInto;
+    |         ^^^^^^^^^^^^^^^^^^^^^
+   --> /rustc/11f32b73e0dc9287e305b5b9980d24aecdc8c17f/library/std/src/prelude/mod.rs:129:13
+    |
+    = note: the item `TryInto` is already defined here
+
+warning: variable does not need to be mutable
+  --> src/bumpalo_fuzz_73242652636878448.rs:27:13
+   |
+27 |         let mut t_6 = _to_u8(GLOBAL_DATA, 24) % 17;
+   |             ----^^^
+   |             |
+   |             help: remove this `mut`
+   |
+   = note: `#[warn(unused_mut)]` on by default
+
+warning: unused variable: `elem_count`
+  --> src/bumpalo_fuzz_73242652636878448.rs:55:25
+   |
+55 |                     let elem_count = _to_usize(GLOBAL_DATA, 24 + i as usize * 8) % 32;
+   |                         ^^^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_elem_count`
+   |
+   = note: `#[warn(unused_variables)]` on by default
+
+warning: variable `GLOBAL_DATA` should have a snake case name
+  --> src/bumpalo_fuzz_73242652636878448.rs:16:13
+   |
+16 |         let GLOBAL_DATA = global_data.first_half;
+   |             ^^^^^^^^^^^ help: convert the identifier to snake case: `global_data`
+   |
+   = note: `#[warn(non_snake_case)]` on by default
+
+warning: variable `GLOBAL_DATA` should have a snake case name
+  --> src/bumpalo_fuzz_73242652636878448.rs:23:13
+   |
+23 |         let GLOBAL_DATA = match selector {
+   |             ^^^^^^^^^^^ help: convert the identifier to snake case: `global_data`
+
+warning: variable `GLOBAL_DATA` should have a snake case name
+  --> src/bumpalo_fuzz_73242652636878448.rs:40:13
+   |
+40 |         let GLOBAL_DATA = global_data.first_half;
+   |             ^^^^^^^^^^^ help: convert the identifier to snake case: `global_data`
+
+warning: `bumpalo_fuzz_73242652636878448` (bin "bumpalo_fuzz_73242652636878448") generated 9 warnings (run `cargo fix --bin "bumpalo_fuzz_73242652636878448"` to apply 4 suggestions)
+    Finished dev [unoptimized + debuginfo] target(s) in 2.57s
+=================================================================
+==1409510==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x5210000010e8 at pc 0x55a95c3157c1 bp 0x7ffedb553a40 sp 0x7ffedb553200
+READ of size 128 at 0x5210000010e8 thread T0
+    #0 0x55a95c3157c0  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#32-bumpalo-3.2.0/harness/target/x86_64-unknown-linux-gnu/debug/bumpalo_fuzz_73242652636878448+0x977c0) (BuildId: f56b90dbdbbaee5ebd9a53e4e44476c093cd200b)
+    #1 0x55a95c346895  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#32-bumpalo-3.2.0/harness/target/x86_64-unknown-linux-gnu/debug/bumpalo_fuzz_73242652636878448+0xc8895) (BuildId: f56b90dbdbbaee5ebd9a53e4e44476c093cd200b)
+    #2 0x55a95c34909c  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#32-bumpalo-3.2.0/harness/target/x86_64-unknown-linux-gnu/debug/bumpalo_fuzz_73242652636878448+0xcb09c) (BuildId: f56b90dbdbbaee5ebd9a53e4e44476c093cd200b)
+    #3 0x55a95c3428b2  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#32-bumpalo-3.2.0/harness/target/x86_64-unknown-linux-gnu/debug/bumpalo_fuzz_73242652636878448+0xc48b2) (BuildId: f56b90dbdbbaee5ebd9a53e4e44476c093cd200b)
+    #4 0x55a95c34b4aa  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#32-bumpalo-3.2.0/harness/target/x86_64-unknown-linux-gnu/debug/bumpalo_fuzz_73242652636878448+0xcd4aa) (BuildId: f56b90dbdbbaee5ebd9a53e4e44476c093cd200b)
+    #5 0x55a95c34a121  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#32-bumpalo-3.2.0/harness/target/x86_64-unknown-linux-gnu/debug/bumpalo_fuzz_73242652636878448+0xcc121) (BuildId: f56b90dbdbbaee5ebd9a53e4e44476c093cd200b)
+    #6 0x55a95c340661  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#32-bumpalo-3.2.0/harness/target/x86_64-unknown-linux-gnu/debug/bumpalo_fuzz_73242652636878448+0xc2661) (BuildId: f56b90dbdbbaee5ebd9a53e4e44476c093cd200b)
+    #7 0x55a95c3406b0  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#32-bumpalo-3.2.0/harness/target/x86_64-unknown-linux-gnu/debug/bumpalo_fuzz_73242652636878448+0xc26b0) (BuildId: f56b90dbdbbaee5ebd9a53e4e44476c093cd200b)
+    #8 0x55a95c369620  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#32-bumpalo-3.2.0/harness/target/x86_64-unknown-linux-gnu/debug/bumpalo_fuzz_73242652636878448+0xeb620) (BuildId: f56b90dbdbbaee5ebd9a53e4e44476c093cd200b)
+    #9 0x55a95c34b665  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#32-bumpalo-3.2.0/harness/target/x86_64-unknown-linux-gnu/debug/bumpalo_fuzz_73242652636878448+0xcd665) (BuildId: f56b90dbdbbaee5ebd9a53e4e44476c093cd200b)
+    #10 0x7f2c32743d8f  (/lib/x86_64-linux-gnu/libc.so.6+0x29d8f) (BuildId: 490fef8403240c91833978d494d39e537409b92e)
+    #11 0x7f2c32743e3f  (/lib/x86_64-linux-gnu/libc.so.6+0x29e3f) (BuildId: 490fef8403240c91833978d494d39e537409b92e)
+    #12 0x55a95c290074  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#32-bumpalo-3.2.0/harness/target/x86_64-unknown-linux-gnu/debug/bumpalo_fuzz_73242652636878448+0x12074) (BuildId: f56b90dbdbbaee5ebd9a53e4e44476c093cd200b)
+
+0x5210000010e8 is located 0 bytes after 4072-byte region [0x521000000100,0x5210000010e8)
+allocated by thread T0 here:
+    #0 0x55a95c31725e  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#32-bumpalo-3.2.0/harness/target/x86_64-unknown-linux-gnu/debug/bumpalo_fuzz_73242652636878448+0x9925e) (BuildId: f56b90dbdbbaee5ebd9a53e4e44476c093cd200b)
+    #1 0x55a95c351721  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#32-bumpalo-3.2.0/harness/target/x86_64-unknown-linux-gnu/debug/bumpalo_fuzz_73242652636878448+0xd3721) (BuildId: f56b90dbdbbaee5ebd9a53e4e44476c093cd200b)
+    #2 0x55a95c352119  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#32-bumpalo-3.2.0/harness/target/x86_64-unknown-linux-gnu/debug/bumpalo_fuzz_73242652636878448+0xd4119) (BuildId: f56b90dbdbbaee5ebd9a53e4e44476c093cd200b)
+    #3 0x55a95c3467bd  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#32-bumpalo-3.2.0/harness/target/x86_64-unknown-linux-gnu/debug/bumpalo_fuzz_73242652636878448+0xc87bd) (BuildId: f56b90dbdbbaee5ebd9a53e4e44476c093cd200b)
+
+SUMMARY: AddressSanitizer: heap-buffer-overflow (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#32-bumpalo-3.2.0/harness/target/x86_64-unknown-linux-gnu/debug/bumpalo_fuzz_73242652636878448+0x977c0) (BuildId: f56b90dbdbbaee5ebd9a53e4e44476c093cd200b) 
+Shadow bytes around the buggy address:
+  0x521000000e00: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x521000000e80: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x521000000f00: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x521000000f80: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x521000001000: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+=>0x521000001080: 00 00 00 00 00 00 00 00 00 00 00 00 00[fa]fa fa
+  0x521000001100: fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+  0x521000001180: fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+  0x521000001200: fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+  0x521000001280: fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+  0x521000001300: fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+Shadow byte legend (one shadow byte represents 8 application bytes):
+  Addressable:           00
+  Partially addressable: 01 02 03 04 05 06 07 
+  Heap left redzone:       fa
+  Freed heap region:       fd
+  Stack left redzone:      f1
+  Stack mid redzone:       f2
+  Stack right redzone:     f3
+  Stack after return:      f5
+  Stack use after scope:   f8
+  Global redzone:          f9
+  Global init order:       f6
+  Poisoned by user:        f7
+  Container overflow:      fc
+  Array cookie:            ac
+  Intra object redzone:    bb
+  ASan internal:           fe
+  Left alloca redzone:     ca
+  Right alloca redzone:    cb
+==1409510==ABORTING

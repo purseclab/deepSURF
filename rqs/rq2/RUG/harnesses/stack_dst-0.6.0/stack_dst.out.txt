@@ -1,0 +1,228 @@
+-----------------
+src/lib.rs ptr_as_slice
+deps:{"ptr_as_slice":{"T":["std::marker::Sized"]}}
+candidates:{"ptr_as_slice":{"T":["RUG_ANY"]}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // T
++ptr_as_slice(p0);
++crate::ptr_as_slice(p0);
++crate::ptr_as_slice(p0);
+-----------------
+src/lib.rs make_fat_ptr
+deps:{}
+candidates:{}
+let mut p0 = 0usize; // None+usize
+let mut p1 = & [0usize].as_mut_slice(); // None+[usize]
++make_fat_ptr(p0, p1);
++crate::make_fat_ptr(p0, p1);
++crate::make_fat_ptr(p0, p1);
+-----------------
+src/lib.rs round_to_words
+deps:{}
+candidates:{}
+let mut p0 = 0usize; // None+usize
++round_to_words(p0);
++crate::round_to_words(p0);
++crate::round_to_words(p0);
+-----------------
+src/value.rs value::ValueA::<T, D>::new_stable
+deps:{"<T as DataBuf>":{"T":["std::default::Default","std::marker::Sized","std::convert::AsMut","std::marker::Copy","std::convert::AsRef"]},"std::ops::function::impls::<impl std::ops::FnOnce<A> for &F>":{},"std::ops::function::impls::<impl std::ops::FnOnce<A> for &mut F>":{},"value::ValueA::<T, D>::new_stable":{"D":["DataBuf","std::marker::Sized"],"F":["std::ops::FnOnce","std::marker::Sized"],"U":["std::marker::Sized"]}}
+candidates:{"<T as DataBuf>":{"T":["std::vec::Vec<T, A>"]},"std::ops::function::impls::<impl std::ops::FnOnce<A> for &F>":{},"std::ops::function::impls::<impl std::ops::FnOnce<A> for &mut F>":{},"value::ValueA::<T, D>::new_stable":{"D":["<T as DataBuf>"],"F":["core::str::UnsafeBytesToStr","core::const_closure::ConstFnMutClosure<(&'a mut A, &'a mut B, &'a mut C, &'a mut D), Function>","core::str::IsNotEmpty","core::str::LinesAnyMap","core::slice::ascii::EscapeByte","core::const_closure::ConstFnMutClosure<&'a mut A, Function>","std::panic::AssertUnwindSafe<F>","std::boxed::Box<F, A>","core::const_closure::ConstFnMutClosure<(&'a mut A, &'a mut B, &'a mut C, &'a mut D, &'a mut E), Function>","core::str::CharEscapeDefault","core::str::IsAsciiWhitespace","core::str::BytesIsNotEmpty","std::ops::function::impls::<impl std::ops::FnOnce<A> for &F>","core::str::CharEscapeDebugContinue","core::str::IsWhitespace","std::ops::function::impls::<impl std::ops::FnOnce<A> for &mut F>","core::str::CharEscapeUnicode","core::const_closure::ConstFnMutClosure<(&'a mut A, &'a mut B, &'a mut C), Function>","core::const_closure::ConstFnMutClosure<(&'a mut A, &'a mut B), Function>"],"U":["RUG_ANY"]}}
+let mut p0 = MaybeUninit::uninit().assume_init(); // U
+let mut p1 = MaybeUninit::uninit().assume_init(); // F
++value::ValueA::<T, D>::new_stable(p0, p1);
++crate::value::ValueA::<T, D>::new_stable(p0, p1);
++<value::ValueA<T, D>>::new_stable(p0, p1);
+-----------------
+src/value.rs value::ValueA::<T, D>::new_raw
+deps:{"<T as DataBuf>":{"T":["std::marker::Copy","std::convert::AsRef","std::marker::Sized","std::default::Default","std::convert::AsMut"]},"value::ValueA::<T, D>::new_raw":{"D":["DataBuf","std::marker::Sized"]}}
+candidates:{"<T as DataBuf>":{"T":["std::vec::Vec<T, A>"]},"value::ValueA::<T, D>::new_raw":{"D":["<T as DataBuf>"]}}
+let mut p0 = & [0usize].as_mut_slice(); // None+[usize]
+let mut p1 = (); // None+*mut ()
+let mut p2 = 0usize; // None+usize
++value::ValueA::<T, D>::new_raw(p0, p1, p2);
++crate::value::ValueA::<T, D>::new_raw(p0, p1, p2);
++<value::ValueA<T, D>>::new_raw(p0, p1, p2);
+-----------------
+src/value.rs value::ValueA::<T, D>::as_ptr
+deps:{"<T as DataBuf>":{"T":["std::marker::Sized","std::convert::AsMut","std::default::Default","std::convert::AsRef","std::marker::Copy"]},"value::ValueA::<T, D>::as_ptr":{"D":["std::marker::Sized","DataBuf"]}}
+candidates:{"<T as DataBuf>":{"T":["std::vec::Vec<T, A>"]},"value::ValueA::<T, D>::as_ptr":{"D":["<T as DataBuf>"]}}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // value::ValueA<T, D>
++p0.as_ptr();
++value::ValueA::<T, D>::as_ptr(p0);
++crate::value::ValueA::<T, D>::as_ptr(p0);
++<value::ValueA<T, D>>::as_ptr(p0);
+-----------------
+src/value.rs <value::ValueA<T, D> as std::ops::Deref>::deref
+deps:{"<T as DataBuf>":{"T":["std::convert::AsMut","std::marker::Copy","std::convert::AsRef","std::default::Default","std::marker::Sized"]},"<value::ValueA<T, D> as std::ops::Deref>::deref":{"D":["DataBuf","std::marker::Sized"]}}
+candidates:{"<T as DataBuf>":{"T":["std::vec::Vec<T, A>"]},"<value::ValueA<T, D> as std::ops::Deref>::deref":{"D":["<T as DataBuf>"]}}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // value::ValueA<T, D>
++p0.deref();
++<value::ValueA<T, D> as std::ops::Deref>::deref(p0);
++crate::<value::ValueA<T, D> as std::ops::Deref>::deref(p0);
++<value::ValueA<T, D>>::deref(p0);
+-----------------
+src/value.rs <value::ValueA<T, D> as std::ops::DerefMut>::deref_mut
+deps:{"<T as DataBuf>":{"T":["std::marker::Copy","std::marker::Sized","std::convert::AsMut","std::convert::AsRef","std::default::Default"]},"<value::ValueA<T, D> as std::ops::DerefMut>::deref_mut":{"D":["DataBuf","std::marker::Sized"]}}
+candidates:{"<T as DataBuf>":{"T":["std::vec::Vec<T, A>"]},"<value::ValueA<T, D> as std::ops::DerefMut>::deref_mut":{"D":["<T as DataBuf>"]}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // value::ValueA<T, D>
++p0.deref_mut();
++<value::ValueA<T, D> as std::ops::DerefMut>::deref_mut(p0);
++crate::<value::ValueA<T, D> as std::ops::DerefMut>::deref_mut(p0);
++<value::ValueA<T, D>>::deref_mut(p0);
+-----------------
+src/value.rs <value::ValueA<T, D> as std::ops::Drop>::drop
+deps:{"<T as DataBuf>":{"T":["std::marker::Copy","std::marker::Sized","std::default::Default","std::convert::AsRef","std::convert::AsMut"]},"<value::ValueA<T, D> as std::ops::Drop>::drop":{"D":["std::marker::Sized","DataBuf"]}}
+candidates:{"<T as DataBuf>":{"T":["std::vec::Vec<T, A>"]},"<value::ValueA<T, D> as std::ops::Drop>::drop":{"D":["<T as DataBuf>"]}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // value::ValueA<T, D>
++p0.drop();
++<value::ValueA<T, D> as std::ops::Drop>::drop(p0);
++crate::<value::ValueA<T, D> as std::ops::Drop>::drop(p0);
++<value::ValueA<T, D>>::drop(p0);
+-----------------
+src/value/trait_impls.rs value::trait_impls::<impl std::future::Future for value::ValueA<T, D>>::poll
+deps:{"<&mut F as std::future::Future>":{},"<T as DataBuf>":{"T":["std::default::Default","std::marker::Sized","std::marker::Copy","std::convert::AsMut","std::convert::AsRef"]},"value::ValueA":{"D":["DataBuf","std::marker::Sized"]},"value::trait_impls::<impl std::future::Future for value::ValueA<T, D>>::poll":{"D":["DataBuf","std::marker::Sized"],"T":["std::future::Future"]}}
+candidates:{"<&mut F as std::future::Future>":{},"<T as DataBuf>":{"T":["std::vec::Vec<T, A>"]},"value::ValueA":{"D":["<T as DataBuf>"]},"value::trait_impls::<impl std::future::Future for value::ValueA<T, D>>::poll":{"D":["<T as DataBuf>"],"T":["<&mut F as std::future::Future>","value::ValueA"]}}
+let mut p0 = MaybeUninit::uninit().assume_init(); // std::pin::Pin<&mut value::ValueA<T, D>>
+let mut p1 = &mut  MaybeUninit::uninit().assume_init(); // std::task::Context<'_>
++p0.poll(p1);
++value::trait_impls::<impl std::future::Future for value::ValueA<T, D>>::poll(p0, p1);
++crate::value::trait_impls::<impl std::future::Future for value::ValueA<T, D>>::poll(p0, p1);
++<value::ValueA<T, D>>::poll(p0, p1);
+-----------------
+src/value/trait_impls.rs value::trait_impls::<impl std::fmt::Display for value::ValueA<T, D>>::fmt
+deps:{"<&T as std::fmt::Display>":{},"<&mut T as std::fmt::Display>":{},"<T as DataBuf>":{"T":["std::convert::AsRef","std::marker::Sized","std::convert::AsMut","std::marker::Copy","std::default::Default"]},"value::ValueA":{"D":["DataBuf","std::marker::Sized"]},"value::trait_impls::<impl std::fmt::Display for value::ValueA<T, D>>::fmt":{"D":["DataBuf","std::marker::Sized"],"T":["std::fmt::Display"]}}
+candidates:{"<&T as std::fmt::Display>":{},"<&mut T as std::fmt::Display>":{},"<T as DataBuf>":{"T":["std::vec::Vec<T, A>"]},"value::ValueA":{"D":["<T as DataBuf>"]},"value::trait_impls::<impl std::fmt::Display for value::ValueA<T, D>>::fmt":{"D":["<T as DataBuf>"],"T":["value::ValueA","<&mut T as std::fmt::Display>"]}}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // value::ValueA<T, D>
+let mut p1 = &mut  MaybeUninit::uninit().assume_init(); // std::fmt::Formatter<'_>
++format!("{}", p0);
++p0.fmt(p1);
++value::trait_impls::<impl std::fmt::Display for value::ValueA<T, D>>::fmt(p0, p1);
++crate::value::trait_impls::<impl std::fmt::Display for value::ValueA<T, D>>::fmt(p0, p1);
++<value::ValueA<T, D>>::fmt(p0, p1);
+-----------------
+src/value/trait_impls.rs value::trait_impls::<impl std::fmt::Debug for value::ValueA<T, D>>::fmt
+deps:{"<&T as std::fmt::Debug>":{},"<&mut T as std::fmt::Debug>":{},"<*const T as std::fmt::Debug>":{},"<*mut T as std::fmt::Debug>":{},"<T as DataBuf>":{"T":["std::convert::AsMut","std::marker::Copy","std::convert::AsRef","std::marker::Sized","std::default::Default"]},"value::ValueA":{"D":["DataBuf","std::marker::Sized"]},"value::trait_impls::<impl std::fmt::Debug for value::ValueA<T, D>>::fmt":{"D":["std::marker::Sized","DataBuf"],"T":["std::fmt::Debug"]}}
+candidates:{"<&T as std::fmt::Debug>":{},"<&mut T as std::fmt::Debug>":{},"<*const T as std::fmt::Debug>":{},"<*mut T as std::fmt::Debug>":{},"<T as DataBuf>":{"T":["std::vec::Vec<T, A>"]},"value::ValueA":{"D":["<T as DataBuf>"]},"value::trait_impls::<impl std::fmt::Debug for value::ValueA<T, D>>::fmt":{"D":["<T as DataBuf>"],"T":["value::ValueA","<*const T as std::fmt::Debug>"]}}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // value::ValueA<T, D>
+let mut p1 = &mut  MaybeUninit::uninit().assume_init(); // std::fmt::Formatter<'_>
++format!("{:?}", p0);
++p0.fmt(p1);
++value::trait_impls::<impl std::fmt::Debug for value::ValueA<T, D>>::fmt(p0, p1);
++crate::value::trait_impls::<impl std::fmt::Debug for value::ValueA<T, D>>::fmt(p0, p1);
++<value::ValueA<T, D>>::fmt(p0, p1);
+-----------------
+src/stack.rs <stack::StackA<T, D> as std::ops::Drop>::drop
+deps:{"<T as DataBuf>":{"T":["std::marker::Copy","std::marker::Sized","std::convert::AsMut","std::default::Default","std::convert::AsRef"]},"<stack::StackA<T, D> as std::ops::Drop>::drop":{"D":["std::marker::Sized","DataBuf"]}}
+candidates:{"<T as DataBuf>":{"T":["std::vec::Vec<T, A>"]},"<stack::StackA<T, D> as std::ops::Drop>::drop":{"D":["<T as DataBuf>"]}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // stack::StackA<T, D>
++p0.drop();
++<stack::StackA<T, D> as std::ops::Drop>::drop(p0);
++crate::<stack::StackA<T, D> as std::ops::Drop>::drop(p0);
++<stack::StackA<T, D>>::drop(p0);
+-----------------
+src/stack.rs <stack::StackA<T, D> as std::default::Default>::default
+deps:{"<T as DataBuf>":{"T":["std::marker::Sized","std::default::Default","std::convert::AsMut","std::convert::AsRef","std::marker::Copy"]},"<stack::StackA<T, D> as std::default::Default>::default":{"D":["std::marker::Sized","DataBuf"]}}
+candidates:{"<T as DataBuf>":{"T":["std::vec::Vec<T, A>"]},"<stack::StackA<T, D> as std::default::Default>::default":{"D":["<T as DataBuf>"]}}
++<stack::StackA<T, D> as std::default::Default>::default();
++crate::<stack::StackA<T, D> as std::default::Default>::default();
++<stack::StackA<T, D>>::default();
+-----------------
+src/stack.rs stack::StackA::<T, D>::new
+deps:{"<T as DataBuf>":{"T":["std::convert::AsMut","std::marker::Sized","std::marker::Copy","std::convert::AsRef","std::default::Default"]},"stack::StackA::<T, D>::new":{"D":["std::marker::Sized","DataBuf"]}}
+candidates:{"<T as DataBuf>":{"T":["std::vec::Vec<T, A>"]},"stack::StackA::<T, D>::new":{"D":["<T as DataBuf>"]}}
++stack::StackA::<T, D>::new();
++crate::stack::StackA::<T, D>::new();
++<stack::StackA<T, D>>::new();
+-----------------
+src/stack.rs stack::StackA::<T, D>::is_empty
+deps:{"<T as DataBuf>":{"T":["std::marker::Sized","std::convert::AsRef","std::marker::Copy","std::default::Default","std::convert::AsMut"]},"stack::StackA::<T, D>::is_empty":{"D":["DataBuf","std::marker::Sized"]}}
+candidates:{"<T as DataBuf>":{"T":["std::vec::Vec<T, A>"]},"stack::StackA::<T, D>::is_empty":{"D":["<T as DataBuf>"]}}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // stack::StackA<T, D>
++p0.is_empty();
++stack::StackA::<T, D>::is_empty(p0);
++crate::stack::StackA::<T, D>::is_empty(p0);
++<stack::StackA<T, D>>::is_empty(p0);
+-----------------
+src/stack.rs stack::StackA::<T, D>::meta_words
+deps:{"<T as DataBuf>":{"T":["std::marker::Copy","std::default::Default","std::convert::AsMut","std::convert::AsRef","std::marker::Sized"]},"stack::StackA::<T, D>::meta_words":{"D":["DataBuf","std::marker::Sized"]}}
+candidates:{"<T as DataBuf>":{"T":["std::vec::Vec<T, A>"]},"stack::StackA::<T, D>::meta_words":{"D":["<T as DataBuf>"]}}
++stack::StackA::<T, D>::meta_words();
++crate::stack::StackA::<T, D>::meta_words();
++<stack::StackA<T, D>>::meta_words();
+-----------------
+src/stack.rs stack::StackA::<T, D>::push_inner
+deps:{"<T as DataBuf>":{"T":["std::marker::Sized","std::convert::AsMut","std::marker::Copy","std::default::Default","std::convert::AsRef"]},"stack::StackA::<T, D>::push_inner":{"D":["DataBuf","std::marker::Sized"]}}
+candidates:{"<T as DataBuf>":{"T":["std::vec::Vec<T, A>"]},"stack::StackA::<T, D>::push_inner":{"D":["<T as DataBuf>"]}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // stack::StackA<T, D>
+let mut p1 = & MaybeUninit::uninit().assume_init(); // T
++p0.push_inner(p1);
++stack::StackA::<T, D>::push_inner(p0, p1);
++crate::stack::StackA::<T, D>::push_inner(p0, p1);
++<stack::StackA<T, D>>::push_inner(p0, p1);
+-----------------
+src/stack.rs stack::StackA::<T, D>::push_stable
+deps:{"<T as DataBuf>":{"T":["std::convert::AsRef","std::convert::AsMut","std::marker::Sized","std::marker::Copy","std::default::Default"]},"stack::StackA::<T, D>::push_stable":{"D":["std::marker::Sized","DataBuf"],"F":["std::marker::Sized","std::ops::FnOnce"],"U":["std::marker::Sized"]},"std::ops::function::impls::<impl std::ops::FnOnce<A> for &F>":{},"std::ops::function::impls::<impl std::ops::FnOnce<A> for &mut F>":{}}
+candidates:{"<T as DataBuf>":{"T":["std::vec::Vec<T, A>"]},"stack::StackA::<T, D>::push_stable":{"D":["<T as DataBuf>"],"F":["core::str::IsAsciiWhitespace","core::str::CharEscapeUnicode","core::const_closure::ConstFnMutClosure<(&'a mut A, &'a mut B, &'a mut C), Function>","core::const_closure::ConstFnMutClosure<(&'a mut A, &'a mut B), Function>","core::str::LinesAnyMap","core::str::UnsafeBytesToStr","core::str::CharEscapeDebugContinue","core::str::IsWhitespace","std::panic::AssertUnwindSafe<F>","core::str::BytesIsNotEmpty","core::str::CharEscapeDefault","std::ops::function::impls::<impl std::ops::FnOnce<A> for &mut F>","core::const_closure::ConstFnMutClosure<(&'a mut A, &'a mut B, &'a mut C, &'a mut D, &'a mut E), Function>","core::const_closure::ConstFnMutClosure<(&'a mut A, &'a mut B, &'a mut C, &'a mut D), Function>","core::const_closure::ConstFnMutClosure<&'a mut A, Function>","core::str::IsNotEmpty","std::boxed::Box<F, A>","core::slice::ascii::EscapeByte"],"U":["RUG_ANY"]},"std::ops::function::impls::<impl std::ops::FnOnce<A> for &F>":{},"std::ops::function::impls::<impl std::ops::FnOnce<A> for &mut F>":{}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // stack::StackA<T, D>
+let mut p1 = MaybeUninit::uninit().assume_init(); // U
+let mut p2 = MaybeUninit::uninit().assume_init(); // F
++p0.push_stable(p1, p2);
++stack::StackA::<T, D>::push_stable(p0, p1, p2);
++crate::stack::StackA::<T, D>::push_stable(p0, p1, p2);
++<stack::StackA<T, D>>::push_stable(p0, p1, p2);
+-----------------
+src/stack.rs stack::StackA::<T, D>::top_raw
+deps:{"<T as DataBuf>":{"T":["std::default::Default","std::marker::Copy","std::convert::AsRef","std::marker::Sized","std::convert::AsMut"]},"stack::StackA::<T, D>::top_raw":{"D":["DataBuf","std::marker::Sized"]}}
+candidates:{"<T as DataBuf>":{"T":["std::vec::Vec<T, A>"]},"stack::StackA::<T, D>::top_raw":{"D":["<T as DataBuf>"]}}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // stack::StackA<T, D>
++p0.top_raw();
++stack::StackA::<T, D>::top_raw(p0);
++crate::stack::StackA::<T, D>::top_raw(p0);
++<stack::StackA<T, D>>::top_raw(p0);
+-----------------
+src/stack.rs stack::StackA::<T, D>::top
+deps:{"<T as DataBuf>":{"T":["std::convert::AsRef","std::marker::Copy","std::marker::Sized","std::default::Default","std::convert::AsMut"]},"stack::StackA::<T, D>::top":{"D":["std::marker::Sized","DataBuf"]}}
+candidates:{"<T as DataBuf>":{"T":["std::vec::Vec<T, A>"]},"stack::StackA::<T, D>::top":{"D":["<T as DataBuf>"]}}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // stack::StackA<T, D>
++p0.top();
++stack::StackA::<T, D>::top(p0);
++crate::stack::StackA::<T, D>::top(p0);
++<stack::StackA<T, D>>::top(p0);
+-----------------
+src/stack.rs stack::StackA::<T, D>::top_mut
+deps:{"<T as DataBuf>":{"T":["std::convert::AsMut","std::convert::AsRef","std::marker::Copy","std::marker::Sized","std::default::Default"]},"stack::StackA::<T, D>::top_mut":{"D":["std::marker::Sized","DataBuf"]}}
+candidates:{"<T as DataBuf>":{"T":["std::vec::Vec<T, A>"]},"stack::StackA::<T, D>::top_mut":{"D":["<T as DataBuf>"]}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // stack::StackA<T, D>
++p0.top_mut();
++stack::StackA::<T, D>::top_mut(p0);
++crate::stack::StackA::<T, D>::top_mut(p0);
++<stack::StackA<T, D>>::top_mut(p0);
+-----------------
+src/stack.rs stack::StackA::<T, D>::pop
+deps:{"<T as DataBuf>":{"T":["std::default::Default","std::convert::AsRef","std::marker::Copy","std::marker::Sized","std::convert::AsMut"]},"stack::StackA::<T, D>::pop":{"D":["DataBuf","std::marker::Sized"]}}
+candidates:{"<T as DataBuf>":{"T":["std::vec::Vec<T, A>"]},"stack::StackA::<T, D>::pop":{"D":["<T as DataBuf>"]}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // stack::StackA<T, D>
++p0.pop();
++stack::StackA::<T, D>::pop(p0);
++crate::stack::StackA::<T, D>::pop(p0);
++<stack::StackA<T, D>>::pop(p0);
+-----------------
+src/stack.rs stack::StackA::<str, D>::push_str
+deps:{"<T as DataBuf>":{"T":["std::convert::AsRef","std::marker::Sized","std::convert::AsMut","std::marker::Copy","std::default::Default"]},"stack::StackA::<str, D>::push_str":{"D":["std::marker::Sized","DataBuf"]}}
+candidates:{"<T as DataBuf>":{"T":["std::vec::Vec<T, A>"]},"stack::StackA::<str, D>::push_str":{"D":["<T as DataBuf>"]}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // stack::StackA<str, D>
+let mut p1 = "sample"; // None+&str
++p0.push_str(&p1);
++stack::StackA::<str, D>::push_str(p0, &p1);
++crate::stack::StackA::<str, D>::push_str(p0, &p1);
++<stack::StackA<str, D>>::push_str(p0, &p1);
+-----------------
+src/stack.rs stack::StackA::<[T], D>::push_cloned
+deps:{"<T as DataBuf>":{"T":["std::convert::AsMut","std::convert::AsRef","std::marker::Sized","std::marker::Copy","std::default::Default"]},"stack::StackA::<[T], D>::push_cloned":{"D":["DataBuf","std::marker::Sized"],"T":["std::clone::Clone","std::marker::Sized"]},"std::clone::impls::<impl std::clone::Clone for &T>":{},"std::clone::impls::<impl std::clone::Clone for &mut T>":{},"std::clone::impls::<impl std::clone::Clone for *const T>":{},"std::clone::impls::<impl std::clone::Clone for *mut T>":{}}
+candidates:{"<T as DataBuf>":{"T":["std::vec::Vec<T, A>"]},"stack::StackA::<[T], D>::push_cloned":{"D":["<T as DataBuf>"],"T":["i16","std::clone::impls::<impl std::clone::Clone for &T>","u64","i8","i64","u32","u8","char","bool","usize","u16","i32"]},"std::clone::impls::<impl std::clone::Clone for &T>":{},"std::clone::impls::<impl std::clone::Clone for &mut T>":{},"std::clone::impls::<impl std::clone::Clone for *const T>":{},"std::clone::impls::<impl std::clone::Clone for *mut T>":{}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // stack::StackA<[T], D>
+let mut p1 = & MaybeUninit::uninit().assume_init(); // [T]
++p0.push_cloned(p1);
++stack::StackA::<[T], D>::push_cloned(p0, p1);
++crate::stack::StackA::<[T], D>::push_cloned(p0, p1);
++<stack::StackA<[T], D>>::push_cloned(p0, p1);

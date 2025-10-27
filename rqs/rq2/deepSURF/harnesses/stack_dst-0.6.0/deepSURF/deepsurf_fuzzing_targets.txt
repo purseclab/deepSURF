@@ -1,0 +1,104 @@
+deepSURF: Generated Targets to be Fuzzed
+------------------------------------------------------------------------------------------------------------------------------------
+  StableURAPI: top::/home/cdc/SURF/deepSURF-big-experiment-harnesses/stack_dst-0.6.0/src/stack.rs::138,
+    - URAPI: DefId(0:105 ~ stack_dst[36ca]::stack::{impl#2}::top_mut),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * stack_dst_fuzz_7940063609948144067_deepseek-r1_turn6
+      * stack_dst_fuzz_1460739638181661683_deepseek-r1_turn2
+      * stack_dst_fuzz_687243949827474182_deepseek-r1_turn5
+      * stack_dst_fuzz_14639315041897569475_deepseek-r1_turn3
+      * stack_dst_fuzz_8296674032427946214_deepseek-r1_turn5
+      * stack_dst_fuzz_5075964383736025427_deepseek-r1_turn5
+      * stack_dst_fuzz_7870228855139257218_deepseek-r1_turn6
+      * stack_dst_fuzz_4066434920238341334_deepseek-r1_turn3
+      * stack_dst_fuzz_13719959407265914623_deepseek-r1_turn5
+      * stack_dst_fuzz_15209733840538193885_deepseek-r1_turn3
+      * stack_dst_fuzz_12250731059273906743_deepseek-r1_turn5
+  StableURAPI: pop::/home/cdc/SURF/deepSURF-big-experiment-harnesses/stack_dst-0.6.0/src/stack.rs::148,
+    - URAPI: DefId(0:105 ~ stack_dst[36ca]::stack::{impl#2}::top_mut),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * stack_dst_fuzz_12250731059273906743_deepseek-r1_turn5
+      * stack_dst_fuzz_8296674032427946214_deepseek-r1_turn5
+      * stack_dst_fuzz_1460739638181661683_deepseek-r1_turn2
+      * stack_dst_fuzz_14639315041897569475_deepseek-r1_turn3
+      * stack_dst_fuzz_13719959407265914623_deepseek-r1_turn5
+      * stack_dst_fuzz_7870228855139257218_deepseek-r1_turn6
+      * stack_dst_fuzz_4066434920238341334_deepseek-r1_turn3
+      * stack_dst_fuzz_5075964383736025427_deepseek-r1_turn5
+      * stack_dst_fuzz_15209733840538193885_deepseek-r1_turn3
+      * stack_dst_fuzz_687243949827474182_deepseek-r1_turn5
+      * stack_dst_fuzz_7940063609948144067_deepseek-r1_turn6
+  StableURAPI: deref::/home/cdc/SURF/deepSURF-big-experiment-harnesses/stack_dst-0.6.0/src/value.rs::133,
+    - URAPI: DefId(0:67 ~ stack_dst[36ca]::value::trait_impls::{impl#1}::fmt),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * stack_dst_fuzz_7870228855139257218_deepseek-r1_turn6
+      * stack_dst_fuzz_8296674032427946214_deepseek-r1_turn5
+      * stack_dst_fuzz_4066434920238341334_deepseek-r1_turn3
+  StableURAPI: push_stable::/home/cdc/SURF/deepSURF-big-experiment-harnesses/stack_dst-0.6.0/src/stack.rs::102,
+    - URAPI: DefId(0:105 ~ stack_dst[36ca]::stack::{impl#2}::top_mut),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * stack_dst_fuzz_687243949827474182_deepseek-r1_turn5
+      * stack_dst_fuzz_15209733840538193885_deepseek-r1_turn3
+      * stack_dst_fuzz_8296674032427946214_deepseek-r1_turn5
+      * stack_dst_fuzz_14639315041897569475_deepseek-r1_turn3
+      * stack_dst_fuzz_5075964383736025427_deepseek-r1_turn5
+      * stack_dst_fuzz_1460739638181661683_deepseek-r1_turn2
+      * stack_dst_fuzz_7870228855139257218_deepseek-r1_turn6
+      * stack_dst_fuzz_13719959407265914623_deepseek-r1_turn5
+      * stack_dst_fuzz_12250731059273906743_deepseek-r1_turn5
+  StableURAPI: push_cloned::/home/cdc/SURF/deepSURF-big-experiment-harnesses/stack_dst-0.6.0/src/stack.rs::184,
+    - URAPI: DefId(0:67 ~ stack_dst[36ca]::value::trait_impls::{impl#1}::fmt),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * stack_dst_fuzz_4066434920238341334_deepseek-r1_turn3
+      * stack_dst_fuzz_7870228855139257218_deepseek-r1_turn6
+      * stack_dst_fuzz_15209733840538193885_deepseek-r1_turn3
+      * stack_dst_fuzz_5075964383736025427_deepseek-r1_turn5
+  StableURAPI: top_mut::/home/cdc/SURF/deepSURF-big-experiment-harnesses/stack_dst-0.6.0/src/stack.rs::143,
+    - URAPI: DefId(0:105 ~ stack_dst[36ca]::stack::{impl#2}::top_mut),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * stack_dst_fuzz_1460739638181661683_deepseek-r1_turn2
+      * stack_dst_fuzz_15209733840538193885_deepseek-r1_turn3
+      * stack_dst_fuzz_13719959407265914623_deepseek-r1_turn5
+      * stack_dst_fuzz_7940063609948144067_deepseek-r1_turn6
+      * stack_dst_fuzz_7870228855139257218_deepseek-r1_turn6
+      * stack_dst_fuzz_14639315041897569475_deepseek-r1_turn3
+      * stack_dst_fuzz_687243949827474182_deepseek-r1_turn5
+      * stack_dst_fuzz_12250731059273906743_deepseek-r1_turn5
+      * stack_dst_fuzz_4066434920238341334_deepseek-r1_turn3
+      * stack_dst_fuzz_5075964383736025427_deepseek-r1_turn5
+      * stack_dst_fuzz_8296674032427946214_deepseek-r1_turn5
+  StableURAPI: push_str::/home/cdc/SURF/deepSURF-big-experiment-harnesses/stack_dst-0.6.0/src/stack.rs::167,
+    - URAPI: DefId(0:105 ~ stack_dst[36ca]::stack::{impl#2}::top_mut),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * stack_dst_fuzz_8296674032427946214_deepseek-r1_turn5
+      * stack_dst_fuzz_4066434920238341334_deepseek-r1_turn3
+      * stack_dst_fuzz_5075964383736025427_deepseek-r1_turn5
+      * stack_dst_fuzz_7940063609948144067_deepseek-r1_turn6
+      * stack_dst_fuzz_15209733840538193885_deepseek-r1_turn3
+      * stack_dst_fuzz_14639315041897569475_deepseek-r1_turn3
+  StableURAPI: new_stable::/home/cdc/SURF/deepSURF-big-experiment-harnesses/stack_dst-0.6.0/src/value.rs::40,
+    - URAPI: DefId(0:67 ~ stack_dst[36ca]::value::trait_impls::{impl#1}::fmt),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * stack_dst_fuzz_7870228855139257218_deepseek-r1_turn6
+      * stack_dst_fuzz_13719959407265914623_deepseek-r1_turn5
+      * stack_dst_fuzz_1460739638181661683_deepseek-r1_turn2
+      * stack_dst_fuzz_687243949827474182_deepseek-r1_turn5
+      * stack_dst_fuzz_8296674032427946214_deepseek-r1_turn5
+      * stack_dst_fuzz_4066434920238341334_deepseek-r1_turn3
+------------------------------------------------------------------------------------------------------------------------------------

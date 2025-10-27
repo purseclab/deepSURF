@@ -1,0 +1,1 @@
+Function: VecExt::insert_slice_clone

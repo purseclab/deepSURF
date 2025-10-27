@@ -1,0 +1,378 @@
+     Removed 204 files, 116.4MiB total
+   Compiling libc v0.2.175
+   Compiling semver v1.0.26
+   Compiling gcc v0.3.55
+   Compiling home v0.5.5
+   Compiling log v0.4.28
+   Compiling rustc-serialize v0.3.25
+   Compiling xdg v2.5.2
+   Compiling byteorder v0.5.3
+   Compiling global_data v0.1.0 (/home/cdc/deepSURF-sp26-artifacts/artifact_code/global_data)
+   Compiling afl v0.15.7
+   Compiling log v0.3.9
+   Compiling rust-crypto v0.2.36
+   Compiling rustc_version v0.4.1
+   Compiling rand v0.4.6
+   Compiling time v0.1.45
+   Compiling rand v0.3.23
+   Compiling rdiff v0.1.2 (/home/cdc/deepSURF-sp26-artifacts/artifact_data/dataset/erasan_crates/rdiff-0.1.2)
+warning: use of deprecated macro `try`: use the `?` operator instead
+  --> /home/cdc/deepSURF-sp26-artifacts/artifact_data/dataset/erasan_crates/rdiff-0.1.2/src/window.rs:11:20
+   |
+11 |         let size = try!(reader.read(front.as_mut_slice()));
+   |                    ^^^
+   |
+   = note: `#[warn(deprecated)]` on by default
+
+warning: use of deprecated macro `try`: use the `?` operator instead
+  --> /home/cdc/deepSURF-sp26-artifacts/artifact_data/dataset/erasan_crates/rdiff-0.1.2/src/window.rs:15:20
+   |
+15 |         let size = try!(reader.read(back.as_mut_slice()));
+   |                    ^^^
+
+warning: use of deprecated macro `try`: use the `?` operator instead
+  --> /home/cdc/deepSURF-sp26-artifacts/artifact_data/dataset/erasan_crates/rdiff-0.1.2/src/window.rs:38:13
+   |
+38 |             try!(self.load_next_block());
+   |             ^^^
+
+warning: use of deprecated macro `try`: use the `?` operator instead
+  --> /home/cdc/deepSURF-sp26-artifacts/artifact_data/dataset/erasan_crates/rdiff-0.1.2/src/window.rs:58:20
+   |
+58 |         let size = try!(self.reader.read(self.back.as_mut_slice()));
+   |                    ^^^
+
+warning: use of deprecated macro `try`: use the `?` operator instead
+  --> /home/cdc/deepSURF-sp26-artifacts/artifact_data/dataset/erasan_crates/rdiff-0.1.2/src/hashing.rs:87:29
+   |
+87 |         let mut read_size = try!(data_source.read(&mut block));
+   |                             ^^^
+
+warning: use of deprecated macro `try`: use the `?` operator instead
+   --> /home/cdc/deepSURF-sp26-artifacts/artifact_data/dataset/erasan_crates/rdiff-0.1.2/src/hashing.rs:100:25
+    |
+100 |             read_size = try!(data_source.read(&mut block));
+    |                         ^^^
+
+warning: use of deprecated macro `try`: use the `?` operator instead
+   --> /home/cdc/deepSURF-sp26-artifacts/artifact_data/dataset/erasan_crates/rdiff-0.1.2/src/hashing.rs:142:26
+    |
+142 |         let mut window = try!(Window::new(new_data, self.block_size));
+    |                          ^^^
+
+warning: use of deprecated macro `try`: use the `?` operator instead
+   --> /home/cdc/deepSURF-sp26-artifacts/artifact_data/dataset/erasan_crates/rdiff-0.1.2/src/hashing.rs:185:40
+    |
+185 |                     let (tail, head) = try!(window.advance());
+    |                                        ^^^
+
+warning: use of deprecated macro `try`: use the `?` operator instead
+   --> /home/cdc/deepSURF-sp26-artifacts/artifact_data/dataset/erasan_crates/rdiff-0.1.2/src/hashing.rs:208:36
+    |
+208 |                 let (tail, head) = try!(window.advance());
+    |                                    ^^^
+
+warning: use of deprecated macro `try`: use the `?` operator instead
+   --> /home/cdc/deepSURF-sp26-artifacts/artifact_data/dataset/erasan_crates/rdiff-0.1.2/src/hashing.rs:234:29
+    |
+234 |         let mut read_size = try!(data_source.read(&mut block));
+    |                             ^^^
+
+warning: use of deprecated macro `try`: use the `?` operator instead
+   --> /home/cdc/deepSURF-sp26-artifacts/artifact_data/dataset/erasan_crates/rdiff-0.1.2/src/hashing.rs:250:25
+    |
+250 |             read_size = try!(data_source.read(&mut block));
+    |                         ^^^
+
+warning: use of deprecated macro `try`: use the `?` operator instead
+   --> /home/cdc/deepSURF-sp26-artifacts/artifact_data/dataset/erasan_crates/rdiff-0.1.2/src/hashing.rs:261:9
+    |
+261 |         try!(writer.write(&int_buf));
+    |         ^^^
+
+warning: use of deprecated macro `try`: use the `?` operator instead
+   --> /home/cdc/deepSURF-sp26-artifacts/artifact_data/dataset/erasan_crates/rdiff-0.1.2/src/hashing.rs:263:9
+    |
+263 |         try!(writer.write(&int_buf));
+    |         ^^^
+
+warning: use of deprecated macro `try`: use the `?` operator instead
+   --> /home/cdc/deepSURF-sp26-artifacts/artifact_data/dataset/erasan_crates/rdiff-0.1.2/src/hashing.rs:275:13
+    |
+275 |             try!(writer.write(&int_buf));
+    |             ^^^
+
+warning: use of deprecated macro `try`: use the `?` operator instead
+   --> /home/cdc/deepSURF-sp26-artifacts/artifact_data/dataset/erasan_crates/rdiff-0.1.2/src/hashing.rs:276:13
+    |
+276 |             try!(writer.write(strong));
+    |             ^^^
+
+warning: use of deprecated macro `try`: use the `?` operator instead
+   --> /home/cdc/deepSURF-sp26-artifacts/artifact_data/dataset/erasan_crates/rdiff-0.1.2/src/hashing.rs:286:9
+    |
+286 |         try!(reader.read(&mut int_buf));
+    |         ^^^
+
+warning: use of deprecated macro `try`: use the `?` operator instead
+   --> /home/cdc/deepSURF-sp26-artifacts/artifact_data/dataset/erasan_crates/rdiff-0.1.2/src/hashing.rs:288:9
+    |
+288 |         try!(reader.read(&mut int_buf));
+    |         ^^^
+
+warning: use of deprecated macro `try`: use the `?` operator instead
+   --> /home/cdc/deepSURF-sp26-artifacts/artifact_data/dataset/erasan_crates/rdiff-0.1.2/src/hashing.rs:295:13
+    |
+295 |             try!(reader.read(&mut int_buf));
+    |             ^^^
+
+warning: use of deprecated macro `try`: use the `?` operator instead
+   --> /home/cdc/deepSURF-sp26-artifacts/artifact_data/dataset/erasan_crates/rdiff-0.1.2/src/hashing.rs:297:13
+    |
+297 |             try!(reader.read(&mut strong_hash));
+    |             ^^^
+
+warning: use of deprecated macro `try`: use the `?` operator instead
+   --> /home/cdc/deepSURF-sp26-artifacts/artifact_data/dataset/erasan_crates/rdiff-0.1.2/src/lib.rs:191:9
+    |
+191 |         try!(file.seek(SeekFrom::Start(0)));
+    |         ^^^
+
+warning: use of deprecated macro `try`: use the `?` operator instead
+   --> /home/cdc/deepSURF-sp26-artifacts/artifact_data/dataset/erasan_crates/rdiff-0.1.2/src/lib.rs:221:9
+    |
+221 |         try!(file.seek(SeekFrom::Start(0)));
+    |         ^^^
+
+warning: use of deprecated macro `try`: use the `?` operator instead
+   --> /home/cdc/deepSURF-sp26-artifacts/artifact_data/dataset/erasan_crates/rdiff-0.1.2/src/lib.rs:222:9
+    |
+222 |         try!(file.set_len(new_bytes.len() as u64));
+    |         ^^^
+
+warning: use of deprecated macro `try`: use the `?` operator instead
+   --> /home/cdc/deepSURF-sp26-artifacts/artifact_data/dataset/erasan_crates/rdiff-0.1.2/src/lib.rs:196:32
+    |
+196 |                 new_bytes.push(try!(old_bytes.next().unwrap()).clone());
+    |                                ^^^
+
+warning: use of deprecated macro `try`: use the `?` operator instead
+   --> /home/cdc/deepSURF-sp26-artifacts/artifact_data/dataset/erasan_crates/rdiff-0.1.2/src/lib.rs:203:28
+    |
+203 |             new_bytes.push(try!(byte));
+    |                            ^^^
+
+warning: use of deprecated macro `try`: use the `?` operator instead
+   --> /home/cdc/deepSURF-sp26-artifacts/artifact_data/dataset/erasan_crates/rdiff-0.1.2/src/lib.rs:232:9
+    |
+232 |         try!(writer.write(&mut int_buf));
+    |         ^^^
+
+warning: use of deprecated macro `try`: use the `?` operator instead
+   --> /home/cdc/deepSURF-sp26-artifacts/artifact_data/dataset/erasan_crates/rdiff-0.1.2/src/lib.rs:237:9
+    |
+237 |         try!(writer.write(&mut int_buf));
+    |         ^^^
+
+warning: use of deprecated macro `try`: use the `?` operator instead
+   --> /home/cdc/deepSURF-sp26-artifacts/artifact_data/dataset/erasan_crates/rdiff-0.1.2/src/lib.rs:234:13
+    |
+234 |             try!(insert.compress_to(writer));
+    |             ^^^
+
+warning: use of deprecated macro `try`: use the `?` operator instead
+   --> /home/cdc/deepSURF-sp26-artifacts/artifact_data/dataset/erasan_crates/rdiff-0.1.2/src/lib.rs:239:13
+    |
+239 |             try!(delete.compress_to(writer));
+    |             ^^^
+
+warning: use of deprecated macro `try`: use the `?` operator instead
+   --> /home/cdc/deepSURF-sp26-artifacts/artifact_data/dataset/erasan_crates/rdiff-0.1.2/src/lib.rs:250:9
+    |
+250 |         try!(reader.read_exact(&mut int_buf));
+    |         ^^^
+
+warning: use of deprecated macro `try`: use the `?` operator instead
+   --> /home/cdc/deepSURF-sp26-artifacts/artifact_data/dataset/erasan_crates/rdiff-0.1.2/src/lib.rs:256:9
+    |
+256 |         try!(reader.read_exact(&mut int_buf));
+    |         ^^^
+
+warning: use of deprecated macro `try`: use the `?` operator instead
+   --> /home/cdc/deepSURF-sp26-artifacts/artifact_data/dataset/erasan_crates/rdiff-0.1.2/src/lib.rs:299:9
+    |
+299 |         try!(writer.write(&int_buf));
+    |         ^^^
+
+warning: use of deprecated macro `try`: use the `?` operator instead
+   --> /home/cdc/deepSURF-sp26-artifacts/artifact_data/dataset/erasan_crates/rdiff-0.1.2/src/lib.rs:301:9
+    |
+301 |         try!(writer.write(&int_buf));
+    |         ^^^
+
+warning: use of deprecated macro `try`: use the `?` operator instead
+   --> /home/cdc/deepSURF-sp26-artifacts/artifact_data/dataset/erasan_crates/rdiff-0.1.2/src/lib.rs:302:9
+    |
+302 |         try!(writer.write(&self.data));
+    |         ^^^
+
+warning: use of deprecated macro `try`: use the `?` operator instead
+   --> /home/cdc/deepSURF-sp26-artifacts/artifact_data/dataset/erasan_crates/rdiff-0.1.2/src/lib.rs:310:9
+    |
+310 |         try!(reader.read_exact(&mut int_buf));
+    |         ^^^
+
+warning: use of deprecated macro `try`: use the `?` operator instead
+   --> /home/cdc/deepSURF-sp26-artifacts/artifact_data/dataset/erasan_crates/rdiff-0.1.2/src/lib.rs:312:9
+    |
+312 |         try!(reader.read_exact(&mut int_buf));
+    |         ^^^
+
+warning: use of deprecated macro `try`: use the `?` operator instead
+   --> /home/cdc/deepSURF-sp26-artifacts/artifact_data/dataset/erasan_crates/rdiff-0.1.2/src/lib.rs:316:9
+    |
+316 |         try!(reader.read_exact(&mut data));
+    |         ^^^
+
+warning: use of deprecated macro `try`: use the `?` operator instead
+   --> /home/cdc/deepSURF-sp26-artifacts/artifact_data/dataset/erasan_crates/rdiff-0.1.2/src/lib.rs:344:9
+    |
+344 |         try!(writer.write(&int_buf));
+    |         ^^^
+
+warning: use of deprecated macro `try`: use the `?` operator instead
+   --> /home/cdc/deepSURF-sp26-artifacts/artifact_data/dataset/erasan_crates/rdiff-0.1.2/src/lib.rs:346:9
+    |
+346 |         try!(writer.write(&int_buf));
+    |         ^^^
+
+warning: use of deprecated macro `try`: use the `?` operator instead
+   --> /home/cdc/deepSURF-sp26-artifacts/artifact_data/dataset/erasan_crates/rdiff-0.1.2/src/lib.rs:354:9
+    |
+354 |         try!(reader.read_exact(&mut int_buf));
+    |         ^^^
+
+warning: use of deprecated macro `try`: use the `?` operator instead
+   --> /home/cdc/deepSURF-sp26-artifacts/artifact_data/dataset/erasan_crates/rdiff-0.1.2/src/lib.rs:356:9
+    |
+356 |         try!(reader.read_exact(&mut int_buf));
+    |         ^^^
+
+warning: `rdiff` (lib) generated 40 warnings
+   Compiling rdiff_fuzz_7378658651567291026 v0.1.0 (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#25-rdiff/harness)
+warning: unused import: `std::str::FromStr`
+ --> src/rdiff_fuzz_7378658651567291026.rs:7:5
+  |
+7 | use std::str::FromStr;
+  |     ^^^^^^^^^^^^^^^^^
+  |
+  = note: `#[warn(unused_imports)]` on by default
+
+warning: unused imports: `DerefMut`, `Deref`, `IndexMut`, `Index`
+ --> src/rdiff_fuzz_7378658651567291026.rs:8:16
+  |
+8 | use std::ops::{Deref, DerefMut, Index, IndexMut};
+  |                ^^^^^  ^^^^^^^^  ^^^^^  ^^^^^^^^
+
+warning: the item `TryInto` is imported redundantly
+   --> src/rdiff_fuzz_7378658651567291026.rs:187:9
+    |
+187 |     use std::convert::TryInto;
+    |         ^^^^^^^^^^^^^^^^^^^^^
+   --> /rustc/11f32b73e0dc9287e305b5b9980d24aecdc8c17f/library/std/src/prelude/mod.rs:129:13
+    |
+    = note: the item `TryInto` is already defined here
+
+warning: the item `TryInto` is imported redundantly
+   --> src/rdiff_fuzz_7378658651567291026.rs:194:9
+    |
+194 |     use std::convert::TryInto;
+    |         ^^^^^^^^^^^^^^^^^^^^^
+   --> /rustc/11f32b73e0dc9287e305b5b9980d24aecdc8c17f/library/std/src/prelude/mod.rs:129:13
+    |
+    = note: the item `TryInto` is already defined here
+
+warning: unused variable: `diff`
+   --> src/rdiff_fuzz_7378658651567291026.rs:103:33
+    |
+103 |                     if let Some(diff) = diffs.last_mut() {
+    |                                 ^^^^ help: if this is intentional, prefix it with an underscore: `_diff`
+    |
+    = note: `#[warn(unused_variables)]` on by default
+
+warning: variable `GLOBAL_DATA` should have a snake case name
+  --> src/rdiff_fuzz_7378658651567291026.rs:16:13
+   |
+16 |         let GLOBAL_DATA = global_data.first_half;
+   |             ^^^^^^^^^^^ help: convert the identifier to snake case: `global_data`
+   |
+   = note: `#[warn(non_snake_case)]` on by default
+
+warning: variable `GLOBAL_DATA` should have a snake case name
+  --> src/rdiff_fuzz_7378658651567291026.rs:23:13
+   |
+23 |         let GLOBAL_DATA = match selector {
+   |             ^^^^^^^^^^^ help: convert the identifier to snake case: `global_data`
+
+warning: variable `GLOBAL_DATA` should have a snake case name
+  --> src/rdiff_fuzz_7378658651567291026.rs:37:13
+   |
+37 |         let GLOBAL_DATA = global_data.first_half;
+   |             ^^^^^^^^^^^ help: convert the identifier to snake case: `global_data`
+
+warning: `rdiff_fuzz_7378658651567291026` (bin "rdiff_fuzz_7378658651567291026") generated 8 warnings (run `cargo fix --bin "rdiff_fuzz_7378658651567291026"` to apply 3 suggestions)
+    Finished dev [unoptimized + debuginfo] target(s) in 19.96s
+=================================================================
+==1400898==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x50c00000023f at pc 0x55f46317b909 bp 0x7ffe566651d0 sp 0x7ffe566651c8
+READ of size 1 at 0x50c00000023f thread T0
+    #0 0x55f46317b908  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#25-rdiff/harness/target/x86_64-unknown-linux-gnu/debug/rdiff_fuzz_7378658651567291026+0x10c908) (BuildId: 35a3e3c00acd44cb17068345c62b896025566019)
+    #1 0x55f4631954cf  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#25-rdiff/harness/target/x86_64-unknown-linux-gnu/debug/rdiff_fuzz_7378658651567291026+0x1264cf) (BuildId: 35a3e3c00acd44cb17068345c62b896025566019)
+    #2 0x55f463194160  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#25-rdiff/harness/target/x86_64-unknown-linux-gnu/debug/rdiff_fuzz_7378658651567291026+0x125160) (BuildId: 35a3e3c00acd44cb17068345c62b896025566019)
+    #3 0x55f463181491  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#25-rdiff/harness/target/x86_64-unknown-linux-gnu/debug/rdiff_fuzz_7378658651567291026+0x112491) (BuildId: 35a3e3c00acd44cb17068345c62b896025566019)
+    #4 0x55f463181e00  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#25-rdiff/harness/target/x86_64-unknown-linux-gnu/debug/rdiff_fuzz_7378658651567291026+0x112e00) (BuildId: 35a3e3c00acd44cb17068345c62b896025566019)
+    #5 0x55f4631e1230  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#25-rdiff/harness/target/x86_64-unknown-linux-gnu/debug/rdiff_fuzz_7378658651567291026+0x172230) (BuildId: 35a3e3c00acd44cb17068345c62b896025566019)
+    #6 0x55f463195685  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#25-rdiff/harness/target/x86_64-unknown-linux-gnu/debug/rdiff_fuzz_7378658651567291026+0x126685) (BuildId: 35a3e3c00acd44cb17068345c62b896025566019)
+    #7 0x7fbc7152ad8f  (/lib/x86_64-linux-gnu/libc.so.6+0x29d8f) (BuildId: 490fef8403240c91833978d494d39e537409b92e)
+    #8 0x7fbc7152ae3f  (/lib/x86_64-linux-gnu/libc.so.6+0x29e3f) (BuildId: 490fef8403240c91833978d494d39e537409b92e)
+    #9 0x55f4630b7534  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#25-rdiff/harness/target/x86_64-unknown-linux-gnu/debug/rdiff_fuzz_7378658651567291026+0x48534) (BuildId: 35a3e3c00acd44cb17068345c62b896025566019)
+
+0x50c00000023f is located 0 bytes after 127-byte region [0x50c0000001c0,0x50c00000023f)
+allocated by thread T0 here:
+    #0 0x55f46313e988  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#25-rdiff/harness/target/x86_64-unknown-linux-gnu/debug/rdiff_fuzz_7378658651567291026+0xcf988) (BuildId: 35a3e3c00acd44cb17068345c62b896025566019)
+    #1 0x55f46316d37e  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#25-rdiff/harness/target/x86_64-unknown-linux-gnu/debug/rdiff_fuzz_7378658651567291026+0xfe37e) (BuildId: 35a3e3c00acd44cb17068345c62b896025566019)
+    #2 0x55f4631954cf  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#25-rdiff/harness/target/x86_64-unknown-linux-gnu/debug/rdiff_fuzz_7378658651567291026+0x1264cf) (BuildId: 35a3e3c00acd44cb17068345c62b896025566019)
+    #3 0x55f463181491  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#25-rdiff/harness/target/x86_64-unknown-linux-gnu/debug/rdiff_fuzz_7378658651567291026+0x112491) (BuildId: 35a3e3c00acd44cb17068345c62b896025566019)
+
+SUMMARY: AddressSanitizer: heap-buffer-overflow (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#25-rdiff/harness/target/x86_64-unknown-linux-gnu/debug/rdiff_fuzz_7378658651567291026+0x10c908) (BuildId: 35a3e3c00acd44cb17068345c62b896025566019) 
+Shadow bytes around the buggy address:
+  0x50bfffffff80: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x50c000000000: fa fa fa fa fa fa fa fa fd fd fd fd fd fd fd fd
+  0x50c000000080: fd fd fd fd fd fd fd fa fa fa fa fa fa fa fa fa
+  0x50c000000100: fd fd fd fd fd fd fd fd fd fd fd fd fd fd fd fd
+  0x50c000000180: fa fa fa fa fa fa fa fa 00 00 00 00 00 00 00 00
+=>0x50c000000200: 00 00 00 00 00 00 00[07]fa fa fa fa fa fa fa fa
+  0x50c000000280: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 07
+  0x50c000000300: fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+  0x50c000000380: fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+  0x50c000000400: fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+  0x50c000000480: fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+Shadow byte legend (one shadow byte represents 8 application bytes):
+  Addressable:           00
+  Partially addressable: 01 02 03 04 05 06 07 
+  Heap left redzone:       fa
+  Freed heap region:       fd
+  Stack left redzone:      f1
+  Stack mid redzone:       f2
+  Stack right redzone:     f3
+  Stack after return:      f5
+  Stack use after scope:   f8
+  Global redzone:          f9
+  Global init order:       f6
+  Poisoned by user:        f7
+  Container overflow:      fc
+  Array cookie:            ac
+  Intra object redzone:    bb
+  ASan internal:           fe
+  Left alloca redzone:     ca
+  Right alloca redzone:    cb
+==1400898==ABORTING

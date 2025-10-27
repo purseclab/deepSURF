@@ -1,0 +1,306 @@
+
+Total Stats:
+------------------------------------------------------------------------------------------------------------------------------------
+* URAPI Coverage: 49/60 (81.67%).
+* Targets Compiled: 159/440 (36.14%) in [289.080246379s].
+------------------------------------------------------------------------------------------------------------------------------------
+
+Target Stats:
+------------------------------------------------------------------------------------------------------------------------------------
+* URAPIs w/ ≥ 1ft: 49/60 (81.67%).
+* Average Generation Time per Target: 859.6122869s/49 (17.543107895s).
+
+* URAPIs w/ ≥ 2ft: 48/60 (80.00%).
+* Average Generation Time per Target: 1871.790059477s/48 (38.995626239s).
+
+* URAPIs w/ ≥ 3ft: 35/60 (58.33%).
+* Average Generation Time per Target: 2048.389373907s/35 (58.525410683s).
+
+* URAPIs w/ ≥ 4ft: 27/60 (45.00%).
+* Average Generation Time per Target: 2220.722244969s/27 (82.248972035s).
+
+* URAPIs w/o any compilable targets: 11/60 (18.33%).
+------------------------------------------------------------------------------------------------------------------------------------
+
+Detailed Results: 
+------------------------------------------------------------------------------------------------------------------------------------
+  URAPI: DefId(0:43 ~ toodee[604e]::iter::{impl#5}::nth_back),
+    - Compilable Targets (4/8 ~ 50.00%):
+        * toodee_fuzz_1114601815346140796 [16.142128184s]
+        * toodee_fuzz_6354066218363162365 [38.021435268s]
+        * toodee_fuzz_15581119540057188284 [73.030061946s]
+        * toodee_fuzz_14580990475303332484 [90.120480457s]
+  URAPI: DefId(0:149 ~ toodee[604e]::view::{impl#5}::col),
+    - Compilable Targets (3/4 ~ 75.00%):
+        * toodee_fuzz_11737642845925010239 [22.136595211s]
+        * toodee_fuzz_12176432555316759556 [43.549878952s]
+        * toodee_fuzz_15851119244504863043 [60.872111457s]
+  URAPI: DefId(0:290 ~ toodee[604e]::toodee::{impl#2}::index),
+    - Compilable Targets (2/6 ~ 33.33%):
+        * toodee_fuzz_1265568382197887065 [23.561279011s]
+        * toodee_fuzz_8987340902123800399 [44.234593376s]
+  URAPI: DefId(0:541 ~ toodee[604e]::copy::{impl#1}::copy_from_toodee),
+    - Compilable Targets (0/50 ~ 0.00%):
+  URAPI: DefId(0:58 ~ toodee[604e]::iter::{impl#9}::next),
+    - Compilable Targets (4/7 ~ 57.14%):
+        * toodee_fuzz_14020676884835819438 [12.744658992s]
+        * toodee_fuzz_8059915567950521705 [33.354033134s]
+        * toodee_fuzz_15309104778732659581 [50.931115923s]
+        * toodee_fuzz_16062051770900318291 [79.722331804s]
+  URAPI: DefId(0:296 ~ toodee[604e]::toodee::{impl#4}::index_mut),
+    - Compilable Targets (2/6 ~ 33.33%):
+        * toodee_fuzz_4255359514258592490 [23.948546186s]
+        * toodee_fuzz_6306886115969621765 [44.256270192s]
+  URAPI: DefId(0:309 ~ toodee[604e]::toodee::{impl#6}::view_mut),
+    - Compilable Targets (2/6 ~ 33.33%):
+        * toodee_fuzz_2629216111393568154 [22.857950457s]
+        * toodee_fuzz_12031787510890697202 [43.383578123s]
+  URAPI: DefId(0:383 ~ toodee[604e]::toodee::{impl#18}::from),
+    - Compilable Targets (0/4 ~ 0.00%):
+  URAPI: DefId(0:304 ~ toodee[604e]::toodee::{impl#5}::col),
+    - Compilable Targets (2/6 ~ 33.33%):
+        * toodee_fuzz_14335318937270303534 [29.798334837s]
+        * toodee_fuzz_8250551913704696122 [48.601731185s]
+  URAPI: DefId(0:18 ~ toodee[604e]::iter::{impl#0}::nth),
+    - Compilable Targets (4/7 ~ 57.14%):
+        * toodee_fuzz_15432651030174670328 [18.501727132s]
+        * toodee_fuzz_5614269529780288127 [39.725998199s]
+        * toodee_fuzz_13825645674485888110 [61.495112938s]
+        * toodee_fuzz_15330606847424943580 [86.298962379s]
+  URAPI: DefId(0:542 ~ toodee[604e]::copy::{impl#1}::clone_from_toodee),
+    - Compilable Targets (0/50 ~ 0.00%):
+  URAPI: DefId(0:91 ~ toodee[604e]::iter::{impl#15}::next_back),
+    - Compilable Targets (4/8 ~ 50.00%):
+        * toodee_fuzz_3785304821377433642 [21.545216319s]
+        * toodee_fuzz_3935140385896045673 [40.325700614s]
+        * toodee_fuzz_14845570421688555118 [75.115719859s]
+        * toodee_fuzz_17507640304945684587 [93.946710866s]
+  URAPI: DefId(0:391 ~ toodee[604e]::toodee::{impl#21}::next),
+    - Compilable Targets (4/11 ~ 36.36%):
+        * toodee_fuzz_12080720501357074931 [17.588044547s]
+        * toodee_fuzz_15872554122551155130 [51.141528304s]
+        * toodee_fuzz_1552124240822449041 [74.39903637s]
+        * toodee_fuzz_487301172008595928 [101.755037157s]
+  URAPI: DefId(0:139 ~ toodee[604e]::view::{impl#4}::new),
+    - Compilable Targets (1/1 ~ 100.00%):
+        * toodee_fuzz_13905759435898088798 [9.939324355s]
+  URAPI: DefId(0:67 ~ toodee[604e]::iter::{impl#10}::nth_back),
+    - Compilable Targets (4/7 ~ 57.14%):
+        * toodee_fuzz_16273787549429749077 [12.950176521s]
+        * toodee_fuzz_17402346364134042114 [38.896259687s]
+        * toodee_fuzz_13832045837587083362 [56.340179941s]
+        * toodee_fuzz_16940532367606631378 [82.498616003s]
+  URAPI: DefId(0:86 ~ toodee[604e]::iter::{impl#14}::nth),
+    - Compilable Targets (4/8 ~ 50.00%):
+        * toodee_fuzz_5337323770599667203 [15.98940587s]
+        * toodee_fuzz_17366722168676236069 [37.57706407s]
+        * toodee_fuzz_6620797865885092094 [73.166610753s]
+        * toodee_fuzz_6654804236293255020 [90.487796266s]
+  URAPI: DefId(0:23 ~ toodee[604e]::iter::{impl#1}::next_back),
+    - Compilable Targets (4/7 ~ 57.14%):
+        * toodee_fuzz_11234058220281985179 [21.702940783s]
+        * toodee_fuzz_10912391490844626201 [39.989662017s]
+        * toodee_fuzz_1303250201076264444 [61.446134307s]
+        * toodee_fuzz_7153421110440774294 [86.366159284s]
+  URAPI: DefId(0:38 ~ toodee[604e]::iter::{impl#4}::last),
+    - Compilable Targets (4/8 ~ 50.00%):
+        * toodee_fuzz_12913162642454064344 [16.147446779s]
+        * toodee_fuzz_3854336054789786278 [38.020161246s]
+        * toodee_fuzz_11045466902218921687 [73.170522085s]
+        * toodee_fuzz_14020532382371750223 [90.113996588s]
+  URAPI: DefId(0:19 ~ toodee[604e]::iter::{impl#0}::last),
+    - Compilable Targets (4/7 ~ 57.14%):
+        * toodee_fuzz_6089838560936488697 [22.496831493s]
+        * toodee_fuzz_3588204059081339345 [42.453280822s]
+        * toodee_fuzz_16130866882884491271 [61.428829253s]
+        * toodee_fuzz_15188163485675784112 [88.124225931s]
+  URAPI: DefId(0:170 ~ toodee[604e]::view::{impl#8}::index),
+    - Compilable Targets (3/4 ~ 75.00%):
+        * toodee_fuzz_4007001079282083556 [21.982875306s]
+        * toodee_fuzz_1942261837181683286 [43.572138045s]
+        * toodee_fuzz_1607299290868388796 [61.008063757s]
+  URAPI: DefId(0:314 ~ toodee[604e]::toodee::{impl#6}::swap_rows),
+    - Compilable Targets (2/6 ~ 33.33%):
+        * toodee_fuzz_5154393628373280310 [34.068931736s]
+        * toodee_fuzz_10231022201725720009 [55.039471434s]
+  URAPI: DefId(0:135 ~ toodee[604e]::view::{impl#3}::index),
+    - Compilable Targets (4/5 ~ 80.00%):
+        * toodee_fuzz_2807135310412909486 [4.140619463s]
+        * toodee_fuzz_3679167279971103112 [21.634269001s]
+        * toodee_fuzz_6668953297264537952 [45.391083041s]
+        * toodee_fuzz_10006281234899749716 [66.468080738s]
+  URAPI: DefId(0:334 ~ toodee[604e]::toodee::{impl#7}::insert_row),
+    - Compilable Targets (2/6 ~ 33.33%):
+        * toodee_fuzz_13706269016185398702 [29.268896445s]
+        * toodee_fuzz_3327354777385801293 [52.625190998s]
+  URAPI: DefId(0:15 ~ toodee[604e]::iter::{impl#0}::next),
+    - Compilable Targets (4/7 ~ 57.14%):
+        * toodee_fuzz_5200199076732257212 [11.781008164s]
+        * toodee_fuzz_5637990273143230273 [31.035303201s]
+        * toodee_fuzz_17049408858706505776 [46.867793296s]
+        * toodee_fuzz_17081528827285523153 [71.977838006s]
+  URAPI: DefId(0:62 ~ toodee[604e]::iter::{impl#9}::last),
+    - Compilable Targets (4/7 ~ 57.14%):
+        * toodee_fuzz_2622339287906542851 [12.301333271s]
+        * toodee_fuzz_16624251073754343925 [33.188951922s]
+        * toodee_fuzz_15029680727157269443 [52.726215275s]
+        * toodee_fuzz_6868617288424581288 [74.418350353s]
+  URAPI: DefId(0:165 ~ toodee[604e]::view::{impl#7}::index),
+    - Compilable Targets (3/4 ~ 75.00%):
+        * toodee_fuzz_16712742152995068811 [8.055160166s]
+        * toodee_fuzz_11897788051704892233 [27.162715161s]
+        * toodee_fuzz_3336054399548820615 [39.620050778s]
+  URAPI: DefId(0:311 ~ toodee[604e]::toodee::{impl#6}::col_mut),
+    - Compilable Targets (2/6 ~ 33.33%):
+        * toodee_fuzz_12560252199086285812 [36.871092351s]
+        * toodee_fuzz_14654269314950640108 [61.178191653s]
+  URAPI: DefId(0:158 ~ toodee[604e]::view::{impl#6}::swap_rows),
+    - Compilable Targets (3/4 ~ 75.00%):
+        * toodee_fuzz_892020232303919561 [10.104466724s]
+        * toodee_fuzz_15368956654217502946 [29.223610097s]
+        * toodee_fuzz_16501672220947551933 [44.495659654s]
+  URAPI: DefId(0:332 ~ toodee[604e]::toodee::{impl#7}::push_row),
+    - Compilable Targets (2/6 ~ 33.33%):
+        * toodee_fuzz_14135831263476550390 [29.669583084s]
+        * toodee_fuzz_17703332966126533225 [52.528434901s]
+  URAPI: DefId(0:340 ~ toodee[604e]::toodee::{impl#7}::remove_col),
+    - Compilable Targets (2/6 ~ 33.33%):
+        * toodee_fuzz_9153051995030572515 [25.106273668s]
+        * toodee_fuzz_17339436036423705130 [45.016619789s]
+  URAPI: DefId(0:66 ~ toodee[604e]::iter::{impl#10}::next_back),
+    - Compilable Targets (4/7 ~ 57.14%):
+        * toodee_fuzz_15131073540983594731 [21.914433541s]
+        * toodee_fuzz_393317314669705982 [42.260364936s]
+        * toodee_fuzz_13945494587293228707 [61.352086212s]
+        * toodee_fuzz_6177713566286730547 [88.125806869s]
+  URAPI: DefId(0:432 ~ toodee[604e]::flattenexact::{impl#1}::last),
+    - 0 targets generated.
+  URAPI: DefId(0:61 ~ toodee[604e]::iter::{impl#9}::nth),
+    - Compilable Targets (4/7 ~ 57.14%):
+        * toodee_fuzz_7048482884902134018 [13.651508705s]
+        * toodee_fuzz_2302373594814551094 [31.986036599s]
+        * toodee_fuzz_11093031541945294786 [47.739130546s]
+        * toodee_fuzz_4878249698344826035 [75.48500991s]
+  URAPI: DefId(0:443 ~ toodee[604e]::flattenexact::{impl#2}::nth_back),
+    - 0 targets generated.
+  URAPI: DefId(0:121 ~ toodee[604e]::view::{impl#1}::view),
+    - Compilable Targets (4/5 ~ 80.00%):
+        * toodee_fuzz_13999741629159102049 [5.394241227s]
+        * toodee_fuzz_6701378374730417307 [23.387801429s]
+        * toodee_fuzz_16052055149920844341 [48.127187495s]
+        * toodee_fuzz_361208765187348981 [65.554523182s]
+  URAPI: DefId(0:396 ~ toodee[604e]::toodee::{impl#22}::next_back),
+    - Compilable Targets (4/11 ~ 36.36%):
+        * toodee_fuzz_2384786384892097172 [17.529178456s]
+        * toodee_fuzz_18076018027255947284 [51.999047326s]
+        * toodee_fuzz_2405930072166602475 [68.666056176s]
+        * toodee_fuzz_8514963877161497077 [87.174143926s]
+  URAPI: DefId(0:92 ~ toodee[604e]::iter::{impl#15}::nth_back),
+    - Compilable Targets (4/8 ~ 50.00%):
+        * toodee_fuzz_17102590194465261917 [11.924144333s]
+        * toodee_fuzz_8144693216659179983 [31.985927356s]
+        * toodee_fuzz_1045790220218272802 [58.874451758s]
+        * toodee_fuzz_9468811539952238281 [73.824835238s]
+  URAPI: DefId(0:338 ~ toodee[604e]::toodee::{impl#7}::push_col),
+    - Compilable Targets (0/6 ~ 0.00%):
+  URAPI: DefId(0:293 ~ toodee[604e]::toodee::{impl#3}::index_mut),
+    - Compilable Targets (2/6 ~ 33.33%):
+        * toodee_fuzz_9340724409675251223 [28.602209981s]
+        * toodee_fuzz_9001204769570359724 [49.159938025s]
+  URAPI: DefId(0:157 ~ toodee[604e]::view::{impl#6}::col_mut),
+    - Compilable Targets (3/4 ~ 75.00%):
+        * toodee_fuzz_6939175886384060934 [10.991289348s]
+        * toodee_fuzz_14472561291794546481 [31.131343275s]
+        * toodee_fuzz_12136792471177057340 [47.623126384s]
+  URAPI: DefId(0:427 ~ toodee[604e]::flattenexact::{impl#1}::next),
+    - 0 targets generated.
+  URAPI: DefId(0:442 ~ toodee[604e]::flattenexact::{impl#2}::next_back),
+    - 0 targets generated.
+  URAPI: DefId(0:174 ~ toodee[604e]::view::{impl#9}::index_mut),
+    - Compilable Targets (3/4 ~ 75.00%):
+        * toodee_fuzz_13201976352036523733 [14.021938613s]
+        * toodee_fuzz_16153887223742965159 [34.595575951s]
+        * toodee_fuzz_14823099311529737813 [48.584896388s]
+  URAPI: DefId(0:380 ~ toodee[604e]::toodee::{impl#17}::from),
+    - Compilable Targets (0/10 ~ 0.00%):
+  URAPI: DefId(0:83 ~ toodee[604e]::iter::{impl#14}::next),
+    - Compilable Targets (4/8 ~ 50.00%):
+        * toodee_fuzz_7370414647284971367 [13.471581698s]
+        * toodee_fuzz_16771909029538390056 [33.443533718s]
+        * toodee_fuzz_4754585929428134934 [66.378632266s]
+        * toodee_fuzz_6055355241775236029 [83.392250778s]
+  URAPI: DefId(0:87 ~ toodee[604e]::iter::{impl#14}::last),
+    - Compilable Targets (4/8 ~ 50.00%):
+        * toodee_fuzz_2102891750379309377 [16.372017976s]
+        * toodee_fuzz_12939351026773932632 [37.454023308s]
+        * toodee_fuzz_3639831062231178506 [73.002455137s]
+        * toodee_fuzz_12275212090547280010 [90.101389234s]
+  URAPI: DefId(0:402 ~ toodee[604e]::toodee::{impl#24}::drop),
+    - Compilable Targets (4/11 ~ 36.36%):
+        * toodee_fuzz_11343294928268044321 [20.126617668s]
+        * toodee_fuzz_13077116790450601879 [56.6622891s]
+        * toodee_fuzz_7835148252012748065 [78.799093952s]
+        * toodee_fuzz_12235347418961838779 [101.859694002s]
+  URAPI: DefId(0:341 ~ toodee[604e]::toodee::{impl#7}::insert_col),
+    - Compilable Targets (0/6 ~ 0.00%):
+  URAPI: DefId(0:428 ~ toodee[604e]::flattenexact::{impl#1}::nth),
+    - 0 targets generated.
+  URAPI: DefId(0:286 ~ toodee[604e]::toodee::{impl#1}::index),
+    - Compilable Targets (2/6 ~ 33.33%):
+        * toodee_fuzz_3039684366754900217 [23.934133142s]
+        * toodee_fuzz_17167270898346354804 [46.245528894s]
+  URAPI: DefId(0:130 ~ toodee[604e]::view::{impl#2}::index),
+    - Compilable Targets (4/5 ~ 80.00%):
+        * toodee_fuzz_5607140919716845837 [3.981624374s]
+        * toodee_fuzz_10654733787668083718 [24.696722503s]
+        * toodee_fuzz_1342183763625462408 [47.680493082s]
+        * toodee_fuzz_3432516467430860593 [63.526051966s]
+  URAPI: DefId(0:155 ~ toodee[604e]::view::{impl#6}::view_mut),
+    - Compilable Targets (3/4 ~ 75.00%):
+        * toodee_fuzz_17265053582886007107 [13.629482205s]
+        * toodee_fuzz_15320070401275508898 [30.698661769s]
+        * toodee_fuzz_15497362512794336314 [42.670429043s]
+  URAPI: DefId(0:42 ~ toodee[604e]::iter::{impl#5}::next_back),
+    - Compilable Targets (4/8 ~ 50.00%):
+        * toodee_fuzz_3154293133087321286 [13.084790639s]
+        * toodee_fuzz_15416881560697902273 [31.572353001s]
+        * toodee_fuzz_1156998684846642157 [70.526842227s]
+        * toodee_fuzz_16350435782084666392 [88.089842174s]
+  URAPI: DefId(0:302 ~ toodee[604e]::toodee::{impl#5}::view),
+    - Compilable Targets (2/6 ~ 33.33%):
+        * toodee_fuzz_6915746689771362733 [26.340013247s]
+        * toodee_fuzz_6661415577436884504 [46.961566974s]
+  URAPI: DefId(0:123 ~ toodee[604e]::view::{impl#1}::col),
+    - Compilable Targets (4/5 ~ 80.00%):
+        * toodee_fuzz_1410000035558627871 [5.441396041s]
+        * toodee_fuzz_2922775350560725215 [24.31917263s]
+        * toodee_fuzz_7730250585885729892 [47.936077462s]
+        * toodee_fuzz_3284344167221081524 [68.264000871s]
+  URAPI: DefId(0:34 ~ toodee[604e]::iter::{impl#4}::next),
+    - Compilable Targets (4/8 ~ 50.00%):
+        * toodee_fuzz_2137433840993957578 [10.553236422s]
+        * toodee_fuzz_11947181644782318100 [31.661028245s]
+        * toodee_fuzz_2092378170149048866 [65.035658904s]
+        * toodee_fuzz_4114308549164085642 [79.67668031s]
+  URAPI: DefId(0:178 ~ toodee[604e]::view::{impl#10}::index_mut),
+    - Compilable Targets (3/4 ~ 75.00%):
+        * toodee_fuzz_15845972817180407702 [9.993059191s]
+        * toodee_fuzz_5119764795525523269 [31.130160157s]
+        * toodee_fuzz_17394126761304261620 [48.544213947s]
+  URAPI: DefId(0:37 ~ toodee[604e]::iter::{impl#4}::nth),
+    - Compilable Targets (4/8 ~ 50.00%):
+        * toodee_fuzz_15323744890538307959 [9.982919485s]
+        * toodee_fuzz_4673047946644637132 [31.586647847s]
+        * toodee_fuzz_17546178483008163448 [61.895608795s]
+        * toodee_fuzz_17319853388379794989 [75.787922236s]
+  URAPI: DefId(0:24 ~ toodee[604e]::iter::{impl#1}::nth_back),
+    - Compilable Targets (4/7 ~ 57.14%):
+        * toodee_fuzz_14368819119077287621 [13.303482422s]
+        * toodee_fuzz_128433736688189755 [33.297532127s]
+        * toodee_fuzz_16152258708215176599 [53.4486335s]
+        * toodee_fuzz_17236021617994224226 [77.561508441s]
+  URAPI: DefId(0:337 ~ toodee[604e]::toodee::{impl#7}::pop_col),
+    - Compilable Targets (2/6 ~ 33.33%):
+        * toodee_fuzz_6196844958154208994 [23.968141131s]
+        * toodee_fuzz_730448351291987611 [39.818732916s]
+------------------------------------------------------------------------------------------------------------------------------------

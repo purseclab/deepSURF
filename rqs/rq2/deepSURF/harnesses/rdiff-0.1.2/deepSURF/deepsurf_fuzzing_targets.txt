@@ -1,0 +1,12 @@
+deepSURF: Generated Targets to be Fuzzed
+------------------------------------------------------------------------------------------------------------------------------------
+  StableURAPI: diff_and_update::/home/cdc/SURF/deepSURF-big-experiment-harnesses/rdiff-0.1.2/src/hashing.rs::139,
+    - URAPI: DefId(0:56 ~ rdiff[f0a4]::hashing::{impl#1}::diff_and_update),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * rdiff_fuzz_7378658651567291026_deepseek-r1_turn2
+      * rdiff_fuzz_7378658651567291026
+      * rdiff_fuzz_7148183676897154287
+      * rdiff_fuzz_5179060292033157288
+------------------------------------------------------------------------------------------------------------------------------------

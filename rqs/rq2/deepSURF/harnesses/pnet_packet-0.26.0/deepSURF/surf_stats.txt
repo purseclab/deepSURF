@@ -1,0 +1,375 @@
+
+Total Stats:
+------------------------------------------------------------------------------------------------------------------------------------
+* URAPI Coverage: 68/68 (100.00%).
+* Targets Compiled: 212/212 (100.00%) in [2990.088061201s].
+------------------------------------------------------------------------------------------------------------------------------------
+
+Target Stats:
+------------------------------------------------------------------------------------------------------------------------------------
+* URAPIs w/ ≥ 1ft: 68/68 (100.00%).
+* Average Generation Time per Target: 4526.005183199s/68 (66.558899752s).
+
+* URAPIs w/ ≥ 2ft: 68/68 (100.00%).
+* Average Generation Time per Target: 21251.52509166s/68 (312.522427818s).
+
+* URAPIs w/ ≥ 3ft: 38/68 (55.88%).
+* Average Generation Time per Target: 21383.72530391s/38 (562.72961326s).
+
+* URAPIs w/ ≥ 4ft: 38/68 (55.88%).
+* Average Generation Time per Target: 30634.908064659s/38 (806.181791175s).
+
+* URAPIs w/o any compilable targets: 0/68 (0.00%).
+------------------------------------------------------------------------------------------------------------------------------------
+
+Detailed Results: 
+------------------------------------------------------------------------------------------------------------------------------------
+  URAPI: DefId(0:3845 ~ pnet_packet[d3e1]::ipv6::{impl#14}::set_options),
+    - Compilable Targets (2/2 ~ 100.00%):
+        * pnet_packet_fuzz_17616581181156874557 [71.427795575s]
+        * pnet_packet_fuzz_21526464284460841 [309.250490376s]
+  URAPI: DefId(0:1679 ~ pnet_packet[d3e1]::icmp::time_exceeded::{impl#1}::populate),
+    - Compilable Targets (4/4 ~ 100.00%):
+        * pnet_packet_fuzz_11562080560837752712 [70.274861351s]
+        * pnet_packet_fuzz_15158931140114125245 [300.879252872s]
+        * pnet_packet_fuzz_4823895410681497960 [541.162429052s]
+        * pnet_packet_fuzz_5120095466205558091 [773.032197735s]
+  URAPI: DefId(0:4422 ~ pnet_packet[d3e1]::tcp::{impl#13}::set_data),
+    - Compilable Targets (2/2 ~ 100.00%):
+        * pnet_packet_fuzz_2187713595504460549 [67.318852485s]
+        * pnet_packet_fuzz_18316847514724980599 [298.279390861s]
+  URAPI: DefId(0:2175 ~ pnet_packet[d3e1]::icmpv6::ndp::{impl#3}::populate),
+    - Compilable Targets (4/4 ~ 100.00%):
+        * pnet_packet_fuzz_10031078553328861880 [70.009311105s]
+        * pnet_packet_fuzz_9065154765162408099 [311.594705207s]
+        * pnet_packet_fuzz_350823289942228867 [545.893619127s]
+        * pnet_packet_fuzz_3962605256299866225 [777.800080574s]
+  URAPI: DefId(0:2739 ~ pnet_packet[d3e1]::icmpv6::ndp::{impl#51}::set_options),
+    - Compilable Targets (4/4 ~ 100.00%):
+        * pnet_packet_fuzz_4937212728684888133 [70.414262645s]
+        * pnet_packet_fuzz_16653464543603102262 [336.214468836s]
+        * pnet_packet_fuzz_10228286558609830244 [570.295567448s]
+        * pnet_packet_fuzz_1490081197987025387 [798.408250732s]
+  URAPI: DefId(0:290 ~ pnet_packet[d3e1]::arp::{impl#5}::populate),
+    - Compilable Targets (4/4 ~ 100.00%):
+        * pnet_packet_fuzz_7293594625397116342 [63.73326179s]
+        * pnet_packet_fuzz_12917954064997045456 [296.695087808s]
+        * pnet_packet_fuzz_13727483775383061089 [519.898430083s]
+        * pnet_packet_fuzz_7385039738111883487 [743.710655911s]
+  URAPI: DefId(0:3491 ~ pnet_packet[d3e1]::ipv4::{impl#15}::populate),
+    - Compilable Targets (4/4 ~ 100.00%):
+        * pnet_packet_fuzz_12398722329352874293 [67.471822647s]
+        * pnet_packet_fuzz_4580371288806174540 [302.973622002s]
+        * pnet_packet_fuzz_8722487566631474283 [537.694889162s]
+        * pnet_packet_fuzz_7093525758444113743 [769.164885182s]
+  URAPI: DefId(0:1326 ~ pnet_packet[d3e1]::icmp::echo_reply::{impl#5}::populate),
+    - Compilable Targets (4/4 ~ 100.00%):
+        * pnet_packet_fuzz_15722733297570982448 [57.796278106s]
+        * pnet_packet_fuzz_12407121676204706116 [288.952172358s]
+        * pnet_packet_fuzz_10400836084976222289 [505.835849849s]
+        * pnet_packet_fuzz_7562080075094281562 [721.393789409s]
+  URAPI: DefId(0:4315 ~ pnet_packet[d3e1]::tcp::{impl#1}::set_payload),
+    - Compilable Targets (2/2 ~ 100.00%):
+        * pnet_packet_fuzz_2779224845428828131 [68.574203784s]
+        * pnet_packet_fuzz_16429137508049235207 [301.311539982s]
+  URAPI: DefId(0:4616 ~ pnet_packet[d3e1]::udp::{impl#1}::set_payload),
+    - Compilable Targets (2/2 ~ 100.00%):
+        * pnet_packet_fuzz_17483630161406157306 [62.045626837s]
+        * pnet_packet_fuzz_279965673832137631 [293.806764265s]
+  URAPI: DefId(0:1571 ~ pnet_packet[d3e1]::icmp::destination_unreachable::{impl#1}::populate),
+    - Compilable Targets (4/4 ~ 100.00%):
+        * pnet_packet_fuzz_15329232841247413831 [61.04323036s]
+        * pnet_packet_fuzz_10314983011962077739 [280.609802788s]
+        * pnet_packet_fuzz_9937373370989282516 [495.351554507s]
+        * pnet_packet_fuzz_17832436067328033574 [720.694787371s]
+  URAPI: DefId(0:2436 ~ pnet_packet[d3e1]::icmpv6::ndp::{impl#27}::set_options),
+    - Compilable Targets (4/4 ~ 100.00%):
+        * pnet_packet_fuzz_16100200026899093542 [61.876774904s]
+        * pnet_packet_fuzz_2982281841411441158 [316.514632033s]
+        * pnet_packet_fuzz_3043465005927398674 [573.842286231s]
+        * pnet_packet_fuzz_13121919680523742557 [869.354354934s]
+  URAPI: DefId(0:1188 ~ pnet_packet[d3e1]::icmp::{impl#5}::populate),
+    - Compilable Targets (4/4 ~ 100.00%):
+        * pnet_packet_fuzz_17690057048552090545 [59.21521684s]
+        * pnet_packet_fuzz_12906924930766960612 [268.694438999s]
+        * pnet_packet_fuzz_17263071233065787112 [504.946849477s]
+        * pnet_packet_fuzz_12305907606971739392 [789.510393782s]
+  URAPI: DefId(0:2183 ~ pnet_packet[d3e1]::icmpv6::ndp::{impl#3}::set_data),
+    - Compilable Targets (2/2 ~ 100.00%):
+        * pnet_packet_fuzz_7476336297627956349 [68.989709726s]
+        * pnet_packet_fuzz_5460365891926800213 [363.832250724s]
+  URAPI: DefId(0:2540 ~ pnet_packet[d3e1]::icmpv6::ndp::{impl#39}::populate),
+    - Compilable Targets (4/4 ~ 100.00%):
+        * pnet_packet_fuzz_16038860458783051979 [76.073765316s]
+        * pnet_packet_fuzz_17721825049983605276 [376.893631949s]
+        * pnet_packet_fuzz_4206481061776611089 [657.080912229s]
+        * pnet_packet_fuzz_1209182185082826910 [901.854212884s]
+  URAPI: DefId(0:1464 ~ pnet_packet[d3e1]::icmp::echo_request::{impl#5}::set_payload),
+    - Compilable Targets (2/2 ~ 100.00%):
+        * pnet_packet_fuzz_10297997944971972234 [85.617307723s]
+        * pnet_packet_fuzz_18044007705669276251 [375.193150635s]
+  URAPI: DefId(0:4763 ~ pnet_packet[d3e1]::vlan::{impl#3}::set_payload),
+    - Compilable Targets (2/2 ~ 100.00%):
+        * pnet_packet_fuzz_11228810734764459338 [89.732510298s]
+        * pnet_packet_fuzz_2565221519930903289 [393.650167648s]
+  URAPI: DefId(0:824 ~ pnet_packet[d3e1]::gre::{impl#1}::set_checksum),
+    - Compilable Targets (4/4 ~ 100.00%):
+        * pnet_packet_fuzz_2044501637519807661 [74.065838647s]
+        * pnet_packet_fuzz_6010039256431434258 [326.944251507s]
+        * pnet_packet_fuzz_7826155703035326141 [574.320719168s]
+        * pnet_packet_fuzz_3395809603270940425 [825.266727816s]
+  URAPI: DefId(0:3934 ~ pnet_packet[d3e1]::ipv6::{impl#26}::populate),
+    - Compilable Targets (4/4 ~ 100.00%):
+        * pnet_packet_fuzz_1935049756553246233 [65.606978382s]
+        * pnet_packet_fuzz_12066893360015550000 [300.02738725s]
+        * pnet_packet_fuzz_9582390351688525845 [535.611888929s]
+        * pnet_packet_fuzz_32032052837352921 [761.000847114s]
+  URAPI: DefId(0:2438 ~ pnet_packet[d3e1]::icmpv6::ndp::{impl#27}::set_payload),
+    - Compilable Targets (2/2 ~ 100.00%):
+        * pnet_packet_fuzz_1591313384708960398 [65.176417632s]
+        * pnet_packet_fuzz_8260415362661348335 [294.377721031s]
+  URAPI: DefId(0:4607 ~ pnet_packet[d3e1]::udp::{impl#1}::populate),
+    - Compilable Targets (4/4 ~ 100.00%):
+        * pnet_packet_fuzz_9739637606775251699 [67.708601807s]
+        * pnet_packet_fuzz_733384999933485531 [295.852927704s]
+        * pnet_packet_fuzz_14435436260286507698 [550.69204996s]
+        * pnet_packet_fuzz_14064934116004486151 [858.293035175s]
+  URAPI: DefId(0:832 ~ pnet_packet[d3e1]::gre::{impl#1}::set_key),
+    - Compilable Targets (4/4 ~ 100.00%):
+        * pnet_packet_fuzz_13699462923152619909 [62.879516447s]
+        * pnet_packet_fuzz_2710206962811311130 [308.522422615s]
+        * pnet_packet_fuzz_10878762002160605786 [553.035395792s]
+        * pnet_packet_fuzz_2679572340178425911 [790.042474073s]
+  URAPI: DefId(0:2276 ~ pnet_packet[d3e1]::icmpv6::ndp::{impl#15}::populate),
+    - Compilable Targets (4/4 ~ 100.00%):
+        * pnet_packet_fuzz_7808083687530344502 [83.839434918s]
+        * pnet_packet_fuzz_7891289581902000475 [387.025378901s]
+        * pnet_packet_fuzz_3468853639319386901 [656.280181758s]
+        * pnet_packet_fuzz_17916411061712553007 [907.810675327s]
+  URAPI: DefId(0:1011 ~ pnet_packet[d3e1]::gre::{impl#25}::set_unused),
+    - Compilable Targets (2/2 ~ 100.00%):
+        * pnet_packet_fuzz_15512904500542381415 [67.220643908s]
+        * pnet_packet_fuzz_3184623475365325316 [282.089553127s]
+  URAPI: DefId(0:2584 ~ pnet_packet[d3e1]::icmpv6::ndp::{impl#39}::set_options),
+    - Compilable Targets (4/4 ~ 100.00%):
+        * pnet_packet_fuzz_8474509723700101352 [70.105505373s]
+        * pnet_packet_fuzz_6749641772043296096 [380.701738806s]
+        * pnet_packet_fuzz_12386767703968729235 [650.981607293s]
+        * pnet_packet_fuzz_17739642547148789385 [894.001550514s]
+  URAPI: DefId(0:3400 ~ pnet_packet[d3e1]::ipv4::{impl#3}::set_payload),
+    - Compilable Targets (2/2 ~ 100.00%):
+        * pnet_packet_fuzz_7675353903775163834 [67.482033911s]
+        * pnet_packet_fuzz_11041952951857966475 [295.713376042s]
+  URAPI: DefId(0:3509 ~ pnet_packet[d3e1]::ipv4::{impl#15}::set_data),
+    - Compilable Targets (2/2 ~ 100.00%):
+        * pnet_packet_fuzz_12281725077455697391 [58.059230368s]
+        * pnet_packet_fuzz_8727641996272082690 [286.484944601s]
+  URAPI: DefId(0:2915 ~ pnet_packet[d3e1]::icmpv6::ndp::{impl#63}::set_options),
+    - Compilable Targets (4/4 ~ 100.00%):
+        * pnet_packet_fuzz_11815541622841198300 [58.56358054s]
+        * pnet_packet_fuzz_10218802424422629987 [287.197569381s]
+        * pnet_packet_fuzz_13190914874743871047 [522.394302935s]
+        * pnet_packet_fuzz_18146090928201814931 [760.860193911s]
+  URAPI: DefId(0:926 ~ pnet_packet[d3e1]::gre::{impl#13}::populate),
+    - Compilable Targets (4/4 ~ 100.00%):
+        * pnet_packet_fuzz_5131167242462323654 [59.044744393s]
+        * pnet_packet_fuzz_16890625098071604452 [285.975569612s]
+        * pnet_packet_fuzz_15158860634334224914 [501.289947433s]
+        * pnet_packet_fuzz_6552650772642129116 [729.414103101s]
+  URAPI: DefId(0:929 ~ pnet_packet[d3e1]::gre::{impl#13}::set_unused),
+    - Compilable Targets (2/2 ~ 100.00%):
+        * pnet_packet_fuzz_7741278584444771304 [60.634654225s]
+        * pnet_packet_fuzz_8680089326114835144 [292.203465521s]
+  URAPI: DefId(0:3699 ~ pnet_packet[d3e1]::ipv6::{impl#1}::populate),
+    - Compilable Targets (4/4 ~ 100.00%):
+        * pnet_packet_fuzz_9997934313698282007 [59.57627553s]
+        * pnet_packet_fuzz_17297058720034257558 [283.476705801s]
+        * pnet_packet_fuzz_11481788722619093345 [517.941579182s]
+        * pnet_packet_fuzz_1926840233027276727 [747.739880785s]
+  URAPI: DefId(0:4282 ~ pnet_packet[d3e1]::tcp::{impl#1}::populate),
+    - Compilable Targets (4/4 ~ 100.00%):
+        * pnet_packet_fuzz_2914112639123794018 [58.137724535s]
+        * pnet_packet_fuzz_2257210843359569273 [277.221095048s]
+        * pnet_packet_fuzz_2949348541532350817 [508.558691495s]
+        * pnet_packet_fuzz_13745242377094217804 [729.793869098s]
+  URAPI: DefId(0:842 ~ pnet_packet[d3e1]::gre::{impl#1}::set_payload),
+    - Compilable Targets (2/2 ~ 100.00%):
+        * pnet_packet_fuzz_6185557582641351858 [57.859974614s]
+        * pnet_packet_fuzz_8113233228351086079 [348.644581251s]
+  URAPI: DefId(0:840 ~ pnet_packet[d3e1]::gre::{impl#1}::set_routing),
+    - Compilable Targets (2/2 ~ 100.00%):
+        * pnet_packet_fuzz_14543272710845930615 [60.676348936s]
+        * pnet_packet_fuzz_9360713689682270957 [359.859134426s]
+  URAPI: DefId(0:4408 ~ pnet_packet[d3e1]::tcp::{impl#13}::populate),
+    - Compilable Targets (4/4 ~ 100.00%):
+        * pnet_packet_fuzz_8070999337917468685 [68.546419941s]
+        * pnet_packet_fuzz_405098099990649827 [299.501580633s]
+        * pnet_packet_fuzz_16963835105370754531 [528.404664054s]
+        * pnet_packet_fuzz_7865141929476227101 [752.416684416s]
+  URAPI: DefId(0:4042 ~ pnet_packet[d3e1]::ipv6::{impl#38}::set_payload),
+    - Compilable Targets (2/2 ~ 100.00%):
+        * pnet_packet_fuzz_5155964141626971559 [61.348531422s]
+        * pnet_packet_fuzz_10762365943771671266 [288.930677737s]
+  URAPI: DefId(0:3507 ~ pnet_packet[d3e1]::ipv4::{impl#15}::set_length),
+    - Compilable Targets (2/2 ~ 100.00%):
+        * pnet_packet_fuzz_6557587313727191870 [67.375438111s]
+        * pnet_packet_fuzz_10559440031379123831 [304.820511277s]
+  URAPI: DefId(0:3946 ~ pnet_packet[d3e1]::ipv6::{impl#26}::set_data),
+    - Compilable Targets (2/2 ~ 100.00%):
+        * pnet_packet_fuzz_5514096391890472782 [60.091564406s]
+        * pnet_packet_fuzz_10461790184937607519 [291.504779128s]
+  URAPI: DefId(0:2303 ~ pnet_packet[d3e1]::icmpv6::ndp::{impl#15}::set_payload),
+    - Compilable Targets (2/2 ~ 100.00%):
+        * pnet_packet_fuzz_11459273860369972603 [71.241686927s]
+        * pnet_packet_fuzz_17197991578604777003 [303.835211832s]
+  URAPI: DefId(0:1694 ~ pnet_packet[d3e1]::icmp::time_exceeded::{impl#1}::set_payload),
+    - Compilable Targets (2/2 ~ 100.00%):
+        * pnet_packet_fuzz_13600686400754027533 [59.374071685s]
+        * pnet_packet_fuzz_17962846929505455147 [283.366905864s]
+  URAPI: DefId(0:1586 ~ pnet_packet[d3e1]::icmp::destination_unreachable::{impl#1}::set_payload),
+    - Compilable Targets (2/2 ~ 100.00%):
+        * pnet_packet_fuzz_9771585314779162671 [59.861928144s]
+        * pnet_packet_fuzz_15687226187300624266 [292.909721021s]
+  URAPI: DefId(0:828 ~ pnet_packet[d3e1]::gre::{impl#1}::set_offset),
+    - Compilable Targets (4/4 ~ 100.00%):
+        * pnet_packet_fuzz_7613125020017630020 [64.1121892s]
+        * pnet_packet_fuzz_7830608674662815415 [318.17338035s]
+        * pnet_packet_fuzz_15656293246224701675 [585.00698059s]
+        * pnet_packet_fuzz_13018695586838338334 [922.503893374s]
+  URAPI: DefId(0:362 ~ pnet_packet[d3e1]::arp::{impl#5}::set_payload),
+    - Compilable Targets (2/2 ~ 100.00%):
+        * pnet_packet_fuzz_12642959099258930392 [72.014929259s]
+        * pnet_packet_fuzz_11949886281128909030 [305.424905727s]
+  URAPI: DefId(0:2042 ~ pnet_packet[d3e1]::icmpv6::{impl#5}::populate),
+    - Compilable Targets (4/4 ~ 100.00%):
+        * pnet_packet_fuzz_12622269980253595607 [61.541076278s]
+        * pnet_packet_fuzz_6147010295207913399 [292.304365467s]
+        * pnet_packet_fuzz_2904551946803379964 [519.773292537s]
+        * pnet_packet_fuzz_17999380458892265282 [752.7269347s]
+  URAPI: DefId(0:566 ~ pnet_packet[d3e1]::ethernet::{impl#1}::set_payload),
+    - Compilable Targets (2/2 ~ 100.00%):
+        * pnet_packet_fuzz_10191130041392200672 [68.57185953s]
+        * pnet_packet_fuzz_7425268373332697446 [299.805716276s]
+  URAPI: DefId(0:836 ~ pnet_packet[d3e1]::gre::{impl#1}::set_sequence),
+    - Compilable Targets (4/4 ~ 100.00%):
+        * pnet_packet_fuzz_7563390987108333615 [59.772296997s]
+        * pnet_packet_fuzz_3214418174674886212 [298.055048522s]
+        * pnet_packet_fuzz_2501575491699521666 [550.481099726s]
+        * pnet_packet_fuzz_721960026460426577 [800.59536324s]
+  URAPI: DefId(0:3837 ~ pnet_packet[d3e1]::ipv6::{impl#14}::populate),
+    - Compilable Targets (4/4 ~ 100.00%):
+        * pnet_packet_fuzz_14513616530867602059 [68.630151422s]
+        * pnet_packet_fuzz_1203170311306597882 [306.394591799s]
+        * pnet_packet_fuzz_16014205831855537744 [539.071405132s]
+        * pnet_packet_fuzz_3538812083982311927 [772.181724198s]
+  URAPI: DefId(0:2741 ~ pnet_packet[d3e1]::icmpv6::ndp::{impl#51}::set_payload),
+    - Compilable Targets (2/2 ~ 100.00%):
+        * pnet_packet_fuzz_11639322983494845056 [58.688448778s]
+        * pnet_packet_fuzz_6782996382263743905 [288.252499033s]
+  URAPI: DefId(0:2586 ~ pnet_packet[d3e1]::icmpv6::ndp::{impl#39}::set_payload),
+    - Compilable Targets (2/2 ~ 100.00%):
+        * pnet_packet_fuzz_4619776147881325350 [69.198131343s]
+        * pnet_packet_fuzz_74287355938183475 [299.990993742s]
+  URAPI: DefId(0:4420 ~ pnet_packet[d3e1]::tcp::{impl#13}::set_length),
+    - Compilable Targets (2/2 ~ 100.00%):
+        * pnet_packet_fuzz_10122210048251363141 [59.544661171s]
+        * pnet_packet_fuzz_3295587953913240911 [290.777931865s]
+  URAPI: DefId(0:3340 ~ pnet_packet[d3e1]::ipv4::{impl#3}::populate),
+    - Compilable Targets (4/4 ~ 100.00%):
+        * pnet_packet_fuzz_9652865789646052319 [62.595725045s]
+        * pnet_packet_fuzz_433941864756104099 [293.390241163s]
+        * pnet_packet_fuzz_11162934168052367328 [534.771114722s]
+        * pnet_packet_fuzz_4751738348711748062 [760.106755383s]
+  URAPI: DefId(0:4748 ~ pnet_packet[d3e1]::vlan::{impl#3}::populate),
+    - Compilable Targets (4/4 ~ 100.00%):
+        * pnet_packet_fuzz_11590011619420993293 [69.413253571s]
+        * pnet_packet_fuzz_2895147396548689104 [303.835267595s]
+        * pnet_packet_fuzz_14563040699175608016 [535.434101555s]
+        * pnet_packet_fuzz_3845547822586460437 [761.248911264s]
+  URAPI: DefId(0:1447 ~ pnet_packet[d3e1]::icmp::echo_request::{impl#5}::populate),
+    - Compilable Targets (4/4 ~ 100.00%):
+        * pnet_packet_fuzz_6989229617861967191 [59.709230058s]
+        * pnet_packet_fuzz_1948318612410329438 [297.126030323s]
+        * pnet_packet_fuzz_2802777283284093147 [538.211630949s]
+        * pnet_packet_fuzz_5513684570605523397 [771.09155867s]
+  URAPI: DefId(0:3753 ~ pnet_packet[d3e1]::ipv6::{impl#1}::set_payload),
+    - Compilable Targets (2/2 ~ 100.00%):
+        * pnet_packet_fuzz_7362916672842084094 [68.655346902s]
+        * pnet_packet_fuzz_14656054010148021865 [298.288269716s]
+  URAPI: DefId(0:2693 ~ pnet_packet[d3e1]::icmpv6::ndp::{impl#51}::populate),
+    - Compilable Targets (4/4 ~ 100.00%):
+        * pnet_packet_fuzz_14019198176736709026 [77.282029902s]
+        * pnet_packet_fuzz_2861962580164260431 [385.317540743s]
+        * pnet_packet_fuzz_13995054941529755476 [665.098105797s]
+        * pnet_packet_fuzz_7722366040853059716 [908.087728979s]
+  URAPI: DefId(0:2852 ~ pnet_packet[d3e1]::icmpv6::ndp::{impl#63}::populate),
+    - Compilable Targets (4/4 ~ 100.00%):
+        * pnet_packet_fuzz_4304590215552261932 [70.141364737s]
+        * pnet_packet_fuzz_433272071979836334 [298.160684956s]
+        * pnet_packet_fuzz_8733392672773111912 [525.865620517s]
+        * pnet_packet_fuzz_513800233413130078 [748.248259947s]
+  URAPI: DefId(0:767 ~ pnet_packet[d3e1]::gre::{impl#1}::populate),
+    - Compilable Targets (4/4 ~ 100.00%):
+        * pnet_packet_fuzz_320643370212932469 [58.986260583s]
+        * pnet_packet_fuzz_7678895417710346112 [293.035461001s]
+        * pnet_packet_fuzz_10977328299049958714 [535.025795419s]
+        * pnet_packet_fuzz_5132297863917190900 [774.879208732s]
+  URAPI: DefId(0:1201 ~ pnet_packet[d3e1]::icmp::{impl#5}::set_payload),
+    - Compilable Targets (2/2 ~ 100.00%):
+        * pnet_packet_fuzz_16488259649664819622 [68.587093821s]
+        * pnet_packet_fuzz_5934989172587780897 [300.928109545s]
+  URAPI: DefId(0:1343 ~ pnet_packet[d3e1]::icmp::echo_reply::{impl#5}::set_payload),
+    - Compilable Targets (2/2 ~ 100.00%):
+        * pnet_packet_fuzz_5188476026661967563 [58.142292362s]
+        * pnet_packet_fuzz_1046583546828494823 [279.951439112s]
+  URAPI: DefId(0:4030 ~ pnet_packet[d3e1]::ipv6::{impl#38}::populate),
+    - Compilable Targets (4/4 ~ 100.00%):
+        * pnet_packet_fuzz_13904578910162686521 [68.053405332s]
+        * pnet_packet_fuzz_11975839707999956921 [301.308727312s]
+        * pnet_packet_fuzz_5499195180729821001 [529.640737343s]
+        * pnet_packet_fuzz_17170352789916827953 [753.214539413s]
+  URAPI: DefId(0:2055 ~ pnet_packet[d3e1]::icmpv6::{impl#5}::set_payload),
+    - Compilable Targets (2/2 ~ 100.00%):
+        * pnet_packet_fuzz_7901211809274690662 [59.250258785s]
+        * pnet_packet_fuzz_16597785450570225252 [281.93219194s]
+  URAPI: DefId(0:2917 ~ pnet_packet[d3e1]::icmpv6::ndp::{impl#63}::set_payload),
+    - Compilable Targets (2/2 ~ 100.00%):
+        * pnet_packet_fuzz_14567768368971878885 [61.282614393s]
+        * pnet_packet_fuzz_14494938983633086561 [293.596387999s]
+  URAPI: DefId(0:3398 ~ pnet_packet[d3e1]::ipv4::{impl#3}::set_options),
+    - Compilable Targets (4/4 ~ 100.00%):
+        * pnet_packet_fuzz_16646646283128305915 [80.005087501s]
+        * pnet_packet_fuzz_5238212741905755463 [409.159868099s]
+        * pnet_packet_fuzz_12363234167587740088 [706.048084946s]
+        * pnet_packet_fuzz_15996440989512046651 [972.054357084s]
+  URAPI: DefId(0:530 ~ pnet_packet[d3e1]::ethernet::{impl#1}::populate),
+    - Compilable Targets (4/4 ~ 100.00%):
+        * pnet_packet_fuzz_8637733632190825212 [67.297622457s]
+        * pnet_packet_fuzz_15292369950227164628 [301.173844199s]
+        * pnet_packet_fuzz_6346411851788562966 [534.940146904s]
+        * pnet_packet_fuzz_1752151702142909738 [762.12502932s]
+  URAPI: DefId(0:2301 ~ pnet_packet[d3e1]::icmpv6::ndp::{impl#15}::set_options),
+    - Compilable Targets (4/4 ~ 100.00%):
+        * pnet_packet_fuzz_13921007672043033646 [71.878198302s]
+        * pnet_packet_fuzz_8679089500280892711 [394.317047754s]
+        * pnet_packet_fuzz_8213101880099434232 [687.210204383s]
+        * pnet_packet_fuzz_4933502772197750558 [928.322192789s]
+  URAPI: DefId(0:2403 ~ pnet_packet[d3e1]::icmpv6::ndp::{impl#27}::populate),
+    - Compilable Targets (4/4 ~ 100.00%):
+        * pnet_packet_fuzz_7717111288369967093 [62.238512137s]
+        * pnet_packet_fuzz_5374929244591037782 [296.084594632s]
+        * pnet_packet_fuzz_8154294170332081410 [543.924934339s]
+        * pnet_packet_fuzz_2780263123678459607 [836.455974549s]
+  URAPI: DefId(0:1008 ~ pnet_packet[d3e1]::gre::{impl#25}::populate),
+    - Compilable Targets (4/4 ~ 100.00%):
+        * pnet_packet_fuzz_5913823610091629888 [83.184868196s]
+        * pnet_packet_fuzz_11125726205384466834 [378.930102753s]
+        * pnet_packet_fuzz_4750638506587801412 [654.900257442s]
+        * pnet_packet_fuzz_15284926193276255398 [895.640308361s]
+  URAPI: DefId(0:4313 ~ pnet_packet[d3e1]::tcp::{impl#1}::set_options),
+    - Compilable Targets (4/4 ~ 100.00%):
+        * pnet_packet_fuzz_673571497751339759 [81.136338843s]
+        * pnet_packet_fuzz_6463323809453644771 [373.277070578s]
+        * pnet_packet_fuzz_10639186846470237233 [646.808376445s]
+        * pnet_packet_fuzz_9654562114700868495 [893.861674812s]
+------------------------------------------------------------------------------------------------------------------------------------

@@ -1,0 +1,1415 @@
+-----------------
+src/lib.rs infallible
+deps:{"infallible":{"T":["core::marker::Sized"]}}
+candidates:{"infallible":{}}
+let mut p0 = MaybeUninit::uninit().assume_init(); // core::result::Result<T, CollectionAllocErr>
++infallible(p0);
++crate::infallible(p0);
++crate::infallible(p0);
+-----------------
+src/lib.rs layout_array
+deps:{"layout_array":{"T":["core::marker::Sized"]}}
+candidates:{"layout_array":{}}
+let mut p0 = 0usize; // None+usize
++layout_array(p0);
++crate::layout_array(p0);
++crate::layout_array(p0);
+-----------------
+src/lib.rs deallocate
+deps:{"deallocate":{"T":["core::marker::Sized"]}}
+candidates:{"deallocate":{}}
+let mut p0 = MaybeUninit::uninit().assume_init(); // *mut T
+let mut p1 = 0usize; // None+usize
++deallocate(p0, p1);
++crate::deallocate(p0, p1);
++crate::deallocate(p0, p1);
+-----------------
+src/lib.rs ExtendFromSlice::extend_from_slice
+deps:{"ExtendFromSlice::extend_from_slice":{"Self":["ExtendFromSlice"],"T":["core::marker::Sized"]},"SmallVec":{"A":["core::marker::Sized","Array"]},"alloc::vec::Vec":{"A":["core::marker::Sized","core::alloc::Allocator"],"T":["core::clone::Clone","core::marker::Sized"]}}
+candidates:{"ExtendFromSlice::extend_from_slice":{"Self":["alloc::vec::Vec","SmallVec"]},"SmallVec":{},"alloc::vec::Vec":{"A":["alloc::alloc::Global"]}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // Self
+let mut p1 = & MaybeUninit::uninit().assume_init(); // [T]
++p0.extend_from_slice(p1);
++ExtendFromSlice::extend_from_slice(p0, p1);
++crate::ExtendFromSlice::extend_from_slice(p0, p1);
++crate::ExtendFromSlice::extend_from_slice(p0, p1);
+-----------------
+src/lib.rs Array::size
+deps:{"Array::size":{"Self":["Array"]}}
+candidates:{"Array::size":{"Self":[]}}
++Array::size();
++crate::Array::size();
++crate::Array::size();
+-----------------
+src/lib.rs ToSmallVec::to_smallvec
+deps:{"ToSmallVec::to_smallvec":{"A":["core::marker::Sized","Array"],"Self":["ToSmallVec"]}}
+candidates:{"ToSmallVec::to_smallvec":{"Self":[]}}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // Self
++p0.to_smallvec();
++ToSmallVec::to_smallvec(p0);
++crate::ToSmallVec::to_smallvec(p0);
++crate::ToSmallVec::to_smallvec(p0);
+-----------------
+src/lib.rs <alloc::vec::Vec<T> as ExtendFromSlice<T>>::extend_from_slice
+deps:{"<alloc::vec::Vec<T> as ExtendFromSlice<T>>::extend_from_slice":{"T":["core::marker::Sized","core::clone::Clone"]}}
+candidates:{"<alloc::vec::Vec<T> as ExtendFromSlice<T>>::extend_from_slice":{}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // alloc::vec::Vec<T>
+let mut p1 = & MaybeUninit::uninit().assume_init(); // [T]
++p0.extend_from_slice(p1);
++<alloc::vec::Vec<T> as ExtendFromSlice<T>>::extend_from_slice(p0, p1);
++crate::<alloc::vec::Vec<T> as ExtendFromSlice<T>>::extend_from_slice(p0, p1);
++<alloc::vec::Vec<T>>::extend_from_slice(p0, p1);
+-----------------
+src/lib.rs <CollectionAllocErr as core::fmt::Debug>::fmt
+deps:{}
+candidates:{}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // CollectionAllocErr
+let mut p1 = &mut  MaybeUninit::uninit().assume_init(); // core::fmt::Formatter<'_>
++p0.fmt(p1);
++<CollectionAllocErr as core::fmt::Debug>::fmt(p0, p1);
++crate::<CollectionAllocErr as core::fmt::Debug>::fmt(p0, p1);
++<CollectionAllocErr>::fmt(p0, p1);
+-----------------
+src/lib.rs <CollectionAllocErr as core::fmt::Display>::fmt
+deps:{}
+candidates:{}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // CollectionAllocErr
+let mut p1 = &mut  MaybeUninit::uninit().assume_init(); // core::fmt::Formatter<'_>
++p0.fmt(p1);
++<CollectionAllocErr as core::fmt::Display>::fmt(p0, p1);
++crate::<CollectionAllocErr as core::fmt::Display>::fmt(p0, p1);
++<CollectionAllocErr>::fmt(p0, p1);
+-----------------
+src/lib.rs <CollectionAllocErr as core::convert::From<core::alloc::LayoutError>>::from
+deps:{}
+candidates:{}
+let mut p0 = MaybeUninit::uninit().assume_init(); // core::alloc::LayoutError
++<CollectionAllocErr as core::convert::From<core::alloc::LayoutError>>::from(p0);
++crate::<CollectionAllocErr as core::convert::From<core::alloc::LayoutError>>::from(p0);
++<CollectionAllocErr>::from(p0);
+-----------------
+src/lib.rs <Drain<'a, T> as core::fmt::Debug>::fmt
+'a
+deps:{"<&T as core::fmt::Debug>":{},"<&mut T as core::fmt::Debug>":{},"<*const T as core::fmt::Debug>":{},"<*mut T as core::fmt::Debug>":{},"<Drain<'a, T> as core::fmt::Debug>::fmt":{"<T as Array>::Item":["core::fmt::Debug"],"T":["Array","core::marker::Sized"]},"Drain":{"T":["core::marker::Sized","core::marker::Send","Array","core::marker::Sync"]},"IntoIter":{"A":["Array","core::marker::Sized","core::clone::Clone"]},"SmallVec":{"A":["Array","core::marker::Sized"]}}
+candidates:{"<&T as core::fmt::Debug>":{},"<&mut T as core::fmt::Debug>":{},"<*const T as core::fmt::Debug>":{},"<*mut T as core::fmt::Debug>":{},"<Drain<'a, T> as core::fmt::Debug>::fmt":{"<T as Array>::Item":["Drain","IntoIter","SmallVec","<*mut T as core::fmt::Debug>","CollectionAllocErr"]},"Drain":{},"IntoIter":{},"SmallVec":{}}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // Drain<'a, T>
+let mut p1 = &mut  MaybeUninit::uninit().assume_init(); // core::fmt::Formatter<'_>
++p0.fmt(p1);
++<Drain<'a, T> as core::fmt::Debug>::fmt(p0, p1);
++crate::<Drain<'a, T> as core::fmt::Debug>::fmt(p0, p1);
++<Drain<'a, T>>::fmt(p0, p1);
+-----------------
+src/lib.rs <Drain<'a, T> as core::iter::Iterator>::next
+'a
+deps:{"<Drain<'a, T> as core::iter::Iterator>::next":{"T":["Array","core::marker::Sized"]}}
+candidates:{"<Drain<'a, T> as core::iter::Iterator>::next":{}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // Drain<'a, T>
++p0.next();
++<Drain<'a, T> as core::iter::Iterator>::next(p0);
++crate::<Drain<'a, T> as core::iter::Iterator>::next(p0);
++<Drain<'a, T>>::next(p0);
+-----------------
+src/lib.rs <Drain<'a, T> as core::iter::Iterator>::size_hint
+'a
+deps:{"<Drain<'a, T> as core::iter::Iterator>::size_hint":{"T":["core::marker::Sized","Array"]}}
+candidates:{"<Drain<'a, T> as core::iter::Iterator>::size_hint":{}}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // Drain<'a, T>
++p0.size_hint();
++<Drain<'a, T> as core::iter::Iterator>::size_hint(p0);
++crate::<Drain<'a, T> as core::iter::Iterator>::size_hint(p0);
++<Drain<'a, T>>::size_hint(p0);
+-----------------
+src/lib.rs <Drain<'a, T> as core::iter::DoubleEndedIterator>::next_back
+'a
+deps:{"<Drain<'a, T> as core::iter::DoubleEndedIterator>::next_back":{"T":["core::marker::Sized","Array"]}}
+candidates:{"<Drain<'a, T> as core::iter::DoubleEndedIterator>::next_back":{}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // Drain<'a, T>
++p0.next_back();
++<Drain<'a, T> as core::iter::DoubleEndedIterator>::next_back(p0);
++crate::<Drain<'a, T> as core::iter::DoubleEndedIterator>::next_back(p0);
++<Drain<'a, T>>::next_back(p0);
+-----------------
+src/lib.rs <Drain<'a, T> as core::iter::ExactSizeIterator>::len
+'a
+deps:{"<Drain<'a, T> as core::iter::ExactSizeIterator>::len":{"T":["core::marker::Sized","Array"]}}
+candidates:{"<Drain<'a, T> as core::iter::ExactSizeIterator>::len":{}}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // Drain<'a, T>
++p0.len();
++<Drain<'a, T> as core::iter::ExactSizeIterator>::len(p0);
++crate::<Drain<'a, T> as core::iter::ExactSizeIterator>::len(p0);
++<Drain<'a, T>>::len(p0);
+-----------------
+src/lib.rs <Drain<'a, T> as core::ops::Drop>::drop
+'a
+deps:{"<Drain<'a, T> as core::ops::Drop>::drop":{"T":["core::marker::Sized","Array"]}}
+candidates:{"<Drain<'a, T> as core::ops::Drop>::drop":{}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // Drain<'a, T>
++p0.drop();
++<Drain<'a, T> as core::ops::Drop>::drop(p0);
++crate::<Drain<'a, T> as core::ops::Drop>::drop(p0);
++<Drain<'a, T>>::drop(p0);
+-----------------
+src/lib.rs SmallVecData::<A>::inline
+deps:{"SmallVecData::<A>::inline":{"A":["Array","core::marker::Sized"]}}
+candidates:{"SmallVecData::<A>::inline":{}}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // SmallVecData<A>
++p0.inline();
++SmallVecData::<A>::inline(p0);
++crate::SmallVecData::<A>::inline(p0);
++<SmallVecData<A>>::inline(p0);
+-----------------
+src/lib.rs SmallVecData::<A>::inline_mut
+deps:{"SmallVecData::<A>::inline_mut":{"A":["Array","core::marker::Sized"]}}
+candidates:{"SmallVecData::<A>::inline_mut":{}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // SmallVecData<A>
++p0.inline_mut();
++SmallVecData::<A>::inline_mut(p0);
++crate::SmallVecData::<A>::inline_mut(p0);
++<SmallVecData<A>>::inline_mut(p0);
+-----------------
+src/lib.rs SmallVecData::<A>::from_inline
+deps:{"SmallVecData::<A>::from_inline":{"A":["Array","core::marker::Sized"]}}
+candidates:{"SmallVecData::<A>::from_inline":{}}
+let mut p0 = MaybeUninit::uninit().assume_init(); // core::mem::MaybeUninit<A>
++SmallVecData::<A>::from_inline(p0);
++crate::SmallVecData::<A>::from_inline(p0);
++<SmallVecData<A>>::from_inline(p0);
+-----------------
+src/lib.rs SmallVecData::<A>::into_inline
+deps:{"SmallVecData::<A>::into_inline":{"A":["core::marker::Sized","Array"]}}
+candidates:{"SmallVecData::<A>::into_inline":{}}
+let mut p0 = MaybeUninit::uninit().assume_init(); // SmallVecData<A>
++p0.into_inline();
++SmallVecData::<A>::into_inline(p0);
++crate::SmallVecData::<A>::into_inline(p0);
++<SmallVecData<A>>::into_inline(p0);
+-----------------
+src/lib.rs SmallVecData::<A>::heap
+deps:{"SmallVecData::<A>::heap":{"A":["Array","core::marker::Sized"]}}
+candidates:{"SmallVecData::<A>::heap":{}}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // SmallVecData<A>
++p0.heap();
++SmallVecData::<A>::heap(p0);
++crate::SmallVecData::<A>::heap(p0);
++<SmallVecData<A>>::heap(p0);
+-----------------
+src/lib.rs SmallVecData::<A>::heap_mut
+deps:{"SmallVecData::<A>::heap_mut":{"A":["Array","core::marker::Sized"]}}
+candidates:{"SmallVecData::<A>::heap_mut":{}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // SmallVecData<A>
++p0.heap_mut();
++SmallVecData::<A>::heap_mut(p0);
++crate::SmallVecData::<A>::heap_mut(p0);
++<SmallVecData<A>>::heap_mut(p0);
+-----------------
+src/lib.rs SmallVecData::<A>::from_heap
+deps:{"SmallVecData::<A>::from_heap":{"A":["Array","core::marker::Sized"]}}
+candidates:{"SmallVecData::<A>::from_heap":{}}
+let mut p0 = MaybeUninit::uninit().assume_init(); // *mut <A as Array>::Item
+let mut p1 = 0usize; // None+usize
++SmallVecData::<A>::from_heap(p0, p1);
++crate::SmallVecData::<A>::from_heap(p0, p1);
++<SmallVecData<A>>::from_heap(p0, p1);
+-----------------
+src/lib.rs SmallVec::<A>::new
+deps:{"SmallVec::<A>::new":{"A":["Array","core::marker::Sized"]}}
+candidates:{"SmallVec::<A>::new":{}}
++SmallVec::<A>::new();
++crate::SmallVec::<A>::new();
++<SmallVec<A>>::new();
+-----------------
+src/lib.rs SmallVec::<A>::with_capacity
+deps:{"SmallVec::<A>::with_capacity":{"A":["core::marker::Sized","Array"]}}
+candidates:{"SmallVec::<A>::with_capacity":{}}
+let mut p0 = 0usize; // None+usize
++SmallVec::<A>::with_capacity(p0);
++crate::SmallVec::<A>::with_capacity(p0);
++<SmallVec<A>>::with_capacity(p0);
+-----------------
+src/lib.rs SmallVec::<A>::from_vec
+deps:{"SmallVec::<A>::from_vec":{"A":["Array","core::marker::Sized"]}}
+candidates:{"SmallVec::<A>::from_vec":{}}
+let mut p0 = MaybeUninit::uninit().assume_init(); // alloc::vec::Vec<<A as Array>::Item>
++SmallVec::<A>::from_vec(p0);
++crate::SmallVec::<A>::from_vec(p0);
++<SmallVec<A>>::from_vec(p0);
+-----------------
+src/lib.rs SmallVec::<A>::from_buf
+deps:{"SmallVec::<A>::from_buf":{"A":["core::marker::Sized","Array"]}}
+candidates:{"SmallVec::<A>::from_buf":{}}
+let mut p0 = MaybeUninit::uninit().assume_init(); // A
++SmallVec::<A>::from_buf(p0);
++crate::SmallVec::<A>::from_buf(p0);
++<SmallVec<A>>::from_buf(p0);
+-----------------
+src/lib.rs SmallVec::<A>::from_buf_and_len
+deps:{"SmallVec::<A>::from_buf_and_len":{"A":["core::marker::Sized","Array"]}}
+candidates:{"SmallVec::<A>::from_buf_and_len":{}}
+let mut p0 = MaybeUninit::uninit().assume_init(); // A
+let mut p1 = 0usize; // None+usize
++SmallVec::<A>::from_buf_and_len(p0, p1);
++crate::SmallVec::<A>::from_buf_and_len(p0, p1);
++<SmallVec<A>>::from_buf_and_len(p0, p1);
+-----------------
+src/lib.rs SmallVec::<A>::from_buf_and_len_unchecked
+deps:{"SmallVec::<A>::from_buf_and_len_unchecked":{"A":["Array","core::marker::Sized"]}}
+candidates:{"SmallVec::<A>::from_buf_and_len_unchecked":{}}
+let mut p0 = MaybeUninit::uninit().assume_init(); // core::mem::MaybeUninit<A>
+let mut p1 = 0usize; // None+usize
++SmallVec::<A>::from_buf_and_len_unchecked(p0, p1);
++crate::SmallVec::<A>::from_buf_and_len_unchecked(p0, p1);
++<SmallVec<A>>::from_buf_and_len_unchecked(p0, p1);
+-----------------
+src/lib.rs SmallVec::<A>::set_len
+deps:{"SmallVec::<A>::set_len":{"A":["Array","core::marker::Sized"]}}
+candidates:{"SmallVec::<A>::set_len":{}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // SmallVec<A>
+let mut p1 = 0usize; // None+usize
++p0.set_len(p1);
++SmallVec::<A>::set_len(p0, p1);
++crate::SmallVec::<A>::set_len(p0, p1);
++<SmallVec<A>>::set_len(p0, p1);
+-----------------
+src/lib.rs SmallVec::<A>::inline_capacity
+deps:{"SmallVec::<A>::inline_capacity":{"A":["core::marker::Sized","Array"]}}
+candidates:{"SmallVec::<A>::inline_capacity":{}}
++SmallVec::<A>::inline_capacity();
++crate::SmallVec::<A>::inline_capacity();
++<SmallVec<A>>::inline_capacity();
+-----------------
+src/lib.rs SmallVec::<A>::inline_size
+deps:{"SmallVec::<A>::inline_size":{"A":["Array","core::marker::Sized"]}}
+candidates:{"SmallVec::<A>::inline_size":{}}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // SmallVec<A>
++p0.inline_size();
++SmallVec::<A>::inline_size(p0);
++crate::SmallVec::<A>::inline_size(p0);
++<SmallVec<A>>::inline_size(p0);
+-----------------
+src/lib.rs SmallVec::<A>::len
+deps:{"SmallVec::<A>::len":{"A":["core::marker::Sized","Array"]}}
+candidates:{"SmallVec::<A>::len":{}}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // SmallVec<A>
++p0.len();
++SmallVec::<A>::len(p0);
++crate::SmallVec::<A>::len(p0);
++<SmallVec<A>>::len(p0);
+-----------------
+src/lib.rs SmallVec::<A>::is_empty
+deps:{"SmallVec::<A>::is_empty":{"A":["core::marker::Sized","Array"]}}
+candidates:{"SmallVec::<A>::is_empty":{}}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // SmallVec<A>
++p0.is_empty();
++SmallVec::<A>::is_empty(p0);
++crate::SmallVec::<A>::is_empty(p0);
++<SmallVec<A>>::is_empty(p0);
+-----------------
+src/lib.rs SmallVec::<A>::capacity
+deps:{"SmallVec::<A>::capacity":{"A":["core::marker::Sized","Array"]}}
+candidates:{"SmallVec::<A>::capacity":{}}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // SmallVec<A>
++p0.capacity();
++SmallVec::<A>::capacity(p0);
++crate::SmallVec::<A>::capacity(p0);
++<SmallVec<A>>::capacity(p0);
+-----------------
+src/lib.rs SmallVec::<A>::triple
+deps:{"SmallVec::<A>::triple":{"A":["Array","core::marker::Sized"]}}
+candidates:{"SmallVec::<A>::triple":{}}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // SmallVec<A>
++p0.triple();
++SmallVec::<A>::triple(p0);
++crate::SmallVec::<A>::triple(p0);
++<SmallVec<A>>::triple(p0);
+-----------------
+src/lib.rs SmallVec::<A>::triple_mut
+deps:{"SmallVec::<A>::triple_mut":{"A":["core::marker::Sized","Array"]}}
+candidates:{"SmallVec::<A>::triple_mut":{}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // SmallVec<A>
++p0.triple_mut();
++SmallVec::<A>::triple_mut(p0);
++crate::SmallVec::<A>::triple_mut(p0);
++<SmallVec<A>>::triple_mut(p0);
+-----------------
+src/lib.rs SmallVec::<A>::spilled
+deps:{"SmallVec::<A>::spilled":{"A":["Array","core::marker::Sized"]}}
+candidates:{"SmallVec::<A>::spilled":{}}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // SmallVec<A>
++p0.spilled();
++SmallVec::<A>::spilled(p0);
++crate::SmallVec::<A>::spilled(p0);
++<SmallVec<A>>::spilled(p0);
+-----------------
+src/lib.rs SmallVec::<A>::drain
+deps:{"SmallVec::<A>::drain":{"A":["Array","core::marker::Sized"],"R":["core::ops::RangeBounds","core::marker::Sized"]}}
+candidates:{"SmallVec::<A>::drain":{}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // SmallVec<A>
+let mut p1 = MaybeUninit::uninit().assume_init(); // R
++p0.drain(p1);
++SmallVec::<A>::drain(p0, p1);
++crate::SmallVec::<A>::drain(p0, p1);
++<SmallVec<A>>::drain(p0, p1);
+-----------------
+src/lib.rs SmallVec::<A>::push
+deps:{"SmallVec::<A>::push":{"A":["core::marker::Sized","Array"]}}
+candidates:{"SmallVec::<A>::push":{}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // SmallVec<A>
+let mut p1 = MaybeUninit::uninit().assume_init(); // <A as Array>::Item
++p0.push(p1);
++SmallVec::<A>::push(p0, p1);
++crate::SmallVec::<A>::push(p0, p1);
++<SmallVec<A>>::push(p0, p1);
+-----------------
+src/lib.rs SmallVec::<A>::pop
+deps:{"SmallVec::<A>::pop":{"A":["core::marker::Sized","Array"]}}
+candidates:{"SmallVec::<A>::pop":{}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // SmallVec<A>
++p0.pop();
++SmallVec::<A>::pop(p0);
++crate::SmallVec::<A>::pop(p0);
++<SmallVec<A>>::pop(p0);
+-----------------
+src/lib.rs SmallVec::<A>::append
+deps:{"SmallVec::<A>::append":{"A":["Array","core::marker::Sized"],"B":["core::marker::Sized","Array"]}}
+candidates:{"SmallVec::<A>::append":{}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // SmallVec<A>
+let mut p1 = &mut  MaybeUninit::uninit().assume_init(); // SmallVec<B>
++p0.append(p1);
++SmallVec::<A>::append(p0, p1);
++crate::SmallVec::<A>::append(p0, p1);
++<SmallVec<A>>::append(p0, p1);
+-----------------
+src/lib.rs SmallVec::<A>::grow
+deps:{"SmallVec::<A>::grow":{"A":["core::marker::Sized","Array"]}}
+candidates:{"SmallVec::<A>::grow":{}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // SmallVec<A>
+let mut p1 = 0usize; // None+usize
++p0.grow(p1);
++SmallVec::<A>::grow(p0, p1);
++crate::SmallVec::<A>::grow(p0, p1);
++<SmallVec<A>>::grow(p0, p1);
+-----------------
+src/lib.rs SmallVec::<A>::try_grow
+deps:{"SmallVec::<A>::try_grow":{"A":["Array","core::marker::Sized"]}}
+candidates:{"SmallVec::<A>::try_grow":{}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // SmallVec<A>
+let mut p1 = 0usize; // None+usize
++p0.try_grow(p1);
++SmallVec::<A>::try_grow(p0, p1);
++crate::SmallVec::<A>::try_grow(p0, p1);
++<SmallVec<A>>::try_grow(p0, p1);
+-----------------
+src/lib.rs SmallVec::<A>::reserve
+deps:{"SmallVec::<A>::reserve":{"A":["Array","core::marker::Sized"]}}
+candidates:{"SmallVec::<A>::reserve":{}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // SmallVec<A>
+let mut p1 = 0usize; // None+usize
++p0.reserve(p1);
++SmallVec::<A>::reserve(p0, p1);
++crate::SmallVec::<A>::reserve(p0, p1);
++<SmallVec<A>>::reserve(p0, p1);
+-----------------
+src/lib.rs SmallVec::<A>::try_reserve
+deps:{"SmallVec::<A>::try_reserve":{"A":["Array","core::marker::Sized"]}}
+candidates:{"SmallVec::<A>::try_reserve":{}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // SmallVec<A>
+let mut p1 = 0usize; // None+usize
++p0.try_reserve(p1);
++SmallVec::<A>::try_reserve(p0, p1);
++crate::SmallVec::<A>::try_reserve(p0, p1);
++<SmallVec<A>>::try_reserve(p0, p1);
+-----------------
+src/lib.rs SmallVec::<A>::reserve_exact
+deps:{"SmallVec::<A>::reserve_exact":{"A":["Array","core::marker::Sized"]}}
+candidates:{"SmallVec::<A>::reserve_exact":{}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // SmallVec<A>
+let mut p1 = 0usize; // None+usize
++p0.reserve_exact(p1);
++SmallVec::<A>::reserve_exact(p0, p1);
++crate::SmallVec::<A>::reserve_exact(p0, p1);
++<SmallVec<A>>::reserve_exact(p0, p1);
+-----------------
+src/lib.rs SmallVec::<A>::try_reserve_exact
+deps:{"SmallVec::<A>::try_reserve_exact":{"A":["core::marker::Sized","Array"]}}
+candidates:{"SmallVec::<A>::try_reserve_exact":{}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // SmallVec<A>
+let mut p1 = 0usize; // None+usize
++p0.try_reserve_exact(p1);
++SmallVec::<A>::try_reserve_exact(p0, p1);
++crate::SmallVec::<A>::try_reserve_exact(p0, p1);
++<SmallVec<A>>::try_reserve_exact(p0, p1);
+-----------------
+src/lib.rs SmallVec::<A>::shrink_to_fit
+deps:{"SmallVec::<A>::shrink_to_fit":{"A":["core::marker::Sized","Array"]}}
+candidates:{"SmallVec::<A>::shrink_to_fit":{}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // SmallVec<A>
++p0.shrink_to_fit();
++SmallVec::<A>::shrink_to_fit(p0);
++crate::SmallVec::<A>::shrink_to_fit(p0);
++<SmallVec<A>>::shrink_to_fit(p0);
+-----------------
+src/lib.rs SmallVec::<A>::truncate
+deps:{"SmallVec::<A>::truncate":{"A":["Array","core::marker::Sized"]}}
+candidates:{"SmallVec::<A>::truncate":{}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // SmallVec<A>
+let mut p1 = 0usize; // None+usize
++p0.truncate(p1);
++SmallVec::<A>::truncate(p0, p1);
++crate::SmallVec::<A>::truncate(p0, p1);
++<SmallVec<A>>::truncate(p0, p1);
+-----------------
+src/lib.rs SmallVec::<A>::as_slice
+deps:{"SmallVec::<A>::as_slice":{"A":["Array","core::marker::Sized"]}}
+candidates:{"SmallVec::<A>::as_slice":{}}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // SmallVec<A>
++p0.as_slice();
++SmallVec::<A>::as_slice(p0);
++crate::SmallVec::<A>::as_slice(p0);
++<SmallVec<A>>::as_slice(p0);
+-----------------
+src/lib.rs SmallVec::<A>::as_mut_slice
+deps:{"SmallVec::<A>::as_mut_slice":{"A":["Array","core::marker::Sized"]}}
+candidates:{"SmallVec::<A>::as_mut_slice":{}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // SmallVec<A>
++p0.as_mut_slice();
++SmallVec::<A>::as_mut_slice(p0);
++crate::SmallVec::<A>::as_mut_slice(p0);
++<SmallVec<A>>::as_mut_slice(p0);
+-----------------
+src/lib.rs SmallVec::<A>::swap_remove
+deps:{"SmallVec::<A>::swap_remove":{"A":["Array","core::marker::Sized"]}}
+candidates:{"SmallVec::<A>::swap_remove":{}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // SmallVec<A>
+let mut p1 = 0usize; // None+usize
++p0.swap_remove(p1);
++SmallVec::<A>::swap_remove(p0, p1);
++crate::SmallVec::<A>::swap_remove(p0, p1);
++<SmallVec<A>>::swap_remove(p0, p1);
+-----------------
+src/lib.rs SmallVec::<A>::clear
+deps:{"SmallVec::<A>::clear":{"A":["core::marker::Sized","Array"]}}
+candidates:{"SmallVec::<A>::clear":{}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // SmallVec<A>
++p0.clear();
++SmallVec::<A>::clear(p0);
++crate::SmallVec::<A>::clear(p0);
++<SmallVec<A>>::clear(p0);
+-----------------
+src/lib.rs SmallVec::<A>::remove
+deps:{"SmallVec::<A>::remove":{"A":["core::marker::Sized","Array"]}}
+candidates:{"SmallVec::<A>::remove":{}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // SmallVec<A>
+let mut p1 = 0usize; // None+usize
++p0.remove(p1);
++SmallVec::<A>::remove(p0, p1);
++crate::SmallVec::<A>::remove(p0, p1);
++<SmallVec<A>>::remove(p0, p1);
+-----------------
+src/lib.rs SmallVec::<A>::insert
+deps:{"SmallVec::<A>::insert":{"A":["core::marker::Sized","Array"]}}
+candidates:{"SmallVec::<A>::insert":{}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // SmallVec<A>
+let mut p1 = 0usize; // None+usize
+let mut p2 = MaybeUninit::uninit().assume_init(); // <A as Array>::Item
++p0.insert(p1, p2);
++SmallVec::<A>::insert(p0, p1, p2);
++crate::SmallVec::<A>::insert(p0, p1, p2);
++<SmallVec<A>>::insert(p0, p1, p2);
+-----------------
+src/lib.rs SmallVec::<A>::insert_many
+deps:{"SmallVec::<A>::insert_many":{"A":["core::marker::Sized","Array"],"I":["core::iter::IntoIterator","core::marker::Sized"]}}
+candidates:{"SmallVec::<A>::insert_many":{}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // SmallVec<A>
+let mut p1 = 0usize; // None+usize
+let mut p2 = MaybeUninit::uninit().assume_init(); // I
++p0.insert_many(p1, p2);
++SmallVec::<A>::insert_many(p0, p1, p2);
++crate::SmallVec::<A>::insert_many(p0, p1, p2);
++<SmallVec<A>>::insert_many(p0, p1, p2);
+-----------------
+src/lib.rs <SmallVec<A>::insert_many::DropOnPanic<T> as core::ops::Drop>::drop
+deps:{"<SmallVec<A>::insert_many::DropOnPanic<T> as core::ops::Drop>::drop":{"T":["core::marker::Sized"]}}
+candidates:{"<SmallVec<A>::insert_many::DropOnPanic<T> as core::ops::Drop>::drop":{}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // SmallVec<A>::insert_many::DropOnPanic<T>
++p0.drop();
++<SmallVec<A>::insert_many::DropOnPanic<T> as core::ops::Drop>::drop(p0);
++crate::<SmallVec<A>::insert_many::DropOnPanic<T> as core::ops::Drop>::drop(p0);
++<SmallVec<A>::insert_many::DropOnPanic<T>>::drop(p0);
+-----------------
+src/lib.rs SmallVec::<A>::into_vec
+deps:{"SmallVec::<A>::into_vec":{"A":["core::marker::Sized","Array"]}}
+candidates:{"SmallVec::<A>::into_vec":{}}
+let mut p0 = MaybeUninit::uninit().assume_init(); // SmallVec<A>
++p0.into_vec();
++SmallVec::<A>::into_vec(p0);
++crate::SmallVec::<A>::into_vec(p0);
++<SmallVec<A>>::into_vec(p0);
+-----------------
+src/lib.rs SmallVec::<A>::into_boxed_slice
+deps:{"SmallVec::<A>::into_boxed_slice":{"A":["Array","core::marker::Sized"]}}
+candidates:{"SmallVec::<A>::into_boxed_slice":{}}
+let mut p0 = MaybeUninit::uninit().assume_init(); // SmallVec<A>
++p0.into_boxed_slice();
++SmallVec::<A>::into_boxed_slice(p0);
++crate::SmallVec::<A>::into_boxed_slice(p0);
++<SmallVec<A>>::into_boxed_slice(p0);
+-----------------
+src/lib.rs SmallVec::<A>::into_inner
+deps:{"SmallVec::<A>::into_inner":{"A":["core::marker::Sized","Array"]}}
+candidates:{"SmallVec::<A>::into_inner":{}}
+let mut p0 = MaybeUninit::uninit().assume_init(); // SmallVec<A>
++p0.into_inner();
++SmallVec::<A>::into_inner(p0);
++crate::SmallVec::<A>::into_inner(p0);
++<SmallVec<A>>::into_inner(p0);
+-----------------
+src/lib.rs SmallVec::<A>::retain
+deps:{"SmallVec::<A>::retain":{"A":["Array","core::marker::Sized"],"F":["core::marker::Sized","core::ops::FnMut"]}}
+candidates:{"SmallVec::<A>::retain":{}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // SmallVec<A>
+let mut p1 = MaybeUninit::uninit().assume_init(); // F
++p0.retain(p1);
++SmallVec::<A>::retain(p0, p1);
++crate::SmallVec::<A>::retain(p0, p1);
++<SmallVec<A>>::retain(p0, p1);
+-----------------
+src/lib.rs SmallVec::<A>::dedup
+deps:{"SmallVec":{"A":["core::marker::Sized","Array"]},"SmallVec::<A>::dedup":{"<A as Array>::Item":["core::cmp::PartialEq"],"A":["Array","core::marker::Sized"]},"core::ptr::const_ptr::<impl core::cmp::PartialEq for *const T>":{},"core::ptr::mut_ptr::<impl core::cmp::PartialEq for *mut T>":{}}
+candidates:{"SmallVec":{},"SmallVec::<A>::dedup":{"<A as Array>::Item":["SmallVec","core::ptr::mut_ptr::<impl core::cmp::PartialEq for *mut T>"]},"core::ptr::const_ptr::<impl core::cmp::PartialEq for *const T>":{},"core::ptr::mut_ptr::<impl core::cmp::PartialEq for *mut T>":{}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // SmallVec<A>
++p0.dedup();
++SmallVec::<A>::dedup(p0);
++crate::SmallVec::<A>::dedup(p0);
++<SmallVec<A>>::dedup(p0);
+-----------------
+src/lib.rs SmallVec::<A>::dedup_by
+deps:{"SmallVec::<A>::dedup_by":{"A":["Array","core::marker::Sized"],"F":["core::marker::Sized","core::ops::FnMut"]}}
+candidates:{"SmallVec::<A>::dedup_by":{}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // SmallVec<A>
+let mut p1 = MaybeUninit::uninit().assume_init(); // F
++p0.dedup_by(p1);
++SmallVec::<A>::dedup_by(p0, p1);
++crate::SmallVec::<A>::dedup_by(p0, p1);
++<SmallVec<A>>::dedup_by(p0, p1);
+-----------------
+src/lib.rs SmallVec::<A>::dedup_by_key
+deps:{"SmallVec::<A>::dedup_by_key":{"A":["Array","core::marker::Sized"],"F":["core::marker::Sized","core::ops::FnMut"],"K":["core::marker::Sized","core::cmp::PartialEq"]},"core::cmp::impls::<impl core::cmp::PartialEq<&B> for &A>":{},"core::cmp::impls::<impl core::cmp::PartialEq<&B> for &mut A>":{},"core::cmp::impls::<impl core::cmp::PartialEq<&mut B> for &A>":{},"core::cmp::impls::<impl core::cmp::PartialEq<&mut B> for &mut A>":{}}
+candidates:{"SmallVec::<A>::dedup_by_key":{"K":["core::cmp::impls::<impl core::cmp::PartialEq<&B> for &mut A>","core::cmp::impls::<impl core::cmp::PartialEq<&mut B> for &mut A>"]},"core::cmp::impls::<impl core::cmp::PartialEq<&B> for &A>":{},"core::cmp::impls::<impl core::cmp::PartialEq<&B> for &mut A>":{},"core::cmp::impls::<impl core::cmp::PartialEq<&mut B> for &A>":{},"core::cmp::impls::<impl core::cmp::PartialEq<&mut B> for &mut A>":{}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // SmallVec<A>
+let mut p1 = MaybeUninit::uninit().assume_init(); // F
++p0.dedup_by_key(p1);
++SmallVec::<A>::dedup_by_key(p0, p1);
++crate::SmallVec::<A>::dedup_by_key(p0, p1);
++<SmallVec<A>>::dedup_by_key(p0, p1);
+-----------------
+src/lib.rs SmallVec::<A>::resize_with
+deps:{"SmallVec::<A>::resize_with":{"A":["core::marker::Sized","Array"],"F":["core::marker::Sized","core::ops::FnMut"]}}
+candidates:{"SmallVec::<A>::resize_with":{}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // SmallVec<A>
+let mut p1 = 0usize; // None+usize
+let mut p2 = MaybeUninit::uninit().assume_init(); // F
++p0.resize_with(p1, p2);
++SmallVec::<A>::resize_with(p0, p1, p2);
++crate::SmallVec::<A>::resize_with(p0, p1, p2);
++<SmallVec<A>>::resize_with(p0, p1, p2);
+-----------------
+src/lib.rs SmallVec::<A>::from_raw_parts
+deps:{"SmallVec::<A>::from_raw_parts":{"A":["Array","core::marker::Sized"]}}
+candidates:{"SmallVec::<A>::from_raw_parts":{}}
+let mut p0 = MaybeUninit::uninit().assume_init(); // *mut <A as Array>::Item
+let mut p1 = 0usize; // None+usize
+let mut p2 = 0usize; // None+usize
++SmallVec::<A>::from_raw_parts(p0, p1, p2);
++crate::SmallVec::<A>::from_raw_parts(p0, p1, p2);
++<SmallVec<A>>::from_raw_parts(p0, p1, p2);
+-----------------
+src/lib.rs SmallVec::<A>::as_ptr
+deps:{"SmallVec::<A>::as_ptr":{"A":["Array","core::marker::Sized"]}}
+candidates:{"SmallVec::<A>::as_ptr":{}}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // SmallVec<A>
++p0.as_ptr();
++SmallVec::<A>::as_ptr(p0);
++crate::SmallVec::<A>::as_ptr(p0);
++<SmallVec<A>>::as_ptr(p0);
+-----------------
+src/lib.rs SmallVec::<A>::as_mut_ptr
+deps:{"SmallVec::<A>::as_mut_ptr":{"A":["Array","core::marker::Sized"]}}
+candidates:{"SmallVec::<A>::as_mut_ptr":{}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // SmallVec<A>
++p0.as_mut_ptr();
++SmallVec::<A>::as_mut_ptr(p0);
++crate::SmallVec::<A>::as_mut_ptr(p0);
++<SmallVec<A>>::as_mut_ptr(p0);
+-----------------
+src/lib.rs SmallVec::<A>::from_slice
+deps:{"SmallVec::<A>::from_slice":{"<A as Array>::Item":["core::marker::Copy"],"A":["core::marker::Sized","Array"]},"core::marker::copy_impls::<impl core::marker::Copy for &T>":{},"core::marker::copy_impls::<impl core::marker::Copy for *const T>":{},"core::marker::copy_impls::<impl core::marker::Copy for *mut T>":{}}
+candidates:{"SmallVec::<A>::from_slice":{"<A as Array>::Item":["char","core::marker::copy_impls::<impl core::marker::Copy for *const T>","u8","bool","u64","u32","i8","i64","i16","i32","usize","u16"]},"core::marker::copy_impls::<impl core::marker::Copy for &T>":{},"core::marker::copy_impls::<impl core::marker::Copy for *const T>":{},"core::marker::copy_impls::<impl core::marker::Copy for *mut T>":{}}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // [<A as Array>::Item]
++SmallVec::<A>::from_slice(p0);
++crate::SmallVec::<A>::from_slice(p0);
++<SmallVec<A>>::from_slice(p0);
+-----------------
+src/lib.rs SmallVec::<A>::insert_from_slice
+deps:{"SmallVec::<A>::insert_from_slice":{"<A as Array>::Item":["core::marker::Copy"],"A":["core::marker::Sized","Array"]},"core::marker::copy_impls::<impl core::marker::Copy for &T>":{},"core::marker::copy_impls::<impl core::marker::Copy for *const T>":{},"core::marker::copy_impls::<impl core::marker::Copy for *mut T>":{}}
+candidates:{"SmallVec::<A>::insert_from_slice":{"<A as Array>::Item":["usize","core::marker::copy_impls::<impl core::marker::Copy for &T>","u8","u32","u64","u16","bool","i16","i64","char","i32","i8"]},"core::marker::copy_impls::<impl core::marker::Copy for &T>":{},"core::marker::copy_impls::<impl core::marker::Copy for *const T>":{},"core::marker::copy_impls::<impl core::marker::Copy for *mut T>":{}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // SmallVec<A>
+let mut p1 = 0usize; // None+usize
+let mut p2 = & MaybeUninit::uninit().assume_init(); // [<A as Array>::Item]
++p0.insert_from_slice(p1, p2);
++SmallVec::<A>::insert_from_slice(p0, p1, p2);
++crate::SmallVec::<A>::insert_from_slice(p0, p1, p2);
++<SmallVec<A>>::insert_from_slice(p0, p1, p2);
+-----------------
+src/lib.rs SmallVec::<A>::extend_from_slice
+deps:{"SmallVec::<A>::extend_from_slice":{"<A as Array>::Item":["core::marker::Copy"],"A":["core::marker::Sized","Array"]},"core::marker::copy_impls::<impl core::marker::Copy for &T>":{},"core::marker::copy_impls::<impl core::marker::Copy for *const T>":{},"core::marker::copy_impls::<impl core::marker::Copy for *mut T>":{}}
+candidates:{"SmallVec::<A>::extend_from_slice":{"<A as Array>::Item":["core::marker::copy_impls::<impl core::marker::Copy for *mut T>","u64","u8","bool","usize","u32","i64","i16","u16","char","i8","i32"]},"core::marker::copy_impls::<impl core::marker::Copy for &T>":{},"core::marker::copy_impls::<impl core::marker::Copy for *const T>":{},"core::marker::copy_impls::<impl core::marker::Copy for *mut T>":{}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // SmallVec<A>
+let mut p1 = & MaybeUninit::uninit().assume_init(); // [<A as Array>::Item]
++p0.extend_from_slice(p1);
++SmallVec::<A>::extend_from_slice(p0, p1);
++crate::SmallVec::<A>::extend_from_slice(p0, p1);
++<SmallVec<A>>::extend_from_slice(p0, p1);
+-----------------
+src/lib.rs SmallVec::<A>::resize
+deps:{"IntoIter":{"A":["core::clone::Clone","core::marker::Sized","Array"]},"SmallVec":{"A":["core::marker::Sized","Array"]},"SmallVec::<A>::resize":{"<A as Array>::Item":["core::clone::Clone"],"A":["core::marker::Sized","Array"]},"core::clone::impls::<impl core::clone::Clone for &T>":{},"core::clone::impls::<impl core::clone::Clone for &mut T>":{},"core::clone::impls::<impl core::clone::Clone for *const T>":{},"core::clone::impls::<impl core::clone::Clone for *mut T>":{}}
+candidates:{"IntoIter":{},"SmallVec":{},"SmallVec::<A>::resize":{"<A as Array>::Item":["SmallVec","core::clone::impls::<impl core::clone::Clone for &T>","IntoIter"]},"core::clone::impls::<impl core::clone::Clone for &T>":{},"core::clone::impls::<impl core::clone::Clone for &mut T>":{},"core::clone::impls::<impl core::clone::Clone for *const T>":{},"core::clone::impls::<impl core::clone::Clone for *mut T>":{}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // SmallVec<A>
+let mut p1 = 0usize; // None+usize
+let mut p2 = MaybeUninit::uninit().assume_init(); // <A as Array>::Item
++p0.resize(p1, p2);
++SmallVec::<A>::resize(p0, p1, p2);
++crate::SmallVec::<A>::resize(p0, p1, p2);
++<SmallVec<A>>::resize(p0, p1, p2);
+-----------------
+src/lib.rs SmallVec::<A>::from_elem
+deps:{"IntoIter":{"A":["core::marker::Sized","Array","core::clone::Clone"]},"SmallVec":{"A":["Array","core::marker::Sized"]},"SmallVec::<A>::from_elem":{"<A as Array>::Item":["core::clone::Clone"],"A":["core::marker::Sized","Array"]},"core::clone::impls::<impl core::clone::Clone for &T>":{},"core::clone::impls::<impl core::clone::Clone for &mut T>":{},"core::clone::impls::<impl core::clone::Clone for *const T>":{},"core::clone::impls::<impl core::clone::Clone for *mut T>":{}}
+candidates:{"IntoIter":{},"SmallVec":{},"SmallVec::<A>::from_elem":{"<A as Array>::Item":["core::clone::impls::<impl core::clone::Clone for *const T>","SmallVec","IntoIter"]},"core::clone::impls::<impl core::clone::Clone for &T>":{},"core::clone::impls::<impl core::clone::Clone for &mut T>":{},"core::clone::impls::<impl core::clone::Clone for *const T>":{},"core::clone::impls::<impl core::clone::Clone for *mut T>":{}}
+let mut p0 = MaybeUninit::uninit().assume_init(); // <A as Array>::Item
+let mut p1 = 0usize; // None+usize
++SmallVec::<A>::from_elem(p0, p1);
++crate::SmallVec::<A>::from_elem(p0, p1);
++<SmallVec<A>>::from_elem(p0, p1);
+-----------------
+src/lib.rs <SmallVec<A> as core::ops::Deref>::deref
+deps:{"<SmallVec<A> as core::ops::Deref>::deref":{"A":["core::marker::Sized","Array"]}}
+candidates:{"<SmallVec<A> as core::ops::Deref>::deref":{}}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // SmallVec<A>
++p0.deref();
++<SmallVec<A> as core::ops::Deref>::deref(p0);
++crate::<SmallVec<A> as core::ops::Deref>::deref(p0);
++<SmallVec<A>>::deref(p0);
+-----------------
+src/lib.rs <SmallVec<A> as core::ops::DerefMut>::deref_mut
+deps:{"<SmallVec<A> as core::ops::DerefMut>::deref_mut":{"A":["core::marker::Sized","Array"]}}
+candidates:{"<SmallVec<A> as core::ops::DerefMut>::deref_mut":{}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // SmallVec<A>
++p0.deref_mut();
++<SmallVec<A> as core::ops::DerefMut>::deref_mut(p0);
++crate::<SmallVec<A> as core::ops::DerefMut>::deref_mut(p0);
++<SmallVec<A>>::deref_mut(p0);
+-----------------
+src/lib.rs <SmallVec<A> as core::convert::AsRef<[<A as Array>::Item]>>::as_ref
+deps:{"<SmallVec<A> as core::convert::AsRef<[<A as Array>::Item]>>::as_ref":{"A":["core::marker::Sized","Array"]}}
+candidates:{"<SmallVec<A> as core::convert::AsRef<[<A as Array>::Item]>>::as_ref":{}}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // SmallVec<A>
++p0.as_ref();
++<SmallVec<A> as core::convert::AsRef<[<A as Array>::Item]>>::as_ref(p0);
++crate::<SmallVec<A> as core::convert::AsRef<[<A as Array>::Item]>>::as_ref(p0);
++<SmallVec<A>>::as_ref(p0);
+-----------------
+src/lib.rs <SmallVec<A> as core::convert::AsMut<[<A as Array>::Item]>>::as_mut
+deps:{"<SmallVec<A> as core::convert::AsMut<[<A as Array>::Item]>>::as_mut":{"A":["core::marker::Sized","Array"]}}
+candidates:{"<SmallVec<A> as core::convert::AsMut<[<A as Array>::Item]>>::as_mut":{}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // SmallVec<A>
++p0.as_mut();
++<SmallVec<A> as core::convert::AsMut<[<A as Array>::Item]>>::as_mut(p0);
++crate::<SmallVec<A> as core::convert::AsMut<[<A as Array>::Item]>>::as_mut(p0);
++<SmallVec<A>>::as_mut(p0);
+-----------------
+src/lib.rs <SmallVec<A> as core::borrow::Borrow<[<A as Array>::Item]>>::borrow
+deps:{"<SmallVec<A> as core::borrow::Borrow<[<A as Array>::Item]>>::borrow":{"A":["core::marker::Sized","Array"]}}
+candidates:{"<SmallVec<A> as core::borrow::Borrow<[<A as Array>::Item]>>::borrow":{}}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // SmallVec<A>
++p0.borrow();
++<SmallVec<A> as core::borrow::Borrow<[<A as Array>::Item]>>::borrow(p0);
++crate::<SmallVec<A> as core::borrow::Borrow<[<A as Array>::Item]>>::borrow(p0);
++<SmallVec<A>>::borrow(p0);
+-----------------
+src/lib.rs <SmallVec<A> as core::borrow::BorrowMut<[<A as Array>::Item]>>::borrow_mut
+deps:{"<SmallVec<A> as core::borrow::BorrowMut<[<A as Array>::Item]>>::borrow_mut":{"A":["Array","core::marker::Sized"]}}
+candidates:{"<SmallVec<A> as core::borrow::BorrowMut<[<A as Array>::Item]>>::borrow_mut":{}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // SmallVec<A>
++p0.borrow_mut();
++<SmallVec<A> as core::borrow::BorrowMut<[<A as Array>::Item]>>::borrow_mut(p0);
++crate::<SmallVec<A> as core::borrow::BorrowMut<[<A as Array>::Item]>>::borrow_mut(p0);
++<SmallVec<A>>::borrow_mut(p0);
+-----------------
+src/lib.rs <SmallVec<A> as core::convert::From<&'a [<A as Array>::Item]>>::from
+'a
+deps:{"<SmallVec<A> as core::convert::From<&'a [<A as Array>::Item]>>::from":{"<A as Array>::Item":["core::clone::Clone"],"A":["core::marker::Sized","Array"]},"IntoIter":{"A":["Array","core::marker::Sized","core::clone::Clone"]},"SmallVec":{"A":["core::marker::Sized","Array"]},"core::clone::impls::<impl core::clone::Clone for &T>":{},"core::clone::impls::<impl core::clone::Clone for &mut T>":{},"core::clone::impls::<impl core::clone::Clone for *const T>":{},"core::clone::impls::<impl core::clone::Clone for *mut T>":{}}
+candidates:{"<SmallVec<A> as core::convert::From<&'a [<A as Array>::Item]>>::from":{"<A as Array>::Item":["core::clone::impls::<impl core::clone::Clone for *mut T>","SmallVec","IntoIter"]},"IntoIter":{},"SmallVec":{},"core::clone::impls::<impl core::clone::Clone for &T>":{},"core::clone::impls::<impl core::clone::Clone for &mut T>":{},"core::clone::impls::<impl core::clone::Clone for *const T>":{},"core::clone::impls::<impl core::clone::Clone for *mut T>":{}}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // [<A as Array>::Item]
++<SmallVec<A> as core::convert::From<&'a [<A as Array>::Item]>>::from(p0);
++crate::<SmallVec<A> as core::convert::From<&'a [<A as Array>::Item]>>::from(p0);
++<SmallVec<A>>::from(p0);
+-----------------
+src/lib.rs <SmallVec<A> as core::convert::From<alloc::vec::Vec<<A as Array>::Item>>>::from
+deps:{"<SmallVec<A> as core::convert::From<alloc::vec::Vec<<A as Array>::Item>>>::from":{"A":["Array","core::marker::Sized"]}}
+candidates:{"<SmallVec<A> as core::convert::From<alloc::vec::Vec<<A as Array>::Item>>>::from":{}}
+let mut p0 = MaybeUninit::uninit().assume_init(); // alloc::vec::Vec<<A as Array>::Item>
++<SmallVec<A> as core::convert::From<alloc::vec::Vec<<A as Array>::Item>>>::from(p0);
++crate::<SmallVec<A> as core::convert::From<alloc::vec::Vec<<A as Array>::Item>>>::from(p0);
++<SmallVec<A>>::from(p0);
+-----------------
+src/lib.rs <SmallVec<A> as core::convert::From<A>>::from
+deps:{"<SmallVec<A> as core::convert::From<A>>::from":{"A":["core::marker::Sized","Array"]}}
+candidates:{"<SmallVec<A> as core::convert::From<A>>::from":{}}
+let mut p0 = MaybeUninit::uninit().assume_init(); // A
++<SmallVec<A> as core::convert::From<A>>::from(p0);
++crate::<SmallVec<A> as core::convert::From<A>>::from(p0);
++<SmallVec<A>>::from(p0);
+-----------------
+src/lib.rs <SmallVec<A> as core::ops::Index<I>>::index
+deps:{"<SmallVec<A> as core::ops::Index<I>>::index":{"A":["core::marker::Sized","Array"],"I":["core::marker::Sized","core::slice::SliceIndex"]}}
+candidates:{"<SmallVec<A> as core::ops::Index<I>>::index":{"I":["core::ops::RangeTo<usize>","core::ops::RangeFrom<usize>","core::ops::RangeFull","core::ops::Range<usize>","core::ops::RangeToInclusive<usize>","core::ops::RangeInclusive<usize>"]}}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // SmallVec<A>
+let mut p1 = MaybeUninit::uninit().assume_init(); // I
++p0.index(p1);
++<SmallVec<A> as core::ops::Index<I>>::index(p0, p1);
++crate::<SmallVec<A> as core::ops::Index<I>>::index(p0, p1);
++<SmallVec<A>>::index(p0, p1);
+-----------------
+src/lib.rs <SmallVec<A> as core::ops::IndexMut<I>>::index_mut
+deps:{"<SmallVec<A> as core::ops::IndexMut<I>>::index_mut":{"A":["core::marker::Sized","Array"],"I":["core::marker::Sized","core::slice::SliceIndex"]}}
+candidates:{"<SmallVec<A> as core::ops::IndexMut<I>>::index_mut":{"I":["core::ops::RangeTo<usize>","core::ops::Range<usize>","core::ops::RangeFrom<usize>","core::ops::RangeToInclusive<usize>","core::ops::RangeInclusive<usize>","core::ops::RangeFull"]}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // SmallVec<A>
+let mut p1 = MaybeUninit::uninit().assume_init(); // I
++p0.index_mut(p1);
++<SmallVec<A> as core::ops::IndexMut<I>>::index_mut(p0, p1);
++crate::<SmallVec<A> as core::ops::IndexMut<I>>::index_mut(p0, p1);
++<SmallVec<A>>::index_mut(p0, p1);
+-----------------
+src/lib.rs <SmallVec<A> as ExtendFromSlice<<A as Array>::Item>>::extend_from_slice
+deps:{"<SmallVec<A> as ExtendFromSlice<<A as Array>::Item>>::extend_from_slice":{"<A as Array>::Item":["core::marker::Copy"],"A":["core::marker::Sized","Array"]},"core::marker::copy_impls::<impl core::marker::Copy for &T>":{},"core::marker::copy_impls::<impl core::marker::Copy for *const T>":{},"core::marker::copy_impls::<impl core::marker::Copy for *mut T>":{}}
+candidates:{"<SmallVec<A> as ExtendFromSlice<<A as Array>::Item>>::extend_from_slice":{"<A as Array>::Item":["u32","i64","char","core::marker::copy_impls::<impl core::marker::Copy for &T>","i8","i16","u16","usize","u8","u64","i32","bool"]},"core::marker::copy_impls::<impl core::marker::Copy for &T>":{},"core::marker::copy_impls::<impl core::marker::Copy for *const T>":{},"core::marker::copy_impls::<impl core::marker::Copy for *mut T>":{}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // SmallVec<A>
+let mut p1 = & MaybeUninit::uninit().assume_init(); // [<A as Array>::Item]
++p0.extend_from_slice(p1);
++<SmallVec<A> as ExtendFromSlice<<A as Array>::Item>>::extend_from_slice(p0, p1);
++crate::<SmallVec<A> as ExtendFromSlice<<A as Array>::Item>>::extend_from_slice(p0, p1);
++<SmallVec<A>>::extend_from_slice(p0, p1);
+-----------------
+src/lib.rs <SmallVec<A> as core::iter::FromIterator<<A as Array>::Item>>::from_iter
+deps:{"<SmallVec<A> as core::iter::FromIterator<<A as Array>::Item>>::from_iter":{"A":["core::marker::Sized","Array"],"I":["core::marker::Sized","core::iter::IntoIterator"]}}
+candidates:{"<SmallVec<A> as core::iter::FromIterator<<A as Array>::Item>>::from_iter":{}}
+let mut p0 = MaybeUninit::uninit().assume_init(); // I
++<SmallVec<A> as core::iter::FromIterator<<A as Array>::Item>>::from_iter(p0);
++crate::<SmallVec<A> as core::iter::FromIterator<<A as Array>::Item>>::from_iter(p0);
++<SmallVec<A>>::from_iter(p0);
+-----------------
+src/lib.rs <SmallVec<A> as core::iter::Extend<<A as Array>::Item>>::extend
+deps:{"<SmallVec<A> as core::iter::Extend<<A as Array>::Item>>::extend":{"A":["Array","core::marker::Sized"],"I":["core::iter::IntoIterator","core::marker::Sized"]}}
+candidates:{"<SmallVec<A> as core::iter::Extend<<A as Array>::Item>>::extend":{}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // SmallVec<A>
+let mut p1 = MaybeUninit::uninit().assume_init(); // I
++p0.extend(p1);
++<SmallVec<A> as core::iter::Extend<<A as Array>::Item>>::extend(p0, p1);
++crate::<SmallVec<A> as core::iter::Extend<<A as Array>::Item>>::extend(p0, p1);
++<SmallVec<A>>::extend(p0, p1);
+-----------------
+src/lib.rs <SmallVec<A> as core::fmt::Debug>::fmt
+deps:{"<&T as core::fmt::Debug>":{},"<&mut T as core::fmt::Debug>":{},"<*const T as core::fmt::Debug>":{},"<*mut T as core::fmt::Debug>":{},"<SmallVec<A> as core::fmt::Debug>::fmt":{"<A as Array>::Item":["core::fmt::Debug"],"A":["Array","core::marker::Sized"]},"Drain":{"T":["core::marker::Sync","core::marker::Send","core::marker::Sized","Array"]},"IntoIter":{"A":["core::marker::Sized","core::clone::Clone","Array"]},"SmallVec":{"A":["core::marker::Sized","Array"]}}
+candidates:{"<&T as core::fmt::Debug>":{},"<&mut T as core::fmt::Debug>":{},"<*const T as core::fmt::Debug>":{},"<*mut T as core::fmt::Debug>":{},"<SmallVec<A> as core::fmt::Debug>::fmt":{"<A as Array>::Item":["<&T as core::fmt::Debug>","IntoIter","SmallVec","CollectionAllocErr","Drain"]},"Drain":{},"IntoIter":{},"SmallVec":{}}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // SmallVec<A>
+let mut p1 = &mut  MaybeUninit::uninit().assume_init(); // core::fmt::Formatter<'_>
++p0.fmt(p1);
++<SmallVec<A> as core::fmt::Debug>::fmt(p0, p1);
++crate::<SmallVec<A> as core::fmt::Debug>::fmt(p0, p1);
++<SmallVec<A>>::fmt(p0, p1);
+-----------------
+src/lib.rs <SmallVec<A> as core::default::Default>::default
+deps:{"<SmallVec<A> as core::default::Default>::default":{"A":["core::marker::Sized","Array"]}}
+candidates:{"<SmallVec<A> as core::default::Default>::default":{}}
++<SmallVec<A> as core::default::Default>::default();
++crate::<SmallVec<A> as core::default::Default>::default();
++<SmallVec<A>>::default();
+-----------------
+src/lib.rs <SmallVec<A> as core::ops::Drop>::drop
+deps:{"<SmallVec<A> as core::ops::Drop>::drop":{"A":["Array","core::marker::Sized"]}}
+candidates:{"<SmallVec<A> as core::ops::Drop>::drop":{}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // SmallVec<A>
++p0.drop();
++<SmallVec<A> as core::ops::Drop>::drop(p0);
++crate::<SmallVec<A> as core::ops::Drop>::drop(p0);
++<SmallVec<A>>::drop(p0);
+-----------------
+src/lib.rs <SmallVec<A> as core::clone::Clone>::clone
+deps:{"<SmallVec<A> as core::clone::Clone>::clone":{"<A as Array>::Item":["core::clone::Clone"],"A":["core::marker::Sized","Array"]},"IntoIter":{"A":["core::marker::Sized","core::clone::Clone","Array"]},"SmallVec":{"A":["core::marker::Sized","Array"]},"core::clone::impls::<impl core::clone::Clone for &T>":{},"core::clone::impls::<impl core::clone::Clone for &mut T>":{},"core::clone::impls::<impl core::clone::Clone for *const T>":{},"core::clone::impls::<impl core::clone::Clone for *mut T>":{}}
+candidates:{"<SmallVec<A> as core::clone::Clone>::clone":{"<A as Array>::Item":["core::clone::impls::<impl core::clone::Clone for &T>","IntoIter","SmallVec"]},"IntoIter":{},"SmallVec":{},"core::clone::impls::<impl core::clone::Clone for &T>":{},"core::clone::impls::<impl core::clone::Clone for &mut T>":{},"core::clone::impls::<impl core::clone::Clone for *const T>":{},"core::clone::impls::<impl core::clone::Clone for *mut T>":{}}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // SmallVec<A>
++p0.clone();
++<SmallVec<A> as core::clone::Clone>::clone(p0);
++crate::<SmallVec<A> as core::clone::Clone>::clone(p0);
++<SmallVec<A>>::clone(p0);
+-----------------
+src/lib.rs <SmallVec<A> as core::cmp::PartialEq<SmallVec<B>>>::eq
+deps:{"<SmallVec<A> as core::cmp::PartialEq<SmallVec<B>>>::eq":{"<A as Array>::Item":["core::cmp::PartialEq"],"A":["core::marker::Sized","Array"],"B":["Array","core::marker::Sized"]},"SmallVec":{"A":["Array","core::marker::Sized"]},"core::ptr::const_ptr::<impl core::cmp::PartialEq for *const T>":{},"core::ptr::mut_ptr::<impl core::cmp::PartialEq for *mut T>":{}}
+candidates:{"<SmallVec<A> as core::cmp::PartialEq<SmallVec<B>>>::eq":{"<A as Array>::Item":["SmallVec","core::ptr::mut_ptr::<impl core::cmp::PartialEq for *mut T>"]},"SmallVec":{},"core::ptr::const_ptr::<impl core::cmp::PartialEq for *const T>":{},"core::ptr::mut_ptr::<impl core::cmp::PartialEq for *mut T>":{}}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // SmallVec<A>
+let mut p1 = & MaybeUninit::uninit().assume_init(); // SmallVec<B>
++p0.eq(p1);
++<SmallVec<A> as core::cmp::PartialEq<SmallVec<B>>>::eq(p0, p1);
++crate::<SmallVec<A> as core::cmp::PartialEq<SmallVec<B>>>::eq(p0, p1);
++<SmallVec<A>>::eq(p0, p1);
+-----------------
+src/lib.rs <SmallVec<A> as core::cmp::PartialOrd>::partial_cmp
+deps:{"<SmallVec<A> as core::cmp::PartialOrd>::partial_cmp":{"<A as Array>::Item":["core::cmp::PartialOrd"],"A":["Array","core::marker::Sized"]},"SmallVec":{"A":["Array","core::marker::Sized"]},"core::cmp::impls::<impl core::cmp::PartialOrd<&B> for &A>":{},"core::cmp::impls::<impl core::cmp::PartialOrd<&mut B> for &mut A>":{},"core::ptr::const_ptr::<impl core::cmp::PartialOrd for *const T>":{},"core::ptr::mut_ptr::<impl core::cmp::PartialOrd for *mut T>":{}}
+candidates:{"<SmallVec<A> as core::cmp::PartialOrd>::partial_cmp":{"<A as Array>::Item":["core::ptr::mut_ptr::<impl core::cmp::PartialOrd for *mut T>","SmallVec"]},"SmallVec":{},"core::cmp::impls::<impl core::cmp::PartialOrd<&B> for &A>":{},"core::cmp::impls::<impl core::cmp::PartialOrd<&mut B> for &mut A>":{},"core::ptr::const_ptr::<impl core::cmp::PartialOrd for *const T>":{},"core::ptr::mut_ptr::<impl core::cmp::PartialOrd for *mut T>":{}}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // SmallVec<A>
+let mut p1 = & MaybeUninit::uninit().assume_init(); // SmallVec<A>
++p0.partial_cmp(p1);
++<SmallVec<A> as core::cmp::PartialOrd>::partial_cmp(p0, p1);
++crate::<SmallVec<A> as core::cmp::PartialOrd>::partial_cmp(p0, p1);
++<SmallVec<A>>::partial_cmp(p0, p1);
+-----------------
+src/lib.rs <SmallVec<A> as core::cmp::Ord>::cmp
+deps:{"<SmallVec<A> as core::cmp::Ord>::cmp":{"<A as Array>::Item":["core::cmp::Ord"],"A":["core::marker::Sized","Array"]},"SmallVec":{"A":["core::marker::Sized","Array"]},"core::cmp::impls::<impl core::cmp::Ord for &A>":{},"core::cmp::impls::<impl core::cmp::Ord for &mut A>":{},"core::ptr::const_ptr::<impl core::cmp::Ord for *const T>":{},"core::ptr::mut_ptr::<impl core::cmp::Ord for *mut T>":{}}
+candidates:{"<SmallVec<A> as core::cmp::Ord>::cmp":{"<A as Array>::Item":["SmallVec","core::cmp::impls::<impl core::cmp::Ord for &A>"]},"SmallVec":{},"core::cmp::impls::<impl core::cmp::Ord for &A>":{},"core::cmp::impls::<impl core::cmp::Ord for &mut A>":{},"core::ptr::const_ptr::<impl core::cmp::Ord for *const T>":{},"core::ptr::mut_ptr::<impl core::cmp::Ord for *mut T>":{}}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // SmallVec<A>
+let mut p1 = & MaybeUninit::uninit().assume_init(); // SmallVec<A>
++p0.cmp(p1);
++<SmallVec<A> as core::cmp::Ord>::cmp(p0, p1);
++crate::<SmallVec<A> as core::cmp::Ord>::cmp(p0, p1);
++<SmallVec<A>>::cmp(p0, p1);
+-----------------
+src/lib.rs <SmallVec<A> as core::hash::Hash>::hash
+deps:{"<SmallVec<A> as core::hash::Hash>::hash":{"<A as Array>::Item":["core::hash::Hash"],"A":["core::marker::Sized","Array"],"H":["core::marker::Sized","core::hash::Hasher"]},"SmallVec":{"A":["core::marker::Sized","Array"]},"core::hash::impls::<impl core::hash::Hash for &T>":{},"core::hash::impls::<impl core::hash::Hash for &mut T>":{},"core::hash::impls::<impl core::hash::Hash for *const T>":{},"core::hash::impls::<impl core::hash::Hash for *mut T>":{}}
+candidates:{"<SmallVec<A> as core::hash::Hash>::hash":{"<A as Array>::Item":["SmallVec","core::hash::impls::<impl core::hash::Hash for *const T>"]},"SmallVec":{},"core::hash::impls::<impl core::hash::Hash for &T>":{},"core::hash::impls::<impl core::hash::Hash for &mut T>":{},"core::hash::impls::<impl core::hash::Hash for *const T>":{},"core::hash::impls::<impl core::hash::Hash for *mut T>":{}}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // SmallVec<A>
+let mut p1 = &mut  MaybeUninit::uninit().assume_init(); // H
++p0.hash(p1);
++<SmallVec<A> as core::hash::Hash>::hash(p0, p1);
++crate::<SmallVec<A> as core::hash::Hash>::hash(p0, p1);
++<SmallVec<A>>::hash(p0, p1);
+-----------------
+src/lib.rs <IntoIter<A> as core::fmt::Debug>::fmt
+deps:{"<&T as core::fmt::Debug>":{},"<&mut T as core::fmt::Debug>":{},"<*const T as core::fmt::Debug>":{},"<*mut T as core::fmt::Debug>":{},"<IntoIter<A> as core::fmt::Debug>::fmt":{"<A as Array>::Item":["core::fmt::Debug"],"A":["core::marker::Sized","Array"]},"Drain":{"T":["Array","core::marker::Sync","core::marker::Send","core::marker::Sized"]},"IntoIter":{"A":["core::marker::Sized","core::clone::Clone","Array"]},"SmallVec":{"A":["core::marker::Sized","Array"]}}
+candidates:{"<&T as core::fmt::Debug>":{},"<&mut T as core::fmt::Debug>":{},"<*const T as core::fmt::Debug>":{},"<*mut T as core::fmt::Debug>":{},"<IntoIter<A> as core::fmt::Debug>::fmt":{"<A as Array>::Item":["CollectionAllocErr","SmallVec","<*const T as core::fmt::Debug>","IntoIter","Drain"]},"Drain":{},"IntoIter":{},"SmallVec":{}}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // IntoIter<A>
+let mut p1 = &mut  MaybeUninit::uninit().assume_init(); // core::fmt::Formatter<'_>
++p0.fmt(p1);
++<IntoIter<A> as core::fmt::Debug>::fmt(p0, p1);
++crate::<IntoIter<A> as core::fmt::Debug>::fmt(p0, p1);
++<IntoIter<A>>::fmt(p0, p1);
+-----------------
+src/lib.rs <IntoIter<A> as core::clone::Clone>::clone
+deps:{"<IntoIter<A> as core::clone::Clone>::clone":{"<A as Array>::Item":["core::clone::Clone"],"A":["core::marker::Sized","Array","core::clone::Clone"]},"IntoIter":{"A":["core::clone::Clone","core::marker::Sized","Array"]},"SmallVec":{"A":["Array","core::marker::Sized"]},"core::clone::impls::<impl core::clone::Clone for &T>":{},"core::clone::impls::<impl core::clone::Clone for &mut T>":{},"core::clone::impls::<impl core::clone::Clone for *const T>":{},"core::clone::impls::<impl core::clone::Clone for *mut T>":{}}
+candidates:{"<IntoIter<A> as core::clone::Clone>::clone":{"<A as Array>::Item":["SmallVec","core::clone::impls::<impl core::clone::Clone for &T>","IntoIter"]},"IntoIter":{},"SmallVec":{},"core::clone::impls::<impl core::clone::Clone for &T>":{},"core::clone::impls::<impl core::clone::Clone for &mut T>":{},"core::clone::impls::<impl core::clone::Clone for *const T>":{},"core::clone::impls::<impl core::clone::Clone for *mut T>":{}}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // IntoIter<A>
++p0.clone();
++<IntoIter<A> as core::clone::Clone>::clone(p0);
++crate::<IntoIter<A> as core::clone::Clone>::clone(p0);
++<IntoIter<A>>::clone(p0);
+-----------------
+src/lib.rs <IntoIter<A> as core::ops::Drop>::drop
+deps:{"<IntoIter<A> as core::ops::Drop>::drop":{"A":["Array","core::marker::Sized"]}}
+candidates:{"<IntoIter<A> as core::ops::Drop>::drop":{}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // IntoIter<A>
++p0.drop();
++<IntoIter<A> as core::ops::Drop>::drop(p0);
++crate::<IntoIter<A> as core::ops::Drop>::drop(p0);
++<IntoIter<A>>::drop(p0);
+-----------------
+src/lib.rs <IntoIter<A> as core::iter::Iterator>::next
+deps:{"<IntoIter<A> as core::iter::Iterator>::next":{"A":["core::marker::Sized","Array"]}}
+candidates:{"<IntoIter<A> as core::iter::Iterator>::next":{}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // IntoIter<A>
++p0.next();
++<IntoIter<A> as core::iter::Iterator>::next(p0);
++crate::<IntoIter<A> as core::iter::Iterator>::next(p0);
++<IntoIter<A>>::next(p0);
+-----------------
+src/lib.rs <IntoIter<A> as core::iter::Iterator>::size_hint
+deps:{"<IntoIter<A> as core::iter::Iterator>::size_hint":{"A":["core::marker::Sized","Array"]}}
+candidates:{"<IntoIter<A> as core::iter::Iterator>::size_hint":{}}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // IntoIter<A>
++p0.size_hint();
++<IntoIter<A> as core::iter::Iterator>::size_hint(p0);
++crate::<IntoIter<A> as core::iter::Iterator>::size_hint(p0);
++<IntoIter<A>>::size_hint(p0);
+-----------------
+src/lib.rs <IntoIter<A> as core::iter::DoubleEndedIterator>::next_back
+deps:{"<IntoIter<A> as core::iter::DoubleEndedIterator>::next_back":{"A":["Array","core::marker::Sized"]}}
+candidates:{"<IntoIter<A> as core::iter::DoubleEndedIterator>::next_back":{}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // IntoIter<A>
++p0.next_back();
++<IntoIter<A> as core::iter::DoubleEndedIterator>::next_back(p0);
++crate::<IntoIter<A> as core::iter::DoubleEndedIterator>::next_back(p0);
++<IntoIter<A>>::next_back(p0);
+-----------------
+src/lib.rs IntoIter::<A>::as_slice
+deps:{"IntoIter::<A>::as_slice":{"A":["core::marker::Sized","Array"]}}
+candidates:{"IntoIter::<A>::as_slice":{}}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // IntoIter<A>
++p0.as_slice();
++IntoIter::<A>::as_slice(p0);
++crate::IntoIter::<A>::as_slice(p0);
++<IntoIter<A>>::as_slice(p0);
+-----------------
+src/lib.rs IntoIter::<A>::as_mut_slice
+deps:{"IntoIter::<A>::as_mut_slice":{"A":["core::marker::Sized","Array"]}}
+candidates:{"IntoIter::<A>::as_mut_slice":{}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // IntoIter<A>
++p0.as_mut_slice();
++IntoIter::<A>::as_mut_slice(p0);
++crate::IntoIter::<A>::as_mut_slice(p0);
++<IntoIter<A>>::as_mut_slice(p0);
+-----------------
+src/lib.rs <SmallVec<A> as core::iter::IntoIterator>::into_iter
+deps:{"<SmallVec<A> as core::iter::IntoIterator>::into_iter":{"A":["core::marker::Sized","Array"]}}
+candidates:{"<SmallVec<A> as core::iter::IntoIterator>::into_iter":{}}
+let mut p0 = MaybeUninit::uninit().assume_init(); // SmallVec<A>
++p0.into_iter();
++<SmallVec<A> as core::iter::IntoIterator>::into_iter(p0);
++crate::<SmallVec<A> as core::iter::IntoIterator>::into_iter(p0);
++<SmallVec<A>>::into_iter(p0);
+-----------------
+src/lib.rs <&'a SmallVec<A> as core::iter::IntoIterator>::into_iter
+'a
+deps:{"<&'a SmallVec<A> as core::iter::IntoIterator>::into_iter":{"A":["Array","core::marker::Sized"]}}
+candidates:{"<&'a SmallVec<A> as core::iter::IntoIterator>::into_iter":{}}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // SmallVec<A>
++p0.into_iter();
++<&'a SmallVec<A> as core::iter::IntoIterator>::into_iter(p0);
++crate::<&'a SmallVec<A> as core::iter::IntoIterator>::into_iter(p0);
++<&'a SmallVec<A>>::into_iter(p0);
+-----------------
+src/lib.rs <&'a mut SmallVec<A> as core::iter::IntoIterator>::into_iter
+'a
+deps:{"<&'a mut SmallVec<A> as core::iter::IntoIterator>::into_iter":{"A":["Array","core::marker::Sized"]}}
+candidates:{"<&'a mut SmallVec<A> as core::iter::IntoIterator>::into_iter":{}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // SmallVec<A>
++p0.into_iter();
++<&'a mut SmallVec<A> as core::iter::IntoIterator>::into_iter(p0);
++crate::<&'a mut SmallVec<A> as core::iter::IntoIterator>::into_iter(p0);
++<&'a mut SmallVec<A>>::into_iter(p0);
+-----------------
+src/lib.rs SetLenOnDrop::<'a>::new
+'a
+deps:{}
+candidates:{}
+let mut p0 = &mut 0usize; // None+usize
++SetLenOnDrop::<'a>::new(p0);
++crate::SetLenOnDrop::<'a>::new(p0);
++<SetLenOnDrop<'a>>::new(p0);
+-----------------
+src/lib.rs SetLenOnDrop::<'a>::get
+'a
+deps:{}
+candidates:{}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // SetLenOnDrop<'a>
++p0.get();
++SetLenOnDrop::<'a>::get(p0);
++crate::SetLenOnDrop::<'a>::get(p0);
++<SetLenOnDrop<'a>>::get(p0);
+-----------------
+src/lib.rs SetLenOnDrop::<'a>::increment_len
+'a
+deps:{}
+candidates:{}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // SetLenOnDrop<'a>
+let mut p1 = 0usize; // None+usize
++p0.increment_len(p1);
++SetLenOnDrop::<'a>::increment_len(p0, p1);
++crate::SetLenOnDrop::<'a>::increment_len(p0, p1);
++<SetLenOnDrop<'a>>::increment_len(p0, p1);
+-----------------
+src/lib.rs <SetLenOnDrop<'a> as core::ops::Drop>::drop
+'a
+deps:{}
+candidates:{}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // SetLenOnDrop<'a>
++p0.drop();
++<SetLenOnDrop<'a> as core::ops::Drop>::drop(p0);
++crate::<SetLenOnDrop<'a> as core::ops::Drop>::drop(p0);
++<SetLenOnDrop<'a>>::drop(p0);
+-----------------
+src/lib.rs <[T; 0] as Array>::size
+deps:{"<[T; 0] as Array>::size":{"T":["core::marker::Sized"]}}
+candidates:{"<[T; 0] as Array>::size":{}}
++<[T; 0] as Array>::size();
++crate::<[T; 0] as Array>::size();
++<[T; 0]>::size();
+-----------------
+src/lib.rs <[T; 1] as Array>::size
+deps:{"<[T; 1] as Array>::size":{"T":["core::marker::Sized"]}}
+candidates:{"<[T; 1] as Array>::size":{}}
++<[T; 1] as Array>::size();
++crate::<[T; 1] as Array>::size();
++<[T; 1]>::size();
+-----------------
+src/lib.rs <[T; 2] as Array>::size
+deps:{"<[T; 2] as Array>::size":{"T":["core::marker::Sized"]}}
+candidates:{"<[T; 2] as Array>::size":{}}
++<[T; 2] as Array>::size();
++crate::<[T; 2] as Array>::size();
++<[T; 2]>::size();
+-----------------
+src/lib.rs <[T; 3] as Array>::size
+deps:{"<[T; 3] as Array>::size":{"T":["core::marker::Sized"]}}
+candidates:{"<[T; 3] as Array>::size":{}}
++<[T; 3] as Array>::size();
++crate::<[T; 3] as Array>::size();
++<[T; 3]>::size();
+-----------------
+src/lib.rs <[T; 4] as Array>::size
+deps:{"<[T; 4] as Array>::size":{"T":["core::marker::Sized"]}}
+candidates:{"<[T; 4] as Array>::size":{}}
++<[T; 4] as Array>::size();
++crate::<[T; 4] as Array>::size();
++<[T; 4]>::size();
+-----------------
+src/lib.rs <[T; 5] as Array>::size
+deps:{"<[T; 5] as Array>::size":{"T":["core::marker::Sized"]}}
+candidates:{"<[T; 5] as Array>::size":{}}
++<[T; 5] as Array>::size();
++crate::<[T; 5] as Array>::size();
++<[T; 5]>::size();
+-----------------
+src/lib.rs <[T; 6] as Array>::size
+deps:{"<[T; 6] as Array>::size":{"T":["core::marker::Sized"]}}
+candidates:{"<[T; 6] as Array>::size":{}}
++<[T; 6] as Array>::size();
++crate::<[T; 6] as Array>::size();
++<[T; 6]>::size();
+-----------------
+src/lib.rs <[T; 7] as Array>::size
+deps:{"<[T; 7] as Array>::size":{"T":["core::marker::Sized"]}}
+candidates:{"<[T; 7] as Array>::size":{}}
++<[T; 7] as Array>::size();
++crate::<[T; 7] as Array>::size();
++<[T; 7]>::size();
+-----------------
+src/lib.rs <[T; 8] as Array>::size
+deps:{"<[T; 8] as Array>::size":{"T":["core::marker::Sized"]}}
+candidates:{"<[T; 8] as Array>::size":{}}
++<[T; 8] as Array>::size();
++crate::<[T; 8] as Array>::size();
++<[T; 8]>::size();
+-----------------
+src/lib.rs <[T; 9] as Array>::size
+deps:{"<[T; 9] as Array>::size":{"T":["core::marker::Sized"]}}
+candidates:{"<[T; 9] as Array>::size":{}}
++<[T; 9] as Array>::size();
++crate::<[T; 9] as Array>::size();
++<[T; 9]>::size();
+-----------------
+src/lib.rs <[T; 10] as Array>::size
+deps:{"<[T; 10] as Array>::size":{"T":["core::marker::Sized"]}}
+candidates:{"<[T; 10] as Array>::size":{}}
++<[T; 10] as Array>::size();
++crate::<[T; 10] as Array>::size();
++<[T; 10]>::size();
+-----------------
+src/lib.rs <[T; 11] as Array>::size
+deps:{"<[T; 11] as Array>::size":{"T":["core::marker::Sized"]}}
+candidates:{"<[T; 11] as Array>::size":{}}
++<[T; 11] as Array>::size();
++crate::<[T; 11] as Array>::size();
++<[T; 11]>::size();
+-----------------
+src/lib.rs <[T; 12] as Array>::size
+deps:{"<[T; 12] as Array>::size":{"T":["core::marker::Sized"]}}
+candidates:{"<[T; 12] as Array>::size":{}}
++<[T; 12] as Array>::size();
++crate::<[T; 12] as Array>::size();
++<[T; 12]>::size();
+-----------------
+src/lib.rs <[T; 13] as Array>::size
+deps:{"<[T; 13] as Array>::size":{"T":["core::marker::Sized"]}}
+candidates:{"<[T; 13] as Array>::size":{}}
++<[T; 13] as Array>::size();
++crate::<[T; 13] as Array>::size();
++<[T; 13]>::size();
+-----------------
+src/lib.rs <[T; 14] as Array>::size
+deps:{"<[T; 14] as Array>::size":{"T":["core::marker::Sized"]}}
+candidates:{"<[T; 14] as Array>::size":{}}
++<[T; 14] as Array>::size();
++crate::<[T; 14] as Array>::size();
++<[T; 14]>::size();
+-----------------
+src/lib.rs <[T; 15] as Array>::size
+deps:{"<[T; 15] as Array>::size":{"T":["core::marker::Sized"]}}
+candidates:{"<[T; 15] as Array>::size":{}}
++<[T; 15] as Array>::size();
++crate::<[T; 15] as Array>::size();
++<[T; 15]>::size();
+-----------------
+src/lib.rs <[T; 16] as Array>::size
+deps:{"<[T; 16] as Array>::size":{"T":["core::marker::Sized"]}}
+candidates:{"<[T; 16] as Array>::size":{}}
++<[T; 16] as Array>::size();
++crate::<[T; 16] as Array>::size();
++<[T; 16]>::size();
+-----------------
+src/lib.rs <[T; 17] as Array>::size
+deps:{"<[T; 17] as Array>::size":{"T":["core::marker::Sized"]}}
+candidates:{"<[T; 17] as Array>::size":{}}
++<[T; 17] as Array>::size();
++crate::<[T; 17] as Array>::size();
++<[T; 17]>::size();
+-----------------
+src/lib.rs <[T; 18] as Array>::size
+deps:{"<[T; 18] as Array>::size":{"T":["core::marker::Sized"]}}
+candidates:{"<[T; 18] as Array>::size":{}}
++<[T; 18] as Array>::size();
++crate::<[T; 18] as Array>::size();
++<[T; 18]>::size();
+-----------------
+src/lib.rs <[T; 19] as Array>::size
+deps:{"<[T; 19] as Array>::size":{"T":["core::marker::Sized"]}}
+candidates:{"<[T; 19] as Array>::size":{}}
++<[T; 19] as Array>::size();
++crate::<[T; 19] as Array>::size();
++<[T; 19]>::size();
+-----------------
+src/lib.rs <[T; 20] as Array>::size
+deps:{"<[T; 20] as Array>::size":{"T":["core::marker::Sized"]}}
+candidates:{"<[T; 20] as Array>::size":{}}
++<[T; 20] as Array>::size();
++crate::<[T; 20] as Array>::size();
++<[T; 20]>::size();
+-----------------
+src/lib.rs <[T; 21] as Array>::size
+deps:{"<[T; 21] as Array>::size":{"T":["core::marker::Sized"]}}
+candidates:{"<[T; 21] as Array>::size":{}}
++<[T; 21] as Array>::size();
++crate::<[T; 21] as Array>::size();
++<[T; 21]>::size();
+-----------------
+src/lib.rs <[T; 22] as Array>::size
+deps:{"<[T; 22] as Array>::size":{"T":["core::marker::Sized"]}}
+candidates:{"<[T; 22] as Array>::size":{}}
++<[T; 22] as Array>::size();
++crate::<[T; 22] as Array>::size();
++<[T; 22]>::size();
+-----------------
+src/lib.rs <[T; 23] as Array>::size
+deps:{"<[T; 23] as Array>::size":{"T":["core::marker::Sized"]}}
+candidates:{"<[T; 23] as Array>::size":{}}
++<[T; 23] as Array>::size();
++crate::<[T; 23] as Array>::size();
++<[T; 23]>::size();
+-----------------
+src/lib.rs <[T; 24] as Array>::size
+deps:{"<[T; 24] as Array>::size":{"T":["core::marker::Sized"]}}
+candidates:{"<[T; 24] as Array>::size":{}}
++<[T; 24] as Array>::size();
++crate::<[T; 24] as Array>::size();
++<[T; 24]>::size();
+-----------------
+src/lib.rs <[T; 25] as Array>::size
+deps:{"<[T; 25] as Array>::size":{"T":["core::marker::Sized"]}}
+candidates:{"<[T; 25] as Array>::size":{}}
++<[T; 25] as Array>::size();
++crate::<[T; 25] as Array>::size();
++<[T; 25]>::size();
+-----------------
+src/lib.rs <[T; 26] as Array>::size
+deps:{"<[T; 26] as Array>::size":{"T":["core::marker::Sized"]}}
+candidates:{"<[T; 26] as Array>::size":{}}
++<[T; 26] as Array>::size();
++crate::<[T; 26] as Array>::size();
++<[T; 26]>::size();
+-----------------
+src/lib.rs <[T; 27] as Array>::size
+deps:{"<[T; 27] as Array>::size":{"T":["core::marker::Sized"]}}
+candidates:{"<[T; 27] as Array>::size":{}}
++<[T; 27] as Array>::size();
++crate::<[T; 27] as Array>::size();
++<[T; 27]>::size();
+-----------------
+src/lib.rs <[T; 28] as Array>::size
+deps:{"<[T; 28] as Array>::size":{"T":["core::marker::Sized"]}}
+candidates:{"<[T; 28] as Array>::size":{}}
++<[T; 28] as Array>::size();
++crate::<[T; 28] as Array>::size();
++<[T; 28]>::size();
+-----------------
+src/lib.rs <[T; 29] as Array>::size
+deps:{"<[T; 29] as Array>::size":{"T":["core::marker::Sized"]}}
+candidates:{"<[T; 29] as Array>::size":{}}
++<[T; 29] as Array>::size();
++crate::<[T; 29] as Array>::size();
++<[T; 29]>::size();
+-----------------
+src/lib.rs <[T; 30] as Array>::size
+deps:{"<[T; 30] as Array>::size":{"T":["core::marker::Sized"]}}
+candidates:{"<[T; 30] as Array>::size":{}}
++<[T; 30] as Array>::size();
++crate::<[T; 30] as Array>::size();
++<[T; 30]>::size();
+-----------------
+src/lib.rs <[T; 31] as Array>::size
+deps:{"<[T; 31] as Array>::size":{"T":["core::marker::Sized"]}}
+candidates:{"<[T; 31] as Array>::size":{}}
++<[T; 31] as Array>::size();
++crate::<[T; 31] as Array>::size();
++<[T; 31]>::size();
+-----------------
+src/lib.rs <[T; 32] as Array>::size
+deps:{"<[T; 32] as Array>::size":{"T":["core::marker::Sized"]}}
+candidates:{"<[T; 32] as Array>::size":{}}
++<[T; 32] as Array>::size();
++crate::<[T; 32] as Array>::size();
++<[T; 32]>::size();
+-----------------
+src/lib.rs <[T; 36] as Array>::size
+deps:{"<[T; 36] as Array>::size":{"T":["core::marker::Sized"]}}
+candidates:{"<[T; 36] as Array>::size":{}}
++<[T; 36] as Array>::size();
++crate::<[T; 36] as Array>::size();
++<[T; 36]>::size();
+-----------------
+src/lib.rs <[T; 64] as Array>::size
+deps:{"<[T; 64] as Array>::size":{"T":["core::marker::Sized"]}}
+candidates:{"<[T; 64] as Array>::size":{}}
++<[T; 64] as Array>::size();
++crate::<[T; 64] as Array>::size();
++<[T; 64]>::size();
+-----------------
+src/lib.rs <[T; 96] as Array>::size
+deps:{"<[T; 96] as Array>::size":{"T":["core::marker::Sized"]}}
+candidates:{"<[T; 96] as Array>::size":{}}
++<[T; 96] as Array>::size();
++crate::<[T; 96] as Array>::size();
++<[T; 96]>::size();
+-----------------
+src/lib.rs <[T; 128] as Array>::size
+deps:{"<[T; 128] as Array>::size":{"T":["core::marker::Sized"]}}
+candidates:{"<[T; 128] as Array>::size":{}}
++<[T; 128] as Array>::size();
++crate::<[T; 128] as Array>::size();
++<[T; 128]>::size();
+-----------------
+src/lib.rs <[T; 256] as Array>::size
+deps:{"<[T; 256] as Array>::size":{"T":["core::marker::Sized"]}}
+candidates:{"<[T; 256] as Array>::size":{}}
++<[T; 256] as Array>::size();
++crate::<[T; 256] as Array>::size();
++<[T; 256]>::size();
+-----------------
+src/lib.rs <[T; 512] as Array>::size
+deps:{"<[T; 512] as Array>::size":{"T":["core::marker::Sized"]}}
+candidates:{"<[T; 512] as Array>::size":{}}
++<[T; 512] as Array>::size();
++crate::<[T; 512] as Array>::size();
++<[T; 512]>::size();
+-----------------
+src/lib.rs <[T; 1024] as Array>::size
+deps:{"<[T; 1024] as Array>::size":{"T":["core::marker::Sized"]}}
+candidates:{"<[T; 1024] as Array>::size":{}}
++<[T; 1024] as Array>::size();
++crate::<[T; 1024] as Array>::size();
++<[T; 1024]>::size();
+-----------------
+src/lib.rs <[T; 1536] as Array>::size
+deps:{"<[T; 1536] as Array>::size":{"T":["core::marker::Sized"]}}
+candidates:{"<[T; 1536] as Array>::size":{}}
++<[T; 1536] as Array>::size();
++crate::<[T; 1536] as Array>::size();
++<[T; 1536]>::size();
+-----------------
+src/lib.rs <[T; 2048] as Array>::size
+deps:{"<[T; 2048] as Array>::size":{"T":["core::marker::Sized"]}}
+candidates:{"<[T; 2048] as Array>::size":{}}
++<[T; 2048] as Array>::size();
++crate::<[T; 2048] as Array>::size();
++<[T; 2048]>::size();
+-----------------
+src/lib.rs <[T; 4096] as Array>::size
+deps:{"<[T; 4096] as Array>::size":{"T":["core::marker::Sized"]}}
+candidates:{"<[T; 4096] as Array>::size":{}}
++<[T; 4096] as Array>::size();
++crate::<[T; 4096] as Array>::size();
++<[T; 4096]>::size();
+-----------------
+src/lib.rs <[T; 8192] as Array>::size
+deps:{"<[T; 8192] as Array>::size":{"T":["core::marker::Sized"]}}
+candidates:{"<[T; 8192] as Array>::size":{}}
++<[T; 8192] as Array>::size();
++crate::<[T; 8192] as Array>::size();
++<[T; 8192]>::size();
+-----------------
+src/lib.rs <[T; 16384] as Array>::size
+deps:{"<[T; 16384] as Array>::size":{"T":["core::marker::Sized"]}}
+candidates:{"<[T; 16384] as Array>::size":{}}
++<[T; 16384] as Array>::size();
++crate::<[T; 16384] as Array>::size();
++<[T; 16384]>::size();
+-----------------
+src/lib.rs <[T; 24576] as Array>::size
+deps:{"<[T; 24576] as Array>::size":{"T":["core::marker::Sized"]}}
+candidates:{"<[T; 24576] as Array>::size":{}}
++<[T; 24576] as Array>::size();
++crate::<[T; 24576] as Array>::size();
++<[T; 24576]>::size();
+-----------------
+src/lib.rs <[T; 32768] as Array>::size
+deps:{"<[T; 32768] as Array>::size":{"T":["core::marker::Sized"]}}
+candidates:{"<[T; 32768] as Array>::size":{}}
++<[T; 32768] as Array>::size();
++crate::<[T; 32768] as Array>::size();
++<[T; 32768]>::size();
+-----------------
+src/lib.rs <[T; 65536] as Array>::size
+deps:{"<[T; 65536] as Array>::size":{"T":["core::marker::Sized"]}}
+candidates:{"<[T; 65536] as Array>::size":{}}
++<[T; 65536] as Array>::size();
++crate::<[T; 65536] as Array>::size();
++<[T; 65536]>::size();
+-----------------
+src/lib.rs <[T; 131072] as Array>::size
+deps:{"<[T; 131072] as Array>::size":{"T":["core::marker::Sized"]}}
+candidates:{"<[T; 131072] as Array>::size":{}}
++<[T; 131072] as Array>::size();
++crate::<[T; 131072] as Array>::size();
++<[T; 131072]>::size();
+-----------------
+src/lib.rs <[T; 262144] as Array>::size
+deps:{"<[T; 262144] as Array>::size":{"T":["core::marker::Sized"]}}
+candidates:{"<[T; 262144] as Array>::size":{}}
++<[T; 262144] as Array>::size();
++crate::<[T; 262144] as Array>::size();
++<[T; 262144]>::size();
+-----------------
+src/lib.rs <[T; 393216] as Array>::size
+deps:{"<[T; 393216] as Array>::size":{"T":["core::marker::Sized"]}}
+candidates:{"<[T; 393216] as Array>::size":{}}
++<[T; 393216] as Array>::size();
++crate::<[T; 393216] as Array>::size();
++<[T; 393216]>::size();
+-----------------
+src/lib.rs <[T; 524288] as Array>::size
+deps:{"<[T; 524288] as Array>::size":{"T":["core::marker::Sized"]}}
+candidates:{"<[T; 524288] as Array>::size":{}}
++<[T; 524288] as Array>::size();
++crate::<[T; 524288] as Array>::size();
++<[T; 524288]>::size();
+-----------------
+src/lib.rs <[T; 1048576] as Array>::size
+deps:{"<[T; 1048576] as Array>::size":{"T":["core::marker::Sized"]}}
+candidates:{"<[T; 1048576] as Array>::size":{}}
++<[T; 1048576] as Array>::size();
++crate::<[T; 1048576] as Array>::size();
++<[T; 1048576]>::size();
+-----------------
+src/lib.rs <[<A as Array>::Item] as ToSmallVec<A>>::to_smallvec
+deps:{"<[<A as Array>::Item] as ToSmallVec<A>>::to_smallvec":{"<A as Array>::Item":["core::marker::Copy"],"A":["Array","core::marker::Sized"]},"core::marker::copy_impls::<impl core::marker::Copy for &T>":{},"core::marker::copy_impls::<impl core::marker::Copy for *const T>":{},"core::marker::copy_impls::<impl core::marker::Copy for *mut T>":{}}
+candidates:{"<[<A as Array>::Item] as ToSmallVec<A>>::to_smallvec":{"<A as Array>::Item":["u64","char","u8","i8","core::marker::copy_impls::<impl core::marker::Copy for &T>","i64","usize","bool","u32","i16","i32","u16"]},"core::marker::copy_impls::<impl core::marker::Copy for &T>":{},"core::marker::copy_impls::<impl core::marker::Copy for *const T>":{},"core::marker::copy_impls::<impl core::marker::Copy for *mut T>":{}}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // [<A as Array>::Item]
++p0.to_smallvec();
++<[<A as Array>::Item] as ToSmallVec<A>>::to_smallvec(p0);
++crate::<[<A as Array>::Item] as ToSmallVec<A>>::to_smallvec(p0);
++<[<A as Array>::Item]>::to_smallvec(p0);

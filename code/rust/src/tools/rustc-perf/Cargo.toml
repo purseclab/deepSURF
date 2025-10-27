@@ -1,0 +1,10 @@
+[workspace]
+members = ["collector", "collector/benchlib", "site", "database", "intern"]
+exclude = ["rust/src"]
+resolver = "2"
+
+[profile.release.package.site]
+debug = 1
+
+[profile.release.package.collector]
+debug = 1

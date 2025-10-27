@@ -1,0 +1,58 @@
+deepSURF: Generated Targets to be Fuzzed
+------------------------------------------------------------------------------------------------------------------------------------
+  StableURAPI: next::/home/cdc/SURF/ablation_deepSURF_condskip/simple-slab-0.3.2/src/lib.rs::170,
+    - URAPI: DefId(0:48 ~ simple_slab[bb81]::{impl#3}::next),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * simple-slab_fuzz_12262590058837114080_deepseek-r1_turn3
+      * simple-slab_fuzz_12997837067481994914_deepseek-r1_turn2
+  StableURAPI: new::/home/cdc/SURF/ablation_deepSURF_condskip/simple-slab-0.3.2/src/lib.rs::36,
+    - URAPI: DefId(0:29 ~ simple_slab[bb81]::{impl#0}::new),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * simple-slab_fuzz_12997837067481994914_deepseek-r1_turn2
+      * simple-slab_fuzz_12262590058837114080_deepseek-r1_turn3
+  StableURAPI: with_capacity::/home/cdc/SURF/ablation_deepSURF_condskip/simple-slab-0.3.2/src/lib.rs::43,
+    - URAPI: DefId(0:30 ~ simple_slab[bb81]::{impl#0}::with_capacity),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * simple-slab_fuzz_12997837067481994914_deepseek-r1_turn2
+      * simple-slab_fuzz_12262590058837114080_deepseek-r1_turn3
+  StableURAPI: drop::/home/cdc/SURF/ablation_deepSURF_condskip/simple-slab-0.3.2/src/lib.rs::148,
+    - URAPI: DefId(0:39 ~ simple_slab[bb81]::{impl#1}::drop),
+    - Macro-expanded: false,
+    - LLM-improved: false,
+    - Fuzzing Targets:
+      * simple-slab_fuzz_12262590058837114080
+  StableURAPI: remove::/home/cdc/SURF/ablation_deepSURF_condskip/simple-slab-0.3.2/src/lib.rs::83,
+    - URAPI: DefId(0:32 ~ simple_slab[bb81]::{impl#0}::remove),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * simple-slab_fuzz_12262590058837114080_deepseek-r1_turn3
+      * simple-slab_fuzz_12997837067481994914_deepseek-r1_turn2
+  StableURAPI: index::/home/cdc/SURF/ablation_deepSURF_condskip/simple-slab-0.3.2/src/lib.rs::162,
+    - URAPI: DefId(0:43 ~ simple_slab[bb81]::{impl#2}::index),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * simple-slab_fuzz_12262590058837114080_deepseek-r1_turn3
+      * simple-slab_fuzz_12997837067481994914_deepseek-r1_turn2
+  StableURAPI: next::/home/cdc/SURF/ablation_deepSURF_condskip/simple-slab-0.3.2/src/lib.rs::185,
+    - URAPI: DefId(0:53 ~ simple_slab[bb81]::{impl#4}::next),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * simple-slab_fuzz_12997837067481994914_deepseek-r1_turn2
+      * simple-slab_fuzz_12262590058837114080_deepseek-r1_turn3
+  StableURAPI: insert::/home/cdc/SURF/ablation_deepSURF_condskip/simple-slab-0.3.2/src/lib.rs::66,
+    - URAPI: DefId(0:31 ~ simple_slab[bb81]::{impl#0}::insert),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * simple-slab_fuzz_12262590058837114080_deepseek-r1_turn3
+      * simple-slab_fuzz_12997837067481994914_deepseek-r1_turn2
+------------------------------------------------------------------------------------------------------------------------------------

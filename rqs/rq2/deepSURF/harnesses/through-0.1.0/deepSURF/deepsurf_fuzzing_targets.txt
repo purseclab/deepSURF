@@ -1,0 +1,19 @@
+deepSURF: Generated Targets to be Fuzzed
+------------------------------------------------------------------------------------------------------------------------------------
+  StableURAPI: through::/home/cdc/SURF/deepSURF-big-experiment-harnesses/through/src/lib.rs::5,
+    - URAPI: DefId(0:4 ~ through[d23e]::through),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * through_fuzz_15538194288612094996_deepseek-r1_turn3
+      * through_fuzz_15186921809571911366
+      * through_fuzz_15186921809571911366_deepseek-r1_turn1
+  StableURAPI: through_and::/home/cdc/SURF/deepSURF-big-experiment-harnesses/through/src/lib.rs::16,
+    - URAPI: DefId(0:6 ~ through[d23e]::through_and),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * through_fuzz_15538194288612094996_deepseek-r1_turn3
+      * through_fuzz_15538194288612094996
+      * through_fuzz_15186921809571911366_deepseek-r1_turn1
+------------------------------------------------------------------------------------------------------------------------------------

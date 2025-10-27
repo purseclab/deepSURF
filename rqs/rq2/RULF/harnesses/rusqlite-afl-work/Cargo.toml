@@ -1,0 +1,9 @@
+[workspace]
+members = [
+	"test_rusqlite0",
+	"replay_rusqlite0",
+	"test_rusqlite1",
+	"replay_rusqlite1",
+	"test_rusqlite2",
+	"replay_rusqlite2",
+]

@@ -1,0 +1,18 @@
+bumpalo::Bump::new () -> Bump { }
+bumpalo::Bump::try_new () -> core::result::Result<Bump, alloc::AllocErr> { }
+bumpalo::Bump::with_capacity (usize) -> Bump { }
+bumpalo::Bump::try_with_capacity (usize) -> core::result::Result<Bump, alloc::AllocErr> { UNSAFE}
+bumpalo::Bump::allocation_limit (&Bump) -> core::option::Option<usize> { }
+bumpalo::Bump::set_allocation_limit (&Bump, core::option::Option<usize>) -> () { }
+bumpalo::Bump::reset (&mut Bump) -> () { UNSAFEMUTATE }
+bumpalo::Bump::alloc (&Bump, T) -> &mut T { }
+bumpalo::Bump::try_alloc (&Bump, T) -> core::result::Result<&mut T, alloc::AllocErr> { }
+bumpalo::Bump::alloc_slice_copy (&Bump, &[T]) -> &mut [T] { UNSAFE}
+bumpalo::Bump::alloc_slice_clone (&Bump, &[T]) -> &mut [T] { UNSAFEDROP }
+bumpalo::Bump::alloc_str (&Bump, &str) -> &mut str { UNSAFE}
+bumpalo::Bump::alloc_slice_fill_clone (&Bump, usize, &T) -> &mut [T] { }
+bumpalo::Bump::alloc_slice_fill_default (&Bump, usize) -> &mut [T] { }
+bumpalo::Bump::chunk_capacity (&Bump) -> usize { UNSAFEGETRAWPTR }
+bumpalo::Bump::iter_allocated_chunks (&mut Bump) -> ChunkIter { UNSAFEMUTATE }
+bumpalo::Bump::iter_allocated_chunks_raw (&Bump) -> ChunkRawIter { UNSAFE}
+bumpalo::Bump::allocated_bytes (&Bump) -> usize { UNSAFE}

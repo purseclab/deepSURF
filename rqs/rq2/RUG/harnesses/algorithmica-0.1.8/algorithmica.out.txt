@@ -1,0 +1,291 @@
+-----------------
+src/math/matrix.rs math::matrix::multiply
+deps:{"<&T as std::convert::AsRef<U>>":{},"<&mut T as std::convert::AsRef<U>>":{},"math::matrix::multiply":{"Matrix":["std::marker::Sized","std::convert::AsRef"],"Matrix2":["std::marker::Sized","std::convert::AsRef"],"Row":["std::convert::AsRef","std::marker::Sized"],"Row2":["std::convert::AsRef","std::marker::Sized"]}}
+candidates:{"<&T as std::convert::AsRef<U>>":{},"<&mut T as std::convert::AsRef<U>>":{},"math::matrix::multiply":{"Matrix":["std::rc::Rc<T>","std::slice::IterMut<'_, T>","std::borrow::Cow<'_, T>","std::slice::Iter<'_, T>","std::sync::Arc<T>","std::vec::IntoIter<T, A>","std::ffi::CString","std::vec::Drain<'a, T, A>","std::boxed::Box<T, A>","std::borrow::Cow<'_, std::ffi::OsStr>","core::num::dec2flt::common::AsciiStr<'a>","std::ffi::CStr","<&T as std::convert::AsRef<U>>"],"Matrix2":["std::vec::IntoIter<T, A>","std::borrow::Cow<'_, T>","std::rc::Rc<T>","std::ffi::CString","std::slice::Iter<'_, T>","std::boxed::Box<T, A>","std::ffi::CStr","std::slice::IterMut<'_, T>","<&mut T as std::convert::AsRef<U>>","std::vec::Drain<'a, T, A>","std::borrow::Cow<'_, std::ffi::OsStr>","std::sync::Arc<T>","core::num::dec2flt::common::AsciiStr<'a>"],"Row":["std::slice::IterMut<'_, T>","<&mut T as std::convert::AsRef<U>>","std::vec::Drain<'a, T, A>","std::sync::Arc<T>","std::boxed::Box<T, A>","std::borrow::Cow<'_, T>","std::rc::Rc<T>","std::ffi::CStr","std::borrow::Cow<'_, std::ffi::OsStr>","std::slice::Iter<'_, T>","std::vec::IntoIter<T, A>","std::ffi::CString","core::num::dec2flt::common::AsciiStr<'a>"],"Row2":["std::borrow::Cow<'_, T>","std::boxed::Box<T, A>","std::ffi::CStr","<&T as std::convert::AsRef<U>>","std::ffi::CString","std::vec::Drain<'a, T, A>","core::num::dec2flt::common::AsciiStr<'a>","std::rc::Rc<T>","std::borrow::Cow<'_, std::ffi::OsStr>","<&mut T as std::convert::AsRef<U>>","std::vec::IntoIter<T, A>","std::slice::Iter<'_, T>","std::sync::Arc<T>","std::slice::IterMut<'_, T>"]}}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // Matrix
+let mut p1 = & MaybeUninit::uninit().assume_init(); // Matrix2
++math::matrix::multiply(p0, p1);
++crate::math::matrix::multiply(p0, p1);
++crate::math::matrix::multiply(p0, p1);
+-----------------
+src/math/matrix.rs math::matrix::add
+deps:{"<&T as std::convert::AsRef<U>>":{},"<&mut T as std::convert::AsRef<U>>":{},"math::matrix::add":{"Matrix":["std::marker::Sized","std::convert::AsRef"],"Row":["std::marker::Sized","std::convert::AsRef"]}}
+candidates:{"<&T as std::convert::AsRef<U>>":{},"<&mut T as std::convert::AsRef<U>>":{},"math::matrix::add":{"Matrix":["std::vec::Drain<'a, T, A>","<&T as std::convert::AsRef<U>>","std::rc::Rc<T>","std::ffi::CStr","std::borrow::Cow<'_, std::ffi::OsStr>","std::sync::Arc<T>","std::vec::IntoIter<T, A>","std::slice::IterMut<'_, T>","std::ffi::CString","std::boxed::Box<T, A>","std::borrow::Cow<'_, T>","std::slice::Iter<'_, T>","core::num::dec2flt::common::AsciiStr<'a>"],"Row":["std::ffi::CStr","core::num::dec2flt::common::AsciiStr<'a>","std::borrow::Cow<'_, T>","std::vec::Drain<'a, T, A>","std::rc::Rc<T>","std::sync::Arc<T>","std::slice::IterMut<'_, T>","std::vec::IntoIter<T, A>","std::ffi::CString","std::slice::Iter<'_, T>","std::boxed::Box<T, A>","<&T as std::convert::AsRef<U>>","std::borrow::Cow<'_, std::ffi::OsStr>"]}}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // Matrix
+let mut p1 = & MaybeUninit::uninit().assume_init(); // Matrix
++math::matrix::add(p0, p1);
++crate::math::matrix::add(p0, p1);
++crate::math::matrix::add(p0, p1);
+-----------------
+src/search/binary.rs search::binary::binary_search_util
+deps:{"search::binary::binary_search_util":{"T":["std::marker::Sized","std::cmp::PartialOrd"]},"std::cmp::impls::<impl std::cmp::PartialOrd<&B> for &A>":{},"std::cmp::impls::<impl std::cmp::PartialOrd<&mut B> for &mut A>":{},"std::ptr::const_ptr::<impl std::cmp::PartialOrd for *const T>":{},"std::ptr::mut_ptr::<impl std::cmp::PartialOrd for *mut T>":{}}
+candidates:{"search::binary::binary_search_util":{"T":["i64","u32","bool","u16","char","u8","usize","u64","i16","i32","i8","std::cmp::impls::<impl std::cmp::PartialOrd<&B> for &A>"]},"std::cmp::impls::<impl std::cmp::PartialOrd<&B> for &A>":{},"std::cmp::impls::<impl std::cmp::PartialOrd<&mut B> for &mut A>":{},"std::ptr::const_ptr::<impl std::cmp::PartialOrd for *const T>":{},"std::ptr::mut_ptr::<impl std::cmp::PartialOrd for *mut T>":{}}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // [T]
+let mut p1 = & MaybeUninit::uninit().assume_init(); // T
+let mut p2 = 0isize; // None+isize
+let mut p3 = 0isize; // None+isize
++search::binary::binary_search_util(p0, p1, p2, p3);
++crate::search::binary::binary_search_util(p0, p1, p2, p3);
++crate::search::binary::binary_search_util(p0, p1, p2, p3);
+-----------------
+src/search/binary.rs search::binary::search
+deps:{"search::binary::search":{"T":["std::marker::Sized","std::cmp::PartialOrd"]},"std::cmp::impls::<impl std::cmp::PartialOrd<&B> for &A>":{},"std::cmp::impls::<impl std::cmp::PartialOrd<&mut B> for &mut A>":{},"std::ptr::const_ptr::<impl std::cmp::PartialOrd for *const T>":{},"std::ptr::mut_ptr::<impl std::cmp::PartialOrd for *mut T>":{}}
+candidates:{"search::binary::search":{"T":["char","usize","i32","std::ptr::const_ptr::<impl std::cmp::PartialOrd for *const T>","u32","std::cmp::impls::<impl std::cmp::PartialOrd<&B> for &A>","u8","bool","i8","u16","i16","u64","i64"]},"std::cmp::impls::<impl std::cmp::PartialOrd<&B> for &A>":{},"std::cmp::impls::<impl std::cmp::PartialOrd<&mut B> for &mut A>":{},"std::ptr::const_ptr::<impl std::cmp::PartialOrd for *const T>":{},"std::ptr::mut_ptr::<impl std::cmp::PartialOrd for *mut T>":{}}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // [T]
+let mut p1 = & MaybeUninit::uninit().assume_init(); // T
++search::binary::search(p0, p1);
++crate::search::binary::search(p0, p1);
++crate::search::binary::search(p0, p1);
+-----------------
+src/sort/bubble.rs sort::bubble::sort
+deps:{"sort::bubble::sort":{"T":["std::cmp::Ord","std::marker::Sized"]},"std::cmp::impls::<impl std::cmp::Ord for &A>":{},"std::cmp::impls::<impl std::cmp::Ord for &mut A>":{},"std::ptr::const_ptr::<impl std::cmp::Ord for *const T>":{},"std::ptr::mut_ptr::<impl std::cmp::Ord for *mut T>":{}}
+candidates:{"sort::bubble::sort":{"T":["std::cmp::impls::<impl std::cmp::Ord for &A>","i16","char","std::ptr::const_ptr::<impl std::cmp::Ord for *const T>","u8","usize","u64","i8","i64","bool","u32","i32","u16"]},"std::cmp::impls::<impl std::cmp::Ord for &A>":{},"std::cmp::impls::<impl std::cmp::Ord for &mut A>":{},"std::ptr::const_ptr::<impl std::cmp::Ord for *const T>":{},"std::ptr::mut_ptr::<impl std::cmp::Ord for *mut T>":{}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // [T]
++sort::bubble::sort(p0);
++crate::sort::bubble::sort(p0);
++crate::sort::bubble::sort(p0);
+-----------------
+src/sort/bubble.rs sort::bubble::sort_by
+deps:{"sort::bubble::sort_by":{"F":["std::marker::Sized","std::ops::Fn"],"T":["std::marker::Sized"]},"std::ops::function::impls::<impl std::ops::Fn<A> for &F>":{}}
+candidates:{"sort::bubble::sort_by":{"F":["core::slice::ascii::EscapeByte","core::str::IsAsciiWhitespace","core::str::BytesIsNotEmpty","core::str::IsNotEmpty","core::str::LinesAnyMap","std::boxed::Box<F, A>","core::str::UnsafeBytesToStr","core::str::CharEscapeDefault","std::ops::function::impls::<impl std::ops::Fn<A> for &F>","core::str::CharEscapeDebugContinue","core::str::CharEscapeUnicode","core::str::IsWhitespace"],"T":["RUG_ANY"]},"std::ops::function::impls::<impl std::ops::Fn<A> for &F>":{}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // [T]
+let mut p1 = MaybeUninit::uninit().assume_init(); // F
++sort::bubble::sort_by(p0, p1);
++crate::sort::bubble::sort_by(p0, p1);
++crate::sort::bubble::sort_by(p0, p1);
+-----------------
+src/sort/insertion.rs sort::insertion::sort
+deps:{"sort::insertion::sort":{"T":["std::clone::Clone","std::marker::Sized","std::cmp::Ord"]},"std::clone::impls::<impl std::clone::Clone for *const T>":{},"std::clone::impls::<impl std::clone::Clone for *mut T>":{},"std::ptr::const_ptr::<impl std::cmp::Ord for *const T>":{},"std::ptr::mut_ptr::<impl std::cmp::Ord for *mut T>":{}}
+candidates:{"sort::insertion::sort":{"T":["u8","std::clone::impls::<impl std::clone::Clone for *const T>","i8","u16","bool","i16","u64","u32","std::clone::impls::<impl std::clone::Clone for *mut T>","i64","i32","std::ptr::mut_ptr::<impl std::cmp::Ord for *mut T>","usize","char"]},"std::clone::impls::<impl std::clone::Clone for *const T>":{},"std::clone::impls::<impl std::clone::Clone for *mut T>":{},"std::ptr::const_ptr::<impl std::cmp::Ord for *const T>":{},"std::ptr::mut_ptr::<impl std::cmp::Ord for *mut T>":{}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // [T]
++sort::insertion::sort(p0);
++crate::sort::insertion::sort(p0);
++crate::sort::insertion::sort(p0);
+-----------------
+src/sort/insertion.rs sort::insertion::sort_by
+deps:{"sort::insertion::sort_by":{"F":["std::ops::Fn","std::marker::Sized"],"T":["std::marker::Sized","std::cmp::Ord","std::clone::Clone"]},"std::clone::impls::<impl std::clone::Clone for *const T>":{},"std::clone::impls::<impl std::clone::Clone for *mut T>":{},"std::ops::function::impls::<impl std::ops::Fn<A> for &F>":{},"std::ptr::const_ptr::<impl std::cmp::Ord for *const T>":{},"std::ptr::mut_ptr::<impl std::cmp::Ord for *mut T>":{}}
+candidates:{"sort::insertion::sort_by":{"F":["core::str::BytesIsNotEmpty","core::str::IsNotEmpty","core::str::LinesAnyMap","core::str::IsWhitespace","core::str::CharEscapeUnicode","core::str::CharEscapeDefault","core::str::IsAsciiWhitespace","std::boxed::Box<F, A>","core::str::CharEscapeDebugContinue","core::slice::ascii::EscapeByte","std::ops::function::impls::<impl std::ops::Fn<A> for &F>","core::str::UnsafeBytesToStr"],"T":["std::clone::impls::<impl std::clone::Clone for *const T>","i64","std::ptr::const_ptr::<impl std::cmp::Ord for *const T>","u32","u64","u8","u16","usize","i8","i16","char","i32","bool"]},"std::clone::impls::<impl std::clone::Clone for *const T>":{},"std::clone::impls::<impl std::clone::Clone for *mut T>":{},"std::ops::function::impls::<impl std::ops::Fn<A> for &F>":{},"std::ptr::const_ptr::<impl std::cmp::Ord for *const T>":{},"std::ptr::mut_ptr::<impl std::cmp::Ord for *mut T>":{}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // [T]
+let mut p1 = MaybeUninit::uninit().assume_init(); // F
++sort::insertion::sort_by(p0, p1);
++crate::sort::insertion::sort_by(p0, p1);
++crate::sort::insertion::sort_by(p0, p1);
+-----------------
+src/sort/is_sorted.rs sort::is_sorted::is_sorted
+deps:{"sort::is_sorted::is_sorted":{"T":["std::cmp::Ord","std::marker::Sized"]},"std::cmp::impls::<impl std::cmp::Ord for &A>":{},"std::cmp::impls::<impl std::cmp::Ord for &mut A>":{},"std::ptr::const_ptr::<impl std::cmp::Ord for *const T>":{},"std::ptr::mut_ptr::<impl std::cmp::Ord for *mut T>":{}}
+candidates:{"sort::is_sorted::is_sorted":{"T":["char","i32","i8","usize","u16","u8","u32","bool","u64","i64","std::cmp::impls::<impl std::cmp::Ord for &mut A>","i16","std::cmp::impls::<impl std::cmp::Ord for &A>"]},"std::cmp::impls::<impl std::cmp::Ord for &A>":{},"std::cmp::impls::<impl std::cmp::Ord for &mut A>":{},"std::ptr::const_ptr::<impl std::cmp::Ord for *const T>":{},"std::ptr::mut_ptr::<impl std::cmp::Ord for *mut T>":{}}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // [T]
++sort::is_sorted::is_sorted(p0);
++crate::sort::is_sorted::is_sorted(p0);
++crate::sort::is_sorted::is_sorted(p0);
+-----------------
+src/sort/is_sorted.rs sort::is_sorted::is_sorted_desc
+deps:{"sort::is_sorted::is_sorted_desc":{"T":["std::marker::Sized","std::cmp::Ord"]},"std::cmp::impls::<impl std::cmp::Ord for &A>":{},"std::cmp::impls::<impl std::cmp::Ord for &mut A>":{},"std::ptr::const_ptr::<impl std::cmp::Ord for *const T>":{},"std::ptr::mut_ptr::<impl std::cmp::Ord for *mut T>":{}}
+candidates:{"sort::is_sorted::is_sorted_desc":{"T":["i64","u8","usize","u64","char","u32","std::cmp::impls::<impl std::cmp::Ord for &mut A>","u16","bool","i16","i8","i32"]},"std::cmp::impls::<impl std::cmp::Ord for &A>":{},"std::cmp::impls::<impl std::cmp::Ord for &mut A>":{},"std::ptr::const_ptr::<impl std::cmp::Ord for *const T>":{},"std::ptr::mut_ptr::<impl std::cmp::Ord for *mut T>":{}}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // [T]
++sort::is_sorted::is_sorted_desc(p0);
++crate::sort::is_sorted::is_sorted_desc(p0);
++crate::sort::is_sorted::is_sorted_desc(p0);
+-----------------
+src/sort/is_sorted.rs sort::is_sorted::is_sorted_by
+deps:{"sort::is_sorted::is_sorted_by":{"F":["std::marker::Sized","std::ops::Fn"],"T":["std::marker::Sized","std::cmp::Ord"]},"std::cmp::impls::<impl std::cmp::Ord for &A>":{},"std::cmp::impls::<impl std::cmp::Ord for &mut A>":{},"std::ops::function::impls::<impl std::ops::Fn<A> for &F>":{},"std::ptr::const_ptr::<impl std::cmp::Ord for *const T>":{},"std::ptr::mut_ptr::<impl std::cmp::Ord for *mut T>":{}}
+candidates:{"sort::is_sorted::is_sorted_by":{"F":["core::slice::ascii::EscapeByte","core::str::IsWhitespace","core::str::LinesAnyMap","std::boxed::Box<F, A>","core::str::CharEscapeUnicode","core::str::UnsafeBytesToStr","std::ops::function::impls::<impl std::ops::Fn<A> for &F>","core::str::CharEscapeDebugContinue","core::str::IsNotEmpty","core::str::IsAsciiWhitespace","core::str::CharEscapeDefault","core::str::BytesIsNotEmpty"],"T":["std::cmp::impls::<impl std::cmp::Ord for &A>","u32","bool","char","u8","i16","usize","i64","u16","i32","u64","i8"]},"std::cmp::impls::<impl std::cmp::Ord for &A>":{},"std::cmp::impls::<impl std::cmp::Ord for &mut A>":{},"std::ops::function::impls::<impl std::ops::Fn<A> for &F>":{},"std::ptr::const_ptr::<impl std::cmp::Ord for *const T>":{},"std::ptr::mut_ptr::<impl std::cmp::Ord for *mut T>":{}}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // [T]
+let mut p1 = MaybeUninit::uninit().assume_init(); // F
++sort::is_sorted::is_sorted_by(p0, p1);
++crate::sort::is_sorted::is_sorted_by(p0, p1);
++crate::sort::is_sorted::is_sorted_by(p0, p1);
+-----------------
+src/sort/merge_sort.rs sort::merge_sort::get_by_index
+deps:{"sort::merge_sort::get_by_index":{"T":["std::marker::Sized"]}}
+candidates:{"sort::merge_sort::get_by_index":{"T":["RUG_ANY"]}}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // [T]
+let mut p1 = 0isize; // None+isize
++sort::merge_sort::get_by_index(p0, p1);
++crate::sort::merge_sort::get_by_index(p0, p1);
++crate::sort::merge_sort::get_by_index(p0, p1);
+-----------------
+src/sort/merge_sort.rs sort::merge_sort::merge
+deps:{"<&T as std::fmt::Debug>":{},"<&mut T as std::fmt::Debug>":{},"<*const T as std::fmt::Debug>":{},"<*mut T as std::fmt::Debug>":{},"sort::merge_sort::merge":{"F":["std::ops::Fn","std::marker::Sized"],"T":["std::marker::Sized","std::fmt::Debug"]},"std::ops::function::impls::<impl std::ops::Fn<A> for &F>":{},"std::ptr::const_ptr::<impl std::cmp::Ord for *const T>":{},"std::ptr::mut_ptr::<impl std::cmp::Ord for *mut T>":{},"tree::bst::BST":{"T":["std::fmt::Debug","std::marker::Sized","std::cmp::Ord"]}}
+candidates:{"<&T as std::fmt::Debug>":{},"<&mut T as std::fmt::Debug>":{},"<*const T as std::fmt::Debug>":{},"<*mut T as std::fmt::Debug>":{},"sort::merge_sort::merge":{"F":["std::ops::function::impls::<impl std::ops::Fn<A> for &F>","core::str::IsAsciiWhitespace","core::str::BytesIsNotEmpty","std::boxed::Box<F, A>","core::str::IsWhitespace","core::str::IsNotEmpty","core::str::CharEscapeUnicode","core::str::CharEscapeDebugContinue","core::slice::ascii::EscapeByte","core::str::CharEscapeDefault","core::str::UnsafeBytesToStr","core::str::LinesAnyMap"],"T":["tree::bst::BST","<&mut T as std::fmt::Debug>","tree::Node","<*const T as std::fmt::Debug>"]},"std::ops::function::impls::<impl std::ops::Fn<A> for &F>":{},"std::ptr::const_ptr::<impl std::cmp::Ord for *const T>":{},"std::ptr::mut_ptr::<impl std::cmp::Ord for *mut T>":{},"tree::bst::BST":{"T":["usize","char","u8","i64","<*mut T as std::fmt::Debug>","u16","std::ptr::const_ptr::<impl std::cmp::Ord for *const T>","u64","i16","u32","i32","bool","i8"]}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // [T]
+let mut p1 = 0usize; // None+usize
+let mut p2 = 0usize; // None+usize
+let mut p3 = 0usize; // None+usize
+let mut p4 = & MaybeUninit::uninit().assume_init(); // F
++sort::merge_sort::merge(p0, p1, p2, p3, p4);
++crate::sort::merge_sort::merge(p0, p1, p2, p3, p4);
++crate::sort::merge_sort::merge(p0, p1, p2, p3, p4);
+-----------------
+src/sort/merge_sort.rs sort::merge_sort::merge_sort
+deps:{"<&T as std::fmt::Debug>":{},"<&mut T as std::fmt::Debug>":{},"<*const T as std::fmt::Debug>":{},"<*mut T as std::fmt::Debug>":{},"sort::merge_sort::merge_sort":{"F":["std::marker::Sized","std::ops::Fn"],"T":["std::fmt::Debug","std::marker::Sized"]},"std::ops::function::impls::<impl std::ops::Fn<A> for &F>":{},"std::ptr::const_ptr::<impl std::cmp::Ord for *const T>":{},"std::ptr::mut_ptr::<impl std::cmp::Ord for *mut T>":{},"tree::bst::BST":{"T":["std::cmp::Ord","std::fmt::Debug","std::marker::Sized"]}}
+candidates:{"<&T as std::fmt::Debug>":{},"<&mut T as std::fmt::Debug>":{},"<*const T as std::fmt::Debug>":{},"<*mut T as std::fmt::Debug>":{},"sort::merge_sort::merge_sort":{"F":["core::str::LinesAnyMap","core::str::IsWhitespace","core::str::CharEscapeDefault","core::str::CharEscapeDebugContinue","core::str::CharEscapeUnicode","core::str::IsAsciiWhitespace","core::str::UnsafeBytesToStr","std::boxed::Box<F, A>","core::slice::ascii::EscapeByte","std::ops::function::impls::<impl std::ops::Fn<A> for &F>","core::str::IsNotEmpty","core::str::BytesIsNotEmpty"],"T":["<*const T as std::fmt::Debug>","tree::Node","<&mut T as std::fmt::Debug>","tree::bst::BST"]},"std::ops::function::impls::<impl std::ops::Fn<A> for &F>":{},"std::ptr::const_ptr::<impl std::cmp::Ord for *const T>":{},"std::ptr::mut_ptr::<impl std::cmp::Ord for *mut T>":{},"tree::bst::BST":{"T":["i64","u32","usize","i8","i16","u16","i32","std::ptr::const_ptr::<impl std::cmp::Ord for *const T>","u8","char","bool","u64"]}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // [T]
+let mut p1 = 0usize; // None+usize
+let mut p2 = 0usize; // None+usize
+let mut p3 = & MaybeUninit::uninit().assume_init(); // F
++sort::merge_sort::merge_sort(p0, p1, p2, p3);
++crate::sort::merge_sort::merge_sort(p0, p1, p2, p3);
++crate::sort::merge_sort::merge_sort(p0, p1, p2, p3);
+-----------------
+src/sort/merge_sort.rs sort::merge_sort::sort
+deps:{"<*const T as std::fmt::Debug>":{},"<*mut T as std::fmt::Debug>":{},"sort::merge_sort::sort":{"T":["std::marker::Sized","std::cmp::Ord","std::fmt::Debug"]},"std::ptr::const_ptr::<impl std::cmp::Ord for *const T>":{},"std::ptr::mut_ptr::<impl std::cmp::Ord for *mut T>":{}}
+candidates:{"<*const T as std::fmt::Debug>":{},"<*mut T as std::fmt::Debug>":{},"sort::merge_sort::sort":{"T":["i32","usize","u64","<*const T as std::fmt::Debug>","u8","i16","i8","i64","char","u16","std::ptr::mut_ptr::<impl std::cmp::Ord for *mut T>","bool","u32"]},"std::ptr::const_ptr::<impl std::cmp::Ord for *const T>":{},"std::ptr::mut_ptr::<impl std::cmp::Ord for *mut T>":{}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // [T]
++sort::merge_sort::sort(p0);
++crate::sort::merge_sort::sort(p0);
++crate::sort::merge_sort::sort(p0);
+-----------------
+src/sort/merge_sort.rs sort::merge_sort::sort_by
+deps:{"<&T as std::fmt::Debug>":{},"<&mut T as std::fmt::Debug>":{},"<*const T as std::fmt::Debug>":{},"<*mut T as std::fmt::Debug>":{},"sort::merge_sort::sort_by":{"F":["std::marker::Sized","std::ops::Fn"],"T":["std::fmt::Debug","std::marker::Sized"]},"std::ops::function::impls::<impl std::ops::Fn<A> for &F>":{},"std::ptr::const_ptr::<impl std::cmp::Ord for *const T>":{},"std::ptr::mut_ptr::<impl std::cmp::Ord for *mut T>":{},"tree::bst::BST":{"T":["std::cmp::Ord","std::marker::Sized","std::fmt::Debug"]}}
+candidates:{"<&T as std::fmt::Debug>":{},"<&mut T as std::fmt::Debug>":{},"<*const T as std::fmt::Debug>":{},"<*mut T as std::fmt::Debug>":{},"sort::merge_sort::sort_by":{"F":["core::str::CharEscapeDefault","core::str::LinesAnyMap","core::str::UnsafeBytesToStr","core::str::IsAsciiWhitespace","core::slice::ascii::EscapeByte","std::ops::function::impls::<impl std::ops::Fn<A> for &F>","core::str::IsNotEmpty","core::str::CharEscapeDebugContinue","std::boxed::Box<F, A>","core::str::BytesIsNotEmpty","core::str::IsWhitespace","core::str::CharEscapeUnicode"],"T":["<*mut T as std::fmt::Debug>","<&T as std::fmt::Debug>","tree::bst::BST","tree::Node"]},"std::ops::function::impls::<impl std::ops::Fn<A> for &F>":{},"std::ptr::const_ptr::<impl std::cmp::Ord for *const T>":{},"std::ptr::mut_ptr::<impl std::cmp::Ord for *mut T>":{},"tree::bst::BST":{"T":["i8","usize","std::ptr::mut_ptr::<impl std::cmp::Ord for *mut T>","u16","i64","u8","i16","bool","u64","i32","std::ptr::const_ptr::<impl std::cmp::Ord for *const T>","u32","char"]}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // [T]
+let mut p1 = & MaybeUninit::uninit().assume_init(); // F
++sort::merge_sort::sort_by(p0, p1);
++crate::sort::merge_sort::sort_by(p0, p1);
++crate::sort::merge_sort::sort_by(p0, p1);
+-----------------
+src/sort/quick_sort.rs sort::quick_sort::quick_sort
+deps:{"sort::quick_sort::quick_sort":{"T":["std::clone::Clone","std::marker::Sized","std::cmp::Ord"]},"std::clone::impls::<impl std::clone::Clone for *const T>":{},"std::clone::impls::<impl std::clone::Clone for *mut T>":{},"std::ptr::const_ptr::<impl std::cmp::Ord for *const T>":{},"std::ptr::mut_ptr::<impl std::cmp::Ord for *mut T>":{}}
+candidates:{"sort::quick_sort::quick_sort":{"T":["std::clone::impls::<impl std::clone::Clone for *mut T>","char","i64","i8","bool","i32","u64","u16","u8","i16","u32","std::ptr::mut_ptr::<impl std::cmp::Ord for *mut T>","usize"]},"std::clone::impls::<impl std::clone::Clone for *const T>":{},"std::clone::impls::<impl std::clone::Clone for *mut T>":{},"std::ptr::const_ptr::<impl std::cmp::Ord for *const T>":{},"std::ptr::mut_ptr::<impl std::cmp::Ord for *mut T>":{}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // [T]
+let mut p1 = 0usize; // None+usize
+let mut p2 = 0usize; // None+usize
++sort::quick_sort::quick_sort(p0, p1, p2);
++crate::sort::quick_sort::quick_sort(p0, p1, p2);
++crate::sort::quick_sort::quick_sort(p0, p1, p2);
+-----------------
+src/sort/quick_sort.rs sort::quick_sort::sort
+deps:{"sort::quick_sort::sort":{"T":["std::marker::Sized","std::cmp::Ord","std::clone::Clone"]},"std::clone::impls::<impl std::clone::Clone for *const T>":{},"std::clone::impls::<impl std::clone::Clone for *mut T>":{},"std::ptr::const_ptr::<impl std::cmp::Ord for *const T>":{},"std::ptr::mut_ptr::<impl std::cmp::Ord for *mut T>":{}}
+candidates:{"sort::quick_sort::sort":{"T":["bool","std::ptr::const_ptr::<impl std::cmp::Ord for *const T>","std::ptr::mut_ptr::<impl std::cmp::Ord for *mut T>","i8","u32","u64","char","i16","usize","i64","i32","u16","u8"]},"std::clone::impls::<impl std::clone::Clone for *const T>":{},"std::clone::impls::<impl std::clone::Clone for *mut T>":{},"std::ptr::const_ptr::<impl std::cmp::Ord for *const T>":{},"std::ptr::mut_ptr::<impl std::cmp::Ord for *mut T>":{}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // [T]
++sort::quick_sort::sort(p0);
++crate::sort::quick_sort::sort(p0);
++crate::sort::quick_sort::sort(p0);
+-----------------
+src/sort/selection.rs sort::selection::sort
+deps:{"sort::selection::sort":{"T":["std::cmp::Ord","std::marker::Sized"]},"std::cmp::impls::<impl std::cmp::Ord for &A>":{},"std::cmp::impls::<impl std::cmp::Ord for &mut A>":{},"std::ptr::const_ptr::<impl std::cmp::Ord for *const T>":{},"std::ptr::mut_ptr::<impl std::cmp::Ord for *mut T>":{}}
+candidates:{"sort::selection::sort":{"T":["u16","i8","bool","i32","std::cmp::impls::<impl std::cmp::Ord for &mut A>","i16","u8","std::ptr::const_ptr::<impl std::cmp::Ord for *const T>","u64","u32","usize","i64","char"]},"std::cmp::impls::<impl std::cmp::Ord for &A>":{},"std::cmp::impls::<impl std::cmp::Ord for &mut A>":{},"std::ptr::const_ptr::<impl std::cmp::Ord for *const T>":{},"std::ptr::mut_ptr::<impl std::cmp::Ord for *mut T>":{}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // [T]
++sort::selection::sort(p0);
++crate::sort::selection::sort(p0);
++crate::sort::selection::sort(p0);
+-----------------
+src/sort/selection.rs sort::selection::sort_by
+deps:{"sort::selection::sort_by":{"F":["std::ops::Fn","std::marker::Sized"],"T":["std::marker::Sized","std::cmp::Ord"]},"std::cmp::impls::<impl std::cmp::Ord for &A>":{},"std::cmp::impls::<impl std::cmp::Ord for &mut A>":{},"std::ops::function::impls::<impl std::ops::Fn<A> for &F>":{},"std::ptr::const_ptr::<impl std::cmp::Ord for *const T>":{},"std::ptr::mut_ptr::<impl std::cmp::Ord for *mut T>":{}}
+candidates:{"sort::selection::sort_by":{"F":["core::str::CharEscapeDebugContinue","core::slice::ascii::EscapeByte","core::str::BytesIsNotEmpty","core::str::UnsafeBytesToStr","std::boxed::Box<F, A>","core::str::IsWhitespace","core::str::CharEscapeDefault","core::str::LinesAnyMap","std::ops::function::impls::<impl std::ops::Fn<A> for &F>","core::str::CharEscapeUnicode","core::str::IsNotEmpty","core::str::IsAsciiWhitespace"],"T":["std::ptr::const_ptr::<impl std::cmp::Ord for *const T>","u16","std::ptr::mut_ptr::<impl std::cmp::Ord for *mut T>","u8","bool","char","u32","i16","i64","i32","usize","u64","i8"]},"std::cmp::impls::<impl std::cmp::Ord for &A>":{},"std::cmp::impls::<impl std::cmp::Ord for &mut A>":{},"std::ops::function::impls::<impl std::ops::Fn<A> for &F>":{},"std::ptr::const_ptr::<impl std::cmp::Ord for *const T>":{},"std::ptr::mut_ptr::<impl std::cmp::Ord for *mut T>":{}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // [T]
+let mut p1 = MaybeUninit::uninit().assume_init(); // F
++sort::selection::sort_by(p0, p1);
++crate::sort::selection::sort_by(p0, p1);
++crate::sort::selection::sort_by(p0, p1);
+-----------------
+src/subset.rs subset::subset_util
+deps:{"std::clone::impls::<impl std::clone::Clone for &T>":{},"std::clone::impls::<impl std::clone::Clone for &mut T>":{},"std::clone::impls::<impl std::clone::Clone for *const T>":{},"std::clone::impls::<impl std::clone::Clone for *mut T>":{},"subset::subset_util":{"T":["std::marker::Sized","std::clone::Clone"]}}
+candidates:{"std::clone::impls::<impl std::clone::Clone for &T>":{},"std::clone::impls::<impl std::clone::Clone for &mut T>":{},"std::clone::impls::<impl std::clone::Clone for *const T>":{},"std::clone::impls::<impl std::clone::Clone for *mut T>":{},"subset::subset_util":{"T":["char","i64","bool","u8","u64","std::clone::impls::<impl std::clone::Clone for &mut T>","u16","i16","u32","i32","usize","std::clone::impls::<impl std::clone::Clone for &T>","i8"]}}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // [T]
+let mut p1 = 0usize; // None+usize
+let mut p2 = 0usize; // None+usize
+let mut p3 = &mut  MaybeUninit::uninit().assume_init(); // std::vec::Vec<T>
+let mut p4 = &mut  MaybeUninit::uninit().assume_init(); // std::vec::Vec<std::vec::Vec<T>>
++subset::subset_util(p0, p1, p2, p3, p4);
++crate::subset::subset_util(p0, p1, p2, p3, p4);
++crate::subset::subset_util(p0, p1, p2, p3, p4);
+-----------------
+src/subset.rs subset::find_all_subset
+deps:{"std::clone::impls::<impl std::clone::Clone for &T>":{},"std::clone::impls::<impl std::clone::Clone for &mut T>":{},"std::clone::impls::<impl std::clone::Clone for *const T>":{},"std::clone::impls::<impl std::clone::Clone for *mut T>":{},"subset::find_all_subset":{"T":["std::marker::Sized","std::clone::Clone"]}}
+candidates:{"std::clone::impls::<impl std::clone::Clone for &T>":{},"std::clone::impls::<impl std::clone::Clone for &mut T>":{},"std::clone::impls::<impl std::clone::Clone for *const T>":{},"std::clone::impls::<impl std::clone::Clone for *mut T>":{},"subset::find_all_subset":{"T":["u8","i32","std::clone::impls::<impl std::clone::Clone for &T>","i64","u32","u64","char","u16","usize","i8","bool","i16"]}}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // [T]
++subset::find_all_subset(p0);
++crate::subset::find_all_subset(p0);
++crate::subset::find_all_subset(p0);
+-----------------
+src/tree/bst.rs <tree::bst::BST<T> as std::fmt::Debug>::fmt
+deps:{"<*const T as std::fmt::Debug>":{},"<*mut T as std::fmt::Debug>":{},"<tree::bst::BST<T> as std::fmt::Debug>::fmt":{"T":["std::cmp::Ord","std::marker::Sized","std::fmt::Debug"]},"std::ptr::const_ptr::<impl std::cmp::Ord for *const T>":{},"std::ptr::mut_ptr::<impl std::cmp::Ord for *mut T>":{}}
+candidates:{"<*const T as std::fmt::Debug>":{},"<*mut T as std::fmt::Debug>":{},"<tree::bst::BST<T> as std::fmt::Debug>::fmt":{"T":["u16","char","u8","usize","i64","i16","u32","u64","i32","std::ptr::const_ptr::<impl std::cmp::Ord for *const T>","i8","<*const T as std::fmt::Debug>","bool","std::ptr::mut_ptr::<impl std::cmp::Ord for *mut T>"]},"std::ptr::const_ptr::<impl std::cmp::Ord for *const T>":{},"std::ptr::mut_ptr::<impl std::cmp::Ord for *mut T>":{}}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // tree::bst::BST<T>
+let mut p1 = &mut  MaybeUninit::uninit().assume_init(); // std::fmt::Formatter<'_>
++format!("{:?}", p0);
++p0.fmt(p1);
++<tree::bst::BST<T> as std::fmt::Debug>::fmt(p0, p1);
++crate::<tree::bst::BST<T> as std::fmt::Debug>::fmt(p0, p1);
++<tree::bst::BST<T>>::fmt(p0, p1);
+-----------------
+src/tree/bst.rs tree::bst::BST::<T>::new
+deps:{"std::cmp::impls::<impl std::cmp::Ord for &A>":{},"std::cmp::impls::<impl std::cmp::Ord for &mut A>":{},"std::ptr::const_ptr::<impl std::cmp::Ord for *const T>":{},"std::ptr::mut_ptr::<impl std::cmp::Ord for *mut T>":{},"tree::bst::BST::<T>::new":{"T":["std::cmp::Ord","std::marker::Sized"]}}
+candidates:{"std::cmp::impls::<impl std::cmp::Ord for &A>":{},"std::cmp::impls::<impl std::cmp::Ord for &mut A>":{},"std::ptr::const_ptr::<impl std::cmp::Ord for *const T>":{},"std::ptr::mut_ptr::<impl std::cmp::Ord for *mut T>":{},"tree::bst::BST::<T>::new":{"T":["std::ptr::mut_ptr::<impl std::cmp::Ord for *mut T>","u16","i32","i8","u8","char","usize","u64","i16","bool","std::ptr::const_ptr::<impl std::cmp::Ord for *const T>","u32","i64"]}}
++tree::bst::BST::<T>::new();
++crate::tree::bst::BST::<T>::new();
++<tree::bst::BST<T>>::new();
+-----------------
+src/tree/bst.rs tree::bst::BST::<T>::create
+deps:{"std::cmp::impls::<impl std::cmp::Ord for &A>":{},"std::cmp::impls::<impl std::cmp::Ord for &mut A>":{},"std::ptr::const_ptr::<impl std::cmp::Ord for *const T>":{},"std::ptr::mut_ptr::<impl std::cmp::Ord for *mut T>":{},"tree::bst::BST::<T>::create":{"T":["std::cmp::Ord","std::marker::Sized"]}}
+candidates:{"std::cmp::impls::<impl std::cmp::Ord for &A>":{},"std::cmp::impls::<impl std::cmp::Ord for &mut A>":{},"std::ptr::const_ptr::<impl std::cmp::Ord for *const T>":{},"std::ptr::mut_ptr::<impl std::cmp::Ord for *mut T>":{},"tree::bst::BST::<T>::create":{"T":["i32","usize","i64","u16","i8","i16","u64","std::cmp::impls::<impl std::cmp::Ord for &A>","std::ptr::const_ptr::<impl std::cmp::Ord for *const T>","u32","u8","bool","char"]}}
+let mut p0 = MaybeUninit::uninit().assume_init(); // T
++tree::bst::BST::<T>::create(p0);
++crate::tree::bst::BST::<T>::create(p0);
++<tree::bst::BST<T>>::create(p0);
+-----------------
+src/tree/bst.rs tree::bst::BST::<T>::insert
+deps:{"std::cmp::impls::<impl std::cmp::Ord for &A>":{},"std::cmp::impls::<impl std::cmp::Ord for &mut A>":{},"std::ptr::const_ptr::<impl std::cmp::Ord for *const T>":{},"std::ptr::mut_ptr::<impl std::cmp::Ord for *mut T>":{},"tree::bst::BST::<T>::insert":{"T":["std::marker::Sized","std::cmp::Ord"]}}
+candidates:{"std::cmp::impls::<impl std::cmp::Ord for &A>":{},"std::cmp::impls::<impl std::cmp::Ord for &mut A>":{},"std::ptr::const_ptr::<impl std::cmp::Ord for *const T>":{},"std::ptr::mut_ptr::<impl std::cmp::Ord for *mut T>":{},"tree::bst::BST::<T>::insert":{"T":["char","u16","bool","i8","u32","std::cmp::impls::<impl std::cmp::Ord for &mut A>","i32","usize","i16","u64","i64","u8"]}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // tree::bst::BST<T>
+let mut p1 = MaybeUninit::uninit().assume_init(); // T
++p0.insert(p1);
++tree::bst::BST::<T>::insert(p0, p1);
++crate::tree::bst::BST::<T>::insert(p0, p1);
++<tree::bst::BST<T>>::insert(p0, p1);
+-----------------
+src/tree/bst.rs tree::bst::BST::<T>::is_empty
+deps:{"std::cmp::impls::<impl std::cmp::Ord for &A>":{},"std::cmp::impls::<impl std::cmp::Ord for &mut A>":{},"std::ptr::const_ptr::<impl std::cmp::Ord for *const T>":{},"std::ptr::mut_ptr::<impl std::cmp::Ord for *mut T>":{},"tree::bst::BST::<T>::is_empty":{"T":["std::marker::Sized","std::cmp::Ord"]}}
+candidates:{"std::cmp::impls::<impl std::cmp::Ord for &A>":{},"std::cmp::impls::<impl std::cmp::Ord for &mut A>":{},"std::ptr::const_ptr::<impl std::cmp::Ord for *const T>":{},"std::ptr::mut_ptr::<impl std::cmp::Ord for *mut T>":{},"tree::bst::BST::<T>::is_empty":{"T":["std::cmp::impls::<impl std::cmp::Ord for &mut A>","u8","char","i16","i64","u64","usize","bool","std::ptr::mut_ptr::<impl std::cmp::Ord for *mut T>","i8","i32","u16","u32"]}}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // tree::bst::BST<T>
++p0.is_empty();
++tree::bst::BST::<T>::is_empty(p0);
++crate::tree::bst::BST::<T>::is_empty(p0);
++<tree::bst::BST<T>>::is_empty(p0);
+-----------------
+src/tree/bst.rs tree::bst::BST::<T>::find
+deps:{"std::cmp::impls::<impl std::cmp::Ord for &A>":{},"std::cmp::impls::<impl std::cmp::Ord for &mut A>":{},"std::ptr::const_ptr::<impl std::cmp::Ord for *const T>":{},"std::ptr::mut_ptr::<impl std::cmp::Ord for *mut T>":{},"tree::bst::BST::<T>::find":{"T":["std::cmp::Ord","std::marker::Sized"]}}
+candidates:{"std::cmp::impls::<impl std::cmp::Ord for &A>":{},"std::cmp::impls::<impl std::cmp::Ord for &mut A>":{},"std::ptr::const_ptr::<impl std::cmp::Ord for *const T>":{},"std::ptr::mut_ptr::<impl std::cmp::Ord for *mut T>":{},"tree::bst::BST::<T>::find":{"T":["i8","std::ptr::const_ptr::<impl std::cmp::Ord for *const T>","bool","u16","u32","u64","char","i64","u8","usize","i32","i16"]}}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // tree::bst::BST<T>
+let mut p1 = MaybeUninit::uninit().assume_init(); // T
++p0.find(p1);
++tree::bst::BST::<T>::find(p0, p1);
++crate::tree::bst::BST::<T>::find(p0, p1);
++<tree::bst::BST<T>>::find(p0, p1);
+-----------------
+src/tree/bst.rs <tree::bst::BST<T> as std::default::Default>::default
+deps:{"<tree::bst::BST<T> as std::default::Default>::default":{"T":["std::marker::Sized","std::cmp::Ord"]},"std::cmp::impls::<impl std::cmp::Ord for &A>":{},"std::cmp::impls::<impl std::cmp::Ord for &mut A>":{},"std::ptr::const_ptr::<impl std::cmp::Ord for *const T>":{},"std::ptr::mut_ptr::<impl std::cmp::Ord for *mut T>":{}}
+candidates:{"<tree::bst::BST<T> as std::default::Default>::default":{"T":["u16","i32","bool","i16","u32","u8","usize","u64","i8","char","std::ptr::mut_ptr::<impl std::cmp::Ord for *mut T>","std::ptr::const_ptr::<impl std::cmp::Ord for *const T>","i64"]},"std::cmp::impls::<impl std::cmp::Ord for &A>":{},"std::cmp::impls::<impl std::cmp::Ord for &mut A>":{},"std::ptr::const_ptr::<impl std::cmp::Ord for *const T>":{},"std::ptr::mut_ptr::<impl std::cmp::Ord for *mut T>":{}}
++<tree::bst::BST<T> as std::default::Default>::default();
++crate::<tree::bst::BST<T> as std::default::Default>::default();
++<tree::bst::BST<T>>::default();
+-----------------
+src/tree/mod.rs <tree::Node as std::fmt::Debug>::fmt
+deps:{}
+candidates:{}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // tree::Node
+let mut p1 = &mut  MaybeUninit::uninit().assume_init(); // std::fmt::Formatter<'_>
++format!("{:?}", p0);
++p0.fmt(p1);
++<tree::Node as std::fmt::Debug>::fmt(p0, p1);
++crate::<tree::Node as std::fmt::Debug>::fmt(p0, p1);
++<tree::Node>::fmt(p0, p1);
+-----------------
+src/tree/mod.rs tree::Node::create
+deps:{}
+candidates:{}
+let mut p0 = 0i32; // None+i32
++tree::Node::create(p0);
++crate::tree::Node::create(p0);
++<tree::Node>::create(p0);
+-----------------
+src/tree/mod.rs tree::Node::add_new
+deps:{}
+candidates:{}
+let mut p0 = MaybeUninit::uninit().assume_init(); // std::option::Option<std::boxed::Box<tree::Node>>
+let mut p1 = 0i32; // None+i32
++tree::Node::add_new(p0, p1);
++crate::tree::Node::add_new(p0, p1);
++<tree::Node>::add_new(p0, p1);

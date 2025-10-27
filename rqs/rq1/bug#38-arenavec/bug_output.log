@@ -1,0 +1,147 @@
+     Removed 124 files, 53.7MiB total
+   Compiling semver v1.0.26
+   Compiling libc v0.2.175
+   Compiling home v0.5.5
+   Compiling xdg v2.5.2
+   Compiling global_data v0.1.0 (/home/cdc/deepSURF-sp26-artifacts/artifact_code/global_data)
+   Compiling afl v0.15.7
+   Compiling rustc_version v0.4.1
+   Compiling arenavec v0.1.1 (/home/cdc/deepSURF-sp26-artifacts/artifact_data/dataset/rustsan_crates/arenavec-0.1.1)
+   Compiling arenavec_fuzz_10473694077003418768 v0.1.0 (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#38-arenavec/harness)
+warning: unused import: `std::str::FromStr`
+ --> src/arenavec_fuzz_10473694077003418768.rs:7:5
+  |
+7 | use std::str::FromStr;
+  |     ^^^^^^^^^^^^^^^^^
+  |
+  = note: `#[warn(unused_imports)]` on by default
+
+warning: unused imports: `DerefMut`, `Deref`, `IndexMut`, `Index`
+ --> src/arenavec_fuzz_10473694077003418768.rs:8:16
+  |
+8 | use std::ops::{Deref, DerefMut, Index, IndexMut};
+  |                ^^^^^  ^^^^^^^^  ^^^^^  ^^^^^^^^
+
+warning: unnecessary parentheses around `match` scrutinee expression
+  --> src/arenavec_fuzz_10473694077003418768.rs:29:25
+   |
+29 |         let t_1 = match (t_0 % 2usize) {
+   |                         ^            ^
+   |
+   = note: `#[warn(unused_parens)]` on by default
+help: remove these parentheses
+   |
+29 -         let t_1 = match (t_0 % 2usize) {
+29 +         let t_1 = match t_0 % 2usize {
+   |
+
+warning: unnecessary parentheses around `match` scrutinee expression
+  --> src/arenavec_fuzz_10473694077003418768.rs:58:26
+   |
+58 |         let t_11 = match (t_10 % 2usize) {
+   |                          ^             ^
+   |
+help: remove these parentheses
+   |
+58 -         let t_11 = match (t_10 % 2usize) {
+58 +         let t_11 = match t_10 % 2usize {
+   |
+
+warning: the item `TryInto` is imported redundantly
+   --> src/arenavec_fuzz_10473694077003418768.rs:214:9
+    |
+214 |     use std::convert::TryInto;
+    |         ^^^^^^^^^^^^^^^^^^^^^
+   --> /rustc/11f32b73e0dc9287e305b5b9980d24aecdc8c17f/library/std/src/prelude/mod.rs:129:13
+    |
+    = note: the item `TryInto` is already defined here
+
+warning: the item `TryInto` is imported redundantly
+   --> src/arenavec_fuzz_10473694077003418768.rs:221:9
+    |
+221 |     use std::convert::TryInto;
+    |         ^^^^^^^^^^^^^^^^^^^^^
+   --> /rustc/11f32b73e0dc9287e305b5b9980d24aecdc8c17f/library/std/src/prelude/mod.rs:129:13
+    |
+    = note: the item `TryInto` is already defined here
+
+warning: unused import: `arenavec`
+ --> src/arenavec_fuzz_10473694077003418768.rs:5:5
+  |
+5 | use arenavec::*;
+  |     ^^^^^^^^
+
+warning: unused variable: `item_len`
+   --> src/arenavec_fuzz_10473694077003418768.rs:134:17
+    |
+134 |             let item_len = _to_u8(GLOBAL_DATA, 336 + i) % 32;
+    |                 ^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_item_len`
+    |
+    = note: `#[warn(unused_variables)]` on by default
+
+warning: field `0` is never read
+  --> src/arenavec_fuzz_10473694077003418768.rs:10:20
+   |
+10 | struct CustomType0(String);
+   |        ----------- ^^^^^^
+   |        |
+   |        field in this struct
+   |
+   = note: `#[warn(dead_code)]` on by default
+help: consider changing the field to be of unit type to suppress this warning while preserving the field numbering, or remove the field
+   |
+10 | struct CustomType0(());
+   |                    ~~
+
+warning: variable `GLOBAL_DATA` should have a snake case name
+  --> src/arenavec_fuzz_10473694077003418768.rs:17:13
+   |
+17 |         let GLOBAL_DATA = global_data.first_half;
+   |             ^^^^^^^^^^^ help: convert the identifier to snake case: `global_data`
+   |
+   = note: `#[warn(non_snake_case)]` on by default
+
+warning: variable `GLOBAL_DATA` should have a snake case name
+  --> src/arenavec_fuzz_10473694077003418768.rs:24:13
+   |
+24 |         let GLOBAL_DATA = match selector {
+   |             ^^^^^^^^^^^ help: convert the identifier to snake case: `global_data`
+
+warning: variable `GLOBAL_DATA` should have a snake case name
+  --> src/arenavec_fuzz_10473694077003418768.rs:46:13
+   |
+46 |         let GLOBAL_DATA = global_data.first_half;
+   |             ^^^^^^^^^^^ help: convert the identifier to snake case: `global_data`
+
+warning: variable `GLOBAL_DATA` should have a snake case name
+  --> src/arenavec_fuzz_10473694077003418768.rs:53:13
+   |
+53 |         let GLOBAL_DATA = match selector {
+   |             ^^^^^^^^^^^ help: convert the identifier to snake case: `global_data`
+
+warning: variable `GLOBAL_DATA` should have a snake case name
+  --> src/arenavec_fuzz_10473694077003418768.rs:80:13
+   |
+80 |         let GLOBAL_DATA = global_data.first_half;
+   |             ^^^^^^^^^^^ help: convert the identifier to snake case: `global_data`
+
+warning: `arenavec_fuzz_10473694077003418768` (bin "arenavec_fuzz_10473694077003418768") generated 14 warnings (run `cargo fix --bin "arenavec_fuzz_10473694077003418768"` to apply 5 suggestions)
+    Finished dev [unoptimized + debuginfo] target(s) in 2.41s
+AddressSanitizer:DEADLYSIGNAL
+=================================================================
+==1416035==ERROR: AddressSanitizer: SEGV on unknown address 0x7fcb6d5ff040 (pc 0x555f0ed9cb39 bp 0x7ffce08bfd50 sp 0x7ffce08bfc00 T0)
+==1416035==The signal is caused by a WRITE memory access.
+    #0 0x555f0ed9cb39  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#38-arenavec/harness/target/x86_64-unknown-linux-gnu/debug/arenavec_fuzz_10473694077003418768+0xc1b39) (BuildId: 29f06de37f9e618a6a101758ab91d03f9a44fdb3)
+    #1 0x555f0eda488a  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#38-arenavec/harness/target/x86_64-unknown-linux-gnu/debug/arenavec_fuzz_10473694077003418768+0xc988a) (BuildId: 29f06de37f9e618a6a101758ab91d03f9a44fdb3)
+    #2 0x555f0eda34e1  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#38-arenavec/harness/target/x86_64-unknown-linux-gnu/debug/arenavec_fuzz_10473694077003418768+0xc84e1) (BuildId: 29f06de37f9e618a6a101758ab91d03f9a44fdb3)
+    #3 0x555f0ed9afd1  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#38-arenavec/harness/target/x86_64-unknown-linux-gnu/debug/arenavec_fuzz_10473694077003418768+0xbffd1) (BuildId: 29f06de37f9e618a6a101758ab91d03f9a44fdb3)
+    #4 0x555f0ed9b020  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#38-arenavec/harness/target/x86_64-unknown-linux-gnu/debug/arenavec_fuzz_10473694077003418768+0xc0020) (BuildId: 29f06de37f9e618a6a101758ab91d03f9a44fdb3)
+    #5 0x555f0edc0410  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#38-arenavec/harness/target/x86_64-unknown-linux-gnu/debug/arenavec_fuzz_10473694077003418768+0xe5410) (BuildId: 29f06de37f9e618a6a101758ab91d03f9a44fdb3)
+    #6 0x555f0eda4a45  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#38-arenavec/harness/target/x86_64-unknown-linux-gnu/debug/arenavec_fuzz_10473694077003418768+0xc9a45) (BuildId: 29f06de37f9e618a6a101758ab91d03f9a44fdb3)
+    #7 0x7ff4704fbd8f  (/lib/x86_64-linux-gnu/libc.so.6+0x29d8f) (BuildId: 490fef8403240c91833978d494d39e537409b92e)
+    #8 0x7ff4704fbe3f  (/lib/x86_64-linux-gnu/libc.so.6+0x29e3f) (BuildId: 490fef8403240c91833978d494d39e537409b92e)
+    #9 0x555f0eceb144  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#38-arenavec/harness/target/x86_64-unknown-linux-gnu/debug/arenavec_fuzz_10473694077003418768+0x10144) (BuildId: 29f06de37f9e618a6a101758ab91d03f9a44fdb3)
+
+AddressSanitizer can not provide additional info.
+SUMMARY: AddressSanitizer: SEGV (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#38-arenavec/harness/target/x86_64-unknown-linux-gnu/debug/arenavec_fuzz_10473694077003418768+0xc1b39) (BuildId: 29f06de37f9e618a6a101758ab91d03f9a44fdb3) 
+==1416035==ABORTING

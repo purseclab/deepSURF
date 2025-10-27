@@ -1,0 +1,16 @@
+[workspace]
+
+[package]
+name = "futures-task_fuzz_11575364300756002959"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "futures-task_fuzz_11575364300756002959"
+path = "src/futures-task_fuzz_11575364300756002959.rs"
+
+[dependencies]
+afl = "=0.15.7"
+home = "=0.5.9"
+futures-task = { path = "../../../../../futures-0.3.5/futures-task/" }
+global_data = { path = "../../../../../../../../../code/global_data" }

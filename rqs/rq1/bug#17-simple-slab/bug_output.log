@@ -1,0 +1,110 @@
+     Removed 125 files, 51.2MiB total
+   Compiling semver v1.0.26
+   Compiling libc v0.2.175
+   Compiling home v0.5.5
+   Compiling xdg v2.5.2
+   Compiling global_data v0.1.0 (/home/cdc/deepSURF-sp26-artifacts/artifact_code/global_data)
+   Compiling afl v0.15.7
+   Compiling rustc_version v0.4.1
+   Compiling simple-slab v0.3.2 (/home/cdc/deepSURF-sp26-artifacts/artifact_data/dataset/erasan_crates/simple-slab-0.3.2)
+warning: unnecessary parentheses around function argument
+  --> /home/cdc/deepSURF-sp26-artifacts/artifact_data/dataset/erasan_crates/simple-slab-0.3.2/src/lib.rs:45:26
+   |
+45 |             libc::malloc((mem::size_of::<T>() * capacity)) as *mut T
+   |                          ^                              ^
+   |
+   = note: `#[warn(unused_parens)]` on by default
+help: remove these parentheses
+   |
+45 -             libc::malloc((mem::size_of::<T>() * capacity)) as *mut T
+45 +             libc::malloc(mem::size_of::<T>() * capacity) as *mut T
+   |
+
+warning: unnecessary parentheses around function argument
+   --> /home/cdc/deepSURF-sp26-artifacts/artifact_data/dataset/erasan_crates/simple-slab-0.3.2/src/lib.rs:137:27
+    |
+137 |                           (mem::size_of::<T>() * new_capacity)) as *mut T
+    |                           ^                                  ^
+    |
+help: remove these parentheses
+    |
+137 -                           (mem::size_of::<T>() * new_capacity)) as *mut T
+137 +                           mem::size_of::<T>() * new_capacity) as *mut T
+    |
+
+warning: `simple-slab` (lib) generated 2 warnings (run `cargo fix --lib -p simple-slab` to apply 2 suggestions)
+   Compiling simple-slab_fuzz_12997837067481994914 v0.1.0 (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#17-simple-slab/harness)
+warning: unused import: `simple_slab::*`
+ --> src/simple-slab_fuzz_12997837067481994914.rs:5:5
+  |
+5 | use simple_slab::*;
+  |     ^^^^^^^^^^^^^^
+  |
+  = note: `#[warn(unused_imports)]` on by default
+
+warning: unused import: `std::str::FromStr`
+ --> src/simple-slab_fuzz_12997837067481994914.rs:7:5
+  |
+7 | use std::str::FromStr;
+  |     ^^^^^^^^^^^^^^^^^
+
+warning: unused imports: `DerefMut`, `Deref`, `IndexMut`, `Index`
+ --> src/simple-slab_fuzz_12997837067481994914.rs:8:16
+  |
+8 | use std::ops::{Deref, DerefMut, Index, IndexMut};
+  |                ^^^^^  ^^^^^^^^  ^^^^^  ^^^^^^^^
+
+warning: the item `TryInto` is imported redundantly
+   --> src/simple-slab_fuzz_12997837067481994914.rs:173:9
+    |
+173 |     use std::convert::TryInto;
+    |         ^^^^^^^^^^^^^^^^^^^^^
+   --> /rustc/11f32b73e0dc9287e305b5b9980d24aecdc8c17f/library/std/src/prelude/mod.rs:129:13
+    |
+    = note: the item `TryInto` is already defined here
+
+warning: the item `TryInto` is imported redundantly
+   --> src/simple-slab_fuzz_12997837067481994914.rs:180:9
+    |
+180 |     use std::convert::TryInto;
+    |         ^^^^^^^^^^^^^^^^^^^^^
+   --> /rustc/11f32b73e0dc9287e305b5b9980d24aecdc8c17f/library/std/src/prelude/mod.rs:129:13
+    |
+    = note: the item `TryInto` is already defined here
+
+warning: variable `GLOBAL_DATA` should have a snake case name
+  --> src/simple-slab_fuzz_12997837067481994914.rs:20:13
+   |
+20 |         let GLOBAL_DATA = global_data.first_half;
+   |             ^^^^^^^^^^^ help: convert the identifier to snake case: `global_data`
+   |
+   = note: `#[warn(non_snake_case)]` on by default
+
+warning: `simple-slab_fuzz_12997837067481994914` (bin "simple-slab_fuzz_12997837067481994914") generated 6 warnings (run `cargo fix --bin "simple-slab_fuzz_12997837067481994914"` to apply 3 suggestions)
+    Finished dev [unoptimized + debuginfo] target(s) in 2.37s
+AddressSanitizer:DEADLYSIGNAL
+=================================================================
+==1390425==ERROR: AddressSanitizer: SEGV on unknown address (pc 0x5570a2088d52 bp 0x000000000000 sp 0x7ffd179ceaf0 T0)
+==1390425==The signal is caused by a READ memory access.
+==1390425==Hint: this fault was caused by a dereference of a high value address (see register values below).  Disassemble the provided pc to learn which register was used.
+    #0 0x5570a2088d52  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#17-simple-slab/harness/target/x86_64-unknown-linux-gnu/debug/simple-slab_fuzz_12997837067481994914+0xc3d52) (BuildId: eaf6a7aeb074f256add3cb75603cc35c7c53b19b)
+    #1 0x5570a20c8e43  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#17-simple-slab/harness/target/x86_64-unknown-linux-gnu/debug/simple-slab_fuzz_12997837067481994914+0x103e43) (BuildId: eaf6a7aeb074f256add3cb75603cc35c7c53b19b)
+    #2 0x5570a20c9b1a  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#17-simple-slab/harness/target/x86_64-unknown-linux-gnu/debug/simple-slab_fuzz_12997837067481994914+0x104b1a) (BuildId: eaf6a7aeb074f256add3cb75603cc35c7c53b19b)
+    #3 0x5570a208b7e4  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#17-simple-slab/harness/target/x86_64-unknown-linux-gnu/debug/simple-slab_fuzz_12997837067481994914+0xc67e4) (BuildId: eaf6a7aeb074f256add3cb75603cc35c7c53b19b)
+    #4 0x5570a20c925f  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#17-simple-slab/harness/target/x86_64-unknown-linux-gnu/debug/simple-slab_fuzz_12997837067481994914+0x10425f) (BuildId: eaf6a7aeb074f256add3cb75603cc35c7c53b19b)
+    #5 0x5570a20a75aa  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#17-simple-slab/harness/target/x86_64-unknown-linux-gnu/debug/simple-slab_fuzz_12997837067481994914+0xe25aa) (BuildId: eaf6a7aeb074f256add3cb75603cc35c7c53b19b)
+    #6 0x5570a20a7af4  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#17-simple-slab/harness/target/x86_64-unknown-linux-gnu/debug/simple-slab_fuzz_12997837067481994914+0xe2af4) (BuildId: eaf6a7aeb074f256add3cb75603cc35c7c53b19b)
+    #7 0x5570a20862b7  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#17-simple-slab/harness/target/x86_64-unknown-linux-gnu/debug/simple-slab_fuzz_12997837067481994914+0xc12b7) (BuildId: eaf6a7aeb074f256add3cb75603cc35c7c53b19b)
+    #8 0x5570a208b89a  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#17-simple-slab/harness/target/x86_64-unknown-linux-gnu/debug/simple-slab_fuzz_12997837067481994914+0xc689a) (BuildId: eaf6a7aeb074f256add3cb75603cc35c7c53b19b)
+    #9 0x5570a208a2f1  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#17-simple-slab/harness/target/x86_64-unknown-linux-gnu/debug/simple-slab_fuzz_12997837067481994914+0xc52f1) (BuildId: eaf6a7aeb074f256add3cb75603cc35c7c53b19b)
+    #10 0x5570a2085041  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#17-simple-slab/harness/target/x86_64-unknown-linux-gnu/debug/simple-slab_fuzz_12997837067481994914+0xc0041) (BuildId: eaf6a7aeb074f256add3cb75603cc35c7c53b19b)
+    #11 0x5570a2085090  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#17-simple-slab/harness/target/x86_64-unknown-linux-gnu/debug/simple-slab_fuzz_12997837067481994914+0xc0090) (BuildId: eaf6a7aeb074f256add3cb75603cc35c7c53b19b)
+    #12 0x5570a20a5a30  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#17-simple-slab/harness/target/x86_64-unknown-linux-gnu/debug/simple-slab_fuzz_12997837067481994914+0xe0a30) (BuildId: eaf6a7aeb074f256add3cb75603cc35c7c53b19b)
+    #13 0x5570a208ba55  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#17-simple-slab/harness/target/x86_64-unknown-linux-gnu/debug/simple-slab_fuzz_12997837067481994914+0xc6a55) (BuildId: eaf6a7aeb074f256add3cb75603cc35c7c53b19b)
+    #14 0x7f3817c75d8f  (/lib/x86_64-linux-gnu/libc.so.6+0x29d8f) (BuildId: 490fef8403240c91833978d494d39e537409b92e)
+    #15 0x7f3817c75e3f  (/lib/x86_64-linux-gnu/libc.so.6+0x29e3f) (BuildId: 490fef8403240c91833978d494d39e537409b92e)
+    #16 0x5570a1fd50d4  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#17-simple-slab/harness/target/x86_64-unknown-linux-gnu/debug/simple-slab_fuzz_12997837067481994914+0x100d4) (BuildId: eaf6a7aeb074f256add3cb75603cc35c7c53b19b)
+
+AddressSanitizer can not provide additional info.
+SUMMARY: AddressSanitizer: SEGV (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#17-simple-slab/harness/target/x86_64-unknown-linux-gnu/debug/simple-slab_fuzz_12997837067481994914+0xc3d52) (BuildId: eaf6a7aeb074f256add3cb75603cc35c7c53b19b) 
+==1390425==ABORTING

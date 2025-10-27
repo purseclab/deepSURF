@@ -1,0 +1,2 @@
+Crate	Total API	Unsafe API	GETRAWPTR API	Drop API	Mutate API	Generic API	Total Edge	Unsafe Edge	Target Num	Covered API	Covered Unsafe API	Covered Edge	Covered Unsafe Edge	Generation Time
+bumpalo	18	9	1	1	2	7	72	44	31	13	7	34	27	260

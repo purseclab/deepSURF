@@ -1,0 +1,159 @@
+     Removed 124 files, 52.6MiB total
+   Compiling semver v1.0.26
+   Compiling libc v0.2.175
+   Compiling home v0.5.5
+   Compiling xdg v2.5.2
+   Compiling global_data v0.1.0 (/home/cdc/deepSURF-sp26-artifacts/artifact_code/global_data)
+   Compiling stack_dst v0.6.0 (/home/cdc/deepSURF-sp26-artifacts/artifact_data/dataset/erasan_crates/stack_dst-0.6.0)
+   Compiling afl v0.15.7
+   Compiling rustc_version v0.4.1
+   Compiling stack_dst_fuzz_13719959407265914623 v0.1.0 (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#7-stack_dst/harness)
+warning: unused import: `stack_dst::*`
+ --> src/stack_dst_fuzz_13719959407265914623.rs:5:5
+  |
+5 | use stack_dst::*;
+  |     ^^^^^^^^^^^^
+  |
+  = note: `#[warn(unused_imports)]` on by default
+
+warning: unused import: `std::str::FromStr`
+ --> src/stack_dst_fuzz_13719959407265914623.rs:7:5
+  |
+7 | use std::str::FromStr;
+  |     ^^^^^^^^^^^^^^^^^
+
+warning: unused imports: `DerefMut`, `Deref`, `IndexMut`, `Index`
+ --> src/stack_dst_fuzz_13719959407265914623.rs:8:16
+  |
+8 | use std::ops::{Deref, DerefMut, Index, IndexMut};
+  |                ^^^^^  ^^^^^^^^  ^^^^^  ^^^^^^^^
+
+warning: the item `TryInto` is imported redundantly
+   --> src/stack_dst_fuzz_13719959407265914623.rs:236:9
+    |
+236 |     use std::convert::TryInto;
+    |         ^^^^^^^^^^^^^^^^^^^^^
+   --> /rustc/11f32b73e0dc9287e305b5b9980d24aecdc8c17f/library/std/src/prelude/mod.rs:129:13
+    |
+    = note: the item `TryInto` is already defined here
+
+warning: the item `TryInto` is imported redundantly
+   --> src/stack_dst_fuzz_13719959407265914623.rs:243:9
+    |
+243 |     use std::convert::TryInto;
+    |         ^^^^^^^^^^^^^^^^^^^^^
+   --> /rustc/11f32b73e0dc9287e305b5b9980d24aecdc8c17f/library/std/src/prelude/mod.rs:129:13
+    |
+    = note: the item `TryInto` is already defined here
+
+warning: variable does not need to be mutable
+  --> src/stack_dst_fuzz_13719959407265914623.rs:40:13
+   |
+40 |         let mut t_0 = _to_u8(GLOBAL_DATA, 8) % 17;
+   |             ----^^^
+   |             |
+   |             help: remove this `mut`
+   |
+   = note: `#[warn(unused_mut)]` on by default
+
+warning: variable does not need to be mutable
+  --> src/stack_dst_fuzz_13719959407265914623.rs:81:13
+   |
+81 |         let mut t_7 = _to_u8(GLOBAL_DATA, 49) % 17;
+   |             ----^^^
+   |             |
+   |             help: remove this `mut`
+
+warning: variable does not need to be mutable
+  --> src/stack_dst_fuzz_13719959407265914623.rs:84:13
+   |
+84 |         let mut t_10 = CustomType0(t_9);
+   |             ----^^^^
+   |             |
+   |             help: remove this `mut`
+
+warning: variable `GLOBAL_DATA` should have a snake case name
+  --> src/stack_dst_fuzz_13719959407265914623.rs:17:13
+   |
+17 |         let GLOBAL_DATA = global_data.first_half;
+   |             ^^^^^^^^^^^ help: convert the identifier to snake case: `global_data`
+   |
+   = note: `#[warn(non_snake_case)]` on by default
+
+warning: variable `GLOBAL_DATA_first` should have a snake case name
+  --> src/stack_dst_fuzz_13719959407265914623.rs:30:13
+   |
+30 |         let GLOBAL_DATA_first = global_data.first_half;
+   |             ^^^^^^^^^^^^^^^^^ help: convert the identifier to snake case: `global_data_first`
+
+warning: variable `GLOBAL_DATA` should have a snake case name
+  --> src/stack_dst_fuzz_13719959407265914623.rs:36:13
+   |
+36 |         let GLOBAL_DATA = match selector {
+   |             ^^^^^^^^^^^ help: convert the identifier to snake case: `global_data`
+
+warning: variable `GLOBAL_DATA_first` should have a snake case name
+  --> src/stack_dst_fuzz_13719959407265914623.rs:51:13
+   |
+51 |         let GLOBAL_DATA_first = global_data.first_half;
+   |             ^^^^^^^^^^^^^^^^^ help: convert the identifier to snake case: `global_data_first`
+
+warning: variable `GLOBAL_DATA` should have a snake case name
+  --> src/stack_dst_fuzz_13719959407265914623.rs:57:13
+   |
+57 |         let GLOBAL_DATA = match selector {
+   |             ^^^^^^^^^^^ help: convert the identifier to snake case: `global_data`
+
+warning: variable `GLOBAL_DATA_first` should have a snake case name
+  --> src/stack_dst_fuzz_13719959407265914623.rs:71:13
+   |
+71 |         let GLOBAL_DATA_first = global_data.first_half;
+   |             ^^^^^^^^^^^^^^^^^ help: convert the identifier to snake case: `global_data_first`
+
+warning: variable `GLOBAL_DATA` should have a snake case name
+  --> src/stack_dst_fuzz_13719959407265914623.rs:77:13
+   |
+77 |         let GLOBAL_DATA = match selector {
+   |             ^^^^^^^^^^^ help: convert the identifier to snake case: `global_data`
+
+warning: variable `GLOBAL_DATA` should have a snake case name
+  --> src/stack_dst_fuzz_13719959407265914623.rs:94:13
+   |
+94 |         let GLOBAL_DATA = global_data.first_half;
+   |             ^^^^^^^^^^^ help: convert the identifier to snake case: `global_data`
+
+warning: `stack_dst_fuzz_13719959407265914623` (bin "stack_dst_fuzz_13719959407265914623") generated 16 warnings (run `cargo fix --bin "stack_dst_fuzz_13719959407265914623"` to apply 6 suggestions)
+    Finished dev [unoptimized + debuginfo] target(s) in 2.48s
+Before
+After
+thread 'main' panicked at /home/cdc/deepSURF-sp26-artifacts/artifact_data/dataset/erasan_crates/stack_dst-0.6.0/src/stack.rs:159:13:
+attempt to subtract with overflow
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+=================================================================
+==1424803==ERROR: AddressSanitizer: attempting double-free on 0x502000000030 in thread T0:
+    #0 0x55b8b0351016  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#7-stack_dst/harness/target/x86_64-unknown-linux-gnu/debug/stack_dst_fuzz_13719959407265914623+0x97016) (BuildId: 16e01a20a564355c6c3bb0eb65fc9a990f8e71a1)
+    #1 0x55b8b03803b8  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#7-stack_dst/harness/target/x86_64-unknown-linux-gnu/debug/stack_dst_fuzz_13719959407265914623+0xc63b8) (BuildId: 16e01a20a564355c6c3bb0eb65fc9a990f8e71a1)
+    #2 0x55b8b037ea84  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#7-stack_dst/harness/target/x86_64-unknown-linux-gnu/debug/stack_dst_fuzz_13719959407265914623+0xc4a84) (BuildId: 16e01a20a564355c6c3bb0eb65fc9a990f8e71a1)
+    #3 0x55b8b0381daa  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#7-stack_dst/harness/target/x86_64-unknown-linux-gnu/debug/stack_dst_fuzz_13719959407265914623+0xc7daa) (BuildId: 16e01a20a564355c6c3bb0eb65fc9a990f8e71a1)
+    #4 0x55b8b0380f21  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#7-stack_dst/harness/target/x86_64-unknown-linux-gnu/debug/stack_dst_fuzz_13719959407265914623+0xc6f21) (BuildId: 16e01a20a564355c6c3bb0eb65fc9a990f8e71a1)
+    #5 0x55b8b037a6c1  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#7-stack_dst/harness/target/x86_64-unknown-linux-gnu/debug/stack_dst_fuzz_13719959407265914623+0xc06c1) (BuildId: 16e01a20a564355c6c3bb0eb65fc9a990f8e71a1)
+    #6 0x55b8b037a710  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#7-stack_dst/harness/target/x86_64-unknown-linux-gnu/debug/stack_dst_fuzz_13719959407265914623+0xc0710) (BuildId: 16e01a20a564355c6c3bb0eb65fc9a990f8e71a1)
+    #7 0x55b8b039bfa0  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#7-stack_dst/harness/target/x86_64-unknown-linux-gnu/debug/stack_dst_fuzz_13719959407265914623+0xe1fa0) (BuildId: 16e01a20a564355c6c3bb0eb65fc9a990f8e71a1)
+    #8 0x55b8b0381f65  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#7-stack_dst/harness/target/x86_64-unknown-linux-gnu/debug/stack_dst_fuzz_13719959407265914623+0xc7f65) (BuildId: 16e01a20a564355c6c3bb0eb65fc9a990f8e71a1)
+    #9 0x7fb5d86c5d8f  (/lib/x86_64-linux-gnu/libc.so.6+0x29d8f) (BuildId: 490fef8403240c91833978d494d39e537409b92e)
+    #10 0x7fb5d86c5e3f  (/lib/x86_64-linux-gnu/libc.so.6+0x29e3f) (BuildId: 490fef8403240c91833978d494d39e537409b92e)
+    #11 0x55b8b02ca604  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#7-stack_dst/harness/target/x86_64-unknown-linux-gnu/debug/stack_dst_fuzz_13719959407265914623+0x10604) (BuildId: 16e01a20a564355c6c3bb0eb65fc9a990f8e71a1)
+
+0x502000000030 is located 0 bytes inside of 1-byte region [0x502000000030,0x502000000031)
+freed by thread T0 here:
+    #0 0x55b8b0351016  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#7-stack_dst/harness/target/x86_64-unknown-linux-gnu/debug/stack_dst_fuzz_13719959407265914623+0x97016) (BuildId: 16e01a20a564355c6c3bb0eb65fc9a990f8e71a1)
+    #1 0x55b8b03803b8  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#7-stack_dst/harness/target/x86_64-unknown-linux-gnu/debug/stack_dst_fuzz_13719959407265914623+0xc63b8) (BuildId: 16e01a20a564355c6c3bb0eb65fc9a990f8e71a1)
+
+previously allocated by thread T0 here:
+    #0 0x55b8b03512be  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#7-stack_dst/harness/target/x86_64-unknown-linux-gnu/debug/stack_dst_fuzz_13719959407265914623+0x972be) (BuildId: 16e01a20a564355c6c3bb0eb65fc9a990f8e71a1)
+    #1 0x55b8b037b598  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#7-stack_dst/harness/target/x86_64-unknown-linux-gnu/debug/stack_dst_fuzz_13719959407265914623+0xc1598) (BuildId: 16e01a20a564355c6c3bb0eb65fc9a990f8e71a1)
+    #2 0x55b8b0381daa  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#7-stack_dst/harness/target/x86_64-unknown-linux-gnu/debug/stack_dst_fuzz_13719959407265914623+0xc7daa) (BuildId: 16e01a20a564355c6c3bb0eb65fc9a990f8e71a1)
+    #3 0x55b8b037a6c1  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#7-stack_dst/harness/target/x86_64-unknown-linux-gnu/debug/stack_dst_fuzz_13719959407265914623+0xc06c1) (BuildId: 16e01a20a564355c6c3bb0eb65fc9a990f8e71a1)
+
+SUMMARY: AddressSanitizer: double-free (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#7-stack_dst/harness/target/x86_64-unknown-linux-gnu/debug/stack_dst_fuzz_13719959407265914623+0x97016) (BuildId: 16e01a20a564355c6c3bb0eb65fc9a990f8e71a1) 
+==1424803==ABORTING

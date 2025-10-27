@@ -1,0 +1,19 @@
+rdiff-0.1.2/ rdiff {'hashing::tests_rug_17::test_rug': 'hashing__tests_rug_17__test_rug', 'hashing::tests_rug_18::test_roll_hash': 'hashing__tests_rug_18__test_roll_hash', 'hashing::tests_rug_21::test_rug': 'hashing__tests_rug_21__test_rug', 'hashing::tests_rug_20::test_rug': 'hashing__tests_rug_20__test_rug', 'string_diff::tests_rug_4::test_rug': 'string_diff__tests_rug_4__test_rug', 'string_diff::tests_rug_1::test_rug': 'string_diff__tests_rug_1__test_rug', 'string_diff::tests_rug_2::test_rug': 'string_diff__tests_rug_2__test_rug', 'string_diff::tests_rug_5::test_rug': 'string_diff__tests_rug_5__test_rug', 'string_diff::tests_rug_3::test_rug': 'string_diff__tests_rug_3__test_rug', 'string_diff::tests_rug_6::test_rug': 'string_diff__tests_rug_6__test_rug', 'string_diff::tests_rug_7::test_rug': 'string_diff__tests_rug_7__test_rug', 'tests_rug_29::test_rug': 'tests_rug_29__test_rug', 'tests_rug_30::test_rug': 'tests_rug_30__test_rug', 'tests_rug_34::test_rug': 'tests_rug_34__test_rug', 'tests_rug_35::test_rug': 'tests_rug_35__test_rug', 'tests_rug_37::test_rug': 'tests_rug_37__test_rug', 'tests_rug_38::test_rug': 'tests_rug_38__test_rug', 'tests_rug_40::test_rug': 'tests_rug_40__test_rug', 'tests_rug_42::test_rug': 'tests_rug_42__test_rug', 'tests_rug_43::test_rug': 'tests_rug_43__test_rug', 'tests_rug_44::test_rug': 'tests_rug_44__test_rug', 'tests_rug_45::test_rug': 'tests_rug_45__test_rug', 'window::tests_rug_8::test_rug': 'window__tests_rug_8__test_rug'}
+timeout or err hashing::tests_rug_17::test_rug
+timeout or err hashing::tests_rug_18::test_roll_hash
+timeout or err hashing::tests_rug_21::test_rug
+timeout or err string_diff::tests_rug_4::test_rug
+timeout or err string_diff::tests_rug_5::test_rug
+timeout or err string_diff::tests_rug_3::test_rug
+timeout or err string_diff::tests_rug_6::test_rug
+timeout or err string_diff::tests_rug_7::test_rug
+timeout or err tests_rug_29::test_rug
+timeout or err tests_rug_30::test_rug
+timeout or err tests_rug_34::test_rug
+timeout or err tests_rug_38::test_rug
+timeout or err tests_rug_40::test_rug
+timeout or err tests_rug_42::test_rug
+timeout or err tests_rug_43::test_rug
+timeout or err tests_rug_44::test_rug
+timeout or err tests_rug_45::test_rug
+rdiff-0.1.2/ done

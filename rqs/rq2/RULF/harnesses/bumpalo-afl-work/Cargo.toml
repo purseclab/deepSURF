@@ -1,0 +1,21 @@
+[workspace]
+members = [
+	"test_bumpalo7",
+	"replay_bumpalo7",
+	"test_bumpalo3",
+	"replay_bumpalo3",
+	"test_bumpalo0",
+	"replay_bumpalo0",
+	"test_bumpalo8",
+	"replay_bumpalo8",
+	"test_bumpalo1",
+	"replay_bumpalo1",
+	"test_bumpalo4",
+	"replay_bumpalo4",
+	"test_bumpalo5",
+	"replay_bumpalo5",
+	"test_bumpalo2",
+	"replay_bumpalo2",
+	"test_bumpalo6",
+	"replay_bumpalo6",
+]

@@ -1,0 +1,4079 @@
+ApiGraph {
+    _crate_name: "algorithmica",
+    api_functions: [
+        ApiFunction {
+            full_name: "algorithmica::tree::Node::create",
+            generics: {},
+            inputs: [
+                Primitive(
+                    I32,
+                ),
+            ],
+            output: Some(
+                Path {
+                    path: Path {
+                        res: Def(
+                            Struct,
+                            DefId(5:444 ~ alloc[b3e0]::boxed::Box),
+                        ),
+                        segments: [
+                            PathSegment {
+                                name: "Box",
+                                args: AngleBracketed {
+                                    args: [
+                                        Type(
+                                            Path {
+                                                path: Path {
+                                                    res: Def(
+                                                        Struct,
+                                                        DefId(0:147 ~ algorithmica[4c55]::tree::Node),
+                                                    ),
+                                                    segments: [
+                                                        PathSegment {
+                                                            name: "Node",
+                                                            args: AngleBracketed {
+                                                                args: [],
+                                                                bindings: [],
+                                                            },
+                                                        },
+                                                    ],
+                                                },
+                                            },
+                                        ),
+                                    ],
+                                    bindings: [],
+                                },
+                            },
+                        ],
+                    },
+                },
+            ),
+            _trait_full_path: None,
+            _unsafe_tag: Normal,
+            def_id: DefId(
+                DefId(0:134 ~ algorithmica[4c55]::tree::{impl#0}::create),
+            ),
+            unsafe_info: {},
+            rawptr_info: {},
+            drop_info: {},
+            mutate_info: {},
+            return_info: {
+                StatementId {
+                    fn_id: DefId(0:134 ~ algorithmica[4c55]::tree::{impl#0}::create),
+                    local: _0,
+                }: StatementInfo {
+                    type_name: (
+                        Return,
+                        "std::boxed::Box<tree::Node>",
+                    ),
+                    src: Some(
+                        ParamSrc(
+                            ParamSrcContext {
+                                struct_type: "i32",
+                                simplified_type: "i32",
+                                fields: "",
+                                local: _1,
+                            },
+                        ),
+                    ),
+                    span: src/tree/mod.rs:12:34: 12:43 (#0),
+                    gen_bbs: [],
+                    kill_bbs: [
+                        bb1,
+                    ],
+                },
+            },
+            func_types: {
+                "tree::Node",
+                "i32",
+                "std::boxed::Box<tree::Node>",
+            },
+            input_types: [
+                "i32",
+            ],
+            output_type: Some(
+                "std::boxed::Box<tree::Node>",
+            ),
+            need_functions: {},
+            next_functions: {
+                (
+                    0,
+                    1,
+                ),
+            },
+            weight: 0,
+        },
+        ApiFunction {
+            full_name: "algorithmica::tree::Node::add_new",
+            generics: {},
+            inputs: [
+                Path {
+                    path: Path {
+                        res: Def(
+                            Enum,
+                            DefId(2:47799 ~ core[ef75]::option::Option),
+                        ),
+                        segments: [
+                            PathSegment {
+                                name: "Option",
+                                args: AngleBracketed {
+                                    args: [
+                                        Type(
+                                            Path {
+                                                path: Path {
+                                                    res: Def(
+                                                        Struct,
+                                                        DefId(5:444 ~ alloc[b3e0]::boxed::Box),
+                                                    ),
+                                                    segments: [
+                                                        PathSegment {
+                                                            name: "Box",
+                                                            args: AngleBracketed {
+                                                                args: [
+                                                                    Type(
+                                                                        Path {
+                                                                            path: Path {
+                                                                                res: Def(
+                                                                                    Struct,
+                                                                                    DefId(0:147 ~ algorithmica[4c55]::tree::Node),
+                                                                                ),
+                                                                                segments: [
+                                                                                    PathSegment {
+                                                                                        name: "Node",
+                                                                                        args: AngleBracketed {
+                                                                                            args: [],
+                                                                                            bindings: [],
+                                                                                        },
+                                                                                    },
+                                                                                ],
+                                                                            },
+                                                                        },
+                                                                    ),
+                                                                ],
+                                                                bindings: [],
+                                                            },
+                                                        },
+                                                    ],
+                                                },
+                                            },
+                                        ),
+                                    ],
+                                    bindings: [],
+                                },
+                            },
+                        ],
+                    },
+                },
+                Primitive(
+                    I32,
+                ),
+            ],
+            output: Some(
+                Path {
+                    path: Path {
+                        res: Def(
+                            Enum,
+                            DefId(2:47799 ~ core[ef75]::option::Option),
+                        ),
+                        segments: [
+                            PathSegment {
+                                name: "Option",
+                                args: AngleBracketed {
+                                    args: [
+                                        Type(
+                                            Path {
+                                                path: Path {
+                                                    res: Def(
+                                                        Struct,
+                                                        DefId(5:444 ~ alloc[b3e0]::boxed::Box),
+                                                    ),
+                                                    segments: [
+                                                        PathSegment {
+                                                            name: "Box",
+                                                            args: AngleBracketed {
+                                                                args: [
+                                                                    Type(
+                                                                        Path {
+                                                                            path: Path {
+                                                                                res: Def(
+                                                                                    Struct,
+                                                                                    DefId(0:147 ~ algorithmica[4c55]::tree::Node),
+                                                                                ),
+                                                                                segments: [
+                                                                                    PathSegment {
+                                                                                        name: "Node",
+                                                                                        args: AngleBracketed {
+                                                                                            args: [],
+                                                                                            bindings: [],
+                                                                                        },
+                                                                                    },
+                                                                                ],
+                                                                            },
+                                                                        },
+                                                                    ),
+                                                                ],
+                                                                bindings: [],
+                                                            },
+                                                        },
+                                                    ],
+                                                },
+                                            },
+                                        ),
+                                    ],
+                                    bindings: [],
+                                },
+                            },
+                        ],
+                    },
+                },
+            ),
+            _trait_full_path: None,
+            _unsafe_tag: Normal,
+            def_id: DefId(
+                DefId(0:135 ~ algorithmica[4c55]::tree::{impl#0}::add_new),
+            ),
+            unsafe_info: {},
+            rawptr_info: {},
+            drop_info: {
+                StatementId {
+                    fn_id: DefId(0:135 ~ algorithmica[4c55]::tree::{impl#0}::add_new),
+                    local: _19,
+                }: StatementInfo {
+                    type_name: (
+                        Drop,
+                        "*const tree::Node",
+                    ),
+                    src: Some(
+                        Init(
+                            InitContext {
+                                struct_type: "*const tree::Node",
+                                simplified_type: "tree::Node",
+                                fields: "",
+                                local: _19,
+                            },
+                        ),
+                    ),
+                    span: src/tree/mod.rs:29:13: 29:14 (#0),
+                    gen_bbs: [],
+                    kill_bbs: [],
+                },
+                StatementId {
+                    fn_id: DefId(0:135 ~ algorithmica[4c55]::tree::{impl#0}::add_new),
+                    local: _20,
+                }: StatementInfo {
+                    type_name: (
+                        Drop,
+                        "*const tree::Node",
+                    ),
+                    src: Some(
+                        Init(
+                            InitContext {
+                                struct_type: "*const tree::Node",
+                                simplified_type: "tree::Node",
+                                fields: "",
+                                local: _20,
+                            },
+                        ),
+                    ),
+                    span: src/tree/mod.rs:29:13: 29:14 (#0),
+                    gen_bbs: [],
+                    kill_bbs: [],
+                },
+            },
+            mutate_info: {},
+            return_info: {
+                StatementId {
+                    fn_id: DefId(0:135 ~ algorithmica[4c55]::tree::{impl#0}::add_new),
+                    local: _0,
+                }: StatementInfo {
+                    type_name: (
+                        Return,
+                        "std::option::Option<std::boxed::Box<tree::Node>>",
+                    ),
+                    src: Some(
+                        Init(
+                            InitContext {
+                                struct_type: "std::option::Option<std::boxed::Box<tree::Node>>",
+                                simplified_type: "std::boxed::Box<tree::Node>",
+                                fields: "",
+                                local: _0,
+                            },
+                        ),
+                    ),
+                    span: src/tree/mod.rs:20:60: 20:77 (#0),
+                    gen_bbs: [],
+                    kill_bbs: [
+                        bb11,
+                    ],
+                },
+            },
+            func_types: {
+                "std::boxed::Box<tree::Node>",
+                "bool",
+                "isize",
+                "()",
+                "i32",
+                "std::option::Option<std::boxed::Box<tree::Node>>",
+                "tree::Node",
+            },
+            input_types: [
+                "std::option::Option<std::boxed::Box<tree::Node>>",
+                "i32",
+            ],
+            output_type: Some(
+                "std::option::Option<std::boxed::Box<tree::Node>>",
+            ),
+            need_functions: {
+                0: [
+                    0,
+                    1,
+                    0,
+                    1,
+                    0,
+                    1,
+                ],
+            },
+            next_functions: {
+                (
+                    0,
+                    1,
+                ),
+            },
+            weight: 0,
+        },
+        ApiFunction {
+            full_name: "algorithmica::tree::bst::BST::new",
+            generics: {
+                "algorithmica::tree::bst::BST::T": [
+                    "core::cmp::Ord",
+                ],
+            },
+            inputs: [],
+            output: Some(
+                Path {
+                    path: Path {
+                        res: Def(
+                            Enum,
+                            DefId(0:136 ~ algorithmica[4c55]::tree::bst::BST),
+                        ),
+                        segments: [
+                            PathSegment {
+                                name: "BST",
+                                args: AngleBracketed {
+                                    args: [
+                                        Type(
+                                            Generic(
+                                                "T",
+                                            ),
+                                        ),
+                                    ],
+                                    bindings: [],
+                                },
+                            },
+                        ],
+                    },
+                },
+            ),
+            _trait_full_path: None,
+            _unsafe_tag: Normal,
+            def_id: DefId(
+                DefId(0:124 ~ algorithmica[4c55]::tree::bst::{impl#0}::new),
+            ),
+            unsafe_info: {},
+            rawptr_info: {},
+            drop_info: {},
+            mutate_info: {},
+            return_info: {
+                StatementId {
+                    fn_id: DefId(0:124 ~ algorithmica[4c55]::tree::bst::{impl#0}::new),
+                    local: _0,
+                }: StatementInfo {
+                    type_name: (
+                        Return,
+                        "tree::bst::BST<T>",
+                    ),
+                    src: Some(
+                        Init(
+                            InitContext {
+                                struct_type: "tree::bst::BST<T>",
+                                simplified_type: "tree::bst::BST<T>",
+                                fields: "",
+                                local: _0,
+                            },
+                        ),
+                    ),
+                    span: src/tree/bst.rs:15:21: 15:25 (#0),
+                    gen_bbs: [],
+                    kill_bbs: [
+                        bb0,
+                    ],
+                },
+            },
+            func_types: {
+                "tree::bst::BST<T>",
+            },
+            input_types: [],
+            output_type: Some(
+                "tree::bst::BST<T>",
+            ),
+            need_functions: {},
+            next_functions: {
+                (
+                    0,
+                    4,
+                ),
+                (
+                    0,
+                    3,
+                ),
+                (
+                    0,
+                    5,
+                ),
+                (
+                    0,
+                    6,
+                ),
+            },
+            weight: 0,
+        },
+        ApiFunction {
+            full_name: "algorithmica::tree::bst::BST::is_empty",
+            generics: {
+                "algorithmica::tree::bst::BST::T": [
+                    "core::cmp::Ord",
+                ],
+            },
+            inputs: [
+                BorrowedRef {
+                    lifetime: None,
+                    mutability: Not,
+                    type_: Path {
+                        path: Path {
+                            res: Def(
+                                Enum,
+                                DefId(0:136 ~ algorithmica[4c55]::tree::bst::BST),
+                            ),
+                            segments: [
+                                PathSegment {
+                                    name: "BST",
+                                    args: AngleBracketed {
+                                        args: [
+                                            Type(
+                                                Generic(
+                                                    "T",
+                                                ),
+                                            ),
+                                        ],
+                                        bindings: [],
+                                    },
+                                },
+                            ],
+                        },
+                    },
+                },
+            ],
+            output: Some(
+                Primitive(
+                    Bool,
+                ),
+            ),
+            _trait_full_path: None,
+            _unsafe_tag: Normal,
+            def_id: DefId(
+                DefId(0:127 ~ algorithmica[4c55]::tree::bst::{impl#0}::is_empty),
+            ),
+            unsafe_info: {},
+            rawptr_info: {},
+            drop_info: {},
+            mutate_info: {},
+            return_info: {
+                StatementId {
+                    fn_id: DefId(0:127 ~ algorithmica[4c55]::tree::bst::{impl#0}::is_empty),
+                    local: _0,
+                }: StatementInfo {
+                    type_name: (
+                        Return,
+                        "bool",
+                    ),
+                    src: Some(
+                        Init(
+                            InitContext {
+                                struct_type: "bool",
+                                simplified_type: "bool",
+                                fields: "",
+                                local: _0,
+                            },
+                        ),
+                    ),
+                    span: src/tree/bst.rs:44:31: 44:35 (#0),
+                    gen_bbs: [],
+                    kill_bbs: [
+                        bb4,
+                    ],
+                },
+            },
+            func_types: {
+                "bool",
+                "tree::bst::BST<T>",
+                "isize",
+            },
+            input_types: [
+                "&tree::bst::BST<T>",
+            ],
+            output_type: Some(
+                "bool",
+            ),
+            need_functions: {
+                0: [
+                    2,
+                    3,
+                    2,
+                    2,
+                ],
+            },
+            next_functions: {},
+            weight: 0,
+        },
+    ],
+    api_functions_visited: [
+        true,
+        true,
+        true,
+        true,
+    ],
+    api_dependencies: [
+        (
+            ApiDependency {
+                output_fun: (
+                    BareFunction,
+                    0,
+                ),
+                input_fun: (
+                    GenericFunction,
+                    1,
+                ),
+                input_param_index: 0,
+                call_type: _ToOption(
+                    _DirectCall,
+                ),
+                parameters: [],
+            },
+            false,
+        ),
+        (
+            ApiDependency {
+                output_fun: (
+                    GenericFunction,
+                    1,
+                ),
+                input_fun: (
+                    GenericFunction,
+                    1,
+                ),
+                input_param_index: 0,
+                call_type: _DirectCall,
+                parameters: [],
+            },
+            false,
+        ),
+        (
+            ApiDependency {
+                output_fun: (
+                    BareFunction,
+                    2,
+                ),
+                input_fun: (
+                    BareFunction,
+                    3,
+                ),
+                input_param_index: 0,
+                call_type: _BorrowedRef(
+                    _DirectCall,
+                ),
+                parameters: [],
+            },
+            false,
+        ),
+    ],
+    api_sequences: [
+        ApiSequence {
+            functions: [
+                ApiCall {
+                    func: (
+                        BareFunction,
+                        0,
+                    ),
+                    params: [
+                        (
+                            _FuzzableType,
+                            0,
+                            _DirectCall,
+                        ),
+                    ],
+                    is_unsafe: false,
+                    is_get_raw_ptr: false,
+                    is_drop: false,
+                    is_mutate: false,
+                    output_type: Some(
+                        Path {
+                            path: Path {
+                                res: Def(
+                                    Struct,
+                                    DefId(5:444 ~ alloc[b3e0]::boxed::Box),
+                                ),
+                                segments: [
+                                    PathSegment {
+                                        name: "Box",
+                                        args: AngleBracketed {
+                                            args: [
+                                                Type(
+                                                    Path {
+                                                        path: Path {
+                                                            res: Def(
+                                                                Struct,
+                                                                DefId(0:147 ~ algorithmica[4c55]::tree::Node),
+                                                            ),
+                                                            segments: [
+                                                                PathSegment {
+                                                                    name: "Node",
+                                                                    args: AngleBracketed {
+                                                                        args: [],
+                                                                        bindings: [],
+                                                                    },
+                                                                },
+                                                            ],
+                                                        },
+                                                    },
+                                                ),
+                                            ],
+                                            bindings: [],
+                                        },
+                                    },
+                                ],
+                            },
+                        },
+                    ),
+                },
+            ],
+            fuzzable_params: [
+                Primitive(
+                    I32,
+                ),
+            ],
+            _using_traits: [],
+            _unsafe_tag: false,
+            _moved: {},
+            _fuzzable_mut_tag: {},
+            _function_mut_tag: {},
+            _covered_dependencies: {},
+            _control_nums: 0,
+            _pattern_mark: None,
+            generic_map: {},
+            type_annotation: {},
+        },
+        ApiSequence {
+            functions: [
+                ApiCall {
+                    func: (
+                        BareFunction,
+                        2,
+                    ),
+                    params: [],
+                    is_unsafe: false,
+                    is_get_raw_ptr: false,
+                    is_drop: false,
+                    is_mutate: false,
+                    output_type: Some(
+                        Path {
+                            path: Path {
+                                res: Def(
+                                    Enum,
+                                    DefId(0:136 ~ algorithmica[4c55]::tree::bst::BST),
+                                ),
+                                segments: [
+                                    PathSegment {
+                                        name: "BST",
+                                        args: AngleBracketed {
+                                            args: [
+                                                Type(
+                                                    Generic(
+                                                        "T",
+                                                    ),
+                                                ),
+                                            ],
+                                            bindings: [],
+                                        },
+                                    },
+                                ],
+                            },
+                        },
+                    ),
+                },
+            ],
+            fuzzable_params: [],
+            _using_traits: [],
+            _unsafe_tag: false,
+            _moved: {},
+            _fuzzable_mut_tag: {},
+            _function_mut_tag: {},
+            _covered_dependencies: {},
+            _control_nums: 0,
+            _pattern_mark: None,
+            generic_map: {
+                GenericPath {
+                    full_name: "algorithmica::tree::bst::BST::T",
+                    number: 0,
+                }: Preluded(
+                    PreludedStructure {
+                        name: "String",
+                        preluded_type: String,
+                        implemented_traits: [
+                            "core::fmt::Display",
+                            "core::fmt::Debug",
+                            "core::convert::From",
+                            "core::clone::Clone",
+                            "core::copy::Copy",
+                        ],
+                        use_functions: [],
+                        implemented_functions: [],
+                    },
+                ),
+            },
+            type_annotation: {
+                0: "algorithmica::tree::bst::BST<String>",
+            },
+        },
+        ApiSequence {
+            functions: [
+                ApiCall {
+                    func: (
+                        BareFunction,
+                        0,
+                    ),
+                    params: [
+                        (
+                            _FuzzableType,
+                            0,
+                            _DirectCall,
+                        ),
+                    ],
+                    is_unsafe: false,
+                    is_get_raw_ptr: false,
+                    is_drop: false,
+                    is_mutate: false,
+                    output_type: Some(
+                        Path {
+                            path: Path {
+                                res: Def(
+                                    Struct,
+                                    DefId(5:444 ~ alloc[b3e0]::boxed::Box),
+                                ),
+                                segments: [
+                                    PathSegment {
+                                        name: "Box",
+                                        args: AngleBracketed {
+                                            args: [
+                                                Type(
+                                                    Path {
+                                                        path: Path {
+                                                            res: Def(
+                                                                Struct,
+                                                                DefId(0:147 ~ algorithmica[4c55]::tree::Node),
+                                                            ),
+                                                            segments: [
+                                                                PathSegment {
+                                                                    name: "Node",
+                                                                    args: AngleBracketed {
+                                                                        args: [],
+                                                                        bindings: [],
+                                                                    },
+                                                                },
+                                                            ],
+                                                        },
+                                                    },
+                                                ),
+                                            ],
+                                            bindings: [],
+                                        },
+                                    },
+                                ],
+                            },
+                        },
+                    ),
+                },
+                ApiCall {
+                    func: (
+                        GenericFunction,
+                        1,
+                    ),
+                    params: [
+                        (
+                            _FunctionReturn,
+                            0,
+                            _ToOption(
+                                _DirectCall,
+                            ),
+                        ),
+                        (
+                            _FuzzableType,
+                            1,
+                            _DirectCall,
+                        ),
+                    ],
+                    is_unsafe: false,
+                    is_get_raw_ptr: false,
+                    is_drop: true,
+                    is_mutate: false,
+                    output_type: Some(
+                        Path {
+                            path: Path {
+                                res: Def(
+                                    Enum,
+                                    DefId(2:47799 ~ core[ef75]::option::Option),
+                                ),
+                                segments: [
+                                    PathSegment {
+                                        name: "Option",
+                                        args: AngleBracketed {
+                                            args: [
+                                                Type(
+                                                    Path {
+                                                        path: Path {
+                                                            res: Def(
+                                                                Struct,
+                                                                DefId(5:444 ~ alloc[b3e0]::boxed::Box),
+                                                            ),
+                                                            segments: [
+                                                                PathSegment {
+                                                                    name: "Box",
+                                                                    args: AngleBracketed {
+                                                                        args: [
+                                                                            Type(
+                                                                                Path {
+                                                                                    path: Path {
+                                                                                        res: Def(
+                                                                                            Struct,
+                                                                                            DefId(0:147 ~ algorithmica[4c55]::tree::Node),
+                                                                                        ),
+                                                                                        segments: [
+                                                                                            PathSegment {
+                                                                                                name: "Node",
+                                                                                                args: AngleBracketed {
+                                                                                                    args: [],
+                                                                                                    bindings: [],
+                                                                                                },
+                                                                                            },
+                                                                                        ],
+                                                                                    },
+                                                                                },
+                                                                            ),
+                                                                        ],
+                                                                        bindings: [],
+                                                                    },
+                                                                },
+                                                            ],
+                                                        },
+                                                    },
+                                                ),
+                                            ],
+                                            bindings: [],
+                                        },
+                                    },
+                                ],
+                            },
+                        },
+                    ),
+                },
+            ],
+            fuzzable_params: [
+                Primitive(
+                    I32,
+                ),
+                Primitive(
+                    I32,
+                ),
+            ],
+            _using_traits: [],
+            _unsafe_tag: false,
+            _moved: {},
+            _fuzzable_mut_tag: {},
+            _function_mut_tag: {},
+            _covered_dependencies: {
+                (
+                    0,
+                    false,
+                ),
+            },
+            _control_nums: 0,
+            _pattern_mark: None,
+            generic_map: {},
+            type_annotation: {},
+        },
+        ApiSequence {
+            functions: [
+                ApiCall {
+                    func: (
+                        BareFunction,
+                        0,
+                    ),
+                    params: [
+                        (
+                            _FuzzableType,
+                            0,
+                            _DirectCall,
+                        ),
+                    ],
+                    is_unsafe: false,
+                    is_get_raw_ptr: false,
+                    is_drop: false,
+                    is_mutate: false,
+                    output_type: Some(
+                        Path {
+                            path: Path {
+                                res: Def(
+                                    Struct,
+                                    DefId(5:444 ~ alloc[b3e0]::boxed::Box),
+                                ),
+                                segments: [
+                                    PathSegment {
+                                        name: "Box",
+                                        args: AngleBracketed {
+                                            args: [
+                                                Type(
+                                                    Path {
+                                                        path: Path {
+                                                            res: Def(
+                                                                Struct,
+                                                                DefId(0:147 ~ algorithmica[4c55]::tree::Node),
+                                                            ),
+                                                            segments: [
+                                                                PathSegment {
+                                                                    name: "Node",
+                                                                    args: AngleBracketed {
+                                                                        args: [],
+                                                                        bindings: [],
+                                                                    },
+                                                                },
+                                                            ],
+                                                        },
+                                                    },
+                                                ),
+                                            ],
+                                            bindings: [],
+                                        },
+                                    },
+                                ],
+                            },
+                        },
+                    ),
+                },
+                ApiCall {
+                    func: (
+                        BareFunction,
+                        0,
+                    ),
+                    params: [
+                        (
+                            _FuzzableType,
+                            1,
+                            _DirectCall,
+                        ),
+                    ],
+                    is_unsafe: false,
+                    is_get_raw_ptr: false,
+                    is_drop: false,
+                    is_mutate: false,
+                    output_type: Some(
+                        Path {
+                            path: Path {
+                                res: Def(
+                                    Struct,
+                                    DefId(5:444 ~ alloc[b3e0]::boxed::Box),
+                                ),
+                                segments: [
+                                    PathSegment {
+                                        name: "Box",
+                                        args: AngleBracketed {
+                                            args: [
+                                                Type(
+                                                    Path {
+                                                        path: Path {
+                                                            res: Def(
+                                                                Struct,
+                                                                DefId(0:147 ~ algorithmica[4c55]::tree::Node),
+                                                            ),
+                                                            segments: [
+                                                                PathSegment {
+                                                                    name: "Node",
+                                                                    args: AngleBracketed {
+                                                                        args: [],
+                                                                        bindings: [],
+                                                                    },
+                                                                },
+                                                            ],
+                                                        },
+                                                    },
+                                                ),
+                                            ],
+                                            bindings: [],
+                                        },
+                                    },
+                                ],
+                            },
+                        },
+                    ),
+                },
+            ],
+            fuzzable_params: [
+                Primitive(
+                    I32,
+                ),
+                Primitive(
+                    I32,
+                ),
+            ],
+            _using_traits: [],
+            _unsafe_tag: false,
+            _moved: {},
+            _fuzzable_mut_tag: {},
+            _function_mut_tag: {},
+            _covered_dependencies: {},
+            _control_nums: 0,
+            _pattern_mark: None,
+            generic_map: {},
+            type_annotation: {},
+        },
+        ApiSequence {
+            functions: [
+                ApiCall {
+                    func: (
+                        BareFunction,
+                        0,
+                    ),
+                    params: [
+                        (
+                            _FuzzableType,
+                            0,
+                            _DirectCall,
+                        ),
+                    ],
+                    is_unsafe: false,
+                    is_get_raw_ptr: false,
+                    is_drop: false,
+                    is_mutate: false,
+                    output_type: Some(
+                        Path {
+                            path: Path {
+                                res: Def(
+                                    Struct,
+                                    DefId(5:444 ~ alloc[b3e0]::boxed::Box),
+                                ),
+                                segments: [
+                                    PathSegment {
+                                        name: "Box",
+                                        args: AngleBracketed {
+                                            args: [
+                                                Type(
+                                                    Path {
+                                                        path: Path {
+                                                            res: Def(
+                                                                Struct,
+                                                                DefId(0:147 ~ algorithmica[4c55]::tree::Node),
+                                                            ),
+                                                            segments: [
+                                                                PathSegment {
+                                                                    name: "Node",
+                                                                    args: AngleBracketed {
+                                                                        args: [],
+                                                                        bindings: [],
+                                                                    },
+                                                                },
+                                                            ],
+                                                        },
+                                                    },
+                                                ),
+                                            ],
+                                            bindings: [],
+                                        },
+                                    },
+                                ],
+                            },
+                        },
+                    ),
+                },
+                ApiCall {
+                    func: (
+                        BareFunction,
+                        2,
+                    ),
+                    params: [],
+                    is_unsafe: false,
+                    is_get_raw_ptr: false,
+                    is_drop: false,
+                    is_mutate: false,
+                    output_type: Some(
+                        Path {
+                            path: Path {
+                                res: Def(
+                                    Enum,
+                                    DefId(0:136 ~ algorithmica[4c55]::tree::bst::BST),
+                                ),
+                                segments: [
+                                    PathSegment {
+                                        name: "BST",
+                                        args: AngleBracketed {
+                                            args: [
+                                                Type(
+                                                    Generic(
+                                                        "T",
+                                                    ),
+                                                ),
+                                            ],
+                                            bindings: [],
+                                        },
+                                    },
+                                ],
+                            },
+                        },
+                    ),
+                },
+            ],
+            fuzzable_params: [
+                Primitive(
+                    I32,
+                ),
+            ],
+            _using_traits: [],
+            _unsafe_tag: false,
+            _moved: {},
+            _fuzzable_mut_tag: {},
+            _function_mut_tag: {},
+            _covered_dependencies: {},
+            _control_nums: 0,
+            _pattern_mark: None,
+            generic_map: {
+                GenericPath {
+                    full_name: "algorithmica::tree::bst::BST::T",
+                    number: 0,
+                }: Preluded(
+                    PreludedStructure {
+                        name: "String",
+                        preluded_type: String,
+                        implemented_traits: [
+                            "core::fmt::Display",
+                            "core::fmt::Debug",
+                            "core::convert::From",
+                            "core::clone::Clone",
+                            "core::copy::Copy",
+                        ],
+                        use_functions: [],
+                        implemented_functions: [],
+                    },
+                ),
+            },
+            type_annotation: {
+                1: "algorithmica::tree::bst::BST<String>",
+            },
+        },
+        ApiSequence {
+            functions: [
+                ApiCall {
+                    func: (
+                        BareFunction,
+                        2,
+                    ),
+                    params: [],
+                    is_unsafe: false,
+                    is_get_raw_ptr: false,
+                    is_drop: false,
+                    is_mutate: false,
+                    output_type: Some(
+                        Path {
+                            path: Path {
+                                res: Def(
+                                    Enum,
+                                    DefId(0:136 ~ algorithmica[4c55]::tree::bst::BST),
+                                ),
+                                segments: [
+                                    PathSegment {
+                                        name: "BST",
+                                        args: AngleBracketed {
+                                            args: [
+                                                Type(
+                                                    Generic(
+                                                        "T",
+                                                    ),
+                                                ),
+                                            ],
+                                            bindings: [],
+                                        },
+                                    },
+                                ],
+                            },
+                        },
+                    ),
+                },
+                ApiCall {
+                    func: (
+                        BareFunction,
+                        0,
+                    ),
+                    params: [
+                        (
+                            _FuzzableType,
+                            0,
+                            _DirectCall,
+                        ),
+                    ],
+                    is_unsafe: false,
+                    is_get_raw_ptr: false,
+                    is_drop: false,
+                    is_mutate: false,
+                    output_type: Some(
+                        Path {
+                            path: Path {
+                                res: Def(
+                                    Struct,
+                                    DefId(5:444 ~ alloc[b3e0]::boxed::Box),
+                                ),
+                                segments: [
+                                    PathSegment {
+                                        name: "Box",
+                                        args: AngleBracketed {
+                                            args: [
+                                                Type(
+                                                    Path {
+                                                        path: Path {
+                                                            res: Def(
+                                                                Struct,
+                                                                DefId(0:147 ~ algorithmica[4c55]::tree::Node),
+                                                            ),
+                                                            segments: [
+                                                                PathSegment {
+                                                                    name: "Node",
+                                                                    args: AngleBracketed {
+                                                                        args: [],
+                                                                        bindings: [],
+                                                                    },
+                                                                },
+                                                            ],
+                                                        },
+                                                    },
+                                                ),
+                                            ],
+                                            bindings: [],
+                                        },
+                                    },
+                                ],
+                            },
+                        },
+                    ),
+                },
+            ],
+            fuzzable_params: [
+                Primitive(
+                    I32,
+                ),
+            ],
+            _using_traits: [],
+            _unsafe_tag: false,
+            _moved: {},
+            _fuzzable_mut_tag: {},
+            _function_mut_tag: {},
+            _covered_dependencies: {},
+            _control_nums: 0,
+            _pattern_mark: None,
+            generic_map: {
+                GenericPath {
+                    full_name: "algorithmica::tree::bst::BST::T",
+                    number: 0,
+                }: Preluded(
+                    PreludedStructure {
+                        name: "String",
+                        preluded_type: String,
+                        implemented_traits: [
+                            "core::fmt::Display",
+                            "core::fmt::Debug",
+                            "core::convert::From",
+                            "core::clone::Clone",
+                            "core::copy::Copy",
+                        ],
+                        use_functions: [],
+                        implemented_functions: [],
+                    },
+                ),
+            },
+            type_annotation: {
+                0: "algorithmica::tree::bst::BST<String>",
+            },
+        },
+        ApiSequence {
+            functions: [
+                ApiCall {
+                    func: (
+                        BareFunction,
+                        2,
+                    ),
+                    params: [],
+                    is_unsafe: false,
+                    is_get_raw_ptr: false,
+                    is_drop: false,
+                    is_mutate: false,
+                    output_type: Some(
+                        Path {
+                            path: Path {
+                                res: Def(
+                                    Enum,
+                                    DefId(0:136 ~ algorithmica[4c55]::tree::bst::BST),
+                                ),
+                                segments: [
+                                    PathSegment {
+                                        name: "BST",
+                                        args: AngleBracketed {
+                                            args: [
+                                                Type(
+                                                    Generic(
+                                                        "T",
+                                                    ),
+                                                ),
+                                            ],
+                                            bindings: [],
+                                        },
+                                    },
+                                ],
+                            },
+                        },
+                    ),
+                },
+                ApiCall {
+                    func: (
+                        BareFunction,
+                        3,
+                    ),
+                    params: [
+                        (
+                            _FunctionReturn,
+                            0,
+                            _BorrowedRef(
+                                _DirectCall,
+                            ),
+                        ),
+                    ],
+                    is_unsafe: false,
+                    is_get_raw_ptr: false,
+                    is_drop: false,
+                    is_mutate: false,
+                    output_type: Some(
+                        Primitive(
+                            Bool,
+                        ),
+                    ),
+                },
+            ],
+            fuzzable_params: [],
+            _using_traits: [],
+            _unsafe_tag: false,
+            _moved: {},
+            _fuzzable_mut_tag: {},
+            _function_mut_tag: {},
+            _covered_dependencies: {
+                (
+                    2,
+                    false,
+                ),
+            },
+            _control_nums: 0,
+            _pattern_mark: None,
+            generic_map: {
+                GenericPath {
+                    full_name: "algorithmica::tree::bst::BST::T",
+                    number: 0,
+                }: Preluded(
+                    PreludedStructure {
+                        name: "String",
+                        preluded_type: String,
+                        implemented_traits: [
+                            "core::fmt::Display",
+                            "core::fmt::Debug",
+                            "core::convert::From",
+                            "core::clone::Clone",
+                            "core::copy::Copy",
+                        ],
+                        use_functions: [],
+                        implemented_functions: [],
+                    },
+                ),
+            },
+            type_annotation: {
+                0: "algorithmica::tree::bst::BST<String>",
+            },
+        },
+        ApiSequence {
+            functions: [
+                ApiCall {
+                    func: (
+                        BareFunction,
+                        2,
+                    ),
+                    params: [],
+                    is_unsafe: false,
+                    is_get_raw_ptr: false,
+                    is_drop: false,
+                    is_mutate: false,
+                    output_type: Some(
+                        Path {
+                            path: Path {
+                                res: Def(
+                                    Enum,
+                                    DefId(0:136 ~ algorithmica[4c55]::tree::bst::BST),
+                                ),
+                                segments: [
+                                    PathSegment {
+                                        name: "BST",
+                                        args: AngleBracketed {
+                                            args: [
+                                                Type(
+                                                    Generic(
+                                                        "T",
+                                                    ),
+                                                ),
+                                            ],
+                                            bindings: [],
+                                        },
+                                    },
+                                ],
+                            },
+                        },
+                    ),
+                },
+                ApiCall {
+                    func: (
+                        BareFunction,
+                        2,
+                    ),
+                    params: [],
+                    is_unsafe: false,
+                    is_get_raw_ptr: false,
+                    is_drop: false,
+                    is_mutate: false,
+                    output_type: Some(
+                        Path {
+                            path: Path {
+                                res: Def(
+                                    Enum,
+                                    DefId(0:136 ~ algorithmica[4c55]::tree::bst::BST),
+                                ),
+                                segments: [
+                                    PathSegment {
+                                        name: "BST",
+                                        args: AngleBracketed {
+                                            args: [
+                                                Type(
+                                                    Generic(
+                                                        "T",
+                                                    ),
+                                                ),
+                                            ],
+                                            bindings: [],
+                                        },
+                                    },
+                                ],
+                            },
+                        },
+                    ),
+                },
+            ],
+            fuzzable_params: [],
+            _using_traits: [],
+            _unsafe_tag: false,
+            _moved: {},
+            _fuzzable_mut_tag: {},
+            _function_mut_tag: {},
+            _covered_dependencies: {},
+            _control_nums: 0,
+            _pattern_mark: None,
+            generic_map: {
+                GenericPath {
+                    full_name: "algorithmica::tree::bst::BST::T",
+                    number: 0,
+                }: Preluded(
+                    PreludedStructure {
+                        name: "String",
+                        preluded_type: String,
+                        implemented_traits: [
+                            "core::fmt::Display",
+                            "core::fmt::Debug",
+                            "core::convert::From",
+                            "core::clone::Clone",
+                            "core::copy::Copy",
+                        ],
+                        use_functions: [],
+                        implemented_functions: [],
+                    },
+                ),
+            },
+            type_annotation: {
+                0: "algorithmica::tree::bst::BST<String>",
+            },
+        },
+        ApiSequence {
+            functions: [
+                ApiCall {
+                    func: (
+                        BareFunction,
+                        0,
+                    ),
+                    params: [
+                        (
+                            _FuzzableType,
+                            0,
+                            _DirectCall,
+                        ),
+                    ],
+                    is_unsafe: false,
+                    is_get_raw_ptr: false,
+                    is_drop: false,
+                    is_mutate: false,
+                    output_type: Some(
+                        Path {
+                            path: Path {
+                                res: Def(
+                                    Struct,
+                                    DefId(5:444 ~ alloc[b3e0]::boxed::Box),
+                                ),
+                                segments: [
+                                    PathSegment {
+                                        name: "Box",
+                                        args: AngleBracketed {
+                                            args: [
+                                                Type(
+                                                    Path {
+                                                        path: Path {
+                                                            res: Def(
+                                                                Struct,
+                                                                DefId(0:147 ~ algorithmica[4c55]::tree::Node),
+                                                            ),
+                                                            segments: [
+                                                                PathSegment {
+                                                                    name: "Node",
+                                                                    args: AngleBracketed {
+                                                                        args: [],
+                                                                        bindings: [],
+                                                                    },
+                                                                },
+                                                            ],
+                                                        },
+                                                    },
+                                                ),
+                                            ],
+                                            bindings: [],
+                                        },
+                                    },
+                                ],
+                            },
+                        },
+                    ),
+                },
+                ApiCall {
+                    func: (
+                        GenericFunction,
+                        1,
+                    ),
+                    params: [
+                        (
+                            _FunctionReturn,
+                            0,
+                            _ToOption(
+                                _DirectCall,
+                            ),
+                        ),
+                        (
+                            _FuzzableType,
+                            1,
+                            _DirectCall,
+                        ),
+                    ],
+                    is_unsafe: false,
+                    is_get_raw_ptr: false,
+                    is_drop: true,
+                    is_mutate: false,
+                    output_type: Some(
+                        Path {
+                            path: Path {
+                                res: Def(
+                                    Enum,
+                                    DefId(2:47799 ~ core[ef75]::option::Option),
+                                ),
+                                segments: [
+                                    PathSegment {
+                                        name: "Option",
+                                        args: AngleBracketed {
+                                            args: [
+                                                Type(
+                                                    Path {
+                                                        path: Path {
+                                                            res: Def(
+                                                                Struct,
+                                                                DefId(5:444 ~ alloc[b3e0]::boxed::Box),
+                                                            ),
+                                                            segments: [
+                                                                PathSegment {
+                                                                    name: "Box",
+                                                                    args: AngleBracketed {
+                                                                        args: [
+                                                                            Type(
+                                                                                Path {
+                                                                                    path: Path {
+                                                                                        res: Def(
+                                                                                            Struct,
+                                                                                            DefId(0:147 ~ algorithmica[4c55]::tree::Node),
+                                                                                        ),
+                                                                                        segments: [
+                                                                                            PathSegment {
+                                                                                                name: "Node",
+                                                                                                args: AngleBracketed {
+                                                                                                    args: [],
+                                                                                                    bindings: [],
+                                                                                                },
+                                                                                            },
+                                                                                        ],
+                                                                                    },
+                                                                                },
+                                                                            ),
+                                                                        ],
+                                                                        bindings: [],
+                                                                    },
+                                                                },
+                                                            ],
+                                                        },
+                                                    },
+                                                ),
+                                            ],
+                                            bindings: [],
+                                        },
+                                    },
+                                ],
+                            },
+                        },
+                    ),
+                },
+                ApiCall {
+                    func: (
+                        GenericFunction,
+                        1,
+                    ),
+                    params: [
+                        (
+                            _FunctionReturn,
+                            0,
+                            _ToOption(
+                                _DirectCall,
+                            ),
+                        ),
+                        (
+                            _FuzzableType,
+                            2,
+                            _DirectCall,
+                        ),
+                    ],
+                    is_unsafe: false,
+                    is_get_raw_ptr: false,
+                    is_drop: true,
+                    is_mutate: false,
+                    output_type: Some(
+                        Path {
+                            path: Path {
+                                res: Def(
+                                    Enum,
+                                    DefId(2:47799 ~ core[ef75]::option::Option),
+                                ),
+                                segments: [
+                                    PathSegment {
+                                        name: "Option",
+                                        args: AngleBracketed {
+                                            args: [
+                                                Type(
+                                                    Path {
+                                                        path: Path {
+                                                            res: Def(
+                                                                Struct,
+                                                                DefId(5:444 ~ alloc[b3e0]::boxed::Box),
+                                                            ),
+                                                            segments: [
+                                                                PathSegment {
+                                                                    name: "Box",
+                                                                    args: AngleBracketed {
+                                                                        args: [
+                                                                            Type(
+                                                                                Path {
+                                                                                    path: Path {
+                                                                                        res: Def(
+                                                                                            Struct,
+                                                                                            DefId(0:147 ~ algorithmica[4c55]::tree::Node),
+                                                                                        ),
+                                                                                        segments: [
+                                                                                            PathSegment {
+                                                                                                name: "Node",
+                                                                                                args: AngleBracketed {
+                                                                                                    args: [],
+                                                                                                    bindings: [],
+                                                                                                },
+                                                                                            },
+                                                                                        ],
+                                                                                    },
+                                                                                },
+                                                                            ),
+                                                                        ],
+                                                                        bindings: [],
+                                                                    },
+                                                                },
+                                                            ],
+                                                        },
+                                                    },
+                                                ),
+                                            ],
+                                            bindings: [],
+                                        },
+                                    },
+                                ],
+                            },
+                        },
+                    ),
+                },
+            ],
+            fuzzable_params: [
+                Primitive(
+                    I32,
+                ),
+                Primitive(
+                    I32,
+                ),
+                Primitive(
+                    I32,
+                ),
+            ],
+            _using_traits: [],
+            _unsafe_tag: false,
+            _moved: {},
+            _fuzzable_mut_tag: {},
+            _function_mut_tag: {},
+            _covered_dependencies: {
+                (
+                    0,
+                    false,
+                ),
+            },
+            _control_nums: 0,
+            _pattern_mark: None,
+            generic_map: {},
+            type_annotation: {},
+        },
+        ApiSequence {
+            functions: [
+                ApiCall {
+                    func: (
+                        BareFunction,
+                        0,
+                    ),
+                    params: [
+                        (
+                            _FuzzableType,
+                            0,
+                            _DirectCall,
+                        ),
+                    ],
+                    is_unsafe: false,
+                    is_get_raw_ptr: false,
+                    is_drop: false,
+                    is_mutate: false,
+                    output_type: Some(
+                        Path {
+                            path: Path {
+                                res: Def(
+                                    Struct,
+                                    DefId(5:444 ~ alloc[b3e0]::boxed::Box),
+                                ),
+                                segments: [
+                                    PathSegment {
+                                        name: "Box",
+                                        args: AngleBracketed {
+                                            args: [
+                                                Type(
+                                                    Path {
+                                                        path: Path {
+                                                            res: Def(
+                                                                Struct,
+                                                                DefId(0:147 ~ algorithmica[4c55]::tree::Node),
+                                                            ),
+                                                            segments: [
+                                                                PathSegment {
+                                                                    name: "Node",
+                                                                    args: AngleBracketed {
+                                                                        args: [],
+                                                                        bindings: [],
+                                                                    },
+                                                                },
+                                                            ],
+                                                        },
+                                                    },
+                                                ),
+                                            ],
+                                            bindings: [],
+                                        },
+                                    },
+                                ],
+                            },
+                        },
+                    ),
+                },
+                ApiCall {
+                    func: (
+                        GenericFunction,
+                        1,
+                    ),
+                    params: [
+                        (
+                            _FunctionReturn,
+                            0,
+                            _ToOption(
+                                _DirectCall,
+                            ),
+                        ),
+                        (
+                            _FuzzableType,
+                            1,
+                            _DirectCall,
+                        ),
+                    ],
+                    is_unsafe: false,
+                    is_get_raw_ptr: false,
+                    is_drop: true,
+                    is_mutate: false,
+                    output_type: Some(
+                        Path {
+                            path: Path {
+                                res: Def(
+                                    Enum,
+                                    DefId(2:47799 ~ core[ef75]::option::Option),
+                                ),
+                                segments: [
+                                    PathSegment {
+                                        name: "Option",
+                                        args: AngleBracketed {
+                                            args: [
+                                                Type(
+                                                    Path {
+                                                        path: Path {
+                                                            res: Def(
+                                                                Struct,
+                                                                DefId(5:444 ~ alloc[b3e0]::boxed::Box),
+                                                            ),
+                                                            segments: [
+                                                                PathSegment {
+                                                                    name: "Box",
+                                                                    args: AngleBracketed {
+                                                                        args: [
+                                                                            Type(
+                                                                                Path {
+                                                                                    path: Path {
+                                                                                        res: Def(
+                                                                                            Struct,
+                                                                                            DefId(0:147 ~ algorithmica[4c55]::tree::Node),
+                                                                                        ),
+                                                                                        segments: [
+                                                                                            PathSegment {
+                                                                                                name: "Node",
+                                                                                                args: AngleBracketed {
+                                                                                                    args: [],
+                                                                                                    bindings: [],
+                                                                                                },
+                                                                                            },
+                                                                                        ],
+                                                                                    },
+                                                                                },
+                                                                            ),
+                                                                        ],
+                                                                        bindings: [],
+                                                                    },
+                                                                },
+                                                            ],
+                                                        },
+                                                    },
+                                                ),
+                                            ],
+                                            bindings: [],
+                                        },
+                                    },
+                                ],
+                            },
+                        },
+                    ),
+                },
+                ApiCall {
+                    func: (
+                        BareFunction,
+                        0,
+                    ),
+                    params: [
+                        (
+                            _FuzzableType,
+                            2,
+                            _DirectCall,
+                        ),
+                    ],
+                    is_unsafe: false,
+                    is_get_raw_ptr: false,
+                    is_drop: false,
+                    is_mutate: false,
+                    output_type: Some(
+                        Path {
+                            path: Path {
+                                res: Def(
+                                    Struct,
+                                    DefId(5:444 ~ alloc[b3e0]::boxed::Box),
+                                ),
+                                segments: [
+                                    PathSegment {
+                                        name: "Box",
+                                        args: AngleBracketed {
+                                            args: [
+                                                Type(
+                                                    Path {
+                                                        path: Path {
+                                                            res: Def(
+                                                                Struct,
+                                                                DefId(0:147 ~ algorithmica[4c55]::tree::Node),
+                                                            ),
+                                                            segments: [
+                                                                PathSegment {
+                                                                    name: "Node",
+                                                                    args: AngleBracketed {
+                                                                        args: [],
+                                                                        bindings: [],
+                                                                    },
+                                                                },
+                                                            ],
+                                                        },
+                                                    },
+                                                ),
+                                            ],
+                                            bindings: [],
+                                        },
+                                    },
+                                ],
+                            },
+                        },
+                    ),
+                },
+            ],
+            fuzzable_params: [
+                Primitive(
+                    I32,
+                ),
+                Primitive(
+                    I32,
+                ),
+                Primitive(
+                    I32,
+                ),
+            ],
+            _using_traits: [],
+            _unsafe_tag: false,
+            _moved: {},
+            _fuzzable_mut_tag: {},
+            _function_mut_tag: {},
+            _covered_dependencies: {
+                (
+                    0,
+                    false,
+                ),
+            },
+            _control_nums: 0,
+            _pattern_mark: None,
+            generic_map: {},
+            type_annotation: {},
+        },
+        ApiSequence {
+            functions: [
+                ApiCall {
+                    func: (
+                        BareFunction,
+                        0,
+                    ),
+                    params: [
+                        (
+                            _FuzzableType,
+                            0,
+                            _DirectCall,
+                        ),
+                    ],
+                    is_unsafe: false,
+                    is_get_raw_ptr: false,
+                    is_drop: false,
+                    is_mutate: false,
+                    output_type: Some(
+                        Path {
+                            path: Path {
+                                res: Def(
+                                    Struct,
+                                    DefId(5:444 ~ alloc[b3e0]::boxed::Box),
+                                ),
+                                segments: [
+                                    PathSegment {
+                                        name: "Box",
+                                        args: AngleBracketed {
+                                            args: [
+                                                Type(
+                                                    Path {
+                                                        path: Path {
+                                                            res: Def(
+                                                                Struct,
+                                                                DefId(0:147 ~ algorithmica[4c55]::tree::Node),
+                                                            ),
+                                                            segments: [
+                                                                PathSegment {
+                                                                    name: "Node",
+                                                                    args: AngleBracketed {
+                                                                        args: [],
+                                                                        bindings: [],
+                                                                    },
+                                                                },
+                                                            ],
+                                                        },
+                                                    },
+                                                ),
+                                            ],
+                                            bindings: [],
+                                        },
+                                    },
+                                ],
+                            },
+                        },
+                    ),
+                },
+                ApiCall {
+                    func: (
+                        GenericFunction,
+                        1,
+                    ),
+                    params: [
+                        (
+                            _FunctionReturn,
+                            0,
+                            _ToOption(
+                                _DirectCall,
+                            ),
+                        ),
+                        (
+                            _FuzzableType,
+                            1,
+                            _DirectCall,
+                        ),
+                    ],
+                    is_unsafe: false,
+                    is_get_raw_ptr: false,
+                    is_drop: true,
+                    is_mutate: false,
+                    output_type: Some(
+                        Path {
+                            path: Path {
+                                res: Def(
+                                    Enum,
+                                    DefId(2:47799 ~ core[ef75]::option::Option),
+                                ),
+                                segments: [
+                                    PathSegment {
+                                        name: "Option",
+                                        args: AngleBracketed {
+                                            args: [
+                                                Type(
+                                                    Path {
+                                                        path: Path {
+                                                            res: Def(
+                                                                Struct,
+                                                                DefId(5:444 ~ alloc[b3e0]::boxed::Box),
+                                                            ),
+                                                            segments: [
+                                                                PathSegment {
+                                                                    name: "Box",
+                                                                    args: AngleBracketed {
+                                                                        args: [
+                                                                            Type(
+                                                                                Path {
+                                                                                    path: Path {
+                                                                                        res: Def(
+                                                                                            Struct,
+                                                                                            DefId(0:147 ~ algorithmica[4c55]::tree::Node),
+                                                                                        ),
+                                                                                        segments: [
+                                                                                            PathSegment {
+                                                                                                name: "Node",
+                                                                                                args: AngleBracketed {
+                                                                                                    args: [],
+                                                                                                    bindings: [],
+                                                                                                },
+                                                                                            },
+                                                                                        ],
+                                                                                    },
+                                                                                },
+                                                                            ),
+                                                                        ],
+                                                                        bindings: [],
+                                                                    },
+                                                                },
+                                                            ],
+                                                        },
+                                                    },
+                                                ),
+                                            ],
+                                            bindings: [],
+                                        },
+                                    },
+                                ],
+                            },
+                        },
+                    ),
+                },
+                ApiCall {
+                    func: (
+                        BareFunction,
+                        2,
+                    ),
+                    params: [],
+                    is_unsafe: false,
+                    is_get_raw_ptr: false,
+                    is_drop: false,
+                    is_mutate: false,
+                    output_type: Some(
+                        Path {
+                            path: Path {
+                                res: Def(
+                                    Enum,
+                                    DefId(0:136 ~ algorithmica[4c55]::tree::bst::BST),
+                                ),
+                                segments: [
+                                    PathSegment {
+                                        name: "BST",
+                                        args: AngleBracketed {
+                                            args: [
+                                                Type(
+                                                    Generic(
+                                                        "T",
+                                                    ),
+                                                ),
+                                            ],
+                                            bindings: [],
+                                        },
+                                    },
+                                ],
+                            },
+                        },
+                    ),
+                },
+            ],
+            fuzzable_params: [
+                Primitive(
+                    I32,
+                ),
+                Primitive(
+                    I32,
+                ),
+            ],
+            _using_traits: [],
+            _unsafe_tag: false,
+            _moved: {},
+            _fuzzable_mut_tag: {},
+            _function_mut_tag: {},
+            _covered_dependencies: {
+                (
+                    0,
+                    false,
+                ),
+            },
+            _control_nums: 0,
+            _pattern_mark: None,
+            generic_map: {
+                GenericPath {
+                    full_name: "algorithmica::tree::bst::BST::T",
+                    number: 0,
+                }: Preluded(
+                    PreludedStructure {
+                        name: "String",
+                        preluded_type: String,
+                        implemented_traits: [
+                            "core::fmt::Display",
+                            "core::fmt::Debug",
+                            "core::convert::From",
+                            "core::clone::Clone",
+                            "core::copy::Copy",
+                        ],
+                        use_functions: [],
+                        implemented_functions: [],
+                    },
+                ),
+            },
+            type_annotation: {
+                2: "algorithmica::tree::bst::BST<String>",
+            },
+        },
+        ApiSequence {
+            functions: [
+                ApiCall {
+                    func: (
+                        BareFunction,
+                        0,
+                    ),
+                    params: [
+                        (
+                            _FuzzableType,
+                            0,
+                            _DirectCall,
+                        ),
+                    ],
+                    is_unsafe: false,
+                    is_get_raw_ptr: false,
+                    is_drop: false,
+                    is_mutate: false,
+                    output_type: Some(
+                        Path {
+                            path: Path {
+                                res: Def(
+                                    Struct,
+                                    DefId(5:444 ~ alloc[b3e0]::boxed::Box),
+                                ),
+                                segments: [
+                                    PathSegment {
+                                        name: "Box",
+                                        args: AngleBracketed {
+                                            args: [
+                                                Type(
+                                                    Path {
+                                                        path: Path {
+                                                            res: Def(
+                                                                Struct,
+                                                                DefId(0:147 ~ algorithmica[4c55]::tree::Node),
+                                                            ),
+                                                            segments: [
+                                                                PathSegment {
+                                                                    name: "Node",
+                                                                    args: AngleBracketed {
+                                                                        args: [],
+                                                                        bindings: [],
+                                                                    },
+                                                                },
+                                                            ],
+                                                        },
+                                                    },
+                                                ),
+                                            ],
+                                            bindings: [],
+                                        },
+                                    },
+                                ],
+                            },
+                        },
+                    ),
+                },
+                ApiCall {
+                    func: (
+                        BareFunction,
+                        0,
+                    ),
+                    params: [
+                        (
+                            _FuzzableType,
+                            1,
+                            _DirectCall,
+                        ),
+                    ],
+                    is_unsafe: false,
+                    is_get_raw_ptr: false,
+                    is_drop: false,
+                    is_mutate: false,
+                    output_type: Some(
+                        Path {
+                            path: Path {
+                                res: Def(
+                                    Struct,
+                                    DefId(5:444 ~ alloc[b3e0]::boxed::Box),
+                                ),
+                                segments: [
+                                    PathSegment {
+                                        name: "Box",
+                                        args: AngleBracketed {
+                                            args: [
+                                                Type(
+                                                    Path {
+                                                        path: Path {
+                                                            res: Def(
+                                                                Struct,
+                                                                DefId(0:147 ~ algorithmica[4c55]::tree::Node),
+                                                            ),
+                                                            segments: [
+                                                                PathSegment {
+                                                                    name: "Node",
+                                                                    args: AngleBracketed {
+                                                                        args: [],
+                                                                        bindings: [],
+                                                                    },
+                                                                },
+                                                            ],
+                                                        },
+                                                    },
+                                                ),
+                                            ],
+                                            bindings: [],
+                                        },
+                                    },
+                                ],
+                            },
+                        },
+                    ),
+                },
+                ApiCall {
+                    func: (
+                        GenericFunction,
+                        1,
+                    ),
+                    params: [
+                        (
+                            _FunctionReturn,
+                            0,
+                            _ToOption(
+                                _DirectCall,
+                            ),
+                        ),
+                        (
+                            _FuzzableType,
+                            2,
+                            _DirectCall,
+                        ),
+                    ],
+                    is_unsafe: false,
+                    is_get_raw_ptr: false,
+                    is_drop: true,
+                    is_mutate: false,
+                    output_type: Some(
+                        Path {
+                            path: Path {
+                                res: Def(
+                                    Enum,
+                                    DefId(2:47799 ~ core[ef75]::option::Option),
+                                ),
+                                segments: [
+                                    PathSegment {
+                                        name: "Option",
+                                        args: AngleBracketed {
+                                            args: [
+                                                Type(
+                                                    Path {
+                                                        path: Path {
+                                                            res: Def(
+                                                                Struct,
+                                                                DefId(5:444 ~ alloc[b3e0]::boxed::Box),
+                                                            ),
+                                                            segments: [
+                                                                PathSegment {
+                                                                    name: "Box",
+                                                                    args: AngleBracketed {
+                                                                        args: [
+                                                                            Type(
+                                                                                Path {
+                                                                                    path: Path {
+                                                                                        res: Def(
+                                                                                            Struct,
+                                                                                            DefId(0:147 ~ algorithmica[4c55]::tree::Node),
+                                                                                        ),
+                                                                                        segments: [
+                                                                                            PathSegment {
+                                                                                                name: "Node",
+                                                                                                args: AngleBracketed {
+                                                                                                    args: [],
+                                                                                                    bindings: [],
+                                                                                                },
+                                                                                            },
+                                                                                        ],
+                                                                                    },
+                                                                                },
+                                                                            ),
+                                                                        ],
+                                                                        bindings: [],
+                                                                    },
+                                                                },
+                                                            ],
+                                                        },
+                                                    },
+                                                ),
+                                            ],
+                                            bindings: [],
+                                        },
+                                    },
+                                ],
+                            },
+                        },
+                    ),
+                },
+            ],
+            fuzzable_params: [
+                Primitive(
+                    I32,
+                ),
+                Primitive(
+                    I32,
+                ),
+                Primitive(
+                    I32,
+                ),
+            ],
+            _using_traits: [],
+            _unsafe_tag: false,
+            _moved: {},
+            _fuzzable_mut_tag: {},
+            _function_mut_tag: {},
+            _covered_dependencies: {
+                (
+                    0,
+                    false,
+                ),
+            },
+            _control_nums: 0,
+            _pattern_mark: None,
+            generic_map: {},
+            type_annotation: {},
+        },
+        ApiSequence {
+            functions: [
+                ApiCall {
+                    func: (
+                        BareFunction,
+                        0,
+                    ),
+                    params: [
+                        (
+                            _FuzzableType,
+                            0,
+                            _DirectCall,
+                        ),
+                    ],
+                    is_unsafe: false,
+                    is_get_raw_ptr: false,
+                    is_drop: false,
+                    is_mutate: false,
+                    output_type: Some(
+                        Path {
+                            path: Path {
+                                res: Def(
+                                    Struct,
+                                    DefId(5:444 ~ alloc[b3e0]::boxed::Box),
+                                ),
+                                segments: [
+                                    PathSegment {
+                                        name: "Box",
+                                        args: AngleBracketed {
+                                            args: [
+                                                Type(
+                                                    Path {
+                                                        path: Path {
+                                                            res: Def(
+                                                                Struct,
+                                                                DefId(0:147 ~ algorithmica[4c55]::tree::Node),
+                                                            ),
+                                                            segments: [
+                                                                PathSegment {
+                                                                    name: "Node",
+                                                                    args: AngleBracketed {
+                                                                        args: [],
+                                                                        bindings: [],
+                                                                    },
+                                                                },
+                                                            ],
+                                                        },
+                                                    },
+                                                ),
+                                            ],
+                                            bindings: [],
+                                        },
+                                    },
+                                ],
+                            },
+                        },
+                    ),
+                },
+                ApiCall {
+                    func: (
+                        BareFunction,
+                        0,
+                    ),
+                    params: [
+                        (
+                            _FuzzableType,
+                            1,
+                            _DirectCall,
+                        ),
+                    ],
+                    is_unsafe: false,
+                    is_get_raw_ptr: false,
+                    is_drop: false,
+                    is_mutate: false,
+                    output_type: Some(
+                        Path {
+                            path: Path {
+                                res: Def(
+                                    Struct,
+                                    DefId(5:444 ~ alloc[b3e0]::boxed::Box),
+                                ),
+                                segments: [
+                                    PathSegment {
+                                        name: "Box",
+                                        args: AngleBracketed {
+                                            args: [
+                                                Type(
+                                                    Path {
+                                                        path: Path {
+                                                            res: Def(
+                                                                Struct,
+                                                                DefId(0:147 ~ algorithmica[4c55]::tree::Node),
+                                                            ),
+                                                            segments: [
+                                                                PathSegment {
+                                                                    name: "Node",
+                                                                    args: AngleBracketed {
+                                                                        args: [],
+                                                                        bindings: [],
+                                                                    },
+                                                                },
+                                                            ],
+                                                        },
+                                                    },
+                                                ),
+                                            ],
+                                            bindings: [],
+                                        },
+                                    },
+                                ],
+                            },
+                        },
+                    ),
+                },
+                ApiCall {
+                    func: (
+                        BareFunction,
+                        0,
+                    ),
+                    params: [
+                        (
+                            _FuzzableType,
+                            2,
+                            _DirectCall,
+                        ),
+                    ],
+                    is_unsafe: false,
+                    is_get_raw_ptr: false,
+                    is_drop: false,
+                    is_mutate: false,
+                    output_type: Some(
+                        Path {
+                            path: Path {
+                                res: Def(
+                                    Struct,
+                                    DefId(5:444 ~ alloc[b3e0]::boxed::Box),
+                                ),
+                                segments: [
+                                    PathSegment {
+                                        name: "Box",
+                                        args: AngleBracketed {
+                                            args: [
+                                                Type(
+                                                    Path {
+                                                        path: Path {
+                                                            res: Def(
+                                                                Struct,
+                                                                DefId(0:147 ~ algorithmica[4c55]::tree::Node),
+                                                            ),
+                                                            segments: [
+                                                                PathSegment {
+                                                                    name: "Node",
+                                                                    args: AngleBracketed {
+                                                                        args: [],
+                                                                        bindings: [],
+                                                                    },
+                                                                },
+                                                            ],
+                                                        },
+                                                    },
+                                                ),
+                                            ],
+                                            bindings: [],
+                                        },
+                                    },
+                                ],
+                            },
+                        },
+                    ),
+                },
+            ],
+            fuzzable_params: [
+                Primitive(
+                    I32,
+                ),
+                Primitive(
+                    I32,
+                ),
+                Primitive(
+                    I32,
+                ),
+            ],
+            _using_traits: [],
+            _unsafe_tag: false,
+            _moved: {},
+            _fuzzable_mut_tag: {},
+            _function_mut_tag: {},
+            _covered_dependencies: {},
+            _control_nums: 0,
+            _pattern_mark: None,
+            generic_map: {},
+            type_annotation: {},
+        },
+        ApiSequence {
+            functions: [
+                ApiCall {
+                    func: (
+                        BareFunction,
+                        0,
+                    ),
+                    params: [
+                        (
+                            _FuzzableType,
+                            0,
+                            _DirectCall,
+                        ),
+                    ],
+                    is_unsafe: false,
+                    is_get_raw_ptr: false,
+                    is_drop: false,
+                    is_mutate: false,
+                    output_type: Some(
+                        Path {
+                            path: Path {
+                                res: Def(
+                                    Struct,
+                                    DefId(5:444 ~ alloc[b3e0]::boxed::Box),
+                                ),
+                                segments: [
+                                    PathSegment {
+                                        name: "Box",
+                                        args: AngleBracketed {
+                                            args: [
+                                                Type(
+                                                    Path {
+                                                        path: Path {
+                                                            res: Def(
+                                                                Struct,
+                                                                DefId(0:147 ~ algorithmica[4c55]::tree::Node),
+                                                            ),
+                                                            segments: [
+                                                                PathSegment {
+                                                                    name: "Node",
+                                                                    args: AngleBracketed {
+                                                                        args: [],
+                                                                        bindings: [],
+                                                                    },
+                                                                },
+                                                            ],
+                                                        },
+                                                    },
+                                                ),
+                                            ],
+                                            bindings: [],
+                                        },
+                                    },
+                                ],
+                            },
+                        },
+                    ),
+                },
+                ApiCall {
+                    func: (
+                        BareFunction,
+                        2,
+                    ),
+                    params: [],
+                    is_unsafe: false,
+                    is_get_raw_ptr: false,
+                    is_drop: false,
+                    is_mutate: false,
+                    output_type: Some(
+                        Path {
+                            path: Path {
+                                res: Def(
+                                    Enum,
+                                    DefId(0:136 ~ algorithmica[4c55]::tree::bst::BST),
+                                ),
+                                segments: [
+                                    PathSegment {
+                                        name: "BST",
+                                        args: AngleBracketed {
+                                            args: [
+                                                Type(
+                                                    Generic(
+                                                        "T",
+                                                    ),
+                                                ),
+                                            ],
+                                            bindings: [],
+                                        },
+                                    },
+                                ],
+                            },
+                        },
+                    ),
+                },
+                ApiCall {
+                    func: (
+                        GenericFunction,
+                        1,
+                    ),
+                    params: [
+                        (
+                            _FunctionReturn,
+                            0,
+                            _ToOption(
+                                _DirectCall,
+                            ),
+                        ),
+                        (
+                            _FuzzableType,
+                            1,
+                            _DirectCall,
+                        ),
+                    ],
+                    is_unsafe: false,
+                    is_get_raw_ptr: false,
+                    is_drop: true,
+                    is_mutate: false,
+                    output_type: Some(
+                        Path {
+                            path: Path {
+                                res: Def(
+                                    Enum,
+                                    DefId(2:47799 ~ core[ef75]::option::Option),
+                                ),
+                                segments: [
+                                    PathSegment {
+                                        name: "Option",
+                                        args: AngleBracketed {
+                                            args: [
+                                                Type(
+                                                    Path {
+                                                        path: Path {
+                                                            res: Def(
+                                                                Struct,
+                                                                DefId(5:444 ~ alloc[b3e0]::boxed::Box),
+                                                            ),
+                                                            segments: [
+                                                                PathSegment {
+                                                                    name: "Box",
+                                                                    args: AngleBracketed {
+                                                                        args: [
+                                                                            Type(
+                                                                                Path {
+                                                                                    path: Path {
+                                                                                        res: Def(
+                                                                                            Struct,
+                                                                                            DefId(0:147 ~ algorithmica[4c55]::tree::Node),
+                                                                                        ),
+                                                                                        segments: [
+                                                                                            PathSegment {
+                                                                                                name: "Node",
+                                                                                                args: AngleBracketed {
+                                                                                                    args: [],
+                                                                                                    bindings: [],
+                                                                                                },
+                                                                                            },
+                                                                                        ],
+                                                                                    },
+                                                                                },
+                                                                            ),
+                                                                        ],
+                                                                        bindings: [],
+                                                                    },
+                                                                },
+                                                            ],
+                                                        },
+                                                    },
+                                                ),
+                                            ],
+                                            bindings: [],
+                                        },
+                                    },
+                                ],
+                            },
+                        },
+                    ),
+                },
+            ],
+            fuzzable_params: [
+                Primitive(
+                    I32,
+                ),
+                Primitive(
+                    I32,
+                ),
+            ],
+            _using_traits: [],
+            _unsafe_tag: false,
+            _moved: {},
+            _fuzzable_mut_tag: {},
+            _function_mut_tag: {},
+            _covered_dependencies: {
+                (
+                    0,
+                    false,
+                ),
+            },
+            _control_nums: 0,
+            _pattern_mark: None,
+            generic_map: {
+                GenericPath {
+                    full_name: "algorithmica::tree::bst::BST::T",
+                    number: 0,
+                }: Preluded(
+                    PreludedStructure {
+                        name: "String",
+                        preluded_type: String,
+                        implemented_traits: [
+                            "core::fmt::Display",
+                            "core::fmt::Debug",
+                            "core::convert::From",
+                            "core::clone::Clone",
+                            "core::copy::Copy",
+                        ],
+                        use_functions: [],
+                        implemented_functions: [],
+                    },
+                ),
+            },
+            type_annotation: {
+                1: "algorithmica::tree::bst::BST<String>",
+            },
+        },
+        ApiSequence {
+            functions: [
+                ApiCall {
+                    func: (
+                        BareFunction,
+                        0,
+                    ),
+                    params: [
+                        (
+                            _FuzzableType,
+                            0,
+                            _DirectCall,
+                        ),
+                    ],
+                    is_unsafe: false,
+                    is_get_raw_ptr: false,
+                    is_drop: false,
+                    is_mutate: false,
+                    output_type: Some(
+                        Path {
+                            path: Path {
+                                res: Def(
+                                    Struct,
+                                    DefId(5:444 ~ alloc[b3e0]::boxed::Box),
+                                ),
+                                segments: [
+                                    PathSegment {
+                                        name: "Box",
+                                        args: AngleBracketed {
+                                            args: [
+                                                Type(
+                                                    Path {
+                                                        path: Path {
+                                                            res: Def(
+                                                                Struct,
+                                                                DefId(0:147 ~ algorithmica[4c55]::tree::Node),
+                                                            ),
+                                                            segments: [
+                                                                PathSegment {
+                                                                    name: "Node",
+                                                                    args: AngleBracketed {
+                                                                        args: [],
+                                                                        bindings: [],
+                                                                    },
+                                                                },
+                                                            ],
+                                                        },
+                                                    },
+                                                ),
+                                            ],
+                                            bindings: [],
+                                        },
+                                    },
+                                ],
+                            },
+                        },
+                    ),
+                },
+                ApiCall {
+                    func: (
+                        BareFunction,
+                        2,
+                    ),
+                    params: [],
+                    is_unsafe: false,
+                    is_get_raw_ptr: false,
+                    is_drop: false,
+                    is_mutate: false,
+                    output_type: Some(
+                        Path {
+                            path: Path {
+                                res: Def(
+                                    Enum,
+                                    DefId(0:136 ~ algorithmica[4c55]::tree::bst::BST),
+                                ),
+                                segments: [
+                                    PathSegment {
+                                        name: "BST",
+                                        args: AngleBracketed {
+                                            args: [
+                                                Type(
+                                                    Generic(
+                                                        "T",
+                                                    ),
+                                                ),
+                                            ],
+                                            bindings: [],
+                                        },
+                                    },
+                                ],
+                            },
+                        },
+                    ),
+                },
+                ApiCall {
+                    func: (
+                        BareFunction,
+                        3,
+                    ),
+                    params: [
+                        (
+                            _FunctionReturn,
+                            1,
+                            _BorrowedRef(
+                                _DirectCall,
+                            ),
+                        ),
+                    ],
+                    is_unsafe: false,
+                    is_get_raw_ptr: false,
+                    is_drop: false,
+                    is_mutate: false,
+                    output_type: Some(
+                        Primitive(
+                            Bool,
+                        ),
+                    ),
+                },
+            ],
+            fuzzable_params: [
+                Primitive(
+                    I32,
+                ),
+            ],
+            _using_traits: [],
+            _unsafe_tag: false,
+            _moved: {},
+            _fuzzable_mut_tag: {},
+            _function_mut_tag: {},
+            _covered_dependencies: {
+                (
+                    2,
+                    false,
+                ),
+            },
+            _control_nums: 0,
+            _pattern_mark: None,
+            generic_map: {
+                GenericPath {
+                    full_name: "algorithmica::tree::bst::BST::T",
+                    number: 0,
+                }: Preluded(
+                    PreludedStructure {
+                        name: "String",
+                        preluded_type: String,
+                        implemented_traits: [
+                            "core::fmt::Display",
+                            "core::fmt::Debug",
+                            "core::convert::From",
+                            "core::clone::Clone",
+                            "core::copy::Copy",
+                        ],
+                        use_functions: [],
+                        implemented_functions: [],
+                    },
+                ),
+            },
+            type_annotation: {
+                1: "algorithmica::tree::bst::BST<String>",
+            },
+        },
+        ApiSequence {
+            functions: [
+                ApiCall {
+                    func: (
+                        BareFunction,
+                        2,
+                    ),
+                    params: [],
+                    is_unsafe: false,
+                    is_get_raw_ptr: false,
+                    is_drop: false,
+                    is_mutate: false,
+                    output_type: Some(
+                        Path {
+                            path: Path {
+                                res: Def(
+                                    Enum,
+                                    DefId(0:136 ~ algorithmica[4c55]::tree::bst::BST),
+                                ),
+                                segments: [
+                                    PathSegment {
+                                        name: "BST",
+                                        args: AngleBracketed {
+                                            args: [
+                                                Type(
+                                                    Generic(
+                                                        "T",
+                                                    ),
+                                                ),
+                                            ],
+                                            bindings: [],
+                                        },
+                                    },
+                                ],
+                            },
+                        },
+                    ),
+                },
+                ApiCall {
+                    func: (
+                        BareFunction,
+                        0,
+                    ),
+                    params: [
+                        (
+                            _FuzzableType,
+                            0,
+                            _DirectCall,
+                        ),
+                    ],
+                    is_unsafe: false,
+                    is_get_raw_ptr: false,
+                    is_drop: false,
+                    is_mutate: false,
+                    output_type: Some(
+                        Path {
+                            path: Path {
+                                res: Def(
+                                    Struct,
+                                    DefId(5:444 ~ alloc[b3e0]::boxed::Box),
+                                ),
+                                segments: [
+                                    PathSegment {
+                                        name: "Box",
+                                        args: AngleBracketed {
+                                            args: [
+                                                Type(
+                                                    Path {
+                                                        path: Path {
+                                                            res: Def(
+                                                                Struct,
+                                                                DefId(0:147 ~ algorithmica[4c55]::tree::Node),
+                                                            ),
+                                                            segments: [
+                                                                PathSegment {
+                                                                    name: "Node",
+                                                                    args: AngleBracketed {
+                                                                        args: [],
+                                                                        bindings: [],
+                                                                    },
+                                                                },
+                                                            ],
+                                                        },
+                                                    },
+                                                ),
+                                            ],
+                                            bindings: [],
+                                        },
+                                    },
+                                ],
+                            },
+                        },
+                    ),
+                },
+                ApiCall {
+                    func: (
+                        GenericFunction,
+                        1,
+                    ),
+                    params: [
+                        (
+                            _FunctionReturn,
+                            1,
+                            _ToOption(
+                                _DirectCall,
+                            ),
+                        ),
+                        (
+                            _FuzzableType,
+                            1,
+                            _DirectCall,
+                        ),
+                    ],
+                    is_unsafe: false,
+                    is_get_raw_ptr: false,
+                    is_drop: true,
+                    is_mutate: false,
+                    output_type: Some(
+                        Path {
+                            path: Path {
+                                res: Def(
+                                    Enum,
+                                    DefId(2:47799 ~ core[ef75]::option::Option),
+                                ),
+                                segments: [
+                                    PathSegment {
+                                        name: "Option",
+                                        args: AngleBracketed {
+                                            args: [
+                                                Type(
+                                                    Path {
+                                                        path: Path {
+                                                            res: Def(
+                                                                Struct,
+                                                                DefId(5:444 ~ alloc[b3e0]::boxed::Box),
+                                                            ),
+                                                            segments: [
+                                                                PathSegment {
+                                                                    name: "Box",
+                                                                    args: AngleBracketed {
+                                                                        args: [
+                                                                            Type(
+                                                                                Path {
+                                                                                    path: Path {
+                                                                                        res: Def(
+                                                                                            Struct,
+                                                                                            DefId(0:147 ~ algorithmica[4c55]::tree::Node),
+                                                                                        ),
+                                                                                        segments: [
+                                                                                            PathSegment {
+                                                                                                name: "Node",
+                                                                                                args: AngleBracketed {
+                                                                                                    args: [],
+                                                                                                    bindings: [],
+                                                                                                },
+                                                                                            },
+                                                                                        ],
+                                                                                    },
+                                                                                },
+                                                                            ),
+                                                                        ],
+                                                                        bindings: [],
+                                                                    },
+                                                                },
+                                                            ],
+                                                        },
+                                                    },
+                                                ),
+                                            ],
+                                            bindings: [],
+                                        },
+                                    },
+                                ],
+                            },
+                        },
+                    ),
+                },
+            ],
+            fuzzable_params: [
+                Primitive(
+                    I32,
+                ),
+                Primitive(
+                    I32,
+                ),
+            ],
+            _using_traits: [],
+            _unsafe_tag: false,
+            _moved: {},
+            _fuzzable_mut_tag: {},
+            _function_mut_tag: {},
+            _covered_dependencies: {
+                (
+                    0,
+                    false,
+                ),
+            },
+            _control_nums: 0,
+            _pattern_mark: None,
+            generic_map: {
+                GenericPath {
+                    full_name: "algorithmica::tree::bst::BST::T",
+                    number: 0,
+                }: Preluded(
+                    PreludedStructure {
+                        name: "String",
+                        preluded_type: String,
+                        implemented_traits: [
+                            "core::fmt::Display",
+                            "core::fmt::Debug",
+                            "core::convert::From",
+                            "core::clone::Clone",
+                            "core::copy::Copy",
+                        ],
+                        use_functions: [],
+                        implemented_functions: [],
+                    },
+                ),
+            },
+            type_annotation: {
+                0: "algorithmica::tree::bst::BST<String>",
+            },
+        },
+    ],
+    chosen_sequences: [
+        ApiSequence {
+            functions: [
+                ApiCall {
+                    func: (
+                        BareFunction,
+                        0,
+                    ),
+                    params: [
+                        (
+                            _FuzzableType,
+                            0,
+                            _DirectCall,
+                        ),
+                    ],
+                    is_unsafe: false,
+                    is_get_raw_ptr: false,
+                    is_drop: false,
+                    is_mutate: false,
+                    output_type: Some(
+                        Path {
+                            path: Path {
+                                res: Def(
+                                    Struct,
+                                    DefId(5:444 ~ alloc[b3e0]::boxed::Box),
+                                ),
+                                segments: [
+                                    PathSegment {
+                                        name: "Box",
+                                        args: AngleBracketed {
+                                            args: [
+                                                Type(
+                                                    Path {
+                                                        path: Path {
+                                                            res: Def(
+                                                                Struct,
+                                                                DefId(0:147 ~ algorithmica[4c55]::tree::Node),
+                                                            ),
+                                                            segments: [
+                                                                PathSegment {
+                                                                    name: "Node",
+                                                                    args: AngleBracketed {
+                                                                        args: [],
+                                                                        bindings: [],
+                                                                    },
+                                                                },
+                                                            ],
+                                                        },
+                                                    },
+                                                ),
+                                            ],
+                                            bindings: [],
+                                        },
+                                    },
+                                ],
+                            },
+                        },
+                    ),
+                },
+                ApiCall {
+                    func: (
+                        GenericFunction,
+                        1,
+                    ),
+                    params: [
+                        (
+                            _FunctionReturn,
+                            0,
+                            _ToOption(
+                                _DirectCall,
+                            ),
+                        ),
+                        (
+                            _FuzzableType,
+                            1,
+                            _DirectCall,
+                        ),
+                    ],
+                    is_unsafe: false,
+                    is_get_raw_ptr: false,
+                    is_drop: true,
+                    is_mutate: false,
+                    output_type: Some(
+                        Path {
+                            path: Path {
+                                res: Def(
+                                    Enum,
+                                    DefId(2:47799 ~ core[ef75]::option::Option),
+                                ),
+                                segments: [
+                                    PathSegment {
+                                        name: "Option",
+                                        args: AngleBracketed {
+                                            args: [
+                                                Type(
+                                                    Path {
+                                                        path: Path {
+                                                            res: Def(
+                                                                Struct,
+                                                                DefId(5:444 ~ alloc[b3e0]::boxed::Box),
+                                                            ),
+                                                            segments: [
+                                                                PathSegment {
+                                                                    name: "Box",
+                                                                    args: AngleBracketed {
+                                                                        args: [
+                                                                            Type(
+                                                                                Path {
+                                                                                    path: Path {
+                                                                                        res: Def(
+                                                                                            Struct,
+                                                                                            DefId(0:147 ~ algorithmica[4c55]::tree::Node),
+                                                                                        ),
+                                                                                        segments: [
+                                                                                            PathSegment {
+                                                                                                name: "Node",
+                                                                                                args: AngleBracketed {
+                                                                                                    args: [],
+                                                                                                    bindings: [],
+                                                                                                },
+                                                                                            },
+                                                                                        ],
+                                                                                    },
+                                                                                },
+                                                                            ),
+                                                                        ],
+                                                                        bindings: [],
+                                                                    },
+                                                                },
+                                                            ],
+                                                        },
+                                                    },
+                                                ),
+                                            ],
+                                            bindings: [],
+                                        },
+                                    },
+                                ],
+                            },
+                        },
+                    ),
+                },
+                ApiCall {
+                    func: (
+                        BareFunction,
+                        2,
+                    ),
+                    params: [],
+                    is_unsafe: false,
+                    is_get_raw_ptr: false,
+                    is_drop: false,
+                    is_mutate: false,
+                    output_type: Some(
+                        Path {
+                            path: Path {
+                                res: Def(
+                                    Enum,
+                                    DefId(0:136 ~ algorithmica[4c55]::tree::bst::BST),
+                                ),
+                                segments: [
+                                    PathSegment {
+                                        name: "BST",
+                                        args: AngleBracketed {
+                                            args: [
+                                                Type(
+                                                    Generic(
+                                                        "T",
+                                                    ),
+                                                ),
+                                            ],
+                                            bindings: [],
+                                        },
+                                    },
+                                ],
+                            },
+                        },
+                    ),
+                },
+            ],
+            fuzzable_params: [
+                Primitive(
+                    I32,
+                ),
+                Primitive(
+                    I32,
+                ),
+            ],
+            _using_traits: [],
+            _unsafe_tag: false,
+            _moved: {},
+            _fuzzable_mut_tag: {},
+            _function_mut_tag: {},
+            _covered_dependencies: {
+                (
+                    0,
+                    false,
+                ),
+            },
+            _control_nums: 0,
+            _pattern_mark: None,
+            generic_map: {
+                GenericPath {
+                    full_name: "algorithmica::tree::bst::BST::T",
+                    number: 0,
+                }: Preluded(
+                    PreludedStructure {
+                        name: "String",
+                        preluded_type: String,
+                        implemented_traits: [
+                            "core::fmt::Display",
+                            "core::fmt::Debug",
+                            "core::convert::From",
+                            "core::clone::Clone",
+                            "core::copy::Copy",
+                        ],
+                        use_functions: [],
+                        implemented_functions: [],
+                    },
+                ),
+            },
+            type_annotation: {
+                2: "algorithmica::tree::bst::BST<String>",
+            },
+        },
+        ApiSequence {
+            functions: [
+                ApiCall {
+                    func: (
+                        BareFunction,
+                        2,
+                    ),
+                    params: [],
+                    is_unsafe: false,
+                    is_get_raw_ptr: false,
+                    is_drop: false,
+                    is_mutate: false,
+                    output_type: Some(
+                        Path {
+                            path: Path {
+                                res: Def(
+                                    Enum,
+                                    DefId(0:136 ~ algorithmica[4c55]::tree::bst::BST),
+                                ),
+                                segments: [
+                                    PathSegment {
+                                        name: "BST",
+                                        args: AngleBracketed {
+                                            args: [
+                                                Type(
+                                                    Generic(
+                                                        "T",
+                                                    ),
+                                                ),
+                                            ],
+                                            bindings: [],
+                                        },
+                                    },
+                                ],
+                            },
+                        },
+                    ),
+                },
+                ApiCall {
+                    func: (
+                        BareFunction,
+                        3,
+                    ),
+                    params: [
+                        (
+                            _FunctionReturn,
+                            0,
+                            _BorrowedRef(
+                                _DirectCall,
+                            ),
+                        ),
+                    ],
+                    is_unsafe: false,
+                    is_get_raw_ptr: false,
+                    is_drop: false,
+                    is_mutate: false,
+                    output_type: Some(
+                        Primitive(
+                            Bool,
+                        ),
+                    ),
+                },
+            ],
+            fuzzable_params: [],
+            _using_traits: [],
+            _unsafe_tag: false,
+            _moved: {},
+            _fuzzable_mut_tag: {},
+            _function_mut_tag: {},
+            _covered_dependencies: {
+                (
+                    2,
+                    false,
+                ),
+            },
+            _control_nums: 0,
+            _pattern_mark: None,
+            generic_map: {
+                GenericPath {
+                    full_name: "algorithmica::tree::bst::BST::T",
+                    number: 0,
+                }: Preluded(
+                    PreludedStructure {
+                        name: "String",
+                        preluded_type: String,
+                        implemented_traits: [
+                            "core::fmt::Display",
+                            "core::fmt::Debug",
+                            "core::convert::From",
+                            "core::clone::Clone",
+                            "core::copy::Copy",
+                        ],
+                        use_functions: [],
+                        implemented_functions: [],
+                    },
+                ),
+            },
+            type_annotation: {
+                0: "algorithmica::tree::bst::BST<String>",
+            },
+        },
+    ],
+    api_parameters: [
+        Preluded(
+            PreludedStructure {
+                name: "String",
+                preluded_type: String,
+                implemented_traits: [
+                    "core::fmt::Display",
+                    "core::fmt::Debug",
+                    "core::convert::From",
+                    "core::clone::Clone",
+                    "core::copy::Copy",
+                ],
+                use_functions: [],
+                implemented_functions: [],
+            },
+        ),
+        Struct(
+            ApiStructure {
+                name: "algorithmica::tree::Node",
+                is_enum: false,
+                implemented_traits: [
+                    "core::marker::Sync",
+                    "core::panic::unwind_safe::UnwindSafe",
+                    "core::marker::Unpin",
+                    "core::panic::unwind_safe::RefUnwindSafe",
+                    "core::marker::Send",
+                    "core::convert::TryInto",
+                    "core::borrow::BorrowMut",
+                    "core::convert::TryFrom",
+                    "core::convert::From",
+                    "core::borrow::Borrow",
+                    "core::any::Any",
+                    "core::convert::Into",
+                    "core::fmt::Debug",
+                ],
+                is_generic: true,
+                return_functions: [],
+                use_functions: [],
+                clean_ty: Some(
+                    Path {
+                        path: Path {
+                            res: Def(
+                                Struct,
+                                DefId(0:147 ~ algorithmica[4c55]::tree::Node),
+                            ),
+                            segments: [
+                                PathSegment {
+                                    name: "Node",
+                                    args: AngleBracketed {
+                                        args: [],
+                                        bindings: [],
+                                    },
+                                },
+                            ],
+                        },
+                    },
+                ),
+                implemented_functions: [
+                    "algorithmica::tree::Node::create",
+                    "algorithmica::tree::Node::add_new",
+                ],
+            },
+        ),
+        Enum(
+            ApiStructure {
+                name: "algorithmica::tree::bst::BST",
+                is_enum: true,
+                implemented_traits: [
+                    "core::marker::Sync",
+                    "core::panic::unwind_safe::UnwindSafe",
+                    "core::marker::Unpin",
+                    "core::panic::unwind_safe::RefUnwindSafe",
+                    "core::marker::Send",
+                    "core::convert::TryInto",
+                    "core::borrow::BorrowMut",
+                    "core::convert::TryFrom",
+                    "core::convert::From",
+                    "core::borrow::Borrow",
+                    "core::any::Any",
+                    "core::convert::Into",
+                    "core::fmt::Debug",
+                    "core::default::Default",
+                ],
+                is_generic: true,
+                return_functions: [
+                    2,
+                ],
+                use_functions: [
+                    (
+                        3,
+                        0,
+                    ),
+                ],
+                clean_ty: Some(
+                    Path {
+                        path: Path {
+                            res: Def(
+                                Enum,
+                                DefId(0:136 ~ algorithmica[4c55]::tree::bst::BST),
+                            ),
+                            segments: [
+                                PathSegment {
+                                    name: "BST",
+                                    args: AngleBracketed {
+                                        args: [
+                                            Type(
+                                                Generic(
+                                                    "T",
+                                                ),
+                                            ),
+                                        ],
+                                        bindings: [],
+                                    },
+                                },
+                            ],
+                        },
+                    },
+                ),
+                implemented_functions: [
+                    "algorithmica::tree::bst::BST::new",
+                    "algorithmica::tree::bst::BST::create",
+                    "algorithmica::tree::bst::BST::insert",
+                    "algorithmica::tree::bst::BST::is_empty",
+                    "algorithmica::tree::bst::BST::find",
+                ],
+            },
+        ),
+    ],
+    full_name_map: FullNameMap {
+        full_name_map: {
+            DefId(0:115 ~ algorithmica[4c55]::tree::bst): (
+                "algorithmica::tree::bst",
+                Module,
+            ),
+            DefId(0:84 ~ algorithmica[4c55]::sort::merge_sort::sort_by): (
+                "algorithmica::sort::merge_sort::sort_by",
+                Function,
+            ),
+            DefId(0:94 ~ algorithmica[4c55]::sort::quick_sort::sort): (
+                "algorithmica::sort::quick_sort::sort",
+                Function,
+            ),
+            DefId(0:147 ~ algorithmica[4c55]::tree::Node): (
+                "algorithmica::tree::Node",
+                Struct,
+            ),
+            DefId(0:34 ~ algorithmica[4c55]::sort::bubble::sort_by): (
+                "algorithmica::sort::bubble::sort_by",
+                Function,
+            ),
+            DefId(0:3 ~ algorithmica[4c55]::graph): (
+                "algorithmica::graph",
+                Module,
+            ),
+            DefId(0:142 ~ algorithmica[4c55]::tree::bst::BST::Empty): (
+                "algorithmica::tree::bst::BST::Empty",
+                Variant,
+            ),
+            DefId(0:114 ~ algorithmica[4c55]::tree): (
+                "algorithmica::tree",
+                Module,
+            ),
+            DefId(0:15 ~ algorithmica[4c55]::search::binary): (
+                "algorithmica::search::binary",
+                Module,
+            ),
+            DefId(0:104 ~ algorithmica[4c55]::sort::selection::sort): (
+                "algorithmica::sort::selection::sort",
+                Function,
+            ),
+            DefId(0:51 ~ algorithmica[4c55]::sort::is_sorted): (
+                "algorithmica::sort::is_sorted",
+                Module,
+            ),
+            DefId(0:96 ~ algorithmica[4c55]::sort::selection): (
+                "algorithmica::sort::selection",
+                Module,
+            ),
+            DefId(0:37 ~ algorithmica[4c55]::sort::heap_sort): (
+                "algorithmica::sort::heap_sort",
+                Module,
+            ),
+            DefId(0:106 ~ algorithmica[4c55]::sort::selection::sort_by): (
+                "algorithmica::sort::selection::sort_by",
+                Function,
+            ),
+            DefId(0:5 ~ algorithmica[4c55]::math::matrix): (
+                "algorithmica::math::matrix",
+                Module,
+            ),
+            DefId(0:62 ~ algorithmica[4c55]::sort::merge_sort): (
+                "algorithmica::sort::merge_sort",
+                Module,
+            ),
+            DefId(0:48 ~ algorithmica[4c55]::sort::insertion::sort_by): (
+                "algorithmica::sort::insertion::sort_by",
+                Function,
+            ),
+            DefId(0:14 ~ algorithmica[4c55]::search): (
+                "algorithmica::search",
+                Module,
+            ),
+            DefId(0:4 ~ algorithmica[4c55]::math): (
+                "algorithmica::math",
+                Module,
+            ),
+            DefId(0:57 ~ algorithmica[4c55]::sort::is_sorted::is_sorted_desc): (
+                "algorithmica::sort::is_sorted::is_sorted_desc",
+                Function,
+            ),
+            DefId(0:109 ~ algorithmica[4c55]::subset): (
+                "algorithmica::subset",
+                Module,
+            ),
+            DefId(0:112 ~ algorithmica[4c55]::subset::find_all_subset): (
+                "algorithmica::subset::find_all_subset",
+                Function,
+            ),
+            DefId(0:59 ~ algorithmica[4c55]::sort::is_sorted::is_sorted_by): (
+                "algorithmica::sort::is_sorted::is_sorted_by",
+                Function,
+            ),
+            DefId(0:24 ~ algorithmica[4c55]::sort::bubble): (
+                "algorithmica::sort::bubble",
+                Module,
+            ),
+            DefId(0:6 ~ algorithmica[4c55]::math::matrix::multiply): (
+                "algorithmica::math::matrix::multiply",
+                Function,
+            ),
+            DefId(0:11 ~ algorithmica[4c55]::math::matrix::add): (
+                "algorithmica::math::matrix::add",
+                Function,
+            ),
+            DefId(0:0 ~ algorithmica[4c55]): (
+                "algorithmica",
+                Module,
+            ),
+            DefId(0:46 ~ algorithmica[4c55]::sort::insertion::sort): (
+                "algorithmica::sort::insertion::sort",
+                Function,
+            ),
+            DefId(0:138 ~ algorithmica[4c55]::tree::bst::BST::Leaf): (
+                "algorithmica::tree::bst::BST::Leaf",
+                Variant,
+            ),
+            DefId(0:38 ~ algorithmica[4c55]::sort::insertion): (
+                "algorithmica::sort::insertion",
+                Module,
+            ),
+            DefId(0:32 ~ algorithmica[4c55]::sort::bubble::sort): (
+                "algorithmica::sort::bubble::sort",
+                Function,
+            ),
+            DefId(0:136 ~ algorithmica[4c55]::tree::bst::BST): (
+                "algorithmica::tree::bst::BST",
+                Enum,
+            ),
+            DefId(0:23 ~ algorithmica[4c55]::sort): (
+                "algorithmica::sort",
+                Module,
+            ),
+            DefId(0:81 ~ algorithmica[4c55]::sort::merge_sort::sort): (
+                "algorithmica::sort::merge_sort::sort",
+                Function,
+            ),
+            DefId(0:132 ~ algorithmica[4c55]::tree::red_black): (
+                "algorithmica::tree::red_black",
+                Module,
+            ),
+            DefId(0:55 ~ algorithmica[4c55]::sort::is_sorted::is_sorted): (
+                "algorithmica::sort::is_sorted::is_sorted",
+                Function,
+            ),
+            DefId(0:21 ~ algorithmica[4c55]::search::binary::search): (
+                "algorithmica::search::binary::search",
+                Function,
+            ),
+            DefId(0:88 ~ algorithmica[4c55]::sort::quick_sort): (
+                "algorithmica::sort::quick_sort",
+                Module,
+            ),
+            DefId(0:110 ~ algorithmica[4c55]::subset::subset_util): (
+                "algorithmica::subset::subset_util",
+                Function,
+            ),
+        },
+    },
+    mod_visibility: ModVisibity {
+        crate_name: "algorithmica",
+        inner: {
+            "algorithmica::sort::bubble": Public,
+            "algorithmica::math": Public,
+            "algorithmica::sort": Public,
+            "algorithmica::tree::bst": Public,
+            "algorithmica::tree": Public,
+            "algorithmica::sort::selection": Public,
+            "algorithmica::sort::heap_sort": Public,
+            "algorithmica::tree::red_black": Public,
+            "algorithmica::subset": Public,
+            "algorithmica::search": Public,
+            "algorithmica::search::binary": Public,
+            "algorithmica::math::matrix": Public,
+            "algorithmica::graph": Public,
+            "algorithmica": Public,
+            "algorithmica::sort::merge_sort": Public,
+            "algorithmica::sort::insertion": Public,
+            "algorithmica::sort::quick_sort": Public,
+            "algorithmica::sort::is_sorted": Public,
+        },
+    },
+    generic_functions: {
+        "algorithmica::tree::Node::add_new",
+    },
+    functions_with_unsupported_fuzzable_types: {
+        "algorithmica::sort::is_sorted::is_sorted",
+        "algorithmica::sort::merge_sort::sort",
+        "algorithmica::subset::find_all_subset",
+        "algorithmica::subset::subset_util",
+        "algorithmica::sort::is_sorted::is_sorted_by",
+        "algorithmica::sort::insertion::sort",
+        "algorithmica::search::binary::search",
+        "algorithmica::sort::is_sorted::is_sorted_desc",
+        "algorithmica::sort::selection::sort",
+        "algorithmica::math::matrix::add",
+        "algorithmica::sort::bubble::sort",
+        "algorithmica::sort::insertion::sort_by",
+        "algorithmica::math::matrix::multiply",
+        "algorithmica::sort::merge_sort::sort_by",
+        "algorithmica::sort::quick_sort::sort",
+        "algorithmica::sort::bubble::sort_by",
+        "algorithmica::sort::selection::sort_by",
+    },
+    generable_types: {
+        Path {
+            path: Path {
+                res: Def(
+                    Enum,
+                    DefId(2:47799 ~ core[ef75]::option::Option),
+                ),
+                segments: [
+                    PathSegment {
+                        name: "Option",
+                        args: AngleBracketed {
+                            args: [
+                                Type(
+                                    Path {
+                                        path: Path {
+                                            res: Def(
+                                                Struct,
+                                                DefId(5:444 ~ alloc[b3e0]::boxed::Box),
+                                            ),
+                                            segments: [
+                                                PathSegment {
+                                                    name: "Box",
+                                                    args: AngleBracketed {
+                                                        args: [
+                                                            Type(
+                                                                Path {
+                                                                    path: Path {
+                                                                        res: Def(
+                                                                            Struct,
+                                                                            DefId(0:147 ~ algorithmica[4c55]::tree::Node),
+                                                                        ),
+                                                                        segments: [
+                                                                            PathSegment {
+                                                                                name: "Node",
+                                                                                args: AngleBracketed {
+                                                                                    args: [],
+                                                                                    bindings: [],
+                                                                                },
+                                                                            },
+                                                                        ],
+                                                                    },
+                                                                },
+                                                            ),
+                                                        ],
+                                                        bindings: [],
+                                                    },
+                                                },
+                                            ],
+                                        },
+                                    },
+                                ),
+                            ],
+                            bindings: [],
+                        },
+                    },
+                ],
+            },
+        }: {
+            (
+                1,
+                _DirectCall,
+            ),
+            (
+                0,
+                _ToOption(
+                    _DirectCall,
+                ),
+            ),
+        },
+        BorrowedRef {
+            lifetime: None,
+            mutability: Not,
+            type_: Path {
+                path: Path {
+                    res: Def(
+                        Enum,
+                        DefId(0:136 ~ algorithmica[4c55]::tree::bst::BST),
+                    ),
+                    segments: [
+                        PathSegment {
+                            name: "BST",
+                            args: AngleBracketed {
+                                args: [
+                                    Type(
+                                        Generic(
+                                            "T",
+                                        ),
+                                    ),
+                                ],
+                                bindings: [],
+                            },
+                        },
+                    ],
+                },
+            },
+        }: {
+            (
+                2,
+                _BorrowedRef(
+                    _DirectCall,
+                ),
+            ),
+            (
+                3,
+                _BorrowedRef(
+                    _DirectCall,
+                ),
+            ),
+        },
+        BorrowedRef {
+            lifetime: None,
+            mutability: Mut,
+            type_: Path {
+                path: Path {
+                    res: Def(
+                        Enum,
+                        DefId(0:136 ~ algorithmica[4c55]::tree::bst::BST),
+                    ),
+                    segments: [
+                        PathSegment {
+                            name: "BST",
+                            args: AngleBracketed {
+                                args: [
+                                    Type(
+                                        Generic(
+                                            "T",
+                                        ),
+                                    ),
+                                ],
+                                bindings: [],
+                            },
+                        },
+                    ],
+                },
+            },
+        }: {
+            (
+                2,
+                _MutBorrowedRef(
+                    _DirectCall,
+                ),
+            ),
+            (
+                3,
+                _MutBorrowedRef(
+                    _DirectCall,
+                ),
+            ),
+        },
+    },
+    record_sequences: [],
+    copy_structs: [],
+    stop_list: [],
+    api_generation_map: {},
+    refuse_api_map: {
+        3: [
+            {
+                1,
+                0,
+            },
+        ],
+        0: [
+            {},
+        ],
+        1: [
+            {
+                2,
+            },
+            {},
+        ],
+        2: [],
+    },
+    type_generation_map: {},
+    total_weight: 14,
+}

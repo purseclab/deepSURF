@@ -1,0 +1,12 @@
+language: rust
+rust:
+  - stable
+  - beta
+  - nightly
+install:
+  - cargo build
+script:
+  - cargo test
+  - cargo doc --no-deps
+after_success:
+  - bash deploy.sh

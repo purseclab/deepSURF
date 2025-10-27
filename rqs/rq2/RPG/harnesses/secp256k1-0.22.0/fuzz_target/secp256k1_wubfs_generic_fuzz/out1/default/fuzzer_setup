@@ -1,0 +1,6 @@
+# environment variables:
+AFL_CUSTOM_INFO_PROGRAM=./multipleTargets/target/debug/test_secp256k10
+AFL_CUSTOM_INFO_PROGRAM_ARGV=
+AFL_CUSTOM_INFO_OUT=out1/default
+# command line:
+'/root/.local/share/afl.rs/rustc-1.65.0-dev/afl.rs-0.13.3/afl/bin/afl-fuzz' '-c0' '-i' 'afl_init/' '-o' 'out1' './multipleTargets/target/debug/test_secp256k10'

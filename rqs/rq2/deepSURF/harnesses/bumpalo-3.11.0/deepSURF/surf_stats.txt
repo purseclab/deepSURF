@@ -1,0 +1,164 @@
+
+Total Stats:
+------------------------------------------------------------------------------------------------------------------------------------
+* URAPI Coverage: 24/28 (85.71%).
+* Targets Compiled: 81/107 (75.70%) in [66.921831658s].
+------------------------------------------------------------------------------------------------------------------------------------
+
+Target Stats:
+------------------------------------------------------------------------------------------------------------------------------------
+* URAPIs w/ ≥ 1ft: 24/28 (85.71%).
+* Average Generation Time per Target: 178.73933607s/24 (7.447472336s).
+
+* URAPIs w/ ≥ 2ft: 19/28 (67.86%).
+* Average Generation Time per Target: 401.104510493s/19 (21.11076371s).
+
+* URAPIs w/ ≥ 3ft: 19/28 (67.86%).
+* Average Generation Time per Target: 619.40821202s/19 (32.600432211s).
+
+* URAPIs w/ ≥ 4ft: 19/28 (67.86%).
+* Average Generation Time per Target: 843.810028682s/19 (44.411054141s).
+
+* URAPIs w/o any compilable targets: 4/28 (14.29%).
+------------------------------------------------------------------------------------------------------------------------------------
+
+Detailed Results: 
+------------------------------------------------------------------------------------------------------------------------------------
+  URAPI: DefId(0:93 ~ bumpalo[9aa9]::{impl#5}::default),
+    - Compilable Targets (1/1 ~ 100.00%):
+        * bumpalo_fuzz_17737642550882036747 [7.852091072s]
+  URAPI: DefId(0:196 ~ bumpalo[9aa9]::{impl#9}::next),
+    - Compilable Targets (4/4 ~ 100.00%):
+        * bumpalo_fuzz_10582287395643482586 [7.873558799s]
+        * bumpalo_fuzz_14838130189676489462 [20.759352585s]
+        * bumpalo_fuzz_11824770422815595910 [32.141903119s]
+        * bumpalo_fuzz_4709234881698127570 [44.223316111s]
+  URAPI: DefId(0:158 ~ bumpalo[9aa9]::{impl#8}::alloc_slice_clone),
+    - Compilable Targets (4/4 ~ 100.00%):
+        * bumpalo_fuzz_13342756394755960806 [7.740732s]
+        * bumpalo_fuzz_7570188436932504339 [20.905100425s]
+        * bumpalo_fuzz_11463710956905808856 [35.247578199s]
+        * bumpalo_fuzz_17258576887288763975 [48.130474372s]
+  URAPI: DefId(0:117 ~ bumpalo[9aa9]::{impl#8}::try_new),
+    - Compilable Targets (1/1 ~ 100.00%):
+        * bumpalo_fuzz_4110211619496231157 [7.871086067s]
+  URAPI: DefId(0:148 ~ bumpalo[9aa9]::{impl#8}::alloc_try_with),
+    - Compilable Targets (0/4 ~ 0.00%):
+  URAPI: DefId(0:156 ~ bumpalo[9aa9]::{impl#8}::alloc_slice_copy),
+    - Compilable Targets (4/4 ~ 100.00%):
+        * bumpalo_fuzz_10627925072891245914 [7.758785676s]
+        * bumpalo_fuzz_3608096832405391848 [20.635906677s]
+        * bumpalo_fuzz_10506156439358204222 [31.902425467s]
+        * bumpalo_fuzz_1619006235460184034 [44.417631933s]
+  URAPI: DefId(0:180 ~ bumpalo[9aa9]::{impl#8}::try_alloc_layout),
+    - Compilable Targets (4/11 ~ 36.36%):
+        * bumpalo_fuzz_16216767029417286304 [7.83238128s]
+        * bumpalo_fuzz_7637884274224719782 [33.63901726s]
+        * bumpalo_fuzz_4143355008168765222 [47.38519031s]
+        * bumpalo_fuzz_12119658430300263923 [62.622576977s]
+  URAPI: DefId(0:186 ~ bumpalo[9aa9]::{impl#8}::iter_allocated_chunks),
+    - Compilable Targets (4/4 ~ 100.00%):
+        * bumpalo_fuzz_1933771075968958060 [7.760304041s]
+        * bumpalo_fuzz_13600941481065548220 [20.767336114s]
+        * bumpalo_fuzz_10759793210138670460 [31.902471051s]
+        * bumpalo_fuzz_1412529950162708600 [44.478250238s]
+  URAPI: DefId(0:120 ~ bumpalo[9aa9]::{impl#8}::try_with_capacity),
+    - Compilable Targets (1/1 ~ 100.00%):
+        * bumpalo_fuzz_13582806373669357093 [7.878763189s]
+  URAPI: DefId(0:165 ~ bumpalo[9aa9]::{impl#8}::alloc_slice_fill_copy),
+    - Compilable Targets (4/4 ~ 100.00%):
+        * bumpalo_fuzz_976142584321051045 [7.013063467s]
+        * bumpalo_fuzz_13512943334504954955 [18.222483686s]
+        * bumpalo_fuzz_15823384283313494722 [30.519019328s]
+        * bumpalo_fuzz_6426152023858459176 [39.212748204s]
+  URAPI: DefId(0:95 ~ bumpalo[9aa9]::{impl#6}::drop),
+    - Compilable Targets (4/4 ~ 100.00%):
+        * bumpalo_fuzz_6264733404987964180 [7.851949424s]
+        * bumpalo_fuzz_5443701413058841166 [20.873149176s]
+        * bumpalo_fuzz_16475823291575149311 [31.903837511s]
+        * bumpalo_fuzz_13117492460919467125 [44.280824672s]
+  URAPI: DefId(0:161 ~ bumpalo[9aa9]::{impl#8}::alloc_slice_fill_with),
+    - Compilable Targets (4/4 ~ 100.00%):
+        * bumpalo_fuzz_9800402828280506069 [2.065310228s]
+        * bumpalo_fuzz_15842905124992499707 [13.315927285s]
+        * bumpalo_fuzz_13014221009935089591 [21.395438762s]
+        * bumpalo_fuzz_11058010074299480007 [28.48538453s]
+  URAPI: DefId(0:168 ~ bumpalo[9aa9]::{impl#8}::alloc_slice_fill_clone),
+    - Compilable Targets (4/4 ~ 100.00%):
+        * bumpalo_fuzz_2842761433075450817 [7.293468308s]
+        * bumpalo_fuzz_15121009958712828263 [18.468125651s]
+        * bumpalo_fuzz_17826886974706730553 [30.924002372s]
+        * bumpalo_fuzz_17681314164368246680 [39.54073021s]
+  URAPI: DefId(0:142 ~ bumpalo[9aa9]::{impl#8}::try_alloc_with),
+    - Compilable Targets (4/4 ~ 100.00%):
+        * bumpalo_fuzz_2263841652955257434 [6.664062142s]
+        * bumpalo_fuzz_17613850789121379337 [16.728076264s]
+        * bumpalo_fuzz_6445765771781107386 [24.663958129s]
+        * bumpalo_fuzz_17151298416019404428 [36.589893427s]
+  URAPI: DefId(0:136 ~ bumpalo[9aa9]::{impl#8}::alloc_with),
+    - Compilable Targets (4/4 ~ 100.00%):
+        * bumpalo_fuzz_15550931033291664209 [7.890788527s]
+        * bumpalo_fuzz_17795353330446753883 [20.836479144s]
+        * bumpalo_fuzz_10345542660961001844 [32.154246528s]
+        * bumpalo_fuzz_673284093688013829 [44.275637473s]
+  URAPI: DefId(0:130 ~ bumpalo[9aa9]::{impl#8}::alloc),
+    - Compilable Targets (4/4 ~ 100.00%):
+        * bumpalo_fuzz_10195540977497515460 [7.900944011s]
+        * bumpalo_fuzz_8705846077032209387 [20.726858516s]
+        * bumpalo_fuzz_14464184376213509131 [31.886367045s]
+        * bumpalo_fuzz_18263996711839011605 [44.240191605s]
+  URAPI: DefId(0:160 ~ bumpalo[9aa9]::{impl#8}::alloc_str),
+    - Compilable Targets (4/4 ~ 100.00%):
+        * bumpalo_fuzz_224098601919285538 [7.899699496s]
+        * bumpalo_fuzz_5244865239491364455 [20.767286112s]
+        * bumpalo_fuzz_6768300536147866243 [31.727169304s]
+        * bumpalo_fuzz_12283863593982567877 [44.33492013s]
+  URAPI: DefId(0:118 ~ bumpalo[9aa9]::{impl#8}::with_capacity),
+    - Compilable Targets (1/1 ~ 100.00%):
+        * bumpalo_fuzz_7123229055634773435 [7.761813343s]
+  URAPI: DefId(0:182 ~ bumpalo[9aa9]::{impl#8}::chunk_capacity),
+    - Compilable Targets (4/4 ~ 100.00%):
+        * bumpalo_fuzz_13858742463006864955 [7.90061127s]
+        * bumpalo_fuzz_6730587379642975671 [20.762807089s]
+        * bumpalo_fuzz_11212877892942097368 [31.902749557s]
+        * bumpalo_fuzz_4018169517007595842 [44.334455064s]
+  URAPI: DefId(0:129 ~ bumpalo[9aa9]::{impl#8}::reset),
+    - Compilable Targets (4/4 ~ 100.00%):
+        * bumpalo_fuzz_3006583053551324482 [7.748883823s]
+        * bumpalo_fuzz_14186952076289077573 [20.693477389s]
+        * bumpalo_fuzz_7223452204854336758 [31.859064968s]
+        * bumpalo_fuzz_12389387654177338035 [44.344091499s]
+  URAPI: DefId(0:178 ~ bumpalo[9aa9]::{impl#8}::alloc_layout),
+    - Compilable Targets (4/11 ~ 36.36%):
+        * bumpalo_fuzz_9657090190286310652 [7.908492328s]
+        * bumpalo_fuzz_6563620404197607829 [33.495895752s]
+        * bumpalo_fuzz_13332487518507543213 [47.567939144s]
+        * bumpalo_fuzz_8029326714941356479 [62.617180662s]
+  URAPI: DefId(0:171 ~ bumpalo[9aa9]::{impl#8}::alloc_slice_fill_iter),
+    - Compilable Targets (4/4 ~ 100.00%):
+        * bumpalo_fuzz_6015136296209974725 [7.91196614s]
+        * bumpalo_fuzz_7792896036859950859 [20.733082861s]
+        * bumpalo_fuzz_9072631806103520954 [31.872104344s]
+        * bumpalo_fuzz_2918639919672471598 [44.421379341s]
+  URAPI: DefId(0:201 ~ bumpalo[9aa9]::{impl#11}::next),
+    - 0 targets generated.
+  URAPI: DefId(0:116 ~ bumpalo[9aa9]::{impl#8}::new),
+    - Compilable Targets (1/1 ~ 100.00%):
+        * bumpalo_fuzz_18378653481397614012 [7.731931682s]
+  URAPI: DefId(0:188 ~ bumpalo[9aa9]::{impl#8}::allocated_bytes),
+    - Compilable Targets (4/4 ~ 100.00%):
+        * bumpalo_fuzz_7696770675450339415 [7.76005527s]
+        * bumpalo_fuzz_17812585660635800495 [20.903447071s]
+        * bumpalo_fuzz_4365469294134000666 [31.967121435s]
+        * bumpalo_fuzz_18400328920309016968 [44.375614935s]
+  URAPI: DefId(0:152 ~ bumpalo[9aa9]::{impl#8}::try_alloc_try_with),
+    - Compilable Targets (0/4 ~ 0.00%):
+  URAPI: DefId(0:175 ~ bumpalo[9aa9]::{impl#8}::alloc_slice_fill_default),
+    - Compilable Targets (0/4 ~ 0.00%):
+  URAPI: DefId(0:133 ~ bumpalo[9aa9]::{impl#8}::try_alloc),
+    - Compilable Targets (4/4 ~ 100.00%):
+        * bumpalo_fuzz_8328868795048773946 [6.868594487s]
+        * bumpalo_fuzz_4565262893413292290 [17.870701436s]
+        * bumpalo_fuzz_8101655757434443922 [30.485625447s]
+        * bumpalo_fuzz_1818858240745245841 [38.884727299s]
+------------------------------------------------------------------------------------------------------------------------------------

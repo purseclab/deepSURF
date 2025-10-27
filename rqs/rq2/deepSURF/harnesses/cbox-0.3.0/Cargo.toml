@@ -1,0 +1,16 @@
+[package]
+
+exclude = [ ".gitignore", ".travis.yml" ]
+authors = [ "Tom Bebbington <tophattedcoder@gmail.com>" ]
+description = "C pointer boxing, for when working with ffi"
+documentation = "https://tombebbington.github.io/llvm-rs/llvm/index.html"
+keywords = [ "ffi", "bindings", "utility" ]
+license = "MIT"
+name = "cbox"
+readme = "README.md"
+repository = "https://github.com/TomBebbington/cbox-rs"
+version = "0.3.0"
+
+[dependencies]
+
+libc = "*"

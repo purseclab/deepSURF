@@ -1,0 +1,117 @@
+-----------------
+src/main.rs lit_to_string
+deps:{}
+candidates:{}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // syn::Lit
++lit_to_string(p0);
++crate::lit_to_string(p0);
++crate::lit_to_string(p0);
+-----------------
+src/main.rs are_lits_equal
+deps:{}
+candidates:{}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // syn::Lit
+let mut p1 = & MaybeUninit::uninit().assume_init(); // syn::Lit
++are_lits_equal(p0, p1);
++crate::are_lits_equal(p0, p1);
++crate::are_lits_equal(p0, p1);
+-----------------
+src/main.rs main
+deps:{}
+candidates:{}
++main();
++crate::main();
++crate::main();
+-----------------
+src/main.rs LiteralReplacer::new
+deps:{}
+candidates:{}
++LiteralReplacer::new();
++crate::LiteralReplacer::new();
++<LiteralReplacer>::new();
+-----------------
+src/main.rs LiteralReplacer::new_with_target
+deps:{}
+candidates:{}
+let mut p0 = std::string::String::new(); // None+std::string::String
++LiteralReplacer::new_with_target(p0);
++crate::LiteralReplacer::new_with_target(p0);
++<LiteralReplacer>::new_with_target(p0);
+-----------------
+src/main.rs LiteralReplacer::clean
+deps:{}
+candidates:{}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // LiteralReplacer
++p0.clean();
++LiteralReplacer::clean(p0);
++crate::LiteralReplacer::clean(p0);
++<LiteralReplacer>::clean(p0);
+-----------------
+src/main.rs LiteralReplacer::generate_declarations
+deps:{}
+candidates:{}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // LiteralReplacer
++p0.generate_declarations();
++LiteralReplacer::generate_declarations(p0);
++crate::LiteralReplacer::generate_declarations(p0);
++<LiteralReplacer>::generate_declarations(p0);
+-----------------
+src/main.rs <LiteralReplacer as syn::fold::Fold>::fold_expr
+deps:{}
+candidates:{}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // LiteralReplacer
+let mut p1 = MaybeUninit::uninit().assume_init(); // syn::Expr
++p0.fold_expr(p1);
++<LiteralReplacer as syn::fold::Fold>::fold_expr(p0, p1);
++crate::<LiteralReplacer as syn::fold::Fold>::fold_expr(p0, p1);
++<LiteralReplacer>::fold_expr(p0, p1);
+-----------------
+src/main.rs <LiteralReplacer as syn::fold::Fold>::fold_expr_repeat
+deps:{}
+candidates:{}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // LiteralReplacer
+let mut p1 = MaybeUninit::uninit().assume_init(); // syn::ExprRepeat
++p0.fold_expr_repeat(p1);
++<LiteralReplacer as syn::fold::Fold>::fold_expr_repeat(p0, p1);
++crate::<LiteralReplacer as syn::fold::Fold>::fold_expr_repeat(p0, p1);
++<LiteralReplacer>::fold_expr_repeat(p0, p1);
+-----------------
+src/main.rs <LiteralReplacer as syn::fold::Fold>::fold_type
+deps:{}
+candidates:{}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // LiteralReplacer
+let mut p1 = MaybeUninit::uninit().assume_init(); // syn::Type
++p0.fold_type(p1);
++<LiteralReplacer as syn::fold::Fold>::fold_type(p0, p1);
++crate::<LiteralReplacer as syn::fold::Fold>::fold_type(p0, p1);
++<LiteralReplacer>::fold_type(p0, p1);
+-----------------
+src/main.rs <LiteralReplacer as syn::fold::Fold>::fold_expr_macro
+deps:{}
+candidates:{}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // LiteralReplacer
+let mut p1 = MaybeUninit::uninit().assume_init(); // syn::ExprMacro
++p0.fold_expr_macro(p1);
++<LiteralReplacer as syn::fold::Fold>::fold_expr_macro(p0, p1);
++crate::<LiteralReplacer as syn::fold::Fold>::fold_expr_macro(p0, p1);
++<LiteralReplacer>::fold_expr_macro(p0, p1);
+-----------------
+src/main.rs <LiteralReplacer as syn::fold::Fold>::fold_item_mod
+deps:{}
+candidates:{}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // LiteralReplacer
+let mut p1 = MaybeUninit::uninit().assume_init(); // syn::ItemMod
++p0.fold_item_mod(p1);
++<LiteralReplacer as syn::fold::Fold>::fold_item_mod(p0, p1);
++crate::<LiteralReplacer as syn::fold::Fold>::fold_item_mod(p0, p1);
++<LiteralReplacer>::fold_item_mod(p0, p1);
+-----------------
+src/main.rs <LiteralReplacer as syn::fold::Fold>::fold_item_fn
+deps:{}
+candidates:{}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // LiteralReplacer
+let mut p1 = MaybeUninit::uninit().assume_init(); // syn::ItemFn
++p0.fold_item_fn(p1);
++<LiteralReplacer as syn::fold::Fold>::fold_item_fn(p0, p1);
++crate::<LiteralReplacer as syn::fold::Fold>::fold_item_fn(p0, p1);
++<LiteralReplacer>::fold_item_fn(p0, p1);

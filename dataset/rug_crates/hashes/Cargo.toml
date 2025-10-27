@@ -1,0 +1,32 @@
+[workspace]
+# This causes issues like https://github.com/RustCrypto/hashes/issues/396
+# Do not uncomment it until MSRV is bumped to 1.51 or higher.
+# resolver = "2"
+members = [
+    "blake2",
+    "fsb",
+    "gost94",
+    "groestl",
+    "md2",
+    "md4",
+    "md5",
+    "ripemd",
+    "sha1",
+    "sha2",
+    "sha3",
+    "shabal",
+    "sm3",
+    "streebog",
+    "tiger",
+    "whirlpool",
+]
+exclude = [
+    "ascon-hash",
+    "belt-hash",
+    "jh",
+    "k12",
+    "skein",
+]
+
+[profile.dev]
+opt-level = 2

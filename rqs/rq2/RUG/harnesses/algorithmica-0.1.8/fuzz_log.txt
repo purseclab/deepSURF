@@ -1,0 +1,19 @@
+algorithmica-0.1.8/ algorithmica {'math::matrix::tests_rug_1::test_rug': 'math__matrix__tests_rug_1__test_rug', 'math::matrix::tests_rug_2::test_rug': 'math__matrix__tests_rug_2__test_rug', 'search::binary::tests_rug_3::test_rug': 'search__binary__tests_rug_3__test_rug', 'sort::bubble::tests_rug_5::test_rug': 'sort__bubble__tests_rug_5__test_rug', 'sort::is_sorted::tests_rug_10::test_rug': 'sort__is_sorted__tests_rug_10__test_rug', 'sort::insertion::tests_rug_7::test_rug': 'sort__insertion__tests_rug_7__test_rug', 'sort::is_sorted::tests_rug_9::test_rug': 'sort__is_sorted__tests_rug_9__test_rug', 'sort::merge_sort::tests_rug_12::test_rug': 'sort__merge_sort__tests_rug_12__test_rug', 'sort::merge_sort::tests_rug_16::test_rug': 'sort__merge_sort__tests_rug_16__test_rug', 'sort::merge_sort::tests_rug_14::test_rug': 'sort__merge_sort__tests_rug_14__test_rug', 'sort::merge_sort::tests_rug_15::test_rug': 'sort__merge_sort__tests_rug_15__test_rug', 'sort::selection::tests_rug_19::test_rug': 'sort__selection__tests_rug_19__test_rug', 'sort::quick_sort::tests_rug_17::test_quick_sort': 'sort__quick_sort__tests_rug_17__test_quick_sort', 'subset::tests_rug_21::test_rug': 'subset__tests_rug_21__test_rug', 'subset::tests_rug_22::test_rug': 'subset__tests_rug_22__test_rug', 'tree::bst::tests_rug_24::test_rug': 'tree__bst__tests_rug_24__test_rug', 'tree::bst::tests_rug_25::test_rug': 'tree__bst__tests_rug_25__test_rug', 'tree::bst::tests_rug_27::test_rug': 'tree__bst__tests_rug_27__test_rug', 'tree::tests_rug_29::test_rug': 'tree__tests_rug_29__test_rug', 'tree::tests_rug_30::test_rug': 'tree__tests_rug_30__test_rug'}
+timeout or err math::matrix::tests_rug_1::test_rug
+timeout or err math::matrix::tests_rug_2::test_rug
+timeout or err sort::bubble::tests_rug_5::test_rug
+timeout or err sort::is_sorted::tests_rug_10::test_rug
+timeout or err sort::insertion::tests_rug_7::test_rug
+timeout or err sort::is_sorted::tests_rug_9::test_rug
+timeout or err sort::merge_sort::tests_rug_12::test_rug
+timeout or err sort::merge_sort::tests_rug_16::test_rug
+timeout or err sort::merge_sort::tests_rug_15::test_rug
+timeout or err sort::selection::tests_rug_19::test_rug
+timeout or err subset::tests_rug_21::test_rug
+timeout or err subset::tests_rug_22::test_rug
+timeout or err tree::bst::tests_rug_24::test_rug
+timeout or err tree::bst::tests_rug_25::test_rug
+timeout or err tree::bst::tests_rug_27::test_rug
+timeout or err tree::tests_rug_29::test_rug
+timeout or err tree::tests_rug_30::test_rug
+algorithmica-0.1.8/ done

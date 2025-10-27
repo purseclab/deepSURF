@@ -1,0 +1,35 @@
+[package]
+name = "ryu"
+version = "1.0.13"
+authors = [ "David Tolnay <dtolnay@gmail.com>",]
+categories = [ "value-formatting", "no-std",]
+description = "Fast floating point to string conversion"
+documentation = "https://docs.rs/ryu"
+edition = "2018"
+exclude = [ "performance.png", "chart/**",]
+keywords = [ "float",]
+license = "Apache-2.0 OR BSL-1.0"
+repository = "https://github.com/dtolnay/ryu"
+rust-version = "1.36"
+
+[features]
+small = []
+
+[dependencies]
+#bolero = "0.8.0"
+bumpalo = "3.12.0"
+
+[dev-dependencies]
+num_cpus = "1.8"
+rand = "0.8"
+rand_xorshift = "0.3"
+
+[lib]
+doc-scrape-examples = false
+
+[dependencies.no-panic]
+version = "0.1"
+optional = true
+
+[package.metadata.docs.rs]
+targets = [ "x86_64-unknown-linux-gnu",]

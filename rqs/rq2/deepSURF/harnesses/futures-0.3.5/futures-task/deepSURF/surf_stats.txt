@@ -1,0 +1,73 @@
+
+Total Stats:
+------------------------------------------------------------------------------------------------------------------------------------
+* URAPI Coverage: 2/22 (9.09%).
+* Targets Compiled: 2/165 (1.21%) in [95.895803287s].
+------------------------------------------------------------------------------------------------------------------------------------
+
+Target Stats:
+------------------------------------------------------------------------------------------------------------------------------------
+* URAPIs w/ ≥ 1ft: 2/22 (9.09%).
+* Average Generation Time per Target: 30.573136408s/2 (15.286568204s).
+
+* URAPIs w/ ≥ 2ft: 0/22 (0.00%).
+* Average Generation Time per Target: 0ns/0 (Na).
+
+* URAPIs w/ ≥ 3ft: 0/22 (0.00%).
+* Average Generation Time per Target: 0ns/0 (Na).
+
+* URAPIs w/ ≥ 4ft: 0/22 (0.00%).
+* Average Generation Time per Target: 0ns/0 (Na).
+
+* URAPIs w/o any compilable targets: 20/22 (90.91%).
+------------------------------------------------------------------------------------------------------------------------------------
+
+Detailed Results: 
+------------------------------------------------------------------------------------------------------------------------------------
+  URAPI: DefId(0:214 ~ futures_task[b35c]::future_obj::if_alloc::{impl#11}::from),
+    - Compilable Targets (0/20 ~ 0.00%):
+  URAPI: DefId(0:123 ~ futures_task[b35c]::future_obj::{impl#8}::new),
+    - 0 targets generated.
+  URAPI: DefId(0:204 ~ futures_task[b35c]::future_obj::if_alloc::{impl#8}::from),
+    - Compilable Targets (0/3 ~ 0.00%):
+  URAPI: DefId(0:182 ~ futures_task[b35c]::future_obj::if_alloc::{impl#3}::into_raw),
+    - Compilable Targets (0/3 ~ 0.00%):
+  URAPI: DefId(0:131 ~ futures_task[b35c]::future_obj::{impl#10}::poll),
+    - Compilable Targets (0/27 ~ 0.00%):
+  URAPI: DefId(0:187 ~ futures_task[b35c]::future_obj::if_alloc::{impl#4}::into_raw),
+    - Compilable Targets (0/3 ~ 0.00%):
+  URAPI: DefId(0:157 ~ futures_task[b35c]::future_obj::{impl#14}::into_raw),
+    - Compilable Targets (0/3 ~ 0.00%):
+  URAPI: DefId(0:192 ~ futures_task[b35c]::future_obj::if_alloc::{impl#5}::into_raw),
+    - Compilable Targets (0/3 ~ 0.00%):
+  URAPI: DefId(0:107 ~ futures_task[b35c]::future_obj::{impl#4}::poll),
+    - Compilable Targets (0/27 ~ 0.00%):
+  URAPI: DefId(0:94 ~ futures_task[b35c]::future_obj::{impl#1}::new),
+    - 0 targets generated.
+  URAPI: DefId(0:152 ~ futures_task[b35c]::future_obj::{impl#13}::into_raw),
+    - Compilable Targets (0/3 ~ 0.00%):
+  URAPI: DefId(0:207 ~ futures_task[b35c]::future_obj::if_alloc::{impl#9}::from),
+    - Compilable Targets (0/3 ~ 0.00%):
+  URAPI: DefId(0:305 ~ futures_task[b35c]::waker_ref::waker_ref),
+    - Compilable Targets (0/8 ~ 0.00%):
+  URAPI: DefId(0:200 ~ futures_task[b35c]::future_obj::if_alloc::{impl#7}::from),
+    - Compilable Targets (0/20 ~ 0.00%):
+  URAPI: DefId(0:221 ~ futures_task[b35c]::future_obj::if_alloc::{impl#13}::from),
+    - Compilable Targets (0/3 ~ 0.00%):
+  URAPI: DefId(0:197 ~ futures_task[b35c]::future_obj::if_alloc::{impl#6}::from),
+    - Compilable Targets (0/2 ~ 0.00%):
+  URAPI: DefId(0:218 ~ futures_task[b35c]::future_obj::if_alloc::{impl#12}::from),
+    - Compilable Targets (0/3 ~ 0.00%):
+  URAPI: DefId(0:211 ~ futures_task[b35c]::future_obj::if_alloc::{impl#10}::from),
+    - Compilable Targets (0/2 ~ 0.00%):
+  URAPI: DefId(0:300 ~ futures_task[b35c]::waker_ref::{impl#0}::new),
+    - Compilable Targets (1/9 ~ 11.11%):
+        * futures-task_fuzz_4764600652906951930 [22.628694796s]
+  URAPI: DefId(0:110 ~ futures_task[b35c]::future_obj::{impl#5}::drop),
+    - Compilable Targets (0/14 ~ 0.00%):
+  URAPI: DefId(0:237 ~ futures_task[b35c]::noop_waker::noop_waker),
+    - Compilable Targets (1/1 ~ 100.00%):
+        * futures-task_fuzz_15409278657470651456 [7.944441612s]
+  URAPI: DefId(0:274 ~ futures_task[b35c]::waker::waker),
+    - Compilable Targets (0/8 ~ 0.00%):
+------------------------------------------------------------------------------------------------------------------------------------

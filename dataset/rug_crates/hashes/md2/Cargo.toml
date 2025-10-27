@@ -1,0 +1,24 @@
+[package]
+name = "md2"
+version = "0.10.2"
+license = "MIT OR Apache-2.0"
+authors = ["RustCrypto Developers"]
+description = "MD2 hash function"
+readme = "README.md"
+edition = "2018"
+documentation = "https://docs.rs/md2"
+repository = "https://github.com/RustCrypto/hashes"
+keywords = ["crypto", "md2", "hash", "digest"]
+categories = ["cryptography", "no-std"]
+
+[dependencies]
+digest = "0.10.7"
+
+[dev-dependencies]
+digest = { version = "0.10.7", features = ["dev"] }
+hex-literal = "0.2.2"
+
+[features]
+default = ["std"]
+std = ["digest/std"]
+oid = ["digest/oid"]

@@ -1,0 +1,11 @@
+string_interner::StringInterner::new () -> StringInterner<S> { DROP }
+string_interner::StringInterner::with_capacity (usize) -> StringInterner<S> { DROP }
+string_interner::StringInterner::capacity (&StringInterner<S>) -> usize { }
+string_interner::StringInterner::reserve (&mut StringInterner<S>, usize) -> () { MUTATE }
+string_interner::StringInterner::len (&StringInterner<S, H>) -> usize { }
+string_interner::StringInterner::is_empty (&StringInterner<S, H>) -> bool { }
+string_interner::StringInterner::iter (&StringInterner<S, H>) -> Iter<S> { }
+string_interner::StringInterner::iter_values (&StringInterner<S, H>) -> Values<S> { }
+string_interner::StringInterner::shrink_to_fit (&mut StringInterner<S, H>) -> () { MUTATE }
+string_interner::Sym::from_usize (usize) -> Sym { UNSAFE}
+string_interner::Symbol::to_usize (Sym) -> usize { }

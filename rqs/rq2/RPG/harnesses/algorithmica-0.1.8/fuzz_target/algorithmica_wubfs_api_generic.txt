@@ -1,0 +1,4 @@
+algorithmica::tree::Node::create (i32) -> std::boxed::Box<tree::Node> { }
+algorithmica::tree::Node::add_new (std::option::Option<std::boxed::Box<tree::Node>>, i32) -> std::option::Option<std::boxed::Box<tree::Node>> { DROP }
+algorithmica::tree::bst::BST::new () -> tree::bst::BST<T> { }
+algorithmica::tree::bst::BST::is_empty (&tree::bst::BST<T>) -> bool { }

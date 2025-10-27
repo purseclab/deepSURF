@@ -1,0 +1,16 @@
+[workspace]
+
+[package]
+name = "slice-deque_fuzz_2456398796353451546"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "slice-deque_fuzz_2456398796353451546"
+path = "src/slice-deque_fuzz_2456398796353451546.rs"
+
+[dependencies]
+afl = "=0.15.7"
+home = "=0.5.9"
+slice-deque = { path = "../../../../slice-deque-0.3.0/" }
+global_data = { path = "../../../../../../../../code/global_data" }

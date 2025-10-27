@@ -1,0 +1,16 @@
+[workspace]
+
+[package]
+name = "secp256k1_fuzz_12860908378340537685"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "secp256k1_fuzz_12860908378340537685"
+path = "src/secp256k1_fuzz_12860908378340537685.rs"
+
+[dependencies]
+afl = "=0.15.7"
+home = "=0.5.9"
+secp256k1 = { path = "../../../../secp256k1-0.22.0/" }
+global_data = { path = "../../../../../../../../code/global_data" }

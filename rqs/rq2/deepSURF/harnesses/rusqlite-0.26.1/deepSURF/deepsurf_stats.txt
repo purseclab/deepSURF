@@ -1,0 +1,146 @@
+
+Total Stats:
+------------------------------------------------------------------------------------------------------------------------------------
+* Total URAPI Coverage: 85/101 (84.16%).
+* LLM URAPI Coverage: 70/101 (69.31%).
+* Total Targets (including targets directly imported from SURF): 112 in [38730.086457023s].
+* URAPIs w/ Custom Functionality: 28/101 (27.72%).
+------------------------------------------------------------------------------------------------------------------------------------
+
+Redundant-Targets:
+------------------------------------------------------------------------------------------------------------------------------------
+  * rusqlite_fuzz_9174874665649661397_deepseek-r1_turn3
+  * rusqlite_fuzz_18303384782548388908_deepseek-r1_turn6
+  * rusqlite_fuzz_4474088279540666994_deepseek-r1_turn2
+  * rusqlite_fuzz_16567295868750089767_deepseek-r1_turn5
+------------------------------------------------------------------------------------------------------------------------------------
+
+Targeted-URAPI-Miss-Targets:
+------------------------------------------------------------------------------------------------------------------------------------
+  * rusqlite_fuzz_17393861872593363319_deepseek-r1_turn3
+  * rusqlite_fuzz_18303384782548388908_deepseek-r1_turn6
+  * rusqlite_fuzz_1706704689413529980_deepseek-r1_turn4
+  * rusqlite_fuzz_13258355100420326526_deepseek-r1_turn5
+  * rusqlite_fuzz_5115498555793899015_deepseek-r1_turn6
+  * rusqlite_fuzz_4474088279540666994_deepseek-r1_turn2
+  * rusqlite_fuzz_16567295868750089767_deepseek-r1_turn5
+  * rusqlite_fuzz_7540104343075682740_deepseek-r1_turn3
+  * rusqlite_fuzz_11659230840788413241_deepseek-r1_turn6
+  * rusqlite_fuzz_9174874665649661397_deepseek-r1_turn3
+  * rusqlite_fuzz_11367218998323447541_deepseek-r1_turn3
+  * rusqlite_fuzz_10165467311953390070_deepseek-r1_turn6
+------------------------------------------------------------------------------------------------------------------------------------
+
+Targets For Fuzzing:
+  - [CondSkip]: Set of Fuzzing Targets = Total-Targets - Redundant-Targets
+------------------------------------------------------------------------------------------------------------------------------------
+Count: 108
+  * rusqlite_fuzz_6304470279047077875_deepseek-r1_turn5
+  * rusqlite_fuzz_17935802521909350883
+  * rusqlite_fuzz_10575559936402793094
+  * rusqlite_fuzz_17393861872593363319_deepseek-r1_turn3
+  * rusqlite_fuzz_10841974901790040329
+  * rusqlite_fuzz_18138798661975417833_deepseek-r1_turn5
+  * rusqlite_fuzz_491101221682830812
+  * rusqlite_fuzz_17506934217887935464
+  * rusqlite_fuzz_15888147835300043452_deepseek-r1_turn3
+  * rusqlite_fuzz_5836493307954320307
+  * rusqlite_fuzz_7493121694840647337
+  * rusqlite_fuzz_17272032651547189299_deepseek-r1_turn4
+  * rusqlite_fuzz_17419806684545202254_deepseek-r1_turn3
+  * rusqlite_fuzz_18303384782548388908
+  * rusqlite_fuzz_12445100841051341615_deepseek-r1_turn3
+  * rusqlite_fuzz_11954459892943682272
+  * rusqlite_fuzz_4584380785286817290
+  * rusqlite_fuzz_13682355593252713464
+  * rusqlite_fuzz_3367748654034018327_deepseek-r1_turn6
+  * rusqlite_fuzz_2412263837386699164
+  * rusqlite_fuzz_13607100223320362770
+  * rusqlite_fuzz_12962659554441541781
+  * rusqlite_fuzz_11367218998323447541_deepseek-r1_turn3
+  * rusqlite_fuzz_16138635281942172449
+  * rusqlite_fuzz_9758399699309783974
+  * rusqlite_fuzz_12895102765163007940
+  * rusqlite_fuzz_16548864798179868294
+  * rusqlite_fuzz_14011536174044260552
+  * rusqlite_fuzz_12847949628901230266
+  * rusqlite_fuzz_5778422235176949304
+  * rusqlite_fuzz_13993123350600316118_deepseek-r1_turn3
+  * rusqlite_fuzz_4474088279540666994
+  * rusqlite_fuzz_5327971451169577230
+  * rusqlite_fuzz_6660911690412533725
+  * rusqlite_fuzz_1706704689413529980_deepseek-r1_turn4
+  * rusqlite_fuzz_9621479707312451691
+  * rusqlite_fuzz_15648045394580602649_deepseek-r1_turn5
+  * rusqlite_fuzz_10165467311953390070
+  * rusqlite_fuzz_16994029556116132615
+  * rusqlite_fuzz_10980350294055038318_deepseek-r1_turn5
+  * rusqlite_fuzz_10765711168721850138
+  * rusqlite_fuzz_10252964377864275959_deepseek-r1_turn5
+  * rusqlite_fuzz_15065957108424003493_deepseek-r1_turn3
+  * rusqlite_fuzz_16259440386170294502
+  * rusqlite_fuzz_5369253860693893574
+  * rusqlite_fuzz_16548864798179868294_deepseek-r1_turn3
+  * rusqlite_fuzz_3463322498941092853
+  * rusqlite_fuzz_16248124119729635163
+  * rusqlite_fuzz_13258355100420326526_deepseek-r1_turn5
+  * rusqlite_fuzz_8694204436700690199
+  * rusqlite_fuzz_9028477670433776341
+  * rusqlite_fuzz_10365423276941111418_deepseek-r1_turn4
+  * rusqlite_fuzz_9174874665649661397
+  * rusqlite_fuzz_14091872570678981962
+  * rusqlite_fuzz_7540104343075682740_deepseek-r1_turn3
+  * rusqlite_fuzz_1979702421728538986
+  * rusqlite_fuzz_18321054881818275469
+  * rusqlite_fuzz_828134452694340424
+  * rusqlite_fuzz_1711686084007466323
+  * rusqlite_fuzz_11105991455372048979
+  * rusqlite_fuzz_15849535207006544158_deepseek-r1_turn5
+  * rusqlite_fuzz_3246265905939336003
+  * rusqlite_fuzz_11659230840788413241_deepseek-r1_turn6
+  * rusqlite_fuzz_17455926547278325120
+  * rusqlite_fuzz_10813266446549885928
+  * rusqlite_fuzz_16783710667706225260
+  * rusqlite_fuzz_10336274635736215657
+  * rusqlite_fuzz_13190717095507946307_deepseek-r1_turn5
+  * rusqlite_fuzz_13993123350600316118
+  * rusqlite_fuzz_13301910629946163260
+  * rusqlite_fuzz_13582652999343541926
+  * rusqlite_fuzz_5115498555793899015_deepseek-r1_turn6
+  * rusqlite_fuzz_17408044094500110453
+  * rusqlite_fuzz_5115498555793899015
+  * rusqlite_fuzz_15589029696308394645
+  * rusqlite_fuzz_16461839562500751049
+  * rusqlite_fuzz_14151487278701186370
+  * rusqlite_fuzz_7051263376646873208
+  * rusqlite_fuzz_16567295868750089767
+  * rusqlite_fuzz_10357925701960576690_deepseek-r1_turn4
+  * rusqlite_fuzz_6542749198875314019
+  * rusqlite_fuzz_7540104343075682740
+  * rusqlite_fuzz_12923795775880503925_deepseek-r1_turn6
+  * rusqlite_fuzz_12070985253212303630
+  * rusqlite_fuzz_2585166828415365182
+  * rusqlite_fuzz_13737202265080443742
+  * rusqlite_fuzz_6542749198875314019_deepseek-r1_turn5
+  * rusqlite_fuzz_2006257039350389713
+  * rusqlite_fuzz_13369315838752150046
+  * rusqlite_fuzz_11027336211298195787
+  * rusqlite_fuzz_12099013318629446229
+  * rusqlite_fuzz_5178370451866432695
+  * rusqlite_fuzz_10165467311953390070_deepseek-r1_turn6
+  * rusqlite_fuzz_6481709747474457567
+  * rusqlite_fuzz_15613377224788740867
+  * rusqlite_fuzz_6876110719251169775_deepseek-r1_turn3
+  * rusqlite_fuzz_13339624173744360096_deepseek-r1_turn6
+  * rusqlite_fuzz_4640728699879886973
+  * rusqlite_fuzz_3971687327336571432
+  * rusqlite_fuzz_14306385021394128370_deepseek-r1_turn4
+  * rusqlite_fuzz_16351080453339714933
+  * rusqlite_fuzz_3058667444169388227
+  * rusqlite_fuzz_15628968612274388839
+  * rusqlite_fuzz_8218476115353413478
+  * rusqlite_fuzz_17277026869193917314
+  * rusqlite_fuzz_5120935307130350631
+  * rusqlite_fuzz_13458445953420572115
+  * rusqlite_fuzz_16692162419235050871_deepseek-r1_turn3
+------------------------------------------------------------------------------------------------------------------------------------

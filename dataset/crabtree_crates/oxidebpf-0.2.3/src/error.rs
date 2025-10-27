@@ -1,0 +1,107 @@
+use nix::errno::Errno;
+use std::ffi::NulError;
+use std::fmt::Display;
+
+#[derive(Debug, PartialEq, Clone)]
+#[non_exhaustive]
+pub enum OxidebpfError {
+    BadPerfSample,
+    NoPerfData,
+    DebugFsNotMounted,
+    ThreadPollingError,
+    NumberParserError,
+    SelfTrace,
+    UnsupportedProgramType,
+    ProgramNotLoaded,
+    InvalidElf,
+    InvalidProgramLength,
+    InvalidInstructionLength,
+    KernelVersionNotFound,
+    MissingRelocationSection(u32),
+    InvalidMapObject,
+    /// If Errno is EPERM when receiving this error, check that the calling process
+    /// has appropriate capabilities (CAP_SYS_ADMIN, CAP_NET_ADMIN, and CAP_BPF are
+    /// typically required) and that the user's memlock limit is high enough to load
+    /// your programs. If the memlock limit is too low, this library exposes a
+    /// `set_memlock_limit(new_limit)` function which can raise it for you.
+    LinuxError(String, Errno),
+    PerfEventDoesNotExist,
+    PerfIoctlError(nix::Error),
+    CStringConversionError(NulError),
+    MapNotLoaded,
+    ProgramNotFound(String),
+    MapNotFound(String),
+    NoProgramVersionLoaded(Vec<OxidebpfError>),
+    FileIOError,
+    Utf8StringConversionError,
+    CpuOnlineFormatError,
+    BadPageSize,
+    BadPageCount,
+    UnsupportedEventType,
+    MultipleErrors(Vec<OxidebpfError>),
+    UncaughtMountNsError,
+    BpfProgLoadError((Box<OxidebpfError>, String)),
+    MapValueSizeMismatch,
+    MapKeySizeMismatch,
+    ProgramGroupAlreadyLoaded,
+    RetryError(String),
+    LockError,
+    /// This error is returned when trying to attach a kretprobe with debugfs.
+    /// There's a chance we need to change the path name and retry, which is what
+    /// this error indicates.
+    KretprobeNamingError,
+    UnknownPerfEvent(u32),
+}
+
+impl Display for OxidebpfError {
+    fn fmt(&self, f: &mut std::fmt::Formatter) -> std::fmt::Result {
+        match self {
+            OxidebpfError::NoProgramVersionLoaded(e) => {
+                for err in e {
+                    match err {
+                        OxidebpfError::BpfProgLoadError(e) => {
+                            if let Err(e) = write!(f, "{}", &e.1) {
+                                return Err(e);
+                            };
+                        }
+                        _ => {
+                            if let Err(e) = write!(f, "{:?}", err) {
+                                return Err(e);
+                            };
+                        }
+                    }
+                }
+                Ok(())
+            }
+            _ => {
+                write!(f, "{:?}", self)
+            }
+        }
+    }
+}
+
+impl std::error::Error for OxidebpfError {}
+
+impl From<Vec<OxidebpfError>> for OxidebpfError {
+    fn from(e: Vec<OxidebpfError>) -> Self {
+        Self::MultipleErrors(e)
+    }
+}
+
+impl From<retry::Error<OxidebpfError>> for OxidebpfError {
+    fn from(e: retry::Error<OxidebpfError>) -> Self {
+        match e {
+            retry::Error::Operation { error, .. } => error,
+            retry::Error::Internal(i) => OxidebpfError::RetryError(i),
+        }
+    }
+}
+
+impl From<retry::Error<&str>> for OxidebpfError {
+    fn from(e: retry::Error<&str>) -> Self {
+        match e {
+            retry::Error::Operation { error, .. } => OxidebpfError::RetryError(error.to_string()),
+            retry::Error::Internal(i) => OxidebpfError::RetryError(i),
+        }
+    }
+}

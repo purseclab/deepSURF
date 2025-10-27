@@ -1,0 +1,199 @@
+     Removed 85 files, 2.6MiB total
+   Compiling libc v0.2.175
+   Compiling log v0.4.28
+   Compiling rustc-serialize v0.3.25
+   Compiling memchr v2.7.5
+   Compiling unicode-xid v0.0.3
+   Compiling term v0.4.6
+   Compiling regex-syntax v0.8.6
+   Compiling bitflags v0.5.0
+   Compiling semver v1.0.26
+   Compiling home v0.5.5
+   Compiling glob v0.2.11
+   Compiling pnet_base v0.26.0
+   Compiling xdg v2.5.2
+   Compiling global_data v0.1.0 (/home/cdc/deepSURF-sp26-artifacts/artifact_code/global_data)
+   Compiling afl v0.15.7
+   Compiling log v0.3.9
+   Compiling pnet_macros_support v0.26.0
+   Compiling aho-corasick v1.1.3
+   Compiling rustc_version v0.4.1
+   Compiling syntex_pos v0.42.0
+   Compiling syntex_errors v0.42.0
+   Compiling syntex_syntax v0.42.0
+   Compiling regex-automata v0.4.10
+   Compiling regex v1.11.2
+   Compiling syntex v0.42.2
+   Compiling pnet_macros v0.26.0
+   Compiling pnet_packet v0.26.0 (/home/cdc/deepSURF-sp26-artifacts/artifact_data/dataset/erasan_crates/pnet_packet-0.26.0)
+warning: unnecessary braces around method argument
+   --> /home/cdc/deepSURF-sp26-artifacts/artifact_data/dataset/erasan_crates/pnet_packet-0.26.0/src/out/gre.rs:387:22
+    |
+387 |             vec.push({ (packet[co] as u8) });
+    |                      ^^                  ^^
+    |
+    = note: `#[warn(unused_braces)]` on by default
+help: remove these braces
+    |
+387 -             vec.push({ (packet[co] as u8) });
+387 +             vec.push((packet[co] as u8));
+    |
+
+warning: unnecessary braces around method argument
+   --> /home/cdc/deepSURF-sp26-artifacts/artifact_data/dataset/erasan_crates/pnet_packet-0.26.0/src/out/gre.rs:760:22
+    |
+760 |             vec.push({ (packet[co] as u8) });
+    |                      ^^                  ^^
+    |
+help: remove these braces
+    |
+760 -             vec.push({ (packet[co] as u8) });
+760 +             vec.push((packet[co] as u8));
+    |
+
+warning: unnecessary braces around method argument
+    --> /home/cdc/deepSURF-sp26-artifacts/artifact_data/dataset/erasan_crates/pnet_packet-0.26.0/src/out/ipv4.rs:1407:22
+     |
+1407 |             vec.push({ (packet[co] as u8) });
+     |                      ^^                  ^^
+     |
+help: remove these braces
+     |
+1407 -             vec.push({ (packet[co] as u8) });
+1407 +             vec.push((packet[co] as u8));
+     |
+
+warning: unnecessary braces around method argument
+    --> /home/cdc/deepSURF-sp26-artifacts/artifact_data/dataset/erasan_crates/pnet_packet-0.26.0/src/out/ipv4.rs:1530:22
+     |
+1530 |             vec.push({ (packet[co] as u8) });
+     |                      ^^                  ^^
+     |
+help: remove these braces
+     |
+1530 -             vec.push({ (packet[co] as u8) });
+1530 +             vec.push((packet[co] as u8));
+     |
+
+warning: unnecessary braces around method argument
+    --> /home/cdc/deepSURF-sp26-artifacts/artifact_data/dataset/erasan_crates/pnet_packet-0.26.0/src/out/tcp.rs:1009:22
+     |
+1009 |             vec.push({ (packet[co] as u8) });
+     |                      ^^                  ^^
+     |
+help: remove these braces
+     |
+1009 -             vec.push({ (packet[co] as u8) });
+1009 +             vec.push((packet[co] as u8));
+     |
+
+warning: unnecessary braces around method argument
+    --> /home/cdc/deepSURF-sp26-artifacts/artifact_data/dataset/erasan_crates/pnet_packet-0.26.0/src/out/tcp.rs:1110:22
+     |
+1110 |             vec.push({ (packet[co] as u8) });
+     |                      ^^                  ^^
+     |
+help: remove these braces
+     |
+1110 -             vec.push({ (packet[co] as u8) });
+1110 +             vec.push((packet[co] as u8));
+     |
+
+warning: `pnet_packet` (lib) generated 6 warnings (run `cargo fix --lib -p pnet_packet` to apply 6 suggestions)
+   Compiling pnet_packet_fuzz_2914112639123794018 v0.1.0 (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#24-pnet_packet/harness)
+warning: the item `TryInto` is imported redundantly
+   --> src/pnet_packet_fuzz_2914112639123794018.rs:214:9
+    |
+214 |     use std::convert::TryInto;
+    |         ^^^^^^^^^^^^^^^^^^^^^
+   --> /rustc/11f32b73e0dc9287e305b5b9980d24aecdc8c17f/library/std/src/prelude/mod.rs:129:13
+    |
+    = note: the item `TryInto` is already defined here
+    |
+    = note: `#[warn(unused_imports)]` on by default
+
+warning: the item `TryInto` is imported redundantly
+   --> src/pnet_packet_fuzz_2914112639123794018.rs:221:9
+    |
+221 |     use std::convert::TryInto;
+    |         ^^^^^^^^^^^^^^^^^^^^^
+   --> /rustc/11f32b73e0dc9287e305b5b9980d24aecdc8c17f/library/std/src/prelude/mod.rs:129:13
+    |
+    = note: the item `TryInto` is already defined here
+
+warning: variable does not need to be mutable
+  --> src/pnet_packet_fuzz_2914112639123794018.rs:59:25
+   |
+59 |                     let mut ipv4 = _unwrap_option(pnet_packet::ipv4::MutableIpv4Packet::new(slice));
+   |                         ----^^^^
+   |                         |
+   |                         help: remove this `mut`
+   |
+   = note: `#[warn(unused_mut)]` on by default
+
+warning: variable `GLOBAL_DATA` should have a snake case name
+  --> src/pnet_packet_fuzz_2914112639123794018.rs:13:13
+   |
+13 |         let GLOBAL_DATA = global_data.first_half;
+   |             ^^^^^^^^^^^ help: convert the identifier to snake case: `global_data`
+   |
+   = note: `#[warn(non_snake_case)]` on by default
+
+warning: `pnet_packet_fuzz_2914112639123794018` (bin "pnet_packet_fuzz_2914112639123794018") generated 4 warnings (run `cargo fix --bin "pnet_packet_fuzz_2914112639123794018"` to apply 1 suggestion)
+    Finished dev [unoptimized + debuginfo] target(s) in 16.84s
+[45, 30, 242, 242, 242, 242, 51, 0, 0, 0, 0, 255, 221, 0, 0, 0, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 64, 0, 0, 0, 0, 0, 255, 0, 0, 0, 0, 100, 16, 209, 46, 210, 22, 48, 162, 162, 162]
+=================================================================
+==1399595==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x503000000150 at pc 0x55a0f8fe6134 bp 0x7ffc0cac3050 sp 0x7ffc0cac2810
+WRITE of size 28 at 0x503000000150 thread T0
+    #0 0x55a0f8fe6133  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#24-pnet_packet/harness/target/x86_64-unknown-linux-gnu/debug/pnet_packet_fuzz_2914112639123794018+0xb4133) (BuildId: 6d96af2250382b7a5c418fce25e7f2f3a5168ee1)
+    #1 0x55a0f90299f6  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#24-pnet_packet/harness/target/x86_64-unknown-linux-gnu/debug/pnet_packet_fuzz_2914112639123794018+0xf79f6) (BuildId: 6d96af2250382b7a5c418fce25e7f2f3a5168ee1)
+    #2 0x55a0f9032b7a  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#24-pnet_packet/harness/target/x86_64-unknown-linux-gnu/debug/pnet_packet_fuzz_2914112639123794018+0x100b7a) (BuildId: 6d96af2250382b7a5c418fce25e7f2f3a5168ee1)
+    #3 0x55a0f901cdf1  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#24-pnet_packet/harness/target/x86_64-unknown-linux-gnu/debug/pnet_packet_fuzz_2914112639123794018+0xeadf1) (BuildId: 6d96af2250382b7a5c418fce25e7f2f3a5168ee1)
+    #4 0x55a0f9016d11  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#24-pnet_packet/harness/target/x86_64-unknown-linux-gnu/debug/pnet_packet_fuzz_2914112639123794018+0xe4d11) (BuildId: 6d96af2250382b7a5c418fce25e7f2f3a5168ee1)
+    #5 0x55a0f9016d60  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#24-pnet_packet/harness/target/x86_64-unknown-linux-gnu/debug/pnet_packet_fuzz_2914112639123794018+0xe4d60) (BuildId: 6d96af2250382b7a5c418fce25e7f2f3a5168ee1)
+    #6 0x55a0f90588e0  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#24-pnet_packet/harness/target/x86_64-unknown-linux-gnu/debug/pnet_packet_fuzz_2914112639123794018+0x1268e0) (BuildId: 6d96af2250382b7a5c418fce25e7f2f3a5168ee1)
+    #7 0x55a0f9032d35  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#24-pnet_packet/harness/target/x86_64-unknown-linux-gnu/debug/pnet_packet_fuzz_2914112639123794018+0x100d35) (BuildId: 6d96af2250382b7a5c418fce25e7f2f3a5168ee1)
+    #8 0x7f32032efd8f  (/lib/x86_64-linux-gnu/libc.so.6+0x29d8f) (BuildId: 490fef8403240c91833978d494d39e537409b92e)
+    #9 0x7f32032efe3f  (/lib/x86_64-linux-gnu/libc.so.6+0x29e3f) (BuildId: 490fef8403240c91833978d494d39e537409b92e)
+    #10 0x55a0f8f60ce4  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#24-pnet_packet/harness/target/x86_64-unknown-linux-gnu/debug/pnet_packet_fuzz_2914112639123794018+0x2ece4) (BuildId: 6d96af2250382b7a5c418fce25e7f2f3a5168ee1)
+
+0x503000000150 is located 0 bytes after 32-byte region [0x503000000130,0x503000000150)
+allocated by thread T0 here:
+    #0 0x55a0f8fe7c9e  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#24-pnet_packet/harness/target/x86_64-unknown-linux-gnu/debug/pnet_packet_fuzz_2914112639123794018+0xb5c9e) (BuildId: 6d96af2250382b7a5c418fce25e7f2f3a5168ee1)
+    #1 0x55a0f901ebb8  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#24-pnet_packet/harness/target/x86_64-unknown-linux-gnu/debug/pnet_packet_fuzz_2914112639123794018+0xecbb8) (BuildId: 6d96af2250382b7a5c418fce25e7f2f3a5168ee1)
+    #2 0x55a0f9032b7a  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#24-pnet_packet/harness/target/x86_64-unknown-linux-gnu/debug/pnet_packet_fuzz_2914112639123794018+0x100b7a) (BuildId: 6d96af2250382b7a5c418fce25e7f2f3a5168ee1)
+    #3 0x55a0f9016d11  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#24-pnet_packet/harness/target/x86_64-unknown-linux-gnu/debug/pnet_packet_fuzz_2914112639123794018+0xe4d11) (BuildId: 6d96af2250382b7a5c418fce25e7f2f3a5168ee1)
+
+SUMMARY: AddressSanitizer: heap-buffer-overflow (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#24-pnet_packet/harness/target/x86_64-unknown-linux-gnu/debug/pnet_packet_fuzz_2914112639123794018+0xb4133) (BuildId: 6d96af2250382b7a5c418fce25e7f2f3a5168ee1) 
+Shadow bytes around the buggy address:
+  0x502ffffffe80: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x502fffffff00: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x502fffffff80: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x503000000000: fa fa 00 00 00 fa fa fa fd fd fd fd fa fa fd fd
+  0x503000000080: fd fd fa fa 00 00 00 00 fa fa fd fd fd fd fa fa
+=>0x503000000100: fd fd fd fd fa fa 00 00 00 00[fa]fa 00 00 00 04
+  0x503000000180: fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+  0x503000000200: fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+  0x503000000280: fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+  0x503000000300: fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+  0x503000000380: fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+Shadow byte legend (one shadow byte represents 8 application bytes):
+  Addressable:           00
+  Partially addressable: 01 02 03 04 05 06 07 
+  Heap left redzone:       fa
+  Freed heap region:       fd
+  Stack left redzone:      f1
+  Stack mid redzone:       f2
+  Stack right redzone:     f3
+  Stack after return:      f5
+  Stack use after scope:   f8
+  Global redzone:          f9
+  Global init order:       f6
+  Poisoned by user:        f7
+  Container overflow:      fc
+  Array cookie:            ac
+  Intra object redzone:    bb
+  ASan internal:           fe
+  Left alloca redzone:     ca
+  Right alloca redzone:    cb
+==1399595==ABORTING

@@ -1,0 +1,87 @@
+body {
+    font-family: monospace;
+    margin: 2em auto;
+}
+p {
+    margin-top: 1.2em;
+    margin-bottom: 1.2em;
+}
+span.settings {
+    display: inline-block;
+    vertical-align: top;
+    padding: 10px;
+}
+
+#dates {
+  text-align: right;
+}
+
+#dates h3 {
+  text-align: left;
+}
+
+span.compare {
+    display: inline-block;
+    vertical-align: top;
+    padding: 10px;
+}
+div.submit {
+    padding: 20px;
+    padding-top: 10px;
+    padding-right: 0;
+    text-align: right;
+}
+table {
+    font-size: small;
+}
+li {
+    max-width: 580px;
+}
+a {
+  color: #428bca;
+  text-decoration: none;
+}
+a:hover,
+a:focus {
+  color: #2a6496;
+  text-decoration: underline;
+}
+a:focus {
+  outline: thin dotted;
+  outline-offset: -2px;
+}
+li {
+    margin-bottom: .5em;
+}
+
+ul {
+    padding-left: 30px;
+}
+
+h2 {
+    font-weight: 500;
+    font-size: 18.5px; /* gridfit */
+}
+h3 {
+    font-weight: 500;
+}
+
+img {
+  border: 0;
+}
+.container {
+  padding-right: 1em;
+  padding-left: 1em;
+  margin-right: auto;
+  margin-left: auto;
+}
+@media (min-width: 600px) {
+    .container {
+        padding-right: 4em;
+        padding-left: 4em;
+    }
+}
+
+#as-of {
+    text-align: center;
+}

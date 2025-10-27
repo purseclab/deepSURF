@@ -1,0 +1,11 @@
+/root/deepSURF/rqs/rq2/deepSURF/harnesses/futures-0.3.5/futures-task/deepSURF/fuzzing_corpus/futures-task_fuzz_4679473458943732427_deepseek-r1_turn4/target/debug/deps/libsemver-621e6f09d91bc11e.rmeta: /root/.cargo/registry/src/index.crates.io-6f17d22bba15001f/semver-1.0.27/src/lib.rs /root/.cargo/registry/src/index.crates.io-6f17d22bba15001f/semver-1.0.27/src/display.rs /root/.cargo/registry/src/index.crates.io-6f17d22bba15001f/semver-1.0.27/src/error.rs /root/.cargo/registry/src/index.crates.io-6f17d22bba15001f/semver-1.0.27/src/eval.rs /root/.cargo/registry/src/index.crates.io-6f17d22bba15001f/semver-1.0.27/src/identifier.rs /root/.cargo/registry/src/index.crates.io-6f17d22bba15001f/semver-1.0.27/src/impls.rs /root/.cargo/registry/src/index.crates.io-6f17d22bba15001f/semver-1.0.27/src/parse.rs
+
+/root/deepSURF/rqs/rq2/deepSURF/harnesses/futures-0.3.5/futures-task/deepSURF/fuzzing_corpus/futures-task_fuzz_4679473458943732427_deepseek-r1_turn4/target/debug/deps/semver-621e6f09d91bc11e.d: /root/.cargo/registry/src/index.crates.io-6f17d22bba15001f/semver-1.0.27/src/lib.rs /root/.cargo/registry/src/index.crates.io-6f17d22bba15001f/semver-1.0.27/src/display.rs /root/.cargo/registry/src/index.crates.io-6f17d22bba15001f/semver-1.0.27/src/error.rs /root/.cargo/registry/src/index.crates.io-6f17d22bba15001f/semver-1.0.27/src/eval.rs /root/.cargo/registry/src/index.crates.io-6f17d22bba15001f/semver-1.0.27/src/identifier.rs /root/.cargo/registry/src/index.crates.io-6f17d22bba15001f/semver-1.0.27/src/impls.rs /root/.cargo/registry/src/index.crates.io-6f17d22bba15001f/semver-1.0.27/src/parse.rs
+
+/root/.cargo/registry/src/index.crates.io-6f17d22bba15001f/semver-1.0.27/src/lib.rs:
+/root/.cargo/registry/src/index.crates.io-6f17d22bba15001f/semver-1.0.27/src/display.rs:
+/root/.cargo/registry/src/index.crates.io-6f17d22bba15001f/semver-1.0.27/src/error.rs:
+/root/.cargo/registry/src/index.crates.io-6f17d22bba15001f/semver-1.0.27/src/eval.rs:
+/root/.cargo/registry/src/index.crates.io-6f17d22bba15001f/semver-1.0.27/src/identifier.rs:
+/root/.cargo/registry/src/index.crates.io-6f17d22bba15001f/semver-1.0.27/src/impls.rs:
+/root/.cargo/registry/src/index.crates.io-6f17d22bba15001f/semver-1.0.27/src/parse.rs:

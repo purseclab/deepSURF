@@ -1,0 +1,1499 @@
+deepSURF: Generated Targets to be Fuzzed
+------------------------------------------------------------------------------------------------------------------------------------
+  StableURAPI: eq::/home/cdc/SURF/deepSURF-big-experiment-harnesses/http-0.1.19/src/header/value.rs::732,
+    - URAPI: DefId(0:730 ~ http[2aa2]::header::value::{impl#35}::eq),
+    - Macro-expanded: false,
+    - LLM-improved: false,
+    - Fuzzing Targets:
+      * http_fuzz_9562790850080137009
+      * http_fuzz_8094354155944632543
+      * http_fuzz_10661177476743654774
+  StableURAPI: fmt::/home/cdc/SURF/deepSURF-big-experiment-harnesses/http-0.1.19/src/uri/scheme.rs::172,
+    - URAPI: DefId(0:1508 ~ http[2aa2]::uri::scheme::{impl#6}::fmt),
+    - Macro-expanded: false,
+    - LLM-improved: false,
+    - Fuzzing Targets:
+      * http_fuzz_14824197313073056012
+  StableURAPI: try_from::/home/cdc/SURF/deepSURF-big-experiment-harnesses/http-0.1.19/src/header/name.rs::1923,
+    - URAPI: DefId(0:558 ~ http[2aa2]::header::name::{impl#17}::try_from),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * http_fuzz_15407387830709233043_deepseek-r1_turn4
+  StableURAPI: partial_cmp::/home/cdc/SURF/deepSURF-big-experiment-harnesses/http-0.1.19/src/uri/path.rs::406,
+    - URAPI: DefId(0:1411 ~ http[2aa2]::uri::path::{impl#17}::partial_cmp),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * http_fuzz_3013850531557132465_deepseek-r1_turn4
+      * http_fuzz_17499758452050100868_deepseek-r1_turn6
+  StableURAPI: partial_cmp::/home/cdc/SURF/deepSURF-big-experiment-harnesses/http-0.1.19/src/uri/authority.rs::354,
+    - URAPI: DefId(0:1272 ~ http[2aa2]::uri::authority::{impl#12}::partial_cmp),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * http_fuzz_11742874337819524145_deepseek-r1_turn5
+      * http_fuzz_17499758452050100868_deepseek-r1_turn6
+  StableURAPI: remove::/home/cdc/SURF/deepSURF-big-experiment-harnesses/http-0.1.19/src/header/map.rs::1290,
+    - URAPI: DefId(0:208 ~ http[2aa2]::header::map::{impl#23}::next),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * http_fuzz_18286377120929404909_deepseek-r1_turn3
+      * http_fuzz_630690239127171415_deepseek-r1_turn1
+      * http_fuzz_832988195758324698_deepseek-r1_turn5
+      * http_fuzz_17801382227913130406_deepseek-r1_turn5
+      * http_fuzz_1033577502195283290_deepseek-r1_turn3
+      * http_fuzz_15407387830709233043_deepseek-r1_turn4
+      * http_fuzz_15668099243118148896_deepseek-r1_turn3
+  StableURAPI: try_from::/home/cdc/SURF/deepSURF-big-experiment-harnesses/http-0.1.19/src/uri/path.rs::298,
+    - URAPI: DefId(0:1419 ~ http[2aa2]::uri::path::{impl#20}::partial_cmp),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * http_fuzz_3013850531557132465_deepseek-r1_turn4
+      * http_fuzz_16619793432602079741_deepseek-r1_turn2
+  StableURAPI: size_hint::/home/cdc/SURF/deepSURF-big-experiment-harnesses/http-0.1.19/src/header/map.rs::2092,
+    - URAPI: DefId(0:217 ~ http[2aa2]::header::map::{impl#24}::size_hint),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * http_fuzz_18286377120929404909_deepseek-r1_turn3
+      * http_fuzz_3362688223832736006_deepseek-r1_turn3
+  StableURAPI: from_str::/home/cdc/SURF/deepSURF-big-experiment-harnesses/http-0.1.19/src/header/value.rs::106,
+    - URAPI: DefId(0:633 ~ http[2aa2]::header::value::{impl#0}::from_str),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * http_fuzz_1713225404873377248_deepseek-r1_turn2
+      * http_fuzz_11208984897607767141_deepseek-r1_turn2
+      * http_fuzz_3362688223832736006_deepseek-r1_turn3
+      * http_fuzz_18064376459007522246_deepseek-r1_turn6
+      * http_fuzz_15271004787838234199_deepseek-r1_turn5
+      * http_fuzz_11941034398563315348_deepseek-r1_turn5
+      * http_fuzz_10755525721000006111_deepseek-r1_turn3
+      * http_fuzz_4718405918461946120_deepseek-r1_turn3
+      * http_fuzz_4407497658046288733_deepseek-r1_turn6
+      * http_fuzz_7913316134776891349_deepseek-r1_turn3
+      * http_fuzz_1129203924549505096_deepseek-r1_turn4
+      * http_fuzz_8246734304335439568_deepseek-r1_turn6
+      * http_fuzz_15125643739086163309_deepseek-r1_turn6
+      * http_fuzz_772524812641693857_deepseek-r1_turn5
+      * http_fuzz_4521340454861179515_deepseek-r1_turn3
+      * http_fuzz_630690239127171415_deepseek-r1_turn1
+  StableURAPI: drop::/home/cdc/SURF/deepSURF-big-experiment-harnesses/http-0.1.19/src/header/map.rs::2620,
+    - URAPI: DefId(0:310 ~ http[2aa2]::header::map::{impl#42}::drop),
+    - Macro-expanded: false,
+    - LLM-improved: false,
+    - Fuzzing Targets:
+      * http_fuzz_15191944480411141361
+      * http_fuzz_10708530162954877899
+  StableURAPI: header::/home/cdc/SURF/deepSURF-big-experiment-harnesses/http-0.1.19/src/request.rs::897,
+    - URAPI: DefId(0:984 ~ http[2aa2]::request::{impl#0}::patch),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * http_fuzz_4718405918461946120_deepseek-r1_turn3
+      * http_fuzz_12225452624617022263_deepseek-r1_turn4
+      * http_fuzz_633073009428178114_deepseek-r1_turn5
+      * http_fuzz_16338078492519129224_deepseek-r1_turn2
+      * http_fuzz_15125643739086163309_deepseek-r1_turn6
+      * http_fuzz_15711454402980519476_deepseek-r1_turn2
+      * http_fuzz_15407387830709233043_deepseek-r1_turn4
+      * http_fuzz_11941034398563315348_deepseek-r1_turn5
+      * http_fuzz_14489106343100526875_deepseek-r1_turn5
+      * http_fuzz_18366243088040221429_deepseek-r1_turn5
+      * http_fuzz_10551007774416917119_deepseek-r1_turn2
+      * http_fuzz_1713225404873377248_deepseek-r1_turn2
+  StableURAPI: try_from::/home/cdc/SURF/deepSURF-big-experiment-harnesses/http-0.1.19/src/uri/mod.rs::741,
+    - URAPI: DefId(0:1580 ~ http[2aa2]::uri::{impl#4}::try_from),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * http_fuzz_10551007774416917119_deepseek-r1_turn2
+  StableURAPI: eq::/home/cdc/SURF/deepSURF-big-experiment-harnesses/http-0.1.19/src/header/name.rs::2012,
+    - URAPI: DefId(0:578 ~ http[2aa2]::header::name::{impl#25}::eq),
+    - Macro-expanded: false,
+    - LLM-improved: false,
+    - Fuzzing Targets:
+      * http_fuzz_17499511304804928272
+  StableURAPI: eq::/home/cdc/SURF/deepSURF-big-experiment-harnesses/http-0.1.19/src/uri/authority.rs::332,
+    - URAPI: DefId(0:1260 ~ http[2aa2]::uri::authority::{impl#8}::eq),
+    - Macro-expanded: false,
+    - LLM-improved: false,
+    - Fuzzing Targets:
+      * http_fuzz_15125643739086163309
+  StableURAPI: drop::/home/cdc/SURF/deepSURF-big-experiment-harnesses/http-0.1.19/src/header/map.rs::2141,
+    - URAPI: DefId(0:228 ~ http[2aa2]::header::map::{impl#26}::drop),
+    - Macro-expanded: false,
+    - LLM-improved: false,
+    - Fuzzing Targets:
+      * http_fuzz_10724146807323519118
+      * http_fuzz_12225452624617022263
+  StableURAPI: from_iter::/home/cdc/SURF/deepSURF-big-experiment-harnesses/http-0.1.19/src/header/map.rs::1718,
+    - URAPI: DefId(0:210 ~ http[2aa2]::header::map::{impl#23}::size_hint),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * http_fuzz_11571823832979613380_deepseek-r1_turn5
+  StableURAPI: fmt::/home/cdc/SURF/deepSURF-big-experiment-harnesses/http-0.1.19/src/uri/authority.rs::495,
+    - URAPI: DefId(0:1315 ~ http[2aa2]::uri::authority::{impl#24}::fmt),
+    - Macro-expanded: false,
+    - LLM-improved: false,
+    - Fuzzing Targets:
+      * http_fuzz_6319297300227312792
+  StableURAPI: contains_key::/home/cdc/SURF/deepSURF-big-experiment-harnesses/http-0.1.19/src/header/map.rs::757,
+    - URAPI: DefId(0:558 ~ http[2aa2]::header::name::{impl#17}::try_from),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * http_fuzz_15407387830709233043_deepseek-r1_turn4
+  StableURAPI: host::/home/cdc/SURF/deepSURF-big-experiment-harnesses/http-0.1.19/src/uri/authority.rs::204,
+    - URAPI: DefId(0:1236 ~ http[2aa2]::uri::authority::{impl#0}::host),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * http_fuzz_633073009428178114_deepseek-r1_turn5
+      * http_fuzz_11941034398563315348_deepseek-r1_turn5
+      * http_fuzz_9171944548155438291_deepseek-r1_turn4
+      * http_fuzz_15074099069018251397_deepseek-r1_turn1
+      * http_fuzz_11742874337819524145_deepseek-r1_turn5
+  StableURAPI: eq::/home/cdc/SURF/deepSURF-big-experiment-harnesses/http-0.1.19/src/uri/authority.rs::314,
+    - URAPI: DefId(0:1252 ~ http[2aa2]::uri::authority::{impl#5}::eq),
+    - Macro-expanded: false,
+    - LLM-improved: false,
+    - Fuzzing Targets:
+      * http_fuzz_15074099069018251397
+  StableURAPI: eq::/home/cdc/SURF/deepSURF-big-experiment-harnesses/http-0.1.19/src/uri/authority.rs::320,
+    - URAPI: DefId(0:1255 ~ http[2aa2]::uri::authority::{impl#6}::eq),
+    - Macro-expanded: false,
+    - LLM-improved: false,
+    - Fuzzing Targets:
+      * http_fuzz_13451667056177189333
+  StableURAPI: next::/home/cdc/SURF/deepSURF-big-experiment-harnesses/http-0.1.19/src/header/map.rs::2587,
+    - URAPI: DefId(0:305 ~ http[2aa2]::header::map::{impl#41}::next),
+    - Macro-expanded: false,
+    - LLM-improved: false,
+    - Fuzzing Targets:
+      * http_fuzz_17574371565434763584
+      * http_fuzz_14993225086354872872
+  StableURAPI: insert::/home/cdc/SURF/deepSURF-big-experiment-harnesses/http-0.1.19/src/header/map.rs::1080,
+    - URAPI: DefId(0:208 ~ http[2aa2]::header::map::{impl#23}::next),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * http_fuzz_11742874337819524145_deepseek-r1_turn5
+      * http_fuzz_11941034398563315348_deepseek-r1_turn5
+      * http_fuzz_8246734304335439568_deepseek-r1_turn6
+      * http_fuzz_18286377120929404909_deepseek-r1_turn3
+      * http_fuzz_10782686495686518557_deepseek-r1_turn2
+      * http_fuzz_11693349340932289670_deepseek-r1_turn1
+      * http_fuzz_15125643739086163309_deepseek-r1_turn6
+      * http_fuzz_3013850531557132465_deepseek-r1_turn4
+      * http_fuzz_10403464805765083091_deepseek-r1_turn3
+      * http_fuzz_15668099243118148896_deepseek-r1_turn3
+      * http_fuzz_1129203924549505096_deepseek-r1_turn4
+      * http_fuzz_3228129819407560722_deepseek-r1_turn6
+      * http_fuzz_1033577502195283290_deepseek-r1_turn3
+      * http_fuzz_18370229373432502685_deepseek-r1_turn5
+      * http_fuzz_18064376459007522246_deepseek-r1_turn6
+      * http_fuzz_630690239127171415_deepseek-r1_turn1
+      * http_fuzz_15711454402980519476_deepseek-r1_turn2
+      * http_fuzz_17499758452050100868_deepseek-r1_turn6
+      * http_fuzz_11208984897607767141_deepseek-r1_turn2
+      * http_fuzz_11571823832979613380_deepseek-r1_turn5
+      * http_fuzz_17801382227913130406_deepseek-r1_turn5
+      * http_fuzz_14760610607845670744_deepseek-r1_turn5
+      * http_fuzz_633073009428178114_deepseek-r1_turn5
+      * http_fuzz_8740530422307429684_deepseek-r1_turn6
+      * http_fuzz_772524812641693857_deepseek-r1_turn5
+      * http_fuzz_4443306390242441807_deepseek-r1_turn6
+      * http_fuzz_3945967988863451451_deepseek-r1_turn3
+      * http_fuzz_1713225404873377248_deepseek-r1_turn2
+      * http_fuzz_12225452624617022263_deepseek-r1_turn4
+      * http_fuzz_11139723047021207997_deepseek-r1_turn6
+  StableURAPI: eq::/home/cdc/SURF/deepSURF-big-experiment-harnesses/http-0.1.19/src/header/value.rs::762,
+    - URAPI: DefId(0:742 ~ http[2aa2]::header::value::{impl#39}::eq),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * http_fuzz_3945967988863451451_deepseek-r1_turn3
+  StableURAPI: eq::/home/cdc/SURF/deepSURF-big-experiment-harnesses/http-0.1.19/src/header/name.rs::1993,
+    - URAPI: DefId(0:572 ~ http[2aa2]::header::name::{impl#23}::eq),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * http_fuzz_1033577502195283290_deepseek-r1_turn3
+  StableURAPI: uri::/home/cdc/SURF/deepSURF-big-experiment-harnesses/http-0.1.19/src/request.rs::818,
+    - URAPI: DefId(0:672 ~ http[2aa2]::header::value::{impl#9}::try_from),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * http_fuzz_18366243088040221429_deepseek-r1_turn5
+      * http_fuzz_12225452624617022263_deepseek-r1_turn4
+      * http_fuzz_16338078492519129224_deepseek-r1_turn2
+      * http_fuzz_3013850531557132465_deepseek-r1_turn4
+      * http_fuzz_4443306390242441807_deepseek-r1_turn6
+      * http_fuzz_10403464805765083091_deepseek-r1_turn3
+      * http_fuzz_10782686495686518557_deepseek-r1_turn2
+      * http_fuzz_4407497658046288733_deepseek-r1_turn6
+      * http_fuzz_3362688223832736006_deepseek-r1_turn3
+      * http_fuzz_17499511304804928272_deepseek-r1_turn4
+      * http_fuzz_1033577502195283290_deepseek-r1_turn3
+      * http_fuzz_10551007774416917119_deepseek-r1_turn2
+      * http_fuzz_9623935234926433805_deepseek-r1_turn4
+      * http_fuzz_14479845234129020174_deepseek-r1_turn4
+      * http_fuzz_633073009428178114_deepseek-r1_turn5
+      * http_fuzz_8740530422307429684_deepseek-r1_turn6
+      * http_fuzz_10755525721000006111_deepseek-r1_turn3
+      * http_fuzz_7913316134776891349_deepseek-r1_turn3
+      * http_fuzz_832988195758324698_deepseek-r1_turn5
+      * http_fuzz_14760610607845670744_deepseek-r1_turn5
+      * http_fuzz_18370229373432502685_deepseek-r1_turn5
+      * http_fuzz_11693349340932289670_deepseek-r1_turn1
+      * http_fuzz_772524812641693857_deepseek-r1_turn5
+      * http_fuzz_9171944548155438291_deepseek-r1_turn4
+      * http_fuzz_4718405918461946120_deepseek-r1_turn3
+      * http_fuzz_11941034398563315348_deepseek-r1_turn5
+      * http_fuzz_11139723047021207997_deepseek-r1_turn6
+      * http_fuzz_1713225404873377248_deepseek-r1_turn2
+      * http_fuzz_15125643739086163309_deepseek-r1_turn6
+      * http_fuzz_16619793432602079741_deepseek-r1_turn2
+      * http_fuzz_11208984897607767141_deepseek-r1_turn2
+      * http_fuzz_14489106343100526875_deepseek-r1_turn5
+      * http_fuzz_17499758452050100868_deepseek-r1_turn6
+      * http_fuzz_15271004787838234199_deepseek-r1_turn5
+      * http_fuzz_18064376459007522246_deepseek-r1_turn6
+  StableURAPI: try_from::/home/cdc/SURF/deepSURF-big-experiment-harnesses/http-0.1.19/src/uri/authority.rs::468,
+    - URAPI: DefId(0:1298 ~ http[2aa2]::uri::authority::{impl#18}::try_from),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * http_fuzz_772524812641693857_deepseek-r1_turn5
+      * http_fuzz_10782686495686518557_deepseek-r1_turn2
+      * http_fuzz_633073009428178114_deepseek-r1_turn5
+  StableURAPI: delete::/home/cdc/SURF/deepSURF-big-experiment-harnesses/http-0.1.19/src/request.rs::294,
+    - URAPI: DefId(0:984 ~ http[2aa2]::request::{impl#0}::patch),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * http_fuzz_15711454402980519476_deepseek-r1_turn2
+  StableURAPI: try_from::/home/cdc/SURF/deepSURF-big-experiment-harnesses/http-0.1.19/src/uri/path.rs::290,
+    - URAPI: DefId(0:1372 ~ http[2aa2]::uri::path::{impl#1}::try_from),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * http_fuzz_10403464805765083091_deepseek-r1_turn3
+  StableURAPI: fmt::/home/cdc/SURF/deepSURF-big-experiment-harnesses/http-0.1.19/src/uri/authority.rs::489,
+    - URAPI: DefId(0:1313 ~ http[2aa2]::uri::authority::{impl#23}::fmt),
+    - Macro-expanded: false,
+    - LLM-improved: false,
+    - Fuzzing Targets:
+      * http_fuzz_15295152230424021528
+  StableURAPI: from::/home/cdc/SURF/deepSURF-big-experiment-harnesses/http-0.1.19/src/uri/mod.rs::799,
+    - URAPI: DefId(0:1589 ~ http[2aa2]::uri::{impl#7}::from),
+    - Macro-expanded: false,
+    - LLM-improved: false,
+    - Fuzzing Targets:
+      * http_fuzz_15631107043502941126
+      * http_fuzz_7973473813160187632
+  StableURAPI: eq::/home/cdc/SURF/deepSURF-big-experiment-harnesses/http-0.1.19/src/uri/scheme.rs::191,
+    - URAPI: DefId(0:1514 ~ http[2aa2]::uri::scheme::{impl#9}::eq),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * http_fuzz_14479845234129020174_deepseek-r1_turn4
+  StableURAPI: eq::/home/cdc/SURF/deepSURF-big-experiment-harnesses/http-0.1.19/src/header/name.rs::1973,
+    - URAPI: DefId(0:570 ~ http[2aa2]::header::name::{impl#22}::eq),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * http_fuzz_15271004787838234199_deepseek-r1_turn5
+      * http_fuzz_10755525721000006111_deepseek-r1_turn3
+      * http_fuzz_1033577502195283290_deepseek-r1_turn3
+      * http_fuzz_17499511304804928272_deepseek-r1_turn4
+  StableURAPI: host::/home/cdc/SURF/deepSURF-big-experiment-harnesses/http-0.1.19/src/uri/mod.rs::584,
+    - URAPI: DefId(0:1558 ~ http[2aa2]::uri::{impl#0}::host),
+    - Macro-expanded: false,
+    - LLM-improved: false,
+    - Fuzzing Targets:
+      * http_fuzz_13443607865809820064
+      * http_fuzz_621003471835280627
+  StableURAPI: size_hint::/home/cdc/SURF/deepSURF-big-experiment-harnesses/http-0.1.19/src/header/map.rs::2134,
+    - URAPI: DefId(0:224 ~ http[2aa2]::header::map::{impl#25}::size_hint),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * http_fuzz_18286377120929404909_deepseek-r1_turn3
+      * http_fuzz_15668099243118148896_deepseek-r1_turn3
+  StableURAPI: status::/home/cdc/SURF/deepSURF-big-experiment-harnesses/http-0.1.19/src/response.rs::560,
+    - URAPI: DefId(0:672 ~ http[2aa2]::header::value::{impl#9}::try_from),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * http_fuzz_15125643739086163309_deepseek-r1_turn6
+      * http_fuzz_18366243088040221429_deepseek-r1_turn5
+      * http_fuzz_1033577502195283290_deepseek-r1_turn3
+      * http_fuzz_11139723047021207997_deepseek-r1_turn6
+      * http_fuzz_16338078492519129224_deepseek-r1_turn2
+      * http_fuzz_4407497658046288733_deepseek-r1_turn6
+      * http_fuzz_11941034398563315348_deepseek-r1_turn5
+      * http_fuzz_10755525721000006111_deepseek-r1_turn3
+      * http_fuzz_15271004787838234199_deepseek-r1_turn5
+      * http_fuzz_14479845234129020174_deepseek-r1_turn4
+      * http_fuzz_11208984897607767141_deepseek-r1_turn2
+      * http_fuzz_17801382227913130406_deepseek-r1_turn5
+      * http_fuzz_4521340454861179515_deepseek-r1_turn3
+      * http_fuzz_4718405918461946120_deepseek-r1_turn3
+      * http_fuzz_15407387830709233043_deepseek-r1_turn4
+      * http_fuzz_18064376459007522246_deepseek-r1_turn6
+      * http_fuzz_772524812641693857_deepseek-r1_turn5
+      * http_fuzz_17499511304804928272_deepseek-r1_turn4
+      * http_fuzz_9171944548155438291_deepseek-r1_turn4
+      * http_fuzz_10403464805765083091_deepseek-r1_turn3
+      * http_fuzz_832988195758324698_deepseek-r1_turn5
+      * http_fuzz_18370229373432502685_deepseek-r1_turn5
+      * http_fuzz_17499758452050100868_deepseek-r1_turn6
+  StableURAPI: eq::/home/cdc/SURF/deepSURF-big-experiment-harnesses/http-0.1.19/src/method.rs::310,
+    - URAPI: DefId(0:906 ~ http[2aa2]::method::{impl#6}::eq),
+    - Macro-expanded: false,
+    - LLM-improved: false,
+    - Fuzzing Targets:
+      * http_fuzz_15415556360323304216
+      * http_fuzz_6525764951838371139
+  StableURAPI: query::/home/cdc/SURF/deepSURF-big-experiment-harnesses/http-0.1.19/src/uri/path.rs::241,
+    - URAPI: DefId(0:1367 ~ http[2aa2]::uri::path::{impl#0}::query),
+    - Macro-expanded: false,
+    - LLM-improved: false,
+    - Fuzzing Targets:
+      * http_fuzz_8148560537830570074
+  StableURAPI: partial_cmp::/home/cdc/SURF/deepSURF-big-experiment-harnesses/http-0.1.19/src/uri/path.rs::420,
+    - URAPI: DefId(0:1416 ~ http[2aa2]::uri::path::{impl#19}::partial_cmp),
+    - Macro-expanded: false,
+    - LLM-improved: false,
+    - Fuzzing Targets:
+      * http_fuzz_17143784170300066476
+  StableURAPI: entry::/home/cdc/SURF/deepSURF-big-experiment-harnesses/http-0.1.19/src/header/map.rs::1012,
+    - URAPI: DefId(0:208 ~ http[2aa2]::header::map::{impl#23}::next),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * http_fuzz_11571823832979613380_deepseek-r1_turn5
+      * http_fuzz_15668099243118148896_deepseek-r1_turn3
+      * http_fuzz_15125643739086163309_deepseek-r1_turn6
+      * http_fuzz_12225452624617022263_deepseek-r1_turn4
+      * http_fuzz_17801382227913130406_deepseek-r1_turn5
+      * http_fuzz_18370229373432502685_deepseek-r1_turn5
+      * http_fuzz_9623935234926433805_deepseek-r1_turn4
+      * http_fuzz_3362688223832736006_deepseek-r1_turn3
+      * http_fuzz_17256496518121575065_deepseek-r1_turn5
+      * http_fuzz_18286377120929404909_deepseek-r1_turn3
+      * http_fuzz_1033577502195283290_deepseek-r1_turn3
+      * http_fuzz_9171944548155438291_deepseek-r1_turn4
+      * http_fuzz_15407387830709233043_deepseek-r1_turn4
+      * http_fuzz_630690239127171415_deepseek-r1_turn1
+  StableURAPI: port_part::/home/cdc/SURF/deepSURF-big-experiment-harnesses/http-0.1.19/src/uri/authority.rs::249,
+    - URAPI: DefId(0:1238 ~ http[2aa2]::uri::authority::{impl#0}::port_part),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * http_fuzz_17801382227913130406_deepseek-r1_turn5
+      * http_fuzz_4443306390242441807_deepseek-r1_turn6
+      * http_fuzz_14760610607845670744_deepseek-r1_turn5
+      * http_fuzz_8246734304335439568_deepseek-r1_turn6
+  StableURAPI: fmt::/home/cdc/SURF/deepSURF-big-experiment-harnesses/http-0.1.19/src/uri/path.rs::326,
+    - URAPI: DefId(0:1388 ~ http[2aa2]::uri::path::{impl#6}::fmt),
+    - Macro-expanded: false,
+    - LLM-improved: false,
+    - Fuzzing Targets:
+      * http_fuzz_9152972650801237158
+  StableURAPI: from_bytes::/home/cdc/SURF/deepSURF-big-experiment-harnesses/http-0.1.19/src/header/name.rs::1660,
+    - URAPI: DefId(0:508 ~ http[2aa2]::header::name::{impl#1}::from_bytes),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * http_fuzz_11693349340932289670_deepseek-r1_turn1
+      * http_fuzz_4718405918461946120_deepseek-r1_turn3
+      * http_fuzz_15271004787838234199_deepseek-r1_turn5
+      * http_fuzz_18370229373432502685_deepseek-r1_turn5
+      * http_fuzz_16619793432602079741_deepseek-r1_turn2
+      * http_fuzz_3362688223832736006_deepseek-r1_turn3
+      * http_fuzz_832988195758324698_deepseek-r1_turn5
+      * http_fuzz_4407497658046288733_deepseek-r1_turn6
+      * http_fuzz_633073009428178114_deepseek-r1_turn5
+      * http_fuzz_17499758452050100868_deepseek-r1_turn6
+      * http_fuzz_10755525721000006111_deepseek-r1_turn3
+      * http_fuzz_18366243088040221429_deepseek-r1_turn5
+      * http_fuzz_7913316134776891349_deepseek-r1_turn3
+      * http_fuzz_18286377120929404909_deepseek-r1_turn3
+      * http_fuzz_11139723047021207997_deepseek-r1_turn6
+      * http_fuzz_11571823832979613380_deepseek-r1_turn5
+      * http_fuzz_15407387830709233043_deepseek-r1_turn4
+      * http_fuzz_17256496518121575065_deepseek-r1_turn5
+      * http_fuzz_1713225404873377248_deepseek-r1_turn2
+      * http_fuzz_10403464805765083091_deepseek-r1_turn3
+      * http_fuzz_11208984897607767141_deepseek-r1_turn2
+      * http_fuzz_9171944548155438291_deepseek-r1_turn4
+      * http_fuzz_17499511304804928272_deepseek-r1_turn4
+      * http_fuzz_17801382227913130406_deepseek-r1_turn5
+      * http_fuzz_18064376459007522246_deepseek-r1_turn6
+      * http_fuzz_1033577502195283290_deepseek-r1_turn3
+      * http_fuzz_12225452624617022263_deepseek-r1_turn4
+      * http_fuzz_14489106343100526875_deepseek-r1_turn5
+      * http_fuzz_11941034398563315348_deepseek-r1_turn5
+  StableURAPI: eq::/home/cdc/SURF/deepSURF-big-experiment-harnesses/http-0.1.19/src/header/value.rs::778,
+    - URAPI: DefId(0:749 ~ http[2aa2]::header::value::{impl#41}::eq),
+    - Macro-expanded: false,
+    - LLM-improved: false,
+    - Fuzzing Targets:
+      * http_fuzz_13170130373525769799
+      * http_fuzz_17065578866853623403
+      * http_fuzz_10755525721000006111
+  StableURAPI: fmt::/home/cdc/SURF/deepSURF-big-experiment-harnesses/http-0.1.19/src/uri/mod.rs::1029,
+    - URAPI: DefId(0:1611 ~ http[2aa2]::uri::{impl#16}::fmt),
+    - Macro-expanded: false,
+    - LLM-improved: false,
+    - Fuzzing Targets:
+      * http_fuzz_16466091616610995396
+      * http_fuzz_7053807943265196826
+  StableURAPI: partial_cmp::/home/cdc/SURF/deepSURF-big-experiment-harnesses/http-0.1.19/src/uri/path.rs::434,
+    - URAPI: DefId(0:1421 ~ http[2aa2]::uri::path::{impl#21}::partial_cmp),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * http_fuzz_4521340454861179515_deepseek-r1_turn3
+      * http_fuzz_13198466464091852098_deepseek-r1_turn3
+  StableURAPI: eq::/home/cdc/SURF/deepSURF-big-experiment-harnesses/http-0.1.19/src/uri/path.rs::371,
+    - URAPI: DefId(0:1401 ~ http[2aa2]::uri::path::{impl#12}::eq),
+    - Macro-expanded: false,
+    - LLM-improved: false,
+    - Fuzzing Targets:
+      * http_fuzz_16619793432602079741
+  StableURAPI: header::/home/cdc/SURF/deepSURF-big-experiment-harnesses/http-0.1.19/src/response.rs::615,
+    - URAPI: DefId(0:1552 ~ http[2aa2]::uri::{impl#0}::path),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * http_fuzz_17499511304804928272_deepseek-r1_turn4
+      * http_fuzz_18370229373432502685_deepseek-r1_turn5
+      * http_fuzz_4718405918461946120_deepseek-r1_turn3
+      * http_fuzz_17801382227913130406_deepseek-r1_turn5
+      * http_fuzz_12225452624617022263_deepseek-r1_turn4
+      * http_fuzz_8740530422307429684_deepseek-r1_turn6
+  StableURAPI: from_str::/home/cdc/SURF/deepSURF-big-experiment-harnesses/http-0.1.19/src/uri/mod.rs::890,
+    - URAPI: DefId(0:1593 ~ http[2aa2]::uri::{impl#8}::from_str),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * http_fuzz_11208984897607767141_deepseek-r1_turn2
+      * http_fuzz_14479845234129020174_deepseek-r1_turn4
+      * http_fuzz_4521340454861179515_deepseek-r1_turn3
+      * http_fuzz_11693349340932289670_deepseek-r1_turn1
+      * http_fuzz_15271004787838234199_deepseek-r1_turn5
+      * http_fuzz_8246734304335439568_deepseek-r1_turn6
+      * http_fuzz_3945967988863451451_deepseek-r1_turn3
+      * http_fuzz_17801382227913130406_deepseek-r1_turn5
+      * http_fuzz_9171944548155438291_deepseek-r1_turn4
+      * http_fuzz_7913316134776891349_deepseek-r1_turn3
+      * http_fuzz_1129203924549505096_deepseek-r1_turn4
+      * http_fuzz_15125643739086163309_deepseek-r1_turn6
+      * http_fuzz_5315526172046900052_deepseek-r1_turn2
+      * http_fuzz_633073009428178114_deepseek-r1_turn5
+      * http_fuzz_8740530422307429684_deepseek-r1_turn6
+      * http_fuzz_11742874337819524145_deepseek-r1_turn5
+      * http_fuzz_18366243088040221429_deepseek-r1_turn5
+      * http_fuzz_10755525721000006111_deepseek-r1_turn3
+      * http_fuzz_14489106343100526875_deepseek-r1_turn5
+      * http_fuzz_1713225404873377248_deepseek-r1_turn2
+      * http_fuzz_832988195758324698_deepseek-r1_turn5
+      * http_fuzz_3362688223832736006_deepseek-r1_turn3
+      * http_fuzz_14760610607845670744_deepseek-r1_turn5
+  StableURAPI: as_str::/home/cdc/SURF/deepSURF-big-experiment-harnesses/http-0.1.19/src/uri/authority.rs::272,
+    - URAPI: DefId(0:1242 ~ http[2aa2]::uri::authority::{impl#0}::as_str),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * http_fuzz_14489106343100526875_deepseek-r1_turn5
+      * http_fuzz_4718405918461946120_deepseek-r1_turn3
+      * http_fuzz_18370229373432502685_deepseek-r1_turn5
+      * http_fuzz_1713225404873377248_deepseek-r1_turn2
+      * http_fuzz_17499758452050100868_deepseek-r1_turn6
+      * http_fuzz_13198466464091852098_deepseek-r1_turn3
+      * http_fuzz_3228129819407560722_deepseek-r1_turn6
+      * http_fuzz_772524812641693857_deepseek-r1_turn5
+      * http_fuzz_15125643739086163309_deepseek-r1_turn6
+      * http_fuzz_3013850531557132465_deepseek-r1_turn4
+      * http_fuzz_16619793432602079741_deepseek-r1_turn2
+      * http_fuzz_15407387830709233043_deepseek-r1_turn4
+  StableURAPI: try_from::/home/cdc/SURF/deepSURF-big-experiment-harnesses/http-0.1.19/src/uri/authority.rs::451,
+    - URAPI: DefId(0:1258 ~ http[2aa2]::uri::authority::{impl#7}::eq),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * http_fuzz_8246734304335439568_deepseek-r1_turn6
+      * http_fuzz_18370229373432502685_deepseek-r1_turn5
+      * http_fuzz_17499511304804928272_deepseek-r1_turn4
+  StableURAPI: as_str::/home/cdc/SURF/deepSURF-big-experiment-harnesses/http-0.1.19/src/uri/port.rs::63,
+    - URAPI: DefId(0:1441 ~ http[2aa2]::uri::port::{impl#1}::as_str),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * http_fuzz_4443306390242441807_deepseek-r1_turn6
+  StableURAPI: from_str::/home/cdc/SURF/deepSURF-big-experiment-harnesses/http-0.1.19/src/uri/authority.rs::476,
+    - URAPI: DefId(0:1309 ~ http[2aa2]::uri::authority::{impl#21}::from_str),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * http_fuzz_4521340454861179515_deepseek-r1_turn3
+      * http_fuzz_15125643739086163309_deepseek-r1_turn6
+      * http_fuzz_15074099069018251397_deepseek-r1_turn1
+      * http_fuzz_1033577502195283290_deepseek-r1_turn3
+      * http_fuzz_16619793432602079741_deepseek-r1_turn2
+      * http_fuzz_13198466464091852098_deepseek-r1_turn3
+      * http_fuzz_17801382227913130406_deepseek-r1_turn5
+      * http_fuzz_18366243088040221429_deepseek-r1_turn5
+      * http_fuzz_5315526172046900052_deepseek-r1_turn2
+      * http_fuzz_11208984897607767141_deepseek-r1_turn2
+      * http_fuzz_14489106343100526875_deepseek-r1_turn5
+      * http_fuzz_11742874337819524145_deepseek-r1_turn5
+      * http_fuzz_11693349340932289670_deepseek-r1_turn1
+      * http_fuzz_14479845234129020174_deepseek-r1_turn4
+      * http_fuzz_9171944548155438291_deepseek-r1_turn4
+      * http_fuzz_4443306390242441807_deepseek-r1_turn6
+      * http_fuzz_7913316134776891349_deepseek-r1_turn3
+      * http_fuzz_8246734304335439568_deepseek-r1_turn6
+  StableURAPI: patch::/home/cdc/SURF/deepSURF-big-experiment-harnesses/http-0.1.19/src/request.rs::379,
+    - URAPI: DefId(0:984 ~ http[2aa2]::request::{impl#0}::patch),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * http_fuzz_15711454402980519476_deepseek-r1_turn2
+  StableURAPI: as_ref::/home/cdc/SURF/deepSURF-big-experiment-harnesses/http-0.1.19/src/uri/scheme.rs::185,
+    - URAPI: DefId(0:1512 ~ http[2aa2]::uri::scheme::{impl#8}::as_ref),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * http_fuzz_3228129819407560722_deepseek-r1_turn6
+  StableURAPI: from_str::/home/cdc/SURF/deepSURF-big-experiment-harnesses/http-0.1.19/src/header/value.rs::486,
+    - URAPI: DefId(0:655 ~ http[2aa2]::header::value::{impl#4}::from_str),
+    - Macro-expanded: false,
+    - LLM-improved: false,
+    - Fuzzing Targets:
+      * http_fuzz_6203628399308923354
+  StableURAPI: partial_cmp::/home/cdc/SURF/deepSURF-big-experiment-harnesses/http-0.1.19/src/uri/path.rs::399,
+    - URAPI: DefId(0:1413 ~ http[2aa2]::uri::path::{impl#18}::partial_cmp),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * http_fuzz_3013850531557132465_deepseek-r1_turn4
+      * http_fuzz_4521340454861179515_deepseek-r1_turn3
+  StableURAPI: partial_cmp::/home/cdc/SURF/deepSURF-big-experiment-harnesses/http-0.1.19/src/uri/authority.rs::378,
+    - URAPI: DefId(0:1277 ~ http[2aa2]::uri::authority::{impl#13}::partial_cmp),
+    - Macro-expanded: false,
+    - LLM-improved: false,
+    - Fuzzing Targets:
+      * http_fuzz_11742874337819524145
+  StableURAPI: append::/home/cdc/SURF/deepSURF-big-experiment-harnesses/http-0.1.19/src/header/map.rs::1173,
+    - URAPI: DefId(0:672 ~ http[2aa2]::header::value::{impl#9}::try_from),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * http_fuzz_9623935234926433805_deepseek-r1_turn4
+      * http_fuzz_4407497658046288733_deepseek-r1_turn6
+      * http_fuzz_1129203924549505096_deepseek-r1_turn4
+      * http_fuzz_17499511304804928272_deepseek-r1_turn4
+      * http_fuzz_3362688223832736006_deepseek-r1_turn3
+      * http_fuzz_12225452624617022263_deepseek-r1_turn4
+      * http_fuzz_15125643739086163309_deepseek-r1_turn6
+      * http_fuzz_18064376459007522246_deepseek-r1_turn6
+      * http_fuzz_4521340454861179515_deepseek-r1_turn3
+      * http_fuzz_17256496518121575065_deepseek-r1_turn5
+      * http_fuzz_13198466464091852098_deepseek-r1_turn3
+      * http_fuzz_9171944548155438291_deepseek-r1_turn4
+      * http_fuzz_630690239127171415_deepseek-r1_turn1
+      * http_fuzz_3945967988863451451_deepseek-r1_turn3
+      * http_fuzz_4718405918461946120_deepseek-r1_turn3
+      * http_fuzz_11571823832979613380_deepseek-r1_turn5
+      * http_fuzz_1859281628697759420_deepseek-r1_turn2
+      * http_fuzz_18370229373432502685_deepseek-r1_turn5
+      * http_fuzz_10755525721000006111_deepseek-r1_turn3
+      * http_fuzz_8740530422307429684_deepseek-r1_turn6
+      * http_fuzz_772524812641693857_deepseek-r1_turn5
+      * http_fuzz_17499758452050100868_deepseek-r1_turn6
+      * http_fuzz_832988195758324698_deepseek-r1_turn5
+      * http_fuzz_1033577502195283290_deepseek-r1_turn3
+      * http_fuzz_7913316134776891349_deepseek-r1_turn3
+      * http_fuzz_15074099069018251397_deepseek-r1_turn1
+      * http_fuzz_16619793432602079741_deepseek-r1_turn2
+      * http_fuzz_14489106343100526875_deepseek-r1_turn5
+      * http_fuzz_14479845234129020174_deepseek-r1_turn4
+      * http_fuzz_15271004787838234199_deepseek-r1_turn5
+      * http_fuzz_15668099243118148896_deepseek-r1_turn3
+  StableURAPI: get_all::/home/cdc/SURF/deepSURF-big-experiment-harnesses/http-0.1.19/src/header/map.rs::735,
+    - URAPI: DefId(0:527 ~ http[2aa2]::header::name::{impl#7}::fmt),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * http_fuzz_1129203924549505096_deepseek-r1_turn4
+      * http_fuzz_7913316134776891349_deepseek-r1_turn3
+      * http_fuzz_3228129819407560722_deepseek-r1_turn6
+      * http_fuzz_3362688223832736006_deepseek-r1_turn3
+      * http_fuzz_17256496518121575065_deepseek-r1_turn5
+      * http_fuzz_15668099243118148896_deepseek-r1_turn3
+  StableURAPI: put::/home/cdc/SURF/deepSURF-big-experiment-harnesses/http-0.1.19/src/request.rs::252,
+    - URAPI: DefId(0:984 ~ http[2aa2]::request::{impl#0}::patch),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * http_fuzz_15711454402980519476_deepseek-r1_turn2
+  StableURAPI: from_static::/home/cdc/SURF/deepSURF-big-experiment-harnesses/http-0.1.19/src/uri/mod.rs::335,
+    - URAPI: DefId(0:1549 ~ http[2aa2]::uri::{impl#0}::from_static),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * http_fuzz_4718405918461946120_deepseek-r1_turn3
+      * http_fuzz_17499758452050100868_deepseek-r1_turn6
+      * http_fuzz_11139723047021207997_deepseek-r1_turn6
+      * http_fuzz_14760610607845670744_deepseek-r1_turn5
+      * http_fuzz_16619793432602079741_deepseek-r1_turn2
+      * http_fuzz_633073009428178114_deepseek-r1_turn5
+      * http_fuzz_4443306390242441807_deepseek-r1_turn6
+      * http_fuzz_15074099069018251397_deepseek-r1_turn1
+      * http_fuzz_8740530422307429684_deepseek-r1_turn6
+      * http_fuzz_12225452624617022263_deepseek-r1_turn4
+      * http_fuzz_15711454402980519476_deepseek-r1_turn2
+      * http_fuzz_9623935234926433805_deepseek-r1_turn4
+      * http_fuzz_17499511304804928272_deepseek-r1_turn4
+      * http_fuzz_11208984897607767141_deepseek-r1_turn2
+      * http_fuzz_1859281628697759420_deepseek-r1_turn2
+      * http_fuzz_15407387830709233043_deepseek-r1_turn4
+      * http_fuzz_17801382227913130406_deepseek-r1_turn5
+  StableURAPI: partial_cmp::/home/cdc/SURF/deepSURF-big-experiment-harnesses/http-0.1.19/src/uri/path.rs::413,
+    - URAPI: DefId(0:1413 ~ http[2aa2]::uri::path::{impl#18}::partial_cmp),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * http_fuzz_3013850531557132465_deepseek-r1_turn4
+  StableURAPI: try_from::/home/cdc/SURF/deepSURF-big-experiment-harnesses/http-0.1.19/src/header/value.rs::553,
+    - URAPI: DefId(0:682 ~ http[2aa2]::header::value::{impl#12}::try_from),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * http_fuzz_11941034398563315348_deepseek-r1_turn5
+  StableURAPI: eq::/home/cdc/SURF/deepSURF-big-experiment-harnesses/http-0.1.19/src/uri/authority.rs::308,
+    - URAPI: DefId(0:1250 ~ http[2aa2]::uri::authority::{impl#4}::eq),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * http_fuzz_5315526172046900052_deepseek-r1_turn2
+      * http_fuzz_15125643739086163309_deepseek-r1_turn6
+  StableURAPI: path_and_query::/home/cdc/SURF/deepSURF-big-experiment-harnesses/http-0.1.19/src/uri/mod.rs::370,
+    - URAPI: DefId(0:1551 ~ http[2aa2]::uri::{impl#0}::path_and_query),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * http_fuzz_772524812641693857_deepseek-r1_turn5
+      * http_fuzz_9171944548155438291_deepseek-r1_turn4
+      * http_fuzz_13198466464091852098_deepseek-r1_turn3
+      * http_fuzz_3013850531557132465_deepseek-r1_turn4
+  StableURAPI: try_from::/home/cdc/SURF/deepSURF-big-experiment-harnesses/http-0.1.19/src/uri/authority.rs::443,
+    - URAPI: DefId(0:1298 ~ http[2aa2]::uri::authority::{impl#18}::try_from),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * http_fuzz_10782686495686518557_deepseek-r1_turn2
+  StableURAPI: to_str::/home/cdc/SURF/deepSURF-big-experiment-harnesses/http-0.1.19/src/header/value.rs::219,
+    - URAPI: DefId(0:640 ~ http[2aa2]::header::value::{impl#0}::to_str),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * http_fuzz_4407497658046288733_deepseek-r1_turn6
+      * http_fuzz_10755525721000006111_deepseek-r1_turn3
+      * http_fuzz_1033577502195283290_deepseek-r1_turn3
+      * http_fuzz_18064376459007522246_deepseek-r1_turn6
+      * http_fuzz_3013850531557132465_deepseek-r1_turn4
+      * http_fuzz_633073009428178114_deepseek-r1_turn5
+      * http_fuzz_15711454402980519476_deepseek-r1_turn2
+      * http_fuzz_18370229373432502685_deepseek-r1_turn5
+      * http_fuzz_14479845234129020174_deepseek-r1_turn4
+      * http_fuzz_3945967988863451451_deepseek-r1_turn3
+      * http_fuzz_13198466464091852098_deepseek-r1_turn3
+      * http_fuzz_9171944548155438291_deepseek-r1_turn4
+      * http_fuzz_17256496518121575065_deepseek-r1_turn5
+  StableURAPI: next::/home/cdc/SURF/deepSURF-big-experiment-harnesses/http-0.1.19/src/header/map.rs::2031,
+    - URAPI: DefId(0:185 ~ http[2aa2]::header::map::{impl#18}::next),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * http_fuzz_630690239127171415_deepseek-r1_turn1
+      * http_fuzz_8740530422307429684_deepseek-r1_turn6
+      * http_fuzz_3362688223832736006_deepseek-r1_turn3
+      * http_fuzz_18286377120929404909_deepseek-r1_turn3
+  StableURAPI: authority_part::/home/cdc/SURF/deepSURF-big-experiment-harnesses/http-0.1.19/src/uri/mod.rs::531,
+    - URAPI: DefId(0:1556 ~ http[2aa2]::uri::{impl#0}::authority_part),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * http_fuzz_14760610607845670744_deepseek-r1_turn5
+      * http_fuzz_1129203924549505096_deepseek-r1_turn4
+      * http_fuzz_9171944548155438291_deepseek-r1_turn4
+      * http_fuzz_15074099069018251397_deepseek-r1_turn1
+      * http_fuzz_14479845234129020174_deepseek-r1_turn4
+  StableURAPI: eq::/home/cdc/SURF/deepSURF-big-experiment-harnesses/http-0.1.19/src/uri/authority.rs::326,
+    - URAPI: DefId(0:1258 ~ http[2aa2]::uri::authority::{impl#7}::eq),
+    - Macro-expanded: false,
+    - LLM-improved: false,
+    - Fuzzing Targets:
+      * http_fuzz_8246734304335439568
+  StableURAPI: try_from::/home/cdc/SURF/deepSURF-big-experiment-harnesses/http-0.1.19/src/header/name.rs::1899,
+    - URAPI: DefId(0:551 ~ http[2aa2]::header::name::{impl#15}::try_from),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * http_fuzz_772524812641693857_deepseek-r1_turn5
+  StableURAPI: fmt::/home/cdc/SURF/deepSURF-big-experiment-harnesses/http-0.1.19/src/header/name.rs::1838,
+    - URAPI: DefId(0:525 ~ http[2aa2]::header::name::{impl#6}::fmt),
+    - Macro-expanded: false,
+    - LLM-improved: false,
+    - Fuzzing Targets:
+      * http_fuzz_11693349340932289670
+  StableURAPI: from_str::/home/cdc/SURF/deepSURF-big-experiment-harnesses/http-0.1.19/src/uri/path.rs::314,
+    - URAPI: DefId(0:1384 ~ http[2aa2]::uri::path::{impl#4}::from_str),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * http_fuzz_4521340454861179515_deepseek-r1_turn3
+      * http_fuzz_15271004787838234199_deepseek-r1_turn5
+      * http_fuzz_17499758452050100868_deepseek-r1_turn6
+      * http_fuzz_4443306390242441807_deepseek-r1_turn6
+      * http_fuzz_1859281628697759420_deepseek-r1_turn2
+      * http_fuzz_18366243088040221429_deepseek-r1_turn5
+      * http_fuzz_3013850531557132465_deepseek-r1_turn4
+      * http_fuzz_13198466464091852098_deepseek-r1_turn3
+      * http_fuzz_14479845234129020174_deepseek-r1_turn4
+      * http_fuzz_16619793432602079741_deepseek-r1_turn2
+      * http_fuzz_1713225404873377248_deepseek-r1_turn2
+  StableURAPI: from_shared::/home/cdc/SURF/deepSURF-big-experiment-harnesses/http-0.1.19/src/header/value.rs::165,
+    - URAPI: DefId(0:636 ~ http[2aa2]::header::value::{impl#0}::from_shared),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * http_fuzz_18370229373432502685_deepseek-r1_turn5
+  StableURAPI: path::/home/cdc/SURF/deepSURF-big-experiment-harnesses/http-0.1.19/src/uri/path.rs::192,
+    - URAPI: DefId(0:1366 ~ http[2aa2]::uri::path::{impl#0}::path),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * http_fuzz_11941034398563315348_deepseek-r1_turn5
+      * http_fuzz_1713225404873377248_deepseek-r1_turn2
+      * http_fuzz_18370229373432502685_deepseek-r1_turn5
+  StableURAPI: from_shared::/home/cdc/SURF/deepSURF-big-experiment-harnesses/http-0.1.19/src/uri/scheme.rs::65,
+    - URAPI: DefId(0:1481 ~ http[2aa2]::uri::scheme::{impl#0}::from_shared),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * http_fuzz_18370229373432502685_deepseek-r1_turn5
+      * http_fuzz_3228129819407560722_deepseek-r1_turn6
+      * http_fuzz_11941034398563315348_deepseek-r1_turn5
+  StableURAPI: next::/home/cdc/SURF/deepSURF-big-experiment-harnesses/http-0.1.19/src/header/map.rs::2102,
+    - URAPI: DefId(0:222 ~ http[2aa2]::header::map::{impl#25}::next),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * http_fuzz_630690239127171415_deepseek-r1_turn1
+      * http_fuzz_12225452624617022263_deepseek-r1_turn4
+      * http_fuzz_9171944548155438291_deepseek-r1_turn4
+      * http_fuzz_15668099243118148896_deepseek-r1_turn3
+      * http_fuzz_18286377120929404909_deepseek-r1_turn3
+      * http_fuzz_3362688223832736006_deepseek-r1_turn3
+      * http_fuzz_11571823832979613380_deepseek-r1_turn5
+      * http_fuzz_832988195758324698_deepseek-r1_turn5
+  StableURAPI: next::/home/cdc/SURF/deepSURF-big-experiment-harnesses/http-0.1.19/src/header/map.rs::2088,
+    - URAPI: DefId(0:215 ~ http[2aa2]::header::map::{impl#24}::next),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * http_fuzz_15668099243118148896_deepseek-r1_turn3
+      * http_fuzz_15074099069018251397_deepseek-r1_turn1
+      * http_fuzz_18286377120929404909_deepseek-r1_turn3
+  StableURAPI: eq::/home/cdc/SURF/deepSURF-big-experiment-harnesses/http-0.1.19/src/uri/mod.rs::918,
+    - URAPI: DefId(0:1598 ~ http[2aa2]::uri::{impl#10}::eq),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * http_fuzz_15074099069018251397_deepseek-r1_turn1
+      * http_fuzz_5315526172046900052_deepseek-r1_turn2
+  StableURAPI: partial_cmp::/home/cdc/SURF/deepSURF-big-experiment-harnesses/http-0.1.19/src/uri/authority.rs::394,
+    - URAPI: DefId(0:1286 ~ http[2aa2]::uri::authority::{impl#15}::partial_cmp),
+    - Macro-expanded: false,
+    - LLM-improved: false,
+    - Fuzzing Targets:
+      * http_fuzz_17933545544843676769
+  StableURAPI: from_bytes::/home/cdc/SURF/deepSURF-big-experiment-harnesses/http-0.1.19/src/header/value.rs::152,
+    - URAPI: DefId(0:635 ~ http[2aa2]::header::value::{impl#0}::from_bytes),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * http_fuzz_18064376459007522246_deepseek-r1_turn6
+      * http_fuzz_3945967988863451451_deepseek-r1_turn3
+      * http_fuzz_832988195758324698_deepseek-r1_turn5
+      * http_fuzz_18286377120929404909_deepseek-r1_turn3
+      * http_fuzz_10403464805765083091_deepseek-r1_turn3
+      * http_fuzz_14489106343100526875_deepseek-r1_turn5
+      * http_fuzz_11571823832979613380_deepseek-r1_turn5
+      * http_fuzz_11941034398563315348_deepseek-r1_turn5
+      * http_fuzz_1129203924549505096_deepseek-r1_turn4
+      * http_fuzz_11742874337819524145_deepseek-r1_turn5
+      * http_fuzz_12225452624617022263_deepseek-r1_turn4
+      * http_fuzz_772524812641693857_deepseek-r1_turn5
+      * http_fuzz_17499511304804928272_deepseek-r1_turn4
+      * http_fuzz_1033577502195283290_deepseek-r1_turn3
+      * http_fuzz_17256496518121575065_deepseek-r1_turn5
+      * http_fuzz_3362688223832736006_deepseek-r1_turn3
+      * http_fuzz_9171944548155438291_deepseek-r1_turn4
+      * http_fuzz_16619793432602079741_deepseek-r1_turn2
+      * http_fuzz_10782686495686518557_deepseek-r1_turn2
+      * http_fuzz_4718405918461946120_deepseek-r1_turn3
+      * http_fuzz_18370229373432502685_deepseek-r1_turn5
+      * http_fuzz_17499758452050100868_deepseek-r1_turn6
+  StableURAPI: eq::/home/cdc/SURF/deepSURF-big-experiment-harnesses/http-0.1.19/src/uri/path.rs::385,
+    - URAPI: DefId(0:1405 ~ http[2aa2]::uri::path::{impl#14}::eq),
+    - Macro-expanded: false,
+    - LLM-improved: false,
+    - Fuzzing Targets:
+      * http_fuzz_5872747425181599201
+  StableURAPI: port_part::/home/cdc/SURF/deepSURF-big-experiment-harnesses/http-0.1.19/src/uri/mod.rs::637,
+    - URAPI: DefId(0:1561 ~ http[2aa2]::uri::{impl#0}::port_part),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * http_fuzz_17801382227913130406_deepseek-r1_turn5
+      * http_fuzz_4443306390242441807_deepseek-r1_turn6
+      * http_fuzz_14760610607845670744_deepseek-r1_turn5
+  StableURAPI: path::/home/cdc/SURF/deepSURF-big-experiment-harnesses/http-0.1.19/src/uri/mod.rs::413,
+    - URAPI: DefId(0:1552 ~ http[2aa2]::uri::{impl#0}::path),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * http_fuzz_15074099069018251397_deepseek-r1_turn1
+      * http_fuzz_633073009428178114_deepseek-r1_turn5
+      * http_fuzz_15271004787838234199_deepseek-r1_turn5
+      * http_fuzz_17499511304804928272_deepseek-r1_turn4
+      * http_fuzz_4718405918461946120_deepseek-r1_turn3
+      * http_fuzz_11742874337819524145_deepseek-r1_turn5
+      * http_fuzz_1859281628697759420_deepseek-r1_turn2
+      * http_fuzz_3945967988863451451_deepseek-r1_turn3
+      * http_fuzz_3013850531557132465_deepseek-r1_turn4
+  StableURAPI: next::/home/cdc/SURF/deepSURF-big-experiment-harnesses/http-0.1.19/src/header/map.rs::2074,
+    - URAPI: DefId(0:208 ~ http[2aa2]::header::map::{impl#23}::next),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * http_fuzz_630690239127171415_deepseek-r1_turn1
+      * http_fuzz_11571823832979613380_deepseek-r1_turn5
+  StableURAPI: method::/home/cdc/SURF/deepSURF-big-experiment-harnesses/http-0.1.19/src/request.rs::761,
+    - URAPI: DefId(0:672 ~ http[2aa2]::header::value::{impl#9}::try_from),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * http_fuzz_11742874337819524145_deepseek-r1_turn5
+      * http_fuzz_15125643739086163309_deepseek-r1_turn6
+      * http_fuzz_14760610607845670744_deepseek-r1_turn5
+      * http_fuzz_4521340454861179515_deepseek-r1_turn3
+      * http_fuzz_5315526172046900052_deepseek-r1_turn2
+      * http_fuzz_11693349340932289670_deepseek-r1_turn1
+      * http_fuzz_772524812641693857_deepseek-r1_turn5
+      * http_fuzz_14489106343100526875_deepseek-r1_turn5
+      * http_fuzz_4407497658046288733_deepseek-r1_turn6
+      * http_fuzz_1033577502195283290_deepseek-r1_turn3
+      * http_fuzz_832988195758324698_deepseek-r1_turn5
+      * http_fuzz_17801382227913130406_deepseek-r1_turn5
+      * http_fuzz_11139723047021207997_deepseek-r1_turn6
+      * http_fuzz_8246734304335439568_deepseek-r1_turn6
+      * http_fuzz_3362688223832736006_deepseek-r1_turn3
+      * http_fuzz_4718405918461946120_deepseek-r1_turn3
+      * http_fuzz_18370229373432502685_deepseek-r1_turn5
+      * http_fuzz_17499511304804928272_deepseek-r1_turn4
+      * http_fuzz_15271004787838234199_deepseek-r1_turn5
+      * http_fuzz_633073009428178114_deepseek-r1_turn5
+      * http_fuzz_10403464805765083091_deepseek-r1_turn3
+      * http_fuzz_14479845234129020174_deepseek-r1_turn4
+      * http_fuzz_9623935234926433805_deepseek-r1_turn4
+      * http_fuzz_10755525721000006111_deepseek-r1_turn3
+      * http_fuzz_12225452624617022263_deepseek-r1_turn4
+      * http_fuzz_9171944548155438291_deepseek-r1_turn4
+      * http_fuzz_10782686495686518557_deepseek-r1_turn2
+      * http_fuzz_18064376459007522246_deepseek-r1_turn6
+      * http_fuzz_3945967988863451451_deepseek-r1_turn3
+      * http_fuzz_3013850531557132465_deepseek-r1_turn4
+      * http_fuzz_16338078492519129224_deepseek-r1_turn2
+  StableURAPI: partial_cmp::/home/cdc/SURF/deepSURF-big-experiment-harnesses/http-0.1.19/src/uri/authority.rs::362,
+    - URAPI: DefId(0:1268 ~ http[2aa2]::uri::authority::{impl#11}::partial_cmp),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * http_fuzz_1129203924549505096_deepseek-r1_turn4
+      * http_fuzz_17499758452050100868_deepseek-r1_turn6
+  StableURAPI: extend::/home/cdc/SURF/deepSURF-big-experiment-harnesses/http-0.1.19/src/header/map.rs::1846,
+    - URAPI: DefId(0:135 ~ http[2aa2]::header::map::{impl#7}::extend),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * http_fuzz_832988195758324698_deepseek-r1_turn5
+  StableURAPI: eq::/home/cdc/SURF/deepSURF-big-experiment-harnesses/http-0.1.19/src/uri/path.rs::378,
+    - URAPI: DefId(0:1403 ~ http[2aa2]::uri::path::{impl#13}::eq),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * http_fuzz_1713225404873377248_deepseek-r1_turn2
+  StableURAPI: as_ref::/home/cdc/SURF/deepSURF-big-experiment-harnesses/http-0.1.19/src/header/name.rs::1820,
+    - URAPI: DefId(0:519 ~ http[2aa2]::header::name::{impl#3}::as_ref),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * http_fuzz_9623935234926433805_deepseek-r1_turn4
+  StableURAPI: authority::/home/cdc/SURF/deepSURF-big-experiment-harnesses/http-0.1.19/src/uri/mod.rs::542,
+    - URAPI: DefId(0:1557 ~ http[2aa2]::uri::{impl#0}::authority),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * http_fuzz_3013850531557132465_deepseek-r1_turn4
+      * http_fuzz_11742874337819524145_deepseek-r1_turn5
+      * http_fuzz_17499758452050100868_deepseek-r1_turn6
+      * http_fuzz_8740530422307429684_deepseek-r1_turn6
+  StableURAPI: eq::/home/cdc/SURF/deepSURF-big-experiment-harnesses/http-0.1.19/src/uri/mod.rs::896,
+    - URAPI: DefId(0:1596 ~ http[2aa2]::uri::{impl#9}::eq),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * http_fuzz_11208984897607767141_deepseek-r1_turn2
+  StableURAPI: partial_cmp::/home/cdc/SURF/deepSURF-big-experiment-harnesses/http-0.1.19/src/uri/path.rs::441,
+    - URAPI: DefId(0:1423 ~ http[2aa2]::uri::path::{impl#22}::partial_cmp),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * http_fuzz_13198466464091852098_deepseek-r1_turn3
+  StableURAPI: try_from::/home/cdc/SURF/deepSURF-big-experiment-harnesses/http-0.1.19/src/uri/mod.rs::732,
+    - URAPI: DefId(0:679 ~ http[2aa2]::header::value::{impl#11}::try_from),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * http_fuzz_18064376459007522246_deepseek-r1_turn6
+  StableURAPI: options::/home/cdc/SURF/deepSURF-big-experiment-harnesses/http-0.1.19/src/request.rs::316,
+    - URAPI: DefId(0:984 ~ http[2aa2]::request::{impl#0}::patch),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * http_fuzz_15711454402980519476_deepseek-r1_turn2
+  StableURAPI: fmt::/home/cdc/SURF/deepSURF-big-experiment-harnesses/http-0.1.19/src/uri/mod.rs::1049,
+    - URAPI: DefId(0:1613 ~ http[2aa2]::uri::{impl#17}::fmt),
+    - Macro-expanded: false,
+    - LLM-improved: false,
+    - Fuzzing Targets:
+      * http_fuzz_8740530422307429684
+      * http_fuzz_1177707523392908290
+  StableURAPI: try_from::/home/cdc/SURF/deepSURF-big-experiment-harnesses/http-0.1.19/src/uri/scheme.rs::124,
+    - URAPI: DefId(0:1499 ~ http[2aa2]::uri::scheme::{impl#3}::try_from),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * http_fuzz_633073009428178114_deepseek-r1_turn5
+      * http_fuzz_17499511304804928272_deepseek-r1_turn4
+  StableURAPI: from_lowercase::/home/cdc/SURF/deepSURF-big-experiment-harnesses/http-0.1.19/src/header/name.rs::1709,
+    - URAPI: DefId(0:511 ~ http[2aa2]::header::name::{impl#1}::from_lowercase),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * http_fuzz_11139723047021207997_deepseek-r1_turn6
+  StableURAPI: from_static::/home/cdc/SURF/deepSURF-big-experiment-harnesses/http-0.1.19/src/uri/path.rs::141,
+    - URAPI: DefId(0:1362 ~ http[2aa2]::uri::path::{impl#0}::from_static),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * http_fuzz_15125643739086163309_deepseek-r1_turn6
+      * http_fuzz_18370229373432502685_deepseek-r1_turn5
+      * http_fuzz_17499758452050100868_deepseek-r1_turn6
+      * http_fuzz_14760610607845670744_deepseek-r1_turn5
+      * http_fuzz_3228129819407560722_deepseek-r1_turn6
+      * http_fuzz_1713225404873377248_deepseek-r1_turn2
+      * http_fuzz_11139723047021207997_deepseek-r1_turn6
+      * http_fuzz_10551007774416917119_deepseek-r1_turn2
+      * http_fuzz_16619793432602079741_deepseek-r1_turn2
+      * http_fuzz_13198466464091852098_deepseek-r1_turn3
+  StableURAPI: port::/home/cdc/SURF/deepSURF-big-experiment-harnesses/http-0.1.19/src/uri/mod.rs::590,
+    - URAPI: DefId(0:1560 ~ http[2aa2]::uri::{impl#0}::port),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * http_fuzz_14760610607845670744_deepseek-r1_turn5
+  StableURAPI: next::/home/cdc/SURF/deepSURF-big-experiment-harnesses/http-0.1.19/src/header/map.rs::1978,
+    - URAPI: DefId(0:166 ~ http[2aa2]::header::map::{impl#14}::next),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * http_fuzz_13198466464091852098_deepseek-r1_turn3
+      * http_fuzz_17801382227913130406_deepseek-r1_turn5
+      * http_fuzz_17499511304804928272_deepseek-r1_turn4
+      * http_fuzz_7913316134776891349_deepseek-r1_turn3
+      * http_fuzz_1129203924549505096_deepseek-r1_turn4
+      * http_fuzz_9171944548155438291_deepseek-r1_turn4
+      * http_fuzz_11571823832979613380_deepseek-r1_turn5
+      * http_fuzz_15711454402980519476_deepseek-r1_turn2
+      * http_fuzz_18064376459007522246_deepseek-r1_turn6
+      * http_fuzz_772524812641693857_deepseek-r1_turn5
+      * http_fuzz_17256496518121575065_deepseek-r1_turn5
+      * http_fuzz_633073009428178114_deepseek-r1_turn5
+      * http_fuzz_10755525721000006111_deepseek-r1_turn3
+      * http_fuzz_14479845234129020174_deepseek-r1_turn4
+      * http_fuzz_15271004787838234199_deepseek-r1_turn5
+      * http_fuzz_14489106343100526875_deepseek-r1_turn5
+      * http_fuzz_11693349340932289670_deepseek-r1_turn1
+      * http_fuzz_15668099243118148896_deepseek-r1_turn3
+      * http_fuzz_12225452624617022263_deepseek-r1_turn4
+  StableURAPI: connect::/home/cdc/SURF/deepSURF-big-experiment-harnesses/http-0.1.19/src/request.rs::358,
+    - URAPI: DefId(0:984 ~ http[2aa2]::request::{impl#0}::patch),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * http_fuzz_15711454402980519476_deepseek-r1_turn2
+  StableURAPI: size_hint::/home/cdc/SURF/deepSURF-big-experiment-harnesses/http-0.1.19/src/header/map.rs::2037,
+    - URAPI: DefId(0:187 ~ http[2aa2]::header::map::{impl#18}::size_hint),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * http_fuzz_18286377120929404909_deepseek-r1_turn3
+  StableURAPI: query::/home/cdc/SURF/deepSURF-big-experiment-harnesses/http-0.1.19/src/uri/mod.rs::701,
+    - URAPI: DefId(0:1565 ~ http[2aa2]::uri::{impl#0}::query),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * http_fuzz_17499511304804928272_deepseek-r1_turn4
+  StableURAPI: from_shared::/home/cdc/SURF/deepSURF-big-experiment-harnesses/http-0.1.19/src/uri/authority.rs::46,
+    - URAPI: DefId(0:1232 ~ http[2aa2]::uri::authority::{impl#0}::from_shared),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * http_fuzz_18370229373432502685_deepseek-r1_turn5
+      * http_fuzz_3228129819407560722_deepseek-r1_turn6
+      * http_fuzz_11941034398563315348_deepseek-r1_turn5
+      * http_fuzz_1713225404873377248_deepseek-r1_turn2
+      * http_fuzz_15407387830709233043_deepseek-r1_turn4
+      * http_fuzz_4718405918461946120_deepseek-r1_turn3
+  StableURAPI: as_str::/home/cdc/SURF/deepSURF-big-experiment-harnesses/http-0.1.19/src/uri/path.rs::272,
+    - URAPI: DefId(0:1368 ~ http[2aa2]::uri::path::{impl#0}::as_str),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * http_fuzz_16619793432602079741_deepseek-r1_turn2
+      * http_fuzz_1859281628697759420_deepseek-r1_turn2
+      * http_fuzz_3228129819407560722_deepseek-r1_turn6
+      * http_fuzz_3013850531557132465_deepseek-r1_turn4
+      * http_fuzz_15407387830709233043_deepseek-r1_turn4
+  StableURAPI: fmt::/home/cdc/SURF/deepSURF-big-experiment-harnesses/http-0.1.19/src/uri/path.rs::332,
+    - URAPI: DefId(0:1390 ~ http[2aa2]::uri::path::{impl#7}::fmt),
+    - Macro-expanded: false,
+    - LLM-improved: false,
+    - Fuzzing Targets:
+      * http_fuzz_17846628004781716252
+  StableURAPI: scheme::/home/cdc/SURF/deepSURF-big-experiment-harnesses/http-0.1.19/src/uri/mod.rs::468,
+    - URAPI: DefId(0:1554 ~ http[2aa2]::uri::{impl#0}::scheme),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * http_fuzz_18366243088040221429_deepseek-r1_turn5
+      * http_fuzz_8246734304335439568_deepseek-r1_turn6
+  StableURAPI: eq::/home/cdc/SURF/deepSURF-big-experiment-harnesses/http-0.1.19/src/uri/scheme.rs::217,
+    - URAPI: DefId(0:1519 ~ http[2aa2]::uri::scheme::{impl#11}::eq),
+    - Macro-expanded: false,
+    - LLM-improved: false,
+    - Fuzzing Targets:
+      * http_fuzz_13719479809908049038
+  StableURAPI: size_hint::/home/cdc/SURF/deepSURF-big-experiment-harnesses/http-0.1.19/src/header/map.rs::2078,
+    - URAPI: DefId(0:210 ~ http[2aa2]::header::map::{impl#23}::size_hint),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * http_fuzz_11571823832979613380_deepseek-r1_turn5
+  StableURAPI: eq::/home/cdc/SURF/deepSURF-big-experiment-harnesses/http-0.1.19/src/uri/path.rs::364,
+    - URAPI: DefId(0:1398 ~ http[2aa2]::uri::path::{impl#11}::eq),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * http_fuzz_1859281628697759420_deepseek-r1_turn2
+  StableURAPI: from_str::/home/cdc/SURF/deepSURF-big-experiment-harnesses/http-0.1.19/src/header/name.rs::1811,
+    - URAPI: DefId(0:516 ~ http[2aa2]::header::name::{impl#2}::from_str),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * http_fuzz_630690239127171415_deepseek-r1_turn1
+      * http_fuzz_1033577502195283290_deepseek-r1_turn3
+      * http_fuzz_17256496518121575065_deepseek-r1_turn5
+      * http_fuzz_11941034398563315348_deepseek-r1_turn5
+      * http_fuzz_17499511304804928272_deepseek-r1_turn4
+      * http_fuzz_11693349340932289670_deepseek-r1_turn1
+      * http_fuzz_4718405918461946120_deepseek-r1_turn3
+      * http_fuzz_4521340454861179515_deepseek-r1_turn3
+  StableURAPI: post::/home/cdc/SURF/deepSURF-big-experiment-harnesses/http-0.1.19/src/request.rs::273,
+    - URAPI: DefId(0:984 ~ http[2aa2]::request::{impl#0}::patch),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * http_fuzz_15711454402980519476_deepseek-r1_turn2
+  StableURAPI: eq::/home/cdc/SURF/deepSURF-big-experiment-harnesses/http-0.1.19/src/uri/path.rs::392,
+    - URAPI: DefId(0:1407 ~ http[2aa2]::uri::path::{impl#15}::eq),
+    - Macro-expanded: false,
+    - LLM-improved: false,
+    - Fuzzing Targets:
+      * http_fuzz_12869261656678782313
+  StableURAPI: port_u16::/home/cdc/SURF/deepSURF-big-experiment-harnesses/http-0.1.19/src/uri/mod.rs::653,
+    - URAPI: DefId(0:1563 ~ http[2aa2]::uri::{impl#0}::port_u16),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * http_fuzz_1713225404873377248_deepseek-r1_turn2
+      * http_fuzz_14760610607845670744_deepseek-r1_turn5
+      * http_fuzz_17499758452050100868_deepseek-r1_turn6
+  StableURAPI: partial_cmp::/home/cdc/SURF/deepSURF-big-experiment-harnesses/http-0.1.19/src/uri/authority.rs::370,
+    - URAPI: DefId(0:1272 ~ http[2aa2]::uri::authority::{impl#12}::partial_cmp),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * http_fuzz_3013850531557132465_deepseek-r1_turn4
+  StableURAPI: fmt::/home/cdc/SURF/deepSURF-big-experiment-harnesses/http-0.1.19/src/header/name.rs::1844,
+    - URAPI: DefId(0:527 ~ http[2aa2]::header::name::{impl#7}::fmt),
+    - Macro-expanded: false,
+    - LLM-improved: false,
+    - Fuzzing Targets:
+      * http_fuzz_7913316134776891349
+  StableURAPI: as_ref::/home/cdc/SURF/deepSURF-big-experiment-harnesses/http-0.1.19/src/method.rs::275,
+    - URAPI: DefId(0:893 ~ http[2aa2]::method::{impl#1}::as_ref),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * http_fuzz_3013850531557132465_deepseek-r1_turn4
+  StableURAPI: as_ref::/home/cdc/SURF/deepSURF-big-experiment-harnesses/http-0.1.19/src/uri/authority.rs::284,
+    - URAPI: DefId(0:1245 ~ http[2aa2]::uri::authority::{impl#1}::as_ref),
+    - Macro-expanded: false,
+    - LLM-improved: false,
+    - Fuzzing Targets:
+      * http_fuzz_4203523801910715689
+  StableURAPI: eq::/home/cdc/SURF/deepSURF-big-experiment-harnesses/http-0.1.19/src/uri/authority.rs::290,
+    - URAPI: DefId(0:1258 ~ http[2aa2]::uri::authority::{impl#7}::eq),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * http_fuzz_15074099069018251397_deepseek-r1_turn1
+      * http_fuzz_8246734304335439568_deepseek-r1_turn6
+  StableURAPI: eq::/home/cdc/SURF/deepSURF-big-experiment-harnesses/http-0.1.19/src/header/name.rs::2002,
+    - URAPI: DefId(0:575 ~ http[2aa2]::header::name::{impl#24}::eq),
+    - Macro-expanded: false,
+    - LLM-improved: false,
+    - Fuzzing Targets:
+      * http_fuzz_15271004787838234199
+  StableURAPI: scheme_str::/home/cdc/SURF/deepSURF-big-experiment-harnesses/http-0.1.19/src/uri/mod.rs::483,
+    - URAPI: DefId(0:1555 ~ http[2aa2]::uri::{impl#0}::scheme_str),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * http_fuzz_633073009428178114_deepseek-r1_turn5
+      * http_fuzz_9171944548155438291_deepseek-r1_turn4
+      * http_fuzz_3228129819407560722_deepseek-r1_turn6
+      * http_fuzz_1129203924549505096_deepseek-r1_turn4
+  StableURAPI: port_u16::/home/cdc/SURF/deepSURF-big-experiment-harnesses/http-0.1.19/src/uri/authority.rs::266,
+    - URAPI: DefId(0:1240 ~ http[2aa2]::uri::authority::{impl#0}::port_u16),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * http_fuzz_7913316134776891349_deepseek-r1_turn3
+      * http_fuzz_14479845234129020174_deepseek-r1_turn4
+      * http_fuzz_633073009428178114_deepseek-r1_turn5
+      * http_fuzz_17499511304804928272_deepseek-r1_turn4
+      * http_fuzz_15125643739086163309_deepseek-r1_turn6
+      * http_fuzz_13198466464091852098_deepseek-r1_turn3
+      * http_fuzz_1859281628697759420_deepseek-r1_turn2
+      * http_fuzz_17499758452050100868_deepseek-r1_turn6
+      * http_fuzz_14760610607845670744_deepseek-r1_turn5
+      * http_fuzz_16619793432602079741_deepseek-r1_turn2
+      * http_fuzz_15074099069018251397_deepseek-r1_turn1
+  StableURAPI: eq::/home/cdc/SURF/deepSURF-big-experiment-harnesses/http-0.1.19/src/method.rs::317,
+    - URAPI: DefId(0:909 ~ http[2aa2]::method::{impl#7}::eq),
+    - Macro-expanded: false,
+    - LLM-improved: false,
+    - Fuzzing Targets:
+      * http_fuzz_4750753213258524406
+      * http_fuzz_14489106343100526875
+  StableURAPI: from_shared::/home/cdc/SURF/deepSURF-big-experiment-harnesses/http-0.1.19/src/uri/path.rs::42,
+    - URAPI: DefId(0:1361 ~ http[2aa2]::uri::path::{impl#0}::from_shared),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * http_fuzz_15407387830709233043_deepseek-r1_turn4
+      * http_fuzz_4718405918461946120_deepseek-r1_turn3
+      * http_fuzz_11941034398563315348_deepseek-r1_turn5
+      * http_fuzz_4521340454861179515_deepseek-r1_turn3
+      * http_fuzz_18370229373432502685_deepseek-r1_turn5
+  StableURAPI: get::/home/cdc/SURF/deepSURF-big-experiment-harnesses/http-0.1.19/src/header/map.rs::663,
+    - URAPI: DefId(0:672 ~ http[2aa2]::header::value::{impl#9}::try_from),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * http_fuzz_3945967988863451451_deepseek-r1_turn3
+      * http_fuzz_3013850531557132465_deepseek-r1_turn4
+      * http_fuzz_12225452624617022263_deepseek-r1_turn4
+      * http_fuzz_1033577502195283290_deepseek-r1_turn3
+      * http_fuzz_18370229373432502685_deepseek-r1_turn5
+      * http_fuzz_10782686495686518557_deepseek-r1_turn2
+      * http_fuzz_17256496518121575065_deepseek-r1_turn5
+      * http_fuzz_15407387830709233043_deepseek-r1_turn4
+      * http_fuzz_633073009428178114_deepseek-r1_turn5
+      * http_fuzz_9623935234926433805_deepseek-r1_turn4
+      * http_fuzz_11742874337819524145_deepseek-r1_turn5
+      * http_fuzz_10755525721000006111_deepseek-r1_turn3
+      * http_fuzz_14479845234129020174_deepseek-r1_turn4
+      * http_fuzz_4407497658046288733_deepseek-r1_turn6
+      * http_fuzz_11941034398563315348_deepseek-r1_turn5
+      * http_fuzz_11139723047021207997_deepseek-r1_turn6
+      * http_fuzz_11571823832979613380_deepseek-r1_turn5
+      * http_fuzz_10403464805765083091_deepseek-r1_turn3
+  StableURAPI: partial_cmp::/home/cdc/SURF/deepSURF-big-experiment-harnesses/http-0.1.19/src/uri/authority.rs::402,
+    - URAPI: DefId(0:1290 ~ http[2aa2]::uri::authority::{impl#16}::partial_cmp),
+    - Macro-expanded: false,
+    - LLM-improved: false,
+    - Fuzzing Targets:
+      * http_fuzz_8499247842573788925
+  StableURAPI: partial_cmp::/home/cdc/SURF/deepSURF-big-experiment-harnesses/http-0.1.19/src/uri/path.rs::427,
+    - URAPI: DefId(0:1419 ~ http[2aa2]::uri::path::{impl#20}::partial_cmp),
+    - Macro-expanded: false,
+    - LLM-improved: false,
+    - Fuzzing Targets:
+      * http_fuzz_3013850531557132465
+  StableURAPI: try_from::/home/cdc/SURF/deepSURF-big-experiment-harnesses/http-0.1.19/src/header/name.rs::1915,
+    - URAPI: DefId(0:519 ~ http[2aa2]::header::name::{impl#3}::as_ref),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * http_fuzz_17256496518121575065_deepseek-r1_turn5
+      * http_fuzz_9623935234926433805_deepseek-r1_turn4
+  StableURAPI: from_str::/home/cdc/SURF/deepSURF-big-experiment-harnesses/http-0.1.19/src/uri/scheme.rs::151,
+    - URAPI: DefId(0:1502 ~ http[2aa2]::uri::scheme::{impl#4}::from_str),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * http_fuzz_633073009428178114_deepseek-r1_turn5
+      * http_fuzz_10551007774416917119_deepseek-r1_turn2
+      * http_fuzz_4407497658046288733_deepseek-r1_turn6
+      * http_fuzz_3228129819407560722_deepseek-r1_turn6
+      * http_fuzz_15271004787838234199_deepseek-r1_turn5
+      * http_fuzz_17801382227913130406_deepseek-r1_turn5
+      * http_fuzz_14760610607845670744_deepseek-r1_turn5
+      * http_fuzz_10403464805765083091_deepseek-r1_turn3
+      * http_fuzz_18366243088040221429_deepseek-r1_turn5
+      * http_fuzz_15125643739086163309_deepseek-r1_turn6
+      * http_fuzz_14479845234129020174_deepseek-r1_turn4
+      * http_fuzz_18064376459007522246_deepseek-r1_turn6
+      * http_fuzz_4521340454861179515_deepseek-r1_turn3
+      * http_fuzz_11742874337819524145_deepseek-r1_turn5
+      * http_fuzz_17499758452050100868_deepseek-r1_turn6
+      * http_fuzz_11139723047021207997_deepseek-r1_turn6
+      * http_fuzz_11208984897607767141_deepseek-r1_turn2
+  StableURAPI: fmt::/home/cdc/SURF/deepSURF-big-experiment-harnesses/http-0.1.19/src/uri/scheme.rs::178,
+    - URAPI: DefId(0:1510 ~ http[2aa2]::uri::scheme::{impl#7}::fmt),
+    - Macro-expanded: false,
+    - LLM-improved: false,
+    - Fuzzing Targets:
+      * http_fuzz_18366243088040221429
+  StableURAPI: head::/home/cdc/SURF/deepSURF-big-experiment-harnesses/http-0.1.19/src/request.rs::337,
+    - URAPI: DefId(0:984 ~ http[2aa2]::request::{impl#0}::patch),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * http_fuzz_15711454402980519476_deepseek-r1_turn2
+  StableURAPI: eq::/home/cdc/SURF/deepSURF-big-experiment-harnesses/http-0.1.19/src/method.rs::303,
+    - URAPI: DefId(0:903 ~ http[2aa2]::method::{impl#5}::eq),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * http_fuzz_5315526172046900052_deepseek-r1_turn2
+  StableURAPI: as_str::/home/cdc/SURF/deepSURF-big-experiment-harnesses/http-0.1.19/src/uri/scheme.rs::94,
+    - URAPI: DefId(0:1484 ~ http[2aa2]::uri::scheme::{impl#0}::as_str),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * http_fuzz_11742874337819524145_deepseek-r1_turn5
+      * http_fuzz_14479845234129020174_deepseek-r1_turn4
+      * http_fuzz_633073009428178114_deepseek-r1_turn5
+      * http_fuzz_4407497658046288733_deepseek-r1_turn6
+  StableURAPI: from_static::/home/cdc/SURF/deepSURF-big-experiment-harnesses/http-0.1.19/src/uri/authority.rs::75,
+    - URAPI: DefId(0:1233 ~ http[2aa2]::uri::authority::{impl#0}::from_static),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * http_fuzz_14760610607845670744_deepseek-r1_turn5
+      * http_fuzz_11742874337819524145_deepseek-r1_turn5
+      * http_fuzz_18064376459007522246_deepseek-r1_turn6
+      * http_fuzz_15125643739086163309_deepseek-r1_turn6
+      * http_fuzz_1129203924549505096_deepseek-r1_turn4
+      * http_fuzz_3013850531557132465_deepseek-r1_turn4
+      * http_fuzz_1859281628697759420_deepseek-r1_turn2
+      * http_fuzz_9623935234926433805_deepseek-r1_turn4
+      * http_fuzz_17499758452050100868_deepseek-r1_turn6
+      * http_fuzz_15074099069018251397_deepseek-r1_turn1
+      * http_fuzz_3228129819407560722_deepseek-r1_turn6
+      * http_fuzz_633073009428178114_deepseek-r1_turn5
+      * http_fuzz_8246734304335439568_deepseek-r1_turn6
+      * http_fuzz_10551007774416917119_deepseek-r1_turn2
+      * http_fuzz_18370229373432502685_deepseek-r1_turn5
+      * http_fuzz_10403464805765083091_deepseek-r1_turn3
+      * http_fuzz_11139723047021207997_deepseek-r1_turn6
+  StableURAPI: as_str::/home/cdc/SURF/deepSURF-big-experiment-harnesses/http-0.1.19/src/header/name.rs::1800,
+    - URAPI: DefId(0:513 ~ http[2aa2]::header::name::{impl#1}::as_str),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * http_fuzz_10755525721000006111_deepseek-r1_turn3
+      * http_fuzz_13198466464091852098_deepseek-r1_turn3
+      * http_fuzz_18064376459007522246_deepseek-r1_turn6
+      * http_fuzz_633073009428178114_deepseek-r1_turn5
+      * http_fuzz_11139723047021207997_deepseek-r1_turn6
+      * http_fuzz_15711454402980519476_deepseek-r1_turn2
+      * http_fuzz_3362688223832736006_deepseek-r1_turn3
+      * http_fuzz_17256496518121575065_deepseek-r1_turn5
+      * http_fuzz_1129203924549505096_deepseek-r1_turn4
+      * http_fuzz_14479845234129020174_deepseek-r1_turn4
+  StableURAPI: as_ref::/home/cdc/SURF/deepSURF-big-experiment-harnesses/http-0.1.19/src/uri/port.rs::97,
+    - URAPI: DefId(0:1453 ~ http[2aa2]::uri::port::{impl#5}::as_ref),
+    - Macro-expanded: false,
+    - LLM-improved: false,
+    - Fuzzing Targets:
+      * http_fuzz_7050588775533050597
+      * http_fuzz_9903417257133658644
+      * http_fuzz_4790000533184527890
+  StableURAPI: partial_cmp::/home/cdc/SURF/deepSURF-big-experiment-harnesses/http-0.1.19/src/uri/authority.rs::386,
+    - URAPI: DefId(0:1282 ~ http[2aa2]::uri::authority::{impl#14}::partial_cmp),
+    - Macro-expanded: false,
+    - LLM-improved: false,
+    - Fuzzing Targets:
+      * http_fuzz_10079874031940525441
+  StableURAPI: get_mut::/home/cdc/SURF/deepSURF-big-experiment-harnesses/http-0.1.19/src/header/map.rs::698,
+    - URAPI: DefId(0:208 ~ http[2aa2]::header::map::{impl#23}::next),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * http_fuzz_630690239127171415_deepseek-r1_turn1
+      * http_fuzz_9171944548155438291_deepseek-r1_turn4
+  StableURAPI: from_static::/home/cdc/SURF/deepSURF-big-experiment-harnesses/http-0.1.19/src/header/name.rs::1768,
+    - URAPI: DefId(0:512 ~ http[2aa2]::header::name::{impl#1}::from_static),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * http_fuzz_8246734304335439568_deepseek-r1_turn6
+      * http_fuzz_18370229373432502685_deepseek-r1_turn5
+      * http_fuzz_4718405918461946120_deepseek-r1_turn3
+      * http_fuzz_15668099243118148896_deepseek-r1_turn3
+      * http_fuzz_1859281628697759420_deepseek-r1_turn2
+      * http_fuzz_1129203924549505096_deepseek-r1_turn4
+      * http_fuzz_15125643739086163309_deepseek-r1_turn6
+      * http_fuzz_9623935234926433805_deepseek-r1_turn4
+      * http_fuzz_3228129819407560722_deepseek-r1_turn6
+      * http_fuzz_15271004787838234199_deepseek-r1_turn5
+      * http_fuzz_3013850531557132465_deepseek-r1_turn4
+      * http_fuzz_14479845234129020174_deepseek-r1_turn4
+      * http_fuzz_3945967988863451451_deepseek-r1_turn3
+      * http_fuzz_8740530422307429684_deepseek-r1_turn6
+      * http_fuzz_7913316134776891349_deepseek-r1_turn3
+      * http_fuzz_11742874337819524145_deepseek-r1_turn5
+      * http_fuzz_10551007774416917119_deepseek-r1_turn2
+      * http_fuzz_14760610607845670744_deepseek-r1_turn5
+      * http_fuzz_10782686495686518557_deepseek-r1_turn2
+      * http_fuzz_15711454402980519476_deepseek-r1_turn2
+      * http_fuzz_10403464805765083091_deepseek-r1_turn3
+      * http_fuzz_3362688223832736006_deepseek-r1_turn3
+      * http_fuzz_18366243088040221429_deepseek-r1_turn5
+      * http_fuzz_17256496518121575065_deepseek-r1_turn5
+      * http_fuzz_10755525721000006111_deepseek-r1_turn3
+      * http_fuzz_11693349340932289670_deepseek-r1_turn1
+      * http_fuzz_4443306390242441807_deepseek-r1_turn6
+      * http_fuzz_13198466464091852098_deepseek-r1_turn3
+      * http_fuzz_1033577502195283290_deepseek-r1_turn3
+  StableURAPI: fmt::/home/cdc/SURF/deepSURF-big-experiment-harnesses/http-0.1.19/src/method.rs::329,
+    - URAPI: DefId(0:913 ~ http[2aa2]::method::{impl#9}::fmt),
+    - Macro-expanded: false,
+    - LLM-improved: false,
+    - Fuzzing Targets:
+      * http_fuzz_3235805641849992968
+      * http_fuzz_6032285134972933730
+  StableURAPI: eq::/home/cdc/SURF/deepSURF-big-experiment-harnesses/http-0.1.19/src/method.rs::296,
+    - URAPI: DefId(0:901 ~ http[2aa2]::method::{impl#4}::eq),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * http_fuzz_5315526172046900052_deepseek-r1_turn2
+  StableURAPI: as_str::/home/cdc/SURF/deepSURF-big-experiment-harnesses/http-0.1.19/src/method.rs::234,
+    - URAPI: DefId(0:890 ~ http[2aa2]::method::{impl#0}::as_str),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * http_fuzz_4407497658046288733_deepseek-r1_turn6
+  StableURAPI: fmt::/home/cdc/SURF/deepSURF-big-experiment-harnesses/http-0.1.19/src/header/value.rs::332,
+    - URAPI: DefId(0:649 ~ http[2aa2]::header::value::{impl#2}::fmt),
+    - Macro-expanded: false,
+    - LLM-improved: false,
+    - Fuzzing Targets:
+      * http_fuzz_16338078492519129224
+      * http_fuzz_4832421390391848337
+      * http_fuzz_17876295723090201450
+  StableURAPI: eq::/home/cdc/SURF/deepSURF-big-experiment-harnesses/http-0.1.19/src/header/value.rs::718,
+    - URAPI: DefId(0:726 ~ http[2aa2]::header::value::{impl#33}::eq),
+    - Macro-expanded: false,
+    - LLM-improved: false,
+    - Fuzzing Targets:
+      * http_fuzz_14732319853573133415
+      * http_fuzz_14186962726730187752
+      * http_fuzz_13386474297363163865
+  StableURAPI: fmt::/home/cdc/SURF/deepSURF-big-experiment-harnesses/http-0.1.19/src/method.rs::323,
+    - URAPI: DefId(0:911 ~ http[2aa2]::method::{impl#8}::fmt),
+    - Macro-expanded: false,
+    - LLM-improved: false,
+    - Fuzzing Targets:
+      * http_fuzz_11839655416389211671
+      * http_fuzz_10868626254039110460
+  StableURAPI: eq::/home/cdc/SURF/deepSURF-big-experiment-harnesses/http-0.1.19/src/uri/path.rs::357,
+    - URAPI: DefId(0:1395 ~ http[2aa2]::uri::path::{impl#10}::eq),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * http_fuzz_16619793432602079741_deepseek-r1_turn2
+  StableURAPI: from_shared::/home/cdc/SURF/deepSURF-big-experiment-harnesses/http-0.1.19/src/uri/mod.rs::265,
+    - URAPI: DefId(0:1547 ~ http[2aa2]::uri::{impl#0}::from_shared),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * http_fuzz_11941034398563315348_deepseek-r1_turn5
+      * http_fuzz_3228129819407560722_deepseek-r1_turn6
+      * http_fuzz_4718405918461946120_deepseek-r1_turn3
+      * http_fuzz_15711454402980519476_deepseek-r1_turn2
+  StableURAPI: port::/home/cdc/SURF/deepSURF-big-experiment-harnesses/http-0.1.19/src/uri/authority.rs::210,
+    - URAPI: DefId(0:1237 ~ http[2aa2]::uri::authority::{impl#0}::port),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * http_fuzz_14760610607845670744_deepseek-r1_turn5
+  StableURAPI: size_hint::/home/cdc/SURF/deepSURF-big-experiment-harnesses/http-0.1.19/src/header/map.rs::1984,
+    - URAPI: DefId(0:168 ~ http[2aa2]::header::map::{impl#14}::size_hint),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * http_fuzz_11571823832979613380_deepseek-r1_turn5
+  StableURAPI: eq::/home/cdc/SURF/deepSURF-big-experiment-harnesses/http-0.1.19/src/uri/authority.rs::338,
+    - URAPI: DefId(0:1262 ~ http[2aa2]::uri::authority::{impl#9}::eq),
+    - Macro-expanded: false,
+    - LLM-improved: false,
+    - Fuzzing Targets:
+      * http_fuzz_6436411825302629878
+  StableURAPI: get::/home/cdc/SURF/deepSURF-big-experiment-harnesses/http-0.1.19/src/request.rs::231,
+    - URAPI: DefId(0:984 ~ http[2aa2]::request::{impl#0}::patch),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * http_fuzz_15711454402980519476_deepseek-r1_turn2
+------------------------------------------------------------------------------------------------------------------------------------

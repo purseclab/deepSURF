@@ -1,0 +1,5 @@
+[workspace]
+members = [
+	"test_string_interner1",
+	"replay_string_interner1",
+]

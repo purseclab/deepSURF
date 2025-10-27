@@ -1,0 +1,17 @@
+[workspace]
+
+[package]
+name = "id-map_fuzz_6180106901188358320"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "id-map_fuzz_6180106901188358320"
+path = "src/id-map_fuzz_6180106901188358320.rs"
+
+[dependencies]
+afl = "=0.15.7"
+home = "=0.5.9"
+global_data = { path = "../../../../code/global_data" }
+id-map = { path = "../../../../dataset/rustsan_crates/id-map-0.2.1" }
+id-set = "=0.2.1"

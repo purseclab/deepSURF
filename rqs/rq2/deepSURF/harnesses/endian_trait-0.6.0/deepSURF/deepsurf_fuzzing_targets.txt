@@ -1,0 +1,71 @@
+deepSURF: Generated Targets to be Fuzzed
+------------------------------------------------------------------------------------------------------------------------------------
+  StableURAPI: from_le::/home/cdc/SURF/deepSURF-big-experiment-harnesses/endian_trait-0.6.0/src/slices.rs::15,
+    - URAPI: DefId(0:29 ~ endian_trait[144d]::slices::{impl#0}::from_le),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * endian_trait_fuzz_7198618591775168066_deepseek-r1_turn1
+      * endian_trait_fuzz_15821067514151991614_deepseek-r1_turn3
+      * endian_trait_fuzz_7198618591775168066
+      * endian_trait_fuzz_12993474063626015632_deepseek-r1_turn2
+      * endian_trait_fuzz_8194725623679328941_deepseek-r1_turn3
+  StableURAPI: from_be::/home/cdc/SURF/deepSURF-big-experiment-harnesses/endian_trait-0.6.0/src/slices.rs::9,
+    - URAPI: DefId(0:28 ~ endian_trait[144d]::slices::{impl#0}::from_be),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * endian_trait_fuzz_12993474063626015632_deepseek-r1_turn2
+      * endian_trait_fuzz_7198618591775168066_deepseek-r1_turn1
+      * endian_trait_fuzz_15821067514151991614
+      * endian_trait_fuzz_15821067514151991614_deepseek-r1_turn3
+      * endian_trait_fuzz_8194725623679328941_deepseek-r1_turn3
+  StableURAPI: from_be::/home/cdc/SURF/deepSURF-big-experiment-harnesses/endian_trait-0.6.0/src/lib.rs::125,
+    - URAPI: DefId(0:18 ~ endian_trait[144d]::{impl#1}::from_be),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * endian_trait_fuzz_15160447695257319408_deepseek-r1_turn1
+      * endian_trait_fuzz_8194725623679328941_deepseek-r1_turn3
+  StableURAPI: from_le::/home/cdc/SURF/deepSURF-big-experiment-harnesses/endian_trait-0.6.0/src/lib.rs::137,
+    - URAPI: DefId(0:19 ~ endian_trait[144d]::{impl#1}::from_le),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * endian_trait_fuzz_15160447695257319408_deepseek-r1_turn1
+      * endian_trait_fuzz_15821067514151991614_deepseek-r1_turn3
+  StableURAPI: to_le::/home/cdc/SURF/deepSURF-big-experiment-harnesses/endian_trait-0.6.0/src/lib.rs::159,
+    - URAPI: DefId(0:21 ~ endian_trait[144d]::{impl#1}::to_le),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * endian_trait_fuzz_15160447695257319408_deepseek-r1_turn1
+  StableURAPI: to_be::/home/cdc/SURF/deepSURF-big-experiment-harnesses/endian_trait-0.6.0/src/lib.rs::150,
+    - URAPI: DefId(0:20 ~ endian_trait[144d]::{impl#1}::to_be),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * endian_trait_fuzz_15821067514151991614_deepseek-r1_turn3
+      * endian_trait_fuzz_15160447695257319408_deepseek-r1_turn1
+  StableURAPI: to_le::/home/cdc/SURF/deepSURF-big-experiment-harnesses/endian_trait-0.6.0/src/slices.rs::27,
+    - URAPI: DefId(0:31 ~ endian_trait[144d]::slices::{impl#0}::to_le),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * endian_trait_fuzz_7198618591775168066_deepseek-r1_turn1
+      * endian_trait_fuzz_15821067514151991614_deepseek-r1_turn3
+      * endian_trait_fuzz_8194725623679328941
+      * endian_trait_fuzz_8194725623679328941_deepseek-r1_turn3
+      * endian_trait_fuzz_15160447695257319408_deepseek-r1_turn1
+      * endian_trait_fuzz_12993474063626015632_deepseek-r1_turn2
+  StableURAPI: to_be::/home/cdc/SURF/deepSURF-big-experiment-harnesses/endian_trait-0.6.0/src/slices.rs::21,
+    - URAPI: DefId(0:30 ~ endian_trait[144d]::slices::{impl#0}::to_be),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * endian_trait_fuzz_8194725623679328941_deepseek-r1_turn3
+      * endian_trait_fuzz_12993474063626015632
+      * endian_trait_fuzz_15160447695257319408_deepseek-r1_turn1
+      * endian_trait_fuzz_12993474063626015632_deepseek-r1_turn2
+      * endian_trait_fuzz_7198618591775168066_deepseek-r1_turn1
+------------------------------------------------------------------------------------------------------------------------------------

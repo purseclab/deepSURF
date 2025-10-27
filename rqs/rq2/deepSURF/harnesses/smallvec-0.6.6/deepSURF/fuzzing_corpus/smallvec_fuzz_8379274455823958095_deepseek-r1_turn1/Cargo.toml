@@ -1,0 +1,16 @@
+[workspace]
+
+[package]
+name = "smallvec_fuzz_8379274455823958095"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "smallvec_fuzz_8379274455823958095"
+path = "src/smallvec_fuzz_8379274455823958095.rs"
+
+[dependencies]
+afl = "=0.15.7"
+home = "=0.5.9"
+smallvec = { path = "../../../../smallvec-0.6.6/" }
+global_data = { path = "../../../../../../../../code/global_data" }

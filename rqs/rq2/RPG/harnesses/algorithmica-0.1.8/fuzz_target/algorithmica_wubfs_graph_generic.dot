@@ -1,0 +1,10 @@
+digraph {
+	overlap=false
+	node0 [label=0, color=blue]
+	node1 [label=1, color=blue]
+	node2 [label=2, color=blue]
+	node3 [label=3, color=blue]
+	node0 -> node1 [label=0]
+	node1 -> node1 [label=0]
+	node2 -> node3 [label=0]
+}

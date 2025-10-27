@@ -1,0 +1,24 @@
+[package]
+name = "gost94"
+version = "0.10.4"
+description = "GOST R 34.11-94 hash function"
+authors = ["RustCrypto Developers"]
+license = "MIT OR Apache-2.0"
+readme = "README.md"
+edition = "2018"
+documentation = "https://docs.rs/gost94"
+repository = "https://github.com/RustCrypto/hashes"
+keywords = ["crypto", "gost94", "gost", "hash", "digest"]
+categories = ["cryptography", "no-std"]
+
+[dependencies]
+digest = "0.10.7"
+
+[dev-dependencies]
+digest = { version = "0.10.7", features = ["dev"] }
+hex-literal = "0.2.2"
+
+[features]
+default = ["std"]
+std = ["digest/std"]
+oid = ["digest/oid"] # Enable OID support. WARNING: Bumps MSRV to 1.57

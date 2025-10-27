@@ -1,0 +1,83 @@
+     Removed 124 files, 51.3MiB total
+   Compiling libc v0.2.175
+   Compiling semver v1.0.26
+   Compiling home v0.5.5
+   Compiling xdg v2.5.2
+   Compiling global_data v0.1.0 (/home/cdc/deepSURF-sp26-artifacts/artifact_code/global_data)
+   Compiling afl v0.15.7
+   Compiling rustc_version v0.4.1
+   Compiling cbox v0.3.0 (/home/cdc/deepSURF-sp26-artifacts/artifact_data/dataset/erasan_crates/cbox-0.3.0)
+   Compiling cbox_fuzz_2852943083114743847 v0.1.0 (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#21-cbox/harness)
+warning: unused import: `cbox::*`
+ --> src/cbox_fuzz_2852943083114743847.rs:5:5
+  |
+5 | use cbox::*;
+  |     ^^^^^^^
+  |
+  = note: `#[warn(unused_imports)]` on by default
+
+warning: unused import: `std::str::FromStr`
+ --> src/cbox_fuzz_2852943083114743847.rs:7:5
+  |
+7 | use std::str::FromStr;
+  |     ^^^^^^^^^^^^^^^^^
+
+warning: unused imports: `DerefMut`, `Deref`, `IndexMut`, `Index`
+ --> src/cbox_fuzz_2852943083114743847.rs:8:16
+  |
+8 | use std::ops::{Deref, DerefMut, Index, IndexMut};
+  |                ^^^^^  ^^^^^^^^  ^^^^^  ^^^^^^^^
+
+warning: the item `TryInto` is imported redundantly
+  --> src/cbox_fuzz_2852943083114743847.rs:90:9
+   |
+90 |     use std::convert::TryInto;
+   |         ^^^^^^^^^^^^^^^^^^^^^
+  --> /rustc/11f32b73e0dc9287e305b5b9980d24aecdc8c17f/library/std/src/prelude/mod.rs:129:13
+   |
+   = note: the item `TryInto` is already defined here
+
+warning: the item `TryInto` is imported redundantly
+  --> src/cbox_fuzz_2852943083114743847.rs:97:9
+   |
+97 |     use std::convert::TryInto;
+   |         ^^^^^^^^^^^^^^^^^^^^^
+  --> /rustc/11f32b73e0dc9287e305b5b9980d24aecdc8c17f/library/std/src/prelude/mod.rs:129:13
+   |
+   = note: the item `TryInto` is already defined here
+
+warning: variable `GLOBAL_DATA` should have a snake case name
+  --> src/cbox_fuzz_2852943083114743847.rs:16:7
+   |
+16 |         let GLOBAL_DATA = global_data.first_half;
+   |             ^^^^^^^^^^^ help: convert the identifier to snake case: `global_data`
+   |
+   = note: `#[warn(non_snake_case)]` on by default
+
+warning: `cbox_fuzz_2852943083114743847` (bin "cbox_fuzz_2852943083114743847") generated 6 warnings (run `cargo fix --bin "cbox_fuzz_2852943083114743847"` to apply 3 suggestions)
+    Finished dev [unoptimized + debuginfo] target(s) in 2.14s
+AddressSanitizer:DEADLYSIGNAL
+=================================================================
+==1395980==ERROR: AddressSanitizer: SEGV on unknown address (pc 0x7f6dbd9de0bc bp 0x7fff50c8d130 sp 0x7fff50c8c8e8 T0)
+==1395980==The signal is caused by a READ memory access.
+==1395980==Hint: this fault was caused by a dereference of a high value address (see register values below).  Disassemble the provided pc to learn which register was used.
+    #0 0x7f6dbd9de0bc  (/lib/x86_64-linux-gnu/libc.so.6+0x1b20bc) (BuildId: 490fef8403240c91833978d494d39e537409b92e)
+    #1 0x556bc722af7a  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#21-cbox/harness/target/x86_64-unknown-linux-gnu/debug/cbox_fuzz_2852943083114743847+0x1ff7a) (BuildId: 62c4c907f32ffaad4494b85a7fd35f3536cd8c32)
+    #2 0x556bc72d1168  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#21-cbox/harness/target/x86_64-unknown-linux-gnu/debug/cbox_fuzz_2852943083114743847+0xc6168) (BuildId: 62c4c907f32ffaad4494b85a7fd35f3536cd8c32)
+    #3 0x556bc730b13f  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#21-cbox/harness/target/x86_64-unknown-linux-gnu/debug/cbox_fuzz_2852943083114743847+0x10013f) (BuildId: 62c4c907f32ffaad4494b85a7fd35f3536cd8c32)
+    #4 0x556bc72e952a  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#21-cbox/harness/target/x86_64-unknown-linux-gnu/debug/cbox_fuzz_2852943083114743847+0xde52a) (BuildId: 62c4c907f32ffaad4494b85a7fd35f3536cd8c32)
+    #5 0x556bc72e9a74  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#21-cbox/harness/target/x86_64-unknown-linux-gnu/debug/cbox_fuzz_2852943083114743847+0xdea74) (BuildId: 62c4c907f32ffaad4494b85a7fd35f3536cd8c32)
+    #6 0x556bc72ca9c7  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#21-cbox/harness/target/x86_64-unknown-linux-gnu/debug/cbox_fuzz_2852943083114743847+0xbf9c7) (BuildId: 62c4c907f32ffaad4494b85a7fd35f3536cd8c32)
+    #7 0x556bc72cce1a  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#21-cbox/harness/target/x86_64-unknown-linux-gnu/debug/cbox_fuzz_2852943083114743847+0xc1e1a) (BuildId: 62c4c907f32ffaad4494b85a7fd35f3536cd8c32)
+    #8 0x556bc72cc191  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#21-cbox/harness/target/x86_64-unknown-linux-gnu/debug/cbox_fuzz_2852943083114743847+0xc1191) (BuildId: 62c4c907f32ffaad4494b85a7fd35f3536cd8c32)
+    #9 0x556bc72ca1a1  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#21-cbox/harness/target/x86_64-unknown-linux-gnu/debug/cbox_fuzz_2852943083114743847+0xbf1a1) (BuildId: 62c4c907f32ffaad4494b85a7fd35f3536cd8c32)
+    #10 0x556bc72ca1f0  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#21-cbox/harness/target/x86_64-unknown-linux-gnu/debug/cbox_fuzz_2852943083114743847+0xbf1f0) (BuildId: 62c4c907f32ffaad4494b85a7fd35f3536cd8c32)
+    #11 0x556bc72e79b0  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#21-cbox/harness/target/x86_64-unknown-linux-gnu/debug/cbox_fuzz_2852943083114743847+0xdc9b0) (BuildId: 62c4c907f32ffaad4494b85a7fd35f3536cd8c32)
+    #12 0x556bc72ccfd5  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#21-cbox/harness/target/x86_64-unknown-linux-gnu/debug/cbox_fuzz_2852943083114743847+0xc1fd5) (BuildId: 62c4c907f32ffaad4494b85a7fd35f3536cd8c32)
+    #13 0x7f6dbd855d8f  (/lib/x86_64-linux-gnu/libc.so.6+0x29d8f) (BuildId: 490fef8403240c91833978d494d39e537409b92e)
+    #14 0x7f6dbd855e3f  (/lib/x86_64-linux-gnu/libc.so.6+0x29e3f) (BuildId: 490fef8403240c91833978d494d39e537409b92e)
+    #15 0x556bc721a9e4  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#21-cbox/harness/target/x86_64-unknown-linux-gnu/debug/cbox_fuzz_2852943083114743847+0xf9e4) (BuildId: 62c4c907f32ffaad4494b85a7fd35f3536cd8c32)
+
+AddressSanitizer can not provide additional info.
+SUMMARY: AddressSanitizer: SEGV (/lib/x86_64-linux-gnu/libc.so.6+0x1b20bc) (BuildId: 490fef8403240c91833978d494d39e537409b92e) 
+==1395980==ABORTING

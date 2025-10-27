@@ -1,0 +1,148 @@
+algorithmica:
+    * URAPI Coverage: 0/1 (0%)
+    * Compilable Harnesses (#1):
+        1. test_algorithmica0
+    * Location of the Harnesses: RULF/harnesses/algorithmica-afl-work
+
+
+
+bumpalo:
+    * URAPI Coverage: 10/28 (35.71%):
+        1. bumpalo::Bump::reset
+        2. bumpalo::Bump::alloc_str
+        3. bumpalo::Bump::with_capacity
+        4. bumpalo::Bump::drop
+        5. bumpalo::Bump::iter_allocated_chunks
+        6. bumpalo::Bump::try_new
+        7. bumpalo::Bump::try_with_capacity
+        8. bumpalo::Bump::allocated_bytes
+        9. bumpalo::Bump::new
+        10. chunk_capacity
+    * Compilable Harnesses (#9):
+        1. test_bumpalo0
+        2. test_bumpalo1
+        3. test_bumpalo2
+        4. test_bumpalo3
+        5. test_bumpalo4
+        6. test_bumpalo5
+        7. test_bumpalo6
+        8. test_bumpalo7
+        9. test_bumpalo8
+    * Location of the Harnesses: RULF/harnesses/bumpalo-afl-work
+
+
+
+pnet_packet:
+    * URAPI Coverage: 0/68 (0%):
+    * Compilable Harnesses (#21):
+        1. test_pnet_packet0
+        2. test_pnet_packet1
+        3. test_pnet_packet2
+        4. test_pnet_packet4
+        5. test_pnet_packet5
+        6. test_pnet_packet6
+        7. test_pnet_packet7
+        8. test_pnet_packet8
+        9. test_pnet_packet9
+        10. test_pnet_packet10
+        11. test_pnet_packet11
+        12. test_pnet_packet12
+        13. test_pnet_packet13
+        14. test_pnet_packet14
+        15. test_pnet_packet15
+        16. test_pnet_packet16
+        17. test_pnet_packet17
+        18. test_pnet_packet18
+        19. test_pnet_packet19
+        20. test_pnet_packet20
+        21. test_pnet_packet21
+    * Location of the Harnesses: RULF/harnesses/pnet_packet-afl-work
+
+
+
+rdiff:
+    * URAPI Coverage: 0/1 (0%):
+    * Compilable Harnesses (#2):
+        1. test_rdiff0
+        2. test_rdiff1
+    * Location of the Harnesses: RULF/harnesses/rdiff-afl-work
+
+
+
+rusqlite:
+    * URAPI Coverage: 1/101 (0.99%):
+        1. rusqlite::Connection::open_in_memory_with_flags_and_vfs
+    * Compilable Harnesses (#3):
+        1. test_rusqlite0
+        2. test_rusqlite1
+        3. test_rusqlite2
+    * Location of the Harnesses: RULF/harnesses/rusqlite-afl-work
+
+
+
+secp256k1:
+    * URAPI Coverage: 18/86 (20.93%):
+        1. secp256k1::SecretKey::from_slice
+        2. secp256k1::SecretKey::mul_assign
+        3. secp256k1::SecretKey::add_assign
+        4. secp256k1::SecretKey::negate_assign
+        5. secp256k1::ecdh::SharedSecret::new
+        6. secp256k1::ecdsa::SerializedSignature::from_signature
+        7. secp256k1::ecdsa::Signature::from_der
+        8. secp256k1::ecdsa::Signature::serialize_compact
+        9. secp256k1::ecdsa::Signature::normalize_s
+        10. secp256k1::ecdsa::Signature::serialize_der
+        11. secp256k1::ecdsa::Signature::from_der_lax
+        12. secp256k1::PublicKey::serialize_uncompressed
+        13. secp256k1::PublicKey::serialize
+        14. secp256k1::PublicKey::from_slice
+        15. secp256k1::XOnlyPublicKey::from_slice
+        16. secp256k1::XOnlyPublicKey::serialize
+        17. secp256k1::ecdsa::SerializedSignature::to_signature
+        18. secp256k1::ecdsa::Signature::from_compact
+    * Compilable Harnesses (#35):
+        1. test_secp256k11
+        2. test_secp256k12
+        3. test_secp256k13
+        4. test_secp256k14
+        5. test_secp256k116
+        6. test_secp256k118
+        7. test_secp256k119
+        8. test_secp256k120
+        9. test_secp256k121
+        10. test_secp256k122
+        11. test_secp256k123
+        12. test_secp256k124
+        13. test_secp256k125
+        14. test_secp256k126
+        15. test_secp256k127
+        16. test_secp256k128
+        17. test_secp256k129
+        18. test_secp256k130
+        19. test_secp256k131
+        20. test_secp256k132
+        21. test_secp256k133
+        22. test_secp256k134
+        23. test_secp256k135
+        24. test_secp256k136
+        25. test_secp256k137
+        26. test_secp256k138
+        27. test_secp256k139
+        28. test_secp256k140
+        29. test_secp256k141
+        30. test_secp256k142
+        31. test_secp256k143
+        32. test_secp256k144
+        33. test_secp256k145
+        34. test_secp256k146
+        35. test_secp256k147
+    * Location of the Harnesses: RULF/harnesses/secp256k1-afl-work
+
+
+
+string-interner:
+    * URAPI Coverage: 1/3 (33.33%):
+        1. string_interner::Sym::from_usize
+    * Compilable Harnesses (#1):
+        1. test_string_interner1
+    * Location of the Harnesses: RULF/harnesses/string_interner-afl-work

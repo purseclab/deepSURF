@@ -1,0 +1,99 @@
+deepSURF: Generated Targets to be Fuzzed
+------------------------------------------------------------------------------------------------------------------------------------
+  StableURAPI: next::/home/cdc/SURF/ablation_deepSURF_noskip/simple-slab-0.3.2/src/lib.rs::170,
+    - URAPI: DefId(0:48 ~ simple_slab[bb81]::{impl#3}::next),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * simple-slab_fuzz_11125944248378378767_deepseek-r1_turn1
+      * simple-slab_fuzz_9361458073122351307_deepseek-r1_turn1
+      * simple-slab_fuzz_7250861895740451939_deepseek-r1_turn6
+      * simple-slab_fuzz_12997837067481994914_deepseek-r1_turn1
+      * simple-slab_fuzz_12171604173921280369_deepseek-r1_turn1
+      * simple-slab_fuzz_17632678771809484846_deepseek-r1_turn4
+      * simple-slab_fuzz_12262590058837114080_deepseek-r1_turn1
+  StableURAPI: remove::/home/cdc/SURF/ablation_deepSURF_noskip/simple-slab-0.3.2/src/lib.rs::83,
+    - URAPI: DefId(0:32 ~ simple_slab[bb81]::{impl#0}::remove),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * simple-slab_fuzz_11125944248378378767_deepseek-r1_turn1
+      * simple-slab_fuzz_17632678771809484846_deepseek-r1_turn4
+      * simple-slab_fuzz_12997837067481994914_deepseek-r1_turn1
+      * simple-slab_fuzz_9361458073122351307_deepseek-r1_turn1
+      * simple-slab_fuzz_7250861895740451939_deepseek-r1_turn6
+      * simple-slab_fuzz_14369565143762262345_deepseek-r1_turn1
+      * simple-slab_fuzz_12171604173921280369_deepseek-r1_turn1
+      * simple-slab_fuzz_12262590058837114080_deepseek-r1_turn1
+  StableURAPI: with_capacity::/home/cdc/SURF/ablation_deepSURF_noskip/simple-slab-0.3.2/src/lib.rs::43,
+    - URAPI: DefId(0:30 ~ simple_slab[bb81]::{impl#0}::with_capacity),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * simple-slab_fuzz_7250861895740451939_deepseek-r1_turn6
+      * simple-slab_fuzz_9361458073122351307_deepseek-r1_turn1
+      * simple-slab_fuzz_12171604173921280369_deepseek-r1_turn1
+      * simple-slab_fuzz_12997837067481994914_deepseek-r1_turn1
+      * simple-slab_fuzz_14369565143762262345_deepseek-r1_turn1
+      * simple-slab_fuzz_11125944248378378767_deepseek-r1_turn1
+      * simple-slab_fuzz_12262590058837114080_deepseek-r1_turn1
+      * simple-slab_fuzz_17632678771809484846_deepseek-r1_turn4
+  StableURAPI: insert::/home/cdc/SURF/ablation_deepSURF_noskip/simple-slab-0.3.2/src/lib.rs::66,
+    - URAPI: DefId(0:31 ~ simple_slab[bb81]::{impl#0}::insert),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * simple-slab_fuzz_17632678771809484846_deepseek-r1_turn4
+      * simple-slab_fuzz_12171604173921280369_deepseek-r1_turn1
+      * simple-slab_fuzz_12997837067481994914_deepseek-r1_turn1
+      * simple-slab_fuzz_9361458073122351307_deepseek-r1_turn1
+      * simple-slab_fuzz_14369565143762262345_deepseek-r1_turn1
+      * simple-slab_fuzz_11125944248378378767_deepseek-r1_turn1
+      * simple-slab_fuzz_12262590058837114080_deepseek-r1_turn1
+      * simple-slab_fuzz_7250861895740451939_deepseek-r1_turn6
+  StableURAPI: index::/home/cdc/SURF/ablation_deepSURF_noskip/simple-slab-0.3.2/src/lib.rs::162,
+    - URAPI: DefId(0:43 ~ simple_slab[bb81]::{impl#2}::index),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * simple-slab_fuzz_9361458073122351307_deepseek-r1_turn1
+      * simple-slab_fuzz_12997837067481994914_deepseek-r1_turn1
+      * simple-slab_fuzz_14369565143762262345_deepseek-r1_turn1
+      * simple-slab_fuzz_7250861895740451939_deepseek-r1_turn6
+      * simple-slab_fuzz_17632678771809484846_deepseek-r1_turn4
+      * simple-slab_fuzz_12171604173921280369_deepseek-r1_turn1
+      * simple-slab_fuzz_12262590058837114080_deepseek-r1_turn1
+  StableURAPI: drop::/home/cdc/SURF/ablation_deepSURF_noskip/simple-slab-0.3.2/src/lib.rs::148,
+    - URAPI: DefId(0:39 ~ simple_slab[bb81]::{impl#1}::drop),
+    - Macro-expanded: false,
+    - LLM-improved: false,
+    - Fuzzing Targets:
+      * simple-slab_fuzz_3843021432813208120
+      * simple-slab_fuzz_12262590058837114080
+  StableURAPI: new::/home/cdc/SURF/ablation_deepSURF_noskip/simple-slab-0.3.2/src/lib.rs::36,
+    - URAPI: DefId(0:29 ~ simple_slab[bb81]::{impl#0}::new),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * simple-slab_fuzz_12262590058837114080_deepseek-r1_turn1
+      * simple-slab_fuzz_14369565143762262345_deepseek-r1_turn1
+      * simple-slab_fuzz_12997837067481994914_deepseek-r1_turn1
+      * simple-slab_fuzz_9361458073122351307_deepseek-r1_turn1
+      * simple-slab_fuzz_17632678771809484846_deepseek-r1_turn4
+      * simple-slab_fuzz_11125944248378378767_deepseek-r1_turn1
+      * simple-slab_fuzz_7250861895740451939_deepseek-r1_turn6
+      * simple-slab_fuzz_12171604173921280369_deepseek-r1_turn1
+  StableURAPI: next::/home/cdc/SURF/ablation_deepSURF_noskip/simple-slab-0.3.2/src/lib.rs::185,
+    - URAPI: DefId(0:53 ~ simple_slab[bb81]::{impl#4}::next),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * simple-slab_fuzz_9361458073122351307_deepseek-r1_turn1
+      * simple-slab_fuzz_12171604173921280369_deepseek-r1_turn1
+      * simple-slab_fuzz_14369565143762262345_deepseek-r1_turn1
+      * simple-slab_fuzz_12262590058837114080_deepseek-r1_turn1
+      * simple-slab_fuzz_12997837067481994914_deepseek-r1_turn1
+      * simple-slab_fuzz_11125944248378378767_deepseek-r1_turn1
+      * simple-slab_fuzz_7250861895740451939_deepseek-r1_turn6
+      * simple-slab_fuzz_17632678771809484846_deepseek-r1_turn4
+------------------------------------------------------------------------------------------------------------------------------------

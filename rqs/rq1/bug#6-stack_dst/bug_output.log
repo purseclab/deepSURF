@@ -1,0 +1,116 @@
+     Removed 124 files, 52.9MiB total
+   Compiling semver v1.0.26
+   Compiling libc v0.2.175
+   Compiling home v0.5.5
+   Compiling xdg v2.5.2
+   Compiling stack_dst v0.6.0 (/home/cdc/deepSURF-sp26-artifacts/artifact_data/dataset/erasan_crates/stack_dst-0.6.0)
+   Compiling global_data v0.1.0 (/home/cdc/deepSURF-sp26-artifacts/artifact_code/global_data)
+   Compiling afl v0.15.7
+   Compiling rustc_version v0.4.1
+   Compiling stack_dst_fuzz_4066434920238341334 v0.1.0 (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#6-stack_dst/harness)
+warning: unused import: `DerefMut`
+ --> src/stack_dst_fuzz_4066434920238341334.rs:9:23
+  |
+9 | use std::ops::{Deref, DerefMut};
+  |                       ^^^^^^^^
+  |
+  = note: `#[warn(unused_imports)]` on by default
+
+warning: the item `TryInto` is imported redundantly
+   --> src/stack_dst_fuzz_4066434920238341334.rs:250:9
+    |
+250 |     use std::convert::TryInto;
+    |         ^^^^^^^^^^^^^^^^^^^^^
+   --> /rustc/11f32b73e0dc9287e305b5b9980d24aecdc8c17f/library/std/src/prelude/mod.rs:129:13
+    |
+    = note: the item `TryInto` is already defined here
+
+warning: the item `TryInto` is imported redundantly
+   --> src/stack_dst_fuzz_4066434920238341334.rs:257:9
+    |
+257 |     use std::convert::TryInto;
+    |         ^^^^^^^^^^^^^^^^^^^^^
+   --> /rustc/11f32b73e0dc9287e305b5b9980d24aecdc8c17f/library/std/src/prelude/mod.rs:129:13
+    |
+    = note: the item `TryInto` is already defined here
+
+warning: unused variable: `data_part`
+  --> src/stack_dst_fuzz_4066434920238341334.rs:24:13
+   |
+24 |         let data_part = match selector {
+   |             ^^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_data_part`
+   |
+   = note: `#[warn(unused_variables)]` on by default
+
+warning: unused variable: `data_part`
+  --> src/stack_dst_fuzz_4066434920238341334.rs:49:13
+   |
+49 |         let data_part = match selector {
+   |             ^^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_data_part`
+
+warning: unused variable: `data_part`
+  --> src/stack_dst_fuzz_4066434920238341334.rs:64:13
+   |
+64 |         let data_part = match selector {
+   |             ^^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_data_part`
+
+warning: unused variable: `val`
+  --> src/stack_dst_fuzz_4066434920238341334.rs:99:25
+   |
+99 |                     let val = _to_u64(GLOBAL_DATA, data_cursor);
+   |                         ^^^ help: if this is intentional, prefix it with an underscore: `_val`
+
+warning: variable does not need to be mutable
+  --> src/stack_dst_fuzz_4066434920238341334.rs:81:13
+   |
+81 |         let mut value_store = Vec::new();
+   |             ----^^^^^^^^^^^
+   |             |
+   |             help: remove this `mut`
+   |
+   = note: `#[warn(unused_mut)]` on by default
+
+warning: variable `GLOBAL_DATA` should have a snake case name
+  --> src/stack_dst_fuzz_4066434920238341334.rs:77:13
+   |
+77 |         let GLOBAL_DATA = global_data.first_half;
+   |             ^^^^^^^^^^^ help: convert the identifier to snake case: `global_data`
+   |
+   = note: `#[warn(non_snake_case)]` on by default
+
+warning: `stack_dst_fuzz_4066434920238341334` (bin "stack_dst_fuzz_4066434920238341334") generated 9 warnings (run `cargo fix --bin "stack_dst_fuzz_4066434920238341334"` to apply 6 suggestions)
+    Finished dev [unoptimized + debuginfo] target(s) in 2.71s
+[]
+[CustomType0("CC1CCC\n\0\0\0\0\0\0CCC"), CustomType0("CCCCCCCCCC0CCCCC")]
+thread 'main' panicked at src/stack_dst_fuzz_4066434920238341334.rs:47:13:
+INTENTIONAL PANIC!
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+=================================================================
+==1423736==ERROR: AddressSanitizer: attempting double-free on 0x502000000090 in thread T0:
+    #0 0x5581ab0e4226  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#6-stack_dst/harness/target/x86_64-unknown-linux-gnu/debug/stack_dst_fuzz_4066434920238341334+0x97226) (BuildId: 0832c3df3826f45fb351ab14543c41e6bf3c14cb)
+    #1 0x5581ab117339  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#6-stack_dst/harness/target/x86_64-unknown-linux-gnu/debug/stack_dst_fuzz_4066434920238341334+0xca339) (BuildId: 0832c3df3826f45fb351ab14543c41e6bf3c14cb)
+    #2 0x5581ab1146d4  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#6-stack_dst/harness/target/x86_64-unknown-linux-gnu/debug/stack_dst_fuzz_4066434920238341334+0xc76d4) (BuildId: 0832c3df3826f45fb351ab14543c41e6bf3c14cb)
+    #3 0x5581ab119a7a  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#6-stack_dst/harness/target/x86_64-unknown-linux-gnu/debug/stack_dst_fuzz_4066434920238341334+0xcca7a) (BuildId: 0832c3df3826f45fb351ab14543c41e6bf3c14cb)
+    #4 0x5581ab1186d1  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#6-stack_dst/harness/target/x86_64-unknown-linux-gnu/debug/stack_dst_fuzz_4066434920238341334+0xcb6d1) (BuildId: 0832c3df3826f45fb351ab14543c41e6bf3c14cb)
+    #5 0x5581ab10d8d1  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#6-stack_dst/harness/target/x86_64-unknown-linux-gnu/debug/stack_dst_fuzz_4066434920238341334+0xc08d1) (BuildId: 0832c3df3826f45fb351ab14543c41e6bf3c14cb)
+    #6 0x5581ab10d920  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#6-stack_dst/harness/target/x86_64-unknown-linux-gnu/debug/stack_dst_fuzz_4066434920238341334+0xc0920) (BuildId: 0832c3df3826f45fb351ab14543c41e6bf3c14cb)
+    #7 0x5581ab133c70  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#6-stack_dst/harness/target/x86_64-unknown-linux-gnu/debug/stack_dst_fuzz_4066434920238341334+0xe6c70) (BuildId: 0832c3df3826f45fb351ab14543c41e6bf3c14cb)
+    #8 0x5581ab119c35  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#6-stack_dst/harness/target/x86_64-unknown-linux-gnu/debug/stack_dst_fuzz_4066434920238341334+0xccc35) (BuildId: 0832c3df3826f45fb351ab14543c41e6bf3c14cb)
+    #9 0x7faa691f7d8f  (/lib/x86_64-linux-gnu/libc.so.6+0x29d8f) (BuildId: 490fef8403240c91833978d494d39e537409b92e)
+    #10 0x7faa691f7e3f  (/lib/x86_64-linux-gnu/libc.so.6+0x29e3f) (BuildId: 490fef8403240c91833978d494d39e537409b92e)
+    #11 0x5581ab05d2e4  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#6-stack_dst/harness/target/x86_64-unknown-linux-gnu/debug/stack_dst_fuzz_4066434920238341334+0x102e4) (BuildId: 0832c3df3826f45fb351ab14543c41e6bf3c14cb)
+
+0x502000000090 is located 0 bytes inside of 16-byte region [0x502000000090,0x5020000000a0)
+freed by thread T0 here:
+    #0 0x5581ab0e4226  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#6-stack_dst/harness/target/x86_64-unknown-linux-gnu/debug/stack_dst_fuzz_4066434920238341334+0x97226) (BuildId: 0832c3df3826f45fb351ab14543c41e6bf3c14cb)
+    #1 0x5581ab117339  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#6-stack_dst/harness/target/x86_64-unknown-linux-gnu/debug/stack_dst_fuzz_4066434920238341334+0xca339) (BuildId: 0832c3df3826f45fb351ab14543c41e6bf3c14cb)
+
+previously allocated by thread T0 here:
+    #0 0x5581ab0e44ce  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#6-stack_dst/harness/target/x86_64-unknown-linux-gnu/debug/stack_dst_fuzz_4066434920238341334+0x974ce) (BuildId: 0832c3df3826f45fb351ab14543c41e6bf3c14cb)
+    #1 0x5581ab155e57  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#6-stack_dst/harness/target/x86_64-unknown-linux-gnu/debug/stack_dst_fuzz_4066434920238341334+0x108e57) (BuildId: 0832c3df3826f45fb351ab14543c41e6bf3c14cb)
+    #2 0x5581ab110e0a  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#6-stack_dst/harness/target/x86_64-unknown-linux-gnu/debug/stack_dst_fuzz_4066434920238341334+0xc3e0a) (BuildId: 0832c3df3826f45fb351ab14543c41e6bf3c14cb)
+    #3 0x5581ab119a7a  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#6-stack_dst/harness/target/x86_64-unknown-linux-gnu/debug/stack_dst_fuzz_4066434920238341334+0xcca7a) (BuildId: 0832c3df3826f45fb351ab14543c41e6bf3c14cb)
+    #4 0x5581ab10d8d1  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#6-stack_dst/harness/target/x86_64-unknown-linux-gnu/debug/stack_dst_fuzz_4066434920238341334+0xc08d1) (BuildId: 0832c3df3826f45fb351ab14543c41e6bf3c14cb)
+
+SUMMARY: AddressSanitizer: double-free (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#6-stack_dst/harness/target/x86_64-unknown-linux-gnu/debug/stack_dst_fuzz_4066434920238341334+0x97226) (BuildId: 0832c3df3826f45fb351ab14543c41e6bf3c14cb) 
+==1423736==ABORTING

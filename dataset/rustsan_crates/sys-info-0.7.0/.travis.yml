@@ -1,0 +1,16 @@
+os:
+  - linux
+  - osx
+language: rust
+rust:
+  - stable
+  - beta
+  - nightly
+cache: rust
+matrix:
+  allow_failures:
+    - rust: nightly
+script:
+  - cargo test --all --verbose
+  - rustup component add clippy rustfmt &&
+    cargo clippy

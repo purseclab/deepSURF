@@ -1,0 +1,1141 @@
+/home/cdc/rug_on_erasan_after_bolero/rdiff-0.1.2//./src/hashing.rs
+err tests_rug_19 test_rug
+   Compiling rdiff v0.1.2 (/home/cdc/rug_on_erasan_after_bolero/rdiff-0.1.2)
+warning: use of deprecated macro `try`: use the `?` operator instead
+ --> src/window.rs:9:20
+  |
+9 |         let size = try!(reader.read(front.as_mut_slice()));
+  |                    ^^^
+  |
+  = note: `#[warn(deprecated)]` on by default
+
+warning: use of deprecated macro `try`: use the `?` operator instead
+  --> src/window.rs:13:20
+   |
+13 |         let size = try!(reader.read(back.as_mut_slice()));
+   |                    ^^^
+
+warning: use of deprecated macro `try`: use the `?` operator instead
+  --> src/window.rs:34:13
+   |
+34 |             try!(self.load_next_block());
+   |             ^^^
+
+warning: use of deprecated macro `try`: use the `?` operator instead
+  --> src/window.rs:51:20
+   |
+51 |         let size = try!(self.reader.read(self.back.as_mut_slice()));
+   |                    ^^^
+
+warning: use of deprecated macro `try`: use the `?` operator instead
+  --> src/hashing.rs:79:29
+   |
+79 |         let mut read_size = try!(data_source.read(& mut block));
+   |                             ^^^
+
+warning: use of deprecated macro `try`: use the `?` operator instead
+  --> src/hashing.rs:92:25
+   |
+92 |             read_size = try!(data_source.read(& mut block));
+   |                         ^^^
+
+warning: use of deprecated macro `try`: use the `?` operator instead
+   --> src/hashing.rs:132:26
+    |
+132 |         let mut window = try!(Window::new(new_data, self.block_size));
+    |                          ^^^
+
+warning: use of deprecated macro `try`: use the `?` operator instead
+   --> src/hashing.rs:185:40
+    |
+185 |                     let (tail, head) = try!(window.advance());
+    |                                        ^^^
+
+warning: use of deprecated macro `try`: use the `?` operator instead
+   --> src/hashing.rs:206:36
+    |
+206 |                 let (tail, head) = try!(window.advance());
+    |                                    ^^^
+
+warning: use of deprecated macro `try`: use the `?` operator instead
+   --> src/hashing.rs:241:29
+    |
+241 |         let mut read_size = try!(data_source.read(& mut block));
+    |                             ^^^
+
+warning: use of deprecated macro `try`: use the `?` operator instead
+   --> src/hashing.rs:255:25
+    |
+255 |             read_size = try!(data_source.read(& mut block));
+    |                         ^^^
+
+warning: use of deprecated macro `try`: use the `?` operator instead
+   --> src/hashing.rs:264:9
+    |
+264 |         try!(writer.write(& int_buf));
+    |         ^^^
+
+warning: use of deprecated macro `try`: use the `?` operator instead
+   --> src/hashing.rs:266:9
+    |
+266 |         try!(writer.write(& int_buf));
+    |         ^^^
+
+warning: use of deprecated macro `try`: use the `?` operator instead
+   --> src/hashing.rs:278:13
+    |
+278 |             try!(writer.write(& int_buf));
+    |             ^^^
+
+warning: use of deprecated macro `try`: use the `?` operator instead
+   --> src/hashing.rs:279:13
+    |
+279 |             try!(writer.write(strong));
+    |             ^^^
+
+warning: use of deprecated macro `try`: use the `?` operator instead
+   --> src/hashing.rs:288:9
+    |
+288 |         try!(reader.read(& mut int_buf));
+    |         ^^^
+
+warning: use of deprecated macro `try`: use the `?` operator instead
+   --> src/hashing.rs:290:9
+    |
+290 |         try!(reader.read(& mut int_buf));
+    |         ^^^
+
+warning: use of deprecated macro `try`: use the `?` operator instead
+   --> src/hashing.rs:295:13
+    |
+295 |             try!(reader.read(& mut int_buf));
+    |             ^^^
+
+warning: use of deprecated macro `try`: use the `?` operator instead
+   --> src/hashing.rs:297:13
+    |
+297 |             try!(reader.read(& mut strong_hash));
+    |             ^^^
+
+warning: use of deprecated macro `try`: use the `?` operator instead
+   --> src/lib.rs:175:9
+    |
+175 |         try!(file.seek(SeekFrom::Start(0)));
+    |         ^^^
+
+warning: use of deprecated macro `try`: use the `?` operator instead
+   --> src/lib.rs:204:9
+    |
+204 |         try!(file.seek(SeekFrom::Start(0)));
+    |         ^^^
+
+warning: use of deprecated macro `try`: use the `?` operator instead
+   --> src/lib.rs:205:9
+    |
+205 |         try!(file.set_len(new_bytes.len() as u64));
+    |         ^^^
+
+warning: use of deprecated macro `try`: use the `?` operator instead
+   --> src/lib.rs:180:32
+    |
+180 |                 new_bytes.push(try!(old_bytes.next().unwrap()).clone());
+    |                                ^^^
+
+warning: use of deprecated macro `try`: use the `?` operator instead
+   --> src/lib.rs:187:28
+    |
+187 |             new_bytes.push(try!(byte));
+    |                            ^^^
+
+warning: use of deprecated macro `try`: use the `?` operator instead
+   --> src/lib.rs:213:9
+    |
+213 |         try!(writer.write(& mut int_buf));
+    |         ^^^
+
+warning: use of deprecated macro `try`: use the `?` operator instead
+   --> src/lib.rs:218:9
+    |
+218 |         try!(writer.write(& mut int_buf));
+    |         ^^^
+
+warning: use of deprecated macro `try`: use the `?` operator instead
+   --> src/lib.rs:215:13
+    |
+215 |             try!(insert.compress_to(writer));
+    |             ^^^
+
+warning: use of deprecated macro `try`: use the `?` operator instead
+   --> src/lib.rs:220:13
+    |
+220 |             try!(delete.compress_to(writer));
+    |             ^^^
+
+warning: use of deprecated macro `try`: use the `?` operator instead
+   --> src/lib.rs:229:9
+    |
+229 |         try!(reader.read_exact(& mut int_buf));
+    |         ^^^
+
+warning: use of deprecated macro `try`: use the `?` operator instead
+   --> src/lib.rs:237:9
+    |
+237 |         try!(reader.read_exact(& mut int_buf));
+    |         ^^^
+
+warning: use of deprecated macro `try`: use the `?` operator instead
+   --> src/lib.rs:279:9
+    |
+279 |         try!(writer.write(& int_buf));
+    |         ^^^
+
+warning: use of deprecated macro `try`: use the `?` operator instead
+   --> src/lib.rs:281:9
+    |
+281 |         try!(writer.write(& int_buf));
+    |         ^^^
+
+warning: use of deprecated macro `try`: use the `?` operator instead
+   --> src/lib.rs:282:9
+    |
+282 |         try!(writer.write(& self.data));
+    |         ^^^
+
+warning: use of deprecated macro `try`: use the `?` operator instead
+   --> src/lib.rs:289:9
+    |
+289 |         try!(reader.read_exact(& mut int_buf));
+    |         ^^^
+
+warning: use of deprecated macro `try`: use the `?` operator instead
+   --> src/lib.rs:291:9
+    |
+291 |         try!(reader.read_exact(& mut int_buf));
+    |         ^^^
+
+warning: use of deprecated macro `try`: use the `?` operator instead
+   --> src/lib.rs:295:9
+    |
+295 |         try!(reader.read_exact(& mut data));
+    |         ^^^
+
+warning: use of deprecated macro `try`: use the `?` operator instead
+   --> src/lib.rs:318:9
+    |
+318 |         try!(writer.write(& int_buf));
+    |         ^^^
+
+warning: use of deprecated macro `try`: use the `?` operator instead
+   --> src/lib.rs:320:9
+    |
+320 |         try!(writer.write(& int_buf));
+    |         ^^^
+
+warning: use of deprecated macro `try`: use the `?` operator instead
+   --> src/lib.rs:327:9
+    |
+327 |         try!(reader.read_exact(& mut int_buf));
+    |         ^^^
+
+warning: use of deprecated macro `try`: use the `?` operator instead
+   --> src/lib.rs:329:9
+    |
+329 |         try!(reader.read_exact(& mut int_buf));
+    |         ^^^
+
+error[E0425]: cannot find value `p0` in this scope
+   --> src/hashing.rs:616:36
+    |
+616 |         <RollingHash>::hash_buffer(p0);
+    |                                    ^^ not found in this scope
+
+warning: unused import: `super::*`
+   --> src/hashing.rs:564:9
+    |
+564 |     use super::*;
+    |         ^^^^^^^^
+    |
+    = note: `#[warn(unused_imports)]` on by default
+
+warning: unnecessary parentheses around pattern
+   --> src/hashing.rs:573:23
+    |
+573 |             if let Ok((mut rug_fuzz_0)) = <(u8) as arbitrary::Arbitrary>::arbitrary(&mut arbitrary::Unstructured::new(rug_data)){
+    |                       ^              ^
+    |
+    = note: `#[warn(unused_parens)]` on by default
+help: remove these parentheses
+    |
+573 -             if let Ok((mut rug_fuzz_0)) = <(u8) as arbitrary::Arbitrary>::arbitrary(&mut arbitrary::Unstructured::new(rug_data)){
+573 +             if let Ok(mut rug_fuzz_0) = <(u8) as arbitrary::Arbitrary>::arbitrary(&mut arbitrary::Unstructured::new(rug_data)){
+    |
+
+warning: unnecessary parentheses around type
+   --> src/hashing.rs:573:44
+    |
+573 |             if let Ok((mut rug_fuzz_0)) = <(u8) as arbitrary::Arbitrary>::arbitrary(&mut arbitrary::Unstructured::new(rug_data)){
+    |                                            ^  ^
+    |
+help: remove these parentheses
+    |
+573 -             if let Ok((mut rug_fuzz_0)) = <(u8) as arbitrary::Arbitrary>::arbitrary(&mut arbitrary::Unstructured::new(rug_data)){
+573 +             if let Ok((mut rug_fuzz_0)) = <u8 as arbitrary::Arbitrary>::arbitrary(&mut arbitrary::Unstructured::new(rug_data)){
+    |
+
+warning: unused import: `super::*`
+   --> src/hashing.rs:583:9
+    |
+583 |     use super::*;
+    |         ^^^^^^^^
+
+warning: unused import: `super::*`
+   --> src/hashing.rs:604:9
+    |
+604 |     use super::*;
+    |         ^^^^^^^^
+
+warning: unnecessary parentheses around pattern
+   --> src/hashing.rs:613:23
+    |
+613 |             if let Ok((mut rug_fuzz_0_ext)) = <([u8; 5]) as arbitrary::Arbitrary>::arbitrary(&mut arbitrary::Unstructured::new(rug_data)){
+    |                       ^                  ^
+    |
+help: remove these parentheses
+    |
+613 -             if let Ok((mut rug_fuzz_0_ext)) = <([u8; 5]) as arbitrary::Arbitrary>::arbitrary(&mut arbitrary::Unstructured::new(rug_data)){
+613 +             if let Ok(mut rug_fuzz_0_ext) = <([u8; 5]) as arbitrary::Arbitrary>::arbitrary(&mut arbitrary::Unstructured::new(rug_data)){
+    |
+
+warning: unused import: `super::*`
+   --> src/string_diff.rs:328:9
+    |
+328 |     use super::*;
+    |         ^^^^^^^^
+
+warning: unused imports: `Diff`, `OperationScore`
+   --> src/string_diff.rs:329:41
+    |
+329 |     use crate::string_diff::{find_diff, Diff, OperationScore, EditDistance};
+    |                                         ^^^^  ^^^^^^^^^^^^^^
+
+warning: unused import: `super::*`
+   --> src/string_diff.rs:344:9
+    |
+344 |     use super::*;
+    |         ^^^^^^^^
+
+warning: unused import: `super::*`
+   --> src/string_diff.rs:376:9
+    |
+376 |     use super::*;
+    |         ^^^^^^^^
+
+warning: unused import: `OperationScore`
+   --> src/string_diff.rs:377:40
+    |
+377 |     use crate::string_diff::{nw_score, OperationScore, EditDistance};
+    |                                        ^^^^^^^^^^^^^^
+
+warning: unused import: `super::*`
+   --> src/string_diff.rs:392:9
+    |
+392 |     use super::*;
+    |         ^^^^^^^^
+
+warning: unused import: `super::*`
+   --> src/string_diff.rs:407:9
+    |
+407 |     use super::*;
+    |         ^^^^^^^^
+
+warning: unused import: `super::*`
+   --> src/string_diff.rs:422:9
+    |
+422 |     use super::*;
+    |         ^^^^^^^^
+
+warning: unused import: `super::*`
+   --> src/string_diff.rs:438:9
+    |
+438 |     use super::*;
+    |         ^^^^^^^^
+
+warning: unused import: `super::*`
+   --> src/lib.rs:361:9
+    |
+361 |     use super::*;
+    |         ^^^^^^^^
+
+warning: unused import: `super::*`
+   --> src/lib.rs:387:9
+    |
+387 |     use super::*;
+    |         ^^^^^^^^
+
+warning: unused import: `Delete`
+   --> src/lib.rs:388:17
+    |
+388 |     use crate::{Delete, Diff};
+    |                 ^^^^^^
+
+warning: unused import: `super::*`
+   --> src/lib.rs:403:9
+    |
+403 |     use super::*;
+    |         ^^^^^^^^
+
+warning: unused import: `Insert`
+   --> src/lib.rs:404:23
+    |
+404 |     use crate::{Diff, Insert};
+    |                       ^^^^^^
+
+warning: unused import: `super::*`
+   --> src/lib.rs:415:9
+    |
+415 |     use super::*;
+    |         ^^^^^^^^
+
+warning: unused import: `super::*`
+   --> src/lib.rs:427:9
+    |
+427 |     use super::*;
+    |         ^^^^^^^^
+
+warning: unused import: `super::*`
+   --> src/lib.rs:439:9
+    |
+439 |     use super::*;
+    |         ^^^^^^^^
+
+warning: unused imports: `SeekFrom`, `Seek`, `Write`, `self`
+   --> src/lib.rs:455:19
+    |
+455 |     use std::io::{self, Seek, SeekFrom, Write};
+    |                   ^^^^  ^^^^  ^^^^^^^^  ^^^^^
+
+warning: unused import: `std::io::Read`
+   --> src/lib.rs:456:9
+    |
+456 |     use std::io::Read;
+    |         ^^^^^^^^^^^^^
+
+warning: unused import: `std::io::BufReader`
+   --> src/lib.rs:457:9
+    |
+457 |     use std::io::BufReader;
+    |         ^^^^^^^^^^^^^^^^^^
+
+warning: unused import: `std::mem`
+   --> src/lib.rs:458:9
+    |
+458 |     use std::mem;
+    |         ^^^^^^^^
+
+warning: unused imports: `NetworkEndian`, `WriteBytesExt`
+   --> src/lib.rs:473:21
+    |
+473 |     use byteorder::{NetworkEndian, WriteBytesExt};
+    |                     ^^^^^^^^^^^^^  ^^^^^^^^^^^^^
+
+warning: unused import: `std::fs::File`
+   --> src/lib.rs:486:9
+    |
+486 |     use std::fs::File;
+    |         ^^^^^^^^^^^^^
+
+warning: unused imports: `NetworkEndian`, `ReadBytesExt`
+   --> src/lib.rs:487:21
+    |
+487 |     use byteorder::{NetworkEndian, ReadBytesExt};
+    |                     ^^^^^^^^^^^^^  ^^^^^^^^^^^^
+
+warning: unused import: `Read`
+   --> src/lib.rs:488:27
+    |
+488 |     use std::io::{Cursor, Read};
+    |                           ^^^^
+
+warning: unused imports: `Cursor`, `Read`, `Write`
+   --> src/lib.rs:503:19
+    |
+503 |     use std::io::{Cursor, Read, Write};
+    |                   ^^^^^^  ^^^^  ^^^^^
+
+warning: unused imports: `NetworkEndian`, `ReadBytesExt`, `WriteBytesExt`
+   --> src/lib.rs:504:21
+    |
+504 |     use byteorder::{NetworkEndian, ReadBytesExt, WriteBytesExt};
+    |                     ^^^^^^^^^^^^^  ^^^^^^^^^^^^  ^^^^^^^^^^^^^
+
+warning: unused imports: `NetworkEndian`, `WriteBytesExt`
+   --> src/lib.rs:520:21
+    |
+520 |     use byteorder::{NetworkEndian, WriteBytesExt};
+    |                     ^^^^^^^^^^^^^  ^^^^^^^^^^^^^
+
+warning: unused imports: `Write`, `self`
+   --> src/lib.rs:521:19
+    |
+521 |     use std::io::{self, Write};
+    |                   ^^^^  ^^^^^
+
+warning: unused import: `std::io::Read`
+   --> src/lib.rs:539:9
+    |
+539 |     use std::io::Read;
+    |         ^^^^^^^^^^^^^
+
+warning: unused imports: `NetworkEndian`, `ReadBytesExt`
+   --> src/lib.rs:540:21
+    |
+540 |     use byteorder::{NetworkEndian, ReadBytesExt};
+    |                     ^^^^^^^^^^^^^  ^^^^^^^^^^^^
+
+warning: unused import: `super::*`
+   --> src/lib.rs:553:9
+    |
+553 |     use super::*;
+    |         ^^^^^^^^
+
+warning: unused import: `super::*`
+   --> src/lib.rs:570:9
+    |
+570 |     use super::*;
+    |         ^^^^^^^^
+
+warning: unused import: `std::io::Write`
+   --> src/lib.rs:588:9
+    |
+588 |     use std::io::Write;
+    |         ^^^^^^^^^^^^^^
+
+warning: unused imports: `NetworkEndian`, `WriteBytesExt`
+   --> src/lib.rs:589:21
+    |
+589 |     use byteorder::{NetworkEndian, WriteBytesExt};
+    |                     ^^^^^^^^^^^^^  ^^^^^^^^^^^^^
+
+warning: unused imports: `NetworkEndian`, `ReadBytesExt`
+   --> src/lib.rs:608:21
+    |
+608 |     use byteorder::{ReadBytesExt, NetworkEndian};
+    |                     ^^^^^^^^^^^^  ^^^^^^^^^^^^^
+
+warning: `rdiff` (lib) generated 40 warnings
+warning: use of deprecated macro `try`: use the `?` operator instead
+  --> examples/file_watcher.rs:20:16
+   |
+20 |     let file = try!(fs::File::open(file));
+   |                ^^^
+   |
+   = note: `#[warn(deprecated)]` on by default
+
+warning: use of deprecated macro `try`: use the `?` operator instead
+  --> examples/file_watcher.rs:25:16
+   |
+25 |     let file = try!(fs::File::open(file));
+   |                ^^^
+
+warning: use of deprecated macro `try`: use the `?` operator instead
+  --> examples/file_watcher.rs:26:17
+   |
+26 |     let diffs = try!(hashes.diff_and_update(file));
+   |                 ^^^
+
+warning: use of deprecated macro `try`: use the `?` operator instead
+  --> examples/file_watcher.rs:45:3
+   |
+45 |   try!(watcher.watch(file_name));
+   |   ^^^
+
+warning: use of deprecated macro `try`: use the `?` operator instead
+  --> examples/file_watcher.rs:41:41
+   |
+41 |   let mut watcher: RecommendedWatcher = try!(Watcher::new(tx));
+   |                                         ^^^
+
+For more information about this error, try `rustc --explain E0425`.
+warning: `rdiff` (lib test) generated 82 warnings (40 duplicates)
+error: could not compile `rdiff` due to previous error; 82 warnings emitted
+warning: build failed, waiting for other jobs to finish...
+warning: `rdiff` (example "file_watcher") generated 5 warnings
+
+err tests_rug_22 test_rug
+   Compiling rdiff v0.1.2 (/home/cdc/rug_on_erasan_after_bolero/rdiff-0.1.2)
+warning: use of deprecated macro `try`: use the `?` operator instead
+ --> src/window.rs:9:20
+  |
+9 |         let size = try!(reader.read(front.as_mut_slice()));
+  |                    ^^^
+  |
+  = note: `#[warn(deprecated)]` on by default
+
+warning: use of deprecated macro `try`: use the `?` operator instead
+  --> src/window.rs:13:20
+   |
+13 |         let size = try!(reader.read(back.as_mut_slice()));
+   |                    ^^^
+
+warning: use of deprecated macro `try`: use the `?` operator instead
+  --> src/window.rs:34:13
+   |
+34 |             try!(self.load_next_block());
+   |             ^^^
+
+warning: use of deprecated macro `try`: use the `?` operator instead
+  --> src/window.rs:51:20
+   |
+51 |         let size = try!(self.reader.read(self.back.as_mut_slice()));
+   |                    ^^^
+
+warning: use of deprecated macro `try`: use the `?` operator instead
+  --> src/hashing.rs:79:29
+   |
+79 |         let mut read_size = try!(data_source.read(& mut block));
+   |                             ^^^
+
+warning: use of deprecated macro `try`: use the `?` operator instead
+  --> src/hashing.rs:92:25
+   |
+92 |             read_size = try!(data_source.read(& mut block));
+   |                         ^^^
+
+warning: use of deprecated macro `try`: use the `?` operator instead
+   --> src/hashing.rs:132:26
+    |
+132 |         let mut window = try!(Window::new(new_data, self.block_size));
+    |                          ^^^
+
+warning: use of deprecated macro `try`: use the `?` operator instead
+   --> src/hashing.rs:185:40
+    |
+185 |                     let (tail, head) = try!(window.advance());
+    |                                        ^^^
+
+warning: use of deprecated macro `try`: use the `?` operator instead
+   --> src/hashing.rs:206:36
+    |
+206 |                 let (tail, head) = try!(window.advance());
+    |                                    ^^^
+
+warning: use of deprecated macro `try`: use the `?` operator instead
+   --> src/hashing.rs:241:29
+    |
+241 |         let mut read_size = try!(data_source.read(& mut block));
+    |                             ^^^
+
+warning: use of deprecated macro `try`: use the `?` operator instead
+   --> src/hashing.rs:255:25
+    |
+255 |             read_size = try!(data_source.read(& mut block));
+    |                         ^^^
+
+warning: use of deprecated macro `try`: use the `?` operator instead
+   --> src/hashing.rs:264:9
+    |
+264 |         try!(writer.write(& int_buf));
+    |         ^^^
+
+warning: use of deprecated macro `try`: use the `?` operator instead
+   --> src/hashing.rs:266:9
+    |
+266 |         try!(writer.write(& int_buf));
+    |         ^^^
+
+warning: use of deprecated macro `try`: use the `?` operator instead
+   --> src/hashing.rs:278:13
+    |
+278 |             try!(writer.write(& int_buf));
+    |             ^^^
+
+warning: use of deprecated macro `try`: use the `?` operator instead
+   --> src/hashing.rs:279:13
+    |
+279 |             try!(writer.write(strong));
+    |             ^^^
+
+warning: use of deprecated macro `try`: use the `?` operator instead
+   --> src/hashing.rs:288:9
+    |
+288 |         try!(reader.read(& mut int_buf));
+    |         ^^^
+
+warning: use of deprecated macro `try`: use the `?` operator instead
+   --> src/hashing.rs:290:9
+    |
+290 |         try!(reader.read(& mut int_buf));
+    |         ^^^
+
+warning: use of deprecated macro `try`: use the `?` operator instead
+   --> src/hashing.rs:295:13
+    |
+295 |             try!(reader.read(& mut int_buf));
+    |             ^^^
+
+warning: use of deprecated macro `try`: use the `?` operator instead
+   --> src/hashing.rs:297:13
+    |
+297 |             try!(reader.read(& mut strong_hash));
+    |             ^^^
+
+warning: use of deprecated macro `try`: use the `?` operator instead
+   --> src/lib.rs:175:9
+    |
+175 |         try!(file.seek(SeekFrom::Start(0)));
+    |         ^^^
+
+warning: use of deprecated macro `try`: use the `?` operator instead
+   --> src/lib.rs:204:9
+    |
+204 |         try!(file.seek(SeekFrom::Start(0)));
+    |         ^^^
+
+warning: use of deprecated macro `try`: use the `?` operator instead
+   --> src/lib.rs:205:9
+    |
+205 |         try!(file.set_len(new_bytes.len() as u64));
+    |         ^^^
+
+warning: use of deprecated macro `try`: use the `?` operator instead
+   --> src/lib.rs:180:32
+    |
+180 |                 new_bytes.push(try!(old_bytes.next().unwrap()).clone());
+    |                                ^^^
+
+warning: use of deprecated macro `try`: use the `?` operator instead
+   --> src/lib.rs:187:28
+    |
+187 |             new_bytes.push(try!(byte));
+    |                            ^^^
+
+warning: use of deprecated macro `try`: use the `?` operator instead
+   --> src/lib.rs:213:9
+    |
+213 |         try!(writer.write(& mut int_buf));
+    |         ^^^
+
+warning: use of deprecated macro `try`: use the `?` operator instead
+   --> src/lib.rs:218:9
+    |
+218 |         try!(writer.write(& mut int_buf));
+    |         ^^^
+
+warning: use of deprecated macro `try`: use the `?` operator instead
+   --> src/lib.rs:215:13
+    |
+215 |             try!(insert.compress_to(writer));
+    |             ^^^
+
+warning: use of deprecated macro `try`: use the `?` operator instead
+   --> src/lib.rs:220:13
+    |
+220 |             try!(delete.compress_to(writer));
+    |             ^^^
+
+warning: use of deprecated macro `try`: use the `?` operator instead
+   --> src/lib.rs:229:9
+    |
+229 |         try!(reader.read_exact(& mut int_buf));
+    |         ^^^
+
+warning: use of deprecated macro `try`: use the `?` operator instead
+   --> src/lib.rs:237:9
+    |
+237 |         try!(reader.read_exact(& mut int_buf));
+    |         ^^^
+
+warning: use of deprecated macro `try`: use the `?` operator instead
+   --> src/lib.rs:279:9
+    |
+279 |         try!(writer.write(& int_buf));
+    |         ^^^
+
+warning: use of deprecated macro `try`: use the `?` operator instead
+   --> src/lib.rs:281:9
+    |
+281 |         try!(writer.write(& int_buf));
+    |         ^^^
+
+warning: use of deprecated macro `try`: use the `?` operator instead
+   --> src/lib.rs:282:9
+    |
+282 |         try!(writer.write(& self.data));
+    |         ^^^
+
+warning: use of deprecated macro `try`: use the `?` operator instead
+   --> src/lib.rs:289:9
+    |
+289 |         try!(reader.read_exact(& mut int_buf));
+    |         ^^^
+
+warning: use of deprecated macro `try`: use the `?` operator instead
+   --> src/lib.rs:291:9
+    |
+291 |         try!(reader.read_exact(& mut int_buf));
+    |         ^^^
+
+warning: use of deprecated macro `try`: use the `?` operator instead
+   --> src/lib.rs:295:9
+    |
+295 |         try!(reader.read_exact(& mut data));
+    |         ^^^
+
+warning: use of deprecated macro `try`: use the `?` operator instead
+   --> src/lib.rs:318:9
+    |
+318 |         try!(writer.write(& int_buf));
+    |         ^^^
+
+warning: use of deprecated macro `try`: use the `?` operator instead
+   --> src/lib.rs:320:9
+    |
+320 |         try!(writer.write(& int_buf));
+    |         ^^^
+
+warning: use of deprecated macro `try`: use the `?` operator instead
+   --> src/lib.rs:327:9
+    |
+327 |         try!(reader.read_exact(& mut int_buf));
+    |         ^^^
+
+warning: use of deprecated macro `try`: use the `?` operator instead
+   --> src/lib.rs:329:9
+    |
+329 |         try!(reader.read_exact(& mut int_buf));
+    |         ^^^
+
+error[E0425]: cannot find value `data_source` in this scope
+   --> src/hashing.rs:667:39
+    |
+667 |         let mut p0 = BlockHashes::new(data_source, block_size).unwrap();
+    |                                       ^^^^^^^^^^^ not found in this scope
+
+warning: unused import: `super::*`
+   --> src/hashing.rs:564:9
+    |
+564 |     use super::*;
+    |         ^^^^^^^^
+    |
+    = note: `#[warn(unused_imports)]` on by default
+
+warning: unnecessary parentheses around pattern
+   --> src/hashing.rs:573:23
+    |
+573 |             if let Ok((mut rug_fuzz_0)) = <(u8) as arbitrary::Arbitrary>::arbitrary(&mut arbitrary::Unstructured::new(rug_data)){
+    |                       ^              ^
+    |
+    = note: `#[warn(unused_parens)]` on by default
+help: remove these parentheses
+    |
+573 -             if let Ok((mut rug_fuzz_0)) = <(u8) as arbitrary::Arbitrary>::arbitrary(&mut arbitrary::Unstructured::new(rug_data)){
+573 +             if let Ok(mut rug_fuzz_0) = <(u8) as arbitrary::Arbitrary>::arbitrary(&mut arbitrary::Unstructured::new(rug_data)){
+    |
+
+warning: unnecessary parentheses around type
+   --> src/hashing.rs:573:44
+    |
+573 |             if let Ok((mut rug_fuzz_0)) = <(u8) as arbitrary::Arbitrary>::arbitrary(&mut arbitrary::Unstructured::new(rug_data)){
+    |                                            ^  ^
+    |
+help: remove these parentheses
+    |
+573 -             if let Ok((mut rug_fuzz_0)) = <(u8) as arbitrary::Arbitrary>::arbitrary(&mut arbitrary::Unstructured::new(rug_data)){
+573 +             if let Ok((mut rug_fuzz_0)) = <u8 as arbitrary::Arbitrary>::arbitrary(&mut arbitrary::Unstructured::new(rug_data)){
+    |
+
+warning: unused import: `super::*`
+   --> src/hashing.rs:583:9
+    |
+583 |     use super::*;
+    |         ^^^^^^^^
+
+warning: unused import: `super::*`
+   --> src/hashing.rs:604:9
+    |
+604 |     use super::*;
+    |         ^^^^^^^^
+
+warning: unnecessary parentheses around pattern
+   --> src/hashing.rs:644:23
+    |
+644 |             if let Ok((mut rug_fuzz_0)) = <(usize) as arbitrary::Arbitrary>::arbitrary(&mut arbitrary::Unstructured::new(rug_data)){
+    |                       ^              ^
+    |
+help: remove these parentheses
+    |
+644 -             if let Ok((mut rug_fuzz_0)) = <(usize) as arbitrary::Arbitrary>::arbitrary(&mut arbitrary::Unstructured::new(rug_data)){
+644 +             if let Ok(mut rug_fuzz_0) = <(usize) as arbitrary::Arbitrary>::arbitrary(&mut arbitrary::Unstructured::new(rug_data)){
+    |
+
+warning: unnecessary parentheses around type
+   --> src/hashing.rs:644:44
+    |
+644 |             if let Ok((mut rug_fuzz_0)) = <(usize) as arbitrary::Arbitrary>::arbitrary(&mut arbitrary::Unstructured::new(rug_data)){
+    |                                            ^     ^
+    |
+help: remove these parentheses
+    |
+644 -             if let Ok((mut rug_fuzz_0)) = <(usize) as arbitrary::Arbitrary>::arbitrary(&mut arbitrary::Unstructured::new(rug_data)){
+644 +             if let Ok((mut rug_fuzz_0)) = <usize as arbitrary::Arbitrary>::arbitrary(&mut arbitrary::Unstructured::new(rug_data)){
+    |
+
+warning: unused import: `super::*`
+   --> src/string_diff.rs:328:9
+    |
+328 |     use super::*;
+    |         ^^^^^^^^
+
+warning: unused imports: `Diff`, `OperationScore`
+   --> src/string_diff.rs:329:41
+    |
+329 |     use crate::string_diff::{find_diff, Diff, OperationScore, EditDistance};
+    |                                         ^^^^  ^^^^^^^^^^^^^^
+
+warning: unused import: `super::*`
+   --> src/string_diff.rs:344:9
+    |
+344 |     use super::*;
+    |         ^^^^^^^^
+
+warning: unused import: `super::*`
+   --> src/string_diff.rs:376:9
+    |
+376 |     use super::*;
+    |         ^^^^^^^^
+
+warning: unused import: `OperationScore`
+   --> src/string_diff.rs:377:40
+    |
+377 |     use crate::string_diff::{nw_score, OperationScore, EditDistance};
+    |                                        ^^^^^^^^^^^^^^
+
+warning: unused import: `super::*`
+   --> src/string_diff.rs:392:9
+    |
+392 |     use super::*;
+    |         ^^^^^^^^
+
+warning: unused import: `super::*`
+   --> src/string_diff.rs:407:9
+    |
+407 |     use super::*;
+    |         ^^^^^^^^
+
+warning: unused import: `super::*`
+   --> src/string_diff.rs:422:9
+    |
+422 |     use super::*;
+    |         ^^^^^^^^
+
+warning: unused import: `super::*`
+   --> src/string_diff.rs:438:9
+    |
+438 |     use super::*;
+    |         ^^^^^^^^
+
+warning: unused import: `super::*`
+   --> src/lib.rs:361:9
+    |
+361 |     use super::*;
+    |         ^^^^^^^^
+
+warning: unused import: `super::*`
+   --> src/lib.rs:387:9
+    |
+387 |     use super::*;
+    |         ^^^^^^^^
+
+warning: unused import: `Delete`
+   --> src/lib.rs:388:17
+    |
+388 |     use crate::{Delete, Diff};
+    |                 ^^^^^^
+
+warning: unused import: `super::*`
+   --> src/lib.rs:403:9
+    |
+403 |     use super::*;
+    |         ^^^^^^^^
+
+warning: unused import: `Insert`
+   --> src/lib.rs:404:23
+    |
+404 |     use crate::{Diff, Insert};
+    |                       ^^^^^^
+
+warning: unused import: `super::*`
+   --> src/lib.rs:415:9
+    |
+415 |     use super::*;
+    |         ^^^^^^^^
+
+warning: unused import: `super::*`
+   --> src/lib.rs:427:9
+    |
+427 |     use super::*;
+    |         ^^^^^^^^
+
+warning: unused import: `super::*`
+   --> src/lib.rs:439:9
+    |
+439 |     use super::*;
+    |         ^^^^^^^^
+
+warning: unused imports: `SeekFrom`, `Seek`, `Write`, `self`
+   --> src/lib.rs:455:19
+    |
+455 |     use std::io::{self, Seek, SeekFrom, Write};
+    |                   ^^^^  ^^^^  ^^^^^^^^  ^^^^^
+
+warning: unused import: `std::io::Read`
+   --> src/lib.rs:456:9
+    |
+456 |     use std::io::Read;
+    |         ^^^^^^^^^^^^^
+
+warning: unused import: `std::io::BufReader`
+   --> src/lib.rs:457:9
+    |
+457 |     use std::io::BufReader;
+    |         ^^^^^^^^^^^^^^^^^^
+
+warning: unused import: `std::mem`
+   --> src/lib.rs:458:9
+    |
+458 |     use std::mem;
+    |         ^^^^^^^^
+
+warning: unused imports: `NetworkEndian`, `WriteBytesExt`
+   --> src/lib.rs:473:21
+    |
+473 |     use byteorder::{NetworkEndian, WriteBytesExt};
+    |                     ^^^^^^^^^^^^^  ^^^^^^^^^^^^^
+
+warning: unused import: `std::fs::File`
+   --> src/lib.rs:486:9
+    |
+486 |     use std::fs::File;
+    |         ^^^^^^^^^^^^^
+
+warning: unused imports: `NetworkEndian`, `ReadBytesExt`
+   --> src/lib.rs:487:21
+    |
+487 |     use byteorder::{NetworkEndian, ReadBytesExt};
+    |                     ^^^^^^^^^^^^^  ^^^^^^^^^^^^
+
+warning: unused import: `Read`
+   --> src/lib.rs:488:27
+    |
+488 |     use std::io::{Cursor, Read};
+    |                           ^^^^
+
+warning: unused imports: `Cursor`, `Read`, `Write`
+   --> src/lib.rs:503:19
+    |
+503 |     use std::io::{Cursor, Read, Write};
+    |                   ^^^^^^  ^^^^  ^^^^^
+
+warning: unused imports: `NetworkEndian`, `ReadBytesExt`, `WriteBytesExt`
+   --> src/lib.rs:504:21
+    |
+504 |     use byteorder::{NetworkEndian, ReadBytesExt, WriteBytesExt};
+    |                     ^^^^^^^^^^^^^  ^^^^^^^^^^^^  ^^^^^^^^^^^^^
+
+warning: unused imports: `NetworkEndian`, `WriteBytesExt`
+   --> src/lib.rs:520:21
+    |
+520 |     use byteorder::{NetworkEndian, WriteBytesExt};
+    |                     ^^^^^^^^^^^^^  ^^^^^^^^^^^^^
+
+warning: unused imports: `Write`, `self`
+   --> src/lib.rs:521:19
+    |
+521 |     use std::io::{self, Write};
+    |                   ^^^^  ^^^^^
+
+warning: unused import: `std::io::Read`
+   --> src/lib.rs:539:9
+    |
+539 |     use std::io::Read;
+    |         ^^^^^^^^^^^^^
+
+warning: unused imports: `NetworkEndian`, `ReadBytesExt`
+   --> src/lib.rs:540:21
+    |
+540 |     use byteorder::{NetworkEndian, ReadBytesExt};
+    |                     ^^^^^^^^^^^^^  ^^^^^^^^^^^^
+
+warning: unused import: `super::*`
+   --> src/lib.rs:553:9
+    |
+553 |     use super::*;
+    |         ^^^^^^^^
+
+warning: unused import: `super::*`
+   --> src/lib.rs:570:9
+    |
+570 |     use super::*;
+    |         ^^^^^^^^
+
+warning: unused import: `std::io::Write`
+   --> src/lib.rs:588:9
+    |
+588 |     use std::io::Write;
+    |         ^^^^^^^^^^^^^^
+
+warning: unused imports: `NetworkEndian`, `WriteBytesExt`
+   --> src/lib.rs:589:21
+    |
+589 |     use byteorder::{NetworkEndian, WriteBytesExt};
+    |                     ^^^^^^^^^^^^^  ^^^^^^^^^^^^^
+
+warning: unused imports: `NetworkEndian`, `ReadBytesExt`
+   --> src/lib.rs:608:21
+    |
+608 |     use byteorder::{ReadBytesExt, NetworkEndian};
+    |                     ^^^^^^^^^^^^  ^^^^^^^^^^^^^
+
+warning: `rdiff` (lib) generated 40 warnings
+warning: use of deprecated macro `try`: use the `?` operator instead
+  --> examples/file_watcher.rs:20:16
+   |
+20 |     let file = try!(fs::File::open(file));
+   |                ^^^
+   |
+   = note: `#[warn(deprecated)]` on by default
+
+warning: use of deprecated macro `try`: use the `?` operator instead
+  --> examples/file_watcher.rs:25:16
+   |
+25 |     let file = try!(fs::File::open(file));
+   |                ^^^
+
+warning: use of deprecated macro `try`: use the `?` operator instead
+  --> examples/file_watcher.rs:26:17
+   |
+26 |     let diffs = try!(hashes.diff_and_update(file));
+   |                 ^^^
+
+warning: use of deprecated macro `try`: use the `?` operator instead
+  --> examples/file_watcher.rs:45:3
+   |
+45 |   try!(watcher.watch(file_name));
+   |   ^^^
+
+warning: use of deprecated macro `try`: use the `?` operator instead
+  --> examples/file_watcher.rs:41:41
+   |
+41 |   let mut watcher: RecommendedWatcher = try!(Watcher::new(tx));
+   |                                         ^^^
+
+For more information about this error, try `rustc --explain E0425`.
+warning: `rdiff` (lib test) generated 83 warnings (40 duplicates)
+error: could not compile `rdiff` due to previous error; 83 warnings emitted
+warning: build failed, waiting for other jobs to finish...
+warning: `rdiff` (example "file_watcher") generated 5 warnings
+
+/home/cdc/rug_on_erasan_after_bolero/rdiff-0.1.2//./src/window.rs
+/home/cdc/rug_on_erasan_after_bolero/rdiff-0.1.2//./src/string_diff.rs
+/home/cdc/rug_on_erasan_after_bolero/rdiff-0.1.2//./src/lib.rs
+done

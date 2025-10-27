@@ -1,0 +1,5 @@
+[workspace]
+members = [
+	"test_algorithmica0",
+	"replay_algorithmica0",
+]

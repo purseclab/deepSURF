@@ -1,0 +1,149 @@
+
+Total Stats:
+------------------------------------------------------------------------------------------------------------------------------------
+* URAPI Coverage: 16/35 (45.71%).
+* Targets Compiled: 52/121 (42.98%) in [83.740293002s].
+------------------------------------------------------------------------------------------------------------------------------------
+
+Target Stats:
+------------------------------------------------------------------------------------------------------------------------------------
+* URAPIs w/ ≥ 1ft: 16/35 (45.71%).
+* Average Generation Time per Target: 137.165510514s/16 (8.572844407s).
+
+* URAPIs w/ ≥ 2ft: 12/35 (34.29%).
+* Average Generation Time per Target: 272.014234452s/12 (22.667852871s).
+
+* URAPIs w/ ≥ 3ft: 12/35 (34.29%).
+* Average Generation Time per Target: 426.399473785s/12 (35.533289482s).
+
+* URAPIs w/ ≥ 4ft: 12/35 (34.29%).
+* Average Generation Time per Target: 548.573779161s/12 (45.714481596s).
+
+* URAPIs w/o any compilable targets: 19/35 (54.29%).
+------------------------------------------------------------------------------------------------------------------------------------
+
+Detailed Results: 
+------------------------------------------------------------------------------------------------------------------------------------
+  URAPI: DefId(0:140 ~ ordnung[1298]::{impl#4}::remove),
+    - Compilable Targets (0/3 ~ 0.00%):
+  URAPI: DefId(0:40 ~ ordnung[1298]::compact::{impl#0}::clear),
+    - Compilable Targets (4/4 ~ 100.00%):
+        * ordnung_fuzz_6866931038910001367 [9.77832146s]
+        * ordnung_fuzz_18067900193864275011 [24.660119239s]
+        * ordnung_fuzz_7033178757393932653 [39.26093083s]
+        * ordnung_fuzz_2291334754498557282 [50.799056515s]
+  URAPI: DefId(0:60 ~ ordnung[1298]::compact::{impl#2}::from),
+    - Compilable Targets (1/1 ~ 100.00%):
+        * ordnung_fuzz_15830344716549970528 [9.881713724s]
+  URAPI: DefId(0:240 ~ ordnung[1298]::{impl#18}::clone),
+    - Compilable Targets (0/3 ~ 0.00%):
+  URAPI: DefId(0:42 ~ ordnung[1298]::compact::{impl#0}::len),
+    - Compilable Targets (4/4 ~ 100.00%):
+        * ordnung_fuzz_11805938811472383936 [9.825825335s]
+        * ordnung_fuzz_3023367479046018220 [24.641679586s]
+        * ordnung_fuzz_1690856634060613010 [39.278719668s]
+        * ordnung_fuzz_15327361566803001203 [50.784689024s]
+  URAPI: DefId(0:38 ~ ordnung[1298]::compact::{impl#0}::push),
+    - Compilable Targets (4/4 ~ 100.00%):
+        * ordnung_fuzz_6444110355677405621 [6.473237992s]
+        * ordnung_fuzz_7396325385487896387 [18.292311798s]
+        * ordnung_fuzz_3045486232113922482 [30.242340414s]
+        * ordnung_fuzz_9147955864268570892 [39.422431087s]
+  URAPI: DefId(0:73 ~ ordnung[1298]::compact::{impl#6}::deref_mut),
+    - Compilable Targets (4/4 ~ 100.00%):
+        * ordnung_fuzz_14169868846944646384 [6.850980147s]
+        * ordnung_fuzz_5226531150727180424 [20.433748454s]
+        * ordnung_fuzz_14634377063851175709 [30.643314682s]
+        * ordnung_fuzz_13774075210064561847 [39.496341326s]
+  URAPI: DefId(0:81 ~ ordnung[1298]::compact::{impl#8}::into_iter),
+    - Compilable Targets (4/6 ~ 66.67%):
+        * ordnung_fuzz_10578924928580918328 [5.83551308s]
+        * ordnung_fuzz_542622828187004737 [22.379805035s]
+        * ordnung_fuzz_14310224094134440241 [34.822092236s]
+        * ordnung_fuzz_16486151084683332394 [42.777190965s]
+  URAPI: DefId(0:166 ~ ordnung[1298]::{impl#7}::eq),
+    - Compilable Targets (0/9 ~ 0.00%):
+  URAPI: DefId(0:143 ~ ordnung[1298]::{impl#4}::is_empty),
+    - Compilable Targets (0/3 ~ 0.00%):
+  URAPI: DefId(0:70 ~ ordnung[1298]::compact::{impl#5}::deref),
+    - Compilable Targets (4/4 ~ 100.00%):
+        * ordnung_fuzz_12812416779689677864 [6.980859376s]
+        * ordnung_fuzz_11161409928727437432 [20.671946186s]
+        * ordnung_fuzz_8140283983262046676 [30.700640515s]
+        * ordnung_fuzz_4595143463991116858 [39.745370052s]
+  URAPI: DefId(0:142 ~ ordnung[1298]::{impl#4}::len),
+    - Compilable Targets (0/3 ~ 0.00%):
+  URAPI: DefId(0:129 ~ ordnung[1298]::{impl#4}::new),
+    - Compilable Targets (0/1 ~ 0.00%):
+  URAPI: DefId(0:130 ~ ordnung[1298]::{impl#4}::with_capacity),
+    - Compilable Targets (0/1 ~ 0.00%):
+  URAPI: DefId(0:136 ~ ordnung[1298]::{impl#4}::get_mut),
+    - Compilable Targets (0/3 ~ 0.00%):
+  URAPI: DefId(0:57 ~ ordnung[1298]::compact::{impl#1}::drop),
+    - Compilable Targets (4/4 ~ 100.00%):
+        * ordnung_fuzz_4626330795837807190 [6.835864454s]
+        * ordnung_fuzz_11935504339247952014 [20.63437357s]
+        * ordnung_fuzz_15306818488258980832 [30.612617029s]
+        * ordnung_fuzz_1298210752879524462 [39.687369302s]
+  URAPI: DefId(0:76 ~ ordnung[1298]::compact::{impl#7}::fmt),
+    - 0 targets generated.
+  URAPI: DefId(0:154 ~ ordnung[1298]::{impl#5}::index),
+    - Compilable Targets (0/3 ~ 0.00%):
+  URAPI: DefId(0:66 ~ ordnung[1298]::compact::{impl#4}::clone),
+    - Compilable Targets (4/4 ~ 100.00%):
+        * ordnung_fuzz_7502271027440090316 [9.918418698s]
+        * ordnung_fuzz_17576986483672503411 [24.663077342s]
+        * ordnung_fuzz_744034702618605048 [39.300451068s]
+        * ordnung_fuzz_11391544532552742976 [50.765570112s]
+  URAPI: DefId(0:147 ~ ordnung[1298]::{impl#4}::iter),
+    - Compilable Targets (0/3 ~ 0.00%):
+  URAPI: DefId(0:63 ~ ordnung[1298]::compact::{impl#3}::from),
+    - Compilable Targets (4/4 ~ 100.00%):
+        * ordnung_fuzz_9717396599201456613 [9.762143785s]
+        * ordnung_fuzz_10925546337475036799 [24.596739989s]
+        * ordnung_fuzz_16740769172684317311 [39.286434342s]
+        * ordnung_fuzz_5562480640968356404 [50.794764919s]
+  URAPI: DefId(0:43 ~ ordnung[1298]::compact::{impl#0}::capacity),
+    - Compilable Targets (4/4 ~ 100.00%):
+        * ordnung_fuzz_10518793896994029608 [9.782623196s]
+        * ordnung_fuzz_12868584546599400538 [24.647633919s]
+        * ordnung_fuzz_8975832481913739855 [39.261239581s]
+        * ordnung_fuzz_16872856222451450411 [50.765509046s]
+  URAPI: DefId(0:39 ~ ordnung[1298]::compact::{impl#0}::pop),
+    - Compilable Targets (4/4 ~ 100.00%):
+        * ordnung_fuzz_2441042188619738604 [5.273889635s]
+        * ordnung_fuzz_3550027939828841270 [21.748177845s]
+        * ordnung_fuzz_11384666102445921762 [33.729406707s]
+        * ordnung_fuzz_14840329788940279341 [42.773951762s]
+  URAPI: DefId(0:134 ~ ordnung[1298]::{impl#4}::contains_key),
+    - Compilable Targets (0/3 ~ 0.00%):
+  URAPI: DefId(0:37 ~ ordnung[1298]::compact::{impl#0}::with_capacity),
+    - Compilable Targets (1/1 ~ 100.00%):
+        * ordnung_fuzz_13208002599787139935 [10.304852334s]
+  URAPI: DefId(0:148 ~ ordnung[1298]::{impl#4}::iter_mut),
+    - Compilable Targets (0/3 ~ 0.00%):
+  URAPI: DefId(0:161 ~ ordnung[1298]::{impl#6}::from_iter),
+    - Compilable Targets (0/1 ~ 0.00%):
+  URAPI: DefId(0:88 ~ ordnung[1298]::compact::{impl#10}::eq),
+    - Compilable Targets (0/16 ~ 0.00%):
+  URAPI: DefId(0:131 ~ ordnung[1298]::{impl#4}::insert),
+    - Compilable Targets (0/3 ~ 0.00%):
+  URAPI: DefId(0:138 ~ ordnung[1298]::{impl#4}::get_or_insert),
+    - Compilable Targets (0/3 ~ 0.00%):
+  URAPI: DefId(0:44 ~ ordnung[1298]::compact::{impl#0}::remove),
+    - Compilable Targets (4/4 ~ 100.00%):
+        * ordnung_fuzz_17339657262016291439 [9.826039563s]
+        * ordnung_fuzz_8358946810026507024 [24.644621489s]
+        * ordnung_fuzz_11182581103592631499 [39.261286713s]
+        * ordnung_fuzz_5150518976445801913 [50.761535051s]
+  URAPI: DefId(0:84 ~ ordnung[1298]::compact::{impl#9}::from_iter),
+    - Compilable Targets (1/1 ~ 100.00%):
+        * ordnung_fuzz_660891620703362441 [9.776455147s]
+  URAPI: DefId(0:36 ~ ordnung[1298]::compact::{impl#0}::new),
+    - Compilable Targets (1/1 ~ 100.00%):
+        * ordnung_fuzz_13505580249598763583 [10.058772588s]
+  URAPI: DefId(0:132 ~ ordnung[1298]::{impl#4}::get),
+    - Compilable Targets (0/3 ~ 0.00%):
+  URAPI: DefId(0:144 ~ ordnung[1298]::{impl#4}::clear),
+    - Compilable Targets (0/3 ~ 0.00%):
+------------------------------------------------------------------------------------------------------------------------------------

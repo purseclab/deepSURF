@@ -1,0 +1,7 @@
+target
+*.pyc
+/results.db*
+/cache/
+/rust.git/
+/rust/
+/results

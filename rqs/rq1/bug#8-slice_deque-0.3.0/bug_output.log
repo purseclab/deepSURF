@@ -1,0 +1,420 @@
+     Removed 125 files, 58.8MiB total
+warning: /home/cdc/deepSURF-sp26-artifacts/artifact_data/dataset/erasan_crates/slice-deque-0.3.0/Cargo.toml: Found `feature = ...` in `target.'cfg(...)'.dependencies`. This key is not supported for selecting dependencies and will not work as expected. Use the [features] section instead: https://doc.rust-lang.org/cargo/reference/features.html
+   Compiling libc v0.2.175
+   Compiling semver v1.0.26
+   Compiling home v0.5.5
+   Compiling xdg v2.5.2
+   Compiling global_data v0.1.0 (/home/cdc/deepSURF-sp26-artifacts/artifact_code/global_data)
+   Compiling afl v0.15.7
+   Compiling rustc_version v0.4.1
+   Compiling slice-deque v0.3.0 (/home/cdc/deepSURF-sp26-artifacts/artifact_data/dataset/erasan_crates/slice-deque-0.3.0)
+warning: unused variable: `v`
+    --> /home/cdc/deepSURF-sp26-artifacts/artifact_data/dataset/erasan_crates/slice-deque-0.3.0/src/lib.rs:3055:17
+     |
+3055 |             let v = slice::from_raw_parts_mut(
+     |                 ^ help: if this is intentional, prefix it with an underscore: `_v`
+     |
+     = note: `#[warn(unused_variables)]` on by default
+
+warning: unused variable: `v`
+    --> /home/cdc/deepSURF-sp26-artifacts/artifact_data/dataset/erasan_crates/slice-deque-0.3.0/src/lib.rs:3061:17
+     |
+3061 |             let v = slice::from_raw_parts_mut(
+     |                 ^ help: if this is intentional, prefix it with an underscore: `_v`
+
+warning: `slice-deque` (lib) generated 2 warnings (run `cargo fix --lib -p slice-deque` to apply 2 suggestions)
+   Compiling slice-deque_fuzz_14000630316968299981 v0.1.0 (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#8-slice_deque-0.3.0/harness)
+warning: unused import: `slice_deque::*`
+ --> src/slice-deque_fuzz_14000630316968299981.rs:5:5
+  |
+5 | use slice_deque::*;
+  |     ^^^^^^^^^^^^^^
+  |
+  = note: `#[warn(unused_imports)]` on by default
+
+warning: unused import: `std::str::FromStr`
+ --> src/slice-deque_fuzz_14000630316968299981.rs:7:5
+  |
+7 | use std::str::FromStr;
+  |     ^^^^^^^^^^^^^^^^^
+
+warning: unused imports: `DerefMut`, `Deref`, `IndexMut`, `Index`
+ --> src/slice-deque_fuzz_14000630316968299981.rs:8:16
+  |
+8 | use std::ops::{Deref, DerefMut, Index, IndexMut};
+  |                ^^^^^  ^^^^^^^^  ^^^^^  ^^^^^^^^
+
+warning: the item `TryInto` is imported redundantly
+   --> src/slice-deque_fuzz_14000630316968299981.rs:297:9
+    |
+297 |     use std::convert::TryInto;
+    |         ^^^^^^^^^^^^^^^^^^^^^
+   --> /rustc/11f32b73e0dc9287e305b5b9980d24aecdc8c17f/library/std/src/prelude/mod.rs:129:13
+    |
+    = note: the item `TryInto` is already defined here
+
+warning: the item `TryInto` is imported redundantly
+   --> src/slice-deque_fuzz_14000630316968299981.rs:304:9
+    |
+304 |     use std::convert::TryInto;
+    |         ^^^^^^^^^^^^^^^^^^^^^
+   --> /rustc/11f32b73e0dc9287e305b5b9980d24aecdc8c17f/library/std/src/prelude/mod.rs:129:13
+    |
+    = note: the item `TryInto` is already defined here
+
+warning: variable does not need to be mutable
+  --> src/slice-deque_fuzz_14000630316968299981.rs:27:7
+   |
+27 |         let mut t_2 = _to_u8(GLOBAL_DATA, 9) % 17;
+   |             ----^^^
+   |             |
+   |             help: remove this `mut`
+   |
+   = note: `#[warn(unused_mut)]` on by default
+
+warning: variable does not need to be mutable
+  --> src/slice-deque_fuzz_14000630316968299981.rs:58:7
+   |
+58 |         let mut t_0 = _to_u8(GLOBAL_DATA, 0) % 33;
+   |             ----^^^
+   |             |
+   |             help: remove this `mut`
+
+warning: variable does not need to be mutable
+  --> src/slice-deque_fuzz_14000630316968299981.rs:61:7
+   |
+61 |         let mut t_6 = _to_u8(GLOBAL_DATA, 26) % 17;
+   |             ----^^^
+   |             |
+   |             help: remove this `mut`
+
+warning: variable does not need to be mutable
+  --> src/slice-deque_fuzz_14000630316968299981.rs:66:7
+   |
+66 |         let mut t_10 = _to_u8(GLOBAL_DATA, 43) % 17;
+   |             ----^^^^
+   |             |
+   |             help: remove this `mut`
+
+warning: variable does not need to be mutable
+  --> src/slice-deque_fuzz_14000630316968299981.rs:71:7
+   |
+71 |         let mut t_14 = _to_u8(GLOBAL_DATA, 60) % 17;
+   |             ----^^^^
+   |             |
+   |             help: remove this `mut`
+
+warning: variable does not need to be mutable
+  --> src/slice-deque_fuzz_14000630316968299981.rs:76:7
+   |
+76 |         let mut t_18 = _to_u8(GLOBAL_DATA, 77) % 17;
+   |             ----^^^^
+   |             |
+   |             help: remove this `mut`
+
+warning: variable does not need to be mutable
+  --> src/slice-deque_fuzz_14000630316968299981.rs:81:7
+   |
+81 |         let mut t_22 = _to_u8(GLOBAL_DATA, 94) % 17;
+   |             ----^^^^
+   |             |
+   |             help: remove this `mut`
+
+warning: variable does not need to be mutable
+  --> src/slice-deque_fuzz_14000630316968299981.rs:86:7
+   |
+86 |         let mut t_26 = _to_u8(GLOBAL_DATA, 111) % 17;
+   |             ----^^^^
+   |             |
+   |             help: remove this `mut`
+
+warning: variable does not need to be mutable
+  --> src/slice-deque_fuzz_14000630316968299981.rs:91:7
+   |
+91 |         let mut t_30 = _to_u8(GLOBAL_DATA, 128) % 17;
+   |             ----^^^^
+   |             |
+   |             help: remove this `mut`
+
+warning: variable does not need to be mutable
+  --> src/slice-deque_fuzz_14000630316968299981.rs:96:7
+   |
+96 |         let mut t_34 = _to_u8(GLOBAL_DATA, 145) % 17;
+   |             ----^^^^
+   |             |
+   |             help: remove this `mut`
+
+warning: variable does not need to be mutable
+   --> src/slice-deque_fuzz_14000630316968299981.rs:101:7
+    |
+101 |         let mut t_38 = _to_u8(GLOBAL_DATA, 162) % 17;
+    |             ----^^^^
+    |             |
+    |             help: remove this `mut`
+
+warning: variable does not need to be mutable
+   --> src/slice-deque_fuzz_14000630316968299981.rs:106:7
+    |
+106 |         let mut t_42 = _to_u8(GLOBAL_DATA, 179) % 17;
+    |             ----^^^^
+    |             |
+    |             help: remove this `mut`
+
+warning: variable does not need to be mutable
+   --> src/slice-deque_fuzz_14000630316968299981.rs:111:7
+    |
+111 |         let mut t_46 = _to_u8(GLOBAL_DATA, 196) % 17;
+    |             ----^^^^
+    |             |
+    |             help: remove this `mut`
+
+warning: variable does not need to be mutable
+   --> src/slice-deque_fuzz_14000630316968299981.rs:116:7
+    |
+116 |         let mut t_50 = _to_u8(GLOBAL_DATA, 213) % 17;
+    |             ----^^^^
+    |             |
+    |             help: remove this `mut`
+
+warning: variable does not need to be mutable
+   --> src/slice-deque_fuzz_14000630316968299981.rs:121:7
+    |
+121 |         let mut t_54 = _to_u8(GLOBAL_DATA, 230) % 17;
+    |             ----^^^^
+    |             |
+    |             help: remove this `mut`
+
+warning: variable does not need to be mutable
+   --> src/slice-deque_fuzz_14000630316968299981.rs:126:7
+    |
+126 |         let mut t_58 = _to_u8(GLOBAL_DATA, 247) % 17;
+    |             ----^^^^
+    |             |
+    |             help: remove this `mut`
+
+warning: variable does not need to be mutable
+   --> src/slice-deque_fuzz_14000630316968299981.rs:131:7
+    |
+131 |         let mut t_62 = _to_u8(GLOBAL_DATA, 264) % 17;
+    |             ----^^^^
+    |             |
+    |             help: remove this `mut`
+
+warning: variable does not need to be mutable
+   --> src/slice-deque_fuzz_14000630316968299981.rs:136:7
+    |
+136 |         let mut t_66 = _to_u8(GLOBAL_DATA, 281) % 17;
+    |             ----^^^^
+    |             |
+    |             help: remove this `mut`
+
+warning: variable does not need to be mutable
+   --> src/slice-deque_fuzz_14000630316968299981.rs:141:7
+    |
+141 |         let mut t_70 = _to_u8(GLOBAL_DATA, 298) % 17;
+    |             ----^^^^
+    |             |
+    |             help: remove this `mut`
+
+warning: variable does not need to be mutable
+   --> src/slice-deque_fuzz_14000630316968299981.rs:146:7
+    |
+146 |         let mut t_74 = _to_u8(GLOBAL_DATA, 315) % 17;
+    |             ----^^^^
+    |             |
+    |             help: remove this `mut`
+
+warning: variable does not need to be mutable
+   --> src/slice-deque_fuzz_14000630316968299981.rs:151:7
+    |
+151 |         let mut t_78 = _to_u8(GLOBAL_DATA, 332) % 17;
+    |             ----^^^^
+    |             |
+    |             help: remove this `mut`
+
+warning: variable does not need to be mutable
+   --> src/slice-deque_fuzz_14000630316968299981.rs:156:7
+    |
+156 |         let mut t_82 = _to_u8(GLOBAL_DATA, 349) % 17;
+    |             ----^^^^
+    |             |
+    |             help: remove this `mut`
+
+warning: variable does not need to be mutable
+   --> src/slice-deque_fuzz_14000630316968299981.rs:161:7
+    |
+161 |         let mut t_86 = _to_u8(GLOBAL_DATA, 366) % 17;
+    |             ----^^^^
+    |             |
+    |             help: remove this `mut`
+
+warning: variable does not need to be mutable
+   --> src/slice-deque_fuzz_14000630316968299981.rs:166:7
+    |
+166 |         let mut t_90 = _to_u8(GLOBAL_DATA, 383) % 17;
+    |             ----^^^^
+    |             |
+    |             help: remove this `mut`
+
+warning: variable does not need to be mutable
+   --> src/slice-deque_fuzz_14000630316968299981.rs:171:7
+    |
+171 |         let mut t_94 = _to_u8(GLOBAL_DATA, 400) % 17;
+    |             ----^^^^
+    |             |
+    |             help: remove this `mut`
+
+warning: variable does not need to be mutable
+   --> src/slice-deque_fuzz_14000630316968299981.rs:176:7
+    |
+176 |         let mut t_98 = _to_u8(GLOBAL_DATA, 417) % 17;
+    |             ----^^^^
+    |             |
+    |             help: remove this `mut`
+
+warning: variable does not need to be mutable
+   --> src/slice-deque_fuzz_14000630316968299981.rs:181:7
+    |
+181 |         let mut t_102 = _to_u8(GLOBAL_DATA, 434) % 17;
+    |             ----^^^^^
+    |             |
+    |             help: remove this `mut`
+
+warning: variable does not need to be mutable
+   --> src/slice-deque_fuzz_14000630316968299981.rs:186:7
+    |
+186 |         let mut t_106 = _to_u8(GLOBAL_DATA, 451) % 17;
+    |             ----^^^^^
+    |             |
+    |             help: remove this `mut`
+
+warning: variable does not need to be mutable
+   --> src/slice-deque_fuzz_14000630316968299981.rs:191:7
+    |
+191 |         let mut t_110 = _to_u8(GLOBAL_DATA, 468) % 17;
+    |             ----^^^^^
+    |             |
+    |             help: remove this `mut`
+
+warning: variable does not need to be mutable
+   --> src/slice-deque_fuzz_14000630316968299981.rs:196:7
+    |
+196 |         let mut t_114 = _to_u8(GLOBAL_DATA, 485) % 17;
+    |             ----^^^^^
+    |             |
+    |             help: remove this `mut`
+
+warning: variable does not need to be mutable
+   --> src/slice-deque_fuzz_14000630316968299981.rs:201:7
+    |
+201 |         let mut t_118 = _to_u8(GLOBAL_DATA, 502) % 17;
+    |             ----^^^^^
+    |             |
+    |             help: remove this `mut`
+
+warning: variable does not need to be mutable
+   --> src/slice-deque_fuzz_14000630316968299981.rs:206:7
+    |
+206 |         let mut t_122 = _to_u8(GLOBAL_DATA, 519) % 17;
+    |             ----^^^^^
+    |             |
+    |             help: remove this `mut`
+
+warning: variable does not need to be mutable
+   --> src/slice-deque_fuzz_14000630316968299981.rs:211:7
+    |
+211 |         let mut t_126 = _to_u8(GLOBAL_DATA, 536) % 17;
+    |             ----^^^^^
+    |             |
+    |             help: remove this `mut`
+
+warning: variable does not need to be mutable
+   --> src/slice-deque_fuzz_14000630316968299981.rs:216:7
+    |
+216 |         let mut t_130 = _to_u8(GLOBAL_DATA, 553) % 17;
+    |             ----^^^^^
+    |             |
+    |             help: remove this `mut`
+
+warning: variable does not need to be mutable
+   --> src/slice-deque_fuzz_14000630316968299981.rs:225:7
+    |
+225 |         let mut t_136 = &mut t_135;
+    |             ----^^^^^
+    |             |
+    |             help: remove this `mut`
+
+warning: variable does not need to be mutable
+   --> src/slice-deque_fuzz_14000630316968299981.rs:226:7
+    |
+226 |         let mut t_138 = _custom_fn0;
+    |             ----^^^^^
+    |             |
+    |             help: remove this `mut`
+
+warning: variable `GLOBAL_DATA` should have a snake case name
+  --> src/slice-deque_fuzz_14000630316968299981.rs:16:7
+   |
+16 |         let GLOBAL_DATA = global_data.first_half;
+   |             ^^^^^^^^^^^ help: convert the identifier to snake case: `global_data`
+   |
+   = note: `#[warn(non_snake_case)]` on by default
+
+warning: variable `GLOBAL_DATA` should have a snake case name
+  --> src/slice-deque_fuzz_14000630316968299981.rs:23:7
+   |
+23 |         let GLOBAL_DATA = match selector{
+   |             ^^^^^^^^^^^ help: convert the identifier to snake case: `global_data`
+
+warning: variable `GLOBAL_DATA` should have a snake case name
+  --> src/slice-deque_fuzz_14000630316968299981.rs:37:6
+   |
+37 |     let GLOBAL_DATA = global_data.first_half;
+   |         ^^^^^^^^^^^ help: convert the identifier to snake case: `global_data`
+
+warning: variable `GLOBAL_DATA` should have a snake case name
+  --> src/slice-deque_fuzz_14000630316968299981.rs:44:6
+   |
+44 |     let GLOBAL_DATA = match selector{
+   |         ^^^^^^^^^^^ help: convert the identifier to snake case: `global_data`
+
+warning: variable `GLOBAL_DATA` should have a snake case name
+  --> src/slice-deque_fuzz_14000630316968299981.rs:57:7
+   |
+57 |         let GLOBAL_DATA = global_data.first_half;
+   |             ^^^^^^^^^^^ help: convert the identifier to snake case: `global_data`
+
+warning: `slice-deque_fuzz_14000630316968299981` (bin "slice-deque_fuzz_14000630316968299981") generated 46 warnings (run `cargo fix --bin "slice-deque_fuzz_14000630316968299981"` to apply 39 suggestions)
+    Finished dev [unoptimized + debuginfo] target(s) in 3.23s
+thread 'main' panicked at src/slice-deque_fuzz_14000630316968299981.rs:42:9:
+INTENTIONAL PANIC!
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+=================================================================
+==1425884==ERROR: AddressSanitizer: attempting double-free on 0x502000000050 in thread T0:
+    #0 0x55d843ec6bb6  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#8-slice_deque-0.3.0/harness/target/x86_64-unknown-linux-gnu/debug/slice-deque_fuzz_14000630316968299981+0x98bb6) (BuildId: c1f9fcf9240bd73237d6e4cc27403fddefbf8fcd)
+    #1 0x55d843f0177a  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#8-slice_deque-0.3.0/harness/target/x86_64-unknown-linux-gnu/debug/slice-deque_fuzz_14000630316968299981+0xd377a) (BuildId: c1f9fcf9240bd73237d6e4cc27403fddefbf8fcd)
+    #2 0x55d843f0719a  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#8-slice_deque-0.3.0/harness/target/x86_64-unknown-linux-gnu/debug/slice-deque_fuzz_14000630316968299981+0xd919a) (BuildId: c1f9fcf9240bd73237d6e4cc27403fddefbf8fcd)
+    #3 0x55d843f05e11  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#8-slice_deque-0.3.0/harness/target/x86_64-unknown-linux-gnu/debug/slice-deque_fuzz_14000630316968299981+0xd7e11) (BuildId: c1f9fcf9240bd73237d6e4cc27403fddefbf8fcd)
+    #4 0x55d843ef1241  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#8-slice_deque-0.3.0/harness/target/x86_64-unknown-linux-gnu/debug/slice-deque_fuzz_14000630316968299981+0xc3241) (BuildId: c1f9fcf9240bd73237d6e4cc27403fddefbf8fcd)
+    #5 0x55d843ef1290  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#8-slice_deque-0.3.0/harness/target/x86_64-unknown-linux-gnu/debug/slice-deque_fuzz_14000630316968299981+0xc3290) (BuildId: c1f9fcf9240bd73237d6e4cc27403fddefbf8fcd)
+    #6 0x55d843f27110  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#8-slice_deque-0.3.0/harness/target/x86_64-unknown-linux-gnu/debug/slice-deque_fuzz_14000630316968299981+0xf9110) (BuildId: c1f9fcf9240bd73237d6e4cc27403fddefbf8fcd)
+    #7 0x55d843f07355  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#8-slice_deque-0.3.0/harness/target/x86_64-unknown-linux-gnu/debug/slice-deque_fuzz_14000630316968299981+0xd9355) (BuildId: c1f9fcf9240bd73237d6e4cc27403fddefbf8fcd)
+    #8 0x7f688b0fcd8f  (/lib/x86_64-linux-gnu/libc.so.6+0x29d8f) (BuildId: 490fef8403240c91833978d494d39e537409b92e)
+    #9 0x7f688b0fce3f  (/lib/x86_64-linux-gnu/libc.so.6+0x29e3f) (BuildId: 490fef8403240c91833978d494d39e537409b92e)
+    #10 0x55d843e3fbf4  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#8-slice_deque-0.3.0/harness/target/x86_64-unknown-linux-gnu/debug/slice-deque_fuzz_14000630316968299981+0x11bf4) (BuildId: c1f9fcf9240bd73237d6e4cc27403fddefbf8fcd)
+
+0x502000000050 is located 0 bytes inside of 2-byte region [0x502000000050,0x502000000052)
+freed by thread T0 here:
+    #0 0x55d843ec6bb6  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#8-slice_deque-0.3.0/harness/target/x86_64-unknown-linux-gnu/debug/slice-deque_fuzz_14000630316968299981+0x98bb6) (BuildId: c1f9fcf9240bd73237d6e4cc27403fddefbf8fcd)
+    #1 0x55d843efb29c  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#8-slice_deque-0.3.0/harness/target/x86_64-unknown-linux-gnu/debug/slice-deque_fuzz_14000630316968299981+0xcd29c) (BuildId: c1f9fcf9240bd73237d6e4cc27403fddefbf8fcd)
+    #2 0x55d843f0719a  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#8-slice_deque-0.3.0/harness/target/x86_64-unknown-linux-gnu/debug/slice-deque_fuzz_14000630316968299981+0xd919a) (BuildId: c1f9fcf9240bd73237d6e4cc27403fddefbf8fcd)
+    #3 0x55d843ef1241  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#8-slice_deque-0.3.0/harness/target/x86_64-unknown-linux-gnu/debug/slice-deque_fuzz_14000630316968299981+0xc3241) (BuildId: c1f9fcf9240bd73237d6e4cc27403fddefbf8fcd)
+
+previously allocated by thread T0 here:
+    #0 0x55d843ec6e5e  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#8-slice_deque-0.3.0/harness/target/x86_64-unknown-linux-gnu/debug/slice-deque_fuzz_14000630316968299981+0x98e5e) (BuildId: c1f9fcf9240bd73237d6e4cc27403fddefbf8fcd)
+    #1 0x55d843efaa55  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#8-slice_deque-0.3.0/harness/target/x86_64-unknown-linux-gnu/debug/slice-deque_fuzz_14000630316968299981+0xcca55) (BuildId: c1f9fcf9240bd73237d6e4cc27403fddefbf8fcd)
+    #2 0x55d843f0719a  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#8-slice_deque-0.3.0/harness/target/x86_64-unknown-linux-gnu/debug/slice-deque_fuzz_14000630316968299981+0xd919a) (BuildId: c1f9fcf9240bd73237d6e4cc27403fddefbf8fcd)
+    #3 0x55d843ef1241  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#8-slice_deque-0.3.0/harness/target/x86_64-unknown-linux-gnu/debug/slice-deque_fuzz_14000630316968299981+0xc3241) (BuildId: c1f9fcf9240bd73237d6e4cc27403fddefbf8fcd)
+
+SUMMARY: AddressSanitizer: double-free (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#8-slice_deque-0.3.0/harness/target/x86_64-unknown-linux-gnu/debug/slice-deque_fuzz_14000630316968299981+0x98bb6) (BuildId: c1f9fcf9240bd73237d6e4cc27403fddefbf8fcd) 
+==1425884==ABORTING

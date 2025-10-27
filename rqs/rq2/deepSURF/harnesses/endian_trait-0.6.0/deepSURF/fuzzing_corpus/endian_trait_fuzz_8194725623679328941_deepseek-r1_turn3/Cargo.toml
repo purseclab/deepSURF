@@ -1,0 +1,16 @@
+[workspace]
+
+[package]
+name = "endian_trait_fuzz_8194725623679328941"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "endian_trait_fuzz_8194725623679328941"
+path = "src/endian_trait_fuzz_8194725623679328941.rs"
+
+[dependencies]
+afl = "=0.15.7"
+home = "=0.5.9"
+endian_trait = { path = "../../../../endian_trait-0.6.0/" }
+global_data = { path = "../../../../../../../../code/global_data" }

@@ -1,0 +1,16 @@
+[workspace]
+
+[package]
+name = "rusqlite_fuzz_18321054881818275469"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "rusqlite_fuzz_18321054881818275469"
+path = "src/rusqlite_fuzz_18321054881818275469.rs"
+
+[dependencies]
+afl = "=0.15.7"
+home = "=0.5.9"
+global_data = { path = "../../../../../../../../code/global_data" }
+rusqlite = { path = "../../../../rusqlite-0.26.1/", features = ["bundled"] }

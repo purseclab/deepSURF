@@ -1,0 +1,47 @@
+[[bench]]
+name = "toodee"
+harness = false
+
+[[bench]]
+name = "translate"
+harness = false
+
+[[bench]]
+name = "sort"
+harness = false
+
+[package]
+edition = "2018"
+name = "toodee"
+version = "0.2.4"
+authors = [ "Anton Marsden <anton.marsden@ninetyten.co.nz>",]
+exclude = [ ".github/*",]
+description = "A lightweight 2D wrapper around a Vec."
+documentation = "https://docs.rs/toodee/"
+readme = "README.md"
+keywords = [ "2d", "array", "matrix",]
+categories = [ "data-structures", "no-std",]
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/antonmarsden/toodee"
+
+[dependencies]
+bolero = "0.8.0"
+arbitrary = "1.3.2"
+
+[features]
+copy = []
+default = [ "translate", "sort", "copy",]
+sort = []
+translate = []
+
+[dev-dependencies.criterion]
+version = "0.3.3"
+
+[dev-dependencies.rand]
+version = "0.7.3"
+
+[profile.fuzz]
+inherits = "dev"
+opt-level = 1
+incremental = false
+codegen-units = 1

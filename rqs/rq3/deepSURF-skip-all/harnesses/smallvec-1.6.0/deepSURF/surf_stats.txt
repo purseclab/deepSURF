@@ -1,0 +1,344 @@
+
+Total Stats:
+------------------------------------------------------------------------------------------------------------------------------------
+* URAPI Coverage: 0/72 (0.00%).
+* Targets Compiled: 173/400 (43.25%) in [338.050086519s].
+------------------------------------------------------------------------------------------------------------------------------------
+
+Target Stats:
+------------------------------------------------------------------------------------------------------------------------------------
+* URAPIs w/ ≥ 1ft: 51/72 (70.83%).
+* Average Generation Time per Target: 536.290727958s/51 (10.515504469s).
+
+* URAPIs w/ ≥ 2ft: 44/72 (61.11%).
+* Average Generation Time per Target: 1360.21749747s/44 (30.914034033s).
+
+* URAPIs w/ ≥ 3ft: 41/72 (56.94%).
+* Average Generation Time per Target: 2153.667177756s/41 (52.52846775s).
+
+* URAPIs w/ ≥ 4ft: 37/72 (51.39%).
+* Average Generation Time per Target: 2689.980664293s/37 (72.702180116s).
+
+* URAPIs w/o any compilable targets: 21/72 (29.17%).
+------------------------------------------------------------------------------------------------------------------------------------
+
+Detailed Results: 
+------------------------------------------------------------------------------------------------------------------------------------
+  URAPI: DefId(0:153 ~ smallvec[d7e8]::{impl#14}::truncate),
+    - Compilable Targets (4/4 ~ 100.00%):
+        * smallvec_fuzz_9472221057871013580 [15.576083975s]
+        * smallvec_fuzz_7114884096166396731 [36.388354165s]
+        * smallvec_fuzz_9922361901646802902 [62.551947299s]
+        * smallvec_fuzz_6291093777938283794 [76.932436615s]
+  URAPI: DefId(0:323 ~ smallvec[d7e8]::{impl#51}::into_iter),
+    - Compilable Targets (4/4 ~ 100.00%):
+        * smallvec_fuzz_10850385206740570736 [15.45993946s]
+        * smallvec_fuzz_9127547955173686741 [36.33489975s]
+        * smallvec_fuzz_15645723014314952708 [62.698113343s]
+        * smallvec_fuzz_10933135008854109352 [86.722748148s]
+  URAPI: DefId(0:178 ~ smallvec[d7e8]::{impl#14}::dedup_by),
+    - Compilable Targets (4/4 ~ 100.00%):
+        * smallvec_fuzz_15239966185333236508 [15.416406493s]
+        * smallvec_fuzz_10235125870436669015 [36.371228494s]
+        * smallvec_fuzz_16042733176631841217 [62.577809829s]
+        * smallvec_fuzz_3030820597527837486 [76.995916955s]
+  URAPI: DefId(0:151 ~ smallvec[d7e8]::{impl#14}::try_reserve_exact),
+    - Compilable Targets (4/4 ~ 100.00%):
+        * smallvec_fuzz_18132052891640876642 [15.533732015s]
+        * smallvec_fuzz_2776823493859299999 [36.498694631s]
+        * smallvec_fuzz_12774168131540501543 [62.579321127s]
+        * smallvec_fuzz_3371413206637878802 [76.919439402s]
+  URAPI: DefId(0:223 ~ smallvec[d7e8]::{impl#24}::from),
+    - Compilable Targets (1/1 ~ 100.00%):
+        * smallvec_fuzz_16074290017104980949 [15.889849781s]
+  URAPI: DefId(0:238 ~ smallvec[d7e8]::{impl#28}::extend_from_slice),
+    - Compilable Targets (2/4 ~ 50.00%):
+        * smallvec_fuzz_324923234979950759 [13.131679383s]
+        * smallvec_fuzz_17386123928464522836 [44.084382859s]
+  URAPI: DefId(0:210 ~ smallvec[d7e8]::{impl#20}::as_mut),
+    - Compilable Targets (4/4 ~ 100.00%):
+        * smallvec_fuzz_7822603767723429935 [8.761287826s]
+        * smallvec_fuzz_11242584471068056771 [24.770438335s]
+        * smallvec_fuzz_12097363328175635813 [54.973847708s]
+        * smallvec_fuzz_5365273349779456354 [74.289296155s]
+  URAPI: DefId(0:155 ~ smallvec[d7e8]::{impl#14}::as_mut_slice),
+    - Compilable Targets (4/4 ~ 100.00%):
+        * smallvec_fuzz_3617045062895106740 [10.260240175s]
+        * smallvec_fuzz_10084869076561634160 [27.698537274s]
+        * smallvec_fuzz_15109950730946835292 [50.95606787s]
+        * smallvec_fuzz_17303397515773152159 [80.024553695s]
+  URAPI: DefId(0:284 ~ smallvec[d7e8]::{impl#41}::fmt),
+    - 0 targets generated.
+  URAPI: DefId(0:241 ~ smallvec[d7e8]::{impl#29}::from_iter),
+    - Compilable Targets (1/1 ~ 100.00%):
+        * smallvec_fuzz_9694560279255702765 [15.878759924s]
+  URAPI: DefId(0:96 ~ smallvec[d7e8]::{impl#10}::drop),
+    - Compilable Targets (0/36 ~ 0.00%):
+  URAPI: DefId(0:84 ~ smallvec[d7e8]::{impl#7}::next_back),
+    - Compilable Targets (0/36 ~ 0.00%):
+  URAPI: DefId(0:305 ~ smallvec[d7e8]::{impl#48}::as_slice),
+    - 0 targets generated.
+  URAPI: DefId(0:249 ~ smallvec[d7e8]::{impl#31}::fmt),
+    - 0 targets generated.
+  URAPI: DefId(0:294 ~ smallvec[d7e8]::{impl#44}::next),
+    - 0 targets generated.
+  URAPI: DefId(0:231 ~ smallvec[d7e8]::{impl#26}::index),
+    - Compilable Targets (0/4 ~ 0.00%):
+  URAPI: DefId(0:172 ~ smallvec[d7e8]::{impl#14}::into_boxed_slice),
+    - Compilable Targets (4/4 ~ 100.00%):
+        * smallvec_fuzz_14000968265094396356 [6.00888049s]
+        * smallvec_fuzz_16936452270336407097 [33.745801968s]
+        * smallvec_fuzz_8611317430856019248 [57.110132346s]
+        * smallvec_fuzz_2972302509298246104 [79.395825955s]
+  URAPI: DefId(0:173 ~ smallvec[d7e8]::{impl#14}::into_inner),
+    - Compilable Targets (4/4 ~ 100.00%):
+        * smallvec_fuzz_4155452684639567898 [7.370442084s]
+        * smallvec_fuzz_16859652686686236965 [27.934089373s]
+        * smallvec_fuzz_14386036005155788626 [50.268671807s]
+        * smallvec_fuzz_12777827831221974845 [67.330659067s]
+  URAPI: DefId(0:125 ~ smallvec[d7e8]::{impl#14}::with_capacity),
+    - Compilable Targets (1/1 ~ 100.00%):
+        * smallvec_fuzz_14610474009398988052 [15.754814305s]
+  URAPI: DefId(0:152 ~ smallvec[d7e8]::{impl#14}::shrink_to_fit),
+    - Compilable Targets (4/4 ~ 100.00%):
+        * smallvec_fuzz_12375679269807078768 [15.523890948s]
+        * smallvec_fuzz_16398792416829112122 [36.396867877s]
+        * smallvec_fuzz_3030079595100731736 [62.687918197s]
+        * smallvec_fuzz_324506539327536477 [86.641203216s]
+  URAPI: DefId(0:207 ~ smallvec[d7e8]::{impl#19}::as_ref),
+    - Compilable Targets (4/4 ~ 100.00%):
+        * smallvec_fuzz_10832631325589572707 [15.576818847s]
+        * smallvec_fuzz_2803149580759934449 [36.334953537s]
+        * smallvec_fuzz_2289737684655852368 [62.684732357s]
+        * smallvec_fuzz_6494816611838587648 [86.589844689s]
+  URAPI: DefId(0:134 ~ smallvec[d7e8]::{impl#14}::is_empty),
+    - Compilable Targets (4/4 ~ 100.00%):
+        * smallvec_fuzz_14541938798289749286 [2.462559845s]
+        * smallvec_fuzz_10088511136505551996 [30.055699361s]
+        * smallvec_fuzz_8458677679939425080 [62.601029074s]
+        * smallvec_fuzz_11630017174823674026 [85.539702793s]
+  URAPI: DefId(0:171 ~ smallvec[d7e8]::{impl#14}::into_vec),
+    - Compilable Targets (4/4 ~ 100.00%):
+        * smallvec_fuzz_10777056780330120222 [15.598537205s]
+        * smallvec_fuzz_8890189925101524943 [36.342519757s]
+        * smallvec_fuzz_7126538956220145951 [62.73580899s]
+        * smallvec_fuzz_2478528310986869066 [86.638178707s]
+  URAPI: DefId(0:306 ~ smallvec[d7e8]::{impl#48}::as_mut_slice),
+    - 0 targets generated.
+  URAPI: DefId(0:345 ~ smallvec[d7e8]::{impl#54}::to_smallvec),
+    - Compilable Targets (0/1 ~ 0.00%):
+  URAPI: DefId(0:204 ~ smallvec[d7e8]::{impl#18}::deref_mut),
+    - Compilable Targets (4/4 ~ 100.00%):
+        * smallvec_fuzz_9880849015539125275 [7.206482452s]
+        * smallvec_fuzz_5800747439334579697 [26.21090643s]
+        * smallvec_fuzz_7732944031316470307 [46.305512993s]
+        * smallvec_fuzz_229962376585259494 [74.009161709s]
+  URAPI: DefId(0:255 ~ smallvec[d7e8]::{impl#33}::drop),
+    - Compilable Targets (4/4 ~ 100.00%):
+        * smallvec_fuzz_2037629717084267188 [5.197236487s]
+        * smallvec_fuzz_12685120096240039038 [23.295871399s]
+        * smallvec_fuzz_8755051103735701150 [45.250038328s]
+        * smallvec_fuzz_3193617061628369974 [62.210520925s]
+  URAPI: DefId(0:160 ~ smallvec[d7e8]::{impl#14}::insert),
+    - Compilable Targets (3/4 ~ 75.00%):
+        * smallvec_fuzz_9796360235384993782 [15.597012633s]
+        * smallvec_fuzz_10650151030403304202 [36.337755381s]
+        * smallvec_fuzz_10484506282777129102 [62.500155306s]
+  URAPI: DefId(0:184 ~ smallvec[d7e8]::{impl#14}::resize_with),
+    - Compilable Targets (3/4 ~ 75.00%):
+        * smallvec_fuzz_2882338030548058959 [15.555376331s]
+        * smallvec_fuzz_6120272272419289204 [36.519821273s]
+        * smallvec_fuzz_16713085146079153091 [62.917017531s]
+  URAPI: DefId(0:235 ~ smallvec[d7e8]::{impl#27}::index_mut),
+    - Compilable Targets (0/4 ~ 0.00%):
+  URAPI: DefId(0:126 ~ smallvec[d7e8]::{impl#14}::from_vec),
+    - Compilable Targets (1/1 ~ 100.00%):
+        * smallvec_fuzz_12462091001389159802 [15.836976392s]
+  URAPI: DefId(0:156 ~ smallvec[d7e8]::{impl#14}::swap_remove),
+    - Compilable Targets (4/4 ~ 100.00%):
+        * smallvec_fuzz_6334931601845968242 [15.537230858s]
+        * smallvec_fuzz_12611154830658615399 [36.32364526s]
+        * smallvec_fuzz_9167816630015674336 [62.629965477s]
+        * smallvec_fuzz_4967227184703176736 [86.502209727s]
+  URAPI: DefId(0:150 ~ smallvec[d7e8]::{impl#14}::reserve_exact),
+    - Compilable Targets (4/4 ~ 100.00%):
+        * smallvec_fuzz_16719147141621808480 [15.526734811s]
+        * smallvec_fuzz_15269853794625578389 [36.397920699s]
+        * smallvec_fuzz_11111353576369320476 [62.601619527s]
+        * smallvec_fuzz_333079119094760172 [86.756950498s]
+  URAPI: DefId(0:193 ~ smallvec[d7e8]::{impl#15}::extend_from_slice),
+    - Compilable Targets (2/4 ~ 50.00%):
+        * smallvec_fuzz_179119367459721091 [15.542806723s]
+        * smallvec_fuzz_14745912576574663136 [48.832596303s]
+  URAPI: DefId(0:245 ~ smallvec[d7e8]::{impl#30}::extend),
+    - Compilable Targets (4/4 ~ 100.00%):
+        * smallvec_fuzz_1236209938601361470 [8.67866109s]
+        * smallvec_fuzz_9559490993616999412 [23.176953657s]
+        * smallvec_fuzz_5928677133056470978 [43.415139797s]
+        * smallvec_fuzz_17226367997438811223 [69.747472392s]
+  URAPI: DefId(0:270 ~ smallvec[d7e8]::{impl#38}::cmp),
+    - Compilable Targets (0/16 ~ 0.00%):
+  URAPI: DefId(0:287 ~ smallvec[d7e8]::{impl#42}::clone),
+    - 0 targets generated.
+  URAPI: DefId(0:267 ~ smallvec[d7e8]::{impl#37}::partial_cmp),
+    - Compilable Targets (0/16 ~ 0.00%):
+  URAPI: DefId(0:262 ~ smallvec[d7e8]::{impl#35}::eq),
+    - Compilable Targets (0/16 ~ 0.00%):
+  URAPI: DefId(0:78 ~ smallvec[d7e8]::{impl#6}::next),
+    - Compilable Targets (0/36 ~ 0.00%):
+  URAPI: DefId(0:191 ~ smallvec[d7e8]::{impl#15}::from_slice),
+    - Compilable Targets (1/1 ~ 100.00%):
+        * smallvec_fuzz_3312462213962769808 [13.374733508s]
+  URAPI: DefId(0:188 ~ smallvec[d7e8]::{impl#14}::as_mut_ptr),
+    - Compilable Targets (4/4 ~ 100.00%):
+        * smallvec_fuzz_16034310195420797336 [13.12589552s]
+        * smallvec_fuzz_1986800631361927952 [27.744424578s]
+        * smallvec_fuzz_10173153385125738673 [53.063633982s]
+        * smallvec_fuzz_14651336275455776147 [83.185859365s]
+  URAPI: DefId(0:311 ~ smallvec[d7e8]::{impl#49}::into_iter),
+    - Compilable Targets (4/4 ~ 100.00%):
+        * smallvec_fuzz_15045915685978164276 [9.290438891s]
+        * smallvec_fuzz_17609768724343733372 [25.14639199s]
+        * smallvec_fuzz_10893125009708322921 [55.300887018s]
+        * smallvec_fuzz_4095208615666814030 [74.676027659s]
+  URAPI: DefId(0:196 ~ smallvec[d7e8]::{impl#16}::resize),
+    - Compilable Targets (3/4 ~ 75.00%):
+        * smallvec_fuzz_5776903014831678418 [10.803351487s]
+        * smallvec_fuzz_4840184211571276946 [40.837609636s]
+        * smallvec_fuzz_18325159134576293125 [60.166553162s]
+  URAPI: DefId(0:192 ~ smallvec[d7e8]::{impl#15}::insert_from_slice),
+    - Compilable Targets (2/4 ~ 50.00%):
+        * smallvec_fuzz_13595418408166831891 [8.515635839s]
+        * smallvec_fuzz_16351949517754859146 [49.343218508s]
+  URAPI: DefId(0:216 ~ smallvec[d7e8]::{impl#22}::borrow_mut),
+    - Compilable Targets (0/4 ~ 0.00%):
+  URAPI: DefId(0:176 ~ smallvec[d7e8]::{impl#14}::dedup),
+    - Compilable Targets (0/4 ~ 0.00%):
+  URAPI: DefId(0:258 ~ smallvec[d7e8]::{impl#34}::clone),
+    - Compilable Targets (4/4 ~ 100.00%):
+        * smallvec_fuzz_14133570723784382865 [9.369561099s]
+        * smallvec_fuzz_6948379608705132553 [25.189066593s]
+        * smallvec_fuzz_5314650763116529040 [42.401050716s]
+        * smallvec_fuzz_1249334140542531164 [65.666554831s]
+  URAPI: DefId(0:180 ~ smallvec[d7e8]::{impl#14}::dedup_by_key),
+    - Compilable Targets (4/4 ~ 100.00%):
+        * smallvec_fuzz_9296323306840541596 [8.700804799s]
+        * smallvec_fuzz_3511019750717054461 [30.497630055s]
+        * smallvec_fuzz_13632034085092309417 [49.21891392s]
+        * smallvec_fuzz_6215142732801128048 [71.560857385s]
+  URAPI: DefId(0:161 ~ smallvec[d7e8]::{impl#14}::insert_many),
+    - Compilable Targets (4/4 ~ 100.00%):
+        * smallvec_fuzz_5912937994556700025 [14.543056636s]
+        * smallvec_fuzz_6729781368285523164 [27.571353512s]
+        * smallvec_fuzz_4767613978522664193 [55.637467884s]
+        * smallvec_fuzz_13272445415943983309 [80.840880437s]
+  URAPI: DefId(0:298 ~ smallvec[d7e8]::{impl#45}::next_back),
+    - 0 targets generated.
+  URAPI: DefId(0:133 ~ smallvec[d7e8]::{impl#14}::len),
+    - Compilable Targets (4/4 ~ 100.00%):
+        * smallvec_fuzz_17396708001010586074 [8.686623316s]
+        * smallvec_fuzz_12912236443139131258 [26.126142025s]
+        * smallvec_fuzz_16695543966181735669 [47.529993322s]
+        * smallvec_fuzz_2218804891634699150 [69.305176006s]
+  URAPI: DefId(0:139 ~ smallvec[d7e8]::{impl#14}::drain),
+    - Compilable Targets (0/36 ~ 0.00%):
+  URAPI: DefId(0:197 ~ smallvec[d7e8]::{impl#16}::from_elem),
+    - Compilable Targets (1/1 ~ 100.00%):
+        * smallvec_fuzz_7839527789826492941 [8.732864195s]
+  URAPI: DefId(0:187 ~ smallvec[d7e8]::{impl#14}::as_ptr),
+    - Compilable Targets (4/4 ~ 100.00%):
+        * smallvec_fuzz_14293190012505788350 [15.567875043s]
+        * smallvec_fuzz_9169849011800514061 [36.466699409s]
+        * smallvec_fuzz_721939776078667952 [62.506939098s]
+        * smallvec_fuzz_7754675253717502578 [76.872172804s]
+  URAPI: DefId(0:201 ~ smallvec[d7e8]::{impl#17}::deref),
+    - Compilable Targets (4/4 ~ 100.00%):
+        * smallvec_fuzz_14902148159397997748 [10.589844128s]
+        * smallvec_fuzz_17032411757100357787 [28.038337584s]
+        * smallvec_fuzz_15225882488889226617 [51.258221805s]
+        * smallvec_fuzz_10333411226762335199 [80.361831484s]
+  URAPI: DefId(0:149 ~ smallvec[d7e8]::{impl#14}::try_reserve),
+    - Compilable Targets (4/4 ~ 100.00%):
+        * smallvec_fuzz_12774212378645724936 [7.624577961s]
+        * smallvec_fuzz_2621262386182325362 [27.996854031s]
+        * smallvec_fuzz_14597375869657484395 [50.352954051s]
+        * smallvec_fuzz_16659122856102939608 [67.407977268s]
+  URAPI: DefId(0:135 ~ smallvec[d7e8]::{impl#14}::capacity),
+    - Compilable Targets (4/4 ~ 100.00%):
+        * smallvec_fuzz_17703082546257054948 [5.305279312s]
+        * smallvec_fuzz_6302548549447658921 [21.078350146s]
+        * smallvec_fuzz_7707178260155486359 [35.290495808s]
+        * smallvec_fuzz_6446921793052867173 [49.729309877s]
+  URAPI: DefId(0:174 ~ smallvec[d7e8]::{impl#14}::retain),
+    - Compilable Targets (4/4 ~ 100.00%):
+        * smallvec_fuzz_12212000893444962502 [6.915485611s]
+        * smallvec_fuzz_17688811021936659991 [27.119798885s]
+        * smallvec_fuzz_5494411336114464763 [50.49401031s]
+        * smallvec_fuzz_11594419562964460829 [72.824249233s]
+  URAPI: DefId(0:317 ~ smallvec[d7e8]::{impl#50}::into_iter),
+    - Compilable Targets (4/4 ~ 100.00%):
+        * smallvec_fuzz_15071847972162276441 [4.943417132s]
+        * smallvec_fuzz_8509216086495359423 [25.914873998s]
+        * smallvec_fuzz_10643913110144545596 [43.099703517s]
+        * smallvec_fuzz_8397485423497562788 [63.528695233s]
+  URAPI: DefId(0:146 ~ smallvec[d7e8]::{impl#14}::grow),
+    - Compilable Targets (4/4 ~ 100.00%):
+        * smallvec_fuzz_9586836612336989910 [4.841243136s]
+        * smallvec_fuzz_13288916057242803453 [22.879783227s]
+        * smallvec_fuzz_7208030449205790866 [39.454812598s]
+        * smallvec_fuzz_3312611219758889156 [55.881259344s]
+  URAPI: DefId(0:213 ~ smallvec[d7e8]::{impl#21}::borrow),
+    - Compilable Targets (0/4 ~ 0.00%):
+  URAPI: DefId(0:147 ~ smallvec[d7e8]::{impl#14}::try_grow),
+    - Compilable Targets (4/4 ~ 100.00%):
+        * smallvec_fuzz_9598759913339538120 [5.138141035s]
+        * smallvec_fuzz_7241320315193594975 [20.912692545s]
+        * smallvec_fuzz_4098000324925598345 [35.141255457s]
+        * smallvec_fuzz_12522692014025080629 [49.566015117s]
+  URAPI: DefId(0:154 ~ smallvec[d7e8]::{impl#14}::as_slice),
+    - Compilable Targets (4/4 ~ 100.00%):
+        * smallvec_fuzz_7803393723984401665 [8.165872243s]
+        * smallvec_fuzz_15027532852259849296 [29.610626905s]
+        * smallvec_fuzz_12276492764969206779 [48.956367152s]
+        * smallvec_fuzz_12845928376271899926 [71.302294858s]
+  URAPI: DefId(0:142 ~ smallvec[d7e8]::{impl#14}::push),
+    - Compilable Targets (3/4 ~ 75.00%):
+        * smallvec_fuzz_17339774050044126028 [5.364195474s]
+        * smallvec_fuzz_9792728920496685427 [23.429209213s]
+        * smallvec_fuzz_16803161334233095327 [45.394510731s]
+  URAPI: DefId(0:158 ~ smallvec[d7e8]::{impl#14}::clear),
+    - Compilable Targets (4/4 ~ 100.00%):
+        * smallvec_fuzz_4601137185938719836 [3.956379586s]
+        * smallvec_fuzz_10927598551182604337 [31.664310504s]
+        * smallvec_fuzz_5879269171555363446 [54.981178225s]
+        * smallvec_fuzz_598473034503854297 [73.015633905s]
+  URAPI: DefId(0:148 ~ smallvec[d7e8]::{impl#14}::reserve),
+    - Compilable Targets (4/4 ~ 100.00%):
+        * smallvec_fuzz_4805272068686460794 [7.448276721s]
+        * smallvec_fuzz_12011111126984607233 [27.995082988s]
+        * smallvec_fuzz_7513820027311821612 [50.344545854s]
+        * smallvec_fuzz_18187051964867156379 [67.408485303s]
+  URAPI: DefId(0:128 ~ smallvec[d7e8]::{impl#14}::from_buf_and_len),
+    - Compilable Targets (1/1 ~ 100.00%):
+        * smallvec_fuzz_4853832892238740096 [10.021644525s]
+  URAPI: DefId(0:143 ~ smallvec[d7e8]::{impl#14}::pop),
+    - Compilable Targets (4/4 ~ 100.00%):
+        * smallvec_fuzz_1917515189292128060 [4.438969448s]
+        * smallvec_fuzz_919136432572253409 [32.131731024s]
+        * smallvec_fuzz_15215665589378681771 [51.480362873s]
+        * smallvec_fuzz_15531433206340554704 [73.484380663s]
+  URAPI: DefId(0:273 ~ smallvec[d7e8]::{impl#39}::hash),
+    - Compilable Targets (0/4 ~ 0.00%):
+  URAPI: DefId(0:144 ~ smallvec[d7e8]::{impl#14}::append),
+    - Compilable Targets (4/4 ~ 100.00%):
+        * smallvec_fuzz_7124486894637120664 [7.815950505s]
+        * smallvec_fuzz_8055853021006961104 [22.172457117s]
+        * smallvec_fuzz_15366604651006003305 [36.700097338s]
+        * smallvec_fuzz_16425851569716241747 [51.040802495s]
+  URAPI: DefId(0:159 ~ smallvec[d7e8]::{impl#14}::remove),
+    - Compilable Targets (4/4 ~ 100.00%):
+        * smallvec_fuzz_8398925283160828695 [4.128170275s]
+        * smallvec_fuzz_4276922874610789122 [20.298915214s]
+        * smallvec_fuzz_2410371060195515442 [34.848374029s]
+        * smallvec_fuzz_15831378963927465832 [49.076080378s]
+------------------------------------------------------------------------------------------------------------------------------------

@@ -1,0 +1,205 @@
+algorithmica:
+    * URAPI Coverage: 0/1 (0%)
+    * Compilable Harnesses (#1):
+        1. test_algorithmica1
+    * Location of the Harnesses: RPG/harnesses/algorithmica-0.1.8/fuzz_target/algorithmica_wubfs_generic_fuzz/multipleTargets
+
+
+
+bumpalo:
+    * URAPI Coverage: 11/28 (39.29%):
+        1. bumpalo::Bump::try_with_capacity
+        2. bumpalo::Bump::alloc_str
+        3. bumpalo::Bump::allocated_bytes
+        4. bumpalo::Bump::iter_allocated_chunks
+        5. bumpalo::Bump::chunk_capacity
+        6. bumpalo::Bump::new
+        7. bumpalo::Bump::drop
+        8. bumpalo::Bump::try_new
+        9. bumpalo::Bump::reset
+        10. bumpalo::Bump::with_capacity
+        11. bumpalo::Bump::try_alloc
+    * Compilable Harnesses (#29):
+        1. test_bumpalo1
+        2. test_bumpalo2
+        3. test_bumpalo3
+        4. test_bumpalo4
+        5. test_bumpalo6
+        6. test_bumpalo7
+        7. test_bumpalo8
+        8. test_bumpalo9
+        9. test_bumpalo10
+        10. test_bumpalo11
+        11. test_bumpalo12
+        12. test_bumpalo13
+        13. test_bumpalo14
+        14. test_bumpalo15
+        15. test_bumpalo16
+        16. test_bumpalo17
+        17. test_bumpalo18
+        18. test_bumpalo19
+        19. test_bumpalo20
+        20. test_bumpalo21
+        21. test_bumpalo22
+        22. test_bumpalo23
+        23. test_bumpalo24
+        24. test_bumpalo25
+        25. test_bumpalo26
+        26. test_bumpalo27
+        27. test_bumpalo28
+        28. test_bumpalo29
+        29. test_bumpalo30
+    * Location of the Harnesses: RPG/harnesses/bumpalo-3.11.0/fuzz_target/bumpalo_wubfs_generic_fuzz/multipleTargets
+
+rdiff:
+    * URAPI Coverage: 0/1 (0%):
+    * Compilable Harnesses (#3):
+        1. test_rdiff0
+        2. test_rdiff1
+        3. test_rdiff2
+    * Location of the Harnesses: RPG/harnesses/rdiff-0.1.2/fuzz_target/rdiff_wubfs_generic_fuzz/multipleTargets
+
+
+rusqlite:
+    * URAPI Coverage: 3/101 (2.97%):
+        1. rusqlite::Connection::open_in_memory_with_flags_and_vfs
+        2. rusqlite::Connection::open_in_memory
+        3. rusqlite::Connection::open_in_memory_with_flags
+    * Compilable Harnesses (#39):
+        1. test_rusqlite0
+        2. test_rusqlite1
+        3. test_rusqlite2
+        4. test_rusqlite3
+        5. test_rusqlite4
+        6. test_rusqlite5
+        7. test_rusqlite6
+        8. test_rusqlite7
+        9. test_rusqlite8
+        10. test_rusqlite9
+        11. test_rusqlite10
+        12. test_rusqlite11
+        13. test_rusqlite12
+        14. test_rusqlite13
+        15. test_rusqlite14
+        16. test_rusqlite15
+        17. test_rusqlite16
+        18. test_rusqlite17
+        19. test_rusqlite18
+        20. test_rusqlite19
+        21. test_rusqlite20
+        22. test_rusqlite21
+        23. test_rusqlite22
+        24. test_rusqlite23
+        25. test_rusqlite24
+        26. test_rusqlite25
+        27. test_rusqlite26
+        28. test_rusqlite27
+        29. test_rusqlite28
+        30. test_rusqlite29
+        31. test_rusqlite30
+        32. test_rusqlite31
+        33. test_rusqlite32
+        34. test_rusqlite33
+        35. test_rusqlite34
+        36. test_rusqlite35
+        37. test_rusqlite36
+        38. test_rusqlite37
+        39. test_rusqlite38
+    * Location of the Harnesses: RPG/harnesses/rusqlite-0.26.1/fuzz_target/rusqlite_wubfs_generic_fuzz/multipleTargets
+
+
+secp256k1:
+    * URAPI Coverage: 27/86 (31.40%):
+        1. secp256k1::ecdsa::Signature::from_der
+        2. secp256k1::ecdsa::SerializedSignature::from_signature
+        3. secp256k1::ecdsa::Signature::serialize_der
+        4. secp256k1::ecdsa::SerializedSignature::to_signature
+        5. secp256k1::ecdsa::Signature::from_der_lax
+        6. secp256k1::ecdsa::Signature::normalize_s
+        7. secp256k1::ecdsa::Signature::serialize_compact
+        8. secp256k1::ecdsa::Signature::from_compact
+        9. secp256k1::Secp256k1::preallocate_verification_size
+        10. secp256k1::Secp256k1::preallocate_signing_size
+        11. secp256k1::Secp256k1::preallocate_size
+        12. secp256k1::Secp256k1::verification_only
+        13. secp256k1::Secp256k1::signing_only
+        14. secp256k1::Secp256k1::new
+        15. secp256k1::SecretKey::from_slice
+        16. secp256k1::PublicKey::from_slice
+        17. secp256k1::ecdh::SharedSecret::new
+        18. secp256k1::XOnlyPublicKey::from_slice
+        19. secp256k1::PublicKey::combine
+        20. secp256k1::ecdh::shared_secret_point
+        21. secp256k1::PublicKey::serialize_uncompressed
+        22. secp256k1::PublicKey::serialize
+        23. secp256k1::SecretKey::add_assign
+        24. secp256k1::PublicKey::negate_assign
+        25. secp256k1::XOnlyPublicKey::serialize
+        26. secp256k1::SecretKey::mul_assign
+        27. secp256k1::Secp256k1::drop
+    * Compilable Harnesses (#56):
+        1. test_secp256k10
+        2. test_secp256k12
+        3. test_secp256k13
+        4. test_secp256k14
+        5. test_secp256k15
+        6. test_secp256k16
+        7. test_secp256k17
+        8. test_secp256k18
+        9. test_secp256k19
+        10. test_secp256k110
+        11. test_secp256k111
+        12. test_secp256k112
+        13. test_secp256k113
+        14. test_secp256k114
+        15. test_secp256k115
+        16. test_secp256k117
+        17. test_secp256k118
+        18. test_secp256k119
+        19. test_secp256k120
+        20. test_secp256k121
+        21. test_secp256k122
+        22. test_secp256k123
+        23. test_secp256k124
+        24. test_secp256k125
+        25. test_secp256k126
+        26. test_secp256k127
+        27. test_secp256k128
+        28. test_secp256k129
+        29. test_secp256k130
+        30. test_secp256k131
+        31. test_secp256k132
+        32. test_secp256k133
+        33. test_secp256k134
+        34. test_secp256k135
+        35. test_secp256k136
+        36. test_secp256k137
+        37. test_secp256k138
+        38. test_secp256k139
+        39. test_secp256k140
+        40. test_secp256k141
+        41. test_secp256k142
+        42. test_secp256k143
+        43. test_secp256k144
+        44. test_secp256k145
+        45. test_secp256k146
+        46. test_secp256k147
+        47. test_secp256k148
+        48. test_secp256k149
+        49. test_secp256k150
+        50. test_secp256k151
+        51. test_secp256k152
+        52. test_secp256k153
+        53. test_secp256k154
+        54. test_secp256k155
+        55. test_secp256k156
+        56. test_secp256k157
+     * Location of the Harnesses: RPG/harnesses/secp256k1-0.22.0/fuzz_target/secp256k1_wubfs_generic_fuzz/multipleTargets
+
+
+string-interner:
+    * URAPI Coverage: 1/3 (33.33%):
+        1. string_interner::Sym::from_usize
+    * Compilable Harnesses (#1):
+        1. test_string_interner1
+    * Location of the Harnesses: RPG/harnesses/string-interner-0.7.0/fuzz_target/string_interner_bfs_generic_fuzz/multipleTargets

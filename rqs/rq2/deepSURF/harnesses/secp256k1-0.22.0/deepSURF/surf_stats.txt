@@ -1,0 +1,454 @@
+
+Total Stats:
+------------------------------------------------------------------------------------------------------------------------------------
+* URAPI Coverage: 80/86 (93.02%).
+* Targets Compiled: 255/563 (45.29%) in [811.981819739s].
+------------------------------------------------------------------------------------------------------------------------------------
+
+Target Stats:
+------------------------------------------------------------------------------------------------------------------------------------
+* URAPIs w/ ≥ 1ft: 80/86 (93.02%).
+* Average Generation Time per Target: 1930.214928587s/80 (24.127686607s).
+
+* URAPIs w/ ≥ 2ft: 60/86 (69.77%).
+* Average Generation Time per Target: 3609.487652659s/60 (60.158127544s).
+
+* URAPIs w/ ≥ 3ft: 60/86 (69.77%).
+* Average Generation Time per Target: 5892.047055272s/60 (98.200784254s).
+
+* URAPIs w/ ≥ 4ft: 55/86 (63.95%).
+* Average Generation Time per Target: 7356.969989547s/55 (133.763090719s).
+
+* URAPIs w/o any compilable targets: 6/86 (6.98%).
+------------------------------------------------------------------------------------------------------------------------------------
+
+Detailed Results: 
+------------------------------------------------------------------------------------------------------------------------------------
+  URAPI: DefId(0:25 ~ secp256k1[1a2a]::secret::{impl#3}::display_secret),
+    - Compilable Targets (4/6 ~ 66.67%):
+        * secp256k1_fuzz_7785841614160704307 [16.279580844s]
+        * secp256k1_fuzz_16021276825858496896 [41.399134258s]
+        * secp256k1_fuzz_1835817132587103726 [77.875492259s]
+        * secp256k1_fuzz_8847531880314126515 [112.528762984s]
+  URAPI: DefId(0:202 ~ secp256k1[1a2a]::key::{impl#5}::combine),
+    - Compilable Targets (4/7 ~ 57.14%):
+        * secp256k1_fuzz_16404022076935573694 [29.9363611s]
+        * secp256k1_fuzz_7035415817390793590 [53.524669318s]
+        * secp256k1_fuzz_993857097657256252 [77.727031265s]
+        * secp256k1_fuzz_17283241801844689441 [128.085199301s]
+  URAPI: DefId(0:193 ~ secp256k1[1a2a]::key::{impl#5}::serialize_uncompressed),
+    - Compilable Targets (4/4 ~ 100.00%):
+        * secp256k1_fuzz_16607070750234632725 [16.251732402s]
+        * secp256k1_fuzz_5972048562861699291 [41.782624599s]
+        * secp256k1_fuzz_8431756360783527341 [66.527014019s]
+        * secp256k1_fuzz_18101490877081214018 [88.451426662s]
+  URAPI: DefId(0:260 ~ secp256k1[1a2a]::key::{impl#19}::tweak_add_assign),
+    - Compilable Targets (4/13 ~ 30.77%):
+        * secp256k1_fuzz_2338540196724914697 [29.979567598s]
+        * secp256k1_fuzz_12371049465848359828 [54.797734276s]
+        * secp256k1_fuzz_6001563952100242216 [119.142851183s]
+        * secp256k1_fuzz_2579590650895405678 [200.403161712s]
+  URAPI: DefId(0:200 ~ secp256k1[1a2a]::key::{impl#5}::mul_assign),
+    - Compilable Targets (4/11 ~ 36.36%):
+        * secp256k1_fuzz_3307964421128909873 [11.152655888s]
+        * secp256k1_fuzz_8641493334735374116 [70.794738165s]
+        * secp256k1_fuzz_15005965370314190450 [129.503186722s]
+        * secp256k1_fuzz_394649508740190959 [164.938805031s]
+  URAPI: DefId(0:472 ~ secp256k1[1a2a]::schnorr::{impl#5}::verify_schnorr),
+    - Compilable Targets (4/17 ~ 23.53%):
+        * secp256k1_fuzz_10058999114279775261 [118.630855684s]
+        * secp256k1_fuzz_2487754843095847047 [154.622969389s]
+        * secp256k1_fuzz_1308902230358207660 [296.689562094s]
+        * secp256k1_fuzz_8996159799400819762 [343.409347749s]
+  URAPI: DefId(0:219 ~ secp256k1[1a2a]::key::{impl#10}::from_secret_key),
+    - Compilable Targets (4/4 ~ 100.00%):
+        * secp256k1_fuzz_3288381815034496244 [16.272684681s]
+        * secp256k1_fuzz_17436873015186171462 [41.960131618s]
+        * secp256k1_fuzz_12936241399301878309 [66.690498905s]
+        * secp256k1_fuzz_7712870102174500232 [90.146698735s]
+  URAPI: DefId(0:182 ~ secp256k1[1a2a]::key::{impl#4}::mul_assign),
+    - Compilable Targets (4/5 ~ 80.00%):
+        * secp256k1_fuzz_12365406770474883431 [16.573593612s]
+        * secp256k1_fuzz_8769020384675997787 [41.838897412s]
+        * secp256k1_fuzz_7662954715359326089 [81.196284018s]
+        * secp256k1_fuzz_11655811503452451841 [104.52564067s]
+  URAPI: DefId(0:85 ~ secp256k1[1a2a]::context::alloc_only::{impl#12}::signing_only),
+    - Compilable Targets (1/1 ~ 100.00%):
+        * secp256k1_fuzz_14794727418247015246 [16.306555559s]
+  URAPI: DefId(0:87 ~ secp256k1[1a2a]::context::alloc_only::{impl#13}::verification_only),
+    - Compilable Targets (1/1 ~ 100.00%):
+        * secp256k1_fuzz_939662722365153502 [16.272263614s]
+  URAPI: DefId(0:196 ~ secp256k1[1a2a]::key::{impl#5}::negate_assign),
+    - Compilable Targets (4/11 ~ 36.36%):
+        * secp256k1_fuzz_4926653406274385274 [16.266062964s]
+        * secp256k1_fuzz_3318881821399302191 [81.406884754s]
+        * secp256k1_fuzz_9590036738261111481 [142.63440966s]
+        * secp256k1_fuzz_10502935437669701916 [176.571798838s]
+  URAPI: DefId(0:180 ~ secp256k1[1a2a]::key::{impl#4}::negate_assign),
+    - Compilable Targets (4/5 ~ 80.00%):
+        * secp256k1_fuzz_13028139770747635447 [11.165896841s]
+        * secp256k1_fuzz_17342260479946887385 [33.34058315s]
+        * secp256k1_fuzz_8583223910311288070 [67.319847104s]
+        * secp256k1_fuzz_13170849814081423833 [89.122836325s]
+  URAPI: DefId(0:247 ~ secp256k1[1a2a]::key::{impl#17}::fmt),
+    - Compilable Targets (4/4 ~ 100.00%):
+        * secp256k1_fuzz_8084849354405041896 [11.504457213s]
+        * secp256k1_fuzz_10489573609558116200 [33.806656342s]
+        * secp256k1_fuzz_2234485444717633275 [56.330270325s]
+        * secp256k1_fuzz_243371285013910574 [78.171744193s]
+  URAPI: DefId(0:92 ~ secp256k1[1a2a]::context::alloc_only::{impl#15}::clone),
+    - Compilable Targets (3/4 ~ 75.00%):
+        * secp256k1_fuzz_16658289219862601400 [11.2350794s]
+        * secp256k1_fuzz_14677263025525981653 [33.935430723s]
+        * secp256k1_fuzz_6505866113694624561 [56.360310082s]
+  URAPI: DefId(0:235 ~ secp256k1[1a2a]::key::{impl#12}::from),
+    - Compilable Targets (4/6 ~ 66.67%):
+        * secp256k1_fuzz_1326274763792425739 [11.925150534s]
+        * secp256k1_fuzz_2623575184708575583 [34.390937839s]
+        * secp256k1_fuzz_3302914623783478267 [68.786416871s]
+        * secp256k1_fuzz_5312406298249185403 [102.202949327s]
+  URAPI: DefId(0:357 ~ secp256k1[1a2a]::ecdsa::{impl#0}::fmt),
+    - Compilable Targets (4/10 ~ 40.00%):
+        * secp256k1_fuzz_689073355678358203 [43.086552322s]
+        * secp256k1_fuzz_14697628021406095686 [66.806990305s]
+        * secp256k1_fuzz_16624404390906021127 [111.588829209s]
+        * secp256k1_fuzz_11227289822747861252 [156.873826484s]
+  URAPI: DefId(0:230 ~ secp256k1[1a2a]::key::{impl#10}::public_key),
+    - Compilable Targets (4/6 ~ 66.67%):
+        * secp256k1_fuzz_1032695361439265667 [11.206419796s]
+        * secp256k1_fuzz_8587001282240783553 [33.395260183s]
+        * secp256k1_fuzz_3345224627385141608 [67.53279925s]
+        * secp256k1_fuzz_17188043898534222706 [100.662524185s]
+  URAPI: DefId(0:81 ~ secp256k1[1a2a]::context::alloc_only::{impl#10}::gen_new),
+    - Compilable Targets (0/1 ~ 0.00%):
+  URAPI: DefId(0:389 ~ secp256k1[1a2a]::ecdsa::{impl#11}::from_compact),
+    - Compilable Targets (1/1 ~ 100.00%):
+        * secp256k1_fuzz_16969679317603910127 [11.342255152s]
+  URAPI: DefId(0:89 ~ secp256k1[1a2a]::context::alloc_only::{impl#14}::default),
+    - Compilable Targets (0/1 ~ 0.00%):
+  URAPI: DefId(0:529 ~ secp256k1[1a2a]::{impl#11}::drop),
+    - Compilable Targets (3/4 ~ 75.00%):
+        * secp256k1_fuzz_18249402596335452831 [11.218584748s]
+        * secp256k1_fuzz_15778171584740729677 [33.2186179s]
+        * secp256k1_fuzz_100482031105585706 [54.671061272s]
+  URAPI: DefId(0:255 ~ secp256k1[1a2a]::key::{impl#19}::from_keypair),
+    - Compilable Targets (4/6 ~ 66.67%):
+        * secp256k1_fuzz_13799393542438459119 [16.251978707s]
+        * secp256k1_fuzz_3597870281585622833 [41.792297474s]
+        * secp256k1_fuzz_3627887282632507216 [81.40388763s]
+        * secp256k1_fuzz_13124071603218642760 [118.63945965s]
+  URAPI: DefId(0:168 ~ secp256k1[1a2a]::key::{impl#2}::fmt),
+    - Compilable Targets (4/4 ~ 100.00%):
+        * secp256k1_fuzz_15679496236477885848 [11.286626197s]
+        * secp256k1_fuzz_12860908378340537685 [33.574626251s]
+        * secp256k1_fuzz_14978383900029057167 [56.078277144s]
+        * secp256k1_fuzz_353965103768056104 [78.60970237s]
+  URAPI: DefId(0:188 ~ secp256k1[1a2a]::key::{impl#5}::from_slice),
+    - Compilable Targets (1/1 ~ 100.00%):
+        * secp256k1_fuzz_2304695426387105463 [10.965602823s]
+  URAPI: DefId(0:289 ~ secp256k1[1a2a]::key::{impl#29}::from),
+    - Compilable Targets (4/4 ~ 100.00%):
+        * secp256k1_fuzz_1405350620354963883 [11.25576438s]
+        * secp256k1_fuzz_8845212047955362868 [34.534892055s]
+        * secp256k1_fuzz_1576813246768453600 [58.903548298s]
+        * secp256k1_fuzz_9004438293721738387 [80.878321731s]
+  URAPI: DefId(0:166 ~ secp256k1[1a2a]::key::{impl#1}::fmt),
+    - Compilable Targets (0/50 ~ 0.00%):
+  URAPI: DefId(0:119 ~ secp256k1[1a2a]::context::{impl#7}::preallocated_gen_new),
+    - Compilable Targets (0/1 ~ 0.00%):
+  URAPI: DefId(0:407 ~ secp256k1[1a2a]::ecdsa::{impl#14}::sign_ecdsa),
+    - Compilable Targets (4/7 ~ 57.14%):
+        * secp256k1_fuzz_3553957610081913816 [47.41228227s]
+        * secp256k1_fuzz_13301112340461703689 [70.471519494s]
+        * secp256k1_fuzz_16236871818067929841 [92.604382701s]
+        * secp256k1_fuzz_6336233555363159437 [115.886392204s]
+  URAPI: DefId(0:465 ~ secp256k1[1a2a]::schnorr::{impl#4}::schnorrsig_sign_with_aux_rand),
+    - Compilable Targets (4/7 ~ 57.14%):
+        * secp256k1_fuzz_16284111622412874599 [11.507878225s]
+        * secp256k1_fuzz_8353030669802401178 [46.178230475s]
+        * secp256k1_fuzz_15135680312094031007 [91.757121245s]
+        * secp256k1_fuzz_764205901755112136 [114.482426159s]
+  URAPI: DefId(0:174 ~ secp256k1[1a2a]::key::{impl#4}::from_slice),
+    - Compilable Targets (1/1 ~ 100.00%):
+        * secp256k1_fuzz_6127946550122803139 [12.030060319s]
+  URAPI: DefId(0:181 ~ secp256k1[1a2a]::key::{impl#4}::add_assign),
+    - Compilable Targets (4/5 ~ 80.00%):
+        * secp256k1_fuzz_14989915078340823040 [11.477785159s]
+        * secp256k1_fuzz_12214195636508375054 [34.038836371s]
+        * secp256k1_fuzz_4340037801595372241 [68.82021685s]
+        * secp256k1_fuzz_17723549608274551893 [91.573519804s]
+  URAPI: DefId(0:463 ~ secp256k1[1a2a]::schnorr::{impl#4}::schnorrsig_sign_no_aux_rand),
+    - Compilable Targets (4/7 ~ 57.14%):
+        * secp256k1_fuzz_2192500535937447010 [12.793737608s]
+        * secp256k1_fuzz_5666555705793060794 [47.150210344s]
+        * secp256k1_fuzz_14573941316504703961 [91.742859975s]
+        * secp256k1_fuzz_376853347492370365 [113.760624171s]
+  URAPI: DefId(0:232 ~ secp256k1[1a2a]::key::{impl#11}::from),
+    - Compilable Targets (4/6 ~ 66.67%):
+        * secp256k1_fuzz_5234661368584111187 [14.024719803s]
+        * secp256k1_fuzz_6215400453448010241 [38.339469522s]
+        * secp256k1_fuzz_13954453513128714792 [76.596259502s]
+        * secp256k1_fuzz_7252813025597566410 [108.974714302s]
+  URAPI: DefId(0:464 ~ secp256k1[1a2a]::schnorr::{impl#4}::sign_schnorr_no_aux_rand),
+    - Compilable Targets (4/7 ~ 57.14%):
+        * secp256k1_fuzz_8335688011993987991 [11.255362314s]
+        * secp256k1_fuzz_3511112952597790468 [45.526919114s]
+        * secp256k1_fuzz_10032107635892766507 [90.979745853s]
+        * secp256k1_fuzz_15862592724165228824 [112.614038569s]
+  URAPI: DefId(0:395 ~ secp256k1[1a2a]::ecdsa::{impl#11}::serialize_compact),
+    - Compilable Targets (4/10 ~ 40.00%):
+        * secp256k1_fuzz_9163643130796212380 [35.455502718s]
+        * secp256k1_fuzz_17102693281214135196 [58.356742075s]
+        * secp256k1_fuzz_771510583337994510 [103.89859297s]
+        * secp256k1_fuzz_6424691630396699363 [151.455530556s]
+  URAPI: DefId(0:467 ~ secp256k1[1a2a]::schnorr::{impl#4}::sign_schnorr_with_aux_rand),
+    - Compilable Targets (4/7 ~ 57.14%):
+        * secp256k1_fuzz_1281640584685305848 [11.828086341s]
+        * secp256k1_fuzz_6673176533502084166 [48.635725127s]
+        * secp256k1_fuzz_5542277519460829731 [93.447437088s]
+        * secp256k1_fuzz_1335703959412586802 [115.213227442s]
+  URAPI: DefId(0:257 ~ secp256k1[1a2a]::key::{impl#19}::serialize),
+    - Compilable Targets (4/4 ~ 100.00%):
+        * secp256k1_fuzz_5753014820231418080 [12.697456249s]
+        * secp256k1_fuzz_11799356109965307744 [35.242283179s]
+        * secp256k1_fuzz_168492356352517037 [57.153802992s]
+        * secp256k1_fuzz_1206590331135003658 [78.35655055s]
+  URAPI: DefId(0:366 ~ secp256k1[1a2a]::ecdsa::{impl#4}::from_str),
+    - Compilable Targets (1/1 ~ 100.00%):
+        * secp256k1_fuzz_416147919214335390 [11.298901763s]
+  URAPI: DefId(0:228 ~ secp256k1[1a2a]::key::{impl#10}::tweak_add_assign),
+    - Compilable Targets (4/6 ~ 66.67%):
+        * secp256k1_fuzz_10500055316229215451 [23.228809439s]
+        * secp256k1_fuzz_8758956920086835221 [58.449977055s]
+        * secp256k1_fuzz_2810149123480991868 [81.591076428s]
+        * secp256k1_fuzz_3867488396120021884 [105.21967896s]
+  URAPI: DefId(0:245 ~ secp256k1[1a2a]::key::{impl#16}::fmt),
+    - Compilable Targets (0/46 ~ 0.00%):
+  URAPI: DefId(0:127 ~ secp256k1[1a2a]::context::{impl#9}::preallocated_signing_only),
+    - Compilable Targets (1/1 ~ 100.00%):
+        * secp256k1_fuzz_9338531254542106278 [11.384277696s]
+  URAPI: DefId(0:414 ~ secp256k1[1a2a]::ecdsa::{impl#14}::sign_low_r),
+    - Compilable Targets (4/7 ~ 57.14%):
+        * secp256k1_fuzz_14386761435113119205 [45.991772253s]
+        * secp256k1_fuzz_2274068740155882298 [69.034255259s]
+        * secp256k1_fuzz_209651147055051117 [91.253220458s]
+        * secp256k1_fuzz_15927821274092483214 [112.345168412s]
+  URAPI: DefId(0:171 ~ secp256k1[1a2a]::key::{impl#3}::from_str),
+    - Compilable Targets (1/1 ~ 100.00%):
+        * secp256k1_fuzz_17105921677878869342 [11.297081647s]
+  URAPI: DefId(0:537 ~ secp256k1[1a2a]::{impl#13}::seeded_randomize),
+    - Compilable Targets (3/4 ~ 75.00%):
+        * secp256k1_fuzz_7488637524012390280 [16.180404704s]
+        * secp256k1_fuzz_7738802796730197745 [41.588132795s]
+        * secp256k1_fuzz_14285124351852659158 [66.788976681s]
+  URAPI: DefId(0:415 ~ secp256k1[1a2a]::ecdsa::{impl#14}::sign_ecdsa_low_r),
+    - Compilable Targets (4/7 ~ 57.14%):
+        * secp256k1_fuzz_13143300165015772794 [52.308040014s]
+        * secp256k1_fuzz_14699658529141624756 [77.266976174s]
+        * secp256k1_fuzz_8311800604657666487 [99.940859944s]
+        * secp256k1_fuzz_17777990828997960303 [122.611028487s]
+  URAPI: DefId(0:223 ~ secp256k1[1a2a]::key::{impl#10}::from_seckey_str),
+    - Compilable Targets (3/4 ~ 75.00%):
+        * secp256k1_fuzz_288681121211218036 [10.995751827s]
+        * secp256k1_fuzz_15795220362892123939 [33.133626122s]
+        * secp256k1_fuzz_14160883447136192663 [55.512333247s]
+  URAPI: DefId(0:384 ~ secp256k1[1a2a]::ecdsa::{impl#10}::to_signature),
+    - Compilable Targets (4/9 ~ 44.44%):
+        * secp256k1_fuzz_8176106746146783986 [11.73052696s]
+        * secp256k1_fuzz_17116564186428772684 [95.303974553s]
+        * secp256k1_fuzz_17591833893279630117 [118.646813562s]
+        * secp256k1_fuzz_2638878751227031701 [141.325299028s]
+  URAPI: DefId(0:243 ~ secp256k1[1a2a]::key::{impl#15}::from_str),
+    - Compilable Targets (1/1 ~ 100.00%):
+        * secp256k1_fuzz_18252706021898612441 [11.108250704s]
+  URAPI: DefId(0:536 ~ secp256k1[1a2a]::{impl#13}::preallocate_size_gen),
+    - Compilable Targets (0/1 ~ 0.00%):
+  URAPI: DefId(0:359 ~ secp256k1[1a2a]::ecdsa::{impl#1}::fmt),
+    - Compilable Targets (4/10 ~ 40.00%):
+        * secp256k1_fuzz_7877314249662168301 [33.515846597s]
+        * secp256k1_fuzz_16751316351022816971 [57.712130266s]
+        * secp256k1_fuzz_10793666920965821735 [104.928816577s]
+        * secp256k1_fuzz_11181746673840466384 [150.543788837s]
+  URAPI: DefId(0:215 ~ secp256k1[1a2a]::key::{impl#9}::cmp),
+    - Compilable Targets (4/7 ~ 57.14%):
+        * secp256k1_fuzz_13318925324450906319 [22.69280726s]
+        * secp256k1_fuzz_3092621702003157392 [44.712979412s]
+        * secp256k1_fuzz_3699849458502702455 [66.918298504s]
+        * secp256k1_fuzz_17009163843758471485 [114.525625242s]
+  URAPI: DefId(0:128 ~ secp256k1[1a2a]::context::{impl#9}::preallocate_signing_size),
+    - Compilable Targets (1/1 ~ 100.00%):
+        * secp256k1_fuzz_10854123483820830878 [11.644476783s]
+  URAPI: DefId(0:162 ~ secp256k1[1a2a]::key::{impl#0}::from_str),
+    - Compilable Targets (1/1 ~ 100.00%):
+        * secp256k1_fuzz_4857191316302751329 [11.224992986s]
+  URAPI: DefId(0:419 ~ secp256k1[1a2a]::ecdsa::{impl#15}::verify_ecdsa),
+    - Compilable Targets (4/17 ~ 23.53%):
+        * secp256k1_fuzz_14457901667509273853 [129.969832424s]
+        * secp256k1_fuzz_14962535151218766897 [248.717046557s]
+        * secp256k1_fuzz_13353567892605721603 [307.66649429s]
+        * secp256k1_fuzz_8051098172498678649 [330.394764919s]
+  URAPI: DefId(0:334 ~ secp256k1[1a2a]::ecdh::shared_secret_point),
+    - Compilable Targets (4/5 ~ 80.00%):
+        * secp256k1_fuzz_16759182479392041092 [11.843859444s]
+        * secp256k1_fuzz_1324135977208554961 [45.961644314s]
+        * secp256k1_fuzz_15267226902931440119 [67.992098015s]
+        * secp256k1_fuzz_571742961410416428 [88.663223682s]
+  URAPI: DefId(0:221 ~ secp256k1[1a2a]::key::{impl#10}::from_seckey_slice),
+    - Compilable Targets (3/4 ~ 75.00%):
+        * secp256k1_fuzz_17968814431465491371 [10.823590986s]
+        * secp256k1_fuzz_6380610201718576933 [33.120701678s]
+        * secp256k1_fuzz_1222514557314618153 [55.437964893s]
+  URAPI: DefId(0:123 ~ secp256k1[1a2a]::context::{impl#8}::preallocate_size),
+    - Compilable Targets (1/1 ~ 100.00%):
+        * secp256k1_fuzz_14613490392270599778 [12.236211285s]
+  URAPI: DefId(0:133 ~ secp256k1[1a2a]::context::{impl#10}::preallocate_verification_size),
+    - Compilable Targets (1/1 ~ 100.00%):
+        * secp256k1_fuzz_14286251049675849947 [11.471932522s]
+  URAPI: DefId(0:83 ~ secp256k1[1a2a]::context::alloc_only::{impl#11}::new),
+    - Compilable Targets (1/1 ~ 100.00%):
+        * secp256k1_fuzz_3196356224304238012 [11.215443023s]
+  URAPI: DefId(0:189 ~ secp256k1[1a2a]::key::{impl#5}::from_keypair),
+    - Compilable Targets (4/6 ~ 66.67%):
+        * secp256k1_fuzz_10819549113598837059 [10.817809453s]
+        * secp256k1_fuzz_11877781755092598631 [32.332453565s]
+        * secp256k1_fuzz_9493925222844715481 [66.503763365s]
+        * secp256k1_fuzz_6921247607752107125 [100.410716494s]
+  URAPI: DefId(0:406 ~ secp256k1[1a2a]::ecdsa::{impl#14}::sign),
+    - Compilable Targets (4/7 ~ 57.14%):
+        * secp256k1_fuzz_7324890623656114846 [44.25748067s]
+        * secp256k1_fuzz_5095888976194248059 [68.178161905s]
+        * secp256k1_fuzz_6482950948435041716 [91.043779416s]
+        * secp256k1_fuzz_17822194144909615941 [113.633747067s]
+  URAPI: DefId(0:412 ~ secp256k1[1a2a]::ecdsa::{impl#14}::sign_ecdsa_grind_r),
+    - Compilable Targets (4/7 ~ 57.14%):
+        * secp256k1_fuzz_5203456305074639693 [47.774774222s]
+        * secp256k1_fuzz_18037762092133994425 [71.729488583s]
+        * secp256k1_fuzz_1335917670255382630 [94.478397828s]
+        * secp256k1_fuzz_10962035501682957285 [117.867591432s]
+  URAPI: DefId(0:176 ~ secp256k1[1a2a]::key::{impl#4}::from_keypair),
+    - Compilable Targets (4/6 ~ 66.67%):
+        * secp256k1_fuzz_6870883151610648216 [11.914017995s]
+        * secp256k1_fuzz_14217774284956474542 [35.090903125s]
+        * secp256k1_fuzz_12413234065144909306 [69.305849109s]
+        * secp256k1_fuzz_3988627221885859365 [102.529283552s]
+  URAPI: DefId(0:190 ~ secp256k1[1a2a]::key::{impl#5}::serialize),
+    - Compilable Targets (4/4 ~ 100.00%):
+        * secp256k1_fuzz_4674948547359588640 [10.93335658s]
+        * secp256k1_fuzz_17021760609801802520 [33.270527754s]
+        * secp256k1_fuzz_7512411198262217754 [54.465907253s]
+        * secp256k1_fuzz_10161750526841963675 [75.449675909s]
+  URAPI: DefId(0:132 ~ secp256k1[1a2a]::context::{impl#10}::preallocated_verification_only),
+    - Compilable Targets (1/1 ~ 100.00%):
+        * secp256k1_fuzz_6997834424279157707 [16.619079812s]
+  URAPI: DefId(0:394 ~ secp256k1[1a2a]::ecdsa::{impl#11}::serialize_der),
+    - Compilable Targets (4/10 ~ 40.00%):
+        * secp256k1_fuzz_2645207472723321874 [40.008777626s]
+        * secp256k1_fuzz_9953396842919574257 [65.920656138s]
+        * secp256k1_fuzz_8149227678222977857 [110.986917733s]
+        * secp256k1_fuzz_16802538346855177013 [156.65034025s]
+  URAPI: DefId(0:388 ~ secp256k1[1a2a]::ecdsa::{impl#11}::from_der),
+    - Compilable Targets (1/1 ~ 100.00%):
+        * secp256k1_fuzz_12493544655353480597 [15.790397548s]
+  URAPI: DefId(0:390 ~ secp256k1[1a2a]::ecdsa::{impl#11}::from_der_lax),
+    - Compilable Targets (1/1 ~ 100.00%):
+        * secp256k1_fuzz_6727151367171989308 [14.36038466s]
+  URAPI: DefId(0:213 ~ secp256k1[1a2a]::key::{impl#8}::partial_cmp),
+    - Compilable Targets (4/7 ~ 57.14%):
+        * secp256k1_fuzz_3167032304624519422 [29.177898124s]
+        * secp256k1_fuzz_177548449555180930 [52.642851953s]
+        * secp256k1_fuzz_904027159844733844 [75.622149514s]
+        * secp256k1_fuzz_9283289772995872349 [121.749139814s]
+  URAPI: DefId(0:226 ~ secp256k1[1a2a]::key::{impl#10}::secret_bytes),
+    - Compilable Targets (4/6 ~ 66.67%):
+        * secp256k1_fuzz_17661328344219666573 [16.571691629s]
+        * secp256k1_fuzz_854739918433038224 [42.054295054s]
+        * secp256k1_fuzz_11160406302737706433 [81.359109754s]
+        * secp256k1_fuzz_17191243161940421832 [118.711145921s]
+  URAPI: DefId(0:418 ~ secp256k1[1a2a]::ecdsa::{impl#15}::verify),
+    - Compilable Targets (4/17 ~ 23.53%):
+        * secp256k1_fuzz_12793103490377102628 [86.904977771s]
+        * secp256k1_fuzz_10488108532917819385 [206.362406224s]
+        * secp256k1_fuzz_6670253588295106210 [263.774250647s]
+        * secp256k1_fuzz_11188095168997166260 [285.864911843s]
+  URAPI: DefId(0:198 ~ secp256k1[1a2a]::key::{impl#5}::add_exp_assign),
+    - Compilable Targets (4/11 ~ 36.36%):
+        * secp256k1_fuzz_10649840365153510060 [11.571516531s]
+        * secp256k1_fuzz_8878851489154167187 [69.686624671s]
+        * secp256k1_fuzz_3905931047399637587 [122.062473353s]
+        * secp256k1_fuzz_7801585131345078685 [151.783685892s]
+  URAPI: DefId(0:262 ~ secp256k1[1a2a]::key::{impl#19}::tweak_add_check),
+    - Compilable Targets (4/16 ~ 25.00%):
+        * secp256k1_fuzz_7354986847320123408 [105.849257871s]
+        * secp256k1_fuzz_4195846767811790852 [166.38246232s]
+        * secp256k1_fuzz_2576725845498400187 [188.864977298s]
+        * secp256k1_fuzz_13492818413788114352 [234.567478097s]
+  URAPI: DefId(0:326 ~ secp256k1[1a2a]::ecdh::{impl#0}::new),
+    - Compilable Targets (4/5 ~ 80.00%):
+        * secp256k1_fuzz_3532399186600874641 [17.008517634s]
+        * secp256k1_fuzz_212395081788264091 [54.497114908s]
+        * secp256k1_fuzz_4587738181619595114 [81.404650554s]
+        * secp256k1_fuzz_7601547787349375834 [104.671820477s]
+  URAPI: DefId(0:411 ~ secp256k1[1a2a]::ecdsa::{impl#14}::sign_grind_r),
+    - Compilable Targets (4/7 ~ 57.14%):
+        * secp256k1_fuzz_18425322523893574887 [45.405001572s]
+        * secp256k1_fuzz_1776588768490956497 [68.241143668s]
+        * secp256k1_fuzz_16037651752156217592 [90.404472494s]
+        * secp256k1_fuzz_11958859662750561008 [112.582811555s]
+  URAPI: DefId(0:237 ~ secp256k1[1a2a]::key::{impl#13}::from),
+    - Compilable Targets (4/6 ~ 66.67%):
+        * secp256k1_fuzz_1738083387827550756 [16.959069006s]
+        * secp256k1_fuzz_8452832241745965319 [41.7675289s]
+        * secp256k1_fuzz_11684830571820054751 [81.367269793s]
+        * secp256k1_fuzz_5852865020290345174 [118.713260219s]
+  URAPI: DefId(0:240 ~ secp256k1[1a2a]::key::{impl#14}::from),
+    - Compilable Targets (4/6 ~ 66.67%):
+        * secp256k1_fuzz_15301340335608525944 [11.431190826s]
+        * secp256k1_fuzz_13547626563611057986 [33.379136811s]
+        * secp256k1_fuzz_1678891950230903075 [67.240673523s]
+        * secp256k1_fuzz_12644550769740862989 [102.962037813s]
+  URAPI: DefId(0:385 ~ secp256k1[1a2a]::ecdsa::{impl#10}::from_signature),
+    - Compilable Targets (4/10 ~ 40.00%):
+        * secp256k1_fuzz_17908492243458606952 [35.667273018s]
+        * secp256k1_fuzz_17795597161426823666 [59.206376269s]
+        * secp256k1_fuzz_15803381304112488516 [107.543648611s]
+        * secp256k1_fuzz_7070673699267921789 [156.061134357s]
+  URAPI: DefId(0:256 ~ secp256k1[1a2a]::key::{impl#19}::from_slice),
+    - Compilable Targets (1/1 ~ 100.00%):
+        * secp256k1_fuzz_2202369917464994319 [11.045140568s]
+  URAPI: DefId(0:186 ~ secp256k1[1a2a]::key::{impl#5}::from_secret_key),
+    - Compilable Targets (4/4 ~ 100.00%):
+        * secp256k1_fuzz_8639398050645965175 [11.319407273s]
+        * secp256k1_fuzz_12861023474380070491 [32.821585344s]
+        * secp256k1_fuzz_12476168016292999708 [53.966123577s]
+        * secp256k1_fuzz_4483180057794058838 [74.314839394s]
+  URAPI: DefId(0:391 ~ secp256k1[1a2a]::ecdsa::{impl#11}::normalize_s),
+    - Compilable Targets (4/10 ~ 40.00%):
+        * secp256k1_fuzz_415064742920185422 [43.084933946s]
+        * secp256k1_fuzz_14979868716349787815 [66.580018936s]
+        * secp256k1_fuzz_6040134761845022604 [118.601044623s]
+        * secp256k1_fuzz_13462787441371137845 [165.220526166s]
+  URAPI: DefId(0:471 ~ secp256k1[1a2a]::schnorr::{impl#5}::schnorrsig_verify),
+    - Compilable Targets (4/17 ~ 23.53%):
+        * secp256k1_fuzz_11007658294372652369 [100.491351879s]
+        * secp256k1_fuzz_324743906810198497 [135.959195059s]
+        * secp256k1_fuzz_1285796635213397963 [279.745612436s]
+        * secp256k1_fuzz_16852073852599964626 [321.990046376s]
+  URAPI: DefId(0:250 ~ secp256k1[1a2a]::key::{impl#18}::from_str),
+    - Compilable Targets (1/1 ~ 100.00%):
+        * secp256k1_fuzz_3207247369491748272 [11.216418539s]
+  URAPI: DefId(0:122 ~ secp256k1[1a2a]::context::{impl#8}::preallocated_new),
+    - Compilable Targets (1/1 ~ 100.00%):
+        * secp256k1_fuzz_13191513188635350260 [11.316744203s]
+  URAPI: DefId(0:787 ~ secp256k1[1a2a]::key::{impl#61}::fmt),
+    - Compilable Targets (4/6 ~ 66.67%):
+        * secp256k1_fuzz_10459229789729255669 [12.580910673s]
+        * secp256k1_fuzz_1039732057775975522 [34.23838574s]
+        * secp256k1_fuzz_3396510789676676301 [67.317196122s]
+        * secp256k1_fuzz_1584383797037847104 [99.772769194s]
+  URAPI: DefId(0:203 ~ secp256k1[1a2a]::key::{impl#5}::combine_keys),
+    - Compilable Targets (4/4 ~ 100.00%):
+        * secp256k1_fuzz_8930092259380878333 [11.125585576s]
+        * secp256k1_fuzz_9139898267435860535 [49.280879835s]
+        * secp256k1_fuzz_4817331140627516264 [105.349839184s]
+        * secp256k1_fuzz_1875415491274864568 [139.295220454s]
+------------------------------------------------------------------------------------------------------------------------------------

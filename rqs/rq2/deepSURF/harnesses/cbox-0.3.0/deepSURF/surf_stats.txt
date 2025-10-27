@@ -1,0 +1,76 @@
+
+Total Stats:
+------------------------------------------------------------------------------------------------------------------------------------
+* URAPI Coverage: 10/15 (66.67%).
+* Targets Compiled: 19/29 (65.52%) in [19.183321625s].
+------------------------------------------------------------------------------------------------------------------------------------
+
+Target Stats:
+------------------------------------------------------------------------------------------------------------------------------------
+* URAPIs w/ ≥ 1ft: 10/15 (66.67%).
+* Average Generation Time per Target: 61.771349855s/10 (6.177134985s).
+
+* URAPIs w/ ≥ 2ft: 9/15 (60.00%).
+* Average Generation Time per Target: 133.374511105s/9 (14.819390122s).
+
+* URAPIs w/ ≥ 3ft: 0/15 (0.00%).
+* Average Generation Time per Target: 0ns/0 (Na).
+
+* URAPIs w/ ≥ 4ft: 0/15 (0.00%).
+* Average Generation Time per Target: 0ns/0 (Na).
+
+* URAPIs w/o any compilable targets: 5/15 (33.33%).
+------------------------------------------------------------------------------------------------------------------------------------
+
+Detailed Results: 
+------------------------------------------------------------------------------------------------------------------------------------
+  URAPI: DefId(0:109 ~ cbox[c4ed]::{impl#19}::deref_mut),
+    - Compilable Targets (2/2 ~ 100.00%):
+        * cbox_fuzz_1058203820562404647 [6.314851937s]
+        * cbox_fuzz_13972585102122587355 [14.870287846s]
+  URAPI: DefId(0:113 ~ cbox[c4ed]::{impl#20}::eq),
+    - Compilable Targets (0/2 ~ 0.00%):
+  URAPI: DefId(0:65 ~ cbox[c4ed]::{impl#7}::fmt),
+    - Compilable Targets (0/2 ~ 0.00%):
+  URAPI: DefId(0:44 ~ cbox[c4ed]::{impl#2}::drop),
+    - Compilable Targets (2/2 ~ 100.00%):
+        * cbox_fuzz_1388031521638298196 [6.290434451s]
+        * cbox_fuzz_3477905265024873531 [14.996393177s]
+  URAPI: DefId(0:85 ~ cbox[c4ed]::{impl#11}::as_semi_mut),
+    - Compilable Targets (2/2 ~ 100.00%):
+        * cbox_fuzz_887328886757627044 [6.098057792s]
+        * cbox_fuzz_5699987134570437864 [14.896981791s]
+  URAPI: DefId(0:61 ~ cbox[c4ed]::{impl#6}::fmt),
+    - Compilable Targets (0/2 ~ 0.00%):
+  URAPI: DefId(0:69 ~ cbox[c4ed]::{impl#8}::eq),
+    - Compilable Targets (0/2 ~ 0.00%):
+  URAPI: DefId(0:83 ~ cbox[c4ed]::{impl#11}::as_semi),
+    - Compilable Targets (2/2 ~ 100.00%):
+        * cbox_fuzz_25259699614758719 [6.142625238s]
+        * cbox_fuzz_9308202802963516079 [14.898142443s]
+  URAPI: DefId(0:89 ~ cbox[c4ed]::{impl#12}::from),
+    - Compilable Targets (1/1 ~ 100.00%):
+        * cbox_fuzz_8817478941690733858 [6.352776139s]
+  URAPI: DefId(0:99 ~ cbox[c4ed]::{impl#16}::fmt),
+    - Compilable Targets (2/2 ~ 100.00%):
+        * cbox_fuzz_17301003630593907584 [6.097566534s]
+        * cbox_fuzz_2852943083114743847 [14.479013275s]
+  URAPI: DefId(0:97 ~ cbox[c4ed]::{impl#15}::fmt),
+    - Compilable Targets (2/2 ~ 100.00%):
+        * cbox_fuzz_12666098790633401095 [6.077639545s]
+        * cbox_fuzz_17589016483673457936 [14.581463942s]
+  URAPI: DefId(0:93 ~ cbox[c4ed]::{impl#13}::deref),
+    - Compilable Targets (2/2 ~ 100.00%):
+        * cbox_fuzz_10236069009115556667 [6.120907412s]
+        * cbox_fuzz_11435842521714405192 [15.003883519s]
+  URAPI: DefId(0:103 ~ cbox[c4ed]::{impl#17}::deref),
+    - Compilable Targets (2/2 ~ 100.00%):
+        * cbox_fuzz_16161567212278754138 [6.172302711s]
+        * cbox_fuzz_13203060260368093910 [14.903352497s]
+  URAPI: DefId(0:95 ~ cbox[c4ed]::{impl#14}::clone),
+    - Compilable Targets (2/2 ~ 100.00%):
+        * cbox_fuzz_14454525000334582903 [6.104188096s]
+        * cbox_fuzz_969840681946233913 [14.744992615s]
+  URAPI: DefId(0:106 ~ cbox[c4ed]::{impl#18}::borrow),
+    - Compilable Targets (0/2 ~ 0.00%):
+------------------------------------------------------------------------------------------------------------------------------------

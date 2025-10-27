@@ -1,0 +1,16 @@
+[workspace]
+
+[package]
+name = "string-interner_fuzz_17577896022174365111"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "string-interner_fuzz_17577896022174365111"
+path = "src/string-interner_fuzz_17577896022174365111.rs"
+
+[dependencies]
+afl = "=0.15.7"
+home = "=0.5.9"
+string-interner = { path = "../../../../string-interner-0.7.0/" }
+global_data = { path = "../../../../../../../../code/global_data" }

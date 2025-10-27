@@ -1,0 +1,103 @@
+     Removed 131 files, 55.4MiB total
+   Compiling semver v1.0.26
+   Compiling libc v0.2.175
+   Compiling home v0.5.5
+   Compiling id-set v0.2.1
+   Compiling xdg v2.5.2
+   Compiling global_data v0.1.0 (/home/cdc/deepSURF-sp26-artifacts/artifact_code/global_data)
+   Compiling afl v0.15.7
+   Compiling id-map v0.2.1 (/home/cdc/deepSURF-sp26-artifacts/artifact_data/dataset/rustsan_crates/id-map-0.2.1)
+   Compiling rustc_version v0.4.1
+   Compiling id-map_fuzz_12571356421695713594 v0.1.0 (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#39-id-map/harness)
+warning: unused import: `std::str::FromStr`
+ --> src/id-map_fuzz_12571356421695713594.rs:7:5
+  |
+7 | use std::str::FromStr;
+  |     ^^^^^^^^^^^^^^^^^
+  |
+  = note: `#[warn(unused_imports)]` on by default
+
+warning: unused imports: `DerefMut`, `Deref`, `IndexMut`, `Index`
+ --> src/id-map_fuzz_12571356421695713594.rs:8:16
+  |
+8 | use std::ops::{Deref, DerefMut, Index, IndexMut};
+  |                ^^^^^  ^^^^^^^^  ^^^^^  ^^^^^^^^
+
+warning: the item `TryInto` is imported redundantly
+   --> src/id-map_fuzz_12571356421695713594.rs:186:9
+    |
+186 |     use std::convert::TryInto;
+    |         ^^^^^^^^^^^^^^^^^^^^^
+   --> /rustc/11f32b73e0dc9287e305b5b9980d24aecdc8c17f/library/std/src/prelude/mod.rs:129:13
+    |
+    = note: the item `TryInto` is already defined here
+
+warning: the item `TryInto` is imported redundantly
+   --> src/id-map_fuzz_12571356421695713594.rs:193:9
+    |
+193 |     use std::convert::TryInto;
+    |         ^^^^^^^^^^^^^^^^^^^^^
+   --> /rustc/11f32b73e0dc9287e305b5b9980d24aecdc8c17f/library/std/src/prelude/mod.rs:129:13
+    |
+    = note: the item `TryInto` is already defined here
+
+warning: variable does not need to be mutable
+  --> src/id-map_fuzz_12571356421695713594.rs:27:13
+   |
+27 |         let mut t_0 = _to_u8(GLOBAL_DATA, 8) % 17;
+   |             ----^^^
+   |             |
+   |             help: remove this `mut`
+   |
+   = note: `#[warn(unused_mut)]` on by default
+
+warning: variable does not need to be mutable
+  --> src/id-map_fuzz_12571356421695713594.rs:91:25
+   |
+91 |                     let mut set = id_set::IdSet::new_filled(_to_usize(global_data.first_half, offset));
+   |                         ----^^^
+   |                         |
+   |                         help: remove this `mut`
+
+warning: variable `GLOBAL_DATA` should have a snake case name
+  --> src/id-map_fuzz_12571356421695713594.rs:16:13
+   |
+16 |         let GLOBAL_DATA = global_data.first_half;
+   |             ^^^^^^^^^^^ help: convert the identifier to snake case: `global_data`
+   |
+   = note: `#[warn(non_snake_case)]` on by default
+
+warning: variable `GLOBAL_DATA` should have a snake case name
+  --> src/id-map_fuzz_12571356421695713594.rs:23:13
+   |
+23 |         let GLOBAL_DATA = match selector {
+   |             ^^^^^^^^^^^ help: convert the identifier to snake case: `global_data`
+
+warning: `id-map_fuzz_12571356421695713594` (bin "id-map_fuzz_12571356421695713594") generated 8 warnings (run `cargo fix --bin "id-map_fuzz_12571356421695713594"` to apply 4 suggestions)
+    Finished dev [unoptimized + debuginfo] target(s) in 3.16s
+thread 'main' panicked at src/id-map_fuzz_12571356421695713594.rs:21:13:
+INTENTIONAL PANIC!
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+AddressSanitizer:DEADLYSIGNAL
+=================================================================
+==1417176==ERROR: AddressSanitizer: SEGV on unknown address (pc 0x55f1a1257422 bp 0x000000000000 sp 0x7ffd756e2240 T0)
+==1417176==The signal is caused by a READ memory access.
+==1417176==Hint: this fault was caused by a dereference of a high value address (see register values below).  Disassemble the provided pc to learn which register was used.
+    #0 0x55f1a1257422  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#39-id-map/harness/target/x86_64-unknown-linux-gnu/debug/id-map_fuzz_12571356421695713594+0x13422) (BuildId: a7bf56551ab8420c291f8f630ed0870d413c165a)
+    #1 0x55f1a12dcddb  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#39-id-map/harness/target/x86_64-unknown-linux-gnu/debug/id-map_fuzz_12571356421695713594+0x98ddb) (BuildId: a7bf56551ab8420c291f8f630ed0870d413c165a)
+    #2 0x55f1a1315201  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#39-id-map/harness/target/x86_64-unknown-linux-gnu/debug/id-map_fuzz_12571356421695713594+0xd1201) (BuildId: a7bf56551ab8420c291f8f630ed0870d413c165a)
+    #3 0x55f1a1313714  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#39-id-map/harness/target/x86_64-unknown-linux-gnu/debug/id-map_fuzz_12571356421695713594+0xcf714) (BuildId: a7bf56551ab8420c291f8f630ed0870d413c165a)
+    #4 0x55f1a1312d7a  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#39-id-map/harness/target/x86_64-unknown-linux-gnu/debug/id-map_fuzz_12571356421695713594+0xced7a) (BuildId: a7bf56551ab8420c291f8f630ed0870d413c165a)
+    #5 0x55f1a1318aea  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#39-id-map/harness/target/x86_64-unknown-linux-gnu/debug/id-map_fuzz_12571356421695713594+0xd4aea) (BuildId: a7bf56551ab8420c291f8f630ed0870d413c165a)
+    #6 0x55f1a1317741  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#39-id-map/harness/target/x86_64-unknown-linux-gnu/debug/id-map_fuzz_12571356421695713594+0xd3741) (BuildId: a7bf56551ab8420c291f8f630ed0870d413c165a)
+    #7 0x55f1a1306421  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#39-id-map/harness/target/x86_64-unknown-linux-gnu/debug/id-map_fuzz_12571356421695713594+0xc2421) (BuildId: a7bf56551ab8420c291f8f630ed0870d413c165a)
+    #8 0x55f1a1306470  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#39-id-map/harness/target/x86_64-unknown-linux-gnu/debug/id-map_fuzz_12571356421695713594+0xc2470) (BuildId: a7bf56551ab8420c291f8f630ed0870d413c165a)
+    #9 0x55f1a1335f50  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#39-id-map/harness/target/x86_64-unknown-linux-gnu/debug/id-map_fuzz_12571356421695713594+0xf1f50) (BuildId: a7bf56551ab8420c291f8f630ed0870d413c165a)
+    #10 0x55f1a1318ca5  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#39-id-map/harness/target/x86_64-unknown-linux-gnu/debug/id-map_fuzz_12571356421695713594+0xd4ca5) (BuildId: a7bf56551ab8420c291f8f630ed0870d413c165a)
+    #11 0x7f39340bad8f  (/lib/x86_64-linux-gnu/libc.so.6+0x29d8f) (BuildId: 490fef8403240c91833978d494d39e537409b92e)
+    #12 0x7f39340bae3f  (/lib/x86_64-linux-gnu/libc.so.6+0x29e3f) (BuildId: 490fef8403240c91833978d494d39e537409b92e)
+    #13 0x55f1a1256594  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#39-id-map/harness/target/x86_64-unknown-linux-gnu/debug/id-map_fuzz_12571356421695713594+0x12594) (BuildId: a7bf56551ab8420c291f8f630ed0870d413c165a)
+
+AddressSanitizer can not provide additional info.
+SUMMARY: AddressSanitizer: SEGV (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#39-id-map/harness/target/x86_64-unknown-linux-gnu/debug/id-map_fuzz_12571356421695713594+0x13422) (BuildId: a7bf56551ab8420c291f8f630ed0870d413c165a) 
+==1417176==ABORTING

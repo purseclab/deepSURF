@@ -1,0 +1,16 @@
+[workspace]
+
+[package]
+name = "qwutils_fuzz_2707079516328854402"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "qwutils_fuzz_2707079516328854402"
+path = "src/qwutils_fuzz_2707079516328854402.rs"
+
+[dependencies]
+afl = "=0.15.7"
+home = "=0.5.9"
+qwutils = { path = "../../../../qwutils-0.3.0/" }
+global_data = { path = "../../../../../../../../code/global_data" }

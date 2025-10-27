@@ -1,0 +1,17 @@
+deepSURF: Generated Targets to be Fuzzed
+------------------------------------------------------------------------------------------------------------------------------------
+  StableURAPI: insert_many::/home/cdc/SURF/deepSURF-big-experiment-harnesses/insert_many-0.1.1/src/lib.rs::52,
+    - URAPI: DefId(0:14 ~ insert_many[c23e]::{impl#0}::insert_many),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * insert_many_fuzz_14351955148426915674_deepseek-r1_turn4
+      * insert_many_fuzz_10019428391511666555_deepseek-r1_turn1
+      * insert_many_fuzz_14351955148426915674
+  StableURAPI: insert_many::/home/cdc/SURF/deepSURF-big-experiment-harnesses/insert_many-0.1.1/src/lib.rs::59,
+    - URAPI: DefId(0:18 ~ insert_many[c23e]::{impl#1}::insert_many),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * insert_many_fuzz_10019428391511666555_deepseek-r1_turn1
+------------------------------------------------------------------------------------------------------------------------------------

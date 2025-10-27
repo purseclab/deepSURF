@@ -1,0 +1,2 @@
+ ./fuzz_transform/target/release/fuzz_transform /home/cdc/rug_on_erasan_after_bolero/cbox-0.3.0/./src/lib.rs
+cbox . 4 4 0

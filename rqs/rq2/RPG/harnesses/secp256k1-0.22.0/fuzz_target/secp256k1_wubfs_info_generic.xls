@@ -1,0 +1,2 @@
+Crate	Total API	Unsafe API	GETRAWPTR API	Drop API	Mutate API	Generic API	Total Edge	Unsafe Edge	Target Num	Covered API	Covered Unsafe API	Covered Edge	Covered Unsafe Edge	Generation Time
+secp256k1	99	41	28	0	25	4	374	260	58	68	26	66	50	87624

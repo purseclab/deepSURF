@@ -1,0 +1,16 @@
+[workspace]
+
+[package]
+name = "http_fuzz_10708530162954877899"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "http_fuzz_10708530162954877899"
+path = "src/http_fuzz_10708530162954877899.rs"
+
+[dependencies]
+afl = "=0.15.7"
+home = "=0.5.9"
+http = { path = "../../../../http-0.1.19/" }
+global_data = { path = "../../../../../../../../code/global_data" }

@@ -1,0 +1,8 @@
+    Finished test [unoptimized + debuginfo] target(s) in 0.02s
+     Running unittests src/lib.rs (target/debug/deps/time-76c9c361b219fa85)
+     Running ../tests/main.rs (target/debug/deps/tests-902b05b3708a7d65)
+    Finished test [unoptimized + debuginfo] target(s) in 0.03s
+     Running unittests src/lib.rs (/home/xiang/workspace/fuzz2_base/time/target/debug/deps/time-8886e69373111e63)
+     Running ../tests/main.rs (/home/xiang/workspace/fuzz2_base/time/target/debug/deps/tests-8249b60609e189ea)
+   Doc-tests time
+   Doc-tests time

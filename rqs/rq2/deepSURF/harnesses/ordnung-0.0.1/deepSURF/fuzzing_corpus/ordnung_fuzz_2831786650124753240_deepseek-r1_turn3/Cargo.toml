@@ -1,0 +1,16 @@
+[workspace]
+
+[package]
+name = "ordnung_fuzz_2831786650124753240"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "ordnung_fuzz_2831786650124753240"
+path = "src/ordnung_fuzz_2831786650124753240.rs"
+
+[dependencies]
+afl = "=0.15.7"
+home = "=0.5.9"
+ordnung = { path = "../../../../ordnung-0.0.1/" }
+global_data = { path = "../../../../../../../../code/global_data" }

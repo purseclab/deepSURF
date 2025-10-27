@@ -1,0 +1,64 @@
+
+Total Stats:
+------------------------------------------------------------------------------------------------------------------------------------
+* Total URAPI Coverage: 68/68 (100.00%).
+* LLM URAPI Coverage: 63/68 (92.65%).
+* Total Targets (including targets directly imported from SURF): 42 in [35746.56129371s].
+* URAPIs w/ Custom Functionality: 0/68 (0.00%).
+------------------------------------------------------------------------------------------------------------------------------------
+
+Redundant-Targets:
+------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------
+
+Targeted-URAPI-Miss-Targets:
+------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------
+
+Targets For Fuzzing:
+  - [CondSkip]: Set of Fuzzing Targets = Total-Targets - Redundant-Targets
+------------------------------------------------------------------------------------------------------------------------------------
+Count: 42
+  * pnet_packet_fuzz_9065154765162408099
+  * pnet_packet_fuzz_11590011619420993293_deepseek-r1_turn3
+  * pnet_packet_fuzz_1935049756553246233_deepseek-r1_turn4
+  * pnet_packet_fuzz_4937212728684888133_deepseek-r1_turn3
+  * pnet_packet_fuzz_15722733297570982448_deepseek-r1_turn2
+  * pnet_packet_fuzz_15284926193276255398
+  * pnet_packet_fuzz_6989229617861967191_deepseek-r1_turn4
+  * pnet_packet_fuzz_9771585314779162671_deepseek-r1_turn4
+  * pnet_packet_fuzz_4304590215552261932_deepseek-r1_turn3
+  * pnet_packet_fuzz_7808083687530344502_deepseek-r1_turn3
+  * pnet_packet_fuzz_8680089326114835144
+  * pnet_packet_fuzz_12398722329352874293_deepseek-r1_turn5
+  * pnet_packet_fuzz_14567768368971878885_deepseek-r1_turn2
+  * pnet_packet_fuzz_14513616530867602059_deepseek-r1_turn5
+  * pnet_packet_fuzz_8727641996272082690
+  * pnet_packet_fuzz_5913823610091629888
+  * pnet_packet_fuzz_11125726205384466834
+  * pnet_packet_fuzz_4619776147881325350_deepseek-r1_turn3
+  * pnet_packet_fuzz_12281725077455697391
+  * pnet_packet_fuzz_2914112639123794018_deepseek-r1_turn4
+  * pnet_packet_fuzz_6557587313727191870_deepseek-r1_turn4
+  * pnet_packet_fuzz_13699462923152619909_deepseek-r1_turn5
+  * pnet_packet_fuzz_3962605256299866225
+  * pnet_packet_fuzz_4750638506587801412
+  * pnet_packet_fuzz_13921007672043033646_deepseek-r1_turn3
+  * pnet_packet_fuzz_14543272710845930615_deepseek-r1_turn4
+  * pnet_packet_fuzz_5131167242462323654_deepseek-r1_turn2
+  * pnet_packet_fuzz_5514096391890472782_deepseek-r1_turn4
+  * pnet_packet_fuzz_11562080560837752712_deepseek-r1_turn2
+  * pnet_packet_fuzz_2044501637519807661_deepseek-r1_turn2
+  * pnet_packet_fuzz_10031078553328861880
+  * pnet_packet_fuzz_1591313384708960398_deepseek-r1_turn3
+  * pnet_packet_fuzz_11815541622841198300_deepseek-r1_turn3
+  * pnet_packet_fuzz_350823289942228867
+  * pnet_packet_fuzz_14019198176736709026_deepseek-r1_turn3
+  * pnet_packet_fuzz_3184623475365325316
+  * pnet_packet_fuzz_15329232841247413831_deepseek-r1_turn3
+  * pnet_packet_fuzz_13600686400754027533_deepseek-r1_turn4
+  * pnet_packet_fuzz_7741278584444771304
+  * pnet_packet_fuzz_15512904500542381415
+  * pnet_packet_fuzz_10297997944971972234_deepseek-r1_turn4
+  * pnet_packet_fuzz_13904578910162686521_deepseek-r1_turn3
+------------------------------------------------------------------------------------------------------------------------------------

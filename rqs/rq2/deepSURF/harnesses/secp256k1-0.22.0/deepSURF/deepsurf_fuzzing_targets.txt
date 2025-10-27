@@ -1,0 +1,1113 @@
+deepSURF: Generated Targets to be Fuzzed
+------------------------------------------------------------------------------------------------------------------------------------
+  StableURAPI: fmt::/home/cdc/SURF/deepSURF-big-experiment-harnesses/secp256k1-0.22.0/src/key.rs::986,
+    - URAPI: DefId(0:247 ~ secp256k1[1a2a]::key::{impl#17}::fmt),
+    - Macro-expanded: false,
+    - LLM-improved: false,
+    - Fuzzing Targets:
+      * secp256k1_fuzz_243371285013910574
+      * secp256k1_fuzz_10489573609558116200
+      * secp256k1_fuzz_8084849354405041896
+      * secp256k1_fuzz_2234485444717633275
+  StableURAPI: tweak_add_assign::/home/cdc/SURF/deepSURF-big-experiment-harnesses/secp256k1-0.22.0/src/key.rs::1105,
+    - URAPI: DefId(0:260 ~ secp256k1[1a2a]::key::{impl#19}::tweak_add_assign),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * secp256k1_fuzz_15679496236477885848_deepseek-r1_turn2
+      * secp256k1_fuzz_2645207472723321874_deepseek-r1_turn4
+      * secp256k1_fuzz_17908492243458606952_deepseek-r1_turn5
+      * secp256k1_fuzz_16759182479392041092_deepseek-r1_turn2
+      * secp256k1_fuzz_3167032304624519422_deepseek-r1_turn3
+      * secp256k1_fuzz_3207247369491748272_deepseek-r1_turn6
+      * secp256k1_fuzz_7324890623656114846_deepseek-r1_turn6
+      * secp256k1_fuzz_6081426384566739235_deepseek-r1_turn3
+      * secp256k1_fuzz_1738083387827550756_deepseek-r1_turn2
+      * secp256k1_fuzz_16607070750234632725_deepseek-r1_turn2
+      * secp256k1_fuzz_17526550723977806477_deepseek-r1_turn4
+      * secp256k1_fuzz_13028139770747635447_deepseek-r1_turn2
+      * secp256k1_fuzz_689073355678358203_deepseek-r1_turn4
+      * secp256k1_fuzz_8084849354405041896_deepseek-r1_turn3
+      * secp256k1_fuzz_6727151367171989308_deepseek-r1_turn4
+      * secp256k1_fuzz_10459229789729255669_deepseek-r1_turn6
+      * secp256k1_fuzz_16658289219862601400_deepseek-r1_turn6
+      * secp256k1_fuzz_14286251049675849947_deepseek-r1_turn3
+      * secp256k1_fuzz_18425322523893574887_deepseek-r1_turn3
+      * secp256k1_fuzz_12365406770474883431_deepseek-r1_turn5
+      * secp256k1_fuzz_11007658294372652369_deepseek-r1_turn6
+      * secp256k1_fuzz_17661328344219666573_deepseek-r1_turn3
+      * secp256k1_fuzz_416147919214335390_deepseek-r1_turn4
+  StableURAPI: combine_keys::/home/cdc/SURF/deepSURF-big-experiment-harnesses/secp256k1-0.22.0/src/key.rs::567,
+    - URAPI: DefId(0:203 ~ secp256k1[1a2a]::key::{impl#5}::combine_keys),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * secp256k1_fuzz_17908492243458606952_deepseek-r1_turn5
+      * secp256k1_fuzz_7324890623656114846_deepseek-r1_turn6
+      * secp256k1_fuzz_689073355678358203_deepseek-r1_turn4
+      * secp256k1_fuzz_11007658294372652369_deepseek-r1_turn6
+      * secp256k1_fuzz_16607070750234632725_deepseek-r1_turn2
+      * secp256k1_fuzz_3207247369491748272_deepseek-r1_turn6
+      * secp256k1_fuzz_7877314249662168301_deepseek-r1_turn4
+      * secp256k1_fuzz_10459229789729255669_deepseek-r1_turn6
+      * secp256k1_fuzz_3167032304624519422_deepseek-r1_turn3
+      * secp256k1_fuzz_16658289219862601400_deepseek-r1_turn6
+  StableURAPI: preallocated_verification_only::/home/cdc/SURF/deepSURF-big-experiment-harnesses/secp256k1-0.22.0/src/context.rs::387,
+    - URAPI: DefId(0:132 ~ secp256k1[1a2a]::context::{impl#10}::preallocated_verification_only),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * secp256k1_fuzz_7324890623656114846_deepseek-r1_turn6
+      * secp256k1_fuzz_18425322523893574887_deepseek-r1_turn3
+      * secp256k1_fuzz_3167032304624519422_deepseek-r1_turn3
+      * secp256k1_fuzz_11007658294372652369_deepseek-r1_turn6
+      * secp256k1_fuzz_10058999114279775261_deepseek-r1_turn5
+      * secp256k1_fuzz_6081426384566739235_deepseek-r1_turn3
+  StableURAPI: new::/home/cdc/SURF/deepSURF-big-experiment-harnesses/secp256k1-0.22.0/src/ecdh.rs::53,
+    - URAPI: DefId(0:326 ~ secp256k1[1a2a]::ecdh::{impl#0}::new),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * secp256k1_fuzz_7877314249662168301_deepseek-r1_turn4
+      * secp256k1_fuzz_16759182479392041092_deepseek-r1_turn2
+      * secp256k1_fuzz_6081426384566739235_deepseek-r1_turn3
+      * secp256k1_fuzz_16658289219862601400_deepseek-r1_turn6
+      * secp256k1_fuzz_3167032304624519422_deepseek-r1_turn3
+      * secp256k1_fuzz_15679496236477885848_deepseek-r1_turn2
+      * secp256k1_fuzz_17661328344219666573_deepseek-r1_turn3
+      * secp256k1_fuzz_1738083387827550756_deepseek-r1_turn2
+      * secp256k1_fuzz_17526550723977806477_deepseek-r1_turn4
+      * secp256k1_fuzz_12365406770474883431_deepseek-r1_turn5
+      * secp256k1_fuzz_3553957610081913816_deepseek-r1_turn5
+      * secp256k1_fuzz_416147919214335390_deepseek-r1_turn4
+      * secp256k1_fuzz_14903968869379461409_deepseek-r1_turn3
+      * secp256k1_fuzz_10459229789729255669_deepseek-r1_turn6
+      * secp256k1_fuzz_2645207472723321874_deepseek-r1_turn4
+      * secp256k1_fuzz_10854123483820830878_deepseek-r1_turn5
+      * secp256k1_fuzz_3207247369491748272_deepseek-r1_turn6
+  StableURAPI: from::/home/cdc/SURF/deepSURF-big-experiment-harnesses/secp256k1-0.22.0/src/key.rs::900,
+    - URAPI: DefId(0:237 ~ secp256k1[1a2a]::key::{impl#13}::from),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * secp256k1_fuzz_1738083387827550756_deepseek-r1_turn2
+  StableURAPI: sign_low_r::/home/cdc/SURF/deepSURF-big-experiment-harnesses/secp256k1-0.22.0/src/ecdsa/mod.rs::422,
+    - URAPI: DefId(0:414 ~ secp256k1[1a2a]::ecdsa::{impl#14}::sign_low_r),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * secp256k1_fuzz_2274068740155882298
+      * secp256k1_fuzz_14386761435113119205
+      * secp256k1_fuzz_209651147055051117
+      * secp256k1_fuzz_15927821274092483214
+      * secp256k1_fuzz_12793103490377102628_deepseek-r1_turn3
+  StableURAPI: preallocated_signing_only::/home/cdc/SURF/deepSURF-big-experiment-harnesses/secp256k1-0.22.0/src/context.rs::355,
+    - URAPI: DefId(0:127 ~ secp256k1[1a2a]::context::{impl#9}::preallocated_signing_only),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * secp256k1_fuzz_11007658294372652369_deepseek-r1_turn6
+      * secp256k1_fuzz_12793103490377102628_deepseek-r1_turn3
+      * secp256k1_fuzz_13318925324450906319_deepseek-r1_turn2
+      * secp256k1_fuzz_7877314249662168301_deepseek-r1_turn4
+      * secp256k1_fuzz_6081426384566739235_deepseek-r1_turn3
+      * secp256k1_fuzz_10058999114279775261_deepseek-r1_turn5
+      * secp256k1_fuzz_3167032304624519422_deepseek-r1_turn3
+  StableURAPI: from_str::/home/cdc/SURF/deepSURF-big-experiment-harnesses/secp256k1-0.22.0/src/ecdsa/mod.rs::59,
+    - URAPI: DefId(0:366 ~ secp256k1[1a2a]::ecdsa::{impl#4}::from_str),
+    - Macro-expanded: false,
+    - LLM-improved: false,
+    - Fuzzing Targets:
+      * secp256k1_fuzz_416147919214335390
+  StableURAPI: preallocated_gen_new::/home/cdc/SURF/deepSURF-big-experiment-harnesses/secp256k1-0.22.0/src/context.rs::304,
+    - URAPI: DefId(0:529 ~ secp256k1[1a2a]::{impl#11}::drop),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * secp256k1_fuzz_13028139770747635447_deepseek-r1_turn2
+      * secp256k1_fuzz_18425322523893574887_deepseek-r1_turn3
+      * secp256k1_fuzz_18249402596335452831_deepseek-r1_turn3
+  StableURAPI: default::/home/cdc/SURF/deepSURF-big-experiment-harnesses/secp256k1-0.22.0/src/context.rs::250,
+    - URAPI: DefId(0:89 ~ secp256k1[1a2a]::context::alloc_only::{impl#14}::default),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * secp256k1_fuzz_17526550723977806477_deepseek-r1_turn4
+  StableURAPI: from_seckey_str::/home/cdc/SURF/deepSURF-big-experiment-harnesses/secp256k1-0.22.0/src/key.rs::752,
+    - URAPI: DefId(0:223 ~ secp256k1[1a2a]::key::{impl#10}::from_seckey_str),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * secp256k1_fuzz_10459229789729255669_deepseek-r1_turn6
+      * secp256k1_fuzz_7324890623656114846_deepseek-r1_turn6
+      * secp256k1_fuzz_1738083387827550756_deepseek-r1_turn2
+      * secp256k1_fuzz_7877314249662168301_deepseek-r1_turn4
+      * secp256k1_fuzz_17661328344219666573_deepseek-r1_turn3
+      * secp256k1_fuzz_14794727418247015246_deepseek-r1_turn4
+      * secp256k1_fuzz_3167032304624519422_deepseek-r1_turn3
+      * secp256k1_fuzz_12365406770474883431_deepseek-r1_turn5
+      * secp256k1_fuzz_3553957610081913816_deepseek-r1_turn5
+      * secp256k1_fuzz_689073355678358203_deepseek-r1_turn4
+      * secp256k1_fuzz_416147919214335390_deepseek-r1_turn4
+      * secp256k1_fuzz_2645207472723321874_deepseek-r1_turn4
+      * secp256k1_fuzz_3207247369491748272_deepseek-r1_turn6
+      * secp256k1_fuzz_17908492243458606952_deepseek-r1_turn5
+      * secp256k1_fuzz_7785841614160704307_deepseek-r1_turn2
+      * secp256k1_fuzz_13028139770747635447_deepseek-r1_turn2
+      * secp256k1_fuzz_14457901667509273853_deepseek-r1_turn2
+  StableURAPI: from_str::/home/cdc/SURF/deepSURF-big-experiment-harnesses/secp256k1-0.22.0/src/key.rs::56,
+    - URAPI: DefId(0:162 ~ secp256k1[1a2a]::key::{impl#0}::from_str),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * secp256k1_fuzz_13318925324450906319_deepseek-r1_turn2
+      * secp256k1_fuzz_12793103490377102628_deepseek-r1_turn3
+      * secp256k1_fuzz_16759182479392041092_deepseek-r1_turn2
+      * secp256k1_fuzz_16607070750234632725_deepseek-r1_turn2
+      * secp256k1_fuzz_11007658294372652369_deepseek-r1_turn6
+      * secp256k1_fuzz_6081426384566739235_deepseek-r1_turn3
+      * secp256k1_fuzz_13028139770747635447_deepseek-r1_turn2
+      * secp256k1_fuzz_10459229789729255669_deepseek-r1_turn6
+      * secp256k1_fuzz_3553957610081913816_deepseek-r1_turn5
+      * secp256k1_fuzz_8084849354405041896_deepseek-r1_turn3
+      * secp256k1_fuzz_10058999114279775261_deepseek-r1_turn5
+  StableURAPI: from_str::/home/cdc/SURF/deepSURF-big-experiment-harnesses/secp256k1-0.22.0/src/key.rs::108,
+    - URAPI: DefId(0:171 ~ secp256k1[1a2a]::key::{impl#3}::from_str),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * secp256k1_fuzz_13318925324450906319_deepseek-r1_turn2
+      * secp256k1_fuzz_6081426384566739235_deepseek-r1_turn3
+      * secp256k1_fuzz_10854123483820830878_deepseek-r1_turn5
+      * secp256k1_fuzz_3167032304624519422_deepseek-r1_turn3
+  StableURAPI: schnorrsig_sign_no_aux_rand::/home/cdc/SURF/deepSURF-big-experiment-harnesses/secp256k1-0.22.0/src/schnorr.rs::148,
+    - URAPI: DefId(0:463 ~ secp256k1[1a2a]::schnorr::{impl#4}::schnorrsig_sign_no_aux_rand),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * secp256k1_fuzz_16658289219862601400_deepseek-r1_turn6
+      * secp256k1_fuzz_18425322523893574887_deepseek-r1_turn3
+      * secp256k1_fuzz_10058999114279775261_deepseek-r1_turn5
+      * secp256k1_fuzz_3207247369491748272_deepseek-r1_turn6
+  StableURAPI: mul_assign::/home/cdc/SURF/deepSURF-big-experiment-harnesses/secp256k1-0.22.0/src/key.rs::267,
+    - URAPI: DefId(0:182 ~ secp256k1[1a2a]::key::{impl#4}::mul_assign),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * secp256k1_fuzz_12365406770474883431_deepseek-r1_turn5
+      * secp256k1_fuzz_16607070750234632725_deepseek-r1_turn2
+  StableURAPI: serialize_uncompressed::/home/cdc/SURF/deepSURF-big-experiment-harnesses/secp256k1-0.22.0/src/key.rs::443,
+    - URAPI: DefId(0:193 ~ secp256k1[1a2a]::key::{impl#5}::serialize_uncompressed),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * secp256k1_fuzz_10459229789729255669_deepseek-r1_turn6
+      * secp256k1_fuzz_16607070750234632725_deepseek-r1_turn2
+      * secp256k1_fuzz_15679496236477885848_deepseek-r1_turn2
+      * secp256k1_fuzz_14794727418247015246_deepseek-r1_turn4
+  StableURAPI: from_str::/home/cdc/SURF/deepSURF-big-experiment-harnesses/secp256k1-0.22.0/src/key.rs::915,
+    - URAPI: DefId(0:243 ~ secp256k1[1a2a]::key::{impl#15}::from_str),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * secp256k1_fuzz_17661328344219666573_deepseek-r1_turn3
+  StableURAPI: fmt::/home/cdc/SURF/deepSURF-big-experiment-harnesses/secp256k1-0.22.0/src/ecdsa/mod.rs::36,
+    - URAPI: DefId(0:359 ~ secp256k1[1a2a]::ecdsa::{impl#1}::fmt),
+    - Macro-expanded: false,
+    - LLM-improved: false,
+    - Fuzzing Targets:
+      * secp256k1_fuzz_11181746673840466384
+      * secp256k1_fuzz_7877314249662168301
+      * secp256k1_fuzz_16751316351022816971
+      * secp256k1_fuzz_10793666920965821735
+  StableURAPI: from_signature::/home/cdc/SURF/deepSURF-big-experiment-harnesses/secp256k1-0.22.0/src/ecdsa/mod.rs::128,
+    - URAPI: DefId(0:385 ~ secp256k1[1a2a]::ecdsa::{impl#10}::from_signature),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * secp256k1_fuzz_17908492243458606952_deepseek-r1_turn5
+  StableURAPI: from_compact::/home/cdc/SURF/deepSURF-big-experiment-harnesses/secp256k1-0.22.0/src/ecdsa/mod.rs::159,
+    - URAPI: DefId(0:389 ~ secp256k1[1a2a]::ecdsa::{impl#11}::from_compact),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * secp256k1_fuzz_10854123483820830878_deepseek-r1_turn5
+      * secp256k1_fuzz_6727151367171989308_deepseek-r1_turn4
+      * secp256k1_fuzz_18249402596335452831_deepseek-r1_turn3
+      * secp256k1_fuzz_416147919214335390_deepseek-r1_turn4
+      * secp256k1_fuzz_2645207472723321874_deepseek-r1_turn4
+  StableURAPI: clone::/home/cdc/SURF/deepSURF-big-experiment-harnesses/secp256k1-0.22.0/src/context.rs::256,
+    - URAPI: DefId(0:92 ~ secp256k1[1a2a]::context::alloc_only::{impl#15}::clone),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * secp256k1_fuzz_16658289219862601400_deepseek-r1_turn6
+  StableURAPI: fmt::/home/cdc/SURF/deepSURF-big-experiment-harnesses/secp256k1-0.22.0/src/ecdsa/mod.rs::30,
+    - URAPI: DefId(0:357 ~ secp256k1[1a2a]::ecdsa::{impl#0}::fmt),
+    - Macro-expanded: false,
+    - LLM-improved: false,
+    - Fuzzing Targets:
+      * secp256k1_fuzz_689073355678358203
+      * secp256k1_fuzz_11227289822747861252
+      * secp256k1_fuzz_16624404390906021127
+      * secp256k1_fuzz_14697628021406095686
+  StableURAPI: sign_ecdsa::/home/cdc/SURF/deepSURF-big-experiment-harnesses/secp256k1-0.22.0/src/ecdsa/mod.rs::345,
+    - URAPI: DefId(0:407 ~ secp256k1[1a2a]::ecdsa::{impl#14}::sign_ecdsa),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * secp256k1_fuzz_12365406770474883431_deepseek-r1_turn5
+      * secp256k1_fuzz_3553957610081913816_deepseek-r1_turn5
+      * secp256k1_fuzz_3207247369491748272_deepseek-r1_turn6
+      * secp256k1_fuzz_13318925324450906319_deepseek-r1_turn2
+      * secp256k1_fuzz_689073355678358203_deepseek-r1_turn4
+      * secp256k1_fuzz_14794727418247015246_deepseek-r1_turn4
+      * secp256k1_fuzz_15679496236477885848_deepseek-r1_turn2
+      * secp256k1_fuzz_10459229789729255669_deepseek-r1_turn6
+      * secp256k1_fuzz_14286251049675849947_deepseek-r1_turn3
+      * secp256k1_fuzz_16236871818067929841
+      * secp256k1_fuzz_16607070750234632725_deepseek-r1_turn2
+      * secp256k1_fuzz_1738083387827550756_deepseek-r1_turn2
+      * secp256k1_fuzz_12793103490377102628_deepseek-r1_turn3
+      * secp256k1_fuzz_14903968869379461409_deepseek-r1_turn3
+      * secp256k1_fuzz_10058999114279775261_deepseek-r1_turn5
+      * secp256k1_fuzz_13028139770747635447_deepseek-r1_turn2
+      * secp256k1_fuzz_10854123483820830878_deepseek-r1_turn5
+      * secp256k1_fuzz_17908492243458606952_deepseek-r1_turn5
+      * secp256k1_fuzz_11007658294372652369_deepseek-r1_turn6
+      * secp256k1_fuzz_3553957610081913816
+      * secp256k1_fuzz_6081426384566739235_deepseek-r1_turn3
+      * secp256k1_fuzz_6727151367171989308_deepseek-r1_turn4
+      * secp256k1_fuzz_17526550723977806477_deepseek-r1_turn4
+      * secp256k1_fuzz_18249402596335452831_deepseek-r1_turn3
+      * secp256k1_fuzz_7785841614160704307_deepseek-r1_turn2
+      * secp256k1_fuzz_416147919214335390_deepseek-r1_turn4
+      * secp256k1_fuzz_8084849354405041896_deepseek-r1_turn3
+      * secp256k1_fuzz_13301112340461703689
+      * secp256k1_fuzz_7324890623656114846_deepseek-r1_turn6
+      * secp256k1_fuzz_16759182479392041092_deepseek-r1_turn2
+      * secp256k1_fuzz_6336233555363159437
+      * secp256k1_fuzz_17661328344219666573_deepseek-r1_turn3
+  StableURAPI: from_secret_key::/home/cdc/SURF/deepSURF-big-experiment-harnesses/secp256k1-0.22.0/src/key.rs::354,
+    - URAPI: DefId(0:186 ~ secp256k1[1a2a]::key::{impl#5}::from_secret_key),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * secp256k1_fuzz_1738083387827550756_deepseek-r1_turn2
+      * secp256k1_fuzz_3207247369491748272_deepseek-r1_turn6
+      * secp256k1_fuzz_16759182479392041092_deepseek-r1_turn2
+      * secp256k1_fuzz_15679496236477885848_deepseek-r1_turn2
+      * secp256k1_fuzz_10854123483820830878_deepseek-r1_turn5
+      * secp256k1_fuzz_16607070750234632725_deepseek-r1_turn2
+      * secp256k1_fuzz_13028139770747635447_deepseek-r1_turn2
+      * secp256k1_fuzz_14794727418247015246_deepseek-r1_turn4
+      * secp256k1_fuzz_14903968869379461409_deepseek-r1_turn3
+      * secp256k1_fuzz_17908492243458606952_deepseek-r1_turn5
+      * secp256k1_fuzz_689073355678358203_deepseek-r1_turn4
+      * secp256k1_fuzz_13318925324450906319_deepseek-r1_turn2
+      * secp256k1_fuzz_7785841614160704307_deepseek-r1_turn2
+      * secp256k1_fuzz_12793103490377102628_deepseek-r1_turn3
+      * secp256k1_fuzz_6081426384566739235_deepseek-r1_turn3
+      * secp256k1_fuzz_18249402596335452831_deepseek-r1_turn3
+      * secp256k1_fuzz_17526550723977806477_deepseek-r1_turn4
+      * secp256k1_fuzz_12365406770474883431_deepseek-r1_turn5
+      * secp256k1_fuzz_14286251049675849947_deepseek-r1_turn3
+      * secp256k1_fuzz_11007658294372652369_deepseek-r1_turn6
+      * secp256k1_fuzz_3167032304624519422_deepseek-r1_turn3
+      * secp256k1_fuzz_18425322523893574887_deepseek-r1_turn3
+  StableURAPI: fmt::/home/cdc/SURF/deepSURF-big-experiment-harnesses/secp256k1-0.22.0/src/secret.rs::22,
+    - URAPI: DefId(0:787 ~ secp256k1[1a2a]::key::{impl#61}::fmt),
+    - Macro-expanded: true,
+    - LLM-improved: false,
+    - Fuzzing Targets:
+      * secp256k1_fuzz_10459229789729255669
+      * secp256k1_fuzz_1039732057775975522
+      * secp256k1_fuzz_3396510789676676301
+      * secp256k1_fuzz_1584383797037847104
+  StableURAPI: serialize::/home/cdc/SURF/deepSURF-big-experiment-harnesses/secp256k1-0.22.0/src/key.rs::1063,
+    - URAPI: DefId(0:257 ~ secp256k1[1a2a]::key::{impl#19}::serialize),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * secp256k1_fuzz_7785841614160704307_deepseek-r1_turn2
+      * secp256k1_fuzz_1738083387827550756_deepseek-r1_turn2
+      * secp256k1_fuzz_6081426384566739235_deepseek-r1_turn3
+      * secp256k1_fuzz_5203456305074639693_deepseek-r1_turn3
+      * secp256k1_fuzz_14794727418247015246_deepseek-r1_turn4
+      * secp256k1_fuzz_3553957610081913816_deepseek-r1_turn5
+      * secp256k1_fuzz_3207247369491748272_deepseek-r1_turn6
+      * secp256k1_fuzz_7324890623656114846_deepseek-r1_turn6
+      * secp256k1_fuzz_14286251049675849947_deepseek-r1_turn3
+      * secp256k1_fuzz_8084849354405041896_deepseek-r1_turn3
+  StableURAPI: secret_bytes::/home/cdc/SURF/deepSURF-big-experiment-harnesses/secp256k1-0.22.0/src/key.rs::814,
+    - URAPI: DefId(0:226 ~ secp256k1[1a2a]::key::{impl#10}::secret_bytes),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * secp256k1_fuzz_11007658294372652369_deepseek-r1_turn6
+      * secp256k1_fuzz_17661328344219666573_deepseek-r1_turn3
+  StableURAPI: from::/home/cdc/SURF/deepSURF-big-experiment-harnesses/secp256k1-0.22.0/src/key.rs::907,
+    - URAPI: DefId(0:240 ~ secp256k1[1a2a]::key::{impl#14}::from),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * secp256k1_fuzz_2645207472723321874_deepseek-r1_turn4
+      * secp256k1_fuzz_7324890623656114846_deepseek-r1_turn6
+  StableURAPI: serialize_compact::/home/cdc/SURF/deepSURF-big-experiment-harnesses/secp256k1-0.22.0/src/ecdsa/mod.rs::263,
+    - URAPI: DefId(0:395 ~ secp256k1[1a2a]::ecdsa::{impl#11}::serialize_compact),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * secp256k1_fuzz_10854123483820830878_deepseek-r1_turn5
+      * secp256k1_fuzz_3553957610081913816_deepseek-r1_turn5
+      * secp256k1_fuzz_18249402596335452831_deepseek-r1_turn3
+      * secp256k1_fuzz_416147919214335390_deepseek-r1_turn4
+      * secp256k1_fuzz_5203456305074639693_deepseek-r1_turn3
+      * secp256k1_fuzz_2645207472723321874_deepseek-r1_turn4
+  StableURAPI: serialize_der::/home/cdc/SURF/deepSURF-big-experiment-harnesses/secp256k1-0.22.0/src/ecdsa/mod.rs::245,
+    - URAPI: DefId(0:394 ~ secp256k1[1a2a]::ecdsa::{impl#11}::serialize_der),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * secp256k1_fuzz_12365406770474883431_deepseek-r1_turn5
+      * secp256k1_fuzz_3553957610081913816_deepseek-r1_turn5
+      * secp256k1_fuzz_10058999114279775261_deepseek-r1_turn5
+      * secp256k1_fuzz_16658289219862601400_deepseek-r1_turn6
+      * secp256k1_fuzz_17661328344219666573_deepseek-r1_turn3
+      * secp256k1_fuzz_2645207472723321874_deepseek-r1_turn4
+      * secp256k1_fuzz_689073355678358203_deepseek-r1_turn4
+      * secp256k1_fuzz_6727151367171989308_deepseek-r1_turn4
+      * secp256k1_fuzz_3207247369491748272_deepseek-r1_turn6
+      * secp256k1_fuzz_5203456305074639693_deepseek-r1_turn3
+      * secp256k1_fuzz_16607070750234632725_deepseek-r1_turn2
+      * secp256k1_fuzz_10459229789729255669_deepseek-r1_turn6
+      * secp256k1_fuzz_11007658294372652369_deepseek-r1_turn6
+      * secp256k1_fuzz_416147919214335390_deepseek-r1_turn4
+      * secp256k1_fuzz_10854123483820830878_deepseek-r1_turn5
+      * secp256k1_fuzz_18249402596335452831_deepseek-r1_turn3
+      * secp256k1_fuzz_18425322523893574887_deepseek-r1_turn3
+  StableURAPI: from_str::/home/cdc/SURF/deepSURF-big-experiment-harnesses/secp256k1-0.22.0/src/key.rs::993,
+    - URAPI: DefId(0:250 ~ secp256k1[1a2a]::key::{impl#18}::from_str),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * secp256k1_fuzz_6081426384566739235_deepseek-r1_turn3
+      * secp256k1_fuzz_3207247369491748272_deepseek-r1_turn6
+  StableURAPI: sign_ecdsa_grind_r::/home/cdc/SURF/deepSURF-big-experiment-harnesses/secp256k1-0.22.0/src/ecdsa/mod.rs::410,
+    - URAPI: DefId(0:412 ~ secp256k1[1a2a]::ecdsa::{impl#14}::sign_ecdsa_grind_r),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * secp256k1_fuzz_416147919214335390_deepseek-r1_turn4
+      * secp256k1_fuzz_5203456305074639693
+      * secp256k1_fuzz_10854123483820830878_deepseek-r1_turn5
+      * secp256k1_fuzz_18037762092133994425
+      * secp256k1_fuzz_7324890623656114846_deepseek-r1_turn6
+      * secp256k1_fuzz_3207247369491748272_deepseek-r1_turn6
+      * secp256k1_fuzz_10962035501682957285
+      * secp256k1_fuzz_689073355678358203_deepseek-r1_turn4
+      * secp256k1_fuzz_7877314249662168301_deepseek-r1_turn4
+      * secp256k1_fuzz_1335917670255382630
+      * secp256k1_fuzz_17908492243458606952_deepseek-r1_turn5
+      * secp256k1_fuzz_5203456305074639693_deepseek-r1_turn3
+  StableURAPI: seeded_randomize::/home/cdc/SURF/deepSURF-big-experiment-harnesses/secp256k1-0.22.0/src/lib.rs::478,
+    - URAPI: DefId(0:537 ~ secp256k1[1a2a]::{impl#13}::seeded_randomize),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * secp256k1_fuzz_7324890623656114846_deepseek-r1_turn6
+      * secp256k1_fuzz_14794727418247015246_deepseek-r1_turn4
+  StableURAPI: shared_secret_point::/home/cdc/SURF/deepSURF-big-experiment-harnesses/secp256k1-0.22.0/src/ecdh.rs::118,
+    - URAPI: DefId(0:334 ~ secp256k1[1a2a]::ecdh::shared_secret_point),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * secp256k1_fuzz_16759182479392041092_deepseek-r1_turn2
+  StableURAPI: combine::/home/cdc/SURF/deepSURF-big-experiment-harnesses/secp256k1-0.22.0/src/key.rs::540,
+    - URAPI: DefId(0:202 ~ secp256k1[1a2a]::key::{impl#5}::combine),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * secp256k1_fuzz_15679496236477885848_deepseek-r1_turn2
+      * secp256k1_fuzz_12365406770474883431_deepseek-r1_turn5
+      * secp256k1_fuzz_14794727418247015246_deepseek-r1_turn4
+      * secp256k1_fuzz_13028139770747635447_deepseek-r1_turn2
+      * secp256k1_fuzz_6727151367171989308_deepseek-r1_turn4
+      * secp256k1_fuzz_13318925324450906319_deepseek-r1_turn2
+      * secp256k1_fuzz_2645207472723321874_deepseek-r1_turn4
+      * secp256k1_fuzz_16759182479392041092_deepseek-r1_turn2
+  StableURAPI: preallocate_verification_size::/home/cdc/SURF/deepSURF-big-experiment-harnesses/secp256k1-0.22.0/src/context.rs::393,
+    - URAPI: DefId(0:133 ~ secp256k1[1a2a]::context::{impl#10}::preallocate_verification_size),
+    - Macro-expanded: false,
+    - LLM-improved: false,
+    - Fuzzing Targets:
+      * secp256k1_fuzz_14286251049675849947
+  StableURAPI: to_signature::/home/cdc/SURF/deepSURF-big-experiment-harnesses/secp256k1-0.22.0/src/ecdsa/mod.rs::122,
+    - URAPI: DefId(0:384 ~ secp256k1[1a2a]::ecdsa::{impl#10}::to_signature),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * secp256k1_fuzz_6727151367171989308_deepseek-r1_turn4
+      * secp256k1_fuzz_16658289219862601400_deepseek-r1_turn6
+      * secp256k1_fuzz_10459229789729255669_deepseek-r1_turn6
+      * secp256k1_fuzz_18425322523893574887_deepseek-r1_turn3
+      * secp256k1_fuzz_17908492243458606952_deepseek-r1_turn5
+      * secp256k1_fuzz_10058999114279775261_deepseek-r1_turn5
+      * secp256k1_fuzz_16607070750234632725_deepseek-r1_turn2
+      * secp256k1_fuzz_689073355678358203_deepseek-r1_turn4
+  StableURAPI: tweak_add_check::/home/cdc/SURF/deepSURF-big-experiment-harnesses/secp256k1-0.22.0/src/key.rs::1172,
+    - URAPI: DefId(0:262 ~ secp256k1[1a2a]::key::{impl#19}::tweak_add_check),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * secp256k1_fuzz_12365406770474883431_deepseek-r1_turn5
+  StableURAPI: drop::/home/cdc/SURF/deepSURF-big-experiment-harnesses/secp256k1-0.22.0/src/lib.rs::431,
+    - URAPI: DefId(0:529 ~ secp256k1[1a2a]::{impl#11}::drop),
+    - Macro-expanded: false,
+    - LLM-improved: false,
+    - Fuzzing Targets:
+      * secp256k1_fuzz_18249402596335452831
+      * secp256k1_fuzz_100482031105585706
+      * secp256k1_fuzz_15778171584740729677
+  StableURAPI: preallocate_signing_size::/home/cdc/SURF/deepSURF-big-experiment-harnesses/secp256k1-0.22.0/src/context.rs::361,
+    - URAPI: DefId(0:128 ~ secp256k1[1a2a]::context::{impl#9}::preallocate_signing_size),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * secp256k1_fuzz_10854123483820830878_deepseek-r1_turn5
+  StableURAPI: from_der::/home/cdc/SURF/deepSURF-big-experiment-harnesses/secp256k1-0.22.0/src/ecdsa/mod.rs::139,
+    - URAPI: DefId(0:388 ~ secp256k1[1a2a]::ecdsa::{impl#11}::from_der),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * secp256k1_fuzz_2645207472723321874_deepseek-r1_turn4
+      * secp256k1_fuzz_3207247369491748272_deepseek-r1_turn6
+      * secp256k1_fuzz_6727151367171989308_deepseek-r1_turn4
+      * secp256k1_fuzz_5203456305074639693_deepseek-r1_turn3
+      * secp256k1_fuzz_17526550723977806477_deepseek-r1_turn4
+      * secp256k1_fuzz_16759182479392041092_deepseek-r1_turn2
+      * secp256k1_fuzz_11007658294372652369_deepseek-r1_turn6
+      * secp256k1_fuzz_3553957610081913816_deepseek-r1_turn5
+      * secp256k1_fuzz_16658289219862601400_deepseek-r1_turn6
+      * secp256k1_fuzz_14286251049675849947_deepseek-r1_turn3
+      * secp256k1_fuzz_10854123483820830878_deepseek-r1_turn5
+      * secp256k1_fuzz_18249402596335452831_deepseek-r1_turn3
+      * secp256k1_fuzz_416147919214335390_deepseek-r1_turn4
+  StableURAPI: verify_ecdsa::/home/cdc/SURF/deepSURF-big-experiment-harnesses/secp256k1-0.22.0/src/ecdsa/mod.rs::491,
+    - URAPI: DefId(0:419 ~ secp256k1[1a2a]::ecdsa::{impl#15}::verify_ecdsa),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * secp256k1_fuzz_1738083387827550756_deepseek-r1_turn2
+      * secp256k1_fuzz_18249402596335452831_deepseek-r1_turn3
+      * secp256k1_fuzz_14903968869379461409_deepseek-r1_turn3
+      * secp256k1_fuzz_14286251049675849947_deepseek-r1_turn3
+      * secp256k1_fuzz_14794727418247015246_deepseek-r1_turn4
+      * secp256k1_fuzz_7324890623656114846_deepseek-r1_turn6
+      * secp256k1_fuzz_18425322523893574887_deepseek-r1_turn3
+      * secp256k1_fuzz_689073355678358203_deepseek-r1_turn4
+      * secp256k1_fuzz_10854123483820830878_deepseek-r1_turn5
+      * secp256k1_fuzz_3553957610081913816_deepseek-r1_turn5
+      * secp256k1_fuzz_16658289219862601400_deepseek-r1_turn6
+      * secp256k1_fuzz_14457901667509273853_deepseek-r1_turn2
+      * secp256k1_fuzz_416147919214335390_deepseek-r1_turn4
+      * secp256k1_fuzz_14962535151218766897
+      * secp256k1_fuzz_13028139770747635447_deepseek-r1_turn2
+      * secp256k1_fuzz_12793103490377102628_deepseek-r1_turn3
+      * secp256k1_fuzz_10058999114279775261_deepseek-r1_turn5
+      * secp256k1_fuzz_10459229789729255669_deepseek-r1_turn6
+      * secp256k1_fuzz_2645207472723321874_deepseek-r1_turn4
+      * secp256k1_fuzz_15679496236477885848_deepseek-r1_turn2
+      * secp256k1_fuzz_16759182479392041092_deepseek-r1_turn2
+      * secp256k1_fuzz_17908492243458606952_deepseek-r1_turn5
+      * secp256k1_fuzz_8051098172498678649
+      * secp256k1_fuzz_3207247369491748272_deepseek-r1_turn6
+      * secp256k1_fuzz_6727151367171989308_deepseek-r1_turn4
+      * secp256k1_fuzz_14457901667509273853
+      * secp256k1_fuzz_13353567892605721603
+      * secp256k1_fuzz_5203456305074639693_deepseek-r1_turn3
+      * secp256k1_fuzz_7877314249662168301_deepseek-r1_turn4
+      * secp256k1_fuzz_8084849354405041896_deepseek-r1_turn3
+      * secp256k1_fuzz_7785841614160704307_deepseek-r1_turn2
+      * secp256k1_fuzz_3167032304624519422_deepseek-r1_turn3
+      * secp256k1_fuzz_12365406770474883431_deepseek-r1_turn5
+      * secp256k1_fuzz_17661328344219666573_deepseek-r1_turn3
+      * secp256k1_fuzz_11007658294372652369_deepseek-r1_turn6
+      * secp256k1_fuzz_17526550723977806477_deepseek-r1_turn4
+  StableURAPI: add_assign::/home/cdc/SURF/deepSURF-big-experiment-harnesses/secp256k1-0.22.0/src/key.rs::242,
+    - URAPI: DefId(0:181 ~ secp256k1[1a2a]::key::{impl#4}::add_assign),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * secp256k1_fuzz_16607070750234632725_deepseek-r1_turn2
+  StableURAPI: verify::/home/cdc/SURF/deepSURF-big-experiment-harnesses/secp256k1-0.22.0/src/ecdsa/mod.rs::463,
+    - URAPI: DefId(0:418 ~ secp256k1[1a2a]::ecdsa::{impl#15}::verify),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * secp256k1_fuzz_10488108532917819385
+      * secp256k1_fuzz_6670253588295106210
+      * secp256k1_fuzz_12793103490377102628
+      * secp256k1_fuzz_12793103490377102628_deepseek-r1_turn3
+      * secp256k1_fuzz_11188095168997166260
+  StableURAPI: schnorrsig_verify::/home/cdc/SURF/deepSURF-big-experiment-harnesses/secp256k1-0.22.0/src/schnorr.rs::223,
+    - URAPI: DefId(0:471 ~ secp256k1[1a2a]::schnorr::{impl#5}::schnorrsig_verify),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * secp256k1_fuzz_1738083387827550756_deepseek-r1_turn2
+      * secp256k1_fuzz_16658289219862601400_deepseek-r1_turn6
+      * secp256k1_fuzz_18425322523893574887_deepseek-r1_turn3
+      * secp256k1_fuzz_1285796635213397963
+      * secp256k1_fuzz_324743906810198497
+      * secp256k1_fuzz_3207247369491748272_deepseek-r1_turn6
+      * secp256k1_fuzz_16852073852599964626
+      * secp256k1_fuzz_11007658294372652369
+  StableURAPI: gen_new::/home/cdc/SURF/deepSURF-big-experiment-harnesses/secp256k1-0.22.0/src/context.rs::194,
+    - URAPI: DefId(0:407 ~ secp256k1[1a2a]::ecdsa::{impl#14}::sign_ecdsa),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * secp256k1_fuzz_16658289219862601400_deepseek-r1_turn6
+      * secp256k1_fuzz_3553957610081913816_deepseek-r1_turn5
+      * secp256k1_fuzz_7324890623656114846_deepseek-r1_turn6
+      * secp256k1_fuzz_14794727418247015246_deepseek-r1_turn4
+  StableURAPI: sign_ecdsa_low_r::/home/cdc/SURF/deepSURF-big-experiment-harnesses/secp256k1-0.22.0/src/ecdsa/mod.rs::432,
+    - URAPI: DefId(0:415 ~ secp256k1[1a2a]::ecdsa::{impl#14}::sign_ecdsa_low_r),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * secp256k1_fuzz_6727151367171989308_deepseek-r1_turn4
+      * secp256k1_fuzz_3553957610081913816_deepseek-r1_turn5
+      * secp256k1_fuzz_18249402596335452831_deepseek-r1_turn3
+      * secp256k1_fuzz_12793103490377102628_deepseek-r1_turn3
+      * secp256k1_fuzz_15679496236477885848_deepseek-r1_turn2
+      * secp256k1_fuzz_16658289219862601400_deepseek-r1_turn6
+      * secp256k1_fuzz_18425322523893574887_deepseek-r1_turn3
+      * secp256k1_fuzz_3167032304624519422_deepseek-r1_turn3
+      * secp256k1_fuzz_13143300165015772794
+      * secp256k1_fuzz_3207247369491748272_deepseek-r1_turn6
+      * secp256k1_fuzz_10459229789729255669_deepseek-r1_turn6
+      * secp256k1_fuzz_2645207472723321874_deepseek-r1_turn4
+      * secp256k1_fuzz_17777990828997960303
+      * secp256k1_fuzz_10854123483820830878_deepseek-r1_turn5
+      * secp256k1_fuzz_416147919214335390_deepseek-r1_turn4
+      * secp256k1_fuzz_689073355678358203_deepseek-r1_turn4
+      * secp256k1_fuzz_14699658529141624756
+      * secp256k1_fuzz_8311800604657666487
+      * secp256k1_fuzz_8084849354405041896_deepseek-r1_turn3
+      * secp256k1_fuzz_17908492243458606952_deepseek-r1_turn5
+      * secp256k1_fuzz_14794727418247015246_deepseek-r1_turn4
+      * secp256k1_fuzz_7877314249662168301_deepseek-r1_turn4
+  StableURAPI: preallocate_size::/home/cdc/SURF/deepSURF-big-experiment-harnesses/secp256k1-0.22.0/src/context.rs::329,
+    - URAPI: DefId(0:123 ~ secp256k1[1a2a]::context::{impl#8}::preallocate_size),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * secp256k1_fuzz_6081426384566739235_deepseek-r1_turn3
+      * secp256k1_fuzz_10854123483820830878_deepseek-r1_turn5
+      * secp256k1_fuzz_12793103490377102628_deepseek-r1_turn3
+      * secp256k1_fuzz_14794727418247015246_deepseek-r1_turn4
+      * secp256k1_fuzz_3207247369491748272_deepseek-r1_turn6
+  StableURAPI: new::/home/cdc/SURF/deepSURF-big-experiment-harnesses/secp256k1-0.22.0/src/context.rs::222,
+    - URAPI: DefId(0:83 ~ secp256k1[1a2a]::context::alloc_only::{impl#11}::new),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * secp256k1_fuzz_15679496236477885848_deepseek-r1_turn2
+      * secp256k1_fuzz_5203456305074639693_deepseek-r1_turn3
+      * secp256k1_fuzz_17661328344219666573_deepseek-r1_turn3
+      * secp256k1_fuzz_7785841614160704307_deepseek-r1_turn2
+      * secp256k1_fuzz_14457901667509273853_deepseek-r1_turn2
+      * secp256k1_fuzz_3553957610081913816_deepseek-r1_turn5
+      * secp256k1_fuzz_6727151367171989308_deepseek-r1_turn4
+      * secp256k1_fuzz_16759182479392041092_deepseek-r1_turn2
+      * secp256k1_fuzz_16607070750234632725_deepseek-r1_turn2
+      * secp256k1_fuzz_1738083387827550756_deepseek-r1_turn2
+      * secp256k1_fuzz_17526550723977806477_deepseek-r1_turn4
+      * secp256k1_fuzz_8084849354405041896_deepseek-r1_turn3
+      * secp256k1_fuzz_3207247369491748272_deepseek-r1_turn6
+      * secp256k1_fuzz_16658289219862601400_deepseek-r1_turn6
+      * secp256k1_fuzz_12793103490377102628_deepseek-r1_turn3
+      * secp256k1_fuzz_2645207472723321874_deepseek-r1_turn4
+      * secp256k1_fuzz_14286251049675849947_deepseek-r1_turn3
+      * secp256k1_fuzz_11007658294372652369_deepseek-r1_turn6
+      * secp256k1_fuzz_3167032304624519422_deepseek-r1_turn3
+      * secp256k1_fuzz_416147919214335390_deepseek-r1_turn4
+  StableURAPI: from_keypair::/home/cdc/SURF/deepSURF-big-experiment-harnesses/secp256k1-0.22.0/src/key.rs::1019,
+    - URAPI: DefId(0:255 ~ secp256k1[1a2a]::key::{impl#19}::from_keypair),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * secp256k1_fuzz_10459229789729255669_deepseek-r1_turn6
+      * secp256k1_fuzz_14794727418247015246_deepseek-r1_turn4
+      * secp256k1_fuzz_6727151367171989308_deepseek-r1_turn4
+      * secp256k1_fuzz_3553957610081913816_deepseek-r1_turn5
+      * secp256k1_fuzz_8084849354405041896_deepseek-r1_turn3
+      * secp256k1_fuzz_12793103490377102628_deepseek-r1_turn3
+      * secp256k1_fuzz_18425322523893574887_deepseek-r1_turn3
+      * secp256k1_fuzz_2645207472723321874_deepseek-r1_turn4
+      * secp256k1_fuzz_18249402596335452831_deepseek-r1_turn3
+      * secp256k1_fuzz_689073355678358203_deepseek-r1_turn4
+      * secp256k1_fuzz_1738083387827550756_deepseek-r1_turn2
+      * secp256k1_fuzz_10058999114279775261_deepseek-r1_turn5
+      * secp256k1_fuzz_16658289219862601400_deepseek-r1_turn6
+      * secp256k1_fuzz_416147919214335390_deepseek-r1_turn4
+      * secp256k1_fuzz_17908492243458606952_deepseek-r1_turn5
+      * secp256k1_fuzz_17661328344219666573_deepseek-r1_turn3
+      * secp256k1_fuzz_12365406770474883431_deepseek-r1_turn5
+      * secp256k1_fuzz_14903968869379461409_deepseek-r1_turn3
+      * secp256k1_fuzz_5203456305074639693_deepseek-r1_turn3
+      * secp256k1_fuzz_7324890623656114846_deepseek-r1_turn6
+      * secp256k1_fuzz_6081426384566739235_deepseek-r1_turn3
+      * secp256k1_fuzz_3207247369491748272_deepseek-r1_turn6
+      * secp256k1_fuzz_7877314249662168301_deepseek-r1_turn4
+      * secp256k1_fuzz_10854123483820830878_deepseek-r1_turn5
+      * secp256k1_fuzz_16607070750234632725_deepseek-r1_turn2
+  StableURAPI: serialize::/home/cdc/SURF/deepSURF-big-experiment-harnesses/secp256k1-0.22.0/src/key.rs::424,
+    - URAPI: DefId(0:190 ~ secp256k1[1a2a]::key::{impl#5}::serialize),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * secp256k1_fuzz_7877314249662168301_deepseek-r1_turn4
+      * secp256k1_fuzz_7324890623656114846_deepseek-r1_turn6
+      * secp256k1_fuzz_7785841614160704307_deepseek-r1_turn2
+      * secp256k1_fuzz_8084849354405041896_deepseek-r1_turn3
+      * secp256k1_fuzz_3207247369491748272_deepseek-r1_turn6
+      * secp256k1_fuzz_1738083387827550756_deepseek-r1_turn2
+      * secp256k1_fuzz_6081426384566739235_deepseek-r1_turn3
+      * secp256k1_fuzz_10459229789729255669_deepseek-r1_turn6
+      * secp256k1_fuzz_14794727418247015246_deepseek-r1_turn4
+      * secp256k1_fuzz_11007658294372652369_deepseek-r1_turn6
+      * secp256k1_fuzz_18425322523893574887_deepseek-r1_turn3
+  StableURAPI: from::/home/cdc/SURF/deepSURF-big-experiment-harnesses/secp256k1-0.22.0/src/key.rs::886,
+    - URAPI: DefId(0:232 ~ secp256k1[1a2a]::key::{impl#11}::from),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * secp256k1_fuzz_5203456305074639693_deepseek-r1_turn3
+      * secp256k1_fuzz_12365406770474883431_deepseek-r1_turn5
+      * secp256k1_fuzz_13028139770747635447_deepseek-r1_turn2
+  StableURAPI: cmp::/home/cdc/SURF/deepSURF-big-experiment-harnesses/secp256k1-0.22.0/src/key.rs::650,
+    - URAPI: DefId(0:215 ~ secp256k1[1a2a]::key::{impl#9}::cmp),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * secp256k1_fuzz_18425322523893574887_deepseek-r1_turn3
+      * secp256k1_fuzz_10459229789729255669_deepseek-r1_turn6
+      * secp256k1_fuzz_17661328344219666573_deepseek-r1_turn3
+      * secp256k1_fuzz_13318925324450906319_deepseek-r1_turn2
+      * secp256k1_fuzz_14903968869379461409_deepseek-r1_turn3
+  StableURAPI: from_slice::/home/cdc/SURF/deepSURF-big-experiment-harnesses/secp256k1-0.22.0/src/key.rs::1041,
+    - URAPI: DefId(0:256 ~ secp256k1[1a2a]::key::{impl#19}::from_slice),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * secp256k1_fuzz_14286251049675849947_deepseek-r1_turn3
+      * secp256k1_fuzz_7785841614160704307_deepseek-r1_turn2
+      * secp256k1_fuzz_17526550723977806477_deepseek-r1_turn4
+      * secp256k1_fuzz_18425322523893574887_deepseek-r1_turn3
+      * secp256k1_fuzz_8084849354405041896_deepseek-r1_turn3
+      * secp256k1_fuzz_12365406770474883431_deepseek-r1_turn5
+      * secp256k1_fuzz_11007658294372652369_deepseek-r1_turn6
+      * secp256k1_fuzz_16759182479392041092_deepseek-r1_turn2
+      * secp256k1_fuzz_10058999114279775261_deepseek-r1_turn5
+  StableURAPI: from_seckey_slice::/home/cdc/SURF/deepSURF-big-experiment-harnesses/secp256k1-0.22.0/src/key.rs::728,
+    - URAPI: DefId(0:221 ~ secp256k1[1a2a]::key::{impl#10}::from_seckey_slice),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * secp256k1_fuzz_10058999114279775261_deepseek-r1_turn5
+      * secp256k1_fuzz_13318925324450906319_deepseek-r1_turn2
+      * secp256k1_fuzz_2645207472723321874_deepseek-r1_turn4
+      * secp256k1_fuzz_7324890623656114846_deepseek-r1_turn6
+      * secp256k1_fuzz_13028139770747635447_deepseek-r1_turn2
+      * secp256k1_fuzz_6081426384566739235_deepseek-r1_turn3
+      * secp256k1_fuzz_10459229789729255669_deepseek-r1_turn6
+      * secp256k1_fuzz_12793103490377102628_deepseek-r1_turn3
+      * secp256k1_fuzz_15679496236477885848_deepseek-r1_turn2
+      * secp256k1_fuzz_3167032304624519422_deepseek-r1_turn3
+      * secp256k1_fuzz_12365406770474883431_deepseek-r1_turn5
+      * secp256k1_fuzz_7785841614160704307_deepseek-r1_turn2
+      * secp256k1_fuzz_18425322523893574887_deepseek-r1_turn3
+      * secp256k1_fuzz_14794727418247015246_deepseek-r1_turn4
+      * secp256k1_fuzz_6727151367171989308_deepseek-r1_turn4
+      * secp256k1_fuzz_3207247369491748272_deepseek-r1_turn6
+      * secp256k1_fuzz_17661328344219666573_deepseek-r1_turn3
+      * secp256k1_fuzz_16658289219862601400_deepseek-r1_turn6
+      * secp256k1_fuzz_416147919214335390_deepseek-r1_turn4
+      * secp256k1_fuzz_14457901667509273853_deepseek-r1_turn2
+      * secp256k1_fuzz_17526550723977806477_deepseek-r1_turn4
+      * secp256k1_fuzz_8084849354405041896_deepseek-r1_turn3
+      * secp256k1_fuzz_17908492243458606952_deepseek-r1_turn5
+  StableURAPI: from_slice::/home/cdc/SURF/deepSURF-big-experiment-harnesses/secp256k1-0.22.0/src/key.rs::168,
+    - URAPI: DefId(0:174 ~ secp256k1[1a2a]::key::{impl#4}::from_slice),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * secp256k1_fuzz_6081426384566739235_deepseek-r1_turn3
+      * secp256k1_fuzz_3553957610081913816_deepseek-r1_turn5
+      * secp256k1_fuzz_3207247369491748272_deepseek-r1_turn6
+      * secp256k1_fuzz_7324890623656114846_deepseek-r1_turn6
+      * secp256k1_fuzz_2645207472723321874_deepseek-r1_turn4
+      * secp256k1_fuzz_15679496236477885848_deepseek-r1_turn2
+      * secp256k1_fuzz_16607070750234632725_deepseek-r1_turn2
+      * secp256k1_fuzz_17908492243458606952_deepseek-r1_turn5
+      * secp256k1_fuzz_1738083387827550756_deepseek-r1_turn2
+      * secp256k1_fuzz_16658289219862601400_deepseek-r1_turn6
+      * secp256k1_fuzz_12793103490377102628_deepseek-r1_turn3
+      * secp256k1_fuzz_10459229789729255669_deepseek-r1_turn6
+      * secp256k1_fuzz_17661328344219666573_deepseek-r1_turn3
+      * secp256k1_fuzz_5203456305074639693_deepseek-r1_turn3
+      * secp256k1_fuzz_11007658294372652369_deepseek-r1_turn6
+      * secp256k1_fuzz_7785841614160704307_deepseek-r1_turn2
+      * secp256k1_fuzz_13028139770747635447_deepseek-r1_turn2
+      * secp256k1_fuzz_10854123483820830878_deepseek-r1_turn5
+      * secp256k1_fuzz_7877314249662168301_deepseek-r1_turn4
+      * secp256k1_fuzz_6727151367171989308_deepseek-r1_turn4
+      * secp256k1_fuzz_8084849354405041896_deepseek-r1_turn3
+      * secp256k1_fuzz_416147919214335390_deepseek-r1_turn4
+      * secp256k1_fuzz_18249402596335452831_deepseek-r1_turn3
+      * secp256k1_fuzz_18425322523893574887_deepseek-r1_turn3
+      * secp256k1_fuzz_16759182479392041092_deepseek-r1_turn2
+      * secp256k1_fuzz_3167032304624519422_deepseek-r1_turn3
+      * secp256k1_fuzz_17526550723977806477_deepseek-r1_turn4
+      * secp256k1_fuzz_10058999114279775261_deepseek-r1_turn5
+      * secp256k1_fuzz_14903968869379461409_deepseek-r1_turn3
+      * secp256k1_fuzz_689073355678358203_deepseek-r1_turn4
+      * secp256k1_fuzz_14794727418247015246_deepseek-r1_turn4
+      * secp256k1_fuzz_14286251049675849947_deepseek-r1_turn3
+  StableURAPI: negate_assign::/home/cdc/SURF/deepSURF-big-experiment-harnesses/secp256k1-0.22.0/src/key.rs::463,
+    - URAPI: DefId(0:196 ~ secp256k1[1a2a]::key::{impl#5}::negate_assign),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * secp256k1_fuzz_13028139770747635447_deepseek-r1_turn2
+  StableURAPI: from_secret_key::/home/cdc/SURF/deepSURF-big-experiment-harnesses/secp256k1-0.22.0/src/key.rs::707,
+    - URAPI: DefId(0:219 ~ secp256k1[1a2a]::key::{impl#10}::from_secret_key),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * secp256k1_fuzz_10058999114279775261_deepseek-r1_turn5
+      * secp256k1_fuzz_10459229789729255669_deepseek-r1_turn6
+      * secp256k1_fuzz_8084849354405041896_deepseek-r1_turn3
+      * secp256k1_fuzz_1738083387827550756_deepseek-r1_turn2
+      * secp256k1_fuzz_16607070750234632725_deepseek-r1_turn2
+      * secp256k1_fuzz_11007658294372652369_deepseek-r1_turn6
+      * secp256k1_fuzz_14903968869379461409_deepseek-r1_turn3
+      * secp256k1_fuzz_10854123483820830878_deepseek-r1_turn5
+      * secp256k1_fuzz_17908492243458606952_deepseek-r1_turn5
+      * secp256k1_fuzz_14794727418247015246_deepseek-r1_turn4
+      * secp256k1_fuzz_12793103490377102628_deepseek-r1_turn3
+      * secp256k1_fuzz_6081426384566739235_deepseek-r1_turn3
+      * secp256k1_fuzz_3207247369491748272_deepseek-r1_turn6
+      * secp256k1_fuzz_14286251049675849947_deepseek-r1_turn3
+      * secp256k1_fuzz_3553957610081913816_deepseek-r1_turn5
+      * secp256k1_fuzz_689073355678358203_deepseek-r1_turn4
+      * secp256k1_fuzz_16759182479392041092_deepseek-r1_turn2
+      * secp256k1_fuzz_18249402596335452831_deepseek-r1_turn3
+      * secp256k1_fuzz_7324890623656114846_deepseek-r1_turn6
+      * secp256k1_fuzz_5203456305074639693_deepseek-r1_turn3
+      * secp256k1_fuzz_17661328344219666573_deepseek-r1_turn3
+      * secp256k1_fuzz_7877314249662168301_deepseek-r1_turn4
+      * secp256k1_fuzz_7785841614160704307_deepseek-r1_turn2
+  StableURAPI: sign::/home/cdc/SURF/deepSURF-big-experiment-harnesses/secp256k1-0.22.0/src/ecdsa/mod.rs::339,
+    - URAPI: DefId(0:406 ~ secp256k1[1a2a]::ecdsa::{impl#14}::sign),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * secp256k1_fuzz_7324890623656114846
+      * secp256k1_fuzz_689073355678358203_deepseek-r1_turn4
+      * secp256k1_fuzz_5095888976194248059
+      * secp256k1_fuzz_6482950948435041716
+      * secp256k1_fuzz_17822194144909615941
+  StableURAPI: sign_grind_r::/home/cdc/SURF/deepSURF-big-experiment-harnesses/secp256k1-0.22.0/src/ecdsa/mod.rs::400,
+    - URAPI: DefId(0:411 ~ secp256k1[1a2a]::ecdsa::{impl#14}::sign_grind_r),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * secp256k1_fuzz_18425322523893574887_deepseek-r1_turn3
+      * secp256k1_fuzz_14457901667509273853_deepseek-r1_turn2
+      * secp256k1_fuzz_18425322523893574887
+      * secp256k1_fuzz_1776588768490956497
+      * secp256k1_fuzz_16037651752156217592
+      * secp256k1_fuzz_12793103490377102628_deepseek-r1_turn3
+      * secp256k1_fuzz_689073355678358203_deepseek-r1_turn4
+      * secp256k1_fuzz_11958859662750561008
+  StableURAPI: partial_cmp::/home/cdc/SURF/deepSURF-big-experiment-harnesses/secp256k1-0.22.0/src/key.rs::644,
+    - URAPI: DefId(0:213 ~ secp256k1[1a2a]::key::{impl#8}::partial_cmp),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * secp256k1_fuzz_3167032304624519422_deepseek-r1_turn3
+  StableURAPI: normalize_s::/home/cdc/SURF/deepSURF-big-experiment-harnesses/secp256k1-0.22.0/src/ecdsa/mod.rs::219,
+    - URAPI: DefId(0:391 ~ secp256k1[1a2a]::ecdsa::{impl#11}::normalize_s),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * secp256k1_fuzz_17908492243458606952_deepseek-r1_turn5
+      * secp256k1_fuzz_7324890623656114846_deepseek-r1_turn6
+      * secp256k1_fuzz_689073355678358203_deepseek-r1_turn4
+      * secp256k1_fuzz_3207247369491748272_deepseek-r1_turn6
+      * secp256k1_fuzz_3167032304624519422_deepseek-r1_turn3
+  StableURAPI: display_secret::/home/cdc/SURF/deepSURF-big-experiment-harnesses/secp256k1-0.22.0/src/secret.rs::177,
+    - URAPI: DefId(0:25 ~ secp256k1[1a2a]::secret::{impl#3}::display_secret),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * secp256k1_fuzz_7785841614160704307_deepseek-r1_turn2
+  StableURAPI: mul_assign::/home/cdc/SURF/deepSURF-big-experiment-harnesses/secp256k1-0.22.0/src/key.rs::504,
+    - URAPI: DefId(0:200 ~ secp256k1[1a2a]::key::{impl#5}::mul_assign),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * secp256k1_fuzz_12365406770474883431_deepseek-r1_turn5
+  StableURAPI: from::/home/cdc/SURF/deepSURF-big-experiment-harnesses/secp256k1-0.22.0/src/key.rs::1349,
+    - URAPI: DefId(0:289 ~ secp256k1[1a2a]::key::{impl#29}::from),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * secp256k1_fuzz_3167032304624519422_deepseek-r1_turn3
+      * secp256k1_fuzz_13028139770747635447_deepseek-r1_turn2
+      * secp256k1_fuzz_1738083387827550756_deepseek-r1_turn2
+      * secp256k1_fuzz_10058999114279775261_deepseek-r1_turn5
+  StableURAPI: from::/home/cdc/SURF/deepSURF-big-experiment-harnesses/secp256k1-0.22.0/src/key.rs::893,
+    - URAPI: DefId(0:235 ~ secp256k1[1a2a]::key::{impl#12}::from),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * secp256k1_fuzz_2645207472723321874_deepseek-r1_turn4
+      * secp256k1_fuzz_7877314249662168301_deepseek-r1_turn4
+      * secp256k1_fuzz_13318925324450906319_deepseek-r1_turn2
+      * secp256k1_fuzz_7324890623656114846_deepseek-r1_turn6
+  StableURAPI: tweak_add_assign::/home/cdc/SURF/deepSURF-big-experiment-harnesses/secp256k1-0.22.0/src/key.rs::846,
+    - URAPI: DefId(0:228 ~ secp256k1[1a2a]::key::{impl#10}::tweak_add_assign),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * secp256k1_fuzz_7877314249662168301_deepseek-r1_turn4
+      * secp256k1_fuzz_2645207472723321874_deepseek-r1_turn4
+      * secp256k1_fuzz_10459229789729255669_deepseek-r1_turn6
+      * secp256k1_fuzz_14903968869379461409_deepseek-r1_turn3
+      * secp256k1_fuzz_14794727418247015246_deepseek-r1_turn4
+      * secp256k1_fuzz_12793103490377102628_deepseek-r1_turn3
+      * secp256k1_fuzz_3553957610081913816_deepseek-r1_turn5
+      * secp256k1_fuzz_5203456305074639693_deepseek-r1_turn3
+      * secp256k1_fuzz_8084849354405041896_deepseek-r1_turn3
+      * secp256k1_fuzz_10058999114279775261_deepseek-r1_turn5
+      * secp256k1_fuzz_17661328344219666573_deepseek-r1_turn3
+      * secp256k1_fuzz_7785841614160704307_deepseek-r1_turn2
+  StableURAPI: add_exp_assign::/home/cdc/SURF/deepSURF-big-experiment-harnesses/secp256k1-0.22.0/src/key.rs::480,
+    - URAPI: DefId(0:198 ~ secp256k1[1a2a]::key::{impl#5}::add_exp_assign),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * secp256k1_fuzz_11007658294372652369_deepseek-r1_turn6
+      * secp256k1_fuzz_2645207472723321874_deepseek-r1_turn4
+      * secp256k1_fuzz_14794727418247015246_deepseek-r1_turn4
+  StableURAPI: schnorrsig_sign_with_aux_rand::/home/cdc/SURF/deepSURF-big-experiment-harnesses/secp256k1-0.22.0/src/schnorr.rs::167,
+    - URAPI: DefId(0:465 ~ secp256k1[1a2a]::schnorr::{impl#4}::schnorrsig_sign_with_aux_rand),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * secp256k1_fuzz_10058999114279775261_deepseek-r1_turn5
+      * secp256k1_fuzz_3207247369491748272_deepseek-r1_turn6
+      * secp256k1_fuzz_1738083387827550756_deepseek-r1_turn2
+      * secp256k1_fuzz_16658289219862601400_deepseek-r1_turn6
+  StableURAPI: signing_only::/home/cdc/SURF/deepSURF-big-experiment-harnesses/secp256k1-0.22.0/src/context.rs::233,
+    - URAPI: DefId(0:85 ~ secp256k1[1a2a]::context::alloc_only::{impl#12}::signing_only),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * secp256k1_fuzz_3167032304624519422_deepseek-r1_turn3
+      * secp256k1_fuzz_14794727418247015246_deepseek-r1_turn4
+      * secp256k1_fuzz_17526550723977806477_deepseek-r1_turn4
+      * secp256k1_fuzz_18425322523893574887_deepseek-r1_turn3
+  StableURAPI: from_slice::/home/cdc/SURF/deepSURF-big-experiment-harnesses/secp256k1-0.22.0/src/key.rs::375,
+    - URAPI: DefId(0:188 ~ secp256k1[1a2a]::key::{impl#5}::from_slice),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * secp256k1_fuzz_16759182479392041092_deepseek-r1_turn2
+      * secp256k1_fuzz_17526550723977806477_deepseek-r1_turn4
+      * secp256k1_fuzz_3553957610081913816_deepseek-r1_turn5
+      * secp256k1_fuzz_14794727418247015246_deepseek-r1_turn4
+      * secp256k1_fuzz_15679496236477885848_deepseek-r1_turn2
+      * secp256k1_fuzz_416147919214335390_deepseek-r1_turn4
+      * secp256k1_fuzz_3207247369491748272_deepseek-r1_turn6
+      * secp256k1_fuzz_13318925324450906319_deepseek-r1_turn2
+      * secp256k1_fuzz_14286251049675849947_deepseek-r1_turn3
+      * secp256k1_fuzz_13028139770747635447_deepseek-r1_turn2
+      * secp256k1_fuzz_3167032304624519422_deepseek-r1_turn3
+      * secp256k1_fuzz_11007658294372652369_deepseek-r1_turn6
+      * secp256k1_fuzz_18249402596335452831_deepseek-r1_turn3
+      * secp256k1_fuzz_7785841614160704307_deepseek-r1_turn2
+      * secp256k1_fuzz_12365406770474883431_deepseek-r1_turn5
+      * secp256k1_fuzz_17661328344219666573_deepseek-r1_turn3
+      * secp256k1_fuzz_7324890623656114846_deepseek-r1_turn6
+      * secp256k1_fuzz_6727151367171989308_deepseek-r1_turn4
+      * secp256k1_fuzz_8084849354405041896_deepseek-r1_turn3
+      * secp256k1_fuzz_10459229789729255669_deepseek-r1_turn6
+      * secp256k1_fuzz_1738083387827550756_deepseek-r1_turn2
+  StableURAPI: verification_only::/home/cdc/SURF/deepSURF-big-experiment-harnesses/secp256k1-0.22.0/src/context.rs::244,
+    - URAPI: DefId(0:87 ~ secp256k1[1a2a]::context::alloc_only::{impl#13}::verification_only),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * secp256k1_fuzz_14457901667509273853_deepseek-r1_turn2
+      * secp256k1_fuzz_14286251049675849947_deepseek-r1_turn3
+      * secp256k1_fuzz_3207247369491748272_deepseek-r1_turn6
+      * secp256k1_fuzz_14794727418247015246_deepseek-r1_turn4
+      * secp256k1_fuzz_16759182479392041092_deepseek-r1_turn2
+      * secp256k1_fuzz_3553957610081913816_deepseek-r1_turn5
+      * secp256k1_fuzz_3167032304624519422_deepseek-r1_turn3
+      * secp256k1_fuzz_2645207472723321874_deepseek-r1_turn4
+      * secp256k1_fuzz_7877314249662168301_deepseek-r1_turn4
+      * secp256k1_fuzz_17526550723977806477_deepseek-r1_turn4
+  StableURAPI: public_key::/home/cdc/SURF/deepSURF-big-experiment-harnesses/secp256k1-0.22.0/src/key.rs::871,
+    - URAPI: DefId(0:230 ~ secp256k1[1a2a]::key::{impl#10}::public_key),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * secp256k1_fuzz_3553957610081913816_deepseek-r1_turn5
+      * secp256k1_fuzz_16759182479392041092_deepseek-r1_turn2
+      * secp256k1_fuzz_17908492243458606952_deepseek-r1_turn5
+      * secp256k1_fuzz_14286251049675849947_deepseek-r1_turn3
+      * secp256k1_fuzz_7785841614160704307_deepseek-r1_turn2
+      * secp256k1_fuzz_15679496236477885848_deepseek-r1_turn2
+      * secp256k1_fuzz_1738083387827550756_deepseek-r1_turn2
+      * secp256k1_fuzz_689073355678358203_deepseek-r1_turn4
+      * secp256k1_fuzz_11007658294372652369_deepseek-r1_turn6
+      * secp256k1_fuzz_17526550723977806477_deepseek-r1_turn4
+      * secp256k1_fuzz_416147919214335390_deepseek-r1_turn4
+  StableURAPI: fmt::/home/cdc/SURF/deepSURF-big-experiment-harnesses/secp256k1-0.22.0/src/key.rs::101,
+    - URAPI: DefId(0:168 ~ secp256k1[1a2a]::key::{impl#2}::fmt),
+    - Macro-expanded: false,
+    - LLM-improved: false,
+    - Fuzzing Targets:
+      * secp256k1_fuzz_353965103768056104
+      * secp256k1_fuzz_14978383900029057167
+      * secp256k1_fuzz_15679496236477885848
+      * secp256k1_fuzz_12860908378340537685
+  StableURAPI: sign_schnorr_with_aux_rand::/home/cdc/SURF/deepSURF-big-experiment-harnesses/secp256k1-0.22.0/src/schnorr.rs::177,
+    - URAPI: DefId(0:467 ~ secp256k1[1a2a]::schnorr::{impl#4}::sign_schnorr_with_aux_rand),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * secp256k1_fuzz_416147919214335390_deepseek-r1_turn4
+      * secp256k1_fuzz_14794727418247015246_deepseek-r1_turn4
+      * secp256k1_fuzz_10854123483820830878_deepseek-r1_turn5
+      * secp256k1_fuzz_5203456305074639693_deepseek-r1_turn3
+      * secp256k1_fuzz_11007658294372652369_deepseek-r1_turn6
+      * secp256k1_fuzz_10459229789729255669_deepseek-r1_turn6
+      * secp256k1_fuzz_15679496236477885848_deepseek-r1_turn2
+      * secp256k1_fuzz_16759182479392041092_deepseek-r1_turn2
+  StableURAPI: from_der_lax::/home/cdc/SURF/deepSURF-big-experiment-harnesses/secp256k1-0.22.0/src/ecdsa/mod.rs::183,
+    - URAPI: DefId(0:390 ~ secp256k1[1a2a]::ecdsa::{impl#11}::from_der_lax),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * secp256k1_fuzz_6727151367171989308_deepseek-r1_turn4
+      * secp256k1_fuzz_3167032304624519422_deepseek-r1_turn3
+  StableURAPI: negate_assign::/home/cdc/SURF/deepSURF-big-experiment-harnesses/secp256k1-0.22.0/src/key.rs::223,
+    - URAPI: DefId(0:180 ~ secp256k1[1a2a]::key::{impl#4}::negate_assign),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * secp256k1_fuzz_13028139770747635447_deepseek-r1_turn2
+  StableURAPI: sign_schnorr_no_aux_rand::/home/cdc/SURF/deepSURF-big-experiment-harnesses/secp256k1-0.22.0/src/schnorr.rs::157,
+    - URAPI: DefId(0:464 ~ secp256k1[1a2a]::schnorr::{impl#4}::sign_schnorr_no_aux_rand),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * secp256k1_fuzz_10459229789729255669_deepseek-r1_turn6
+      * secp256k1_fuzz_17661328344219666573_deepseek-r1_turn3
+      * secp256k1_fuzz_18249402596335452831_deepseek-r1_turn3
+      * secp256k1_fuzz_7877314249662168301_deepseek-r1_turn4
+      * secp256k1_fuzz_14794727418247015246_deepseek-r1_turn4
+      * secp256k1_fuzz_12365406770474883431_deepseek-r1_turn5
+      * secp256k1_fuzz_6727151367171989308_deepseek-r1_turn4
+      * secp256k1_fuzz_7324890623656114846_deepseek-r1_turn6
+  StableURAPI: from_keypair::/home/cdc/SURF/deepSURF-big-experiment-harnesses/secp256k1-0.22.0/src/key.rs::408,
+    - URAPI: DefId(0:189 ~ secp256k1[1a2a]::key::{impl#5}::from_keypair),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * secp256k1_fuzz_14457901667509273853_deepseek-r1_turn2
+      * secp256k1_fuzz_10058999114279775261_deepseek-r1_turn5
+      * secp256k1_fuzz_6081426384566739235_deepseek-r1_turn3
+      * secp256k1_fuzz_3167032304624519422_deepseek-r1_turn3
+      * secp256k1_fuzz_8084849354405041896_deepseek-r1_turn3
+      * secp256k1_fuzz_17661328344219666573_deepseek-r1_turn3
+      * secp256k1_fuzz_3553957610081913816_deepseek-r1_turn5
+      * secp256k1_fuzz_13028139770747635447_deepseek-r1_turn2
+      * secp256k1_fuzz_10459229789729255669_deepseek-r1_turn6
+      * secp256k1_fuzz_14794727418247015246_deepseek-r1_turn4
+      * secp256k1_fuzz_16607070750234632725_deepseek-r1_turn2
+      * secp256k1_fuzz_13318925324450906319_deepseek-r1_turn2
+      * secp256k1_fuzz_12793103490377102628_deepseek-r1_turn3
+      * secp256k1_fuzz_7877314249662168301_deepseek-r1_turn4
+      * secp256k1_fuzz_16658289219862601400_deepseek-r1_turn6
+      * secp256k1_fuzz_5203456305074639693_deepseek-r1_turn3
+      * secp256k1_fuzz_416147919214335390_deepseek-r1_turn4
+  StableURAPI: verify_schnorr::/home/cdc/SURF/deepSURF-big-experiment-harnesses/secp256k1-0.22.0/src/schnorr.rs::233,
+    - URAPI: DefId(0:472 ~ secp256k1[1a2a]::schnorr::{impl#5}::verify_schnorr),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * secp256k1_fuzz_1308902230358207660
+      * secp256k1_fuzz_7877314249662168301_deepseek-r1_turn4
+      * secp256k1_fuzz_12365406770474883431_deepseek-r1_turn5
+      * secp256k1_fuzz_10459229789729255669_deepseek-r1_turn6
+      * secp256k1_fuzz_11007658294372652369_deepseek-r1_turn6
+      * secp256k1_fuzz_14794727418247015246_deepseek-r1_turn4
+      * secp256k1_fuzz_2487754843095847047
+      * secp256k1_fuzz_10058999114279775261_deepseek-r1_turn5
+      * secp256k1_fuzz_6727151367171989308_deepseek-r1_turn4
+      * secp256k1_fuzz_10854123483820830878_deepseek-r1_turn5
+      * secp256k1_fuzz_8996159799400819762
+      * secp256k1_fuzz_16759182479392041092_deepseek-r1_turn2
+      * secp256k1_fuzz_7324890623656114846_deepseek-r1_turn6
+      * secp256k1_fuzz_10058999114279775261
+      * secp256k1_fuzz_416147919214335390_deepseek-r1_turn4
+      * secp256k1_fuzz_5203456305074639693_deepseek-r1_turn3
+      * secp256k1_fuzz_18249402596335452831_deepseek-r1_turn3
+      * secp256k1_fuzz_15679496236477885848_deepseek-r1_turn2
+  StableURAPI: preallocated_new::/home/cdc/SURF/deepSURF-big-experiment-harnesses/secp256k1-0.22.0/src/context.rs::325,
+    - URAPI: DefId(0:122 ~ secp256k1[1a2a]::context::{impl#8}::preallocated_new),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * secp256k1_fuzz_10058999114279775261_deepseek-r1_turn5
+      * secp256k1_fuzz_13318925324450906319_deepseek-r1_turn2
+      * secp256k1_fuzz_14794727418247015246_deepseek-r1_turn4
+      * secp256k1_fuzz_3553957610081913816_deepseek-r1_turn5
+      * secp256k1_fuzz_7324890623656114846_deepseek-r1_turn6
+      * secp256k1_fuzz_18425322523893574887_deepseek-r1_turn3
+      * secp256k1_fuzz_13028139770747635447_deepseek-r1_turn2
+      * secp256k1_fuzz_10854123483820830878_deepseek-r1_turn5
+      * secp256k1_fuzz_689073355678358203_deepseek-r1_turn4
+      * secp256k1_fuzz_3207247369491748272_deepseek-r1_turn6
+      * secp256k1_fuzz_11007658294372652369_deepseek-r1_turn6
+      * secp256k1_fuzz_416147919214335390_deepseek-r1_turn4
+      * secp256k1_fuzz_14903968869379461409_deepseek-r1_turn3
+      * secp256k1_fuzz_12365406770474883431_deepseek-r1_turn5
+      * secp256k1_fuzz_18249402596335452831_deepseek-r1_turn3
+      * secp256k1_fuzz_10459229789729255669_deepseek-r1_turn6
+      * secp256k1_fuzz_3167032304624519422_deepseek-r1_turn3
+      * secp256k1_fuzz_17908492243458606952_deepseek-r1_turn5
+  StableURAPI: from_keypair::/home/cdc/SURF/deepSURF-big-experiment-harnesses/secp256k1-0.22.0/src/key.rs::202,
+    - URAPI: DefId(0:176 ~ secp256k1[1a2a]::key::{impl#4}::from_keypair),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * secp256k1_fuzz_14457901667509273853_deepseek-r1_turn2
+      * secp256k1_fuzz_416147919214335390_deepseek-r1_turn4
+      * secp256k1_fuzz_1738083387827550756_deepseek-r1_turn2
+      * secp256k1_fuzz_17661328344219666573_deepseek-r1_turn3
+      * secp256k1_fuzz_12793103490377102628_deepseek-r1_turn3
+      * secp256k1_fuzz_14794727418247015246_deepseek-r1_turn4
+      * secp256k1_fuzz_10459229789729255669_deepseek-r1_turn6
+      * secp256k1_fuzz_3167032304624519422_deepseek-r1_turn3
+      * secp256k1_fuzz_8084849354405041896_deepseek-r1_turn3
+------------------------------------------------------------------------------------------------------------------------------------

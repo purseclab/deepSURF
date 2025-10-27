@@ -1,0 +1,546 @@
+
+Total Stats:
+------------------------------------------------------------------------------------------------------------------------------------
+* URAPI Coverage: 113/177 (63.84%).
+* Targets Compiled: 165/1163 (14.19%) in [571.936615757s].
+------------------------------------------------------------------------------------------------------------------------------------
+
+Target Stats:
+------------------------------------------------------------------------------------------------------------------------------------
+* URAPIs w/ ≥ 1ft: 113/177 (63.84%).
+* Average Generation Time per Target: 3053.398836834s/113 (27.021228644s).
+
+* URAPIs w/ ≥ 2ft: 44/177 (24.86%).
+* Average Generation Time per Target: 2551.03602733s/44 (57.97809153s).
+
+* URAPIs w/ ≥ 3ft: 8/177 (4.52%).
+* Average Generation Time per Target: 882.592056564s/8 (110.32400707s).
+
+* URAPIs w/ ≥ 4ft: 0/177 (0.00%).
+* Average Generation Time per Target: 0ns/0 (Na).
+
+* URAPIs w/o any compilable targets: 64/177 (36.16%).
+------------------------------------------------------------------------------------------------------------------------------------
+
+Detailed Results: 
+------------------------------------------------------------------------------------------------------------------------------------
+  URAPI: DefId(0:1419 ~ http[2aa2]::uri::path::{impl#20}::partial_cmp),
+    - Compilable Targets (1/10 ~ 10.00%):
+        * http_fuzz_3013850531557132465 [51.658217774s]
+  URAPI: DefId(0:726 ~ http[2aa2]::header::value::{impl#33}::eq),
+    - Compilable Targets (3/4 ~ 75.00%):
+        * http_fuzz_14732319853573133415 [9.58440394s]
+        * http_fuzz_13386474297363163865 [35.111835658s]
+        * http_fuzz_14186962726730187752 [66.009378328s]
+  URAPI: DefId(0:555 ~ http[2aa2]::header::name::{impl#16}::try_from),
+    - Compilable Targets (0/1 ~ 0.00%):
+  URAPI: DefId(0:1499 ~ http[2aa2]::uri::scheme::{impl#3}::try_from),
+    - Compilable Targets (0/1 ~ 0.00%):
+  URAPI: DefId(0:519 ~ http[2aa2]::header::name::{impl#3}::as_ref),
+    - Compilable Targets (0/3 ~ 0.00%):
+  URAPI: DefId(0:1421 ~ http[2aa2]::uri::path::{impl#21}::partial_cmp),
+    - Compilable Targets (1/10 ~ 10.00%):
+        * http_fuzz_11142325893741649378 [51.920345507s]
+  URAPI: DefId(0:1232 ~ http[2aa2]::uri::authority::{impl#0}::from_shared),
+    - Compilable Targets (1/7 ~ 14.29%):
+        * http_fuzz_1996374879595198001 [58.687306101s]
+  URAPI: DefId(0:1510 ~ http[2aa2]::uri::scheme::{impl#7}::fmt),
+    - Compilable Targets (1/3 ~ 33.33%):
+        * http_fuzz_18366243088040221429 [17.364032647s]
+  URAPI: DefId(0:521 ~ http[2aa2]::header::name::{impl#4}::as_ref),
+    - Compilable Targets (0/3 ~ 0.00%):
+  URAPI: DefId(0:913 ~ http[2aa2]::method::{impl#9}::fmt),
+    - Compilable Targets (2/4 ~ 50.00%):
+        * http_fuzz_3235805641849992968 [7.859514452s]
+        * http_fuzz_6032285134972933730 [32.321424629s]
+  URAPI: DefId(0:1102 ~ http[2aa2]::response::{impl#6}::header),
+    - Compilable Targets (0/2 ~ 0.00%):
+  URAPI: DefId(0:1508 ~ http[2aa2]::uri::scheme::{impl#6}::fmt),
+    - Compilable Targets (1/3 ~ 33.33%):
+        * http_fuzz_14824197313073056012 [26.853410659s]
+  URAPI: DefId(0:1242 ~ http[2aa2]::uri::authority::{impl#0}::as_str),
+    - Compilable Targets (1/10 ~ 10.00%):
+        * http_fuzz_4587301089858966162 [38.088710274s]
+  URAPI: DefId(0:1481 ~ http[2aa2]::uri::scheme::{impl#0}::from_shared),
+    - Compilable Targets (1/7 ~ 14.29%):
+        * http_fuzz_12242323719707843308 [40.976854049s]
+  URAPI: DefId(0:1611 ~ http[2aa2]::uri::{impl#16}::fmt),
+    - Compilable Targets (2/10 ~ 20.00%):
+        * http_fuzz_16466091616610995396 [36.234826562s]
+        * http_fuzz_7053807943265196826 [62.616387018s]
+  URAPI: DefId(0:1512 ~ http[2aa2]::uri::scheme::{impl#8}::as_ref),
+    - Compilable Targets (1/3 ~ 33.33%):
+        * http_fuzz_3228129819407560722 [15.210636494s]
+  URAPI: DefId(0:547 ~ http[2aa2]::header::name::{impl#14}::try_from),
+    - Compilable Targets (0/1 ~ 0.00%):
+  URAPI: DefId(0:1552 ~ http[2aa2]::uri::{impl#0}::path),
+    - Compilable Targets (2/10 ~ 20.00%):
+        * http_fuzz_4718405918461946120 [46.169304798s]
+        * http_fuzz_1158774899004040131 [68.926568018s]
+  URAPI: DefId(0:1099 ~ http[2aa2]::response::{impl#6}::status),
+    - Compilable Targets (0/2 ~ 0.00%):
+  URAPI: DefId(0:1315 ~ http[2aa2]::uri::authority::{impl#24}::fmt),
+    - Compilable Targets (1/10 ~ 10.00%):
+        * http_fuzz_6319297300227312792 [34.518237897s]
+  URAPI: DefId(0:1384 ~ http[2aa2]::uri::path::{impl#4}::from_str),
+    - Compilable Targets (1/1 ~ 100.00%):
+        * http_fuzz_12670908550996107266 [7.071053192s]
+  URAPI: DefId(0:168 ~ http[2aa2]::header::map::{impl#14}::size_hint),
+    - Compilable Targets (2/14 ~ 14.29%):
+        * http_fuzz_10845703073539803054 [22.923478232s]
+        * http_fuzz_3679055385779908116 [101.451617009s]
+  URAPI: DefId(0:551 ~ http[2aa2]::header::name::{impl#15}::try_from),
+    - Compilable Targets (0/1 ~ 0.00%):
+  URAPI: DefId(0:1024 ~ http[2aa2]::request::{impl#6}::uri),
+    - Compilable Targets (0/4 ~ 0.00%):
+  URAPI: DefId(0:1556 ~ http[2aa2]::uri::{impl#0}::authority_part),
+    - Compilable Targets (2/10 ~ 20.00%):
+        * http_fuzz_11898270140666596835 [40.747221951s]
+        * http_fuzz_1238477186139175317 [65.621645987s]
+  URAPI: DefId(0:80 ~ http[2aa2]::header::map::{impl#1}::insert),
+    - 0 targets generated.
+  URAPI: DefId(0:1390 ~ http[2aa2]::uri::path::{impl#7}::fmt),
+    - Compilable Targets (1/10 ~ 10.00%):
+        * http_fuzz_17846628004781716252 [32.2155068s]
+  URAPI: DefId(0:970 ~ http[2aa2]::request::{impl#0}::get),
+    - Compilable Targets (0/1 ~ 0.00%):
+  URAPI: DefId(0:1413 ~ http[2aa2]::uri::path::{impl#18}::partial_cmp),
+    - Compilable Targets (1/10 ~ 10.00%):
+        * http_fuzz_4521340454861179515 [35.858339516s]
+  URAPI: DefId(0:527 ~ http[2aa2]::header::name::{impl#7}::fmt),
+    - Compilable Targets (1/3 ~ 33.33%):
+        * http_fuzz_7913316134776891349 [14.620242815s]
+  URAPI: DefId(0:972 ~ http[2aa2]::request::{impl#0}::put),
+    - Compilable Targets (0/1 ~ 0.00%):
+  URAPI: DefId(0:1565 ~ http[2aa2]::uri::{impl#0}::query),
+    - Compilable Targets (2/10 ~ 20.00%):
+        * http_fuzz_8349097706544829828 [38.017171638s]
+        * http_fuzz_3300236606684811479 [66.259415906s]
+  URAPI: DefId(0:605 ~ http[2aa2]::header::name::{impl#33}::eq),
+    - 0 targets generated.
+  URAPI: DefId(0:1593 ~ http[2aa2]::uri::{impl#8}::from_str),
+    - Compilable Targets (1/1 ~ 100.00%):
+        * http_fuzz_7187794985416649500 [4.15605439s]
+  URAPI: DefId(0:1398 ~ http[2aa2]::uri::path::{impl#11}::eq),
+    - Compilable Targets (1/10 ~ 10.00%):
+        * http_fuzz_1859281628697759420 [35.712379002s]
+  URAPI: DefId(0:2077 ~ http[2aa2]::header::name::{impl#40}::hash),
+    - Compilable Targets (0/3 ~ 0.00%):
+  URAPI: DefId(0:982 ~ http[2aa2]::request::{impl#0}::connect),
+    - Compilable Targets (0/1 ~ 0.00%):
+  URAPI: DefId(0:1264 ~ http[2aa2]::uri::authority::{impl#10}::partial_cmp),
+    - Compilable Targets (0/50 ~ 0.00%):
+  URAPI: DefId(0:135 ~ http[2aa2]::header::map::{impl#7}::extend),
+    - Compilable Targets (0/7 ~ 0.00%):
+  URAPI: DefId(0:139 ~ http[2aa2]::header::map::{impl#8}::extend),
+    - Compilable Targets (0/7 ~ 0.00%):
+  URAPI: DefId(0:1366 ~ http[2aa2]::uri::path::{impl#0}::path),
+    - Compilable Targets (1/10 ~ 10.00%):
+        * http_fuzz_18435734320224903697 [42.974196342s]
+  URAPI: DefId(0:1250 ~ http[2aa2]::uri::authority::{impl#4}::eq),
+    - Compilable Targets (1/10 ~ 10.00%):
+        * http_fuzz_17023431905233352811 [39.861917608s]
+  URAPI: DefId(0:1262 ~ http[2aa2]::uri::authority::{impl#9}::eq),
+    - Compilable Targets (1/10 ~ 10.00%):
+        * http_fuzz_6436411825302629878 [40.325965573s]
+  URAPI: DefId(0:655 ~ http[2aa2]::header::value::{impl#4}::from_str),
+    - Compilable Targets (1/1 ~ 100.00%):
+        * http_fuzz_6203628399308923354 [6.246340812s]
+  URAPI: DefId(0:906 ~ http[2aa2]::method::{impl#6}::eq),
+    - Compilable Targets (2/4 ~ 50.00%):
+        * http_fuzz_15415556360323304216 [9.77613628s]
+        * http_fuzz_6525764951838371139 [35.04114878s]
+  URAPI: DefId(0:901 ~ http[2aa2]::method::{impl#4}::eq),
+    - Compilable Targets (2/4 ~ 50.00%):
+        * http_fuzz_16399531085333287683 [3.948345115s]
+        * http_fuzz_6570157045207561135 [31.06586724s]
+  URAPI: DefId(0:1238 ~ http[2aa2]::uri::authority::{impl#0}::port_part),
+    - Compilable Targets (1/10 ~ 10.00%):
+        * http_fuzz_5057409402382578937 [36.061416815s]
+  URAPI: DefId(0:1268 ~ http[2aa2]::uri::authority::{impl#11}::partial_cmp),
+    - Compilable Targets (1/10 ~ 10.00%):
+        * http_fuzz_17106681605573780526 [33.705093809s]
+  URAPI: DefId(0:1490 ~ http[2aa2]::uri::scheme::{impl#1}::try_from),
+    - Compilable Targets (0/7 ~ 0.00%):
+  URAPI: DefId(0:166 ~ http[2aa2]::header::map::{impl#14}::next),
+    - Compilable Targets (2/14 ~ 14.29%):
+        * http_fuzz_12436911627470900053 [25.999131622s]
+        * http_fuzz_5778682418469641964 [99.726396203s]
+  URAPI: DefId(0:1028 ~ http[2aa2]::request::{impl#6}::header),
+    - Compilable Targets (0/4 ~ 0.00%):
+  URAPI: DefId(0:508 ~ http[2aa2]::header::name::{impl#1}::from_bytes),
+    - Compilable Targets (1/1 ~ 100.00%):
+        * http_fuzz_7656265394869141949 [5.15416747s]
+  URAPI: DefId(0:893 ~ http[2aa2]::method::{impl#1}::as_ref),
+    - Compilable Targets (2/4 ~ 50.00%):
+        * http_fuzz_16019244860814824331 [5.428536787s]
+        * http_fuzz_17866507036069072020 [30.806196798s]
+  URAPI: DefId(0:1577 ~ http[2aa2]::uri::{impl#3}::try_from),
+    - Compilable Targets (0/1 ~ 0.00%):
+  URAPI: DefId(0:55 ~ http[2aa2]::header::map::{impl#1}::get_mut),
+    - 0 targets generated.
+  URAPI: DefId(0:215 ~ http[2aa2]::header::map::{impl#24}::next),
+    - Compilable Targets (2/7 ~ 28.57%):
+        * http_fuzz_8735637515824532975 [10.662662082s]
+        * http_fuzz_11880222604419679251 [35.781108708s]
+  URAPI: DefId(0:1401 ~ http[2aa2]::uri::path::{impl#12}::eq),
+    - Compilable Targets (1/10 ~ 10.00%):
+        * http_fuzz_16619793432602079741 [35.582727482s]
+  URAPI: DefId(0:1258 ~ http[2aa2]::uri::authority::{impl#7}::eq),
+    - Compilable Targets (1/10 ~ 10.00%):
+        * http_fuzz_8246734304335439568 [36.329973635s]
+  URAPI: DefId(0:1302 ~ http[2aa2]::uri::authority::{impl#19}::try_from),
+    - Compilable Targets (0/1 ~ 0.00%):
+  URAPI: DefId(0:1240 ~ http[2aa2]::uri::authority::{impl#0}::port_u16),
+    - Compilable Targets (1/10 ~ 10.00%):
+        * http_fuzz_40363024525559920 [35.151570343s]
+  URAPI: DefId(0:222 ~ http[2aa2]::header::map::{impl#25}::next),
+    - Compilable Targets (2/7 ~ 28.57%):
+        * http_fuzz_18008809587550052667 [12.960166901s]
+        * http_fuzz_973086697465143607 [38.782904701s]
+  URAPI: DefId(0:570 ~ http[2aa2]::header::name::{impl#22}::eq),
+    - Compilable Targets (1/3 ~ 33.33%):
+        * http_fuzz_14766583282048394601 [11.550740989s]
+  URAPI: DefId(0:1411 ~ http[2aa2]::uri::path::{impl#17}::partial_cmp),
+    - Compilable Targets (1/10 ~ 10.00%):
+        * http_fuzz_5888269053611618680 [34.100195964s]
+  URAPI: DefId(0:978 ~ http[2aa2]::request::{impl#0}::options),
+    - Compilable Targets (0/1 ~ 0.00%):
+  URAPI: DefId(0:1519 ~ http[2aa2]::uri::scheme::{impl#11}::eq),
+    - Compilable Targets (1/3 ~ 33.33%):
+        * http_fuzz_13719479809908049038 [14.469734712s]
+  URAPI: DefId(0:1388 ~ http[2aa2]::uri::path::{impl#6}::fmt),
+    - Compilable Targets (1/10 ~ 10.00%):
+        * http_fuzz_9152972650801237158 [32.589475024s]
+  URAPI: DefId(0:123 ~ http[2aa2]::header::map::{impl#5}::from_iter),
+    - Compilable Targets (0/1 ~ 0.00%):
+  URAPI: DefId(0:1563 ~ http[2aa2]::uri::{impl#0}::port_u16),
+    - Compilable Targets (2/10 ~ 20.00%):
+        * http_fuzz_13635737445614849947 [36.284988999s]
+        * http_fuzz_14825524961345026678 [60.960621036s]
+  URAPI: DefId(0:356 ~ http[2aa2]::header::map::{impl#48}::drop),
+    - 0 targets generated.
+  URAPI: DefId(0:890 ~ http[2aa2]::method::{impl#0}::as_str),
+    - Compilable Targets (2/4 ~ 50.00%):
+        * http_fuzz_9313810508040242478 [7.257949224s]
+        * http_fuzz_11745147009459481827 [30.983055419s]
+  URAPI: DefId(0:1277 ~ http[2aa2]::uri::authority::{impl#13}::partial_cmp),
+    - Compilable Targets (1/10 ~ 10.00%):
+        * http_fuzz_11742874337819524145 [36.889490754s]
+  URAPI: DefId(0:1372 ~ http[2aa2]::uri::path::{impl#1}::try_from),
+    - Compilable Targets (0/7 ~ 0.00%):
+  URAPI: DefId(0:984 ~ http[2aa2]::request::{impl#0}::patch),
+    - Compilable Targets (0/1 ~ 0.00%):
+  URAPI: DefId(0:1589 ~ http[2aa2]::uri::{impl#7}::from),
+    - Compilable Targets (2/10 ~ 20.00%):
+        * http_fuzz_15631107043502941126 [35.478720557s]
+        * http_fuzz_7973473813160187632 [61.396311425s]
+  URAPI: DefId(0:976 ~ http[2aa2]::request::{impl#0}::delete),
+    - Compilable Targets (0/1 ~ 0.00%):
+  URAPI: DefId(0:1021 ~ http[2aa2]::request::{impl#6}::method),
+    - Compilable Targets (0/4 ~ 0.00%):
+  URAPI: DefId(0:217 ~ http[2aa2]::header::map::{impl#24}::size_hint),
+    - Compilable Targets (2/7 ~ 28.57%):
+        * http_fuzz_3362688223832736006 [11.338341278s]
+        * http_fuzz_1106454443873418375 [35.873812637s]
+  URAPI: DefId(0:1596 ~ http[2aa2]::uri::{impl#9}::eq),
+    - Compilable Targets (3/50 ~ 6.00%):
+        * http_fuzz_11208984897607767141 [68.456408128s]
+        * http_fuzz_15307109247832545370 [133.111276885s]
+        * http_fuzz_16515137057031673393 [217.372921326s]
+  URAPI: DefId(0:633 ~ http[2aa2]::header::value::{impl#0}::from_str),
+    - Compilable Targets (1/1 ~ 100.00%):
+        * http_fuzz_10696051127598294110 [5.611344035s]
+  URAPI: DefId(0:1313 ~ http[2aa2]::uri::authority::{impl#23}::fmt),
+    - Compilable Targets (1/10 ~ 10.00%):
+        * http_fuzz_15295152230424021528 [34.791490732s]
+  URAPI: DefId(0:636 ~ http[2aa2]::header::value::{impl#0}::from_shared),
+    - Compilable Targets (1/7 ~ 14.29%):
+        * http_fuzz_7330926253302454986 [38.164111168s]
+  URAPI: DefId(0:1549 ~ http[2aa2]::uri::{impl#0}::from_static),
+    - Compilable Targets (1/1 ~ 100.00%):
+        * http_fuzz_9567171453705516227 [5.768224423s]
+  URAPI: DefId(0:1403 ~ http[2aa2]::uri::path::{impl#13}::eq),
+    - Compilable Targets (1/10 ~ 10.00%):
+        * http_fuzz_1713225404873377248 [38.613659027s]
+  URAPI: DefId(0:1233 ~ http[2aa2]::uri::authority::{impl#0}::from_static),
+    - Compilable Targets (1/1 ~ 100.00%):
+        * http_fuzz_4789202003682791667 [5.320041735s]
+  URAPI: DefId(0:76 ~ http[2aa2]::header::map::{impl#1}::entry),
+    - 0 targets generated.
+  URAPI: DefId(0:1514 ~ http[2aa2]::uri::scheme::{impl#9}::eq),
+    - Compilable Targets (1/9 ~ 11.11%):
+        * http_fuzz_14479845234129020174 [18.451810359s]
+  URAPI: DefId(0:1252 ~ http[2aa2]::uri::authority::{impl#5}::eq),
+    - Compilable Targets (1/10 ~ 10.00%):
+        * http_fuzz_15074099069018251397 [35.002267051s]
+  URAPI: DefId(0:1551 ~ http[2aa2]::uri::{impl#0}::path_and_query),
+    - Compilable Targets (2/10 ~ 20.00%):
+        * http_fuzz_9171944548155438291 [32.512505732s]
+        * http_fuzz_5348170453442676989 [57.325640242s]
+  URAPI: DefId(0:1453 ~ http[2aa2]::uri::port::{impl#5}::as_ref),
+    - Compilable Targets (3/20 ~ 15.00%):
+        * http_fuzz_4790000533184527890 [121.562567524s]
+        * http_fuzz_9903417257133658644 [151.959120736s]
+        * http_fuzz_7050588775533050597 [176.953997187s]
+  URAPI: DefId(0:911 ~ http[2aa2]::method::{impl#8}::fmt),
+    - Compilable Targets (2/4 ~ 50.00%):
+        * http_fuzz_11839655416389211671 [4.433345004s]
+        * http_fuzz_10868626254039110460 [28.559406589s]
+  URAPI: DefId(0:294 ~ http[2aa2]::header::map::{impl#38}::next_back),
+    - 0 targets generated.
+  URAPI: DefId(0:51 ~ http[2aa2]::header::map::{impl#1}::get),
+    - 0 targets generated.
+  URAPI: DefId(0:1362 ~ http[2aa2]::uri::path::{impl#0}::from_static),
+    - Compilable Targets (1/1 ~ 100.00%):
+        * http_fuzz_4687085553359983800 [6.458554791s]
+  URAPI: DefId(0:640 ~ http[2aa2]::header::value::{impl#0}::to_str),
+    - Compilable Targets (3/4 ~ 75.00%):
+        * http_fuzz_17173738146493079982 [9.823333626s]
+        * http_fuzz_8299760923155388932 [43.671619071s]
+        * http_fuzz_13998525481630866099 [71.769789913s]
+  URAPI: DefId(0:1633 ~ http[2aa2]::uri::{impl#27}::hash),
+    - Compilable Targets (0/10 ~ 0.00%):
+  URAPI: DefId(0:679 ~ http[2aa2]::header::value::{impl#11}::try_from),
+    - Compilable Targets (0/1 ~ 0.00%):
+  URAPI: DefId(0:523 ~ http[2aa2]::header::name::{impl#5}::borrow),
+    - Compilable Targets (0/3 ~ 0.00%):
+  URAPI: DefId(0:1580 ~ http[2aa2]::uri::{impl#4}::try_from),
+    - Compilable Targets (0/7 ~ 0.00%):
+  URAPI: DefId(0:1557 ~ http[2aa2]::uri::{impl#0}::authority),
+    - Compilable Targets (2/10 ~ 20.00%):
+        * http_fuzz_8597602722304047557 [37.309487521s]
+        * http_fuzz_15648517640570118995 [61.518858112s]
+  URAPI: DefId(0:1306 ~ http[2aa2]::uri::authority::{impl#20}::try_from),
+    - Compilable Targets (0/1 ~ 0.00%):
+  URAPI: DefId(0:1294 ~ http[2aa2]::uri::authority::{impl#17}::hash),
+    - Compilable Targets (0/10 ~ 0.00%):
+  URAPI: DefId(0:649 ~ http[2aa2]::header::value::{impl#2}::fmt),
+    - Compilable Targets (3/4 ~ 75.00%):
+        * http_fuzz_16338078492519129224 [5.592033707s]
+        * http_fuzz_4832421390391848337 [32.89339582s]
+        * http_fuzz_17876295723090201450 [66.635822964s]
+  URAPI: DefId(0:1613 ~ http[2aa2]::uri::{impl#17}::fmt),
+    - Compilable Targets (2/10 ~ 20.00%):
+        * http_fuzz_8740530422307429684 [37.679032306s]
+        * http_fuzz_1177707523392908290 [64.616763201s]
+  URAPI: DefId(0:1290 ~ http[2aa2]::uri::authority::{impl#16}::partial_cmp),
+    - Compilable Targets (1/10 ~ 10.00%):
+        * http_fuzz_8499247842573788925 [37.213177607s]
+  URAPI: DefId(0:1376 ~ http[2aa2]::uri::path::{impl#2}::try_from),
+    - Compilable Targets (0/1 ~ 0.00%):
+  URAPI: DefId(0:512 ~ http[2aa2]::header::name::{impl#1}::from_static),
+    - Compilable Targets (1/1 ~ 100.00%):
+        * http_fuzz_475501498384201604 [4.611361901s]
+  URAPI: DefId(0:1361 ~ http[2aa2]::uri::path::{impl#0}::from_shared),
+    - Compilable Targets (1/7 ~ 14.29%):
+        * http_fuzz_13178177553811246539 [39.093870896s]
+  URAPI: DefId(0:351 ~ http[2aa2]::header::map::{impl#47}::next),
+    - 0 targets generated.
+  URAPI: DefId(0:980 ~ http[2aa2]::request::{impl#0}::head),
+    - Compilable Targets (0/1 ~ 0.00%):
+  URAPI: DefId(0:1405 ~ http[2aa2]::uri::path::{impl#14}::eq),
+    - Compilable Targets (1/10 ~ 10.00%):
+        * http_fuzz_5872747425181599201 [30.871398916s]
+  URAPI: DefId(0:305 ~ http[2aa2]::header::map::{impl#41}::next),
+    - Compilable Targets (2/7 ~ 28.57%):
+        * http_fuzz_14993225086354872872 [18.695646927s]
+        * http_fuzz_17574371565434763584 [43.994115148s]
+  URAPI: DefId(0:974 ~ http[2aa2]::request::{impl#0}::post),
+    - Compilable Targets (0/1 ~ 0.00%):
+  URAPI: DefId(0:1558 ~ http[2aa2]::uri::{impl#0}::host),
+    - Compilable Targets (2/10 ~ 20.00%):
+        * http_fuzz_13443607865809820064 [51.950694228s]
+        * http_fuzz_621003471835280627 [78.219202021s]
+  URAPI: DefId(0:1730 ~ http[2aa2]::error::{impl#1}::fmt),
+    - 0 targets generated.
+  URAPI: DefId(0:1407 ~ http[2aa2]::uri::path::{impl#15}::eq),
+    - Compilable Targets (1/10 ~ 10.00%):
+        * http_fuzz_12869261656678782313 [35.795584404s]
+  URAPI: DefId(0:60 ~ http[2aa2]::header::map::{impl#1}::contains_key),
+    - 0 targets generated.
+  URAPI: DefId(0:572 ~ http[2aa2]::header::name::{impl#23}::eq),
+    - Compilable Targets (1/3 ~ 33.33%):
+        * http_fuzz_1033577502195283290 [18.745814057s]
+  URAPI: DefId(0:158 ~ http[2aa2]::header::map::{impl#13}::index),
+    - 0 targets generated.
+  URAPI: DefId(0:87 ~ http[2aa2]::header::map::{impl#1}::append),
+    - 0 targets generated.
+  URAPI: DefId(0:228 ~ http[2aa2]::header::map::{impl#26}::drop),
+    - Compilable Targets (2/7 ~ 28.57%):
+        * http_fuzz_12225452624617022263 [14.749345229s]
+        * http_fuzz_10724146807323519118 [43.865088039s]
+  URAPI: DefId(0:208 ~ http[2aa2]::header::map::{impl#23}::next),
+    - Compilable Targets (2/7 ~ 28.57%):
+        * http_fuzz_630690239127171415 [12.732937345s]
+        * http_fuzz_15239440661228136357 [40.438061116s]
+  URAPI: DefId(0:1561 ~ http[2aa2]::uri::{impl#0}::port_part),
+    - Compilable Targets (2/10 ~ 20.00%):
+        * http_fuzz_17801382227913130406 [52.485444543s]
+        * http_fuzz_7354786065851376461 [79.226897433s]
+  URAPI: DefId(0:289 ~ http[2aa2]::header::map::{impl#37}::next),
+    - 0 targets generated.
+  URAPI: DefId(0:1298 ~ http[2aa2]::uri::authority::{impl#18}::try_from),
+    - Compilable Targets (0/7 ~ 0.00%):
+  URAPI: DefId(0:1423 ~ http[2aa2]::uri::path::{impl#22}::partial_cmp),
+    - Compilable Targets (1/10 ~ 10.00%):
+        * http_fuzz_13198466464091852098 [36.030105865s]
+  URAPI: DefId(0:903 ~ http[2aa2]::method::{impl#5}::eq),
+    - Compilable Targets (2/4 ~ 50.00%):
+        * http_fuzz_5315526172046900052 [7.057968636s]
+        * http_fuzz_3046194015192851546 [30.912425821s]
+  URAPI: DefId(0:525 ~ http[2aa2]::header::name::{impl#6}::fmt),
+    - Compilable Targets (1/3 ~ 33.33%):
+        * http_fuzz_11693349340932289670 [18.593679565s]
+  URAPI: DefId(0:1247 ~ http[2aa2]::uri::authority::{impl#2}::eq),
+    - Compilable Targets (0/50 ~ 0.00%):
+  URAPI: DefId(0:511 ~ http[2aa2]::header::name::{impl#1}::from_lowercase),
+    - Compilable Targets (1/1 ~ 100.00%):
+        * http_fuzz_11139723047021207997 [5.638759396s]
+  URAPI: DefId(0:986 ~ http[2aa2]::request::{impl#0}::trace),
+    - Compilable Targets (0/1 ~ 0.00%):
+  URAPI: DefId(0:749 ~ http[2aa2]::header::value::{impl#41}::eq),
+    - Compilable Targets (3/4 ~ 75.00%):
+        * http_fuzz_10755525721000006111 [4.603383898s]
+        * http_fuzz_17065578866853623403 [31.508552053s]
+        * http_fuzz_13170130373525769799 [63.750634226s]
+  URAPI: DefId(0:1494 ~ http[2aa2]::uri::scheme::{impl#2}::try_from),
+    - Compilable Targets (0/1 ~ 0.00%):
+  URAPI: DefId(0:1237 ~ http[2aa2]::uri::authority::{impl#0}::port),
+    - Compilable Targets (1/10 ~ 10.00%):
+        * http_fuzz_13726499781719733168 [51.760926649s]
+  URAPI: DefId(0:672 ~ http[2aa2]::header::value::{impl#9}::try_from),
+    - Compilable Targets (0/1 ~ 0.00%):
+  URAPI: DefId(0:1416 ~ http[2aa2]::uri::path::{impl#19}::partial_cmp),
+    - Compilable Targets (1/10 ~ 10.00%):
+        * http_fuzz_17143784170300066476 [35.698066732s]
+  URAPI: DefId(0:1255 ~ http[2aa2]::uri::authority::{impl#6}::eq),
+    - Compilable Targets (1/10 ~ 10.00%):
+        * http_fuzz_13451667056177189333 [45.091222286s]
+  URAPI: DefId(0:1409 ~ http[2aa2]::uri::path::{impl#16}::partial_cmp),
+    - Compilable Targets (0/50 ~ 0.00%):
+  URAPI: DefId(0:558 ~ http[2aa2]::header::name::{impl#17}::try_from),
+    - Compilable Targets (0/7 ~ 0.00%):
+  URAPI: DefId(0:1245 ~ http[2aa2]::uri::authority::{impl#1}::as_ref),
+    - Compilable Targets (1/10 ~ 10.00%):
+        * http_fuzz_4203523801910715689 [31.356913886s]
+  URAPI: DefId(0:575 ~ http[2aa2]::header::name::{impl#24}::eq),
+    - Compilable Targets (1/3 ~ 33.33%):
+        * http_fuzz_15271004787838234199 [10.757847371s]
+  URAPI: DefId(0:746 ~ http[2aa2]::header::value::{impl#40}::partial_cmp),
+    - Compilable Targets (0/4 ~ 0.00%):
+  URAPI: DefId(0:210 ~ http[2aa2]::header::map::{impl#23}::size_hint),
+    - Compilable Targets (2/7 ~ 28.57%):
+        * http_fuzz_11571823832979613380 [11.407097911s]
+        * http_fuzz_9326497203883131102 [36.495905449s]
+  URAPI: DefId(0:1272 ~ http[2aa2]::uri::authority::{impl#12}::partial_cmp),
+    - Compilable Targets (1/10 ~ 10.00%):
+        * http_fuzz_17499758452050100868 [31.207885349s]
+  URAPI: DefId(0:1484 ~ http[2aa2]::uri::scheme::{impl#0}::as_str),
+    - Compilable Targets (1/3 ~ 33.33%):
+        * http_fuzz_2748327998780074185 [15.368580628s]
+  URAPI: DefId(0:578 ~ http[2aa2]::header::name::{impl#25}::eq),
+    - Compilable Targets (1/3 ~ 33.33%):
+        * http_fuzz_17499511304804928272 [9.797804126s]
+  URAPI: DefId(0:187 ~ http[2aa2]::header::map::{impl#18}::size_hint),
+    - Compilable Targets (2/14 ~ 14.29%):
+        * http_fuzz_18286377120929404909 [23.6468231s]
+        * http_fuzz_3393048480409973693 [90.501398687s]
+  URAPI: DefId(0:1598 ~ http[2aa2]::uri::{impl#10}::eq),
+    - Compilable Targets (2/10 ~ 20.00%):
+        * http_fuzz_12401010692331052340 [33.695325094s]
+        * http_fuzz_9481985527633562812 [58.168939406s]
+  URAPI: DefId(0:224 ~ http[2aa2]::header::map::{impl#25}::size_hint),
+    - Compilable Targets (2/7 ~ 28.57%):
+        * http_fuzz_15668099243118148896 [11.112018606s]
+        * http_fuzz_17745778999194145371 [37.445465147s]
+  URAPI: DefId(0:909 ~ http[2aa2]::method::{impl#7}::eq),
+    - Compilable Targets (2/4 ~ 50.00%):
+        * http_fuzz_14489106343100526875 [3.777748127s]
+        * http_fuzz_4750753213258524406 [30.267690037s]
+  URAPI: DefId(0:1368 ~ http[2aa2]::uri::path::{impl#0}::as_str),
+    - Compilable Targets (1/10 ~ 10.00%):
+        * http_fuzz_4081121332318857094 [34.978536778s]
+  URAPI: DefId(0:1282 ~ http[2aa2]::uri::authority::{impl#14}::partial_cmp),
+    - Compilable Targets (1/10 ~ 10.00%):
+        * http_fuzz_10079874031940525441 [32.874099325s]
+  URAPI: DefId(0:600 ~ http[2aa2]::header::name::{impl#32}::from),
+    - 0 targets generated.
+  URAPI: DefId(0:1547 ~ http[2aa2]::uri::{impl#0}::from_shared),
+    - Compilable Targets (1/7 ~ 14.29%):
+        * http_fuzz_5427884943238913278 [43.014011315s]
+  URAPI: DefId(0:1502 ~ http[2aa2]::uri::scheme::{impl#4}::from_str),
+    - Compilable Targets (1/1 ~ 100.00%):
+        * http_fuzz_9950667139307748190 [5.459237293s]
+  URAPI: DefId(0:676 ~ http[2aa2]::header::value::{impl#10}::try_from),
+    - Compilable Targets (0/1 ~ 0.00%):
+  URAPI: DefId(0:1554 ~ http[2aa2]::uri::{impl#0}::scheme),
+    - Compilable Targets (2/10 ~ 20.00%):
+        * http_fuzz_14845026654970402595 [36.60884608s]
+        * http_fuzz_17296426393229498232 [61.393684373s]
+  URAPI: DefId(0:516 ~ http[2aa2]::header::name::{impl#2}::from_str),
+    - Compilable Targets (1/1 ~ 100.00%):
+        * http_fuzz_10050700128840660663 [7.339764368s]
+  URAPI: DefId(0:513 ~ http[2aa2]::header::name::{impl#1}::as_str),
+    - Compilable Targets (1/3 ~ 33.33%):
+        * http_fuzz_9694207748125720114 [11.01544238s]
+  URAPI: DefId(0:1367 ~ http[2aa2]::uri::path::{impl#0}::query),
+    - Compilable Targets (1/10 ~ 10.00%):
+        * http_fuzz_8148560537830570074 [38.603584093s]
+  URAPI: DefId(0:742 ~ http[2aa2]::header::value::{impl#39}::eq),
+    - Compilable Targets (0/4 ~ 0.00%):
+  URAPI: DefId(0:1555 ~ http[2aa2]::uri::{impl#0}::scheme_str),
+    - Compilable Targets (2/10 ~ 20.00%):
+        * http_fuzz_12213704392786597729 [40.286788658s]
+        * http_fuzz_7886463979897143029 [68.521226955s]
+  URAPI: DefId(0:635 ~ http[2aa2]::header::value::{impl#0}::from_bytes),
+    - Compilable Targets (1/1 ~ 100.00%):
+        * http_fuzz_2772517215479363621 [5.145287022s]
+  URAPI: DefId(0:1395 ~ http[2aa2]::uri::path::{impl#10}::eq),
+    - Compilable Targets (1/10 ~ 10.00%):
+        * http_fuzz_18346213725741674173 [35.307236826s]
+  URAPI: DefId(0:1286 ~ http[2aa2]::uri::authority::{impl#15}::partial_cmp),
+    - Compilable Targets (1/10 ~ 10.00%):
+        * http_fuzz_17933545544843676769 [37.410762031s]
+  URAPI: DefId(0:1560 ~ http[2aa2]::uri::{impl#0}::port),
+    - Compilable Targets (2/10 ~ 20.00%):
+        * http_fuzz_14760610607845670744 [32.993915919s]
+        * http_fuzz_9308993818000851917 [59.319344342s]
+  URAPI: DefId(0:1523 ~ http[2aa2]::uri::scheme::{impl#13}::hash),
+    - Compilable Targets (0/3 ~ 0.00%):
+  URAPI: DefId(0:1236 ~ http[2aa2]::uri::authority::{impl#0}::host),
+    - Compilable Targets (1/10 ~ 10.00%):
+        * http_fuzz_12026329167844416003 [37.011658994s]
+  URAPI: DefId(0:1441 ~ http[2aa2]::uri::port::{impl#1}::as_str),
+    - Compilable Targets (3/20 ~ 15.00%):
+        * http_fuzz_4443306390242441807 [104.484300808s]
+        * http_fuzz_15965691717956998715 [134.479052485s]
+        * http_fuzz_9153594466426689341 [158.967380848s]
+  URAPI: DefId(0:94 ~ http[2aa2]::header::map::{impl#1}::remove),
+    - 0 targets generated.
+  URAPI: DefId(0:682 ~ http[2aa2]::header::value::{impl#12}::try_from),
+    - Compilable Targets (0/7 ~ 0.00%):
+  URAPI: DefId(0:1260 ~ http[2aa2]::uri::authority::{impl#8}::eq),
+    - Compilable Targets (1/10 ~ 10.00%):
+        * http_fuzz_15125643739086163309 [33.786033909s]
+  URAPI: DefId(0:1381 ~ http[2aa2]::uri::path::{impl#3}::try_from),
+    - Compilable Targets (0/1 ~ 0.00%):
+  URAPI: DefId(0:1309 ~ http[2aa2]::uri::authority::{impl#21}::from_str),
+    - Compilable Targets (1/1 ~ 100.00%):
+        * http_fuzz_6636479228492883297 [4.597407679s]
+  URAPI: DefId(0:57 ~ http[2aa2]::header::map::{impl#1}::get_all),
+    - 0 targets generated.
+  URAPI: DefId(0:310 ~ http[2aa2]::header::map::{impl#42}::drop),
+    - Compilable Targets (2/7 ~ 28.57%):
+        * http_fuzz_15191944480411141361 [10.67711574s]
+        * http_fuzz_10708530162954877899 [35.54655106s]
+  URAPI: DefId(0:185 ~ http[2aa2]::header::map::{impl#18}::next),
+    - Compilable Targets (2/14 ~ 14.29%):
+        * http_fuzz_12850779458531612340 [22.543466805s]
+        * http_fuzz_1053656957018743003 [95.535269554s]
+  URAPI: DefId(0:730 ~ http[2aa2]::header::value::{impl#35}::eq),
+    - Compilable Targets (3/4 ~ 75.00%):
+        * http_fuzz_10661177476743654774 [3.588455797s]
+        * http_fuzz_9562790850080137009 [28.814760376s]
+        * http_fuzz_8094354155944632543 [61.132131772s]
+------------------------------------------------------------------------------------------------------------------------------------

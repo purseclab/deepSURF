@@ -1,0 +1,3 @@
+through/ through {'tests_rug_2::test_through_and': 'tests_rug_2__test_through_and'}
+timeout or err tests_rug_2::test_through_and
+through/ done

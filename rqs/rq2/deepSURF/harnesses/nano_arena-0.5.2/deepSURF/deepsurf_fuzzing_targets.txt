@@ -1,0 +1,9 @@
+deepSURF: Generated Targets to be Fuzzed
+------------------------------------------------------------------------------------------------------------------------------------
+  StableURAPI: split_at::/home/cdc/SURF/deepSURF-big-experiment-harnesses/nano_arena-0.5.2/src/lib.rs::223,
+    - URAPI: DefId(0:120 ~ nano_arena[bc51]::{impl#12}::split_at),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * nano_arena_fuzz_10170472187941440466_deepseek-r1_turn2
+------------------------------------------------------------------------------------------------------------------------------------

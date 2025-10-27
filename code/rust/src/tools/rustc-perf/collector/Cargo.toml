@@ -1,0 +1,56 @@
+[package]
+authors = ["The Rust Compiler Team"]
+name = "collector"
+version = "0.1.0"
+edition = "2021"
+description = "Collects Rust performance data"
+
+[dependencies]
+clap = { version = "4.1", features = ["derive"] }
+env_logger = "0.10"
+anyhow = "1"
+thiserror = "1"
+log = "0.4"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+tempfile = "3"
+libc = "0.2"
+chrono = { version = "0.4", features = ["serde"] }
+lazy_static = "1"
+semver = "1.0"
+reqwest = { version = "0.11", features = ["json"] }
+xz2 = "0.1.3"
+tar = "0.4"
+tokio = { version = "1.6", features = ["rt", "process"] }
+database = { path = "../database" }
+intern = { path = "../intern" }
+futures = "0.3.5"
+num_cpus = "1.13"
+jobserver = "0.1.21"
+snap = "1"
+filetime = "0.2.14"
+walkdir = "2"
+flate2 = { version = "1.0.22", features = ["rust_backend"] }
+rayon = "1.5.2"
+cargo_metadata = "0.15.0"
+thousands = "0.2.0"
+rustc-demangle = { version = "0.1", features = ["std"] }
+similar = "2.2"
+console = "0.15"
+object = "0.32.1"
+tabled = { version = "0.14.0", features = ["ansi-str"] }
+humansize = "2.1.3"
+regex = "1.7.1"
+analyzeme = "12.0.0"
+
+benchlib = { path = "benchlib" }
+
+[target.'cfg(windows)'.dependencies]
+miow = "0.3"
+windows-sys = { version = "0.45.0", features = ["Win32_Foundation"] }
+
+[features]
+# Enable more precise Cachegrind profiles for runtime benchmarks.
+# Requires a recent Valgrind to be installed.
+# Pass DEP_VALGRIND=<path-to-valgrind>/include environment variable when building.
+precise-cachegrind = []

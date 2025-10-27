@@ -1,0 +1,82 @@
+
+Total Stats:
+------------------------------------------------------------------------------------------------------------------------------------
+* Total URAPI Coverage: 47/57 (82.46%).
+* LLM URAPI Coverage: 47/57 (82.46%).
+* Total Targets (including targets directly imported from SURF): 50 in [30836.054378854s].
+* URAPIs w/ Custom Functionality: 54/57 (94.74%).
+------------------------------------------------------------------------------------------------------------------------------------
+
+Redundant-Targets:
+------------------------------------------------------------------------------------------------------------------------------------
+  * stackvector_fuzz_9103181089637150195_deepseek-r1_turn4
+  * stackvector_fuzz_16513364586304621835_deepseek-r1_turn2
+  * stackvector_fuzz_1346266121783157790_deepseek-r1_turn3
+  * stackvector_fuzz_14285429922058602946_deepseek-r1_turn3
+  * stackvector_fuzz_6840235604862057545_deepseek-r1_turn1
+  * stackvector_fuzz_2829301437877528848_deepseek-r1_turn3
+------------------------------------------------------------------------------------------------------------------------------------
+
+Targeted-URAPI-Miss-Targets:
+------------------------------------------------------------------------------------------------------------------------------------
+  * stackvector_fuzz_17818598323662664873_deepseek-r1_turn4
+  * stackvector_fuzz_7072258762224172952_deepseek-r1_turn2
+  * stackvector_fuzz_9103181089637150195_deepseek-r1_turn4
+  * stackvector_fuzz_17213920727556802103_deepseek-r1_turn5
+  * stackvector_fuzz_13522714354933573887_deepseek-r1_turn2
+  * stackvector_fuzz_16513364586304621835_deepseek-r1_turn2
+  * stackvector_fuzz_1346266121783157790_deepseek-r1_turn3
+  * stackvector_fuzz_14285429922058602946_deepseek-r1_turn3
+  * stackvector_fuzz_6840235604862057545_deepseek-r1_turn1
+  * stackvector_fuzz_2829301437877528848_deepseek-r1_turn3
+------------------------------------------------------------------------------------------------------------------------------------
+
+Targets For Fuzzing:
+  - [CondSkip]: Set of Fuzzing Targets = Total-Targets - Redundant-Targets
+------------------------------------------------------------------------------------------------------------------------------------
+Count: 44
+  * stackvector_fuzz_3602557064392514011_deepseek-r1_turn6
+  * stackvector_fuzz_3200656313481632611_deepseek-r1_turn2
+  * stackvector_fuzz_17818598323662664873_deepseek-r1_turn4
+  * stackvector_fuzz_16536871174633610602_deepseek-r1_turn3
+  * stackvector_fuzz_13522714354933573887_deepseek-r1_turn2
+  * stackvector_fuzz_16327940949246405587_deepseek-r1_turn3
+  * stackvector_fuzz_6219935527035397465_deepseek-r1_turn5
+  * stackvector_fuzz_4877859684024786830_deepseek-r1_turn2
+  * stackvector_fuzz_12301739073432993420_deepseek-r1_turn2
+  * stackvector_fuzz_2426776491125694_deepseek-r1_turn4
+  * stackvector_fuzz_1133352418763092150_deepseek-r1_turn3
+  * stackvector_fuzz_8720342702680450058_deepseek-r1_turn1
+  * stackvector_fuzz_17753621277411082194_deepseek-r1_turn2
+  * stackvector_fuzz_6387818281162796865_deepseek-r1_turn4
+  * stackvector_fuzz_5716750430718252371_deepseek-r1_turn5
+  * stackvector_fuzz_17213920727556802103_deepseek-r1_turn5
+  * stackvector_fuzz_12896298206679703210_deepseek-r1_turn2
+  * stackvector_fuzz_10105978568407124955_deepseek-r1_turn4
+  * stackvector_fuzz_5361011160446671523_deepseek-r1_turn2
+  * stackvector_fuzz_17878145677878894249_deepseek-r1_turn2
+  * stackvector_fuzz_7072258762224172952_deepseek-r1_turn2
+  * stackvector_fuzz_8293999904045853434_deepseek-r1_turn3
+  * stackvector_fuzz_8765947824577245476_deepseek-r1_turn3
+  * stackvector_fuzz_5379527204253546599_deepseek-r1_turn2
+  * stackvector_fuzz_3887645148066974827_deepseek-r1_turn2
+  * stackvector_fuzz_5490813715254529195_deepseek-r1_turn2
+  * stackvector_fuzz_5929116001263052728_deepseek-r1_turn2
+  * stackvector_fuzz_386141492030817416_deepseek-r1_turn2
+  * stackvector_fuzz_6225612722303663924_deepseek-r1_turn2
+  * stackvector_fuzz_12454574599783436662_deepseek-r1_turn4
+  * stackvector_fuzz_13737676511509076796_deepseek-r1_turn2
+  * stackvector_fuzz_4601805490335329973_deepseek-r1_turn4
+  * stackvector_fuzz_18272984422029028442_deepseek-r1_turn4
+  * stackvector_fuzz_12717357009445087991_deepseek-r1_turn2
+  * stackvector_fuzz_14919117556697046749_deepseek-r1_turn2
+  * stackvector_fuzz_10439201340568467309_deepseek-r1_turn2
+  * stackvector_fuzz_12170256754748610967_deepseek-r1_turn2
+  * stackvector_fuzz_5509731358067848097_deepseek-r1_turn4
+  * stackvector_fuzz_18185331441861852835_deepseek-r1_turn2
+  * stackvector_fuzz_13743587477177064166_deepseek-r1_turn3
+  * stackvector_fuzz_11466254899731805805_deepseek-r1_turn1
+  * stackvector_fuzz_207653652943302108_deepseek-r1_turn2
+  * stackvector_fuzz_15387621949502429022_deepseek-r1_turn4
+  * stackvector_fuzz_16072014814531661224_deepseek-r1_turn4
+------------------------------------------------------------------------------------------------------------------------------------

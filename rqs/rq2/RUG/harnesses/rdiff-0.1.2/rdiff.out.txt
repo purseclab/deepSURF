@@ -1,0 +1,556 @@
+-----------------
+src/string_diff.rs string_diff::find_diff
+deps:{"string_diff::find_diff":{"S":["std::marker::Sized","string_diff::OperationScore"]}}
+candidates:{"string_diff::find_diff":{"S":["string_diff::EditDistance"]}}
+let mut p0 = "sample"; // None+&str
+let mut p1 = "sample"; // None+&str
+let mut p2 = & MaybeUninit::uninit().assume_init(); // S
++string_diff::find_diff(&p0, &p1, p2);
++crate::string_diff::find_diff(&p0, &p1, p2);
++crate::string_diff::find_diff(&p0, &p1, p2);
+-----------------
+src/string_diff.rs string_diff::hirschberg
+deps:{"string_diff::hirschberg":{"S":["std::marker::Sized","string_diff::OperationScore"]}}
+candidates:{"string_diff::hirschberg":{"S":["string_diff::EditDistance"]}}
+let mut p0 = "sample"; // None+&str
+let mut p1 = "sample"; // None+&str
+let mut p2 = "sample"; // None+&str
+let mut p3 = "sample"; // None+&str
+let mut p4 = & MaybeUninit::uninit().assume_init(); // S
+let mut p5 = &mut  MaybeUninit::uninit().assume_init(); // Diff
+let mut p6 = &mut 0usize; // None+usize
+let mut p7 = &mut 0usize; // None+usize
++string_diff::hirschberg(&p0, &p1, &p2, &p3, p4, p5, p6, p7);
++crate::string_diff::hirschberg(&p0, &p1, &p2, &p3, p4, p5, p6, p7);
++crate::string_diff::hirschberg(&p0, &p1, &p2, &p3, p4, p5, p6, p7);
+-----------------
+src/string_diff.rs string_diff::nw_score
+deps:{"string_diff::nw_score":{"S":["string_diff::OperationScore","std::marker::Sized"]}}
+candidates:{"string_diff::nw_score":{"S":["string_diff::EditDistance"]}}
+let mut p0 = "sample"; // None+&str
+let mut p1 = "sample"; // None+&str
+let mut p2 = & MaybeUninit::uninit().assume_init(); // S
++string_diff::nw_score(&p0, &p1, p2);
++crate::string_diff::nw_score(&p0, &p1, p2);
++crate::string_diff::nw_score(&p0, &p1, p2);
+-----------------
+src/string_diff.rs string_diff::OperationScore::insert_score
+deps:{"string_diff::OperationScore::insert_score":{"Self":["string_diff::OperationScore"]}}
+candidates:{"string_diff::OperationScore::insert_score":{"Self":["string_diff::EditDistance"]}}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // Self
+let mut p1 = 'a'; // None+char
++p0.insert_score(p1);
++string_diff::OperationScore::insert_score(p0, p1);
++crate::string_diff::OperationScore::insert_score(p0, p1);
++crate::string_diff::OperationScore::insert_score(p0, p1);
+-----------------
+src/string_diff.rs string_diff::OperationScore::delete_score
+deps:{"string_diff::OperationScore::delete_score":{"Self":["string_diff::OperationScore"]}}
+candidates:{"string_diff::OperationScore::delete_score":{"Self":["string_diff::EditDistance"]}}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // Self
+let mut p1 = 'a'; // None+char
++p0.delete_score(p1);
++string_diff::OperationScore::delete_score(p0, p1);
++crate::string_diff::OperationScore::delete_score(p0, p1);
++crate::string_diff::OperationScore::delete_score(p0, p1);
+-----------------
+src/string_diff.rs string_diff::OperationScore::substitution_score
+deps:{"string_diff::OperationScore::substitution_score":{"Self":["string_diff::OperationScore"]}}
+candidates:{"string_diff::OperationScore::substitution_score":{"Self":["string_diff::EditDistance"]}}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // Self
+let mut p1 = 'a'; // None+char
+let mut p2 = 'a'; // None+char
++p0.substitution_score(p1, p2);
++string_diff::OperationScore::substitution_score(p0, p1, p2);
++crate::string_diff::OperationScore::substitution_score(p0, p1, p2);
++crate::string_diff::OperationScore::substitution_score(p0, p1, p2);
+-----------------
+src/string_diff.rs string_diff::OperationScore::match_score
+deps:{"string_diff::OperationScore::match_score":{"Self":["string_diff::OperationScore"]}}
+candidates:{"string_diff::OperationScore::match_score":{"Self":["string_diff::EditDistance"]}}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // Self
+let mut p1 = 'a'; // None+char
++p0.match_score(p1);
++string_diff::OperationScore::match_score(p0, p1);
++crate::string_diff::OperationScore::match_score(p0, p1);
++crate::string_diff::OperationScore::match_score(p0, p1);
+-----------------
+src/window.rs window::<impl Window<R>>::new
+deps:{"std::io::impls::<impl std::io::Read for &mut R>":{},"window::<impl Window<R>>::new":{"R":["std::marker::Sized","std::io::Read"]}}
+candidates:{"std::io::impls::<impl std::io::Read for &mut R>":{},"window::<impl Window<R>>::new":{"R":["&'a std::sys::unix::fd::FileDesc","std::io::Take<T>","std::os::unix::net::UnixStream","std::boxed::Box<R>","std::io::stdio::StdinRaw","&'a std::os::unix::net::UnixStream","std::process::ChildStderr","std::io::Empty","std::io::Cursor<T>","std::io::Repeat","&std::fs::File","std::io::impls::<impl std::io::Read for &mut R>","std::fs::File","std::sys::unix::stdio::Stdin","std::collections::VecDeque<u8, A>","std::io::Stdin","&std::net::TcpStream","std::io::BufReader<R>","std::io::StdinLock<'_>","std::process::ChildStdout","std::net::TcpStream","std::io::Chain<T, U>"]}}
+let mut p0 = MaybeUninit::uninit().assume_init(); // R
+let mut p1 = 0usize; // None+usize
++window::<impl Window<R>>::new(p0, p1);
++crate::window::<impl Window<R>>::new(p0, p1);
++<Window<R>>::new(p0, p1);
+-----------------
+src/window.rs window::<impl Window<R>>::advance
+deps:{"std::io::impls::<impl std::io::Read for &mut R>":{},"window::<impl Window<R>>::advance":{"R":["std::marker::Sized","std::io::Read"]}}
+candidates:{"std::io::impls::<impl std::io::Read for &mut R>":{},"window::<impl Window<R>>::advance":{"R":["std::process::ChildStderr","&std::net::TcpStream","std::io::Repeat","std::io::stdio::StdinRaw","std::io::BufReader<R>","std::net::TcpStream","std::io::Take<T>","std::io::StdinLock<'_>","std::process::ChildStdout","std::collections::VecDeque<u8, A>","std::sys::unix::stdio::Stdin","std::fs::File","&'a std::sys::unix::fd::FileDesc","std::io::impls::<impl std::io::Read for &mut R>","std::boxed::Box<R>","&'a std::os::unix::net::UnixStream","&std::fs::File","std::os::unix::net::UnixStream","std::io::Cursor<T>","std::io::Stdin","std::io::Empty","std::io::Chain<T, U>"]}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // Window<R>
++p0.advance();
++window::<impl Window<R>>::advance(p0);
++crate::window::<impl Window<R>>::advance(p0);
++<Window<R>>::advance(p0);
+-----------------
+src/window.rs window::<impl Window<R>>::get_head
+deps:{"std::io::impls::<impl std::io::Read for &mut R>":{},"window::<impl Window<R>>::get_head":{"R":["std::marker::Sized","std::io::Read"]}}
+candidates:{"std::io::impls::<impl std::io::Read for &mut R>":{},"window::<impl Window<R>>::get_head":{"R":["std::io::Stdin","&std::net::TcpStream","std::io::Repeat","std::io::stdio::StdinRaw","std::io::Cursor<T>","std::process::ChildStdout","std::process::ChildStderr","std::io::StdinLock<'_>","&'a std::sys::unix::fd::FileDesc","std::io::impls::<impl std::io::Read for &mut R>","std::io::Take<T>","std::net::TcpStream","std::collections::VecDeque<u8, A>","&'a std::os::unix::net::UnixStream","std::io::BufReader<R>","std::io::Chain<T, U>","std::fs::File","&std::fs::File","std::sys::unix::stdio::Stdin","std::io::Empty","std::os::unix::net::UnixStream","std::boxed::Box<R>"]}}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // Window<R>
++p0.get_head();
++window::<impl Window<R>>::get_head(p0);
++crate::window::<impl Window<R>>::get_head(p0);
++<Window<R>>::get_head(p0);
+-----------------
+src/window.rs window::<impl Window<R>>::load_next_block
+deps:{"std::io::impls::<impl std::io::Read for &mut R>":{},"window::<impl Window<R>>::load_next_block":{"R":["std::marker::Sized","std::io::Read"]}}
+candidates:{"std::io::impls::<impl std::io::Read for &mut R>":{},"window::<impl Window<R>>::load_next_block":{"R":["std::sys::unix::stdio::Stdin","std::io::Cursor<T>","std::io::BufReader<R>","std::io::impls::<impl std::io::Read for &mut R>","&std::net::TcpStream","std::io::Chain<T, U>","std::io::Repeat","std::io::Empty","std::net::TcpStream","std::process::ChildStderr","std::process::ChildStdout","&'a std::os::unix::net::UnixStream","std::os::unix::net::UnixStream","&std::fs::File","std::io::StdinLock<'_>","std::collections::VecDeque<u8, A>","std::boxed::Box<R>","std::io::Take<T>","&'a std::sys::unix::fd::FileDesc","std::fs::File","std::io::Stdin","std::io::stdio::StdinRaw"]}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // Window<R>
++p0.load_next_block();
++window::<impl Window<R>>::load_next_block(p0);
++crate::window::<impl Window<R>>::load_next_block(p0);
++<Window<R>>::load_next_block(p0);
+-----------------
+src/window.rs window::<impl Window<R>>::frame
+deps:{"std::io::impls::<impl std::io::Read for &mut R>":{},"window::<impl Window<R>>::frame":{"R":["std::marker::Sized","std::io::Read"]}}
+candidates:{"std::io::impls::<impl std::io::Read for &mut R>":{},"window::<impl Window<R>>::frame":{"R":["std::io::Stdin","std::process::ChildStderr","&std::fs::File","&'a std::sys::unix::fd::FileDesc","std::io::Empty","std::boxed::Box<R>","std::os::unix::net::UnixStream","std::io::BufReader<R>","std::io::Chain<T, U>","&'a std::os::unix::net::UnixStream","std::process::ChildStdout","std::io::stdio::StdinRaw","std::io::impls::<impl std::io::Read for &mut R>","std::io::Cursor<T>","std::fs::File","&std::net::TcpStream","std::io::Take<T>","std::sys::unix::stdio::Stdin","std::collections::VecDeque<u8, A>","std::net::TcpStream","std::io::StdinLock<'_>","std::io::Repeat"]}}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // Window<R>
++p0.frame();
++window::<impl Window<R>>::frame(p0);
++crate::window::<impl Window<R>>::frame(p0);
++<Window<R>>::frame(p0);
+-----------------
+src/window.rs window::<impl Window<R>>::frame_size
+deps:{"std::io::impls::<impl std::io::Read for &mut R>":{},"window::<impl Window<R>>::frame_size":{"R":["std::marker::Sized","std::io::Read"]}}
+candidates:{"std::io::impls::<impl std::io::Read for &mut R>":{},"window::<impl Window<R>>::frame_size":{"R":["std::collections::VecDeque<u8, A>","std::io::Repeat","std::io::BufReader<R>","std::process::ChildStdout","&std::fs::File","std::io::stdio::StdinRaw","&'a std::os::unix::net::UnixStream","std::fs::File","std::boxed::Box<R>","std::io::impls::<impl std::io::Read for &mut R>","std::io::Empty","&'a std::sys::unix::fd::FileDesc","std::os::unix::net::UnixStream","std::process::ChildStderr","std::io::Cursor<T>","std::io::StdinLock<'_>","std::io::Chain<T, U>","std::io::Stdin","std::io::Take<T>","&std::net::TcpStream","std::sys::unix::stdio::Stdin","std::net::TcpStream"]}}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // Window<R>
++p0.frame_size();
++window::<impl Window<R>>::frame_size(p0);
++crate::window::<impl Window<R>>::frame_size(p0);
++<Window<R>>::frame_size(p0);
+-----------------
+src/window.rs window::<impl Window<R>>::on_boundry
+deps:{"std::io::impls::<impl std::io::Read for &mut R>":{},"window::<impl Window<R>>::on_boundry":{"R":["std::io::Read","std::marker::Sized"]}}
+candidates:{"std::io::impls::<impl std::io::Read for &mut R>":{},"window::<impl Window<R>>::on_boundry":{"R":["std::net::TcpStream","std::io::Cursor<T>","std::io::BufReader<R>","std::process::ChildStdout","std::io::Empty","std::io::Take<T>","std::io::Stdin","std::os::unix::net::UnixStream","std::process::ChildStderr","std::sys::unix::stdio::Stdin","std::io::StdinLock<'_>","&'a std::os::unix::net::UnixStream","std::collections::VecDeque<u8, A>","&std::net::TcpStream","std::io::Chain<T, U>","&'a std::sys::unix::fd::FileDesc","std::io::Repeat","std::io::stdio::StdinRaw","std::boxed::Box<R>","std::fs::File","std::io::impls::<impl std::io::Read for &mut R>","&std::fs::File"]}}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // Window<R>
++p0.on_boundry();
++window::<impl Window<R>>::on_boundry(p0);
++crate::window::<impl Window<R>>::on_boundry(p0);
++<Window<R>>::on_boundry(p0);
+-----------------
+src/window.rs window::<impl Window<R>>::get_bytes_read
+deps:{"std::io::impls::<impl std::io::Read for &mut R>":{},"window::<impl Window<R>>::get_bytes_read":{"R":["std::marker::Sized","std::io::Read"]}}
+candidates:{"std::io::impls::<impl std::io::Read for &mut R>":{},"window::<impl Window<R>>::get_bytes_read":{"R":["&std::net::TcpStream","std::io::Cursor<T>","std::io::Take<T>","&std::fs::File","std::io::Empty","std::fs::File","&'a std::os::unix::net::UnixStream","std::boxed::Box<R>","std::sys::unix::stdio::Stdin","std::io::Stdin","&'a std::sys::unix::fd::FileDesc","std::collections::VecDeque<u8, A>","std::io::impls::<impl std::io::Read for &mut R>","std::net::TcpStream","std::process::ChildStdout","std::io::Repeat","std::io::stdio::StdinRaw","std::io::BufReader<R>","std::io::Chain<T, U>","std::os::unix::net::UnixStream","std::process::ChildStderr","std::io::StdinLock<'_>"]}}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // Window<R>
++p0.get_bytes_read();
++window::<impl Window<R>>::get_bytes_read(p0);
++crate::window::<impl Window<R>>::get_bytes_read(p0);
++<Window<R>>::get_bytes_read(p0);
+-----------------
+src/hashing.rs hashing::RollingHash::new
+'a
+deps:{"<&mut I as std::iter::Iterator>":{},"hashing::RollingHash::new":{"I":["std::iter::Iterator","std::marker::Sized"]}}
+candidates:{"<&mut I as std::iter::Iterator>":{},"hashing::RollingHash::new":{"I":["std::collections::hash_map::IterMut<'a, K, V>","std::iter::Copied<I>","std::slice::ChunksMut<'a, T>","std::iter::Fuse<I>","std::collections::btree_map::IterMut<'a, K, V>","std::collections::hash_map::IntoIter<K, V>","std::net::Incoming<'a>","std::slice::RSplit<'a, T, P>","std::iter::Map<I, F>","std::sys::unix::fs::ReadDir","std::collections::btree_map::IntoIter<K, V, A>","std::str::Utf8Chunks<'a>","std::env::SplitPaths<'a>","std::slice::SplitInclusiveMut<'a, T, P>","std::char::DecodeUtf16<I>","std::collections::linked_list::IterMut<'a, T>","std::iter::Filter<I, P>","std::iter::RepeatN<A>","std::str::RSplit<'a, P>","std::vec::Drain<'_, T, A>","std::slice::RChunksExact<'a, T>","std::collections::btree_set::Range<'a, T>","std::iter::ArrayChunks<I, N>","std::slice::RSplitN<'a, T, P>","std::iter::sources::from_generator::FromGenerator<G>","std::sys_common::net::LookupHost","std::slice::RSplitMut<'a, T, P>","std::str::Lines<'a>","std::iter::SkipWhile<I, P>","std::char::EscapeUnicode","std::str::RMatches<'a, P>","std::ops::index_range::IndexRange","std::collections::binary_heap::IntoIterSorted<T>","std::os::unix::net::Messages<'a>","std::collections::vec_deque::IntoIter<T, A>","std::str::RSplitN<'a, P>","std::ascii::EscapeDefault","std::ops::Range<A>","std::slice::Windows<'a, T>","std::iter::Enumerate<I>","std::iter::Cloned<I>","<&mut I as std::iter::Iterator>","std::collections::btree_map::Range<'a, K, V>","std::collections::hash_map::ValuesMut<'a, K, V>","std::iter::Repeat<A>","std::sys::unix::process::process_common::CommandArgs<'a>","std::str::Bytes<'_>","std::collections::hash_map::Drain<'a, K, V>","std::slice::RChunks<'a, T>","std::str::Split<'a, P>","std::boxed::Box<I, A>","std::slice::Chunks<'a, T>","std::vec::IntoIter<T, A>","std::str::EncodeUtf16<'a>","std::iter::Flatten<I>","std::iter::IntersperseWith<I, G>","std::collections::hash_set::Drain<'a, K>","std::iter::FilterMap<I, F>","std::slice::RSplitNMut<'a, T, P>","std::os::unix::net::ScmRights<'a>","std::slice::GroupByMut<'a, T, P>","std::array::IntoIter<T, N>","std::iter::Peekable<I>","std::str::SplitN<'a, P>","std::collections::btree_set::Difference<'a, T, A>","std::iter::StepBy<I>","std::iter::Cycle<I>","std::sys_common::wstr::WStrUnits<'_>","std::env::ArgsOs","std::iter::Skip<I>","std::io::Lines<B>","std::sys::unix::args::Args","std::iter::Inspect<I, F>","std::str::SplitAsciiWhitespace<'a>","std::iter::FromFn<F>","std::result::Iter<'a, T>","std::collections::btree_set::DrainFilter<'_, T, F, A>","std::string::Drain<'_>","std::collections::hash_map::Iter<'a, K, V>","std::collections::binary_heap::DrainSorted<'_, T>","std::ops::RangeInclusive<A>","std::collections::linked_list::IntoIter<T>","std::iter::Scan<I, St, F>","std::vec::Splice<'_, I, A>","std::collections::hash_set::SymmetricDifference<'a, T, S>","std::slice::ChunksExact<'a, T>","std::collections::vec_deque::Iter<'a, T>","std::env::Args","std::collections::linked_list::DrainFilter<'_, T, F>","std::str::RSplitTerminator<'a, P>","std::collections::btree_set::SymmetricDifference<'a, T>","std::option::IterMut<'a, A>","std::net::IntoIncoming","std::fs::ReadDir","std::path::Ancestors<'a>","std::collections::btree_set::IntoIter<T, A>","std::str::Chars<'a>","std::str::MatchIndices<'a, P>","std::os::unix::net::Incoming<'a>","std::slice::SplitInclusive<'a, T, P>","std::collections::hash_set::Union<'a, T, S>","std::iter::Once<T>","std::collections::hash_map::IntoValues<K, V>","std::iter::Take<I>","std::str::SplitWhitespace<'a>","std::str::EscapeDefault<'a>","std::str::CharIndices<'a>","std::iter::ByRefSized<'_, I>","core::error::Source<'a>","std::collections::hash_set::Difference<'a, T, S>","std::collections::hash_map::DrainFilter<'_, K, V, F>","std::slice::ArrayChunksMut<'a, T, N>","std::collections::hash_map::Keys<'a, K, V>","std::collections::btree_map::IntoKeys<K, V, A>","std::collections::btree_set::Union<'a, T>","std::collections::btree_map::IntoValues<K, V, A>","std::sync::mpsc::IntoIter<T>","std::slice::Split<'a, T, P>","std::collections::btree_map::ValuesMut<'a, K, V>","std::collections::binary_heap::Iter<'a, T>","std::path::Components<'a>","std::char::EscapeDebug","std::collections::hash_set::Intersection<'a, T, S>","std::option::Item<A>","std::str::EscapeDebug<'a>","std::slice::Iter<'a, T>","std::option::IntoIter<A>","std::ops::RangeFrom<A>","std::str::SplitInclusive<'a, P>","std::slice::IterMut<'a, T>","std::collections::btree_map::Keys<'a, K, V>","std::str::SplitTerminator<'a, P>","std::collections::btree_set::Intersection<'a, T, A>","std::iter::Intersperse<I>","std::collections::btree_map::RangeMut<'a, K, V>","std::iter::adapters::GenericShunt<'_, I, R>","std::os::unix::net::ancillary::AncillaryDataIter<'a, T>","std::env::VarsOs","std::str::RMatchIndices<'a, P>","std::slice::RChunksExactMut<'a, T>","std::vec::DrainFilter<'_, T, F, A>","std::iter::Zip<A, B>","std::collections::linked_list::Iter<'a, T>","std::sys::unix::os::SplitPaths<'a>","std::sync::mpsc::Iter<'a, T>","std::iter::RepeatWith<F>","std::char::EscapeDefault","std::iter::FlatMap<I, U, F>","std::collections::binary_heap::IntoIter<T>","std::slice::EscapeAscii<'a>","std::slice::SplitN<'a, T, P>","std::slice::ArrayChunks<'a, T, N>","std::slice::RChunksMut<'a, T>","std::slice::ArrayWindows<'a, T, N>","std::collections::hash_set::IntoIter<K>","std::collections::btree_map::DrainFilter<'_, K, V, F, A>","std::path::Iter<'a>","std::sys_common::wtf8::EncodeWide<'a>","core::slice::iter::GenericSplitN<I>","std::char::CaseMappingIter","std::env::Vars","std::result::IterMut<'a, T>","std::io::Split<B>","std::slice::GroupBy<'a, T, P>","std::process::CommandArgs<'a>","std::iter::Empty<T>","std::result::IntoIter<T>","std::iter::TakeWhile<I, P>","std::slice::SplitMut<'a, T, P>","std::collections::btree_map::Values<'a, K, V>","std::str::EscapeUnicode<'a>","std::iter::Chain<A, B>","std::collections::binary_heap::Drain<'_, T>","std::io::Bytes<R>","std::iter::Rev<I>","std::collections::hash_map::IntoKeys<K, V>","std::collections::btree_map::Iter<'a, K, V>","std::str::LinesAny<'a>","std::collections::hash_set::DrainFilter<'_, K, F>","std::option::Iter<'a, A>","std::iter::Successors<T, F>","std::iter::OnceWith<F>","std::iter::adapters::flatten::FlattenCompat<I, U>","std::os::unix::net::ScmCredentials<'a>","std::sys_common::wtf8::Wtf8CodePoints<'a>","std::str::Matches<'a, P>","std::sys::unix::os::Env","std::char::ToUppercase","std::collections::vec_deque::IterMut<'a, T>","std::slice::ChunksExactMut<'a, T>","std::char::ToLowercase","std::collections::btree_set::Iter<'a, T>","std::collections::vec_deque::Drain<'_, T, A>","std::slice::SplitNMut<'a, T, P>","std::iter::MapWhile<I, P>","std::sync::mpsc::TryIter<'a, T>","std::collections::hash_set::Iter<'a, K>","std::collections::hash_map::Values<'a, K, V>","std::process::CommandEnvs<'a>"]}}
+let mut p0 = MaybeUninit::uninit().assume_init(); // I
++hashing::RollingHash::new(p0);
++crate::hashing::RollingHash::new(p0);
++<hashing::RollingHash>::new(p0);
+-----------------
+src/hashing.rs hashing::RollingHash::get_hash
+deps:{}
+candidates:{}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // hashing::RollingHash
++p0.get_hash();
++hashing::RollingHash::get_hash(p0);
++crate::hashing::RollingHash::get_hash(p0);
++<hashing::RollingHash>::get_hash(p0);
+-----------------
+src/hashing.rs hashing::RollingHash::roll_hash
+deps:{}
+candidates:{}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // hashing::RollingHash
+let mut p1 = MaybeUninit::uninit().assume_init(); // std::option::Option<u8>
+let mut p2 = 0u8; // None+u8
++p0.roll_hash(p1, p2);
++hashing::RollingHash::roll_hash(p0, p1, p2);
++crate::hashing::RollingHash::roll_hash(p0, p1, p2);
++<hashing::RollingHash>::roll_hash(p0, p1, p2);
+-----------------
+src/hashing.rs hashing::RollingHash::hash_buffer
+deps:{}
+candidates:{}
+let mut p0 = [0u8,0,0].as_mut_slice(); // None+&[u8]
++hashing::RollingHash::hash_buffer(p0);
++crate::hashing::RollingHash::hash_buffer(p0);
++<hashing::RollingHash>::hash_buffer(p0);
+-----------------
+src/hashing.rs hashing::<impl BlockHashes>::new
+deps:{"hashing::<impl BlockHashes>::new":{"R":["std::marker::Sized","std::io::Read"]},"std::io::impls::<impl std::io::Read for &mut R>":{}}
+candidates:{"hashing::<impl BlockHashes>::new":{"R":["std::io::Repeat","std::net::TcpStream","std::io::Cursor<T>","&'a std::os::unix::net::UnixStream","std::io::BufReader<R>","std::process::ChildStderr","std::io::Empty","&'a std::sys::unix::fd::FileDesc","std::io::Stdin","std::io::impls::<impl std::io::Read for &mut R>","&std::fs::File","std::collections::VecDeque<u8, A>","&std::net::TcpStream","std::fs::File","std::io::StdinLock<'_>","std::io::Take<T>","std::os::unix::net::UnixStream","std::boxed::Box<R>","std::io::stdio::StdinRaw","std::io::Chain<T, U>","std::sys::unix::stdio::Stdin","std::process::ChildStdout"]},"std::io::impls::<impl std::io::Read for &mut R>":{}}
+let mut p0 = MaybeUninit::uninit().assume_init(); // R
+let mut p1 = 0usize; // None+usize
++hashing::<impl BlockHashes>::new(p0, p1);
++crate::hashing::<impl BlockHashes>::new(p0, p1);
++<BlockHashes>::new(p0, p1);
+-----------------
+src/hashing.rs hashing::<impl BlockHashes>::empty
+deps:{}
+candidates:{}
+let mut p0 = 0usize; // None+usize
++hashing::<impl BlockHashes>::empty(p0);
++crate::hashing::<impl BlockHashes>::empty(p0);
++<BlockHashes>::empty(p0);
+-----------------
+src/hashing.rs hashing::<impl BlockHashes>::diff_and_update
+deps:{"hashing::<impl BlockHashes>::diff_and_update":{"R":["std::io::Read","std::marker::Sized"]},"std::io::impls::<impl std::io::Read for &mut R>":{}}
+candidates:{"hashing::<impl BlockHashes>::diff_and_update":{"R":["std::sys::unix::stdio::Stdin","std::io::Stdin","std::io::BufReader<R>","&'a std::sys::unix::fd::FileDesc","std::io::Cursor<T>","&std::fs::File","std::net::TcpStream","std::io::impls::<impl std::io::Read for &mut R>","std::fs::File","std::os::unix::net::UnixStream","&'a std::os::unix::net::UnixStream","std::io::Empty","std::io::StdinLock<'_>","std::io::Repeat","std::io::Chain<T, U>","std::collections::VecDeque<u8, A>","&std::net::TcpStream","std::process::ChildStderr","std::io::stdio::StdinRaw","std::process::ChildStdout","std::io::Take<T>","std::boxed::Box<R>"]},"std::io::impls::<impl std::io::Read for &mut R>":{}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // BlockHashes
+let mut p1 = MaybeUninit::uninit().assume_init(); // R
++p0.diff_and_update(p1);
++hashing::<impl BlockHashes>::diff_and_update(p0, p1);
++crate::hashing::<impl BlockHashes>::diff_and_update(p0, p1);
++<BlockHashes>::diff_and_update(p0, p1);
+-----------------
+src/hashing.rs hashing::<impl BlockHashes>::verify_unchanged
+deps:{"hashing::<impl BlockHashes>::verify_unchanged":{"R":["std::marker::Sized","std::io::Read"]},"std::io::impls::<impl std::io::Read for &mut R>":{}}
+candidates:{"hashing::<impl BlockHashes>::verify_unchanged":{"R":["std::process::ChildStderr","std::io::StdinLock<'_>","std::net::TcpStream","std::io::BufReader<R>","std::io::Take<T>","std::collections::VecDeque<u8, A>","std::io::Empty","std::io::Chain<T, U>","&'a std::sys::unix::fd::FileDesc","std::fs::File","std::io::stdio::StdinRaw","std::boxed::Box<R>","std::sys::unix::stdio::Stdin","std::io::Cursor<T>","&'a std::os::unix::net::UnixStream","std::os::unix::net::UnixStream","std::process::ChildStdout","&std::net::TcpStream","std::io::Repeat","&std::fs::File","std::io::Stdin","std::io::impls::<impl std::io::Read for &mut R>"]},"std::io::impls::<impl std::io::Read for &mut R>":{}}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // BlockHashes
+let mut p1 = &mut  MaybeUninit::uninit().assume_init(); // R
++p0.verify_unchanged(p1);
++hashing::<impl BlockHashes>::verify_unchanged(p0, p1);
++crate::hashing::<impl BlockHashes>::verify_unchanged(p0, p1);
++<BlockHashes>::verify_unchanged(p0, p1);
+-----------------
+src/hashing.rs hashing::<impl BlockHashes>::compress_to
+deps:{"hashing::<impl BlockHashes>::compress_to":{"W":["std::marker::Sized","std::io::Write"]},"std::io::impls::<impl std::io::Write for &mut W>":{}}
+candidates:{"hashing::<impl BlockHashes>::compress_to":{"W":["std::sys::unix::stdio::Stderr","std::io::Cursor<std::vec::Vec<u8, A>>","&'a std::os::unix::net::UnixStream","std::io::Cursor<[u8; N]>","std::sys::unix::stdio::Stdout","std::io::buffered::linewritershim::LineWriterShim<'a, W>","std::io::LineWriter<W>","std::io::Cursor<std::boxed::Box<[u8], A>>","&std::process::ChildStdin","&std::fs::File","&std::net::TcpStream","std::io::StdoutLock<'_>","&std::io::Stdout","std::io::Stderr","std::io::BufWriter<W>","std::io::StderrLock<'_>","std::io::Cursor<&mut [u8]>","&std::io::Stderr","std::io::impls::<impl std::io::Write for &mut W>","std::process::ChildStdin","std::net::TcpStream","std::collections::VecDeque<u8, A>","&std::io::Sink","std::os::unix::net::UnixStream","std::io::stdio::StderrRaw","std::io::BorrowedCursor<'a>","std::io::Stdout","std::io::Cursor<&mut std::vec::Vec<u8, A>>","std::fs::File","std::boxed::Box<W>","std::vec::Vec<u8, A>","std::io::Sink","std::io::stdio::StdoutRaw"]},"std::io::impls::<impl std::io::Write for &mut W>":{}}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // BlockHashes
+let mut p1 = &mut  MaybeUninit::uninit().assume_init(); // W
++p0.compress_to(p1);
++hashing::<impl BlockHashes>::compress_to(p0, p1);
++crate::hashing::<impl BlockHashes>::compress_to(p0, p1);
++<BlockHashes>::compress_to(p0, p1);
+-----------------
+src/hashing.rs hashing::<impl BlockHashes>::expand_from
+deps:{"hashing::<impl BlockHashes>::expand_from":{"R":["std::io::Read","std::marker::Sized"]},"std::io::impls::<impl std::io::Read for &mut R>":{}}
+candidates:{"hashing::<impl BlockHashes>::expand_from":{"R":["std::process::ChildStderr","&std::fs::File","std::io::impls::<impl std::io::Read for &mut R>","std::io::BufReader<R>","std::io::Cursor<T>","std::io::Repeat","std::process::ChildStdout","std::net::TcpStream","&std::net::TcpStream","std::io::Empty","&'a std::sys::unix::fd::FileDesc","std::io::StdinLock<'_>","std::sys::unix::stdio::Stdin","std::fs::File","std::io::Take<T>","std::io::Stdin","std::os::unix::net::UnixStream","std::boxed::Box<R>","std::io::Chain<T, U>","std::io::stdio::StdinRaw","&'a std::os::unix::net::UnixStream","std::collections::VecDeque<u8, A>"]},"std::io::impls::<impl std::io::Read for &mut R>":{}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // R
++hashing::<impl BlockHashes>::expand_from(p0);
++crate::hashing::<impl BlockHashes>::expand_from(p0);
++<BlockHashes>::expand_from(p0);
+-----------------
+src/hashing.rs hashing::<impl BlockHashes>::check_match
+deps:{"hashing::<impl BlockHashes>::check_match":{"R":["std::marker::Sized","std::io::Read"]},"std::io::impls::<impl std::io::Read for &mut R>":{}}
+candidates:{"hashing::<impl BlockHashes>::check_match":{"R":["std::io::Cursor<T>","&std::fs::File","std::io::StdinLock<'_>","std::io::BufReader<R>","std::boxed::Box<R>","&std::net::TcpStream","std::net::TcpStream","std::sys::unix::stdio::Stdin","&'a std::sys::unix::fd::FileDesc","std::os::unix::net::UnixStream","std::process::ChildStdout","std::io::Empty","std::collections::VecDeque<u8, A>","std::process::ChildStderr","std::io::Chain<T, U>","std::fs::File","&'a std::os::unix::net::UnixStream","std::io::Stdin","std::io::stdio::StdinRaw","std::io::Take<T>","std::io::Repeat","std::io::impls::<impl std::io::Read for &mut R>"]},"std::io::impls::<impl std::io::Read for &mut R>":{}}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // BlockHashes
+let mut p1 = & MaybeUninit::uninit().assume_init(); // hashing::RollingHash
+let mut p2 = &mut  MaybeUninit::uninit().assume_init(); // crypto::md5::Md5
+let mut p3 = & MaybeUninit::uninit().assume_init(); // Window<R>
+let mut p4 = &mut 0i32; // None+i32
++p0.check_match(p1, p2, p3, p4);
++hashing::<impl BlockHashes>::check_match(p0, p1, p2, p3, p4);
++crate::hashing::<impl BlockHashes>::check_match(p0, p1, p2, p3, p4);
++<BlockHashes>::check_match(p0, p1, p2, p3, p4);
+-----------------
+src/hashing.rs hashing::<impl BlockHashes>::hash_match
+deps:{"hashing::<impl BlockHashes>::hash_match":{"R":["std::marker::Sized","std::io::Read"]},"std::io::impls::<impl std::io::Read for &mut R>":{}}
+candidates:{"hashing::<impl BlockHashes>::hash_match":{"R":["std::process::ChildStderr","std::collections::VecDeque<u8, A>","&std::net::TcpStream","std::boxed::Box<R>","std::net::TcpStream","std::io::Empty","std::io::Chain<T, U>","std::io::StdinLock<'_>","std::process::ChildStdout","std::io::Cursor<T>","&'a std::sys::unix::fd::FileDesc","&'a std::os::unix::net::UnixStream","std::sys::unix::stdio::Stdin","std::io::Stdin","std::io::impls::<impl std::io::Read for &mut R>","std::os::unix::net::UnixStream","std::io::Take<T>","std::io::BufReader<R>","&std::fs::File","std::fs::File","std::io::stdio::StdinRaw","std::io::Repeat"]},"std::io::impls::<impl std::io::Read for &mut R>":{}}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // BlockHashes
+let mut p1 = & MaybeUninit::uninit().assume_init(); // hashing::RollingHash
+let mut p2 = &mut  MaybeUninit::uninit().assume_init(); // crypto::md5::Md5
+let mut p3 = & MaybeUninit::uninit().assume_init(); // Window<R>
++p0.hash_match(p1, p2, p3);
++hashing::<impl BlockHashes>::hash_match(p0, p1, p2, p3);
++crate::hashing::<impl BlockHashes>::hash_match(p0, p1, p2, p3);
++<BlockHashes>::hash_match(p0, p1, p2, p3);
+-----------------
+src/string_diff.rs <string_diff::EditDistance as string_diff::OperationScore>::insert_score
+deps:{}
+candidates:{}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // string_diff::EditDistance
+let mut p1 = 'a'; // None+char
++p0.insert_score(p1);
++<string_diff::EditDistance as string_diff::OperationScore>::insert_score(p0, p1);
++crate::<string_diff::EditDistance as string_diff::OperationScore>::insert_score(p0, p1);
++<string_diff::EditDistance>::insert_score(p0, p1);
+-----------------
+src/string_diff.rs <string_diff::EditDistance as string_diff::OperationScore>::delete_score
+deps:{}
+candidates:{}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // string_diff::EditDistance
+let mut p1 = 'a'; // None+char
++p0.delete_score(p1);
++<string_diff::EditDistance as string_diff::OperationScore>::delete_score(p0, p1);
++crate::<string_diff::EditDistance as string_diff::OperationScore>::delete_score(p0, p1);
++<string_diff::EditDistance>::delete_score(p0, p1);
+-----------------
+src/string_diff.rs <string_diff::EditDistance as string_diff::OperationScore>::substitution_score
+deps:{}
+candidates:{}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // string_diff::EditDistance
+let mut p1 = 'a'; // None+char
+let mut p2 = 'a'; // None+char
++p0.substitution_score(p1, p2);
++<string_diff::EditDistance as string_diff::OperationScore>::substitution_score(p0, p1, p2);
++crate::<string_diff::EditDistance as string_diff::OperationScore>::substitution_score(p0, p1, p2);
++<string_diff::EditDistance>::substitution_score(p0, p1, p2);
+-----------------
+src/string_diff.rs <string_diff::EditDistance as string_diff::OperationScore>::match_score
+deps:{}
+candidates:{}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // string_diff::EditDistance
+let mut p1 = 'a'; // None+char
++p0.match_score(p1);
++<string_diff::EditDistance as string_diff::OperationScore>::match_score(p0, p1);
++crate::<string_diff::EditDistance as string_diff::OperationScore>::match_score(p0, p1);
++<string_diff::EditDistance>::match_score(p0, p1);
+-----------------
+src/lib.rs <BlockHashes as std::fmt::Debug>::fmt
+deps:{}
+candidates:{}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // BlockHashes
+let mut p1 = &mut  MaybeUninit::uninit().assume_init(); // std::fmt::Formatter<'_>
++format!("{:?}", p0);
++p0.fmt(p1);
++<BlockHashes as std::fmt::Debug>::fmt(p0, p1);
++crate::<BlockHashes as std::fmt::Debug>::fmt(p0, p1);
++<BlockHashes>::fmt(p0, p1);
+-----------------
+src/lib.rs <BlockHashes as std::cmp::PartialEq>::eq
+deps:{}
+candidates:{}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // BlockHashes
+let mut p1 = & MaybeUninit::uninit().assume_init(); // BlockHashes
++p0.eq(p1);
++<BlockHashes as std::cmp::PartialEq>::eq(p0, p1);
++crate::<BlockHashes as std::cmp::PartialEq>::eq(p0, p1);
++<BlockHashes>::eq(p0, p1);
+-----------------
+src/lib.rs <Insert as std::cmp::PartialEq>::eq
+deps:{}
+candidates:{}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // Insert
+let mut p1 = & MaybeUninit::uninit().assume_init(); // Insert
++p0.eq(p1);
++<Insert as std::cmp::PartialEq>::eq(p0, p1);
++crate::<Insert as std::cmp::PartialEq>::eq(p0, p1);
++<Insert>::eq(p0, p1);
+-----------------
+src/lib.rs <Delete as std::cmp::PartialEq>::eq
+deps:{}
+candidates:{}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // Delete
+let mut p1 = & MaybeUninit::uninit().assume_init(); // Delete
++p0.eq(p1);
++<Delete as std::cmp::PartialEq>::eq(p0, p1);
++crate::<Delete as std::cmp::PartialEq>::eq(p0, p1);
++<Delete>::eq(p0, p1);
+-----------------
+src/lib.rs <Diff as std::fmt::Debug>::fmt
+deps:{}
+candidates:{}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // Diff
+let mut p1 = &mut  MaybeUninit::uninit().assume_init(); // std::fmt::Formatter<'_>
++format!("{:?}", p0);
++p0.fmt(p1);
++<Diff as std::fmt::Debug>::fmt(p0, p1);
++crate::<Diff as std::fmt::Debug>::fmt(p0, p1);
++<Diff>::fmt(p0, p1);
+-----------------
+src/lib.rs <Diff as std::cmp::PartialEq>::eq
+deps:{}
+candidates:{}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // Diff
+let mut p1 = & MaybeUninit::uninit().assume_init(); // Diff
++p0.eq(p1);
++<Diff as std::cmp::PartialEq>::eq(p0, p1);
++crate::<Diff as std::cmp::PartialEq>::eq(p0, p1);
++<Diff>::eq(p0, p1);
+-----------------
+src/lib.rs Diff::new
+deps:{}
+candidates:{}
++Diff::new();
++crate::Diff::new();
++<Diff>::new();
+-----------------
+src/lib.rs Diff::add_insert
+deps:{}
+candidates:{}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // Diff
+let mut p1 = 0usize; // None+usize
+let mut p2 = MaybeUninit::uninit().assume_init(); // std::vec::Vec<u8>
++p0.add_insert(p1, p2);
++Diff::add_insert(p0, p1, p2);
++crate::Diff::add_insert(p0, p1, p2);
++<Diff>::add_insert(p0, p1, p2);
+-----------------
+src/lib.rs Diff::add_delete
+deps:{}
+candidates:{}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // Diff
+let mut p1 = 0usize; // None+usize
+let mut p2 = 0usize; // None+usize
++p0.add_delete(p1, p2);
++Diff::add_delete(p0, p1, p2);
++crate::Diff::add_delete(p0, p1, p2);
++<Diff>::add_delete(p0, p1, p2);
+-----------------
+src/lib.rs Diff::inserts
+deps:{}
+candidates:{}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // Diff
++p0.inserts();
++Diff::inserts(p0);
++crate::Diff::inserts(p0);
++<Diff>::inserts(p0);
+-----------------
+src/lib.rs Diff::deletes
+deps:{}
+candidates:{}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // Diff
++p0.deletes();
++Diff::deletes(p0);
++crate::Diff::deletes(p0);
++<Diff>::deletes(p0);
+-----------------
+src/lib.rs Diff::is_empty
+deps:{}
+candidates:{}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // Diff
++p0.is_empty();
++Diff::is_empty(p0);
++crate::Diff::is_empty(p0);
++<Diff>::is_empty(p0);
+-----------------
+src/lib.rs Diff::apply_to_string
+deps:{}
+candidates:{}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // Diff
+let mut p1 = "sample"; // None+&str
++p0.apply_to_string(&p1);
++Diff::apply_to_string(p0, &p1);
++crate::Diff::apply_to_string(p0, &p1);
++<Diff>::apply_to_string(p0, &p1);
+-----------------
+src/lib.rs Diff::apply
+deps:{}
+candidates:{}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // Diff
+let mut p1 = &mut  MaybeUninit::uninit().assume_init(); // std::fs::File
++p0.apply(p1);
++Diff::apply(p0, p1);
++crate::Diff::apply(p0, p1);
++<Diff>::apply(p0, p1);
+-----------------
+src/lib.rs Diff::compress_to
+deps:{"Diff::compress_to":{"W":["std::io::Write","std::marker::Sized"]},"std::io::impls::<impl std::io::Write for &mut W>":{}}
+candidates:{"Diff::compress_to":{"W":["&std::net::TcpStream","std::io::Cursor<&mut std::vec::Vec<u8, A>>","std::io::Sink","std::process::ChildStdin","std::io::impls::<impl std::io::Write for &mut W>","std::io::Cursor<std::vec::Vec<u8, A>>","std::io::StderrLock<'_>","&std::fs::File","std::sys::unix::stdio::Stderr","std::vec::Vec<u8, A>","std::io::Stdout","&std::process::ChildStdin","std::net::TcpStream","std::io::Cursor<std::boxed::Box<[u8], A>>","&std::io::Stdout","&std::io::Stderr","std::io::Cursor<[u8; N]>","std::fs::File","std::io::Stderr","&'a std::os::unix::net::UnixStream","std::os::unix::net::UnixStream","std::io::stdio::StdoutRaw","std::collections::VecDeque<u8, A>","std::io::LineWriter<W>","std::sys::unix::stdio::Stdout","std::io::stdio::StderrRaw","std::io::BufWriter<W>","std::io::BorrowedCursor<'a>","&std::io::Sink","std::boxed::Box<W>","std::io::buffered::linewritershim::LineWriterShim<'a, W>","std::io::StdoutLock<'_>","std::io::Cursor<&mut [u8]>"]},"std::io::impls::<impl std::io::Write for &mut W>":{}}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // Diff
+let mut p1 = &mut  MaybeUninit::uninit().assume_init(); // W
++p0.compress_to(p1);
++Diff::compress_to(p0, p1);
++crate::Diff::compress_to(p0, p1);
++<Diff>::compress_to(p0, p1);
+-----------------
+src/lib.rs Diff::expand_from
+deps:{"Diff::expand_from":{"R":["std::marker::Sized","std::io::Read"]},"std::io::impls::<impl std::io::Read for &mut R>":{}}
+candidates:{"Diff::expand_from":{"R":["&std::fs::File","std::fs::File","std::io::stdio::StdinRaw","std::io::Take<T>","&std::net::TcpStream","std::os::unix::net::UnixStream","std::io::Empty","std::sys::unix::stdio::Stdin","std::io::StdinLock<'_>","std::collections::VecDeque<u8, A>","std::io::impls::<impl std::io::Read for &mut R>","std::io::Repeat","std::net::TcpStream","&'a std::os::unix::net::UnixStream","&'a std::sys::unix::fd::FileDesc","std::io::BufReader<R>","std::io::Chain<T, U>","std::boxed::Box<R>","std::io::Cursor<T>","std::process::ChildStderr","std::io::Stdin","std::process::ChildStdout"]},"std::io::impls::<impl std::io::Read for &mut R>":{}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // R
++Diff::expand_from(p0);
++crate::Diff::expand_from(p0);
++<Diff>::expand_from(p0);
+-----------------
+src/lib.rs <Insert as std::fmt::Debug>::fmt
+deps:{}
+candidates:{}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // Insert
+let mut p1 = &mut  MaybeUninit::uninit().assume_init(); // std::fmt::Formatter<'_>
++format!("{:?}", p0);
++p0.fmt(p1);
++<Insert as std::fmt::Debug>::fmt(p0, p1);
++crate::<Insert as std::fmt::Debug>::fmt(p0, p1);
++<Insert>::fmt(p0, p1);
+-----------------
+src/lib.rs <Delete as std::fmt::Debug>::fmt
+deps:{}
+candidates:{}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // Delete
+let mut p1 = &mut  MaybeUninit::uninit().assume_init(); // std::fmt::Formatter<'_>
++format!("{:?}", p0);
++p0.fmt(p1);
++<Delete as std::fmt::Debug>::fmt(p0, p1);
++crate::<Delete as std::fmt::Debug>::fmt(p0, p1);
++<Delete>::fmt(p0, p1);
+-----------------
+src/lib.rs Insert::get_position
+deps:{}
+candidates:{}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // Insert
++p0.get_position();
++Insert::get_position(p0);
++crate::Insert::get_position(p0);
++<Insert>::get_position(p0);
+-----------------
+src/lib.rs Insert::get_data
+deps:{}
+candidates:{}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // Insert
++p0.get_data();
++Insert::get_data(p0);
++crate::Insert::get_data(p0);
++<Insert>::get_data(p0);
+-----------------
+src/lib.rs Insert::compress_to
+deps:{"Insert::compress_to":{"W":["std::marker::Sized","std::io::Write"]},"std::io::impls::<impl std::io::Write for &mut W>":{}}
+candidates:{"Insert::compress_to":{"W":["&'a std::os::unix::net::UnixStream","std::io::BorrowedCursor<'a>","std::io::Sink","std::sys::unix::stdio::Stderr","std::io::LineWriter<W>","std::io::stdio::StdoutRaw","std::io::stdio::StderrRaw","std::boxed::Box<W>","&std::process::ChildStdin","std::os::unix::net::UnixStream","std::io::Cursor<&mut std::vec::Vec<u8, A>>","&std::io::Stdout","&std::fs::File","std::io::StderrLock<'_>","std::io::BufWriter<W>","std::io::Stdout","std::io::impls::<impl std::io::Write for &mut W>","&std::io::Sink","std::collections::VecDeque<u8, A>","std::fs::File","std::io::Cursor<std::vec::Vec<u8, A>>","std::sys::unix::stdio::Stdout","std::net::TcpStream","&std::io::Stderr","std::io::Stderr","std::process::ChildStdin","std::io::StdoutLock<'_>","&std::net::TcpStream","std::io::buffered::linewritershim::LineWriterShim<'a, W>","std::io::Cursor<std::boxed::Box<[u8], A>>","std::vec::Vec<u8, A>","std::io::Cursor<[u8; N]>","std::io::Cursor<&mut [u8]>"]},"std::io::impls::<impl std::io::Write for &mut W>":{}}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // Insert
+let mut p1 = &mut  MaybeUninit::uninit().assume_init(); // W
++p0.compress_to(p1);
++Insert::compress_to(p0, p1);
++crate::Insert::compress_to(p0, p1);
++<Insert>::compress_to(p0, p1);
+-----------------
+src/lib.rs Insert::expand_from
+deps:{"Insert::expand_from":{"R":["std::io::Read","std::marker::Sized"]},"std::io::impls::<impl std::io::Read for &mut R>":{}}
+candidates:{"Insert::expand_from":{"R":["std::boxed::Box<R>","std::io::StdinLock<'_>","std::os::unix::net::UnixStream","std::io::Cursor<T>","std::io::Stdin","std::io::Take<T>","std::io::impls::<impl std::io::Read for &mut R>","std::process::ChildStderr","&'a std::os::unix::net::UnixStream","&std::fs::File","std::io::BufReader<R>","std::fs::File","std::collections::VecDeque<u8, A>","&'a std::sys::unix::fd::FileDesc","&std::net::TcpStream","std::sys::unix::stdio::Stdin","std::net::TcpStream","std::io::Chain<T, U>","std::process::ChildStdout","std::io::Repeat","std::io::stdio::StdinRaw","std::io::Empty"]},"std::io::impls::<impl std::io::Read for &mut R>":{}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // R
++Insert::expand_from(p0);
++crate::Insert::expand_from(p0);
++<Insert>::expand_from(p0);
+-----------------
+src/lib.rs Delete::get_position
+deps:{}
+candidates:{}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // Delete
++p0.get_position();
++Delete::get_position(p0);
++crate::Delete::get_position(p0);
++<Delete>::get_position(p0);
+-----------------
+src/lib.rs Delete::get_length
+deps:{}
+candidates:{}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // Delete
++p0.get_length();
++Delete::get_length(p0);
++crate::Delete::get_length(p0);
++<Delete>::get_length(p0);
+-----------------
+src/lib.rs Delete::compress_to
+deps:{"Delete::compress_to":{"W":["std::io::Write","std::marker::Sized"]},"std::io::impls::<impl std::io::Write for &mut W>":{}}
+candidates:{"Delete::compress_to":{"W":["&std::io::Stdout","std::io::stdio::StderrRaw","std::io::buffered::linewritershim::LineWriterShim<'a, W>","std::os::unix::net::UnixStream","std::io::impls::<impl std::io::Write for &mut W>","&'a std::os::unix::net::UnixStream","std::io::BorrowedCursor<'a>","std::io::Stdout","&std::process::ChildStdin","std::io::Cursor<std::boxed::Box<[u8], A>>","std::io::BufWriter<W>","std::io::Stderr","std::process::ChildStdin","std::io::StderrLock<'_>","std::net::TcpStream","&std::net::TcpStream","std::io::StdoutLock<'_>","std::io::Cursor<&mut [u8]>","std::io::Sink","std::vec::Vec<u8, A>","std::io::Cursor<&mut std::vec::Vec<u8, A>>","std::sys::unix::stdio::Stdout","std::io::stdio::StdoutRaw","std::io::LineWriter<W>","&std::fs::File","std::collections::VecDeque<u8, A>","std::sys::unix::stdio::Stderr","&std::io::Sink","std::io::Cursor<std::vec::Vec<u8, A>>","std::fs::File","std::io::Cursor<[u8; N]>","std::boxed::Box<W>","&std::io::Stderr"]},"std::io::impls::<impl std::io::Write for &mut W>":{}}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // Delete
+let mut p1 = &mut  MaybeUninit::uninit().assume_init(); // W
++p0.compress_to(p1);
++Delete::compress_to(p0, p1);
++crate::Delete::compress_to(p0, p1);
++<Delete>::compress_to(p0, p1);
+-----------------
+src/lib.rs Delete::expand_from
+deps:{"Delete::expand_from":{"R":["std::marker::Sized","std::io::Read"]},"std::io::impls::<impl std::io::Read for &mut R>":{}}
+candidates:{"Delete::expand_from":{"R":["std::io::StdinLock<'_>","std::io::Stdin","std::sys::unix::stdio::Stdin","&'a std::os::unix::net::UnixStream","std::collections::VecDeque<u8, A>","std::os::unix::net::UnixStream","&'a std::sys::unix::fd::FileDesc","std::net::TcpStream","&std::net::TcpStream","std::io::Repeat","std::boxed::Box<R>","std::io::Cursor<T>","std::fs::File","std::process::ChildStderr","std::io::Empty","std::io::BufReader<R>","std::io::Chain<T, U>","std::process::ChildStdout","&std::fs::File","std::io::Take<T>","std::io::impls::<impl std::io::Read for &mut R>","std::io::stdio::StdinRaw"]},"std::io::impls::<impl std::io::Read for &mut R>":{}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // R
++Delete::expand_from(p0);
++crate::Delete::expand_from(p0);
++<Delete>::expand_from(p0);

@@ -1,0 +1,438 @@
+     Removed 124 files, 56.7MiB total
+   Compiling semver v1.0.26
+   Compiling home v0.5.5
+   Compiling libc v0.2.175
+   Compiling xdg v2.5.2
+   Compiling global_data v0.1.0 (/home/cdc/deepSURF-sp26-artifacts/artifact_code/global_data)
+   Compiling toodee v0.2.4 (/home/cdc/deepSURF-sp26-artifacts/artifact_data/dataset/erasan_crates/toodee-0.2.4)
+   Compiling afl v0.15.7
+   Compiling rustc_version v0.4.1
+   Compiling toodee_fuzz_14784252774365274744 v0.1.0 (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#4-toodee/harness)
+warning: unused import: `toodee::*`
+ --> src/toodee_fuzz_14784252774365274744.rs:5:5
+  |
+5 | use toodee::*;
+  |     ^^^^^^^^^
+  |
+  = note: `#[warn(unused_imports)]` on by default
+
+warning: unused import: `std::str::FromStr`
+ --> src/toodee_fuzz_14784252774365274744.rs:7:5
+  |
+7 | use std::str::FromStr;
+  |     ^^^^^^^^^^^^^^^^^
+
+warning: unused imports: `DerefMut`, `Deref`, `IndexMut`, `Index`
+ --> src/toodee_fuzz_14784252774365274744.rs:8:16
+  |
+8 | use std::ops::{Deref, DerefMut, Index, IndexMut};
+  |                ^^^^^  ^^^^^^^^  ^^^^^  ^^^^^^^^
+
+warning: the item `TryInto` is imported redundantly
+   --> src/toodee_fuzz_14784252774365274744.rs:333:9
+    |
+333 |     use std::convert::TryInto;
+    |         ^^^^^^^^^^^^^^^^^^^^^
+   --> /rustc/11f32b73e0dc9287e305b5b9980d24aecdc8c17f/library/std/src/prelude/mod.rs:129:13
+    |
+    = note: the item `TryInto` is already defined here
+
+warning: the item `TryInto` is imported redundantly
+   --> src/toodee_fuzz_14784252774365274744.rs:340:9
+    |
+340 |     use std::convert::TryInto;
+    |         ^^^^^^^^^^^^^^^^^^^^^
+   --> /rustc/11f32b73e0dc9287e305b5b9980d24aecdc8c17f/library/std/src/prelude/mod.rs:129:13
+    |
+    = note: the item `TryInto` is already defined here
+
+warning: variable does not need to be mutable
+  --> src/toodee_fuzz_14784252774365274744.rs:51:7
+   |
+51 |         let mut t_141 = _to_u8(GLOBAL_DATA, 618) % 17;
+   |             ----^^^^^
+   |             |
+   |             help: remove this `mut`
+   |
+   = note: `#[warn(unused_mut)]` on by default
+
+warning: variable does not need to be mutable
+  --> src/toodee_fuzz_14784252774365274744.rs:75:7
+   |
+75 |         let mut t_135 = _to_u8(GLOBAL_DATA, 577) % 17;
+   |             ----^^^^^
+   |             |
+   |             help: remove this `mut`
+
+warning: variable does not need to be mutable
+  --> src/toodee_fuzz_14784252774365274744.rs:92:7
+   |
+92 |         let mut t_2 = _to_u8(GLOBAL_DATA, 16) % 33;
+   |             ----^^^
+   |             |
+   |             help: remove this `mut`
+
+warning: variable does not need to be mutable
+  --> src/toodee_fuzz_14784252774365274744.rs:95:7
+   |
+95 |         let mut t_4 = _to_u8(GLOBAL_DATA, 17) % 17;
+   |             ----^^^
+   |             |
+   |             help: remove this `mut`
+
+warning: variable does not need to be mutable
+   --> src/toodee_fuzz_14784252774365274744.rs:100:7
+    |
+100 |         let mut t_8 = _to_u8(GLOBAL_DATA, 34) % 17;
+    |             ----^^^
+    |             |
+    |             help: remove this `mut`
+
+warning: variable does not need to be mutable
+   --> src/toodee_fuzz_14784252774365274744.rs:105:7
+    |
+105 |         let mut t_12 = _to_u8(GLOBAL_DATA, 51) % 17;
+    |             ----^^^^
+    |             |
+    |             help: remove this `mut`
+
+warning: variable does not need to be mutable
+   --> src/toodee_fuzz_14784252774365274744.rs:110:7
+    |
+110 |         let mut t_16 = _to_u8(GLOBAL_DATA, 68) % 17;
+    |             ----^^^^
+    |             |
+    |             help: remove this `mut`
+
+warning: variable does not need to be mutable
+   --> src/toodee_fuzz_14784252774365274744.rs:115:7
+    |
+115 |         let mut t_20 = _to_u8(GLOBAL_DATA, 85) % 17;
+    |             ----^^^^
+    |             |
+    |             help: remove this `mut`
+
+warning: variable does not need to be mutable
+   --> src/toodee_fuzz_14784252774365274744.rs:120:7
+    |
+120 |         let mut t_24 = _to_u8(GLOBAL_DATA, 102) % 17;
+    |             ----^^^^
+    |             |
+    |             help: remove this `mut`
+
+warning: variable does not need to be mutable
+   --> src/toodee_fuzz_14784252774365274744.rs:125:7
+    |
+125 |         let mut t_28 = _to_u8(GLOBAL_DATA, 119) % 17;
+    |             ----^^^^
+    |             |
+    |             help: remove this `mut`
+
+warning: variable does not need to be mutable
+   --> src/toodee_fuzz_14784252774365274744.rs:130:7
+    |
+130 |         let mut t_32 = _to_u8(GLOBAL_DATA, 136) % 17;
+    |             ----^^^^
+    |             |
+    |             help: remove this `mut`
+
+warning: variable does not need to be mutable
+   --> src/toodee_fuzz_14784252774365274744.rs:135:7
+    |
+135 |         let mut t_36 = _to_u8(GLOBAL_DATA, 153) % 17;
+    |             ----^^^^
+    |             |
+    |             help: remove this `mut`
+
+warning: variable does not need to be mutable
+   --> src/toodee_fuzz_14784252774365274744.rs:140:7
+    |
+140 |         let mut t_40 = _to_u8(GLOBAL_DATA, 170) % 17;
+    |             ----^^^^
+    |             |
+    |             help: remove this `mut`
+
+warning: variable does not need to be mutable
+   --> src/toodee_fuzz_14784252774365274744.rs:145:7
+    |
+145 |         let mut t_44 = _to_u8(GLOBAL_DATA, 187) % 17;
+    |             ----^^^^
+    |             |
+    |             help: remove this `mut`
+
+warning: variable does not need to be mutable
+   --> src/toodee_fuzz_14784252774365274744.rs:150:7
+    |
+150 |         let mut t_48 = _to_u8(GLOBAL_DATA, 204) % 17;
+    |             ----^^^^
+    |             |
+    |             help: remove this `mut`
+
+warning: variable does not need to be mutable
+   --> src/toodee_fuzz_14784252774365274744.rs:155:7
+    |
+155 |         let mut t_52 = _to_u8(GLOBAL_DATA, 221) % 17;
+    |             ----^^^^
+    |             |
+    |             help: remove this `mut`
+
+warning: variable does not need to be mutable
+   --> src/toodee_fuzz_14784252774365274744.rs:160:7
+    |
+160 |         let mut t_56 = _to_u8(GLOBAL_DATA, 238) % 17;
+    |             ----^^^^
+    |             |
+    |             help: remove this `mut`
+
+warning: variable does not need to be mutable
+   --> src/toodee_fuzz_14784252774365274744.rs:165:7
+    |
+165 |         let mut t_60 = _to_u8(GLOBAL_DATA, 255) % 17;
+    |             ----^^^^
+    |             |
+    |             help: remove this `mut`
+
+warning: variable does not need to be mutable
+   --> src/toodee_fuzz_14784252774365274744.rs:170:7
+    |
+170 |         let mut t_64 = _to_u8(GLOBAL_DATA, 272) % 17;
+    |             ----^^^^
+    |             |
+    |             help: remove this `mut`
+
+warning: variable does not need to be mutable
+   --> src/toodee_fuzz_14784252774365274744.rs:175:7
+    |
+175 |         let mut t_68 = _to_u8(GLOBAL_DATA, 289) % 17;
+    |             ----^^^^
+    |             |
+    |             help: remove this `mut`
+
+warning: variable does not need to be mutable
+   --> src/toodee_fuzz_14784252774365274744.rs:180:7
+    |
+180 |         let mut t_72 = _to_u8(GLOBAL_DATA, 306) % 17;
+    |             ----^^^^
+    |             |
+    |             help: remove this `mut`
+
+warning: variable does not need to be mutable
+   --> src/toodee_fuzz_14784252774365274744.rs:185:7
+    |
+185 |         let mut t_76 = _to_u8(GLOBAL_DATA, 323) % 17;
+    |             ----^^^^
+    |             |
+    |             help: remove this `mut`
+
+warning: variable does not need to be mutable
+   --> src/toodee_fuzz_14784252774365274744.rs:190:7
+    |
+190 |         let mut t_80 = _to_u8(GLOBAL_DATA, 340) % 17;
+    |             ----^^^^
+    |             |
+    |             help: remove this `mut`
+
+warning: variable does not need to be mutable
+   --> src/toodee_fuzz_14784252774365274744.rs:195:7
+    |
+195 |         let mut t_84 = _to_u8(GLOBAL_DATA, 357) % 17;
+    |             ----^^^^
+    |             |
+    |             help: remove this `mut`
+
+warning: variable does not need to be mutable
+   --> src/toodee_fuzz_14784252774365274744.rs:200:7
+    |
+200 |         let mut t_88 = _to_u8(GLOBAL_DATA, 374) % 17;
+    |             ----^^^^
+    |             |
+    |             help: remove this `mut`
+
+warning: variable does not need to be mutable
+   --> src/toodee_fuzz_14784252774365274744.rs:205:7
+    |
+205 |         let mut t_92 = _to_u8(GLOBAL_DATA, 391) % 17;
+    |             ----^^^^
+    |             |
+    |             help: remove this `mut`
+
+warning: variable does not need to be mutable
+   --> src/toodee_fuzz_14784252774365274744.rs:210:7
+    |
+210 |         let mut t_96 = _to_u8(GLOBAL_DATA, 408) % 17;
+    |             ----^^^^
+    |             |
+    |             help: remove this `mut`
+
+warning: variable does not need to be mutable
+   --> src/toodee_fuzz_14784252774365274744.rs:215:7
+    |
+215 |         let mut t_100 = _to_u8(GLOBAL_DATA, 425) % 17;
+    |             ----^^^^^
+    |             |
+    |             help: remove this `mut`
+
+warning: variable does not need to be mutable
+   --> src/toodee_fuzz_14784252774365274744.rs:220:7
+    |
+220 |         let mut t_104 = _to_u8(GLOBAL_DATA, 442) % 17;
+    |             ----^^^^^
+    |             |
+    |             help: remove this `mut`
+
+warning: variable does not need to be mutable
+   --> src/toodee_fuzz_14784252774365274744.rs:225:7
+    |
+225 |         let mut t_108 = _to_u8(GLOBAL_DATA, 459) % 17;
+    |             ----^^^^^
+    |             |
+    |             help: remove this `mut`
+
+warning: variable does not need to be mutable
+   --> src/toodee_fuzz_14784252774365274744.rs:230:7
+    |
+230 |         let mut t_112 = _to_u8(GLOBAL_DATA, 476) % 17;
+    |             ----^^^^^
+    |             |
+    |             help: remove this `mut`
+
+warning: variable does not need to be mutable
+   --> src/toodee_fuzz_14784252774365274744.rs:235:7
+    |
+235 |         let mut t_116 = _to_u8(GLOBAL_DATA, 493) % 17;
+    |             ----^^^^^
+    |             |
+    |             help: remove this `mut`
+
+warning: variable does not need to be mutable
+   --> src/toodee_fuzz_14784252774365274744.rs:240:7
+    |
+240 |         let mut t_120 = _to_u8(GLOBAL_DATA, 510) % 17;
+    |             ----^^^^^
+    |             |
+    |             help: remove this `mut`
+
+warning: variable does not need to be mutable
+   --> src/toodee_fuzz_14784252774365274744.rs:245:7
+    |
+245 |         let mut t_124 = _to_u8(GLOBAL_DATA, 527) % 17;
+    |             ----^^^^^
+    |             |
+    |             help: remove this `mut`
+
+warning: variable does not need to be mutable
+   --> src/toodee_fuzz_14784252774365274744.rs:250:7
+    |
+250 |         let mut t_128 = _to_u8(GLOBAL_DATA, 544) % 17;
+    |             ----^^^^^
+    |             |
+    |             help: remove this `mut`
+
+warning: variable does not need to be mutable
+   --> src/toodee_fuzz_14784252774365274744.rs:258:7
+    |
+258 |         let mut t_133 = &mut t_132;
+    |             ----^^^^^
+    |             |
+    |             help: remove this `mut`
+
+warning: variable does not need to be mutable
+   --> src/toodee_fuzz_14784252774365274744.rs:260:7
+    |
+260 |         let mut t_145 = _to_u8(GLOBAL_DATA, 635) % 17;
+    |             ----^^^^^
+    |             |
+    |             help: remove this `mut`
+
+warning: field `0` is never read
+  --> src/toodee_fuzz_14784252774365274744.rs:11:20
+   |
+11 | struct CustomType0(String);
+   |        ----------- ^^^^^^
+   |        |
+   |        field in this struct
+   |
+   = note: `#[warn(dead_code)]` on by default
+help: consider changing the field to be of unit type to suppress this warning while preserving the field numbering, or remove the field
+   |
+11 | struct CustomType0(());
+   |                    ~~
+
+warning: variable `GLOBAL_DATA` should have a snake case name
+  --> src/toodee_fuzz_14784252774365274744.rs:18:7
+   |
+18 |         let GLOBAL_DATA = global_data.first_half;
+   |             ^^^^^^^^^^^ help: convert the identifier to snake case: `global_data`
+   |
+   = note: `#[warn(non_snake_case)]` on by default
+
+warning: variable `GLOBAL_DATA` should have a snake case name
+  --> src/toodee_fuzz_14784252774365274744.rs:25:7
+   |
+25 |         let GLOBAL_DATA = match selector{
+   |             ^^^^^^^^^^^ help: convert the identifier to snake case: `global_data`
+
+warning: variable `GLOBAL_DATA` should have a snake case name
+  --> src/toodee_fuzz_14784252774365274744.rs:40:7
+   |
+40 |         let GLOBAL_DATA = global_data.first_half;
+   |             ^^^^^^^^^^^ help: convert the identifier to snake case: `global_data`
+
+warning: variable `GLOBAL_DATA` should have a snake case name
+  --> src/toodee_fuzz_14784252774365274744.rs:47:7
+   |
+47 |         let GLOBAL_DATA = match selector{
+   |             ^^^^^^^^^^^ help: convert the identifier to snake case: `global_data`
+
+warning: variable `GLOBAL_DATA` should have a snake case name
+  --> src/toodee_fuzz_14784252774365274744.rs:64:7
+   |
+64 |         let GLOBAL_DATA = global_data.first_half;
+   |             ^^^^^^^^^^^ help: convert the identifier to snake case: `global_data`
+
+warning: variable `GLOBAL_DATA` should have a snake case name
+  --> src/toodee_fuzz_14784252774365274744.rs:71:7
+   |
+71 |         let GLOBAL_DATA = match selector{
+   |             ^^^^^^^^^^^ help: convert the identifier to snake case: `global_data`
+
+warning: variable `GLOBAL_DATA` should have a snake case name
+  --> src/toodee_fuzz_14784252774365274744.rs:89:7
+   |
+89 |         let GLOBAL_DATA = global_data.first_half;
+   |             ^^^^^^^^^^^ help: convert the identifier to snake case: `global_data`
+
+warning: `toodee_fuzz_14784252774365274744` (bin "toodee_fuzz_14784252774365274744") generated 50 warnings (run `cargo fix --bin "toodee_fuzz_14784252774365274744"` to apply 40 suggestions)
+    Finished dev [unoptimized + debuginfo] target(s) in 3.08s
+thread 'main' panicked at src/toodee_fuzz_14784252774365274744.rs:69:13:
+INTENTIONAL PANIC!
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+=================================================================
+==1418237==ERROR: AddressSanitizer: attempting double-free on 0x502000000030 in thread T0:
+    #0 0x5563e1f4fd66  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#4-toodee/harness/target/x86_64-unknown-linux-gnu/debug/toodee_fuzz_14784252774365274744+0x96d66) (BuildId: b68165cbc31a7fe2efb1af6348697da72c2d3b42)
+    #1 0x5563e1f88da6  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#4-toodee/harness/target/x86_64-unknown-linux-gnu/debug/toodee_fuzz_14784252774365274744+0xcfda6) (BuildId: b68165cbc31a7fe2efb1af6348697da72c2d3b42)
+    #2 0x5563e1f8cfba  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#4-toodee/harness/target/x86_64-unknown-linux-gnu/debug/toodee_fuzz_14784252774365274744+0xd3fba) (BuildId: b68165cbc31a7fe2efb1af6348697da72c2d3b42)
+    #3 0x5563e1f8bc31  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#4-toodee/harness/target/x86_64-unknown-linux-gnu/debug/toodee_fuzz_14784252774365274744+0xd2c31) (BuildId: b68165cbc31a7fe2efb1af6348697da72c2d3b42)
+    #4 0x5563e1f79411  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#4-toodee/harness/target/x86_64-unknown-linux-gnu/debug/toodee_fuzz_14784252774365274744+0xc0411) (BuildId: b68165cbc31a7fe2efb1af6348697da72c2d3b42)
+    #5 0x5563e1f79460  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#4-toodee/harness/target/x86_64-unknown-linux-gnu/debug/toodee_fuzz_14784252774365274744+0xc0460) (BuildId: b68165cbc31a7fe2efb1af6348697da72c2d3b42)
+    #6 0x5563e1fa6ff0  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#4-toodee/harness/target/x86_64-unknown-linux-gnu/debug/toodee_fuzz_14784252774365274744+0xedff0) (BuildId: b68165cbc31a7fe2efb1af6348697da72c2d3b42)
+    #7 0x5563e1f8d175  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#4-toodee/harness/target/x86_64-unknown-linux-gnu/debug/toodee_fuzz_14784252774365274744+0xd4175) (BuildId: b68165cbc31a7fe2efb1af6348697da72c2d3b42)
+    #8 0x7fc109b31d8f  (/lib/x86_64-linux-gnu/libc.so.6+0x29d8f) (BuildId: 490fef8403240c91833978d494d39e537409b92e)
+    #9 0x7fc109b31e3f  (/lib/x86_64-linux-gnu/libc.so.6+0x29e3f) (BuildId: 490fef8403240c91833978d494d39e537409b92e)
+    #10 0x5563e1ec9214  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#4-toodee/harness/target/x86_64-unknown-linux-gnu/debug/toodee_fuzz_14784252774365274744+0x10214) (BuildId: b68165cbc31a7fe2efb1af6348697da72c2d3b42)
+
+0x502000000030 is located 0 bytes inside of 1-byte region [0x502000000030,0x502000000031)
+freed by thread T0 here:
+    #0 0x5563e1f4fd66  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#4-toodee/harness/target/x86_64-unknown-linux-gnu/debug/toodee_fuzz_14784252774365274744+0x96d66) (BuildId: b68165cbc31a7fe2efb1af6348697da72c2d3b42)
+    #1 0x5563e1f88da6  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#4-toodee/harness/target/x86_64-unknown-linux-gnu/debug/toodee_fuzz_14784252774365274744+0xcfda6) (BuildId: b68165cbc31a7fe2efb1af6348697da72c2d3b42)
+    #2 0x5563e1f8cfba  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#4-toodee/harness/target/x86_64-unknown-linux-gnu/debug/toodee_fuzz_14784252774365274744+0xd3fba) (BuildId: b68165cbc31a7fe2efb1af6348697da72c2d3b42)
+    #3 0x5563e1f79411  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#4-toodee/harness/target/x86_64-unknown-linux-gnu/debug/toodee_fuzz_14784252774365274744+0xc0411) (BuildId: b68165cbc31a7fe2efb1af6348697da72c2d3b42)
+
+previously allocated by thread T0 here:
+    #0 0x5563e1f5000e  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#4-toodee/harness/target/x86_64-unknown-linux-gnu/debug/toodee_fuzz_14784252774365274744+0x9700e) (BuildId: b68165cbc31a7fe2efb1af6348697da72c2d3b42)
+    #1 0x5563e1f7a1bf  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#4-toodee/harness/target/x86_64-unknown-linux-gnu/debug/toodee_fuzz_14784252774365274744+0xc11bf) (BuildId: b68165cbc31a7fe2efb1af6348697da72c2d3b42)
+    #2 0x5563e1f8cfba  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#4-toodee/harness/target/x86_64-unknown-linux-gnu/debug/toodee_fuzz_14784252774365274744+0xd3fba) (BuildId: b68165cbc31a7fe2efb1af6348697da72c2d3b42)
+    #3 0x5563e1f79411  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#4-toodee/harness/target/x86_64-unknown-linux-gnu/debug/toodee_fuzz_14784252774365274744+0xc0411) (BuildId: b68165cbc31a7fe2efb1af6348697da72c2d3b42)
+
+SUMMARY: AddressSanitizer: double-free (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#4-toodee/harness/target/x86_64-unknown-linux-gnu/debug/toodee_fuzz_14784252774365274744+0x96d66) (BuildId: b68165cbc31a7fe2efb1af6348697da72c2d3b42) 
+==1418237==ABORTING

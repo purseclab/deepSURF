@@ -1,0 +1,16 @@
+[workspace]
+
+[package]
+name = "stack_dst_fuzz_13719959407265914623"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "stack_dst_fuzz_13719959407265914623"
+path = "src/stack_dst_fuzz_13719959407265914623.rs"
+
+[dependencies]
+afl = "=0.15.7"
+home = "=0.5.9"
+stack_dst = { path = "../../../../dataset/erasan_crates/stack_dst-0.6.0" }
+global_data = { path = "../../../../code/global_data" }

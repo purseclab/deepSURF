@@ -1,0 +1,383 @@
+name: CI
+on:
+  push:
+    branches:
+      - master
+  pull_request: {}
+  schedule:
+    - cron: "0 12 * * 1" # Every Monday at 12:00 UTC
+
+env:
+  AWS_ACCESS_KEY_ID: AKIA46X5W6CZBLO3VBND
+
+jobs:
+  test_and_deploy:
+    name: Test and deploy
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout the source code
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 1
+
+      - name: Install toolchain
+        uses: actions-rs/toolchain@v1
+        with:
+          toolchain: 1.70.0
+          override: true
+          components: rustfmt, clippy
+
+      - uses: Swatinem/rust-cache@v2
+        with:
+          key: linux
+
+      - name: Run unit tests
+        run: cargo test --all
+
+      - name: Lint check
+        run: cargo clippy --all -- -D warnings
+
+      - name: Formatting check
+        run: cargo fmt --all -- --check
+
+      - uses: docker/setup-buildx-action@v2
+      - name: Build Docker image
+        uses: docker/build-push-action@v4
+        with:
+          context: .
+          # Export the image to Docker to make it available in the next step
+          load: true
+          tags: rustc-perf
+          cache-from: type=gha
+          cache-to: type=gha,mode=max
+
+      - name: Deploy to production
+        uses: rust-lang/simpleinfra/github-actions/upload-docker-image@master
+        with:
+          image: rustc-perf
+          repository: rust-rustc-perf
+          region: us-west-1
+          redeploy_ecs_cluster: rust-ecs-prod
+          redeploy_ecs_service: rustc-perf
+          aws_access_key_id: "${{ env.AWS_ACCESS_KEY_ID }}"
+          aws_secret_access_key: "${{ secrets.AWS_SECRET_ACCESS_KEY }}"
+        if: github.ref == 'refs/heads/master' || github.ref == 'refs/heads/deploy'
+
+  test_on_windows:
+    name: Test on Windows
+    runs-on: windows-latest
+    steps:
+      - name: Checkout the source code
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 1
+
+      - name: Install latest beta
+        uses: actions-rs/toolchain@v1
+        with:
+          toolchain: beta
+          override: true
+
+      - uses: Swatinem/rust-cache@v2
+        with:
+          key: windows
+
+      - name: cargo check
+        run: cargo check
+        env:
+            RUSTFLAGS: -Dwarnings
+
+      - name: Run unit tests
+        run: cargo test --all
+
+  test_benchmarks:
+    strategy:
+      matrix:
+        # We split `bench_local` testing into four jobs that run in parallel,
+        # by splitting the inputs into halves along two dimensions.
+        #
+        # - Dimension 1: In one half we run just the benchmarks listed here (a
+        #   few of the most expensive ones). In the other half we run
+        #   everything but the benchmarks listed here.
+        #
+        # - Dimension 2: In one half we run the Check, Debug, and Doc profiles.
+        #   In the other half we run the Opt profiles.
+        #
+        # We want the four parts to have similar runtimes.
+        BENCH_INCLUDE_EXCLUDE_OPTS: [
+          "--include cargo-0.60.0,stm32f4-0.14.0,webrender-2022",
+          "--exclude cargo-0.60.0,stm32f4-0.14.0,webrender-2022",
+        ]
+        PROFILES: [
+          "Check,Debug,Doc",
+          "Opt",
+        ]
+    name: Test benchmarks
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout the source code
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 1
+
+      - name: Install latest beta
+        uses: actions-rs/toolchain@v1
+        with:
+          toolchain: beta
+          override: true
+
+      - name: Configure environment
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y linux-tools-common linux-tools-generic linux-tools-`uname -r`
+          echo -1 | sudo tee /proc/sys/kernel/perf_event_paranoid
+
+      - name: Install servo dependencies
+        run: sudo apt-get install -y llvm-dev clang libx11-dev python2.7 autoconf2.13 libjemalloc-dev
+
+      - uses: Swatinem/rust-cache@v2
+
+      - name: Build collector
+        run: cargo build -p collector
+
+      - name: Check compile benchmarks
+        run: sh -x -c "ci/check-compile-benchmarks.sh"
+        env:
+          JEMALLOC_OVERRIDE: /usr/lib/x86_64-linux-gnu/libjemalloc.so
+          BENCH_INCLUDE_EXCLUDE_OPTS: ${{ matrix.BENCH_INCLUDE_EXCLUDE_OPTS }}
+          PROFILES: ${{ matrix.PROFILES }}
+          SHELL: "/bin/bash"
+
+  test_backends:
+    name: Test codegen backend benchmarks
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout the source code
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 1
+
+      - name: Install latest beta
+        uses: actions-rs/toolchain@v1
+        with:
+          toolchain: beta
+          override: true
+
+      - name: Configure environment
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y linux-tools-common linux-tools-generic linux-tools-`uname -r`
+          echo -1 | sudo tee /proc/sys/kernel/perf_event_paranoid
+
+      - uses: Swatinem/rust-cache@v2
+
+      - name: Build collector
+        run: cargo build -p collector
+
+      - name: Check compile benchmarks
+        run: sh -x -c "ci/check-compile-benchmarks.sh"
+        env:
+          BENCH_INCLUDE_EXCLUDE_OPTS: "--include helloworld --exclude helloworld-tiny"
+          PROFILES: Debug,Opt
+          BACKENDS: Cranelift
+          SHELL: "/bin/bash"
+
+  test_runtime_benchmarks:
+    name: Test runtime benchmarks
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout the source code
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 1
+
+      - name: Install latest beta
+        uses: actions-rs/toolchain@v1
+        with:
+          toolchain: beta
+          override: true
+
+      - name: Configure environment
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y linux-tools-common linux-tools-generic linux-tools-`uname -r`
+          echo -1 | sudo tee /proc/sys/kernel/perf_event_paranoid
+
+      - uses: Swatinem/rust-cache@v2
+
+      - name: Build collector
+        run: cargo build -p collector
+
+      - name: Check runtime benchmarks
+        run: sh -x -c "ci/check-runtime-benchmarks.sh"
+        env:
+          SHELL: "/bin/bash"
+
+  test_profiling:
+    name: Test profiling
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Checkout the source code
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 1
+
+      - name: Install latest beta
+        uses: actions-rs/toolchain@v1
+        with:
+          toolchain: beta
+          override: true
+
+      # We build a specific version of Valgrind because the one from the Ubuntu 22.04 repositories
+      # has problems with Rust debuginfo.
+      - name: Install Valgrind
+        run: |
+          git clone https://sourceware.org/git/valgrind.git
+          cd valgrind
+          # Version from May 2022
+          git checkout 74e180e3c4d9e6bb4b2a9cd22eca7703412c5d42
+          ./autogen.sh
+          ./configure --prefix=${PWD}/build
+          make -j2
+          make install
+          echo "${PWD}/build/bin" >> $GITHUB_PATH
+
+      - uses: Swatinem/rust-cache@v2
+
+      - name: Install profilers
+        run: cargo install --version 0.4.12 cargo-llvm-lines
+
+      # Bytehound is currently broken, removing it to keep CI green.
+      #- name: Install Bytehound
+      #  run: |
+      #    mkdir -p bytehound
+      #    cd bytehound
+      #    wget https://github.com/koute/bytehound/releases/download/0.11.0/bytehound-x86_64-unknown-linux-gnu.tgz
+      #    tar xf bytehound-x86_64-unknown-linux-gnu.tgz
+      #    cd ..
+      #    echo "LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:${PWD}/bytehound" >> $GITHUB_ENV
+
+      - name: Configure environment
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y linux-tools-common linux-tools-generic linux-tools-`uname -r`
+          echo -1 | sudo tee /proc/sys/kernel/perf_event_paranoid
+
+      - name: Build collector
+        run: cargo build -p collector
+
+      - name: Check profiling
+        run: sh -x -c "ci/check-profiling.sh"
+
+  database-check:
+    name: Database Check
+    runs-on: ubuntu-latest
+    services:
+      postgres:
+        image: postgres
+        env:
+          POSTGRES_PASSWORD: postgres
+        options: >-
+          --health-cmd pg_isready
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 5
+        ports:
+          - 5432:5432
+
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@v2
+
+      - name: Install stable
+        uses: actions-rs/toolchain@v1
+        with:
+          toolchain: stable
+
+      - uses: Swatinem/rust-cache@v2
+
+      - name: Build site
+        run: cargo build --bin site
+
+      - name: Connect to PostgreSQL
+        run: |
+          timeout 5s ./target/debug/site 'postgresql://postgres:postgres@localhost:5432/postgres' 2>&1 | tee -a log || true
+          grep -Fxq "Loading complete but no data identified; exiting." log
+
+      - name: Connect to SQLite
+        run: |
+          timeout 5s ./target/debug/site 2>&1 | tee -a log || true
+          grep -Fxq "Loading complete but no data identified; exiting." log
+
+      - name: Build Postgres to SQLite exporter
+        run: cargo build --bin postgres-to-sqlite
+
+      - name: Export empty Postgres DB to SQLite
+        run: ./target/debug/postgres-to-sqlite 'postgresql://postgres:postgres@localhost:5432/postgres' "$(mktemp)"
+
+      - name: Export empty Postgres DB to SQLite with date filter
+        run: ./target/debug/postgres-to-sqlite --since-weeks-ago=1 'postgresql://postgres:postgres@localhost:5432/postgres' "$(mktemp)"
+
+      - name: Build SQLite to Postgres exporter
+        run: cargo build --bin sqlite-to-postgres
+
+      - name: Export empty SQLite DB to Postgres
+        run: ./target/debug/sqlite-to-postgres "$(mktemp)" 'postgresql://postgres:postgres@localhost:5432/postgres'
+
+  site-endpoint:
+    name: Compare page endpoint test
+    runs-on: ubuntu-latest
+    services:
+      postgres:
+        image: postgres
+        env:
+          POSTGRES_PASSWORD: postgres
+        ports:
+          - 5432:5432
+
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@v2
+
+      - name: Install stable
+        uses: actions-rs/toolchain@v1
+        with:
+          toolchain: stable
+
+      - name: Install nightly
+        run: rustup install nightly
+
+      - name: Configure environment
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y linux-tools-common linux-tools-generic linux-tools-`uname -r`
+          echo -1 | sudo tee /proc/sys/kernel/perf_event_paranoid
+
+      - uses: Swatinem/rust-cache@v2
+
+      - name: Build collector
+        run: cargo build -p collector
+
+      - name: Gather data
+        run: |
+          cargo run --bin collector bench_local `which rustc` --include syn --id version1 \
+            --self-profile \
+            --db postgresql://postgres:postgres@127.0.0.1:5432/postgres
+          cargo run --bin collector bench_local `rustup +nightly which rustc` --include syn --id version2 \
+            --self-profile \
+            --db postgresql://postgres:postgres@127.0.0.1:5432/postgres
+
+      - name: Build site
+        run: cargo build --bin site
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+
+      - name: Install Python dependencies
+        run: python3 -m pip install msgpack requests
+
+      # Check that data from the /get endpoint can be successfully queried.
+      - name: Query compare page data
+        run: |
+          DATABASE_URL=postgresql://postgres:postgres@127.0.0.1:5432/postgres cargo run --bin site &
+          python3 ci/check-site.py version1 version2

@@ -1,0 +1,16 @@
+[workspace]
+
+[package]
+name = "bumpalo_fuzz_17151298416019404428"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "bumpalo_fuzz_17151298416019404428"
+path = "src/bumpalo_fuzz_17151298416019404428.rs"
+
+[dependencies]
+afl = "=0.15.7"
+home = "=0.5.9"
+bumpalo = { path = "../../../../bumpalo-3.11.0/" }
+global_data = { path = "../../../../../../../../code/global_data" }

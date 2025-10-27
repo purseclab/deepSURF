@@ -1,0 +1,15 @@
+[package]
+name = "algorithmica"
+version = "0.1.8"
+authors = ["AbrarNitk <abrar.nitk@gmail.com>"]
+edition = "2018"
+description = "Rust Algorithms"
+license = "MIT"
+include = ["src/**/*", "Cargo.toml"]
+repository = "https://github.com/AbrarNitk/algorithmica"
+documentation = "https://github.com/AbrarNitk/algorithmica"
+homepage = "https://github.com/AbrarNitk/algorithmica"
+readme = "README.md"
+keywords = ["algorithms", "search", "math", "data", "sort"]
+
+[dependencies]

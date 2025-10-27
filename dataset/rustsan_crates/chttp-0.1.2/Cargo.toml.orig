@@ -1,0 +1,20 @@
+[package]
+name = "chttp"
+version = "0.1.2"
+description = "The practical HTTP client that is fun to use."
+authors = ["Stephen M. Coakley <me@stephencoakley.com>"]
+license = "MIT"
+keywords = ["http", "request", "client"]
+categories = ["web-programming::http-client"]
+repository = "https://github.com/sagebind/chttp"
+
+[features]
+default = []
+
+[dependencies]
+curl = "0.4"
+http = "0.1.1"
+
+[dependencies.json]
+version = "0.11"
+optional = true

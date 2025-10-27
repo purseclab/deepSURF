@@ -1,0 +1,16 @@
+[workspace]
+
+[package]
+name = "toodee_fuzz_555877914944344635"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "toodee_fuzz_555877914944344635"
+path = "src/toodee_fuzz_555877914944344635.rs"
+
+[dependencies]
+afl = "=0.15.7"
+home = "=0.5.9"
+toodee = { path = "../../../../../../dataset/erasan_crates/toodee-0.2.4/" }
+global_data = { path = "../../../../../../code/global_data" }

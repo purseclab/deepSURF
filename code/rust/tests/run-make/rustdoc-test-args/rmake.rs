@@ -1,0 +1,15 @@
+use run_make_support::{fs_wrapper, rustdoc};
+use std::iter;
+use std::path::Path;
+
+fn generate_a_lot_of_cfgs(path: &Path) {
+    let content = iter::repeat("--cfg=a\n").take(100_000).collect::<String>();
+    fs_wrapper::write(path, content.as_bytes());
+}
+
+fn main() {
+    let arg_file = Path::new("args");
+    generate_a_lot_of_cfgs(&arg_file);
+
+    rustdoc().input("foo.rs").arg_file(&arg_file).arg("--test").run();
+}

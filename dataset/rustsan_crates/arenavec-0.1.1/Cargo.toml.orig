@@ -1,0 +1,28 @@
+[package]
+name = "arenavec"
+version = "0.1.1"
+license = "MIT"
+authors = ["Inokentiy Babushkin <twk@twki.de>"]
+description = "An arena backed implementation of vectors and related types."
+homepage = "https://github.com/ibabushkin/arenavec"
+repository = "https://github.com/ibabushkin/arenavec"
+readme = "README.md"
+keywords = ["arena", "data-structures", "vec", "allocation"]
+categories = ["algorithms", "data-structures", "memory-management"]
+edition = "2018"
+
+[badges]
+travis-ci = { repository = "ibabushkin/arenavec" }
+coveralls = { repository = "ibabushkin/arenavec" }
+
+[dependencies]
+serde = { version = "1.0.80", optional = true }
+
+[target.'cfg(unix)'.dependencies]
+libc = "0.2.44"
+
+[target.'cfg(windows)'.dependencies]
+winapi = { version = "0.3.7", features = ["basetsd", "memoryapi", "minwindef", "sysinfoapi", "winnt"] }
+
+[dev-dependencies]
+proptest = "0.9.3"

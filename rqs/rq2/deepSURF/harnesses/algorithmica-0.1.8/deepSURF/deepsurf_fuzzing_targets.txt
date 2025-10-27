@@ -1,0 +1,17 @@
+deepSURF: Generated Targets to be Fuzzed
+------------------------------------------------------------------------------------------------------------------------------------
+  StableURAPI: sort_by::/home/cdc/SURF/deepSURF-big-experiment-harnesses/algorithmica-0.1.8/src/sort/merge_sort.rs::80,
+    - URAPI: DefId(0:66 ~ algorithmica[ed66]::sort::merge_sort::sort_by),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * algorithmica_fuzz_10485517678465726194
+      * algorithmica_fuzz_10485517678465726194_deepseek-r1_turn3
+  StableURAPI: sort::/home/cdc/SURF/deepSURF-big-experiment-harnesses/algorithmica-0.1.8/src/sort/merge_sort.rs::70,
+    - URAPI: DefId(0:63 ~ algorithmica[ed66]::sort::merge_sort::sort),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * algorithmica_fuzz_17332966688754024222_deepseek-r1_turn3
+      * algorithmica_fuzz_17332966688754024222
+------------------------------------------------------------------------------------------------------------------------------------

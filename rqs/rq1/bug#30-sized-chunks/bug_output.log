@@ -1,0 +1,182 @@
+     Removed 152 files, 71.4MiB total
+   Compiling typenum v1.18.0
+   Compiling semver v1.0.26
+   Compiling home v0.5.5
+   Compiling libc v0.2.175
+   Compiling xdg v2.5.2
+   Compiling global_data v0.1.0 (/home/cdc/deepSURF-sp26-artifacts/artifact_code/global_data)
+   Compiling afl v0.15.7
+   Compiling rustc_version v0.4.1
+   Compiling bitmaps v2.1.0
+   Compiling sized-chunks v0.6.2 (/home/cdc/deepSURF-sp26-artifacts/artifact_data/dataset/rustsan_crates/sized-chunks-0.6.2)
+   Compiling sized-chunks_fuzz_18107269206091153276 v0.1.0 (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#30-sized-chunks/harness)
+warning: unused import: `std::str::FromStr`
+ --> src/sized-chunks_fuzz_18107269206091153276.rs:7:5
+  |
+7 | use std::str::FromStr;
+  |     ^^^^^^^^^^^^^^^^^
+  |
+  = note: `#[warn(unused_imports)]` on by default
+
+warning: unused imports: `DerefMut`, `Deref`, `IndexMut`, `Index`
+ --> src/sized-chunks_fuzz_18107269206091153276.rs:8:16
+  |
+8 | use std::ops::{Deref, DerefMut, Index, IndexMut};
+  |                ^^^^^  ^^^^^^^^  ^^^^^  ^^^^^^^^
+
+warning: the item `TryInto` is imported redundantly
+   --> src/sized-chunks_fuzz_18107269206091153276.rs:224:9
+    |
+224 |     use std::convert::TryInto;
+    |         ^^^^^^^^^^^^^^^^^^^^^
+   --> /rustc/11f32b73e0dc9287e305b5b9980d24aecdc8c17f/library/std/src/prelude/mod.rs:129:13
+    |
+    = note: the item `TryInto` is already defined here
+
+warning: the item `TryInto` is imported redundantly
+   --> src/sized-chunks_fuzz_18107269206091153276.rs:231:9
+    |
+231 |     use std::convert::TryInto;
+    |         ^^^^^^^^^^^^^^^^^^^^^
+   --> /rustc/11f32b73e0dc9287e305b5b9980d24aecdc8c17f/library/std/src/prelude/mod.rs:129:13
+    |
+    = note: the item `TryInto` is already defined here
+
+warning: variable does not need to be mutable
+  --> src/sized-chunks_fuzz_18107269206091153276.rs:34:13
+   |
+34 |         let mut t_0 = _to_u8(GLOBAL_DATA, 8) % 17;
+   |             ----^^^
+   |             |
+   |             help: remove this `mut`
+   |
+   = note: `#[warn(unused_mut)]` on by default
+
+warning: variable does not need to be mutable
+  --> src/sized-chunks_fuzz_18107269206091153276.rs:76:13
+   |
+76 |         let mut t_40 = _to_u8(GLOBAL_DATA, 163) % 17;
+   |             ----^^^^
+   |             |
+   |             help: remove this `mut`
+
+warning: unused variable: `index`
+   --> src/sized-chunks_fuzz_18107269206091153276.rs:111:25
+    |
+111 |                     let index = _to_usize(GLOBAL_DATA, 50 + i as usize);
+    |                         ^^^^^ help: if this is intentional, prefix it with an underscore: `_index`
+    |
+    = note: `#[warn(unused_variables)]` on by default
+
+warning: unused variable: `src_index`
+   --> src/sized-chunks_fuzz_18107269206091153276.rs:133:13
+    |
+133 |         let src_index = _to_usize(GLOBAL_DATA, 300) % main_chunk.len();
+    |             ^^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_src_index`
+
+warning: struct `CustomType1` is never constructed
+  --> src/sized-chunks_fuzz_18107269206091153276.rs:11:8
+   |
+11 | struct CustomType1(String);
+   |        ^^^^^^^^^^^
+   |
+   = note: `#[warn(dead_code)]` on by default
+
+warning: field `0` is never read
+  --> src/sized-chunks_fuzz_18107269206091153276.rs:13:20
+   |
+13 | struct CustomType2(String);
+   |        ----------- ^^^^^^
+   |        |
+   |        field in this struct
+   |
+   = note: `CustomType2` has a derived impl for the trait `Debug`, but this is intentionally ignored during dead code analysis
+help: consider changing the field to be of unit type to suppress this warning while preserving the field numbering, or remove the field
+   |
+13 | struct CustomType2(());
+   |                    ~~
+
+warning: struct `CustomType4` is never constructed
+  --> src/sized-chunks_fuzz_18107269206091153276.rs:15:8
+   |
+15 | struct CustomType4(String);
+   |        ^^^^^^^^^^^
+
+warning: variable `GLOBAL_DATA` should have a snake case name
+  --> src/sized-chunks_fuzz_18107269206091153276.rs:23:13
+   |
+23 |         let GLOBAL_DATA = global_data.first_half;
+   |             ^^^^^^^^^^^ help: convert the identifier to snake case: `global_data`
+   |
+   = note: `#[warn(non_snake_case)]` on by default
+
+warning: variable `GLOBAL_DATA` should have a snake case name
+  --> src/sized-chunks_fuzz_18107269206091153276.rs:30:13
+   |
+30 |         let GLOBAL_DATA = match selector {
+   |             ^^^^^^^^^^^ help: convert the identifier to snake case: `global_data`
+
+warning: variable `GLOBAL_DATA` should have a snake case name
+  --> src/sized-chunks_fuzz_18107269206091153276.rs:44:13
+   |
+44 |         let GLOBAL_DATA = global_data.first_half;
+   |             ^^^^^^^^^^^ help: convert the identifier to snake case: `global_data`
+
+warning: variable `GLOBAL_DATA` should have a snake case name
+  --> src/sized-chunks_fuzz_18107269206091153276.rs:51:13
+   |
+51 |         let GLOBAL_DATA = match selector {
+   |             ^^^^^^^^^^^ help: convert the identifier to snake case: `global_data`
+
+warning: variable `GLOBAL_DATA` should have a snake case name
+  --> src/sized-chunks_fuzz_18107269206091153276.rs:65:13
+   |
+65 |         let GLOBAL_DATA = global_data.first_half;
+   |             ^^^^^^^^^^^ help: convert the identifier to snake case: `global_data`
+
+warning: variable `GLOBAL_DATA` should have a snake case name
+  --> src/sized-chunks_fuzz_18107269206091153276.rs:72:13
+   |
+72 |         let GLOBAL_DATA = match selector {
+   |             ^^^^^^^^^^^ help: convert the identifier to snake case: `global_data`
+
+warning: variable `GLOBAL_DATA` should have a snake case name
+  --> src/sized-chunks_fuzz_18107269206091153276.rs:87:13
+   |
+87 |         let GLOBAL_DATA = global_data.first_half;
+   |             ^^^^^^^^^^^ help: convert the identifier to snake case: `global_data`
+
+warning: `sized-chunks_fuzz_18107269206091153276` (bin "sized-chunks_fuzz_18107269206091153276") generated 18 warnings (run `cargo fix --bin "sized-chunks_fuzz_18107269206091153276"` to apply 6 suggestions)
+    Finished dev [unoptimized + debuginfo] target(s) in 2.86s
+thread 'main' panicked at src/sized-chunks_fuzz_18107269206091153276.rs:28:13:
+INTENTIONAL PANIC!
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+=================================================================
+==1407362==ERROR: AddressSanitizer: attempting double-free on 0x502000000030 in thread T0:
+    #0 0x560b3e967696  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#30-sized-chunks/harness/target/x86_64-unknown-linux-gnu/debug/sized-chunks_fuzz_18107269206091153276+0x98696) (BuildId: b1cc928469a16f144a3dcdd9e1b8e5a27f1e919f)
+    #1 0x560b3e99b05b  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#30-sized-chunks/harness/target/x86_64-unknown-linux-gnu/debug/sized-chunks_fuzz_18107269206091153276+0xcc05b) (BuildId: b1cc928469a16f144a3dcdd9e1b8e5a27f1e919f)
+    #2 0x560b3e9a0d1a  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#30-sized-chunks/harness/target/x86_64-unknown-linux-gnu/debug/sized-chunks_fuzz_18107269206091153276+0xd1d1a) (BuildId: b1cc928469a16f144a3dcdd9e1b8e5a27f1e919f)
+    #3 0x560b3e99f991  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#30-sized-chunks/harness/target/x86_64-unknown-linux-gnu/debug/sized-chunks_fuzz_18107269206091153276+0xd0991) (BuildId: b1cc928469a16f144a3dcdd9e1b8e5a27f1e919f)
+    #4 0x560b3e990d91  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#30-sized-chunks/harness/target/x86_64-unknown-linux-gnu/debug/sized-chunks_fuzz_18107269206091153276+0xc1d91) (BuildId: b1cc928469a16f144a3dcdd9e1b8e5a27f1e919f)
+    #5 0x560b3e990de0  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#30-sized-chunks/harness/target/x86_64-unknown-linux-gnu/debug/sized-chunks_fuzz_18107269206091153276+0xc1de0) (BuildId: b1cc928469a16f144a3dcdd9e1b8e5a27f1e919f)
+    #6 0x560b3e9baeb0  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#30-sized-chunks/harness/target/x86_64-unknown-linux-gnu/debug/sized-chunks_fuzz_18107269206091153276+0xebeb0) (BuildId: b1cc928469a16f144a3dcdd9e1b8e5a27f1e919f)
+    #7 0x560b3e9a0ed5  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#30-sized-chunks/harness/target/x86_64-unknown-linux-gnu/debug/sized-chunks_fuzz_18107269206091153276+0xd1ed5) (BuildId: b1cc928469a16f144a3dcdd9e1b8e5a27f1e919f)
+    #8 0x7f25a82fad8f  (/lib/x86_64-linux-gnu/libc.so.6+0x29d8f) (BuildId: 490fef8403240c91833978d494d39e537409b92e)
+    #9 0x7f25a82fae3f  (/lib/x86_64-linux-gnu/libc.so.6+0x29e3f) (BuildId: 490fef8403240c91833978d494d39e537409b92e)
+    #10 0x560b3e8e09c4  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#30-sized-chunks/harness/target/x86_64-unknown-linux-gnu/debug/sized-chunks_fuzz_18107269206091153276+0x119c4) (BuildId: b1cc928469a16f144a3dcdd9e1b8e5a27f1e919f)
+
+0x502000000030 is located 0 bytes inside of 8-byte region [0x502000000030,0x502000000038)
+freed by thread T0 here:
+    #0 0x560b3e967696  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#30-sized-chunks/harness/target/x86_64-unknown-linux-gnu/debug/sized-chunks_fuzz_18107269206091153276+0x98696) (BuildId: b1cc928469a16f144a3dcdd9e1b8e5a27f1e919f)
+    #1 0x560b3e99b05b  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#30-sized-chunks/harness/target/x86_64-unknown-linux-gnu/debug/sized-chunks_fuzz_18107269206091153276+0xcc05b) (BuildId: b1cc928469a16f144a3dcdd9e1b8e5a27f1e919f)
+    #2 0x560b3e9a0d1a  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#30-sized-chunks/harness/target/x86_64-unknown-linux-gnu/debug/sized-chunks_fuzz_18107269206091153276+0xd1d1a) (BuildId: b1cc928469a16f144a3dcdd9e1b8e5a27f1e919f)
+    #3 0x560b3e990d91  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#30-sized-chunks/harness/target/x86_64-unknown-linux-gnu/debug/sized-chunks_fuzz_18107269206091153276+0xc1d91) (BuildId: b1cc928469a16f144a3dcdd9e1b8e5a27f1e919f)
+
+previously allocated by thread T0 here:
+    #0 0x560b3e96793e  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#30-sized-chunks/harness/target/x86_64-unknown-linux-gnu/debug/sized-chunks_fuzz_18107269206091153276+0x9893e) (BuildId: b1cc928469a16f144a3dcdd9e1b8e5a27f1e919f)
+    #1 0x560b3e9dce76  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#30-sized-chunks/harness/target/x86_64-unknown-linux-gnu/debug/sized-chunks_fuzz_18107269206091153276+0x10de76) (BuildId: b1cc928469a16f144a3dcdd9e1b8e5a27f1e919f)
+    #2 0x560b3e9a0d1a  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#30-sized-chunks/harness/target/x86_64-unknown-linux-gnu/debug/sized-chunks_fuzz_18107269206091153276+0xd1d1a) (BuildId: b1cc928469a16f144a3dcdd9e1b8e5a27f1e919f)
+    #3 0x560b3e990d91  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#30-sized-chunks/harness/target/x86_64-unknown-linux-gnu/debug/sized-chunks_fuzz_18107269206091153276+0xc1d91) (BuildId: b1cc928469a16f144a3dcdd9e1b8e5a27f1e919f)
+
+SUMMARY: AddressSanitizer: double-free (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#30-sized-chunks/harness/target/x86_64-unknown-linux-gnu/debug/sized-chunks_fuzz_18107269206091153276+0x98696) (BuildId: b1cc928469a16f144a3dcdd9e1b8e5a27f1e919f) 
+==1407362==ABORTING

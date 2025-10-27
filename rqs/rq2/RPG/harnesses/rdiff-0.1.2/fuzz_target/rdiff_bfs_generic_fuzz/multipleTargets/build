@@ -1,0 +1,3 @@
+cd /RPG/erasan_dataset/rdiff-0.1.2/fuzz_target/rdiff_bfs_generic_fuzz/multipleTargets
+cargo afl build
+cd -

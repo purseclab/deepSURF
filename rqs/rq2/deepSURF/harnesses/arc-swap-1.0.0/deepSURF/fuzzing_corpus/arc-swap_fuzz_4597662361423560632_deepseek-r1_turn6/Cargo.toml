@@ -1,0 +1,16 @@
+[workspace]
+
+[package]
+name = "arc-swap_fuzz_4597662361423560632"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "arc-swap_fuzz_4597662361423560632"
+path = "src/arc-swap_fuzz_4597662361423560632.rs"
+
+[dependencies]
+afl = "=0.15.7"
+home = "=0.5.9"
+arc-swap = { path = "../../../../arc-swap-1.0.0/" }
+global_data = { path = "../../../../../../../../code/global_data" }

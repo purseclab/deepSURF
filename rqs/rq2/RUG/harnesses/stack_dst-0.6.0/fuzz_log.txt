@@ -1,0 +1,3 @@
+stack_dst-0.6.0/ stack_dst {'tests_rug_1::test_rug': 'tests_rug_1__test_rug', 'tests_rug_2::test_make_fat_ptr': 'tests_rug_2__test_make_fat_ptr', 'tests_rug_3::test_round_to_words': 'tests_rug_3__test_round_to_words'}
+timeout or err tests_rug_3::test_round_to_words
+stack_dst-0.6.0/ done

@@ -1,0 +1,16 @@
+[workspace]
+
+[package]
+name = "nano_arena_fuzz_10170472187941440466"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "nano_arena_fuzz_10170472187941440466"
+path = "src/nano_arena_fuzz_10170472187941440466.rs"
+
+[dependencies]
+afl = "=0.15.7"
+home = "=0.5.9"
+nano_arena = { path = "../../../../nano_arena-0.5.2/" }
+global_data = { path = "../../../../../../../../code/global_data" }

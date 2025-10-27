@@ -1,0 +1,134 @@
+     Removed 132 files, 62.4MiB total
+   Compiling semver v1.0.26
+   Compiling home v0.5.5
+   Compiling libc v0.2.175
+   Compiling xdg v2.5.2
+   Compiling boolinator v2.4.0
+   Compiling global_data v0.1.0 (/home/cdc/deepSURF-sp26-artifacts/artifact_code/global_data)
+   Compiling qwutils v0.3.0 (/home/cdc/deepSURF-sp26-artifacts/artifact_data/dataset/erasan_crates/qwutils-0.3.0)
+   Compiling afl v0.15.7
+warning: unused import: `std::ops::Range`
+ --> /home/cdc/deepSURF-sp26-artifacts/artifact_data/dataset/erasan_crates/qwutils-0.3.0/src/imp/range.rs:1:5
+  |
+1 | use std::ops::Range;
+  |     ^^^^^^^^^^^^^^^
+  |
+  = note: `#[warn(unused_imports)]` on by default
+
+warning: unused import: `std::ops::Sub`
+ --> /home/cdc/deepSURF-sp26-artifacts/artifact_data/dataset/erasan_crates/qwutils-0.3.0/src/imp/range.rs:2:5
+  |
+2 | use std::ops::Sub;
+  |     ^^^^^^^^^^^^^
+
+warning: unused import: `super::*`
+ --> /home/cdc/deepSURF-sp26-artifacts/artifact_data/dataset/erasan_crates/qwutils-0.3.0/src/imp/numext.rs:1:5
+  |
+1 | use super::*;
+  |     ^^^^^^^^
+
+warning: unused import: `range::*`
+  --> /home/cdc/deepSURF-sp26-artifacts/artifact_data/dataset/erasan_crates/qwutils-0.3.0/src/imp/mod.rs:10:9
+   |
+10 | pub use range::*;
+   |         ^^^^^^^^
+
+   Compiling rustc_version v0.4.1
+warning: `qwutils` (lib) generated 4 warnings (run `cargo fix --lib -p qwutils` to apply 4 suggestions)
+   Compiling qwutils_fuzz_3863007537564520346 v0.1.0 (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#22-qwutils/harness)
+warning: unused import: `std::str::FromStr`
+ --> src/qwutils_fuzz_3863007537564520346.rs:7:5
+  |
+7 | use std::str::FromStr;
+  |     ^^^^^^^^^^^^^^^^^
+  |
+  = note: `#[warn(unused_imports)]` on by default
+
+warning: unused imports: `DerefMut`, `IndexMut`, `Index`
+ --> src/qwutils_fuzz_3863007537564520346.rs:8:23
+  |
+8 | use std::ops::{Deref, DerefMut, Index, IndexMut};
+  |                       ^^^^^^^^  ^^^^^  ^^^^^^^^
+
+warning: the item `TryInto` is imported redundantly
+   --> src/qwutils_fuzz_3863007537564520346.rs:188:9
+    |
+188 |     use std::convert::TryInto;
+    |         ^^^^^^^^^^^^^^^^^^^^^
+   --> /rustc/11f32b73e0dc9287e305b5b9980d24aecdc8c17f/library/std/src/prelude/mod.rs:129:13
+    |
+    = note: the item `TryInto` is already defined here
+
+warning: the item `TryInto` is imported redundantly
+   --> src/qwutils_fuzz_3863007537564520346.rs:195:9
+    |
+195 |     use std::convert::TryInto;
+    |         ^^^^^^^^^^^^^^^^^^^^^
+   --> /rustc/11f32b73e0dc9287e305b5b9980d24aecdc8c17f/library/std/src/prelude/mod.rs:129:13
+    |
+    = note: the item `TryInto` is already defined here
+
+warning: unused import: `qwutils`
+ --> src/qwutils_fuzz_3863007537564520346.rs:5:5
+  |
+5 | use qwutils::*;
+  |     ^^^^^^^
+
+warning: variable does not need to be mutable
+  --> src/qwutils_fuzz_3863007537564520346.rs:27:13
+   |
+27 |         let mut t_6 = _to_u8(GLOBAL_DATA, 25) % 17;
+   |             ----^^^
+   |             |
+   |             help: remove this `mut`
+   |
+   = note: `#[warn(unused_mut)]` on by default
+
+warning: variable `GLOBAL_DATA` should have a snake case name
+  --> src/qwutils_fuzz_3863007537564520346.rs:16:13
+   |
+16 |         let GLOBAL_DATA = global_data.first_half;
+   |             ^^^^^^^^^^^ help: convert the identifier to snake case: `global_data`
+   |
+   = note: `#[warn(non_snake_case)]` on by default
+
+warning: variable `GLOBAL_DATA` should have a snake case name
+  --> src/qwutils_fuzz_3863007537564520346.rs:23:13
+   |
+23 |         let GLOBAL_DATA = match selector {
+   |             ^^^^^^^^^^^ help: convert the identifier to snake case: `global_data`
+
+warning: `qwutils_fuzz_3863007537564520346` (bin "qwutils_fuzz_3863007537564520346") generated 8 warnings (run `cargo fix --bin "qwutils_fuzz_3863007537564520346"` to apply 3 suggestions)
+    Finished dev [unoptimized + debuginfo] target(s) in 2.95s
+thread 'main' panicked at src/qwutils_fuzz_3863007537564520346.rs:21:13:
+INTENTIONAL PANIC!
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+=================================================================
+==1397048==ERROR: AddressSanitizer: attempting double-free on 0x502000000190 in thread T0:
+    #0 0x55d23f87d326  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#22-qwutils/harness/target/x86_64-unknown-linux-gnu/debug/qwutils_fuzz_3863007537564520346+0x98326) (BuildId: 53d88aa554f804a66b1c6f6990b68308b96a3c30)
+    #1 0x55d23f8b2875  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#22-qwutils/harness/target/x86_64-unknown-linux-gnu/debug/qwutils_fuzz_3863007537564520346+0xcd875) (BuildId: 53d88aa554f804a66b1c6f6990b68308b96a3c30)
+    #2 0x55d23f8b182a  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#22-qwutils/harness/target/x86_64-unknown-linux-gnu/debug/qwutils_fuzz_3863007537564520346+0xcc82a) (BuildId: 53d88aa554f804a66b1c6f6990b68308b96a3c30)
+    #3 0x55d23f8b650a  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#22-qwutils/harness/target/x86_64-unknown-linux-gnu/debug/qwutils_fuzz_3863007537564520346+0xd150a) (BuildId: 53d88aa554f804a66b1c6f6990b68308b96a3c30)
+    #4 0x55d23f8b5161  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#22-qwutils/harness/target/x86_64-unknown-linux-gnu/debug/qwutils_fuzz_3863007537564520346+0xd0161) (BuildId: 53d88aa554f804a66b1c6f6990b68308b96a3c30)
+    #5 0x55d23f8a6a21  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#22-qwutils/harness/target/x86_64-unknown-linux-gnu/debug/qwutils_fuzz_3863007537564520346+0xc1a21) (BuildId: 53d88aa554f804a66b1c6f6990b68308b96a3c30)
+    #6 0x55d23f8a6a70  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#22-qwutils/harness/target/x86_64-unknown-linux-gnu/debug/qwutils_fuzz_3863007537564520346+0xc1a70) (BuildId: 53d88aa554f804a66b1c6f6990b68308b96a3c30)
+    #7 0x55d23f8d06a0  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#22-qwutils/harness/target/x86_64-unknown-linux-gnu/debug/qwutils_fuzz_3863007537564520346+0xeb6a0) (BuildId: 53d88aa554f804a66b1c6f6990b68308b96a3c30)
+    #8 0x55d23f8b66c5  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#22-qwutils/harness/target/x86_64-unknown-linux-gnu/debug/qwutils_fuzz_3863007537564520346+0xd16c5) (BuildId: 53d88aa554f804a66b1c6f6990b68308b96a3c30)
+    #9 0x7f2f53fcfd8f  (/lib/x86_64-linux-gnu/libc.so.6+0x29d8f) (BuildId: 490fef8403240c91833978d494d39e537409b92e)
+    #10 0x7f2f53fcfe3f  (/lib/x86_64-linux-gnu/libc.so.6+0x29e3f) (BuildId: 490fef8403240c91833978d494d39e537409b92e)
+    #11 0x55d23f7f63e4  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#22-qwutils/harness/target/x86_64-unknown-linux-gnu/debug/qwutils_fuzz_3863007537564520346+0x113e4) (BuildId: 53d88aa554f804a66b1c6f6990b68308b96a3c30)
+
+0x502000000190 is located 0 bytes inside of 1-byte region [0x502000000190,0x502000000191)
+freed by thread T0 here:
+    #0 0x55d23f87d326  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#22-qwutils/harness/target/x86_64-unknown-linux-gnu/debug/qwutils_fuzz_3863007537564520346+0x98326) (BuildId: 53d88aa554f804a66b1c6f6990b68308b96a3c30)
+    #1 0x55d23f8b2875  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#22-qwutils/harness/target/x86_64-unknown-linux-gnu/debug/qwutils_fuzz_3863007537564520346+0xcd875) (BuildId: 53d88aa554f804a66b1c6f6990b68308b96a3c30)
+
+previously allocated by thread T0 here:
+    #0 0x55d23f87d5ce  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#22-qwutils/harness/target/x86_64-unknown-linux-gnu/debug/qwutils_fuzz_3863007537564520346+0x985ce) (BuildId: 53d88aa554f804a66b1c6f6990b68308b96a3c30)
+    #1 0x55d23f8b4210  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#22-qwutils/harness/target/x86_64-unknown-linux-gnu/debug/qwutils_fuzz_3863007537564520346+0xcf210) (BuildId: 53d88aa554f804a66b1c6f6990b68308b96a3c30)
+    #2 0x55d23f8ace8c  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#22-qwutils/harness/target/x86_64-unknown-linux-gnu/debug/qwutils_fuzz_3863007537564520346+0xc7e8c) (BuildId: 53d88aa554f804a66b1c6f6990b68308b96a3c30)
+    #3 0x55d23f8b650a  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#22-qwutils/harness/target/x86_64-unknown-linux-gnu/debug/qwutils_fuzz_3863007537564520346+0xd150a) (BuildId: 53d88aa554f804a66b1c6f6990b68308b96a3c30)
+    #4 0x55d23f8a6a21  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#22-qwutils/harness/target/x86_64-unknown-linux-gnu/debug/qwutils_fuzz_3863007537564520346+0xc1a21) (BuildId: 53d88aa554f804a66b1c6f6990b68308b96a3c30)
+
+SUMMARY: AddressSanitizer: double-free (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#22-qwutils/harness/target/x86_64-unknown-linux-gnu/debug/qwutils_fuzz_3863007537564520346+0x98326) (BuildId: 53d88aa554f804a66b1c6f6990b68308b96a3c30) 
+==1397048==ABORTING

@@ -1,0 +1,182 @@
+     Removed 125 files, 57.6MiB total
+warning: /home/cdc/deepSURF-sp26-artifacts/artifact_data/dataset/rustsan_crates/slice-deque-0.1.15/Cargo.toml: Found `feature = ...` in `target.'cfg(...)'.dependencies`. This key is not supported for selecting dependencies and will not work as expected. Use the [features] section instead: https://doc.rust-lang.org/cargo/reference/features.html
+   Compiling semver v1.0.26
+   Compiling libc v0.2.175
+   Compiling home v0.5.5
+   Compiling xdg v2.5.2
+   Compiling global_data v0.1.0 (/home/cdc/deepSURF-sp26-artifacts/artifact_code/global_data)
+   Compiling afl v0.15.7
+   Compiling rustc_version v0.4.1
+   Compiling slice-deque v0.1.15 (/home/cdc/deepSURF-sp26-artifacts/artifact_data/dataset/rustsan_crates/slice-deque-0.1.15)
+warning: variable does not need to be mutable
+  --> /home/cdc/deepSURF-sp26-artifacts/artifact_data/dataset/rustsan_crates/slice-deque-0.1.15/src/macros.rs:23:25
+   |
+23 |             if let Some(mut v) = self.buf.get_mut(idx) {
+   |                         ----^
+   |                         |
+   |                         help: remove this `mut`
+   |
+   = note: `#[warn(unused_mut)]` on by default
+
+warning: `slice-deque` (lib) generated 1 warning (run `cargo fix --lib -p slice-deque` to apply 1 suggestion)
+   Compiling slice-deque_fuzz_3903909633575400926 v0.1.0 (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#28-slice-deque-0.1.15/harness)
+warning: unused import: `std::str::FromStr`
+ --> src/slice-deque_fuzz_3903909633575400926.rs:7:5
+  |
+7 | use std::str::FromStr;
+  |     ^^^^^^^^^^^^^^^^^
+  |
+  = note: `#[warn(unused_imports)]` on by default
+
+warning: unused imports: `DerefMut`, `Deref`, `IndexMut`, `Index`
+ --> src/slice-deque_fuzz_3903909633575400926.rs:8:16
+  |
+8 | use std::ops::{Deref, DerefMut, Index, IndexMut};
+  |                ^^^^^  ^^^^^^^^  ^^^^^  ^^^^^^^^
+
+warning: the item `TryInto` is imported redundantly
+   --> src/slice-deque_fuzz_3903909633575400926.rs:233:9
+    |
+233 |     use std::convert::TryInto;
+    |         ^^^^^^^^^^^^^^^^^^^^^
+   --> /rustc/11f32b73e0dc9287e305b5b9980d24aecdc8c17f/library/std/src/prelude/mod.rs:129:13
+    |
+    = note: the item `TryInto` is already defined here
+
+warning: the item `TryInto` is imported redundantly
+   --> src/slice-deque_fuzz_3903909633575400926.rs:240:9
+    |
+240 |     use std::convert::TryInto;
+    |         ^^^^^^^^^^^^^^^^^^^^^
+   --> /rustc/11f32b73e0dc9287e305b5b9980d24aecdc8c17f/library/std/src/prelude/mod.rs:129:13
+    |
+    = note: the item `TryInto` is already defined here
+
+warning: variable does not need to be mutable
+  --> src/slice-deque_fuzz_3903909633575400926.rs:57:13
+   |
+57 |         let mut t_10 = _to_u8(GLOBAL_DATA, 66) % 17;
+   |             ----^^^^
+   |             |
+   |             help: remove this `mut`
+   |
+   = note: `#[warn(unused_mut)]` on by default
+
+warning: variable does not need to be mutable
+  --> src/slice-deque_fuzz_3903909633575400926.rs:81:13
+   |
+81 |         let mut t_1 = _to_u8(GLOBAL_DATA, 17) % 17;
+   |             ----^^^
+   |             |
+   |             help: remove this `mut`
+
+warning: variable does not need to be mutable
+   --> src/slice-deque_fuzz_3903909633575400926.rs:117:13
+    |
+117 |         let mut construct_selector = _to_u8(GLOBAL_DATA, 0) % 3;
+    |             ----^^^^^^^^^^^^^^^^^^
+    |             |
+    |             help: remove this `mut`
+
+warning: field `0` is never read
+  --> src/slice-deque_fuzz_3903909633575400926.rs:11:20
+   |
+11 | struct CustomType0(String);
+   |        ----------- ^^^^^^
+   |        |
+   |        field in this struct
+   |
+   = note: `CustomType0` has a derived impl for the trait `Debug`, but this is intentionally ignored during dead code analysis
+   = note: `#[warn(dead_code)]` on by default
+help: consider changing the field to be of unit type to suppress this warning while preserving the field numbering, or remove the field
+   |
+11 | struct CustomType0(());
+   |                    ~~
+
+warning: variable `GLOBAL_DATA` should have a snake case name
+  --> src/slice-deque_fuzz_3903909633575400926.rs:24:13
+   |
+24 |         let GLOBAL_DATA = global_data.first_half;
+   |             ^^^^^^^^^^^ help: convert the identifier to snake case: `global_data`
+   |
+   = note: `#[warn(non_snake_case)]` on by default
+
+warning: variable `GLOBAL_DATA` should have a snake case name
+  --> src/slice-deque_fuzz_3903909633575400926.rs:31:13
+   |
+31 |         let GLOBAL_DATA = match selector {
+   |             ^^^^^^^^^^^ help: convert the identifier to snake case: `global_data`
+
+warning: variable `GLOBAL_DATA` should have a snake case name
+  --> src/slice-deque_fuzz_3903909633575400926.rs:46:13
+   |
+46 |         let GLOBAL_DATA = global_data.first_half;
+   |             ^^^^^^^^^^^ help: convert the identifier to snake case: `global_data`
+
+warning: variable `GLOBAL_DATA` should have a snake case name
+  --> src/slice-deque_fuzz_3903909633575400926.rs:53:13
+   |
+53 |         let GLOBAL_DATA = match selector {
+   |             ^^^^^^^^^^^ help: convert the identifier to snake case: `global_data`
+
+warning: variable `GLOBAL_DATA` should have a snake case name
+  --> src/slice-deque_fuzz_3903909633575400926.rs:70:13
+   |
+70 |         let GLOBAL_DATA = global_data.first_half;
+   |             ^^^^^^^^^^^ help: convert the identifier to snake case: `global_data`
+
+warning: variable `GLOBAL_DATA` should have a snake case name
+  --> src/slice-deque_fuzz_3903909633575400926.rs:77:13
+   |
+77 |         let GLOBAL_DATA = match selector {
+   |             ^^^^^^^^^^^ help: convert the identifier to snake case: `global_data`
+
+warning: variable `GLOBAL_DATA` should have a snake case name
+  --> src/slice-deque_fuzz_3903909633575400926.rs:91:13
+   |
+91 |         let GLOBAL_DATA = global_data.first_half;
+   |             ^^^^^^^^^^^ help: convert the identifier to snake case: `global_data`
+
+warning: variable `GLOBAL_DATA` should have a snake case name
+  --> src/slice-deque_fuzz_3903909633575400926.rs:98:13
+   |
+98 |         let GLOBAL_DATA = match selector {
+   |             ^^^^^^^^^^^ help: convert the identifier to snake case: `global_data`
+
+warning: variable `GLOBAL_DATA` should have a snake case name
+   --> src/slice-deque_fuzz_3903909633575400926.rs:115:13
+    |
+115 |         let GLOBAL_DATA = global_data.first_half;
+    |             ^^^^^^^^^^^ help: convert the identifier to snake case: `global_data`
+
+warning: `slice-deque_fuzz_3903909633575400926` (bin "slice-deque_fuzz_3903909633575400926") generated 17 warnings (run `cargo fix --bin "slice-deque_fuzz_3903909633575400926"` to apply 5 suggestions)
+    Finished dev [unoptimized + debuginfo] target(s) in 2.79s
+AddressSanitizer:DEADLYSIGNAL
+=================================================================
+==1404132==ERROR: AddressSanitizer: SEGV on unknown address 0x000000000000 (pc 0x55df11d23193 bp 0x55df11d6a518 sp 0x7ffe534464f0 T0)
+==1404132==The signal is caused by a READ memory access.
+==1404132==Hint: address points to the zero page.
+    #0 0x55df11d23193  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#28-slice-deque-0.1.15/harness/target/x86_64-unknown-linux-gnu/debug/slice-deque_fuzz_3903909633575400926+0x11b193) (BuildId: b7f79c75b411381eabed8a517aad1e1fc19b83bf)
+    #1 0x55df11d22253  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#28-slice-deque-0.1.15/harness/target/x86_64-unknown-linux-gnu/debug/slice-deque_fuzz_3903909633575400926+0x11a253) (BuildId: b7f79c75b411381eabed8a517aad1e1fc19b83bf)
+    #2 0x55df11d22f2a  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#28-slice-deque-0.1.15/harness/target/x86_64-unknown-linux-gnu/debug/slice-deque_fuzz_3903909633575400926+0x11af2a) (BuildId: b7f79c75b411381eabed8a517aad1e1fc19b83bf)
+    #3 0x55df11cd9047  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#28-slice-deque-0.1.15/harness/target/x86_64-unknown-linux-gnu/debug/slice-deque_fuzz_3903909633575400926+0xd1047) (BuildId: b7f79c75b411381eabed8a517aad1e1fc19b83bf)
+    #4 0x55df11d22253  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#28-slice-deque-0.1.15/harness/target/x86_64-unknown-linux-gnu/debug/slice-deque_fuzz_3903909633575400926+0x11a253) (BuildId: b7f79c75b411381eabed8a517aad1e1fc19b83bf)
+    #5 0x55df11d22f2a  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#28-slice-deque-0.1.15/harness/target/x86_64-unknown-linux-gnu/debug/slice-deque_fuzz_3903909633575400926+0x11af2a) (BuildId: b7f79c75b411381eabed8a517aad1e1fc19b83bf)
+    #6 0x55df11cdb7e1  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#28-slice-deque-0.1.15/harness/target/x86_64-unknown-linux-gnu/debug/slice-deque_fuzz_3903909633575400926+0xd37e1) (BuildId: b7f79c75b411381eabed8a517aad1e1fc19b83bf)
+    #7 0x55df11d2266f  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#28-slice-deque-0.1.15/harness/target/x86_64-unknown-linux-gnu/debug/slice-deque_fuzz_3903909633575400926+0x11a66f) (BuildId: b7f79c75b411381eabed8a517aad1e1fc19b83bf)
+    #8 0x55df11d006ba  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#28-slice-deque-0.1.15/harness/target/x86_64-unknown-linux-gnu/debug/slice-deque_fuzz_3903909633575400926+0xf86ba) (BuildId: b7f79c75b411381eabed8a517aad1e1fc19b83bf)
+    #9 0x55df11d00d84  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#28-slice-deque-0.1.15/harness/target/x86_64-unknown-linux-gnu/debug/slice-deque_fuzz_3903909633575400926+0xf8d84) (BuildId: b7f79c75b411381eabed8a517aad1e1fc19b83bf)
+    #10 0x55df11cd419e  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#28-slice-deque-0.1.15/harness/target/x86_64-unknown-linux-gnu/debug/slice-deque_fuzz_3903909633575400926+0xcc19e) (BuildId: b7f79c75b411381eabed8a517aad1e1fc19b83bf)
+    #11 0x55df11cde95a  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#28-slice-deque-0.1.15/harness/target/x86_64-unknown-linux-gnu/debug/slice-deque_fuzz_3903909633575400926+0xd695a) (BuildId: b7f79c75b411381eabed8a517aad1e1fc19b83bf)
+    #12 0x55df11cdd5b1  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#28-slice-deque-0.1.15/harness/target/x86_64-unknown-linux-gnu/debug/slice-deque_fuzz_3903909633575400926+0xd55b1) (BuildId: b7f79c75b411381eabed8a517aad1e1fc19b83bf)
+    #13 0x55df11cd02d1  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#28-slice-deque-0.1.15/harness/target/x86_64-unknown-linux-gnu/debug/slice-deque_fuzz_3903909633575400926+0xc82d1) (BuildId: b7f79c75b411381eabed8a517aad1e1fc19b83bf)
+    #14 0x55df11cd0320  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#28-slice-deque-0.1.15/harness/target/x86_64-unknown-linux-gnu/debug/slice-deque_fuzz_3903909633575400926+0xc8320) (BuildId: b7f79c75b411381eabed8a517aad1e1fc19b83bf)
+    #15 0x55df11cfea30  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#28-slice-deque-0.1.15/harness/target/x86_64-unknown-linux-gnu/debug/slice-deque_fuzz_3903909633575400926+0xf6a30) (BuildId: b7f79c75b411381eabed8a517aad1e1fc19b83bf)
+    #16 0x55df11cdeb15  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#28-slice-deque-0.1.15/harness/target/x86_64-unknown-linux-gnu/debug/slice-deque_fuzz_3903909633575400926+0xd6b15) (BuildId: b7f79c75b411381eabed8a517aad1e1fc19b83bf)
+    #17 0x7f8b3b40ad8f  (/lib/x86_64-linux-gnu/libc.so.6+0x29d8f) (BuildId: 490fef8403240c91833978d494d39e537409b92e)
+    #18 0x7f8b3b40ae3f  (/lib/x86_64-linux-gnu/libc.so.6+0x29e3f) (BuildId: 490fef8403240c91833978d494d39e537409b92e)
+    #19 0x55df11c1b734  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#28-slice-deque-0.1.15/harness/target/x86_64-unknown-linux-gnu/debug/slice-deque_fuzz_3903909633575400926+0x13734) (BuildId: b7f79c75b411381eabed8a517aad1e1fc19b83bf)
+
+AddressSanitizer can not provide additional info.
+SUMMARY: AddressSanitizer: SEGV (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#28-slice-deque-0.1.15/harness/target/x86_64-unknown-linux-gnu/debug/slice-deque_fuzz_3903909633575400926+0x11b193) (BuildId: b7f79c75b411381eabed8a517aad1e1fc19b83bf) 
+==1404132==ABORTING

@@ -1,0 +1,15 @@
+ ./fuzz_transform/target/release/fuzz_transform /home/cdc/test_toodee/toodee-0.2.4/./src/copy.rs
+ ./fuzz_transform/target/release/fuzz_transform /home/cdc/test_toodee/toodee-0.2.4/./src/tests_translate.rs
+ ./fuzz_transform/target/release/fuzz_transform /home/cdc/test_toodee/toodee-0.2.4/./src/translate.rs
+ ./fuzz_transform/target/release/fuzz_transform /home/cdc/test_toodee/toodee-0.2.4/./src/view.rs
+ ./fuzz_transform/target/release/fuzz_transform /home/cdc/test_toodee/toodee-0.2.4/./src/toodee.rs
+ ./fuzz_transform/target/release/fuzz_transform /home/cdc/test_toodee/toodee-0.2.4/./src/flattenexact.rs
+ ./fuzz_transform/target/release/fuzz_transform /home/cdc/test_toodee/toodee-0.2.4/./src/tests_copy.rs
+ ./fuzz_transform/target/release/fuzz_transform /home/cdc/test_toodee/toodee-0.2.4/./src/iter.rs
+ ./fuzz_transform/target/release/fuzz_transform /home/cdc/test_toodee/toodee-0.2.4/./src/tests.rs
+ ./fuzz_transform/target/release/fuzz_transform /home/cdc/test_toodee/toodee-0.2.4/./src/tests_iter.rs
+ ./fuzz_transform/target/release/fuzz_transform /home/cdc/test_toodee/toodee-0.2.4/./src/ops.rs
+ ./fuzz_transform/target/release/fuzz_transform /home/cdc/test_toodee/toodee-0.2.4/./src/sort.rs
+ ./fuzz_transform/target/release/fuzz_transform /home/cdc/test_toodee/toodee-0.2.4/./src/lib.rs
+ ./fuzz_transform/target/release/fuzz_transform /home/cdc/test_toodee/toodee-0.2.4/./src/tests_sort.rs
+toodee . 68 68 0

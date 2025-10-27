@@ -1,0 +1,3 @@
+cd /RPG/erasan_dataset/string-interner-0.7.0/fuzz_target/string_interner_bfs_generic_fuzz/multipleTargets
+cargo afl build
+cd -

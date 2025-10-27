@@ -1,0 +1,222 @@
+     Removed 192 files, 67.9MiB total
+   Compiling semver-parser v0.7.0
+   Compiling semver v1.0.26
+   Compiling libc v0.2.175
+   Compiling home v0.5.5
+   Compiling void v1.0.2
+   Compiling xdg v2.5.2
+   Compiling global_data v0.1.0 (/home/cdc/deepSURF-sp26-artifacts/artifact_code/global_data)
+   Compiling unreachable v1.0.0
+   Compiling afl v0.15.7
+   Compiling semver v0.9.0
+   Compiling rustc_version v0.2.3
+   Compiling stackvector v1.0.8 (/home/cdc/deepSURF-sp26-artifacts/artifact_data/dataset/erasan_crates/stackvector-1.0.8)
+   Compiling rustc_version v0.4.1
+warning: use of deprecated function `std::mem::uninitialized`: use `mem::MaybeUninit` instead
+   --> /home/cdc/deepSURF-sp26-artifacts/artifact_data/dataset/erasan_crates/stackvector-1.0.8/src/lib.rs:307:28
+    |
+307 |                 data: mem::uninitialized(),
+    |                            ^^^^^^^^^^^^^
+    |
+    = note: `#[warn(deprecated)]` on by default
+
+warning: use of deprecated function `std::mem::uninitialized`: use `mem::MaybeUninit` instead
+   --> /home/cdc/deepSURF-sp26-artifacts/artifact_data/dataset/erasan_crates/stackvector-1.0.8/src/lib.rs:332:32
+    |
+332 |         let mut data: A = mem::uninitialized();
+    |                                ^^^^^^^^^^^^^
+
+warning: use of deprecated function `std::mem::uninitialized`: use `mem::MaybeUninit` instead
+   --> /home/cdc/deepSURF-sp26-artifacts/artifact_data/dataset/erasan_crates/stackvector-1.0.8/src/lib.rs:677:40
+    |
+677 |                 let mut data: A = mem::uninitialized();
+    |                                        ^^^^^^^^^^^^^
+
+warning: `stackvector` (lib) generated 3 warnings
+   Compiling stackvector_fuzz_17878145677878894249 v0.1.0 (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#13-stackvector/harness)
+warning: unused import: `std::str::FromStr`
+ --> src/stackvector_fuzz_17878145677878894249.rs:7:5
+  |
+7 | use std::str::FromStr;
+  |     ^^^^^^^^^^^^^^^^^
+  |
+  = note: `#[warn(unused_imports)]` on by default
+
+warning: unused imports: `DerefMut`, `Deref`, `IndexMut`, `Index`
+ --> src/stackvector_fuzz_17878145677878894249.rs:8:16
+  |
+8 | use std::ops::{Deref, DerefMut, Index, IndexMut};
+  |                ^^^^^  ^^^^^^^^  ^^^^^  ^^^^^^^^
+
+warning: the item `TryInto` is imported redundantly
+   --> src/stackvector_fuzz_17878145677878894249.rs:238:9
+    |
+238 |     use std::convert::TryInto;
+    |         ^^^^^^^^^^^^^^^^^^^^^
+   --> /rustc/11f32b73e0dc9287e305b5b9980d24aecdc8c17f/library/std/src/prelude/mod.rs:129:13
+    |
+    = note: the item `TryInto` is already defined here
+
+warning: the item `TryInto` is imported redundantly
+   --> src/stackvector_fuzz_17878145677878894249.rs:245:9
+    |
+245 |     use std::convert::TryInto;
+    |         ^^^^^^^^^^^^^^^^^^^^^
+   --> /rustc/11f32b73e0dc9287e305b5b9980d24aecdc8c17f/library/std/src/prelude/mod.rs:129:13
+    |
+    = note: the item `TryInto` is already defined here
+
+warning: variable does not need to be mutable
+  --> src/stackvector_fuzz_17878145677878894249.rs:52:13
+   |
+52 |         let mut t_10 = _to_u8(GLOBAL_DATA, 73) % 17;
+   |             ----^^^^
+   |             |
+   |             help: remove this `mut`
+   |
+   = note: `#[warn(unused_mut)]` on by default
+
+warning: variable does not need to be mutable
+  --> src/stackvector_fuzz_17878145677878894249.rs:78:13
+   |
+78 |         let mut t_15 = _to_u8(GLOBAL_DATA, 98) % 17;
+   |             ----^^^^
+   |             |
+   |             help: remove this `mut`
+
+warning: field `0` is never read
+  --> src/stackvector_fuzz_17878145677878894249.rs:13:20
+   |
+13 | struct CustomType1(String);
+   |        ----------- ^^^^^^
+   |        |
+   |        field in this struct
+   |
+   = note: `CustomType1` has derived impls for the traits `Clone` and `Debug`, but these are intentionally ignored during dead code analysis
+   = note: `#[warn(dead_code)]` on by default
+help: consider changing the field to be of unit type to suppress this warning while preserving the field numbering, or remove the field
+   |
+13 | struct CustomType1(());
+   |                    ~~
+
+warning: variable `GLOBAL_DATA` should have a snake case name
+  --> src/stackvector_fuzz_17878145677878894249.rs:22:13
+   |
+22 |         let GLOBAL_DATA = global_data.first_half;
+   |             ^^^^^^^^^^^ help: convert the identifier to snake case: `global_data`
+   |
+   = note: `#[warn(non_snake_case)]` on by default
+
+warning: variable `GLOBAL_DATA` should have a snake case name
+  --> src/stackvector_fuzz_17878145677878894249.rs:29:13
+   |
+29 |         let GLOBAL_DATA = match selector{
+   |             ^^^^^^^^^^^ help: convert the identifier to snake case: `global_data`
+
+warning: variable `GLOBAL_DATA` should have a snake case name
+  --> src/stackvector_fuzz_17878145677878894249.rs:41:13
+   |
+41 |         let GLOBAL_DATA = global_data.first_half;
+   |             ^^^^^^^^^^^ help: convert the identifier to snake case: `global_data`
+
+warning: variable `GLOBAL_DATA` should have a snake case name
+  --> src/stackvector_fuzz_17878145677878894249.rs:48:13
+   |
+48 |         let GLOBAL_DATA = match selector{
+   |             ^^^^^^^^^^^ help: convert the identifier to snake case: `global_data`
+
+warning: variable `GLOBAL_DATA` should have a snake case name
+  --> src/stackvector_fuzz_17878145677878894249.rs:67:13
+   |
+67 |         let GLOBAL_DATA = global_data.first_half;
+   |             ^^^^^^^^^^^ help: convert the identifier to snake case: `global_data`
+
+warning: variable `GLOBAL_DATA` should have a snake case name
+  --> src/stackvector_fuzz_17878145677878894249.rs:74:13
+   |
+74 |         let GLOBAL_DATA = match selector{
+   |             ^^^^^^^^^^^ help: convert the identifier to snake case: `global_data`
+
+warning: variable `GLOBAL_DATA` should have a snake case name
+  --> src/stackvector_fuzz_17878145677878894249.rs:91:13
+   |
+91 |         let GLOBAL_DATA = global_data.first_half;
+   |             ^^^^^^^^^^^ help: convert the identifier to snake case: `global_data`
+
+warning: `stackvector_fuzz_17878145677878894249` (bin "stackvector_fuzz_17878145677878894249") generated 14 warnings (run `cargo fix --bin "stackvector_fuzz_17878145677878894249"` to apply 4 suggestions)
+    Finished dev [unoptimized + debuginfo] target(s) in 2.58s
+=================================================================
+==1386148==ERROR: AddressSanitizer: stack-buffer-overflow on address 0x7f0d4d600608 at pc 0x55f2426f9bac bp 0x7fffafd29ef0 sp 0x7fffafd29ee8
+WRITE of size 8 at 0x7f0d4d600608 thread T0
+    #0 0x55f2426f9bab  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#13-stackvector/harness/target/x86_64-unknown-linux-gnu/debug/stackvector_fuzz_17878145677878894249+0xc5bab) (BuildId: 2ae702f4e73c32a642edd79eecfd78b8f399579a)
+    #1 0x55f2426ff8fa  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#13-stackvector/harness/target/x86_64-unknown-linux-gnu/debug/stackvector_fuzz_17878145677878894249+0xcb8fa) (BuildId: 2ae702f4e73c32a642edd79eecfd78b8f399579a)
+    #2 0x55f2426fe551  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#13-stackvector/harness/target/x86_64-unknown-linux-gnu/debug/stackvector_fuzz_17878145677878894249+0xca551) (BuildId: 2ae702f4e73c32a642edd79eecfd78b8f399579a)
+    #3 0x55f2426f47d1  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#13-stackvector/harness/target/x86_64-unknown-linux-gnu/debug/stackvector_fuzz_17878145677878894249+0xc07d1) (BuildId: 2ae702f4e73c32a642edd79eecfd78b8f399579a)
+    #4 0x55f2426f4820  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#13-stackvector/harness/target/x86_64-unknown-linux-gnu/debug/stackvector_fuzz_17878145677878894249+0xc0820) (BuildId: 2ae702f4e73c32a642edd79eecfd78b8f399579a)
+    #5 0x55f242719a90  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#13-stackvector/harness/target/x86_64-unknown-linux-gnu/debug/stackvector_fuzz_17878145677878894249+0xe5a90) (BuildId: 2ae702f4e73c32a642edd79eecfd78b8f399579a)
+    #6 0x55f2426ffab5  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#13-stackvector/harness/target/x86_64-unknown-linux-gnu/debug/stackvector_fuzz_17878145677878894249+0xcbab5) (BuildId: 2ae702f4e73c32a642edd79eecfd78b8f399579a)
+    #7 0x7f0d4ee03d8f  (/lib/x86_64-linux-gnu/libc.so.6+0x29d8f) (BuildId: 490fef8403240c91833978d494d39e537409b92e)
+    #8 0x7f0d4ee03e3f  (/lib/x86_64-linux-gnu/libc.so.6+0x29e3f) (BuildId: 490fef8403240c91833978d494d39e537409b92e)
+    #9 0x55f242644414  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#13-stackvector/harness/target/x86_64-unknown-linux-gnu/debug/stackvector_fuzz_17878145677878894249+0x10414) (BuildId: 2ae702f4e73c32a642edd79eecfd78b8f399579a)
+
+Address 0x7f0d4d600608 is located in stack of thread T0 at offset 1544 in frame
+    #0 0x55f2426f484f  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#13-stackvector/harness/target/x86_64-unknown-linux-gnu/debug/stackvector_fuzz_17878145677878894249+0xc084f) (BuildId: 2ae702f4e73c32a642edd79eecfd78b8f399579a)
+
+  This frame has 22 object(s):
+    [32, 56) 'tmp.sroa.0.i.i.i.i.i.i'
+    [96, 120) '_6.i260.i.i.i.i'
+    [160, 184) '_6.i201.i.i.i.i'
+    [224, 248) '_6.i107.i.i.i.i'
+    [288, 672) 'data.i.i.i.i.i.i'
+    [736, 760) '_6.i90.i.i.i.i'
+    [800, 848) '_11.i23.i.i.i.i.i.i'
+    [880, 904) '_6.i.i.i.i.i.i.i.i'
+    [944, 992) '_11.i.i.i.i.i.i.i'
+    [1024, 1048) '_42.i.i.i.i.i.i'
+    [1088, 1112) '_26.i.i.i.i.i.i'
+    [1152, 1544) 'v.i.i.i.i.i' <== Memory access at offset 1544 overflows this variable
+    [1616, 1640) '_6.i.i.i.i.i'
+    [1680, 1696) '_168.i.i.i.i'
+    [1712, 1728) '_165.i.i.i.i'
+    [1744, 1792) '_161.i.i.i.i'
+    [1824, 1840) '_158.i.i.i.i'
+    [1856, 1872) '_155.i.i.i.i'
+    [1888, 1936) '_151.i.i.i.i'
+    [1968, 2360) 'stack_vec1.i.i.i.i'
+    [2432, 2456) 'elements.i.i.i.i'
+    [2496, 2888) 'stack_vec.i.i.i.i'
+HINT: this may be a false positive if your program uses some custom stack unwind mechanism, swapcontext or vfork
+      (longjmp and C++ exceptions *are* supported)
+SUMMARY: AddressSanitizer: stack-buffer-overflow (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#13-stackvector/harness/target/x86_64-unknown-linux-gnu/debug/stackvector_fuzz_17878145677878894249+0xc5bab) (BuildId: 2ae702f4e73c32a642edd79eecfd78b8f399579a) 
+Shadow bytes around the buggy address:
+  0x7f0d4d600380: f8 f2 f2 f2 f2 f2 f8 f8 f8 f8 f8 f8 f2 f2 f2 f2
+  0x7f0d4d600400: f8 f8 f8 f2 f2 f2 f2 f2 00 00 00 f2 f2 f2 f2 f2
+  0x7f0d4d600480: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x7f0d4d600500: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x7f0d4d600580: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+=>0x7f0d4d600600: 00[f2]f2 f2 f2 f2 f2 f2 f2 f2 f8 f8 f8 f2 f2 f2
+  0x7f0d4d600680: f2 f2 f8 f8 f2 f2 f8 f8 f2 f2 f8 f8 f8 f8 f8 f8
+  0x7f0d4d600700: f2 f2 f2 f2 f8 f8 f2 f2 f8 f8 f2 f2 f8 f8 f8 f8
+  0x7f0d4d600780: f8 f8 f2 f2 f2 f2 f8 f8 f8 f8 f8 f8 f8 f8 f8 f8
+  0x7f0d4d600800: f8 f8 f8 f8 f8 f8 f8 f8 f8 f8 f8 f8 f8 f8 f8 f8
+  0x7f0d4d600880: f8 f8 f8 f8 f8 f8 f8 f8 f8 f8 f8 f8 f8 f8 f8 f8
+Shadow byte legend (one shadow byte represents 8 application bytes):
+  Addressable:           00
+  Partially addressable: 01 02 03 04 05 06 07 
+  Heap left redzone:       fa
+  Freed heap region:       fd
+  Stack left redzone:      f1
+  Stack mid redzone:       f2
+  Stack right redzone:     f3
+  Stack after return:      f5
+  Stack use after scope:   f8
+  Global redzone:          f9
+  Global init order:       f6
+  Poisoned by user:        f7
+  Container overflow:      fc
+  Array cookie:            ac
+  Intra object redzone:    bb
+  ASan internal:           fe
+  Left alloca redzone:     ca
+  Right alloca redzone:    cb
+==1386148==ABORTING

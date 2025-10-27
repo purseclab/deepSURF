@@ -1,0 +1,55 @@
+
+Total Stats:
+------------------------------------------------------------------------------------------------------------------------------------
+* URAPI Coverage: 0/14 (0.00%).
+* Targets Compiled: 0/13 (0.00%) in [5.932982894s].
+------------------------------------------------------------------------------------------------------------------------------------
+
+Target Stats:
+------------------------------------------------------------------------------------------------------------------------------------
+* URAPIs w/ ≥ 1ft: 0/14 (0.00%).
+* Average Generation Time per Target: 0ns/0 (Na).
+
+* URAPIs w/ ≥ 2ft: 0/14 (0.00%).
+* Average Generation Time per Target: 0ns/0 (Na).
+
+* URAPIs w/ ≥ 3ft: 0/14 (0.00%).
+* Average Generation Time per Target: 0ns/0 (Na).
+
+* URAPIs w/ ≥ 4ft: 0/14 (0.00%).
+* Average Generation Time per Target: 0ns/0 (Na).
+
+* URAPIs w/o any compilable targets: 14/14 (100.00%).
+------------------------------------------------------------------------------------------------------------------------------------
+
+Detailed Results: 
+------------------------------------------------------------------------------------------------------------------------------------
+  URAPI: DefId(0:99 ~ stack_dst[36ca]::stack::{impl#2}::push_stable),
+    - Compilable Targets (0/1 ~ 0.00%):
+  URAPI: DefId(0:49 ~ stack_dst[36ca]::value::{impl#2}::deref_mut),
+    - Compilable Targets (0/1 ~ 0.00%):
+  URAPI: DefId(0:103 ~ stack_dst[36ca]::stack::{impl#2}::top),
+    - Compilable Targets (0/1 ~ 0.00%):
+  URAPI: DefId(0:45 ~ stack_dst[36ca]::value::{impl#1}::deref),
+    - Compilable Targets (0/1 ~ 0.00%):
+  URAPI: DefId(0:53 ~ stack_dst[36ca]::value::{impl#3}::drop),
+    - Compilable Targets (0/1 ~ 0.00%):
+  URAPI: DefId(0:71 ~ stack_dst[36ca]::value::trait_impls::{impl#2}::fmt),
+    - Compilable Targets (0/1 ~ 0.00%):
+  URAPI: DefId(0:36 ~ stack_dst[36ca]::value::{impl#0}::new_stable),
+    - Compilable Targets (0/1 ~ 0.00%):
+  URAPI: DefId(0:114 ~ stack_dst[36ca]::stack::{impl#4}::push_cloned),
+    - Compilable Targets (0/1 ~ 0.00%):
+  URAPI: DefId(0:63 ~ stack_dst[36ca]::value::trait_impls::{impl#0}::poll),
+    - 0 targets generated.
+  URAPI: DefId(0:67 ~ stack_dst[36ca]::value::trait_impls::{impl#1}::fmt),
+    - Compilable Targets (0/1 ~ 0.00%):
+  URAPI: DefId(0:107 ~ stack_dst[36ca]::stack::{impl#2}::pop),
+    - Compilable Targets (0/1 ~ 0.00%):
+  URAPI: DefId(0:105 ~ stack_dst[36ca]::stack::{impl#2}::top_mut),
+    - Compilable Targets (0/1 ~ 0.00%):
+  URAPI: DefId(0:110 ~ stack_dst[36ca]::stack::{impl#3}::push_str),
+    - Compilable Targets (0/1 ~ 0.00%):
+  URAPI: DefId(0:87 ~ stack_dst[36ca]::stack::{impl#0}::drop),
+    - Compilable Targets (0/1 ~ 0.00%):
+------------------------------------------------------------------------------------------------------------------------------------

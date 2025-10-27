@@ -1,0 +1,5 @@
+ ./fuzz_transform/target/release/fuzz_transform /home/cdc/rug_on_erasan_after_bolero/stack_dst-0.6.0/./src/stack.rs
+ ./fuzz_transform/target/release/fuzz_transform /home/cdc/rug_on_erasan_after_bolero/stack_dst-0.6.0/./src/value.rs
+ ./fuzz_transform/target/release/fuzz_transform /home/cdc/rug_on_erasan_after_bolero/stack_dst-0.6.0/./src/lib.rs
+ ./fuzz_transform/target/release/fuzz_transform /home/cdc/rug_on_erasan_after_bolero/stack_dst-0.6.0/./src/value/trait_impls.rs
+stack_dst . 3 3 0

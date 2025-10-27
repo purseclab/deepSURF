@@ -1,0 +1,18 @@
+-----------------
+src/lib.rs through
+deps:{"std::ops::function::impls::<impl std::ops::FnOnce<A> for &F>":{},"std::ops::function::impls::<impl std::ops::FnOnce<A> for &mut F>":{},"through":{"T":["std::marker::Sized"],"impl FnOnce(T) -> T":["std::marker::Sized","std::ops::FnOnce"]}}
+candidates:{"std::ops::function::impls::<impl std::ops::FnOnce<A> for &F>":{},"std::ops::function::impls::<impl std::ops::FnOnce<A> for &mut F>":{},"through":{"T":["RUG_ANY"],"impl FnOnce(T) -> T":["core::str::CharEscapeDefault","core::str::LinesAnyMap","core::const_closure::ConstFnMutClosure<&'a mut A, Function>","core::str::CharEscapeUnicode","core::str::IsNotEmpty","core::slice::ascii::EscapeByte","core::str::IsWhitespace","core::str::IsAsciiWhitespace","core::const_closure::ConstFnMutClosure<(&'a mut A, &'a mut B), Function>","std::ops::function::impls::<impl std::ops::FnOnce<A> for &F>","core::const_closure::ConstFnMutClosure<(&'a mut A, &'a mut B, &'a mut C, &'a mut D, &'a mut E), Function>","core::str::CharEscapeDebugContinue","core::str::UnsafeBytesToStr","std::boxed::Box<F, A>","core::const_closure::ConstFnMutClosure<(&'a mut A, &'a mut B, &'a mut C, &'a mut D), Function>","std::panic::AssertUnwindSafe<F>","core::const_closure::ConstFnMutClosure<(&'a mut A, &'a mut B, &'a mut C), Function>","core::str::BytesIsNotEmpty"]}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // T
+let mut p1 = MaybeUninit::uninit().assume_init(); // impl FnOnce(T) -> T
++through(p0, p1);
++crate::through(p0, p1);
++crate::through(p0, p1);
+-----------------
+src/lib.rs through_and
+deps:{"std::ops::function::impls::<impl std::ops::FnOnce<A> for &F>":{},"std::ops::function::impls::<impl std::ops::FnOnce<A> for &mut F>":{},"through_and":{"O":["std::marker::Sized"],"T":["std::marker::Sized"],"impl FnOnce(T) -> (T, O)":["std::ops::FnOnce","std::marker::Sized"]}}
+candidates:{"std::ops::function::impls::<impl std::ops::FnOnce<A> for &F>":{},"std::ops::function::impls::<impl std::ops::FnOnce<A> for &mut F>":{},"through_and":{"O":["RUG_ANY"],"T":["RUG_ANY"],"impl FnOnce(T) -> (T, O)":["std::panic::AssertUnwindSafe<F>","core::const_closure::ConstFnMutClosure<(&'a mut A, &'a mut B, &'a mut C), Function>","core::str::CharEscapeDebugContinue","core::str::LinesAnyMap","core::const_closure::ConstFnMutClosure<(&'a mut A, &'a mut B, &'a mut C, &'a mut D), Function>","core::str::IsAsciiWhitespace","core::const_closure::ConstFnMutClosure<&'a mut A, Function>","std::boxed::Box<F, A>","core::str::BytesIsNotEmpty","std::ops::function::impls::<impl std::ops::FnOnce<A> for &mut F>","core::str::CharEscapeDefault","core::str::IsNotEmpty","core::str::UnsafeBytesToStr","core::slice::ascii::EscapeByte","core::const_closure::ConstFnMutClosure<(&'a mut A, &'a mut B, &'a mut C, &'a mut D, &'a mut E), Function>","core::str::CharEscapeUnicode","std::ops::function::impls::<impl std::ops::FnOnce<A> for &F>","core::str::IsWhitespace","core::const_closure::ConstFnMutClosure<(&'a mut A, &'a mut B), Function>"]}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // T
+let mut p1 = MaybeUninit::uninit().assume_init(); // impl FnOnce(T) -> (T, O)
++through_and(p0, p1);
++crate::through_and(p0, p1);
++crate::through_and(p0, p1);

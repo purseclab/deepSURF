@@ -1,0 +1,536 @@
+-----------------
+src/lib.rs Symbol::from_usize
+deps:{"Symbol::from_usize":{"Self":["std::marker::Copy","std::cmp::Ord","Symbol","std::cmp::Eq"]}}
+candidates:{"Symbol::from_usize":{"Self":["Sym"]}}
+let mut p0 = 0usize; // None+usize
++Symbol::from_usize(p0);
++crate::Symbol::from_usize(p0);
++crate::Symbol::from_usize(p0);
+-----------------
+src/lib.rs Symbol::to_usize
+deps:{"Symbol::to_usize":{"Self":["std::cmp::Eq","Symbol","std::marker::Copy","std::cmp::Ord"]}}
+candidates:{"Symbol::to_usize":{"Self":["Sym"]}}
+let mut p0 = MaybeUninit::uninit().assume_init(); // Self
++p0.to_usize();
++Symbol::to_usize(p0);
++crate::Symbol::to_usize(p0);
++crate::Symbol::to_usize(p0);
+-----------------
+src/serde_impl.rs serde_impl::<impl serde::Serialize for StringInterner<Sym, H>>::serialize
+deps:{"serde::ser::fmt::<impl serde::Serializer for &'a mut std::fmt::Formatter<'b>>":{},"serde_impl::<impl serde::Serialize for StringInterner<Sym, H>>::serialize":{"H":["std::marker::Sized","std::hash::BuildHasher"],"S":["std::marker::Sized","serde::Serializer"],"Sym":["std::marker::Sized","Symbol"]}}
+candidates:{"serde::ser::fmt::<impl serde::Serializer for &'a mut std::fmt::Formatter<'b>>":{},"serde_impl::<impl serde::Serialize for StringInterner<Sym, H>>::serialize":{"H":["std::hash::BuildHasherDefault<H>","std::collections::hash_map::RandomState"],"S":["serde::__private::ser::FlatMapSerializer<'a, M>","serde::__private::ser::TaggedSerializer<S>","serde::ser::fmt::<impl serde::Serializer for &'a mut std::fmt::Formatter<'b>>","serde::__private::ser::content::ContentSerializer<E>"],"Sym":["Sym"]}}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // StringInterner<Sym, H>
+let mut p1 = MaybeUninit::uninit().assume_init(); // S
++p0.serialize(p1);
++serde_impl::<impl serde::Serialize for StringInterner<Sym, H>>::serialize(p0, p1);
++crate::serde_impl::<impl serde::Serialize for StringInterner<Sym, H>>::serialize(p0, p1);
++<StringInterner<Sym, H>>::serialize(p0, p1);
+-----------------
+src/serde_impl.rs serde_impl::<impl serde::Deserialize<'de> for StringInterner<Sym, H>>::deserialize
+'de
+deps:{"serde_impl::<impl serde::Deserialize<'de> for StringInterner<Sym, H>>::deserialize":{"D":["serde::Deserializer","std::marker::Sized"],"H":["std::default::Default","std::marker::Sized","std::hash::BuildHasher"],"Sym":["Symbol","std::marker::Sized"]}}
+candidates:{"serde_impl::<impl serde::Deserialize<'de> for StringInterner<Sym, H>>::deserialize":{"D":["serde::de::value::SeqAccessDeserializer<A>","serde::de::value::UsizeDeserializer<E>","serde::de::value::CharDeserializer<E>","serde::de::value::BorrowedStrDeserializer<'de, E>","serde::__private::de::BorrowedStrDeserializer<'de, E>","serde::__private::de::missing_field::MissingFieldDeserializer<E>","serde::de::value::F32Deserializer<E>","serde::de::value::U16Deserializer<E>","serde::de::value::MapAccessDeserializer<A>","serde::de::value::F64Deserializer<E>","serde::__private::de::content::ContentDeserializer<'de, E>","serde::de::value::CowStrDeserializer<'a, E>","serde::__private::de::StrDeserializer<'a, E>","serde::de::value::StringDeserializer<E>","serde::de::value::U8Deserializer<E>","serde::de::value::U128Deserializer<E>","serde::de::value::I128Deserializer<E>","serde::de::value::U32Deserializer<E>","serde::de::value::I8Deserializer<E>","serde::de::value::IsizeDeserializer<E>","serde::de::value::UnitDeserializer<E>","serde::de::value::BytesDeserializer<'a, E>","serde::de::value::MapDeserializer<'de, I, E>","serde::de::value::EnumAccessDeserializer<A>","serde::de::value::U64Deserializer<E>","serde::de::value::I16Deserializer<E>","serde::__private::de::content::ContentRefDeserializer<'a, 'de, E>","serde::de::value::I32Deserializer<E>","serde::de::value::PairDeserializer<A, B, E>","serde::de::value::SeqDeserializer<I, E>","serde::de::value::BoolDeserializer<E>","serde::de::value::I64Deserializer<E>","serde::de::value::BorrowedBytesDeserializer<'de, E>","serde::de::value::StrDeserializer<'a, E>","serde::__private::de::FlatMapDeserializer<'a, 'de, E>"],"H":["std::hash::BuildHasherDefault<H>","std::collections::hash_map::RandomState"],"Sym":["Sym"]}}
+let mut p0 = MaybeUninit::uninit().assume_init(); // D
++serde_impl::<impl serde::Deserialize<'de> for StringInterner<Sym, H>>::deserialize(p0);
++crate::serde_impl::<impl serde::Deserialize<'de> for StringInterner<Sym, H>>::deserialize(p0);
++<StringInterner<Sym, H>>::deserialize(p0);
+-----------------
+src/serde_impl.rs <serde_impl::StringInternerVisitor<Sym, H> as std::default::Default>::default
+deps:{"<serde_impl::StringInternerVisitor<Sym, H> as std::default::Default>::default":{"H":["std::hash::BuildHasher","std::marker::Sized"],"Sym":["Symbol","std::marker::Sized"]}}
+candidates:{"<serde_impl::StringInternerVisitor<Sym, H> as std::default::Default>::default":{"H":["std::collections::hash_map::RandomState","std::hash::BuildHasherDefault<H>"],"Sym":["Sym"]}}
++<serde_impl::StringInternerVisitor<Sym, H> as std::default::Default>::default();
++crate::<serde_impl::StringInternerVisitor<Sym, H> as std::default::Default>::default();
++<serde_impl::StringInternerVisitor<Sym, H>>::default();
+-----------------
+src/serde_impl.rs <serde_impl::StringInternerVisitor<Sym, H> as serde::de::Visitor<'de>>::expecting
+'de
+deps:{"<serde_impl::StringInternerVisitor<Sym, H> as serde::de::Visitor<'de>>::expecting":{"H":["std::marker::Sized","std::default::Default","std::hash::BuildHasher"],"Sym":["std::marker::Sized","Symbol"]}}
+candidates:{"<serde_impl::StringInternerVisitor<Sym, H> as serde::de::Visitor<'de>>::expecting":{"H":["std::collections::hash_map::RandomState","std::hash::BuildHasherDefault<H>"],"Sym":["Sym"]}}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // serde_impl::StringInternerVisitor<Sym, H>
+let mut p1 = &mut  MaybeUninit::uninit().assume_init(); // std::fmt::Formatter<'_>
++p0.expecting(p1);
++<serde_impl::StringInternerVisitor<Sym, H> as serde::de::Visitor<'de>>::expecting(p0, p1);
++crate::<serde_impl::StringInternerVisitor<Sym, H> as serde::de::Visitor<'de>>::expecting(p0, p1);
++<serde_impl::StringInternerVisitor<Sym, H>>::expecting(p0, p1);
+-----------------
+src/serde_impl.rs <serde_impl::StringInternerVisitor<Sym, H> as serde::de::Visitor<'de>>::visit_seq
+'de
+deps:{"<&'a mut A as serde::de::SeqAccess<'de>>":{},"<serde_impl::StringInternerVisitor<Sym, H> as serde::de::Visitor<'de>>::visit_seq":{"A":["std::marker::Sized","serde::de::SeqAccess"],"H":["std::marker::Sized","std::hash::BuildHasher","std::default::Default"],"Sym":["std::marker::Sized","Symbol"]}}
+candidates:{"<&'a mut A as serde::de::SeqAccess<'de>>":{},"<serde_impl::StringInternerVisitor<Sym, H> as serde::de::Visitor<'de>>::visit_seq":{"A":["<&'a mut A as serde::de::SeqAccess<'de>>","serde::de::value::MapDeserializer<'de, I, E>","serde::de::value::SeqDeserializer<I, E>","serde::de::value::PairVisitor<A, B, E>"],"H":["std::hash::BuildHasherDefault<H>","std::collections::hash_map::RandomState"],"Sym":["Sym"]}}
+let mut p0 = MaybeUninit::uninit().assume_init(); // serde_impl::StringInternerVisitor<Sym, H>
+let mut p1 = MaybeUninit::uninit().assume_init(); // A
++p0.visit_seq(p1);
++<serde_impl::StringInternerVisitor<Sym, H> as serde::de::Visitor<'de>>::visit_seq(p0, p1);
++crate::<serde_impl::StringInternerVisitor<Sym, H> as serde::de::Visitor<'de>>::visit_seq(p0, p1);
++<serde_impl::StringInternerVisitor<Sym, H>>::visit_seq(p0, p1);
+-----------------
+src/lib.rs <Sym as std::fmt::Debug>::fmt
+deps:{}
+candidates:{}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // Sym
+let mut p1 = &mut  MaybeUninit::uninit().assume_init(); // std::fmt::Formatter<'_>
++format!("{:?}", p0);
++p0.fmt(p1);
++<Sym as std::fmt::Debug>::fmt(p0, p1);
++crate::<Sym as std::fmt::Debug>::fmt(p0, p1);
++<Sym>::fmt(p0, p1);
+-----------------
+src/lib.rs <Sym as std::clone::Clone>::clone
+deps:{}
+candidates:{}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // Sym
++p0.clone();
++<Sym as std::clone::Clone>::clone(p0);
++crate::<Sym as std::clone::Clone>::clone(p0);
++<Sym>::clone(p0);
+-----------------
+src/lib.rs <Sym as std::cmp::PartialEq>::eq
+deps:{}
+candidates:{}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // Sym
+let mut p1 = & MaybeUninit::uninit().assume_init(); // Sym
++p0.eq(p1);
++<Sym as std::cmp::PartialEq>::eq(p0, p1);
++crate::<Sym as std::cmp::PartialEq>::eq(p0, p1);
++<Sym>::eq(p0, p1);
+-----------------
+src/lib.rs <Sym as std::cmp::Eq>::assert_receiver_is_total_eq
+deps:{}
+candidates:{}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // Sym
++p0.assert_receiver_is_total_eq();
++<Sym as std::cmp::Eq>::assert_receiver_is_total_eq(p0);
++crate::<Sym as std::cmp::Eq>::assert_receiver_is_total_eq(p0);
++<Sym>::assert_receiver_is_total_eq(p0);
+-----------------
+src/lib.rs <Sym as std::cmp::PartialOrd>::partial_cmp
+deps:{}
+candidates:{}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // Sym
+let mut p1 = & MaybeUninit::uninit().assume_init(); // Sym
++p0.partial_cmp(p1);
++<Sym as std::cmp::PartialOrd>::partial_cmp(p0, p1);
++crate::<Sym as std::cmp::PartialOrd>::partial_cmp(p0, p1);
++<Sym>::partial_cmp(p0, p1);
+-----------------
+src/lib.rs <Sym as std::cmp::Ord>::cmp
+deps:{}
+candidates:{}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // Sym
+let mut p1 = & MaybeUninit::uninit().assume_init(); // Sym
++p0.cmp(p1);
++<Sym as std::cmp::Ord>::cmp(p0, p1);
++crate::<Sym as std::cmp::Ord>::cmp(p0, p1);
++<Sym>::cmp(p0, p1);
+-----------------
+src/lib.rs <Sym as std::hash::Hash>::hash
+deps:{"<&mut H as std::hash::Hasher>":{},"<Sym as std::hash::Hash>::hash":{"__H":["std::hash::Hasher","std::marker::Sized"]}}
+candidates:{"<&mut H as std::hash::Hasher>":{},"<Sym as std::hash::Hash>::hash":{"__H":["std::hash::SipHasher13","std::boxed::Box<T, A>","std::collections::hash_map::DefaultHasher","<&mut H as std::hash::Hasher>","std::hash::sip::Hasher<S>","std::hash::SipHasher"]}}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // Sym
+let mut p1 = &mut  MaybeUninit::uninit().assume_init(); // __H
++p0.hash(p1);
++<Sym as std::hash::Hash>::hash(p0, p1);
++crate::<Sym as std::hash::Hash>::hash(p0, p1);
++<Sym>::hash(p0, p1);
+-----------------
+src/lib.rs <Sym as Symbol>::from_usize
+deps:{}
+candidates:{}
+let mut p0 = 0usize; // None+usize
++<Sym as Symbol>::from_usize(p0);
++crate::<Sym as Symbol>::from_usize(p0);
++<Sym>::from_usize(p0);
+-----------------
+src/lib.rs <Sym as Symbol>::to_usize
+deps:{}
+candidates:{}
+let mut p0 = MaybeUninit::uninit().assume_init(); // Sym
++p0.to_usize();
++<Sym as Symbol>::to_usize(p0);
++crate::<Sym as Symbol>::to_usize(p0);
++<Sym>::to_usize(p0);
+-----------------
+src/lib.rs <usize as Symbol>::from_usize
+deps:{}
+candidates:{}
+let mut p0 = 0usize; // None+usize
++<usize as Symbol>::from_usize(p0);
++crate::<usize as Symbol>::from_usize(p0);
++<usize>::from_usize(p0);
+-----------------
+src/lib.rs <usize as Symbol>::to_usize
+deps:{}
+candidates:{}
+let mut p0 = 0usize; // None+usize
++p0.to_usize();
++<usize as Symbol>::to_usize(p0);
++crate::<usize as Symbol>::to_usize(p0);
++<usize>::to_usize(p0);
+-----------------
+src/lib.rs <InternalStrRef as std::fmt::Debug>::fmt
+deps:{}
+candidates:{}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // InternalStrRef
+let mut p1 = &mut  MaybeUninit::uninit().assume_init(); // std::fmt::Formatter<'_>
++format!("{:?}", p0);
++p0.fmt(p1);
++<InternalStrRef as std::fmt::Debug>::fmt(p0, p1);
++crate::<InternalStrRef as std::fmt::Debug>::fmt(p0, p1);
++<InternalStrRef>::fmt(p0, p1);
+-----------------
+src/lib.rs <InternalStrRef as std::clone::Clone>::clone
+deps:{}
+candidates:{}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // InternalStrRef
++p0.clone();
++<InternalStrRef as std::clone::Clone>::clone(p0);
++crate::<InternalStrRef as std::clone::Clone>::clone(p0);
++<InternalStrRef>::clone(p0);
+-----------------
+src/lib.rs <InternalStrRef as std::cmp::Eq>::assert_receiver_is_total_eq
+deps:{}
+candidates:{}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // InternalStrRef
++p0.assert_receiver_is_total_eq();
++<InternalStrRef as std::cmp::Eq>::assert_receiver_is_total_eq(p0);
++crate::<InternalStrRef as std::cmp::Eq>::assert_receiver_is_total_eq(p0);
++<InternalStrRef>::assert_receiver_is_total_eq(p0);
+-----------------
+src/lib.rs InternalStrRef::from_str
+deps:{}
+candidates:{}
+let mut p0 = "sample"; // None+&str
++InternalStrRef::from_str(&p0);
++crate::InternalStrRef::from_str(&p0);
++<InternalStrRef>::from_str(&p0);
+-----------------
+src/lib.rs InternalStrRef::as_str
+deps:{}
+candidates:{}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // InternalStrRef
++p0.as_str();
++InternalStrRef::as_str(p0);
++crate::InternalStrRef::as_str(p0);
++<InternalStrRef>::as_str(p0);
+-----------------
+src/lib.rs <InternalStrRef as std::convert::From<T>>::from
+deps:{"<&T as std::convert::AsRef<U>>":{},"<&mut T as std::convert::AsRef<U>>":{},"<InternalStrRef as std::convert::From<T>>::from":{"T":["std::marker::Sized","std::convert::AsRef"]}}
+candidates:{"<&T as std::convert::AsRef<U>>":{},"<&mut T as std::convert::AsRef<U>>":{},"<InternalStrRef as std::convert::From<T>>::from":{"T":["std::vec::IntoIter<T, A>","std::slice::Iter<'_, T>","core::num::dec2flt::common::AsciiStr<'a>","<&mut T as std::convert::AsRef<U>>","std::ffi::CStr","std::slice::IterMut<'_, T>","std::rc::Rc<T>","std::borrow::Cow<'_, std::ffi::OsStr>","std::boxed::Box<T, A>","std::borrow::Cow<'_, T>","std::ffi::CString","std::sync::Arc<T>","std::vec::Drain<'a, T, A>"]}}
+let mut p0 = MaybeUninit::uninit().assume_init(); // T
++<InternalStrRef as std::convert::From<T>>::from(p0);
++crate::<InternalStrRef as std::convert::From<T>>::from(p0);
++<InternalStrRef>::from(p0);
+-----------------
+src/lib.rs <InternalStrRef as std::hash::Hash>::hash
+deps:{"<&mut H as std::hash::Hasher>":{},"<InternalStrRef as std::hash::Hash>::hash":{"H":["std::hash::Hasher","std::marker::Sized"]}}
+candidates:{"<&mut H as std::hash::Hasher>":{},"<InternalStrRef as std::hash::Hash>::hash":{"H":["std::hash::SipHasher13","std::hash::sip::Hasher<S>","<&mut H as std::hash::Hasher>","std::collections::hash_map::DefaultHasher","std::boxed::Box<T, A>","std::hash::SipHasher"]}}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // InternalStrRef
+let mut p1 = &mut  MaybeUninit::uninit().assume_init(); // H
++p0.hash(p1);
++<InternalStrRef as std::hash::Hash>::hash(p0, p1);
++crate::<InternalStrRef as std::hash::Hash>::hash(p0, p1);
++<InternalStrRef>::hash(p0, p1);
+-----------------
+src/lib.rs <InternalStrRef as std::cmp::PartialEq>::eq
+deps:{}
+candidates:{}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // InternalStrRef
+let mut p1 = & MaybeUninit::uninit().assume_init(); // InternalStrRef
++p0.eq(p1);
++<InternalStrRef as std::cmp::PartialEq>::eq(p0, p1);
++crate::<InternalStrRef as std::cmp::PartialEq>::eq(p0, p1);
++<InternalStrRef>::eq(p0, p1);
+-----------------
+src/lib.rs <StringInterner<S, H> as std::fmt::Debug>::fmt
+deps:{"<StringInterner<S, H> as std::fmt::Debug>::fmt":{"H":["std::hash::BuildHasher","std::marker::Sized","std::fmt::Debug"],"S":["std::marker::Sized","Symbol","std::fmt::Debug"]}}
+candidates:{"<StringInterner<S, H> as std::fmt::Debug>::fmt":{"H":["std::collections::hash_map::RandomState","std::hash::BuildHasherDefault<H>"],"S":["Sym"]}}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // StringInterner<S, H>
+let mut p1 = &mut  MaybeUninit::uninit().assume_init(); // std::fmt::Formatter<'_>
++format!("{:?}", p0);
++p0.fmt(p1);
++<StringInterner<S, H> as std::fmt::Debug>::fmt(p0, p1);
++crate::<StringInterner<S, H> as std::fmt::Debug>::fmt(p0, p1);
++<StringInterner<S, H>>::fmt(p0, p1);
+-----------------
+src/lib.rs <StringInterner<S, H> as std::clone::Clone>::clone
+deps:{"<StringInterner<S, H> as std::clone::Clone>::clone":{"H":["std::clone::Clone","std::hash::BuildHasher","std::marker::Sized"],"S":["Symbol","std::clone::Clone","std::marker::Sized"]}}
+candidates:{"<StringInterner<S, H> as std::clone::Clone>::clone":{"H":["std::hash::BuildHasherDefault<H>","std::collections::hash_map::RandomState"],"S":["Sym"]}}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // StringInterner<S, H>
++p0.clone();
++<StringInterner<S, H> as std::clone::Clone>::clone(p0);
++crate::<StringInterner<S, H> as std::clone::Clone>::clone(p0);
++<StringInterner<S, H>>::clone(p0);
+-----------------
+src/lib.rs <StringInterner<S, H> as std::cmp::Eq>::assert_receiver_is_total_eq
+deps:{"<StringInterner<S, H> as std::cmp::Eq>::assert_receiver_is_total_eq":{"H":["std::marker::Sized","std::cmp::Eq","std::hash::BuildHasher"],"S":["std::marker::Sized","std::cmp::Eq","Symbol"]}}
+candidates:{"<StringInterner<S, H> as std::cmp::Eq>::assert_receiver_is_total_eq":{"H":["std::hash::BuildHasherDefault<H>"],"S":["Sym"]}}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // StringInterner<S, H>
++p0.assert_receiver_is_total_eq();
++<StringInterner<S, H> as std::cmp::Eq>::assert_receiver_is_total_eq(p0);
++crate::<StringInterner<S, H> as std::cmp::Eq>::assert_receiver_is_total_eq(p0);
++<StringInterner<S, H>>::assert_receiver_is_total_eq(p0);
+-----------------
+src/lib.rs <StringInterner<S, H> as std::cmp::PartialEq>::eq
+deps:{"<StringInterner<S, H> as std::cmp::PartialEq>::eq":{"H":["std::marker::Sized","std::hash::BuildHasher"],"S":["std::marker::Sized","Symbol"]}}
+candidates:{"<StringInterner<S, H> as std::cmp::PartialEq>::eq":{"H":["std::hash::BuildHasherDefault<H>","std::collections::hash_map::RandomState"],"S":["Sym"]}}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // StringInterner<S, H>
+let mut p1 = & MaybeUninit::uninit().assume_init(); // StringInterner<S, H>
++p0.eq(p1);
++<StringInterner<S, H> as std::cmp::PartialEq>::eq(p0, p1);
++crate::<StringInterner<S, H> as std::cmp::PartialEq>::eq(p0, p1);
++<StringInterner<S, H>>::eq(p0, p1);
+-----------------
+src/lib.rs <StringInterner<Sym> as std::default::Default>::default
+deps:{}
+candidates:{}
++<StringInterner<Sym> as std::default::Default>::default();
++crate::<StringInterner<Sym> as std::default::Default>::default();
++<StringInterner<Sym>>::default();
+-----------------
+src/lib.rs StringInterner::<S>::new
+deps:{"StringInterner::<S>::new":{"S":["std::marker::Sized","Symbol"]}}
+candidates:{"StringInterner::<S>::new":{"S":["Sym"]}}
++StringInterner::<S>::new();
++crate::StringInterner::<S>::new();
++<StringInterner<S>>::new();
+-----------------
+src/lib.rs StringInterner::<S>::with_capacity
+deps:{"StringInterner::<S>::with_capacity":{"S":["std::marker::Sized","Symbol"]}}
+candidates:{"StringInterner::<S>::with_capacity":{"S":["Sym"]}}
+let mut p0 = 0usize; // None+usize
++StringInterner::<S>::with_capacity(p0);
++crate::StringInterner::<S>::with_capacity(p0);
++<StringInterner<S>>::with_capacity(p0);
+-----------------
+src/lib.rs StringInterner::<S>::capacity
+deps:{"StringInterner::<S>::capacity":{"S":["Symbol","std::marker::Sized"]}}
+candidates:{"StringInterner::<S>::capacity":{"S":["Sym"]}}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // StringInterner<S>
++p0.capacity();
++StringInterner::<S>::capacity(p0);
++crate::StringInterner::<S>::capacity(p0);
++<StringInterner<S>>::capacity(p0);
+-----------------
+src/lib.rs StringInterner::<S>::reserve
+deps:{"StringInterner::<S>::reserve":{"S":["std::marker::Sized","Symbol"]}}
+candidates:{"StringInterner::<S>::reserve":{"S":["Sym"]}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // StringInterner<S>
+let mut p1 = 0usize; // None+usize
++p0.reserve(p1);
++StringInterner::<S>::reserve(p0, p1);
++crate::StringInterner::<S>::reserve(p0, p1);
++<StringInterner<S>>::reserve(p0, p1);
+-----------------
+src/lib.rs StringInterner::<S, H>::with_hasher
+deps:{"StringInterner::<S, H>::with_hasher":{"H":["std::hash::BuildHasher","std::marker::Sized"],"S":["std::marker::Sized","Symbol"]}}
+candidates:{"StringInterner::<S, H>::with_hasher":{"H":["std::hash::BuildHasherDefault<H>","std::collections::hash_map::RandomState"],"S":["Sym"]}}
+let mut p0 = MaybeUninit::uninit().assume_init(); // H
++StringInterner::<S, H>::with_hasher(p0);
++crate::StringInterner::<S, H>::with_hasher(p0);
++<StringInterner<S, H>>::with_hasher(p0);
+-----------------
+src/lib.rs StringInterner::<S, H>::with_capacity_and_hasher
+deps:{"StringInterner::<S, H>::with_capacity_and_hasher":{"H":["std::hash::BuildHasher","std::marker::Sized"],"S":["std::marker::Sized","Symbol"]}}
+candidates:{"StringInterner::<S, H>::with_capacity_and_hasher":{"H":["std::collections::hash_map::RandomState","std::hash::BuildHasherDefault<H>"],"S":["Sym"]}}
+let mut p0 = 0usize; // None+usize
+let mut p1 = MaybeUninit::uninit().assume_init(); // H
++StringInterner::<S, H>::with_capacity_and_hasher(p0, p1);
++crate::StringInterner::<S, H>::with_capacity_and_hasher(p0, p1);
++<StringInterner<S, H>>::with_capacity_and_hasher(p0, p1);
+-----------------
+src/lib.rs StringInterner::<S, H>::get_or_intern
+deps:{"StringInterner::<S, H>::get_or_intern":{"H":["std::hash::BuildHasher","std::marker::Sized"],"S":["std::marker::Sized","Symbol"],"T":["std::convert::AsRef","std::marker::Sized","std::convert::Into"]}}
+candidates:{"StringInterner::<S, H>::get_or_intern":{"H":["std::hash::BuildHasherDefault<H>","std::collections::hash_map::RandomState"],"S":["Sym"],"T":["std::path::Component<'_>","std::path::Path","std::path::PathBuf","std::string::Drain<'a>","std::vec::Vec<T, A>","std::ffi::OsString","std::path::Iter<'_>","std::ffi::OsStr","std::simd::Simd<T, LANES>","std::path::Components<'_>"]}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // StringInterner<S, H>
+let mut p1 = MaybeUninit::uninit().assume_init(); // T
++p0.get_or_intern(p1);
++StringInterner::<S, H>::get_or_intern(p0, p1);
++crate::StringInterner::<S, H>::get_or_intern(p0, p1);
++<StringInterner<S, H>>::get_or_intern(p0, p1);
+-----------------
+src/lib.rs StringInterner::<S, H>::intern
+deps:{"StringInterner::<S, H>::intern":{"H":["std::marker::Sized","std::hash::BuildHasher"],"S":["std::marker::Sized","Symbol"],"T":["std::marker::Sized","std::convert::AsRef","std::convert::Into"]}}
+candidates:{"StringInterner::<S, H>::intern":{"H":["std::hash::BuildHasherDefault<H>","std::collections::hash_map::RandomState"],"S":["Sym"],"T":["std::path::Path","std::path::Iter<'_>","std::ffi::OsStr","std::path::PathBuf","std::simd::Simd<T, LANES>","std::vec::Vec<T, A>","std::path::Component<'_>","std::path::Components<'_>","std::ffi::OsString","std::string::Drain<'a>"]}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // StringInterner<S, H>
+let mut p1 = MaybeUninit::uninit().assume_init(); // T
++p0.intern(p1);
++StringInterner::<S, H>::intern(p0, p1);
++crate::StringInterner::<S, H>::intern(p0, p1);
++<StringInterner<S, H>>::intern(p0, p1);
+-----------------
+src/lib.rs StringInterner::<S, H>::make_symbol
+deps:{"StringInterner::<S, H>::make_symbol":{"H":["std::marker::Sized","std::hash::BuildHasher"],"S":["std::marker::Sized","Symbol"]}}
+candidates:{"StringInterner::<S, H>::make_symbol":{"H":["std::collections::hash_map::RandomState","std::hash::BuildHasherDefault<H>"],"S":["Sym"]}}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // StringInterner<S, H>
++p0.make_symbol();
++StringInterner::<S, H>::make_symbol(p0);
++crate::StringInterner::<S, H>::make_symbol(p0);
++<StringInterner<S, H>>::make_symbol(p0);
+-----------------
+src/lib.rs StringInterner::<S, H>::resolve
+deps:{"StringInterner::<S, H>::resolve":{"H":["std::hash::BuildHasher","std::marker::Sized"],"S":["Symbol","std::marker::Sized"]}}
+candidates:{"StringInterner::<S, H>::resolve":{"H":["std::collections::hash_map::RandomState","std::hash::BuildHasherDefault<H>"],"S":["Sym"]}}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // StringInterner<S, H>
+let mut p1 = MaybeUninit::uninit().assume_init(); // S
++p0.resolve(p1);
++StringInterner::<S, H>::resolve(p0, p1);
++crate::StringInterner::<S, H>::resolve(p0, p1);
++<StringInterner<S, H>>::resolve(p0, p1);
+-----------------
+src/lib.rs StringInterner::<S, H>::resolve_unchecked
+deps:{"StringInterner::<S, H>::resolve_unchecked":{"H":["std::hash::BuildHasher","std::marker::Sized"],"S":["std::marker::Sized","Symbol"]}}
+candidates:{"StringInterner::<S, H>::resolve_unchecked":{"H":["std::hash::BuildHasherDefault<H>","std::collections::hash_map::RandomState"],"S":["Sym"]}}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // StringInterner<S, H>
+let mut p1 = MaybeUninit::uninit().assume_init(); // S
++p0.resolve_unchecked(p1);
++StringInterner::<S, H>::resolve_unchecked(p0, p1);
++crate::StringInterner::<S, H>::resolve_unchecked(p0, p1);
++<StringInterner<S, H>>::resolve_unchecked(p0, p1);
+-----------------
+src/lib.rs StringInterner::<S, H>::get
+deps:{"<&T as std::convert::AsRef<U>>":{},"<&mut T as std::convert::AsRef<U>>":{},"StringInterner::<S, H>::get":{"H":["std::hash::BuildHasher","std::marker::Sized"],"S":["Symbol","std::marker::Sized"],"T":["std::marker::Sized","std::convert::AsRef"]}}
+candidates:{"<&T as std::convert::AsRef<U>>":{},"<&mut T as std::convert::AsRef<U>>":{},"StringInterner::<S, H>::get":{"H":["std::collections::hash_map::RandomState","std::hash::BuildHasherDefault<H>"],"S":["Sym"],"T":["std::vec::IntoIter<T, A>","std::slice::Iter<'_, T>","std::vec::Drain<'a, T, A>","std::sync::Arc<T>","std::borrow::Cow<'_, std::ffi::OsStr>","std::borrow::Cow<'_, T>","std::ffi::CStr","<&mut T as std::convert::AsRef<U>>","std::rc::Rc<T>","core::num::dec2flt::common::AsciiStr<'a>","std::slice::IterMut<'_, T>","std::boxed::Box<T, A>","std::ffi::CString"]}}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // StringInterner<S, H>
+let mut p1 = MaybeUninit::uninit().assume_init(); // T
++p0.get(p1);
++StringInterner::<S, H>::get(p0, p1);
++crate::StringInterner::<S, H>::get(p0, p1);
++<StringInterner<S, H>>::get(p0, p1);
+-----------------
+src/lib.rs StringInterner::<S, H>::len
+deps:{"StringInterner::<S, H>::len":{"H":["std::hash::BuildHasher","std::marker::Sized"],"S":["Symbol","std::marker::Sized"]}}
+candidates:{"StringInterner::<S, H>::len":{"H":["std::hash::BuildHasherDefault<H>","std::collections::hash_map::RandomState"],"S":["Sym"]}}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // StringInterner<S, H>
++p0.len();
++StringInterner::<S, H>::len(p0);
++crate::StringInterner::<S, H>::len(p0);
++<StringInterner<S, H>>::len(p0);
+-----------------
+src/lib.rs StringInterner::<S, H>::is_empty
+deps:{"StringInterner::<S, H>::is_empty":{"H":["std::marker::Sized","std::hash::BuildHasher"],"S":["Symbol","std::marker::Sized"]}}
+candidates:{"StringInterner::<S, H>::is_empty":{"H":["std::hash::BuildHasherDefault<H>","std::collections::hash_map::RandomState"],"S":["Sym"]}}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // StringInterner<S, H>
++p0.is_empty();
++StringInterner::<S, H>::is_empty(p0);
++crate::StringInterner::<S, H>::is_empty(p0);
++<StringInterner<S, H>>::is_empty(p0);
+-----------------
+src/lib.rs StringInterner::<S, H>::iter
+deps:{"StringInterner::<S, H>::iter":{"H":["std::marker::Sized","std::hash::BuildHasher"],"S":["Symbol","std::marker::Sized"]}}
+candidates:{"StringInterner::<S, H>::iter":{"H":["std::hash::BuildHasherDefault<H>","std::collections::hash_map::RandomState"],"S":["Sym"]}}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // StringInterner<S, H>
++p0.iter();
++StringInterner::<S, H>::iter(p0);
++crate::StringInterner::<S, H>::iter(p0);
++<StringInterner<S, H>>::iter(p0);
+-----------------
+src/lib.rs StringInterner::<S, H>::iter_values
+deps:{"StringInterner::<S, H>::iter_values":{"H":["std::hash::BuildHasher","std::marker::Sized"],"S":["Symbol","std::marker::Sized"]}}
+candidates:{"StringInterner::<S, H>::iter_values":{"H":["std::collections::hash_map::RandomState","std::hash::BuildHasherDefault<H>"],"S":["Sym"]}}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // StringInterner<S, H>
++p0.iter_values();
++StringInterner::<S, H>::iter_values(p0);
++crate::StringInterner::<S, H>::iter_values(p0);
++<StringInterner<S, H>>::iter_values(p0);
+-----------------
+src/lib.rs StringInterner::<S, H>::shrink_to_fit
+deps:{"StringInterner::<S, H>::shrink_to_fit":{"H":["std::marker::Sized","std::hash::BuildHasher"],"S":["std::marker::Sized","Symbol"]}}
+candidates:{"StringInterner::<S, H>::shrink_to_fit":{"H":["std::hash::BuildHasherDefault<H>","std::collections::hash_map::RandomState"],"S":["Sym"]}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // StringInterner<S, H>
++p0.shrink_to_fit();
++StringInterner::<S, H>::shrink_to_fit(p0);
++crate::StringInterner::<S, H>::shrink_to_fit(p0);
++<StringInterner<S, H>>::shrink_to_fit(p0);
+-----------------
+src/lib.rs <StringInterner<S> as std::iter::FromIterator<T>>::from_iter
+deps:{"<&'a hashbrown::map::HashMap<K, V, S, A> as std::iter::IntoIterator>":{},"<&'a hashbrown::set::HashSet<T, S, A> as std::iter::IntoIterator>":{},"<&'a mut hashbrown::map::HashMap<K, V, S, A> as std::iter::IntoIterator>":{},"<&'a mut std::collections::BTreeMap<K, V, A> as std::iter::IntoIterator>":{},"<&'a mut std::collections::HashMap<K, V, S> as std::iter::IntoIterator>":{},"<&'a mut std::collections::LinkedList<T> as std::iter::IntoIterator>":{},"<&'a mut std::collections::VecDeque<T, A> as std::iter::IntoIterator>":{},"<&'a mut std::option::Option<T> as std::iter::IntoIterator>":{},"<&'a mut std::result::Result<T, E> as std::iter::IntoIterator>":{},"<&'a mut std::vec::Vec<T, A> as std::iter::IntoIterator>":{},"<&'a std::collections::BTreeMap<K, V, A> as std::iter::IntoIterator>":{},"<&'a std::collections::BTreeSet<T, A> as std::iter::IntoIterator>":{},"<&'a std::collections::BinaryHeap<T> as std::iter::IntoIterator>":{},"<&'a std::collections::HashMap<K, V, S> as std::iter::IntoIterator>":{},"<&'a std::collections::HashSet<T, S> as std::iter::IntoIterator>":{},"<&'a std::collections::LinkedList<T> as std::iter::IntoIterator>":{},"<&'a std::collections::VecDeque<T, A> as std::iter::IntoIterator>":{},"<&'a std::option::Option<T> as std::iter::IntoIterator>":{},"<&'a std::result::Result<T, E> as std::iter::IntoIterator>":{},"<&'a std::sync::mpsc::Receiver<T> as std::iter::IntoIterator>":{},"<&'a std::vec::Vec<T, A> as std::iter::IntoIterator>":{},"<&mut I as std::iter::Iterator>":{},"<I as std::iter::IntoIterator>":{"I":["std::marker::Sized","std::iter::Iterator"]},"<StringInterner<S> as std::iter::FromIterator<T>>::from_iter":{"I":["std::iter::IntoIterator","std::marker::Sized"],"S":["std::marker::Sized","Symbol"],"T":["std::convert::AsRef","std::marker::Sized","std::convert::Into"]},"IntoIter":{"S":["Symbol","std::marker::Sized"]},"Iter":{"S":["Symbol","std::marker::Sized"]},"StringInterner":{"H":["std::cmp::Eq","std::fmt::Debug","std::default::Default","std::marker::Sized","std::hash::BuildHasher","std::clone::Clone"],"S":["Symbol","std::clone::Clone","std::marker::Sized","std::marker::Send","std::marker::Sync","std::fmt::Debug","std::cmp::Eq"]},"Values":{"S":["Symbol","std::marker::Sized"]}}
+candidates:{"<&'a hashbrown::map::HashMap<K, V, S, A> as std::iter::IntoIterator>":{},"<&'a hashbrown::set::HashSet<T, S, A> as std::iter::IntoIterator>":{},"<&'a mut hashbrown::map::HashMap<K, V, S, A> as std::iter::IntoIterator>":{},"<&'a mut std::collections::BTreeMap<K, V, A> as std::iter::IntoIterator>":{},"<&'a mut std::collections::HashMap<K, V, S> as std::iter::IntoIterator>":{},"<&'a mut std::collections::LinkedList<T> as std::iter::IntoIterator>":{},"<&'a mut std::collections::VecDeque<T, A> as std::iter::IntoIterator>":{},"<&'a mut std::option::Option<T> as std::iter::IntoIterator>":{},"<&'a mut std::result::Result<T, E> as std::iter::IntoIterator>":{},"<&'a mut std::vec::Vec<T, A> as std::iter::IntoIterator>":{},"<&'a std::collections::BTreeMap<K, V, A> as std::iter::IntoIterator>":{},"<&'a std::collections::BTreeSet<T, A> as std::iter::IntoIterator>":{},"<&'a std::collections::BinaryHeap<T> as std::iter::IntoIterator>":{},"<&'a std::collections::HashMap<K, V, S> as std::iter::IntoIterator>":{},"<&'a std::collections::HashSet<T, S> as std::iter::IntoIterator>":{},"<&'a std::collections::LinkedList<T> as std::iter::IntoIterator>":{},"<&'a std::collections::VecDeque<T, A> as std::iter::IntoIterator>":{},"<&'a std::option::Option<T> as std::iter::IntoIterator>":{},"<&'a std::result::Result<T, E> as std::iter::IntoIterator>":{},"<&'a std::sync::mpsc::Receiver<T> as std::iter::IntoIterator>":{},"<&'a std::vec::Vec<T, A> as std::iter::IntoIterator>":{},"<&mut I as std::iter::Iterator>":{},"<I as std::iter::IntoIterator>":{"I":["IntoIter","Values","<&mut I as std::iter::Iterator>","Iter"]},"<StringInterner<S> as std::iter::FromIterator<T>>::from_iter":{"I":["<&'a std::collections::HashMap<K, V, S> as std::iter::IntoIterator>","<&'a std::collections::LinkedList<T> as std::iter::IntoIterator>","StringInterner"],"S":["Sym"],"T":["std::path::Component<'_>","std::path::Iter<'_>","std::simd::Simd<T, LANES>","std::string::Drain<'a>","std::ffi::OsString","std::path::Path","std::ffi::OsStr","std::path::Components<'_>","std::vec::Vec<T, A>","std::path::PathBuf"]},"IntoIter":{"S":["Sym"]},"Iter":{"S":["Sym"]},"StringInterner":{"H":["std::hash::BuildHasherDefault<H>","std::collections::hash_map::RandomState"]},"Values":{"S":["Sym"]}}
+let mut p0 = MaybeUninit::uninit().assume_init(); // I
++<StringInterner<S> as std::iter::FromIterator<T>>::from_iter(p0);
++crate::<StringInterner<S> as std::iter::FromIterator<T>>::from_iter(p0);
++<StringInterner<S>>::from_iter(p0);
+-----------------
+src/lib.rs Iter::<'a, S>::new
+'a
+deps:{"Iter::<'a, S>::new":{"H":["std::marker::Sized","std::hash::BuildHasher"],"S":["Symbol","std::marker::Sized"]}}
+candidates:{"Iter::<'a, S>::new":{"H":["std::hash::BuildHasherDefault<H>","std::collections::hash_map::RandomState"],"S":["Sym"]}}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // StringInterner<S, H>
++Iter::<'a, S>::new(p0);
++crate::Iter::<'a, S>::new(p0);
++<Iter<'a, S>>::new(p0);
+-----------------
+src/lib.rs <Iter<'a, S> as std::iter::Iterator>::next
+'a
+deps:{"<Iter<'a, S> as std::iter::Iterator>::next":{"S":["std::marker::Sized","Symbol"]}}
+candidates:{"<Iter<'a, S> as std::iter::Iterator>::next":{"S":["Sym"]}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // Iter<'a, S>
++p0.next();
++<Iter<'a, S> as std::iter::Iterator>::next(p0);
++crate::<Iter<'a, S> as std::iter::Iterator>::next(p0);
++<Iter<'a, S>>::next(p0);
+-----------------
+src/lib.rs <Iter<'a, S> as std::iter::Iterator>::size_hint
+'a
+deps:{"<Iter<'a, S> as std::iter::Iterator>::size_hint":{"S":["std::marker::Sized","Symbol"]}}
+candidates:{"<Iter<'a, S> as std::iter::Iterator>::size_hint":{"S":["Sym"]}}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // Iter<'a, S>
++p0.size_hint();
++<Iter<'a, S> as std::iter::Iterator>::size_hint(p0);
++crate::<Iter<'a, S> as std::iter::Iterator>::size_hint(p0);
++<Iter<'a, S>>::size_hint(p0);
+-----------------
+src/lib.rs Values::<'a, S>::new
+'a
+deps:{"Values::<'a, S>::new":{"H":["std::marker::Sized","std::hash::BuildHasher"],"S":["Symbol","std::marker::Sized"]}}
+candidates:{"Values::<'a, S>::new":{"H":["std::hash::BuildHasherDefault<H>","std::collections::hash_map::RandomState"],"S":["Sym"]}}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // StringInterner<S, H>
++Values::<'a, S>::new(p0);
++crate::Values::<'a, S>::new(p0);
++<Values<'a, S>>::new(p0);
+-----------------
+src/lib.rs <Values<'a, S> as std::iter::Iterator>::next
+'a
+deps:{"<Values<'a, S> as std::iter::Iterator>::next":{"S":["Symbol","std::marker::Sized"]}}
+candidates:{"<Values<'a, S> as std::iter::Iterator>::next":{"S":["Sym"]}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // Values<'a, S>
++p0.next();
++<Values<'a, S> as std::iter::Iterator>::next(p0);
++crate::<Values<'a, S> as std::iter::Iterator>::next(p0);
++<Values<'a, S>>::next(p0);
+-----------------
+src/lib.rs <Values<'a, S> as std::iter::Iterator>::size_hint
+'a
+deps:{"<Values<'a, S> as std::iter::Iterator>::size_hint":{"S":["Symbol","std::marker::Sized"]}}
+candidates:{"<Values<'a, S> as std::iter::Iterator>::size_hint":{"S":["Sym"]}}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // Values<'a, S>
++p0.size_hint();
++<Values<'a, S> as std::iter::Iterator>::size_hint(p0);
++crate::<Values<'a, S> as std::iter::Iterator>::size_hint(p0);
++<Values<'a, S>>::size_hint(p0);
+-----------------
+src/lib.rs <StringInterner<S, H> as std::iter::IntoIterator>::into_iter
+deps:{"<StringInterner<S, H> as std::iter::IntoIterator>::into_iter":{"H":["std::hash::BuildHasher","std::marker::Sized"],"S":["std::marker::Sized","Symbol"]}}
+candidates:{"<StringInterner<S, H> as std::iter::IntoIterator>::into_iter":{"H":["std::collections::hash_map::RandomState","std::hash::BuildHasherDefault<H>"],"S":["Sym"]}}
+let mut p0 = MaybeUninit::uninit().assume_init(); // StringInterner<S, H>
++p0.into_iter();
++<StringInterner<S, H> as std::iter::IntoIterator>::into_iter(p0);
++crate::<StringInterner<S, H> as std::iter::IntoIterator>::into_iter(p0);
++<StringInterner<S, H>>::into_iter(p0);
+-----------------
+src/lib.rs <IntoIter<S> as std::iter::Iterator>::next
+deps:{"<IntoIter<S> as std::iter::Iterator>::next":{"S":["Symbol","std::marker::Sized"]}}
+candidates:{"<IntoIter<S> as std::iter::Iterator>::next":{"S":["Sym"]}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // IntoIter<S>
++p0.next();
++<IntoIter<S> as std::iter::Iterator>::next(p0);
++crate::<IntoIter<S> as std::iter::Iterator>::next(p0);
++<IntoIter<S>>::next(p0);
+-----------------
+src/lib.rs <IntoIter<S> as std::iter::Iterator>::size_hint
+deps:{"<IntoIter<S> as std::iter::Iterator>::size_hint":{"S":["Symbol","std::marker::Sized"]}}
+candidates:{"<IntoIter<S> as std::iter::Iterator>::size_hint":{"S":["Sym"]}}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // IntoIter<S>
++p0.size_hint();
++<IntoIter<S> as std::iter::Iterator>::size_hint(p0);
++crate::<IntoIter<S> as std::iter::Iterator>::size_hint(p0);
++<IntoIter<S>>::size_hint(p0);

@@ -1,0 +1,23 @@
+ ./fuzz_transform/target/release/fuzz_transform /home/cdc/rug_on_erasan_after_bolero/algorithmica-0.1.8/./src/search/tests.rs
+ ./fuzz_transform/target/release/fuzz_transform /home/cdc/rug_on_erasan_after_bolero/algorithmica-0.1.8/./src/search/mod.rs
+ ./fuzz_transform/target/release/fuzz_transform /home/cdc/rug_on_erasan_after_bolero/algorithmica-0.1.8/./src/search/binary.rs
+ ./fuzz_transform/target/release/fuzz_transform /home/cdc/rug_on_erasan_after_bolero/algorithmica-0.1.8/./src/tree/red_black.rs
+ ./fuzz_transform/target/release/fuzz_transform /home/cdc/rug_on_erasan_after_bolero/algorithmica-0.1.8/./src/tree/mod.rs
+ ./fuzz_transform/target/release/fuzz_transform /home/cdc/rug_on_erasan_after_bolero/algorithmica-0.1.8/./src/tree/bst.rs
+ ./fuzz_transform/target/release/fuzz_transform /home/cdc/rug_on_erasan_after_bolero/algorithmica-0.1.8/./src/sort/merge_sort.rs
+err algorithmica-0.1.8 /home/cdc/rug_on_erasan_after_bolero/algorithmica-0.1.8/./src/sort/merge_sort.rs tests_rug_13
+ ./fuzz_transform/target/release/fuzz_transform /home/cdc/rug_on_erasan_after_bolero/algorithmica-0.1.8/./src/sort/mod.rs
+ ./fuzz_transform/target/release/fuzz_transform /home/cdc/rug_on_erasan_after_bolero/algorithmica-0.1.8/./src/sort/heap_sort.rs
+ ./fuzz_transform/target/release/fuzz_transform /home/cdc/rug_on_erasan_after_bolero/algorithmica-0.1.8/./src/sort/bubble.rs
+ ./fuzz_transform/target/release/fuzz_transform /home/cdc/rug_on_erasan_after_bolero/algorithmica-0.1.8/./src/sort/insertion.rs
+ ./fuzz_transform/target/release/fuzz_transform /home/cdc/rug_on_erasan_after_bolero/algorithmica-0.1.8/./src/sort/selection.rs
+ ./fuzz_transform/target/release/fuzz_transform /home/cdc/rug_on_erasan_after_bolero/algorithmica-0.1.8/./src/sort/is_sorted.rs
+ ./fuzz_transform/target/release/fuzz_transform /home/cdc/rug_on_erasan_after_bolero/algorithmica-0.1.8/./src/sort/test.rs
+ ./fuzz_transform/target/release/fuzz_transform /home/cdc/rug_on_erasan_after_bolero/algorithmica-0.1.8/./src/sort/quick_sort.rs
+ ./fuzz_transform/target/release/fuzz_transform /home/cdc/rug_on_erasan_after_bolero/algorithmica-0.1.8/./src/subset.rs
+ ./fuzz_transform/target/release/fuzz_transform /home/cdc/rug_on_erasan_after_bolero/algorithmica-0.1.8/./src/lib.rs
+ ./fuzz_transform/target/release/fuzz_transform /home/cdc/rug_on_erasan_after_bolero/algorithmica-0.1.8/./src/graph/connectivity.rs
+ ./fuzz_transform/target/release/fuzz_transform /home/cdc/rug_on_erasan_after_bolero/algorithmica-0.1.8/./src/graph/mod.rs
+ ./fuzz_transform/target/release/fuzz_transform /home/cdc/rug_on_erasan_after_bolero/algorithmica-0.1.8/./src/math/mod.rs
+ ./fuzz_transform/target/release/fuzz_transform /home/cdc/rug_on_erasan_after_bolero/algorithmica-0.1.8/./src/math/matrix.rs
+algorithmica . 23 24 0

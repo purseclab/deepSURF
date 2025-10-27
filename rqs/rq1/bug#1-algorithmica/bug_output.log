@@ -1,0 +1,146 @@
+     Removed 124 files, 53.4MiB total
+   Compiling semver v1.0.26
+   Compiling libc v0.2.175
+   Compiling home v0.5.5
+   Compiling xdg v2.5.2
+   Compiling global_data v0.1.0 (/home/cdc/deepSURF-sp26-artifacts/artifact_code/global_data)
+   Compiling algorithmica v0.1.8 (/home/cdc/deepSURF-sp26-artifacts/artifact_data/dataset/erasan_crates/algorithmica-0.1.8)
+   Compiling afl v0.15.7
+   Compiling rustc_version v0.4.1
+   Compiling algorithmica_fuzz_10485517678465726194 v0.1.0 (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#1-algorithmica/harness)
+warning: unused import: `algorithmica::*`
+ --> src/algorithmica_fuzz_10485517678465726194.rs:5:5
+  |
+5 | use algorithmica::*;
+  |     ^^^^^^^^^^^^^^^
+  |
+  = note: `#[warn(unused_imports)]` on by default
+
+warning: unused import: `std::str::FromStr`
+ --> src/algorithmica_fuzz_10485517678465726194.rs:7:5
+  |
+7 | use std::str::FromStr;
+  |     ^^^^^^^^^^^^^^^^^
+
+warning: unused imports: `DerefMut`, `Deref`, `IndexMut`, `Index`
+ --> src/algorithmica_fuzz_10485517678465726194.rs:8:16
+  |
+8 | use std::ops::{Deref, DerefMut, Index, IndexMut};
+  |                ^^^^^  ^^^^^^^^  ^^^^^  ^^^^^^^^
+
+warning: unnecessary parentheses around `match` scrutinee expression
+  --> src/algorithmica_fuzz_10485517678465726194.rs:44:11
+   |
+44 |     match (_to_usize(GLOBAL_DATA, 561) % 3usize) {
+   |           ^                                    ^
+   |
+   = note: `#[warn(unused_parens)]` on by default
+help: remove these parentheses
+   |
+44 -     match (_to_usize(GLOBAL_DATA, 561) % 3usize) {
+44 +     match _to_usize(GLOBAL_DATA, 561) % 3usize {
+   |
+
+warning: the item `TryInto` is imported redundantly
+   --> src/algorithmica_fuzz_10485517678465726194.rs:188:9
+    |
+188 |     use std::convert::TryInto;
+    |         ^^^^^^^^^^^^^^^^^^^^^
+   --> /rustc/11f32b73e0dc9287e305b5b9980d24aecdc8c17f/library/std/src/prelude/mod.rs:129:13
+    |
+    = note: the item `TryInto` is already defined here
+
+warning: the item `TryInto` is imported redundantly
+   --> src/algorithmica_fuzz_10485517678465726194.rs:195:9
+    |
+195 |     use std::convert::TryInto;
+    |         ^^^^^^^^^^^^^^^^^^^^^
+   --> /rustc/11f32b73e0dc9287e305b5b9980d24aecdc8c17f/library/std/src/prelude/mod.rs:129:13
+    |
+    = note: the item `TryInto` is already defined here
+
+warning: unused variable: `GLOBAL_DATA`
+  --> src/algorithmica_fuzz_10485517678465726194.rs:23:13
+   |
+23 |         let GLOBAL_DATA = match selector {
+   |             ^^^^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_GLOBAL_DATA`
+   |
+   = note: `#[warn(unused_variables)]` on by default
+
+warning: unused variable: `f`
+  --> src/algorithmica_fuzz_10485517678465726194.rs:14:19
+   |
+14 |     fn fmt(&self, f: &mut std::fmt::Formatter) -> Result<(), std::fmt::Error> {
+   |                   ^ help: if this is intentional, prefix it with an underscore: `_f`
+
+warning: unused variable: `str1`
+  --> src/algorithmica_fuzz_10485517678465726194.rs:31:36
+   |
+31 | fn _custom_fn0(str0: &CustomType0, str1: &CustomType0) -> std::cmp::Ordering {
+   |                                    ^^^^ help: if this is intentional, prefix it with an underscore: `_str1`
+
+warning: variable `GLOBAL_DATA` should have a snake case name
+  --> src/algorithmica_fuzz_10485517678465726194.rs:16:13
+   |
+16 |         let GLOBAL_DATA = global_data.first_half;
+   |             ^^^^^^^^^^^ help: convert the identifier to snake case: `global_data`
+   |
+   = note: `#[warn(non_snake_case)]` on by default
+
+warning: variable `GLOBAL_DATA` should have a snake case name
+  --> src/algorithmica_fuzz_10485517678465726194.rs:23:13
+   |
+23 |         let GLOBAL_DATA = match selector {
+   |             ^^^^^^^^^^^ help: convert the identifier to snake case: `global_data`
+
+warning: variable `GLOBAL_DATA` should have a snake case name
+  --> src/algorithmica_fuzz_10485517678465726194.rs:33:9
+   |
+33 |     let GLOBAL_DATA = global_data.first_half;
+   |         ^^^^^^^^^^^ help: convert the identifier to snake case: `global_data`
+
+warning: variable `GLOBAL_DATA` should have a snake case name
+  --> src/algorithmica_fuzz_10485517678465726194.rs:40:9
+   |
+40 |     let GLOBAL_DATA = match selector {
+   |         ^^^^^^^^^^^ help: convert the identifier to snake case: `global_data`
+
+warning: variable `GLOBAL_DATA` should have a snake case name
+  --> src/algorithmica_fuzz_10485517678465726194.rs:56:13
+   |
+56 |         let GLOBAL_DATA = global_data.first_half;
+   |             ^^^^^^^^^^^ help: convert the identifier to snake case: `global_data`
+
+warning: `algorithmica_fuzz_10485517678465726194` (bin "algorithmica_fuzz_10485517678465726194") generated 14 warnings (run `cargo fix --bin "algorithmica_fuzz_10485517678465726194"` to apply 7 suggestions)
+    Finished dev [unoptimized + debuginfo] target(s) in 2.73s
+=================================================================
+==1381837==ERROR: AddressSanitizer: attempting double-free on 0x502000000050 in thread T0:
+    #0 0x564345561226  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#1-algorithmica/harness/target/x86_64-unknown-linux-gnu/debug/algorithmica_fuzz_10485517678465726194+0x97226) (BuildId: 97cdc9f3694464c678c43925755501503e30afd8)
+    #1 0x56434558c4b7  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#1-algorithmica/harness/target/x86_64-unknown-linux-gnu/debug/algorithmica_fuzz_10485517678465726194+0xc24b7) (BuildId: 97cdc9f3694464c678c43925755501503e30afd8)
+    #2 0x5643455925c5  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#1-algorithmica/harness/target/x86_64-unknown-linux-gnu/debug/algorithmica_fuzz_10485517678465726194+0xc85c5) (BuildId: 97cdc9f3694464c678c43925755501503e30afd8)
+    #3 0x56434559aa4a  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#1-algorithmica/harness/target/x86_64-unknown-linux-gnu/debug/algorithmica_fuzz_10485517678465726194+0xd0a4a) (BuildId: 97cdc9f3694464c678c43925755501503e30afd8)
+    #4 0x564345599321  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#1-algorithmica/harness/target/x86_64-unknown-linux-gnu/debug/algorithmica_fuzz_10485517678465726194+0xcf321) (BuildId: 97cdc9f3694464c678c43925755501503e30afd8)
+    #5 0x56434558ece1  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#1-algorithmica/harness/target/x86_64-unknown-linux-gnu/debug/algorithmica_fuzz_10485517678465726194+0xc4ce1) (BuildId: 97cdc9f3694464c678c43925755501503e30afd8)
+    #6 0x56434558ed30  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#1-algorithmica/harness/target/x86_64-unknown-linux-gnu/debug/algorithmica_fuzz_10485517678465726194+0xc4d30) (BuildId: 97cdc9f3694464c678c43925755501503e30afd8)
+    #7 0x5643455b4be0  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#1-algorithmica/harness/target/x86_64-unknown-linux-gnu/debug/algorithmica_fuzz_10485517678465726194+0xeabe0) (BuildId: 97cdc9f3694464c678c43925755501503e30afd8)
+    #8 0x56434559ac05  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#1-algorithmica/harness/target/x86_64-unknown-linux-gnu/debug/algorithmica_fuzz_10485517678465726194+0xd0c05) (BuildId: 97cdc9f3694464c678c43925755501503e30afd8)
+    #9 0x7f8b92131d8f  (/lib/x86_64-linux-gnu/libc.so.6+0x29d8f) (BuildId: 490fef8403240c91833978d494d39e537409b92e)
+    #10 0x7f8b92131e3f  (/lib/x86_64-linux-gnu/libc.so.6+0x29e3f) (BuildId: 490fef8403240c91833978d494d39e537409b92e)
+    #11 0x5643454daa44  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#1-algorithmica/harness/target/x86_64-unknown-linux-gnu/debug/algorithmica_fuzz_10485517678465726194+0x10a44) (BuildId: 97cdc9f3694464c678c43925755501503e30afd8)
+
+0x502000000050 is located 0 bytes inside of 14-byte region [0x502000000050,0x50200000005e)
+freed by thread T0 here:
+    #0 0x564345561226  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#1-algorithmica/harness/target/x86_64-unknown-linux-gnu/debug/algorithmica_fuzz_10485517678465726194+0x97226) (BuildId: 97cdc9f3694464c678c43925755501503e30afd8)
+    #1 0x56434558be57  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#1-algorithmica/harness/target/x86_64-unknown-linux-gnu/debug/algorithmica_fuzz_10485517678465726194+0xc1e57) (BuildId: 97cdc9f3694464c678c43925755501503e30afd8)
+    #2 0x5643455925c5  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#1-algorithmica/harness/target/x86_64-unknown-linux-gnu/debug/algorithmica_fuzz_10485517678465726194+0xc85c5) (BuildId: 97cdc9f3694464c678c43925755501503e30afd8)
+    #3 0x56434559aa4a  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#1-algorithmica/harness/target/x86_64-unknown-linux-gnu/debug/algorithmica_fuzz_10485517678465726194+0xd0a4a) (BuildId: 97cdc9f3694464c678c43925755501503e30afd8)
+    #4 0x56434558ece1  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#1-algorithmica/harness/target/x86_64-unknown-linux-gnu/debug/algorithmica_fuzz_10485517678465726194+0xc4ce1) (BuildId: 97cdc9f3694464c678c43925755501503e30afd8)
+
+previously allocated by thread T0 here:
+    #0 0x5643455614ce  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#1-algorithmica/harness/target/x86_64-unknown-linux-gnu/debug/algorithmica_fuzz_10485517678465726194+0x974ce) (BuildId: 97cdc9f3694464c678c43925755501503e30afd8)
+    #1 0x56434558f56e  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#1-algorithmica/harness/target/x86_64-unknown-linux-gnu/debug/algorithmica_fuzz_10485517678465726194+0xc556e) (BuildId: 97cdc9f3694464c678c43925755501503e30afd8)
+    #2 0x56434559aa4a  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#1-algorithmica/harness/target/x86_64-unknown-linux-gnu/debug/algorithmica_fuzz_10485517678465726194+0xd0a4a) (BuildId: 97cdc9f3694464c678c43925755501503e30afd8)
+    #3 0x56434558ece1  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#1-algorithmica/harness/target/x86_64-unknown-linux-gnu/debug/algorithmica_fuzz_10485517678465726194+0xc4ce1) (BuildId: 97cdc9f3694464c678c43925755501503e30afd8)
+
+SUMMARY: AddressSanitizer: double-free (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#1-algorithmica/harness/target/x86_64-unknown-linux-gnu/debug/algorithmica_fuzz_10485517678465726194+0x97226) (BuildId: 97cdc9f3694464c678c43925755501503e30afd8) 
+==1381837==ABORTING

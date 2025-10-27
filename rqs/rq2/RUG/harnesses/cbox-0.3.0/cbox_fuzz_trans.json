@@ -1,0 +1,1 @@
+{"tests_rug_11": {"test_rug": {"rug_fuzz_0": "b\"hello\\0\""}}, "tests_rug_18": {"test_rug": {"rug_fuzz_0": "\"Hello, World!\\0\""}}, "tests_rug_20": {"test_rug": {"rug_fuzz_0": "42"}}}

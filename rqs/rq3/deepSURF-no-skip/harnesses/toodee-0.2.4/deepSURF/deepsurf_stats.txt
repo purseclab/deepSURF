@@ -1,0 +1,111 @@
+
+Total Stats:
+------------------------------------------------------------------------------------------------------------------------------------
+* Total URAPI Coverage: 57/60 (95.00%).
+* LLM URAPI Coverage: 55/60 (91.67%).
+* Total Targets (including targets directly imported from SURF): 58 in [30400.974498596s].
+* URAPIs w/ Custom Functionality: 6/60 (10.00%).
+------------------------------------------------------------------------------------------------------------------------------------
+
+Redundant-Targets:
+------------------------------------------------------------------------------------------------------------------------------------
+  * toodee_fuzz_1462566055301293201_deepseek-r1_turn6
+  * toodee_fuzz_16875072544160977552_deepseek-r1_turn5
+  * toodee_fuzz_4754585929428134934_deepseek-r1_turn2
+  * toodee_fuzz_14151248305991259105_deepseek-r1_turn2
+  * toodee_fuzz_347557406229760741_deepseek-r1_turn3
+  * toodee_fuzz_12398518200245740149_deepseek-r1_turn3
+  * toodee_fuzz_17546178483008163448_deepseek-r1_turn2
+  * toodee_fuzz_12198009328625723202_deepseek-r1_turn5
+  * toodee_fuzz_14993610363335679434_deepseek-r1_turn2
+  * toodee_fuzz_9379054959454087932_deepseek-r1_turn4
+  * toodee_fuzz_11387604720056080169_deepseek-r1_turn4
+  * toodee_fuzz_3161605772101626469_deepseek-r1_turn2
+  * toodee_fuzz_7685720606509383912_deepseek-r1_turn2
+  * toodee_fuzz_15757249408141109004_deepseek-r1_turn4
+  * toodee_fuzz_3614292731809517274_deepseek-r1_turn1
+  * toodee_fuzz_13905759435898088798_deepseek-r1_turn5
+  * toodee_fuzz_10887156499851053098_deepseek-r1_turn3
+  * toodee_fuzz_15160624652744957020_deepseek-r1_turn1
+  * toodee_fuzz_15581119540057188284_deepseek-r1_turn2
+  * toodee_fuzz_6620797865885092094_deepseek-r1_turn4
+  * toodee_fuzz_14845570421688555118_deepseek-r1_turn3
+  * toodee_fuzz_537958945957173982_deepseek-r1_turn3
+  * toodee_fuzz_4865430345207377729_deepseek-r1_turn4
+  * toodee_fuzz_6860837592474164970_deepseek-r1_turn1
+  * toodee_fuzz_11410619174233194463_deepseek-r1_turn2
+  * toodee_fuzz_11045466902218921687_deepseek-r1_turn2
+  * toodee_fuzz_4557178836988584211_deepseek-r1_turn3
+  * toodee_fuzz_4893045723833924897_deepseek-r1_turn2
+  * toodee_fuzz_10262246936339903575_deepseek-r1_turn2
+  * toodee_fuzz_1045790220218272802_deepseek-r1_turn3
+------------------------------------------------------------------------------------------------------------------------------------
+
+Targeted-URAPI-Miss-Targets:
+------------------------------------------------------------------------------------------------------------------------------------
+  * toodee_fuzz_15581119540057188284_deepseek-r1_turn2
+  * toodee_fuzz_12398518200245740149_deepseek-r1_turn3
+  * toodee_fuzz_503420346411542303_deepseek-r1_turn4
+  * toodee_fuzz_11387604720056080169_deepseek-r1_turn4
+  * toodee_fuzz_9379054959454087932_deepseek-r1_turn4
+  * toodee_fuzz_1462566055301293201_deepseek-r1_turn6
+  * toodee_fuzz_1140816890585470177_deepseek-r1_turn3
+  * toodee_fuzz_14605234300945487375_deepseek-r1_turn5
+  * toodee_fuzz_14970496963191162766_deepseek-r1_turn6
+  * toodee_fuzz_11045466902218921687_deepseek-r1_turn2
+------------------------------------------------------------------------------------------------------------------------------------
+
+Targets For Fuzzing:
+  - [NoSkip]: Set of Fuzzing Targets = Total-Targets - Targeted-URAPI-Miss-Targets
+------------------------------------------------------------------------------------------------------------------------------------
+Count: 49
+  * toodee_fuzz_1156998684846642157_deepseek-r1_turn4
+  * toodee_fuzz_15160624652744957020_deepseek-r1_turn1
+  * toodee_fuzz_3838590532118101743
+  * toodee_fuzz_18021943519004947356_deepseek-r1_turn4
+  * toodee_fuzz_14434279494862768484_deepseek-r1_turn2
+  * toodee_fuzz_4557178836988584211_deepseek-r1_turn3
+  * toodee_fuzz_13905759435898088798_deepseek-r1_turn5
+  * toodee_fuzz_1771646068392946231_deepseek-r1_turn2
+  * toodee_fuzz_14993610363335679434_deepseek-r1_turn2
+  * toodee_fuzz_14845570421688555118_deepseek-r1_turn3
+  * toodee_fuzz_12499944452156313041_deepseek-r1_turn4
+  * toodee_fuzz_14970496963191162766
+  * toodee_fuzz_537958945957173982_deepseek-r1_turn3
+  * toodee_fuzz_15757249408141109004_deepseek-r1_turn4
+  * toodee_fuzz_11410619174233194463_deepseek-r1_turn2
+  * toodee_fuzz_16083089001760278045_deepseek-r1_turn3
+  * toodee_fuzz_12198009328625723202_deepseek-r1_turn5
+  * toodee_fuzz_8792996380315457759_deepseek-r1_turn2
+  * toodee_fuzz_3614292731809517274_deepseek-r1_turn1
+  * toodee_fuzz_6860837592474164970_deepseek-r1_turn1
+  * toodee_fuzz_10887156499851053098_deepseek-r1_turn3
+  * toodee_fuzz_555877914944344635_deepseek-r1_turn2
+  * toodee_fuzz_7773152812963994330
+  * toodee_fuzz_3161605772101626469_deepseek-r1_turn2
+  * toodee_fuzz_6620797865885092094_deepseek-r1_turn4
+  * toodee_fuzz_10262246936339903575_deepseek-r1_turn2
+  * toodee_fuzz_15457921755998110157_deepseek-r1_turn3
+  * toodee_fuzz_4754585929428134934_deepseek-r1_turn2
+  * toodee_fuzz_13633078556279565736
+  * toodee_fuzz_17546178483008163448_deepseek-r1_turn2
+  * toodee_fuzz_347557406229760741_deepseek-r1_turn3
+  * toodee_fuzz_877148114838209635
+  * toodee_fuzz_3639831062231178506_deepseek-r1_turn3
+  * toodee_fuzz_4865430345207377729_deepseek-r1_turn4
+  * toodee_fuzz_1045790220218272802_deepseek-r1_turn3
+  * toodee_fuzz_7685720606509383912_deepseek-r1_turn2
+  * toodee_fuzz_16087476159059393318_deepseek-r1_turn4
+  * toodee_fuzz_1140816890585470177
+  * toodee_fuzz_4893045723833924897_deepseek-r1_turn2
+  * toodee_fuzz_5329575348399950634_deepseek-r1_turn3
+  * toodee_fuzz_7706386555192007398_deepseek-r1_turn2
+  * toodee_fuzz_765273026235002508_deepseek-r1_turn1
+  * toodee_fuzz_18378997775372387472
+  * toodee_fuzz_16875072544160977552_deepseek-r1_turn5
+  * toodee_fuzz_18022505199540229386_deepseek-r1_turn3
+  * toodee_fuzz_2092378170149048866_deepseek-r1_turn2
+  * toodee_fuzz_2138523013993331364_deepseek-r1_turn3
+  * toodee_fuzz_14151248305991259105_deepseek-r1_turn2
+  * toodee_fuzz_13077116790450601879
+------------------------------------------------------------------------------------------------------------------------------------

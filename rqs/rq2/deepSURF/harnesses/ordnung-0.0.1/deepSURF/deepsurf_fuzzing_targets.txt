@@ -1,0 +1,575 @@
+deepSURF: Generated Targets to be Fuzzed
+------------------------------------------------------------------------------------------------------------------------------------
+  StableURAPI: into_iter::/home/cdc/SURF/deepSURF-big-experiment-harnesses/ordnung-0.0.1/src/compact.rs::252,
+    - URAPI: DefId(0:81 ~ ordnung[1298]::compact::{impl#8}::into_iter),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * ordnung_fuzz_7314867924087404185_deepseek-r1_turn3
+      * ordnung_fuzz_10578924928580918328_deepseek-r1_turn1
+  StableURAPI: with_capacity::/home/cdc/SURF/deepSURF-big-experiment-harnesses/ordnung-0.0.1/src/compact.rs::35,
+    - URAPI: DefId(0:37 ~ ordnung[1298]::compact::{impl#0}::with_capacity),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * ordnung_fuzz_6866931038910001367_deepseek-r1_turn2
+      * ordnung_fuzz_6444110355677405621_deepseek-r1_turn2
+      * ordnung_fuzz_9717396599201456613_deepseek-r1_turn4
+      * ordnung_fuzz_660891620703362441_deepseek-r1_turn5
+      * ordnung_fuzz_14169868846944646384_deepseek-r1_turn2
+      * ordnung_fuzz_10518793896994029608_deepseek-r1_turn2
+      * ordnung_fuzz_12812416779689677864_deepseek-r1_turn3
+      * ordnung_fuzz_2441042188619738604_deepseek-r1_turn2
+      * ordnung_fuzz_7502271027440090316_deepseek-r1_turn3
+      * ordnung_fuzz_11805938811472383936_deepseek-r1_turn2
+      * ordnung_fuzz_2831786650124753240_deepseek-r1_turn3
+      * ordnung_fuzz_4626330795837807190_deepseek-r1_turn4
+      * ordnung_fuzz_10578924928580918328_deepseek-r1_turn1
+  StableURAPI: pop::/home/cdc/SURF/deepSURF-big-experiment-harnesses/ordnung-0.0.1/src/compact.rs::76,
+    - URAPI: DefId(0:39 ~ ordnung[1298]::compact::{impl#0}::pop),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * ordnung_fuzz_2441042188619738604
+      * ordnung_fuzz_11384666102445921762
+      * ordnung_fuzz_7502271027440090316_deepseek-r1_turn3
+      * ordnung_fuzz_10518793896994029608_deepseek-r1_turn2
+      * ordnung_fuzz_6866931038910001367_deepseek-r1_turn2
+      * ordnung_fuzz_660891620703362441_deepseek-r1_turn5
+      * ordnung_fuzz_14169868846944646384_deepseek-r1_turn2
+      * ordnung_fuzz_9717396599201456613_deepseek-r1_turn4
+      * ordnung_fuzz_4626330795837807190_deepseek-r1_turn4
+      * ordnung_fuzz_2441042188619738604_deepseek-r1_turn2
+      * ordnung_fuzz_10578924928580918328_deepseek-r1_turn1
+      * ordnung_fuzz_6444110355677405621_deepseek-r1_turn2
+      * ordnung_fuzz_11805938811472383936_deepseek-r1_turn2
+      * ordnung_fuzz_14840329788940279341
+      * ordnung_fuzz_3550027939828841270
+  StableURAPI: clone::/home/cdc/SURF/rust/library/core/src/clone.rs::178,
+    - URAPI: DefId(0:154 ~ ordnung[1298]::{impl#5}::index),
+    - Macro-expanded: true,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * ordnung_fuzz_5919779975222961398_deepseek-r1_turn4
+      * ordnung_fuzz_2831786650124753240_deepseek-r1_turn3
+      * ordnung_fuzz_6444110355677405621_deepseek-r1_turn2
+      * ordnung_fuzz_616064569139682175_deepseek-r1_turn3
+      * ordnung_fuzz_1244843919555516119_deepseek-r1_turn4
+      * ordnung_fuzz_5488253838481606001_deepseek-r1_turn4
+      * ordnung_fuzz_7502271027440090316_deepseek-r1_turn3
+      * ordnung_fuzz_3802983911341353616_deepseek-r1_turn4
+      * ordnung_fuzz_7314867924087404185_deepseek-r1_turn3
+  StableURAPI: from::/home/cdc/SURF/deepSURF-big-experiment-harnesses/ordnung-0.0.1/src/compact.rs::201,
+    - URAPI: DefId(0:63 ~ ordnung[1298]::compact::{impl#3}::from),
+    - Macro-expanded: false,
+    - LLM-improved: false,
+    - Fuzzing Targets:
+      * ordnung_fuzz_5562480640968356404
+      * ordnung_fuzz_10925546337475036799
+      * ordnung_fuzz_16740769172684317311
+      * ordnung_fuzz_9717396599201456613
+  StableURAPI: from::/home/cdc/SURF/deepSURF-big-experiment-harnesses/ordnung-0.0.1/src/compact.rs::187,
+    - URAPI: DefId(0:60 ~ ordnung[1298]::compact::{impl#2}::from),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * ordnung_fuzz_660891620703362441_deepseek-r1_turn5
+      * ordnung_fuzz_2441042188619738604_deepseek-r1_turn2
+      * ordnung_fuzz_7502271027440090316_deepseek-r1_turn3
+  StableURAPI: len::/home/cdc/SURF/deepSURF-big-experiment-harnesses/ordnung-0.0.1/src/compact.rs::94,
+    - URAPI: DefId(0:42 ~ ordnung[1298]::compact::{impl#0}::len),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * ordnung_fuzz_2831786650124753240_deepseek-r1_turn3
+      * ordnung_fuzz_3023367479046018220
+      * ordnung_fuzz_4626330795837807190_deepseek-r1_turn4
+      * ordnung_fuzz_1690856634060613010
+      * ordnung_fuzz_11805938811472383936_deepseek-r1_turn2
+      * ordnung_fuzz_10518793896994029608_deepseek-r1_turn2
+      * ordnung_fuzz_15327361566803001203
+      * ordnung_fuzz_12812416779689677864_deepseek-r1_turn3
+      * ordnung_fuzz_6444110355677405621_deepseek-r1_turn2
+      * ordnung_fuzz_2441042188619738604_deepseek-r1_turn2
+      * ordnung_fuzz_11805938811472383936
+      * ordnung_fuzz_7502271027440090316_deepseek-r1_turn3
+      * ordnung_fuzz_14169868846944646384_deepseek-r1_turn2
+  StableURAPI: with_capacity::/home/cdc/SURF/deepSURF-big-experiment-harnesses/ordnung-0.0.1/src/lib.rs::141,
+    - URAPI: DefId(0:154 ~ ordnung[1298]::{impl#5}::index),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * ordnung_fuzz_10578924928580918328_deepseek-r1_turn1
+      * ordnung_fuzz_1244843919555516119_deepseek-r1_turn4
+      * ordnung_fuzz_12812416779689677864_deepseek-r1_turn3
+      * ordnung_fuzz_15394167525673924699_deepseek-r1_turn3
+      * ordnung_fuzz_12216669250280782931_deepseek-r1_turn3
+      * ordnung_fuzz_7673811023581565595_deepseek-r1_turn4
+      * ordnung_fuzz_616064569139682175_deepseek-r1_turn3
+      * ordnung_fuzz_9222392898233083810_deepseek-r1_turn3
+      * ordnung_fuzz_2831786650124753240_deepseek-r1_turn3
+      * ordnung_fuzz_8607670814411989838_deepseek-r1_turn2
+      * ordnung_fuzz_7314867924087404185_deepseek-r1_turn3
+      * ordnung_fuzz_10518793896994029608_deepseek-r1_turn2
+      * ordnung_fuzz_660891620703362441_deepseek-r1_turn5
+      * ordnung_fuzz_8477326523758764223_deepseek-r1_turn3
+      * ordnung_fuzz_5919779975222961398_deepseek-r1_turn4
+      * ordnung_fuzz_6866931038910001367_deepseek-r1_turn2
+      * ordnung_fuzz_7502271027440090316_deepseek-r1_turn3
+      * ordnung_fuzz_3802983911341353616_deepseek-r1_turn4
+      * ordnung_fuzz_4626330795837807190_deepseek-r1_turn4
+      * ordnung_fuzz_3578600570617507353_deepseek-r1_turn3
+      * ordnung_fuzz_5488253838481606001_deepseek-r1_turn4
+  StableURAPI: new::/home/cdc/SURF/deepSURF-big-experiment-harnesses/ordnung-0.0.1/src/compact.rs::28,
+    - URAPI: DefId(0:36 ~ ordnung[1298]::compact::{impl#0}::new),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * ordnung_fuzz_7502271027440090316_deepseek-r1_turn3
+      * ordnung_fuzz_2831786650124753240_deepseek-r1_turn3
+      * ordnung_fuzz_3802983911341353616_deepseek-r1_turn4
+      * ordnung_fuzz_660891620703362441_deepseek-r1_turn5
+      * ordnung_fuzz_12812416779689677864_deepseek-r1_turn3
+      * ordnung_fuzz_6866931038910001367_deepseek-r1_turn2
+      * ordnung_fuzz_14169868846944646384_deepseek-r1_turn2
+      * ordnung_fuzz_7314867924087404185_deepseek-r1_turn3
+      * ordnung_fuzz_6444110355677405621_deepseek-r1_turn2
+      * ordnung_fuzz_8477326523758764223_deepseek-r1_turn3
+      * ordnung_fuzz_9717396599201456613_deepseek-r1_turn4
+      * ordnung_fuzz_5488253838481606001_deepseek-r1_turn4
+      * ordnung_fuzz_4626330795837807190_deepseek-r1_turn4
+      * ordnung_fuzz_9222392898233083810_deepseek-r1_turn3
+      * ordnung_fuzz_5919779975222961398_deepseek-r1_turn4
+      * ordnung_fuzz_8607670814411989838_deepseek-r1_turn2
+      * ordnung_fuzz_10578924928580918328_deepseek-r1_turn1
+      * ordnung_fuzz_10518793896994029608_deepseek-r1_turn2
+      * ordnung_fuzz_2441042188619738604_deepseek-r1_turn2
+      * ordnung_fuzz_11805938811472383936_deepseek-r1_turn2
+  StableURAPI: len::/home/cdc/SURF/deepSURF-big-experiment-harnesses/ordnung-0.0.1/src/lib.rs::355,
+    - URAPI: DefId(0:154 ~ ordnung[1298]::{impl#5}::index),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * ordnung_fuzz_8477326523758764223_deepseek-r1_turn3
+      * ordnung_fuzz_2831786650124753240_deepseek-r1_turn3
+      * ordnung_fuzz_12216669250280782931_deepseek-r1_turn3
+      * ordnung_fuzz_12812416779689677864_deepseek-r1_turn3
+      * ordnung_fuzz_1244843919555516119_deepseek-r1_turn4
+      * ordnung_fuzz_15394167525673924699_deepseek-r1_turn3
+      * ordnung_fuzz_11805938811472383936_deepseek-r1_turn2
+      * ordnung_fuzz_3578600570617507353_deepseek-r1_turn3
+      * ordnung_fuzz_7673811023581565595_deepseek-r1_turn4
+      * ordnung_fuzz_7314867924087404185_deepseek-r1_turn3
+      * ordnung_fuzz_5919779975222961398_deepseek-r1_turn4
+      * ordnung_fuzz_616064569139682175_deepseek-r1_turn3
+      * ordnung_fuzz_8607670814411989838_deepseek-r1_turn2
+  StableURAPI: eq::/home/cdc/SURF/deepSURF-big-experiment-harnesses/ordnung-0.0.1/src/lib.rs::518,
+    - URAPI: DefId(0:138 ~ ordnung[1298]::{impl#4}::get_or_insert),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * ordnung_fuzz_5919779975222961398_deepseek-r1_turn4
+      * ordnung_fuzz_15394167525673924699_deepseek-r1_turn3
+      * ordnung_fuzz_5488253838481606001_deepseek-r1_turn4
+      * ordnung_fuzz_3802983911341353616_deepseek-r1_turn4
+  StableURAPI: drop::/home/cdc/SURF/deepSURF-big-experiment-harnesses/ordnung-0.0.1/src/compact.rs::177,
+    - URAPI: DefId(0:57 ~ ordnung[1298]::compact::{impl#1}::drop),
+    - Macro-expanded: false,
+    - LLM-improved: false,
+    - Fuzzing Targets:
+      * ordnung_fuzz_11935504339247952014
+      * ordnung_fuzz_1298210752879524462
+      * ordnung_fuzz_4626330795837807190
+      * ordnung_fuzz_15306818488258980832
+  StableURAPI: insert::/home/cdc/SURF/deepSURF-big-experiment-harnesses/ordnung-0.0.1/src/lib.rs::168,
+    - URAPI: DefId(0:154 ~ ordnung[1298]::{impl#5}::index),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * ordnung_fuzz_5488253838481606001_deepseek-r1_turn4
+      * ordnung_fuzz_4626330795837807190_deepseek-r1_turn4
+      * ordnung_fuzz_10578924928580918328_deepseek-r1_turn1
+      * ordnung_fuzz_14169868846944646384_deepseek-r1_turn2
+      * ordnung_fuzz_15394167525673924699_deepseek-r1_turn3
+      * ordnung_fuzz_7673811023581565595_deepseek-r1_turn4
+      * ordnung_fuzz_1244843919555516119_deepseek-r1_turn4
+      * ordnung_fuzz_12216669250280782931_deepseek-r1_turn3
+      * ordnung_fuzz_660891620703362441_deepseek-r1_turn5
+      * ordnung_fuzz_6444110355677405621_deepseek-r1_turn2
+      * ordnung_fuzz_12812416779689677864_deepseek-r1_turn3
+      * ordnung_fuzz_10518793896994029608_deepseek-r1_turn2
+      * ordnung_fuzz_8477326523758764223_deepseek-r1_turn3
+      * ordnung_fuzz_2441042188619738604_deepseek-r1_turn2
+      * ordnung_fuzz_3578600570617507353_deepseek-r1_turn3
+      * ordnung_fuzz_3802983911341353616_deepseek-r1_turn4
+      * ordnung_fuzz_8607670814411989838_deepseek-r1_turn2
+      * ordnung_fuzz_616064569139682175_deepseek-r1_turn3
+      * ordnung_fuzz_6866931038910001367_deepseek-r1_turn2
+      * ordnung_fuzz_5919779975222961398_deepseek-r1_turn4
+      * ordnung_fuzz_9222392898233083810_deepseek-r1_turn3
+      * ordnung_fuzz_9717396599201456613_deepseek-r1_turn4
+      * ordnung_fuzz_11805938811472383936_deepseek-r1_turn2
+      * ordnung_fuzz_2831786650124753240_deepseek-r1_turn3
+      * ordnung_fuzz_7502271027440090316_deepseek-r1_turn3
+      * ordnung_fuzz_7314867924087404185_deepseek-r1_turn3
+  StableURAPI: get_mut::/home/cdc/SURF/deepSURF-big-experiment-harnesses/ordnung-0.0.1/src/lib.rs::262,
+    - URAPI: DefId(0:40 ~ ordnung[1298]::compact::{impl#0}::clear),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * ordnung_fuzz_7673811023581565595_deepseek-r1_turn4
+      * ordnung_fuzz_6866931038910001367_deepseek-r1_turn2
+      * ordnung_fuzz_1244843919555516119_deepseek-r1_turn4
+      * ordnung_fuzz_14169868846944646384_deepseek-r1_turn2
+      * ordnung_fuzz_8477326523758764223_deepseek-r1_turn3
+      * ordnung_fuzz_7314867924087404185_deepseek-r1_turn3
+      * ordnung_fuzz_9222392898233083810_deepseek-r1_turn3
+  StableURAPI: iter::/home/cdc/SURF/deepSURF-big-experiment-harnesses/ordnung-0.0.1/src/lib.rs::427,
+    - URAPI: DefId(0:154 ~ ordnung[1298]::{impl#5}::index),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * ordnung_fuzz_9222392898233083810_deepseek-r1_turn3
+      * ordnung_fuzz_2441042188619738604_deepseek-r1_turn2
+      * ordnung_fuzz_616064569139682175_deepseek-r1_turn3
+      * ordnung_fuzz_5488253838481606001_deepseek-r1_turn4
+      * ordnung_fuzz_9717396599201456613_deepseek-r1_turn4
+      * ordnung_fuzz_5919779975222961398_deepseek-r1_turn4
+      * ordnung_fuzz_3802983911341353616_deepseek-r1_turn4
+      * ordnung_fuzz_10578924928580918328_deepseek-r1_turn1
+      * ordnung_fuzz_8607670814411989838_deepseek-r1_turn2
+      * ordnung_fuzz_7673811023581565595_deepseek-r1_turn4
+      * ordnung_fuzz_1244843919555516119_deepseek-r1_turn4
+      * ordnung_fuzz_8477326523758764223_deepseek-r1_turn3
+      * ordnung_fuzz_7314867924087404185_deepseek-r1_turn3
+      * ordnung_fuzz_11805938811472383936_deepseek-r1_turn2
+      * ordnung_fuzz_6444110355677405621_deepseek-r1_turn2
+      * ordnung_fuzz_4626330795837807190_deepseek-r1_turn4
+      * ordnung_fuzz_12812416779689677864_deepseek-r1_turn3
+      * ordnung_fuzz_7502271027440090316_deepseek-r1_turn3
+      * ordnung_fuzz_10518793896994029608_deepseek-r1_turn2
+      * ordnung_fuzz_2831786650124753240_deepseek-r1_turn3
+      * ordnung_fuzz_12216669250280782931_deepseek-r1_turn3
+  StableURAPI: clear::/home/cdc/SURF/deepSURF-big-experiment-harnesses/ordnung-0.0.1/src/lib.rs::367,
+    - URAPI: DefId(0:154 ~ ordnung[1298]::{impl#5}::index),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * ordnung_fuzz_5488253838481606001_deepseek-r1_turn4
+      * ordnung_fuzz_11805938811472383936_deepseek-r1_turn2
+      * ordnung_fuzz_3802983911341353616_deepseek-r1_turn4
+      * ordnung_fuzz_2831786650124753240_deepseek-r1_turn3
+      * ordnung_fuzz_7673811023581565595_deepseek-r1_turn4
+      * ordnung_fuzz_14169868846944646384_deepseek-r1_turn2
+      * ordnung_fuzz_12216669250280782931_deepseek-r1_turn3
+      * ordnung_fuzz_616064569139682175_deepseek-r1_turn3
+      * ordnung_fuzz_8477326523758764223_deepseek-r1_turn3
+      * ordnung_fuzz_15394167525673924699_deepseek-r1_turn3
+      * ordnung_fuzz_7314867924087404185_deepseek-r1_turn3
+      * ordnung_fuzz_3578600570617507353_deepseek-r1_turn3
+      * ordnung_fuzz_8607670814411989838_deepseek-r1_turn2
+      * ordnung_fuzz_1244843919555516119_deepseek-r1_turn4
+  StableURAPI: index::/home/cdc/SURF/deepSURF-big-experiment-harnesses/ordnung-0.0.1/src/lib.rs::484,
+    - URAPI: DefId(0:154 ~ ordnung[1298]::{impl#5}::index),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * ordnung_fuzz_2831786650124753240_deepseek-r1_turn3
+  StableURAPI: get::/home/cdc/SURF/deepSURF-big-experiment-harnesses/ordnung-0.0.1/src/lib.rs::204,
+    - URAPI: DefId(0:154 ~ ordnung[1298]::{impl#5}::index),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * ordnung_fuzz_616064569139682175_deepseek-r1_turn3
+      * ordnung_fuzz_3578600570617507353_deepseek-r1_turn3
+      * ordnung_fuzz_10578924928580918328_deepseek-r1_turn1
+      * ordnung_fuzz_8607670814411989838_deepseek-r1_turn2
+      * ordnung_fuzz_8477326523758764223_deepseek-r1_turn3
+      * ordnung_fuzz_2831786650124753240_deepseek-r1_turn3
+      * ordnung_fuzz_10518793896994029608_deepseek-r1_turn2
+      * ordnung_fuzz_9222392898233083810_deepseek-r1_turn3
+      * ordnung_fuzz_5919779975222961398_deepseek-r1_turn4
+      * ordnung_fuzz_4626330795837807190_deepseek-r1_turn4
+      * ordnung_fuzz_5488253838481606001_deepseek-r1_turn4
+      * ordnung_fuzz_3802983911341353616_deepseek-r1_turn4
+      * ordnung_fuzz_6866931038910001367_deepseek-r1_turn2
+      * ordnung_fuzz_660891620703362441_deepseek-r1_turn5
+      * ordnung_fuzz_2441042188619738604_deepseek-r1_turn2
+      * ordnung_fuzz_11805938811472383936_deepseek-r1_turn2
+      * ordnung_fuzz_12216669250280782931_deepseek-r1_turn3
+      * ordnung_fuzz_7314867924087404185_deepseek-r1_turn3
+      * ordnung_fuzz_15394167525673924699_deepseek-r1_turn3
+      * ordnung_fuzz_1244843919555516119_deepseek-r1_turn4
+  StableURAPI: remove::/home/cdc/SURF/deepSURF-big-experiment-harnesses/ordnung-0.0.1/src/lib.rs::317,
+    - URAPI: DefId(0:154 ~ ordnung[1298]::{impl#5}::index),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * ordnung_fuzz_7673811023581565595_deepseek-r1_turn4
+      * ordnung_fuzz_5488253838481606001_deepseek-r1_turn4
+      * ordnung_fuzz_8607670814411989838_deepseek-r1_turn2
+      * ordnung_fuzz_2831786650124753240_deepseek-r1_turn3
+      * ordnung_fuzz_1244843919555516119_deepseek-r1_turn4
+      * ordnung_fuzz_15394167525673924699_deepseek-r1_turn3
+      * ordnung_fuzz_12216669250280782931_deepseek-r1_turn3
+      * ordnung_fuzz_9222392898233083810_deepseek-r1_turn3
+      * ordnung_fuzz_4626330795837807190_deepseek-r1_turn4
+      * ordnung_fuzz_8477326523758764223_deepseek-r1_turn3
+      * ordnung_fuzz_3578600570617507353_deepseek-r1_turn3
+      * ordnung_fuzz_616064569139682175_deepseek-r1_turn3
+      * ordnung_fuzz_6866931038910001367_deepseek-r1_turn2
+      * ordnung_fuzz_7314867924087404185_deepseek-r1_turn3
+      * ordnung_fuzz_3802983911341353616_deepseek-r1_turn4
+      * ordnung_fuzz_10518793896994029608_deepseek-r1_turn2
+  StableURAPI: is_empty::/home/cdc/SURF/deepSURF-big-experiment-harnesses/ordnung-0.0.1/src/lib.rs::361,
+    - URAPI: DefId(0:144 ~ ordnung[1298]::{impl#4}::clear),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * ordnung_fuzz_3578600570617507353_deepseek-r1_turn3
+      * ordnung_fuzz_12216669250280782931_deepseek-r1_turn3
+      * ordnung_fuzz_616064569139682175_deepseek-r1_turn3
+      * ordnung_fuzz_12812416779689677864_deepseek-r1_turn3
+      * ordnung_fuzz_3802983911341353616_deepseek-r1_turn4
+      * ordnung_fuzz_1244843919555516119_deepseek-r1_turn4
+      * ordnung_fuzz_11805938811472383936_deepseek-r1_turn2
+      * ordnung_fuzz_8477326523758764223_deepseek-r1_turn3
+  StableURAPI: new::/home/cdc/SURF/deepSURF-big-experiment-harnesses/ordnung-0.0.1/src/lib.rs::133,
+    - URAPI: DefId(0:154 ~ ordnung[1298]::{impl#5}::index),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * ordnung_fuzz_5919779975222961398_deepseek-r1_turn4
+      * ordnung_fuzz_8477326523758764223_deepseek-r1_turn3
+      * ordnung_fuzz_2441042188619738604_deepseek-r1_turn2
+      * ordnung_fuzz_616064569139682175_deepseek-r1_turn3
+      * ordnung_fuzz_7314867924087404185_deepseek-r1_turn3
+      * ordnung_fuzz_15394167525673924699_deepseek-r1_turn3
+      * ordnung_fuzz_9717396599201456613_deepseek-r1_turn4
+      * ordnung_fuzz_9222392898233083810_deepseek-r1_turn3
+      * ordnung_fuzz_6444110355677405621_deepseek-r1_turn2
+      * ordnung_fuzz_7673811023581565595_deepseek-r1_turn4
+      * ordnung_fuzz_1244843919555516119_deepseek-r1_turn4
+      * ordnung_fuzz_4626330795837807190_deepseek-r1_turn4
+      * ordnung_fuzz_11805938811472383936_deepseek-r1_turn2
+      * ordnung_fuzz_14169868846944646384_deepseek-r1_turn2
+      * ordnung_fuzz_8607670814411989838_deepseek-r1_turn2
+      * ordnung_fuzz_3802983911341353616_deepseek-r1_turn4
+      * ordnung_fuzz_10518793896994029608_deepseek-r1_turn2
+      * ordnung_fuzz_3578600570617507353_deepseek-r1_turn3
+      * ordnung_fuzz_6866931038910001367_deepseek-r1_turn2
+      * ordnung_fuzz_12812416779689677864_deepseek-r1_turn3
+      * ordnung_fuzz_2831786650124753240_deepseek-r1_turn3
+      * ordnung_fuzz_12216669250280782931_deepseek-r1_turn3
+      * ordnung_fuzz_660891620703362441_deepseek-r1_turn5
+      * ordnung_fuzz_5488253838481606001_deepseek-r1_turn4
+  StableURAPI: contains_key::/home/cdc/SURF/deepSURF-big-experiment-harnesses/ordnung-0.0.1/src/lib.rs::232,
+    - URAPI: DefId(0:148 ~ ordnung[1298]::{impl#4}::iter_mut),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * ordnung_fuzz_1244843919555516119_deepseek-r1_turn4
+      * ordnung_fuzz_4626330795837807190_deepseek-r1_turn4
+      * ordnung_fuzz_9222392898233083810_deepseek-r1_turn3
+      * ordnung_fuzz_14169868846944646384_deepseek-r1_turn2
+      * ordnung_fuzz_10518793896994029608_deepseek-r1_turn2
+      * ordnung_fuzz_7314867924087404185_deepseek-r1_turn3
+      * ordnung_fuzz_3802983911341353616_deepseek-r1_turn4
+      * ordnung_fuzz_3578600570617507353_deepseek-r1_turn3
+  StableURAPI: capacity::/home/cdc/SURF/deepSURF-big-experiment-harnesses/ordnung-0.0.1/src/compact.rs::101,
+    - URAPI: DefId(0:43 ~ ordnung[1298]::compact::{impl#0}::capacity),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * ordnung_fuzz_8975832481913739855
+      * ordnung_fuzz_12868584546599400538
+      * ordnung_fuzz_4626330795837807190_deepseek-r1_turn4
+      * ordnung_fuzz_11805938811472383936_deepseek-r1_turn2
+      * ordnung_fuzz_10518793896994029608
+      * ordnung_fuzz_6444110355677405621_deepseek-r1_turn2
+      * ordnung_fuzz_16872856222451450411
+      * ordnung_fuzz_14169868846944646384_deepseek-r1_turn2
+      * ordnung_fuzz_2441042188619738604_deepseek-r1_turn2
+      * ordnung_fuzz_10518793896994029608_deepseek-r1_turn2
+  StableURAPI: clear::/home/cdc/SURF/deepSURF-big-experiment-harnesses/ordnung-0.0.1/src/compact.rs::89,
+    - URAPI: DefId(0:40 ~ ordnung[1298]::compact::{impl#0}::clear),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * ordnung_fuzz_6444110355677405621_deepseek-r1_turn2
+      * ordnung_fuzz_10518793896994029608_deepseek-r1_turn2
+      * ordnung_fuzz_4626330795837807190_deepseek-r1_turn4
+      * ordnung_fuzz_2291334754498557282
+      * ordnung_fuzz_7033178757393932653
+      * ordnung_fuzz_6866931038910001367_deepseek-r1_turn2
+      * ordnung_fuzz_6866931038910001367
+      * ordnung_fuzz_18067900193864275011
+      * ordnung_fuzz_2441042188619738604_deepseek-r1_turn2
+      * ordnung_fuzz_14169868846944646384_deepseek-r1_turn2
+      * ordnung_fuzz_11805938811472383936_deepseek-r1_turn2
+  StableURAPI: remove::/home/cdc/SURF/deepSURF-big-experiment-harnesses/ordnung-0.0.1/src/compact.rs::109,
+    - URAPI: DefId(0:44 ~ ordnung[1298]::compact::{impl#0}::remove),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * ordnung_fuzz_4626330795837807190_deepseek-r1_turn4
+      * ordnung_fuzz_5150518976445801913
+      * ordnung_fuzz_17339657262016291439
+      * ordnung_fuzz_7502271027440090316_deepseek-r1_turn3
+      * ordnung_fuzz_10518793896994029608_deepseek-r1_turn2
+      * ordnung_fuzz_2441042188619738604_deepseek-r1_turn2
+      * ordnung_fuzz_12812416779689677864_deepseek-r1_turn3
+      * ordnung_fuzz_11805938811472383936_deepseek-r1_turn2
+      * ordnung_fuzz_8358946810026507024
+      * ordnung_fuzz_2831786650124753240_deepseek-r1_turn3
+      * ordnung_fuzz_6444110355677405621_deepseek-r1_turn2
+      * ordnung_fuzz_11182581103592631499
+  StableURAPI: clone::/home/cdc/SURF/deepSURF-big-experiment-harnesses/ordnung-0.0.1/src/compact.rs::213,
+    - URAPI: DefId(0:66 ~ ordnung[1298]::compact::{impl#4}::clone),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * ordnung_fuzz_9717396599201456613_deepseek-r1_turn4
+      * ordnung_fuzz_12812416779689677864_deepseek-r1_turn3
+      * ordnung_fuzz_744034702618605048
+      * ordnung_fuzz_7502271027440090316_deepseek-r1_turn3
+      * ordnung_fuzz_2441042188619738604_deepseek-r1_turn2
+      * ordnung_fuzz_11805938811472383936_deepseek-r1_turn2
+      * ordnung_fuzz_5919779975222961398_deepseek-r1_turn4
+      * ordnung_fuzz_7502271027440090316
+      * ordnung_fuzz_11391544532552742976
+      * ordnung_fuzz_17576986483672503411
+      * ordnung_fuzz_660891620703362441_deepseek-r1_turn5
+      * ordnung_fuzz_4626330795837807190_deepseek-r1_turn4
+  StableURAPI: deref_mut::/home/cdc/SURF/deepSURF-big-experiment-harnesses/ordnung-0.0.1/src/compact.rs::233,
+    - URAPI: DefId(0:73 ~ ordnung[1298]::compact::{impl#6}::deref_mut),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * ordnung_fuzz_7502271027440090316_deepseek-r1_turn3
+      * ordnung_fuzz_5226531150727180424
+      * ordnung_fuzz_14169868846944646384
+      * ordnung_fuzz_14169868846944646384_deepseek-r1_turn2
+      * ordnung_fuzz_14634377063851175709
+      * ordnung_fuzz_12812416779689677864_deepseek-r1_turn3
+      * ordnung_fuzz_13774075210064561847
+      * ordnung_fuzz_4626330795837807190_deepseek-r1_turn4
+  StableURAPI: iter_mut::/home/cdc/SURF/deepSURF-big-experiment-harnesses/ordnung-0.0.1/src/lib.rs::465,
+    - URAPI: DefId(0:144 ~ ordnung[1298]::{impl#4}::clear),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * ordnung_fuzz_14169868846944646384_deepseek-r1_turn2
+      * ordnung_fuzz_3578600570617507353_deepseek-r1_turn3
+      * ordnung_fuzz_5919779975222961398_deepseek-r1_turn4
+      * ordnung_fuzz_10518793896994029608_deepseek-r1_turn2
+      * ordnung_fuzz_660891620703362441_deepseek-r1_turn5
+      * ordnung_fuzz_15394167525673924699_deepseek-r1_turn3
+      * ordnung_fuzz_8477326523758764223_deepseek-r1_turn3
+      * ordnung_fuzz_12216669250280782931_deepseek-r1_turn3
+      * ordnung_fuzz_8607670814411989838_deepseek-r1_turn2
+      * ordnung_fuzz_1244843919555516119_deepseek-r1_turn4
+      * ordnung_fuzz_7314867924087404185_deepseek-r1_turn3
+      * ordnung_fuzz_5488253838481606001_deepseek-r1_turn4
+      * ordnung_fuzz_616064569139682175_deepseek-r1_turn3
+      * ordnung_fuzz_7673811023581565595_deepseek-r1_turn4
+  StableURAPI: from_iter::/home/cdc/SURF/deepSURF-big-experiment-harnesses/ordnung-0.0.1/src/lib.rs::495,
+    - URAPI: DefId(0:144 ~ ordnung[1298]::{impl#4}::clear),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * ordnung_fuzz_5919779975222961398_deepseek-r1_turn4
+      * ordnung_fuzz_616064569139682175_deepseek-r1_turn3
+      * ordnung_fuzz_12216669250280782931_deepseek-r1_turn3
+      * ordnung_fuzz_9222392898233083810_deepseek-r1_turn3
+      * ordnung_fuzz_8477326523758764223_deepseek-r1_turn3
+      * ordnung_fuzz_3578600570617507353_deepseek-r1_turn3
+      * ordnung_fuzz_7673811023581565595_deepseek-r1_turn4
+      * ordnung_fuzz_3802983911341353616_deepseek-r1_turn4
+      * ordnung_fuzz_8607670814411989838_deepseek-r1_turn2
+      * ordnung_fuzz_7314867924087404185_deepseek-r1_turn3
+      * ordnung_fuzz_5488253838481606001_deepseek-r1_turn4
+      * ordnung_fuzz_1244843919555516119_deepseek-r1_turn4
+      * ordnung_fuzz_15394167525673924699_deepseek-r1_turn3
+  StableURAPI: from_iter::/home/cdc/SURF/deepSURF-big-experiment-harnesses/ordnung-0.0.1/src/compact.rs::258,
+    - URAPI: DefId(0:84 ~ ordnung[1298]::compact::{impl#9}::from_iter),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * ordnung_fuzz_2441042188619738604_deepseek-r1_turn2
+      * ordnung_fuzz_6444110355677405621_deepseek-r1_turn2
+      * ordnung_fuzz_14169868846944646384_deepseek-r1_turn2
+      * ordnung_fuzz_660891620703362441_deepseek-r1_turn5
+      * ordnung_fuzz_12812416779689677864_deepseek-r1_turn3
+      * ordnung_fuzz_10518793896994029608_deepseek-r1_turn2
+      * ordnung_fuzz_7502271027440090316_deepseek-r1_turn3
+      * ordnung_fuzz_4626330795837807190_deepseek-r1_turn4
+      * ordnung_fuzz_11805938811472383936_deepseek-r1_turn2
+      * ordnung_fuzz_9717396599201456613_deepseek-r1_turn4
+      * ordnung_fuzz_660891620703362441
+      * ordnung_fuzz_6866931038910001367_deepseek-r1_turn2
+  StableURAPI: deref::/home/cdc/SURF/deepSURF-big-experiment-harnesses/ordnung-0.0.1/src/compact.rs::222,
+    - URAPI: DefId(0:70 ~ ordnung[1298]::compact::{impl#5}::deref),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * ordnung_fuzz_12812416779689677864
+      * ordnung_fuzz_11161409928727437432
+      * ordnung_fuzz_12812416779689677864_deepseek-r1_turn3
+      * ordnung_fuzz_5919779975222961398_deepseek-r1_turn4
+      * ordnung_fuzz_660891620703362441_deepseek-r1_turn5
+      * ordnung_fuzz_9717396599201456613_deepseek-r1_turn4
+      * ordnung_fuzz_6444110355677405621_deepseek-r1_turn2
+      * ordnung_fuzz_2441042188619738604_deepseek-r1_turn2
+      * ordnung_fuzz_4595143463991116858
+      * ordnung_fuzz_7502271027440090316_deepseek-r1_turn3
+      * ordnung_fuzz_8140283983262046676
+      * ordnung_fuzz_10518793896994029608_deepseek-r1_turn2
+      * ordnung_fuzz_4626330795837807190_deepseek-r1_turn4
+      * ordnung_fuzz_11805938811472383936_deepseek-r1_turn2
+  StableURAPI: get_or_insert::/home/cdc/SURF/deepSURF-big-experiment-harnesses/ordnung-0.0.1/src/lib.rs::278,
+    - URAPI: DefId(0:138 ~ ordnung[1298]::{impl#4}::get_or_insert),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * ordnung_fuzz_5488253838481606001_deepseek-r1_turn4
+      * ordnung_fuzz_7673811023581565595_deepseek-r1_turn4
+      * ordnung_fuzz_7314867924087404185_deepseek-r1_turn3
+  StableURAPI: eq::/home/cdc/SURF/deepSURF-big-experiment-harnesses/ordnung-0.0.1/src/compact.rs::267,
+    - URAPI: DefId(0:66 ~ ordnung[1298]::compact::{impl#4}::clone),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * ordnung_fuzz_660891620703362441_deepseek-r1_turn5
+      * ordnung_fuzz_4626330795837807190_deepseek-r1_turn4
+      * ordnung_fuzz_7502271027440090316_deepseek-r1_turn3
+  StableURAPI: push::/home/cdc/SURF/deepSURF-big-experiment-harnesses/ordnung-0.0.1/src/compact.rs::44,
+    - URAPI: DefId(0:38 ~ ordnung[1298]::compact::{impl#0}::push),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * ordnung_fuzz_4626330795837807190_deepseek-r1_turn4
+      * ordnung_fuzz_2441042188619738604_deepseek-r1_turn2
+      * ordnung_fuzz_6866931038910001367_deepseek-r1_turn2
+      * ordnung_fuzz_7314867924087404185_deepseek-r1_turn3
+      * ordnung_fuzz_9717396599201456613_deepseek-r1_turn4
+      * ordnung_fuzz_11805938811472383936_deepseek-r1_turn2
+      * ordnung_fuzz_5488253838481606001_deepseek-r1_turn4
+      * ordnung_fuzz_14169868846944646384_deepseek-r1_turn2
+      * ordnung_fuzz_2831786650124753240_deepseek-r1_turn3
+      * ordnung_fuzz_6444110355677405621_deepseek-r1_turn2
+      * ordnung_fuzz_8477326523758764223_deepseek-r1_turn3
+      * ordnung_fuzz_8607670814411989838_deepseek-r1_turn2
+      * ordnung_fuzz_7502271027440090316_deepseek-r1_turn3
+      * ordnung_fuzz_7396325385487896387
+      * ordnung_fuzz_660891620703362441_deepseek-r1_turn5
+      * ordnung_fuzz_12812416779689677864_deepseek-r1_turn3
+      * ordnung_fuzz_3045486232113922482
+      * ordnung_fuzz_9147955864268570892
+      * ordnung_fuzz_10578924928580918328_deepseek-r1_turn1
+      * ordnung_fuzz_6444110355677405621
+      * ordnung_fuzz_3802983911341353616_deepseek-r1_turn4
+      * ordnung_fuzz_5919779975222961398_deepseek-r1_turn4
+      * ordnung_fuzz_10518793896994029608_deepseek-r1_turn2
+      * ordnung_fuzz_9222392898233083810_deepseek-r1_turn3
+------------------------------------------------------------------------------------------------------------------------------------

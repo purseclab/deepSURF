@@ -1,0 +1,61 @@
+
+Total Stats:
+------------------------------------------------------------------------------------------------------------------------------------
+* Total URAPI Coverage: 54/60 (90.00%).
+* LLM URAPI Coverage: 52/60 (86.67%).
+* Total Targets (including targets directly imported from SURF): 36 in [16507.605184378s].
+* URAPIs w/ Custom Functionality: 6/60 (10.00%).
+------------------------------------------------------------------------------------------------------------------------------------
+
+Redundant-Targets:
+------------------------------------------------------------------------------------------------------------------------------------
+  * toodee_fuzz_2138523013993331364_deepseek-r1_turn2
+  * toodee_fuzz_4716452807356981297_deepseek-r1_turn4
+------------------------------------------------------------------------------------------------------------------------------------
+
+Targeted-URAPI-Miss-Targets:
+------------------------------------------------------------------------------------------------------------------------------------
+  * toodee_fuzz_2138523013993331364_deepseek-r1_turn2
+  * toodee_fuzz_4716452807356981297_deepseek-r1_turn4
+  * toodee_fuzz_1140816890585470177_deepseek-r1_turn2
+------------------------------------------------------------------------------------------------------------------------------------
+
+Targets For Fuzzing:
+  - [CondSkip]: Set of Fuzzing Targets = Total-Targets - Redundant-Targets
+------------------------------------------------------------------------------------------------------------------------------------
+Count: 34
+  * toodee_fuzz_14151248305991259105_deepseek-r1_turn3
+  * toodee_fuzz_12198009328625723202_deepseek-r1_turn3
+  * toodee_fuzz_18022505199540229386_deepseek-r1_turn3
+  * toodee_fuzz_16110357219471934011
+  * toodee_fuzz_11785511524367405331_deepseek-r1_turn3
+  * toodee_fuzz_12499944452156313041_deepseek-r1_turn3
+  * toodee_fuzz_877148114838209635
+  * toodee_fuzz_16875072544160977552_deepseek-r1_turn4
+  * toodee_fuzz_9991014827223781044
+  * toodee_fuzz_13077116790450601879
+  * toodee_fuzz_12398518200245740149_deepseek-r1_turn4
+  * toodee_fuzz_18413180873320063546_deepseek-r1_turn2
+  * toodee_fuzz_3161605772101626469_deepseek-r1_turn2
+  * toodee_fuzz_2152924469493823814_deepseek-r1_turn6
+  * toodee_fuzz_14970496963191162766_deepseek-r1_turn3
+  * toodee_fuzz_14605234300945487375_deepseek-r1_turn4
+  * toodee_fuzz_3614292731809517274_deepseek-r1_turn2
+  * toodee_fuzz_9379054959454087932_deepseek-r1_turn2
+  * toodee_fuzz_14845570421688555118_deepseek-r1_turn4
+  * toodee_fuzz_13905759435898088798_deepseek-r1_turn5
+  * toodee_fuzz_4389937520628654540
+  * toodee_fuzz_1156998684846642157_deepseek-r1_turn4
+  * toodee_fuzz_14151248305991259105
+  * toodee_fuzz_1462566055301293201_deepseek-r1_turn2
+  * toodee_fuzz_765273026235002508_deepseek-r1_turn3
+  * toodee_fuzz_14784252774365274744
+  * toodee_fuzz_1140816890585470177
+  * toodee_fuzz_2138523013993331364
+  * toodee_fuzz_2198713812829365237
+  * toodee_fuzz_1140816890585470177_deepseek-r1_turn2
+  * toodee_fuzz_7773152812963994330
+  * toodee_fuzz_12198009328625723202
+  * toodee_fuzz_15457921755998110157_deepseek-r1_turn1
+  * toodee_fuzz_347557406229760741_deepseek-r1_turn3
+------------------------------------------------------------------------------------------------------------------------------------

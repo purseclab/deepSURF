@@ -1,0 +1,204 @@
+#![forbid(unsafe_code)]
+#[macro_use]
+extern crate afl;    
+
+use smallvec::*;
+use global_data::*;
+use std::str::FromStr;
+use std::ops::{Deref, DerefMut, Index, IndexMut};
+fn main() {
+    fuzz_nohook!(|data: &[u8]| {
+        if data.len() < 105 { return; }
+        set_global_data(data);
+        let global_data = get_global_data();
+        let GLOBAL_DATA = global_data.first_half;
+
+        let t_0 = _to_u8(GLOBAL_DATA, 0);
+        let t_1 = _to_u16(GLOBAL_DATA, 1);
+        let t_2 = _to_u32(GLOBAL_DATA, 3);
+        let t_3 = _to_u64(GLOBAL_DATA, 7);
+        let t_4 = _to_u128(GLOBAL_DATA, 15);
+        let t_5 = _to_usize(GLOBAL_DATA, 31);
+        let t_6 = _to_i8(GLOBAL_DATA, 39);
+        let t_7 = _to_i16(GLOBAL_DATA, 40);
+        let t_8 = _to_i32(GLOBAL_DATA, 42);
+        let t_9 = _to_i64(GLOBAL_DATA, 46);
+        let t_10 = _to_i128(GLOBAL_DATA, 54);
+        let t_11 = _to_isize(GLOBAL_DATA, 70);
+        let t_12 = _to_f32(GLOBAL_DATA, 78);
+        let t_13 = _to_f64(GLOBAL_DATA, 82);
+        let t_14 = _to_char(GLOBAL_DATA, 90);
+        let t_15 = _to_bool(GLOBAL_DATA, 94);
+        let t_16 = _to_str(GLOBAL_DATA, 95, 105);
+        let t_17 = String::from(t_16);
+
+        type MyArray = [u64; 32];
+        type MySmallVec = SmallVec<MyArray>;
+
+        let mut sv = match t_0 % 4 {
+            0 => MySmallVec::new(),
+            1 => MySmallVec::with_capacity(t_5),
+            2 => MySmallVec::from_slice(&[t_3, t_3.wrapping_add(1), t_3.wrapping_sub(1)]),
+            _ => MySmallVec::from_elem(t_3, t_5 % 64),
+        };
+
+        for _ in 0..(t_1 % 65) {
+            sv.push(t_3);
+        }
+
+        let pre_op_count = t_5 % 10;
+        for _ in 0..pre_op_count {
+            match t_6 % 5 {
+                0 => sv.insert(sv.len().saturating_sub(1), t_3),
+                1 => { sv.remove(t_5 % sv.len().max(1)); },
+                2 => sv.truncate(t_5 % 128),
+                3 => sv.retain(|x| *x < t_3),
+                _ => { sv.swap_remove(t_5 % sv.len().max(1)); },
+            }
+        }
+
+        sv.grow(t_5);
+
+        let post_op_count = t_7 % 10;
+        for _ in 0..post_op_count {
+            match t_8 % 6 {
+                0 => sv.shrink_to_fit(),
+                1 => sv.reserve(t_5),
+                2 => sv.extend_from_slice(&[t_3, t_3.wrapping_add(1)]),
+                3 => sv.clear(),
+                4 => sv.resize(t_5 % 128, t_3),
+                _ => sv.insert_many(t_5 % (sv.len() + 1), [t_3, t_3, t_3])
+            }
+        }
+
+        println!("{:?}", sv.as_slice());
+        println!("{:?}", sv.pop());
+        println!("{:?}", sv.into_vec().last());
+    });
+}
+
+fn _to_u8(data:&[u8], index:usize)->u8 {
+    data[index]
+}
+
+fn _to_u16(data:&[u8], index:usize)->u16 {
+    let data0 = _to_u8(data, index) as u16;
+    let data1 = _to_u8(data, index+1) as u16;
+    data0 << 8 | data1
+}
+
+fn _to_u32(data:&[u8], index:usize)->u32 {
+    let data0 = _to_u16(data, index) as u32;
+    let data1 = _to_u16(data, index+2) as u32;
+    data0 << 16 | data1
+}
+
+fn _to_u64(data:&[u8], index:usize)->u64 {
+    let data0 = _to_u32(data, index) as u64;
+    let data1 = _to_u32(data, index+4) as u64;
+    data0 << 32 | data1
+}
+
+fn _to_u128(data:&[u8], index:usize)->u128 {
+    let data0 = _to_u64(data, index) as u128;
+    let data1 = _to_u64(data, index+8) as u128;
+    data0 << 64 | data1
+}
+
+fn _to_usize(data:&[u8], index:usize)->usize {
+    _to_u64(data, index) as usize
+}
+
+fn _to_i8(data:&[u8], index:usize)->i8 {    
+    data[index] as i8
+}
+
+fn _to_i16(data:&[u8], index:usize)->i16 {
+    let data0 = _to_i8(data, index) as i16;
+    let data1 = _to_i8(data, index+1) as i16;
+    data0 << 8 | data1
+}
+
+fn _to_i32(data:&[u8], index:usize)->i32 {
+    let data0 = _to_i16(data, index) as i32;
+    let data1 = _to_i16(data, index+2) as i32;
+    data0 << 16 | data1
+}
+
+fn _to_i64(data:&[u8], index:usize)->i64 {
+    let data0 = _to_i32(data, index) as i64;
+    let data1 = _to_i32(data, index+4) as i64;
+    data0 << 32 | data1
+}
+
+fn _to_i128(data:&[u8], index:usize)->i128 {
+    let data0 = _to_i64(data, index) as i128;
+    let data1 = _to_i64(data, index+8) as i128;
+    data0 << 64 | data1
+}
+
+fn _to_isize(data:&[u8], index:usize)->isize {
+    _to_i64(data, index) as isize
+}
+
+fn _to_f32(data:&[u8], index: usize) -> f32 {
+    let data_slice = &data[index..index+4];
+    use std::convert::TryInto;
+    let data_array:[u8;4] = data_slice.try_into().expect("slice with incorrect length");
+    f32::from_le_bytes(data_array)
+}
+
+fn _to_f64(data:&[u8], index: usize) -> f64 {
+    let data_slice = &data[index..index+8];
+    use std::convert::TryInto;
+    let data_array:[u8;8] = data_slice.try_into().expect("slice with incorrect length");
+    f64::from_le_bytes(data_array)
+}
+
+fn _to_char(data:&[u8], index: usize)->char {
+    let char_value = _to_u32(data,index);
+    match char::from_u32(char_value) {
+        Some(c)=>c,
+        None=>{
+            std::process::exit(0);
+        }
+    }
+}
+
+fn _to_bool(data:&[u8], index: usize)->bool {
+    let bool_value = _to_u8(data, index);
+    if bool_value %2 == 0 {
+        true
+    } else {
+        false
+    }
+}
+
+fn _to_str(data:&[u8], start_index: usize, end_index: usize)->&str {
+    let data_slice = &data[start_index..end_index];
+    use std::str;
+    match str::from_utf8(data_slice) {
+        Ok(s)=>s,
+        Err(_)=>{
+            std::process::exit(0);
+        }
+    }
+}
+
+fn _unwrap_option<T>(opt: Option<T>) -> T {
+    match opt {
+        Some(_t) => _t,
+        None => {
+            std::process::exit(0);
+        }
+    }
+}
+
+fn _unwrap_result<T, E>(_res: std::result::Result<T, E>) -> T {
+    match _res {
+        Ok(_t) => _t,
+        Err(_) => {
+            std::process::exit(0);
+        },
+    }
+}

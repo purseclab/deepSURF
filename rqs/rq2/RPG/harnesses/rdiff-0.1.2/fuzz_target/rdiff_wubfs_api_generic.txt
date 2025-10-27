@@ -1,0 +1,6 @@
+rdiff::BlockHashes::empty (usize) -> BlockHashes { }
+rdiff::Diff::new () -> Diff { DROP }
+rdiff::Diff::inserts (&Diff) -> std::slice::Iter<Insert> { }
+rdiff::Diff::deletes (&Diff) -> std::slice::Iter<Delete> { }
+rdiff::Diff::is_empty (&Diff) -> bool { }
+rdiff::Diff::apply_to_string (&Diff, &str) -> std::result::Result<std::string::String, std::string::FromUtf8Error> { DROP }

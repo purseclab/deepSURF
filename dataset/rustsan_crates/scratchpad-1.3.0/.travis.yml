@@ -1,0 +1,46 @@
+language: rust
+sudo: false
+
+rust:
+# Explicitly test against minimum Rust version to avoid accidentally breaking
+# compatibility.
+- 1.25.0
+- stable
+- beta
+- nightly
+env:
+- FEATURE_ARGS=""
+- FEATURE_ARGS="--lib --no-default-features"
+- FEATURE_ARGS="--features alloc --lib --no-default-features"
+
+matrix:
+  include:
+  # `rustfmt` verification.
+  - rust: stable
+    before_script:
+    - rustup component add rustfmt
+    script:
+    - cargo fmt -- --check
+  # `clippy` lint tests.
+  - rust: stable
+    before_script:
+    - rustup component add clippy
+    script:
+    - cargo clippy -- -Dwarnings
+  - rust: nightly
+    env: FEATURE_ARGS="--features unstable"
+  - rust: nightly
+    env: FEATURE_ARGS="--features unstable --lib --no-default-features"
+  - rust: nightly
+    env: FEATURE_ARGS="--features alloc,unstable --lib --no-default-features"
+  exclude:
+  - rust: 1.25.0
+    env: FEATURE_ARGS="--features alloc --lib --no-default-features"
+
+script:
+- cargo test $FEATURE_ARGS --verbose
+- cargo test $FEATURE_ARGS --verbose --release
+
+notifications:
+  email:
+    on_success: never

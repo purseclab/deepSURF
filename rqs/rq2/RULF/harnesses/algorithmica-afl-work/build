@@ -1,0 +1,3 @@
+cd /home/cdc/afl_fast_work/algorithmica-afl-work
+cargo afl build
+cd -

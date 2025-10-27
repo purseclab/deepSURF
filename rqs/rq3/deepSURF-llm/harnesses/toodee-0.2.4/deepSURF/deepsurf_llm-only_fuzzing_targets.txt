@@ -1,0 +1,166 @@
+deepSURF: Generated Targets to be Fuzzed
+------------------------------------------------------------------------------------------------------------------------------------
+  StableURAPI: next::/home/cdc/SURF/erasan_dataset/toodee-0.2.4/src/flattenexact.rs::40,
+    - URAPI: copy_from_slice,
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * llm_only_target_2_deepseek-r1_turn2
+      * llm_only_target_3_deepseek-r1_turn2
+  StableURAPI: index::/home/cdc/SURF/erasan_dataset/toodee-0.2.4/src/view.rs::517,
+    - URAPI: clone_from_slice,
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * llm_only_target_1_deepseek-r1_turn1
+  StableURAPI: index::/home/cdc/SURF/erasan_dataset/toodee-0.2.4/src/view.rs::528,
+    - URAPI: clone_from_toodee,
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * llm_only_target_4_deepseek-r1_turn1
+      * llm_only_target_5_deepseek-r1_turn5
+  StableURAPI: index_mut::/home/cdc/SURF/erasan_dataset/toodee-0.2.4/src/view.rs::539,
+    - URAPI: clone_from_slice,
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * llm_only_target_1_deepseek-r1_turn1
+  StableURAPI: view_mut::/home/cdc/SURF/erasan_dataset/toodee-0.2.4/src/toodee.rs::263,
+    - URAPI: clone_from_toodee,
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * llm_only_target_4_deepseek-r1_turn1
+      * llm_only_target_7_deepseek-r1_turn1
+      * llm_only_target_0_deepseek-r1_turn2
+      * llm_only_target_2_deepseek-r1_turn2
+      * llm_only_target_1_deepseek-r1_turn1
+      * llm_only_target_8_deepseek-r1_turn1
+      * llm_only_target_3_deepseek-r1_turn2
+      * llm_only_target_5_deepseek-r1_turn5
+  StableURAPI: swap_rows::/home/cdc/SURF/erasan_dataset/toodee-0.2.4/src/toodee.rs::338,
+    - URAPI: clone_from_toodee,
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * llm_only_target_7_deepseek-r1_turn1
+      * llm_only_target_8_deepseek-r1_turn1
+      * llm_only_target_3_deepseek-r1_turn2
+      * llm_only_target_5_deepseek-r1_turn5
+      * llm_only_target_0_deepseek-r1_turn2
+      * llm_only_target_4_deepseek-r1_turn1
+      * llm_only_target_6_deepseek-r1_turn1
+      * llm_only_target_1_deepseek-r1_turn1
+  StableURAPI: next::/home/cdc/SURF/erasan_dataset/toodee-0.2.4/src/iter.rs::26,
+    - URAPI: clone_from_toodee,
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * llm_only_target_4_deepseek-r1_turn1
+      * llm_only_target_0_deepseek-r1_turn2
+      * llm_only_target_6_deepseek-r1_turn1
+  StableURAPI: col::/home/cdc/SURF/erasan_dataset/toodee-0.2.4/src/toodee.rs::212,
+    - URAPI: copy_from_slice,
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * llm_only_target_3_deepseek-r1_turn2
+  StableURAPI: copy_from_toodee::/home/cdc/SURF/erasan_dataset/toodee-0.2.4/src/copy.rs::161,
+    - URAPI: copy_within,
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * llm_only_target_0_deepseek-r1_turn2
+      * llm_only_target_7_deepseek-r1_turn1
+  StableURAPI: view::/home/cdc/SURF/erasan_dataset/toodee-0.2.4/src/toodee.rs::182,
+    - URAPI: clone_from_toodee,
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * llm_only_target_7_deepseek-r1_turn1
+      * llm_only_target_3_deepseek-r1_turn2
+      * llm_only_target_0_deepseek-r1_turn2
+      * llm_only_target_4_deepseek-r1_turn1
+  StableURAPI: insert_row::/home/cdc/SURF/erasan_dataset/toodee-0.2.4/src/toodee.rs::669,
+    - URAPI: copy_from_slice,
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * llm_only_target_3_deepseek-r1_turn2
+      * llm_only_target_1_deepseek-r1_turn1
+      * llm_only_target_6_deepseek-r1_turn1
+  StableURAPI: insert_col::/home/cdc/SURF/erasan_dataset/toodee-0.2.4/src/toodee.rs::810,
+    - URAPI: swap_rows,
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * llm_only_target_5_deepseek-r1_turn5
+      * llm_only_target_8_deepseek-r1_turn1
+      * llm_only_target_3_deepseek-r1_turn2
+  StableURAPI: col_mut::/home/cdc/SURF/erasan_dataset/toodee-0.2.4/src/toodee.rs::293,
+    - URAPI: copy_within,
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * llm_only_target_0_deepseek-r1_turn2
+  StableURAPI: index::/home/cdc/SURF/erasan_dataset/toodee-0.2.4/src/toodee.rs::69,
+    - URAPI: translate_with_wrap,
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * llm_only_target_2_deepseek-r1_turn2
+      * llm_only_target_7_deepseek-r1_turn1
+  StableURAPI: index_mut::/home/cdc/SURF/erasan_dataset/toodee-0.2.4/src/view.rs::549,
+    - URAPI: copy_within,
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * llm_only_target_0_deepseek-r1_turn2
+  StableURAPI: push_row::/home/cdc/SURF/erasan_dataset/toodee-0.2.4/src/toodee.rs::658,
+    - URAPI: swap_rows,
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * llm_only_target_1_deepseek-r1_turn1
+      * llm_only_target_8_deepseek-r1_turn1
+      * llm_only_target_7_deepseek-r1_turn1
+      * llm_only_target_5_deepseek-r1_turn5
+      * llm_only_target_2_deepseek-r1_turn2
+  StableURAPI: index::/home/cdc/SURF/erasan_dataset/toodee-0.2.4/src/view.rs::210,
+    - URAPI: copy_within,
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * llm_only_target_0_deepseek-r1_turn2
+  StableURAPI: push_col::/home/cdc/SURF/erasan_dataset/toodee-0.2.4/src/toodee.rs::759,
+    - URAPI: clone_from_toodee,
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * llm_only_target_6_deepseek-r1_turn1
+      * llm_only_target_4_deepseek-r1_turn1
+  StableURAPI: swap_rows::/home/cdc/SURF/erasan_dataset/toodee-0.2.4/src/view.rs::456,
+    - URAPI: swap_rows,
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * llm_only_target_2_deepseek-r1_turn2
+      * llm_only_target_5_deepseek-r1_turn5
+  StableURAPI: index_mut::/home/cdc/SURF/erasan_dataset/toodee-0.2.4/src/toodee.rs::128,
+    - URAPI: flip_rows,
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * llm_only_target_6_deepseek-r1_turn1
+  StableURAPI: index::/home/cdc/SURF/erasan_dataset/toodee-0.2.4/src/toodee.rs::88,
+    - URAPI: swap_rows,
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * llm_only_target_6_deepseek-r1_turn1
+      * llm_only_target_7_deepseek-r1_turn1
+      * llm_only_target_8_deepseek-r1_turn1
+      * llm_only_target_2_deepseek-r1_turn2
+      * llm_only_target_5_deepseek-r1_turn5
+------------------------------------------------------------------------------------------------------------------------------------

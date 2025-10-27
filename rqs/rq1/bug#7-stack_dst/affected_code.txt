@@ -1,0 +1,1 @@
+Function: StackA::push_stable

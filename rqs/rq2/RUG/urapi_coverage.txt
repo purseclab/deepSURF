@@ -1,0 +1,949 @@
+algorithmica:
+    * URAPI Coverage: 1/1 (100%):
+        1. merge_sort::merge_sort
+    * Compilable Harnesses (#20):
+        1. tests_rug_21 (in RUG/harnesses/algorithmica-0.1.8/src/subset.rs)
+        2. tests_rug_22 (in RUG/harnesses/algorithmica-0.1.8/src/subset.rs)
+        3. tests_rug_1 (in RUG/harnesses/algorithmica-0.1.8/src/math/matrix.rs)
+        4. tests_rug_2 (in RUG/harnesses/algorithmica-0.1.8/src/math/matrix.rs)
+        5. tests_rug_3 (in RUG/harnesses/algorithmica-0.1.8/src/search/binary.rs)
+        6. tests_rug_5 (in RUG/harnesses/algorithmica-0.1.8/src/sort/bubble.rs)
+        7. tests_rug_7 (in RUG/harnesses/algorithmica-0.1.8/src/sort/insertion.rs)
+        8. tests_rug_9 (in RUG/harnesses/algorithmica-0.1.8/src/sort/is_sorted.rs)
+        9. tests_rug_10 (in RUG/harnesses/algorithmica-0.1.8/src/sort/is_sorted.rs)
+        10. tests_rug_12 (in RUG/harnesses/algorithmica-0.1.8/src/sort/merge_sort.rs)
+        11. tests_rug_14 (in RUG/harnesses/algorithmica-0.1.8/src/sort/merge_sort.rs)
+        12. tests_rug_15 (in RUG/harnesses/algorithmica-0.1.8/src/sort/merge_sort.rs)
+        13. tests_rug_16 (in RUG/harnesses/algorithmica-0.1.8/src/sort/merge_sort.rs)
+        14. tests_rug_17 (in RUG/harnesses/algorithmica-0.1.8/src/sort/quick_sort.rs)
+        15. tests_rug_19 (in RUG/harnesses/algorithmica-0.1.8/src/sort/selection.rs)
+        16. tests_rug_24 (in RUG/harnesses/algorithmica-0.1.8/src/tree/bst.rs)
+        17. tests_rug_25 (in RUG/harnesses/algorithmica-0.1.8/src/tree/bst.rs)
+        18. tests_rug_27 (in RUG/harnesses/algorithmica-0.1.8/src/tree/bst.rs)
+        19. tests_rug_29 (in RUG/harnesses/algorithmica-0.1.8/src/tree/mod.rs)
+        20. tests_rug_30 (in RUG/harnesses/algorithmica-0.1.8/src/tree/mod.rs)
+
+
+
+arc-swap:
+    * URAPI Coverage: 6/27 (22.22%):
+        1. Access::load
+        2. ArcSwap::load
+        3. ArcSwapAny::store
+        4. ArcSwapAny::swap
+        5. ArcSwap::load_full
+        6. ArcSwapAny::drop
+    * Compilable Harnesses (#10):
+        1. tests_rug_9 (in RUG/harnesses/arc-swap-1.0.0/src/gen_lock.rs)
+        2. tests_rug_20 (in RUG/harnesses/arc-swap-1.0.0/src/lib.rs)
+        3. tests_rug_22 (in RUG/harnesses/arc-swap-1.0.0/src/lib.rs)
+        4. tests_rug_33 (in RUG/harnesses/arc-swap-1.0.0/src/lib.rs)
+        5. tests_rug_34 (in RUG/harnesses/arc-swap-1.0.0/src/lib.rs)
+        6. tests_rug_35 (in RUG/harnesses/arc-swap-1.0.0/src/lib.rs)
+        7. tests_rug_37 (in RUG/harnesses/arc-swap-1.0.0/src/lib.rs)
+        8. tests_rug_54 (in RUG/harnesses/arc-swap-1.0.0/src/access.rs)
+        9. tests_rug_72 (in RUG/harnesses/arc-swap-1.0.0/src/ref_cnt.rs)
+        10. tests_rug_92 (in RUG/harnesses/arc-swap-1.0.0/src/rw_lock.rs)
+
+
+
+bumpalo:
+    * URAPI Coverage: 18/28 (64.29%):
+        1. Bump::with_capacity
+        2. Bump::drop
+        3. Bump::try_with_capacity
+        4. Bump::new
+        5. Bump::alloc
+        6. Bump::try_alloc
+        7. Bump::alloc_with
+        8. Bump::try_alloc_with
+        9. Bump::alloc_try_with
+        10. Bump::default
+        11. Bump::alloc_slice_copy
+        12. Bump::alloc_slice_clone
+        13. Bump::alloc_str
+        14. Bump::alloc_slice_fill_with
+        15. Bump::alloc_slice_fill_copy
+        16. Bump::alloc_slice_fill_clone
+        17. Bump::alloc_slice_fill_default
+        18. Bump::chunk_capacity
+    * Compilable Harnesses (#30):
+        1. tests_rug_8 (in RUG/harnesses/bumpalo-3.11.0/src/alloc.rs)
+        2. tests_rug_16 (in RUG/harnesses/bumpalo-3.11.0/src/alloc.rs)
+        3. tests_rug_17 (in RUG/harnesses/bumpalo-3.11.0/src/alloc.rs)
+        4. tests_rug_18 (in RUG/harnesses/bumpalo-3.11.0/src/alloc.rs)
+        5. tests_rug_21 (in RUG/harnesses/bumpalo-3.11.0/src/lib.rs)
+        6. tests_rug_22 (in RUG/harnesses/bumpalo-3.11.0/src/lib.rs)
+        7. tests_rug_25 (in RUG/harnesses/bumpalo-3.11.0/src/lib.rs)
+        8. tests_rug_3 (in RUG/harnesses/bumpalo-3.11.0/src/alloc.rs)
+        9. tests_rug_37 (in RUG/harnesses/bumpalo-3.11.0/src/lib.rs)
+        10. tests_rug_38 (in RUG/harnesses/bumpalo-3.11.0/src/lib.rs)
+        11. tests_rug_39 (in RUG/harnesses/bumpalo-3.11.0/src/lib.rs)
+        12. tests_rug_40 (in RUG/harnesses/bumpalo-3.11.0/src/lib.rs)
+        13. tests_rug_42 (in RUG/harnesses/bumpalo-3.11.0/src/lib.rs)
+        14. tests_rug_43 (in RUG/harnesses/bumpalo-3.11.0/src/lib.rs)
+        15. tests_rug_44 (in RUG/harnesses/bumpalo-3.11.0/src/lib.rs)
+        16. tests_rug_46 (in RUG/harnesses/bumpalo-3.11.0/src/lib.rs)
+        17. tests_rug_47 (in RUG/harnesses/bumpalo-3.11.0/src/lib.rs)
+        18. tests_rug_48 (in RUG/harnesses/bumpalo-3.11.0/src/lib.rs)
+        19. tests_rug_49 (in RUG/harnesses/bumpalo-3.11.0/src/lib.rs)
+        20. tests_rug_50 (in RUG/harnesses/bumpalo-3.11.0/src/lib.rs)
+        21. tests_rug_52 (in RUG/harnesses/bumpalo-3.11.0/src/lib.rs)
+        22. tests_rug_53 (in RUG/harnesses/bumpalo-3.11.0/src/lib.rs)
+        23. tests_rug_54 (in RUG/harnesses/bumpalo-3.11.0/src/lib.rs)
+        24. tests_rug_55 (in RUG/harnesses/bumpalo-3.11.0/src/lib.rs)
+        25. tests_rug_56 (in RUG/harnesses/bumpalo-3.11.0/src/lib.rs)
+        26. tests_rug_57 (in RUG/harnesses/bumpalo-3.11.0/src/lib.rs)
+        27. tests_rug_59 (in RUG/harnesses/bumpalo-3.11.0/src/lib.rs)
+        28. tests_rug_63 (in RUG/harnesses/bumpalo-3.11.0/src/lib.rs)
+        29. tests_rug_64 (in RUG/harnesses/bumpalo-3.11.0/src/lib.rs)
+        30. tests_rug_69 (in RUG/harnesses/bumpalo-3.11.0/src/lib.rs)
+
+
+
+toodee:
+    * URAPI Coverage: 17/60 (28.33%):
+        1. TooDee::view_mut
+        2. TooDee::copy_from_toodee
+        3. TooDee::clone_from_toodee
+        4. TooDee::col_mut
+        5. ViewMut::swap_rows
+        6. TooDee::view
+        7. TooDee::col
+        8. Rows::next
+        9. TooDee::swap_rows
+        10. TooDee::insert_row
+        11. TooDee::remove_row
+        12. TooDee::pop_col
+        13. TooDee::remove_col
+        14. TooDee::insert_col
+        15. TooDeeViewMut::new
+        16. DrainCol::drop
+        17. TooDee::push_row
+    * Compilable Harnesses (#66):
+        1. tests_rug_1 (in RUG/harnesses/toodee-0.2.4/src/view.rs)
+        2. tests_rug_10 (in RUG/harnesses/toodee-0.2.4/src/view.rs)
+        3. tests_rug_100 (in RUG/harnesses/toodee-0.2.4/src/ops.rs)
+        4. tests_rug_101 (in RUG/harnesses/toodee-0.2.4/src/ops.rs)
+        5. tests_rug_102 (in RUG/harnesses/toodee-0.2.4/src/ops.rs)
+        6. tests_rug_103 (in RUG/harnesses/toodee-0.2.4/src/ops.rs)
+        7. tests_rug_104 (in RUG/harnesses/toodee-0.2.4/src/translate.rs)
+        8. tests_rug_105 (in RUG/harnesses/toodee-0.2.4/src/translate.rs)
+        9. tests_rug_106 (in RUG/harnesses/toodee-0.2.4/src/translate.rs)
+        10. tests_rug_107 (in RUG/harnesses/toodee-0.2.4/src/copy.rs)
+        11. tests_rug_108 (in RUG/harnesses/toodee-0.2.4/src/copy.rs)
+        12. tests_rug_109 (in RUG/harnesses/toodee-0.2.4/src/copy.rs)
+        13. tests_rug_11 (in RUG/harnesses/toodee-0.2.4/src/view.rs)
+        14. tests_rug_110 (in RUG/harnesses/toodee-0.2.4/src/copy.rs)
+        15. tests_rug_111 (in RUG/harnesses/toodee-0.2.4/src/copy.rs)
+        16. tests_rug_114 (in RUG/harnesses/toodee-0.2.4/src/copy.rs)
+        17. tests_rug_115 (in RUG/harnesses/toodee-0.2.4/src/copy.rs)
+        18. tests_rug_120 (in RUG/harnesses/toodee-0.2.4/src/toodee.rs)
+        19. tests_rug_121 (in RUG/harnesses/toodee-0.2.4/src/toodee.rs)
+        20. tests_rug_122 (in RUG/harnesses/toodee-0.2.4/src/toodee.rs)
+        21. tests_rug_123 (in RUG/harnesses/toodee-0.2.4/src/toodee.rs)
+        22. tests_rug_124 (in RUG/harnesses/toodee-0.2.4/src/toodee.rs)
+        23. tests_rug_125 (in RUG/harnesses/toodee-0.2.4/src/toodee.rs)
+        24. tests_rug_126 (in RUG/harnesses/toodee-0.2.4/src/toodee.rs)
+        25. tests_rug_127 (in RUG/harnesses/toodee-0.2.4/src/toodee.rs)
+        26. tests_rug_128 (in RUG/harnesses/toodee-0.2.4/src/toodee.rs)
+        27. tests_rug_129 (in RUG/harnesses/toodee-0.2.4/src/toodee.rs)
+        28. tests_rug_130 (in RUG/harnesses/toodee-0.2.4/src/toodee.rs)
+        29. tests_rug_131 (in RUG/harnesses/toodee-0.2.4/src/toodee.rs)
+        30. tests_rug_133 (in RUG/harnesses/toodee-0.2.4/src/toodee.rs)
+        31. tests_rug_134 (in RUG/harnesses/toodee-0.2.4/src/toodee.rs)
+        32. tests_rug_135 (in RUG/harnesses/toodee-0.2.4/src/toodee.rs)
+        33. tests_rug_136 (in RUG/harnesses/toodee-0.2.4/src/toodee.rs)
+        34. tests_rug_137 (in RUG/harnesses/toodee-0.2.4/src/toodee.rs)
+        35. tests_rug_138 (in RUG/harnesses/toodee-0.2.4/src/toodee.rs)
+        36. tests_rug_139 (in RUG/harnesses/toodee-0.2.4/src/toodee.rs)
+        37. tests_rug_14 (in RUG/harnesses/toodee-0.2.4/src/view.rs)
+        38. tests_rug_140 (in RUG/harnesses/toodee-0.2.4/src/toodee.rs)
+        39. tests_rug_141 (in RUG/harnesses/toodee-0.2.4/src/toodee.rs)
+        40. tests_rug_142 (in RUG/harnesses/toodee-0.2.4/src/toodee.rs)
+        41. tests_rug_143 (in RUG/harnesses/toodee-0.2.4/src/toodee.rs)
+        42. tests_rug_144 (in RUG/harnesses/toodee-0.2.4/src/toodee.rs)
+        43. tests_rug_145 (in RUG/harnesses/toodee-0.2.4/src/toodee.rs)
+        44. tests_rug_146 (in RUG/harnesses/toodee-0.2.4/src/toodee.rs)
+        45. tests_rug_147 (in RUG/harnesses/toodee-0.2.4/src/toodee.rs)
+        46. tests_rug_148 (in RUG/harnesses/toodee-0.2.4/src/toodee.rs)
+        47. tests_rug_149 (in RUG/harnesses/toodee-0.2.4/src/toodee.rs)
+        48. tests_rug_150 (in RUG/harnesses/toodee-0.2.4/src/toodee.rs)
+        49. tests_rug_151 (in RUG/harnesses/toodee-0.2.4/src/toodee.rs)
+        50. tests_rug_152 (in RUG/harnesses/toodee-0.2.4/src/toodee.rs)
+        51. tests_rug_153 (in RUG/harnesses/toodee-0.2.4/src/toodee.rs)
+        52. tests_rug_154 (in RUG/harnesses/toodee-0.2.4/src/toodee.rs)
+        53. tests_rug_155 (in RUG/harnesses/toodee-0.2.4/src/toodee.rs)
+        54. tests_rug_2 (in RUG/harnesses/toodee-0.2.4/src/view.rs)
+        55. tests_rug_22 (in RUG/harnesses/toodee-0.2.4/src/view.rs)
+        56. tests_rug_23 (in RUG/harnesses/toodee-0.2.4/src/view.rs)
+        57. tests_rug_29 (in RUG/harnesses/toodee-0.2.4/src/view.rs)
+        58. tests_rug_50 (in RUG/harnesses/toodee-0.2.4/src/sort.rs)
+        59. tests_rug_51 (in RUG/harnesses/toodee-0.2.4/src/sort.rs)
+        60. tests_rug_53 (in RUG/harnesses/toodee-0.2.4/src/sort.rs)
+        61. tests_rug_56 (in RUG/harnesses/toodee-0.2.4/src/sort.rs)
+        62. tests_rug_57 (in RUG/harnesses/toodee-0.2.4/src/sort.rs)
+        63. tests_rug_60 (in RUG/harnesses/toodee-0.2.4/src/sort.rs)
+        64. tests_rug_62 (in RUG/harnesses/toodee-0.2.4/src/sort.rs)
+        65. tests_rug_98 (in RUG/harnesses/toodee-0.2.4/src/ops.rs)
+        66. tests_rug_99 (in RUG/harnesses/toodee-0.2.4/src/ops.rs)
+
+
+
+nano_arena:
+    * URAPI Coverage: 0/1 (0%)
+    * Compilable Harnesses (#15):
+        1. tests_rug_1 (in RUG/harnesses/nano_arena-0.5.2/src/lib.rs)
+        2. tests_rug_15 (in RUG/harnesses/nano_arena-0.5.2/src/lib.rs)
+        3. tests_rug_18 (in RUG/harnesses/nano_arena-0.5.2/src/lib.rs)
+        4. tests_rug_19 (in RUG/harnesses/nano_arena-0.5.2/src/lib.rs)
+        5. tests_rug_2 (in RUG/harnesses/nano_arena-0.5.2/src/lib.rs)
+        6. tests_rug_20 (in RUG/harnesses/nano_arena-0.5.2/src/lib.rs)
+        7. tests_rug_22 (in RUG/harnesses/nano_arena-0.5.2/src/lib.rs)
+        8. tests_rug_24 (in RUG/harnesses/nano_arena-0.5.2/src/lib.rs)
+        9. tests_rug_3 (in RUG/harnesses/nano_arena-0.5.2/src/lib.rs)
+        10. tests_rug_31 (in RUG/harnesses/nano_arena-0.5.2/src/lib.rs)
+        11. tests_rug_33 (in RUG/harnesses/nano_arena-0.5.2/src/lib.rs)
+        12. tests_rug_35 (in RUG/harnesses/nano_arena-0.5.2/src/lib.rs)
+        13. tests_rug_37 (in RUG/harnesses/nano_arena-0.5.2/src/lib.rs)
+        14. tests_rug_4 (in RUG/harnesses/nano_arena-0.5.2/src/lib.rs)
+        15. tests_rug_5 (in RUG/harnesses/nano_arena-0.5.2/src/lib.rs)
+
+
+
+stack_dst:
+    * URAPI Coverage: 0/14 (0%)
+    * Compilable Harnesses (#3):
+        1. tests_rug_1 (in RUG/harnesses/stack_dst-0.6.0/src/lib.rs)
+        2. tests_rug_2 (in RUG/harnesses/stack_dst-0.6.0/src/lib.rs)
+        3. tests_rug_3 (in RUG/harnesses/stack_dst-0.6.0/src/lib.rs)
+
+
+
+slice_deque:
+    * URAPI Coverage: 55/85 (64.705%):
+        1. slice_deque::SliceDeque::push_back
+        2. slice_deque::SliceDeque::as_slice
+        3. slice_deque::SliceDeque::new
+        4. slice_deque::SliceDeque::drop
+        5. slice_deque::from_elem
+        6. slice_deque::SliceDeque::with_capacity
+        7. slice_deque::SliceDeque::is_full
+        8. slice_deque::SliceDeque::as_slices
+        9. slice_deque::SliceDeque::as_mut_slices
+        10. slice_deque::SliceDeque::try_reserve
+        11. slice_deque::SliceDeque::reserve
+        12. slice_deque::SliceDeque::reserve_exact
+        13. slice_deque::SliceDeque::push_front
+        14. slice_deque::SliceDeque::append
+        15. slice_deque::SliceDeque::len
+        16. slice_deque::SliceDeque::front
+        17. slice_deque::SliceDeque::front_mut
+        18. slice_deque::SliceDeque::back
+        19. slice_deque::SliceDeque::back_mut
+        20. slice_deque::SliceDeque::try_push_front
+        21. slice_deque::SliceDeque::try_push_back
+        22. slice_deque::SliceDeque::pop_front
+        23. slice_deque::SliceDeque::pop_back
+        24. slice_deque::IntoIter::as_mut_slice
+        25. slice_deque::SliceDeque::default
+        26. slice_deque::SliceDeque::hash
+        27. slice_deque::IntoIterator::into_iter
+        28. slice_deque::SliceDeque::into_iter
+        29. slice_deque::IntoIter::drop
+        30. slice_deque::DrainFilter::drop
+        31. slice_deque::Buffer::size_in_bytes
+        32. slice_deque::SliceDeque::extend
+        33. slice_deque::SliceDeque::shrink_to_fit
+        34. slice_deque::SliceDeque::truncate_back
+        35. slice_deque::SliceDeque::truncate
+        36. slice_deque::SliceDeque::truncate_front
+        37. slice_deque::SliceDeque::from
+        38. slice_deque::SliceDeque::clear
+        39. slice_deque::Splice::drop
+        40. slice_deque::SliceDeque::swap_remove_back
+        41. slice_deque::SliceDeque::swap_remove_front
+        42. slice_deque::SliceDeque::insert
+        43. slice_deque::SliceDeque::remove
+        44. slice_deque::SliceDeque::split_off
+        45. slice_deque::SliceDeque::retain
+        46. slice_deque::SliceDeque::dedup_by_key
+        47. slice_deque::SliceDeque::splice
+        48. slice_deque::SliceDeque::drain_filter
+        49. slice_deque::SliceDeque::extend_from_slice
+        50. slice_deque::SliceDeque::resize
+        51. slice_deque::SliceDeque::resize_default
+        52. slice_deque::SliceDeque::dedup
+        53. slice_deque::SliceDeque::remove_item
+        54. slice_deque::SliceDeque::deref
+        55. slice_deque::SliceDeque::clone_from
+    * Compilable Harnesses (#65):
+        1. tests_rug_95 (in RUG/harnesses/slice-deque-0.3.0/src/lib.rs)
+        2. tests_rug_93 (in RUG/harnesses/slice-deque-0.3.0/src/lib.rs)
+        3. tests_rug_17 (in RUG/harnesses/slice-deque-0.3.0/src/mirrored/linux.rs)
+        4. tests_rug_172 (in RUG/harnesses/slice-deque-0.3.0/src/lib.rs)
+        5. tests_rug_173 (in RUG/harnesses/slice-deque-0.3.0/src/lib.rs)
+        6. tests_rug_189 (in RUG/harnesses/slice-deque-0.3.0/src/lib.rs)
+        7. tests_rug_190 (in RUG/harnesses/slice-deque-0.3.0/src/lib.rs)
+        8. tests_rug_20 (in RUG/harnesses/slice-deque-0.3.0/src/mirrored/linux.rs)
+        9. tests_rug_21 (in RUG/harnesses/slice-deque-0.3.0/src/mirrored/linux.rs)
+        10. tests_rug_22 (in RUG/harnesses/slice-deque-0.3.0/src/mirrored/linux.rs)
+        11. tests_rug_23 (in RUG/harnesses/slice-deque-0.3.0/src/lib.rs)
+        12. tests_rug_25 (in RUG/harnesses/slice-deque-0.3.0/src/lib.rs)
+        13. tests_rug_26 (in RUG/harnesses/slice-deque-0.3.0/src/lib.rs)
+        14. tests_rug_27 (in RUG/harnesses/slice-deque-0.3.0/src/lib.rs)
+        15. tests_rug_29 (in RUG/harnesses/slice-deque-0.3.0/src/lib.rs)
+        16. tests_rug_33 (in RUG/harnesses/slice-deque-0.3.0/src/lib.rs)
+        17. tests_rug_34 (in RUG/harnesses/slice-deque-0.3.0/src/lib.rs)
+        18. tests_rug_35 (in RUG/harnesses/slice-deque-0.3.0/src/lib.rs)
+        19. tests_rug_36 (in RUG/harnesses/slice-deque-0.3.0/src/lib.rs)
+        20. tests_rug_37 (in RUG/harnesses/slice-deque-0.3.0/src/lib.rs)
+        21. tests_rug_38 (in RUG/harnesses/slice-deque-0.3.0/src/lib.rs)
+        22. tests_rug_39 (in RUG/harnesses/slice-deque-0.3.0/src/lib.rs)
+        23. tests_rug_40 (in RUG/harnesses/slice-deque-0.3.0/src/lib.rs)
+        24. tests_rug_41 (in RUG/harnesses/slice-deque-0.3.0/src/lib.rs)
+        25. tests_rug_42 (in RUG/harnesses/slice-deque-0.3.0/src/lib.rs)
+        26. tests_rug_43 (in RUG/harnesses/slice-deque-0.3.0/src/lib.rs)
+        27. tests_rug_45 (in RUG/harnesses/slice-deque-0.3.0/src/lib.rs)
+        28. tests_rug_46 (in RUG/harnesses/slice-deque-0.3.0/src/lib.rs)
+        29. tests_rug_48 (in RUG/harnesses/slice-deque-0.3.0/src/lib.rs)
+        30. tests_rug_49 (in RUG/harnesses/slice-deque-0.3.0/src/lib.rs)
+        31. tests_rug_50 (in RUG/harnesses/slice-deque-0.3.0/src/lib.rs)
+        32. tests_rug_53 (in RUG/harnesses/slice-deque-0.3.0/src/lib.rs)
+        33. tests_rug_54 (in RUG/harnesses/slice-deque-0.3.0/src/lib.rs)
+        34. tests_rug_55 (in RUG/harnesses/slice-deque-0.3.0/src/lib.rs)
+        35. tests_rug_56 (in RUG/harnesses/slice-deque-0.3.0/src/lib.rs)
+        36. tests_rug_57 (in RUG/harnesses/slice-deque-0.3.0/src/lib.rs)
+        37. tests_rug_58 (in RUG/harnesses/slice-deque-0.3.0/src/lib.rs)
+        38. tests_rug_59 (in RUG/harnesses/slice-deque-0.3.0/src/lib.rs)
+        39. tests_rug_60 (in RUG/harnesses/slice-deque-0.3.0/src/lib.rs)
+        40. tests_rug_61 (in RUG/harnesses/slice-deque-0.3.0/src/lib.rs)
+        41. tests_rug_62 (in RUG/harnesses/slice-deque-0.3.0/src/lib.rs)
+        42. tests_rug_63 (in RUG/harnesses/slice-deque-0.3.0/src/lib.rs)
+        43. tests_rug_64 (in RUG/harnesses/slice-deque-0.3.0/src/lib.rs)
+        44. tests_rug_65 (in RUG/harnesses/slice-deque-0.3.0/src/lib.rs)
+        45. tests_rug_66 (in RUG/harnesses/slice-deque-0.3.0/src/lib.rs)
+        46. tests_rug_67 (in RUG/harnesses/slice-deque-0.3.0/src/lib.rs)
+        47. tests_rug_69 (in RUG/harnesses/slice-deque-0.3.0/src/lib.rs)
+        48. tests_rug_7 (in RUG/harnesses/slice-deque-0.3.0/src/mirrored/buffer.rs)
+        49. tests_rug_70 (in RUG/harnesses/slice-deque-0.3.0/src/lib.rs)
+        50. tests_rug_71 (in RUG/harnesses/slice-deque-0.3.0/src/lib.rs)
+        51. tests_rug_72 (in RUG/harnesses/slice-deque-0.3.0/src/lib.rs)
+        52. tests_rug_73 (in RUG/harnesses/slice-deque-0.3.0/src/lib.rs)
+        53. tests_rug_74 (in RUG/harnesses/slice-deque-0.3.0/src/lib.rs)
+        54. tests_rug_75 (in RUG/harnesses/slice-deque-0.3.0/src/lib.rs)
+        55. tests_rug_76 (in RUG/harnesses/slice-deque-0.3.0/src/lib.rs)
+        56. tests_rug_8 (in RUG/harnesses/slice-deque-0.3.0/src/mirrored/buffer.rs)
+        57. tests_rug_80 (in RUG/harnesses/slice-deque-0.3.0/src/lib.rs)
+        58. tests_rug_81 (in RUG/harnesses/slice-deque-0.3.0/src/lib.rs)
+        59. tests_rug_82 (in RUG/harnesses/slice-deque-0.3.0/src/lib.rs)
+        60. tests_rug_83 (in RUG/harnesses/slice-deque-0.3.0/src/lib.rs)
+        61. tests_rug_84 (in RUG/harnesses/slice-deque-0.3.0/src/lib.rs)
+        62. tests_rug_85 (in RUG/harnesses/slice-deque-0.3.0/src/lib.rs)
+        63. tests_rug_86 (in RUG/harnesses/slice-deque-0.3.0/src/lib.rs)
+        64. tests_rug_88 (in RUG/harnesses/slice-deque-0.3.0/src/lib.rs)
+        65. tests_rug_92 (in RUG/harnesses/slice-deque-0.3.0/src/lib.rs)
+
+
+
+simple-slab:
+    * URAPI Coverage: 6/8 (75%):
+        1. simple_slab::Slab::insert
+        2. simple_slab::Slab::new
+        3. simple_slab::Slab::drop
+        4. simple_slab::Slab::remove
+        5. simple_slab::Slab::index
+        6. simple_slab::Slab::next
+    * Compilable Harnesses (#6):
+        1. tests_rug_10 (in RUG/harnesses/simple-slab-0.3.2/src/lib.rs)
+        2. tests_rug_11 (in RUG/harnesses/simple-slab-0.3.2/src/lib.rs)
+        3. tests_rug_14 (in RUG/harnesses/simple-slab-0.3.2/src/lib.rs)
+        4. tests_rug_3 (in RUG/harnesses/simple-slab-0.3.2/src/lib.rs)
+        5. tests_rug_4 (in RUG/harnesses/simple-slab-0.3.2/src/lib.rs)
+        6. tests_rug_5 (in RUG/harnesses/simple-slab-0.3.2/src/lib.rs)
+
+
+
+ordnung:
+    * URAPI Coverage: 16/35 (45.71%):
+        1. ordnung::compact::Vec::with_capacity
+        2. ordnung::compact::Vec::new
+        3. ordnung::compact::Vec::drop
+        4. ordnung::compact::Vec::pop
+        5. ordnung::compact::Vec::push
+        6. ordnung::compact::Vec::remove
+        7. ordnung::compact::Vec::len
+        8. ordnung::Map::iter_mut
+        9. ordnung::Map::new_capacity
+        10. ordnung::Map::new
+        11. ordnung::Map::get
+        12. ordnung::Map::contains_key
+        13. ordnung::Map::get_mut
+        14. ordnung::Map::insert
+        15. ordnung::Map::remove
+        16. ordnung::Map::iter
+    * Compilable Harnesses (#18):
+        1. tests_rug_1 (in RUG/harnesses/ordnung-0.0.1/src/compact.rs)
+        2. tests_rug_10 (in RUG/harnesses/ordnung-0.0.1/src/compact.rs)
+        3. tests_rug_13 (in RUG/harnesses/ordnung-0.0.1/src/compact.rs)
+        4. tests_rug_14 (in RUG/harnesses/ordnung-0.0.1/src/compact.rs)
+        5. tests_rug_2 (in RUG/harnesses/ordnung-0.0.1/src/compact.rs)
+        6. tests_rug_28 (in RUG/harnesses/ordnung-0.0.1/src/lib.rs)
+        7. tests_rug_30 (in RUG/harnesses/ordnung-0.0.1/src/lib.rs)
+        8. tests_rug_31 (in RUG/harnesses/ordnung-0.0.1/src/lib.rs)
+        9. tests_rug_32 (in RUG/harnesses/ordnung-0.0.1/src/lib.rs)
+        10. tests_rug_33 (in RUG/harnesses/ordnung-0.0.1/src/lib.rs)
+        11. tests_rug_34 (in RUG/harnesses/ordnung-0.0.1/src/lib.rs)
+        12. tests_rug_36 (in RUG/harnesses/ordnung-0.0.1/src/lib.rs)
+        13. tests_rug_4 (in RUG/harnesses/ordnung-0.0.1/src/compact.rs)
+        14. tests_rug_40 (in RUG/harnesses/ordnung-0.0.1/src/lib.rs)
+        15. tests_rug_41 (in RUG/harnesses/ordnung-0.0.1/src/lib.rs)
+        16. tests_rug_42 (in RUG/harnesses/ordnung-0.0.1/src/lib.rs)
+        17. tests_rug_5 (in RUG/harnesses/ordnung-0.0.1/src/compact.rs)
+        18. tests_rug_6 (in RUG/harnesses/ordnung-0.0.1/src/compact.rs)
+
+
+
+string-interner:
+    * URAPI Coverage: 1/3 (33.33%):
+        1. string_interner::Sym::from_usize
+    * Compilable Harnesses (#8):
+        1. tests_rug_1 (in RUG/harnesses/string-interner-0.7.0/src/lib.rs)
+        2. tests_rug_2 (in RUG/harnesses/string-interner-0.7.0/src/lib.rs)
+        3. tests_rug_3 (in RUG/harnesses/string-interner-0.7.0/src/lib.rs)
+        4. tests_rug_35 (in RUG/harnesses/string-interner-0.7.0/src/lib.rs)
+        5. tests_rug_4 (in RUG/harnesses/string-interner-0.7.0/src/lib.rs)
+        6. tests_rug_5 (in RUG/harnesses/string-interner-0.7.0/src/lib.rs)
+        7. tests_rug_6 (in RUG/harnesses/string-interner-0.7.0/src/lib.rs)
+        8. tests_rug_9 (in RUG/harnesses/string-interner-0.7.0/src/lib.rs)
+
+
+
+http:
+    * URAPI Coverage: 93/177 (52.54%):
+        1. http::method::PartialEq::eq
+        2. http::method::Method::eq
+        3. http::request::Request::get
+        4. http::request::Request::put
+        5. http::request::Request::delete
+        6. http::request::Request::options
+        7. http::request::Request::head
+        8. http::request::Request::connect
+        9. http::request::Request::patch
+        10. http::request::Request::trace
+        11. http::request::Builder::method
+        12. http::request::Builder::uri
+        13. http::request::Builder::header
+        14. http::response::Builder::status
+        15. http::response::Builder::header
+        16. http::header::HeaderMap::insert
+        17. http::header::HeaderMap::append
+        18. http::header::HeaderMap::entry
+        19. http::header::HeaderMap::from_iter
+        20. http::header::Iter::next
+        21. http::header::HeaderMap::get_all
+        22. http::header::HeaderMap::contains_key
+        23. http::header::HeaderName::fmt
+        24. http::header::HeaderValue::fmt
+        25. http::header::Drain::next
+        26. http::header::ValueDrain::next
+        27. http::header::Values::next
+        28. http::header::IntoIter::next
+        29. http::header::HeaderName::from_str
+        30. http::header::HeaderName::try_from
+        31. http::header::name::PartialEq::eq
+        32. http::header::HeaderValue::from_str
+        33. http::header::HeaderValue::try_from - try_from::http-0.1.19/src/header/value.rs::544
+        34. http::header::HeaderValue::eq - eq::http-0.1.19/src/header/value.rs::718
+        35. http::header::HeaderValue::partial_cmp
+        36. http::uri::Authority::host
+        37. http::uri::Authority::from_shared
+        38. http::uri::Authority::port
+        39. http::uri::Authority::port_part
+        40. http::uri::Authority::as_str
+        41. http::uri::Authority::port_u16
+        42. http::uri::Authority::as_ref
+        43. http::uri::Authority::eq - eq::http-0.1.19/src/uri/authority.rs::290
+        44. http::uri::authority::PartialEq::eq - eq::http-0.1.19/src/uri/authority.rs::314
+        45. http::uri::Authority::eq - eq::http-0.1.19/src/uri/authority.rs::326
+        46. http::uri::authority::PartialEq::eq - eq::http-0.1.19/src/uri/authority.rs::320
+        47. http::uri::Authority::eq: eq::http-0.1.19/src/uri/authority.rs::308
+        48. http::uri::Authority::eq - eq::http-0.1.19/src/uri/authority.rs::332
+        49. http::uri::authority::String::eq - eq::http-0.1.19/src/uri/authority.rs::338
+        50. http::uri::Authority::partial_cmp - partial_cmp::http-0.1.19/src/uri/authority.rs::354
+        51. http::uri::authority::String::partial_cmp - partial_cmp::http-0.1.19/src/uri/authority.rs::402
+        52. http::uri::Authority::partial_cmp - partial_cmp::http-0.1.19/src/uri/authority.rs::362
+        53. http::uri::Authority::partial_cmp - partial_cmp::http-0.1.19/src/uri/authority.rs::386
+        54. http::uri::authority::PartialOrd::partial_cmp - partial_cmp::http-0.1.19/src/uri/authority.rs::378
+        55. http::uri::authority::PartialOrd::partial_cmp - partial_cmp::http-0.1.19/src/uri/authority.rs::370
+        56. http::uri::Authority::partial_cmp - partial_cmp::http-0.1.19/src/uri/authority.rs::394
+        57. http::uri::Authority::try_from
+        58. http::uri::Authority::from_str
+        59. http::uri::PathAndQuery::from_shared
+        60. http::uri::PathAndQuery::query
+        61. http::uri::PathAndQuery::as_str
+        62. http::uri::PathAndQuery::try_from
+        63. http::uri::PathAndQuery::from_str
+        64. http::uri::path::PartialEq::eq - eq::http-0.1.19/src/uri/path.rs::378
+        65. http::uri::path::PartialEq::eq - eq::http-0.1.19/src/uri/path.rs::364
+        66. http::uri::PathAndQuery::eq - eq::http-0.1.19/src/uri/path.rs::385
+        67. http::uri::path::PartialOrd::partial_cmp - partial_cmp::http-0.1.19/src/uri/path.rs::427
+        68. http::uri::PathAndQuery::partial_cmp - partial_cmp::http-0.1.19/src/uri/path.rs::434
+        69. http::uri::Port::as_str
+        70. http::uri::Scheme::from_shared
+        71. http::uri::Scheme::as_str
+        72. http::uri::Scheme::try_from
+        73. http::uri::Scheme::from_str
+        74. http::uri::Scheme::as_ref
+        75. http::uri::Scheme::eq - eq::http-0.1.19/src/uri/scheme.rs::191
+        76. http::uri::Scheme::eq - eq::http-0.1.19/src/uri/scheme.rs::217
+        77. http::uri::Uri::scheme
+        78. http::uri::Uri::authority
+        79. http::uri::Uri::path_and_query
+        80. http::uri::Uri::path
+        81. http::uri::Uri::scheme_str
+        82. http::uri::Uri::authority_part
+        83. http::uri::Uri::host
+        84. http::uri::Uri::port
+        85. http::uri::Uri::port_part
+        86. http::uri::Uri::port_u16
+        87. http::uri::Uri::query
+        88. http::uri::Uri::try_from - try_from::http-0.1.19/src/uri/mod.rs::741
+        89. http::uri::Uri::try_from - try_from::http-0.1.19/src/uri/mod.rs::732
+        90. http::uri::Parts::from
+        91. http::uri::Uri::from_str
+        92. http::uri::Uri::eq - eq::http-0.1.19/src/uri/mod.rs::896
+        93. http::uri::Uri::eq - eq::http-0.1.19/src/uri/mod.rs::918
+    * Compilable Harnesses (#173):
+        1. tests_rug_541 (in RUG/harnesses/http-0.1.19/src/extensions.rs)
+        2. tests_rug_246 (in RUG/harnesses/http-0.1.19/src/method.rs)
+        3. tests_rug_255 (in RUG/harnesses/http-0.1.19/src/method.rs)
+        4. tests_rug_256 (in RUG/harnesses/http-0.1.19/src/method.rs)
+        5. tests_rug_263 (in RUG/harnesses/http-0.1.19/src/method.rs)
+        6. tests_rug_264 (in RUG/harnesses/http-0.1.19/src/method.rs)
+        7. tests_rug_269 (in RUG/harnesses/http-0.1.19/src/request.rs)
+        8. tests_rug_270 (in RUG/harnesses/http-0.1.19/src/request.rs)
+        9. tests_rug_272 (in RUG/harnesses/http-0.1.19/src/request.rs)
+        10. tests_rug_273 (in RUG/harnesses/http-0.1.19/src/request.rs)
+        11. tests_rug_274 (in RUG/harnesses/http-0.1.19/src/request.rs)
+        12. tests_rug_275 (in RUG/harnesses/http-0.1.19/src/request.rs)
+        13. tests_rug_276 (in RUG/harnesses/http-0.1.19/src/request.rs)
+        14. tests_rug_277 (in RUG/harnesses/http-0.1.19/src/request.rs)
+        15. tests_rug_278 (in RUG/harnesses/http-0.1.19/src/request.rs)
+        16. tests_rug_283 (in RUG/harnesses/http-0.1.19/src/request.rs)
+        17. tests_rug_292 (in RUG/harnesses/http-0.1.19/src/request.rs)
+        18. tests_rug_298 (in RUG/harnesses/http-0.1.19/src/request.rs)
+        19. tests_rug_299 (in RUG/harnesses/http-0.1.19/src/request.rs)
+        20. tests_rug_300 (in RUG/harnesses/http-0.1.19/src/request.rs)
+        21. tests_rug_301 (in RUG/harnesses/http-0.1.19/src/request.rs)
+        22. tests_rug_303 (in RUG/harnesses/http-0.1.19/src/request.rs)
+        23. tests_rug_304 (in RUG/harnesses/http-0.1.19/src/request.rs)
+        24. tests_rug_312 (in RUG/harnesses/http-0.1.19/src/response.rs)
+        25. tests_rug_324 (in RUG/harnesses/http-0.1.19/src/response.rs)
+        26. tests_rug_326 (in RUG/harnesses/http-0.1.19/src/response.rs)
+        27. tests_rug_330 (in RUG/harnesses/http-0.1.19/src/response.rs)
+        28. tests_rug_332 (in RUG/harnesses/http-0.1.19/src/response.rs)
+        29. tests_rug_333 (in RUG/harnesses/http-0.1.19/src/response.rs)
+        30. tests_rug_339 (in RUG/harnesses/http-0.1.19/src/status.rs)
+        31. tests_rug_340 (in RUG/harnesses/http-0.1.19/src/status.rs)
+        32. tests_rug_351 (in RUG/harnesses/http-0.1.19/src/status.rs)
+        33. tests_rug_358 (in RUG/harnesses/http-0.1.19/src/status.rs)
+        34. tests_rug_359 (in RUG/harnesses/http-0.1.19/src/status.rs)
+        35. tests_rug_101 (in RUG/harnesses/http-0.1.19/src/header/map.rs)
+        36. tests_rug_102 (in RUG/harnesses/http-0.1.19/src/header/map.rs)
+        37. tests_rug_10 (in RUG/harnesses/http-0.1.19/src/header/map.rs)
+        38. tests_rug_11 (in RUG/harnesses/http-0.1.19/src/header/map.rs)
+        39. tests_rug_12 (in RUG/harnesses/http-0.1.19/src/header/map.rs)
+        40. tests_rug_131 (in RUG/harnesses/http-0.1.19/src/header/map.rs)
+        41. tests_rug_135 (in RUG/harnesses/http-0.1.19/src/header/map.rs)
+        42. tests_rug_136 (in RUG/harnesses/http-0.1.19/src/header/map.rs)
+        43. tests_rug_139 (in RUG/harnesses/http-0.1.19/src/header/map.rs)
+        44. tests_rug_13 (in RUG/harnesses/http-0.1.19/src/header/map.rs)
+        45. tests_rug_14 (in RUG/harnesses/http-0.1.19/src/header/map.rs)
+        46. tests_rug_15 (in RUG/harnesses/http-0.1.19/src/header/map.rs)
+        47. tests_rug_19 (in RUG/harnesses/http-0.1.19/src/header/map.rs)
+        48. tests_rug_1 (in RUG/harnesses/http-0.1.19/src/header/map.rs)
+        49. tests_rug_21 (in RUG/harnesses/http-0.1.19/src/header/map.rs)
+        50. tests_rug_23 (in RUG/harnesses/http-0.1.19/src/header/map.rs)
+        51. tests_rug_24 (in RUG/harnesses/http-0.1.19/src/header/map.rs)
+        52. tests_rug_25 (in RUG/harnesses/http-0.1.19/src/header/map.rs)
+        53. tests_rug_26 (in RUG/harnesses/http-0.1.19/src/header/map.rs)
+        54. tests_rug_29 (in RUG/harnesses/http-0.1.19/src/header/map.rs)
+        55. tests_rug_35 (in RUG/harnesses/http-0.1.19/src/header/map.rs)
+        56. tests_rug_3 (in RUG/harnesses/http-0.1.19/src/header/map.rs)
+        57. tests_rug_4 (in RUG/harnesses/http-0.1.19/src/header/map.rs)
+        58. tests_rug_50 (in RUG/harnesses/http-0.1.19/src/header/map.rs)
+        59. tests_rug_72 (in RUG/harnesses/http-0.1.19/src/header/map.rs)
+        60. tests_rug_76 (in RUG/harnesses/http-0.1.19/src/header/map.rs)
+        61. tests_rug_77 (in RUG/harnesses/http-0.1.19/src/header/map.rs)
+        62. tests_rug_78 (in RUG/harnesses/http-0.1.19/src/header/map.rs)
+        63. tests_rug_79 (in RUG/harnesses/http-0.1.19/src/header/map.rs)
+        64. tests_rug_8 (in RUG/harnesses/http-0.1.19/src/header/map.rs)
+        65. tests_rug_91 (in RUG/harnesses/http-0.1.19/src/header/map.rs)
+        66. tests_rug_92 (in RUG/harnesses/http-0.1.19/src/header/map.rs)
+        67. tests_rug_93 (in RUG/harnesses/http-0.1.19/src/header/map.rs)
+        68. tests_rug_94 (in RUG/harnesses/http-0.1.19/src/header/map.rs)
+        69. tests_rug_95 (in RUG/harnesses/http-0.1.19/src/header/map.rs)
+        70. tests_rug_96 (in RUG/harnesses/http-0.1.19/src/header/map.rs)
+        71. tests_rug_97 (in RUG/harnesses/http-0.1.19/src/header/map.rs)
+        72. tests_rug_9 (in RUG/harnesses/http-0.1.19/src/header/map.rs)
+        73. tests_rug_140 (in RUG/harnesses/http-0.1.19/src/header/name.rs)
+        74. tests_rug_148 (in RUG/harnesses/http-0.1.19/src/header/name.rs)
+        75. tests_rug_158 (in RUG/harnesses/http-0.1.19/src/header/name.rs)
+        76. tests_rug_166 (in RUG/harnesses/http-0.1.19/src/header/name.rs)
+        77. tests_rug_179 (in RUG/harnesses/http-0.1.19/src/header/value.rs)
+        78. tests_rug_180 (in RUG/harnesses/http-0.1.19/src/header/value.rs)
+        79. tests_rug_182 (in RUG/harnesses/http-0.1.19/src/header/value.rs)
+        80. tests_rug_196 (in RUG/harnesses/http-0.1.19/src/header/value.rs)
+        81. tests_rug_197 (in RUG/harnesses/http-0.1.19/src/header/value.rs)
+        82. tests_rug_198 (in RUG/harnesses/http-0.1.19/src/header/value.rs)
+        83. tests_rug_199 (in RUG/harnesses/http-0.1.19/src/header/value.rs)
+        84. tests_rug_200 (in RUG/harnesses/http-0.1.19/src/header/value.rs)
+        85. tests_rug_201 (in RUG/harnesses/http-0.1.19/src/header/value.rs)
+        86. tests_rug_202 (in RUG/harnesses/http-0.1.19/src/header/value.rs)
+        87. tests_rug_203 (in RUG/harnesses/http-0.1.19/src/header/value.rs)
+        88. tests_rug_204 (in RUG/harnesses/http-0.1.19/src/header/value.rs)
+        89. tests_rug_205 (in RUG/harnesses/http-0.1.19/src/header/value.rs)
+        90. tests_rug_206 (in RUG/harnesses/http-0.1.19/src/header/value.rs)
+        91. tests_rug_208 (in RUG/harnesses/http-0.1.19/src/header/value.rs)
+        92. tests_rug_209 (in RUG/harnesses/http-0.1.19/src/header/value.rs)
+        93. tests_rug_210 (in RUG/harnesses/http-0.1.19/src/header/value.rs)
+        94. tests_rug_211 (in RUG/harnesses/http-0.1.19/src/header/value.rs)
+        95. tests_rug_212 (in RUG/harnesses/http-0.1.19/src/header/value.rs)
+        96. tests_rug_216 (in RUG/harnesses/http-0.1.19/src/header/value.rs)
+        97. tests_rug_219 (in RUG/harnesses/http-0.1.19/src/header/value.rs)
+        98. tests_rug_238 (in RUG/harnesses/http-0.1.19/src/header/value.rs)
+        99. tests_rug_239 (in RUG/harnesses/http-0.1.19/src/header/value.rs)
+        100. tests_rug_362 (in RUG/harnesses/http-0.1.19/src/uri/authority.rs)
+        101. tests_rug_368 (in RUG/harnesses/http-0.1.19/src/uri/authority.rs)
+        102. tests_rug_369 (in RUG/harnesses/http-0.1.19/src/uri/authority.rs)
+        103. tests_rug_370 (in RUG/harnesses/http-0.1.19/src/uri/authority.rs)
+        104. tests_rug_371 (in RUG/harnesses/http-0.1.19/src/uri/authority.rs)
+        105. tests_rug_372 (in RUG/harnesses/http-0.1.19/src/uri/authority.rs)
+        106. tests_rug_373 (in RUG/harnesses/http-0.1.19/src/uri/authority.rs)
+        107. tests_rug_374 (in RUG/harnesses/http-0.1.19/src/uri/authority.rs)
+        108. tests_rug_375 (in RUG/harnesses/http-0.1.19/src/uri/authority.rs)
+        109. tests_rug_376 (in RUG/harnesses/http-0.1.19/src/uri/authority.rs)
+        110. tests_rug_376 (in RUG/harnesses/http-0.1.19/src/uri/authority.rs)
+        111. tests_rug_377 (in RUG/harnesses/http-0.1.19/src/uri/authority.rs)
+        112. tests_rug_379 (in RUG/harnesses/http-0.1.19/src/uri/authority.rs)
+        113. tests_rug_380 (in RUG/harnesses/http-0.1.19/src/uri/authority.rs)
+        114. tests_rug_381 (in RUG/harnesses/http-0.1.19/src/uri/authority.rs)
+        115. tests_rug_382 (in RUG/harnesses/http-0.1.19/src/uri/authority.rs)
+        116. tests_rug_383 (in RUG/harnesses/http-0.1.19/src/uri/authority.rs)
+        117. tests_rug_384 (in RUG/harnesses/http-0.1.19/src/uri/authority.rs)
+        118. tests_rug_385 (in RUG/harnesses/http-0.1.19/src/uri/authority.rs)
+        119. tests_rug_386 (in RUG/harnesses/http-0.1.19/src/uri/authority.rs)
+        120. tests_rug_387 (in RUG/harnesses/http-0.1.19/src/uri/authority.rs)
+        121. tests_rug_388 (in RUG/harnesses/http-0.1.19/src/uri/authority.rs)
+        122. tests_rug_389 (in RUG/harnesses/http-0.1.19/src/uri/authority.rs)
+        123. tests_rug_392 (in RUG/harnesses/http-0.1.19/src/uri/authority.rs)
+        124. tests_rug_393 (in RUG/harnesses/http-0.1.19/src/uri/authority.rs)
+        125. tests_rug_394 (in RUG/harnesses/http-0.1.19/src/uri/authority.rs)
+        126. tests_rug_450 (in RUG/harnesses/http-0.1.19/src/uri/builder.rs)
+        127. tests_rug_451 (in RUG/harnesses/http-0.1.19/src/uri/builder.rs)
+        128. tests_rug_452 (in RUG/harnesses/http-0.1.19/src/uri/builder.rs)
+        129. tests_rug_456 (in RUG/harnesses/http-0.1.19/src/uri/path.rs)
+        130. tests_rug_462 (in RUG/harnesses/http-0.1.19/src/uri/path.rs)
+        131. tests_rug_462 (in RUG/harnesses/http-0.1.19/src/uri/path.rs)
+        132. tests_rug_463 (in RUG/harnesses/http-0.1.19/src/uri/path.rs)
+        133. tests_rug_467 (in RUG/harnesses/http-0.1.19/src/uri/path.rs)
+        134. tests_rug_468 (in RUG/harnesses/http-0.1.19/src/uri/path.rs)
+        135. tests_rug_471 (in RUG/harnesses/http-0.1.19/src/uri/path.rs)
+        136. tests_rug_474 (in RUG/harnesses/http-0.1.19/src/uri/path.rs)
+        137. tests_rug_476 (in RUG/harnesses/http-0.1.19/src/uri/path.rs)
+        138. tests_rug_480 (in RUG/harnesses/http-0.1.19/src/uri/path.rs)
+        139. tests_rug_482 (in RUG/harnesses/http-0.1.19/src/uri/path.rs)
+        140. tests_rug_484 (in RUG/harnesses/http-0.1.19/src/uri/port.rs)
+        141. tests_rug_485 (in RUG/harnesses/http-0.1.19/src/uri/port.rs)
+        142. tests_rug_486 (in RUG/harnesses/http-0.1.19/src/uri/port.rs)
+        143. tests_rug_493 (in RUG/harnesses/http-0.1.19/src/uri/scheme.rs)
+        144. tests_rug_494 (in RUG/harnesses/http-0.1.19/src/uri/scheme.rs)
+        145. tests_rug_495 (in RUG/harnesses/http-0.1.19/src/uri/scheme.rs)
+        146. tests_rug_498 (in RUG/harnesses/http-0.1.19/src/uri/scheme.rs)
+        147. tests_rug_499 (in RUG/harnesses/http-0.1.19/src/uri/scheme.rs)
+        148. tests_rug_501 (in RUG/harnesses/http-0.1.19/src/uri/scheme.rs)
+        149. tests_rug_502 (in RUG/harnesses/http-0.1.19/src/uri/scheme.rs)
+        150. tests_rug_504 (in RUG/harnesses/http-0.1.19/src/uri/scheme.rs)
+        151. tests_rug_396 (in RUG/harnesses/http-0.1.19/src/uri/mod.rs)
+        152. tests_rug_400 (in RUG/harnesses/http-0.1.19/src/uri/mod.rs)
+        153. tests_rug_401 (in RUG/harnesses/http-0.1.19/src/uri/mod.rs)
+        154. tests_rug_402 (in RUG/harnesses/http-0.1.19/src/uri/mod.rs)
+        155. tests_rug_403 (in RUG/harnesses/http-0.1.19/src/uri/mod.rs)
+        156. tests_rug_404 (in RUG/harnesses/http-0.1.19/src/uri/mod.rs)
+        157. tests_rug_405 (in RUG/harnesses/http-0.1.19/src/uri/mod.rs)
+        158. tests_rug_406 (in RUG/harnesses/http-0.1.19/src/uri/mod.rs)
+        159. tests_rug_407 (in RUG/harnesses/http-0.1.19/src/uri/mod.rs)
+        160. tests_rug_408 (in RUG/harnesses/http-0.1.19/src/uri/mod.rs)
+        161. tests_rug_409 (in RUG/harnesses/http-0.1.19/src/uri/mod.rs)
+        162. tests_rug_410 (in RUG/harnesses/http-0.1.19/src/uri/mod.rs)
+        163. tests_rug_411 (in RUG/harnesses/http-0.1.19/src/uri/mod.rs)
+        164. tests_rug_412 (in RUG/harnesses/http-0.1.19/src/uri/mod.rs)
+        165. tests_rug_413 (in RUG/harnesses/http-0.1.19/src/uri/mod.rs)
+        166. tests_rug_416 (in RUG/harnesses/http-0.1.19/src/uri/mod.rs)
+        167. tests_rug_419 (in RUG/harnesses/http-0.1.19/src/uri/mod.rs)
+        168. tests_rug_420 (in RUG/harnesses/http-0.1.19/src/uri/mod.rs)
+        169. tests_rug_421 (in RUG/harnesses/http-0.1.19/src/uri/mod.rs)
+        170. tests_rug_422 (in RUG/harnesses/http-0.1.19/src/uri/mod.rs)
+        171. tests_rug_424 (in RUG/harnesses/http-0.1.19/src/uri/mod.rs)
+        172. tests_rug_425 (in RUG/harnesses/http-0.1.19/src/uri/mod.rs)
+        173. tests_rug_426 (in RUG/harnesses/http-0.1.19/src/uri/mod.rs)
+
+
+
+qwutils:
+    * URAPI Coverage: 4/5 (80%):
+        1. qwutils::arc_slice::ArcSlice::insert_slice
+        2. qwutils::imp::vec::Vec::insert_slice_clone
+        3. qwutils::imp::vec::Vec::insert_slice_copy
+        4. qwutils::imp::vec::Vec::extend_from_slice_copy
+    * Compilable Harnesses (#140):
+        1. tests_rug_214 (in RUG/harnesses/qwutils-0.3.0/src/not_empty.rs)
+        2. tests_rug_217 (in RUG/harnesses/qwutils-0.3.0/src/not_empty.rs)
+        3. tests_rug_218 (in RUG/harnesses/qwutils-0.3.0/src/not_empty.rs)
+        4. tests_rug_219 (in RUG/harnesses/qwutils-0.3.0/src/not_empty.rs)
+        5. tests_rug_220 (in RUG/harnesses/qwutils-0.3.0/src/not_empty.rs)
+        6. tests_rug_221 (in RUG/harnesses/qwutils-0.3.0/src/not_empty.rs)
+        7. tests_rug_225 (in RUG/harnesses/qwutils-0.3.0/src/not_empty.rs)
+        8. tests_rug_226 (in RUG/harnesses/qwutils-0.3.0/src/not_empty.rs)
+        9. tests_rug_227 (in RUG/harnesses/qwutils-0.3.0/src/not_empty.rs)
+        10. tests_rug_35 (in RUG/harnesses/qwutils-0.3.0/src/arc_slice/imp.rs)
+        11. tests_rug_37 (in RUG/harnesses/qwutils-0.3.0/src/arc_slice/imp.rs)
+        12. tests_rug_38 (in RUG/harnesses/qwutils-0.3.0/src/arc_slice/imp.rs)
+        13. tests_rug_40 (in RUG/harnesses/qwutils-0.3.0/src/arc_slice/imp.rs)
+        14. tests_rug_41 (in RUG/harnesses/qwutils-0.3.0/src/arc_slice/imp.rs)
+        15. tests_rug_43 (in RUG/harnesses/qwutils-0.3.0/src/arc_slice/imp.rs)
+        16. tests_rug_47 (in RUG/harnesses/qwutils-0.3.0/src/arc_slice/imp.rs)
+        17. tests_rug_51 (in RUG/harnesses/qwutils-0.3.0/src/arc_slice/imp.rs)
+        18. tests_rug_53 (in RUG/harnesses/qwutils-0.3.0/src/arc_slice/imp.rs)
+        19. tests_rug_237 (in RUG/harnesses/qwutils-0.3.0/src/arc_slice/mod.rs)
+        20. tests_rug_245 (in RUG/harnesses/qwutils-0.3.0/src/arc_slice/mod.rs)
+        21. tests_rug_248 (in RUG/harnesses/qwutils-0.3.0/src/arc_slice/mod.rs)
+        22. tests_rug_71 (in RUG/harnesses/qwutils-0.3.0/src/imp/boolext.rs)
+        23. tests_rug_72 (in RUG/harnesses/qwutils-0.3.0/src/imp/boolext.rs)
+        24. tests_rug_201 (in RUG/harnesses/qwutils-0.3.0/src/imp/numext.rs)
+        25. tests_rug_202 (in RUG/harnesses/qwutils-0.3.0/src/imp/numext.rs)
+        26. tests_rug_203 (in RUG/harnesses/qwutils-0.3.0/src/imp/numext.rs)
+        27. tests_rug_204 (in RUG/harnesses/qwutils-0.3.0/src/imp/numext.rs)
+        28. tests_rug_205 (in RUG/harnesses/qwutils-0.3.0/src/imp/numext.rs)
+        29. tests_rug_206 (in RUG/harnesses/qwutils-0.3.0/src/imp/numext.rs)
+        30. tests_rug_207 (in RUG/harnesses/qwutils-0.3.0/src/imp/numext.rs)
+        31. tests_rug_208 (in RUG/harnesses/qwutils-0.3.0/src/imp/numext.rs)
+        32. tests_rug_209 (in RUG/harnesses/qwutils-0.3.0/src/imp/numext.rs)
+        33. tests_rug_210 (in RUG/harnesses/qwutils-0.3.0/src/imp/numext.rs)
+        34. tests_rug_211 (in RUG/harnesses/qwutils-0.3.0/src/imp/numext.rs)
+        35. tests_rug_212 (in RUG/harnesses/qwutils-0.3.0/src/imp/numext.rs)
+        36. tests_rug_11 (in RUG/harnesses/qwutils-0.3.0/src/imp/option.rs)
+        37. tests_rug_12 (in RUG/harnesses/qwutils-0.3.0/src/imp/option.rs)
+        38. tests_rug_13 (in RUG/harnesses/qwutils-0.3.0/src/imp/option.rs)
+        39. tests_rug_14 (in RUG/harnesses/qwutils-0.3.0/src/imp/option.rs)
+        40. tests_rug_15 (in RUG/harnesses/qwutils-0.3.0/src/imp/option.rs)
+        41. tests_rug_16 (in RUG/harnesses/qwutils-0.3.0/src/imp/option.rs)
+        42. tests_rug_17 (in RUG/harnesses/qwutils-0.3.0/src/imp/option.rs)
+        43. tests_rug_18 (in RUG/harnesses/qwutils-0.3.0/src/imp/option.rs)
+        44. tests_rug_20 (in RUG/harnesses/qwutils-0.3.0/src/imp/option.rs)
+        45. tests_rug_21 (in RUG/harnesses/qwutils-0.3.0/src/imp/option.rs)
+        46. tests_rug_22 (in RUG/harnesses/qwutils-0.3.0/src/imp/option.rs)
+        47. tests_rug_23 (in RUG/harnesses/qwutils-0.3.0/src/imp/option.rs)
+        48. tests_rug_6 (in RUG/harnesses/qwutils-0.3.0/src/imp/option.rs)
+        49. tests_rug_7 (in RUG/harnesses/qwutils-0.3.0/src/imp/option.rs)
+        50. tests_rug_1 (in RUG/harnesses/qwutils-0.3.0/src/imp/result.rs)
+        51. tests_rug_2 (in RUG/harnesses/qwutils-0.3.0/src/imp/result.rs)
+        52. tests_rug_3 (in RUG/harnesses/qwutils-0.3.0/src/imp/result.rs)
+        53. tests_rug_5 (in RUG/harnesses/qwutils-0.3.0/src/imp/result.rs)
+        54. tests_rug_101 (in RUG/harnesses/qwutils-0.3.0/src/imp/tuple.rs)
+        55. tests_rug_103 (in RUG/harnesses/qwutils-0.3.0/src/imp/tuple.rs)
+        56. tests_rug_105 (in RUG/harnesses/qwutils-0.3.0/src/imp/tuple.rs)
+        57. tests_rug_107 (in RUG/harnesses/qwutils-0.3.0/src/imp/tuple.rs)
+        58. tests_rug_109 (in RUG/harnesses/qwutils-0.3.0/src/imp/tuple.rs)
+        59. tests_rug_110 (in RUG/harnesses/qwutils-0.3.0/src/imp/tuple.rs)
+        60. tests_rug_113 (in RUG/harnesses/qwutils-0.3.0/src/imp/tuple.rs)
+        61. tests_rug_115 (in RUG/harnesses/qwutils-0.3.0/src/imp/tuple.rs)
+        62. tests_rug_117 (in RUG/harnesses/qwutils-0.3.0/src/imp/tuple.rs)
+        63. tests_rug_118 (in RUG/harnesses/qwutils-0.3.0/src/imp/tuple.rs)
+        64. tests_rug_121 (in RUG/harnesses/qwutils-0.3.0/src/imp/tuple.rs)
+        65. tests_rug_122 (in RUG/harnesses/qwutils-0.3.0/src/imp/tuple.rs)
+        66. tests_rug_123 (in RUG/harnesses/qwutils-0.3.0/src/imp/tuple.rs)
+        67. tests_rug_125 (in RUG/harnesses/qwutils-0.3.0/src/imp/tuple.rs)
+        68. tests_rug_126 (in RUG/harnesses/qwutils-0.3.0/src/imp/tuple.rs)
+        69. tests_rug_127 (in RUG/harnesses/qwutils-0.3.0/src/imp/tuple.rs)
+        70. tests_rug_129 (in RUG/harnesses/qwutils-0.3.0/src/imp/tuple.rs)
+        71. tests_rug_130 (in RUG/harnesses/qwutils-0.3.0/src/imp/tuple.rs)
+        72. tests_rug_131 (in RUG/harnesses/qwutils-0.3.0/src/imp/tuple.rs)
+        73. tests_rug_133 (in RUG/harnesses/qwutils-0.3.0/src/imp/tuple.rs)
+        74. tests_rug_134 (in RUG/harnesses/qwutils-0.3.0/src/imp/tuple.rs)
+        75. tests_rug_137 (in RUG/harnesses/qwutils-0.3.0/src/imp/tuple.rs)
+        76. tests_rug_138 (in RUG/harnesses/qwutils-0.3.0/src/imp/tuple.rs)
+        77. tests_rug_141 (in RUG/harnesses/qwutils-0.3.0/src/imp/tuple.rs)
+        78. tests_rug_142 (in RUG/harnesses/qwutils-0.3.0/src/imp/tuple.rs)
+        79. tests_rug_143 (in RUG/harnesses/qwutils-0.3.0/src/imp/tuple.rs)
+        80. tests_rug_145 (in RUG/harnesses/qwutils-0.3.0/src/imp/tuple.rs)
+        81. tests_rug_146 (in RUG/harnesses/qwutils-0.3.0/src/imp/tuple.rs)
+        82. tests_rug_147 (in RUG/harnesses/qwutils-0.3.0/src/imp/tuple.rs)
+        83. tests_rug_149 (in RUG/harnesses/qwutils-0.3.0/src/imp/tuple.rs)
+        84. tests_rug_150 (in RUG/harnesses/qwutils-0.3.0/src/imp/tuple.rs)
+        85. tests_rug_153 (in RUG/harnesses/qwutils-0.3.0/src/imp/tuple.rs)
+        86. tests_rug_154 (in RUG/harnesses/qwutils-0.3.0/src/imp/tuple.rs)
+        87. tests_rug_155 (in RUG/harnesses/qwutils-0.3.0/src/imp/tuple.rs)
+        88. tests_rug_157 (in RUG/harnesses/qwutils-0.3.0/src/imp/tuple.rs)
+        89. tests_rug_158 (in RUG/harnesses/qwutils-0.3.0/src/imp/tuple.rs)
+        90. tests_rug_159 (in RUG/harnesses/qwutils-0.3.0/src/imp/tuple.rs)
+        91. tests_rug_161 (in RUG/harnesses/qwutils-0.3.0/src/imp/tuple.rs)
+        92. tests_rug_162 (in RUG/harnesses/qwutils-0.3.0/src/imp/tuple.rs)
+        93. tests_rug_163 (in RUG/harnesses/qwutils-0.3.0/src/imp/tuple.rs)
+        94. tests_rug_165 (in RUG/harnesses/qwutils-0.3.0/src/imp/tuple.rs)
+        95. tests_rug_166 (in RUG/harnesses/qwutils-0.3.0/src/imp/tuple.rs)
+        96. tests_rug_167 (in RUG/harnesses/qwutils-0.3.0/src/imp/tuple.rs)
+        97. tests_rug_169 (in RUG/harnesses/qwutils-0.3.0/src/imp/tuple.rs)
+        98. tests_rug_170 (in RUG/harnesses/qwutils-0.3.0/src/imp/tuple.rs)
+        99. tests_rug_171 (in RUG/harnesses/qwutils-0.3.0/src/imp/tuple.rs)
+        100. tests_rug_173 (in RUG/harnesses/qwutils-0.3.0/src/imp/tuple.rs)
+        101. tests_rug_174 (in RUG/harnesses/qwutils-0.3.0/src/imp/tuple.rs)
+        102. tests_rug_177 (in RUG/harnesses/qwutils-0.3.0/src/imp/tuple.rs)
+        103. tests_rug_178 (in RUG/harnesses/qwutils-0.3.0/src/imp/tuple.rs)
+        104. tests_rug_181 (in RUG/harnesses/qwutils-0.3.0/src/imp/tuple.rs)
+        105. tests_rug_182 (in RUG/harnesses/qwutils-0.3.0/src/imp/tuple.rs)
+        106. tests_rug_183 (in RUG/harnesses/qwutils-0.3.0/src/imp/tuple.rs)
+        107. tests_rug_185 (in RUG/harnesses/qwutils-0.3.0/src/imp/tuple.rs)
+        108. tests_rug_186 (in RUG/harnesses/qwutils-0.3.0/src/imp/tuple.rs)
+        109. tests_rug_187 (in RUG/harnesses/qwutils-0.3.0/src/imp/tuple.rs)
+        110. tests_rug_189 (in RUG/harnesses/qwutils-0.3.0/src/imp/tuple.rs)
+        111. tests_rug_190 (in RUG/harnesses/qwutils-0.3.0/src/imp/tuple.rs)
+        112. tests_rug_191 (in RUG/harnesses/qwutils-0.3.0/src/imp/tuple.rs)
+        113. tests_rug_193 (in RUG/harnesses/qwutils-0.3.0/src/imp/tuple.rs)
+        114. tests_rug_194 (in RUG/harnesses/qwutils-0.3.0/src/imp/tuple.rs)
+        115. tests_rug_195 (in RUG/harnesses/qwutils-0.3.0/src/imp/tuple.rs)
+        116. tests_rug_197 (in RUG/harnesses/qwutils-0.3.0/src/imp/tuple.rs)
+        117. tests_rug_198 (in RUG/harnesses/qwutils-0.3.0/src/imp/tuple.rs)
+        118. tests_rug_73 (in RUG/harnesses/qwutils-0.3.0/src/imp/tuple.rs)
+        119. tests_rug_75 (in RUG/harnesses/qwutils-0.3.0/src/imp/tuple.rs)
+        120. tests_rug_77 (in RUG/harnesses/qwutils-0.3.0/src/imp/tuple.rs)
+        121. tests_rug_79 (in RUG/harnesses/qwutils-0.3.0/src/imp/tuple.rs)
+        122. tests_rug_81 (in RUG/harnesses/qwutils-0.3.0/src/imp/tuple.rs)
+        123. tests_rug_83 (in RUG/harnesses/qwutils-0.3.0/src/imp/tuple.rs)
+        124. tests_rug_85 (in RUG/harnesses/qwutils-0.3.0/src/imp/tuple.rs)
+        125. tests_rug_87 (in RUG/harnesses/qwutils-0.3.0/src/imp/tuple.rs)
+        126. tests_rug_89 (in RUG/harnesses/qwutils-0.3.0/src/imp/tuple.rs)
+        127. tests_rug_90 (in RUG/harnesses/qwutils-0.3.0/src/imp/tuple.rs)
+        128. tests_rug_91 (in RUG/harnesses/qwutils-0.3.0/src/imp/tuple.rs)
+        129. tests_rug_93 (in RUG/harnesses/qwutils-0.3.0/src/imp/tuple.rs)
+        130. tests_rug_95 (in RUG/harnesses/qwutils-0.3.0/src/imp/tuple.rs)
+        131. tests_rug_97 (in RUG/harnesses/qwutils-0.3.0/src/imp/tuple.rs)
+        132. tests_rug_99 (in RUG/harnesses/qwutils-0.3.0/src/imp/tuple.rs)
+        133. tests_rug_60 (in RUG/harnesses/qwutils-0.3.0/src/imp/vec.rs)
+        134. tests_rug_61 (in RUG/harnesses/qwutils-0.3.0/src/imp/vec.rs)
+        135. tests_rug_63 (in RUG/harnesses/qwutils-0.3.0/src/imp/vec.rs)
+        136. tests_rug_64 (in RUG/harnesses/qwutils-0.3.0/src/imp/vec.rs)
+        137. tests_rug_65 (in RUG/harnesses/qwutils-0.3.0/src/imp/vec.rs)
+        138. tests_rug_66 (in RUG/harnesses/qwutils-0.3.0/src/imp/vec.rs)
+        139. tests_rug_230 (in RUG/harnesses/qwutils-0.3.0/src/refc/imp.rs)
+        140. tests_rug_231 (in RUG/harnesses/qwutils-0.3.0/src/refc/imp.rs)
+
+
+
+endian_trait:
+    * URAPI Coverage: 8/8 (100%):
+        1. endian_trait::slices::Endian::from_le
+        2. endian_trait::Endian::to_be
+        3. endian_trait::Endian::from_le
+        4. endian_trait::slices::Endian::to_be
+        5. endian_trait::slices::Endian::to_le
+        6. endian_trait::Endian::to_le
+        7. endian_trait::slices::Endian::from_be
+        8. endian_trait::Endian::from_be
+    * Compilable Harnesses (#59):
+        1. tests_rug_58 (in RUG/harnesses/endian_trait-0.6.0/src/slices.rs)
+        2. tests_rug_59 (in RUG/harnesses/endian_trait-0.6.0/src/slices.rs)
+        3. tests_rug_60 (in RUG/harnesses/endian_trait-0.6.0/src/slices.rs)
+        4. tests_rug_10 (in RUG/harnesses/endian_trait-0.6.0/src/lib.rs)
+        5. tests_rug_11 (in RUG/harnesses/endian_trait-0.6.0/src/lib.rs)
+        6. tests_rug_12 (in RUG/harnesses/endian_trait-0.6.0/src/lib.rs)
+        7. tests_rug_13 (in RUG/harnesses/endian_trait-0.6.0/src/lib.rs)
+        8. tests_rug_14 (in RUG/harnesses/endian_trait-0.6.0/src/lib.rs)
+        9. tests_rug_15 (in RUG/harnesses/endian_trait-0.6.0/src/lib.rs)
+        10. tests_rug_16 (in RUG/harnesses/endian_trait-0.6.0/src/lib.rs)
+        11. tests_rug_17 (in RUG/harnesses/endian_trait-0.6.0/src/lib.rs)
+        12. tests_rug_18 (in RUG/harnesses/endian_trait-0.6.0/src/lib.rs)
+        13. tests_rug_19 (in RUG/harnesses/endian_trait-0.6.0/src/lib.rs)
+        14. tests_rug_1 (in RUG/harnesses/endian_trait-0.6.0/src/lib.rs)
+        15. tests_rug_20 (in RUG/harnesses/endian_trait-0.6.0/src/lib.rs)
+        16. tests_rug_21 (in RUG/harnesses/endian_trait-0.6.0/src/lib.rs)
+        17. tests_rug_22 (in RUG/harnesses/endian_trait-0.6.0/src/lib.rs)
+        18. tests_rug_23 (in RUG/harnesses/endian_trait-0.6.0/src/lib.rs)
+        19. tests_rug_24 (in RUG/harnesses/endian_trait-0.6.0/src/lib.rs)
+        20. tests_rug_25 (in RUG/harnesses/endian_trait-0.6.0/src/lib.rs)
+        21. tests_rug_26 (in RUG/harnesses/endian_trait-0.6.0/src/lib.rs)
+        22. tests_rug_27 (in RUG/harnesses/endian_trait-0.6.0/src/lib.rs)
+        23. tests_rug_28 (in RUG/harnesses/endian_trait-0.6.0/src/lib.rs)
+        24. tests_rug_29 (in RUG/harnesses/endian_trait-0.6.0/src/lib.rs)
+        25. tests_rug_2 (in RUG/harnesses/endian_trait-0.6.0/src/lib.rs)
+        26. tests_rug_30 (in RUG/harnesses/endian_trait-0.6.0/src/lib.rs)
+        27. tests_rug_31 (in RUG/harnesses/endian_trait-0.6.0/src/lib.rs)
+        28. tests_rug_32 (in RUG/harnesses/endian_trait-0.6.0/src/lib.rs)
+        29. tests_rug_33 (in RUG/harnesses/endian_trait-0.6.0/src/lib.rs)
+        30. tests_rug_34 (in RUG/harnesses/endian_trait-0.6.0/src/lib.rs)
+        31. tests_rug_35 (in RUG/harnesses/endian_trait-0.6.0/src/lib.rs)
+        32. tests_rug_36 (in RUG/harnesses/endian_trait-0.6.0/src/lib.rs)
+        33. tests_rug_37 (in RUG/harnesses/endian_trait-0.6.0/src/lib.rs)
+        34. tests_rug_38 (in RUG/harnesses/endian_trait-0.6.0/src/lib.rs)
+        35. tests_rug_39 (in RUG/harnesses/endian_trait-0.6.0/src/lib.rs)
+        36. tests_rug_3 (in RUG/harnesses/endian_trait-0.6.0/src/lib.rs)
+        37. tests_rug_40 (in RUG/harnesses/endian_trait-0.6.0/src/lib.rs)
+        38. tests_rug_41 (in RUG/harnesses/endian_trait-0.6.0/src/lib.rs)
+        39. tests_rug_42 (in RUG/harnesses/endian_trait-0.6.0/src/lib.rs)
+        40. tests_rug_43 (in RUG/harnesses/endian_trait-0.6.0/src/lib.rs)
+        41. tests_rug_44 (in RUG/harnesses/endian_trait-0.6.0/src/lib.rs)
+        42. tests_rug_45 (in RUG/harnesses/endian_trait-0.6.0/src/lib.rs)
+        43. tests_rug_46 (in RUG/harnesses/endian_trait-0.6.0/src/lib.rs)
+        44. tests_rug_47 (in RUG/harnesses/endian_trait-0.6.0/src/lib.rs)
+        45. tests_rug_48 (in RUG/harnesses/endian_trait-0.6.0/src/lib.rs)
+        46. tests_rug_49 (in RUG/harnesses/endian_trait-0.6.0/src/lib.rs)
+        47. tests_rug_4 (in RUG/harnesses/endian_trait-0.6.0/src/lib.rs)
+        48. tests_rug_50 (in RUG/harnesses/endian_trait-0.6.0/src/lib.rs)
+        49. tests_rug_51 (in RUG/harnesses/endian_trait-0.6.0/src/lib.rs)
+        50. tests_rug_52 (in RUG/harnesses/endian_trait-0.6.0/src/lib.rs)
+        51. tests_rug_53 (in RUG/harnesses/endian_trait-0.6.0/src/lib.rs)
+        52. tests_rug_54 (in RUG/harnesses/endian_trait-0.6.0/src/lib.rs)
+        53. tests_rug_55 (in RUG/harnesses/endian_trait-0.6.0/src/lib.rs)
+        54. tests_rug_56 (in RUG/harnesses/endian_trait-0.6.0/src/lib.rs)
+        55. tests_rug_5 (in RUG/harnesses/endian_trait-0.6.0/src/lib.rs)
+        56. tests_rug_6 (in RUG/harnesses/endian_trait-0.6.0/src/lib.rs)
+        57. tests_rug_7 (in RUG/harnesses/endian_trait-0.6.0/src/lib.rs)
+        58. tests_rug_8 (in RUG/harnesses/endian_trait-0.6.0/src/lib.rs)
+        59. tests_rug_9 (in RUG/harnesses/endian_trait-0.6.0/src/lib.rs)
+
+
+
+rdiff:
+    * URAPI Coverage: 0/1 (0%)
+    * Compilable Harnesses (#22):
+        1. tests_rug_18 (in RUG/harnesses/rdiff-0.1.2/src/hashing.rs)
+        2. tests_rug_20 (in RUG/harnesses/rdiff-0.1.2/src/hashing.rs)
+        3. tests_rug_21 (in RUG/harnesses/rdiff-0.1.2/src/hashing.rs)
+        4. tests_rug_1 (in RUG/harnesses/rdiff-0.1.2/src/string_diff.rs)
+        5. tests_rug_2 (in RUG/harnesses/rdiff-0.1.2/src/string_diff.rs)
+        6. tests_rug_3 (in RUG/harnesses/rdiff-0.1.2/src/string_diff.rs)
+        7. tests_rug_4 (in RUG/harnesses/rdiff-0.1.2/src/string_diff.rs)
+        8. tests_rug_5 (in RUG/harnesses/rdiff-0.1.2/src/string_diff.rs)
+        9. tests_rug_6 (in RUG/harnesses/rdiff-0.1.2/src/string_diff.rs)
+        10. tests_rug_7 (in RUG/harnesses/rdiff-0.1.2/src/string_diff.rs)
+        11. tests_rug_29 (in RUG/harnesses/rdiff-0.1.2/src/lib.rs)
+        12. tests_rug_30 (in RUG/harnesses/rdiff-0.1.2/src/lib.rs)
+        13. tests_rug_34 (in RUG/harnesses/rdiff-0.1.2/src/lib.rs)
+        14. tests_rug_35 (in RUG/harnesses/rdiff-0.1.2/src/lib.rs)
+        15. tests_rug_37 (in RUG/harnesses/rdiff-0.1.2/src/lib.rs)
+        16. tests_rug_38 (in RUG/harnesses/rdiff-0.1.2/src/lib.rs)
+        17. tests_rug_40 (in RUG/harnesses/rdiff-0.1.2/src/lib.rs)
+        18. tests_rug_42 (in RUG/harnesses/rdiff-0.1.2/src/lib.rs)
+        19. tests_rug_43 (in RUG/harnesses/rdiff-0.1.2/src/lib.rs)
+        20. tests_rug_44 (in RUG/harnesses/rdiff-0.1.2/src/lib.rs)
+        21. tests_rug_45 (in RUG/harnesses/rdiff-0.1.2/src/lib.rs)
+        22. tests_rug_8 (in RUG/harnesses/rdiff-0.1.2/src/window.rs)
+
+
+
+through:
+    * URAPI Coverage: 1/2 (50%)
+        1. through::through_and
+    * Compilable Harnesses (#1):
+        1. tests_rug_2 (in RUG/harnesses/through/src/lib.rs)

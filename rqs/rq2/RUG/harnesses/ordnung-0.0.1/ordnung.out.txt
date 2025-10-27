@@ -1,0 +1,534 @@
+-----------------
+src/compact.rs compact::pack
+deps:{"compact::pack":{"T":["core::marker::Sized"]}}
+candidates:{"compact::pack":{}}
+let mut p0 = MaybeUninit::uninit().assume_init(); // *mut T
+let mut p1 = 0usize; // None+usize
+let mut p2 = 0usize; // None+usize
++compact::pack(p0, p1, p2);
++crate::compact::pack(p0, p1, p2);
++crate::compact::pack(p0, p1, p2);
+-----------------
+src/compact.rs compact::pack_unchecked
+deps:{"compact::pack_unchecked":{"T":["core::marker::Sized"]}}
+candidates:{"compact::pack_unchecked":{}}
+let mut p0 = MaybeUninit::uninit().assume_init(); // *mut T
+let mut p1 = 0usize; // None+usize
+let mut p2 = 0usize; // None+usize
++compact::pack_unchecked(p0, p1, p2);
++crate::compact::pack_unchecked(p0, p1, p2);
++crate::compact::pack_unchecked(p0, p1, p2);
+-----------------
+src/lib.rs hash_key
+deps:{"hash_key":{"H":["core::marker::Sized","core::hash::Hash"]}}
+candidates:{"hash_key":{}}
+let mut p0 = MaybeUninit::uninit().assume_init(); // H
++hash_key(p0);
++crate::hash_key(p0);
++crate::hash_key(p0);
+-----------------
+src/compact.rs compact::Vec::<T>::new
+deps:{"compact::Vec::<T>::new":{"T":["core::marker::Sized"]}}
+candidates:{"compact::Vec::<T>::new":{}}
++compact::Vec::<T>::new();
++crate::compact::Vec::<T>::new();
++<compact::Vec<T>>::new();
+-----------------
+src/compact.rs compact::Vec::<T>::with_capacity
+deps:{"compact::Vec::<T>::with_capacity":{"T":["core::marker::Sized"]}}
+candidates:{"compact::Vec::<T>::with_capacity":{}}
+let mut p0 = 0usize; // None+usize
++compact::Vec::<T>::with_capacity(p0);
++crate::compact::Vec::<T>::with_capacity(p0);
++<compact::Vec<T>>::with_capacity(p0);
+-----------------
+src/compact.rs compact::Vec::<T>::push
+deps:{"compact::Vec::<T>::push":{"T":["core::marker::Sized"]}}
+candidates:{"compact::Vec::<T>::push":{}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // compact::Vec<T>
+let mut p1 = MaybeUninit::uninit().assume_init(); // T
++p0.push(p1);
++compact::Vec::<T>::push(p0, p1);
++crate::compact::Vec::<T>::push(p0, p1);
++<compact::Vec<T>>::push(p0, p1);
+-----------------
+src/compact.rs compact::Vec::<T>::pop
+deps:{"compact::Vec::<T>::pop":{"T":["core::marker::Sized"]}}
+candidates:{"compact::Vec::<T>::pop":{}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // compact::Vec<T>
++p0.pop();
++compact::Vec::<T>::pop(p0);
++crate::compact::Vec::<T>::pop(p0);
++<compact::Vec<T>>::pop(p0);
+-----------------
+src/compact.rs compact::Vec::<T>::clear
+deps:{"compact::Vec::<T>::clear":{"T":["core::marker::Sized"]}}
+candidates:{"compact::Vec::<T>::clear":{}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // compact::Vec<T>
++p0.clear();
++compact::Vec::<T>::clear(p0);
++crate::compact::Vec::<T>::clear(p0);
++<compact::Vec<T>>::clear(p0);
+-----------------
+src/compact.rs compact::Vec::<T>::len
+deps:{"compact::Vec::<T>::len":{"T":["core::marker::Sized"]}}
+candidates:{"compact::Vec::<T>::len":{}}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // compact::Vec<T>
++p0.len();
++compact::Vec::<T>::len(p0);
++crate::compact::Vec::<T>::len(p0);
++<compact::Vec<T>>::len(p0);
+-----------------
+src/compact.rs compact::Vec::<T>::capacity
+deps:{"compact::Vec::<T>::capacity":{"T":["core::marker::Sized"]}}
+candidates:{"compact::Vec::<T>::capacity":{}}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // compact::Vec<T>
++p0.capacity();
++compact::Vec::<T>::capacity(p0);
++crate::compact::Vec::<T>::capacity(p0);
++<compact::Vec<T>>::capacity(p0);
+-----------------
+src/compact.rs compact::Vec::<T>::remove
+deps:{"compact::Vec::<T>::remove":{"T":["core::marker::Sized"]}}
+candidates:{"compact::Vec::<T>::remove":{}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // compact::Vec<T>
+let mut p1 = 0usize; // None+usize
++p0.remove(p1);
++compact::Vec::<T>::remove(p0, p1);
++crate::compact::Vec::<T>::remove(p0, p1);
++<compact::Vec<T>>::remove(p0, p1);
+-----------------
+src/compact.rs compact::Vec::<T>::as_ptr
+deps:{"compact::Vec::<T>::as_ptr":{"T":["core::marker::Sized"]}}
+candidates:{"compact::Vec::<T>::as_ptr":{}}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // compact::Vec<T>
++p0.as_ptr();
++compact::Vec::<T>::as_ptr(p0);
++crate::compact::Vec::<T>::as_ptr(p0);
++<compact::Vec<T>>::as_ptr(p0);
+-----------------
+src/compact.rs compact::Vec::<T>::as_mut_ptr
+deps:{"compact::Vec::<T>::as_mut_ptr":{"T":["core::marker::Sized"]}}
+candidates:{"compact::Vec::<T>::as_mut_ptr":{}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // compact::Vec<T>
++p0.as_mut_ptr();
++compact::Vec::<T>::as_mut_ptr(p0);
++crate::compact::Vec::<T>::as_mut_ptr(p0);
++<compact::Vec<T>>::as_mut_ptr(p0);
+-----------------
+src/compact.rs compact::Vec::<T>::set_len
+deps:{"compact::Vec::<T>::set_len":{"T":["core::marker::Sized"]}}
+candidates:{"compact::Vec::<T>::set_len":{}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // compact::Vec<T>
+let mut p1 = 0usize; // None+usize
++p0.set_len(p1);
++compact::Vec::<T>::set_len(p0, p1);
++crate::compact::Vec::<T>::set_len(p0, p1);
++<compact::Vec<T>>::set_len(p0, p1);
+-----------------
+src/compact.rs compact::Vec::<T>::parts
+deps:{"compact::Vec::<T>::parts":{"T":["core::marker::Sized"]}}
+candidates:{"compact::Vec::<T>::parts":{}}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // compact::Vec<T>
++p0.parts();
++compact::Vec::<T>::parts(p0);
++crate::compact::Vec::<T>::parts(p0);
++<compact::Vec<T>>::parts(p0);
+-----------------
+src/compact.rs compact::Vec::<T>::with
+'a
+deps:{"compact::Vec::<T>::with":{"F":["core::ops::FnOnce","core::marker::Sized"],"R":["core::marker::Sized"],"T":["core::marker::Sized"]}}
+candidates:{"compact::Vec::<T>::with":{}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // compact::Vec<T>
+let mut p1 = MaybeUninit::uninit().assume_init(); // F
++p0.with(p1);
++compact::Vec::<T>::with(p0, p1);
++crate::compact::Vec::<T>::with(p0, p1);
++<compact::Vec<T>>::with(p0, p1);
+-----------------
+src/compact.rs compact::Vec::<T>::from_stdvec_unchecked
+deps:{"compact::Vec::<T>::from_stdvec_unchecked":{"T":["core::marker::Sized"]}}
+candidates:{"compact::Vec::<T>::from_stdvec_unchecked":{}}
+let mut p0 = MaybeUninit::uninit().assume_init(); // alloc::vec::Vec<T>
++compact::Vec::<T>::from_stdvec_unchecked(p0);
++crate::compact::Vec::<T>::from_stdvec_unchecked(p0);
++<compact::Vec<T>>::from_stdvec_unchecked(p0);
+-----------------
+src/compact.rs <compact::Vec<T> as core::ops::Drop>::drop
+deps:{"<compact::Vec<T> as core::ops::Drop>::drop":{"T":["core::marker::Sized"]}}
+candidates:{"<compact::Vec<T> as core::ops::Drop>::drop":{}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // compact::Vec<T>
++p0.drop();
++<compact::Vec<T> as core::ops::Drop>::drop(p0);
++crate::<compact::Vec<T> as core::ops::Drop>::drop(p0);
++<compact::Vec<T>>::drop(p0);
+-----------------
+src/compact.rs <compact::Vec<T> as core::convert::From<alloc::vec::Vec<T>>>::from
+deps:{"<compact::Vec<T> as core::convert::From<alloc::vec::Vec<T>>>::from":{"T":["core::marker::Sized"]}}
+candidates:{"<compact::Vec<T> as core::convert::From<alloc::vec::Vec<T>>>::from":{}}
+let mut p0 = MaybeUninit::uninit().assume_init(); // alloc::vec::Vec<T>
++<compact::Vec<T> as core::convert::From<alloc::vec::Vec<T>>>::from(p0);
++crate::<compact::Vec<T> as core::convert::From<alloc::vec::Vec<T>>>::from(p0);
++<compact::Vec<T>>::from(p0);
+-----------------
+src/compact.rs compact::<impl core::convert::From<compact::Vec<T>> for alloc::vec::Vec<T>>::from
+deps:{"compact::<impl core::convert::From<compact::Vec<T>> for alloc::vec::Vec<T>>::from":{"T":["core::marker::Sized"]}}
+candidates:{"compact::<impl core::convert::From<compact::Vec<T>> for alloc::vec::Vec<T>>::from":{}}
+let mut p0 = MaybeUninit::uninit().assume_init(); // compact::Vec<T>
++compact::<impl core::convert::From<compact::Vec<T>> for alloc::vec::Vec<T>>::from(p0);
++crate::compact::<impl core::convert::From<compact::Vec<T>> for alloc::vec::Vec<T>>::from(p0);
++<alloc::vec::Vec<T>>::from(p0);
+-----------------
+src/compact.rs <compact::Vec<T> as core::clone::Clone>::clone
+deps:{"<compact::Vec<T> as core::clone::Clone>::clone":{"T":["core::marker::Sized","core::clone::Clone"]}}
+candidates:{"<compact::Vec<T> as core::clone::Clone>::clone":{}}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // compact::Vec<T>
++p0.clone();
++<compact::Vec<T> as core::clone::Clone>::clone(p0);
++crate::<compact::Vec<T> as core::clone::Clone>::clone(p0);
++<compact::Vec<T>>::clone(p0);
+-----------------
+src/compact.rs <compact::Vec<T> as core::ops::Deref>::deref
+deps:{"<compact::Vec<T> as core::ops::Deref>::deref":{"T":["core::marker::Sized"]}}
+candidates:{"<compact::Vec<T> as core::ops::Deref>::deref":{}}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // compact::Vec<T>
++p0.deref();
++<compact::Vec<T> as core::ops::Deref>::deref(p0);
++crate::<compact::Vec<T> as core::ops::Deref>::deref(p0);
++<compact::Vec<T>>::deref(p0);
+-----------------
+src/compact.rs <compact::Vec<T> as core::ops::DerefMut>::deref_mut
+deps:{"<compact::Vec<T> as core::ops::DerefMut>::deref_mut":{"T":["core::marker::Sized"]}}
+candidates:{"<compact::Vec<T> as core::ops::DerefMut>::deref_mut":{}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // compact::Vec<T>
++p0.deref_mut();
++<compact::Vec<T> as core::ops::DerefMut>::deref_mut(p0);
++crate::<compact::Vec<T> as core::ops::DerefMut>::deref_mut(p0);
++<compact::Vec<T>>::deref_mut(p0);
+-----------------
+src/compact.rs <compact::Vec<T> as core::fmt::Debug>::fmt
+deps:{"<compact::Vec<T> as core::fmt::Debug>::fmt":{"T":["core::fmt::Debug","core::marker::Sized"]}}
+candidates:{"<compact::Vec<T> as core::fmt::Debug>::fmt":{}}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // compact::Vec<T>
+let mut p1 = &mut  MaybeUninit::uninit().assume_init(); // core::fmt::Formatter<'_>
++p0.fmt(p1);
++<compact::Vec<T> as core::fmt::Debug>::fmt(p0, p1);
++crate::<compact::Vec<T> as core::fmt::Debug>::fmt(p0, p1);
++<compact::Vec<T>>::fmt(p0, p1);
+-----------------
+src/compact.rs <compact::Vec<T> as core::iter::IntoIterator>::into_iter
+deps:{"<compact::Vec<T> as core::iter::IntoIterator>::into_iter":{"T":["core::marker::Sized"]}}
+candidates:{"<compact::Vec<T> as core::iter::IntoIterator>::into_iter":{}}
+let mut p0 = MaybeUninit::uninit().assume_init(); // compact::Vec<T>
++p0.into_iter();
++<compact::Vec<T> as core::iter::IntoIterator>::into_iter(p0);
++crate::<compact::Vec<T> as core::iter::IntoIterator>::into_iter(p0);
++<compact::Vec<T>>::into_iter(p0);
+-----------------
+src/compact.rs <compact::Vec<T> as core::iter::FromIterator<T>>::from_iter
+deps:{"<compact::Vec<T> as core::iter::FromIterator<T>>::from_iter":{"I":["core::marker::Sized","core::iter::IntoIterator"],"T":["core::marker::Sized"]}}
+candidates:{"<compact::Vec<T> as core::iter::FromIterator<T>>::from_iter":{}}
+let mut p0 = MaybeUninit::uninit().assume_init(); // I
++<compact::Vec<T> as core::iter::FromIterator<T>>::from_iter(p0);
++crate::<compact::Vec<T> as core::iter::FromIterator<T>>::from_iter(p0);
++<compact::Vec<T>>::from_iter(p0);
+-----------------
+src/compact.rs <compact::Vec<T> as core::cmp::PartialEq>::eq
+deps:{"<compact::Vec<T> as core::cmp::PartialEq>::eq":{"T":["core::cmp::PartialEq","core::marker::Sized"]},"core::cmp::impls::<impl core::cmp::PartialEq<&B> for &A>":{},"core::cmp::impls::<impl core::cmp::PartialEq<&B> for &mut A>":{},"core::cmp::impls::<impl core::cmp::PartialEq<&mut B> for &A>":{}}
+candidates:{"<compact::Vec<T> as core::cmp::PartialEq>::eq":{"T":["&'b std::ffi::os_str::OsStr","std::net::ip_addr::Ipv6Addr","std::net::ip_addr::Ipv4Addr","core::cmp::impls::<impl core::cmp::PartialEq<&B> for &mut A>","core::cmp::impls::<impl core::cmp::PartialEq<&mut B> for &A>"]},"core::cmp::impls::<impl core::cmp::PartialEq<&B> for &A>":{},"core::cmp::impls::<impl core::cmp::PartialEq<&B> for &mut A>":{},"core::cmp::impls::<impl core::cmp::PartialEq<&mut B> for &A>":{}}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // compact::Vec<T>
+let mut p1 = & MaybeUninit::uninit().assume_init(); // compact::Vec<T>
++p0.eq(p1);
++<compact::Vec<T> as core::cmp::PartialEq>::eq(p0, p1);
++crate::<compact::Vec<T> as core::cmp::PartialEq>::eq(p0, p1);
++<compact::Vec<T>>::eq(p0, p1);
+-----------------
+src/lib.rs <Node<K, V> as core::clone::Clone>::clone
+deps:{"<Node<K, V> as core::clone::Clone>::clone":{"K":["core::marker::Sized","core::clone::Clone"],"V":["core::clone::Clone","core::marker::Sized"]}}
+candidates:{"<Node<K, V> as core::clone::Clone>::clone":{}}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // Node<K, V>
++p0.clone();
++<Node<K, V> as core::clone::Clone>::clone(p0);
++crate::<Node<K, V> as core::clone::Clone>::clone(p0);
++<Node<K, V>>::clone(p0);
+-----------------
+src/lib.rs <Node<K, V> as core::fmt::Debug>::fmt
+deps:{"<Node<K, V> as core::fmt::Debug>::fmt":{"K":["core::marker::Sized","core::fmt::Debug"],"V":["core::marker::Sized","core::fmt::Debug"]}}
+candidates:{"<Node<K, V> as core::fmt::Debug>::fmt":{}}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // Node<K, V>
+let mut p1 = &mut  MaybeUninit::uninit().assume_init(); // core::fmt::Formatter<'_>
++p0.fmt(p1);
++<Node<K, V> as core::fmt::Debug>::fmt(p0, p1);
++crate::<Node<K, V> as core::fmt::Debug>::fmt(p0, p1);
++<Node<K, V>>::fmt(p0, p1);
+-----------------
+src/lib.rs <Node<K, V> as core::cmp::PartialEq>::eq
+deps:{"<Node<K, V> as core::cmp::PartialEq>::eq":{"K":["core::cmp::PartialEq","core::marker::Sized"],"V":["core::marker::Sized","core::cmp::PartialEq"]},"core::cmp::impls::<impl core::cmp::PartialEq<&B> for &A>":{},"core::cmp::impls::<impl core::cmp::PartialEq<&B> for &mut A>":{},"core::cmp::impls::<impl core::cmp::PartialEq<&mut B> for &A>":{},"core::cmp::impls::<impl core::cmp::PartialEq<&mut B> for &mut A>":{}}
+candidates:{"<Node<K, V> as core::cmp::PartialEq>::eq":{"K":["std::net::ip_addr::Ipv6Addr","core::cmp::impls::<impl core::cmp::PartialEq<&mut B> for &A>","&'b std::ffi::os_str::OsStr","std::net::ip_addr::Ipv4Addr","core::cmp::impls::<impl core::cmp::PartialEq<&B> for &A>"],"V":["core::cmp::impls::<impl core::cmp::PartialEq<&mut B> for &mut A>","&'b std::ffi::os_str::OsStr","std::net::ip_addr::Ipv4Addr","core::cmp::impls::<impl core::cmp::PartialEq<&B> for &A>","std::net::ip_addr::Ipv6Addr"]},"core::cmp::impls::<impl core::cmp::PartialEq<&B> for &A>":{},"core::cmp::impls::<impl core::cmp::PartialEq<&B> for &mut A>":{},"core::cmp::impls::<impl core::cmp::PartialEq<&mut B> for &A>":{},"core::cmp::impls::<impl core::cmp::PartialEq<&mut B> for &mut A>":{}}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // Node<K, V>
+let mut p1 = & MaybeUninit::uninit().assume_init(); // Node<K, V>
++p0.eq(p1);
++<Node<K, V> as core::cmp::PartialEq>::eq(p0, p1);
++crate::<Node<K, V> as core::cmp::PartialEq>::eq(p0, p1);
++<Node<K, V>>::eq(p0, p1);
+-----------------
+src/lib.rs Node::<K, V>::new
+deps:{"Node::<K, V>::new":{"K":["core::marker::Sized"],"V":["core::marker::Sized"]}}
+candidates:{"Node::<K, V>::new":{}}
+let mut p0 = MaybeUninit::uninit().assume_init(); // K
+let mut p1 = MaybeUninit::uninit().assume_init(); // V
+let mut p2 = 0u64; // None+u64
++Node::<K, V>::new(p0, p1, p2);
++crate::Node::<K, V>::new(p0, p1, p2);
++<Node<K, V>>::new(p0, p1, p2);
+-----------------
+src/lib.rs <Map<K, V> as core::fmt::Debug>::fmt
+deps:{"<Map<K, V> as core::fmt::Debug>::fmt":{"K":["core::marker::Sized","core::fmt::Debug"],"V":["core::fmt::Debug","core::marker::Sized"]}}
+candidates:{"<Map<K, V> as core::fmt::Debug>::fmt":{}}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // Map<K, V>
+let mut p1 = &mut  MaybeUninit::uninit().assume_init(); // core::fmt::Formatter<'_>
++p0.fmt(p1);
++<Map<K, V> as core::fmt::Debug>::fmt(p0, p1);
++crate::<Map<K, V> as core::fmt::Debug>::fmt(p0, p1);
++<Map<K, V>>::fmt(p0, p1);
+-----------------
+src/lib.rs <Map<K, V> as core::clone::Clone>::clone
+deps:{"<Map<K, V> as core::clone::Clone>::clone":{"K":["core::clone::Clone","core::marker::Sized"],"V":["core::clone::Clone","core::marker::Sized"]}}
+candidates:{"<Map<K, V> as core::clone::Clone>::clone":{}}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // Map<K, V>
++p0.clone();
++<Map<K, V> as core::clone::Clone>::clone(p0);
++crate::<Map<K, V> as core::clone::Clone>::clone(p0);
++<Map<K, V>>::clone(p0);
+-----------------
+src/lib.rs Map::<K, V>::new
+deps:{"Map::<K, V>::new":{"K":["core::hash::Hash","core::cmp::Eq","core::marker::Sized"],"V":["core::marker::Sized"]}}
+candidates:{"Map::<K, V>::new":{}}
++Map::<K, V>::new();
++crate::Map::<K, V>::new();
++<Map<K, V>>::new();
+-----------------
+src/lib.rs Map::<K, V>::with_capacity
+deps:{"Map::<K, V>::with_capacity":{"K":["core::hash::Hash","core::cmp::Eq","core::marker::Sized"],"V":["core::marker::Sized"]}}
+candidates:{"Map::<K, V>::with_capacity":{}}
+let mut p0 = 0usize; // None+usize
++Map::<K, V>::with_capacity(p0);
++crate::Map::<K, V>::with_capacity(p0);
++<Map<K, V>>::with_capacity(p0);
+-----------------
+src/lib.rs Map::<K, V>::insert
+deps:{"Map::<K, V>::insert":{"K":["core::marker::Sized","core::hash::Hash","core::cmp::Eq"],"V":["core::marker::Sized"]}}
+candidates:{"Map::<K, V>::insert":{}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // Map<K, V>
+let mut p1 = MaybeUninit::uninit().assume_init(); // K
+let mut p2 = MaybeUninit::uninit().assume_init(); // V
++p0.insert(p1, p2);
++Map::<K, V>::insert(p0, p1, p2);
++crate::Map::<K, V>::insert(p0, p1, p2);
++<Map<K, V>>::insert(p0, p1, p2);
+-----------------
+src/lib.rs Map::<K, V>::get
+deps:{"Map::<K, V>::get":{"K":["core::hash::Hash","core::borrow::Borrow","core::marker::Sized","core::cmp::Eq"],"Q":["core::hash::Hash","core::cmp::Eq"],"V":["core::marker::Sized"]},"core::hash::impls::<impl core::hash::Hash for *const T>":{},"core::hash::impls::<impl core::hash::Hash for *mut T>":{}}
+candidates:{"Map::<K, V>::get":{"Q":["core::hash::impls::<impl core::hash::Hash for *const T>","u8","i32","i16","i8","usize","bool","i64","char","u16","u64","u32"]},"core::hash::impls::<impl core::hash::Hash for *const T>":{},"core::hash::impls::<impl core::hash::Hash for *mut T>":{}}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // Map<K, V>
+let mut p1 = & MaybeUninit::uninit().assume_init(); // Q
++p0.get(p1);
++Map::<K, V>::get(p0, p1);
++crate::Map::<K, V>::get(p0, p1);
++<Map<K, V>>::get(p0, p1);
+-----------------
+src/lib.rs Map::<K, V>::contains_key
+deps:{"Map::<K, V>::contains_key":{"K":["core::borrow::Borrow","core::hash::Hash","core::marker::Sized","core::cmp::Eq"],"Q":["core::hash::Hash","core::cmp::Eq"],"V":["core::marker::Sized"]},"core::hash::impls::<impl core::hash::Hash for *const T>":{},"core::hash::impls::<impl core::hash::Hash for *mut T>":{}}
+candidates:{"Map::<K, V>::contains_key":{"Q":["usize","i64","core::hash::impls::<impl core::hash::Hash for *const T>","i8","i32","char","i16","u16","u64","u8","u32","bool","core::hash::impls::<impl core::hash::Hash for *mut T>"]},"core::hash::impls::<impl core::hash::Hash for *const T>":{},"core::hash::impls::<impl core::hash::Hash for *mut T>":{}}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // Map<K, V>
+let mut p1 = & MaybeUninit::uninit().assume_init(); // Q
++p0.contains_key(p1);
++Map::<K, V>::contains_key(p0, p1);
++crate::Map::<K, V>::contains_key(p0, p1);
++<Map<K, V>>::contains_key(p0, p1);
+-----------------
+src/lib.rs Map::<K, V>::get_mut
+deps:{"Map::<K, V>::get_mut":{"K":["core::marker::Sized","core::borrow::Borrow","core::hash::Hash","core::cmp::Eq"],"Q":["core::hash::Hash","core::cmp::Eq"],"V":["core::marker::Sized"]},"core::hash::impls::<impl core::hash::Hash for *const T>":{},"core::hash::impls::<impl core::hash::Hash for *mut T>":{},"core::ptr::const_ptr::<impl core::cmp::Eq for *const T>":{},"core::ptr::mut_ptr::<impl core::cmp::Eq for *mut T>":{}}
+candidates:{"Map::<K, V>::get_mut":{"Q":["u8","u64","usize","char","i8","core::ptr::mut_ptr::<impl core::cmp::Eq for *mut T>","core::hash::impls::<impl core::hash::Hash for *mut T>","u16","bool","i16","i64","u32","i32"]},"core::hash::impls::<impl core::hash::Hash for *const T>":{},"core::hash::impls::<impl core::hash::Hash for *mut T>":{},"core::ptr::const_ptr::<impl core::cmp::Eq for *const T>":{},"core::ptr::mut_ptr::<impl core::cmp::Eq for *mut T>":{}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // Map<K, V>
+let mut p1 = & MaybeUninit::uninit().assume_init(); // Q
++p0.get_mut(p1);
++Map::<K, V>::get_mut(p0, p1);
++crate::Map::<K, V>::get_mut(p0, p1);
++<Map<K, V>>::get_mut(p0, p1);
+-----------------
+src/lib.rs Map::<K, V>::get_or_insert
+deps:{"Map::<K, V>::get_or_insert":{"F":["core::ops::FnOnce","core::marker::Sized"],"K":["core::hash::Hash","core::cmp::Eq","core::marker::Sized"],"V":["core::marker::Sized"]}}
+candidates:{"Map::<K, V>::get_or_insert":{}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // Map<K, V>
+let mut p1 = MaybeUninit::uninit().assume_init(); // K
+let mut p2 = MaybeUninit::uninit().assume_init(); // F
++p0.get_or_insert(p1, p2);
++Map::<K, V>::get_or_insert(p0, p1, p2);
++crate::Map::<K, V>::get_or_insert(p0, p1, p2);
++<Map<K, V>>::get_or_insert(p0, p1, p2);
+-----------------
+src/lib.rs Map::<K, V>::remove
+deps:{"Map::<K, V>::remove":{"K":["core::borrow::Borrow","core::cmp::Eq","core::hash::Hash","core::marker::Sized"],"Q":["core::cmp::Eq","core::hash::Hash"],"V":["core::marker::Sized"]},"core::hash::impls::<impl core::hash::Hash for *const T>":{},"core::hash::impls::<impl core::hash::Hash for *mut T>":{},"core::ptr::const_ptr::<impl core::cmp::Eq for *const T>":{}}
+candidates:{"Map::<K, V>::remove":{"Q":["u32","i64","u8","i32","usize","u16","i16","bool","u64","i8","char","core::hash::impls::<impl core::hash::Hash for *mut T>"]},"core::hash::impls::<impl core::hash::Hash for *const T>":{},"core::hash::impls::<impl core::hash::Hash for *mut T>":{},"core::ptr::const_ptr::<impl core::cmp::Eq for *const T>":{}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // Map<K, V>
+let mut p1 = & MaybeUninit::uninit().assume_init(); // Q
++p0.remove(p1);
++Map::<K, V>::remove(p0, p1);
++crate::Map::<K, V>::remove(p0, p1);
++<Map<K, V>>::remove(p0, p1);
+-----------------
+src/lib.rs Map::<K, V>::len
+deps:{"Map::<K, V>::len":{"K":["core::marker::Sized","core::hash::Hash","core::cmp::Eq"],"V":["core::marker::Sized"]}}
+candidates:{"Map::<K, V>::len":{}}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // Map<K, V>
++p0.len();
++Map::<K, V>::len(p0);
++crate::Map::<K, V>::len(p0);
++<Map<K, V>>::len(p0);
+-----------------
+src/lib.rs Map::<K, V>::is_empty
+deps:{"Map::<K, V>::is_empty":{"K":["core::hash::Hash","core::marker::Sized","core::cmp::Eq"],"V":["core::marker::Sized"]}}
+candidates:{"Map::<K, V>::is_empty":{}}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // Map<K, V>
++p0.is_empty();
++Map::<K, V>::is_empty(p0);
++crate::Map::<K, V>::is_empty(p0);
++<Map<K, V>>::is_empty(p0);
+-----------------
+src/lib.rs Map::<K, V>::clear
+deps:{"Map::<K, V>::clear":{"K":["core::marker::Sized","core::cmp::Eq","core::hash::Hash"],"V":["core::marker::Sized"]}}
+candidates:{"Map::<K, V>::clear":{}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // Map<K, V>
++p0.clear();
++Map::<K, V>::clear(p0);
++crate::Map::<K, V>::clear(p0);
++<Map<K, V>>::clear(p0);
+-----------------
+src/lib.rs Map::<K, V>::find
+deps:{"Map::<K, V>::find":{"K":["core::borrow::Borrow","core::marker::Sized","core::hash::Hash","core::cmp::Eq"],"Q":["core::cmp::Eq"],"V":["core::marker::Sized"]},"core::cmp::impls::<impl core::cmp::Eq for &A>":{},"core::cmp::impls::<impl core::cmp::Eq for &mut A>":{},"core::ptr::const_ptr::<impl core::cmp::Eq for *const T>":{},"core::ptr::mut_ptr::<impl core::cmp::Eq for *mut T>":{}}
+candidates:{"Map::<K, V>::find":{"Q":["i8","u32","core::cmp::impls::<impl core::cmp::Eq for &mut A>","bool","i32","char","i64","u16","u8","i16","usize","u64"]},"core::cmp::impls::<impl core::cmp::Eq for &A>":{},"core::cmp::impls::<impl core::cmp::Eq for &mut A>":{},"core::ptr::const_ptr::<impl core::cmp::Eq for *const T>":{},"core::ptr::mut_ptr::<impl core::cmp::Eq for *mut T>":{}}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // Map<K, V>
+let mut p1 = & MaybeUninit::uninit().assume_init(); // Q
+let mut p2 = 0u64; // None+u64
++p0.find(p1, p2);
++Map::<K, V>::find(p0, p1, p2);
++crate::Map::<K, V>::find(p0, p1, p2);
++<Map<K, V>>::find(p0, p1, p2);
+-----------------
+src/lib.rs Map::<K, V>::iter
+deps:{"Map::<K, V>::iter":{"K":["core::hash::Hash","core::cmp::Eq","core::marker::Sized"],"V":["core::marker::Sized"]}}
+candidates:{"Map::<K, V>::iter":{}}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // Map<K, V>
++p0.iter();
++Map::<K, V>::iter(p0);
++crate::Map::<K, V>::iter(p0);
++<Map<K, V>>::iter(p0);
+-----------------
+src/lib.rs Map::<K, V>::iter_mut
+deps:{"Map::<K, V>::iter_mut":{"K":["core::marker::Sized","core::cmp::Eq","core::hash::Hash"],"V":["core::marker::Sized"]}}
+candidates:{"Map::<K, V>::iter_mut":{}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // Map<K, V>
++p0.iter_mut();
++Map::<K, V>::iter_mut(p0);
++crate::Map::<K, V>::iter_mut(p0);
++<Map<K, V>>::iter_mut(p0);
+-----------------
+src/lib.rs <Map<K, V> as core::ops::Index<&Q>>::index
+deps:{"<Map<K, V> as core::ops::Index<&Q>>::index":{"K":["core::marker::Sized","core::cmp::Eq","core::hash::Hash","core::borrow::Borrow"],"Q":["core::cmp::Eq","core::hash::Hash"],"V":["core::marker::Sized"]},"core::hash::impls::<impl core::hash::Hash for *const T>":{},"core::hash::impls::<impl core::hash::Hash for *mut T>":{},"core::ptr::mut_ptr::<impl core::cmp::Eq for *mut T>":{}}
+candidates:{"<Map<K, V> as core::ops::Index<&Q>>::index":{"Q":["i64","usize","i32","u16","bool","i8","u64","core::hash::impls::<impl core::hash::Hash for *const T>","u8","char","core::hash::impls::<impl core::hash::Hash for *mut T>","u32","i16"]},"core::hash::impls::<impl core::hash::Hash for *const T>":{},"core::hash::impls::<impl core::hash::Hash for *mut T>":{},"core::ptr::mut_ptr::<impl core::cmp::Eq for *mut T>":{}}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // Map<K, V>
+let mut p1 = & MaybeUninit::uninit().assume_init(); // Q
++p0.index(p1);
++<Map<K, V> as core::ops::Index<&Q>>::index(p0, p1);
++crate::<Map<K, V> as core::ops::Index<&Q>>::index(p0, p1);
++<Map<K, V>>::index(p0, p1);
+-----------------
+src/lib.rs <Map<K, V> as core::iter::FromIterator<(IK, IV)>>::from_iter
+'json
+deps:{"<Map<K, V> as core::iter::FromIterator<(IK, IV)>>::from_iter":{"I":["core::iter::IntoIterator","core::marker::Sized"],"IK":["core::convert::Into","core::marker::Sized"],"IV":["core::marker::Sized","core::convert::Into"],"K":["core::hash::Hash","core::cmp::Eq","core::marker::Sized"],"V":["core::marker::Sized"]}}
+candidates:{"<Map<K, V> as core::iter::FromIterator<(IK, IV)>>::from_iter":{}}
+let mut p0 = MaybeUninit::uninit().assume_init(); // I
++<Map<K, V> as core::iter::FromIterator<(IK, IV)>>::from_iter(p0);
++crate::<Map<K, V> as core::iter::FromIterator<(IK, IV)>>::from_iter(p0);
++<Map<K, V>>::from_iter(p0);
+-----------------
+src/lib.rs <Map<K, V> as core::cmp::PartialEq>::eq
+deps:{"<Map<K, V> as core::cmp::PartialEq>::eq":{"K":["core::hash::Hash","core::cmp::Eq","core::marker::Sized"],"V":["core::cmp::PartialEq","core::marker::Sized"]},"core::cmp::impls::<impl core::cmp::PartialEq<&B> for &A>":{},"core::cmp::impls::<impl core::cmp::PartialEq<&B> for &mut A>":{},"core::cmp::impls::<impl core::cmp::PartialEq<&mut B> for &mut A>":{}}
+candidates:{"<Map<K, V> as core::cmp::PartialEq>::eq":{"V":["&'b std::ffi::os_str::OsStr","std::net::ip_addr::Ipv4Addr","std::net::ip_addr::Ipv6Addr","core::cmp::impls::<impl core::cmp::PartialEq<&B> for &A>","core::cmp::impls::<impl core::cmp::PartialEq<&mut B> for &mut A>"]},"core::cmp::impls::<impl core::cmp::PartialEq<&B> for &A>":{},"core::cmp::impls::<impl core::cmp::PartialEq<&B> for &mut A>":{},"core::cmp::impls::<impl core::cmp::PartialEq<&mut B> for &mut A>":{}}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // Map<K, V>
+let mut p1 = & MaybeUninit::uninit().assume_init(); // Map<K, V>
++p0.eq(p1);
++<Map<K, V> as core::cmp::PartialEq>::eq(p0, p1);
++crate::<Map<K, V> as core::cmp::PartialEq>::eq(p0, p1);
++<Map<K, V>>::eq(p0, p1);
+-----------------
+src/lib.rs Iter::<'_, K, V>::empty
+deps:{"Iter::<'_, K, V>::empty":{"K":["core::marker::Sized"],"V":["core::marker::Sized"]}}
+candidates:{"Iter::<'_, K, V>::empty":{}}
++Iter::<'_, K, V>::empty();
++crate::Iter::<'_, K, V>::empty();
++<Iter<'_, K, V>>::empty();
+-----------------
+src/lib.rs <Iter<'i, K, V> as core::iter::Iterator>::next
+'i
+deps:{"<Iter<'i, K, V> as core::iter::Iterator>::next":{"K":["core::marker::Sized"],"V":["core::marker::Sized"]}}
+candidates:{"<Iter<'i, K, V> as core::iter::Iterator>::next":{}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // Iter<'i, K, V>
++p0.next();
++<Iter<'i, K, V> as core::iter::Iterator>::next(p0);
++crate::<Iter<'i, K, V> as core::iter::Iterator>::next(p0);
++<Iter<'i, K, V>>::next(p0);
+-----------------
+src/lib.rs <Iter<'_, K, V> as core::iter::DoubleEndedIterator>::next_back
+deps:{"<Iter<'_, K, V> as core::iter::DoubleEndedIterator>::next_back":{"K":["core::marker::Sized"],"V":["core::marker::Sized"]}}
+candidates:{"<Iter<'_, K, V> as core::iter::DoubleEndedIterator>::next_back":{}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // Iter<'_, K, V>
++p0.next_back();
++<Iter<'_, K, V> as core::iter::DoubleEndedIterator>::next_back(p0);
++crate::<Iter<'_, K, V> as core::iter::DoubleEndedIterator>::next_back(p0);
++<Iter<'_, K, V>>::next_back(p0);
+-----------------
+src/lib.rs <Iter<'_, K, V> as core::iter::ExactSizeIterator>::len
+deps:{"<Iter<'_, K, V> as core::iter::ExactSizeIterator>::len":{"K":["core::marker::Sized"],"V":["core::marker::Sized"]}}
+candidates:{"<Iter<'_, K, V> as core::iter::ExactSizeIterator>::len":{}}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // Iter<'_, K, V>
++p0.len();
++<Iter<'_, K, V> as core::iter::ExactSizeIterator>::len(p0);
++crate::<Iter<'_, K, V> as core::iter::ExactSizeIterator>::len(p0);
++<Iter<'_, K, V>>::len(p0);
+-----------------
+src/lib.rs IterMut::<'_, K, V>::empty
+deps:{"IterMut::<'_, K, V>::empty":{"K":["core::marker::Sized"],"V":["core::marker::Sized"]}}
+candidates:{"IterMut::<'_, K, V>::empty":{}}
++IterMut::<'_, K, V>::empty();
++crate::IterMut::<'_, K, V>::empty();
++<IterMut<'_, K, V>>::empty();
+-----------------
+src/lib.rs <IterMut<'a, K, V> as core::iter::Iterator>::next
+'a
+deps:{"<IterMut<'a, K, V> as core::iter::Iterator>::next":{"K":["core::marker::Sized"],"V":["core::marker::Sized"]}}
+candidates:{"<IterMut<'a, K, V> as core::iter::Iterator>::next":{}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // IterMut<'a, K, V>
++p0.next();
++<IterMut<'a, K, V> as core::iter::Iterator>::next(p0);
++crate::<IterMut<'a, K, V> as core::iter::Iterator>::next(p0);
++<IterMut<'a, K, V>>::next(p0);
+-----------------
+src/lib.rs <IterMut<'_, K, V> as core::iter::DoubleEndedIterator>::next_back
+deps:{"<IterMut<'_, K, V> as core::iter::DoubleEndedIterator>::next_back":{"K":["core::marker::Sized"],"V":["core::marker::Sized"]}}
+candidates:{"<IterMut<'_, K, V> as core::iter::DoubleEndedIterator>::next_back":{}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // IterMut<'_, K, V>
++p0.next_back();
++<IterMut<'_, K, V> as core::iter::DoubleEndedIterator>::next_back(p0);
++crate::<IterMut<'_, K, V> as core::iter::DoubleEndedIterator>::next_back(p0);
++<IterMut<'_, K, V>>::next_back(p0);
+-----------------
+src/lib.rs <IterMut<'_, K, V> as core::iter::ExactSizeIterator>::len
+deps:{"<IterMut<'_, K, V> as core::iter::ExactSizeIterator>::len":{"K":["core::marker::Sized"],"V":["core::marker::Sized"]}}
+candidates:{"<IterMut<'_, K, V> as core::iter::ExactSizeIterator>::len":{}}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // IterMut<'_, K, V>
++p0.len();
++<IterMut<'_, K, V> as core::iter::ExactSizeIterator>::len(p0);
++crate::<IterMut<'_, K, V> as core::iter::ExactSizeIterator>::len(p0);
++<IterMut<'_, K, V>>::len(p0);

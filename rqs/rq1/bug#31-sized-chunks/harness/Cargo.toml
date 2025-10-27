@@ -1,0 +1,17 @@
+[workspace]
+
+[package]
+name = "sized-chunks_fuzz_18107269206091153276"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "sized-chunks_fuzz_18107269206091153276"
+path = "src/sized-chunks_fuzz_18107269206091153276.rs"
+
+[dependencies]
+afl = "=0.15.7"
+home = "=0.5.9"
+global_data = { path = "../../../../code/global_data" }
+sized-chunks = { path = "../../../../dataset/rustsan_crates/sized-chunks-0.6.2" }
+typenum = "*"

@@ -1,0 +1,2 @@
+Crate	Total API	Unsafe API	GETRAWPTR API	Drop API	Mutate API	Generic API	Total Edge	Unsafe Edge	Target Num	Covered API	Covered Unsafe API	Covered Edge	Covered Unsafe Edge	Generation Time
+rdiff	6	0	0	2	0	0	4	0	3	6	0	4	0	149

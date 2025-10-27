@@ -1,0 +1,282 @@
+#![forbid(unsafe_code)]
+#[macro_use]
+extern crate afl;
+
+use smallvec::*;
+use global_data::*;
+use std::str::FromStr;
+use std::ops::{Deref, DerefMut, Index, IndexMut};
+
+#[derive(Debug, Clone, PartialEq, Eq, PartialOrd, Ord)]
+struct CustomType1(String);
+
+fn main() {
+    fuzz_nohook!(|data: &[u8]| {
+        if data.len() < 1108 { return; }
+        set_global_data(data);
+        let global_data = get_global_data();
+        let GLOBAL_DATA = global_data.first_half;
+        let control = _to_u8(GLOBAL_DATA, 0);
+        let t_len = (_to_u8(GLOBAL_DATA, 1) % 33) as usize;
+        let mut base_vec = std::vec::Vec::with_capacity(32);
+        for i in 0..30usize {
+            let l = _to_u8(GLOBAL_DATA, 2 + i) % 17;
+            let start = 11 + i * 17;
+            let end = start + l as usize;
+            let s = _to_str(GLOBAL_DATA, start, end);
+            base_vec.push(CustomType1(String::from(s)));
+        }
+        base_vec.truncate(t_len);
+        let mut sv: SmallVec<[CustomType1; 32]> = match control % 5 {
+            0 => SmallVec::<[CustomType1; 32]>::from_vec(base_vec.clone()),
+            1 => SmallVec::<[CustomType1; 32]>::from_vec(base_vec.clone()),
+            2 => {
+                let mut tmp = SmallVec::<[CustomType1; 32]>::with_capacity(_to_usize(GLOBAL_DATA, 100));
+                tmp.extend(base_vec.clone());
+                tmp
+            }
+            3 => {
+                let mut tmp = SmallVec::<[CustomType1; 32]>::new();
+                tmp.extend(base_vec.clone());
+                tmp
+            }
+            _ => {
+                let l = _to_u8(GLOBAL_DATA, 20) % 17;
+                let s = _to_str(GLOBAL_DATA, 21, 21 + l as usize);
+                SmallVec::<[CustomType1; 32]>::from_elem(CustomType1(String::from(s)), _to_usize(GLOBAL_DATA, 104))
+            }
+        };
+        let ops = (_to_u8(GLOBAL_DATA, 22) % 20) as usize;
+        for i in 0..ops {
+            match _to_u8(GLOBAL_DATA, 23 + i) % 16 {
+                0 => {
+                    let tmp = sv.clone().into_vec();
+                    sv = SmallVec::<[CustomType1; 32]>::from_vec(tmp);
+                }
+                1 => {
+                    let sl = sv.as_slice();
+                    if let Some(item) = sl.get(0) {
+                        println!("{:?}", item);
+                    }
+                }
+                2 => {
+                    if sv.len() > 0 {
+                        let idx = _to_usize(GLOBAL_DATA, 200 + i);
+                        let r = &sv[idx];
+                        println!("{:?}", r);
+                    }
+                }
+                3 => {
+                    let start = _to_usize(GLOBAL_DATA, 300);
+                    let end = _to_usize(GLOBAL_DATA, 308);
+                    let mut d = sv.drain(start..end);
+                    let _ = d.next();
+                    let _ = d.next_back();
+                }
+                4 => {
+                    sv.dedup_by(|a, b| {
+                        if _to_u8(GLOBAL_DATA, 0) % 2 == 0 {
+                            panic!("INTENTIONAL PANIC!");
+                        }
+                        a.0 == b.0
+                    });
+                }
+                5 => {
+                    sv.dedup();
+                }
+                6 => {
+                    sv.reserve(_to_usize(GLOBAL_DATA, 320 + i));
+                }
+                7 => {
+                    let _ = sv.try_reserve(_to_usize(GLOBAL_DATA, 360 + i));
+                }
+                8 => {
+                    let idx = _to_usize(GLOBAL_DATA, 400 + i);
+                    let l = _to_u8(GLOBAL_DATA, 40 + (i % 10)) % 17;
+                    let s = _to_str(GLOBAL_DATA, 420, 420 + l as usize);
+                    sv.insert(idx, CustomType1(String::from(s)));
+                }
+                9 => {
+                    let _ = sv.pop();
+                }
+                10 => {
+                    let idx = _to_usize(GLOBAL_DATA, 500 + i);
+                    let _ = sv.remove(idx);
+                }
+                11 => {
+                    sv.truncate(_to_usize(GLOBAL_DATA, 540 + i));
+                }
+                12 => {
+                    let s = sv.as_mut_slice();
+                    if !s.is_empty() {
+                        let l = _to_u8(GLOBAL_DATA, 60 + (i % 10)) % 17;
+                        let st = _to_str(GLOBAL_DATA, 460, 460 + l as usize);
+                        s[0] = CustomType1(String::from(st));
+                        println!("{:?}", &s[0]);
+                    }
+                }
+                13 => {
+                    let other = SmallVec::<[CustomType1; 32]>::from_vec(base_vec.clone());
+                    let _ = smallvec::SmallVec::cmp(&sv, &other);
+                    let _ = smallvec::SmallVec::partial_cmp(&sv, &other);
+                    let _ = smallvec::SmallVec::eq(&sv, &other);
+                }
+                14 => {
+                    sv.insert_many(_to_usize(GLOBAL_DATA, 580 + i), base_vec.clone());
+                }
+                _ => {
+                    let mut it = sv.clone().into_iter();
+                    let _ = it.next();
+                    let _ = it.next_back();
+                    let _ = it.as_slice();
+                    let _ = it.as_mut_slice();
+                }
+            }
+        }
+        let tmp2 = sv.clone().into_vec();
+        let mut sv2 = SmallVec::<[CustomType1; 32]>::from_vec(tmp2);
+        sv2.extend(sv.clone());
+        let l = _to_u8(GLOBAL_DATA, 90) % 17;
+        let s = _to_str(GLOBAL_DATA, 600, 600 + l as usize);
+        sv2.push(CustomType1(String::from(s)));
+        println!("{}", sv2.len());
+        println!("{}", sv2.capacity());
+        println!("{}", sv2.is_empty());
+        println!("{}", <smallvec::SmallVec<[CustomType1; 32]> as std::borrow::Borrow<[CustomType1]>>::borrow(&sv2).len());
+        println!("{}", sv2.as_ref().len());
+        let _ = sv2.deref();
+        let _ = sv2.deref_mut();
+        sv2 = match sv2.into_inner() {
+            Ok(arr) => SmallVec::<[CustomType1; 32]>::from_buf_and_len(arr, 0),
+            Err(svv) => svv,
+        };
+        sv2.clear();
+        sv2.shrink_to_fit();
+    });
+}
+
+fn _to_u8(data:&[u8], index:usize)->u8 {
+    data[index]
+}
+
+fn _to_u16(data:&[u8], index:usize)->u16 {
+    let data0 = _to_u8(data, index) as u16;
+    let data1 = _to_u8(data, index+1) as u16;
+    data0 << 8 | data1
+}
+
+fn _to_u32(data:&[u8], index:usize)->u32 {
+    let data0 = _to_u16(data, index) as u32;
+    let data1 = _to_u16(data, index+2) as u32;
+    data0 << 16 | data1
+}
+
+fn _to_u64(data:&[u8], index:usize)->u64 {
+    let data0 = _to_u32(data, index) as u64;
+    let data1 = _to_u32(data, index+4) as u64;
+    data0 << 32 | data1
+}
+
+fn _to_u128(data:&[u8], index:usize)->u128 {
+    let data0 = _to_u64(data, index) as u128;
+    let data1 = _to_u64(data, index+8) as u128;
+    data0 << 64 | data1
+}
+
+fn _to_usize(data:&[u8], index:usize)->usize {
+    _to_u64(data, index) as usize
+}
+
+fn _to_i8(data:&[u8], index:usize)->i8 {    
+    data[index] as i8
+}
+
+fn _to_i16(data:&[u8], index:usize)->i16 {
+    let data0 = _to_i8(data, index) as i16;
+    let data1 = _to_i8(data, index+1) as i16;
+    data0 << 8 | data1
+}
+
+fn _to_i32(data:&[u8], index:usize)->i32 {
+    let data0 = _to_i16(data, index) as i32;
+    let data1 = _to_i16(data, index+2) as i32;
+    data0 << 16 | data1
+}
+
+fn _to_i64(data:&[u8], index:usize)->i64 {
+    let data0 = _to_i32(data, index) as i64;
+    let data1 = _to_i32(data, index+4) as i64;
+    data0 << 32 | data1
+}
+
+fn _to_i128(data:&[u8], index:usize)->i128 {
+    let data0 = _to_i64(data, index) as i128;
+    let data1 = _to_i64(data, index+8) as i128;
+    data0 << 64 | data1
+}
+
+fn _to_isize(data:&[u8], index:usize)->isize {
+    _to_i64(data, index) as isize
+}
+
+fn _to_f32(data:&[u8], index: usize) -> f32 {
+    let data_slice = &data[index..index+4];
+    use std::convert::TryInto;
+    let data_array:[u8;4] = data_slice.try_into().expect("slice with incorrect length");
+    f32::from_le_bytes(data_array)
+}
+
+fn _to_f64(data:&[u8], index: usize) -> f64 {
+    let data_slice = &data[index..index+8];
+    use std::convert::TryInto;
+    let data_array:[u8;8] = data_slice.try_into().expect("slice with incorrect length");
+    f64::from_le_bytes(data_array)
+}
+
+fn _to_char(data:&[u8], index: usize)->char {
+    let char_value = _to_u32(data,index);
+    match char::from_u32(char_value) {
+        Some(c)=>c,
+        None=>{
+            std::process::exit(0);
+        }
+    }
+}
+
+fn _to_bool(data:&[u8], index: usize)->bool {
+    let bool_value = _to_u8(data, index);
+    if bool_value %2 == 0 {
+        true
+    } else {
+        false
+    }
+}
+
+fn _to_str(data:&[u8], start_index: usize, end_index: usize)->&str {
+    let data_slice = &data[start_index..end_index];
+    use std::str;
+    match str::from_utf8(data_slice) {
+        Ok(s)=>s,
+        Err(_)=>{
+            std::process::exit(0);
+        }
+    }
+}
+
+fn _unwrap_option<T>(opt: Option<T>) -> T {
+    match opt {
+        Some(_t) => _t,
+        None => {
+            std::process::exit(0);
+        }
+    }
+}
+
+fn _unwrap_result<T, E>(_res: std::result::Result<T, E>) -> T {
+    match _res {
+        Ok(_t) => _t,
+        Err(_) => {
+            std::process::exit(0);
+        },
+    }
+}

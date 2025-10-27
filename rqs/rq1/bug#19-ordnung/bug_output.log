@@ -1,0 +1,400 @@
+     Removed 227 files, 91.6MiB total
+   Compiling libc v0.2.175
+   Compiling crunchy v0.2.4
+   Compiling tiny-keccak v2.0.2
+   Compiling cfg-if v1.0.3
+   Compiling once_cell v1.21.3
+   Compiling semver v1.0.26
+   Compiling home v0.5.5
+   Compiling xdg v2.5.2
+   Compiling global_data v0.1.0 (/home/cdc/deepSURF-sp26-artifacts/artifact_code/global_data)
+   Compiling afl v0.15.7
+   Compiling rustc_version v0.4.1
+   Compiling getrandom v0.2.16
+   Compiling const-random-macro v0.1.16
+   Compiling const-random v0.1.18
+   Compiling ahash v0.3.8
+   Compiling ordnung v0.0.1 (/home/cdc/deepSURF-sp26-artifacts/artifact_data/dataset/erasan_crates/ordnung-0.0.1)
+warning: unused return value of `ManuallyDrop::<T>::new` that must be used
+   --> /home/cdc/deepSURF-sp26-artifacts/artifact_data/dataset/erasan_crates/ordnung-0.0.1/src/compact.rs:153:9
+    |
+153 |         ManuallyDrop::new(core::mem::replace(self, Self::from_stdvec_unchecked(stdvec)));
+    |         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |
+    = note: if you don't need the wrapper, you can use `mem::forget` instead
+    = note: `#[warn(unused_must_use)]` on by default
+help: use `let _ = ...` to ignore the resulting value
+    |
+153 |         let _ = ManuallyDrop::new(core::mem::replace(self, Self::from_stdvec_unchecked(stdvec)));
+    |         +++++++
+
+warning: `ordnung` (lib) generated 1 warning
+   Compiling ordnung_fuzz_5150518976445801913 v0.1.0 (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#19-ordnung/harness)
+warning: unused import: `ordnung::*`
+ --> src/ordnung_fuzz_5150518976445801913.rs:5:5
+  |
+5 | use ordnung::*;
+  |     ^^^^^^^^^^
+  |
+  = note: `#[warn(unused_imports)]` on by default
+
+warning: unused import: `std::str::FromStr`
+ --> src/ordnung_fuzz_5150518976445801913.rs:7:5
+  |
+7 | use std::str::FromStr;
+  |     ^^^^^^^^^^^^^^^^^
+
+warning: unused imports: `DerefMut`, `Deref`, `IndexMut`, `Index`
+ --> src/ordnung_fuzz_5150518976445801913.rs:8:16
+  |
+8 | use std::ops::{Deref, DerefMut, Index, IndexMut};
+  |                ^^^^^  ^^^^^^^^  ^^^^^  ^^^^^^^^
+
+warning: the item `TryInto` is imported redundantly
+   --> src/ordnung_fuzz_5150518976445801913.rs:255:9
+    |
+255 |     use std::convert::TryInto;
+    |         ^^^^^^^^^^^^^^^^^^^^^
+   --> /rustc/11f32b73e0dc9287e305b5b9980d24aecdc8c17f/library/std/src/prelude/mod.rs:129:13
+    |
+    = note: the item `TryInto` is already defined here
+
+warning: the item `TryInto` is imported redundantly
+   --> src/ordnung_fuzz_5150518976445801913.rs:262:9
+    |
+262 |     use std::convert::TryInto;
+    |         ^^^^^^^^^^^^^^^^^^^^^
+   --> /rustc/11f32b73e0dc9287e305b5b9980d24aecdc8c17f/library/std/src/prelude/mod.rs:129:13
+    |
+    = note: the item `TryInto` is already defined here
+
+warning: variable does not need to be mutable
+  --> src/ordnung_fuzz_5150518976445801913.rs:18:7
+   |
+18 |         let mut t_0 = _to_u8(GLOBAL_DATA, 0) % 33;
+   |             ----^^^
+   |             |
+   |             help: remove this `mut`
+   |
+   = note: `#[warn(unused_mut)]` on by default
+
+warning: variable does not need to be mutable
+  --> src/ordnung_fuzz_5150518976445801913.rs:21:7
+   |
+21 |         let mut t_2 = _to_u8(GLOBAL_DATA, 1) % 17;
+   |             ----^^^
+   |             |
+   |             help: remove this `mut`
+
+warning: variable does not need to be mutable
+  --> src/ordnung_fuzz_5150518976445801913.rs:26:7
+   |
+26 |         let mut t_6 = _to_u8(GLOBAL_DATA, 18) % 17;
+   |             ----^^^
+   |             |
+   |             help: remove this `mut`
+
+warning: variable does not need to be mutable
+  --> src/ordnung_fuzz_5150518976445801913.rs:31:7
+   |
+31 |         let mut t_10 = _to_u8(GLOBAL_DATA, 35) % 17;
+   |             ----^^^^
+   |             |
+   |             help: remove this `mut`
+
+warning: variable does not need to be mutable
+  --> src/ordnung_fuzz_5150518976445801913.rs:36:7
+   |
+36 |         let mut t_14 = _to_u8(GLOBAL_DATA, 52) % 17;
+   |             ----^^^^
+   |             |
+   |             help: remove this `mut`
+
+warning: variable does not need to be mutable
+  --> src/ordnung_fuzz_5150518976445801913.rs:41:7
+   |
+41 |         let mut t_18 = _to_u8(GLOBAL_DATA, 69) % 17;
+   |             ----^^^^
+   |             |
+   |             help: remove this `mut`
+
+warning: variable does not need to be mutable
+  --> src/ordnung_fuzz_5150518976445801913.rs:46:7
+   |
+46 |         let mut t_22 = _to_u8(GLOBAL_DATA, 86) % 17;
+   |             ----^^^^
+   |             |
+   |             help: remove this `mut`
+
+warning: variable does not need to be mutable
+  --> src/ordnung_fuzz_5150518976445801913.rs:51:7
+   |
+51 |         let mut t_26 = _to_u8(GLOBAL_DATA, 103) % 17;
+   |             ----^^^^
+   |             |
+   |             help: remove this `mut`
+
+warning: variable does not need to be mutable
+  --> src/ordnung_fuzz_5150518976445801913.rs:56:7
+   |
+56 |         let mut t_30 = _to_u8(GLOBAL_DATA, 120) % 17;
+   |             ----^^^^
+   |             |
+   |             help: remove this `mut`
+
+warning: variable does not need to be mutable
+  --> src/ordnung_fuzz_5150518976445801913.rs:61:7
+   |
+61 |         let mut t_34 = _to_u8(GLOBAL_DATA, 137) % 17;
+   |             ----^^^^
+   |             |
+   |             help: remove this `mut`
+
+warning: variable does not need to be mutable
+  --> src/ordnung_fuzz_5150518976445801913.rs:66:7
+   |
+66 |         let mut t_38 = _to_u8(GLOBAL_DATA, 154) % 17;
+   |             ----^^^^
+   |             |
+   |             help: remove this `mut`
+
+warning: variable does not need to be mutable
+  --> src/ordnung_fuzz_5150518976445801913.rs:71:7
+   |
+71 |         let mut t_42 = _to_u8(GLOBAL_DATA, 171) % 17;
+   |             ----^^^^
+   |             |
+   |             help: remove this `mut`
+
+warning: variable does not need to be mutable
+  --> src/ordnung_fuzz_5150518976445801913.rs:76:7
+   |
+76 |         let mut t_46 = _to_u8(GLOBAL_DATA, 188) % 17;
+   |             ----^^^^
+   |             |
+   |             help: remove this `mut`
+
+warning: variable does not need to be mutable
+  --> src/ordnung_fuzz_5150518976445801913.rs:81:7
+   |
+81 |         let mut t_50 = _to_u8(GLOBAL_DATA, 205) % 17;
+   |             ----^^^^
+   |             |
+   |             help: remove this `mut`
+
+warning: variable does not need to be mutable
+  --> src/ordnung_fuzz_5150518976445801913.rs:86:7
+   |
+86 |         let mut t_54 = _to_u8(GLOBAL_DATA, 222) % 17;
+   |             ----^^^^
+   |             |
+   |             help: remove this `mut`
+
+warning: variable does not need to be mutable
+  --> src/ordnung_fuzz_5150518976445801913.rs:91:7
+   |
+91 |         let mut t_58 = _to_u8(GLOBAL_DATA, 239) % 17;
+   |             ----^^^^
+   |             |
+   |             help: remove this `mut`
+
+warning: variable does not need to be mutable
+  --> src/ordnung_fuzz_5150518976445801913.rs:96:7
+   |
+96 |         let mut t_62 = _to_u8(GLOBAL_DATA, 256) % 17;
+   |             ----^^^^
+   |             |
+   |             help: remove this `mut`
+
+warning: variable does not need to be mutable
+   --> src/ordnung_fuzz_5150518976445801913.rs:101:7
+    |
+101 |         let mut t_66 = _to_u8(GLOBAL_DATA, 273) % 17;
+    |             ----^^^^
+    |             |
+    |             help: remove this `mut`
+
+warning: variable does not need to be mutable
+   --> src/ordnung_fuzz_5150518976445801913.rs:106:7
+    |
+106 |         let mut t_70 = _to_u8(GLOBAL_DATA, 290) % 17;
+    |             ----^^^^
+    |             |
+    |             help: remove this `mut`
+
+warning: variable does not need to be mutable
+   --> src/ordnung_fuzz_5150518976445801913.rs:111:7
+    |
+111 |         let mut t_74 = _to_u8(GLOBAL_DATA, 307) % 17;
+    |             ----^^^^
+    |             |
+    |             help: remove this `mut`
+
+warning: variable does not need to be mutable
+   --> src/ordnung_fuzz_5150518976445801913.rs:116:7
+    |
+116 |         let mut t_78 = _to_u8(GLOBAL_DATA, 324) % 17;
+    |             ----^^^^
+    |             |
+    |             help: remove this `mut`
+
+warning: variable does not need to be mutable
+   --> src/ordnung_fuzz_5150518976445801913.rs:121:7
+    |
+121 |         let mut t_82 = _to_u8(GLOBAL_DATA, 341) % 17;
+    |             ----^^^^
+    |             |
+    |             help: remove this `mut`
+
+warning: variable does not need to be mutable
+   --> src/ordnung_fuzz_5150518976445801913.rs:126:7
+    |
+126 |         let mut t_86 = _to_u8(GLOBAL_DATA, 358) % 17;
+    |             ----^^^^
+    |             |
+    |             help: remove this `mut`
+
+warning: variable does not need to be mutable
+   --> src/ordnung_fuzz_5150518976445801913.rs:131:7
+    |
+131 |         let mut t_90 = _to_u8(GLOBAL_DATA, 375) % 17;
+    |             ----^^^^
+    |             |
+    |             help: remove this `mut`
+
+warning: variable does not need to be mutable
+   --> src/ordnung_fuzz_5150518976445801913.rs:136:7
+    |
+136 |         let mut t_94 = _to_u8(GLOBAL_DATA, 392) % 17;
+    |             ----^^^^
+    |             |
+    |             help: remove this `mut`
+
+warning: variable does not need to be mutable
+   --> src/ordnung_fuzz_5150518976445801913.rs:141:7
+    |
+141 |         let mut t_98 = _to_u8(GLOBAL_DATA, 409) % 17;
+    |             ----^^^^
+    |             |
+    |             help: remove this `mut`
+
+warning: variable does not need to be mutable
+   --> src/ordnung_fuzz_5150518976445801913.rs:146:7
+    |
+146 |         let mut t_102 = _to_u8(GLOBAL_DATA, 426) % 17;
+    |             ----^^^^^
+    |             |
+    |             help: remove this `mut`
+
+warning: variable does not need to be mutable
+   --> src/ordnung_fuzz_5150518976445801913.rs:151:7
+    |
+151 |         let mut t_106 = _to_u8(GLOBAL_DATA, 443) % 17;
+    |             ----^^^^^
+    |             |
+    |             help: remove this `mut`
+
+warning: variable does not need to be mutable
+   --> src/ordnung_fuzz_5150518976445801913.rs:156:7
+    |
+156 |         let mut t_110 = _to_u8(GLOBAL_DATA, 460) % 17;
+    |             ----^^^^^
+    |             |
+    |             help: remove this `mut`
+
+warning: variable does not need to be mutable
+   --> src/ordnung_fuzz_5150518976445801913.rs:161:7
+    |
+161 |         let mut t_114 = _to_u8(GLOBAL_DATA, 477) % 17;
+    |             ----^^^^^
+    |             |
+    |             help: remove this `mut`
+
+warning: variable does not need to be mutable
+   --> src/ordnung_fuzz_5150518976445801913.rs:166:7
+    |
+166 |         let mut t_118 = _to_u8(GLOBAL_DATA, 494) % 17;
+    |             ----^^^^^
+    |             |
+    |             help: remove this `mut`
+
+warning: variable does not need to be mutable
+   --> src/ordnung_fuzz_5150518976445801913.rs:171:7
+    |
+171 |         let mut t_122 = _to_u8(GLOBAL_DATA, 511) % 17;
+    |             ----^^^^^
+    |             |
+    |             help: remove this `mut`
+
+warning: variable does not need to be mutable
+   --> src/ordnung_fuzz_5150518976445801913.rs:176:7
+    |
+176 |         let mut t_126 = _to_u8(GLOBAL_DATA, 528) % 17;
+    |             ----^^^^^
+    |             |
+    |             help: remove this `mut`
+
+warning: variable does not need to be mutable
+   --> src/ordnung_fuzz_5150518976445801913.rs:184:7
+    |
+184 |         let mut t_131 = &mut t_130;
+    |             ----^^^^^
+    |             |
+    |             help: remove this `mut`
+
+warning: field `0` is never read
+  --> src/ordnung_fuzz_5150518976445801913.rs:10:20
+   |
+10 | struct CustomType0(String);
+   |        ----------- ^^^^^^
+   |        |
+   |        field in this struct
+   |
+   = note: `#[warn(dead_code)]` on by default
+help: consider changing the field to be of unit type to suppress this warning while preserving the field numbering, or remove the field
+   |
+10 | struct CustomType0(());
+   |                    ~~
+
+warning: variable `GLOBAL_DATA` should have a snake case name
+  --> src/ordnung_fuzz_5150518976445801913.rs:17:7
+   |
+17 |         let GLOBAL_DATA = global_data.first_half;
+   |             ^^^^^^^^^^^ help: convert the identifier to snake case: `global_data`
+   |
+   = note: `#[warn(non_snake_case)]` on by default
+
+warning: `ordnung_fuzz_5150518976445801913` (bin "ordnung_fuzz_5150518976445801913") generated 41 warnings (run `cargo fix --bin "ordnung_fuzz_5150518976445801913"` to apply 37 suggestions)
+    Finished dev [unoptimized + debuginfo] target(s) in 2.92s
+thread 'main' panicked at /home/cdc/deepSURF-sp26-artifacts/artifact_data/dataset/erasan_crates/ordnung-0.0.1/src/compact.rs:110:30:
+removal index (is 0) should be < len (is 0)
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+=================================================================
+==1392650==ERROR: AddressSanitizer: attempting double-free on 0x517000000080 in thread T0:
+    #0 0x5561ec087c46  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#19-ordnung/harness/target/x86_64-unknown-linux-gnu/debug/ordnung_fuzz_5150518976445801913+0x95c46) (BuildId: b2d53e2a8c3db23966336a10ab10897f5b318a5c)
+    #1 0x5561ec0bf9a0  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#19-ordnung/harness/target/x86_64-unknown-linux-gnu/debug/ordnung_fuzz_5150518976445801913+0xcd9a0) (BuildId: b2d53e2a8c3db23966336a10ab10897f5b318a5c)
+    #2 0x5561ec0c263a  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#19-ordnung/harness/target/x86_64-unknown-linux-gnu/debug/ordnung_fuzz_5150518976445801913+0xd063a) (BuildId: b2d53e2a8c3db23966336a10ab10897f5b318a5c)
+    #3 0x5561ec0c19b1  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#19-ordnung/harness/target/x86_64-unknown-linux-gnu/debug/ordnung_fuzz_5150518976445801913+0xcf9b1) (BuildId: b2d53e2a8c3db23966336a10ab10897f5b318a5c)
+    #4 0x5561ec0b12f1  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#19-ordnung/harness/target/x86_64-unknown-linux-gnu/debug/ordnung_fuzz_5150518976445801913+0xbf2f1) (BuildId: b2d53e2a8c3db23966336a10ab10897f5b318a5c)
+    #5 0x5561ec0b1340  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#19-ordnung/harness/target/x86_64-unknown-linux-gnu/debug/ordnung_fuzz_5150518976445801913+0xbf340) (BuildId: b2d53e2a8c3db23966336a10ab10897f5b318a5c)
+    #6 0x5561ec0dc670  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#19-ordnung/harness/target/x86_64-unknown-linux-gnu/debug/ordnung_fuzz_5150518976445801913+0xea670) (BuildId: b2d53e2a8c3db23966336a10ab10897f5b318a5c)
+    #7 0x5561ec0c27f5  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#19-ordnung/harness/target/x86_64-unknown-linux-gnu/debug/ordnung_fuzz_5150518976445801913+0xd07f5) (BuildId: b2d53e2a8c3db23966336a10ab10897f5b318a5c)
+    #8 0x7fcb38d66d8f  (/lib/x86_64-linux-gnu/libc.so.6+0x29d8f) (BuildId: 490fef8403240c91833978d494d39e537409b92e)
+    #9 0x7fcb38d66e3f  (/lib/x86_64-linux-gnu/libc.so.6+0x29e3f) (BuildId: 490fef8403240c91833978d494d39e537409b92e)
+    #10 0x5561ec001334  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#19-ordnung/harness/target/x86_64-unknown-linux-gnu/debug/ordnung_fuzz_5150518976445801913+0xf334) (BuildId: b2d53e2a8c3db23966336a10ab10897f5b318a5c)
+
+0x517000000080 is located 0 bytes inside of 768-byte region [0x517000000080,0x517000000380)
+freed by thread T0 here:
+    #0 0x5561ec087c46  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#19-ordnung/harness/target/x86_64-unknown-linux-gnu/debug/ordnung_fuzz_5150518976445801913+0x95c46) (BuildId: b2d53e2a8c3db23966336a10ab10897f5b318a5c)
+    #1 0x5561ec0bf4ad  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#19-ordnung/harness/target/x86_64-unknown-linux-gnu/debug/ordnung_fuzz_5150518976445801913+0xcd4ad) (BuildId: b2d53e2a8c3db23966336a10ab10897f5b318a5c)
+    #2 0x5561ec0c263a  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#19-ordnung/harness/target/x86_64-unknown-linux-gnu/debug/ordnung_fuzz_5150518976445801913+0xd063a) (BuildId: b2d53e2a8c3db23966336a10ab10897f5b318a5c)
+    #3 0x5561ec0b12f1  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#19-ordnung/harness/target/x86_64-unknown-linux-gnu/debug/ordnung_fuzz_5150518976445801913+0xbf2f1) (BuildId: b2d53e2a8c3db23966336a10ab10897f5b318a5c)
+
+previously allocated by thread T0 here:
+    #0 0x5561ec087eee  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#19-ordnung/harness/target/x86_64-unknown-linux-gnu/debug/ordnung_fuzz_5150518976445801913+0x95eee) (BuildId: b2d53e2a8c3db23966336a10ab10897f5b318a5c)
+    #1 0x5561ec0b174a  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#19-ordnung/harness/target/x86_64-unknown-linux-gnu/debug/ordnung_fuzz_5150518976445801913+0xbf74a) (BuildId: b2d53e2a8c3db23966336a10ab10897f5b318a5c)
+    #2 0x5561ec0c263a  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#19-ordnung/harness/target/x86_64-unknown-linux-gnu/debug/ordnung_fuzz_5150518976445801913+0xd063a) (BuildId: b2d53e2a8c3db23966336a10ab10897f5b318a5c)
+    #3 0x5561ec0b12f1  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#19-ordnung/harness/target/x86_64-unknown-linux-gnu/debug/ordnung_fuzz_5150518976445801913+0xbf2f1) (BuildId: b2d53e2a8c3db23966336a10ab10897f5b318a5c)
+
+SUMMARY: AddressSanitizer: double-free (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#19-ordnung/harness/target/x86_64-unknown-linux-gnu/debug/ordnung_fuzz_5150518976445801913+0x95c46) (BuildId: b2d53e2a8c3db23966336a10ab10897f5b318a5c) 
+==1392650==ABORTING

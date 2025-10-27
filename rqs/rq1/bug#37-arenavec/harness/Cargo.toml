@@ -1,0 +1,16 @@
+[workspace]
+
+[package]
+name = "arenavec_fuzz_3386935091047480328"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "arenavec_fuzz_3386935091047480328"
+path = "src/arenavec_fuzz_3386935091047480328.rs"
+
+[dependencies]
+afl = "=0.15.7"
+home = "=0.5.9"
+global_data = { path = "../../../../code/global_data" }
+arenavec = { path = "../../../../dataset/rustsan_crates/arenavec-0.1.1" }

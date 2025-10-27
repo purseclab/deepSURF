@@ -1,0 +1,100 @@
+     Removed 139 files, 54.7MiB total
+   Compiling semver v1.0.26
+   Compiling libc v0.2.175
+   Compiling home v0.5.5
+   Compiling void v1.0.2
+   Compiling xdg v2.5.2
+   Compiling global_data v0.1.0 (/home/cdc/deepSURF-sp26-artifacts/artifact_code/global_data)
+   Compiling unreachable v1.0.0
+   Compiling smallvec v0.6.6 (/home/cdc/deepSURF-sp26-artifacts/artifact_data/dataset/erasan_crates/smallvec-0.6.6)
+   Compiling afl v0.15.7
+warning: use of deprecated function `std::mem::uninitialized`: use `mem::MaybeUninit` instead
+   --> /home/cdc/deepSURF-sp26-artifacts/artifact_data/dataset/erasan_crates/smallvec-0.6.6/lib.rs:403:54
+    |
+403 |                 data: SmallVecData::from_inline(mem::uninitialized()),
+    |                                                      ^^^^^^^^^^^^^
+    |
+    = note: `#[warn(deprecated)]` on by default
+
+warning: use of deprecated function `std::mem::uninitialized`: use `mem::MaybeUninit` instead
+   --> /home/cdc/deepSURF-sp26-artifacts/artifact_data/dataset/erasan_crates/smallvec-0.6.6/lib.rs:444:68
+    |
+444 |                 let mut data = SmallVecData::<A>::from_inline(mem::uninitialized());
+    |                                                                    ^^^^^^^^^^^^^
+
+warning: use of deprecated function `std::mem::uninitialized`: use `mem::MaybeUninit` instead
+   --> /home/cdc/deepSURF-sp26-artifacts/artifact_data/dataset/erasan_crates/smallvec-0.6.6/lib.rs:648:60
+    |
+648 |                 self.data = SmallVecData::from_inline(mem::uninitialized());
+    |                                                            ^^^^^^^^^^^^^
+
+warning: use of deprecated function `std::mem::uninitialized`: use `mem::MaybeUninit` instead
+   --> /home/cdc/deepSURF-sp26-artifacts/artifact_data/dataset/erasan_crates/smallvec-0.6.6/lib.rs:711:60
+    |
+711 |                 self.data = SmallVecData::from_inline(mem::uninitialized());
+    |                                                            ^^^^^^^^^^^^^
+
+warning: use of deprecated function `std::mem::uninitialized`: use `mem::MaybeUninit` instead
+    --> /home/cdc/deepSURF-sp26-artifacts/artifact_data/dataset/erasan_crates/smallvec-0.6.6/lib.rs:1035:44
+     |
+1035 |                     let mut data: A = mem::uninitialized();
+     |                                            ^^^^^^^^^^^^^
+
+warning: `smallvec` (lib) generated 5 warnings
+   Compiling rustc_version v0.4.1
+   Compiling smallvec_fuzz_10396966638226739008 v0.1.0 (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#15-smallvec-0.6.6/harness)
+warning: the item `TryInto` is imported redundantly
+   --> src/smallvec_fuzz_10396966638226739008.rs:167:9
+    |
+167 |     use std::convert::TryInto;
+    |         ^^^^^^^^^^^^^^^^^^^^^
+   --> /rustc/11f32b73e0dc9287e305b5b9980d24aecdc8c17f/library/std/src/prelude/mod.rs:129:13
+    |
+    = note: the item `TryInto` is already defined here
+    |
+    = note: `#[warn(unused_imports)]` on by default
+
+warning: the item `TryInto` is imported redundantly
+   --> src/smallvec_fuzz_10396966638226739008.rs:174:9
+    |
+174 |     use std::convert::TryInto;
+    |         ^^^^^^^^^^^^^^^^^^^^^
+   --> /rustc/11f32b73e0dc9287e305b5b9980d24aecdc8c17f/library/std/src/prelude/mod.rs:129:13
+    |
+    = note: the item `TryInto` is already defined here
+
+warning: variable `GLOBAL_DATA` should have a snake case name
+  --> src/smallvec_fuzz_10396966638226739008.rs:13:13
+   |
+13 |         let GLOBAL_DATA = global_data.first_half;
+   |             ^^^^^^^^^^^ help: convert the identifier to snake case: `global_data`
+   |
+   = note: `#[warn(non_snake_case)]` on by default
+
+warning: `smallvec_fuzz_10396966638226739008` (bin "smallvec_fuzz_10396966638226739008") generated 3 warnings
+    Finished dev [unoptimized + debuginfo] target(s) in 2.78s
+=================================================================
+==1388298==ERROR: AddressSanitizer: attempting double-free on 0x527000000100 in thread T0:
+    #0 0x55a04c76bd36  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#15-smallvec-0.6.6/harness/target/x86_64-unknown-linux-gnu/debug/smallvec_fuzz_10396966638226739008+0x96d36) (BuildId: 08b4a703eefe1cb401a0f19f41258709a98ac220)
+    #1 0x55a04c79bded  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#15-smallvec-0.6.6/harness/target/x86_64-unknown-linux-gnu/debug/smallvec_fuzz_10396966638226739008+0xc6ded) (BuildId: 08b4a703eefe1cb401a0f19f41258709a98ac220)
+    #2 0x55a04c7a285a  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#15-smallvec-0.6.6/harness/target/x86_64-unknown-linux-gnu/debug/smallvec_fuzz_10396966638226739008+0xcd85a) (BuildId: 08b4a703eefe1cb401a0f19f41258709a98ac220)
+    #3 0x55a04c7a14b1  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#15-smallvec-0.6.6/harness/target/x86_64-unknown-linux-gnu/debug/smallvec_fuzz_10396966638226739008+0xcc4b1) (BuildId: 08b4a703eefe1cb401a0f19f41258709a98ac220)
+    #4 0x55a04c795431  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#15-smallvec-0.6.6/harness/target/x86_64-unknown-linux-gnu/debug/smallvec_fuzz_10396966638226739008+0xc0431) (BuildId: 08b4a703eefe1cb401a0f19f41258709a98ac220)
+    #5 0x55a04c795480  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#15-smallvec-0.6.6/harness/target/x86_64-unknown-linux-gnu/debug/smallvec_fuzz_10396966638226739008+0xc0480) (BuildId: 08b4a703eefe1cb401a0f19f41258709a98ac220)
+    #6 0x55a04c7bc9c0  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#15-smallvec-0.6.6/harness/target/x86_64-unknown-linux-gnu/debug/smallvec_fuzz_10396966638226739008+0xe79c0) (BuildId: 08b4a703eefe1cb401a0f19f41258709a98ac220)
+    #7 0x55a04c7a2a15  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#15-smallvec-0.6.6/harness/target/x86_64-unknown-linux-gnu/debug/smallvec_fuzz_10396966638226739008+0xcda15) (BuildId: 08b4a703eefe1cb401a0f19f41258709a98ac220)
+    #8 0x7f14e1959d8f  (/lib/x86_64-linux-gnu/libc.so.6+0x29d8f) (BuildId: 490fef8403240c91833978d494d39e537409b92e)
+    #9 0x7f14e1959e3f  (/lib/x86_64-linux-gnu/libc.so.6+0x29e3f) (BuildId: 490fef8403240c91833978d494d39e537409b92e)
+    #10 0x55a04c6e5304  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#15-smallvec-0.6.6/harness/target/x86_64-unknown-linux-gnu/debug/smallvec_fuzz_10396966638226739008+0x10304) (BuildId: 08b4a703eefe1cb401a0f19f41258709a98ac220)
+
+0x527000000100 is located 0 bytes inside of 12336-byte region [0x527000000100,0x527000003130)
+freed by thread T0 here:
+    #0 0x55a04c76bd36  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#15-smallvec-0.6.6/harness/target/x86_64-unknown-linux-gnu/debug/smallvec_fuzz_10396966638226739008+0x96d36) (BuildId: 08b4a703eefe1cb401a0f19f41258709a98ac220)
+    #1 0x55a04c79fa50  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#15-smallvec-0.6.6/harness/target/x86_64-unknown-linux-gnu/debug/smallvec_fuzz_10396966638226739008+0xcaa50) (BuildId: 08b4a703eefe1cb401a0f19f41258709a98ac220)
+
+previously allocated by thread T0 here:
+    #0 0x55a04c76bfde  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#15-smallvec-0.6.6/harness/target/x86_64-unknown-linux-gnu/debug/smallvec_fuzz_10396966638226739008+0x96fde) (BuildId: 08b4a703eefe1cb401a0f19f41258709a98ac220)
+    #1 0x55a04c79f913  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#15-smallvec-0.6.6/harness/target/x86_64-unknown-linux-gnu/debug/smallvec_fuzz_10396966638226739008+0xca913) (BuildId: 08b4a703eefe1cb401a0f19f41258709a98ac220)
+
+SUMMARY: AddressSanitizer: double-free (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#15-smallvec-0.6.6/harness/target/x86_64-unknown-linux-gnu/debug/smallvec_fuzz_10396966638226739008+0x96d36) (BuildId: 08b4a703eefe1cb401a0f19f41258709a98ac220) 
+==1388298==ABORTING

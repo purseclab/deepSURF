@@ -1,0 +1,905 @@
+deepSURF: Generated Targets to be Fuzzed
+------------------------------------------------------------------------------------------------------------------------------------
+  StableURAPI: grow::/home/cdc/SURF/erasan_dataset/smallvec-1.6.0/src/lib.rs::807,
+    - URAPI: SmallVec::grow,
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * llm_only_target_43_deepseek-r1_turn3
+  StableURAPI: try_reserve_exact::/home/cdc/SURF/erasan_dataset/smallvec-1.6.0/src/lib.rs::891,
+    - URAPI: SmallVec::try_reserve_exact,
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * llm_only_target_10_deepseek-r1_turn1
+      * llm_only_target_32_deepseek-r1_turn4
+  StableURAPI: pop::/home/cdc/SURF/erasan_dataset/smallvec-1.6.0/src/lib.rs::772,
+    - URAPI: SmallVec::swap_remove,
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * llm_only_target_25_deepseek-r1_turn2
+      * llm_only_target_21_deepseek-r1_turn2
+      * llm_only_target_11_deepseek-r1_turn3
+      * llm_only_target_31_deepseek-r1_turn2
+      * llm_only_target_27_deepseek-r1_turn2
+      * llm_only_target_1_deepseek-r1_turn2
+      * llm_only_target_20_deepseek-r1_turn1
+      * llm_only_target_4_deepseek-r1_turn2
+      * llm_only_target_42_deepseek-r1_turn2
+      * llm_only_target_37_deepseek-r1_turn1
+      * llm_only_target_16_deepseek-r1_turn1
+      * llm_only_target_17_deepseek-r1_turn3
+      * llm_only_target_28_deepseek-r1_turn2
+      * llm_only_target_5_deepseek-r1_turn2
+      * llm_only_target_43_deepseek-r1_turn3
+      * llm_only_target_29_deepseek-r1_turn5
+      * llm_only_target_10_deepseek-r1_turn1
+      * llm_only_target_9_deepseek-r1_turn5
+      * llm_only_target_8_deepseek-r1_turn3
+      * llm_only_target_18_deepseek-r1_turn3
+      * llm_only_target_14_deepseek-r1_turn3
+      * llm_only_target_36_deepseek-r1_turn1
+      * llm_only_target_26_deepseek-r1_turn5
+      * llm_only_target_19_deepseek-r1_turn1
+      * llm_only_target_40_deepseek-r1_turn1
+      * llm_only_target_34_deepseek-r1_turn4
+      * llm_only_target_3_deepseek-r1_turn2
+      * llm_only_target_33_deepseek-r1_turn4
+      * llm_only_target_38_deepseek-r1_turn1
+      * llm_only_target_0_deepseek-r1_turn2
+      * llm_only_target_32_deepseek-r1_turn4
+      * llm_only_target_39_deepseek-r1_turn3
+      * llm_only_target_22_deepseek-r1_turn4
+      * llm_only_target_7_deepseek-r1_turn3
+  StableURAPI: truncate::/home/cdc/SURF/erasan_dataset/smallvec-1.6.0/src/lib.rs::931,
+    - URAPI: SmallVec::swap_remove,
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * llm_only_target_36_deepseek-r1_turn1
+      * llm_only_target_7_deepseek-r1_turn3
+      * llm_only_target_14_deepseek-r1_turn3
+      * llm_only_target_41_deepseek-r1_turn5
+      * llm_only_target_10_deepseek-r1_turn1
+      * llm_only_target_13_deepseek-r1_turn1
+      * llm_only_target_4_deepseek-r1_turn2
+      * llm_only_target_25_deepseek-r1_turn2
+      * llm_only_target_31_deepseek-r1_turn2
+      * llm_only_target_3_deepseek-r1_turn2
+      * llm_only_target_19_deepseek-r1_turn1
+      * llm_only_target_8_deepseek-r1_turn3
+      * llm_only_target_40_deepseek-r1_turn1
+      * llm_only_target_1_deepseek-r1_turn2
+      * llm_only_target_43_deepseek-r1_turn3
+      * llm_only_target_37_deepseek-r1_turn1
+      * llm_only_target_0_deepseek-r1_turn2
+      * llm_only_target_24_deepseek-r1_turn3
+      * llm_only_target_16_deepseek-r1_turn1
+      * llm_only_target_18_deepseek-r1_turn3
+      * llm_only_target_35_deepseek-r1_turn2
+      * llm_only_target_21_deepseek-r1_turn2
+      * llm_only_target_26_deepseek-r1_turn5
+      * llm_only_target_33_deepseek-r1_turn4
+      * llm_only_target_29_deepseek-r1_turn5
+      * llm_only_target_2_deepseek-r1_turn2
+      * llm_only_target_11_deepseek-r1_turn3
+      * llm_only_target_30_deepseek-r1_turn6
+      * llm_only_target_39_deepseek-r1_turn3
+      * llm_only_target_6_deepseek-r1_turn2
+      * llm_only_target_20_deepseek-r1_turn1
+      * llm_only_target_32_deepseek-r1_turn4
+      * llm_only_target_12_deepseek-r1_turn2
+      * llm_only_target_42_deepseek-r1_turn2
+      * llm_only_target_34_deepseek-r1_turn4
+      * llm_only_target_22_deepseek-r1_turn4
+      * llm_only_target_38_deepseek-r1_turn1
+      * llm_only_target_5_deepseek-r1_turn2
+      * llm_only_target_28_deepseek-r1_turn2
+  StableURAPI: deref_mut::/home/cdc/SURF/erasan_dataset/smallvec-1.6.0/src/lib.rs::1455,
+    - URAPI: SmallVec::swap_remove,
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * llm_only_target_22_deepseek-r1_turn4
+      * llm_only_target_21_deepseek-r1_turn2
+      * llm_only_target_37_deepseek-r1_turn1
+      * llm_only_target_17_deepseek-r1_turn3
+  StableURAPI: resize::/home/cdc/SURF/erasan_dataset/smallvec-1.6.0/src/lib.rs::1406,
+    - URAPI: SmallVec::new,
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * llm_only_target_39_deepseek-r1_turn3
+      * llm_only_target_21_deepseek-r1_turn2
+      * llm_only_target_43_deepseek-r1_turn3
+      * llm_only_target_20_deepseek-r1_turn1
+      * llm_only_target_18_deepseek-r1_turn3
+      * llm_only_target_22_deepseek-r1_turn4
+  StableURAPI: from_elem::/home/cdc/SURF/erasan_dataset/smallvec-1.6.0/src/lib.rs::1423,
+    - URAPI: SmallVec::dedup_by,
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * llm_only_target_35_deepseek-r1_turn2
+      * llm_only_target_26_deepseek-r1_turn5
+      * llm_only_target_15_deepseek-r1_turn3
+      * llm_only_target_23_deepseek-r1_turn3
+      * llm_only_target_28_deepseek-r1_turn2
+      * llm_only_target_43_deepseek-r1_turn3
+      * llm_only_target_11_deepseek-r1_turn3
+      * llm_only_target_10_deepseek-r1_turn1
+      * llm_only_target_5_deepseek-r1_turn2
+  StableURAPI: resize_with::/home/cdc/SURF/erasan_dataset/smallvec-1.6.0/src/lib.rs::1223,
+    - URAPI: SmallVec::from_elem,
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * llm_only_target_27_deepseek-r1_turn2
+      * llm_only_target_7_deepseek-r1_turn3
+      * llm_only_target_26_deepseek-r1_turn5
+      * llm_only_target_35_deepseek-r1_turn2
+  StableURAPI: try_grow::/home/cdc/SURF/erasan_dataset/smallvec-1.6.0/src/lib.rs::814,
+    - URAPI: SmallVec::try_grow,
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * llm_only_target_40_deepseek-r1_turn1
+  StableURAPI: len::/home/cdc/SURF/erasan_dataset/smallvec-1.6.0/src/lib.rs::653,
+    - URAPI: SmallVec::swap_remove,
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * llm_only_target_36_deepseek-r1_turn1
+      * llm_only_target_19_deepseek-r1_turn1
+      * llm_only_target_39_deepseek-r1_turn3
+      * llm_only_target_37_deepseek-r1_turn1
+      * llm_only_target_40_deepseek-r1_turn1
+      * llm_only_target_42_deepseek-r1_turn2
+      * llm_only_target_32_deepseek-r1_turn4
+      * llm_only_target_4_deepseek-r1_turn2
+      * llm_only_target_13_deepseek-r1_turn1
+      * llm_only_target_43_deepseek-r1_turn3
+      * llm_only_target_22_deepseek-r1_turn4
+      * llm_only_target_38_deepseek-r1_turn1
+      * llm_only_target_41_deepseek-r1_turn5
+      * llm_only_target_30_deepseek-r1_turn6
+      * llm_only_target_20_deepseek-r1_turn1
+      * llm_only_target_35_deepseek-r1_turn2
+      * llm_only_target_9_deepseek-r1_turn5
+      * llm_only_target_17_deepseek-r1_turn3
+      * llm_only_target_24_deepseek-r1_turn3
+      * llm_only_target_16_deepseek-r1_turn1
+      * llm_only_target_1_deepseek-r1_turn2
+      * llm_only_target_31_deepseek-r1_turn2
+      * llm_only_target_26_deepseek-r1_turn5
+      * llm_only_target_3_deepseek-r1_turn2
+      * llm_only_target_15_deepseek-r1_turn3
+      * llm_only_target_6_deepseek-r1_turn2
+      * llm_only_target_18_deepseek-r1_turn3
+      * llm_only_target_7_deepseek-r1_turn3
+      * llm_only_target_14_deepseek-r1_turn3
+      * llm_only_target_23_deepseek-r1_turn3
+      * llm_only_target_12_deepseek-r1_turn2
+      * llm_only_target_25_deepseek-r1_turn2
+      * llm_only_target_29_deepseek-r1_turn5
+      * llm_only_target_33_deepseek-r1_turn4
+      * llm_only_target_34_deepseek-r1_turn4
+      * llm_only_target_28_deepseek-r1_turn2
+      * llm_only_target_2_deepseek-r1_turn2
+      * llm_only_target_11_deepseek-r1_turn3
+      * llm_only_target_5_deepseek-r1_turn2
+      * llm_only_target_10_deepseek-r1_turn1
+  StableURAPI: capacity::/home/cdc/SURF/erasan_dataset/smallvec-1.6.0/src/lib.rs::665,
+    - URAPI: SmallVec::truncate,
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * llm_only_target_8_deepseek-r1_turn3
+      * llm_only_target_7_deepseek-r1_turn3
+      * llm_only_target_9_deepseek-r1_turn5
+      * llm_only_target_4_deepseek-r1_turn2
+      * llm_only_target_25_deepseek-r1_turn2
+      * llm_only_target_36_deepseek-r1_turn1
+      * llm_only_target_13_deepseek-r1_turn1
+  StableURAPI: retain::/home/cdc/SURF/erasan_dataset/smallvec-1.6.0/src/lib.rs::1136,
+    - URAPI: SmallVec::swap_remove,
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * llm_only_target_3_deepseek-r1_turn2
+      * llm_only_target_20_deepseek-r1_turn1
+      * llm_only_target_2_deepseek-r1_turn2
+      * llm_only_target_42_deepseek-r1_turn2
+      * llm_only_target_33_deepseek-r1_turn4
+      * llm_only_target_23_deepseek-r1_turn3
+      * llm_only_target_25_deepseek-r1_turn2
+      * llm_only_target_6_deepseek-r1_turn2
+      * llm_only_target_39_deepseek-r1_turn3
+      * llm_only_target_30_deepseek-r1_turn6
+      * llm_only_target_24_deepseek-r1_turn3
+      * llm_only_target_22_deepseek-r1_turn4
+      * llm_only_target_34_deepseek-r1_turn4
+      * llm_only_target_38_deepseek-r1_turn1
+      * llm_only_target_26_deepseek-r1_turn5
+      * llm_only_target_18_deepseek-r1_turn3
+      * llm_only_target_14_deepseek-r1_turn3
+      * llm_only_target_10_deepseek-r1_turn1
+      * llm_only_target_9_deepseek-r1_turn5
+      * llm_only_target_13_deepseek-r1_turn1
+      * llm_only_target_43_deepseek-r1_turn3
+      * llm_only_target_31_deepseek-r1_turn2
+      * llm_only_target_17_deepseek-r1_turn3
+      * llm_only_target_32_deepseek-r1_turn4
+      * llm_only_target_36_deepseek-r1_turn1
+      * llm_only_target_15_deepseek-r1_turn3
+      * llm_only_target_40_deepseek-r1_turn1
+      * llm_only_target_8_deepseek-r1_turn3
+      * llm_only_target_5_deepseek-r1_turn2
+      * llm_only_target_27_deepseek-r1_turn2
+      * llm_only_target_29_deepseek-r1_turn5
+      * llm_only_target_11_deepseek-r1_turn3
+      * llm_only_target_37_deepseek-r1_turn1
+      * llm_only_target_4_deepseek-r1_turn2
+      * llm_only_target_21_deepseek-r1_turn2
+      * llm_only_target_16_deepseek-r1_turn1
+      * llm_only_target_12_deepseek-r1_turn2
+  StableURAPI: is_empty::/home/cdc/SURF/erasan_dataset/smallvec-1.6.0/src/lib.rs::659,
+    - URAPI: SmallVec::swap_remove,
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * llm_only_target_40_deepseek-r1_turn1
+      * llm_only_target_25_deepseek-r1_turn2
+      * llm_only_target_37_deepseek-r1_turn1
+      * llm_only_target_30_deepseek-r1_turn6
+      * llm_only_target_2_deepseek-r1_turn2
+      * llm_only_target_5_deepseek-r1_turn2
+      * llm_only_target_17_deepseek-r1_turn3
+      * llm_only_target_14_deepseek-r1_turn3
+      * llm_only_target_16_deepseek-r1_turn1
+      * llm_only_target_34_deepseek-r1_turn4
+      * llm_only_target_41_deepseek-r1_turn5
+      * llm_only_target_26_deepseek-r1_turn5
+      * llm_only_target_42_deepseek-r1_turn2
+      * llm_only_target_15_deepseek-r1_turn3
+      * llm_only_target_1_deepseek-r1_turn2
+      * llm_only_target_20_deepseek-r1_turn1
+      * llm_only_target_9_deepseek-r1_turn5
+      * llm_only_target_22_deepseek-r1_turn4
+      * llm_only_target_36_deepseek-r1_turn1
+      * llm_only_target_7_deepseek-r1_turn3
+      * llm_only_target_38_deepseek-r1_turn1
+      * llm_only_target_23_deepseek-r1_turn3
+      * llm_only_target_29_deepseek-r1_turn5
+      * llm_only_target_11_deepseek-r1_turn3
+      * llm_only_target_3_deepseek-r1_turn2
+      * llm_only_target_28_deepseek-r1_turn2
+  StableURAPI: from_slice::/home/cdc/SURF/erasan_dataset/smallvec-1.6.0/src/lib.rs::1341,
+    - URAPI: SmallVec::new,
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * llm_only_target_5_deepseek-r1_turn2
+      * llm_only_target_27_deepseek-r1_turn2
+      * llm_only_target_13_deepseek-r1_turn1
+      * llm_only_target_6_deepseek-r1_turn2
+      * llm_only_target_4_deepseek-r1_turn2
+      * llm_only_target_24_deepseek-r1_turn3
+      * llm_only_target_39_deepseek-r1_turn3
+      * llm_only_target_35_deepseek-r1_turn2
+      * llm_only_target_22_deepseek-r1_turn4
+      * llm_only_target_41_deepseek-r1_turn5
+      * llm_only_target_7_deepseek-r1_turn3
+      * llm_only_target_34_deepseek-r1_turn4
+      * llm_only_target_10_deepseek-r1_turn1
+      * llm_only_target_36_deepseek-r1_turn1
+      * llm_only_target_16_deepseek-r1_turn1
+      * llm_only_target_17_deepseek-r1_turn3
+      * llm_only_target_3_deepseek-r1_turn2
+      * llm_only_target_12_deepseek-r1_turn2
+      * llm_only_target_28_deepseek-r1_turn2
+      * llm_only_target_15_deepseek-r1_turn3
+      * llm_only_target_38_deepseek-r1_turn1
+      * llm_only_target_1_deepseek-r1_turn2
+      * llm_only_target_11_deepseek-r1_turn3
+      * llm_only_target_29_deepseek-r1_turn5
+      * llm_only_target_23_deepseek-r1_turn3
+      * llm_only_target_32_deepseek-r1_turn4
+      * llm_only_target_40_deepseek-r1_turn1
+      * llm_only_target_18_deepseek-r1_turn3
+      * llm_only_target_2_deepseek-r1_turn2
+      * llm_only_target_30_deepseek-r1_turn6
+      * llm_only_target_21_deepseek-r1_turn2
+      * llm_only_target_14_deepseek-r1_turn3
+      * llm_only_target_25_deepseek-r1_turn2
+      * llm_only_target_8_deepseek-r1_turn3
+      * llm_only_target_0_deepseek-r1_turn2
+      * llm_only_target_31_deepseek-r1_turn2
+      * llm_only_target_20_deepseek-r1_turn1
+      * llm_only_target_43_deepseek-r1_turn3
+      * llm_only_target_26_deepseek-r1_turn5
+  StableURAPI: try_reserve::/home/cdc/SURF/erasan_dataset/smallvec-1.6.0/src/lib.rs::868,
+    - URAPI: SmallVec::new,
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * llm_only_target_39_deepseek-r1_turn3
+      * llm_only_target_10_deepseek-r1_turn1
+  StableURAPI: drain::/home/cdc/SURF/erasan_dataset/smallvec-1.6.0/src/lib.rs::719,
+    - URAPI: SmallVec::swap_remove,
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * llm_only_target_22_deepseek-r1_turn4
+      * llm_only_target_28_deepseek-r1_turn2
+      * llm_only_target_9_deepseek-r1_turn5
+      * llm_only_target_39_deepseek-r1_turn3
+      * llm_only_target_5_deepseek-r1_turn2
+      * llm_only_target_26_deepseek-r1_turn5
+      * llm_only_target_11_deepseek-r1_turn3
+      * llm_only_target_21_deepseek-r1_turn2
+      * llm_only_target_19_deepseek-r1_turn1
+      * llm_only_target_37_deepseek-r1_turn1
+      * llm_only_target_40_deepseek-r1_turn1
+      * llm_only_target_15_deepseek-r1_turn3
+      * llm_only_target_18_deepseek-r1_turn3
+      * llm_only_target_32_deepseek-r1_turn4
+      * llm_only_target_6_deepseek-r1_turn2
+      * llm_only_target_10_deepseek-r1_turn1
+      * llm_only_target_34_deepseek-r1_turn4
+      * llm_only_target_12_deepseek-r1_turn2
+      * llm_only_target_35_deepseek-r1_turn2
+      * llm_only_target_7_deepseek-r1_turn3
+      * llm_only_target_14_deepseek-r1_turn3
+      * llm_only_target_24_deepseek-r1_turn3
+      * llm_only_target_33_deepseek-r1_turn4
+      * llm_only_target_31_deepseek-r1_turn2
+      * llm_only_target_2_deepseek-r1_turn2
+      * llm_only_target_29_deepseek-r1_turn5
+      * llm_only_target_42_deepseek-r1_turn2
+      * llm_only_target_38_deepseek-r1_turn1
+      * llm_only_target_0_deepseek-r1_turn2
+      * llm_only_target_4_deepseek-r1_turn2
+      * llm_only_target_23_deepseek-r1_turn3
+      * llm_only_target_27_deepseek-r1_turn2
+      * llm_only_target_17_deepseek-r1_turn3
+      * llm_only_target_30_deepseek-r1_turn6
+      * llm_only_target_8_deepseek-r1_turn3
+      * llm_only_target_13_deepseek-r1_turn1
+  StableURAPI: remove::/home/cdc/SURF/erasan_dataset/smallvec-1.6.0/src/lib.rs::979,
+    - URAPI: SmallVec::truncate,
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * llm_only_target_26_deepseek-r1_turn5
+      * llm_only_target_36_deepseek-r1_turn1
+      * llm_only_target_9_deepseek-r1_turn5
+      * llm_only_target_27_deepseek-r1_turn2
+      * llm_only_target_43_deepseek-r1_turn3
+      * llm_only_target_20_deepseek-r1_turn1
+      * llm_only_target_0_deepseek-r1_turn2
+      * llm_only_target_30_deepseek-r1_turn6
+      * llm_only_target_5_deepseek-r1_turn2
+      * llm_only_target_34_deepseek-r1_turn4
+      * llm_only_target_29_deepseek-r1_turn5
+  StableURAPI: next::/home/cdc/SURF/erasan_dataset/smallvec-1.6.0/src/lib.rs::300,
+    - URAPI: SmallVec::new,
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * llm_only_target_29_deepseek-r1_turn5
+      * llm_only_target_15_deepseek-r1_turn3
+      * llm_only_target_14_deepseek-r1_turn3
+      * llm_only_target_39_deepseek-r1_turn3
+  StableURAPI: into_boxed_slice::/home/cdc/SURF/erasan_dataset/smallvec-1.6.0/src/lib.rs::1110,
+    - URAPI: SmallVec::from_elem,
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * llm_only_target_18_deepseek-r1_turn3
+      * llm_only_target_12_deepseek-r1_turn2
+      * llm_only_target_33_deepseek-r1_turn4
+      * llm_only_target_8_deepseek-r1_turn3
+      * llm_only_target_3_deepseek-r1_turn2
+      * llm_only_target_31_deepseek-r1_turn2
+      * llm_only_target_11_deepseek-r1_turn3
+      * llm_only_target_34_deepseek-r1_turn4
+      * llm_only_target_21_deepseek-r1_turn2
+      * llm_only_target_26_deepseek-r1_turn5
+      * llm_only_target_35_deepseek-r1_turn2
+  StableURAPI: next::/home/cdc/SURF/erasan_dataset/smallvec-1.6.0/src/lib.rs::1814,
+    - URAPI: SmallVec::into_iter,
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * llm_only_target_15_deepseek-r1_turn3
+  StableURAPI: as_ptr::/home/cdc/SURF/erasan_dataset/smallvec-1.6.0/src/lib.rs::1318,
+    - URAPI: SmallVec::drain,
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * llm_only_target_41_deepseek-r1_turn5
+      * llm_only_target_25_deepseek-r1_turn2
+      * llm_only_target_30_deepseek-r1_turn6
+      * llm_only_target_9_deepseek-r1_turn5
+      * llm_only_target_31_deepseek-r1_turn2
+      * llm_only_target_28_deepseek-r1_turn2
+  StableURAPI: clear::/home/cdc/SURF/erasan_dataset/smallvec-1.6.0/src/lib.rs::971,
+    - URAPI: SmallVec::new,
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * llm_only_target_3_deepseek-r1_turn2
+      * llm_only_target_43_deepseek-r1_turn3
+      * llm_only_target_41_deepseek-r1_turn5
+      * llm_only_target_28_deepseek-r1_turn2
+      * llm_only_target_13_deepseek-r1_turn1
+      * llm_only_target_29_deepseek-r1_turn5
+      * llm_only_target_39_deepseek-r1_turn3
+  StableURAPI: from_vec::/home/cdc/SURF/erasan_dataset/smallvec-1.6.0/src/lib.rs::531,
+    - URAPI: SmallVec::pop,
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * llm_only_target_29_deepseek-r1_turn5
+      * llm_only_target_35_deepseek-r1_turn2
+      * llm_only_target_34_deepseek-r1_turn4
+      * llm_only_target_7_deepseek-r1_turn3
+      * llm_only_target_8_deepseek-r1_turn3
+      * llm_only_target_4_deepseek-r1_turn2
+      * llm_only_target_41_deepseek-r1_turn5
+      * llm_only_target_16_deepseek-r1_turn1
+      * llm_only_target_18_deepseek-r1_turn3
+      * llm_only_target_27_deepseek-r1_turn2
+      * llm_only_target_9_deepseek-r1_turn5
+      * llm_only_target_21_deepseek-r1_turn2
+      * llm_only_target_30_deepseek-r1_turn6
+      * llm_only_target_33_deepseek-r1_turn4
+      * llm_only_target_22_deepseek-r1_turn4
+      * llm_only_target_25_deepseek-r1_turn2
+      * llm_only_target_15_deepseek-r1_turn3
+      * llm_only_target_17_deepseek-r1_turn3
+      * llm_only_target_13_deepseek-r1_turn1
+  StableURAPI: insert::/home/cdc/SURF/erasan_dataset/smallvec-1.6.0/src/lib.rs::995,
+    - URAPI: SmallVec::swap_remove,
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * llm_only_target_33_deepseek-r1_turn4
+      * llm_only_target_39_deepseek-r1_turn3
+      * llm_only_target_17_deepseek-r1_turn3
+      * llm_only_target_43_deepseek-r1_turn3
+      * llm_only_target_7_deepseek-r1_turn3
+      * llm_only_target_40_deepseek-r1_turn1
+      * llm_only_target_6_deepseek-r1_turn2
+      * llm_only_target_27_deepseek-r1_turn2
+      * llm_only_target_23_deepseek-r1_turn3
+      * llm_only_target_19_deepseek-r1_turn1
+      * llm_only_target_32_deepseek-r1_turn4
+      * llm_only_target_11_deepseek-r1_turn3
+      * llm_only_target_38_deepseek-r1_turn1
+      * llm_only_target_14_deepseek-r1_turn3
+      * llm_only_target_37_deepseek-r1_turn1
+      * llm_only_target_10_deepseek-r1_turn1
+      * llm_only_target_12_deepseek-r1_turn2
+      * llm_only_target_8_deepseek-r1_turn3
+      * llm_only_target_22_deepseek-r1_turn4
+      * llm_only_target_29_deepseek-r1_turn5
+      * llm_only_target_9_deepseek-r1_turn5
+      * llm_only_target_1_deepseek-r1_turn2
+      * llm_only_target_0_deepseek-r1_turn2
+      * llm_only_target_30_deepseek-r1_turn6
+      * llm_only_target_16_deepseek-r1_turn1
+      * llm_only_target_31_deepseek-r1_turn2
+      * llm_only_target_18_deepseek-r1_turn3
+      * llm_only_target_21_deepseek-r1_turn2
+      * llm_only_target_2_deepseek-r1_turn2
+      * llm_only_target_25_deepseek-r1_turn2
+      * llm_only_target_20_deepseek-r1_turn1
+      * llm_only_target_26_deepseek-r1_turn5
+      * llm_only_target_28_deepseek-r1_turn2
+      * llm_only_target_13_deepseek-r1_turn1
+      * llm_only_target_36_deepseek-r1_turn1
+      * llm_only_target_42_deepseek-r1_turn2
+      * llm_only_target_5_deepseek-r1_turn2
+      * llm_only_target_35_deepseek-r1_turn2
+      * llm_only_target_15_deepseek-r1_turn3
+      * llm_only_target_3_deepseek-r1_turn2
+      * llm_only_target_34_deepseek-r1_turn4
+      * llm_only_target_4_deepseek-r1_turn2
+  StableURAPI: extend::/home/cdc/SURF/erasan_dataset/smallvec-1.6.0/src/lib.rs::1654,
+    - URAPI: SmallVec::extend,
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * llm_only_target_35_deepseek-r1_turn2
+      * llm_only_target_16_deepseek-r1_turn1
+      * llm_only_target_15_deepseek-r1_turn3
+      * llm_only_target_17_deepseek-r1_turn3
+      * llm_only_target_29_deepseek-r1_turn5
+      * llm_only_target_21_deepseek-r1_turn2
+      * llm_only_target_9_deepseek-r1_turn5
+      * llm_only_target_30_deepseek-r1_turn6
+  StableURAPI: dedup_by::/home/cdc/SURF/erasan_dataset/smallvec-1.6.0/src/lib.rs::1158,
+    - URAPI: SmallVec::dedup_by,
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * llm_only_target_23_deepseek-r1_turn3
+      * llm_only_target_12_deepseek-r1_turn2
+      * llm_only_target_41_deepseek-r1_turn5
+      * llm_only_target_26_deepseek-r1_turn5
+      * llm_only_target_21_deepseek-r1_turn2
+  StableURAPI: insert_many::/home/cdc/SURF/erasan_dataset/smallvec-1.6.0/src/lib.rs::1011,
+    - URAPI: SmallVec::drain,
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * llm_only_target_31_deepseek-r1_turn2
+      * llm_only_target_35_deepseek-r1_turn2
+      * llm_only_target_21_deepseek-r1_turn2
+      * llm_only_target_24_deepseek-r1_turn3
+      * llm_only_target_43_deepseek-r1_turn3
+      * llm_only_target_28_deepseek-r1_turn2
+  StableURAPI: next_back::/home/cdc/SURF/erasan_dataset/smallvec-1.6.0/src/lib.rs::1835,
+    - URAPI: SmallVec::into_iter,
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * llm_only_target_15_deepseek-r1_turn3
+  StableURAPI: from_buf_and_len::/home/cdc/SURF/erasan_dataset/smallvec-1.6.0/src/lib.rs::587,
+    - URAPI: SmallVec::from_buf_and_len,
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * llm_only_target_33_deepseek-r1_turn4
+  StableURAPI: index::/home/cdc/SURF/erasan_dataset/smallvec-1.6.0/src/lib.rs::1623,
+    - URAPI: SmallVec::swap_remove,
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * llm_only_target_42_deepseek-r1_turn2
+      * llm_only_target_24_deepseek-r1_turn3
+      * llm_only_target_16_deepseek-r1_turn1
+      * llm_only_target_22_deepseek-r1_turn4
+      * llm_only_target_29_deepseek-r1_turn5
+      * llm_only_target_40_deepseek-r1_turn1
+      * llm_only_target_30_deepseek-r1_turn6
+      * llm_only_target_14_deepseek-r1_turn3
+      * llm_only_target_37_deepseek-r1_turn1
+      * llm_only_target_26_deepseek-r1_turn5
+      * llm_only_target_28_deepseek-r1_turn2
+      * llm_only_target_25_deepseek-r1_turn2
+      * llm_only_target_41_deepseek-r1_turn5
+  StableURAPI: dedup_by_key::/home/cdc/SURF/erasan_dataset/smallvec-1.6.0/src/lib.rs::1190,
+    - URAPI: SmallVec::dedup,
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * llm_only_target_30_deepseek-r1_turn6
+      * llm_only_target_41_deepseek-r1_turn5
+  StableURAPI: as_mut_ptr::/home/cdc/SURF/erasan_dataset/smallvec-1.6.0/src/lib.rs::1326,
+    - URAPI: SmallVec::as_mut_ptr,
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * llm_only_target_31_deepseek-r1_turn2
+      * llm_only_target_9_deepseek-r1_turn5
+      * llm_only_target_6_deepseek-r1_turn2
+  StableURAPI: with_capacity::/home/cdc/SURF/erasan_dataset/smallvec-1.6.0/src/lib.rs::512,
+    - URAPI: SmallVec::swap_remove,
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * llm_only_target_37_deepseek-r1_turn1
+      * llm_only_target_10_deepseek-r1_turn1
+      * llm_only_target_15_deepseek-r1_turn3
+      * llm_only_target_30_deepseek-r1_turn6
+      * llm_only_target_8_deepseek-r1_turn3
+      * llm_only_target_31_deepseek-r1_turn2
+      * llm_only_target_25_deepseek-r1_turn2
+      * llm_only_target_17_deepseek-r1_turn3
+      * llm_only_target_23_deepseek-r1_turn3
+      * llm_only_target_43_deepseek-r1_turn3
+      * llm_only_target_40_deepseek-r1_turn1
+      * llm_only_target_32_deepseek-r1_turn4
+      * llm_only_target_12_deepseek-r1_turn2
+      * llm_only_target_21_deepseek-r1_turn2
+      * llm_only_target_14_deepseek-r1_turn3
+      * llm_only_target_39_deepseek-r1_turn3
+      * llm_only_target_19_deepseek-r1_turn1
+      * llm_only_target_5_deepseek-r1_turn2
+      * llm_only_target_42_deepseek-r1_turn2
+      * llm_only_target_6_deepseek-r1_turn2
+      * llm_only_target_34_deepseek-r1_turn4
+      * llm_only_target_7_deepseek-r1_turn3
+      * llm_only_target_2_deepseek-r1_turn2
+      * llm_only_target_22_deepseek-r1_turn4
+  StableURAPI: append::/home/cdc/SURF/erasan_dataset/smallvec-1.6.0/src/lib.rs::796,
+    - URAPI: SmallVec::pop,
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * llm_only_target_22_deepseek-r1_turn4
+      * llm_only_target_32_deepseek-r1_turn4
+      * llm_only_target_34_deepseek-r1_turn4
+      * llm_only_target_31_deepseek-r1_turn2
+      * llm_only_target_9_deepseek-r1_turn5
+      * llm_only_target_11_deepseek-r1_turn3
+      * llm_only_target_33_deepseek-r1_turn4
+      * llm_only_target_18_deepseek-r1_turn3
+      * llm_only_target_4_deepseek-r1_turn2
+      * llm_only_target_19_deepseek-r1_turn1
+      * llm_only_target_23_deepseek-r1_turn3
+      * llm_only_target_21_deepseek-r1_turn2
+      * llm_only_target_25_deepseek-r1_turn2
+      * llm_only_target_30_deepseek-r1_turn6
+      * llm_only_target_35_deepseek-r1_turn2
+      * llm_only_target_8_deepseek-r1_turn3
+      * llm_only_target_0_deepseek-r1_turn2
+      * llm_only_target_24_deepseek-r1_turn3
+      * llm_only_target_14_deepseek-r1_turn3
+      * llm_only_target_26_deepseek-r1_turn5
+  StableURAPI: swap_remove::/home/cdc/SURF/erasan_dataset/smallvec-1.6.0/src/lib.rs::962,
+    - URAPI: SmallVec::swap_remove,
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * llm_only_target_30_deepseek-r1_turn6
+      * llm_only_target_15_deepseek-r1_turn3
+      * llm_only_target_1_deepseek-r1_turn2
+      * llm_only_target_23_deepseek-r1_turn3
+      * llm_only_target_36_deepseek-r1_turn1
+      * llm_only_target_13_deepseek-r1_turn1
+      * llm_only_target_43_deepseek-r1_turn3
+      * llm_only_target_39_deepseek-r1_turn3
+      * llm_only_target_11_deepseek-r1_turn3
+      * llm_only_target_7_deepseek-r1_turn3
+      * llm_only_target_2_deepseek-r1_turn2
+      * llm_only_target_42_deepseek-r1_turn2
+      * llm_only_target_24_deepseek-r1_turn3
+      * llm_only_target_31_deepseek-r1_turn2
+      * llm_only_target_38_deepseek-r1_turn1
+      * llm_only_target_37_deepseek-r1_turn1
+      * llm_only_target_41_deepseek-r1_turn5
+      * llm_only_target_33_deepseek-r1_turn4
+      * llm_only_target_3_deepseek-r1_turn2
+      * llm_only_target_22_deepseek-r1_turn4
+  StableURAPI: extend_from_slice::/home/cdc/SURF/erasan_dataset/smallvec-1.6.0/src/lib.rs::1390,
+    - URAPI: SmallVec::swap_remove,
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * llm_only_target_20_deepseek-r1_turn1
+      * llm_only_target_14_deepseek-r1_turn3
+      * llm_only_target_10_deepseek-r1_turn1
+      * llm_only_target_1_deepseek-r1_turn2
+      * llm_only_target_7_deepseek-r1_turn3
+      * llm_only_target_18_deepseek-r1_turn3
+      * llm_only_target_26_deepseek-r1_turn5
+      * llm_only_target_2_deepseek-r1_turn2
+      * llm_only_target_13_deepseek-r1_turn1
+      * llm_only_target_17_deepseek-r1_turn3
+      * llm_only_target_23_deepseek-r1_turn3
+      * llm_only_target_4_deepseek-r1_turn2
+      * llm_only_target_5_deepseek-r1_turn2
+      * llm_only_target_43_deepseek-r1_turn3
+      * llm_only_target_36_deepseek-r1_turn1
+      * llm_only_target_37_deepseek-r1_turn1
+      * llm_only_target_32_deepseek-r1_turn4
+      * llm_only_target_30_deepseek-r1_turn6
+      * llm_only_target_38_deepseek-r1_turn1
+      * llm_only_target_3_deepseek-r1_turn2
+      * llm_only_target_6_deepseek-r1_turn2
+      * llm_only_target_27_deepseek-r1_turn2
+      * llm_only_target_31_deepseek-r1_turn2
+      * llm_only_target_11_deepseek-r1_turn3
+      * llm_only_target_0_deepseek-r1_turn2
+      * llm_only_target_22_deepseek-r1_turn4
+  StableURAPI: into_iter::/home/cdc/SURF/erasan_dataset/smallvec-1.6.0/src/lib.rs::1884,
+    - URAPI: SmallVec::append,
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * llm_only_target_25_deepseek-r1_turn2
+      * llm_only_target_14_deepseek-r1_turn3
+  StableURAPI: as_slice::/home/cdc/SURF/erasan_dataset/smallvec-1.6.0/src/lib.rs::945,
+    - URAPI: SmallVec::new,
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * llm_only_target_3_deepseek-r1_turn2
+      * llm_only_target_33_deepseek-r1_turn4
+      * llm_only_target_42_deepseek-r1_turn2
+      * llm_only_target_0_deepseek-r1_turn2
+      * llm_only_target_7_deepseek-r1_turn3
+      * llm_only_target_23_deepseek-r1_turn3
+      * llm_only_target_16_deepseek-r1_turn1
+      * llm_only_target_39_deepseek-r1_turn3
+      * llm_only_target_22_deepseek-r1_turn4
+      * llm_only_target_31_deepseek-r1_turn2
+      * llm_only_target_27_deepseek-r1_turn2
+      * llm_only_target_13_deepseek-r1_turn1
+      * llm_only_target_43_deepseek-r1_turn3
+      * llm_only_target_41_deepseek-r1_turn5
+      * llm_only_target_2_deepseek-r1_turn2
+      * llm_only_target_32_deepseek-r1_turn4
+      * llm_only_target_38_deepseek-r1_turn1
+      * llm_only_target_1_deepseek-r1_turn2
+      * llm_only_target_8_deepseek-r1_turn3
+      * llm_only_target_34_deepseek-r1_turn4
+      * llm_only_target_10_deepseek-r1_turn1
+      * llm_only_target_35_deepseek-r1_turn2
+      * llm_only_target_36_deepseek-r1_turn1
+      * llm_only_target_19_deepseek-r1_turn1
+      * llm_only_target_40_deepseek-r1_turn1
+  StableURAPI: into_vec::/home/cdc/SURF/erasan_dataset/smallvec-1.6.0/src/lib.rs::1093,
+    - URAPI: SmallVec::truncate,
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * llm_only_target_17_deepseek-r1_turn3
+      * llm_only_target_2_deepseek-r1_turn2
+      * llm_only_target_32_deepseek-r1_turn4
+      * llm_only_target_23_deepseek-r1_turn3
+      * llm_only_target_18_deepseek-r1_turn3
+      * llm_only_target_36_deepseek-r1_turn1
+      * llm_only_target_10_deepseek-r1_turn1
+      * llm_only_target_4_deepseek-r1_turn2
+      * llm_only_target_16_deepseek-r1_turn1
+      * llm_only_target_6_deepseek-r1_turn2
+      * llm_only_target_20_deepseek-r1_turn1
+      * llm_only_target_1_deepseek-r1_turn2
+      * llm_only_target_27_deepseek-r1_turn2
+      * llm_only_target_5_deepseek-r1_turn2
+      * llm_only_target_43_deepseek-r1_turn3
+      * llm_only_target_35_deepseek-r1_turn2
+  StableURAPI: insert_from_slice::/home/cdc/SURF/erasan_dataset/smallvec-1.6.0/src/lib.rs::1371,
+    - URAPI: SmallVec::dedup,
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * llm_only_target_41_deepseek-r1_turn5
+      * llm_only_target_1_deepseek-r1_turn2
+  StableURAPI: into_iter::/home/cdc/SURF/erasan_dataset/smallvec-1.6.0/src/lib.rs::1867,
+    - URAPI: SmallVec::into_iter,
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * llm_only_target_15_deepseek-r1_turn3
+  StableURAPI: reserve::/home/cdc/SURF/erasan_dataset/smallvec-1.6.0/src/lib.rs::861,
+    - URAPI: SmallVec::as_mut_slice,
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * llm_only_target_12_deepseek-r1_turn2
+      * llm_only_target_41_deepseek-r1_turn5
+      * llm_only_target_24_deepseek-r1_turn3
+      * llm_only_target_16_deepseek-r1_turn1
+      * llm_only_target_0_deepseek-r1_turn2
+      * llm_only_target_8_deepseek-r1_turn3
+      * llm_only_target_43_deepseek-r1_turn3
+      * llm_only_target_7_deepseek-r1_turn3
+      * llm_only_target_4_deepseek-r1_turn2
+      * llm_only_target_26_deepseek-r1_turn5
+  StableURAPI: push::/home/cdc/SURF/erasan_dataset/smallvec-1.6.0/src/lib.rs::756,
+    - URAPI: SmallVec::swap_remove,
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * llm_only_target_22_deepseek-r1_turn4
+      * llm_only_target_28_deepseek-r1_turn2
+      * llm_only_target_23_deepseek-r1_turn3
+      * llm_only_target_4_deepseek-r1_turn2
+      * llm_only_target_1_deepseek-r1_turn2
+      * llm_only_target_43_deepseek-r1_turn3
+      * llm_only_target_0_deepseek-r1_turn2
+      * llm_only_target_27_deepseek-r1_turn2
+      * llm_only_target_10_deepseek-r1_turn1
+      * llm_only_target_12_deepseek-r1_turn2
+      * llm_only_target_33_deepseek-r1_turn4
+      * llm_only_target_36_deepseek-r1_turn1
+      * llm_only_target_7_deepseek-r1_turn3
+      * llm_only_target_26_deepseek-r1_turn5
+      * llm_only_target_19_deepseek-r1_turn1
+      * llm_only_target_3_deepseek-r1_turn2
+      * llm_only_target_31_deepseek-r1_turn2
+      * llm_only_target_9_deepseek-r1_turn5
+      * llm_only_target_18_deepseek-r1_turn3
+      * llm_only_target_38_deepseek-r1_turn1
+      * llm_only_target_13_deepseek-r1_turn1
+      * llm_only_target_2_deepseek-r1_turn2
+      * llm_only_target_41_deepseek-r1_turn5
+      * llm_only_target_37_deepseek-r1_turn1
+      * llm_only_target_25_deepseek-r1_turn2
+      * llm_only_target_34_deepseek-r1_turn4
+      * llm_only_target_24_deepseek-r1_turn3
+      * llm_only_target_29_deepseek-r1_turn5
+      * llm_only_target_15_deepseek-r1_turn3
+      * llm_only_target_30_deepseek-r1_turn6
+      * llm_only_target_14_deepseek-r1_turn3
+      * llm_only_target_5_deepseek-r1_turn2
+      * llm_only_target_6_deepseek-r1_turn2
+      * llm_only_target_20_deepseek-r1_turn1
+      * llm_only_target_8_deepseek-r1_turn3
+      * llm_only_target_17_deepseek-r1_turn3
+      * llm_only_target_32_deepseek-r1_turn4
+      * llm_only_target_40_deepseek-r1_turn1
+      * llm_only_target_42_deepseek-r1_turn2
+      * llm_only_target_39_deepseek-r1_turn3
+      * llm_only_target_21_deepseek-r1_turn2
+      * llm_only_target_11_deepseek-r1_turn3
+      * llm_only_target_35_deepseek-r1_turn2
+      * llm_only_target_16_deepseek-r1_turn1
+  StableURAPI: dedup::/home/cdc/SURF/erasan_dataset/smallvec-1.6.0/src/lib.rs::1150,
+    - URAPI: SmallVec::reserve_exact,
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * llm_only_target_42_deepseek-r1_turn2
+      * llm_only_target_41_deepseek-r1_turn5
+      * llm_only_target_11_deepseek-r1_turn3
+      * llm_only_target_14_deepseek-r1_turn3
+      * llm_only_target_3_deepseek-r1_turn2
+  StableURAPI: deref::/home/cdc/SURF/erasan_dataset/smallvec-1.6.0/src/lib.rs::1445,
+    - URAPI: SmallVec::truncate,
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * llm_only_target_18_deepseek-r1_turn3
+      * llm_only_target_36_deepseek-r1_turn1
+      * llm_only_target_31_deepseek-r1_turn2
+      * llm_only_target_29_deepseek-r1_turn5
+      * llm_only_target_26_deepseek-r1_turn5
+      * llm_only_target_9_deepseek-r1_turn5
+      * llm_only_target_17_deepseek-r1_turn3
+      * llm_only_target_19_deepseek-r1_turn1
+      * llm_only_target_21_deepseek-r1_turn2
+      * llm_only_target_30_deepseek-r1_turn6
+      * llm_only_target_2_deepseek-r1_turn2
+  StableURAPI: as_mut_slice::/home/cdc/SURF/erasan_dataset/smallvec-1.6.0/src/lib.rs::952,
+    - URAPI: SmallVec::new,
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * llm_only_target_31_deepseek-r1_turn2
+      * llm_only_target_30_deepseek-r1_turn6
+      * llm_only_target_32_deepseek-r1_turn4
+      * llm_only_target_21_deepseek-r1_turn2
+      * llm_only_target_1_deepseek-r1_turn2
+      * llm_only_target_7_deepseek-r1_turn3
+      * llm_only_target_10_deepseek-r1_turn1
+      * llm_only_target_35_deepseek-r1_turn2
+      * llm_only_target_39_deepseek-r1_turn3
+      * llm_only_target_4_deepseek-r1_turn2
+      * llm_only_target_3_deepseek-r1_turn2
+      * llm_only_target_6_deepseek-r1_turn2
+      * llm_only_target_41_deepseek-r1_turn5
+  StableURAPI: reserve_exact::/home/cdc/SURF/erasan_dataset/smallvec-1.6.0/src/lib.rs::886,
+    - URAPI: SmallVec::reserve_exact,
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * llm_only_target_3_deepseek-r1_turn2
+  StableURAPI: shrink_to_fit::/home/cdc/SURF/erasan_dataset/smallvec-1.6.0/src/lib.rs::906,
+    - URAPI: SmallVec::extend,
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * llm_only_target_29_deepseek-r1_turn5
+      * llm_only_target_40_deepseek-r1_turn1
+      * llm_only_target_8_deepseek-r1_turn3
+      * llm_only_target_24_deepseek-r1_turn3
+      * llm_only_target_7_deepseek-r1_turn3
+      * llm_only_target_43_deepseek-r1_turn3
+      * llm_only_target_3_deepseek-r1_turn2
+      * llm_only_target_10_deepseek-r1_turn1
+      * llm_only_target_17_deepseek-r1_turn3
+      * llm_only_target_30_deepseek-r1_turn6
+      * llm_only_target_32_deepseek-r1_turn4
+      * llm_only_target_16_deepseek-r1_turn1
+      * llm_only_target_23_deepseek-r1_turn3
+      * llm_only_target_21_deepseek-r1_turn2
+      * llm_only_target_0_deepseek-r1_turn2
+------------------------------------------------------------------------------------------------------------------------------------

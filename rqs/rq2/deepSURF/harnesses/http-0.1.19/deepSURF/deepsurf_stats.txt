@@ -1,0 +1,166 @@
+
+Total Stats:
+------------------------------------------------------------------------------------------------------------------------------------
+* Total URAPI Coverage: 153/177 (86.44%).
+* LLM URAPI Coverage: 109/177 (61.58%).
+* Total Targets (including targets directly imported from SURF): 118 in [59002.130747074s].
+* URAPIs w/ Custom Functionality: 7/177 (3.95%).
+------------------------------------------------------------------------------------------------------------------------------------
+
+Redundant-Targets:
+------------------------------------------------------------------------------------------------------------------------------------
+  * http_fuzz_16338078492519129224_deepseek-r1_turn2
+  * http_fuzz_11693349340932289670_deepseek-r1_turn1
+  * http_fuzz_15271004787838234199_deepseek-r1_turn5
+  * http_fuzz_18366243088040221429_deepseek-r1_turn5
+  * http_fuzz_14489106343100526875_deepseek-r1_turn5
+  * http_fuzz_11742874337819524145_deepseek-r1_turn5
+  * http_fuzz_8740530422307429684_deepseek-r1_turn6
+  * http_fuzz_12225452624617022263_deepseek-r1_turn4
+  * http_fuzz_17256496518121575065_deepseek-r1_turn5
+------------------------------------------------------------------------------------------------------------------------------------
+
+Targeted-URAPI-Miss-Targets:
+------------------------------------------------------------------------------------------------------------------------------------
+  * http_fuzz_8246734304335439568_deepseek-r1_turn6
+  * http_fuzz_772524812641693857_deepseek-r1_turn5
+  * http_fuzz_15125643739086163309_deepseek-r1_turn6
+  * http_fuzz_1129203924549505096_deepseek-r1_turn4
+  * http_fuzz_16619793432602079741_deepseek-r1_turn2
+  * http_fuzz_4521340454861179515_deepseek-r1_turn3
+  * http_fuzz_18370229373432502685_deepseek-r1_turn5
+  * http_fuzz_11742874337819524145_deepseek-r1_turn5
+  * http_fuzz_3013850531557132465_deepseek-r1_turn4
+  * http_fuzz_17256496518121575065_deepseek-r1_turn5
+  * http_fuzz_7913316134776891349_deepseek-r1_turn3
+  * http_fuzz_10755525721000006111_deepseek-r1_turn3
+  * http_fuzz_14489106343100526875_deepseek-r1_turn5
+  * http_fuzz_4407497658046288733_deepseek-r1_turn6
+  * http_fuzz_15271004787838234199_deepseek-r1_turn5
+  * http_fuzz_633073009428178114_deepseek-r1_turn5
+  * http_fuzz_8740530422307429684_deepseek-r1_turn6
+  * http_fuzz_11693349340932289670_deepseek-r1_turn1
+  * http_fuzz_15074099069018251397_deepseek-r1_turn1
+  * http_fuzz_832988195758324698_deepseek-r1_turn5
+  * http_fuzz_18064376459007522246_deepseek-r1_turn6
+  * http_fuzz_12225452624617022263_deepseek-r1_turn4
+  * http_fuzz_18366243088040221429_deepseek-r1_turn5
+  * http_fuzz_16338078492519129224_deepseek-r1_turn2
+  * http_fuzz_17499511304804928272_deepseek-r1_turn4
+  * http_fuzz_17499758452050100868_deepseek-r1_turn6
+------------------------------------------------------------------------------------------------------------------------------------
+
+Targets For Fuzzing:
+  - [CondSkip]: Set of Fuzzing Targets = Total-Targets - Redundant-Targets
+------------------------------------------------------------------------------------------------------------------------------------
+Count: 109
+  * http_fuzz_5315526172046900052_deepseek-r1_turn2
+  * http_fuzz_1859281628697759420_deepseek-r1_turn2
+  * http_fuzz_15407387830709233043_deepseek-r1_turn4
+  * http_fuzz_3013850531557132465_deepseek-r1_turn4
+  * http_fuzz_4407497658046288733_deepseek-r1_turn6
+  * http_fuzz_10755525721000006111
+  * http_fuzz_16338078492519129224
+  * http_fuzz_13386474297363163865
+  * http_fuzz_17065578866853623403
+  * http_fuzz_17801382227913130406_deepseek-r1_turn5
+  * http_fuzz_17143784170300066476
+  * http_fuzz_7053807943265196826
+  * http_fuzz_4790000533184527890
+  * http_fuzz_14186962726730187752
+  * http_fuzz_15191944480411141361
+  * http_fuzz_4750753213258524406
+  * http_fuzz_13443607865809820064
+  * http_fuzz_12869261656678782313
+  * http_fuzz_832988195758324698_deepseek-r1_turn5
+  * http_fuzz_4443306390242441807_deepseek-r1_turn6
+  * http_fuzz_12225452624617022263
+  * http_fuzz_8246734304335439568_deepseek-r1_turn6
+  * http_fuzz_14760610607845670744_deepseek-r1_turn5
+  * http_fuzz_13170130373525769799
+  * http_fuzz_17499511304804928272_deepseek-r1_turn4
+  * http_fuzz_15415556360323304216
+  * http_fuzz_8094354155944632543
+  * http_fuzz_7050588775533050597
+  * http_fuzz_4718405918461946120_deepseek-r1_turn3
+  * http_fuzz_17876295723090201450
+  * http_fuzz_15631107043502941126
+  * http_fuzz_15295152230424021528
+  * http_fuzz_3362688223832736006_deepseek-r1_turn3
+  * http_fuzz_4521340454861179515_deepseek-r1_turn3
+  * http_fuzz_15711454402980519476_deepseek-r1_turn2
+  * http_fuzz_4203523801910715689
+  * http_fuzz_11139723047021207997_deepseek-r1_turn6
+  * http_fuzz_11571823832979613380_deepseek-r1_turn5
+  * http_fuzz_10782686495686518557_deepseek-r1_turn2
+  * http_fuzz_11693349340932289670
+  * http_fuzz_15125643739086163309
+  * http_fuzz_5872747425181599201
+  * http_fuzz_14489106343100526875
+  * http_fuzz_9903417257133658644
+  * http_fuzz_18286377120929404909_deepseek-r1_turn3
+  * http_fuzz_10708530162954877899
+  * http_fuzz_10661177476743654774
+  * http_fuzz_9562790850080137009
+  * http_fuzz_16619793432602079741_deepseek-r1_turn2
+  * http_fuzz_10755525721000006111_deepseek-r1_turn3
+  * http_fuzz_6032285134972933730
+  * http_fuzz_1129203924549505096_deepseek-r1_turn4
+  * http_fuzz_17846628004781716252
+  * http_fuzz_633073009428178114_deepseek-r1_turn5
+  * http_fuzz_14479845234129020174_deepseek-r1_turn4
+  * http_fuzz_6525764951838371139
+  * http_fuzz_17499511304804928272
+  * http_fuzz_16466091616610995396
+  * http_fuzz_17574371565434763584
+  * http_fuzz_16619793432602079741
+  * http_fuzz_1177707523392908290
+  * http_fuzz_7913316134776891349
+  * http_fuzz_3945967988863451451_deepseek-r1_turn3
+  * http_fuzz_15074099069018251397_deepseek-r1_turn1
+  * http_fuzz_4832421390391848337
+  * http_fuzz_6436411825302629878
+  * http_fuzz_3228129819407560722_deepseek-r1_turn6
+  * http_fuzz_9623935234926433805_deepseek-r1_turn4
+  * http_fuzz_18366243088040221429
+  * http_fuzz_7913316134776891349_deepseek-r1_turn3
+  * http_fuzz_13451667056177189333
+  * http_fuzz_11941034398563315348_deepseek-r1_turn5
+  * http_fuzz_10403464805765083091_deepseek-r1_turn3
+  * http_fuzz_13719479809908049038
+  * http_fuzz_9171944548155438291_deepseek-r1_turn4
+  * http_fuzz_15271004787838234199
+  * http_fuzz_14993225086354872872
+  * http_fuzz_10079874031940525441
+  * http_fuzz_14732319853573133415
+  * http_fuzz_11839655416389211671
+  * http_fuzz_18064376459007522246_deepseek-r1_turn6
+  * http_fuzz_11742874337819524145
+  * http_fuzz_10724146807323519118
+  * http_fuzz_15074099069018251397
+  * http_fuzz_8148560537830570074
+  * http_fuzz_3235805641849992968
+  * http_fuzz_8499247842573788925
+  * http_fuzz_6319297300227312792
+  * http_fuzz_8246734304335439568
+  * http_fuzz_15125643739086163309_deepseek-r1_turn6
+  * http_fuzz_630690239127171415_deepseek-r1_turn1
+  * http_fuzz_17499758452050100868_deepseek-r1_turn6
+  * http_fuzz_1713225404873377248_deepseek-r1_turn2
+  * http_fuzz_8740530422307429684
+  * http_fuzz_1033577502195283290_deepseek-r1_turn3
+  * http_fuzz_772524812641693857_deepseek-r1_turn5
+  * http_fuzz_10868626254039110460
+  * http_fuzz_11208984897607767141_deepseek-r1_turn2
+  * http_fuzz_14824197313073056012
+  * http_fuzz_6203628399308923354
+  * http_fuzz_10551007774416917119_deepseek-r1_turn2
+  * http_fuzz_621003471835280627
+  * http_fuzz_15668099243118148896_deepseek-r1_turn3
+  * http_fuzz_9152972650801237158
+  * http_fuzz_17933545544843676769
+  * http_fuzz_3013850531557132465
+  * http_fuzz_7973473813160187632
+  * http_fuzz_18370229373432502685_deepseek-r1_turn5
+  * http_fuzz_13198466464091852098_deepseek-r1_turn3
+------------------------------------------------------------------------------------------------------------------------------------

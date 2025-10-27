@@ -1,0 +1,184 @@
+     Removed 124 files, 55.6MiB total
+   Compiling semver v1.0.26
+   Compiling home v0.5.5
+   Compiling libc v0.2.175
+   Compiling xdg v2.5.2
+   Compiling global_data v0.1.0 (/home/cdc/deepSURF-sp26-artifacts/artifact_code/global_data)
+   Compiling toodee v0.2.4 (/home/cdc/deepSURF-sp26-artifacts/artifact_data/dataset/erasan_crates/toodee-0.2.4)
+   Compiling afl v0.15.7
+   Compiling rustc_version v0.4.1
+   Compiling toodee_fuzz_12198009328625723202 v0.1.0 (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#3-toodee/harness)
+warning: unused imports: `DerefMut`, `Deref`, `IndexMut`, `Index`
+ --> src/toodee_fuzz_12198009328625723202.rs:7:16
+  |
+7 | use std::ops::{Deref, DerefMut, Index, IndexMut};
+  |                ^^^^^  ^^^^^^^^  ^^^^^  ^^^^^^^^
+  |
+  = note: `#[warn(unused_imports)]` on by default
+
+warning: the item `TryInto` is imported redundantly
+   --> src/toodee_fuzz_12198009328625723202.rs:231:9
+    |
+231 |     use std::convert::TryInto;
+    |         ^^^^^^^^^^^^^^^^^^^^^
+   --> /rustc/11f32b73e0dc9287e305b5b9980d24aecdc8c17f/library/std/src/prelude/mod.rs:129:13
+    |
+    = note: the item `TryInto` is already defined here
+
+warning: the item `TryInto` is imported redundantly
+   --> src/toodee_fuzz_12198009328625723202.rs:238:9
+    |
+238 |     use std::convert::TryInto;
+    |         ^^^^^^^^^^^^^^^^^^^^^
+   --> /rustc/11f32b73e0dc9287e305b5b9980d24aecdc8c17f/library/std/src/prelude/mod.rs:129:13
+    |
+    = note: the item `TryInto` is already defined here
+
+warning: variable does not need to be mutable
+  --> src/toodee_fuzz_12198009328625723202.rs:32:13
+   |
+32 |         let mut t_4 = _to_u8(GLOBAL_DATA, 24) % 17;
+   |             ----^^^
+   |             |
+   |             help: remove this `mut`
+   |
+   = note: `#[warn(unused_mut)]` on by default
+
+warning: variable does not need to be mutable
+  --> src/toodee_fuzz_12198009328625723202.rs:77:13
+   |
+77 |         let mut t_10 = _to_u8(GLOBAL_DATA, 65) % 17;
+   |             ----^^^^
+   |             |
+   |             help: remove this `mut`
+
+warning: unused variable: `col`
+   --> src/toodee_fuzz_12198009328625723202.rs:143:25
+    |
+143 |                     let col = _to_usize(GLOBAL_DATA, base + 1);
+    |                         ^^^ help: if this is intentional, prefix it with an underscore: `_col`
+    |
+    = note: `#[warn(unused_variables)]` on by default
+
+warning: variable does not need to be mutable
+   --> src/toodee_fuzz_12198009328625723202.rs:111:13
+    |
+111 |         let mut t_2 = &mut t_1;
+    |             ----^^^
+    |             |
+    |             help: remove this `mut`
+
+warning: field `0` is never read
+  --> src/toodee_fuzz_12198009328625723202.rs:14:20
+   |
+14 | struct CustomType1(String);
+   |        ----------- ^^^^^^
+   |        |
+   |        field in this struct
+   |
+   = note: `CustomType1` has derived impls for the traits `Clone` and `Debug`, but these are intentionally ignored during dead code analysis
+   = note: `#[warn(dead_code)]` on by default
+help: consider changing the field to be of unit type to suppress this warning while preserving the field numbering, or remove the field
+   |
+14 | struct CustomType1(());
+   |                    ~~
+
+warning: variable `GLOBAL_DATA` should have a snake case name
+  --> src/toodee_fuzz_12198009328625723202.rs:21:13
+   |
+21 |         let GLOBAL_DATA = global_data.first_half;
+   |             ^^^^^^^^^^^ help: convert the identifier to snake case: `global_data`
+   |
+   = note: `#[warn(non_snake_case)]` on by default
+
+warning: variable `GLOBAL_DATA` should have a snake case name
+  --> src/toodee_fuzz_12198009328625723202.rs:28:13
+   |
+28 |         let GLOBAL_DATA = match selector {
+   |             ^^^^^^^^^^^ help: convert the identifier to snake case: `global_data`
+
+warning: variable `GLOBAL_DATA` should have a snake case name
+  --> src/toodee_fuzz_12198009328625723202.rs:44:13
+   |
+44 |         let GLOBAL_DATA = global_data.first_half;
+   |             ^^^^^^^^^^^ help: convert the identifier to snake case: `global_data`
+
+warning: variable `GLOBAL_DATA` should have a snake case name
+  --> src/toodee_fuzz_12198009328625723202.rs:51:13
+   |
+51 |         let GLOBAL_DATA = match selector {
+   |             ^^^^^^^^^^^ help: convert the identifier to snake case: `global_data`
+
+warning: variable `GLOBAL_DATA` should have a snake case name
+  --> src/toodee_fuzz_12198009328625723202.rs:66:13
+   |
+66 |         let GLOBAL_DATA = global_data.first_half;
+   |             ^^^^^^^^^^^ help: convert the identifier to snake case: `global_data`
+
+warning: variable `GLOBAL_DATA` should have a snake case name
+  --> src/toodee_fuzz_12198009328625723202.rs:73:13
+   |
+73 |         let GLOBAL_DATA = match selector {
+   |             ^^^^^^^^^^^ help: convert the identifier to snake case: `global_data`
+
+warning: variable `GLOBAL_DATA` should have a snake case name
+  --> src/toodee_fuzz_12198009328625723202.rs:90:13
+   |
+90 |         let GLOBAL_DATA = global_data.first_half;
+   |             ^^^^^^^^^^^ help: convert the identifier to snake case: `global_data`
+
+warning: `toodee_fuzz_12198009328625723202` (bin "toodee_fuzz_12198009328625723202") generated 15 warnings (run `cargo fix --bin "toodee_fuzz_12198009328625723202"` to apply 5 suggestions)
+    Finished dev [unoptimized + debuginfo] target(s) in 2.59s
+=================================================================
+==1406250==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x7fcacddfd800 at pc 0x5621f4d44228 bp 0x7ffe72486990 sp 0x7ffe72486988
+WRITE of size 8 at 0x7fcacddfd800 thread T0
+    #0 0x5621f4d44227  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#3-toodee/harness/target/x86_64-unknown-linux-gnu/debug/toodee_fuzz_12198009328625723202+0xcb227) (BuildId: bac929129a5dde0218162ebe6d562cbf25d2cbe4)
+    #1 0x5621f4d3f0e1  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#3-toodee/harness/target/x86_64-unknown-linux-gnu/debug/toodee_fuzz_12198009328625723202+0xc60e1) (BuildId: bac929129a5dde0218162ebe6d562cbf25d2cbe4)
+    #2 0x5621f4d466ba  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#3-toodee/harness/target/x86_64-unknown-linux-gnu/debug/toodee_fuzz_12198009328625723202+0xcd6ba) (BuildId: bac929129a5dde0218162ebe6d562cbf25d2cbe4)
+    #3 0x5621f4d45311  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#3-toodee/harness/target/x86_64-unknown-linux-gnu/debug/toodee_fuzz_12198009328625723202+0xcc311) (BuildId: bac929129a5dde0218162ebe6d562cbf25d2cbe4)
+    #4 0x5621f4d3ab61  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#3-toodee/harness/target/x86_64-unknown-linux-gnu/debug/toodee_fuzz_12198009328625723202+0xc1b61) (BuildId: bac929129a5dde0218162ebe6d562cbf25d2cbe4)
+    #5 0x5621f4d3abb0  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#3-toodee/harness/target/x86_64-unknown-linux-gnu/debug/toodee_fuzz_12198009328625723202+0xc1bb0) (BuildId: bac929129a5dde0218162ebe6d562cbf25d2cbe4)
+    #6 0x5621f4d606f0  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#3-toodee/harness/target/x86_64-unknown-linux-gnu/debug/toodee_fuzz_12198009328625723202+0xe76f0) (BuildId: bac929129a5dde0218162ebe6d562cbf25d2cbe4)
+    #7 0x5621f4d46875  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#3-toodee/harness/target/x86_64-unknown-linux-gnu/debug/toodee_fuzz_12198009328625723202+0xcd875) (BuildId: bac929129a5dde0218162ebe6d562cbf25d2cbe4)
+    #8 0x7fcad0fe4d8f  (/lib/x86_64-linux-gnu/libc.so.6+0x29d8f) (BuildId: 490fef8403240c91833978d494d39e537409b92e)
+    #9 0x7fcad0fe4e3f  (/lib/x86_64-linux-gnu/libc.so.6+0x29e3f) (BuildId: 490fef8403240c91833978d494d39e537409b92e)
+    #10 0x5621f4c8a284  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#3-toodee/harness/target/x86_64-unknown-linux-gnu/debug/toodee_fuzz_12198009328625723202+0x11284) (BuildId: bac929129a5dde0218162ebe6d562cbf25d2cbe4)
+
+0x7fcacddfd800 is located 0 bytes after 6291456-byte region [0x7fcacd7fd800,0x7fcacddfd800)
+allocated by thread T0 here:
+    #0 0x5621f4d11b85  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#3-toodee/harness/target/x86_64-unknown-linux-gnu/debug/toodee_fuzz_12198009328625723202+0x98b85) (BuildId: bac929129a5dde0218162ebe6d562cbf25d2cbe4)
+    #1 0x5621f4d41f25  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#3-toodee/harness/target/x86_64-unknown-linux-gnu/debug/toodee_fuzz_12198009328625723202+0xc8f25) (BuildId: bac929129a5dde0218162ebe6d562cbf25d2cbe4)
+
+SUMMARY: AddressSanitizer: heap-buffer-overflow (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#3-toodee/harness/target/x86_64-unknown-linux-gnu/debug/toodee_fuzz_12198009328625723202+0xcb227) (BuildId: bac929129a5dde0218162ebe6d562cbf25d2cbe4) 
+Shadow bytes around the buggy address:
+  0x7fcacddfd580: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x7fcacddfd600: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x7fcacddfd680: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x7fcacddfd700: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x7fcacddfd780: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+=>0x7fcacddfd800:[fa]fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+  0x7fcacddfd880: fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+  0x7fcacddfd900: fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+  0x7fcacddfd980: fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+  0x7fcacddfda00: fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+  0x7fcacddfda80: fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+Shadow byte legend (one shadow byte represents 8 application bytes):
+  Addressable:           00
+  Partially addressable: 01 02 03 04 05 06 07 
+  Heap left redzone:       fa
+  Freed heap region:       fd
+  Stack left redzone:      f1
+  Stack mid redzone:       f2
+  Stack right redzone:     f3
+  Stack after return:      f5
+  Stack use after scope:   f8
+  Global redzone:          f9
+  Global init order:       f6
+  Poisoned by user:        f7
+  Container overflow:      fc
+  Array cookie:            ac
+  Intra object redzone:    bb
+  ASan internal:           fe
+  Left alloca redzone:     ca
+  Right alloca redzone:    cb
+==1406250==ABORTING

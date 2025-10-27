@@ -1,0 +1,16 @@
+[workspace]
+
+[package]
+name = "cbox_fuzz_17301003630593907584"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "cbox_fuzz_17301003630593907584"
+path = "src/cbox_fuzz_17301003630593907584.rs"
+
+[dependencies]
+afl = "=0.15.7"
+home = "=0.5.9"
+cbox = { path = "../../../../cbox-0.3.0/" }
+global_data = { path = "../../../../../../../../code/global_data" }

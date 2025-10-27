@@ -1,0 +1,1828 @@
+-----------------
+src/lib.rs PointerMethods::padd
+deps:{"<*const T as PointerMethods>":{},"<*mut T as PointerMethods>":{},"PointerMethods::padd":{"Self":["PointerMethods"]}}
+candidates:{"<*const T as PointerMethods>":{},"<*mut T as PointerMethods>":{},"PointerMethods::padd":{"Self":["<*const T as PointerMethods>"]}}
+let mut p0 = MaybeUninit::uninit().assume_init(); // Self
+let mut p1 = 0usize; // None+usize
++p0.padd(p1);
++PointerMethods::padd(p0, p1);
++crate::PointerMethods::padd(p0, p1);
++crate::PointerMethods::padd(p0, p1);
+-----------------
+src/lib.rs Array::size
+deps:{"Array::size":{"Self":["Array"]}}
+candidates:{"Array::size":{"Self":[]}}
++Array::size();
++crate::Array::size();
++crate::Array::size();
+-----------------
+src/lib.rs Array::ptr
+deps:{"Array::ptr":{"Self":["Array"]}}
+candidates:{"Array::ptr":{"Self":[]}}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // Self
++p0.ptr();
++Array::ptr(p0);
++crate::Array::ptr(p0);
++crate::Array::ptr(p0);
+-----------------
+src/lib.rs Array::ptr_mut
+deps:{"Array::ptr_mut":{"Self":["Array"]}}
+candidates:{"Array::ptr_mut":{"Self":[]}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // Self
++p0.ptr_mut();
++Array::ptr_mut(p0);
++crate::Array::ptr_mut(p0);
++crate::Array::ptr_mut(p0);
+-----------------
+src/lib.rs VecLike::push
+deps:{"VecLike::push":{"Self":["std::ops::Index","VecLike","std::iter::Extend","std::ops::IndexMut","std::ops::DerefMut"],"T":["std::marker::Sized"]}}
+candidates:{"VecLike::push":{"Self":["std::vec::Vec<T, A>"],"T":["RUG_ANY"]}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // Self
+let mut p1 = MaybeUninit::uninit().assume_init(); // T
++p0.push(p1);
++VecLike::push(p0, p1);
++crate::VecLike::push(p0, p1);
++crate::VecLike::push(p0, p1);
+-----------------
+src/lib.rs VecLike::pop
+deps:{"VecLike::pop":{"Self":["std::ops::IndexMut","std::ops::DerefMut","std::iter::Extend","VecLike","std::ops::Index"],"T":["std::marker::Sized"]}}
+candidates:{"VecLike::pop":{"Self":["std::vec::Vec<T, A>"],"T":["RUG_ANY"]}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // Self
++p0.pop();
++VecLike::pop(p0);
++crate::VecLike::pop(p0);
++crate::VecLike::pop(p0);
+-----------------
+src/lib.rs ExtendFromSlice::extend_from_slice
+deps:{"<&A as std::alloc::Allocator>":{},"ExtendFromSlice::extend_from_slice":{"Self":["ExtendFromSlice"],"T":["std::marker::Sized"]},"StackVec":{"A":["Array","std::marker::Sized"]},"std::clone::impls::<impl std::clone::Clone for &T>":{},"std::clone::impls::<impl std::clone::Clone for &mut T>":{},"std::clone::impls::<impl std::clone::Clone for *const T>":{},"std::clone::impls::<impl std::clone::Clone for *mut T>":{},"std::vec::Vec":{"A":["std::alloc::Allocator","std::marker::Sized"],"T":["std::clone::Clone","std::marker::Sized"]}}
+candidates:{"<&A as std::alloc::Allocator>":{},"ExtendFromSlice::extend_from_slice":{"Self":["std::vec::Vec","StackVec"],"T":["RUG_ANY"]},"StackVec":{"A":[]},"std::clone::impls::<impl std::clone::Clone for &T>":{},"std::clone::impls::<impl std::clone::Clone for &mut T>":{},"std::clone::impls::<impl std::clone::Clone for *const T>":{},"std::clone::impls::<impl std::clone::Clone for *mut T>":{},"std::vec::Vec":{"A":["std::alloc::Global","<&A as std::alloc::Allocator>","std::alloc::System"],"T":["std::clone::impls::<impl std::clone::Clone for *const T>","StackVec"]}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // Self
+let mut p1 = & MaybeUninit::uninit().assume_init(); // [T]
++p0.extend_from_slice(p1);
++ExtendFromSlice::extend_from_slice(p0, p1);
++crate::ExtendFromSlice::extend_from_slice(p0, p1);
++crate::ExtendFromSlice::extend_from_slice(p0, p1);
+-----------------
+src/lib.rs <*const T as PointerMethods>::padd
+deps:{"<*const T as PointerMethods>::padd":{"T":["std::marker::Sized"]}}
+candidates:{"<*const T as PointerMethods>::padd":{"T":["RUG_ANY"]}}
+let mut p0 = MaybeUninit::uninit().assume_init(); // *const T
+let mut p1 = 0usize; // None+usize
++p0.padd(p1);
++<*const T as PointerMethods>::padd(p0, p1);
++crate::<*const T as PointerMethods>::padd(p0, p1);
++<*const T>::padd(p0, p1);
+-----------------
+src/lib.rs <*mut T as PointerMethods>::padd
+deps:{"<*mut T as PointerMethods>::padd":{"T":["std::marker::Sized"]}}
+candidates:{"<*mut T as PointerMethods>::padd":{"T":["RUG_ANY"]}}
+let mut p0 = MaybeUninit::uninit().assume_init(); // *mut T
+let mut p1 = 0usize; // None+usize
++p0.padd(p1);
++<*mut T as PointerMethods>::padd(p0, p1);
++crate::<*mut T as PointerMethods>::padd(p0, p1);
++<*mut T>::padd(p0, p1);
+-----------------
+src/lib.rs <[T; 0] as Array>::size
+deps:{"<[T; 0] as Array>::size":{"T":["std::marker::Sized"]}}
+candidates:{"<[T; 0] as Array>::size":{"T":["RUG_ANY"]}}
++<[T; 0] as Array>::size();
++crate::<[T; 0] as Array>::size();
++<[T; 0]>::size();
+-----------------
+src/lib.rs <[T; 0] as Array>::ptr
+deps:{"<[T; 0] as Array>::ptr":{"T":["std::marker::Sized"]}}
+candidates:{"<[T; 0] as Array>::ptr":{"T":["RUG_ANY"]}}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // [T; 0]
++p0.ptr();
++<[T; 0] as Array>::ptr(p0);
++crate::<[T; 0] as Array>::ptr(p0);
++<[T; 0]>::ptr(p0);
+-----------------
+src/lib.rs <[T; 0] as Array>::ptr_mut
+deps:{"<[T; 0] as Array>::ptr_mut":{"T":["std::marker::Sized"]}}
+candidates:{"<[T; 0] as Array>::ptr_mut":{"T":["RUG_ANY"]}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // [T; 0]
++p0.ptr_mut();
++<[T; 0] as Array>::ptr_mut(p0);
++crate::<[T; 0] as Array>::ptr_mut(p0);
++<[T; 0]>::ptr_mut(p0);
+-----------------
+src/lib.rs <[T; 1] as Array>::size
+deps:{"<[T; 1] as Array>::size":{"T":["std::marker::Sized"]}}
+candidates:{"<[T; 1] as Array>::size":{"T":["RUG_ANY"]}}
++<[T; 1] as Array>::size();
++crate::<[T; 1] as Array>::size();
++<[T; 1]>::size();
+-----------------
+src/lib.rs <[T; 1] as Array>::ptr
+deps:{"<[T; 1] as Array>::ptr":{"T":["std::marker::Sized"]}}
+candidates:{"<[T; 1] as Array>::ptr":{"T":["RUG_ANY"]}}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // [T; 1]
++p0.ptr();
++<[T; 1] as Array>::ptr(p0);
++crate::<[T; 1] as Array>::ptr(p0);
++<[T; 1]>::ptr(p0);
+-----------------
+src/lib.rs <[T; 1] as Array>::ptr_mut
+deps:{"<[T; 1] as Array>::ptr_mut":{"T":["std::marker::Sized"]}}
+candidates:{"<[T; 1] as Array>::ptr_mut":{"T":["RUG_ANY"]}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // [T; 1]
++p0.ptr_mut();
++<[T; 1] as Array>::ptr_mut(p0);
++crate::<[T; 1] as Array>::ptr_mut(p0);
++<[T; 1]>::ptr_mut(p0);
+-----------------
+src/lib.rs <[T; 2] as Array>::size
+deps:{"<[T; 2] as Array>::size":{"T":["std::marker::Sized"]}}
+candidates:{"<[T; 2] as Array>::size":{"T":["RUG_ANY"]}}
++<[T; 2] as Array>::size();
++crate::<[T; 2] as Array>::size();
++<[T; 2]>::size();
+-----------------
+src/lib.rs <[T; 2] as Array>::ptr
+deps:{"<[T; 2] as Array>::ptr":{"T":["std::marker::Sized"]}}
+candidates:{"<[T; 2] as Array>::ptr":{"T":["RUG_ANY"]}}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // [T; 2]
++p0.ptr();
++<[T; 2] as Array>::ptr(p0);
++crate::<[T; 2] as Array>::ptr(p0);
++<[T; 2]>::ptr(p0);
+-----------------
+src/lib.rs <[T; 2] as Array>::ptr_mut
+deps:{"<[T; 2] as Array>::ptr_mut":{"T":["std::marker::Sized"]}}
+candidates:{"<[T; 2] as Array>::ptr_mut":{"T":["RUG_ANY"]}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // [T; 2]
++p0.ptr_mut();
++<[T; 2] as Array>::ptr_mut(p0);
++crate::<[T; 2] as Array>::ptr_mut(p0);
++<[T; 2]>::ptr_mut(p0);
+-----------------
+src/lib.rs <[T; 3] as Array>::size
+deps:{"<[T; 3] as Array>::size":{"T":["std::marker::Sized"]}}
+candidates:{"<[T; 3] as Array>::size":{"T":["RUG_ANY"]}}
++<[T; 3] as Array>::size();
++crate::<[T; 3] as Array>::size();
++<[T; 3]>::size();
+-----------------
+src/lib.rs <[T; 3] as Array>::ptr
+deps:{"<[T; 3] as Array>::ptr":{"T":["std::marker::Sized"]}}
+candidates:{"<[T; 3] as Array>::ptr":{"T":["RUG_ANY"]}}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // [T; 3]
++p0.ptr();
++<[T; 3] as Array>::ptr(p0);
++crate::<[T; 3] as Array>::ptr(p0);
++<[T; 3]>::ptr(p0);
+-----------------
+src/lib.rs <[T; 3] as Array>::ptr_mut
+deps:{"<[T; 3] as Array>::ptr_mut":{"T":["std::marker::Sized"]}}
+candidates:{"<[T; 3] as Array>::ptr_mut":{"T":["RUG_ANY"]}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // [T; 3]
++p0.ptr_mut();
++<[T; 3] as Array>::ptr_mut(p0);
++crate::<[T; 3] as Array>::ptr_mut(p0);
++<[T; 3]>::ptr_mut(p0);
+-----------------
+src/lib.rs <[T; 4] as Array>::size
+deps:{"<[T; 4] as Array>::size":{"T":["std::marker::Sized"]}}
+candidates:{"<[T; 4] as Array>::size":{"T":["RUG_ANY"]}}
++<[T; 4] as Array>::size();
++crate::<[T; 4] as Array>::size();
++<[T; 4]>::size();
+-----------------
+src/lib.rs <[T; 4] as Array>::ptr
+deps:{"<[T; 4] as Array>::ptr":{"T":["std::marker::Sized"]}}
+candidates:{"<[T; 4] as Array>::ptr":{"T":["RUG_ANY"]}}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // [T; 4]
++p0.ptr();
++<[T; 4] as Array>::ptr(p0);
++crate::<[T; 4] as Array>::ptr(p0);
++<[T; 4]>::ptr(p0);
+-----------------
+src/lib.rs <[T; 4] as Array>::ptr_mut
+deps:{"<[T; 4] as Array>::ptr_mut":{"T":["std::marker::Sized"]}}
+candidates:{"<[T; 4] as Array>::ptr_mut":{"T":["RUG_ANY"]}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // [T; 4]
++p0.ptr_mut();
++<[T; 4] as Array>::ptr_mut(p0);
++crate::<[T; 4] as Array>::ptr_mut(p0);
++<[T; 4]>::ptr_mut(p0);
+-----------------
+src/lib.rs <[T; 5] as Array>::size
+deps:{"<[T; 5] as Array>::size":{"T":["std::marker::Sized"]}}
+candidates:{"<[T; 5] as Array>::size":{"T":["RUG_ANY"]}}
++<[T; 5] as Array>::size();
++crate::<[T; 5] as Array>::size();
++<[T; 5]>::size();
+-----------------
+src/lib.rs <[T; 5] as Array>::ptr
+deps:{"<[T; 5] as Array>::ptr":{"T":["std::marker::Sized"]}}
+candidates:{"<[T; 5] as Array>::ptr":{"T":["RUG_ANY"]}}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // [T; 5]
++p0.ptr();
++<[T; 5] as Array>::ptr(p0);
++crate::<[T; 5] as Array>::ptr(p0);
++<[T; 5]>::ptr(p0);
+-----------------
+src/lib.rs <[T; 5] as Array>::ptr_mut
+deps:{"<[T; 5] as Array>::ptr_mut":{"T":["std::marker::Sized"]}}
+candidates:{"<[T; 5] as Array>::ptr_mut":{"T":["RUG_ANY"]}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // [T; 5]
++p0.ptr_mut();
++<[T; 5] as Array>::ptr_mut(p0);
++crate::<[T; 5] as Array>::ptr_mut(p0);
++<[T; 5]>::ptr_mut(p0);
+-----------------
+src/lib.rs <[T; 6] as Array>::size
+deps:{"<[T; 6] as Array>::size":{"T":["std::marker::Sized"]}}
+candidates:{"<[T; 6] as Array>::size":{"T":["RUG_ANY"]}}
++<[T; 6] as Array>::size();
++crate::<[T; 6] as Array>::size();
++<[T; 6]>::size();
+-----------------
+src/lib.rs <[T; 6] as Array>::ptr
+deps:{"<[T; 6] as Array>::ptr":{"T":["std::marker::Sized"]}}
+candidates:{"<[T; 6] as Array>::ptr":{"T":["RUG_ANY"]}}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // [T; 6]
++p0.ptr();
++<[T; 6] as Array>::ptr(p0);
++crate::<[T; 6] as Array>::ptr(p0);
++<[T; 6]>::ptr(p0);
+-----------------
+src/lib.rs <[T; 6] as Array>::ptr_mut
+deps:{"<[T; 6] as Array>::ptr_mut":{"T":["std::marker::Sized"]}}
+candidates:{"<[T; 6] as Array>::ptr_mut":{"T":["RUG_ANY"]}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // [T; 6]
++p0.ptr_mut();
++<[T; 6] as Array>::ptr_mut(p0);
++crate::<[T; 6] as Array>::ptr_mut(p0);
++<[T; 6]>::ptr_mut(p0);
+-----------------
+src/lib.rs <[T; 7] as Array>::size
+deps:{"<[T; 7] as Array>::size":{"T":["std::marker::Sized"]}}
+candidates:{"<[T; 7] as Array>::size":{"T":["RUG_ANY"]}}
++<[T; 7] as Array>::size();
++crate::<[T; 7] as Array>::size();
++<[T; 7]>::size();
+-----------------
+src/lib.rs <[T; 7] as Array>::ptr
+deps:{"<[T; 7] as Array>::ptr":{"T":["std::marker::Sized"]}}
+candidates:{"<[T; 7] as Array>::ptr":{"T":["RUG_ANY"]}}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // [T; 7]
++p0.ptr();
++<[T; 7] as Array>::ptr(p0);
++crate::<[T; 7] as Array>::ptr(p0);
++<[T; 7]>::ptr(p0);
+-----------------
+src/lib.rs <[T; 7] as Array>::ptr_mut
+deps:{"<[T; 7] as Array>::ptr_mut":{"T":["std::marker::Sized"]}}
+candidates:{"<[T; 7] as Array>::ptr_mut":{"T":["RUG_ANY"]}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // [T; 7]
++p0.ptr_mut();
++<[T; 7] as Array>::ptr_mut(p0);
++crate::<[T; 7] as Array>::ptr_mut(p0);
++<[T; 7]>::ptr_mut(p0);
+-----------------
+src/lib.rs <[T; 8] as Array>::size
+deps:{"<[T; 8] as Array>::size":{"T":["std::marker::Sized"]}}
+candidates:{"<[T; 8] as Array>::size":{"T":["RUG_ANY"]}}
++<[T; 8] as Array>::size();
++crate::<[T; 8] as Array>::size();
++<[T; 8]>::size();
+-----------------
+src/lib.rs <[T; 8] as Array>::ptr
+deps:{"<[T; 8] as Array>::ptr":{"T":["std::marker::Sized"]}}
+candidates:{"<[T; 8] as Array>::ptr":{"T":["RUG_ANY"]}}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // [T; 8]
++p0.ptr();
++<[T; 8] as Array>::ptr(p0);
++crate::<[T; 8] as Array>::ptr(p0);
++<[T; 8]>::ptr(p0);
+-----------------
+src/lib.rs <[T; 8] as Array>::ptr_mut
+deps:{"<[T; 8] as Array>::ptr_mut":{"T":["std::marker::Sized"]}}
+candidates:{"<[T; 8] as Array>::ptr_mut":{"T":["RUG_ANY"]}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // [T; 8]
++p0.ptr_mut();
++<[T; 8] as Array>::ptr_mut(p0);
++crate::<[T; 8] as Array>::ptr_mut(p0);
++<[T; 8]>::ptr_mut(p0);
+-----------------
+src/lib.rs <[T; 9] as Array>::size
+deps:{"<[T; 9] as Array>::size":{"T":["std::marker::Sized"]}}
+candidates:{"<[T; 9] as Array>::size":{"T":["RUG_ANY"]}}
++<[T; 9] as Array>::size();
++crate::<[T; 9] as Array>::size();
++<[T; 9]>::size();
+-----------------
+src/lib.rs <[T; 9] as Array>::ptr
+deps:{"<[T; 9] as Array>::ptr":{"T":["std::marker::Sized"]}}
+candidates:{"<[T; 9] as Array>::ptr":{"T":["RUG_ANY"]}}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // [T; 9]
++p0.ptr();
++<[T; 9] as Array>::ptr(p0);
++crate::<[T; 9] as Array>::ptr(p0);
++<[T; 9]>::ptr(p0);
+-----------------
+src/lib.rs <[T; 9] as Array>::ptr_mut
+deps:{"<[T; 9] as Array>::ptr_mut":{"T":["std::marker::Sized"]}}
+candidates:{"<[T; 9] as Array>::ptr_mut":{"T":["RUG_ANY"]}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // [T; 9]
++p0.ptr_mut();
++<[T; 9] as Array>::ptr_mut(p0);
++crate::<[T; 9] as Array>::ptr_mut(p0);
++<[T; 9]>::ptr_mut(p0);
+-----------------
+src/lib.rs <[T; 10] as Array>::size
+deps:{"<[T; 10] as Array>::size":{"T":["std::marker::Sized"]}}
+candidates:{"<[T; 10] as Array>::size":{"T":["RUG_ANY"]}}
++<[T; 10] as Array>::size();
++crate::<[T; 10] as Array>::size();
++<[T; 10]>::size();
+-----------------
+src/lib.rs <[T; 10] as Array>::ptr
+deps:{"<[T; 10] as Array>::ptr":{"T":["std::marker::Sized"]}}
+candidates:{"<[T; 10] as Array>::ptr":{"T":["RUG_ANY"]}}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // [T; 10]
++p0.ptr();
++<[T; 10] as Array>::ptr(p0);
++crate::<[T; 10] as Array>::ptr(p0);
++<[T; 10]>::ptr(p0);
+-----------------
+src/lib.rs <[T; 10] as Array>::ptr_mut
+deps:{"<[T; 10] as Array>::ptr_mut":{"T":["std::marker::Sized"]}}
+candidates:{"<[T; 10] as Array>::ptr_mut":{"T":["RUG_ANY"]}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // [T; 10]
++p0.ptr_mut();
++<[T; 10] as Array>::ptr_mut(p0);
++crate::<[T; 10] as Array>::ptr_mut(p0);
++<[T; 10]>::ptr_mut(p0);
+-----------------
+src/lib.rs <[T; 11] as Array>::size
+deps:{"<[T; 11] as Array>::size":{"T":["std::marker::Sized"]}}
+candidates:{"<[T; 11] as Array>::size":{"T":["RUG_ANY"]}}
++<[T; 11] as Array>::size();
++crate::<[T; 11] as Array>::size();
++<[T; 11]>::size();
+-----------------
+src/lib.rs <[T; 11] as Array>::ptr
+deps:{"<[T; 11] as Array>::ptr":{"T":["std::marker::Sized"]}}
+candidates:{"<[T; 11] as Array>::ptr":{"T":["RUG_ANY"]}}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // [T; 11]
++p0.ptr();
++<[T; 11] as Array>::ptr(p0);
++crate::<[T; 11] as Array>::ptr(p0);
++<[T; 11]>::ptr(p0);
+-----------------
+src/lib.rs <[T; 11] as Array>::ptr_mut
+deps:{"<[T; 11] as Array>::ptr_mut":{"T":["std::marker::Sized"]}}
+candidates:{"<[T; 11] as Array>::ptr_mut":{"T":["RUG_ANY"]}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // [T; 11]
++p0.ptr_mut();
++<[T; 11] as Array>::ptr_mut(p0);
++crate::<[T; 11] as Array>::ptr_mut(p0);
++<[T; 11]>::ptr_mut(p0);
+-----------------
+src/lib.rs <[T; 12] as Array>::size
+deps:{"<[T; 12] as Array>::size":{"T":["std::marker::Sized"]}}
+candidates:{"<[T; 12] as Array>::size":{"T":["RUG_ANY"]}}
++<[T; 12] as Array>::size();
++crate::<[T; 12] as Array>::size();
++<[T; 12]>::size();
+-----------------
+src/lib.rs <[T; 12] as Array>::ptr
+deps:{"<[T; 12] as Array>::ptr":{"T":["std::marker::Sized"]}}
+candidates:{"<[T; 12] as Array>::ptr":{"T":["RUG_ANY"]}}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // [T; 12]
++p0.ptr();
++<[T; 12] as Array>::ptr(p0);
++crate::<[T; 12] as Array>::ptr(p0);
++<[T; 12]>::ptr(p0);
+-----------------
+src/lib.rs <[T; 12] as Array>::ptr_mut
+deps:{"<[T; 12] as Array>::ptr_mut":{"T":["std::marker::Sized"]}}
+candidates:{"<[T; 12] as Array>::ptr_mut":{"T":["RUG_ANY"]}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // [T; 12]
++p0.ptr_mut();
++<[T; 12] as Array>::ptr_mut(p0);
++crate::<[T; 12] as Array>::ptr_mut(p0);
++<[T; 12]>::ptr_mut(p0);
+-----------------
+src/lib.rs <[T; 13] as Array>::size
+deps:{"<[T; 13] as Array>::size":{"T":["std::marker::Sized"]}}
+candidates:{"<[T; 13] as Array>::size":{"T":["RUG_ANY"]}}
++<[T; 13] as Array>::size();
++crate::<[T; 13] as Array>::size();
++<[T; 13]>::size();
+-----------------
+src/lib.rs <[T; 13] as Array>::ptr
+deps:{"<[T; 13] as Array>::ptr":{"T":["std::marker::Sized"]}}
+candidates:{"<[T; 13] as Array>::ptr":{"T":["RUG_ANY"]}}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // [T; 13]
++p0.ptr();
++<[T; 13] as Array>::ptr(p0);
++crate::<[T; 13] as Array>::ptr(p0);
++<[T; 13]>::ptr(p0);
+-----------------
+src/lib.rs <[T; 13] as Array>::ptr_mut
+deps:{"<[T; 13] as Array>::ptr_mut":{"T":["std::marker::Sized"]}}
+candidates:{"<[T; 13] as Array>::ptr_mut":{"T":["RUG_ANY"]}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // [T; 13]
++p0.ptr_mut();
++<[T; 13] as Array>::ptr_mut(p0);
++crate::<[T; 13] as Array>::ptr_mut(p0);
++<[T; 13]>::ptr_mut(p0);
+-----------------
+src/lib.rs <[T; 14] as Array>::size
+deps:{"<[T; 14] as Array>::size":{"T":["std::marker::Sized"]}}
+candidates:{"<[T; 14] as Array>::size":{"T":["RUG_ANY"]}}
++<[T; 14] as Array>::size();
++crate::<[T; 14] as Array>::size();
++<[T; 14]>::size();
+-----------------
+src/lib.rs <[T; 14] as Array>::ptr
+deps:{"<[T; 14] as Array>::ptr":{"T":["std::marker::Sized"]}}
+candidates:{"<[T; 14] as Array>::ptr":{"T":["RUG_ANY"]}}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // [T; 14]
++p0.ptr();
++<[T; 14] as Array>::ptr(p0);
++crate::<[T; 14] as Array>::ptr(p0);
++<[T; 14]>::ptr(p0);
+-----------------
+src/lib.rs <[T; 14] as Array>::ptr_mut
+deps:{"<[T; 14] as Array>::ptr_mut":{"T":["std::marker::Sized"]}}
+candidates:{"<[T; 14] as Array>::ptr_mut":{"T":["RUG_ANY"]}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // [T; 14]
++p0.ptr_mut();
++<[T; 14] as Array>::ptr_mut(p0);
++crate::<[T; 14] as Array>::ptr_mut(p0);
++<[T; 14]>::ptr_mut(p0);
+-----------------
+src/lib.rs <[T; 15] as Array>::size
+deps:{"<[T; 15] as Array>::size":{"T":["std::marker::Sized"]}}
+candidates:{"<[T; 15] as Array>::size":{"T":["RUG_ANY"]}}
++<[T; 15] as Array>::size();
++crate::<[T; 15] as Array>::size();
++<[T; 15]>::size();
+-----------------
+src/lib.rs <[T; 15] as Array>::ptr
+deps:{"<[T; 15] as Array>::ptr":{"T":["std::marker::Sized"]}}
+candidates:{"<[T; 15] as Array>::ptr":{"T":["RUG_ANY"]}}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // [T; 15]
++p0.ptr();
++<[T; 15] as Array>::ptr(p0);
++crate::<[T; 15] as Array>::ptr(p0);
++<[T; 15]>::ptr(p0);
+-----------------
+src/lib.rs <[T; 15] as Array>::ptr_mut
+deps:{"<[T; 15] as Array>::ptr_mut":{"T":["std::marker::Sized"]}}
+candidates:{"<[T; 15] as Array>::ptr_mut":{"T":["RUG_ANY"]}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // [T; 15]
++p0.ptr_mut();
++<[T; 15] as Array>::ptr_mut(p0);
++crate::<[T; 15] as Array>::ptr_mut(p0);
++<[T; 15]>::ptr_mut(p0);
+-----------------
+src/lib.rs <[T; 16] as Array>::size
+deps:{"<[T; 16] as Array>::size":{"T":["std::marker::Sized"]}}
+candidates:{"<[T; 16] as Array>::size":{"T":["RUG_ANY"]}}
++<[T; 16] as Array>::size();
++crate::<[T; 16] as Array>::size();
++<[T; 16]>::size();
+-----------------
+src/lib.rs <[T; 16] as Array>::ptr
+deps:{"<[T; 16] as Array>::ptr":{"T":["std::marker::Sized"]}}
+candidates:{"<[T; 16] as Array>::ptr":{"T":["RUG_ANY"]}}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // [T; 16]
++p0.ptr();
++<[T; 16] as Array>::ptr(p0);
++crate::<[T; 16] as Array>::ptr(p0);
++<[T; 16]>::ptr(p0);
+-----------------
+src/lib.rs <[T; 16] as Array>::ptr_mut
+deps:{"<[T; 16] as Array>::ptr_mut":{"T":["std::marker::Sized"]}}
+candidates:{"<[T; 16] as Array>::ptr_mut":{"T":["RUG_ANY"]}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // [T; 16]
++p0.ptr_mut();
++<[T; 16] as Array>::ptr_mut(p0);
++crate::<[T; 16] as Array>::ptr_mut(p0);
++<[T; 16]>::ptr_mut(p0);
+-----------------
+src/lib.rs <[T; 20] as Array>::size
+deps:{"<[T; 20] as Array>::size":{"T":["std::marker::Sized"]}}
+candidates:{"<[T; 20] as Array>::size":{"T":["RUG_ANY"]}}
++<[T; 20] as Array>::size();
++crate::<[T; 20] as Array>::size();
++<[T; 20]>::size();
+-----------------
+src/lib.rs <[T; 20] as Array>::ptr
+deps:{"<[T; 20] as Array>::ptr":{"T":["std::marker::Sized"]}}
+candidates:{"<[T; 20] as Array>::ptr":{"T":["RUG_ANY"]}}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // [T; 20]
++p0.ptr();
++<[T; 20] as Array>::ptr(p0);
++crate::<[T; 20] as Array>::ptr(p0);
++<[T; 20]>::ptr(p0);
+-----------------
+src/lib.rs <[T; 20] as Array>::ptr_mut
+deps:{"<[T; 20] as Array>::ptr_mut":{"T":["std::marker::Sized"]}}
+candidates:{"<[T; 20] as Array>::ptr_mut":{"T":["RUG_ANY"]}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // [T; 20]
++p0.ptr_mut();
++<[T; 20] as Array>::ptr_mut(p0);
++crate::<[T; 20] as Array>::ptr_mut(p0);
++<[T; 20]>::ptr_mut(p0);
+-----------------
+src/lib.rs <[T; 24] as Array>::size
+deps:{"<[T; 24] as Array>::size":{"T":["std::marker::Sized"]}}
+candidates:{"<[T; 24] as Array>::size":{"T":["RUG_ANY"]}}
++<[T; 24] as Array>::size();
++crate::<[T; 24] as Array>::size();
++<[T; 24]>::size();
+-----------------
+src/lib.rs <[T; 24] as Array>::ptr
+deps:{"<[T; 24] as Array>::ptr":{"T":["std::marker::Sized"]}}
+candidates:{"<[T; 24] as Array>::ptr":{"T":["RUG_ANY"]}}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // [T; 24]
++p0.ptr();
++<[T; 24] as Array>::ptr(p0);
++crate::<[T; 24] as Array>::ptr(p0);
++<[T; 24]>::ptr(p0);
+-----------------
+src/lib.rs <[T; 24] as Array>::ptr_mut
+deps:{"<[T; 24] as Array>::ptr_mut":{"T":["std::marker::Sized"]}}
+candidates:{"<[T; 24] as Array>::ptr_mut":{"T":["RUG_ANY"]}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // [T; 24]
++p0.ptr_mut();
++<[T; 24] as Array>::ptr_mut(p0);
++crate::<[T; 24] as Array>::ptr_mut(p0);
++<[T; 24]>::ptr_mut(p0);
+-----------------
+src/lib.rs <[T; 32] as Array>::size
+deps:{"<[T; 32] as Array>::size":{"T":["std::marker::Sized"]}}
+candidates:{"<[T; 32] as Array>::size":{"T":["RUG_ANY"]}}
++<[T; 32] as Array>::size();
++crate::<[T; 32] as Array>::size();
++<[T; 32]>::size();
+-----------------
+src/lib.rs <[T; 32] as Array>::ptr
+deps:{"<[T; 32] as Array>::ptr":{"T":["std::marker::Sized"]}}
+candidates:{"<[T; 32] as Array>::ptr":{"T":["RUG_ANY"]}}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // [T; 32]
++p0.ptr();
++<[T; 32] as Array>::ptr(p0);
++crate::<[T; 32] as Array>::ptr(p0);
++<[T; 32]>::ptr(p0);
+-----------------
+src/lib.rs <[T; 32] as Array>::ptr_mut
+deps:{"<[T; 32] as Array>::ptr_mut":{"T":["std::marker::Sized"]}}
+candidates:{"<[T; 32] as Array>::ptr_mut":{"T":["RUG_ANY"]}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // [T; 32]
++p0.ptr_mut();
++<[T; 32] as Array>::ptr_mut(p0);
++crate::<[T; 32] as Array>::ptr_mut(p0);
++<[T; 32]>::ptr_mut(p0);
+-----------------
+src/lib.rs <[T; 36] as Array>::size
+deps:{"<[T; 36] as Array>::size":{"T":["std::marker::Sized"]}}
+candidates:{"<[T; 36] as Array>::size":{"T":["RUG_ANY"]}}
++<[T; 36] as Array>::size();
++crate::<[T; 36] as Array>::size();
++<[T; 36]>::size();
+-----------------
+src/lib.rs <[T; 36] as Array>::ptr
+deps:{"<[T; 36] as Array>::ptr":{"T":["std::marker::Sized"]}}
+candidates:{"<[T; 36] as Array>::ptr":{"T":["RUG_ANY"]}}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // [T; 36]
++p0.ptr();
++<[T; 36] as Array>::ptr(p0);
++crate::<[T; 36] as Array>::ptr(p0);
++<[T; 36]>::ptr(p0);
+-----------------
+src/lib.rs <[T; 36] as Array>::ptr_mut
+deps:{"<[T; 36] as Array>::ptr_mut":{"T":["std::marker::Sized"]}}
+candidates:{"<[T; 36] as Array>::ptr_mut":{"T":["RUG_ANY"]}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // [T; 36]
++p0.ptr_mut();
++<[T; 36] as Array>::ptr_mut(p0);
++crate::<[T; 36] as Array>::ptr_mut(p0);
++<[T; 36]>::ptr_mut(p0);
+-----------------
+src/lib.rs <[T; 64] as Array>::size
+deps:{"<[T; 64] as Array>::size":{"T":["std::marker::Sized"]}}
+candidates:{"<[T; 64] as Array>::size":{"T":["RUG_ANY"]}}
++<[T; 64] as Array>::size();
++crate::<[T; 64] as Array>::size();
++<[T; 64]>::size();
+-----------------
+src/lib.rs <[T; 64] as Array>::ptr
+deps:{"<[T; 64] as Array>::ptr":{"T":["std::marker::Sized"]}}
+candidates:{"<[T; 64] as Array>::ptr":{"T":["RUG_ANY"]}}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // [T; 64]
++p0.ptr();
++<[T; 64] as Array>::ptr(p0);
++crate::<[T; 64] as Array>::ptr(p0);
++<[T; 64]>::ptr(p0);
+-----------------
+src/lib.rs <[T; 64] as Array>::ptr_mut
+deps:{"<[T; 64] as Array>::ptr_mut":{"T":["std::marker::Sized"]}}
+candidates:{"<[T; 64] as Array>::ptr_mut":{"T":["RUG_ANY"]}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // [T; 64]
++p0.ptr_mut();
++<[T; 64] as Array>::ptr_mut(p0);
++crate::<[T; 64] as Array>::ptr_mut(p0);
++<[T; 64]>::ptr_mut(p0);
+-----------------
+src/lib.rs <[T; 128] as Array>::size
+deps:{"<[T; 128] as Array>::size":{"T":["std::marker::Sized"]}}
+candidates:{"<[T; 128] as Array>::size":{"T":["RUG_ANY"]}}
++<[T; 128] as Array>::size();
++crate::<[T; 128] as Array>::size();
++<[T; 128]>::size();
+-----------------
+src/lib.rs <[T; 128] as Array>::ptr
+deps:{"<[T; 128] as Array>::ptr":{"T":["std::marker::Sized"]}}
+candidates:{"<[T; 128] as Array>::ptr":{"T":["RUG_ANY"]}}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // [T; 128]
++p0.ptr();
++<[T; 128] as Array>::ptr(p0);
++crate::<[T; 128] as Array>::ptr(p0);
++<[T; 128]>::ptr(p0);
+-----------------
+src/lib.rs <[T; 128] as Array>::ptr_mut
+deps:{"<[T; 128] as Array>::ptr_mut":{"T":["std::marker::Sized"]}}
+candidates:{"<[T; 128] as Array>::ptr_mut":{"T":["RUG_ANY"]}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // [T; 128]
++p0.ptr_mut();
++<[T; 128] as Array>::ptr_mut(p0);
++crate::<[T; 128] as Array>::ptr_mut(p0);
++<[T; 128]>::ptr_mut(p0);
+-----------------
+src/lib.rs <[T; 256] as Array>::size
+deps:{"<[T; 256] as Array>::size":{"T":["std::marker::Sized"]}}
+candidates:{"<[T; 256] as Array>::size":{"T":["RUG_ANY"]}}
++<[T; 256] as Array>::size();
++crate::<[T; 256] as Array>::size();
++<[T; 256]>::size();
+-----------------
+src/lib.rs <[T; 256] as Array>::ptr
+deps:{"<[T; 256] as Array>::ptr":{"T":["std::marker::Sized"]}}
+candidates:{"<[T; 256] as Array>::ptr":{"T":["RUG_ANY"]}}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // [T; 256]
++p0.ptr();
++<[T; 256] as Array>::ptr(p0);
++crate::<[T; 256] as Array>::ptr(p0);
++<[T; 256]>::ptr(p0);
+-----------------
+src/lib.rs <[T; 256] as Array>::ptr_mut
+deps:{"<[T; 256] as Array>::ptr_mut":{"T":["std::marker::Sized"]}}
+candidates:{"<[T; 256] as Array>::ptr_mut":{"T":["RUG_ANY"]}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // [T; 256]
++p0.ptr_mut();
++<[T; 256] as Array>::ptr_mut(p0);
++crate::<[T; 256] as Array>::ptr_mut(p0);
++<[T; 256]>::ptr_mut(p0);
+-----------------
+src/lib.rs <[T; 512] as Array>::size
+deps:{"<[T; 512] as Array>::size":{"T":["std::marker::Sized"]}}
+candidates:{"<[T; 512] as Array>::size":{"T":["RUG_ANY"]}}
++<[T; 512] as Array>::size();
++crate::<[T; 512] as Array>::size();
++<[T; 512]>::size();
+-----------------
+src/lib.rs <[T; 512] as Array>::ptr
+deps:{"<[T; 512] as Array>::ptr":{"T":["std::marker::Sized"]}}
+candidates:{"<[T; 512] as Array>::ptr":{"T":["RUG_ANY"]}}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // [T; 512]
++p0.ptr();
++<[T; 512] as Array>::ptr(p0);
++crate::<[T; 512] as Array>::ptr(p0);
++<[T; 512]>::ptr(p0);
+-----------------
+src/lib.rs <[T; 512] as Array>::ptr_mut
+deps:{"<[T; 512] as Array>::ptr_mut":{"T":["std::marker::Sized"]}}
+candidates:{"<[T; 512] as Array>::ptr_mut":{"T":["RUG_ANY"]}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // [T; 512]
++p0.ptr_mut();
++<[T; 512] as Array>::ptr_mut(p0);
++crate::<[T; 512] as Array>::ptr_mut(p0);
++<[T; 512]>::ptr_mut(p0);
+-----------------
+src/lib.rs <[T; 1024] as Array>::size
+deps:{"<[T; 1024] as Array>::size":{"T":["std::marker::Sized"]}}
+candidates:{"<[T; 1024] as Array>::size":{"T":["RUG_ANY"]}}
++<[T; 1024] as Array>::size();
++crate::<[T; 1024] as Array>::size();
++<[T; 1024]>::size();
+-----------------
+src/lib.rs <[T; 1024] as Array>::ptr
+deps:{"<[T; 1024] as Array>::ptr":{"T":["std::marker::Sized"]}}
+candidates:{"<[T; 1024] as Array>::ptr":{"T":["RUG_ANY"]}}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // [T; 1024]
++p0.ptr();
++<[T; 1024] as Array>::ptr(p0);
++crate::<[T; 1024] as Array>::ptr(p0);
++<[T; 1024]>::ptr(p0);
+-----------------
+src/lib.rs <[T; 1024] as Array>::ptr_mut
+deps:{"<[T; 1024] as Array>::ptr_mut":{"T":["std::marker::Sized"]}}
+candidates:{"<[T; 1024] as Array>::ptr_mut":{"T":["RUG_ANY"]}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // [T; 1024]
++p0.ptr_mut();
++<[T; 1024] as Array>::ptr_mut(p0);
++crate::<[T; 1024] as Array>::ptr_mut(p0);
++<[T; 1024]>::ptr_mut(p0);
+-----------------
+src/lib.rs <[T; 2048] as Array>::size
+deps:{"<[T; 2048] as Array>::size":{"T":["std::marker::Sized"]}}
+candidates:{"<[T; 2048] as Array>::size":{"T":["RUG_ANY"]}}
++<[T; 2048] as Array>::size();
++crate::<[T; 2048] as Array>::size();
++<[T; 2048]>::size();
+-----------------
+src/lib.rs <[T; 2048] as Array>::ptr
+deps:{"<[T; 2048] as Array>::ptr":{"T":["std::marker::Sized"]}}
+candidates:{"<[T; 2048] as Array>::ptr":{"T":["RUG_ANY"]}}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // [T; 2048]
++p0.ptr();
++<[T; 2048] as Array>::ptr(p0);
++crate::<[T; 2048] as Array>::ptr(p0);
++<[T; 2048]>::ptr(p0);
+-----------------
+src/lib.rs <[T; 2048] as Array>::ptr_mut
+deps:{"<[T; 2048] as Array>::ptr_mut":{"T":["std::marker::Sized"]}}
+candidates:{"<[T; 2048] as Array>::ptr_mut":{"T":["RUG_ANY"]}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // [T; 2048]
++p0.ptr_mut();
++<[T; 2048] as Array>::ptr_mut(p0);
++crate::<[T; 2048] as Array>::ptr_mut(p0);
++<[T; 2048]>::ptr_mut(p0);
+-----------------
+src/lib.rs <[T; 4096] as Array>::size
+deps:{"<[T; 4096] as Array>::size":{"T":["std::marker::Sized"]}}
+candidates:{"<[T; 4096] as Array>::size":{"T":["RUG_ANY"]}}
++<[T; 4096] as Array>::size();
++crate::<[T; 4096] as Array>::size();
++<[T; 4096]>::size();
+-----------------
+src/lib.rs <[T; 4096] as Array>::ptr
+deps:{"<[T; 4096] as Array>::ptr":{"T":["std::marker::Sized"]}}
+candidates:{"<[T; 4096] as Array>::ptr":{"T":["RUG_ANY"]}}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // [T; 4096]
++p0.ptr();
++<[T; 4096] as Array>::ptr(p0);
++crate::<[T; 4096] as Array>::ptr(p0);
++<[T; 4096]>::ptr(p0);
+-----------------
+src/lib.rs <[T; 4096] as Array>::ptr_mut
+deps:{"<[T; 4096] as Array>::ptr_mut":{"T":["std::marker::Sized"]}}
+candidates:{"<[T; 4096] as Array>::ptr_mut":{"T":["RUG_ANY"]}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // [T; 4096]
++p0.ptr_mut();
++<[T; 4096] as Array>::ptr_mut(p0);
++crate::<[T; 4096] as Array>::ptr_mut(p0);
++<[T; 4096]>::ptr_mut(p0);
+-----------------
+src/lib.rs <[T; 8192] as Array>::size
+deps:{"<[T; 8192] as Array>::size":{"T":["std::marker::Sized"]}}
+candidates:{"<[T; 8192] as Array>::size":{"T":["RUG_ANY"]}}
++<[T; 8192] as Array>::size();
++crate::<[T; 8192] as Array>::size();
++<[T; 8192]>::size();
+-----------------
+src/lib.rs <[T; 8192] as Array>::ptr
+deps:{"<[T; 8192] as Array>::ptr":{"T":["std::marker::Sized"]}}
+candidates:{"<[T; 8192] as Array>::ptr":{"T":["RUG_ANY"]}}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // [T; 8192]
++p0.ptr();
++<[T; 8192] as Array>::ptr(p0);
++crate::<[T; 8192] as Array>::ptr(p0);
++<[T; 8192]>::ptr(p0);
+-----------------
+src/lib.rs <[T; 8192] as Array>::ptr_mut
+deps:{"<[T; 8192] as Array>::ptr_mut":{"T":["std::marker::Sized"]}}
+candidates:{"<[T; 8192] as Array>::ptr_mut":{"T":["RUG_ANY"]}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // [T; 8192]
++p0.ptr_mut();
++<[T; 8192] as Array>::ptr_mut(p0);
++crate::<[T; 8192] as Array>::ptr_mut(p0);
++<[T; 8192]>::ptr_mut(p0);
+-----------------
+src/lib.rs <[T; 16384] as Array>::size
+deps:{"<[T; 16384] as Array>::size":{"T":["std::marker::Sized"]}}
+candidates:{"<[T; 16384] as Array>::size":{"T":["RUG_ANY"]}}
++<[T; 16384] as Array>::size();
++crate::<[T; 16384] as Array>::size();
++<[T; 16384]>::size();
+-----------------
+src/lib.rs <[T; 16384] as Array>::ptr
+deps:{"<[T; 16384] as Array>::ptr":{"T":["std::marker::Sized"]}}
+candidates:{"<[T; 16384] as Array>::ptr":{"T":["RUG_ANY"]}}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // [T; 16384]
++p0.ptr();
++<[T; 16384] as Array>::ptr(p0);
++crate::<[T; 16384] as Array>::ptr(p0);
++<[T; 16384]>::ptr(p0);
+-----------------
+src/lib.rs <[T; 16384] as Array>::ptr_mut
+deps:{"<[T; 16384] as Array>::ptr_mut":{"T":["std::marker::Sized"]}}
+candidates:{"<[T; 16384] as Array>::ptr_mut":{"T":["RUG_ANY"]}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // [T; 16384]
++p0.ptr_mut();
++<[T; 16384] as Array>::ptr_mut(p0);
++crate::<[T; 16384] as Array>::ptr_mut(p0);
++<[T; 16384]>::ptr_mut(p0);
+-----------------
+src/lib.rs <[T; 32768] as Array>::size
+deps:{"<[T; 32768] as Array>::size":{"T":["std::marker::Sized"]}}
+candidates:{"<[T; 32768] as Array>::size":{"T":["RUG_ANY"]}}
++<[T; 32768] as Array>::size();
++crate::<[T; 32768] as Array>::size();
++<[T; 32768]>::size();
+-----------------
+src/lib.rs <[T; 32768] as Array>::ptr
+deps:{"<[T; 32768] as Array>::ptr":{"T":["std::marker::Sized"]}}
+candidates:{"<[T; 32768] as Array>::ptr":{"T":["RUG_ANY"]}}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // [T; 32768]
++p0.ptr();
++<[T; 32768] as Array>::ptr(p0);
++crate::<[T; 32768] as Array>::ptr(p0);
++<[T; 32768]>::ptr(p0);
+-----------------
+src/lib.rs <[T; 32768] as Array>::ptr_mut
+deps:{"<[T; 32768] as Array>::ptr_mut":{"T":["std::marker::Sized"]}}
+candidates:{"<[T; 32768] as Array>::ptr_mut":{"T":["RUG_ANY"]}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // [T; 32768]
++p0.ptr_mut();
++<[T; 32768] as Array>::ptr_mut(p0);
++crate::<[T; 32768] as Array>::ptr_mut(p0);
++<[T; 32768]>::ptr_mut(p0);
+-----------------
+src/lib.rs <[T; 65536] as Array>::size
+deps:{"<[T; 65536] as Array>::size":{"T":["std::marker::Sized"]}}
+candidates:{"<[T; 65536] as Array>::size":{"T":["RUG_ANY"]}}
++<[T; 65536] as Array>::size();
++crate::<[T; 65536] as Array>::size();
++<[T; 65536]>::size();
+-----------------
+src/lib.rs <[T; 65536] as Array>::ptr
+deps:{"<[T; 65536] as Array>::ptr":{"T":["std::marker::Sized"]}}
+candidates:{"<[T; 65536] as Array>::ptr":{"T":["RUG_ANY"]}}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // [T; 65536]
++p0.ptr();
++<[T; 65536] as Array>::ptr(p0);
++crate::<[T; 65536] as Array>::ptr(p0);
++<[T; 65536]>::ptr(p0);
+-----------------
+src/lib.rs <[T; 65536] as Array>::ptr_mut
+deps:{"<[T; 65536] as Array>::ptr_mut":{"T":["std::marker::Sized"]}}
+candidates:{"<[T; 65536] as Array>::ptr_mut":{"T":["RUG_ANY"]}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // [T; 65536]
++p0.ptr_mut();
++<[T; 65536] as Array>::ptr_mut(p0);
++crate::<[T; 65536] as Array>::ptr_mut(p0);
++<[T; 65536]>::ptr_mut(p0);
+-----------------
+src/lib.rs <[T; 131072] as Array>::size
+deps:{"<[T; 131072] as Array>::size":{"T":["std::marker::Sized"]}}
+candidates:{"<[T; 131072] as Array>::size":{"T":["RUG_ANY"]}}
++<[T; 131072] as Array>::size();
++crate::<[T; 131072] as Array>::size();
++<[T; 131072]>::size();
+-----------------
+src/lib.rs <[T; 131072] as Array>::ptr
+deps:{"<[T; 131072] as Array>::ptr":{"T":["std::marker::Sized"]}}
+candidates:{"<[T; 131072] as Array>::ptr":{"T":["RUG_ANY"]}}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // [T; 131072]
++p0.ptr();
++<[T; 131072] as Array>::ptr(p0);
++crate::<[T; 131072] as Array>::ptr(p0);
++<[T; 131072]>::ptr(p0);
+-----------------
+src/lib.rs <[T; 131072] as Array>::ptr_mut
+deps:{"<[T; 131072] as Array>::ptr_mut":{"T":["std::marker::Sized"]}}
+candidates:{"<[T; 131072] as Array>::ptr_mut":{"T":["RUG_ANY"]}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // [T; 131072]
++p0.ptr_mut();
++<[T; 131072] as Array>::ptr_mut(p0);
++crate::<[T; 131072] as Array>::ptr_mut(p0);
++<[T; 131072]>::ptr_mut(p0);
+-----------------
+src/lib.rs <[T; 262144] as Array>::size
+deps:{"<[T; 262144] as Array>::size":{"T":["std::marker::Sized"]}}
+candidates:{"<[T; 262144] as Array>::size":{"T":["RUG_ANY"]}}
++<[T; 262144] as Array>::size();
++crate::<[T; 262144] as Array>::size();
++<[T; 262144]>::size();
+-----------------
+src/lib.rs <[T; 262144] as Array>::ptr
+deps:{"<[T; 262144] as Array>::ptr":{"T":["std::marker::Sized"]}}
+candidates:{"<[T; 262144] as Array>::ptr":{"T":["RUG_ANY"]}}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // [T; 262144]
++p0.ptr();
++<[T; 262144] as Array>::ptr(p0);
++crate::<[T; 262144] as Array>::ptr(p0);
++<[T; 262144]>::ptr(p0);
+-----------------
+src/lib.rs <[T; 262144] as Array>::ptr_mut
+deps:{"<[T; 262144] as Array>::ptr_mut":{"T":["std::marker::Sized"]}}
+candidates:{"<[T; 262144] as Array>::ptr_mut":{"T":["RUG_ANY"]}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // [T; 262144]
++p0.ptr_mut();
++<[T; 262144] as Array>::ptr_mut(p0);
++crate::<[T; 262144] as Array>::ptr_mut(p0);
++<[T; 262144]>::ptr_mut(p0);
+-----------------
+src/lib.rs <[T; 524288] as Array>::size
+deps:{"<[T; 524288] as Array>::size":{"T":["std::marker::Sized"]}}
+candidates:{"<[T; 524288] as Array>::size":{"T":["RUG_ANY"]}}
++<[T; 524288] as Array>::size();
++crate::<[T; 524288] as Array>::size();
++<[T; 524288]>::size();
+-----------------
+src/lib.rs <[T; 524288] as Array>::ptr
+deps:{"<[T; 524288] as Array>::ptr":{"T":["std::marker::Sized"]}}
+candidates:{"<[T; 524288] as Array>::ptr":{"T":["RUG_ANY"]}}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // [T; 524288]
++p0.ptr();
++<[T; 524288] as Array>::ptr(p0);
++crate::<[T; 524288] as Array>::ptr(p0);
++<[T; 524288]>::ptr(p0);
+-----------------
+src/lib.rs <[T; 524288] as Array>::ptr_mut
+deps:{"<[T; 524288] as Array>::ptr_mut":{"T":["std::marker::Sized"]}}
+candidates:{"<[T; 524288] as Array>::ptr_mut":{"T":["RUG_ANY"]}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // [T; 524288]
++p0.ptr_mut();
++<[T; 524288] as Array>::ptr_mut(p0);
++crate::<[T; 524288] as Array>::ptr_mut(p0);
++<[T; 524288]>::ptr_mut(p0);
+-----------------
+src/lib.rs <[T; 1048576] as Array>::size
+deps:{"<[T; 1048576] as Array>::size":{"T":["std::marker::Sized"]}}
+candidates:{"<[T; 1048576] as Array>::size":{"T":["RUG_ANY"]}}
++<[T; 1048576] as Array>::size();
++crate::<[T; 1048576] as Array>::size();
++<[T; 1048576]>::size();
+-----------------
+src/lib.rs <[T; 1048576] as Array>::ptr
+deps:{"<[T; 1048576] as Array>::ptr":{"T":["std::marker::Sized"]}}
+candidates:{"<[T; 1048576] as Array>::ptr":{"T":["RUG_ANY"]}}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // [T; 1048576]
++p0.ptr();
++<[T; 1048576] as Array>::ptr(p0);
++crate::<[T; 1048576] as Array>::ptr(p0);
++<[T; 1048576]>::ptr(p0);
+-----------------
+src/lib.rs <[T; 1048576] as Array>::ptr_mut
+deps:{"<[T; 1048576] as Array>::ptr_mut":{"T":["std::marker::Sized"]}}
+candidates:{"<[T; 1048576] as Array>::ptr_mut":{"T":["RUG_ANY"]}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // [T; 1048576]
++p0.ptr_mut();
++<[T; 1048576] as Array>::ptr_mut(p0);
++crate::<[T; 1048576] as Array>::ptr_mut(p0);
++<[T; 1048576]>::ptr_mut(p0);
+-----------------
+src/lib.rs <std::vec::Vec<T> as VecLike<T>>::push
+deps:{"<std::vec::Vec<T> as VecLike<T>>::push":{"T":["std::marker::Sized"]}}
+candidates:{"<std::vec::Vec<T> as VecLike<T>>::push":{"T":["RUG_ANY"]}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // std::vec::Vec<T>
+let mut p1 = MaybeUninit::uninit().assume_init(); // T
++p0.push(p1);
++<std::vec::Vec<T> as VecLike<T>>::push(p0, p1);
++crate::<std::vec::Vec<T> as VecLike<T>>::push(p0, p1);
++<std::vec::Vec<T>>::push(p0, p1);
+-----------------
+src/lib.rs <std::vec::Vec<T> as VecLike<T>>::pop
+deps:{"<std::vec::Vec<T> as VecLike<T>>::pop":{"T":["std::marker::Sized"]}}
+candidates:{"<std::vec::Vec<T> as VecLike<T>>::pop":{"T":["RUG_ANY"]}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // std::vec::Vec<T>
++p0.pop();
++<std::vec::Vec<T> as VecLike<T>>::pop(p0);
++crate::<std::vec::Vec<T> as VecLike<T>>::pop(p0);
++<std::vec::Vec<T>>::pop(p0);
+-----------------
+src/lib.rs <std::vec::Vec<T> as ExtendFromSlice<T>>::extend_from_slice
+deps:{"<std::vec::Vec<T> as ExtendFromSlice<T>>::extend_from_slice":{"T":["std::marker::Sized","std::clone::Clone"]},"StackVec":{"A":["std::marker::Sized","Array"]},"std::clone::impls::<impl std::clone::Clone for &T>":{},"std::clone::impls::<impl std::clone::Clone for &mut T>":{},"std::clone::impls::<impl std::clone::Clone for *const T>":{},"std::clone::impls::<impl std::clone::Clone for *mut T>":{}}
+candidates:{"<std::vec::Vec<T> as ExtendFromSlice<T>>::extend_from_slice":{"T":["StackVec","std::clone::impls::<impl std::clone::Clone for *mut T>","std::clone::impls::<impl std::clone::Clone for &mut T>"]},"StackVec":{"A":[]},"std::clone::impls::<impl std::clone::Clone for &T>":{},"std::clone::impls::<impl std::clone::Clone for &mut T>":{},"std::clone::impls::<impl std::clone::Clone for *const T>":{},"std::clone::impls::<impl std::clone::Clone for *mut T>":{}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // std::vec::Vec<T>
+let mut p1 = & MaybeUninit::uninit().assume_init(); // [T]
++p0.extend_from_slice(p1);
++<std::vec::Vec<T> as ExtendFromSlice<T>>::extend_from_slice(p0, p1);
++crate::<std::vec::Vec<T> as ExtendFromSlice<T>>::extend_from_slice(p0, p1);
++<std::vec::Vec<T>>::extend_from_slice(p0, p1);
+-----------------
+src/lib.rs <Drain<'a, T> as std::iter::Iterator>::next
+'a
+deps:{"<Drain<'a, T> as std::iter::Iterator>::next":{"T":["std::marker::Sized"]}}
+candidates:{"<Drain<'a, T> as std::iter::Iterator>::next":{"T":["RUG_ANY"]}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // Drain<'a, T>
++p0.next();
++<Drain<'a, T> as std::iter::Iterator>::next(p0);
++crate::<Drain<'a, T> as std::iter::Iterator>::next(p0);
++<Drain<'a, T>>::next(p0);
+-----------------
+src/lib.rs <Drain<'a, T> as std::iter::Iterator>::size_hint
+'a
+deps:{"<Drain<'a, T> as std::iter::Iterator>::size_hint":{"T":["std::marker::Sized"]}}
+candidates:{"<Drain<'a, T> as std::iter::Iterator>::size_hint":{"T":["RUG_ANY"]}}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // Drain<'a, T>
++p0.size_hint();
++<Drain<'a, T> as std::iter::Iterator>::size_hint(p0);
++crate::<Drain<'a, T> as std::iter::Iterator>::size_hint(p0);
++<Drain<'a, T>>::size_hint(p0);
+-----------------
+src/lib.rs <Drain<'a, T> as std::iter::DoubleEndedIterator>::next_back
+'a
+deps:{"<Drain<'a, T> as std::iter::DoubleEndedIterator>::next_back":{"T":["std::marker::Sized"]}}
+candidates:{"<Drain<'a, T> as std::iter::DoubleEndedIterator>::next_back":{"T":["RUG_ANY"]}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // Drain<'a, T>
++p0.next_back();
++<Drain<'a, T> as std::iter::DoubleEndedIterator>::next_back(p0);
++crate::<Drain<'a, T> as std::iter::DoubleEndedIterator>::next_back(p0);
++<Drain<'a, T>>::next_back(p0);
+-----------------
+src/lib.rs <Drain<'a, T> as std::ops::Drop>::drop
+'a
+deps:{"<Drain<'a, T> as std::ops::Drop>::drop":{"T":["std::marker::Sized"]}}
+candidates:{"<Drain<'a, T> as std::ops::Drop>::drop":{"T":["RUG_ANY"]}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // Drain<'a, T>
++p0.drop();
++<Drain<'a, T> as std::ops::Drop>::drop(p0);
++crate::<Drain<'a, T> as std::ops::Drop>::drop(p0);
++<Drain<'a, T>>::drop(p0);
+-----------------
+src/lib.rs SetLenOnDrop::<'a>::new
+'a
+deps:{}
+candidates:{}
+let mut p0 = &mut 0usize; // None+usize
++SetLenOnDrop::<'a>::new(p0);
++crate::SetLenOnDrop::<'a>::new(p0);
++<SetLenOnDrop<'a>>::new(p0);
+-----------------
+src/lib.rs SetLenOnDrop::<'a>::increment_len
+'a
+deps:{}
+candidates:{}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // SetLenOnDrop<'a>
+let mut p1 = 0usize; // None+usize
++p0.increment_len(p1);
++SetLenOnDrop::<'a>::increment_len(p0, p1);
++crate::SetLenOnDrop::<'a>::increment_len(p0, p1);
++<SetLenOnDrop<'a>>::increment_len(p0, p1);
+-----------------
+src/lib.rs <SetLenOnDrop<'a> as std::ops::Drop>::drop
+'a
+deps:{}
+candidates:{}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // SetLenOnDrop<'a>
++p0.drop();
++<SetLenOnDrop<'a> as std::ops::Drop>::drop(p0);
++crate::<SetLenOnDrop<'a> as std::ops::Drop>::drop(p0);
++<SetLenOnDrop<'a>>::drop(p0);
+-----------------
+src/lib.rs StackVec::<A>::new
+deps:{"StackVec::<A>::new":{"A":["Array","std::marker::Sized"]}}
+candidates:{"StackVec::<A>::new":{"A":[]}}
++StackVec::<A>::new();
++crate::StackVec::<A>::new();
++<StackVec<A>>::new();
+-----------------
+src/lib.rs StackVec::<A>::from_vec
+deps:{"StackVec::<A>::from_vec":{"A":["Array","std::marker::Sized"]}}
+candidates:{"StackVec::<A>::from_vec":{"A":[]}}
+let mut p0 = MaybeUninit::uninit().assume_init(); // std::vec::Vec<<A as Array>::Item>
++StackVec::<A>::from_vec(p0);
++crate::StackVec::<A>::from_vec(p0);
++<StackVec<A>>::from_vec(p0);
+-----------------
+src/lib.rs StackVec::<A>::from_vec_unchecked
+deps:{"StackVec::<A>::from_vec_unchecked":{"A":["std::marker::Sized","Array"]}}
+candidates:{"StackVec::<A>::from_vec_unchecked":{"A":[]}}
+let mut p0 = MaybeUninit::uninit().assume_init(); // std::vec::Vec<<A as Array>::Item>
++StackVec::<A>::from_vec_unchecked(p0);
++crate::StackVec::<A>::from_vec_unchecked(p0);
++<StackVec<A>>::from_vec_unchecked(p0);
+-----------------
+src/lib.rs StackVec::<A>::from_buf
+deps:{"StackVec::<A>::from_buf":{"A":["std::marker::Sized","Array"]}}
+candidates:{"StackVec::<A>::from_buf":{"A":[]}}
+let mut p0 = MaybeUninit::uninit().assume_init(); // A
++StackVec::<A>::from_buf(p0);
++crate::StackVec::<A>::from_buf(p0);
++<StackVec<A>>::from_buf(p0);
+-----------------
+src/lib.rs StackVec::<A>::from_buf_and_len
+deps:{"StackVec::<A>::from_buf_and_len":{"A":["std::marker::Sized","Array"]}}
+candidates:{"StackVec::<A>::from_buf_and_len":{"A":[]}}
+let mut p0 = MaybeUninit::uninit().assume_init(); // A
+let mut p1 = 0usize; // None+usize
++StackVec::<A>::from_buf_and_len(p0, p1);
++crate::StackVec::<A>::from_buf_and_len(p0, p1);
++<StackVec<A>>::from_buf_and_len(p0, p1);
+-----------------
+src/lib.rs StackVec::<A>::from_buf_and_len_unchecked
+deps:{"StackVec::<A>::from_buf_and_len_unchecked":{"A":["std::marker::Sized","Array"]}}
+candidates:{"StackVec::<A>::from_buf_and_len_unchecked":{"A":[]}}
+let mut p0 = MaybeUninit::uninit().assume_init(); // A
+let mut p1 = 0usize; // None+usize
++StackVec::<A>::from_buf_and_len_unchecked(p0, p1);
++crate::StackVec::<A>::from_buf_and_len_unchecked(p0, p1);
++<StackVec<A>>::from_buf_and_len_unchecked(p0, p1);
+-----------------
+src/lib.rs StackVec::<A>::set_len
+deps:{"StackVec::<A>::set_len":{"A":["Array","std::marker::Sized"]}}
+candidates:{"StackVec::<A>::set_len":{"A":[]}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // StackVec<A>
+let mut p1 = 0usize; // None+usize
++p0.set_len(p1);
++StackVec::<A>::set_len(p0, p1);
++crate::StackVec::<A>::set_len(p0, p1);
++<StackVec<A>>::set_len(p0, p1);
+-----------------
+src/lib.rs StackVec::<A>::len
+deps:{"StackVec::<A>::len":{"A":["std::marker::Sized","Array"]}}
+candidates:{"StackVec::<A>::len":{"A":[]}}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // StackVec<A>
++p0.len();
++StackVec::<A>::len(p0);
++crate::StackVec::<A>::len(p0);
++<StackVec<A>>::len(p0);
+-----------------
+src/lib.rs StackVec::<A>::is_empty
+deps:{"StackVec::<A>::is_empty":{"A":["Array","std::marker::Sized"]}}
+candidates:{"StackVec::<A>::is_empty":{"A":[]}}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // StackVec<A>
++p0.is_empty();
++StackVec::<A>::is_empty(p0);
++crate::StackVec::<A>::is_empty(p0);
++<StackVec<A>>::is_empty(p0);
+-----------------
+src/lib.rs StackVec::<A>::capacity
+deps:{"StackVec::<A>::capacity":{"A":["std::marker::Sized","Array"]}}
+candidates:{"StackVec::<A>::capacity":{"A":[]}}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // StackVec<A>
++p0.capacity();
++StackVec::<A>::capacity(p0);
++crate::StackVec::<A>::capacity(p0);
++<StackVec<A>>::capacity(p0);
+-----------------
+src/lib.rs StackVec::<A>::drain
+deps:{"StackVec::<A>::drain":{"A":["Array","std::marker::Sized"]}}
+candidates:{"StackVec::<A>::drain":{"A":[]}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // StackVec<A>
++p0.drain();
++StackVec::<A>::drain(p0);
++crate::StackVec::<A>::drain(p0);
++<StackVec<A>>::drain(p0);
+-----------------
+src/lib.rs StackVec::<A>::push
+deps:{"StackVec::<A>::push":{"A":["std::marker::Sized","Array"]}}
+candidates:{"StackVec::<A>::push":{"A":[]}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // StackVec<A>
+let mut p1 = MaybeUninit::uninit().assume_init(); // <A as Array>::Item
++p0.push(p1);
++StackVec::<A>::push(p0, p1);
++crate::StackVec::<A>::push(p0, p1);
++<StackVec<A>>::push(p0, p1);
+-----------------
+src/lib.rs StackVec::<A>::pop
+deps:{"StackVec::<A>::pop":{"A":["std::marker::Sized","Array"]}}
+candidates:{"StackVec::<A>::pop":{"A":[]}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // StackVec<A>
++p0.pop();
++StackVec::<A>::pop(p0);
++crate::StackVec::<A>::pop(p0);
++<StackVec<A>>::pop(p0);
+-----------------
+src/lib.rs StackVec::<A>::truncate
+deps:{"StackVec::<A>::truncate":{"A":["Array","std::marker::Sized"]}}
+candidates:{"StackVec::<A>::truncate":{"A":[]}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // StackVec<A>
+let mut p1 = 0usize; // None+usize
++p0.truncate(p1);
++StackVec::<A>::truncate(p0, p1);
++crate::StackVec::<A>::truncate(p0, p1);
++<StackVec<A>>::truncate(p0, p1);
+-----------------
+src/lib.rs StackVec::<A>::as_slice
+deps:{"StackVec::<A>::as_slice":{"A":["std::marker::Sized","Array"]}}
+candidates:{"StackVec::<A>::as_slice":{"A":[]}}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // StackVec<A>
++p0.as_slice();
++StackVec::<A>::as_slice(p0);
++crate::StackVec::<A>::as_slice(p0);
++<StackVec<A>>::as_slice(p0);
+-----------------
+src/lib.rs StackVec::<A>::as_mut_slice
+deps:{"StackVec::<A>::as_mut_slice":{"A":["std::marker::Sized","Array"]}}
+candidates:{"StackVec::<A>::as_mut_slice":{"A":[]}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // StackVec<A>
++p0.as_mut_slice();
++StackVec::<A>::as_mut_slice(p0);
++crate::StackVec::<A>::as_mut_slice(p0);
++<StackVec<A>>::as_mut_slice(p0);
+-----------------
+src/lib.rs StackVec::<A>::swap_remove
+deps:{"StackVec::<A>::swap_remove":{"A":["std::marker::Sized","Array"]}}
+candidates:{"StackVec::<A>::swap_remove":{"A":[]}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // StackVec<A>
+let mut p1 = 0usize; // None+usize
++p0.swap_remove(p1);
++StackVec::<A>::swap_remove(p0, p1);
++crate::StackVec::<A>::swap_remove(p0, p1);
++<StackVec<A>>::swap_remove(p0, p1);
+-----------------
+src/lib.rs StackVec::<A>::clear
+deps:{"StackVec::<A>::clear":{"A":["Array","std::marker::Sized"]}}
+candidates:{"StackVec::<A>::clear":{"A":[]}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // StackVec<A>
++p0.clear();
++StackVec::<A>::clear(p0);
++crate::StackVec::<A>::clear(p0);
++<StackVec<A>>::clear(p0);
+-----------------
+src/lib.rs StackVec::<A>::remove
+deps:{"StackVec::<A>::remove":{"A":["Array","std::marker::Sized"]}}
+candidates:{"StackVec::<A>::remove":{"A":[]}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // StackVec<A>
+let mut p1 = 0usize; // None+usize
++p0.remove(p1);
++StackVec::<A>::remove(p0, p1);
++crate::StackVec::<A>::remove(p0, p1);
++<StackVec<A>>::remove(p0, p1);
+-----------------
+src/lib.rs StackVec::<A>::insert
+deps:{"StackVec::<A>::insert":{"A":["std::marker::Sized","Array"]}}
+candidates:{"StackVec::<A>::insert":{"A":[]}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // StackVec<A>
+let mut p1 = 0usize; // None+usize
+let mut p2 = MaybeUninit::uninit().assume_init(); // <A as Array>::Item
++p0.insert(p1, p2);
++StackVec::<A>::insert(p0, p1, p2);
++crate::StackVec::<A>::insert(p0, p1, p2);
++<StackVec<A>>::insert(p0, p1, p2);
+-----------------
+src/lib.rs StackVec::<A>::insert_many
+deps:{"<&'a StackVec<A> as std::iter::IntoIterator>":{},"<&'a hashbrown::map::HashMap<K, V, S, A> as std::iter::IntoIterator>":{},"<&'a hashbrown::set::HashSet<T, S, A> as std::iter::IntoIterator>":{},"<&'a mut StackVec<A> as std::iter::IntoIterator>":{},"<&'a mut hashbrown::map::HashMap<K, V, S, A> as std::iter::IntoIterator>":{},"<&'a mut std::collections::BTreeMap<K, V, A> as std::iter::IntoIterator>":{},"<&'a mut std::collections::HashMap<K, V, S> as std::iter::IntoIterator>":{},"<&'a mut std::collections::LinkedList<T> as std::iter::IntoIterator>":{},"<&'a mut std::collections::VecDeque<T, A> as std::iter::IntoIterator>":{},"<&'a mut std::option::Option<T> as std::iter::IntoIterator>":{},"<&'a mut std::result::Result<T, E> as std::iter::IntoIterator>":{},"<&'a mut std::vec::Vec<T, A> as std::iter::IntoIterator>":{},"<&'a std::collections::BTreeMap<K, V, A> as std::iter::IntoIterator>":{},"<&'a std::collections::BTreeSet<T, A> as std::iter::IntoIterator>":{},"<&'a std::collections::BinaryHeap<T> as std::iter::IntoIterator>":{},"<&'a std::collections::HashMap<K, V, S> as std::iter::IntoIterator>":{},"<&'a std::collections::HashSet<T, S> as std::iter::IntoIterator>":{},"<&'a std::collections::LinkedList<T> as std::iter::IntoIterator>":{},"<&'a std::collections::VecDeque<T, A> as std::iter::IntoIterator>":{},"<&'a std::option::Option<T> as std::iter::IntoIterator>":{},"<&'a std::result::Result<T, E> as std::iter::IntoIterator>":{},"<&'a std::sync::mpsc::Receiver<T> as std::iter::IntoIterator>":{},"<&'a std::vec::Vec<T, A> as std::iter::IntoIterator>":{},"<&mut I as std::iter::Iterator>":{},"<I as std::iter::IntoIterator>":{"I":["std::iter::Iterator","std::marker::Sized"]},"Drain":{"T":["std::marker::Sized"]},"IntoIter":{"A":["std::marker::Sized","Array"]},"StackVec":{"A":["std::marker::Sized","Array"]},"StackVec::<A>::insert_many":{"A":["Array","std::marker::Sized"],"I":["std::marker::Sized","std::iter::IntoIterator"]}}
+candidates:{"<&'a StackVec<A> as std::iter::IntoIterator>":{},"<&'a hashbrown::map::HashMap<K, V, S, A> as std::iter::IntoIterator>":{},"<&'a hashbrown::set::HashSet<T, S, A> as std::iter::IntoIterator>":{},"<&'a mut StackVec<A> as std::iter::IntoIterator>":{},"<&'a mut hashbrown::map::HashMap<K, V, S, A> as std::iter::IntoIterator>":{},"<&'a mut std::collections::BTreeMap<K, V, A> as std::iter::IntoIterator>":{},"<&'a mut std::collections::HashMap<K, V, S> as std::iter::IntoIterator>":{},"<&'a mut std::collections::LinkedList<T> as std::iter::IntoIterator>":{},"<&'a mut std::collections::VecDeque<T, A> as std::iter::IntoIterator>":{},"<&'a mut std::option::Option<T> as std::iter::IntoIterator>":{},"<&'a mut std::result::Result<T, E> as std::iter::IntoIterator>":{},"<&'a mut std::vec::Vec<T, A> as std::iter::IntoIterator>":{},"<&'a std::collections::BTreeMap<K, V, A> as std::iter::IntoIterator>":{},"<&'a std::collections::BTreeSet<T, A> as std::iter::IntoIterator>":{},"<&'a std::collections::BinaryHeap<T> as std::iter::IntoIterator>":{},"<&'a std::collections::HashMap<K, V, S> as std::iter::IntoIterator>":{},"<&'a std::collections::HashSet<T, S> as std::iter::IntoIterator>":{},"<&'a std::collections::LinkedList<T> as std::iter::IntoIterator>":{},"<&'a std::collections::VecDeque<T, A> as std::iter::IntoIterator>":{},"<&'a std::option::Option<T> as std::iter::IntoIterator>":{},"<&'a std::result::Result<T, E> as std::iter::IntoIterator>":{},"<&'a std::sync::mpsc::Receiver<T> as std::iter::IntoIterator>":{},"<&'a std::vec::Vec<T, A> as std::iter::IntoIterator>":{},"<&mut I as std::iter::Iterator>":{},"<I as std::iter::IntoIterator>":{"I":["IntoIter","<&mut I as std::iter::Iterator>","Drain"]},"Drain":{"T":["RUG_ANY"]},"IntoIter":{"A":[]},"StackVec":{"A":[]},"StackVec::<A>::insert_many":{"A":[],"I":["StackVec","<&'a std::vec::Vec<T, A> as std::iter::IntoIterator>","<&'a std::collections::HashSet<T, S> as std::iter::IntoIterator>"]}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // StackVec<A>
+let mut p1 = 0usize; // None+usize
+let mut p2 = MaybeUninit::uninit().assume_init(); // I
++p0.insert_many(p1, p2);
++StackVec::<A>::insert_many(p0, p1, p2);
++crate::StackVec::<A>::insert_many(p0, p1, p2);
++<StackVec<A>>::insert_many(p0, p1, p2);
+-----------------
+src/lib.rs StackVec::<A>::into_vec
+deps:{"StackVec::<A>::into_vec":{"A":["Array","std::marker::Sized"]}}
+candidates:{"StackVec::<A>::into_vec":{"A":[]}}
+let mut p0 = MaybeUninit::uninit().assume_init(); // StackVec<A>
++p0.into_vec();
++StackVec::<A>::into_vec(p0);
++crate::StackVec::<A>::into_vec(p0);
++<StackVec<A>>::into_vec(p0);
+-----------------
+src/lib.rs StackVec::<A>::into_inner
+deps:{"StackVec::<A>::into_inner":{"A":["Array","std::marker::Sized"]}}
+candidates:{"StackVec::<A>::into_inner":{"A":[]}}
+let mut p0 = MaybeUninit::uninit().assume_init(); // StackVec<A>
++p0.into_inner();
++StackVec::<A>::into_inner(p0);
++crate::StackVec::<A>::into_inner(p0);
++<StackVec<A>>::into_inner(p0);
+-----------------
+src/lib.rs StackVec::<A>::retain
+deps:{"StackVec::<A>::retain":{"A":["Array","std::marker::Sized"],"F":["std::ops::FnMut","std::marker::Sized"]},"std::ops::function::impls::<impl std::ops::FnMut<A> for &F>":{},"std::ops::function::impls::<impl std::ops::FnMut<A> for &mut F>":{}}
+candidates:{"StackVec::<A>::retain":{"A":[],"F":["core::str::IsWhitespace","core::const_closure::ConstFnMutClosure<(&'a mut A, &'a mut B), Function>","core::str::CharEscapeDefault","core::const_closure::ConstFnMutClosure<(&'a mut A, &'a mut B, &'a mut C, &'a mut D, &'a mut E), Function>","core::str::IsAsciiWhitespace","core::str::IsNotEmpty","core::const_closure::ConstFnMutClosure<(&'a mut A, &'a mut B, &'a mut C), Function>","core::str::CharEscapeUnicode","core::str::BytesIsNotEmpty","core::str::UnsafeBytesToStr","core::str::LinesAnyMap","core::const_closure::ConstFnMutClosure<(&'a mut A, &'a mut B, &'a mut C, &'a mut D), Function>","std::boxed::Box<F, A>","core::slice::ascii::EscapeByte","core::str::CharEscapeDebugContinue","core::const_closure::ConstFnMutClosure<&'a mut A, Function>","std::ops::function::impls::<impl std::ops::FnMut<A> for &F>"]},"std::ops::function::impls::<impl std::ops::FnMut<A> for &F>":{},"std::ops::function::impls::<impl std::ops::FnMut<A> for &mut F>":{}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // StackVec<A>
+let mut p1 = MaybeUninit::uninit().assume_init(); // F
++p0.retain(p1);
++StackVec::<A>::retain(p0, p1);
++crate::StackVec::<A>::retain(p0, p1);
++<StackVec<A>>::retain(p0, p1);
+-----------------
+src/lib.rs StackVec::<A>::dedup
+deps:{"StackVec":{"A":["std::marker::Sized","Array"]},"StackVec::<A>::dedup":{"<A as Array>::Item":["std::cmp::PartialEq"],"A":["std::marker::Sized","Array"]},"std::ptr::const_ptr::<impl std::cmp::PartialEq for *const T>":{},"std::ptr::mut_ptr::<impl std::cmp::PartialEq for *mut T>":{}}
+candidates:{"StackVec":{"A":[]},"StackVec::<A>::dedup":{"<A as Array>::Item":["std::ptr::const_ptr::<impl std::cmp::PartialEq for *const T>","StackVec"],"A":[]},"std::ptr::const_ptr::<impl std::cmp::PartialEq for *const T>":{},"std::ptr::mut_ptr::<impl std::cmp::PartialEq for *mut T>":{}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // StackVec<A>
++p0.dedup();
++StackVec::<A>::dedup(p0);
++crate::StackVec::<A>::dedup(p0);
++<StackVec<A>>::dedup(p0);
+-----------------
+src/lib.rs StackVec::<A>::dedup_by
+deps:{"StackVec::<A>::dedup_by":{"A":["Array","std::marker::Sized"],"F":["std::marker::Sized","std::ops::FnMut"]},"std::ops::function::impls::<impl std::ops::FnMut<A> for &F>":{},"std::ops::function::impls::<impl std::ops::FnMut<A> for &mut F>":{}}
+candidates:{"StackVec::<A>::dedup_by":{"A":[],"F":["core::slice::ascii::EscapeByte","core::const_closure::ConstFnMutClosure<(&'a mut A, &'a mut B, &'a mut C, &'a mut D, &'a mut E), Function>","std::ops::function::impls::<impl std::ops::FnMut<A> for &F>","core::str::IsNotEmpty","core::str::BytesIsNotEmpty","core::str::IsAsciiWhitespace","core::str::IsWhitespace","core::const_closure::ConstFnMutClosure<(&'a mut A, &'a mut B, &'a mut C, &'a mut D), Function>","std::ops::function::impls::<impl std::ops::FnMut<A> for &mut F>","core::const_closure::ConstFnMutClosure<(&'a mut A, &'a mut B, &'a mut C), Function>","core::const_closure::ConstFnMutClosure<(&'a mut A, &'a mut B), Function>","core::str::CharEscapeUnicode","std::boxed::Box<F, A>","core::str::CharEscapeDebugContinue","core::const_closure::ConstFnMutClosure<&'a mut A, Function>","core::str::CharEscapeDefault","core::str::UnsafeBytesToStr","core::str::LinesAnyMap"]},"std::ops::function::impls::<impl std::ops::FnMut<A> for &F>":{},"std::ops::function::impls::<impl std::ops::FnMut<A> for &mut F>":{}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // StackVec<A>
+let mut p1 = MaybeUninit::uninit().assume_init(); // F
++p0.dedup_by(p1);
++StackVec::<A>::dedup_by(p0, p1);
++crate::StackVec::<A>::dedup_by(p0, p1);
++<StackVec<A>>::dedup_by(p0, p1);
+-----------------
+src/lib.rs StackVec::<A>::dedup_by_key
+deps:{"StackVec":{"A":["Array","std::marker::Sized"]},"StackVec::<A>::dedup_by_key":{"A":["std::marker::Sized","Array"],"F":["std::marker::Sized","std::ops::FnMut"],"K":["std::cmp::PartialEq","std::marker::Sized"]},"std::ops::function::impls::<impl std::ops::FnMut<A> for &F>":{},"std::ops::function::impls::<impl std::ops::FnMut<A> for &mut F>":{},"std::ptr::const_ptr::<impl std::cmp::PartialEq for *const T>":{},"std::ptr::mut_ptr::<impl std::cmp::PartialEq for *mut T>":{}}
+candidates:{"StackVec":{"A":[]},"StackVec::<A>::dedup_by_key":{"A":[],"F":["core::str::CharEscapeDefault","core::str::CharEscapeDebugContinue","core::const_closure::ConstFnMutClosure<(&'a mut A, &'a mut B), Function>","core::str::IsNotEmpty","core::const_closure::ConstFnMutClosure<(&'a mut A, &'a mut B, &'a mut C, &'a mut D, &'a mut E), Function>","std::ops::function::impls::<impl std::ops::FnMut<A> for &mut F>","core::str::BytesIsNotEmpty","core::str::UnsafeBytesToStr","core::slice::ascii::EscapeByte","std::ops::function::impls::<impl std::ops::FnMut<A> for &F>","core::str::IsWhitespace","core::str::IsAsciiWhitespace","std::boxed::Box<F, A>","core::str::LinesAnyMap","core::const_closure::ConstFnMutClosure<&'a mut A, Function>","core::const_closure::ConstFnMutClosure<(&'a mut A, &'a mut B, &'a mut C, &'a mut D), Function>","core::const_closure::ConstFnMutClosure<(&'a mut A, &'a mut B, &'a mut C), Function>","core::str::CharEscapeUnicode"],"K":["std::ptr::const_ptr::<impl std::cmp::PartialEq for *const T>","StackVec","std::ptr::mut_ptr::<impl std::cmp::PartialEq for *mut T>"]},"std::ops::function::impls::<impl std::ops::FnMut<A> for &F>":{},"std::ops::function::impls::<impl std::ops::FnMut<A> for &mut F>":{},"std::ptr::const_ptr::<impl std::cmp::PartialEq for *const T>":{},"std::ptr::mut_ptr::<impl std::cmp::PartialEq for *mut T>":{}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // StackVec<A>
+let mut p1 = MaybeUninit::uninit().assume_init(); // F
++p0.dedup_by_key(p1);
++StackVec::<A>::dedup_by_key(p0, p1);
++crate::StackVec::<A>::dedup_by_key(p0, p1);
++<StackVec<A>>::dedup_by_key(p0, p1);
+-----------------
+src/lib.rs StackVec::<A>::from_slice
+deps:{"StackVec::<A>::from_slice":{"<A as Array>::Item":["std::marker::Copy"],"A":["std::marker::Sized","Array"]},"std::marker::copy_impls::<impl std::marker::Copy for &T>":{},"std::marker::copy_impls::<impl std::marker::Copy for *const T>":{},"std::marker::copy_impls::<impl std::marker::Copy for *mut T>":{}}
+candidates:{"StackVec::<A>::from_slice":{"<A as Array>::Item":["i16","bool","char","i32","u64","u8","std::marker::copy_impls::<impl std::marker::Copy for &T>","usize","i8","i64","u32","u16"],"A":[]},"std::marker::copy_impls::<impl std::marker::Copy for &T>":{},"std::marker::copy_impls::<impl std::marker::Copy for *const T>":{},"std::marker::copy_impls::<impl std::marker::Copy for *mut T>":{}}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // [<A as Array>::Item]
++StackVec::<A>::from_slice(p0);
++crate::StackVec::<A>::from_slice(p0);
++<StackVec<A>>::from_slice(p0);
+-----------------
+src/lib.rs StackVec::<A>::insert_from_slice
+deps:{"StackVec::<A>::insert_from_slice":{"<A as Array>::Item":["std::marker::Copy"],"A":["Array","std::marker::Sized"]},"std::marker::copy_impls::<impl std::marker::Copy for &T>":{},"std::marker::copy_impls::<impl std::marker::Copy for *const T>":{},"std::marker::copy_impls::<impl std::marker::Copy for *mut T>":{}}
+candidates:{"StackVec::<A>::insert_from_slice":{"<A as Array>::Item":["u32","i16","u8","std::marker::copy_impls::<impl std::marker::Copy for *mut T>","usize","bool","i64","char","i32","u16","u64","i8"],"A":[]},"std::marker::copy_impls::<impl std::marker::Copy for &T>":{},"std::marker::copy_impls::<impl std::marker::Copy for *const T>":{},"std::marker::copy_impls::<impl std::marker::Copy for *mut T>":{}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // StackVec<A>
+let mut p1 = 0usize; // None+usize
+let mut p2 = & MaybeUninit::uninit().assume_init(); // [<A as Array>::Item]
++p0.insert_from_slice(p1, p2);
++StackVec::<A>::insert_from_slice(p0, p1, p2);
++crate::StackVec::<A>::insert_from_slice(p0, p1, p2);
++<StackVec<A>>::insert_from_slice(p0, p1, p2);
+-----------------
+src/lib.rs StackVec::<A>::extend_from_slice
+deps:{"StackVec::<A>::extend_from_slice":{"<A as Array>::Item":["std::marker::Copy"],"A":["std::marker::Sized","Array"]},"std::marker::copy_impls::<impl std::marker::Copy for &T>":{},"std::marker::copy_impls::<impl std::marker::Copy for *const T>":{},"std::marker::copy_impls::<impl std::marker::Copy for *mut T>":{}}
+candidates:{"StackVec::<A>::extend_from_slice":{"<A as Array>::Item":["std::marker::copy_impls::<impl std::marker::Copy for &T>","i64","i32","i16","bool","u64","u16","u8","i8","usize","char","u32"],"A":[]},"std::marker::copy_impls::<impl std::marker::Copy for &T>":{},"std::marker::copy_impls::<impl std::marker::Copy for *const T>":{},"std::marker::copy_impls::<impl std::marker::Copy for *mut T>":{}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // StackVec<A>
+let mut p1 = & MaybeUninit::uninit().assume_init(); // [<A as Array>::Item]
++p0.extend_from_slice(p1);
++StackVec::<A>::extend_from_slice(p0, p1);
++crate::StackVec::<A>::extend_from_slice(p0, p1);
++<StackVec<A>>::extend_from_slice(p0, p1);
+-----------------
+src/lib.rs StackVec::<A>::resize
+deps:{"StackVec":{"A":["Array","std::marker::Sized"]},"StackVec::<A>::resize":{"<A as Array>::Item":["std::clone::Clone"],"A":["Array","std::marker::Sized"]},"std::clone::impls::<impl std::clone::Clone for &T>":{},"std::clone::impls::<impl std::clone::Clone for &mut T>":{},"std::clone::impls::<impl std::clone::Clone for *const T>":{},"std::clone::impls::<impl std::clone::Clone for *mut T>":{}}
+candidates:{"StackVec":{"A":[]},"StackVec::<A>::resize":{"<A as Array>::Item":["std::clone::impls::<impl std::clone::Clone for &T>","StackVec"],"A":[]},"std::clone::impls::<impl std::clone::Clone for &T>":{},"std::clone::impls::<impl std::clone::Clone for &mut T>":{},"std::clone::impls::<impl std::clone::Clone for *const T>":{},"std::clone::impls::<impl std::clone::Clone for *mut T>":{}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // StackVec<A>
+let mut p1 = 0usize; // None+usize
+let mut p2 = MaybeUninit::uninit().assume_init(); // <A as Array>::Item
++p0.resize(p1, p2);
++StackVec::<A>::resize(p0, p1, p2);
++crate::StackVec::<A>::resize(p0, p1, p2);
++<StackVec<A>>::resize(p0, p1, p2);
+-----------------
+src/lib.rs StackVec::<A>::from_elem
+deps:{"StackVec":{"A":["std::marker::Sized","Array"]},"StackVec::<A>::from_elem":{"<A as Array>::Item":["std::clone::Clone"],"A":["std::marker::Sized","Array"]},"std::clone::impls::<impl std::clone::Clone for &T>":{},"std::clone::impls::<impl std::clone::Clone for &mut T>":{},"std::clone::impls::<impl std::clone::Clone for *const T>":{},"std::clone::impls::<impl std::clone::Clone for *mut T>":{}}
+candidates:{"StackVec":{"A":[]},"StackVec::<A>::from_elem":{"<A as Array>::Item":["std::clone::impls::<impl std::clone::Clone for &T>","StackVec"],"A":[]},"std::clone::impls::<impl std::clone::Clone for &T>":{},"std::clone::impls::<impl std::clone::Clone for &mut T>":{},"std::clone::impls::<impl std::clone::Clone for *const T>":{},"std::clone::impls::<impl std::clone::Clone for *mut T>":{}}
+let mut p0 = MaybeUninit::uninit().assume_init(); // <A as Array>::Item
+let mut p1 = 0usize; // None+usize
++StackVec::<A>::from_elem(p0, p1);
++crate::StackVec::<A>::from_elem(p0, p1);
++<StackVec<A>>::from_elem(p0, p1);
+-----------------
+src/lib.rs <StackVec<A> as std::ops::Deref>::deref
+deps:{"<StackVec<A> as std::ops::Deref>::deref":{"A":["std::marker::Sized","Array"]}}
+candidates:{"<StackVec<A> as std::ops::Deref>::deref":{"A":[]}}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // StackVec<A>
++p0.deref();
++<StackVec<A> as std::ops::Deref>::deref(p0);
++crate::<StackVec<A> as std::ops::Deref>::deref(p0);
++<StackVec<A>>::deref(p0);
+-----------------
+src/lib.rs <StackVec<A> as std::ops::DerefMut>::deref_mut
+deps:{"<StackVec<A> as std::ops::DerefMut>::deref_mut":{"A":["Array","std::marker::Sized"]}}
+candidates:{"<StackVec<A> as std::ops::DerefMut>::deref_mut":{"A":[]}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // StackVec<A>
++p0.deref_mut();
++<StackVec<A> as std::ops::DerefMut>::deref_mut(p0);
++crate::<StackVec<A> as std::ops::DerefMut>::deref_mut(p0);
++<StackVec<A>>::deref_mut(p0);
+-----------------
+src/lib.rs <StackVec<A> as std::convert::AsRef<[<A as Array>::Item]>>::as_ref
+deps:{"<StackVec<A> as std::convert::AsRef<[<A as Array>::Item]>>::as_ref":{"A":["std::marker::Sized","Array"]}}
+candidates:{"<StackVec<A> as std::convert::AsRef<[<A as Array>::Item]>>::as_ref":{"A":[]}}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // StackVec<A>
++p0.as_ref();
++<StackVec<A> as std::convert::AsRef<[<A as Array>::Item]>>::as_ref(p0);
++crate::<StackVec<A> as std::convert::AsRef<[<A as Array>::Item]>>::as_ref(p0);
++<StackVec<A>>::as_ref(p0);
+-----------------
+src/lib.rs <StackVec<A> as std::convert::AsMut<[<A as Array>::Item]>>::as_mut
+deps:{"<StackVec<A> as std::convert::AsMut<[<A as Array>::Item]>>::as_mut":{"A":["Array","std::marker::Sized"]}}
+candidates:{"<StackVec<A> as std::convert::AsMut<[<A as Array>::Item]>>::as_mut":{"A":[]}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // StackVec<A>
++p0.as_mut();
++<StackVec<A> as std::convert::AsMut<[<A as Array>::Item]>>::as_mut(p0);
++crate::<StackVec<A> as std::convert::AsMut<[<A as Array>::Item]>>::as_mut(p0);
++<StackVec<A>>::as_mut(p0);
+-----------------
+src/lib.rs <StackVec<A> as std::borrow::Borrow<[<A as Array>::Item]>>::borrow
+deps:{"<StackVec<A> as std::borrow::Borrow<[<A as Array>::Item]>>::borrow":{"A":["std::marker::Sized","Array"]}}
+candidates:{"<StackVec<A> as std::borrow::Borrow<[<A as Array>::Item]>>::borrow":{"A":[]}}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // StackVec<A>
++p0.borrow();
++<StackVec<A> as std::borrow::Borrow<[<A as Array>::Item]>>::borrow(p0);
++crate::<StackVec<A> as std::borrow::Borrow<[<A as Array>::Item]>>::borrow(p0);
++<StackVec<A>>::borrow(p0);
+-----------------
+src/lib.rs <StackVec<A> as std::borrow::BorrowMut<[<A as Array>::Item]>>::borrow_mut
+deps:{"<StackVec<A> as std::borrow::BorrowMut<[<A as Array>::Item]>>::borrow_mut":{"A":["Array","std::marker::Sized"]}}
+candidates:{"<StackVec<A> as std::borrow::BorrowMut<[<A as Array>::Item]>>::borrow_mut":{"A":[]}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // StackVec<A>
++p0.borrow_mut();
++<StackVec<A> as std::borrow::BorrowMut<[<A as Array>::Item]>>::borrow_mut(p0);
++crate::<StackVec<A> as std::borrow::BorrowMut<[<A as Array>::Item]>>::borrow_mut(p0);
++<StackVec<A>>::borrow_mut(p0);
+-----------------
+src/lib.rs <StackVec<A> as std::io::Write>::write
+deps:{"<StackVec<A> as std::io::Write>::write":{"A":["std::marker::Sized","Array"]}}
+candidates:{"<StackVec<A> as std::io::Write>::write":{"A":[]}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // StackVec<A>
+let mut p1 = [0u8,0,0].as_mut_slice(); // None+&[u8]
++p0.write(p1);
++<StackVec<A> as std::io::Write>::write(p0, p1);
++crate::<StackVec<A> as std::io::Write>::write(p0, p1);
++<StackVec<A>>::write(p0, p1);
+-----------------
+src/lib.rs <StackVec<A> as std::io::Write>::write_all
+deps:{"<StackVec<A> as std::io::Write>::write_all":{"A":["std::marker::Sized","Array"]}}
+candidates:{"<StackVec<A> as std::io::Write>::write_all":{"A":[]}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // StackVec<A>
+let mut p1 = [0u8,0,0].as_mut_slice(); // None+&[u8]
++p0.write_all(p1);
++<StackVec<A> as std::io::Write>::write_all(p0, p1);
++crate::<StackVec<A> as std::io::Write>::write_all(p0, p1);
++<StackVec<A>>::write_all(p0, p1);
+-----------------
+src/lib.rs <StackVec<A> as std::io::Write>::flush
+deps:{"<StackVec<A> as std::io::Write>::flush":{"A":["Array","std::marker::Sized"]}}
+candidates:{"<StackVec<A> as std::io::Write>::flush":{"A":[]}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // StackVec<A>
++p0.flush();
++<StackVec<A> as std::io::Write>::flush(p0);
++crate::<StackVec<A> as std::io::Write>::flush(p0);
++<StackVec<A>>::flush(p0);
+-----------------
+src/lib.rs <StackVec<A> as std::convert::From<&'a [<A as Array>::Item]>>::from
+'a
+deps:{"<StackVec<A> as std::convert::From<&'a [<A as Array>::Item]>>::from":{"<A as Array>::Item":["std::clone::Clone"],"A":["std::marker::Sized","Array"]},"StackVec":{"A":["std::marker::Sized","Array"]},"std::clone::impls::<impl std::clone::Clone for &T>":{},"std::clone::impls::<impl std::clone::Clone for &mut T>":{},"std::clone::impls::<impl std::clone::Clone for *const T>":{},"std::clone::impls::<impl std::clone::Clone for *mut T>":{}}
+candidates:{"<StackVec<A> as std::convert::From<&'a [<A as Array>::Item]>>::from":{"<A as Array>::Item":["std::clone::impls::<impl std::clone::Clone for *mut T>","StackVec"],"A":[]},"StackVec":{"A":[]},"std::clone::impls::<impl std::clone::Clone for &T>":{},"std::clone::impls::<impl std::clone::Clone for &mut T>":{},"std::clone::impls::<impl std::clone::Clone for *const T>":{},"std::clone::impls::<impl std::clone::Clone for *mut T>":{}}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // [<A as Array>::Item]
++<StackVec<A> as std::convert::From<&'a [<A as Array>::Item]>>::from(p0);
++crate::<StackVec<A> as std::convert::From<&'a [<A as Array>::Item]>>::from(p0);
++<StackVec<A>>::from(p0);
+-----------------
+src/lib.rs <StackVec<A> as std::convert::From<std::vec::Vec<<A as Array>::Item>>>::from
+deps:{"<StackVec<A> as std::convert::From<std::vec::Vec<<A as Array>::Item>>>::from":{"A":["std::marker::Sized","Array"]}}
+candidates:{"<StackVec<A> as std::convert::From<std::vec::Vec<<A as Array>::Item>>>::from":{"A":[]}}
+let mut p0 = MaybeUninit::uninit().assume_init(); // std::vec::Vec<<A as Array>::Item>
++<StackVec<A> as std::convert::From<std::vec::Vec<<A as Array>::Item>>>::from(p0);
++crate::<StackVec<A> as std::convert::From<std::vec::Vec<<A as Array>::Item>>>::from(p0);
++<StackVec<A>>::from(p0);
+-----------------
+src/lib.rs <StackVec<A> as std::convert::From<A>>::from
+deps:{"<StackVec<A> as std::convert::From<A>>::from":{"A":["std::marker::Sized","Array"]}}
+candidates:{"<StackVec<A> as std::convert::From<A>>::from":{"A":[]}}
+let mut p0 = MaybeUninit::uninit().assume_init(); // A
++<StackVec<A> as std::convert::From<A>>::from(p0);
++crate::<StackVec<A> as std::convert::From<A>>::from(p0);
++<StackVec<A>>::from(p0);
+-----------------
+src/lib.rs <StackVec<A> as std::ops::Index<usize>>::index
+deps:{"<StackVec<A> as std::ops::Index<usize>>::index":{"A":["Array","std::marker::Sized"]}}
+candidates:{"<StackVec<A> as std::ops::Index<usize>>::index":{"A":[]}}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // StackVec<A>
+let mut p1 = 0usize; // None+usize
++p0.index(p1);
++<StackVec<A> as std::ops::Index<usize>>::index(p0, p1);
++crate::<StackVec<A> as std::ops::Index<usize>>::index(p0, p1);
++<StackVec<A>>::index(p0, p1);
+-----------------
+src/lib.rs <StackVec<A> as std::ops::IndexMut<usize>>::index_mut
+deps:{"<StackVec<A> as std::ops::IndexMut<usize>>::index_mut":{"A":["Array","std::marker::Sized"]}}
+candidates:{"<StackVec<A> as std::ops::IndexMut<usize>>::index_mut":{"A":[]}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // StackVec<A>
+let mut p1 = 0usize; // None+usize
++p0.index_mut(p1);
++<StackVec<A> as std::ops::IndexMut<usize>>::index_mut(p0, p1);
++crate::<StackVec<A> as std::ops::IndexMut<usize>>::index_mut(p0, p1);
++<StackVec<A>>::index_mut(p0, p1);
+-----------------
+src/lib.rs <StackVec<A> as std::ops::Index<std::ops::Range<usize>>>::index
+deps:{"<StackVec<A> as std::ops::Index<std::ops::Range<usize>>>::index":{"A":["std::marker::Sized","Array"]}}
+candidates:{"<StackVec<A> as std::ops::Index<std::ops::Range<usize>>>::index":{"A":[]}}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // StackVec<A>
+let mut p1 = MaybeUninit::uninit().assume_init(); // std::ops::Range<usize>
++p0.index(p1);
++<StackVec<A> as std::ops::Index<std::ops::Range<usize>>>::index(p0, p1);
++crate::<StackVec<A> as std::ops::Index<std::ops::Range<usize>>>::index(p0, p1);
++<StackVec<A>>::index(p0, p1);
+-----------------
+src/lib.rs <StackVec<A> as std::ops::IndexMut<std::ops::Range<usize>>>::index_mut
+deps:{"<StackVec<A> as std::ops::IndexMut<std::ops::Range<usize>>>::index_mut":{"A":["std::marker::Sized","Array"]}}
+candidates:{"<StackVec<A> as std::ops::IndexMut<std::ops::Range<usize>>>::index_mut":{"A":[]}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // StackVec<A>
+let mut p1 = MaybeUninit::uninit().assume_init(); // std::ops::Range<usize>
++p0.index_mut(p1);
++<StackVec<A> as std::ops::IndexMut<std::ops::Range<usize>>>::index_mut(p0, p1);
++crate::<StackVec<A> as std::ops::IndexMut<std::ops::Range<usize>>>::index_mut(p0, p1);
++<StackVec<A>>::index_mut(p0, p1);
+-----------------
+src/lib.rs <StackVec<A> as std::ops::Index<std::ops::RangeFrom<usize>>>::index
+deps:{"<StackVec<A> as std::ops::Index<std::ops::RangeFrom<usize>>>::index":{"A":["std::marker::Sized","Array"]}}
+candidates:{"<StackVec<A> as std::ops::Index<std::ops::RangeFrom<usize>>>::index":{"A":[]}}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // StackVec<A>
+let mut p1 = MaybeUninit::uninit().assume_init(); // std::ops::RangeFrom<usize>
++p0.index(p1);
++<StackVec<A> as std::ops::Index<std::ops::RangeFrom<usize>>>::index(p0, p1);
++crate::<StackVec<A> as std::ops::Index<std::ops::RangeFrom<usize>>>::index(p0, p1);
++<StackVec<A>>::index(p0, p1);
+-----------------
+src/lib.rs <StackVec<A> as std::ops::IndexMut<std::ops::RangeFrom<usize>>>::index_mut
+deps:{"<StackVec<A> as std::ops::IndexMut<std::ops::RangeFrom<usize>>>::index_mut":{"A":["Array","std::marker::Sized"]}}
+candidates:{"<StackVec<A> as std::ops::IndexMut<std::ops::RangeFrom<usize>>>::index_mut":{"A":[]}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // StackVec<A>
+let mut p1 = MaybeUninit::uninit().assume_init(); // std::ops::RangeFrom<usize>
++p0.index_mut(p1);
++<StackVec<A> as std::ops::IndexMut<std::ops::RangeFrom<usize>>>::index_mut(p0, p1);
++crate::<StackVec<A> as std::ops::IndexMut<std::ops::RangeFrom<usize>>>::index_mut(p0, p1);
++<StackVec<A>>::index_mut(p0, p1);
+-----------------
+src/lib.rs <StackVec<A> as std::ops::Index<std::ops::RangeFull>>::index
+deps:{"<StackVec<A> as std::ops::Index<std::ops::RangeFull>>::index":{"A":["Array","std::marker::Sized"]}}
+candidates:{"<StackVec<A> as std::ops::Index<std::ops::RangeFull>>::index":{"A":[]}}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // StackVec<A>
+let mut p1 = MaybeUninit::uninit().assume_init(); // std::ops::RangeFull
++p0.index(p1);
++<StackVec<A> as std::ops::Index<std::ops::RangeFull>>::index(p0, p1);
++crate::<StackVec<A> as std::ops::Index<std::ops::RangeFull>>::index(p0, p1);
++<StackVec<A>>::index(p0, p1);
+-----------------
+src/lib.rs <StackVec<A> as std::ops::IndexMut<std::ops::RangeFull>>::index_mut
+deps:{"<StackVec<A> as std::ops::IndexMut<std::ops::RangeFull>>::index_mut":{"A":["std::marker::Sized","Array"]}}
+candidates:{"<StackVec<A> as std::ops::IndexMut<std::ops::RangeFull>>::index_mut":{"A":[]}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // StackVec<A>
+let mut p1 = MaybeUninit::uninit().assume_init(); // std::ops::RangeFull
++p0.index_mut(p1);
++<StackVec<A> as std::ops::IndexMut<std::ops::RangeFull>>::index_mut(p0, p1);
++crate::<StackVec<A> as std::ops::IndexMut<std::ops::RangeFull>>::index_mut(p0, p1);
++<StackVec<A>>::index_mut(p0, p1);
+-----------------
+src/lib.rs <StackVec<A> as std::ops::Index<std::ops::RangeTo<usize>>>::index
+deps:{"<StackVec<A> as std::ops::Index<std::ops::RangeTo<usize>>>::index":{"A":["std::marker::Sized","Array"]}}
+candidates:{"<StackVec<A> as std::ops::Index<std::ops::RangeTo<usize>>>::index":{"A":[]}}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // StackVec<A>
+let mut p1 = MaybeUninit::uninit().assume_init(); // std::ops::RangeTo<usize>
++p0.index(p1);
++<StackVec<A> as std::ops::Index<std::ops::RangeTo<usize>>>::index(p0, p1);
++crate::<StackVec<A> as std::ops::Index<std::ops::RangeTo<usize>>>::index(p0, p1);
++<StackVec<A>>::index(p0, p1);
+-----------------
+src/lib.rs <StackVec<A> as std::ops::IndexMut<std::ops::RangeTo<usize>>>::index_mut
+deps:{"<StackVec<A> as std::ops::IndexMut<std::ops::RangeTo<usize>>>::index_mut":{"A":["std::marker::Sized","Array"]}}
+candidates:{"<StackVec<A> as std::ops::IndexMut<std::ops::RangeTo<usize>>>::index_mut":{"A":[]}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // StackVec<A>
+let mut p1 = MaybeUninit::uninit().assume_init(); // std::ops::RangeTo<usize>
++p0.index_mut(p1);
++<StackVec<A> as std::ops::IndexMut<std::ops::RangeTo<usize>>>::index_mut(p0, p1);
++crate::<StackVec<A> as std::ops::IndexMut<std::ops::RangeTo<usize>>>::index_mut(p0, p1);
++<StackVec<A>>::index_mut(p0, p1);
+-----------------
+src/lib.rs <StackVec<A> as std::ops::Index<std::ops::RangeInclusive<usize>>>::index
+deps:{"<StackVec<A> as std::ops::Index<std::ops::RangeInclusive<usize>>>::index":{"A":["Array","std::marker::Sized"]}}
+candidates:{"<StackVec<A> as std::ops::Index<std::ops::RangeInclusive<usize>>>::index":{"A":[]}}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // StackVec<A>
+let mut p1 = MaybeUninit::uninit().assume_init(); // std::ops::RangeInclusive<usize>
++p0.index(p1);
++<StackVec<A> as std::ops::Index<std::ops::RangeInclusive<usize>>>::index(p0, p1);
++crate::<StackVec<A> as std::ops::Index<std::ops::RangeInclusive<usize>>>::index(p0, p1);
++<StackVec<A>>::index(p0, p1);
+-----------------
+src/lib.rs <StackVec<A> as std::ops::IndexMut<std::ops::RangeInclusive<usize>>>::index_mut
+deps:{"<StackVec<A> as std::ops::IndexMut<std::ops::RangeInclusive<usize>>>::index_mut":{"A":["Array","std::marker::Sized"]}}
+candidates:{"<StackVec<A> as std::ops::IndexMut<std::ops::RangeInclusive<usize>>>::index_mut":{"A":[]}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // StackVec<A>
+let mut p1 = MaybeUninit::uninit().assume_init(); // std::ops::RangeInclusive<usize>
++p0.index_mut(p1);
++<StackVec<A> as std::ops::IndexMut<std::ops::RangeInclusive<usize>>>::index_mut(p0, p1);
++crate::<StackVec<A> as std::ops::IndexMut<std::ops::RangeInclusive<usize>>>::index_mut(p0, p1);
++<StackVec<A>>::index_mut(p0, p1);
+-----------------
+src/lib.rs <StackVec<A> as std::ops::Index<std::ops::RangeToInclusive<usize>>>::index
+deps:{"<StackVec<A> as std::ops::Index<std::ops::RangeToInclusive<usize>>>::index":{"A":["Array","std::marker::Sized"]}}
+candidates:{"<StackVec<A> as std::ops::Index<std::ops::RangeToInclusive<usize>>>::index":{"A":[]}}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // StackVec<A>
+let mut p1 = MaybeUninit::uninit().assume_init(); // std::ops::RangeToInclusive<usize>
++p0.index(p1);
++<StackVec<A> as std::ops::Index<std::ops::RangeToInclusive<usize>>>::index(p0, p1);
++crate::<StackVec<A> as std::ops::Index<std::ops::RangeToInclusive<usize>>>::index(p0, p1);
++<StackVec<A>>::index(p0, p1);
+-----------------
+src/lib.rs <StackVec<A> as std::ops::IndexMut<std::ops::RangeToInclusive<usize>>>::index_mut
+deps:{"<StackVec<A> as std::ops::IndexMut<std::ops::RangeToInclusive<usize>>>::index_mut":{"A":["std::marker::Sized","Array"]}}
+candidates:{"<StackVec<A> as std::ops::IndexMut<std::ops::RangeToInclusive<usize>>>::index_mut":{"A":[]}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // StackVec<A>
+let mut p1 = MaybeUninit::uninit().assume_init(); // std::ops::RangeToInclusive<usize>
++p0.index_mut(p1);
++<StackVec<A> as std::ops::IndexMut<std::ops::RangeToInclusive<usize>>>::index_mut(p0, p1);
++crate::<StackVec<A> as std::ops::IndexMut<std::ops::RangeToInclusive<usize>>>::index_mut(p0, p1);
++<StackVec<A>>::index_mut(p0, p1);
+-----------------
+src/lib.rs <StackVec<A> as ExtendFromSlice<<A as Array>::Item>>::extend_from_slice
+deps:{"<StackVec<A> as ExtendFromSlice<<A as Array>::Item>>::extend_from_slice":{"<A as Array>::Item":["std::marker::Copy"],"A":["Array","std::marker::Sized"]},"std::marker::copy_impls::<impl std::marker::Copy for &T>":{},"std::marker::copy_impls::<impl std::marker::Copy for *const T>":{},"std::marker::copy_impls::<impl std::marker::Copy for *mut T>":{}}
+candidates:{"<StackVec<A> as ExtendFromSlice<<A as Array>::Item>>::extend_from_slice":{"<A as Array>::Item":["i64","u16","std::marker::copy_impls::<impl std::marker::Copy for &T>","i32","u32","usize","u64","char","i8","bool","i16","u8"],"A":[]},"std::marker::copy_impls::<impl std::marker::Copy for &T>":{},"std::marker::copy_impls::<impl std::marker::Copy for *const T>":{},"std::marker::copy_impls::<impl std::marker::Copy for *mut T>":{}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // StackVec<A>
+let mut p1 = & MaybeUninit::uninit().assume_init(); // [<A as Array>::Item]
++p0.extend_from_slice(p1);
++<StackVec<A> as ExtendFromSlice<<A as Array>::Item>>::extend_from_slice(p0, p1);
++crate::<StackVec<A> as ExtendFromSlice<<A as Array>::Item>>::extend_from_slice(p0, p1);
++<StackVec<A>>::extend_from_slice(p0, p1);
+-----------------
+src/lib.rs <StackVec<A> as VecLike<<A as Array>::Item>>::push
+deps:{"<StackVec<A> as VecLike<<A as Array>::Item>>::push":{"A":["Array","std::marker::Sized"]}}
+candidates:{"<StackVec<A> as VecLike<<A as Array>::Item>>::push":{"A":[]}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // StackVec<A>
+let mut p1 = MaybeUninit::uninit().assume_init(); // <A as Array>::Item
++p0.push(p1);
++<StackVec<A> as VecLike<<A as Array>::Item>>::push(p0, p1);
++crate::<StackVec<A> as VecLike<<A as Array>::Item>>::push(p0, p1);
++<StackVec<A>>::push(p0, p1);
+-----------------
+src/lib.rs <StackVec<A> as VecLike<<A as Array>::Item>>::pop
+deps:{"<StackVec<A> as VecLike<<A as Array>::Item>>::pop":{"A":["std::marker::Sized","Array"]}}
+candidates:{"<StackVec<A> as VecLike<<A as Array>::Item>>::pop":{"A":[]}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // StackVec<A>
++p0.pop();
++<StackVec<A> as VecLike<<A as Array>::Item>>::pop(p0);
++crate::<StackVec<A> as VecLike<<A as Array>::Item>>::pop(p0);
++<StackVec<A>>::pop(p0);
+-----------------
+src/lib.rs <StackVec<A> as std::iter::FromIterator<<A as Array>::Item>>::from_iter
+deps:{"<&'a StackVec<A> as std::iter::IntoIterator>":{},"<&'a hashbrown::map::HashMap<K, V, S, A> as std::iter::IntoIterator>":{},"<&'a hashbrown::set::HashSet<T, S, A> as std::iter::IntoIterator>":{},"<&'a mut StackVec<A> as std::iter::IntoIterator>":{},"<&'a mut hashbrown::map::HashMap<K, V, S, A> as std::iter::IntoIterator>":{},"<&'a mut std::collections::BTreeMap<K, V, A> as std::iter::IntoIterator>":{},"<&'a mut std::collections::HashMap<K, V, S> as std::iter::IntoIterator>":{},"<&'a mut std::collections::LinkedList<T> as std::iter::IntoIterator>":{},"<&'a mut std::collections::VecDeque<T, A> as std::iter::IntoIterator>":{},"<&'a mut std::option::Option<T> as std::iter::IntoIterator>":{},"<&'a mut std::result::Result<T, E> as std::iter::IntoIterator>":{},"<&'a mut std::vec::Vec<T, A> as std::iter::IntoIterator>":{},"<&'a std::collections::BTreeMap<K, V, A> as std::iter::IntoIterator>":{},"<&'a std::collections::BTreeSet<T, A> as std::iter::IntoIterator>":{},"<&'a std::collections::BinaryHeap<T> as std::iter::IntoIterator>":{},"<&'a std::collections::HashMap<K, V, S> as std::iter::IntoIterator>":{},"<&'a std::collections::HashSet<T, S> as std::iter::IntoIterator>":{},"<&'a std::collections::LinkedList<T> as std::iter::IntoIterator>":{},"<&'a std::collections::VecDeque<T, A> as std::iter::IntoIterator>":{},"<&'a std::option::Option<T> as std::iter::IntoIterator>":{},"<&'a std::result::Result<T, E> as std::iter::IntoIterator>":{},"<&'a std::sync::mpsc::Receiver<T> as std::iter::IntoIterator>":{},"<&'a std::vec::Vec<T, A> as std::iter::IntoIterator>":{},"<&mut I as std::iter::Iterator>":{},"<I as std::iter::IntoIterator>":{"I":["std::iter::Iterator","std::marker::Sized"]},"<StackVec<A> as std::iter::FromIterator<<A as Array>::Item>>::from_iter":{"A":["std::marker::Sized","Array"],"I":["std::marker::Sized","std::iter::IntoIterator"]},"Drain":{"T":["std::marker::Sized"]},"IntoIter":{"A":["std::marker::Sized","Array"]},"StackVec":{"A":["Array","std::marker::Sized"]}}
+candidates:{"<&'a StackVec<A> as std::iter::IntoIterator>":{},"<&'a hashbrown::map::HashMap<K, V, S, A> as std::iter::IntoIterator>":{},"<&'a hashbrown::set::HashSet<T, S, A> as std::iter::IntoIterator>":{},"<&'a mut StackVec<A> as std::iter::IntoIterator>":{},"<&'a mut hashbrown::map::HashMap<K, V, S, A> as std::iter::IntoIterator>":{},"<&'a mut std::collections::BTreeMap<K, V, A> as std::iter::IntoIterator>":{},"<&'a mut std::collections::HashMap<K, V, S> as std::iter::IntoIterator>":{},"<&'a mut std::collections::LinkedList<T> as std::iter::IntoIterator>":{},"<&'a mut std::collections::VecDeque<T, A> as std::iter::IntoIterator>":{},"<&'a mut std::option::Option<T> as std::iter::IntoIterator>":{},"<&'a mut std::result::Result<T, E> as std::iter::IntoIterator>":{},"<&'a mut std::vec::Vec<T, A> as std::iter::IntoIterator>":{},"<&'a std::collections::BTreeMap<K, V, A> as std::iter::IntoIterator>":{},"<&'a std::collections::BTreeSet<T, A> as std::iter::IntoIterator>":{},"<&'a std::collections::BinaryHeap<T> as std::iter::IntoIterator>":{},"<&'a std::collections::HashMap<K, V, S> as std::iter::IntoIterator>":{},"<&'a std::collections::HashSet<T, S> as std::iter::IntoIterator>":{},"<&'a std::collections::LinkedList<T> as std::iter::IntoIterator>":{},"<&'a std::collections::VecDeque<T, A> as std::iter::IntoIterator>":{},"<&'a std::option::Option<T> as std::iter::IntoIterator>":{},"<&'a std::result::Result<T, E> as std::iter::IntoIterator>":{},"<&'a std::sync::mpsc::Receiver<T> as std::iter::IntoIterator>":{},"<&'a std::vec::Vec<T, A> as std::iter::IntoIterator>":{},"<&mut I as std::iter::Iterator>":{},"<I as std::iter::IntoIterator>":{"I":["Drain","<&mut I as std::iter::Iterator>","IntoIter"]},"<StackVec<A> as std::iter::FromIterator<<A as Array>::Item>>::from_iter":{"A":[],"I":["<&'a mut std::option::Option<T> as std::iter::IntoIterator>","StackVec","<&'a mut std::collections::BTreeMap<K, V, A> as std::iter::IntoIterator>"]},"Drain":{"T":["RUG_ANY"]},"IntoIter":{"A":[]},"StackVec":{"A":[]}}
+let mut p0 = MaybeUninit::uninit().assume_init(); // I
++<StackVec<A> as std::iter::FromIterator<<A as Array>::Item>>::from_iter(p0);
++crate::<StackVec<A> as std::iter::FromIterator<<A as Array>::Item>>::from_iter(p0);
++<StackVec<A>>::from_iter(p0);
+-----------------
+src/lib.rs <StackVec<A> as std::iter::Extend<<A as Array>::Item>>::extend
+deps:{"<&'a StackVec<A> as std::iter::IntoIterator>":{},"<&'a hashbrown::map::HashMap<K, V, S, A> as std::iter::IntoIterator>":{},"<&'a hashbrown::set::HashSet<T, S, A> as std::iter::IntoIterator>":{},"<&'a mut StackVec<A> as std::iter::IntoIterator>":{},"<&'a mut hashbrown::map::HashMap<K, V, S, A> as std::iter::IntoIterator>":{},"<&'a mut std::collections::BTreeMap<K, V, A> as std::iter::IntoIterator>":{},"<&'a mut std::collections::HashMap<K, V, S> as std::iter::IntoIterator>":{},"<&'a mut std::collections::LinkedList<T> as std::iter::IntoIterator>":{},"<&'a mut std::collections::VecDeque<T, A> as std::iter::IntoIterator>":{},"<&'a mut std::option::Option<T> as std::iter::IntoIterator>":{},"<&'a mut std::result::Result<T, E> as std::iter::IntoIterator>":{},"<&'a mut std::vec::Vec<T, A> as std::iter::IntoIterator>":{},"<&'a std::collections::BTreeMap<K, V, A> as std::iter::IntoIterator>":{},"<&'a std::collections::BTreeSet<T, A> as std::iter::IntoIterator>":{},"<&'a std::collections::BinaryHeap<T> as std::iter::IntoIterator>":{},"<&'a std::collections::HashMap<K, V, S> as std::iter::IntoIterator>":{},"<&'a std::collections::HashSet<T, S> as std::iter::IntoIterator>":{},"<&'a std::collections::LinkedList<T> as std::iter::IntoIterator>":{},"<&'a std::collections::VecDeque<T, A> as std::iter::IntoIterator>":{},"<&'a std::option::Option<T> as std::iter::IntoIterator>":{},"<&'a std::result::Result<T, E> as std::iter::IntoIterator>":{},"<&'a std::sync::mpsc::Receiver<T> as std::iter::IntoIterator>":{},"<&'a std::vec::Vec<T, A> as std::iter::IntoIterator>":{},"<&mut I as std::iter::Iterator>":{},"<I as std::iter::IntoIterator>":{"I":["std::iter::Iterator","std::marker::Sized"]},"<StackVec<A> as std::iter::Extend<<A as Array>::Item>>::extend":{"A":["std::marker::Sized","Array"],"I":["std::marker::Sized","std::iter::IntoIterator"]},"Drain":{"T":["std::marker::Sized"]},"IntoIter":{"A":["Array","std::marker::Sized"]},"StackVec":{"A":["std::marker::Sized","Array"]}}
+candidates:{"<&'a StackVec<A> as std::iter::IntoIterator>":{},"<&'a hashbrown::map::HashMap<K, V, S, A> as std::iter::IntoIterator>":{},"<&'a hashbrown::set::HashSet<T, S, A> as std::iter::IntoIterator>":{},"<&'a mut StackVec<A> as std::iter::IntoIterator>":{},"<&'a mut hashbrown::map::HashMap<K, V, S, A> as std::iter::IntoIterator>":{},"<&'a mut std::collections::BTreeMap<K, V, A> as std::iter::IntoIterator>":{},"<&'a mut std::collections::HashMap<K, V, S> as std::iter::IntoIterator>":{},"<&'a mut std::collections::LinkedList<T> as std::iter::IntoIterator>":{},"<&'a mut std::collections::VecDeque<T, A> as std::iter::IntoIterator>":{},"<&'a mut std::option::Option<T> as std::iter::IntoIterator>":{},"<&'a mut std::result::Result<T, E> as std::iter::IntoIterator>":{},"<&'a mut std::vec::Vec<T, A> as std::iter::IntoIterator>":{},"<&'a std::collections::BTreeMap<K, V, A> as std::iter::IntoIterator>":{},"<&'a std::collections::BTreeSet<T, A> as std::iter::IntoIterator>":{},"<&'a std::collections::BinaryHeap<T> as std::iter::IntoIterator>":{},"<&'a std::collections::HashMap<K, V, S> as std::iter::IntoIterator>":{},"<&'a std::collections::HashSet<T, S> as std::iter::IntoIterator>":{},"<&'a std::collections::LinkedList<T> as std::iter::IntoIterator>":{},"<&'a std::collections::VecDeque<T, A> as std::iter::IntoIterator>":{},"<&'a std::option::Option<T> as std::iter::IntoIterator>":{},"<&'a std::result::Result<T, E> as std::iter::IntoIterator>":{},"<&'a std::sync::mpsc::Receiver<T> as std::iter::IntoIterator>":{},"<&'a std::vec::Vec<T, A> as std::iter::IntoIterator>":{},"<&mut I as std::iter::Iterator>":{},"<I as std::iter::IntoIterator>":{"I":["IntoIter","Drain","<&mut I as std::iter::Iterator>"]},"<StackVec<A> as std::iter::Extend<<A as Array>::Item>>::extend":{"A":[],"I":["<&'a mut std::collections::LinkedList<T> as std::iter::IntoIterator>","<&'a std::vec::Vec<T, A> as std::iter::IntoIterator>","StackVec"]},"Drain":{"T":["RUG_ANY"]},"IntoIter":{"A":[]},"StackVec":{"A":[]}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // StackVec<A>
+let mut p1 = MaybeUninit::uninit().assume_init(); // I
++p0.extend(p1);
++<StackVec<A> as std::iter::Extend<<A as Array>::Item>>::extend(p0, p1);
++crate::<StackVec<A> as std::iter::Extend<<A as Array>::Item>>::extend(p0, p1);
++<StackVec<A>>::extend(p0, p1);
+-----------------
+src/lib.rs <StackVec<A> as std::fmt::Debug>::fmt
+deps:{"<&T as std::fmt::Debug>":{},"<&mut T as std::fmt::Debug>":{},"<*const T as std::fmt::Debug>":{},"<*mut T as std::fmt::Debug>":{},"<StackVec<A> as std::fmt::Debug>::fmt":{"<A as Array>::Item":["std::fmt::Debug"],"A":["Array","std::marker::Sized"]},"StackVec":{"A":["Array","std::marker::Sized"]}}
+candidates:{"<&T as std::fmt::Debug>":{},"<&mut T as std::fmt::Debug>":{},"<*const T as std::fmt::Debug>":{},"<*mut T as std::fmt::Debug>":{},"<StackVec<A> as std::fmt::Debug>::fmt":{"<A as Array>::Item":["StackVec","<*const T as std::fmt::Debug>"],"A":[]},"StackVec":{"A":[]}}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // StackVec<A>
+let mut p1 = &mut  MaybeUninit::uninit().assume_init(); // std::fmt::Formatter<'_>
++format!("{:?}", p0);
++p0.fmt(p1);
++<StackVec<A> as std::fmt::Debug>::fmt(p0, p1);
++crate::<StackVec<A> as std::fmt::Debug>::fmt(p0, p1);
++<StackVec<A>>::fmt(p0, p1);
+-----------------
+src/lib.rs <StackVec<A> as std::default::Default>::default
+deps:{"<StackVec<A> as std::default::Default>::default":{"A":["Array","std::marker::Sized"]}}
+candidates:{"<StackVec<A> as std::default::Default>::default":{"A":[]}}
++<StackVec<A> as std::default::Default>::default();
++crate::<StackVec<A> as std::default::Default>::default();
++<StackVec<A>>::default();
+-----------------
+src/lib.rs <StackVec<A> as std::ops::Drop>::drop
+deps:{"<StackVec<A> as std::ops::Drop>::drop":{"A":["std::marker::Sized","Array"]}}
+candidates:{"<StackVec<A> as std::ops::Drop>::drop":{"A":[]}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // StackVec<A>
++p0.drop();
++<StackVec<A> as std::ops::Drop>::drop(p0);
++crate::<StackVec<A> as std::ops::Drop>::drop(p0);
++<StackVec<A>>::drop(p0);
+-----------------
+src/lib.rs <StackVec<A> as std::clone::Clone>::clone
+deps:{"<StackVec<A> as std::clone::Clone>::clone":{"<A as Array>::Item":["std::clone::Clone"],"A":["std::marker::Sized","Array"]},"StackVec":{"A":["std::marker::Sized","Array"]},"std::clone::impls::<impl std::clone::Clone for &T>":{},"std::clone::impls::<impl std::clone::Clone for &mut T>":{},"std::clone::impls::<impl std::clone::Clone for *const T>":{},"std::clone::impls::<impl std::clone::Clone for *mut T>":{}}
+candidates:{"<StackVec<A> as std::clone::Clone>::clone":{"<A as Array>::Item":["std::clone::impls::<impl std::clone::Clone for &T>","StackVec"],"A":[]},"StackVec":{"A":[]},"std::clone::impls::<impl std::clone::Clone for &T>":{},"std::clone::impls::<impl std::clone::Clone for &mut T>":{},"std::clone::impls::<impl std::clone::Clone for *const T>":{},"std::clone::impls::<impl std::clone::Clone for *mut T>":{}}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // StackVec<A>
++p0.clone();
++<StackVec<A> as std::clone::Clone>::clone(p0);
++crate::<StackVec<A> as std::clone::Clone>::clone(p0);
++<StackVec<A>>::clone(p0);
+-----------------
+src/lib.rs <StackVec<A> as std::cmp::PartialEq<StackVec<B>>>::eq
+deps:{"<StackVec<A> as std::cmp::PartialEq<StackVec<B>>>::eq":{"<A as Array>::Item":["std::cmp::PartialEq"],"A":["std::marker::Sized","Array"],"B":["Array","std::marker::Sized"]},"StackVec":{"A":["Array","std::marker::Sized"]},"std::ptr::const_ptr::<impl std::cmp::PartialEq for *const T>":{},"std::ptr::mut_ptr::<impl std::cmp::PartialEq for *mut T>":{}}
+candidates:{"<StackVec<A> as std::cmp::PartialEq<StackVec<B>>>::eq":{"<A as Array>::Item":["StackVec","std::ptr::mut_ptr::<impl std::cmp::PartialEq for *mut T>"],"A":[],"B":[]},"StackVec":{"A":[]},"std::ptr::const_ptr::<impl std::cmp::PartialEq for *const T>":{},"std::ptr::mut_ptr::<impl std::cmp::PartialEq for *mut T>":{}}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // StackVec<A>
+let mut p1 = & MaybeUninit::uninit().assume_init(); // StackVec<B>
++p0.eq(p1);
++<StackVec<A> as std::cmp::PartialEq<StackVec<B>>>::eq(p0, p1);
++crate::<StackVec<A> as std::cmp::PartialEq<StackVec<B>>>::eq(p0, p1);
++<StackVec<A>>::eq(p0, p1);
+-----------------
+src/lib.rs <StackVec<A> as std::cmp::PartialEq<StackVec<B>>>::ne
+deps:{"<StackVec<A> as std::cmp::PartialEq<StackVec<B>>>::ne":{"<A as Array>::Item":["std::cmp::PartialEq"],"A":["std::marker::Sized","Array"],"B":["Array","std::marker::Sized"]},"StackVec":{"A":["std::marker::Sized","Array"]},"std::ptr::const_ptr::<impl std::cmp::PartialEq for *const T>":{},"std::ptr::mut_ptr::<impl std::cmp::PartialEq for *mut T>":{}}
+candidates:{"<StackVec<A> as std::cmp::PartialEq<StackVec<B>>>::ne":{"<A as Array>::Item":["std::ptr::mut_ptr::<impl std::cmp::PartialEq for *mut T>","StackVec"],"A":[],"B":[]},"StackVec":{"A":[]},"std::ptr::const_ptr::<impl std::cmp::PartialEq for *const T>":{},"std::ptr::mut_ptr::<impl std::cmp::PartialEq for *mut T>":{}}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // StackVec<A>
+let mut p1 = & MaybeUninit::uninit().assume_init(); // StackVec<B>
++p0.ne(p1);
++<StackVec<A> as std::cmp::PartialEq<StackVec<B>>>::ne(p0, p1);
++crate::<StackVec<A> as std::cmp::PartialEq<StackVec<B>>>::ne(p0, p1);
++<StackVec<A>>::ne(p0, p1);
+-----------------
+src/lib.rs <StackVec<A> as std::cmp::PartialOrd>::partial_cmp
+deps:{"<StackVec<A> as std::cmp::PartialOrd>::partial_cmp":{"<A as Array>::Item":["std::cmp::PartialOrd"],"A":["Array","std::marker::Sized"]},"StackVec":{"A":["Array","std::marker::Sized"]},"std::cmp::impls::<impl std::cmp::PartialOrd<&B> for &A>":{},"std::cmp::impls::<impl std::cmp::PartialOrd<&mut B> for &mut A>":{},"std::ptr::const_ptr::<impl std::cmp::PartialOrd for *const T>":{},"std::ptr::mut_ptr::<impl std::cmp::PartialOrd for *mut T>":{}}
+candidates:{"<StackVec<A> as std::cmp::PartialOrd>::partial_cmp":{"<A as Array>::Item":["StackVec","std::ptr::const_ptr::<impl std::cmp::PartialOrd for *const T>"],"A":[]},"StackVec":{"A":[]},"std::cmp::impls::<impl std::cmp::PartialOrd<&B> for &A>":{},"std::cmp::impls::<impl std::cmp::PartialOrd<&mut B> for &mut A>":{},"std::ptr::const_ptr::<impl std::cmp::PartialOrd for *const T>":{},"std::ptr::mut_ptr::<impl std::cmp::PartialOrd for *mut T>":{}}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // StackVec<A>
+let mut p1 = & MaybeUninit::uninit().assume_init(); // StackVec<A>
++p0.partial_cmp(p1);
++<StackVec<A> as std::cmp::PartialOrd>::partial_cmp(p0, p1);
++crate::<StackVec<A> as std::cmp::PartialOrd>::partial_cmp(p0, p1);
++<StackVec<A>>::partial_cmp(p0, p1);
+-----------------
+src/lib.rs <StackVec<A> as std::cmp::Ord>::cmp
+deps:{"<StackVec<A> as std::cmp::Ord>::cmp":{"<A as Array>::Item":["std::cmp::Ord"],"A":["Array","std::marker::Sized"]},"StackVec":{"A":["Array","std::marker::Sized"]},"std::cmp::impls::<impl std::cmp::Ord for &A>":{},"std::cmp::impls::<impl std::cmp::Ord for &mut A>":{},"std::ptr::const_ptr::<impl std::cmp::Ord for *const T>":{},"std::ptr::mut_ptr::<impl std::cmp::Ord for *mut T>":{}}
+candidates:{"<StackVec<A> as std::cmp::Ord>::cmp":{"<A as Array>::Item":["std::cmp::impls::<impl std::cmp::Ord for &A>","StackVec"],"A":[]},"StackVec":{"A":[]},"std::cmp::impls::<impl std::cmp::Ord for &A>":{},"std::cmp::impls::<impl std::cmp::Ord for &mut A>":{},"std::ptr::const_ptr::<impl std::cmp::Ord for *const T>":{},"std::ptr::mut_ptr::<impl std::cmp::Ord for *mut T>":{}}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // StackVec<A>
+let mut p1 = & MaybeUninit::uninit().assume_init(); // StackVec<A>
++p0.cmp(p1);
++<StackVec<A> as std::cmp::Ord>::cmp(p0, p1);
++crate::<StackVec<A> as std::cmp::Ord>::cmp(p0, p1);
++<StackVec<A>>::cmp(p0, p1);
+-----------------
+src/lib.rs <StackVec<A> as std::hash::Hash>::hash
+deps:{"<&mut H as std::hash::Hasher>":{},"<StackVec<A> as std::hash::Hash>::hash":{"<A as Array>::Item":["std::hash::Hash"],"A":["Array","std::marker::Sized"],"H":["std::marker::Sized","std::hash::Hasher"]},"StackVec":{"A":["std::marker::Sized","Array"]},"std::hash::impls::<impl std::hash::Hash for &T>":{},"std::hash::impls::<impl std::hash::Hash for &mut T>":{},"std::hash::impls::<impl std::hash::Hash for *const T>":{},"std::hash::impls::<impl std::hash::Hash for *mut T>":{}}
+candidates:{"<&mut H as std::hash::Hasher>":{},"<StackVec<A> as std::hash::Hash>::hash":{"<A as Array>::Item":["std::hash::impls::<impl std::hash::Hash for &mut T>","StackVec"],"A":[],"H":["std::hash::SipHasher13","std::boxed::Box<T, A>","std::hash::sip::Hasher<S>","std::hash::SipHasher","std::collections::hash_map::DefaultHasher","<&mut H as std::hash::Hasher>"]},"StackVec":{"A":[]},"std::hash::impls::<impl std::hash::Hash for &T>":{},"std::hash::impls::<impl std::hash::Hash for &mut T>":{},"std::hash::impls::<impl std::hash::Hash for *const T>":{},"std::hash::impls::<impl std::hash::Hash for *mut T>":{}}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // StackVec<A>
+let mut p1 = &mut  MaybeUninit::uninit().assume_init(); // H
++p0.hash(p1);
++<StackVec<A> as std::hash::Hash>::hash(p0, p1);
++crate::<StackVec<A> as std::hash::Hash>::hash(p0, p1);
++<StackVec<A>>::hash(p0, p1);
+-----------------
+src/lib.rs <IntoIter<A> as std::ops::Drop>::drop
+deps:{"<IntoIter<A> as std::ops::Drop>::drop":{"A":["std::marker::Sized","Array"]}}
+candidates:{"<IntoIter<A> as std::ops::Drop>::drop":{"A":[]}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // IntoIter<A>
++p0.drop();
++<IntoIter<A> as std::ops::Drop>::drop(p0);
++crate::<IntoIter<A> as std::ops::Drop>::drop(p0);
++<IntoIter<A>>::drop(p0);
+-----------------
+src/lib.rs <IntoIter<A> as std::iter::Iterator>::next
+deps:{"<IntoIter<A> as std::iter::Iterator>::next":{"A":["std::marker::Sized","Array"]}}
+candidates:{"<IntoIter<A> as std::iter::Iterator>::next":{"A":[]}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // IntoIter<A>
++p0.next();
++<IntoIter<A> as std::iter::Iterator>::next(p0);
++crate::<IntoIter<A> as std::iter::Iterator>::next(p0);
++<IntoIter<A>>::next(p0);
+-----------------
+src/lib.rs <IntoIter<A> as std::iter::Iterator>::size_hint
+deps:{"<IntoIter<A> as std::iter::Iterator>::size_hint":{"A":["std::marker::Sized","Array"]}}
+candidates:{"<IntoIter<A> as std::iter::Iterator>::size_hint":{"A":[]}}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // IntoIter<A>
++p0.size_hint();
++<IntoIter<A> as std::iter::Iterator>::size_hint(p0);
++crate::<IntoIter<A> as std::iter::Iterator>::size_hint(p0);
++<IntoIter<A>>::size_hint(p0);
+-----------------
+src/lib.rs <IntoIter<A> as std::iter::DoubleEndedIterator>::next_back
+deps:{"<IntoIter<A> as std::iter::DoubleEndedIterator>::next_back":{"A":["std::marker::Sized","Array"]}}
+candidates:{"<IntoIter<A> as std::iter::DoubleEndedIterator>::next_back":{"A":[]}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // IntoIter<A>
++p0.next_back();
++<IntoIter<A> as std::iter::DoubleEndedIterator>::next_back(p0);
++crate::<IntoIter<A> as std::iter::DoubleEndedIterator>::next_back(p0);
++<IntoIter<A>>::next_back(p0);
+-----------------
+src/lib.rs <StackVec<A> as std::iter::IntoIterator>::into_iter
+deps:{"<StackVec<A> as std::iter::IntoIterator>::into_iter":{"A":["std::marker::Sized","Array"]}}
+candidates:{"<StackVec<A> as std::iter::IntoIterator>::into_iter":{"A":[]}}
+let mut p0 = MaybeUninit::uninit().assume_init(); // StackVec<A>
++p0.into_iter();
++<StackVec<A> as std::iter::IntoIterator>::into_iter(p0);
++crate::<StackVec<A> as std::iter::IntoIterator>::into_iter(p0);
++<StackVec<A>>::into_iter(p0);
+-----------------
+src/lib.rs <&'a StackVec<A> as std::iter::IntoIterator>::into_iter
+'a
+deps:{"<&'a StackVec<A> as std::iter::IntoIterator>::into_iter":{"A":["std::marker::Sized","Array"]}}
+candidates:{"<&'a StackVec<A> as std::iter::IntoIterator>::into_iter":{"A":[]}}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // StackVec<A>
++p0.into_iter();
++<&'a StackVec<A> as std::iter::IntoIterator>::into_iter(p0);
++crate::<&'a StackVec<A> as std::iter::IntoIterator>::into_iter(p0);
++<&'a StackVec<A>>::into_iter(p0);
+-----------------
+src/lib.rs <&'a mut StackVec<A> as std::iter::IntoIterator>::into_iter
+'a
+deps:{"<&'a mut StackVec<A> as std::iter::IntoIterator>::into_iter":{"A":["std::marker::Sized","Array"]}}
+candidates:{"<&'a mut StackVec<A> as std::iter::IntoIterator>::into_iter":{"A":[]}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // StackVec<A>
++p0.into_iter();
++<&'a mut StackVec<A> as std::iter::IntoIterator>::into_iter(p0);
++crate::<&'a mut StackVec<A> as std::iter::IntoIterator>::into_iter(p0);
++<&'a mut StackVec<A>>::into_iter(p0);

@@ -1,0 +1,7 @@
+image: "rust:1.20.0"
+
+test:cargo:
+  script:
+  - rustc --version && cargo --version
+  - cargo build --features arrays
+  - cargo test --verbose --jobs 1 --features arrays

@@ -1,0 +1,9 @@
+[workspace]
+members = [
+	"test_rdiff0",
+	"replay_rdiff0",
+	"test_rdiff2",
+	"replay_rdiff2",
+	"test_rdiff1",
+	"replay_rdiff1",
+]

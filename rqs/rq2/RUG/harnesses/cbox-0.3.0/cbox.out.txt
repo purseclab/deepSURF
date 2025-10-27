@@ -1,0 +1,262 @@
+-----------------
+src/lib.rs DisposeRef::dispose
+deps:{"DisposeRef::dispose":{"Self":["DisposeRef"]}}
+candidates:{"DisposeRef::dispose":{"Self":[]}}
+let mut p0 = MaybeUninit::uninit().assume_init(); // *mut <Self as DisposeRef>::RefTo
++DisposeRef::dispose(p0);
++crate::DisposeRef::dispose(p0);
++crate::DisposeRef::dispose(p0);
+-----------------
+src/lib.rs CSemiBox::<'a, D>::new
+'a
+deps:{"CSemiBox::<'a, D>::new":{"D":["DisposeRef"]}}
+candidates:{"CSemiBox::<'a, D>::new":{"D":[]}}
+let mut p0 = MaybeUninit::uninit().assume_init(); // *mut <D as DisposeRef>::RefTo
++CSemiBox::<'a, D>::new(p0);
++crate::CSemiBox::<'a, D>::new(p0);
++<CSemiBox<'a, D>>::new(p0);
+-----------------
+src/lib.rs CSemiBox::<'a, D>::as_ptr
+'a
+deps:{"CSemiBox::<'a, D>::as_ptr":{"D":["DisposeRef"]}}
+candidates:{"CSemiBox::<'a, D>::as_ptr":{"D":[]}}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // CSemiBox<'a, D>
++p0.as_ptr();
++CSemiBox::<'a, D>::as_ptr(p0);
++crate::CSemiBox::<'a, D>::as_ptr(p0);
++<CSemiBox<'a, D>>::as_ptr(p0);
+-----------------
+src/lib.rs CSemiBox::<'a, D>::unwrap
+'a
+deps:{"CSemiBox::<'a, D>::unwrap":{"D":["DisposeRef"]}}
+candidates:{"CSemiBox::<'a, D>::unwrap":{"D":[]}}
+let mut p0 = MaybeUninit::uninit().assume_init(); // CSemiBox<'a, D>
++p0.unwrap();
++CSemiBox::<'a, D>::unwrap(p0);
++crate::CSemiBox::<'a, D>::unwrap(p0);
++<CSemiBox<'a, D>>::unwrap(p0);
+-----------------
+src/lib.rs <CSemiBox<'a, D> as std::convert::From<*mut <D as DisposeRef>::RefTo>>::from
+'a
+deps:{"<CSemiBox<'a, D> as std::convert::From<*mut <D as DisposeRef>::RefTo>>::from":{"D":["DisposeRef"]}}
+candidates:{"<CSemiBox<'a, D> as std::convert::From<*mut <D as DisposeRef>::RefTo>>::from":{"D":[]}}
+let mut p0 = MaybeUninit::uninit().assume_init(); // *mut <D as DisposeRef>::RefTo
++<CSemiBox<'a, D> as std::convert::From<*mut <D as DisposeRef>::RefTo>>::from(p0);
++crate::<CSemiBox<'a, D> as std::convert::From<*mut <D as DisposeRef>::RefTo>>::from(p0);
++<CSemiBox<'a, D>>::from(p0);
+-----------------
+src/lib.rs <CSemiBox<'a, D> as std::ops::Drop>::drop
+'a
+deps:{"<CSemiBox<'a, D> as std::ops::Drop>::drop":{"D":["DisposeRef"]}}
+candidates:{"<CSemiBox<'a, D> as std::ops::Drop>::drop":{"D":[]}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // CSemiBox<'a, D>
++p0.drop();
++<CSemiBox<'a, D> as std::ops::Drop>::drop(p0);
++crate::<CSemiBox<'a, D> as std::ops::Drop>::drop(p0);
++<CSemiBox<'a, D>>::drop(p0);
+-----------------
+src/lib.rs <CSemiBox<'a, D> as std::ops::Deref>::deref
+'a
+deps:{"<CSemiBox<'a, D> as std::ops::Deref>::deref":{"*mut <D as DisposeRef>::RefTo":["std::convert::Into"],"D":["std::marker::Sized","DisposeRef"]},"<T as std::convert::Into<U>>":{"T":["std::marker::Sized"]}}
+candidates:{"<CSemiBox<'a, D> as std::ops::Deref>::deref":{"*mut <D as DisposeRef>::RefTo":["std::sys::unix::process::process_inner::ExitStatusError","std::sync::mpmc::select::Selected","<T as std::convert::Into<U>>","std::process::ExitStatusError"],"D":[]},"<T as std::convert::Into<U>>":{"T":["RUG_ANY"]}}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // CSemiBox<'a, D>
++p0.deref();
++<CSemiBox<'a, D> as std::ops::Deref>::deref(p0);
++crate::<CSemiBox<'a, D> as std::ops::Deref>::deref(p0);
++<CSemiBox<'a, D>>::deref(p0);
+-----------------
+src/lib.rs <CSemiBox<'a, D> as std::borrow::Borrow<D>>::borrow
+'a
+deps:{"<CSemiBox<'a, D> as std::borrow::Borrow<D>>::borrow":{"*mut <D as DisposeRef>::RefTo":["std::convert::Into"],"D":["DisposeRef","std::marker::Sized"]},"<T as std::convert::Into<U>>":{"T":["std::marker::Sized"]}}
+candidates:{"<CSemiBox<'a, D> as std::borrow::Borrow<D>>::borrow":{"*mut <D as DisposeRef>::RefTo":["<T as std::convert::Into<U>>","std::sync::mpmc::select::Selected","std::sys::unix::process::process_inner::ExitStatusError","std::process::ExitStatusError"],"D":[]},"<T as std::convert::Into<U>>":{"T":["RUG_ANY"]}}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // CSemiBox<'a, D>
++p0.borrow();
++<CSemiBox<'a, D> as std::borrow::Borrow<D>>::borrow(p0);
++crate::<CSemiBox<'a, D> as std::borrow::Borrow<D>>::borrow(p0);
++<CSemiBox<'a, D>>::borrow(p0);
+-----------------
+src/lib.rs <CSemiBox<'a, D> as std::ops::DerefMut>::deref_mut
+'a
+deps:{"<CSemiBox<'a, D> as std::ops::DerefMut>::deref_mut":{"*mut <D as DisposeRef>::RefTo":["std::convert::Into"],"D":["DisposeRef","std::marker::Sized"]},"<T as std::convert::Into<U>>":{"T":["std::marker::Sized"]}}
+candidates:{"<CSemiBox<'a, D> as std::ops::DerefMut>::deref_mut":{"*mut <D as DisposeRef>::RefTo":["std::process::ExitStatusError","std::sync::mpmc::select::Selected","<T as std::convert::Into<U>>","std::sys::unix::process::process_inner::ExitStatusError"],"D":[]},"<T as std::convert::Into<U>>":{"T":["RUG_ANY"]}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // CSemiBox<'a, D>
++p0.deref_mut();
++<CSemiBox<'a, D> as std::ops::DerefMut>::deref_mut(p0);
++crate::<CSemiBox<'a, D> as std::ops::DerefMut>::deref_mut(p0);
++<CSemiBox<'a, D>>::deref_mut(p0);
+-----------------
+src/lib.rs <CSemiBox<'a, T> as std::fmt::Display>::fmt
+'a
+deps:{"<CSemiBox<'a, T> as std::fmt::Display>::fmt":{"*mut <T as DisposeRef>::RefTo":["std::convert::Into"],"T":["std::fmt::Display","DisposeRef","std::marker::Sized"]},"<T as std::convert::Into<U>>":{"T":["std::marker::Sized"]}}
+candidates:{"<CSemiBox<'a, T> as std::fmt::Display>::fmt":{"*mut <T as DisposeRef>::RefTo":["<T as std::convert::Into<U>>","std::process::ExitStatusError","std::sys::unix::process::process_inner::ExitStatusError","std::sync::mpmc::select::Selected"],"T":["str"]},"<T as std::convert::Into<U>>":{"T":["RUG_ANY"]}}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // CSemiBox<'a, T>
+let mut p1 = &mut  MaybeUninit::uninit().assume_init(); // std::fmt::Formatter<'_>
++format!("{}", p0);
++p0.fmt(p1);
++<CSemiBox<'a, T> as std::fmt::Display>::fmt(p0, p1);
++crate::<CSemiBox<'a, T> as std::fmt::Display>::fmt(p0, p1);
++<CSemiBox<'a, T>>::fmt(p0, p1);
+-----------------
+src/lib.rs <CSemiBox<'a, T> as std::fmt::Debug>::fmt
+'a
+deps:{"<CSemiBox<'a, T> as std::fmt::Debug>::fmt":{"*mut <T as DisposeRef>::RefTo":["std::convert::Into"],"T":["std::fmt::Debug","std::marker::Sized","DisposeRef"]},"<T as std::convert::Into<U>>":{"T":["std::marker::Sized"]}}
+candidates:{"<CSemiBox<'a, T> as std::fmt::Debug>::fmt":{"*mut <T as DisposeRef>::RefTo":["<T as std::convert::Into<U>>","std::process::ExitStatusError","std::sys::unix::process::process_inner::ExitStatusError","std::sync::mpmc::select::Selected"],"T":["str"]},"<T as std::convert::Into<U>>":{"T":["RUG_ANY"]}}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // CSemiBox<'a, T>
+let mut p1 = &mut  MaybeUninit::uninit().assume_init(); // std::fmt::Formatter<'_>
++format!("{:?}", p0);
++p0.fmt(p1);
++<CSemiBox<'a, T> as std::fmt::Debug>::fmt(p0, p1);
++crate::<CSemiBox<'a, T> as std::fmt::Debug>::fmt(p0, p1);
++<CSemiBox<'a, T>>::fmt(p0, p1);
+-----------------
+src/lib.rs <CSemiBox<'a, T> as std::cmp::PartialEq<T>>::eq
+'a
+deps:{"<CSemiBox<'a, T> as std::cmp::PartialEq<T>>::eq":{"*mut <T as DisposeRef>::RefTo":["std::convert::Into"],"T":["std::marker::Sized","DisposeRef","std::cmp::PartialEq"]},"<T as std::convert::Into<U>>":{"T":["std::marker::Sized"]},"std::cmp::impls::<impl std::cmp::PartialEq<&B> for &mut A>":{},"std::cmp::impls::<impl std::cmp::PartialEq<&mut B> for &A>":{},"std::cmp::impls::<impl std::cmp::PartialEq<&mut B> for &mut A>":{}}
+candidates:{"<CSemiBox<'a, T> as std::cmp::PartialEq<T>>::eq":{"*mut <T as DisposeRef>::RefTo":["<T as std::convert::Into<U>>","std::sync::mpmc::select::Selected","std::sys::unix::process::process_inner::ExitStatusError","std::process::ExitStatusError"],"T":["std::cmp::impls::<impl std::cmp::PartialEq<&mut B> for &A>","std::cmp::impls::<impl std::cmp::PartialEq<&mut B> for &mut A>","std::net::Ipv6Addr","&'b std::ffi::OsStr","std::net::Ipv4Addr"]},"<T as std::convert::Into<U>>":{"T":["RUG_ANY"]},"std::cmp::impls::<impl std::cmp::PartialEq<&B> for &mut A>":{},"std::cmp::impls::<impl std::cmp::PartialEq<&mut B> for &A>":{},"std::cmp::impls::<impl std::cmp::PartialEq<&mut B> for &mut A>":{}}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // CSemiBox<'a, T>
+let mut p1 = & MaybeUninit::uninit().assume_init(); // T
++p0.eq(p1);
++<CSemiBox<'a, T> as std::cmp::PartialEq<T>>::eq(p0, p1);
++crate::<CSemiBox<'a, T> as std::cmp::PartialEq<T>>::eq(p0, p1);
++<CSemiBox<'a, T>>::eq(p0, p1);
+-----------------
+src/lib.rs <CSemiBox<'a, str> as std::convert::From<&'a std::ffi::CStr>>::from
+'a
+deps:{}
+candidates:{}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // std::ffi::CStr
++<CSemiBox<'a, str> as std::convert::From<&'a std::ffi::CStr>>::from(p0);
++crate::<CSemiBox<'a, str> as std::convert::From<&'a std::ffi::CStr>>::from(p0);
++<CSemiBox<'a, str>>::from(p0);
+-----------------
+src/lib.rs CBox::<D>::new
+deps:{"CBox::<D>::new":{"D":["DisposeRef"]}}
+candidates:{"CBox::<D>::new":{"D":[]}}
+let mut p0 = MaybeUninit::uninit().assume_init(); // *mut <D as DisposeRef>::RefTo
++CBox::<D>::new(p0);
++crate::CBox::<D>::new(p0);
++<CBox<D>>::new(p0);
+-----------------
+src/lib.rs CBox::<D>::as_ptr
+deps:{"CBox::<D>::as_ptr":{"D":["DisposeRef"]}}
+candidates:{"CBox::<D>::as_ptr":{"D":[]}}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // CBox<D>
++p0.as_ptr();
++CBox::<D>::as_ptr(p0);
++crate::CBox::<D>::as_ptr(p0);
++<CBox<D>>::as_ptr(p0);
+-----------------
+src/lib.rs CBox::<D>::unwrap
+deps:{"CBox::<D>::unwrap":{"D":["DisposeRef"]}}
+candidates:{"CBox::<D>::unwrap":{"D":[]}}
+let mut p0 = MaybeUninit::uninit().assume_init(); // CBox<D>
++p0.unwrap();
++CBox::<D>::unwrap(p0);
++crate::CBox::<D>::unwrap(p0);
++<CBox<D>>::unwrap(p0);
+-----------------
+src/lib.rs CBox::<D>::as_semi
+deps:{"CBox::<D>::as_semi":{"D":["DisposeRef"]}}
+candidates:{"CBox::<D>::as_semi":{"D":[]}}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // CBox<D>
++p0.as_semi();
++CBox::<D>::as_semi(p0);
++crate::CBox::<D>::as_semi(p0);
++<CBox<D>>::as_semi(p0);
+-----------------
+src/lib.rs CBox::<D>::as_semi_mut
+deps:{"CBox::<D>::as_semi_mut":{"D":["DisposeRef"]}}
+candidates:{"CBox::<D>::as_semi_mut":{"D":[]}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // CBox<D>
++p0.as_semi_mut();
++CBox::<D>::as_semi_mut(p0);
++crate::CBox::<D>::as_semi_mut(p0);
++<CBox<D>>::as_semi_mut(p0);
+-----------------
+src/lib.rs <CBox<str> as std::convert::From<&'a str>>::from
+'a
+deps:{}
+candidates:{}
+let mut p0 = "sample"; // None+&str
++<CBox<str> as std::convert::From<&'a str>>::from(&p0);
++crate::<CBox<str> as std::convert::From<&'a str>>::from(&p0);
++<CBox<str>>::from(&p0);
+-----------------
+src/lib.rs <CBox<str> as std::ops::Deref>::deref
+'a
+deps:{}
+candidates:{}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // CBox<str>
++p0.deref();
++<CBox<str> as std::ops::Deref>::deref(p0);
++crate::<CBox<str> as std::ops::Deref>::deref(p0);
++<CBox<str>>::deref(p0);
+-----------------
+src/lib.rs <CBox<str> as std::clone::Clone>::clone
+deps:{}
+candidates:{}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // CBox<str>
++p0.clone();
++<CBox<str> as std::clone::Clone>::clone(p0);
++crate::<CBox<str> as std::clone::Clone>::clone(p0);
++<CBox<str>>::clone(p0);
+-----------------
+src/lib.rs <CBox<str> as std::fmt::Display>::fmt
+deps:{}
+candidates:{}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // CBox<str>
+let mut p1 = &mut  MaybeUninit::uninit().assume_init(); // std::fmt::Formatter<'_>
++format!("{}", p0);
++p0.fmt(p1);
++<CBox<str> as std::fmt::Display>::fmt(p0, p1);
++crate::<CBox<str> as std::fmt::Display>::fmt(p0, p1);
++<CBox<str>>::fmt(p0, p1);
+-----------------
+src/lib.rs <CBox<str> as std::fmt::Debug>::fmt
+deps:{}
+candidates:{}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // CBox<str>
+let mut p1 = &mut  MaybeUninit::uninit().assume_init(); // std::fmt::Formatter<'_>
++format!("{:?}", p0);
++p0.fmt(p1);
++<CBox<str> as std::fmt::Debug>::fmt(p0, p1);
++crate::<CBox<str> as std::fmt::Debug>::fmt(p0, p1);
++<CBox<str>>::fmt(p0, p1);
+-----------------
+src/lib.rs <CBox<T> as std::ops::Deref>::deref
+deps:{"<CBox<T> as std::ops::Deref>::deref":{"T":["std::marker::Sized","DisposeRef"]}}
+candidates:{"<CBox<T> as std::ops::Deref>::deref":{"T":[]}}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // CBox<T>
++p0.deref();
++<CBox<T> as std::ops::Deref>::deref(p0);
++crate::<CBox<T> as std::ops::Deref>::deref(p0);
++<CBox<T>>::deref(p0);
+-----------------
+src/lib.rs <CBox<T> as std::borrow::Borrow<T>>::borrow
+deps:{"<CBox<T> as std::borrow::Borrow<T>>::borrow":{"T":["DisposeRef","std::marker::Sized"]}}
+candidates:{"<CBox<T> as std::borrow::Borrow<T>>::borrow":{"T":[]}}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // CBox<T>
++p0.borrow();
++<CBox<T> as std::borrow::Borrow<T>>::borrow(p0);
++crate::<CBox<T> as std::borrow::Borrow<T>>::borrow(p0);
++<CBox<T>>::borrow(p0);
+-----------------
+src/lib.rs <CBox<T> as std::ops::DerefMut>::deref_mut
+deps:{"<CBox<T> as std::ops::DerefMut>::deref_mut":{"T":["DisposeRef","std::marker::Sized"]}}
+candidates:{"<CBox<T> as std::ops::DerefMut>::deref_mut":{"T":[]}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // CBox<T>
++p0.deref_mut();
++<CBox<T> as std::ops::DerefMut>::deref_mut(p0);
++crate::<CBox<T> as std::ops::DerefMut>::deref_mut(p0);
++<CBox<T>>::deref_mut(p0);
+-----------------
+src/lib.rs <CBox<T> as std::cmp::PartialEq<T>>::eq
+'a
+deps:{"<CBox<T> as std::cmp::PartialEq<T>>::eq":{"*mut <T as DisposeRef>::RefTo":["std::convert::Into"],"T":["std::cmp::PartialEq","DisposeRef","std::marker::Sized"]},"<T as std::convert::Into<U>>":{"T":["std::marker::Sized"]},"std::cmp::impls::<impl std::cmp::PartialEq<&B> for &A>":{},"std::cmp::impls::<impl std::cmp::PartialEq<&B> for &mut A>":{},"std::cmp::impls::<impl std::cmp::PartialEq<&mut B> for &A>":{},"std::cmp::impls::<impl std::cmp::PartialEq<&mut B> for &mut A>":{}}
+candidates:{"<CBox<T> as std::cmp::PartialEq<T>>::eq":{"*mut <T as DisposeRef>::RefTo":["std::sync::mpmc::select::Selected","std::sys::unix::process::process_inner::ExitStatusError","std::process::ExitStatusError","<T as std::convert::Into<U>>"],"T":["std::net::Ipv4Addr","&'b std::ffi::OsStr","std::cmp::impls::<impl std::cmp::PartialEq<&mut B> for &A>","std::net::Ipv6Addr","std::cmp::impls::<impl std::cmp::PartialEq<&B> for &mut A>","std::cmp::impls::<impl std::cmp::PartialEq<&B> for &A>"]},"<T as std::convert::Into<U>>":{"T":["RUG_ANY"]},"std::cmp::impls::<impl std::cmp::PartialEq<&B> for &A>":{},"std::cmp::impls::<impl std::cmp::PartialEq<&B> for &mut A>":{},"std::cmp::impls::<impl std::cmp::PartialEq<&mut B> for &A>":{},"std::cmp::impls::<impl std::cmp::PartialEq<&mut B> for &mut A>":{}}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // CBox<T>
+let mut p1 = & MaybeUninit::uninit().assume_init(); // T
++p0.eq(p1);
++<CBox<T> as std::cmp::PartialEq<T>>::eq(p0, p1);
++crate::<CBox<T> as std::cmp::PartialEq<T>>::eq(p0, p1);
++<CBox<T>>::eq(p0, p1);

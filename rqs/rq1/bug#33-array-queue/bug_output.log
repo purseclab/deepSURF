@@ -1,0 +1,114 @@
+     Removed 153 files, 61.5MiB total
+   Compiling semver v1.0.26
+   Compiling arrayvec v0.4.12
+   Compiling libc v0.2.175
+   Compiling home v0.5.5
+   Compiling nodrop v0.1.14
+   Compiling xdg v2.5.2
+   Compiling global_data v0.1.0 (/home/cdc/deepSURF-sp26-artifacts/artifact_code/global_data)
+   Compiling afl v0.15.7
+   Compiling rustc_version v0.4.1
+   Compiling array-queue v0.3.3 (/home/cdc/deepSURF-sp26-artifacts/artifact_data/dataset/rustsan_crates/array-queue-0.3.3)
+warning: use of deprecated function `std::mem::uninitialized`: use `mem::MaybeUninit` instead
+ --> /home/cdc/deepSURF-sp26-artifacts/artifact_data/dataset/rustsan_crates/array-queue-0.3.3/src/array_queue.rs:1:39
+  |
+1 | use std::mem::{drop, forget, replace, uninitialized, ManuallyDrop};
+  |                                       ^^^^^^^^^^^^^
+  |
+  = note: `#[warn(deprecated)]` on by default
+
+warning: use of deprecated function `std::mem::uninitialized`: use `mem::MaybeUninit` instead
+  --> /home/cdc/deepSURF-sp26-artifacts/artifact_data/dataset/rustsan_crates/array-queue-0.3.3/src/array_queue.rs:17:29
+   |
+17 |             array: unsafe { uninitialized() },
+   |                             ^^^^^^^^^^^^^
+
+warning: use of deprecated function `std::mem::uninitialized`: use `mem::MaybeUninit` instead
+   --> /home/cdc/deepSURF-sp26-artifacts/artifact_data/dataset/rustsan_crates/array-queue-0.3.3/src/array_queue.rs:106:13
+    |
+106 |             uninitialized()
+    |             ^^^^^^^^^^^^^
+
+warning: use of deprecated function `std::mem::uninitialized`: use `mem::MaybeUninit` instead
+   --> /home/cdc/deepSURF-sp26-artifacts/artifact_data/dataset/rustsan_crates/array-queue-0.3.3/src/array_queue.rs:118:13
+    |
+118 |             uninitialized()
+    |             ^^^^^^^^^^^^^
+
+warning: use of deprecated function `std::mem::uninitialized`: use `mem::MaybeUninit` instead
+   --> /home/cdc/deepSURF-sp26-artifacts/artifact_data/dataset/rustsan_crates/array-queue-0.3.3/src/array_queue.rs:177:38
+    |
+177 |             drop(replace(x, unsafe { uninitialized() }));
+    |                                      ^^^^^^^^^^^^^
+
+warning: `array-queue` (lib) generated 5 warnings
+   Compiling array-queue_fuzz_14037188400585498771 v0.1.0 (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#33-array-queue/harness)
+warning: unused imports: `DerefMut`, `Deref`
+ --> src/array-queue_fuzz_14037188400585498771.rs:7:16
+  |
+7 | use std::ops::{Deref, DerefMut};
+  |                ^^^^^  ^^^^^^^^
+  |
+  = note: `#[warn(unused_imports)]` on by default
+
+warning: the item `TryInto` is imported redundantly
+   --> src/array-queue_fuzz_14037188400585498771.rs:156:9
+    |
+156 |     use std::convert::TryInto;
+    |         ^^^^^^^^^^^^^^^^^^^^^
+   --> /rustc/11f32b73e0dc9287e305b5b9980d24aecdc8c17f/library/std/src/prelude/mod.rs:129:13
+    |
+    = note: the item `TryInto` is already defined here
+
+warning: the item `TryInto` is imported redundantly
+   --> src/array-queue_fuzz_14037188400585498771.rs:163:9
+    |
+163 |     use std::convert::TryInto;
+    |         ^^^^^^^^^^^^^^^^^^^^^
+   --> /rustc/11f32b73e0dc9287e305b5b9980d24aecdc8c17f/library/std/src/prelude/mod.rs:129:13
+    |
+    = note: the item `TryInto` is already defined here
+
+warning: variable `GLOBAL_DATA` should have a snake case name
+  --> src/array-queue_fuzz_14037188400585498771.rs:15:13
+   |
+15 |         let GLOBAL_DATA = global_data.first_half;
+   |             ^^^^^^^^^^^ help: convert the identifier to snake case: `global_data`
+   |
+   = note: `#[warn(non_snake_case)]` on by default
+
+warning: `array-queue_fuzz_14037188400585498771` (bin "array-queue_fuzz_14037188400585498771") generated 4 warnings (run `cargo fix --bin "array-queue_fuzz_14037188400585498771"` to apply 1 suggestion)
+    Finished dev [unoptimized + debuginfo] target(s) in 2.45s
+Clone len: 0
+Back: Some(CustomType1(" \ncommand_"))
+Popped: Some(CustomType1(" \ncommand_"))
+Back: Some(CustomType1("z_1"))
+AddressSanitizer:DEADLYSIGNAL
+=================================================================
+==1410573==ERROR: AddressSanitizer: SEGV on unknown address (pc 0x55eb28d4ca03 bp 0x55eb28d8e5d8 sp 0x7ffdd9fc5430 T0)
+==1410573==The signal is caused by a READ memory access.
+==1410573==Hint: this fault was caused by a dereference of a high value address (see register values below).  Disassemble the provided pc to learn which register was used.
+    #0 0x55eb28d4ca03  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#33-array-queue/harness/target/x86_64-unknown-linux-gnu/debug/array-queue_fuzz_14037188400585498771+0x107a03) (BuildId: a173bf6f1d3055441574724bb9f8f925187b864f)
+    #1 0x55eb28d4ba83  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#33-array-queue/harness/target/x86_64-unknown-linux-gnu/debug/array-queue_fuzz_14037188400585498771+0x106a83) (BuildId: a173bf6f1d3055441574724bb9f8f925187b864f)
+    #2 0x55eb28d4c75a  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#33-array-queue/harness/target/x86_64-unknown-linux-gnu/debug/array-queue_fuzz_14037188400585498771+0x10775a) (BuildId: a173bf6f1d3055441574724bb9f8f925187b864f)
+    #3 0x55eb28d0ad05  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#33-array-queue/harness/target/x86_64-unknown-linux-gnu/debug/array-queue_fuzz_14037188400585498771+0xc5d05) (BuildId: a173bf6f1d3055441574724bb9f8f925187b864f)
+    #4 0x55eb28d4ba83  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#33-array-queue/harness/target/x86_64-unknown-linux-gnu/debug/array-queue_fuzz_14037188400585498771+0x106a83) (BuildId: a173bf6f1d3055441574724bb9f8f925187b864f)
+    #5 0x55eb28d4c75a  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#33-array-queue/harness/target/x86_64-unknown-linux-gnu/debug/array-queue_fuzz_14037188400585498771+0x10775a) (BuildId: a173bf6f1d3055441574724bb9f8f925187b864f)
+    #6 0x55eb28d0b78e  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#33-array-queue/harness/target/x86_64-unknown-linux-gnu/debug/array-queue_fuzz_14037188400585498771+0xc678e) (BuildId: a173bf6f1d3055441574724bb9f8f925187b864f)
+    #7 0x55eb28d4be9f  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#33-array-queue/harness/target/x86_64-unknown-linux-gnu/debug/array-queue_fuzz_14037188400585498771+0x106e9f) (BuildId: a173bf6f1d3055441574724bb9f8f925187b864f)
+    #8 0x55eb28d2a26a  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#33-array-queue/harness/target/x86_64-unknown-linux-gnu/debug/array-queue_fuzz_14037188400585498771+0xe526a) (BuildId: a173bf6f1d3055441574724bb9f8f925187b864f)
+    #9 0x55eb28d2a7b4  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#33-array-queue/harness/target/x86_64-unknown-linux-gnu/debug/array-queue_fuzz_14037188400585498771+0xe57b4) (BuildId: a173bf6f1d3055441574724bb9f8f925187b864f)
+    #10 0x55eb28d079a8  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#33-array-queue/harness/target/x86_64-unknown-linux-gnu/debug/array-queue_fuzz_14037188400585498771+0xc29a8) (BuildId: a173bf6f1d3055441574724bb9f8f925187b864f)
+    #11 0x55eb28d0e55a  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#33-array-queue/harness/target/x86_64-unknown-linux-gnu/debug/array-queue_fuzz_14037188400585498771+0xc955a) (BuildId: a173bf6f1d3055441574724bb9f8f925187b864f)
+    #12 0x55eb28d0d181  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#33-array-queue/harness/target/x86_64-unknown-linux-gnu/debug/array-queue_fuzz_14037188400585498771+0xc8181) (BuildId: a173bf6f1d3055441574724bb9f8f925187b864f)
+    #13 0x55eb28d05441  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#33-array-queue/harness/target/x86_64-unknown-linux-gnu/debug/array-queue_fuzz_14037188400585498771+0xc0441) (BuildId: a173bf6f1d3055441574724bb9f8f925187b864f)
+    #14 0x55eb28d05490  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#33-array-queue/harness/target/x86_64-unknown-linux-gnu/debug/array-queue_fuzz_14037188400585498771+0xc0490) (BuildId: a173bf6f1d3055441574724bb9f8f925187b864f)
+    #15 0x55eb28d286f0  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#33-array-queue/harness/target/x86_64-unknown-linux-gnu/debug/array-queue_fuzz_14037188400585498771+0xe36f0) (BuildId: a173bf6f1d3055441574724bb9f8f925187b864f)
+    #16 0x55eb28d0e715  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#33-array-queue/harness/target/x86_64-unknown-linux-gnu/debug/array-queue_fuzz_14037188400585498771+0xc9715) (BuildId: a173bf6f1d3055441574724bb9f8f925187b864f)
+    #17 0x7f2212c41d8f  (/lib/x86_64-linux-gnu/libc.so.6+0x29d8f) (BuildId: 490fef8403240c91833978d494d39e537409b92e)
+    #18 0x7f2212c41e3f  (/lib/x86_64-linux-gnu/libc.so.6+0x29e3f) (BuildId: 490fef8403240c91833978d494d39e537409b92e)
+    #19 0x55eb28c555f4  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#33-array-queue/harness/target/x86_64-unknown-linux-gnu/debug/array-queue_fuzz_14037188400585498771+0x105f4) (BuildId: a173bf6f1d3055441574724bb9f8f925187b864f)
+
+AddressSanitizer can not provide additional info.
+SUMMARY: AddressSanitizer: SEGV (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#33-array-queue/harness/target/x86_64-unknown-linux-gnu/debug/array-queue_fuzz_14037188400585498771+0x107a03) (BuildId: a173bf6f1d3055441574724bb9f8f925187b864f) 
+==1410573==ABORTING

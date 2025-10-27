@@ -1,0 +1,40 @@
+
+Total Stats:
+------------------------------------------------------------------------------------------------------------------------------------
+* Total URAPI Coverage: 18/23 (78.26%).
+* LLM URAPI Coverage: 18/23 (78.26%).
+* Total Targets (including targets directly imported from SURF): 10 in [11167.265109959s].
+* URAPIs w/ Custom Functionality: 6/23 (26.09%).
+------------------------------------------------------------------------------------------------------------------------------------
+
+Redundant-Targets:
+------------------------------------------------------------------------------------------------------------------------------------
+  * futures-task_fuzz_3796120961032172311_deepseek-r1_turn3
+  * futures-task_fuzz_4225758442555742999_deepseek-r1_turn3
+------------------------------------------------------------------------------------------------------------------------------------
+
+Targeted-URAPI-Miss-Targets:
+------------------------------------------------------------------------------------------------------------------------------------
+  * futures-task_fuzz_4225758442555742999_deepseek-r1_turn3
+  * futures-task_fuzz_1245725561958974242_deepseek-r1_turn4
+  * futures-task_fuzz_11969298822722701242_deepseek-r1_turn3
+  * futures-task_fuzz_3173793489396774253_deepseek-r1_turn3
+  * futures-task_fuzz_3796120961032172311_deepseek-r1_turn3
+  * futures-task_fuzz_8519365927473087730_deepseek-r1_turn4
+  * futures-task_fuzz_17638687151692484877_deepseek-r1_turn4
+  * futures-task_fuzz_3016450888738716723_deepseek-r1_turn6
+------------------------------------------------------------------------------------------------------------------------------------
+
+Targets For Fuzzing:
+  - [CondSkip]: Set of Fuzzing Targets = Total-Targets - Redundant-Targets
+------------------------------------------------------------------------------------------------------------------------------------
+Count: 8
+  * futures-task_fuzz_17638687151692484877_deepseek-r1_turn4
+  * futures-task_fuzz_3016450888738716723_deepseek-r1_turn6
+  * futures-task_fuzz_1245725561958974242_deepseek-r1_turn4
+  * futures-task_fuzz_13250737853006546747_deepseek-r1_turn4
+  * futures-task_fuzz_3173793489396774253_deepseek-r1_turn3
+  * futures-task_fuzz_11969298822722701242_deepseek-r1_turn3
+  * futures-task_fuzz_8519365927473087730_deepseek-r1_turn4
+  * futures-task_fuzz_16920050842211752456_deepseek-r1_turn4
+------------------------------------------------------------------------------------------------------------------------------------

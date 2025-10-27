@@ -1,0 +1,36 @@
+language: rust
+sudo: required
+dist: trusty
+addons:
+    apt:
+        packages:
+            - libssl-dev
+cache: cargo
+rust:
+  - stable
+  - beta
+  - nightly
+  - nightly-2019-05-03
+
+before_cache: |
+  if [[ "$TRAVIS_RUST_VERSION" == nightly-2019-05-03 ]]; then
+    RUSTFLAGS="--cfg procmacro2_semver_exempt" cargo install cargo-tarpaulin
+  fi
+before_script: |
+  if [[ "$TRAVIS_RUST_VERSION" == nightly-2019-05-03 ]]; then
+    rustup component add miri
+    rustup component add rust-src
+    cargo install xargo -f
+  fi
+script: |
+  if [[ "$TRAVIS_RUST_VERSION" == nightly-2019-05-03 ]]; then
+    cargo install --git https://github.com/RalfJung/xargo -f
+    cargo clean
+    cargo miri test
+  else
+    cargo test --features "serde"
+  fi
+after_success: |
+  if [[ "$TRAVIS_RUST_VERSION" == nightly-2019-05-03 ]]; then
+    cargo tarpaulin --features "serde" --ciserver travis-ci --coveralls $TRAVIS_JOB_ID
+  fi

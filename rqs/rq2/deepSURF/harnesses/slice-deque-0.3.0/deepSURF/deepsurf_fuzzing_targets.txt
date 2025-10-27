@@ -1,0 +1,1950 @@
+deepSURF: Generated Targets to be Fuzzed
+------------------------------------------------------------------------------------------------------------------------------------
+  StableURAPI: next_back::/home/cdc/SURF/deepSURF-big-experiment-harnesses/slice-deque-0.3.0/src/lib.rs::2408,
+    - URAPI: DefId(0:323 ~ slice_deque[05d1]::{impl#30}::next_back),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * slice-deque_fuzz_8283376030426054640
+      * slice-deque_fuzz_2153149538434527619
+      * slice-deque_fuzz_15147664315013728478
+      * slice-deque_fuzz_3739296932402868972
+      * slice-deque_fuzz_13700520482075373787_deepseek-r1_turn1
+      * slice-deque_fuzz_8283376030426054640_deepseek-r1_turn2
+  StableURAPI: next_back::/home/cdc/SURF/deepSURF-big-experiment-harnesses/slice-deque-0.3.0/src/lib.rs::2239,
+    - URAPI: DefId(0:291 ~ slice_deque[05d1]::{impl#23}::next_back),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * slice-deque_fuzz_13155056548745206096_deepseek-r1_turn2
+  StableURAPI: eq::/home/cdc/SURF/deepSURF-big-experiment-harnesses/slice-deque-0.3.0/src/lib.rs::2137,
+    - URAPI: DefId(0:244 ~ slice_deque[05d1]::{impl#13}::from),
+    - Macro-expanded: true,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * slice-deque_fuzz_13050109955293856513_deepseek-r1_turn3
+      * slice-deque_fuzz_8359883213621361613_deepseek-r1_turn2
+      * slice-deque_fuzz_2894693785640307436_deepseek-r1_turn4
+  StableURAPI: dedup::/home/cdc/SURF/deepSURF-big-experiment-harnesses/slice-deque-0.3.0/src/lib.rs::2002,
+    - URAPI: DefId(0:149 ~ slice_deque[05d1]::{impl#3}::as_mut_slice),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * slice-deque_fuzz_4094508709849671824_deepseek-r1_turn3
+      * slice-deque_fuzz_1076709872990963861_deepseek-r1_turn2
+      * slice-deque_fuzz_5072995148770667557_deepseek-r1_turn2
+      * slice-deque_fuzz_14324631889916904199_deepseek-r1_turn3
+  StableURAPI: into_iter::/home/cdc/SURF/deepSURF-big-experiment-harnesses/slice-deque-0.3.0/src/lib.rs::2543,
+    - URAPI: DefId(0:346 ~ slice_deque[05d1]::{impl#35}::into_iter),
+    - Macro-expanded: false,
+    - LLM-improved: false,
+    - Fuzzing Targets:
+      * slice-deque_fuzz_14676136491139143692
+      * slice-deque_fuzz_941372208376146276
+      * slice-deque_fuzz_4094508709849671824
+      * slice-deque_fuzz_18255234735711346581
+  StableURAPI: extend::/home/cdc/SURF/deepSURF-big-experiment-harnesses/slice-deque-0.3.0/src/lib.rs::2856,
+    - URAPI: DefId(0:403 ~ slice_deque[05d1]::{impl#43}::extend),
+    - Macro-expanded: false,
+    - LLM-improved: false,
+    - Fuzzing Targets:
+      * slice-deque_fuzz_8161165916442446671
+  StableURAPI: len::/home/cdc/SURF/deepSURF-big-experiment-harnesses/slice-deque-0.3.0/src/lib.rs::452,
+    - URAPI: DefId(0:146 ~ slice_deque[05d1]::{impl#3}::len),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * slice-deque_fuzz_14929801104225610600_deepseek-r1_turn5
+      * slice-deque_fuzz_4746506307754533583_deepseek-r1_turn2
+      * slice-deque_fuzz_911277952172177360_deepseek-r1_turn2
+      * slice-deque_fuzz_18419825544504067688_deepseek-r1_turn1
+      * slice-deque_fuzz_2217358730257375283_deepseek-r1_turn2
+      * slice-deque_fuzz_18437203802959288078_deepseek-r1_turn2
+      * slice-deque_fuzz_8362347888412206739_deepseek-r1_turn4
+      * slice-deque_fuzz_12417510891717424398_deepseek-r1_turn4
+      * slice-deque_fuzz_9663218223915125597_deepseek-r1_turn3
+      * slice-deque_fuzz_12588477240223379608_deepseek-r1_turn3
+      * slice-deque_fuzz_15948549382854765885
+      * slice-deque_fuzz_2240268102745286170_deepseek-r1_turn4
+      * slice-deque_fuzz_12082732316833867669_deepseek-r1_turn1
+      * slice-deque_fuzz_15345675187571639779_deepseek-r1_turn3
+      * slice-deque_fuzz_4094508709849671824_deepseek-r1_turn3
+      * slice-deque_fuzz_1917455478764445702_deepseek-r1_turn5
+      * slice-deque_fuzz_9738239852499739670_deepseek-r1_turn3
+      * slice-deque_fuzz_12917028999123009516_deepseek-r1_turn2
+      * slice-deque_fuzz_2283583047074886920_deepseek-r1_turn2
+      * slice-deque_fuzz_8232733558803319586_deepseek-r1_turn2
+      * slice-deque_fuzz_4070082801758288724_deepseek-r1_turn4
+      * slice-deque_fuzz_4545318101966464336_deepseek-r1_turn1
+      * slice-deque_fuzz_10571828121180457176_deepseek-r1_turn3
+      * slice-deque_fuzz_7531246511942556464
+      * slice-deque_fuzz_8463061266926741376_deepseek-r1_turn1
+      * slice-deque_fuzz_2894693785640307436_deepseek-r1_turn4
+      * slice-deque_fuzz_5861335305008624807_deepseek-r1_turn6
+      * slice-deque_fuzz_17588577153577797897_deepseek-r1_turn3
+      * slice-deque_fuzz_10108862598979563510_deepseek-r1_turn2
+      * slice-deque_fuzz_5777519231826042890_deepseek-r1_turn2
+      * slice-deque_fuzz_1076709872990963861_deepseek-r1_turn2
+      * slice-deque_fuzz_9662541084062873642_deepseek-r1_turn1
+      * slice-deque_fuzz_6191598950180456694_deepseek-r1_turn1
+      * slice-deque_fuzz_17622801763419986548_deepseek-r1_turn1
+      * slice-deque_fuzz_10388620105030957729_deepseek-r1_turn4
+      * slice-deque_fuzz_5656338007438782333_deepseek-r1_turn1
+      * slice-deque_fuzz_15263806174849472263_deepseek-r1_turn4
+      * slice-deque_fuzz_4760281192874452592_deepseek-r1_turn3
+      * slice-deque_fuzz_13700520482075373787_deepseek-r1_turn1
+      * slice-deque_fuzz_8469854685696968172_deepseek-r1_turn1
+      * slice-deque_fuzz_17722650989475118215_deepseek-r1_turn4
+      * slice-deque_fuzz_14452278170383854498_deepseek-r1_turn5
+      * slice-deque_fuzz_4484387757941457130_deepseek-r1_turn5
+      * slice-deque_fuzz_9975925693983352616_deepseek-r1_turn3
+      * slice-deque_fuzz_13635891816206107892_deepseek-r1_turn1
+      * slice-deque_fuzz_17887136662909375945_deepseek-r1_turn5
+      * slice-deque_fuzz_4501822303361639832_deepseek-r1_turn1
+      * slice-deque_fuzz_13900749957672559691_deepseek-r1_turn3
+      * slice-deque_fuzz_16075554750031233132_deepseek-r1_turn3
+      * slice-deque_fuzz_10394882426450708466_deepseek-r1_turn2
+      * slice-deque_fuzz_16958015347328256777_deepseek-r1_turn3
+      * slice-deque_fuzz_10001717426570151414_deepseek-r1_turn2
+      * slice-deque_fuzz_4769207226339191488_deepseek-r1_turn4
+      * slice-deque_fuzz_17139725604596503654_deepseek-r1_turn5
+      * slice-deque_fuzz_1887569689404825567_deepseek-r1_turn2
+      * slice-deque_fuzz_14929801104225610600
+      * slice-deque_fuzz_1443912480122634386_deepseek-r1_turn1
+      * slice-deque_fuzz_6824480945603196267
+      * slice-deque_fuzz_15500095988099735105_deepseek-r1_turn3
+      * slice-deque_fuzz_5206005555413942478_deepseek-r1_turn3
+      * slice-deque_fuzz_13155056548745206096_deepseek-r1_turn2
+      * slice-deque_fuzz_14843698792566371154_deepseek-r1_turn2
+      * slice-deque_fuzz_5072995148770667557_deepseek-r1_turn2
+      * slice-deque_fuzz_4968986741856722397_deepseek-r1_turn6
+      * slice-deque_fuzz_17840852337922577515_deepseek-r1_turn1
+      * slice-deque_fuzz_9822303795792256123_deepseek-r1_turn2
+      * slice-deque_fuzz_15699793873366199038_deepseek-r1_turn1
+      * slice-deque_fuzz_8161165916442446671_deepseek-r1_turn2
+      * slice-deque_fuzz_7005584422468023561_deepseek-r1_turn1
+  StableURAPI: deref_mut::/home/cdc/SURF/deepSURF-big-experiment-harnesses/slice-deque-0.3.0/src/lib.rs::2075,
+    - URAPI: DefId(0:233 ~ slice_deque[05d1]::{impl#10}::deref_mut),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * slice-deque_fuzz_1139081059340029776
+      * slice-deque_fuzz_11166584967084969210
+      * slice-deque_fuzz_8283376030426054640_deepseek-r1_turn2
+      * slice-deque_fuzz_14929801104225610600_deepseek-r1_turn5
+      * slice-deque_fuzz_17887136662909375945_deepseek-r1_turn5
+      * slice-deque_fuzz_4598399675069962417_deepseek-r1_turn2
+      * slice-deque_fuzz_1887569689404825567
+      * slice-deque_fuzz_17204544852770142051
+      * slice-deque_fuzz_10388620105030957729_deepseek-r1_turn4
+      * slice-deque_fuzz_1887569689404825567_deepseek-r1_turn2
+      * slice-deque_fuzz_2283583047074886920_deepseek-r1_turn2
+  StableURAPI: splice::/home/cdc/SURF/deepSURF-big-experiment-harnesses/slice-deque-0.3.0/src/lib.rs::1769,
+    - URAPI: DefId(0:185 ~ slice_deque[05d1]::{impl#3}::clear),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * slice-deque_fuzz_14843698792566371154_deepseek-r1_turn2
+      * slice-deque_fuzz_4545318101966464336_deepseek-r1_turn1
+      * slice-deque_fuzz_12082732316833867669_deepseek-r1_turn1
+      * slice-deque_fuzz_14452278170383854498_deepseek-r1_turn5
+      * slice-deque_fuzz_9662541084062873642_deepseek-r1_turn1
+      * slice-deque_fuzz_16075554750031233132_deepseek-r1_turn3
+      * slice-deque_fuzz_15345675187571639779_deepseek-r1_turn3
+      * slice-deque_fuzz_1443912480122634386_deepseek-r1_turn1
+      * slice-deque_fuzz_8362347888412206739_deepseek-r1_turn4
+      * slice-deque_fuzz_8161165916442446671_deepseek-r1_turn2
+      * slice-deque_fuzz_8283376030426054640_deepseek-r1_turn2
+      * slice-deque_fuzz_17887136662909375945_deepseek-r1_turn5
+      * slice-deque_fuzz_13635891816206107892_deepseek-r1_turn1
+      * slice-deque_fuzz_2894693785640307436_deepseek-r1_turn4
+      * slice-deque_fuzz_12588477240223379608_deepseek-r1_turn3
+      * slice-deque_fuzz_12917028999123009516_deepseek-r1_turn2
+      * slice-deque_fuzz_9975925693983352616_deepseek-r1_turn3
+      * slice-deque_fuzz_13050109955293856513_deepseek-r1_turn3
+      * slice-deque_fuzz_18419825544504067688_deepseek-r1_turn1
+      * slice-deque_fuzz_2217358730257375283_deepseek-r1_turn2
+      * slice-deque_fuzz_15263806174849472263_deepseek-r1_turn4
+      * slice-deque_fuzz_4484387757941457130_deepseek-r1_turn5
+  StableURAPI: retain::/home/cdc/SURF/deepSURF-big-experiment-harnesses/slice-deque-0.3.0/src/lib.rs::1505,
+    - URAPI: DefId(0:191 ~ slice_deque[05d1]::{impl#3}::retain),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * slice-deque_fuzz_16075554750031233132_deepseek-r1_turn3
+      * slice-deque_fuzz_10001717426570151414_deepseek-r1_turn2
+      * slice-deque_fuzz_8469854685696968172_deepseek-r1_turn1
+      * slice-deque_fuzz_18419825544504067688_deepseek-r1_turn1
+      * slice-deque_fuzz_4775485986358460738
+      * slice-deque_fuzz_5206005555413942478_deepseek-r1_turn3
+      * slice-deque_fuzz_18419825544504067688
+      * slice-deque_fuzz_3535507429042951206
+      * slice-deque_fuzz_3100964556115013419
+      * slice-deque_fuzz_18437203802959288078_deepseek-r1_turn2
+      * slice-deque_fuzz_2894693785640307436_deepseek-r1_turn4
+      * slice-deque_fuzz_9662541084062873642_deepseek-r1_turn1
+  StableURAPI: with_capacity::/home/cdc/SURF/deepSURF-big-experiment-harnesses/slice-deque-0.3.0/src/lib.rs::406,
+    - URAPI: DefId(0:143 ~ slice_deque[05d1]::{impl#3}::with_capacity),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * slice-deque_fuzz_2894693785640307436_deepseek-r1_turn4
+      * slice-deque_fuzz_10108862598979563510_deepseek-r1_turn2
+      * slice-deque_fuzz_14929801104225610600_deepseek-r1_turn5
+      * slice-deque_fuzz_4070082801758288724_deepseek-r1_turn4
+      * slice-deque_fuzz_17622801763419986548_deepseek-r1_turn1
+      * slice-deque_fuzz_12906479776415708453_deepseek-r1_turn1
+      * slice-deque_fuzz_17139725604596503654_deepseek-r1_turn5
+      * slice-deque_fuzz_13050109955293856513_deepseek-r1_turn3
+      * slice-deque_fuzz_4968986741856722397_deepseek-r1_turn6
+      * slice-deque_fuzz_9975925693983352616_deepseek-r1_turn3
+      * slice-deque_fuzz_2240268102745286170_deepseek-r1_turn4
+      * slice-deque_fuzz_4545318101966464336_deepseek-r1_turn1
+      * slice-deque_fuzz_8469854685696968172_deepseek-r1_turn1
+      * slice-deque_fuzz_4094508709849671824_deepseek-r1_turn3
+      * slice-deque_fuzz_12588477240223379608_deepseek-r1_turn3
+      * slice-deque_fuzz_10571828121180457176_deepseek-r1_turn3
+      * slice-deque_fuzz_1887569689404825567_deepseek-r1_turn2
+      * slice-deque_fuzz_18419825544504067688_deepseek-r1_turn1
+      * slice-deque_fuzz_8463061266926741376_deepseek-r1_turn1
+      * slice-deque_fuzz_13155056548745206096_deepseek-r1_turn2
+      * slice-deque_fuzz_4826721274424411881_deepseek-r1_turn3
+      * slice-deque_fuzz_8161165916442446671_deepseek-r1_turn2
+      * slice-deque_fuzz_17840852337922577515_deepseek-r1_turn1
+      * slice-deque_fuzz_5861335305008624807_deepseek-r1_turn6
+      * slice-deque_fuzz_17887136662909375945_deepseek-r1_turn5
+      * slice-deque_fuzz_15699793873366199038_deepseek-r1_turn1
+      * slice-deque_fuzz_2029389719203445302_deepseek-r1_turn2
+      * slice-deque_fuzz_18437203802959288078_deepseek-r1_turn2
+      * slice-deque_fuzz_7005584422468023561_deepseek-r1_turn1
+      * slice-deque_fuzz_14324631889916904199_deepseek-r1_turn3
+      * slice-deque_fuzz_10394882426450708466_deepseek-r1_turn2
+      * slice-deque_fuzz_2428145879454001779_deepseek-r1_turn3
+      * slice-deque_fuzz_4672898723338971870_deepseek-r1_turn1
+      * slice-deque_fuzz_12917028999123009516_deepseek-r1_turn2
+      * slice-deque_fuzz_13635891816206107892_deepseek-r1_turn1
+      * slice-deque_fuzz_1115897812801201260_deepseek-r1_turn1
+      * slice-deque_fuzz_17722650989475118215_deepseek-r1_turn4
+      * slice-deque_fuzz_7004937031219439135_deepseek-r1_turn1
+      * slice-deque_fuzz_13700520482075373787_deepseek-r1_turn1
+      * slice-deque_fuzz_8362347888412206739_deepseek-r1_turn4
+      * slice-deque_fuzz_5656338007438782333_deepseek-r1_turn1
+      * slice-deque_fuzz_9822303795792256123_deepseek-r1_turn2
+      * slice-deque_fuzz_10001717426570151414_deepseek-r1_turn2
+      * slice-deque_fuzz_1917455478764445702_deepseek-r1_turn5
+      * slice-deque_fuzz_4484387757941457130_deepseek-r1_turn5
+      * slice-deque_fuzz_15263806174849472263_deepseek-r1_turn4
+      * slice-deque_fuzz_9663218223915125597_deepseek-r1_turn3
+      * slice-deque_fuzz_738388044229897756_deepseek-r1_turn3
+      * slice-deque_fuzz_15345675187571639779_deepseek-r1_turn3
+      * slice-deque_fuzz_4746506307754533583_deepseek-r1_turn2
+      * slice-deque_fuzz_4501822303361639832_deepseek-r1_turn1
+      * slice-deque_fuzz_14843698792566371154_deepseek-r1_turn2
+      * slice-deque_fuzz_1076709872990963861_deepseek-r1_turn2
+      * slice-deque_fuzz_6191598950180456694_deepseek-r1_turn1
+      * slice-deque_fuzz_4769207226339191488_deepseek-r1_turn4
+      * slice-deque_fuzz_8232733558803319586_deepseek-r1_turn2
+      * slice-deque_fuzz_8283376030426054640_deepseek-r1_turn2
+      * slice-deque_fuzz_12417510891717424398_deepseek-r1_turn4
+      * slice-deque_fuzz_5777519231826042890_deepseek-r1_turn2
+      * slice-deque_fuzz_16958015347328256777_deepseek-r1_turn3
+      * slice-deque_fuzz_911277952172177360_deepseek-r1_turn2
+      * slice-deque_fuzz_9662541084062873642_deepseek-r1_turn1
+      * slice-deque_fuzz_5072995148770667557_deepseek-r1_turn2
+      * slice-deque_fuzz_6903199200138795234_deepseek-r1_turn3
+      * slice-deque_fuzz_2283583047074886920_deepseek-r1_turn2
+      * slice-deque_fuzz_4760281192874452592_deepseek-r1_turn3
+      * slice-deque_fuzz_15070556627503783575_deepseek-r1_turn2
+      * slice-deque_fuzz_9738239852499739670_deepseek-r1_turn3
+      * slice-deque_fuzz_12082732316833867669_deepseek-r1_turn1
+      * slice-deque_fuzz_17588577153577797897_deepseek-r1_turn3
+      * slice-deque_fuzz_5206005555413942478_deepseek-r1_turn3
+      * slice-deque_fuzz_8359883213621361613_deepseek-r1_turn2
+      * slice-deque_fuzz_14452278170383854498_deepseek-r1_turn5
+      * slice-deque_fuzz_8624375823431338779_deepseek-r1_turn3
+      * slice-deque_fuzz_13900749957672559691_deepseek-r1_turn3
+      * slice-deque_fuzz_15500095988099735105_deepseek-r1_turn3
+      * slice-deque_fuzz_10388620105030957729_deepseek-r1_turn4
+      * slice-deque_fuzz_16075554750031233132_deepseek-r1_turn3
+  StableURAPI: extend_from_slice::/home/cdc/SURF/deepSURF-big-experiment-harnesses/slice-deque-0.3.0/src/lib.rs::1887,
+    - URAPI: DefId(0:210 ~ slice_deque[05d1]::{impl#4}::extend_from_slice),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * slice-deque_fuzz_17840852337922577515_deepseek-r1_turn1
+      * slice-deque_fuzz_1887569689404825567_deepseek-r1_turn2
+      * slice-deque_fuzz_8624375823431338779_deepseek-r1_turn3
+      * slice-deque_fuzz_16075554750031233132_deepseek-r1_turn3
+      * slice-deque_fuzz_4672898723338971870_deepseek-r1_turn1
+      * slice-deque_fuzz_5206005555413942478_deepseek-r1_turn3
+      * slice-deque_fuzz_15345675187571639779_deepseek-r1_turn3
+      * slice-deque_fuzz_13608405717204412817
+      * slice-deque_fuzz_13050109955293856513_deepseek-r1_turn3
+      * slice-deque_fuzz_8359883213621361613_deepseek-r1_turn2
+      * slice-deque_fuzz_13635891816206107892_deepseek-r1_turn1
+      * slice-deque_fuzz_11726257985557319989
+      * slice-deque_fuzz_12917028999123009516_deepseek-r1_turn2
+      * slice-deque_fuzz_2894693785640307436_deepseek-r1_turn4
+      * slice-deque_fuzz_2240268102745286170_deepseek-r1_turn4
+      * slice-deque_fuzz_10201032858530501589
+      * slice-deque_fuzz_4968986741856722397_deepseek-r1_turn6
+      * slice-deque_fuzz_8362347888412206739_deepseek-r1_turn4
+      * slice-deque_fuzz_17840852337922577515
+  StableURAPI: try_push_front::/home/cdc/SURF/deepSURF-big-experiment-harnesses/slice-deque-0.3.0/src/lib.rs::929,
+    - URAPI: DefId(0:169 ~ slice_deque[05d1]::{impl#3}::try_push_front),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * slice-deque_fuzz_8362347888412206739_deepseek-r1_turn4
+      * slice-deque_fuzz_11238348846656973648
+      * slice-deque_fuzz_8362347888412206739
+      * slice-deque_fuzz_13402869320264365609
+      * slice-deque_fuzz_8709388311618041319
+  StableURAPI: drop::/home/cdc/SURF/deepSURF-big-experiment-harnesses/slice-deque-0.3.0/src/mirrored/buffer.rs::161,
+    - URAPI: DefId(0:40 ~ slice_deque[05d1]::mirrored::buffer::{impl#1}::drop),
+    - Macro-expanded: false,
+    - LLM-improved: false,
+    - Fuzzing Targets:
+      * slice-deque_fuzz_487279858766800635
+      * slice-deque_fuzz_4194545220664743999
+  StableURAPI: back_mut::/home/cdc/SURF/deepSURF-big-experiment-harnesses/slice-deque-0.3.0/src/lib.rs::912,
+    - URAPI: DefId(0:168 ~ slice_deque[05d1]::{impl#3}::back_mut),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * slice-deque_fuzz_18419825544504067688_deepseek-r1_turn1
+      * slice-deque_fuzz_18437203802959288078_deepseek-r1_turn2
+      * slice-deque_fuzz_13900749957672559691_deepseek-r1_turn3
+      * slice-deque_fuzz_17887136662909375945_deepseek-r1_turn5
+      * slice-deque_fuzz_14843698792566371154_deepseek-r1_turn2
+      * slice-deque_fuzz_4968986741856722397_deepseek-r1_turn6
+      * slice-deque_fuzz_1443912480122634386_deepseek-r1_turn1
+      * slice-deque_fuzz_17139725604596503654_deepseek-r1_turn5
+      * slice-deque_fuzz_2456398796353451546
+      * slice-deque_fuzz_9975925693983352616_deepseek-r1_turn3
+      * slice-deque_fuzz_15070556627503783575_deepseek-r1_turn2
+      * slice-deque_fuzz_8359883213621361613_deepseek-r1_turn2
+      * slice-deque_fuzz_12906479776415708453_deepseek-r1_turn1
+      * slice-deque_fuzz_9738239852499739670_deepseek-r1_turn3
+      * slice-deque_fuzz_1887569689404825567_deepseek-r1_turn2
+      * slice-deque_fuzz_17722650989475118215_deepseek-r1_turn4
+      * slice-deque_fuzz_5861335305008624807_deepseek-r1_turn6
+      * slice-deque_fuzz_15500095988099735105_deepseek-r1_turn3
+      * slice-deque_fuzz_10199838432670496264
+      * slice-deque_fuzz_911277952172177360_deepseek-r1_turn2
+      * slice-deque_fuzz_7005584422468023561_deepseek-r1_turn1
+      * slice-deque_fuzz_2894693785640307436_deepseek-r1_turn4
+      * slice-deque_fuzz_4070082801758288724_deepseek-r1_turn4
+      * slice-deque_fuzz_15699793873366199038_deepseek-r1_turn1
+      * slice-deque_fuzz_15345675187571639779_deepseek-r1_turn3
+      * slice-deque_fuzz_4094508709849671824_deepseek-r1_turn3
+      * slice-deque_fuzz_2283583047074886920
+      * slice-deque_fuzz_2283583047074886920_deepseek-r1_turn2
+      * slice-deque_fuzz_8469854685696968172_deepseek-r1_turn1
+      * slice-deque_fuzz_7797393054467814443
+  StableURAPI: as_mut_slice::/home/cdc/SURF/deepSURF-big-experiment-harnesses/slice-deque-0.3.0/src/lib.rs::481,
+    - URAPI: DefId(0:149 ~ slice_deque[05d1]::{impl#3}::as_mut_slice),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * slice-deque_fuzz_911277952172177360_deepseek-r1_turn2
+      * slice-deque_fuzz_11651323690213599008_deepseek-r1_turn3
+      * slice-deque_fuzz_2240268102745286170_deepseek-r1_turn4
+      * slice-deque_fuzz_8320923544499103517
+      * slice-deque_fuzz_2283583047074886920_deepseek-r1_turn2
+      * slice-deque_fuzz_1115897812801201260_deepseek-r1_turn1
+      * slice-deque_fuzz_10571828121180457176_deepseek-r1_turn3
+      * slice-deque_fuzz_2217358730257375283_deepseek-r1_turn2
+      * slice-deque_fuzz_3846697660194398138
+      * slice-deque_fuzz_1076709872990963861_deepseek-r1_turn2
+      * slice-deque_fuzz_4484387757941457130_deepseek-r1_turn5
+      * slice-deque_fuzz_5072995148770667557_deepseek-r1_turn2
+      * slice-deque_fuzz_8469854685696968172_deepseek-r1_turn1
+      * slice-deque_fuzz_18437203802959288078_deepseek-r1_turn2
+      * slice-deque_fuzz_5777519231826042890_deepseek-r1_turn2
+      * slice-deque_fuzz_17722650989475118215_deepseek-r1_turn4
+      * slice-deque_fuzz_8283376030426054640_deepseek-r1_turn2
+      * slice-deque_fuzz_13635891816206107892_deepseek-r1_turn1
+      * slice-deque_fuzz_14452278170383854498_deepseek-r1_turn5
+      * slice-deque_fuzz_13050109955293856513_deepseek-r1_turn3
+      * slice-deque_fuzz_13832191164260206556
+      * slice-deque_fuzz_14324631889916904199_deepseek-r1_turn3
+      * slice-deque_fuzz_8161165916442446671_deepseek-r1_turn2
+      * slice-deque_fuzz_12906479776415708453_deepseek-r1_turn1
+      * slice-deque_fuzz_10388620105030957729_deepseek-r1_turn4
+      * slice-deque_fuzz_4769207226339191488_deepseek-r1_turn4
+      * slice-deque_fuzz_14324631889916904199
+      * slice-deque_fuzz_9662541084062873642_deepseek-r1_turn1
+  StableURAPI: dedup_by_key::/home/cdc/SURF/deepSURF-big-experiment-harnesses/slice-deque-0.3.0/src/lib.rs::1545,
+    - URAPI: DefId(0:193 ~ slice_deque[05d1]::{impl#3}::dedup_by_key),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * slice-deque_fuzz_16930725302171528266
+      * slice-deque_fuzz_18437203802959288078_deepseek-r1_turn2
+      * slice-deque_fuzz_18437203802959288078
+      * slice-deque_fuzz_7794167762430428052
+      * slice-deque_fuzz_14834592560986456194
+  StableURAPI: next::/home/cdc/SURF/deepSURF-big-experiment-harnesses/slice-deque-0.3.0/src/lib.rs::3017,
+    - URAPI: DefId(0:430 ~ slice_deque[05d1]::{impl#48}::next),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * slice-deque_fuzz_12917028999123009516_deepseek-r1_turn2
+      * slice-deque_fuzz_12417510891717424398_deepseek-r1_turn4
+      * slice-deque_fuzz_10125919151125435636
+      * slice-deque_fuzz_18419825544504067688_deepseek-r1_turn1
+      * slice-deque_fuzz_4968986741856722397_deepseek-r1_turn6
+      * slice-deque_fuzz_9975925693983352616_deepseek-r1_turn3
+      * slice-deque_fuzz_14452278170383854498_deepseek-r1_turn5
+      * slice-deque_fuzz_5066063649891979273
+      * slice-deque_fuzz_13155056548745206096_deepseek-r1_turn2
+      * slice-deque_fuzz_8161165916442446671_deepseek-r1_turn2
+      * slice-deque_fuzz_7652146879784986376
+      * slice-deque_fuzz_14452278170383854498
+  StableURAPI: deref::/home/cdc/SURF/deepSURF-big-experiment-harnesses/slice-deque-0.3.0/src/lib.rs::2068,
+    - URAPI: DefId(0:230 ~ slice_deque[05d1]::{impl#9}::deref),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * slice-deque_fuzz_5777519231826042890_deepseek-r1_turn2
+      * slice-deque_fuzz_2283583047074886920_deepseek-r1_turn2
+      * slice-deque_fuzz_17139725604596503654_deepseek-r1_turn5
+      * slice-deque_fuzz_15500095988099735105_deepseek-r1_turn3
+      * slice-deque_fuzz_738388044229897756_deepseek-r1_turn3
+      * slice-deque_fuzz_8624375823431338779_deepseek-r1_turn3
+      * slice-deque_fuzz_16563667240550504242
+      * slice-deque_fuzz_4746506307754533583_deepseek-r1_turn2
+      * slice-deque_fuzz_12917028999123009516_deepseek-r1_turn2
+      * slice-deque_fuzz_8362347888412206739_deepseek-r1_turn4
+      * slice-deque_fuzz_17887136662909375945_deepseek-r1_turn5
+      * slice-deque_fuzz_2217358730257375283_deepseek-r1_turn2
+      * slice-deque_fuzz_2428145879454001779_deepseek-r1_turn3
+      * slice-deque_fuzz_8463061266926741376_deepseek-r1_turn1
+      * slice-deque_fuzz_13050109955293856513_deepseek-r1_turn3
+      * slice-deque_fuzz_12417510891717424398_deepseek-r1_turn4
+      * slice-deque_fuzz_4501822303361639832_deepseek-r1_turn1
+      * slice-deque_fuzz_17722650989475118215_deepseek-r1_turn4
+      * slice-deque_fuzz_2894693785640307436_deepseek-r1_turn4
+      * slice-deque_fuzz_4070082801758288724_deepseek-r1_turn4
+      * slice-deque_fuzz_7569380194792242524
+      * slice-deque_fuzz_18437203802959288078_deepseek-r1_turn2
+      * slice-deque_fuzz_8463061266926741376
+      * slice-deque_fuzz_9822303795792256123_deepseek-r1_turn2
+      * slice-deque_fuzz_12082732316833867669_deepseek-r1_turn1
+      * slice-deque_fuzz_10394882426450708466_deepseek-r1_turn2
+      * slice-deque_fuzz_4598399675069962417_deepseek-r1_turn2
+      * slice-deque_fuzz_15070556627503783575_deepseek-r1_turn2
+      * slice-deque_fuzz_15699793873366199038_deepseek-r1_turn1
+      * slice-deque_fuzz_13700520482075373787_deepseek-r1_turn1
+      * slice-deque_fuzz_1026152315141324217
+      * slice-deque_fuzz_4094508709849671824_deepseek-r1_turn3
+      * slice-deque_fuzz_9663218223915125597_deepseek-r1_turn3
+  StableURAPI: from::/home/cdc/SURF/deepSURF-big-experiment-harnesses/slice-deque-0.3.0/src/lib.rs::2118,
+    - URAPI: DefId(0:248 ~ slice_deque[05d1]::{impl#14}::from),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * slice-deque_fuzz_4769207226339191488_deepseek-r1_turn4
+      * slice-deque_fuzz_2240268102745286170_deepseek-r1_turn4
+      * slice-deque_fuzz_14452278170383854498_deepseek-r1_turn5
+      * slice-deque_fuzz_18419825544504067688_deepseek-r1_turn1
+      * slice-deque_fuzz_4501822303361639832_deepseek-r1_turn1
+      * slice-deque_fuzz_8362347888412206739_deepseek-r1_turn4
+      * slice-deque_fuzz_10001717426570151414
+      * slice-deque_fuzz_4746506307754533583_deepseek-r1_turn2
+      * slice-deque_fuzz_12082732316833867669_deepseek-r1_turn1
+      * slice-deque_fuzz_10001717426570151414_deepseek-r1_turn2
+      * slice-deque_fuzz_8283376030426054640_deepseek-r1_turn2
+      * slice-deque_fuzz_1887569689404825567_deepseek-r1_turn2
+      * slice-deque_fuzz_17887136662909375945_deepseek-r1_turn5
+  StableURAPI: drop::/home/cdc/SURF/deepSURF-big-experiment-harnesses/slice-deque-0.3.0/src/lib.rs::2470,
+    - URAPI: DefId(0:329 ~ slice_deque[05d1]::{impl#32}::drop),
+    - Macro-expanded: false,
+    - LLM-improved: false,
+    - Fuzzing Targets:
+      * slice-deque_fuzz_1638638217233771884
+      * slice-deque_fuzz_14328432338303145614
+      * slice-deque_fuzz_8469854685696968172
+      * slice-deque_fuzz_14745989028017771496
+  StableURAPI: partial_cmp::/home/cdc/SURF/deepSURF-big-experiment-harnesses/slice-deque-0.3.0/src/lib.rs::2191,
+    - URAPI: DefId(0:263 ~ slice_deque[05d1]::{impl#18}::partial_cmp),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * slice-deque_fuzz_10744265680073873049
+      * slice-deque_fuzz_14929801104225610600_deepseek-r1_turn5
+      * slice-deque_fuzz_11688589614726466853
+      * slice-deque_fuzz_3487297868695767725
+      * slice-deque_fuzz_11651323690213599008
+      * slice-deque_fuzz_11651323690213599008_deepseek-r1_turn3
+  StableURAPI: into_iter::/home/cdc/SURF/deepSURF-big-experiment-harnesses/slice-deque-0.3.0/src/lib.rs::2504,
+    - URAPI: DefId(0:334 ~ slice_deque[05d1]::{impl#33}::into_iter),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * slice-deque_fuzz_8283376030426054640_deepseek-r1_turn2
+      * slice-deque_fuzz_16706662556665759500
+      * slice-deque_fuzz_16231358741625573277
+      * slice-deque_fuzz_13700520482075373787_deepseek-r1_turn1
+      * slice-deque_fuzz_6903199200138795234_deepseek-r1_turn3
+      * slice-deque_fuzz_13900749957672559691_deepseek-r1_turn3
+      * slice-deque_fuzz_5777519231826042890_deepseek-r1_turn2
+      * slice-deque_fuzz_16958015347328256777_deepseek-r1_turn3
+      * slice-deque_fuzz_17887136662909375945_deepseek-r1_turn5
+      * slice-deque_fuzz_15070556627503783575_deepseek-r1_turn2
+      * slice-deque_fuzz_8469854685696968172_deepseek-r1_turn1
+      * slice-deque_fuzz_4672898723338971870_deepseek-r1_turn1
+      * slice-deque_fuzz_4760281192874452592_deepseek-r1_turn3
+      * slice-deque_fuzz_18419825544504067688_deepseek-r1_turn1
+      * slice-deque_fuzz_9822303795792256123_deepseek-r1_turn2
+      * slice-deque_fuzz_8323363517386104434
+      * slice-deque_fuzz_4545318101966464336_deepseek-r1_turn1
+      * slice-deque_fuzz_4968986741856722397_deepseek-r1_turn6
+      * slice-deque_fuzz_2217358730257375283_deepseek-r1_turn2
+      * slice-deque_fuzz_4826721274424411881_deepseek-r1_turn3
+      * slice-deque_fuzz_4598399675069962417_deepseek-r1_turn2
+      * slice-deque_fuzz_17887136662909375945
+      * slice-deque_fuzz_4484387757941457130_deepseek-r1_turn5
+  StableURAPI: dedup_by::/home/cdc/SURF/deepSURF-big-experiment-harnesses/slice-deque-0.3.0/src/lib.rs::1578,
+    - URAPI: DefId(0:197 ~ slice_deque[05d1]::{impl#3}::dedup_by),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * slice-deque_fuzz_79085425918100747
+      * slice-deque_fuzz_2240268102745286170
+      * slice-deque_fuzz_13260847895518855217
+      * slice-deque_fuzz_16564090039783922340
+      * slice-deque_fuzz_8469854685696968172_deepseek-r1_turn1
+      * slice-deque_fuzz_2240268102745286170_deepseek-r1_turn4
+  StableURAPI: as_slices::/home/cdc/SURF/deepSURF-big-experiment-harnesses/slice-deque-0.3.0/src/lib.rs::488,
+    - URAPI: DefId(0:150 ~ slice_deque[05d1]::{impl#3}::as_slices),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * slice-deque_fuzz_1443912480122634386_deepseek-r1_turn1
+      * slice-deque_fuzz_738388044229897756_deepseek-r1_turn3
+      * slice-deque_fuzz_8297003957152271076
+      * slice-deque_fuzz_4094508709849671824_deepseek-r1_turn3
+      * slice-deque_fuzz_18419825544504067688_deepseek-r1_turn1
+      * slice-deque_fuzz_4769207226339191488_deepseek-r1_turn4
+      * slice-deque_fuzz_4826721274424411881_deepseek-r1_turn3
+      * slice-deque_fuzz_4598399675069962417_deepseek-r1_turn2
+      * slice-deque_fuzz_15345675187571639779_deepseek-r1_turn3
+      * slice-deque_fuzz_14843698792566371154_deepseek-r1_turn2
+      * slice-deque_fuzz_1887569689404825567_deepseek-r1_turn2
+      * slice-deque_fuzz_2029389719203445302
+      * slice-deque_fuzz_4760281192874452592_deepseek-r1_turn3
+      * slice-deque_fuzz_4672898723338971870_deepseek-r1_turn1
+      * slice-deque_fuzz_9663218223915125597_deepseek-r1_turn3
+      * slice-deque_fuzz_10571828121180457176_deepseek-r1_turn3
+      * slice-deque_fuzz_15699793873366199038_deepseek-r1_turn1
+      * slice-deque_fuzz_1076709872990963861_deepseek-r1_turn2
+      * slice-deque_fuzz_2428145879454001779_deepseek-r1_turn3
+      * slice-deque_fuzz_4501822303361639832_deepseek-r1_turn1
+      * slice-deque_fuzz_4545318101966464336_deepseek-r1_turn1
+      * slice-deque_fuzz_1912037435818578623
+      * slice-deque_fuzz_10108862598979563510_deepseek-r1_turn2
+      * slice-deque_fuzz_13700520482075373787_deepseek-r1_turn1
+      * slice-deque_fuzz_18352171546289743679
+      * slice-deque_fuzz_2029389719203445302_deepseek-r1_turn2
+      * slice-deque_fuzz_10394882426450708466_deepseek-r1_turn2
+      * slice-deque_fuzz_8463061266926741376_deepseek-r1_turn1
+      * slice-deque_fuzz_13900749957672559691_deepseek-r1_turn3
+      * slice-deque_fuzz_15500095988099735105_deepseek-r1_turn3
+      * slice-deque_fuzz_17139725604596503654_deepseek-r1_turn5
+      * slice-deque_fuzz_17840852337922577515_deepseek-r1_turn1
+      * slice-deque_fuzz_13635891816206107892_deepseek-r1_turn1
+      * slice-deque_fuzz_2240268102745286170_deepseek-r1_turn4
+      * slice-deque_fuzz_9738239852499739670_deepseek-r1_turn3
+      * slice-deque_fuzz_13155056548745206096_deepseek-r1_turn2
+      * slice-deque_fuzz_5072995148770667557_deepseek-r1_turn2
+      * slice-deque_fuzz_12417510891717424398_deepseek-r1_turn4
+      * slice-deque_fuzz_5861335305008624807_deepseek-r1_turn6
+      * slice-deque_fuzz_13050109955293856513_deepseek-r1_turn3
+      * slice-deque_fuzz_8232733558803319586_deepseek-r1_turn2
+      * slice-deque_fuzz_10001717426570151414_deepseek-r1_turn2
+      * slice-deque_fuzz_8624375823431338779_deepseek-r1_turn3
+      * slice-deque_fuzz_14929801104225610600_deepseek-r1_turn5
+      * slice-deque_fuzz_18437203802959288078_deepseek-r1_turn2
+      * slice-deque_fuzz_14324631889916904199_deepseek-r1_turn3
+      * slice-deque_fuzz_4194545220664743999_deepseek-r1_turn1
+      * slice-deque_fuzz_17622801763419986548_deepseek-r1_turn1
+  StableURAPI: reserve_exact::/home/cdc/SURF/deepSURF-big-experiment-harnesses/slice-deque-0.3.0/src/lib.rs::631,
+    - URAPI: DefId(0:156 ~ slice_deque[05d1]::{impl#3}::reserve_exact),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * slice-deque_fuzz_15699793873366199038_deepseek-r1_turn1
+      * slice-deque_fuzz_4545318101966464336_deepseek-r1_turn1
+      * slice-deque_fuzz_8071748972357593285
+      * slice-deque_fuzz_15699793873366199038
+      * slice-deque_fuzz_16381040742962924782
+      * slice-deque_fuzz_12852547549897517824
+      * slice-deque_fuzz_14324631889916904199_deepseek-r1_turn3
+  StableURAPI: into_iter::/home/cdc/SURF/deepSURF-big-experiment-harnesses/slice-deque-0.3.0/src/lib.rs::2534,
+    - URAPI: DefId(0:340 ~ slice_deque[05d1]::{impl#34}::into_iter),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * slice-deque_fuzz_878049659617636433
+      * slice-deque_fuzz_5861335305008624807_deepseek-r1_turn6
+      * slice-deque_fuzz_10851548249032506844
+      * slice-deque_fuzz_1639788035187339850
+      * slice-deque_fuzz_4672898723338971870
+  StableURAPI: from_iter::/home/cdc/SURF/deepSURF-big-experiment-harnesses/slice-deque-0.3.0/src/lib.rs::2739,
+    - URAPI: DefId(0:372 ~ slice_deque[05d1]::{impl#39}::from_iter),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * slice-deque_fuzz_10388620105030957729_deepseek-r1_turn4
+      * slice-deque_fuzz_8624375823431338779_deepseek-r1_turn3
+      * slice-deque_fuzz_15500095988099735105_deepseek-r1_turn3
+      * slice-deque_fuzz_2217358730257375283
+      * slice-deque_fuzz_18419825544504067688_deepseek-r1_turn1
+      * slice-deque_fuzz_14452278170383854498_deepseek-r1_turn5
+      * slice-deque_fuzz_7005584422468023561_deepseek-r1_turn1
+      * slice-deque_fuzz_16075554750031233132_deepseek-r1_turn3
+      * slice-deque_fuzz_5206005555413942478_deepseek-r1_turn3
+      * slice-deque_fuzz_4760281192874452592_deepseek-r1_turn3
+      * slice-deque_fuzz_4968986741856722397_deepseek-r1_turn6
+      * slice-deque_fuzz_5861335305008624807_deepseek-r1_turn6
+      * slice-deque_fuzz_15699793873366199038_deepseek-r1_turn1
+      * slice-deque_fuzz_8283376030426054640_deepseek-r1_turn2
+      * slice-deque_fuzz_1076709872990963861_deepseek-r1_turn2
+      * slice-deque_fuzz_8232733558803319586_deepseek-r1_turn2
+      * slice-deque_fuzz_738388044229897756_deepseek-r1_turn3
+      * slice-deque_fuzz_12588477240223379608_deepseek-r1_turn3
+      * slice-deque_fuzz_5777519231826042890_deepseek-r1_turn2
+      * slice-deque_fuzz_17840852337922577515_deepseek-r1_turn1
+      * slice-deque_fuzz_4501822303361639832_deepseek-r1_turn1
+      * slice-deque_fuzz_17722650989475118215_deepseek-r1_turn4
+      * slice-deque_fuzz_4598399675069962417_deepseek-r1_turn2
+      * slice-deque_fuzz_2894693785640307436_deepseek-r1_turn4
+      * slice-deque_fuzz_10001717426570151414_deepseek-r1_turn2
+      * slice-deque_fuzz_4070082801758288724_deepseek-r1_turn4
+      * slice-deque_fuzz_14324631889916904199_deepseek-r1_turn3
+      * slice-deque_fuzz_8469854685696968172_deepseek-r1_turn1
+      * slice-deque_fuzz_15345675187571639779_deepseek-r1_turn3
+      * slice-deque_fuzz_4545318101966464336_deepseek-r1_turn1
+      * slice-deque_fuzz_2217358730257375283_deepseek-r1_turn2
+      * slice-deque_fuzz_9975925693983352616_deepseek-r1_turn3
+      * slice-deque_fuzz_9663218223915125597_deepseek-r1_turn3
+      * slice-deque_fuzz_2283583047074886920_deepseek-r1_turn2
+      * slice-deque_fuzz_8362347888412206739_deepseek-r1_turn4
+      * slice-deque_fuzz_18437203802959288078_deepseek-r1_turn2
+      * slice-deque_fuzz_15263806174849472263_deepseek-r1_turn4
+      * slice-deque_fuzz_8161165916442446671_deepseek-r1_turn2
+      * slice-deque_fuzz_17139725604596503654_deepseek-r1_turn5
+      * slice-deque_fuzz_17887136662909375945_deepseek-r1_turn5
+      * slice-deque_fuzz_13635891816206107892_deepseek-r1_turn1
+      * slice-deque_fuzz_13050109955293856513_deepseek-r1_turn3
+  StableURAPI: truncate::/home/cdc/SURF/deepSURF-big-experiment-harnesses/slice-deque-0.3.0/src/lib.rs::1152,
+    - URAPI: DefId(0:177 ~ slice_deque[05d1]::{impl#3}::truncate),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * slice-deque_fuzz_4070082801758288724_deepseek-r1_turn4
+      * slice-deque_fuzz_4746506307754533583_deepseek-r1_turn2
+      * slice-deque_fuzz_10571828121180457176_deepseek-r1_turn3
+      * slice-deque_fuzz_2283583047074886920_deepseek-r1_turn2
+      * slice-deque_fuzz_17622801763419986548_deepseek-r1_turn1
+      * slice-deque_fuzz_4760281192874452592_deepseek-r1_turn3
+      * slice-deque_fuzz_1115897812801201260_deepseek-r1_turn1
+      * slice-deque_fuzz_13050109955293856513_deepseek-r1_turn3
+      * slice-deque_fuzz_12417510891717424398_deepseek-r1_turn4
+      * slice-deque_fuzz_2029389719203445302_deepseek-r1_turn2
+      * slice-deque_fuzz_17722650989475118215_deepseek-r1_turn4
+      * slice-deque_fuzz_15699793873366199038_deepseek-r1_turn1
+      * slice-deque_fuzz_8463061266926741376_deepseek-r1_turn1
+      * slice-deque_fuzz_4598399675069962417_deepseek-r1_turn2
+      * slice-deque_fuzz_13900749957672559691_deepseek-r1_turn3
+      * slice-deque_fuzz_8362347888412206739_deepseek-r1_turn4
+      * slice-deque_fuzz_5206005555413942478_deepseek-r1_turn3
+      * slice-deque_fuzz_16075554750031233132_deepseek-r1_turn3
+      * slice-deque_fuzz_911277952172177360_deepseek-r1_turn2
+      * slice-deque_fuzz_7004937031219439135_deepseek-r1_turn1
+      * slice-deque_fuzz_5072995148770667557_deepseek-r1_turn2
+      * slice-deque_fuzz_14843698792566371154_deepseek-r1_turn2
+      * slice-deque_fuzz_4545318101966464336_deepseek-r1_turn1
+      * slice-deque_fuzz_17887136662909375945_deepseek-r1_turn5
+      * slice-deque_fuzz_15070556627503783575_deepseek-r1_turn2
+      * slice-deque_fuzz_8283376030426054640_deepseek-r1_turn2
+      * slice-deque_fuzz_4672898723338971870_deepseek-r1_turn1
+      * slice-deque_fuzz_18437203802959288078_deepseek-r1_turn2
+      * slice-deque_fuzz_13155056548745206096_deepseek-r1_turn2
+      * slice-deque_fuzz_2240268102745286170_deepseek-r1_turn4
+      * slice-deque_fuzz_1887569689404825567_deepseek-r1_turn2
+      * slice-deque_fuzz_17161994752120978891
+      * slice-deque_fuzz_7005584422468023561_deepseek-r1_turn1
+      * slice-deque_fuzz_16958015347328256777_deepseek-r1_turn3
+      * slice-deque_fuzz_12082732316833867669_deepseek-r1_turn1
+      * slice-deque_fuzz_8161165916442446671_deepseek-r1_turn2
+      * slice-deque_fuzz_9662541084062873642_deepseek-r1_turn1
+      * slice-deque_fuzz_5072995148770667557
+      * slice-deque_fuzz_17139725604596503654_deepseek-r1_turn5
+      * slice-deque_fuzz_4094508709849671824_deepseek-r1_turn3
+      * slice-deque_fuzz_1917455478764445702_deepseek-r1_turn5
+      * slice-deque_fuzz_5656338007438782333_deepseek-r1_turn1
+      * slice-deque_fuzz_9663218223915125597_deepseek-r1_turn3
+      * slice-deque_fuzz_17588577153577797897_deepseek-r1_turn3
+      * slice-deque_fuzz_4769207226339191488_deepseek-r1_turn4
+      * slice-deque_fuzz_8359883213621361613_deepseek-r1_turn2
+      * slice-deque_fuzz_13635891816206107892_deepseek-r1_turn1
+      * slice-deque_fuzz_8469854685696968172_deepseek-r1_turn1
+      * slice-deque_fuzz_15500095988099735105_deepseek-r1_turn3
+      * slice-deque_fuzz_4968986741856722397_deepseek-r1_turn6
+      * slice-deque_fuzz_9975925693983352616_deepseek-r1_turn3
+      * slice-deque_fuzz_10394882426450708466_deepseek-r1_turn2
+      * slice-deque_fuzz_4501822303361639832_deepseek-r1_turn1
+      * slice-deque_fuzz_10001717426570151414_deepseek-r1_turn2
+      * slice-deque_fuzz_5777519231826042890_deepseek-r1_turn2
+      * slice-deque_fuzz_14929801104225610600_deepseek-r1_turn5
+      * slice-deque_fuzz_6903199200138795234_deepseek-r1_turn3
+      * slice-deque_fuzz_12906479776415708453_deepseek-r1_turn1
+      * slice-deque_fuzz_738388044229897756_deepseek-r1_turn3
+      * slice-deque_fuzz_8232733558803319586_deepseek-r1_turn2
+      * slice-deque_fuzz_15345675187571639779_deepseek-r1_turn3
+      * slice-deque_fuzz_10388620105030957729_deepseek-r1_turn4
+      * slice-deque_fuzz_14452278170383854498_deepseek-r1_turn5
+      * slice-deque_fuzz_16941559545779534502
+      * slice-deque_fuzz_4826721274424411881_deepseek-r1_turn3
+      * slice-deque_fuzz_12917028999123009516_deepseek-r1_turn2
+      * slice-deque_fuzz_13700520482075373787_deepseek-r1_turn1
+      * slice-deque_fuzz_9822303795792256123_deepseek-r1_turn2
+      * slice-deque_fuzz_17840852337922577515_deepseek-r1_turn1
+      * slice-deque_fuzz_18419825544504067688_deepseek-r1_turn1
+      * slice-deque_fuzz_2428145879454001779_deepseek-r1_turn3
+      * slice-deque_fuzz_9738239852499739670_deepseek-r1_turn3
+      * slice-deque_fuzz_1076709872990963861_deepseek-r1_turn2
+      * slice-deque_fuzz_14324631889916904199_deepseek-r1_turn3
+      * slice-deque_fuzz_5861335305008624807_deepseek-r1_turn6
+      * slice-deque_fuzz_2894693785640307436_deepseek-r1_turn4
+      * slice-deque_fuzz_12690857655545672264
+  StableURAPI: size_in_bytes::/home/cdc/SURF/deepSURF-big-experiment-harnesses/slice-deque-0.3.0/src/mirrored/buffer.rs::110,
+    - URAPI: DefId(0:36 ~ slice_deque[05d1]::mirrored::buffer::{impl#0}::size_in_bytes),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * slice-deque_fuzz_16958015347328256777_deepseek-r1_turn3
+  StableURAPI: as_slice::/home/cdc/SURF/deepSURF-big-experiment-harnesses/slice-deque-0.3.0/src/lib.rs::2332,
+    - URAPI: DefId(0:309 ~ slice_deque[05d1]::{impl#26}::as_slice),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * slice-deque_fuzz_12302890306694170893
+      * slice-deque_fuzz_4760281192874452592_deepseek-r1_turn3
+      * slice-deque_fuzz_8283376030426054640_deepseek-r1_turn2
+      * slice-deque_fuzz_4435287299212040521
+      * slice-deque_fuzz_4826721274424411881_deepseek-r1_turn3
+      * slice-deque_fuzz_1651805581970954497
+      * slice-deque_fuzz_4826721274424411881
+  StableURAPI: reserve::/home/cdc/SURF/deepSURF-big-experiment-harnesses/slice-deque-0.3.0/src/lib.rs::570,
+    - URAPI: DefId(0:154 ~ slice_deque[05d1]::{impl#3}::reserve),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * slice-deque_fuzz_5777519231826042890_deepseek-r1_turn2
+      * slice-deque_fuzz_12906479776415708453_deepseek-r1_turn1
+      * slice-deque_fuzz_10108862598979563510_deepseek-r1_turn2
+      * slice-deque_fuzz_8463061266926741376_deepseek-r1_turn1
+      * slice-deque_fuzz_8161165916442446671_deepseek-r1_turn2
+      * slice-deque_fuzz_4094508709849671824_deepseek-r1_turn3
+      * slice-deque_fuzz_4194545220664743999_deepseek-r1_turn1
+      * slice-deque_fuzz_17722650989475118215_deepseek-r1_turn4
+      * slice-deque_fuzz_738388044229897756_deepseek-r1_turn3
+      * slice-deque_fuzz_14324631889916904199_deepseek-r1_turn3
+      * slice-deque_fuzz_9662541084062873642_deepseek-r1_turn1
+      * slice-deque_fuzz_8362347888412206739_deepseek-r1_turn4
+      * slice-deque_fuzz_5656338007438782333_deepseek-r1_turn1
+      * slice-deque_fuzz_4501822303361639832_deepseek-r1_turn1
+      * slice-deque_fuzz_5288856120839520856
+      * slice-deque_fuzz_12588477240223379608_deepseek-r1_turn3
+      * slice-deque_fuzz_5072995148770667557_deepseek-r1_turn2
+      * slice-deque_fuzz_4545318101966464336
+      * slice-deque_fuzz_4598399675069962417_deepseek-r1_turn2
+      * slice-deque_fuzz_3883101941920371123
+      * slice-deque_fuzz_1887569689404825567_deepseek-r1_turn2
+      * slice-deque_fuzz_4070082801758288724_deepseek-r1_turn4
+      * slice-deque_fuzz_16383653902922070420
+      * slice-deque_fuzz_15500095988099735105_deepseek-r1_turn3
+      * slice-deque_fuzz_4545318101966464336_deepseek-r1_turn1
+      * slice-deque_fuzz_15263806174849472263_deepseek-r1_turn4
+  StableURAPI: clone::/home/cdc/SURF/deepSURF-big-experiment-harnesses/slice-deque-0.3.0/src/mirrored/buffer.rs::180,
+    - URAPI: DefId(0:43 ~ slice_deque[05d1]::mirrored::buffer::{impl#2}::clone),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * slice-deque_fuzz_9738239852499739670_deepseek-r1_turn3
+  StableURAPI: truncate_back::/home/cdc/SURF/deepSURF-big-experiment-harnesses/slice-deque-0.3.0/src/lib.rs::1131,
+    - URAPI: DefId(0:176 ~ slice_deque[05d1]::{impl#3}::truncate_back),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * slice-deque_fuzz_8469854685696968172_deepseek-r1_turn1
+      * slice-deque_fuzz_14174726103554256775
+      * slice-deque_fuzz_16209406718132625699
+      * slice-deque_fuzz_3604535947082526220
+      * slice-deque_fuzz_10108862598979563510_deepseek-r1_turn2
+      * slice-deque_fuzz_10108862598979563510
+      * slice-deque_fuzz_8362347888412206739_deepseek-r1_turn4
+  StableURAPI: pop_front::/home/cdc/SURF/deepSURF-big-experiment-harnesses/slice-deque-0.3.0/src/lib.rs::1031,
+    - URAPI: DefId(0:173 ~ slice_deque[05d1]::{impl#3}::pop_front),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * slice-deque_fuzz_13155056548745206096_deepseek-r1_turn2
+      * slice-deque_fuzz_15263806174849472263_deepseek-r1_turn4
+      * slice-deque_fuzz_15699793873366199038_deepseek-r1_turn1
+      * slice-deque_fuzz_10394882426450708466_deepseek-r1_turn2
+      * slice-deque_fuzz_1917455478764445702_deepseek-r1_turn5
+      * slice-deque_fuzz_2283583047074886920_deepseek-r1_turn2
+      * slice-deque_fuzz_10571828121180457176_deepseek-r1_turn3
+      * slice-deque_fuzz_1115897812801201260_deepseek-r1_turn1
+      * slice-deque_fuzz_738388044229897756_deepseek-r1_turn3
+      * slice-deque_fuzz_2428145879454001779_deepseek-r1_turn3
+      * slice-deque_fuzz_15500095988099735105_deepseek-r1_turn3
+      * slice-deque_fuzz_8469854685696968172_deepseek-r1_turn1
+      * slice-deque_fuzz_17840852337922577515_deepseek-r1_turn1
+      * slice-deque_fuzz_8359883213621361613_deepseek-r1_turn2
+      * slice-deque_fuzz_5072995148770667557_deepseek-r1_turn2
+      * slice-deque_fuzz_12588477240223379608_deepseek-r1_turn3
+      * slice-deque_fuzz_2240268102745286170_deepseek-r1_turn4
+      * slice-deque_fuzz_14324631889916904199_deepseek-r1_turn3
+      * slice-deque_fuzz_4501822303361639832_deepseek-r1_turn1
+      * slice-deque_fuzz_11947347304975725117
+      * slice-deque_fuzz_17887136662909375945_deepseek-r1_turn5
+      * slice-deque_fuzz_6191598950180456694_deepseek-r1_turn1
+      * slice-deque_fuzz_14452278170383854498_deepseek-r1_turn5
+      * slice-deque_fuzz_12082732316833867669_deepseek-r1_turn1
+      * slice-deque_fuzz_4094508709849671824_deepseek-r1_turn3
+      * slice-deque_fuzz_4545318101966464336_deepseek-r1_turn1
+      * slice-deque_fuzz_8232733558803319586_deepseek-r1_turn2
+      * slice-deque_fuzz_17588577153577797897_deepseek-r1_turn3
+      * slice-deque_fuzz_7004937031219439135_deepseek-r1_turn1
+      * slice-deque_fuzz_7005584422468023561_deepseek-r1_turn1
+      * slice-deque_fuzz_12417510891717424398_deepseek-r1_turn4
+      * slice-deque_fuzz_13635891816206107892_deepseek-r1_turn1
+      * slice-deque_fuzz_1887569689404825567_deepseek-r1_turn2
+      * slice-deque_fuzz_11195686321199241598
+      * slice-deque_fuzz_16075554750031233132_deepseek-r1_turn3
+      * slice-deque_fuzz_1115897812801201260
+      * slice-deque_fuzz_4968986741856722397_deepseek-r1_turn6
+      * slice-deque_fuzz_5656338007438782333_deepseek-r1_turn1
+      * slice-deque_fuzz_2029389719203445302_deepseek-r1_turn2
+      * slice-deque_fuzz_13900749957672559691_deepseek-r1_turn3
+      * slice-deque_fuzz_1443912480122634386_deepseek-r1_turn1
+      * slice-deque_fuzz_8624375823431338779_deepseek-r1_turn3
+      * slice-deque_fuzz_4826721274424411881_deepseek-r1_turn3
+      * slice-deque_fuzz_4769207226339191488_deepseek-r1_turn4
+      * slice-deque_fuzz_1076709872990963861_deepseek-r1_turn2
+      * slice-deque_fuzz_10388620105030957729_deepseek-r1_turn4
+      * slice-deque_fuzz_15070556627503783575_deepseek-r1_turn2
+      * slice-deque_fuzz_17622801763419986548_deepseek-r1_turn1
+      * slice-deque_fuzz_16958015347328256777_deepseek-r1_turn3
+      * slice-deque_fuzz_9663218223915125597_deepseek-r1_turn3
+      * slice-deque_fuzz_17139725604596503654_deepseek-r1_turn5
+      * slice-deque_fuzz_2894693785640307436_deepseek-r1_turn4
+      * slice-deque_fuzz_5861335305008624807_deepseek-r1_turn6
+      * slice-deque_fuzz_6903199200138795234_deepseek-r1_turn3
+      * slice-deque_fuzz_18419825544504067688_deepseek-r1_turn1
+      * slice-deque_fuzz_4070082801758288724_deepseek-r1_turn4
+      * slice-deque_fuzz_946397798455161957
+      * slice-deque_fuzz_9662541084062873642_deepseek-r1_turn1
+      * slice-deque_fuzz_8463061266926741376_deepseek-r1_turn1
+  StableURAPI: extend::/home/cdc/SURF/deepSURF-big-experiment-harnesses/slice-deque-0.3.0/src/lib.rs::2550,
+    - URAPI: DefId(0:349 ~ slice_deque[05d1]::{impl#36}::extend),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * slice-deque_fuzz_17887136662909375945_deepseek-r1_turn5
+      * slice-deque_fuzz_5861335305008624807_deepseek-r1_turn6
+      * slice-deque_fuzz_5656338007438782333
+      * slice-deque_fuzz_2428145879454001779_deepseek-r1_turn3
+      * slice-deque_fuzz_12082732316833867669_deepseek-r1_turn1
+      * slice-deque_fuzz_14324631889916904199_deepseek-r1_turn3
+      * slice-deque_fuzz_15070556627503783575_deepseek-r1_turn2
+      * slice-deque_fuzz_17139725604596503654_deepseek-r1_turn5
+      * slice-deque_fuzz_5777519231826042890_deepseek-r1_turn2
+      * slice-deque_fuzz_4746506307754533583_deepseek-r1_turn2
+      * slice-deque_fuzz_8359883213621361613_deepseek-r1_turn2
+      * slice-deque_fuzz_1258175036695978725
+      * slice-deque_fuzz_18419825544504067688_deepseek-r1_turn1
+      * slice-deque_fuzz_8161165916442446671_deepseek-r1_turn2
+      * slice-deque_fuzz_5656338007438782333_deepseek-r1_turn1
+      * slice-deque_fuzz_11985361774305650372
+      * slice-deque_fuzz_5223803237087116597
+  StableURAPI: clone::/home/cdc/SURF/deepSURF-big-experiment-harnesses/slice-deque-0.3.0/src/lib.rs::2089,
+    - URAPI: DefId(0:239 ~ slice_deque[05d1]::{impl#12}::clone),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * slice-deque_fuzz_4484387757941457130_deepseek-r1_turn5
+      * slice-deque_fuzz_4968986741856722397_deepseek-r1_turn6
+      * slice-deque_fuzz_5777519231826042890_deepseek-r1_turn2
+      * slice-deque_fuzz_17887136662909375945_deepseek-r1_turn5
+      * slice-deque_fuzz_18267382107976743297
+      * slice-deque_fuzz_678364988270241914
+      * slice-deque_fuzz_9738239852499739670_deepseek-r1_turn3
+      * slice-deque_fuzz_6309776214287631175
+      * slice-deque_fuzz_16958015347328256777_deepseek-r1_turn3
+      * slice-deque_fuzz_8232733558803319586_deepseek-r1_turn2
+      * slice-deque_fuzz_9822303795792256123_deepseek-r1_turn2
+      * slice-deque_fuzz_9822303795792256123
+  StableURAPI: try_reserve::/home/cdc/SURF/deepSURF-big-experiment-harnesses/slice-deque-0.3.0/src/lib.rs::551,
+    - URAPI: DefId(0:153 ~ slice_deque[05d1]::{impl#3}::try_reserve),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * slice-deque_fuzz_4968986741856722397_deepseek-r1_turn6
+      * slice-deque_fuzz_6475417692974850421
+      * slice-deque_fuzz_8835788774706056494
+      * slice-deque_fuzz_14929801104225610600_deepseek-r1_turn5
+      * slice-deque_fuzz_4484387757941457130_deepseek-r1_turn5
+      * slice-deque_fuzz_8232733558803319586_deepseek-r1_turn2
+      * slice-deque_fuzz_1917455478764445702
+      * slice-deque_fuzz_1917455478764445702_deepseek-r1_turn5
+      * slice-deque_fuzz_15345675187571639779_deepseek-r1_turn3
+      * slice-deque_fuzz_9822303795792256123_deepseek-r1_turn2
+      * slice-deque_fuzz_15775594080797216279
+      * slice-deque_fuzz_9738239852499739670_deepseek-r1_turn3
+  StableURAPI: resize_default::/home/cdc/SURF/deepSURF-big-experiment-harnesses/slice-deque-0.3.0/src/lib.rs::1967,
+    - URAPI: DefId(0:226 ~ slice_deque[05d1]::{impl#8}::drop),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * slice-deque_fuzz_4070082801758288724_deepseek-r1_turn4
+      * slice-deque_fuzz_13050109955293856513_deepseek-r1_turn3
+      * slice-deque_fuzz_14452278170383854498_deepseek-r1_turn5
+      * slice-deque_fuzz_15070556627503783575_deepseek-r1_turn2
+  StableURAPI: remove_item::/home/cdc/SURF/deepSURF-big-experiment-harnesses/slice-deque-0.3.0/src/lib.rs::2023,
+    - URAPI: DefId(0:219 ~ slice_deque[05d1]::{impl#6}::remove_item),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * slice-deque_fuzz_9663218223915125597_deepseek-r1_turn3
+      * slice-deque_fuzz_2428145879454001779
+      * slice-deque_fuzz_461011662403307661
+      * slice-deque_fuzz_2428145879454001779_deepseek-r1_turn3
+      * slice-deque_fuzz_11677146510652987433
+      * slice-deque_fuzz_2722793771186835723
+  StableURAPI: as_mut_slice::/home/cdc/SURF/deepSURF-big-experiment-harnesses/slice-deque-0.3.0/src/lib.rs::2354,
+    - URAPI: DefId(0:310 ~ slice_deque[05d1]::{impl#26}::as_mut_slice),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * slice-deque_fuzz_6903199200138795234
+      * slice-deque_fuzz_6903199200138795234_deepseek-r1_turn3
+      * slice-deque_fuzz_216273279592768753
+      * slice-deque_fuzz_7121587395145080172
+      * slice-deque_fuzz_2767766384544695613
+  StableURAPI: is_full::/home/cdc/SURF/deepSURF-big-experiment-harnesses/slice-deque-0.3.0/src/lib.rs::469,
+    - URAPI: DefId(0:147 ~ slice_deque[05d1]::{impl#3}::is_full),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * slice-deque_fuzz_17622801763419986548
+      * slice-deque_fuzz_2091629228035217153
+      * slice-deque_fuzz_10856164228393425153
+      * slice-deque_fuzz_17622801763419986548_deepseek-r1_turn1
+      * slice-deque_fuzz_14014463717513520036
+  StableURAPI: swap_remove_back::/home/cdc/SURF/deepSURF-big-experiment-harnesses/slice-deque-0.3.0/src/lib.rs::1313,
+    - URAPI: DefId(0:186 ~ slice_deque[05d1]::{impl#3}::swap_remove_back),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * slice-deque_fuzz_7080179464141094332
+      * slice-deque_fuzz_8283376030426054640_deepseek-r1_turn2
+      * slice-deque_fuzz_738388044229897756_deepseek-r1_turn3
+      * slice-deque_fuzz_15408174214307690815
+      * slice-deque_fuzz_738388044229897756
+      * slice-deque_fuzz_6903199200138795234_deepseek-r1_turn3
+      * slice-deque_fuzz_14762633333117058528
+      * slice-deque_fuzz_4094508709849671824_deepseek-r1_turn3
+  StableURAPI: shrink_to_fit::/home/cdc/SURF/deepSURF-big-experiment-harnesses/slice-deque-0.3.0/src/lib.rs::1091,
+    - URAPI: DefId(0:175 ~ slice_deque[05d1]::{impl#3}::shrink_to_fit),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * slice-deque_fuzz_4746506307754533583_deepseek-r1_turn2
+      * slice-deque_fuzz_9662541084062873642
+      * slice-deque_fuzz_9463659894744871452
+      * slice-deque_fuzz_6903199200138795234_deepseek-r1_turn3
+      * slice-deque_fuzz_1887569689404825567_deepseek-r1_turn2
+      * slice-deque_fuzz_12417510891717424398_deepseek-r1_turn4
+      * slice-deque_fuzz_4484387757941457130_deepseek-r1_turn5
+      * slice-deque_fuzz_4760281192874452592_deepseek-r1_turn3
+      * slice-deque_fuzz_14843698792566371154_deepseek-r1_turn2
+      * slice-deque_fuzz_9662541084062873642_deepseek-r1_turn1
+      * slice-deque_fuzz_17622801763419986548_deepseek-r1_turn1
+      * slice-deque_fuzz_6516871829109936584
+      * slice-deque_fuzz_8232733558803319586_deepseek-r1_turn2
+      * slice-deque_fuzz_13635891816206107892_deepseek-r1_turn1
+      * slice-deque_fuzz_9868851431685271864
+      * slice-deque_fuzz_17139725604596503654_deepseek-r1_turn5
+      * slice-deque_fuzz_15699793873366199038_deepseek-r1_turn1
+      * slice-deque_fuzz_8469854685696968172_deepseek-r1_turn1
+  StableURAPI: as_ref::/home/cdc/SURF/deepSURF-big-experiment-harnesses/slice-deque-0.3.0/src/lib.rs::3073,
+    - URAPI: DefId(0:439 ~ slice_deque[05d1]::{impl#50}::as_ref),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * slice-deque_fuzz_8095658722715900781
+      * slice-deque_fuzz_5777519231826042890_deepseek-r1_turn2
+      * slice-deque_fuzz_5777519231826042890
+      * slice-deque_fuzz_6582820957220662009
+      * slice-deque_fuzz_4653383043473543819
+  StableURAPI: drain::/home/cdc/SURF/deepSURF-big-experiment-harnesses/slice-deque-0.3.0/src/lib.rs::1222,
+    - URAPI: DefId(0:206 ~ slice_deque[05d1]::{impl#3}::drain_filter),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * slice-deque_fuzz_13900749957672559691_deepseek-r1_turn3
+      * slice-deque_fuzz_2217358730257375283_deepseek-r1_turn2
+      * slice-deque_fuzz_7005584422468023561_deepseek-r1_turn1
+      * slice-deque_fuzz_15345675187571639779_deepseek-r1_turn3
+      * slice-deque_fuzz_2240268102745286170_deepseek-r1_turn4
+      * slice-deque_fuzz_1115897812801201260_deepseek-r1_turn1
+      * slice-deque_fuzz_4826721274424411881_deepseek-r1_turn3
+      * slice-deque_fuzz_5861335305008624807_deepseek-r1_turn6
+      * slice-deque_fuzz_5072995148770667557_deepseek-r1_turn2
+      * slice-deque_fuzz_8362347888412206739_deepseek-r1_turn4
+      * slice-deque_fuzz_13700520482075373787_deepseek-r1_turn1
+      * slice-deque_fuzz_17722650989475118215_deepseek-r1_turn4
+      * slice-deque_fuzz_4070082801758288724_deepseek-r1_turn4
+      * slice-deque_fuzz_13155056548745206096_deepseek-r1_turn2
+      * slice-deque_fuzz_2894693785640307436_deepseek-r1_turn4
+      * slice-deque_fuzz_9663218223915125597_deepseek-r1_turn3
+      * slice-deque_fuzz_10388620105030957729_deepseek-r1_turn4
+      * slice-deque_fuzz_4094508709849671824_deepseek-r1_turn3
+      * slice-deque_fuzz_1443912480122634386_deepseek-r1_turn1
+      * slice-deque_fuzz_12917028999123009516_deepseek-r1_turn2
+      * slice-deque_fuzz_738388044229897756_deepseek-r1_turn3
+      * slice-deque_fuzz_5656338007438782333_deepseek-r1_turn1
+      * slice-deque_fuzz_10394882426450708466_deepseek-r1_turn2
+      * slice-deque_fuzz_2029389719203445302_deepseek-r1_turn2
+      * slice-deque_fuzz_1887569689404825567_deepseek-r1_turn2
+      * slice-deque_fuzz_8232733558803319586_deepseek-r1_turn2
+      * slice-deque_fuzz_9662541084062873642_deepseek-r1_turn1
+      * slice-deque_fuzz_17588577153577797897_deepseek-r1_turn3
+      * slice-deque_fuzz_8161165916442446671_deepseek-r1_turn2
+      * slice-deque_fuzz_5777519231826042890_deepseek-r1_turn2
+      * slice-deque_fuzz_9738239852499739670_deepseek-r1_turn3
+      * slice-deque_fuzz_13050109955293856513_deepseek-r1_turn3
+      * slice-deque_fuzz_4760281192874452592_deepseek-r1_turn3
+      * slice-deque_fuzz_16075554750031233132_deepseek-r1_turn3
+      * slice-deque_fuzz_8624375823431338779_deepseek-r1_turn3
+      * slice-deque_fuzz_6191598950180456694_deepseek-r1_turn1
+      * slice-deque_fuzz_17887136662909375945_deepseek-r1_turn5
+      * slice-deque_fuzz_15699793873366199038_deepseek-r1_turn1
+      * slice-deque_fuzz_8463061266926741376_deepseek-r1_turn1
+      * slice-deque_fuzz_4484387757941457130_deepseek-r1_turn5
+      * slice-deque_fuzz_911277952172177360_deepseek-r1_turn2
+      * slice-deque_fuzz_4598399675069962417_deepseek-r1_turn2
+      * slice-deque_fuzz_9822303795792256123_deepseek-r1_turn2
+      * slice-deque_fuzz_18437203802959288078_deepseek-r1_turn2
+      * slice-deque_fuzz_5206005555413942478_deepseek-r1_turn3
+      * slice-deque_fuzz_18419825544504067688_deepseek-r1_turn1
+      * slice-deque_fuzz_15263806174849472263_deepseek-r1_turn4
+      * slice-deque_fuzz_15070556627503783575_deepseek-r1_turn2
+      * slice-deque_fuzz_4746506307754533583_deepseek-r1_turn2
+      * slice-deque_fuzz_17139725604596503654_deepseek-r1_turn5
+      * slice-deque_fuzz_17622801763419986548_deepseek-r1_turn1
+      * slice-deque_fuzz_4672898723338971870_deepseek-r1_turn1
+      * slice-deque_fuzz_15500095988099735105_deepseek-r1_turn3
+      * slice-deque_fuzz_14929801104225610600_deepseek-r1_turn5
+      * slice-deque_fuzz_4194545220664743999_deepseek-r1_turn1
+  StableURAPI: split_off::/home/cdc/SURF/deepSURF-big-experiment-harnesses/slice-deque-0.3.0/src/lib.rs::1468,
+    - URAPI: DefId(0:190 ~ slice_deque[05d1]::{impl#3}::split_off),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * slice-deque_fuzz_9975925693983352616_deepseek-r1_turn3
+      * slice-deque_fuzz_8495158429255908497
+      * slice-deque_fuzz_7005584422468023561_deepseek-r1_turn1
+      * slice-deque_fuzz_17622801763419986548_deepseek-r1_turn1
+      * slice-deque_fuzz_17139725604596503654_deepseek-r1_turn5
+      * slice-deque_fuzz_6978507744276322018
+      * slice-deque_fuzz_7005584422468023561
+      * slice-deque_fuzz_7808637727329351736
+      * slice-deque_fuzz_4598399675069962417_deepseek-r1_turn2
+  StableURAPI: front_mut::/home/cdc/SURF/deepSURF-big-experiment-harnesses/slice-deque-0.3.0/src/lib.rs::869,
+    - URAPI: DefId(0:166 ~ slice_deque[05d1]::{impl#3}::front_mut),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * slice-deque_fuzz_1093631771614907759
+      * slice-deque_fuzz_17588577153577797897_deepseek-r1_turn3
+      * slice-deque_fuzz_5777519231826042890_deepseek-r1_turn2
+      * slice-deque_fuzz_17139725604596503654_deepseek-r1_turn5
+      * slice-deque_fuzz_14452278170383854498_deepseek-r1_turn5
+      * slice-deque_fuzz_10388620105030957729_deepseek-r1_turn4
+      * slice-deque_fuzz_1917455478764445702_deepseek-r1_turn5
+      * slice-deque_fuzz_15699793873366199038_deepseek-r1_turn1
+      * slice-deque_fuzz_2283583047074886920_deepseek-r1_turn2
+      * slice-deque_fuzz_16075554750031233132_deepseek-r1_turn3
+      * slice-deque_fuzz_13900749957672559691_deepseek-r1_turn3
+      * slice-deque_fuzz_2217358730257375283_deepseek-r1_turn2
+      * slice-deque_fuzz_14843698792566371154_deepseek-r1_turn2
+      * slice-deque_fuzz_4760281192874452592_deepseek-r1_turn3
+      * slice-deque_fuzz_13050109955293856513_deepseek-r1_turn3
+      * slice-deque_fuzz_13635891816206107892_deepseek-r1_turn1
+      * slice-deque_fuzz_1076709872990963861_deepseek-r1_turn2
+      * slice-deque_fuzz_14929801104225610600_deepseek-r1_turn5
+      * slice-deque_fuzz_10108862598979563510_deepseek-r1_turn2
+      * slice-deque_fuzz_14324631889916904199_deepseek-r1_turn3
+      * slice-deque_fuzz_9789045021511374164
+      * slice-deque_fuzz_9822303795792256123_deepseek-r1_turn2
+      * slice-deque_fuzz_4194545220664743999_deepseek-r1_turn1
+      * slice-deque_fuzz_12588477240223379608_deepseek-r1_turn3
+      * slice-deque_fuzz_5206005555413942478_deepseek-r1_turn3
+      * slice-deque_fuzz_17622801763419986548_deepseek-r1_turn1
+      * slice-deque_fuzz_15088853837290045875
+      * slice-deque_fuzz_8362347888412206739_deepseek-r1_turn4
+      * slice-deque_fuzz_4545318101966464336_deepseek-r1_turn1
+      * slice-deque_fuzz_14843698792566371154
+      * slice-deque_fuzz_1887569689404825567_deepseek-r1_turn2
+  StableURAPI: try_push_back::/home/cdc/SURF/deepSURF-big-experiment-harnesses/slice-deque-0.3.0/src/lib.rs::977,
+    - URAPI: DefId(0:171 ~ slice_deque[05d1]::{impl#3}::try_push_back),
+    - Macro-expanded: false,
+    - LLM-improved: false,
+    - Fuzzing Targets:
+      * slice-deque_fuzz_3171366695102826835
+      * slice-deque_fuzz_12417510891717424398
+      * slice-deque_fuzz_3644845887798045355
+      * slice-deque_fuzz_17220221690605433855
+  StableURAPI: drop::/home/cdc/SURF/deepSURF-big-experiment-harnesses/slice-deque-0.3.0/src/lib.rs::2052,
+    - URAPI: DefId(0:226 ~ slice_deque[05d1]::{impl#8}::drop),
+    - Macro-expanded: false,
+    - LLM-improved: false,
+    - Fuzzing Targets:
+      * slice-deque_fuzz_3430950472698589650
+      * slice-deque_fuzz_10289095186669822355
+      * slice-deque_fuzz_6196562791295276232
+      * slice-deque_fuzz_15070556627503783575
+  StableURAPI: from::/home/cdc/SURF/deepSURF-big-experiment-harnesses/slice-deque-0.3.0/src/lib.rs::2107,
+    - URAPI: DefId(0:244 ~ slice_deque[05d1]::{impl#13}::from),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * slice-deque_fuzz_12906479776415708453_deepseek-r1_turn1
+      * slice-deque_fuzz_16958015347328256777_deepseek-r1_turn3
+      * slice-deque_fuzz_4598399675069962417_deepseek-r1_turn2
+      * slice-deque_fuzz_14929801104225610600_deepseek-r1_turn5
+      * slice-deque_fuzz_2029389719203445302_deepseek-r1_turn2
+      * slice-deque_fuzz_10001717426570151414_deepseek-r1_turn2
+      * slice-deque_fuzz_5777519231826042890_deepseek-r1_turn2
+      * slice-deque_fuzz_12917028999123009516_deepseek-r1_turn2
+      * slice-deque_fuzz_4968986741856722397_deepseek-r1_turn6
+      * slice-deque_fuzz_8469854685696968172_deepseek-r1_turn1
+      * slice-deque_fuzz_17588577153577797897_deepseek-r1_turn3
+      * slice-deque_fuzz_13635891816206107892_deepseek-r1_turn1
+      * slice-deque_fuzz_5656338007438782333_deepseek-r1_turn1
+      * slice-deque_fuzz_17139725604596503654_deepseek-r1_turn5
+      * slice-deque_fuzz_9822303795792256123_deepseek-r1_turn2
+      * slice-deque_fuzz_9663218223915125597_deepseek-r1_turn3
+      * slice-deque_fuzz_17622801763419986548_deepseek-r1_turn1
+      * slice-deque_fuzz_15699793873366199038_deepseek-r1_turn1
+      * slice-deque_fuzz_14324631889916904199_deepseek-r1_turn3
+      * slice-deque_fuzz_15500095988099735105_deepseek-r1_turn3
+      * slice-deque_fuzz_7005584422468023561_deepseek-r1_turn1
+      * slice-deque_fuzz_2894693785640307436_deepseek-r1_turn4
+      * slice-deque_fuzz_1443912480122634386_deepseek-r1_turn1
+      * slice-deque_fuzz_5206005555413942478_deepseek-r1_turn3
+      * slice-deque_fuzz_4094508709849671824_deepseek-r1_turn3
+      * slice-deque_fuzz_15070556627503783575_deepseek-r1_turn2
+      * slice-deque_fuzz_12417510891717424398_deepseek-r1_turn4
+      * slice-deque_fuzz_9738239852499739670_deepseek-r1_turn3
+      * slice-deque_fuzz_738388044229897756_deepseek-r1_turn3
+      * slice-deque_fuzz_10394882426450708466_deepseek-r1_turn2
+      * slice-deque_fuzz_13155056548745206096_deepseek-r1_turn2
+      * slice-deque_fuzz_7004937031219439135_deepseek-r1_turn1
+      * slice-deque_fuzz_4672898723338971870_deepseek-r1_turn1
+      * slice-deque_fuzz_1115897812801201260_deepseek-r1_turn1
+      * slice-deque_fuzz_9662541084062873642_deepseek-r1_turn1
+      * slice-deque_fuzz_8359883213621361613_deepseek-r1_turn2
+      * slice-deque_fuzz_8463061266926741376_deepseek-r1_turn1
+      * slice-deque_fuzz_4484387757941457130_deepseek-r1_turn5
+      * slice-deque_fuzz_5072995148770667557_deepseek-r1_turn2
+      * slice-deque_fuzz_13050109955293856513_deepseek-r1_turn3
+      * slice-deque_fuzz_8359883213621361613
+      * slice-deque_fuzz_4826721274424411881_deepseek-r1_turn3
+      * slice-deque_fuzz_8232733558803319586_deepseek-r1_turn2
+      * slice-deque_fuzz_15345675187571639779_deepseek-r1_turn3
+      * slice-deque_fuzz_4545318101966464336_deepseek-r1_turn1
+      * slice-deque_fuzz_16075554750031233132_deepseek-r1_turn3
+      * slice-deque_fuzz_12588477240223379608_deepseek-r1_turn3
+      * slice-deque_fuzz_10571828121180457176_deepseek-r1_turn3
+      * slice-deque_fuzz_15263806174849472263_deepseek-r1_turn4
+      * slice-deque_fuzz_1917455478764445702_deepseek-r1_turn5
+      * slice-deque_fuzz_911277952172177360_deepseek-r1_turn2
+      * slice-deque_fuzz_2283583047074886920_deepseek-r1_turn2
+      * slice-deque_fuzz_14843698792566371154_deepseek-r1_turn2
+      * slice-deque_fuzz_13700520482075373787_deepseek-r1_turn1
+      * slice-deque_fuzz_10108862598979563510_deepseek-r1_turn2
+      * slice-deque_fuzz_6903199200138795234_deepseek-r1_turn3
+      * slice-deque_fuzz_2428145879454001779_deepseek-r1_turn3
+  StableURAPI: insert::/home/cdc/SURF/deepSURF-big-experiment-harnesses/slice-deque-0.3.0/src/lib.rs::1371,
+    - URAPI: DefId(0:188 ~ slice_deque[05d1]::{impl#3}::insert),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * slice-deque_fuzz_10394882426450708466
+      * slice-deque_fuzz_15072893890868970540
+      * slice-deque_fuzz_4094508709849671824_deepseek-r1_turn3
+      * slice-deque_fuzz_17887136662909375945_deepseek-r1_turn5
+      * slice-deque_fuzz_5694089673298262784
+      * slice-deque_fuzz_10394882426450708466_deepseek-r1_turn2
+      * slice-deque_fuzz_18437203802959288078_deepseek-r1_turn2
+      * slice-deque_fuzz_13747329227113053133
+      * slice-deque_fuzz_8469854685696968172_deepseek-r1_turn1
+  StableURAPI: hash::/home/cdc/SURF/deepSURF-big-experiment-harnesses/slice-deque-0.3.0/src/lib.rs::2129,
+    - URAPI: DefId(0:251 ~ slice_deque[05d1]::{impl#15}::hash),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * slice-deque_fuzz_15500095988099735105_deepseek-r1_turn3
+  StableURAPI: as_mut::/home/cdc/SURF/deepSURF-big-experiment-harnesses/slice-deque-0.3.0/src/lib.rs::3079,
+    - URAPI: DefId(0:442 ~ slice_deque[05d1]::{impl#51}::as_mut),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * slice-deque_fuzz_3673863032169866171
+      * slice-deque_fuzz_12082732316833867669
+      * slice-deque_fuzz_4954681230094524834
+      * slice-deque_fuzz_5235992800356591544
+      * slice-deque_fuzz_12082732316833867669_deepseek-r1_turn1
+  StableURAPI: pop_back::/home/cdc/SURF/deepSURF-big-experiment-harnesses/slice-deque-0.3.0/src/lib.rs::1060,
+    - URAPI: DefId(0:174 ~ slice_deque[05d1]::{impl#3}::pop_back),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * slice-deque_fuzz_2894300628635132261
+      * slice-deque_fuzz_2283583047074886920_deepseek-r1_turn2
+      * slice-deque_fuzz_2029389719203445302_deepseek-r1_turn2
+      * slice-deque_fuzz_1076709872990963861_deepseek-r1_turn2
+      * slice-deque_fuzz_738388044229897756_deepseek-r1_turn3
+      * slice-deque_fuzz_2240268102745286170_deepseek-r1_turn4
+      * slice-deque_fuzz_13635891816206107892_deepseek-r1_turn1
+      * slice-deque_fuzz_13155056548745206096_deepseek-r1_turn2
+      * slice-deque_fuzz_1443912480122634386_deepseek-r1_turn1
+      * slice-deque_fuzz_16075554750031233132_deepseek-r1_turn3
+      * slice-deque_fuzz_16075554750031233132
+      * slice-deque_fuzz_15699793873366199038_deepseek-r1_turn1
+      * slice-deque_fuzz_5777519231826042890_deepseek-r1_turn2
+      * slice-deque_fuzz_10001717426570151414_deepseek-r1_turn2
+      * slice-deque_fuzz_17840852337922577515_deepseek-r1_turn1
+      * slice-deque_fuzz_9663218223915125597_deepseek-r1_turn3
+      * slice-deque_fuzz_4194545220664743999_deepseek-r1_turn1
+      * slice-deque_fuzz_13050109955293856513_deepseek-r1_turn3
+      * slice-deque_fuzz_15070556627503783575_deepseek-r1_turn2
+      * slice-deque_fuzz_10388620105030957729_deepseek-r1_turn4
+      * slice-deque_fuzz_17139725604596503654_deepseek-r1_turn5
+      * slice-deque_fuzz_4672898723338971870_deepseek-r1_turn1
+      * slice-deque_fuzz_13900749957672559691_deepseek-r1_turn3
+      * slice-deque_fuzz_4501822303361639832_deepseek-r1_turn1
+      * slice-deque_fuzz_8624375823431338779_deepseek-r1_turn3
+      * slice-deque_fuzz_5342596175358976433
+      * slice-deque_fuzz_5656338007438782333_deepseek-r1_turn1
+      * slice-deque_fuzz_3263930337534856881
+      * slice-deque_fuzz_12906479776415708453_deepseek-r1_turn1
+      * slice-deque_fuzz_12417510891717424398_deepseek-r1_turn4
+      * slice-deque_fuzz_15263806174849472263_deepseek-r1_turn4
+      * slice-deque_fuzz_5072995148770667557_deepseek-r1_turn2
+      * slice-deque_fuzz_8362347888412206739_deepseek-r1_turn4
+      * slice-deque_fuzz_8469854685696968172_deepseek-r1_turn1
+      * slice-deque_fuzz_17722650989475118215_deepseek-r1_turn4
+      * slice-deque_fuzz_4760281192874452592_deepseek-r1_turn3
+      * slice-deque_fuzz_4094508709849671824_deepseek-r1_turn3
+      * slice-deque_fuzz_10571828121180457176_deepseek-r1_turn3
+      * slice-deque_fuzz_911277952172177360_deepseek-r1_turn2
+      * slice-deque_fuzz_9662541084062873642_deepseek-r1_turn1
+      * slice-deque_fuzz_8283376030426054640_deepseek-r1_turn2
+      * slice-deque_fuzz_7004937031219439135_deepseek-r1_turn1
+      * slice-deque_fuzz_4826721274424411881_deepseek-r1_turn3
+      * slice-deque_fuzz_4598399675069962417_deepseek-r1_turn2
+      * slice-deque_fuzz_4545318101966464336_deepseek-r1_turn1
+      * slice-deque_fuzz_8232733558803319586_deepseek-r1_turn2
+  StableURAPI: resize::/home/cdc/SURF/deepSURF-big-experiment-harnesses/slice-deque-0.3.0/src/lib.rs::1924,
+    - URAPI: DefId(0:211 ~ slice_deque[05d1]::{impl#4}::resize),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * slice-deque_fuzz_11641291300097988306
+      * slice-deque_fuzz_8359883213621361613_deepseek-r1_turn2
+      * slice-deque_fuzz_10571828121180457176_deepseek-r1_turn3
+      * slice-deque_fuzz_12121165663827159225
+      * slice-deque_fuzz_10571828121180457176
+      * slice-deque_fuzz_13050109955293856513_deepseek-r1_turn3
+      * slice-deque_fuzz_13144938049580796179
+  StableURAPI: next::/home/cdc/SURF/deepSURF-big-experiment-harnesses/slice-deque-0.3.0/src/lib.rs::2226,
+    - URAPI: DefId(0:206 ~ slice_deque[05d1]::{impl#3}::drain_filter),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * slice-deque_fuzz_12917028999123009516_deepseek-r1_turn2
+      * slice-deque_fuzz_15345675187571639779_deepseek-r1_turn3
+      * slice-deque_fuzz_5206005555413942478_deepseek-r1_turn3
+      * slice-deque_fuzz_4094508709849671824_deepseek-r1_turn3
+      * slice-deque_fuzz_15500095988099735105_deepseek-r1_turn3
+      * slice-deque_fuzz_4746506307754533583_deepseek-r1_turn2
+      * slice-deque_fuzz_17588577153577797897_deepseek-r1_turn3
+      * slice-deque_fuzz_2240268102745286170_deepseek-r1_turn4
+      * slice-deque_fuzz_17887136662909375945_deepseek-r1_turn5
+      * slice-deque_fuzz_10388620105030957729_deepseek-r1_turn4
+      * slice-deque_fuzz_738388044229897756_deepseek-r1_turn3
+      * slice-deque_fuzz_4070082801758288724_deepseek-r1_turn4
+      * slice-deque_fuzz_8624375823431338779_deepseek-r1_turn3
+      * slice-deque_fuzz_6191598950180456694_deepseek-r1_turn1
+      * slice-deque_fuzz_9738239852499739670_deepseek-r1_turn3
+      * slice-deque_fuzz_8362347888412206739_deepseek-r1_turn4
+  StableURAPI: drain_filter::/home/cdc/SURF/deepSURF-big-experiment-harnesses/slice-deque-0.3.0/src/lib.rs::1842,
+    - URAPI: DefId(0:206 ~ slice_deque[05d1]::{impl#3}::drain_filter),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * slice-deque_fuzz_12154176656873632178
+      * slice-deque_fuzz_4968986741856722397_deepseek-r1_turn6
+      * slice-deque_fuzz_16075554750031233132_deepseek-r1_turn3
+      * slice-deque_fuzz_14452278170383854498_deepseek-r1_turn5
+      * slice-deque_fuzz_14324631889916904199_deepseek-r1_turn3
+      * slice-deque_fuzz_12417510891717424398_deepseek-r1_turn4
+      * slice-deque_fuzz_9975925693983352616_deepseek-r1_turn3
+      * slice-deque_fuzz_8161165916442446671_deepseek-r1_turn2
+      * slice-deque_fuzz_12917028999123009516_deepseek-r1_turn2
+      * slice-deque_fuzz_1917455478764445702_deepseek-r1_turn5
+      * slice-deque_fuzz_18419825544504067688_deepseek-r1_turn1
+      * slice-deque_fuzz_12082732316833867669_deepseek-r1_turn1
+      * slice-deque_fuzz_4746506307754533583_deepseek-r1_turn2
+      * slice-deque_fuzz_13155056548745206096_deepseek-r1_turn2
+      * slice-deque_fuzz_4746506307754533583
+      * slice-deque_fuzz_5206005555413942478_deepseek-r1_turn3
+      * slice-deque_fuzz_4598399675069962417_deepseek-r1_turn2
+      * slice-deque_fuzz_14000630316968299981
+      * slice-deque_fuzz_11352558213191418183
+      * slice-deque_fuzz_14843698792566371154_deepseek-r1_turn2
+      * slice-deque_fuzz_10108862598979563510_deepseek-r1_turn2
+      * slice-deque_fuzz_17887136662909375945_deepseek-r1_turn5
+  StableURAPI: next::/home/cdc/SURF/deepSURF-big-experiment-harnesses/slice-deque-0.3.0/src/lib.rs::2879,
+    - URAPI: DefId(0:191 ~ slice_deque[05d1]::{impl#3}::retain),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * slice-deque_fuzz_2894693785640307436_deepseek-r1_turn4
+      * slice-deque_fuzz_15263806174849472263_deepseek-r1_turn4
+      * slice-deque_fuzz_18419825544504067688_deepseek-r1_turn1
+      * slice-deque_fuzz_15345675187571639779_deepseek-r1_turn3
+  StableURAPI: next_back::/home/cdc/SURF/deepSURF-big-experiment-harnesses/slice-deque-0.3.0/src/lib.rs::2890,
+    - URAPI: DefId(0:414 ~ slice_deque[05d1]::{impl#45}::next_back),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * slice-deque_fuzz_15263806174849472263_deepseek-r1_turn4
+      * slice-deque_fuzz_12588477240223379608_deepseek-r1_turn3
+  StableURAPI: clear::/home/cdc/SURF/deepSURF-big-experiment-harnesses/slice-deque-0.3.0/src/lib.rs::1293,
+    - URAPI: DefId(0:185 ~ slice_deque[05d1]::{impl#3}::clear),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * slice-deque_fuzz_3467985121821311809
+      * slice-deque_fuzz_9177085251483161934
+      * slice-deque_fuzz_1443912480122634386_deepseek-r1_turn1
+      * slice-deque_fuzz_1443912480122634386
+      * slice-deque_fuzz_17349891499385602852
+  StableURAPI: append::/home/cdc/SURF/deepSURF-big-experiment-harnesses/slice-deque-0.3.0/src/lib.rs::824,
+    - URAPI: DefId(0:164 ~ slice_deque[05d1]::{impl#3}::append),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * slice-deque_fuzz_8624375823431338779_deepseek-r1_turn3
+      * slice-deque_fuzz_5206005555413942478_deepseek-r1_turn3
+      * slice-deque_fuzz_8283376030426054640_deepseek-r1_turn2
+      * slice-deque_fuzz_17840852337922577515_deepseek-r1_turn1
+      * slice-deque_fuzz_1115897812801201260_deepseek-r1_turn1
+      * slice-deque_fuzz_14324631889916904199_deepseek-r1_turn3
+      * slice-deque_fuzz_9662541084062873642_deepseek-r1_turn1
+      * slice-deque_fuzz_4746506307754533583_deepseek-r1_turn2
+      * slice-deque_fuzz_17139725604596503654_deepseek-r1_turn5
+      * slice-deque_fuzz_6191598950180456694_deepseek-r1_turn1
+      * slice-deque_fuzz_16075554750031233132_deepseek-r1_turn3
+      * slice-deque_fuzz_12082732316833867669_deepseek-r1_turn1
+      * slice-deque_fuzz_17887136662909375945_deepseek-r1_turn5
+      * slice-deque_fuzz_7004937031219439135_deepseek-r1_turn1
+      * slice-deque_fuzz_18396971665786738167
+      * slice-deque_fuzz_4968986741856722397_deepseek-r1_turn6
+      * slice-deque_fuzz_5206005555413942478
+      * slice-deque_fuzz_17588577153577797897_deepseek-r1_turn3
+      * slice-deque_fuzz_8362347888412206739_deepseek-r1_turn4
+      * slice-deque_fuzz_7532199216894690255
+      * slice-deque_fuzz_13050109955293856513_deepseek-r1_turn3
+      * slice-deque_fuzz_9738239852499739670_deepseek-r1_turn3
+      * slice-deque_fuzz_2240268102745286170_deepseek-r1_turn4
+      * slice-deque_fuzz_200631429489137738
+      * slice-deque_fuzz_4598399675069962417_deepseek-r1_turn2
+      * slice-deque_fuzz_16958015347328256777_deepseek-r1_turn3
+      * slice-deque_fuzz_14929801104225610600_deepseek-r1_turn5
+      * slice-deque_fuzz_5777519231826042890_deepseek-r1_turn2
+      * slice-deque_fuzz_6903199200138795234_deepseek-r1_turn3
+      * slice-deque_fuzz_11651323690213599008_deepseek-r1_turn3
+      * slice-deque_fuzz_4545318101966464336_deepseek-r1_turn1
+      * slice-deque_fuzz_10108862598979563510_deepseek-r1_turn2
+      * slice-deque_fuzz_1917455478764445702_deepseek-r1_turn5
+      * slice-deque_fuzz_4672898723338971870_deepseek-r1_turn1
+  StableURAPI: clone_from::/home/cdc/SURF/deepSURF-big-experiment-harnesses/slice-deque-0.3.0/src/lib.rs::2097,
+    - URAPI: DefId(0:240 ~ slice_deque[05d1]::{impl#12}::clone_from),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * slice-deque_fuzz_13050109955293856513
+      * slice-deque_fuzz_13050109955293856513_deepseek-r1_turn3
+      * slice-deque_fuzz_4682542979405379362
+      * slice-deque_fuzz_4614139330336871333
+      * slice-deque_fuzz_5343167113765071803
+  StableURAPI: push_front::/home/cdc/SURF/deepSURF-big-experiment-harnesses/slice-deque-0.3.0/src/lib.rs::959,
+    - URAPI: DefId(0:170 ~ slice_deque[05d1]::{impl#3}::push_front),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * slice-deque_fuzz_17139725604596503654_deepseek-r1_turn5
+      * slice-deque_fuzz_4501822303361639832_deepseek-r1_turn1
+      * slice-deque_fuzz_5072995148770667557_deepseek-r1_turn2
+      * slice-deque_fuzz_1076709872990963861_deepseek-r1_turn2
+      * slice-deque_fuzz_18437203802959288078_deepseek-r1_turn2
+      * slice-deque_fuzz_2217358730257375283_deepseek-r1_turn2
+      * slice-deque_fuzz_8232733558803319586_deepseek-r1_turn2
+      * slice-deque_fuzz_9663218223915125597_deepseek-r1_turn3
+      * slice-deque_fuzz_4598399675069962417_deepseek-r1_turn2
+      * slice-deque_fuzz_16075554750031233132_deepseek-r1_turn3
+      * slice-deque_fuzz_15263806174849472263_deepseek-r1_turn4
+      * slice-deque_fuzz_4746506307754533583_deepseek-r1_turn2
+      * slice-deque_fuzz_9975925693983352616_deepseek-r1_turn3
+      * slice-deque_fuzz_1443912480122634386_deepseek-r1_turn1
+      * slice-deque_fuzz_8283376030426054640_deepseek-r1_turn2
+      * slice-deque_fuzz_911277952172177360_deepseek-r1_turn2
+      * slice-deque_fuzz_10571828121180457176_deepseek-r1_turn3
+      * slice-deque_fuzz_8624375823431338779_deepseek-r1_turn3
+      * slice-deque_fuzz_15699793873366199038_deepseek-r1_turn1
+      * slice-deque_fuzz_1396944406194881741
+      * slice-deque_fuzz_17887136662909375945_deepseek-r1_turn5
+      * slice-deque_fuzz_17840852337922577515_deepseek-r1_turn1
+      * slice-deque_fuzz_5206005555413942478_deepseek-r1_turn3
+      * slice-deque_fuzz_4769207226339191488_deepseek-r1_turn4
+      * slice-deque_fuzz_7004937031219439135_deepseek-r1_turn1
+      * slice-deque_fuzz_13155056548745206096_deepseek-r1_turn2
+      * slice-deque_fuzz_5656338007438782333_deepseek-r1_turn1
+      * slice-deque_fuzz_1115897812801201260_deepseek-r1_turn1
+      * slice-deque_fuzz_4194545220664743999_deepseek-r1_turn1
+      * slice-deque_fuzz_2240268102745286170_deepseek-r1_turn4
+      * slice-deque_fuzz_738388044229897756_deepseek-r1_turn3
+      * slice-deque_fuzz_4968986741856722397_deepseek-r1_turn6
+      * slice-deque_fuzz_12417510891717424398_deepseek-r1_turn4
+      * slice-deque_fuzz_2029389719203445302_deepseek-r1_turn2
+      * slice-deque_fuzz_13900749957672559691_deepseek-r1_turn3
+      * slice-deque_fuzz_18419825544504067688_deepseek-r1_turn1
+      * slice-deque_fuzz_15070556627503783575_deepseek-r1_turn2
+      * slice-deque_fuzz_17722650989475118215_deepseek-r1_turn4
+      * slice-deque_fuzz_15345675187571639779_deepseek-r1_turn3
+      * slice-deque_fuzz_12571309404641600841
+      * slice-deque_fuzz_4760281192874452592_deepseek-r1_turn3
+      * slice-deque_fuzz_7004937031219439135
+      * slice-deque_fuzz_5777519231826042890_deepseek-r1_turn2
+      * slice-deque_fuzz_4672898723338971870_deepseek-r1_turn1
+      * slice-deque_fuzz_8463061266926741376_deepseek-r1_turn1
+      * slice-deque_fuzz_2283583047074886920_deepseek-r1_turn2
+      * slice-deque_fuzz_4826721274424411881_deepseek-r1_turn3
+      * slice-deque_fuzz_9662541084062873642_deepseek-r1_turn1
+      * slice-deque_fuzz_4484387757941457130_deepseek-r1_turn5
+      * slice-deque_fuzz_10388620105030957729_deepseek-r1_turn4
+      * slice-deque_fuzz_6057348880909270824
+      * slice-deque_fuzz_4545318101966464336_deepseek-r1_turn1
+      * slice-deque_fuzz_8362347888412206739_deepseek-r1_turn4
+      * slice-deque_fuzz_13050109955293856513_deepseek-r1_turn3
+      * slice-deque_fuzz_13635891816206107892_deepseek-r1_turn1
+      * slice-deque_fuzz_4094508709849671824_deepseek-r1_turn3
+  StableURAPI: front::/home/cdc/SURF/deepSURF-big-experiment-harnesses/slice-deque-0.3.0/src/lib.rs::848,
+    - URAPI: DefId(0:165 ~ slice_deque[05d1]::{impl#3}::front),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * slice-deque_fuzz_18419825544504067688_deepseek-r1_turn1
+      * slice-deque_fuzz_2894693785640307436_deepseek-r1_turn4
+      * slice-deque_fuzz_4769207226339191488_deepseek-r1_turn4
+      * slice-deque_fuzz_9738239852499739670_deepseek-r1_turn3
+      * slice-deque_fuzz_17722650989475118215_deepseek-r1_turn4
+      * slice-deque_fuzz_9662541084062873642_deepseek-r1_turn1
+      * slice-deque_fuzz_9663218223915125597_deepseek-r1_turn3
+      * slice-deque_fuzz_1443912480122634386_deepseek-r1_turn1
+      * slice-deque_fuzz_2240268102745286170_deepseek-r1_turn4
+      * slice-deque_fuzz_16958015347328256777_deepseek-r1_turn3
+      * slice-deque_fuzz_4070082801758288724_deepseek-r1_turn4
+      * slice-deque_fuzz_9975925693983352616_deepseek-r1_turn3
+      * slice-deque_fuzz_4094508709849671824_deepseek-r1_turn3
+      * slice-deque_fuzz_15345675187571639779_deepseek-r1_turn3
+      * slice-deque_fuzz_8359883213621361613_deepseek-r1_turn2
+      * slice-deque_fuzz_9822303795792256123_deepseek-r1_turn2
+      * slice-deque_fuzz_13050109955293856513_deepseek-r1_turn3
+      * slice-deque_fuzz_10394882426450708466_deepseek-r1_turn2
+      * slice-deque_fuzz_8624375823431338779_deepseek-r1_turn3
+      * slice-deque_fuzz_6191598950180456694_deepseek-r1_turn1
+      * slice-deque_fuzz_18437203802959288078_deepseek-r1_turn2
+      * slice-deque_fuzz_8469854685696968172_deepseek-r1_turn1
+      * slice-deque_fuzz_10001717426570151414_deepseek-r1_turn2
+      * slice-deque_fuzz_11719686824924556688
+      * slice-deque_fuzz_7005584422468023561_deepseek-r1_turn1
+      * slice-deque_fuzz_4769207226339191488
+      * slice-deque_fuzz_3451214233323281330
+      * slice-deque_fuzz_4968986741856722397_deepseek-r1_turn6
+      * slice-deque_fuzz_13031730560200926474
+      * slice-deque_fuzz_15699793873366199038_deepseek-r1_turn1
+      * slice-deque_fuzz_4746506307754533583_deepseek-r1_turn2
+      * slice-deque_fuzz_5861335305008624807_deepseek-r1_turn6
+      * slice-deque_fuzz_4501822303361639832_deepseek-r1_turn1
+      * slice-deque_fuzz_911277952172177360_deepseek-r1_turn2
+      * slice-deque_fuzz_1076709872990963861_deepseek-r1_turn2
+      * slice-deque_fuzz_17887136662909375945_deepseek-r1_turn5
+      * slice-deque_fuzz_13635891816206107892_deepseek-r1_turn1
+      * slice-deque_fuzz_13155056548745206096_deepseek-r1_turn2
+      * slice-deque_fuzz_1115897812801201260_deepseek-r1_turn1
+      * slice-deque_fuzz_17840852337922577515_deepseek-r1_turn1
+      * slice-deque_fuzz_12906479776415708453_deepseek-r1_turn1
+      * slice-deque_fuzz_5072995148770667557_deepseek-r1_turn2
+      * slice-deque_fuzz_14452278170383854498_deepseek-r1_turn5
+      * slice-deque_fuzz_12417510891717424398_deepseek-r1_turn4
+      * slice-deque_fuzz_8463061266926741376_deepseek-r1_turn1
+      * slice-deque_fuzz_5656338007438782333_deepseek-r1_turn1
+  StableURAPI: clone::/home/cdc/SURF/deepSURF-big-experiment-harnesses/slice-deque-0.3.0/src/lib.rs::2445,
+    - URAPI: DefId(0:326 ~ slice_deque[05d1]::{impl#31}::clone),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * slice-deque_fuzz_4598399675069962417
+      * slice-deque_fuzz_6168823966524449305
+      * slice-deque_fuzz_4598399675069962417_deepseek-r1_turn2
+      * slice-deque_fuzz_4040330856751350435
+  StableURAPI: back::/home/cdc/SURF/deepSURF-big-experiment-harnesses/slice-deque-0.3.0/src/lib.rs::890,
+    - URAPI: DefId(0:167 ~ slice_deque[05d1]::{impl#3}::back),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * slice-deque_fuzz_6191598950180456694_deepseek-r1_turn1
+      * slice-deque_fuzz_9822303795792256123_deepseek-r1_turn2
+      * slice-deque_fuzz_17840852337922577515_deepseek-r1_turn1
+      * slice-deque_fuzz_1115897812801201260_deepseek-r1_turn1
+      * slice-deque_fuzz_18419825544504067688_deepseek-r1_turn1
+      * slice-deque_fuzz_10108862598979563510_deepseek-r1_turn2
+      * slice-deque_fuzz_8624375823431338779_deepseek-r1_turn3
+      * slice-deque_fuzz_7005584422468023561_deepseek-r1_turn1
+      * slice-deque_fuzz_17622801763419986548_deepseek-r1_turn1
+      * slice-deque_fuzz_5072995148770667557_deepseek-r1_turn2
+      * slice-deque_fuzz_4501822303361639832_deepseek-r1_turn1
+      * slice-deque_fuzz_8362347888412206739_deepseek-r1_turn4
+      * slice-deque_fuzz_8556266452026082254
+      * slice-deque_fuzz_12417510891717424398_deepseek-r1_turn4
+      * slice-deque_fuzz_10388620105030957729_deepseek-r1_turn4
+      * slice-deque_fuzz_5656338007438782333_deepseek-r1_turn1
+      * slice-deque_fuzz_13635891816206107892_deepseek-r1_turn1
+      * slice-deque_fuzz_10937924645053203378
+      * slice-deque_fuzz_13155056548745206096_deepseek-r1_turn2
+      * slice-deque_fuzz_15699793873366199038_deepseek-r1_turn1
+      * slice-deque_fuzz_10001717426570151414_deepseek-r1_turn2
+      * slice-deque_fuzz_4746506307754533583_deepseek-r1_turn2
+      * slice-deque_fuzz_4769207226339191488_deepseek-r1_turn4
+      * slice-deque_fuzz_9662541084062873642_deepseek-r1_turn1
+      * slice-deque_fuzz_13050109955293856513_deepseek-r1_turn3
+      * slice-deque_fuzz_9663218223915125597_deepseek-r1_turn3
+      * slice-deque_fuzz_10394882426450708466_deepseek-r1_turn2
+      * slice-deque_fuzz_2240268102745286170_deepseek-r1_turn4
+      * slice-deque_fuzz_13635891816206107892
+      * slice-deque_fuzz_13637488153528059890
+  StableURAPI: default::/home/cdc/SURF/deepSURF-big-experiment-harnesses/slice-deque-0.3.0/src/lib.rs::2082,
+    - URAPI: DefId(0:236 ~ slice_deque[05d1]::{impl#11}::default),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * slice-deque_fuzz_4484387757941457130_deepseek-r1_turn5
+  StableURAPI: uninitialized::/home/cdc/SURF/deepSURF-big-experiment-harnesses/slice-deque-0.3.0/src/mirrored/buffer.rs::125,
+    - URAPI: DefId(0:37 ~ slice_deque[05d1]::mirrored::buffer::{impl#0}::uninitialized),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * slice-deque_fuzz_4194545220664743999_deepseek-r1_turn1
+      * slice-deque_fuzz_9738239852499739670_deepseek-r1_turn3
+      * slice-deque_fuzz_16958015347328256777_deepseek-r1_turn3
+  StableURAPI: as_slice::/home/cdc/SURF/deepSURF-big-experiment-harnesses/slice-deque-0.3.0/src/lib.rs::475,
+    - URAPI: DefId(0:148 ~ slice_deque[05d1]::{impl#3}::as_slice),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * slice-deque_fuzz_5777519231826042890_deepseek-r1_turn2
+      * slice-deque_fuzz_8359883213621361613_deepseek-r1_turn2
+      * slice-deque_fuzz_13635891816206107892_deepseek-r1_turn1
+      * slice-deque_fuzz_9662541084062873642_deepseek-r1_turn1
+      * slice-deque_fuzz_15263806174849472263_deepseek-r1_turn4
+      * slice-deque_fuzz_10001717426570151414_deepseek-r1_turn2
+      * slice-deque_fuzz_911277952172177360_deepseek-r1_turn2
+      * slice-deque_fuzz_4968986741856722397_deepseek-r1_turn6
+      * slice-deque_fuzz_7004937031219439135_deepseek-r1_turn1
+      * slice-deque_fuzz_13050109955293856513_deepseek-r1_turn3
+      * slice-deque_fuzz_17722650989475118215_deepseek-r1_turn4
+      * slice-deque_fuzz_9738239852499739670_deepseek-r1_turn3
+      * slice-deque_fuzz_9663218223915125597_deepseek-r1_turn3
+      * slice-deque_fuzz_7221708513838047385
+      * slice-deque_fuzz_1917455478764445702_deepseek-r1_turn5
+      * slice-deque_fuzz_14929801104225610600_deepseek-r1_turn5
+      * slice-deque_fuzz_8161165916442446671_deepseek-r1_turn2
+      * slice-deque_fuzz_8469854685696968172_deepseek-r1_turn1
+      * slice-deque_fuzz_14452278170383854498_deepseek-r1_turn5
+      * slice-deque_fuzz_10388620105030957729_deepseek-r1_turn4
+      * slice-deque_fuzz_911277952172177360
+      * slice-deque_fuzz_3493631903078112090
+      * slice-deque_fuzz_5656338007438782333_deepseek-r1_turn1
+      * slice-deque_fuzz_4746506307754533583_deepseek-r1_turn2
+      * slice-deque_fuzz_1115897812801201260_deepseek-r1_turn1
+      * slice-deque_fuzz_14324631889916904199_deepseek-r1_turn3
+      * slice-deque_fuzz_1076709872990963861_deepseek-r1_turn2
+      * slice-deque_fuzz_2217358730257375283_deepseek-r1_turn2
+      * slice-deque_fuzz_4769207226339191488_deepseek-r1_turn4
+      * slice-deque_fuzz_13155056548745206096_deepseek-r1_turn2
+      * slice-deque_fuzz_6191598950180456694_deepseek-r1_turn1
+      * slice-deque_fuzz_2240268102745286170_deepseek-r1_turn4
+      * slice-deque_fuzz_4484387757941457130_deepseek-r1_turn5
+      * slice-deque_fuzz_8283376030426054640_deepseek-r1_turn2
+      * slice-deque_fuzz_15345675187571639779_deepseek-r1_turn3
+      * slice-deque_fuzz_12417510891717424398_deepseek-r1_turn4
+      * slice-deque_fuzz_17588577153577797897_deepseek-r1_turn3
+      * slice-deque_fuzz_4545318101966464336_deepseek-r1_turn1
+      * slice-deque_fuzz_17887136662909375945_deepseek-r1_turn5
+      * slice-deque_fuzz_5206005555413942478_deepseek-r1_turn3
+      * slice-deque_fuzz_11651323690213599008_deepseek-r1_turn3
+      * slice-deque_fuzz_3241986103079580789
+      * slice-deque_fuzz_12082732316833867669_deepseek-r1_turn1
+      * slice-deque_fuzz_15070556627503783575_deepseek-r1_turn2
+  StableURAPI: eq::/home/cdc/SURF/deepSURF-big-experiment-harnesses/slice-deque-0.3.0/src/lib.rs::2161,
+    - URAPI: DefId(0:954 ~ slice_deque[05d1]::{impl#116}::eq),
+    - Macro-expanded: true,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * slice-deque_fuzz_14452278170383854498_deepseek-r1_turn5
+      * slice-deque_fuzz_5861335305008624807_deepseek-r1_turn6
+      * slice-deque_fuzz_16958015347328256777_deepseek-r1_turn3
+  StableURAPI: push_back::/home/cdc/SURF/deepSURF-big-experiment-harnesses/slice-deque-0.3.0/src/lib.rs::1007,
+    - URAPI: DefId(0:172 ~ slice_deque[05d1]::{impl#3}::push_back),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * slice-deque_fuzz_9663218223915125597_deepseek-r1_turn3
+      * slice-deque_fuzz_12082732316833867669_deepseek-r1_turn1
+      * slice-deque_fuzz_17622801763419986548_deepseek-r1_turn1
+      * slice-deque_fuzz_5072995148770667557_deepseek-r1_turn2
+      * slice-deque_fuzz_12906479776415708453_deepseek-r1_turn1
+      * slice-deque_fuzz_15500095988099735105_deepseek-r1_turn3
+      * slice-deque_fuzz_17840852337922577515_deepseek-r1_turn1
+      * slice-deque_fuzz_12588477240223379608_deepseek-r1_turn3
+      * slice-deque_fuzz_15070556627503783575_deepseek-r1_turn2
+      * slice-deque_fuzz_10001717426570151414_deepseek-r1_turn2
+      * slice-deque_fuzz_18419825544504067688_deepseek-r1_turn1
+      * slice-deque_fuzz_7678935266322117568
+      * slice-deque_fuzz_9662541084062873642_deepseek-r1_turn1
+      * slice-deque_fuzz_17722650989475118215_deepseek-r1_turn4
+      * slice-deque_fuzz_16820331274626575770
+      * slice-deque_fuzz_10388620105030957729_deepseek-r1_turn4
+      * slice-deque_fuzz_8469854685696968172_deepseek-r1_turn1
+      * slice-deque_fuzz_6903199200138795234_deepseek-r1_turn3
+      * slice-deque_fuzz_18437203802959288078_deepseek-r1_turn2
+      * slice-deque_fuzz_4501822303361639832_deepseek-r1_turn1
+      * slice-deque_fuzz_2029389719203445302_deepseek-r1_turn2
+      * slice-deque_fuzz_1443912480122634386_deepseek-r1_turn1
+      * slice-deque_fuzz_13635891816206107892_deepseek-r1_turn1
+      * slice-deque_fuzz_10108862598979563510_deepseek-r1_turn2
+      * slice-deque_fuzz_4484387757941457130_deepseek-r1_turn5
+      * slice-deque_fuzz_1887569689404825567_deepseek-r1_turn2
+      * slice-deque_fuzz_5861335305008624807_deepseek-r1_turn6
+      * slice-deque_fuzz_4968986741856722397_deepseek-r1_turn6
+      * slice-deque_fuzz_5777519231826042890_deepseek-r1_turn2
+      * slice-deque_fuzz_7005584422468023561_deepseek-r1_turn1
+      * slice-deque_fuzz_8283376030426054640_deepseek-r1_turn2
+      * slice-deque_fuzz_17588577153577797897_deepseek-r1_turn3
+      * slice-deque_fuzz_8624375823431338779_deepseek-r1_turn3
+      * slice-deque_fuzz_12917028999123009516_deepseek-r1_turn2
+      * slice-deque_fuzz_13900749957672559691_deepseek-r1_turn3
+      * slice-deque_fuzz_12906479776415708453
+      * slice-deque_fuzz_2240268102745286170_deepseek-r1_turn4
+      * slice-deque_fuzz_17139725604596503654_deepseek-r1_turn5
+      * slice-deque_fuzz_7004937031219439135_deepseek-r1_turn1
+      * slice-deque_fuzz_6191598950180456694_deepseek-r1_turn1
+      * slice-deque_fuzz_10571828121180457176_deepseek-r1_turn3
+      * slice-deque_fuzz_8463061266926741376_deepseek-r1_turn1
+      * slice-deque_fuzz_14843698792566371154_deepseek-r1_turn2
+      * slice-deque_fuzz_16958015347328256777_deepseek-r1_turn3
+      * slice-deque_fuzz_16075554750031233132_deepseek-r1_turn3
+      * slice-deque_fuzz_12417510891717424398_deepseek-r1_turn4
+      * slice-deque_fuzz_13700520482075373787_deepseek-r1_turn1
+      * slice-deque_fuzz_9822303795792256123_deepseek-r1_turn2
+      * slice-deque_fuzz_17887136662909375945_deepseek-r1_turn5
+      * slice-deque_fuzz_5206005555413942478_deepseek-r1_turn3
+      * slice-deque_fuzz_14452278170383854498_deepseek-r1_turn5
+      * slice-deque_fuzz_738388044229897756_deepseek-r1_turn3
+      * slice-deque_fuzz_15345675187571639779_deepseek-r1_turn3
+      * slice-deque_fuzz_13155056548745206096_deepseek-r1_turn2
+      * slice-deque_fuzz_2894693785640307436_deepseek-r1_turn4
+      * slice-deque_fuzz_4094508709849671824_deepseek-r1_turn3
+      * slice-deque_fuzz_4545318101966464336_deepseek-r1_turn1
+      * slice-deque_fuzz_4070082801758288724_deepseek-r1_turn4
+      * slice-deque_fuzz_15263806174849472263_deepseek-r1_turn4
+      * slice-deque_fuzz_4194545220664743999_deepseek-r1_turn1
+      * slice-deque_fuzz_10394882426450708466_deepseek-r1_turn2
+      * slice-deque_fuzz_15815399622588764985
+      * slice-deque_fuzz_8232733558803319586_deepseek-r1_turn2
+      * slice-deque_fuzz_4826721274424411881_deepseek-r1_turn3
+      * slice-deque_fuzz_2283583047074886920_deepseek-r1_turn2
+      * slice-deque_fuzz_4760281192874452592_deepseek-r1_turn3
+      * slice-deque_fuzz_15699793873366199038_deepseek-r1_turn1
+      * slice-deque_fuzz_4769207226339191488_deepseek-r1_turn4
+      * slice-deque_fuzz_9738239852499739670_deepseek-r1_turn3
+      * slice-deque_fuzz_2428145879454001779_deepseek-r1_turn3
+      * slice-deque_fuzz_1115897812801201260_deepseek-r1_turn1
+      * slice-deque_fuzz_1917455478764445702_deepseek-r1_turn5
+      * slice-deque_fuzz_14324631889916904199_deepseek-r1_turn3
+      * slice-deque_fuzz_1076709872990963861_deepseek-r1_turn2
+      * slice-deque_fuzz_2217358730257375283_deepseek-r1_turn2
+      * slice-deque_fuzz_5656338007438782333_deepseek-r1_turn1
+      * slice-deque_fuzz_14929801104225610600_deepseek-r1_turn5
+  StableURAPI: as_mut_slices::/home/cdc/SURF/deepSURF-big-experiment-harnesses/slice-deque-0.3.0/src/lib.rs::500,
+    - URAPI: DefId(0:151 ~ slice_deque[05d1]::{impl#3}::as_mut_slices),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * slice-deque_fuzz_18419825544504067688_deepseek-r1_turn1
+      * slice-deque_fuzz_12417510891717424398_deepseek-r1_turn4
+      * slice-deque_fuzz_13050109955293856513_deepseek-r1_turn3
+      * slice-deque_fuzz_8232733558803319586
+      * slice-deque_fuzz_2386598407997610296
+      * slice-deque_fuzz_8067672732698338879
+      * slice-deque_fuzz_8232733558803319586_deepseek-r1_turn2
+      * slice-deque_fuzz_5861335305008624807_deepseek-r1_turn6
+      * slice-deque_fuzz_911277952172177360_deepseek-r1_turn2
+      * slice-deque_fuzz_1076709872990963861_deepseek-r1_turn2
+      * slice-deque_fuzz_11651323690213599008_deepseek-r1_turn3
+      * slice-deque_fuzz_738388044229897756_deepseek-r1_turn3
+      * slice-deque_fuzz_17847691307155598195
+      * slice-deque_fuzz_2029389719203445302_deepseek-r1_turn2
+      * slice-deque_fuzz_15345675187571639779_deepseek-r1_turn3
+  StableURAPI: remove::/home/cdc/SURF/deepSURF-big-experiment-harnesses/slice-deque-0.3.0/src/lib.rs::1420,
+    - URAPI: DefId(0:189 ~ slice_deque[05d1]::{impl#3}::remove),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * slice-deque_fuzz_18437203802959288078_deepseek-r1_turn2
+      * slice-deque_fuzz_4501822303361639832
+      * slice-deque_fuzz_12417510891717424398_deepseek-r1_turn4
+      * slice-deque_fuzz_12082732316833867669_deepseek-r1_turn1
+      * slice-deque_fuzz_10108862598979563510_deepseek-r1_turn2
+      * slice-deque_fuzz_4769207226339191488_deepseek-r1_turn4
+      * slice-deque_fuzz_9900464239683415898
+      * slice-deque_fuzz_4501822303361639832_deepseek-r1_turn1
+      * slice-deque_fuzz_8469854685696968172_deepseek-r1_turn1
+      * slice-deque_fuzz_8232733558803319586_deepseek-r1_turn2
+      * slice-deque_fuzz_13288520083801552132
+      * slice-deque_fuzz_13635891816206107892_deepseek-r1_turn1
+      * slice-deque_fuzz_3770584607235593786
+      * slice-deque_fuzz_12917028999123009516_deepseek-r1_turn2
+      * slice-deque_fuzz_8624375823431338779_deepseek-r1_turn3
+      * slice-deque_fuzz_2428145879454001779_deepseek-r1_turn3
+      * slice-deque_fuzz_8362347888412206739_deepseek-r1_turn4
+      * slice-deque_fuzz_8463061266926741376_deepseek-r1_turn1
+  StableURAPI: next::/home/cdc/SURF/deepSURF-big-experiment-harnesses/slice-deque-0.3.0/src/lib.rs::2368,
+    - URAPI: DefId(0:318 ~ slice_deque[05d1]::{impl#29}::next),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * slice-deque_fuzz_16958015347328256777_deepseek-r1_turn3
+      * slice-deque_fuzz_4484387757941457130_deepseek-r1_turn5
+      * slice-deque_fuzz_8469854685696968172_deepseek-r1_turn1
+      * slice-deque_fuzz_1028789457914565248
+      * slice-deque_fuzz_12901651351970138372
+      * slice-deque_fuzz_9822303795792256123_deepseek-r1_turn2
+      * slice-deque_fuzz_13900749957672559691_deepseek-r1_turn3
+      * slice-deque_fuzz_5251805052684191381
+      * slice-deque_fuzz_8283376030426054640_deepseek-r1_turn2
+      * slice-deque_fuzz_13700520482075373787
+      * slice-deque_fuzz_15070556627503783575_deepseek-r1_turn2
+      * slice-deque_fuzz_18419825544504067688_deepseek-r1_turn1
+      * slice-deque_fuzz_6903199200138795234_deepseek-r1_turn3
+      * slice-deque_fuzz_4760281192874452592_deepseek-r1_turn3
+      * slice-deque_fuzz_4672898723338971870_deepseek-r1_turn1
+      * slice-deque_fuzz_4598399675069962417_deepseek-r1_turn2
+      * slice-deque_fuzz_13700520482075373787_deepseek-r1_turn1
+  StableURAPI: new::/home/cdc/SURF/deepSURF-big-experiment-harnesses/slice-deque-0.3.0/src/lib.rs::367,
+    - URAPI: DefId(0:141 ~ slice_deque[05d1]::{impl#3}::new),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * slice-deque_fuzz_4194545220664743999_deepseek-r1_turn1
+      * slice-deque_fuzz_4826721274424411881_deepseek-r1_turn3
+      * slice-deque_fuzz_13700520482075373787_deepseek-r1_turn1
+      * slice-deque_fuzz_8463061266926741376_deepseek-r1_turn1
+      * slice-deque_fuzz_17139725604596503654_deepseek-r1_turn5
+      * slice-deque_fuzz_14843698792566371154_deepseek-r1_turn2
+      * slice-deque_fuzz_14452278170383854498_deepseek-r1_turn5
+      * slice-deque_fuzz_9663218223915125597_deepseek-r1_turn3
+      * slice-deque_fuzz_17840852337922577515_deepseek-r1_turn1
+      * slice-deque_fuzz_8232733558803319586_deepseek-r1_turn2
+      * slice-deque_fuzz_8469854685696968172_deepseek-r1_turn1
+      * slice-deque_fuzz_1917455478764445702_deepseek-r1_turn5
+      * slice-deque_fuzz_17722650989475118215_deepseek-r1_turn4
+      * slice-deque_fuzz_4769207226339191488_deepseek-r1_turn4
+      * slice-deque_fuzz_5656338007438782333_deepseek-r1_turn1
+      * slice-deque_fuzz_14929801104225610600_deepseek-r1_turn5
+      * slice-deque_fuzz_13900749957672559691_deepseek-r1_turn3
+      * slice-deque_fuzz_18437203802959288078_deepseek-r1_turn2
+      * slice-deque_fuzz_10108862598979563510_deepseek-r1_turn2
+      * slice-deque_fuzz_9662541084062873642_deepseek-r1_turn1
+      * slice-deque_fuzz_10388620105030957729_deepseek-r1_turn4
+      * slice-deque_fuzz_7005584422468023561_deepseek-r1_turn1
+      * slice-deque_fuzz_8362347888412206739_deepseek-r1_turn4
+      * slice-deque_fuzz_17622801763419986548_deepseek-r1_turn1
+      * slice-deque_fuzz_17887136662909375945_deepseek-r1_turn5
+      * slice-deque_fuzz_911277952172177360_deepseek-r1_turn2
+      * slice-deque_fuzz_6191598950180456694_deepseek-r1_turn1
+      * slice-deque_fuzz_15263806174849472263_deepseek-r1_turn4
+      * slice-deque_fuzz_5861335305008624807_deepseek-r1_turn6
+      * slice-deque_fuzz_4070082801758288724_deepseek-r1_turn4
+      * slice-deque_fuzz_14324631889916904199_deepseek-r1_turn3
+      * slice-deque_fuzz_8283376030426054640_deepseek-r1_turn2
+      * slice-deque_fuzz_4760281192874452592_deepseek-r1_turn3
+      * slice-deque_fuzz_12417510891717424398_deepseek-r1_turn4
+      * slice-deque_fuzz_12917028999123009516_deepseek-r1_turn2
+      * slice-deque_fuzz_4598399675069962417_deepseek-r1_turn2
+      * slice-deque_fuzz_12082732316833867669_deepseek-r1_turn1
+      * slice-deque_fuzz_4501822303361639832_deepseek-r1_turn1
+      * slice-deque_fuzz_4484387757941457130_deepseek-r1_turn5
+      * slice-deque_fuzz_12588477240223379608_deepseek-r1_turn3
+      * slice-deque_fuzz_15070556627503783575_deepseek-r1_turn2
+      * slice-deque_fuzz_15699793873366199038_deepseek-r1_turn1
+      * slice-deque_fuzz_11651323690213599008_deepseek-r1_turn3
+      * slice-deque_fuzz_10571828121180457176_deepseek-r1_turn3
+      * slice-deque_fuzz_12906479776415708453_deepseek-r1_turn1
+      * slice-deque_fuzz_15345675187571639779_deepseek-r1_turn3
+      * slice-deque_fuzz_8161165916442446671_deepseek-r1_turn2
+      * slice-deque_fuzz_13050109955293856513_deepseek-r1_turn3
+      * slice-deque_fuzz_1887569689404825567_deepseek-r1_turn2
+      * slice-deque_fuzz_17588577153577797897_deepseek-r1_turn3
+      * slice-deque_fuzz_4094508709849671824_deepseek-r1_turn3
+      * slice-deque_fuzz_5206005555413942478_deepseek-r1_turn3
+      * slice-deque_fuzz_4968986741856722397_deepseek-r1_turn6
+      * slice-deque_fuzz_5777519231826042890_deepseek-r1_turn2
+      * slice-deque_fuzz_15500095988099735105_deepseek-r1_turn3
+      * slice-deque_fuzz_2029389719203445302_deepseek-r1_turn2
+      * slice-deque_fuzz_738388044229897756_deepseek-r1_turn3
+      * slice-deque_fuzz_2240268102745286170_deepseek-r1_turn4
+      * slice-deque_fuzz_1115897812801201260_deepseek-r1_turn1
+      * slice-deque_fuzz_4545318101966464336_deepseek-r1_turn1
+      * slice-deque_fuzz_2894693785640307436_deepseek-r1_turn4
+      * slice-deque_fuzz_5072995148770667557_deepseek-r1_turn2
+      * slice-deque_fuzz_13635891816206107892_deepseek-r1_turn1
+      * slice-deque_fuzz_9975925693983352616_deepseek-r1_turn3
+      * slice-deque_fuzz_8359883213621361613_deepseek-r1_turn2
+      * slice-deque_fuzz_6903199200138795234_deepseek-r1_turn3
+      * slice-deque_fuzz_13155056548745206096_deepseek-r1_turn2
+      * slice-deque_fuzz_16075554750031233132_deepseek-r1_turn3
+  StableURAPI: swap_remove_front::/home/cdc/SURF/deepSURF-big-experiment-harnesses/slice-deque-0.3.0/src/lib.rs::1339,
+    - URAPI: DefId(0:187 ~ slice_deque[05d1]::{impl#3}::swap_remove_front),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * slice-deque_fuzz_11787819913107871866
+      * slice-deque_fuzz_7784011993700726658
+      * slice-deque_fuzz_9663218223915125597_deepseek-r1_turn3
+      * slice-deque_fuzz_15345675187571639779_deepseek-r1_turn3
+      * slice-deque_fuzz_9663218223915125597
+      * slice-deque_fuzz_12588477240223379608_deepseek-r1_turn3
+      * slice-deque_fuzz_13202345134449371293
+  StableURAPI: from_elem::/home/cdc/SURF/deepSURF-big-experiment-harnesses/slice-deque-0.3.0/src/lib.rs::2777,
+    - URAPI: DefId(0:392 ~ slice_deque[05d1]::from_elem),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * slice-deque_fuzz_15699793873366199038_deepseek-r1_turn1
+      * slice-deque_fuzz_4760281192874452592_deepseek-r1_turn3
+      * slice-deque_fuzz_17722650989475118215_deepseek-r1_turn4
+      * slice-deque_fuzz_4746506307754533583_deepseek-r1_turn2
+      * slice-deque_fuzz_10571828121180457176_deepseek-r1_turn3
+      * slice-deque_fuzz_16075554750031233132_deepseek-r1_turn3
+      * slice-deque_fuzz_8161165916442446671_deepseek-r1_turn2
+      * slice-deque_fuzz_1887569689404825567_deepseek-r1_turn2
+      * slice-deque_fuzz_4672898723338971870_deepseek-r1_turn1
+      * slice-deque_fuzz_2894693785640307436_deepseek-r1_turn4
+      * slice-deque_fuzz_5072995148770667557_deepseek-r1_turn2
+      * slice-deque_fuzz_17139725604596503654_deepseek-r1_turn5
+      * slice-deque_fuzz_12417510891717424398_deepseek-r1_turn4
+      * slice-deque_fuzz_10001717426570151414_deepseek-r1_turn2
+      * slice-deque_fuzz_5206005555413942478_deepseek-r1_turn3
+      * slice-deque_fuzz_4070082801758288724_deepseek-r1_turn4
+      * slice-deque_fuzz_2240268102745286170_deepseek-r1_turn4
+      * slice-deque_fuzz_2428145879454001779_deepseek-r1_turn3
+      * slice-deque_fuzz_911277952172177360_deepseek-r1_turn2
+      * slice-deque_fuzz_17588577153577797897_deepseek-r1_turn3
+      * slice-deque_fuzz_17887136662909375945_deepseek-r1_turn5
+      * slice-deque_fuzz_12082732316833867669_deepseek-r1_turn1
+      * slice-deque_fuzz_14843698792566371154_deepseek-r1_turn2
+      * slice-deque_fuzz_2217358730257375283_deepseek-r1_turn2
+      * slice-deque_fuzz_14324631889916904199_deepseek-r1_turn3
+      * slice-deque_fuzz_5777519231826042890_deepseek-r1_turn2
+      * slice-deque_fuzz_4094508709849671824_deepseek-r1_turn3
+      * slice-deque_fuzz_17622801763419986548_deepseek-r1_turn1
+      * slice-deque_fuzz_15500095988099735105_deepseek-r1_turn3
+      * slice-deque_fuzz_14929801104225610600_deepseek-r1_turn5
+      * slice-deque_fuzz_8359883213621361613_deepseek-r1_turn2
+      * slice-deque_fuzz_6191598950180456694
+      * slice-deque_fuzz_6903199200138795234_deepseek-r1_turn3
+      * slice-deque_fuzz_4769207226339191488_deepseek-r1_turn4
+      * slice-deque_fuzz_13050109955293856513_deepseek-r1_turn3
+      * slice-deque_fuzz_4968986741856722397_deepseek-r1_turn6
+      * slice-deque_fuzz_16958015347328256777_deepseek-r1_turn3
+      * slice-deque_fuzz_10388620105030957729_deepseek-r1_turn4
+      * slice-deque_fuzz_10108862598979563510_deepseek-r1_turn2
+      * slice-deque_fuzz_10394882426450708466_deepseek-r1_turn2
+      * slice-deque_fuzz_8232733558803319586_deepseek-r1_turn2
+      * slice-deque_fuzz_9738239852499739670_deepseek-r1_turn3
+      * slice-deque_fuzz_6191598950180456694_deepseek-r1_turn1
+      * slice-deque_fuzz_8362347888412206739_deepseek-r1_turn4
+      * slice-deque_fuzz_9822303795792256123_deepseek-r1_turn2
+      * slice-deque_fuzz_1076709872990963861_deepseek-r1_turn2
+      * slice-deque_fuzz_4826721274424411881_deepseek-r1_turn3
+      * slice-deque_fuzz_13900749957672559691_deepseek-r1_turn3
+      * slice-deque_fuzz_18437203802959288078_deepseek-r1_turn2
+      * slice-deque_fuzz_5861335305008624807_deepseek-r1_turn6
+      * slice-deque_fuzz_9662541084062873642_deepseek-r1_turn1
+  StableURAPI: drop::/home/cdc/SURF/deepSURF-big-experiment-harnesses/slice-deque-0.3.0/src/lib.rs::3053,
+    - URAPI: DefId(0:436 ~ slice_deque[05d1]::{impl#49}::drop),
+    - Macro-expanded: false,
+    - LLM-improved: false,
+    - Fuzzing Targets:
+      * slice-deque_fuzz_9975925693983352616
+      * slice-deque_fuzz_11713234642219042975
+      * slice-deque_fuzz_3128373406904214772
+      * slice-deque_fuzz_7837682726170159332
+  StableURAPI: partial_cmp::/home/cdc/SURF/deepSURF-big-experiment-harnesses/slice-deque-0.3.0/src/lib.rs::2184,
+    - URAPI: DefId(0:226 ~ slice_deque[05d1]::{impl#8}::drop),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * slice-deque_fuzz_8232733558803319586_deepseek-r1_turn2
+      * slice-deque_fuzz_17887136662909375945_deepseek-r1_turn5
+      * slice-deque_fuzz_15070556627503783575_deepseek-r1_turn2
+      * slice-deque_fuzz_17722650989475118215_deepseek-r1_turn4
+      * slice-deque_fuzz_5206005555413942478_deepseek-r1_turn3
+      * slice-deque_fuzz_13050109955293856513_deepseek-r1_turn3
+  StableURAPI: truncate_front::/home/cdc/SURF/deepSURF-big-experiment-harnesses/slice-deque-0.3.0/src/lib.rs::1174,
+    - URAPI: DefId(0:178 ~ slice_deque[05d1]::{impl#3}::truncate_front),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * slice-deque_fuzz_2283583047074886920_deepseek-r1_turn2
+      * slice-deque_fuzz_8469854685696968172_deepseek-r1_turn1
+      * slice-deque_fuzz_136933347955382726
+      * slice-deque_fuzz_13900749957672559691
+      * slice-deque_fuzz_3439090206635063466
+      * slice-deque_fuzz_8762665076621906306
+      * slice-deque_fuzz_13900749957672559691_deepseek-r1_turn3
+------------------------------------------------------------------------------------------------------------------------------------

@@ -1,0 +1,60 @@
+deepSURF: Generated Targets to be Fuzzed
+------------------------------------------------------------------------------------------------------------------------------------
+  StableURAPI: initialized_mut::/home/cdc/SURF/deepSURF-big-experiment-harnesses/tokio-1.24.1/src/io/read_buf.rs::101,
+    - URAPI: DefId(0:249 ~ tokio[d433]::io::read_buf::{impl#0}::initialized_mut),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * tokio_fuzz_6083788968148923665_deepseek-r1_turn5
+  StableURAPI: put_slice::/home/cdc/SURF/deepSURF-big-experiment-harnesses/tokio-1.24.1/src/io/read_buf.rs::248,
+    - URAPI: DefId(0:259 ~ tokio[d433]::io::read_buf::{impl#0}::put_slice),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * tokio_fuzz_6083788968148923665_deepseek-r1_turn5
+  StableURAPI: filled_mut::/home/cdc/SURF/deepSURF-big-experiment-harnesses/tokio-1.24.1/src/io/read_buf.rs::71,
+    - URAPI: DefId(0:246 ~ tokio[d433]::io::read_buf::{impl#0}::filled_mut),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * tokio_fuzz_6083788968148923665_deepseek-r1_turn5
+  StableURAPI: take::/home/cdc/SURF/deepSURF-big-experiment-harnesses/tokio-1.24.1/src/io/read_buf.rs::80,
+    - URAPI: DefId(0:247 ~ tokio[d433]::io::read_buf::{impl#0}::take),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * tokio_fuzz_6083788968148923665_deepseek-r1_turn5
+  StableURAPI: initialize_unfilled::/home/cdc/SURF/deepSURF-big-experiment-harnesses/tokio-1.24.1/src/io/read_buf.rs::144,
+    - URAPI: DefId(0:252 ~ tokio[d433]::io::read_buf::{impl#0}::initialize_unfilled),
+    - Macro-expanded: false,
+    - LLM-improved: false,
+    - Fuzzing Targets:
+      * tokio_fuzz_9312613522432535634
+      * tokio_fuzz_6171349270504637184
+  StableURAPI: initialize_unfilled_to::/home/cdc/SURF/deepSURF-big-experiment-harnesses/tokio-1.24.1/src/io/read_buf.rs::156,
+    - URAPI: DefId(0:253 ~ tokio[d433]::io::read_buf::{impl#0}::initialize_unfilled_to),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * tokio_fuzz_6083788968148923665_deepseek-r1_turn5
+  StableURAPI: new::/home/cdc/SURF/deepSURF-big-experiment-harnesses/tokio-1.24.1/src/io/read_buf.rs::32,
+    - URAPI: DefId(0:242 ~ tokio[d433]::io::read_buf::{impl#0}::new),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * tokio_fuzz_6083788968148923665_deepseek-r1_turn5
+  StableURAPI: filled::/home/cdc/SURF/deepSURF-big-experiment-harnesses/tokio-1.24.1/src/io/read_buf.rs::62,
+    - URAPI: DefId(0:245 ~ tokio[d433]::io::read_buf::{impl#0}::filled),
+    - Macro-expanded: false,
+    - LLM-improved: false,
+    - Fuzzing Targets:
+      * tokio_fuzz_17930089864439150320
+      * tokio_fuzz_1714680596375295000
+  StableURAPI: initialized::/home/cdc/SURF/deepSURF-big-experiment-harnesses/tokio-1.24.1/src/io/read_buf.rs::90,
+    - URAPI: DefId(0:248 ~ tokio[d433]::io::read_buf::{impl#0}::initialized),
+    - Macro-expanded: false,
+    - LLM-improved: false,
+    - Fuzzing Targets:
+      * tokio_fuzz_17757173576624556236
+      * tokio_fuzz_11343227532119879443
+------------------------------------------------------------------------------------------------------------------------------------

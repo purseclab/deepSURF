@@ -1,0 +1,16 @@
+[workspace]
+
+[package]
+name = "stackvector_fuzz_5361011160446671523"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "stackvector_fuzz_5361011160446671523"
+path = "src/stackvector_fuzz_5361011160446671523.rs"
+
+[dependencies]
+afl = "=0.15.7"
+home = "=0.5.9"
+stackvector = { path = "../../../../stackvector-1.0.8/" }
+global_data = { path = "../../../../../../../../code/global_data" }

@@ -1,0 +1,3 @@
+cd /RPG/erasan_dataset/bumpalo-3.11.0/fuzz_target/bumpalo_bfs_generic_fuzz/multipleTargets
+cargo afl build
+cd -

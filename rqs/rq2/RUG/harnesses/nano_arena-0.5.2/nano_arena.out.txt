@@ -1,0 +1,426 @@
+-----------------
+src/lib.rs choose_second_member_of_tuple_mut
+deps:{"choose_second_member_of_tuple_mut":{"A":["std::marker::Sized"],"B":["std::marker::Sized"]}}
+candidates:{"choose_second_member_of_tuple_mut":{"A":["RUG_ANY"],"B":["RUG_ANY"]}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // (A, B)
++choose_second_member_of_tuple_mut(p0);
++crate::choose_second_member_of_tuple_mut(p0);
++crate::choose_second_member_of_tuple_mut(p0);
+-----------------
+src/lib.rs choose_second_member_of_tuple_ref
+deps:{"choose_second_member_of_tuple_ref":{"A":["std::marker::Sized"],"B":["std::marker::Sized"]}}
+candidates:{"choose_second_member_of_tuple_ref":{"A":["RUG_ANY"],"B":["RUG_ANY"]}}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // (A, B)
++choose_second_member_of_tuple_ref(p0);
++crate::choose_second_member_of_tuple_ref(p0);
++crate::choose_second_member_of_tuple_ref(p0);
+-----------------
+src/lib.rs create_idx
+deps:{}
+candidates:{}
+let mut p0 = 0usize; // None+usize
++create_idx(p0);
++crate::create_idx(p0);
++crate::create_idx(p0);
+-----------------
+src/split.rs split::ArenaSplit::<'_, T>::get
+deps:{"<&T as std::borrow::Borrow<T>>":{},"<&mut T as std::borrow::Borrow<T>>":{},"<T as std::borrow::Borrow<T>>":{},"split::ArenaSplit::<'_, T>::get":{"I":["std::marker::Sized","std::borrow::Borrow"],"T":["std::marker::Sized"]}}
+candidates:{"<&T as std::borrow::Borrow<T>>":{},"<&mut T as std::borrow::Borrow<T>>":{},"<T as std::borrow::Borrow<T>>":{},"split::ArenaSplit::<'_, T>::get":{"I":["std::rc::Rc<T>","std::path::PathBuf","<&T as std::borrow::Borrow<T>>","std::vec::Vec<T, A>","std::ffi::CString","<&mut T as std::borrow::Borrow<T>>","std::borrow::Cow<'a, B>","std::sync::Arc<T>","std::string::String","std::boxed::Box<T, A>","std::ffi::OsString"],"T":["RUG_ANY"]}}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // split::ArenaSplit<'_, T>
+let mut p1 = MaybeUninit::uninit().assume_init(); // I
++p0.get(p1);
++split::ArenaSplit::<'_, T>::get(p0, p1);
++crate::split::ArenaSplit::<'_, T>::get(p0, p1);
++<split::ArenaSplit<'_, T>>::get(p0, p1);
+-----------------
+src/split.rs split::ArenaSplit::<'_, T>::get_mut
+deps:{"<&T as std::borrow::Borrow<T>>":{},"<&mut T as std::borrow::Borrow<T>>":{},"<T as std::borrow::Borrow<T>>":{},"split::ArenaSplit::<'_, T>::get_mut":{"I":["std::marker::Sized","std::borrow::Borrow"],"T":["std::marker::Sized"]}}
+candidates:{"<&T as std::borrow::Borrow<T>>":{},"<&mut T as std::borrow::Borrow<T>>":{},"<T as std::borrow::Borrow<T>>":{},"split::ArenaSplit::<'_, T>::get_mut":{"I":["std::ffi::OsString","std::vec::Vec<T, A>","std::ffi::CString","std::path::PathBuf","<&T as std::borrow::Borrow<T>>","std::boxed::Box<T, A>","std::rc::Rc<T>","std::string::String","std::sync::Arc<T>","<&mut T as std::borrow::Borrow<T>>","std::borrow::Cow<'a, B>"],"T":["RUG_ANY"]}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // split::ArenaSplit<'_, T>
+let mut p1 = MaybeUninit::uninit().assume_init(); // I
++p0.get_mut(p1);
++split::ArenaSplit::<'_, T>::get_mut(p0, p1);
++crate::split::ArenaSplit::<'_, T>::get_mut(p0, p1);
++<split::ArenaSplit<'_, T>>::get_mut(p0, p1);
+-----------------
+src/lib.rs IdxInner::index
+deps:{}
+candidates:{}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // IdxInner
++p0.index();
++IdxInner::index(p0);
++crate::IdxInner::index(p0);
++<IdxInner>::index(p0);
+-----------------
+src/lib.rs <Idx as std::clone::Clone>::clone
+deps:{}
+candidates:{}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // Idx
++p0.clone();
++<Idx as std::clone::Clone>::clone(p0);
++crate::<Idx as std::clone::Clone>::clone(p0);
++<Idx>::clone(p0);
+-----------------
+src/lib.rs <Idx as std::fmt::Debug>::fmt
+deps:{}
+candidates:{}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // Idx
+let mut p1 = &mut  MaybeUninit::uninit().assume_init(); // std::fmt::Formatter<'_>
++format!("{:?}", p0);
++p0.fmt(p1);
++<Idx as std::fmt::Debug>::fmt(p0, p1);
++crate::<Idx as std::fmt::Debug>::fmt(p0, p1);
++<Idx>::fmt(p0, p1);
+-----------------
+src/lib.rs Idx::value
+deps:{}
+candidates:{}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // Idx
++p0.value();
++Idx::value(p0);
++crate::Idx::value(p0);
++<Idx>::value(p0);
+-----------------
+src/lib.rs <Idx as std::cmp::PartialEq>::eq
+deps:{}
+candidates:{}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // Idx
+let mut p1 = & MaybeUninit::uninit().assume_init(); // Idx
++p0.eq(p1);
++<Idx as std::cmp::PartialEq>::eq(p0, p1);
++crate::<Idx as std::cmp::PartialEq>::eq(p0, p1);
++<Idx>::eq(p0, p1);
+-----------------
+src/lib.rs <Idx as std::hash::Hash>::hash
+deps:{"<&mut H as std::hash::Hasher>":{},"<Idx as std::hash::Hash>::hash":{"H":["std::hash::Hasher","std::marker::Sized"]}}
+candidates:{"<&mut H as std::hash::Hasher>":{},"<Idx as std::hash::Hash>::hash":{"H":["<&mut H as std::hash::Hasher>","std::hash::SipHasher","std::boxed::Box<T, A>","std::hash::SipHasher13","std::hash::sip::Hasher<S>","std::collections::hash_map::DefaultHasher"]}}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // Idx
+let mut p1 = &mut  MaybeUninit::uninit().assume_init(); // H
++p0.hash(p1);
++<Idx as std::hash::Hash>::hash(p0, p1);
++crate::<Idx as std::hash::Hash>::hash(p0, p1);
++<Idx>::hash(p0, p1);
+-----------------
+src/lib.rs <Arena<T> as std::default::Default>::default
+deps:{"<Arena<T> as std::default::Default>::default":{"T":["std::marker::Sized"]}}
+candidates:{"<Arena<T> as std::default::Default>::default":{"T":["RUG_ANY"]}}
++<Arena<T> as std::default::Default>::default();
++crate::<Arena<T> as std::default::Default>::default();
++<Arena<T>>::default();
+-----------------
+src/lib.rs <IterMut<'a, T> as std::iter::Iterator>::next
+'a
+deps:{"<IterMut<'a, T> as std::iter::Iterator>::next":{"T":["std::marker::Sized"]}}
+candidates:{"<IterMut<'a, T> as std::iter::Iterator>::next":{"T":["RUG_ANY"]}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // IterMut<'a, T>
++p0.next();
++<IterMut<'a, T> as std::iter::Iterator>::next(p0);
++crate::<IterMut<'a, T> as std::iter::Iterator>::next(p0);
++<IterMut<'a, T>>::next(p0);
+-----------------
+src/lib.rs <Iter<'a, T> as std::iter::Iterator>::next
+'a
+deps:{"<Iter<'a, T> as std::iter::Iterator>::next":{"T":["std::marker::Sized"]}}
+candidates:{"<Iter<'a, T> as std::iter::Iterator>::next":{"T":["RUG_ANY"]}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // Iter<'a, T>
++p0.next();
++<Iter<'a, T> as std::iter::Iterator>::next(p0);
++crate::<Iter<'a, T> as std::iter::Iterator>::next(p0);
++<Iter<'a, T>>::next(p0);
+-----------------
+src/lib.rs <EntriesMut<'a, T> as std::iter::Iterator>::next
+'a
+deps:{"<EntriesMut<'a, T> as std::iter::Iterator>::next":{"T":["std::marker::Sized"]}}
+candidates:{"<EntriesMut<'a, T> as std::iter::Iterator>::next":{"T":["RUG_ANY"]}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // EntriesMut<'a, T>
++p0.next();
++<EntriesMut<'a, T> as std::iter::Iterator>::next(p0);
++crate::<EntriesMut<'a, T> as std::iter::Iterator>::next(p0);
++<EntriesMut<'a, T>>::next(p0);
+-----------------
+src/lib.rs <Entries<'a, T> as std::iter::Iterator>::next
+'a
+deps:{"<Entries<'a, T> as std::iter::Iterator>::next":{"T":["std::marker::Sized"]}}
+candidates:{"<Entries<'a, T> as std::iter::Iterator>::next":{"T":["RUG_ANY"]}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // Entries<'a, T>
++p0.next();
++<Entries<'a, T> as std::iter::Iterator>::next(p0);
++crate::<Entries<'a, T> as std::iter::Iterator>::next(p0);
++<Entries<'a, T>>::next(p0);
+-----------------
+src/lib.rs <Arena<T> as std::iter::FromIterator<T>>::from_iter
+deps:{"<&'a hashbrown::map::HashMap<K, V, S, A> as std::iter::IntoIterator>":{},"<&'a hashbrown::set::HashSet<T, S, A> as std::iter::IntoIterator>":{},"<&'a mut hashbrown::map::HashMap<K, V, S, A> as std::iter::IntoIterator>":{},"<&'a mut std::collections::BTreeMap<K, V, A> as std::iter::IntoIterator>":{},"<&'a mut std::collections::HashMap<K, V, S> as std::iter::IntoIterator>":{},"<&'a mut std::collections::LinkedList<T> as std::iter::IntoIterator>":{},"<&'a mut std::collections::VecDeque<T, A> as std::iter::IntoIterator>":{},"<&'a mut std::option::Option<T> as std::iter::IntoIterator>":{},"<&'a mut std::result::Result<T, E> as std::iter::IntoIterator>":{},"<&'a mut std::vec::Vec<T, A> as std::iter::IntoIterator>":{},"<&'a std::collections::BTreeMap<K, V, A> as std::iter::IntoIterator>":{},"<&'a std::collections::BTreeSet<T, A> as std::iter::IntoIterator>":{},"<&'a std::collections::BinaryHeap<T> as std::iter::IntoIterator>":{},"<&'a std::collections::HashMap<K, V, S> as std::iter::IntoIterator>":{},"<&'a std::collections::HashSet<T, S> as std::iter::IntoIterator>":{},"<&'a std::collections::LinkedList<T> as std::iter::IntoIterator>":{},"<&'a std::collections::VecDeque<T, A> as std::iter::IntoIterator>":{},"<&'a std::option::Option<T> as std::iter::IntoIterator>":{},"<&'a std::result::Result<T, E> as std::iter::IntoIterator>":{},"<&'a std::sync::mpsc::Receiver<T> as std::iter::IntoIterator>":{},"<&'a std::vec::Vec<T, A> as std::iter::IntoIterator>":{},"<&mut I as std::iter::Iterator>":{},"<Arena<T> as std::iter::FromIterator<T>>::from_iter":{"I":["std::marker::Sized","std::iter::IntoIterator"],"T":["std::marker::Sized"]},"<I as std::iter::IntoIterator>":{"I":["std::marker::Sized","std::iter::Iterator"]},"Entries":{"T":["std::marker::Sized"]},"EntriesMut":{"T":["std::marker::Sized"]},"Iter":{"T":["std::marker::Sized"]},"IterMut":{"T":["std::marker::Sized"]}}
+candidates:{"<&'a hashbrown::map::HashMap<K, V, S, A> as std::iter::IntoIterator>":{},"<&'a hashbrown::set::HashSet<T, S, A> as std::iter::IntoIterator>":{},"<&'a mut hashbrown::map::HashMap<K, V, S, A> as std::iter::IntoIterator>":{},"<&'a mut std::collections::BTreeMap<K, V, A> as std::iter::IntoIterator>":{},"<&'a mut std::collections::HashMap<K, V, S> as std::iter::IntoIterator>":{},"<&'a mut std::collections::LinkedList<T> as std::iter::IntoIterator>":{},"<&'a mut std::collections::VecDeque<T, A> as std::iter::IntoIterator>":{},"<&'a mut std::option::Option<T> as std::iter::IntoIterator>":{},"<&'a mut std::result::Result<T, E> as std::iter::IntoIterator>":{},"<&'a mut std::vec::Vec<T, A> as std::iter::IntoIterator>":{},"<&'a std::collections::BTreeMap<K, V, A> as std::iter::IntoIterator>":{},"<&'a std::collections::BTreeSet<T, A> as std::iter::IntoIterator>":{},"<&'a std::collections::BinaryHeap<T> as std::iter::IntoIterator>":{},"<&'a std::collections::HashMap<K, V, S> as std::iter::IntoIterator>":{},"<&'a std::collections::HashSet<T, S> as std::iter::IntoIterator>":{},"<&'a std::collections::LinkedList<T> as std::iter::IntoIterator>":{},"<&'a std::collections::VecDeque<T, A> as std::iter::IntoIterator>":{},"<&'a std::option::Option<T> as std::iter::IntoIterator>":{},"<&'a std::result::Result<T, E> as std::iter::IntoIterator>":{},"<&'a std::sync::mpsc::Receiver<T> as std::iter::IntoIterator>":{},"<&'a std::vec::Vec<T, A> as std::iter::IntoIterator>":{},"<&mut I as std::iter::Iterator>":{},"<Arena<T> as std::iter::FromIterator<T>>::from_iter":{"I":["std::collections::HashMap<K, V, S>","std::collections::BTreeSet<T, A>","&'a std::os::unix::net::UnixListener","<&'a std::option::Option<T> as std::iter::IntoIterator>","std::collections::BTreeMap<K, V, A>","std::collections::LinkedList<T>","&'a std::path::Path","std::option::Option<T>","std::result::Result<T, E>","<&'a std::vec::Vec<T, A> as std::iter::IntoIterator>","std::collections::VecDeque<T, A>","std::sync::mpsc::Receiver<T>","&'a std::path::PathBuf","std::vec::Vec<T, A>","std::collections::HashSet<T, S>","std::collections::BinaryHeap<T>"],"T":["RUG_ANY"]},"<I as std::iter::IntoIterator>":{"I":["EntriesMut","IterMut","<&mut I as std::iter::Iterator>","Iter","Entries"]},"Entries":{"T":["RUG_ANY"]},"EntriesMut":{"T":["RUG_ANY"]},"Iter":{"T":["RUG_ANY"]},"IterMut":{"T":["RUG_ANY"]}}
+let mut p0 = MaybeUninit::uninit().assume_init(); // I
++<Arena<T> as std::iter::FromIterator<T>>::from_iter(p0);
++crate::<Arena<T> as std::iter::FromIterator<T>>::from_iter(p0);
++<Arena<T>>::from_iter(p0);
+-----------------
+src/lib.rs Arena::<T>::new
+deps:{"Arena::<T>::new":{"T":["std::marker::Sized"]}}
+candidates:{"Arena::<T>::new":{"T":["RUG_ANY"]}}
++Arena::<T>::new();
++crate::Arena::<T>::new();
++<Arena<T>>::new();
+-----------------
+src/lib.rs Arena::<T>::with_capacity
+deps:{"Arena::<T>::with_capacity":{"T":["std::marker::Sized"]}}
+candidates:{"Arena::<T>::with_capacity":{"T":["RUG_ANY"]}}
+let mut p0 = 0usize; // None+usize
++Arena::<T>::with_capacity(p0);
++crate::Arena::<T>::with_capacity(p0);
++<Arena<T>>::with_capacity(p0);
+-----------------
+src/lib.rs Arena::<T>::capacity
+deps:{"Arena::<T>::capacity":{"T":["std::marker::Sized"]}}
+candidates:{"Arena::<T>::capacity":{"T":["RUG_ANY"]}}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // Arena<T>
++p0.capacity();
++Arena::<T>::capacity(p0);
++crate::Arena::<T>::capacity(p0);
++<Arena<T>>::capacity(p0);
+-----------------
+src/lib.rs Arena::<T>::alloc_with_idx
+deps:{"Arena::<T>::alloc_with_idx":{"F":["std::marker::Sized","std::ops::FnOnce"],"T":["std::marker::Sized"]},"std::ops::function::impls::<impl std::ops::FnOnce<A> for &F>":{},"std::ops::function::impls::<impl std::ops::FnOnce<A> for &mut F>":{}}
+candidates:{"Arena::<T>::alloc_with_idx":{"F":["core::str::IsWhitespace","std::panic::AssertUnwindSafe<F>","core::str::UnsafeBytesToStr","std::ops::function::impls::<impl std::ops::FnOnce<A> for &F>","core::const_closure::ConstFnMutClosure<(&'a mut A, &'a mut B, &'a mut C, &'a mut D), Function>","core::const_closure::ConstFnMutClosure<(&'a mut A, &'a mut B, &'a mut C), Function>","core::str::LinesAnyMap","std::boxed::Box<F, A>","core::slice::ascii::EscapeByte","core::const_closure::ConstFnMutClosure<(&'a mut A, &'a mut B), Function>","core::str::CharEscapeUnicode","core::const_closure::ConstFnMutClosure<&'a mut A, Function>","core::str::BytesIsNotEmpty","core::str::CharEscapeDebugContinue","core::str::IsNotEmpty","core::str::IsAsciiWhitespace","core::str::CharEscapeDefault","core::const_closure::ConstFnMutClosure<(&'a mut A, &'a mut B, &'a mut C, &'a mut D, &'a mut E), Function>"],"T":["RUG_ANY"]},"std::ops::function::impls::<impl std::ops::FnOnce<A> for &F>":{},"std::ops::function::impls::<impl std::ops::FnOnce<A> for &mut F>":{}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // Arena<T>
+let mut p1 = MaybeUninit::uninit().assume_init(); // F
++p0.alloc_with_idx(p1);
++Arena::<T>::alloc_with_idx(p0, p1);
++crate::Arena::<T>::alloc_with_idx(p0, p1);
++<Arena<T>>::alloc_with_idx(p0, p1);
+-----------------
+src/lib.rs Arena::<T>::alloc_with
+deps:{"Arena::<T>::alloc_with":{"F":["std::ops::FnOnce","std::marker::Sized"],"T":["std::marker::Sized"]},"std::ops::function::impls::<impl std::ops::FnOnce<A> for &F>":{},"std::ops::function::impls::<impl std::ops::FnOnce<A> for &mut F>":{}}
+candidates:{"Arena::<T>::alloc_with":{"F":["core::const_closure::ConstFnMutClosure<(&'a mut A, &'a mut B, &'a mut C), Function>","core::str::CharEscapeDefault","std::boxed::Box<F, A>","core::const_closure::ConstFnMutClosure<(&'a mut A, &'a mut B), Function>","core::const_closure::ConstFnMutClosure<&'a mut A, Function>","core::str::IsAsciiWhitespace","core::str::UnsafeBytesToStr","std::panic::AssertUnwindSafe<F>","core::str::IsWhitespace","core::str::IsNotEmpty","core::const_closure::ConstFnMutClosure<(&'a mut A, &'a mut B, &'a mut C, &'a mut D), Function>","core::str::LinesAnyMap","std::ops::function::impls::<impl std::ops::FnOnce<A> for &F>","core::str::BytesIsNotEmpty","core::str::CharEscapeDebugContinue","core::slice::ascii::EscapeByte","core::const_closure::ConstFnMutClosure<(&'a mut A, &'a mut B, &'a mut C, &'a mut D, &'a mut E), Function>","core::str::CharEscapeUnicode"],"T":["RUG_ANY"]},"std::ops::function::impls::<impl std::ops::FnOnce<A> for &F>":{},"std::ops::function::impls::<impl std::ops::FnOnce<A> for &mut F>":{}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // Arena<T>
+let mut p1 = MaybeUninit::uninit().assume_init(); // F
++p0.alloc_with(p1);
++Arena::<T>::alloc_with(p0, p1);
++crate::Arena::<T>::alloc_with(p0, p1);
++<Arena<T>>::alloc_with(p0, p1);
+-----------------
+src/lib.rs Arena::<T>::insert
+deps:{"Arena::<T>::insert":{"T":["std::marker::Sized"]}}
+candidates:{"Arena::<T>::insert":{"T":["RUG_ANY"]}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // Arena<T>
+let mut p1 = MaybeUninit::uninit().assume_init(); // T
++p0.insert(p1);
++Arena::<T>::insert(p0, p1);
++crate::Arena::<T>::insert(p0, p1);
++<Arena<T>>::insert(p0, p1);
+-----------------
+src/lib.rs Arena::<T>::alloc
+deps:{"Arena::<T>::alloc":{"T":["std::marker::Sized"]}}
+candidates:{"Arena::<T>::alloc":{"T":["RUG_ANY"]}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // Arena<T>
+let mut p1 = MaybeUninit::uninit().assume_init(); // T
++p0.alloc(p1);
++Arena::<T>::alloc(p0, p1);
++crate::Arena::<T>::alloc(p0, p1);
++<Arena<T>>::alloc(p0, p1);
+-----------------
+src/lib.rs Arena::<T>::len
+deps:{"Arena::<T>::len":{"T":["std::marker::Sized"]}}
+candidates:{"Arena::<T>::len":{"T":["RUG_ANY"]}}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // Arena<T>
++p0.len();
++Arena::<T>::len(p0);
++crate::Arena::<T>::len(p0);
++<Arena<T>>::len(p0);
+-----------------
+src/lib.rs Arena::<T>::get_idx_at_index
+deps:{"Arena::<T>::get_idx_at_index":{"T":["std::marker::Sized"]}}
+candidates:{"Arena::<T>::get_idx_at_index":{"T":["RUG_ANY"]}}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // Arena<T>
+let mut p1 = 0usize; // None+usize
++p0.get_idx_at_index(p1);
++Arena::<T>::get_idx_at_index(p0, p1);
++crate::Arena::<T>::get_idx_at_index(p0, p1);
++<Arena<T>>::get_idx_at_index(p0, p1);
+-----------------
+src/lib.rs Arena::<T>::split_at
+deps:{"<&T as std::borrow::Borrow<T>>":{},"<&mut T as std::borrow::Borrow<T>>":{},"<T as std::borrow::Borrow<T>>":{},"Arena::<T>::split_at":{"I":["std::marker::Sized","std::borrow::Borrow"],"T":["std::marker::Sized"]}}
+candidates:{"<&T as std::borrow::Borrow<T>>":{},"<&mut T as std::borrow::Borrow<T>>":{},"<T as std::borrow::Borrow<T>>":{},"Arena::<T>::split_at":{"I":["std::string::String","std::ffi::CString","std::rc::Rc<T>","std::boxed::Box<T, A>","std::ffi::OsString","std::path::PathBuf","std::sync::Arc<T>","std::vec::Vec<T, A>","std::borrow::Cow<'a, B>","<&mut T as std::borrow::Borrow<T>>"],"T":["RUG_ANY"]}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // Arena<T>
+let mut p1 = MaybeUninit::uninit().assume_init(); // I
++p0.split_at(p1);
++Arena::<T>::split_at(p0, p1);
++crate::Arena::<T>::split_at(p0, p1);
++<Arena<T>>::split_at(p0, p1);
+-----------------
+src/lib.rs Arena::<T>::truncate
+deps:{"Arena::<T>::truncate":{"T":["std::marker::Sized"]}}
+candidates:{"Arena::<T>::truncate":{"T":["RUG_ANY"]}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // Arena<T>
+let mut p1 = 0usize; // None+usize
++p0.truncate(p1);
++Arena::<T>::truncate(p0, p1);
++crate::Arena::<T>::truncate(p0, p1);
++<Arena<T>>::truncate(p0, p1);
+-----------------
+src/lib.rs Arena::<T>::retain
+deps:{"Arena::<T>::retain":{"F":["std::ops::FnMut","std::marker::Sized"],"T":["std::marker::Sized"]},"std::ops::function::impls::<impl std::ops::FnMut<A> for &F>":{},"std::ops::function::impls::<impl std::ops::FnMut<A> for &mut F>":{}}
+candidates:{"Arena::<T>::retain":{"F":["core::str::IsWhitespace","std::boxed::Box<F, A>","core::str::UnsafeBytesToStr","std::ops::function::impls::<impl std::ops::FnMut<A> for &F>","core::str::CharEscapeDefault","core::const_closure::ConstFnMutClosure<(&'a mut A, &'a mut B, &'a mut C, &'a mut D, &'a mut E), Function>","core::str::CharEscapeUnicode","core::const_closure::ConstFnMutClosure<(&'a mut A, &'a mut B, &'a mut C), Function>","core::const_closure::ConstFnMutClosure<(&'a mut A, &'a mut B, &'a mut C, &'a mut D), Function>","core::slice::ascii::EscapeByte","core::str::LinesAnyMap","core::const_closure::ConstFnMutClosure<(&'a mut A, &'a mut B), Function>","core::str::CharEscapeDebugContinue","core::const_closure::ConstFnMutClosure<&'a mut A, Function>","std::ops::function::impls::<impl std::ops::FnMut<A> for &mut F>","core::str::IsNotEmpty","core::str::BytesIsNotEmpty","core::str::IsAsciiWhitespace"],"T":["RUG_ANY"]},"std::ops::function::impls::<impl std::ops::FnMut<A> for &F>":{},"std::ops::function::impls::<impl std::ops::FnMut<A> for &mut F>":{}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // Arena<T>
+let mut p1 = MaybeUninit::uninit().assume_init(); // F
++p0.retain(p1);
++Arena::<T>::retain(p0, p1);
++crate::Arena::<T>::retain(p0, p1);
++<Arena<T>>::retain(p0, p1);
+-----------------
+src/lib.rs Arena::<T>::entries
+deps:{"Arena::<T>::entries":{"T":["std::marker::Sized"]}}
+candidates:{"Arena::<T>::entries":{"T":["RUG_ANY"]}}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // Arena<T>
++p0.entries();
++Arena::<T>::entries(p0);
++crate::Arena::<T>::entries(p0);
++<Arena<T>>::entries(p0);
+-----------------
+src/lib.rs Arena::<T>::entries_mut
+deps:{"Arena::<T>::entries_mut":{"T":["std::marker::Sized"]}}
+candidates:{"Arena::<T>::entries_mut":{"T":["RUG_ANY"]}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // Arena<T>
++p0.entries_mut();
++Arena::<T>::entries_mut(p0);
++crate::Arena::<T>::entries_mut(p0);
++<Arena<T>>::entries_mut(p0);
+-----------------
+src/lib.rs Arena::<T>::iter_mut
+deps:{"Arena::<T>::iter_mut":{"T":["std::marker::Sized"]}}
+candidates:{"Arena::<T>::iter_mut":{"T":["RUG_ANY"]}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // Arena<T>
++p0.iter_mut();
++Arena::<T>::iter_mut(p0);
++crate::Arena::<T>::iter_mut(p0);
++<Arena<T>>::iter_mut(p0);
+-----------------
+src/lib.rs Arena::<T>::iter
+deps:{"Arena::<T>::iter":{"T":["std::marker::Sized"]}}
+candidates:{"Arena::<T>::iter":{"T":["RUG_ANY"]}}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // Arena<T>
++p0.iter();
++Arena::<T>::iter(p0);
++crate::Arena::<T>::iter(p0);
++<Arena<T>>::iter(p0);
+-----------------
+src/lib.rs Arena::<T>::to_vec
+deps:{"Arena::<T>::to_vec":{"T":["std::marker::Sized"]}}
+candidates:{"Arena::<T>::to_vec":{"T":["RUG_ANY"]}}
+let mut p0 = MaybeUninit::uninit().assume_init(); // Arena<T>
++p0.to_vec();
++Arena::<T>::to_vec(p0);
++crate::Arena::<T>::to_vec(p0);
++<Arena<T>>::to_vec(p0);
+-----------------
+src/lib.rs Arena::<T>::remove_index
+deps:{"Arena::<T>::remove_index":{"T":["std::marker::Sized"]}}
+candidates:{"Arena::<T>::remove_index":{"T":["RUG_ANY"]}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // Arena<T>
+let mut p1 = 0usize; // None+usize
++p0.remove_index(p1);
++Arena::<T>::remove_index(p0, p1);
++crate::Arena::<T>::remove_index(p0, p1);
++<Arena<T>>::remove_index(p0, p1);
+-----------------
+src/lib.rs Arena::<T>::remove
+deps:{"<&T as std::borrow::Borrow<T>>":{},"<&mut T as std::borrow::Borrow<T>>":{},"<T as std::borrow::Borrow<T>>":{},"Arena::<T>::remove":{"I":["std::marker::Sized","std::borrow::Borrow"],"T":["std::marker::Sized"]}}
+candidates:{"<&T as std::borrow::Borrow<T>>":{},"<&mut T as std::borrow::Borrow<T>>":{},"<T as std::borrow::Borrow<T>>":{},"Arena::<T>::remove":{"I":["std::vec::Vec<T, A>","std::sync::Arc<T>","std::rc::Rc<T>","<&T as std::borrow::Borrow<T>>","std::ffi::CString","std::string::String","std::ffi::OsString","std::borrow::Cow<'a, B>","std::path::PathBuf","std::boxed::Box<T, A>"],"T":["RUG_ANY"]}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // Arena<T>
+let mut p1 = MaybeUninit::uninit().assume_init(); // I
++p0.remove(p1);
++Arena::<T>::remove(p0, p1);
++crate::Arena::<T>::remove(p0, p1);
++<Arena<T>>::remove(p0, p1);
+-----------------
+src/lib.rs Arena::<T>::swap_index
+deps:{"Arena::<T>::swap_index":{"T":["std::marker::Sized"]}}
+candidates:{"Arena::<T>::swap_index":{"T":["RUG_ANY"]}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // Arena<T>
+let mut p1 = 0usize; // None+usize
+let mut p2 = 0usize; // None+usize
++p0.swap_index(p1, p2);
++Arena::<T>::swap_index(p0, p1, p2);
++crate::Arena::<T>::swap_index(p0, p1, p2);
++<Arena<T>>::swap_index(p0, p1, p2);
+-----------------
+src/lib.rs Arena::<T>::swap
+deps:{"<&T as std::borrow::Borrow<T>>":{},"<&mut T as std::borrow::Borrow<T>>":{},"<T as std::borrow::Borrow<T>>":{},"Arena::<T>::swap":{"A":["std::borrow::Borrow","std::marker::Sized"],"B":["std::marker::Sized","std::borrow::Borrow"],"T":["std::marker::Sized"]}}
+candidates:{"<&T as std::borrow::Borrow<T>>":{},"<&mut T as std::borrow::Borrow<T>>":{},"<T as std::borrow::Borrow<T>>":{},"Arena::<T>::swap":{"A":["std::path::PathBuf","std::ffi::CString","std::ffi::OsString","std::rc::Rc<T>","std::string::String","<&mut T as std::borrow::Borrow<T>>","std::sync::Arc<T>","<&T as std::borrow::Borrow<T>>","std::vec::Vec<T, A>","std::boxed::Box<T, A>","std::borrow::Cow<'a, B>"],"B":["std::sync::Arc<T>","<T as std::borrow::Borrow<T>>","std::string::String","std::path::PathBuf","std::vec::Vec<T, A>","std::boxed::Box<T, A>","std::rc::Rc<T>","std::borrow::Cow<'a, B>","std::ffi::OsString","std::ffi::CString"],"T":["RUG_ANY"]}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // Arena<T>
+let mut p1 = MaybeUninit::uninit().assume_init(); // A
+let mut p2 = MaybeUninit::uninit().assume_init(); // B
++p0.swap(p1, p2);
++Arena::<T>::swap(p0, p1, p2);
++crate::Arena::<T>::swap(p0, p1, p2);
++<Arena<T>>::swap(p0, p1, p2);
+-----------------
+src/lib.rs Arena::<T>::position
+deps:{"Arena::<T>::position":{"F":["std::marker::Sized","std::ops::Fn"],"T":["std::marker::Sized"]},"std::ops::function::impls::<impl std::ops::Fn<A> for &F>":{}}
+candidates:{"Arena::<T>::position":{"F":["core::str::UnsafeBytesToStr","core::str::BytesIsNotEmpty","core::str::CharEscapeDebugContinue","core::str::IsNotEmpty","std::boxed::Box<F, A>","core::str::CharEscapeUnicode","core::str::IsAsciiWhitespace","core::slice::ascii::EscapeByte","core::str::LinesAnyMap","std::ops::function::impls::<impl std::ops::Fn<A> for &F>","core::str::CharEscapeDefault","core::str::IsWhitespace"],"T":["RUG_ANY"]},"std::ops::function::impls::<impl std::ops::Fn<A> for &F>":{}}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // Arena<T>
+let mut p1 = MaybeUninit::uninit().assume_init(); // F
++p0.position(p1);
++Arena::<T>::position(p0, p1);
++crate::Arena::<T>::position(p0, p1);
++<Arena<T>>::position(p0, p1);
+-----------------
+src/lib.rs Arena::<T>::apply_ordering
+deps:{"<&T as std::borrow::Borrow<T>>":{},"<&mut T as std::borrow::Borrow<T>>":{},"<T as std::borrow::Borrow<T>>":{},"Arena::<T>::apply_ordering":{"I":["std::marker::Sized","std::borrow::Borrow"],"T":["std::marker::Sized"]}}
+candidates:{"<&T as std::borrow::Borrow<T>>":{},"<&mut T as std::borrow::Borrow<T>>":{},"<T as std::borrow::Borrow<T>>":{},"Arena::<T>::apply_ordering":{"I":["std::vec::Vec<T, A>","std::ffi::CString","<&mut T as std::borrow::Borrow<T>>","std::rc::Rc<T>","std::borrow::Cow<'a, B>","std::ffi::OsString","std::path::PathBuf","std::string::String","std::boxed::Box<T, A>","<&T as std::borrow::Borrow<T>>","std::sync::Arc<T>"],"T":["RUG_ANY"]}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // Arena<T>
+let mut p1 = & MaybeUninit::uninit().assume_init(); // std::vec::Vec<I>
++p0.apply_ordering(p1);
++Arena::<T>::apply_ordering(p0, p1);
++crate::Arena::<T>::apply_ordering(p0, p1);
++<Arena<T>>::apply_ordering(p0, p1);
+-----------------
+src/lib.rs Arena::<T>::swap_remove_index
+deps:{"Arena::<T>::swap_remove_index":{"T":["std::marker::Sized"]}}
+candidates:{"Arena::<T>::swap_remove_index":{"T":["RUG_ANY"]}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // Arena<T>
+let mut p1 = 0usize; // None+usize
++p0.swap_remove_index(p1);
++Arena::<T>::swap_remove_index(p0, p1);
++crate::Arena::<T>::swap_remove_index(p0, p1);
++<Arena<T>>::swap_remove_index(p0, p1);
+-----------------
+src/lib.rs Arena::<T>::swap_remove
+deps:{"<&T as std::borrow::Borrow<T>>":{},"<&mut T as std::borrow::Borrow<T>>":{},"<T as std::borrow::Borrow<T>>":{},"Arena::<T>::swap_remove":{"I":["std::borrow::Borrow","std::marker::Sized"],"T":["std::marker::Sized"]}}
+candidates:{"<&T as std::borrow::Borrow<T>>":{},"<&mut T as std::borrow::Borrow<T>>":{},"<T as std::borrow::Borrow<T>>":{},"Arena::<T>::swap_remove":{"I":["std::rc::Rc<T>","<T as std::borrow::Borrow<T>>","std::path::PathBuf","std::ffi::OsString","std::borrow::Cow<'a, B>","std::boxed::Box<T, A>","std::vec::Vec<T, A>","std::sync::Arc<T>","std::string::String","std::ffi::CString"],"T":["RUG_ANY"]}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // Arena<T>
+let mut p1 = MaybeUninit::uninit().assume_init(); // I
++p0.swap_remove(p1);
++Arena::<T>::swap_remove(p0, p1);
++crate::Arena::<T>::swap_remove(p0, p1);
++<Arena<T>>::swap_remove(p0, p1);
+-----------------
+src/lib.rs Arena::<T>::get
+deps:{"<&T as std::borrow::Borrow<T>>":{},"<&mut T as std::borrow::Borrow<T>>":{},"<T as std::borrow::Borrow<T>>":{},"Arena::<T>::get":{"I":["std::marker::Sized","std::borrow::Borrow"],"T":["std::marker::Sized"]}}
+candidates:{"<&T as std::borrow::Borrow<T>>":{},"<&mut T as std::borrow::Borrow<T>>":{},"<T as std::borrow::Borrow<T>>":{},"Arena::<T>::get":{"I":["<T as std::borrow::Borrow<T>>","std::string::String","std::ffi::CString","std::vec::Vec<T, A>","<&mut T as std::borrow::Borrow<T>>","std::borrow::Cow<'a, B>","std::path::PathBuf","std::rc::Rc<T>","std::boxed::Box<T, A>","std::ffi::OsString","std::sync::Arc<T>"],"T":["RUG_ANY"]}}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // Arena<T>
+let mut p1 = MaybeUninit::uninit().assume_init(); // I
++p0.get(p1);
++Arena::<T>::get(p0, p1);
++crate::Arena::<T>::get(p0, p1);
++<Arena<T>>::get(p0, p1);
+-----------------
+src/lib.rs Arena::<T>::get_mut
+deps:{"<&T as std::borrow::Borrow<T>>":{},"<&mut T as std::borrow::Borrow<T>>":{},"<T as std::borrow::Borrow<T>>":{},"Arena::<T>::get_mut":{"I":["std::borrow::Borrow","std::marker::Sized"],"T":["std::marker::Sized"]}}
+candidates:{"<&T as std::borrow::Borrow<T>>":{},"<&mut T as std::borrow::Borrow<T>>":{},"<T as std::borrow::Borrow<T>>":{},"Arena::<T>::get_mut":{"I":["std::borrow::Cow<'a, B>","std::ffi::CString","<&mut T as std::borrow::Borrow<T>>","std::vec::Vec<T, A>","std::sync::Arc<T>","<&T as std::borrow::Borrow<T>>","std::rc::Rc<T>","std::path::PathBuf","std::boxed::Box<T, A>","std::ffi::OsString","std::string::String"],"T":["RUG_ANY"]}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // Arena<T>
+let mut p1 = MaybeUninit::uninit().assume_init(); // I
++p0.get_mut(p1);
++Arena::<T>::get_mut(p0, p1);
++crate::Arena::<T>::get_mut(p0, p1);
++<Arena<T>>::get_mut(p0, p1);
+-----------------
+src/lib.rs <Arena<T> as std::convert::Into<std::vec::Vec<T>>>::into
+deps:{"<Arena<T> as std::convert::Into<std::vec::Vec<T>>>::into":{"T":["std::marker::Sized"]}}
+candidates:{"<Arena<T> as std::convert::Into<std::vec::Vec<T>>>::into":{"T":["RUG_ANY"]}}
+let mut p0 = MaybeUninit::uninit().assume_init(); // Arena<T>
++p0.into();
++<Arena<T> as std::convert::Into<std::vec::Vec<T>>>::into(p0);
++crate::<Arena<T> as std::convert::Into<std::vec::Vec<T>>>::into(p0);
++<Arena<T>>::into(p0);

@@ -1,0 +1,111 @@
+     Removed 125 files, 57.8MiB total
+warning: /home/cdc/deepSURF-sp26-artifacts/artifact_data/dataset/erasan_crates/slice-deque-0.3.0/Cargo.toml: Found `feature = ...` in `target.'cfg(...)'.dependencies`. This key is not supported for selecting dependencies and will not work as expected. Use the [features] section instead: https://doc.rust-lang.org/cargo/reference/features.html
+   Compiling semver v1.0.26
+   Compiling libc v0.2.175
+   Compiling home v0.5.5
+   Compiling xdg v2.5.2
+   Compiling global_data v0.1.0 (/home/cdc/deepSURF-sp26-artifacts/artifact_code/global_data)
+   Compiling afl v0.15.7
+   Compiling rustc_version v0.4.1
+   Compiling slice-deque v0.3.0 (/home/cdc/deepSURF-sp26-artifacts/artifact_data/dataset/erasan_crates/slice-deque-0.3.0)
+warning: unused variable: `v`
+    --> /home/cdc/deepSURF-sp26-artifacts/artifact_data/dataset/erasan_crates/slice-deque-0.3.0/src/lib.rs:3055:17
+     |
+3055 |             let v = slice::from_raw_parts_mut(
+     |                 ^ help: if this is intentional, prefix it with an underscore: `_v`
+     |
+     = note: `#[warn(unused_variables)]` on by default
+
+warning: unused variable: `v`
+    --> /home/cdc/deepSURF-sp26-artifacts/artifact_data/dataset/erasan_crates/slice-deque-0.3.0/src/lib.rs:3061:17
+     |
+3061 |             let v = slice::from_raw_parts_mut(
+     |                 ^ help: if this is intentional, prefix it with an underscore: `_v`
+
+warning: `slice-deque` (lib) generated 2 warnings (run `cargo fix --lib -p slice-deque` to apply 2 suggestions)
+   Compiling slice-deque_fuzz_15699793873366199038 v0.1.0 (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#12-slice_deque-0.3.0/harness)
+warning: the item `TryInto` is imported redundantly
+   --> src/slice-deque_fuzz_15699793873366199038.rs:214:9
+    |
+214 |     use std::convert::TryInto;
+    |         ^^^^^^^^^^^^^^^^^^^^^
+   --> /rustc/11f32b73e0dc9287e305b5b9980d24aecdc8c17f/library/std/src/prelude/mod.rs:129:13
+    |
+    = note: the item `TryInto` is already defined here
+    |
+    = note: `#[warn(unused_imports)]` on by default
+
+warning: the item `TryInto` is imported redundantly
+   --> src/slice-deque_fuzz_15699793873366199038.rs:221:9
+    |
+221 |     use std::convert::TryInto;
+    |         ^^^^^^^^^^^^^^^^^^^^^
+   --> /rustc/11f32b73e0dc9287e305b5b9980d24aecdc8c17f/library/std/src/prelude/mod.rs:129:13
+    |
+    = note: the item `TryInto` is already defined here
+
+warning: variable `GLOBAL_DATA` should have a snake case name
+  --> src/slice-deque_fuzz_15699793873366199038.rs:16:13
+   |
+16 |         let GLOBAL_DATA = global_data.first_half;
+   |             ^^^^^^^^^^^ help: convert the identifier to snake case: `global_data`
+   |
+   = note: `#[warn(non_snake_case)]` on by default
+
+warning: `slice-deque_fuzz_15699793873366199038` (bin "slice-deque_fuzz_15699793873366199038") generated 3 warnings
+    Finished dev [unoptimized + debuginfo] target(s) in 3.06s
+CustomType0("\0\00\0")
+Front: Some(CustomType0(""))
+Front: Some(CustomType0(""))
+Front: Some(CustomType0(""))
+Front: Some(CustomType0(""))
+Front: Some(CustomType0(""))
+Front: Some(CustomType0(""))
+Front: Some(CustomType0(""))
+Front: Some(CustomType0(""))
+Front: Some(CustomType0(""))
+Front: Some(CustomType0(""))
+Front: Some(CustomType0(""))
+Back: Some(CustomType0(""))
+Front: Some(CustomType0(""))
+Front: Some(CustomType0(""))
+Front: Some(CustomType0(""))
+Front: Some(CustomType0(""))
+Front: Some(CustomType0(""))
+Front: Some(CustomType0(""))
+Front: Some(CustomType0(""))
+Front: Some(CustomType0(""))
+Front: Some(CustomType0(""))
+Front: Some(CustomType0(""))
+Front: Some(CustomType0(""))
+Front: Some(CustomType0(""))
+Front: Some(CustomType0(""))
+=================================================================
+==1385039==ERROR: AddressSanitizer: attempting double-free on 0x502000000030 in thread T0:
+    #0 0x55bee1b4c226  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#12-slice_deque-0.3.0/harness/target/x86_64-unknown-linux-gnu/debug/slice-deque_fuzz_15699793873366199038+0x9b226) (BuildId: f5a9ba9e302bb62cef59e0284826eee079847e91)
+    #1 0x55bee1b80c77  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#12-slice_deque-0.3.0/harness/target/x86_64-unknown-linux-gnu/debug/slice-deque_fuzz_15699793873366199038+0xcfc77) (BuildId: f5a9ba9e302bb62cef59e0284826eee079847e91)
+    #2 0x55bee1b8b27a  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#12-slice_deque-0.3.0/harness/target/x86_64-unknown-linux-gnu/debug/slice-deque_fuzz_15699793873366199038+0xda27a) (BuildId: f5a9ba9e302bb62cef59e0284826eee079847e91)
+    #3 0x55bee1b89ed1  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#12-slice_deque-0.3.0/harness/target/x86_64-unknown-linux-gnu/debug/slice-deque_fuzz_15699793873366199038+0xd8ed1) (BuildId: f5a9ba9e302bb62cef59e0284826eee079847e91)
+    #4 0x55bee1b797f1  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#12-slice_deque-0.3.0/harness/target/x86_64-unknown-linux-gnu/debug/slice-deque_fuzz_15699793873366199038+0xc87f1) (BuildId: f5a9ba9e302bb62cef59e0284826eee079847e91)
+    #5 0x55bee1b79840  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#12-slice_deque-0.3.0/harness/target/x86_64-unknown-linux-gnu/debug/slice-deque_fuzz_15699793873366199038+0xc8840) (BuildId: f5a9ba9e302bb62cef59e0284826eee079847e91)
+    #6 0x55bee1bab350  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#12-slice_deque-0.3.0/harness/target/x86_64-unknown-linux-gnu/debug/slice-deque_fuzz_15699793873366199038+0xfa350) (BuildId: f5a9ba9e302bb62cef59e0284826eee079847e91)
+    #7 0x55bee1b8b435  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#12-slice_deque-0.3.0/harness/target/x86_64-unknown-linux-gnu/debug/slice-deque_fuzz_15699793873366199038+0xda435) (BuildId: f5a9ba9e302bb62cef59e0284826eee079847e91)
+    #8 0x7fdf4ecfad8f  (/lib/x86_64-linux-gnu/libc.so.6+0x29d8f) (BuildId: 490fef8403240c91833978d494d39e537409b92e)
+    #9 0x7fdf4ecfae3f  (/lib/x86_64-linux-gnu/libc.so.6+0x29e3f) (BuildId: 490fef8403240c91833978d494d39e537409b92e)
+    #10 0x55bee1ac4f74  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#12-slice_deque-0.3.0/harness/target/x86_64-unknown-linux-gnu/debug/slice-deque_fuzz_15699793873366199038+0x13f74) (BuildId: f5a9ba9e302bb62cef59e0284826eee079847e91)
+
+0x502000000030 is located 0 bytes inside of 4-byte region [0x502000000030,0x502000000034)
+freed by thread T0 here:
+    #0 0x55bee1b4c226  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#12-slice_deque-0.3.0/harness/target/x86_64-unknown-linux-gnu/debug/slice-deque_fuzz_15699793873366199038+0x9b226) (BuildId: f5a9ba9e302bb62cef59e0284826eee079847e91)
+    #1 0x55bee1b80856  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#12-slice_deque-0.3.0/harness/target/x86_64-unknown-linux-gnu/debug/slice-deque_fuzz_15699793873366199038+0xcf856) (BuildId: f5a9ba9e302bb62cef59e0284826eee079847e91)
+    #2 0x55bee1b8b27a  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#12-slice_deque-0.3.0/harness/target/x86_64-unknown-linux-gnu/debug/slice-deque_fuzz_15699793873366199038+0xda27a) (BuildId: f5a9ba9e302bb62cef59e0284826eee079847e91)
+    #3 0x55bee1b797f1  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#12-slice_deque-0.3.0/harness/target/x86_64-unknown-linux-gnu/debug/slice-deque_fuzz_15699793873366199038+0xc87f1) (BuildId: f5a9ba9e302bb62cef59e0284826eee079847e91)
+
+previously allocated by thread T0 here:
+    #0 0x55bee1b4c4ce  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#12-slice_deque-0.3.0/harness/target/x86_64-unknown-linux-gnu/debug/slice-deque_fuzz_15699793873366199038+0x9b4ce) (BuildId: f5a9ba9e302bb62cef59e0284826eee079847e91)
+    #1 0x55bee1b7d0db  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#12-slice_deque-0.3.0/harness/target/x86_64-unknown-linux-gnu/debug/slice-deque_fuzz_15699793873366199038+0xcc0db) (BuildId: f5a9ba9e302bb62cef59e0284826eee079847e91)
+    #2 0x55bee1b8b27a  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#12-slice_deque-0.3.0/harness/target/x86_64-unknown-linux-gnu/debug/slice-deque_fuzz_15699793873366199038+0xda27a) (BuildId: f5a9ba9e302bb62cef59e0284826eee079847e91)
+    #3 0x55bee1b797f1  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#12-slice_deque-0.3.0/harness/target/x86_64-unknown-linux-gnu/debug/slice-deque_fuzz_15699793873366199038+0xc87f1) (BuildId: f5a9ba9e302bb62cef59e0284826eee079847e91)
+
+SUMMARY: AddressSanitizer: double-free (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#12-slice_deque-0.3.0/harness/target/x86_64-unknown-linux-gnu/debug/slice-deque_fuzz_15699793873366199038+0x9b226) (BuildId: f5a9ba9e302bb62cef59e0284826eee079847e91) 
+==1385039==ABORTING

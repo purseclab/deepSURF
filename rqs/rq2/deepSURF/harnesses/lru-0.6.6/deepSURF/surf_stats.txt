@@ -1,0 +1,79 @@
+
+Total Stats:
+------------------------------------------------------------------------------------------------------------------------------------
+* URAPI Coverage: 0/26 (0.00%).
+* Targets Compiled: 0/96 (0.00%) in [49.253469285s].
+------------------------------------------------------------------------------------------------------------------------------------
+
+Target Stats:
+------------------------------------------------------------------------------------------------------------------------------------
+* URAPIs w/ ≥ 1ft: 0/26 (0.00%).
+* Average Generation Time per Target: 0ns/0 (Na).
+
+* URAPIs w/ ≥ 2ft: 0/26 (0.00%).
+* Average Generation Time per Target: 0ns/0 (Na).
+
+* URAPIs w/ ≥ 3ft: 0/26 (0.00%).
+* Average Generation Time per Target: 0ns/0 (Na).
+
+* URAPIs w/ ≥ 4ft: 0/26 (0.00%).
+* Average Generation Time per Target: 0ns/0 (Na).
+
+* URAPIs w/o any compilable targets: 26/26 (100.00%).
+------------------------------------------------------------------------------------------------------------------------------------
+
+Detailed Results: 
+------------------------------------------------------------------------------------------------------------------------------------
+  URAPI: DefId(0:93 ~ lru[27e4]::{impl#6}::clear),
+    - Compilable Targets (0/4 ~ 0.00%):
+  URAPI: DefId(0:114 ~ lru[27e4]::{impl#8}::into_iter),
+    - Compilable Targets (0/4 ~ 0.00%):
+  URAPI: DefId(0:105 ~ lru[27e4]::{impl#7}::drop),
+    - Compilable Targets (0/4 ~ 0.00%):
+  URAPI: DefId(0:28 ~ lru[27e4]::{impl#1}::eq),
+    - 0 targets generated.
+  URAPI: DefId(0:94 ~ lru[27e4]::{impl#6}::iter),
+    - Compilable Targets (0/4 ~ 0.00%):
+  URAPI: DefId(0:190 ~ lru[27e4]::{impl#20}::next),
+    - Compilable Targets (0/8 ~ 0.00%):
+  URAPI: DefId(0:75 ~ lru[27e4]::{impl#6}::peek),
+    - Compilable Targets (0/4 ~ 0.00%):
+  URAPI: DefId(0:79 ~ lru[27e4]::{impl#6}::peek_mut),
+    - Compilable Targets (0/4 ~ 0.00%):
+  URAPI: DefId(0:88 ~ lru[27e4]::{impl#6}::pop_lru),
+    - Compilable Targets (0/4 ~ 0.00%):
+  URAPI: DefId(0:69 ~ lru[27e4]::{impl#6}::get),
+    - Compilable Targets (0/4 ~ 0.00%):
+  URAPI: DefId(0:33 ~ lru[27e4]::{impl#3}::borrow),
+    - 0 targets generated.
+  URAPI: DefId(0:197 ~ lru[27e4]::{impl#21}::next_back),
+    - Compilable Targets (0/8 ~ 0.00%):
+  URAPI: DefId(0:148 ~ lru[27e4]::{impl#13}::next),
+    - Compilable Targets (0/8 ~ 0.00%):
+  URAPI: DefId(0:24 ~ lru[27e4]::{impl#0}::hash),
+    - 0 targets generated.
+  URAPI: DefId(0:72 ~ lru[27e4]::{impl#6}::get_mut),
+    - Compilable Targets (0/4 ~ 0.00%):
+  URAPI: DefId(0:67 ~ lru[27e4]::{impl#6}::put),
+    - Compilable Targets (0/4 ~ 0.00%):
+  URAPI: DefId(0:155 ~ lru[27e4]::{impl#14}::next_back),
+    - Compilable Targets (0/8 ~ 0.00%):
+  URAPI: DefId(0:92 ~ lru[27e4]::{impl#6}::resize),
+    - Compilable Targets (0/4 ~ 0.00%):
+  URAPI: DefId(0:65 ~ lru[27e4]::{impl#6}::unbounded_with_hasher),
+    - Compilable Targets (0/1 ~ 0.00%):
+  URAPI: DefId(0:59 ~ lru[27e4]::{impl#5}::unbounded),
+    - Compilable Targets (0/1 ~ 0.00%):
+  URAPI: DefId(0:86 ~ lru[27e4]::{impl#6}::pop),
+    - Compilable Targets (0/4 ~ 0.00%):
+  URAPI: DefId(0:82 ~ lru[27e4]::{impl#6}::peek_lru),
+    - Compilable Targets (0/4 ~ 0.00%):
+  URAPI: DefId(0:122 ~ lru[27e4]::{impl#9}::into_iter),
+    - Compilable Targets (0/4 ~ 0.00%):
+  URAPI: DefId(0:58 ~ lru[27e4]::{impl#5}::new),
+    - Compilable Targets (0/1 ~ 0.00%):
+  URAPI: DefId(0:96 ~ lru[27e4]::{impl#6}::iter_mut),
+    - Compilable Targets (0/4 ~ 0.00%):
+  URAPI: DefId(0:64 ~ lru[27e4]::{impl#6}::with_hasher),
+    - Compilable Targets (0/1 ~ 0.00%):
+------------------------------------------------------------------------------------------------------------------------------------

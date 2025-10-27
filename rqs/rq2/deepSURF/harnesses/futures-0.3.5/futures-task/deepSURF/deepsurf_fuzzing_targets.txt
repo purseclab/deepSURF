@@ -1,0 +1,163 @@
+deepSURF: Generated Targets to be Fuzzed
+------------------------------------------------------------------------------------------------------------------------------------
+  StableURAPI: waker::/home/cdc/SURF/deepSURF-big-experiment-harnesses/futures-0.3.5/futures-task/src/waker.rs::19,
+    - URAPI: DefId(0:300 ~ futures_task[b35c]::waker_ref::{impl#0}::new),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * futures-task_fuzz_12565070162269773759_deepseek-r1_turn3
+      * futures-task_fuzz_4764600652906951930_deepseek-r1_turn4
+      * futures-task_fuzz_11575364300756002959_deepseek-r1_turn5
+      * futures-task_fuzz_604855777414169773_deepseek-r1_turn4
+      * futures-task_fuzz_11465404864342661839_deepseek-r1_turn5
+  StableURAPI: from::/home/cdc/SURF/deepSURF-big-experiment-harnesses/futures-0.3.5/futures-task/src/future_obj.rs::298,
+    - URAPI: DefId(0:274 ~ futures_task[b35c]::waker::waker),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * futures-task_fuzz_4679473458943732427_deepseek-r1_turn4
+      * futures-task_fuzz_18303661352126259562_deepseek-r1_turn4
+      * futures-task_fuzz_12565070162269773759_deepseek-r1_turn3
+      * futures-task_fuzz_11575364300756002959_deepseek-r1_turn5
+  StableURAPI: into_raw::/home/cdc/SURF/deepSURF-big-experiment-harnesses/futures-0.3.5/futures-task/src/future_obj.rs::205,
+    - URAPI: DefId(0:157 ~ futures_task[b35c]::future_obj::{impl#14}::into_raw),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * futures-task_fuzz_11575364300756002959_deepseek-r1_turn5
+      * futures-task_fuzz_16621608245011408565_deepseek-r1_turn3
+  StableURAPI: new::/home/cdc/SURF/deepSURF-big-experiment-harnesses/futures-0.3.5/futures-task/src/future_obj.rs::116,
+    - URAPI: DefId(0:187 ~ futures_task[b35c]::future_obj::if_alloc::{impl#4}::into_raw),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * futures-task_fuzz_604855777414169773_deepseek-r1_turn4
+      * futures-task_fuzz_10589439041683019434_deepseek-r1_turn4
+      * futures-task_fuzz_11575364300756002959_deepseek-r1_turn5
+      * futures-task_fuzz_849168407269644986_deepseek-r1_turn3
+      * futures-task_fuzz_11465404864342661839_deepseek-r1_turn5
+      * futures-task_fuzz_12189511313085332551_deepseek-r1_turn4
+      * futures-task_fuzz_16621608245011408565_deepseek-r1_turn3
+      * futures-task_fuzz_12565070162269773759_deepseek-r1_turn3
+  StableURAPI: noop_waker::/home/cdc/SURF/deepSURF-big-experiment-harnesses/futures-0.3.5/futures-task/src/noop_waker.rs::31,
+    - URAPI: DefId(0:237 ~ futures_task[b35c]::noop_waker::noop_waker),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * futures-task_fuzz_11926959445228835321_deepseek-r1_turn4
+      * futures-task_fuzz_11575364300756002959_deepseek-r1_turn5
+      * futures-task_fuzz_12189511313085332551_deepseek-r1_turn4
+      * futures-task_fuzz_18303661352126259562_deepseek-r1_turn4
+      * futures-task_fuzz_4764600652906951930_deepseek-r1_turn4
+      * futures-task_fuzz_11465404864342661839_deepseek-r1_turn5
+      * futures-task_fuzz_604855777414169773_deepseek-r1_turn4
+      * futures-task_fuzz_5552014203282517296_deepseek-r1_turn5
+      * futures-task_fuzz_10589439041683019434_deepseek-r1_turn4
+      * futures-task_fuzz_16621608245011408565_deepseek-r1_turn3
+      * futures-task_fuzz_849168407269644986_deepseek-r1_turn3
+      * futures-task_fuzz_4679473458943732427_deepseek-r1_turn4
+      * futures-task_fuzz_12565070162269773759_deepseek-r1_turn3
+      * futures-task_fuzz_18074933619029829958_deepseek-r1_turn2
+      * futures-task_fuzz_15000647286004402520_deepseek-r1_turn5
+  StableURAPI: poll::/home/cdc/SURF/deepSURF-big-experiment-harnesses/futures-0.3.5/futures-task/src/future_obj.rs::132,
+    - URAPI: DefId(0:197 ~ futures_task[b35c]::future_obj::if_alloc::{impl#6}::from),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * futures-task_fuzz_5552014203282517296_deepseek-r1_turn5
+      * futures-task_fuzz_18303661352126259562_deepseek-r1_turn4
+      * futures-task_fuzz_11926959445228835321_deepseek-r1_turn4
+      * futures-task_fuzz_11465404864342661839_deepseek-r1_turn5
+      * futures-task_fuzz_10589439041683019434_deepseek-r1_turn4
+      * futures-task_fuzz_11575364300756002959_deepseek-r1_turn5
+      * futures-task_fuzz_604855777414169773_deepseek-r1_turn4
+      * futures-task_fuzz_12565070162269773759_deepseek-r1_turn3
+  StableURAPI: waker_ref::/home/cdc/SURF/deepSURF-big-experiment-harnesses/futures-0.3.5/futures-task/src/waker_ref.rs::58,
+    - URAPI: DefId(0:300 ~ futures_task[b35c]::waker_ref::{impl#0}::new),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * futures-task_fuzz_4764600652906951930_deepseek-r1_turn4
+      * futures-task_fuzz_11926959445228835321_deepseek-r1_turn4
+      * futures-task_fuzz_10589439041683019434_deepseek-r1_turn4
+      * futures-task_fuzz_11465404864342661839_deepseek-r1_turn5
+      * futures-task_fuzz_12565070162269773759_deepseek-r1_turn3
+      * futures-task_fuzz_604855777414169773_deepseek-r1_turn4
+      * futures-task_fuzz_849168407269644986_deepseek-r1_turn3
+      * futures-task_fuzz_11575364300756002959_deepseek-r1_turn5
+  StableURAPI: from::/home/cdc/SURF/deepSURF-big-experiment-harnesses/futures-0.3.5/futures-task/src/future_obj.rs::334,
+    - URAPI: DefId(0:187 ~ futures_task[b35c]::future_obj::if_alloc::{impl#4}::into_raw),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * futures-task_fuzz_10589439041683019434_deepseek-r1_turn4
+      * futures-task_fuzz_11926959445228835321_deepseek-r1_turn4
+  StableURAPI: from::/home/cdc/SURF/deepSURF-big-experiment-harnesses/futures-0.3.5/futures-task/src/future_obj.rs::322,
+    - URAPI: DefId(0:187 ~ futures_task[b35c]::future_obj::if_alloc::{impl#4}::into_raw),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * futures-task_fuzz_11575364300756002959_deepseek-r1_turn5
+      * futures-task_fuzz_604855777414169773_deepseek-r1_turn4
+      * futures-task_fuzz_15000647286004402520_deepseek-r1_turn5
+      * futures-task_fuzz_10589439041683019434_deepseek-r1_turn4
+      * futures-task_fuzz_4679473458943732427_deepseek-r1_turn4
+  StableURAPI: from::/home/cdc/SURF/deepSURF-big-experiment-harnesses/futures-0.3.5/futures-task/src/future_obj.rs::304,
+    - URAPI: DefId(0:197 ~ futures_task[b35c]::future_obj::if_alloc::{impl#6}::from),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * futures-task_fuzz_5552014203282517296_deepseek-r1_turn5
+  StableURAPI: from::/home/cdc/SURF/deepSURF-big-experiment-harnesses/futures-0.3.5/futures-task/src/future_obj.rs::328,
+    - URAPI: DefId(0:197 ~ futures_task[b35c]::future_obj::if_alloc::{impl#6}::from),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * futures-task_fuzz_5552014203282517296_deepseek-r1_turn5
+      * futures-task_fuzz_849168407269644986_deepseek-r1_turn3
+  StableURAPI: new::/home/cdc/SURF/deepSURF-big-experiment-harnesses/futures-0.3.5/futures-task/src/future_obj.rs::45,
+    - URAPI: DefId(0:300 ~ futures_task[b35c]::waker_ref::{impl#0}::new),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * futures-task_fuzz_11575364300756002959_deepseek-r1_turn5
+      * futures-task_fuzz_4764600652906951930_deepseek-r1_turn4
+      * futures-task_fuzz_16621608245011408565_deepseek-r1_turn3
+      * futures-task_fuzz_12565070162269773759_deepseek-r1_turn3
+      * futures-task_fuzz_12189511313085332551_deepseek-r1_turn4
+      * futures-task_fuzz_18074933619029829958_deepseek-r1_turn2
+  StableURAPI: from::/home/cdc/SURF/deepSURF-big-experiment-harnesses/futures-0.3.5/futures-task/src/future_obj.rs::310,
+    - URAPI: DefId(0:207 ~ futures_task[b35c]::future_obj::if_alloc::{impl#9}::from),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * futures-task_fuzz_18303661352126259562_deepseek-r1_turn4
+      * futures-task_fuzz_11926959445228835321_deepseek-r1_turn4
+  StableURAPI: poll::/home/cdc/SURF/deepSURF-big-experiment-harnesses/futures-0.3.5/futures-task/src/future_obj.rs::84,
+    - URAPI: DefId(0:197 ~ futures_task[b35c]::future_obj::if_alloc::{impl#6}::from),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * futures-task_fuzz_849168407269644986_deepseek-r1_turn3
+      * futures-task_fuzz_4679473458943732427_deepseek-r1_turn4
+      * futures-task_fuzz_5552014203282517296_deepseek-r1_turn5
+      * futures-task_fuzz_12189511313085332551_deepseek-r1_turn4
+      * futures-task_fuzz_16621608245011408565_deepseek-r1_turn3
+      * futures-task_fuzz_15000647286004402520_deepseek-r1_turn5
+      * futures-task_fuzz_4764600652906951930_deepseek-r1_turn4
+      * futures-task_fuzz_12565070162269773759_deepseek-r1_turn3
+      * futures-task_fuzz_10589439041683019434_deepseek-r1_turn4
+      * futures-task_fuzz_11575364300756002959_deepseek-r1_turn5
+      * futures-task_fuzz_18074933619029829958_deepseek-r1_turn2
+      * futures-task_fuzz_11926959445228835321_deepseek-r1_turn4
+      * futures-task_fuzz_604855777414169773_deepseek-r1_turn4
+  StableURAPI: new::/home/cdc/SURF/deepSURF-big-experiment-harnesses/futures-0.3.5/futures-task/src/waker_ref.rs::21,
+    - URAPI: DefId(0:300 ~ futures_task[b35c]::waker_ref::{impl#0}::new),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * futures-task_fuzz_11575364300756002959_deepseek-r1_turn5
+      * futures-task_fuzz_15000647286004402520_deepseek-r1_turn5
+      * futures-task_fuzz_11465404864342661839_deepseek-r1_turn5
+      * futures-task_fuzz_4764600652906951930_deepseek-r1_turn4
+------------------------------------------------------------------------------------------------------------------------------------

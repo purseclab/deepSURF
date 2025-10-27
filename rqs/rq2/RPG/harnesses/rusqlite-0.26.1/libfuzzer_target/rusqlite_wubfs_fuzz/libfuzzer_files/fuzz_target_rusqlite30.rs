@@ -1,0 +1,15 @@
+#![no_main]
+#[macro_use]
+extern crate libfuzzer_sys;
+extern crate rusqlite;
+
+fn test_function30() {
+    let _local0 = rusqlite::OpenFlags::all();
+    rusqlite::OpenFlags::is_empty(&(_local0));
+}
+
+fuzz_target!(|data: &[u8]| {
+    //actual body emit
+    if data.len() != 0 {return;}
+    test_function30();
+});

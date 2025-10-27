@@ -1,0 +1,301 @@
+
+Total Stats:
+------------------------------------------------------------------------------------------------------------------------------------
+* URAPI Coverage: 0/57 (0.00%).
+* Targets Compiled: 136/252 (53.97%) in [145.483102322s].
+------------------------------------------------------------------------------------------------------------------------------------
+
+Target Stats:
+------------------------------------------------------------------------------------------------------------------------------------
+* URAPIs w/ ≥ 1ft: 43/57 (75.44%).
+* Average Generation Time per Target: 372.394132349s/43 (8.660328659s).
+
+* URAPIs w/ ≥ 2ft: 31/57 (54.39%).
+* Average Generation Time per Target: 704.966316885s/31 (22.740848931s).
+
+* URAPIs w/ ≥ 3ft: 31/57 (54.39%).
+* Average Generation Time per Target: 1193.253877784s/31 (38.492060573s).
+
+* URAPIs w/ ≥ 4ft: 31/57 (54.39%).
+* Average Generation Time per Target: 1631.650115505s/31 (52.633874693s).
+
+* URAPIs w/o any compilable targets: 14/57 (24.56%).
+------------------------------------------------------------------------------------------------------------------------------------
+
+Detailed Results: 
+------------------------------------------------------------------------------------------------------------------------------------
+  URAPI: DefId(0:137 ~ stackvector[4fac]::{impl#14}::deref_mut),
+    - Compilable Targets (4/4 ~ 100.00%):
+        * stackvector_fuzz_8756002864248994646 [8.870773057s]
+        * stackvector_fuzz_2589817699870735783 [25.138854492s]
+        * stackvector_fuzz_6432791749692284890 [41.591348383s]
+        * stackvector_fuzz_13617365293552337532 [56.639765652s]
+  URAPI: DefId(0:227 ~ stackvector[4fac]::{impl#39}::next_back),
+    - 0 targets generated.
+  URAPI: DefId(0:116 ~ stackvector[4fac]::{impl#10}::dedup_by),
+    - Compilable Targets (4/4 ~ 100.00%):
+        * stackvector_fuzz_1133352418763092150 [8.899944463s]
+        * stackvector_fuzz_11035110016171740427 [25.156578916s]
+        * stackvector_fuzz_18295463031605487564 [41.770408883s]
+        * stackvector_fuzz_14608140118909900237 [56.562307639s]
+  URAPI: DefId(0:171 ~ stackvector[4fac]::{impl#24}::push),
+    - Compilable Targets (4/4 ~ 100.00%):
+        * stackvector_fuzz_2829301437877528848 [9.01059818s]
+        * stackvector_fuzz_18268571644276680484 [25.289596694s]
+        * stackvector_fuzz_10409522061700943284 [41.77099391s]
+        * stackvector_fuzz_10763421632110149737 [56.590938421s]
+  URAPI: DefId(0:189 ~ stackvector[4fac]::{impl#29}::drop),
+    - Compilable Targets (4/4 ~ 100.00%):
+        * stackvector_fuzz_5864352500924157910 [8.991336559s]
+        * stackvector_fuzz_5155588629450190901 [25.208507777s]
+        * stackvector_fuzz_2890370602698262314 [41.729893386s]
+        * stackvector_fuzz_12018968006052604655 [56.67325987s]
+  URAPI: DefId(0:105 ~ stackvector[4fac]::{impl#10}::clear),
+    - Compilable Targets (4/4 ~ 100.00%):
+        * stackvector_fuzz_17878145677878894249 [8.974844446s]
+        * stackvector_fuzz_4027530101404319046 [25.139649985s]
+        * stackvector_fuzz_10484364459170114547 [41.865601725s]
+        * stackvector_fuzz_15220327137037263363 [56.694727794s]
+  URAPI: DefId(0:92 ~ stackvector[4fac]::{impl#10}::from_buf_and_len),
+    - Compilable Targets (1/1 ~ 100.00%):
+        * stackvector_fuzz_8720342702680450058 [8.722737866s]
+  URAPI: DefId(0:126 ~ stackvector[4fac]::{impl#11}::extend_from_slice),
+    - Compilable Targets (1/4 ~ 25.00%):
+        * stackvector_fuzz_11466254899731805805 [18.61017935s]
+  URAPI: DefId(0:541 ~ stackvector[4fac]::{impl#91}::index_mut),
+    - Compilable Targets (0/4 ~ 0.00%):
+  URAPI: DefId(0:183 ~ stackvector[4fac]::{impl#27}::fmt),
+    - Compilable Targets (0/4 ~ 0.00%):
+  URAPI: DefId(0:192 ~ stackvector[4fac]::{impl#30}::clone),
+    - Compilable Targets (4/4 ~ 100.00%):
+        * stackvector_fuzz_15387621949502429022 [3.210877932s]
+        * stackvector_fuzz_7785892636116910774 [15.28384904s]
+        * stackvector_fuzz_12117852888549073382 [29.717950759s]
+        * stackvector_fuzz_3475609402613657665 [44.64971212s]
+  URAPI: DefId(0:108 ~ stackvector[4fac]::{impl#10}::insert_many),
+    - Compilable Targets (4/4 ~ 100.00%):
+        * stackvector_fuzz_5361011160446671523 [3.223702067s]
+        * stackvector_fuzz_7605226412578650426 [17.402462826s]
+        * stackvector_fuzz_3308299373018660234 [33.030160591s]
+        * stackvector_fuzz_6253848885849292976 [47.888335967s]
+  URAPI: DefId(0:111 ~ stackvector[4fac]::{impl#10}::into_inner),
+    - Compilable Targets (4/4 ~ 100.00%):
+        * stackvector_fuzz_8765947824577245476 [9.044164388s]
+        * stackvector_fuzz_6613763351163879630 [25.164362455s]
+        * stackvector_fuzz_15190775697200664161 [41.597029027s]
+        * stackvector_fuzz_4179810523019983145 [56.921740674s]
+  URAPI: DefId(0:146 ~ stackvector[4fac]::{impl#17}::borrow),
+    - Compilable Targets (0/4 ~ 0.00%):
+  URAPI: DefId(0:196 ~ stackvector[4fac]::{impl#31}::eq),
+    - Compilable Targets (0/16 ~ 0.00%):
+  URAPI: DefId(0:208 ~ stackvector[4fac]::{impl#35}::hash),
+    - Compilable Targets (0/4 ~ 0.00%):
+  URAPI: DefId(0:134 ~ stackvector[4fac]::{impl#13}::deref),
+    - Compilable Targets (4/4 ~ 100.00%):
+        * stackvector_fuzz_4601805490335329973 [4.175907165s]
+        * stackvector_fuzz_2300521044453154378 [21.393767827s]
+        * stackvector_fuzz_6002766800208546633 [36.093429972s]
+        * stackvector_fuzz_17898848207861499944 [45.177641s]
+  URAPI: DefId(0:545 ~ stackvector[4fac]::{impl#92}::index),
+    - 0 targets generated.
+  URAPI: DefId(0:506 ~ stackvector[4fac]::{impl#81}::index_mut),
+    - Compilable Targets (4/4 ~ 100.00%):
+        * stackvector_fuzz_15687742769077288857 [9.016780912s]
+        * stackvector_fuzz_13491227762973814938 [25.143305548s]
+        * stackvector_fuzz_15991635542044108316 [41.716195884s]
+        * stackvector_fuzz_15534794333170187771 [56.716536173s]
+  URAPI: DefId(0:223 ~ stackvector[4fac]::{impl#38}::next),
+    - 0 targets generated.
+  URAPI: DefId(0:513 ~ stackvector[4fac]::{impl#83}::index_mut),
+    - 0 targets generated.
+  URAPI: DefId(0:153 ~ stackvector[4fac]::{impl#19}::write_all),
+    - Compilable Targets (0/4 ~ 0.00%):
+  URAPI: DefId(0:129 ~ stackvector[4fac]::{impl#12}::resize),
+    - Compilable Targets (4/4 ~ 100.00%):
+        * stackvector_fuzz_6387818281162796865 [9.034730791s]
+        * stackvector_fuzz_7053642664043604418 [25.104014109s]
+        * stackvector_fuzz_6562582759669690006 [41.687809806s]
+        * stackvector_fuzz_1062210566331910384 [56.763433307s]
+  URAPI: DefId(0:246 ~ stackvector[4fac]::{impl#43}::into_iter),
+    - Compilable Targets (4/4 ~ 100.00%):
+        * stackvector_fuzz_14285429922058602946 [8.902129056s]
+        * stackvector_fuzz_5466123126742578622 [25.339122053s]
+        * stackvector_fuzz_4231072590757155341 [41.52646732s]
+        * stackvector_fuzz_14929622133672781955 [56.629251392s]
+  URAPI: DefId(0:168 ~ stackvector[4fac]::{impl#23}::extend_from_slice),
+    - Compilable Targets (1/4 ~ 25.00%):
+        * stackvector_fuzz_6840235604862057545 [18.291838705s]
+  URAPI: DefId(0:175 ~ stackvector[4fac]::{impl#25}::from_iter),
+    - Compilable Targets (1/1 ~ 100.00%):
+        * stackvector_fuzz_18272984422029028442 [8.88498639s]
+  URAPI: DefId(0:510 ~ stackvector[4fac]::{impl#82}::index),
+    - 0 targets generated.
+  URAPI: DefId(0:240 ~ stackvector[4fac]::{impl#42}::into_iter),
+    - Compilable Targets (4/4 ~ 100.00%):
+        * stackvector_fuzz_13522714354933573887 [9.021824523s]
+        * stackvector_fuzz_6948470361528982398 [25.077821171s]
+        * stackvector_fuzz_10619175175989666215 [41.781464652s]
+        * stackvector_fuzz_5069924531309879918 [56.801428707s]
+  URAPI: DefId(0:548 ~ stackvector[4fac]::{impl#93}::index_mut),
+    - 0 targets generated.
+  URAPI: DefId(0:205 ~ stackvector[4fac]::{impl#34}::cmp),
+    - Compilable Targets (0/16 ~ 0.00%):
+  URAPI: DefId(0:531 ~ stackvector[4fac]::{impl#88}::index),
+    - 0 targets generated.
+  URAPI: DefId(0:112 ~ stackvector[4fac]::{impl#10}::retain),
+    - Compilable Targets (4/4 ~ 100.00%):
+        * stackvector_fuzz_10439201340568467309 [5.028247496s]
+        * stackvector_fuzz_15984331979680738079 [20.748482506s]
+        * stackvector_fuzz_11943535127350547832 [37.88023272s]
+        * stackvector_fuzz_15932489130275103356 [48.377892187s]
+  URAPI: DefId(0:520 ~ stackvector[4fac]::{impl#85}::index_mut),
+    - 0 targets generated.
+  URAPI: DefId(0:104 ~ stackvector[4fac]::{impl#10}::swap_remove),
+    - Compilable Targets (4/4 ~ 100.00%):
+        * stackvector_fuzz_386141492030817416 [5.843274203s]
+        * stackvector_fuzz_11965387572616407761 [21.875269389s]
+        * stackvector_fuzz_3139450092601185899 [33.139684165s]
+        * stackvector_fuzz_12347296661653827341 [45.156125876s]
+  URAPI: DefId(0:172 ~ stackvector[4fac]::{impl#24}::pop),
+    - Compilable Targets (4/4 ~ 100.00%):
+        * stackvector_fuzz_7072258762224172952 [8.944638647s]
+        * stackvector_fuzz_8751360634109609852 [25.182882317s]
+        * stackvector_fuzz_1735795805191596751 [41.865425865s]
+        * stackvector_fuzz_5893399367082378264 [56.735365516s]
+  URAPI: DefId(0:100 ~ stackvector[4fac]::{impl#10}::pop),
+    - Compilable Targets (4/4 ~ 100.00%):
+        * stackvector_fuzz_14919117556697046749 [7.403063792s]
+        * stackvector_fuzz_5709739043566104794 [18.324336413s]
+        * stackvector_fuzz_1177600818445753478 [34.021487162s]
+        * stackvector_fuzz_726996598253745130 [50.975259488s]
+  URAPI: DefId(0:103 ~ stackvector[4fac]::{impl#10}::as_mut_slice),
+    - Compilable Targets (4/4 ~ 100.00%):
+        * stackvector_fuzz_12170256754748610967 [6.118288679s]
+        * stackvector_fuzz_17596664623794827264 [21.933832404s]
+        * stackvector_fuzz_4277433463935861520 [31.973200741s]
+        * stackvector_fuzz_13518696812374763738 [40.231744679s]
+  URAPI: DefId(0:149 ~ stackvector[4fac]::{impl#18}::borrow_mut),
+    - Compilable Targets (0/4 ~ 0.00%):
+  URAPI: DefId(0:101 ~ stackvector[4fac]::{impl#10}::truncate),
+    - Compilable Targets (4/4 ~ 100.00%):
+        * stackvector_fuzz_3887645148066974827 [7.479496371s]
+        * stackvector_fuzz_3520834908772055435 [21.846628534s]
+        * stackvector_fuzz_17152807945536709990 [37.119830804s]
+        * stackvector_fuzz_7102848437217084438 [52.608018861s]
+  URAPI: DefId(0:503 ~ stackvector[4fac]::{impl#80}::index),
+    - Compilable Targets (4/4 ~ 100.00%):
+        * stackvector_fuzz_5693500292243989946 [3.998441819s]
+        * stackvector_fuzz_4135173842284452567 [19.4184503s]
+        * stackvector_fuzz_13651845361219765862 [31.034958875s]
+        * stackvector_fuzz_876656486374854259 [45.541311199s]
+  URAPI: DefId(0:534 ~ stackvector[4fac]::{impl#89}::index_mut),
+    - 0 targets generated.
+  URAPI: DefId(0:517 ~ stackvector[4fac]::{impl#84}::index),
+    - 0 targets generated.
+  URAPI: DefId(0:98 ~ stackvector[4fac]::{impl#10}::drain),
+    - Compilable Targets (4/4 ~ 100.00%):
+        * stackvector_fuzz_13743587477177064166 [9.038534791s]
+        * stackvector_fuzz_9295174090609048234 [25.188110328s]
+        * stackvector_fuzz_8477447205715022441 [41.820877661s]
+        * stackvector_fuzz_6563413982982117087 [56.721807601s]
+  URAPI: DefId(0:99 ~ stackvector[4fac]::{impl#10}::push),
+    - Compilable Targets (4/4 ~ 100.00%):
+        * stackvector_fuzz_12717357009445087991 [8.909737636s]
+        * stackvector_fuzz_16316151970256279411 [24.103843252s]
+        * stackvector_fuzz_17433646240470741564 [40.456511508s]
+        * stackvector_fuzz_12560903239678315700 [55.821400069s]
+  URAPI: DefId(0:538 ~ stackvector[4fac]::{impl#90}::index),
+    - Compilable Targets (0/4 ~ 0.00%):
+  URAPI: DefId(0:124 ~ stackvector[4fac]::{impl#11}::from_slice),
+    - Compilable Targets (1/1 ~ 100.00%):
+        * stackvector_fuzz_8293999904045853434 [3.788644721s]
+  URAPI: DefId(0:179 ~ stackvector[4fac]::{impl#26}::extend),
+    - Compilable Targets (4/4 ~ 100.00%):
+        * stackvector_fuzz_5379527204253546599 [8.994687489s]
+        * stackvector_fuzz_16952462536499473376 [25.145220402s]
+        * stackvector_fuzz_17775476573354462034 [41.702832066s]
+        * stackvector_fuzz_10736986607172046915 [56.719595043s]
+  URAPI: DefId(0:234 ~ stackvector[4fac]::{impl#41}::into_iter),
+    - Compilable Targets (4/4 ~ 100.00%):
+        * stackvector_fuzz_4877859684024786830 [7.977025543s]
+        * stackvector_fuzz_98941469919621020 [23.172598133s]
+        * stackvector_fuzz_10948154163489960074 [39.423538241s]
+        * stackvector_fuzz_14382507804215906258 [54.91359268s]
+  URAPI: DefId(0:202 ~ stackvector[4fac]::{impl#33}::partial_cmp),
+    - Compilable Targets (0/16 ~ 0.00%):
+  URAPI: DefId(0:107 ~ stackvector[4fac]::{impl#10}::insert),
+    - Compilable Targets (4/4 ~ 100.00%):
+        * stackvector_fuzz_5929116001263052728 [4.345613366s]
+        * stackvector_fuzz_3218281109330290821 [19.653038594s]
+        * stackvector_fuzz_1399612797583377946 [36.629224158s]
+        * stackvector_fuzz_8661892153794758961 [51.13820928s]
+  URAPI: DefId(0:114 ~ stackvector[4fac]::{impl#10}::dedup),
+    - Compilable Targets (0/4 ~ 0.00%):
+  URAPI: DefId(0:106 ~ stackvector[4fac]::{impl#10}::remove),
+    - Compilable Targets (4/4 ~ 100.00%):
+        * stackvector_fuzz_16072014814531661224 [8.900142748s]
+        * stackvector_fuzz_3916653612625725270 [25.291112357s]
+        * stackvector_fuzz_18404958049852584870 [41.86550109s]
+        * stackvector_fuzz_10519156560110265339 [56.784677893s]
+  URAPI: DefId(0:102 ~ stackvector[4fac]::{impl#10}::as_slice),
+    - Compilable Targets (4/4 ~ 100.00%):
+        * stackvector_fuzz_207653652943302108 [8.785647758s]
+        * stackvector_fuzz_1487552258526499770 [24.058250967s]
+        * stackvector_fuzz_8607648342459401952 [40.127994578s]
+        * stackvector_fuzz_12163268344749236336 [50.661056969s]
+  URAPI: DefId(0:118 ~ stackvector[4fac]::{impl#10}::dedup_by_key),
+    - Compilable Targets (4/4 ~ 100.00%):
+        * stackvector_fuzz_6225612722303663924 [8.255446272s]
+        * stackvector_fuzz_3154431880589766770 [23.452840298s]
+        * stackvector_fuzz_6854523632695447820 [39.793010096s]
+        * stackvector_fuzz_6058408701718346441 [55.258361194s]
+  URAPI: DefId(0:524 ~ stackvector[4fac]::{impl#86}::index),
+    - 0 targets generated.
+  URAPI: DefId(0:527 ~ stackvector[4fac]::{impl#87}::index_mut),
+    - 0 targets generated.
+  URAPI: DefId(0:186 ~ stackvector[4fac]::{impl#28}::default),
+    - Compilable Targets (0/1 ~ 0.00%):
+  URAPI: DefId(0:125 ~ stackvector[4fac]::{impl#11}::insert_from_slice),
+    - Compilable Targets (1/4 ~ 25.00%):
+        * stackvector_fuzz_5490813715254529195 [18.667523225s]
+  URAPI: DefId(0:152 ~ stackvector[4fac]::{impl#19}::write),
+    - Compilable Targets (0/4 ~ 0.00%):
+  URAPI: DefId(0:161 ~ stackvector[4fac]::{impl#21}::from),
+    - Compilable Targets (1/1 ~ 100.00%):
+        * stackvector_fuzz_12454574599783436662 [5.017550599s]
+  URAPI: DefId(0:143 ~ stackvector[4fac]::{impl#16}::as_mut),
+    - Compilable Targets (4/4 ~ 100.00%):
+        * stackvector_fuzz_6219935527035397465 [4.117518724s]
+        * stackvector_fuzz_8581403068014558416 [16.661455505s]
+        * stackvector_fuzz_7857208916756614966 [32.010436305s]
+        * stackvector_fuzz_16343663500093022246 [45.047551159s]
+  URAPI: DefId(0:89 ~ stackvector[4fac]::{impl#10}::from_vec),
+    - Compilable Targets (1/1 ~ 100.00%):
+        * stackvector_fuzz_3602557064392514011 [7.031083005s]
+  URAPI: DefId(0:110 ~ stackvector[4fac]::{impl#10}::into_vec),
+    - Compilable Targets (4/4 ~ 100.00%):
+        * stackvector_fuzz_5509731358067848097 [8.110201418s]
+        * stackvector_fuzz_6335871418565220526 [23.383280459s]
+        * stackvector_fuzz_8181692470598937676 [39.634400833s]
+        * stackvector_fuzz_11847640951056047814 [54.993337555s]
+  URAPI: DefId(0:130 ~ stackvector[4fac]::{impl#12}::from_elem),
+    - Compilable Targets (1/1 ~ 100.00%):
+        * stackvector_fuzz_5716750430718252371 [7.840241429s]
+  URAPI: DefId(0:88 ~ stackvector[4fac]::{impl#10}::new),
+    - Compilable Targets (1/1 ~ 100.00%):
+        * stackvector_fuzz_13737676511509076796 [7.520555752s]
+  URAPI: DefId(0:140 ~ stackvector[4fac]::{impl#15}::as_ref),
+    - Compilable Targets (4/4 ~ 100.00%):
+        * stackvector_fuzz_11878755052499793458 [3.944818499s]
+        * stackvector_fuzz_17988997587823749758 [19.684791834s]
+        * stackvector_fuzz_13268375226663730949 [36.875976618s]
+        * stackvector_fuzz_18394737639720915302 [49.25572954s]
+  URAPI: DefId(0:56 ~ stackvector[4fac]::{impl#4}::next),
+    - Compilable Targets (1/4 ~ 25.00%):
+        * stackvector_fuzz_18185331441861852835 [19.203984652s]
+  URAPI: DefId(0:62 ~ stackvector[4fac]::{impl#5}::next_back),
+    - Compilable Targets (1/4 ~ 25.00%):
+        * stackvector_fuzz_16327940949246405587 [22.242367865s]
+  URAPI: DefId(0:197 ~ stackvector[4fac]::{impl#31}::ne),
+    - Compilable Targets (0/16 ~ 0.00%):
+------------------------------------------------------------------------------------------------------------------------------------

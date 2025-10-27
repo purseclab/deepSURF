@@ -1,0 +1,26 @@
+ ./fuzz_transform/target/release/fuzz_transform /home/cdc/rug_on_erasan_after_bolero/qwutils-0.3.0/./src/arc_slice/mod.rs
+ ./fuzz_transform/target/release/fuzz_transform /home/cdc/rug_on_erasan_after_bolero/qwutils-0.3.0/./src/arc_slice/imp.rs
+ ./fuzz_transform/target/release/fuzz_transform /home/cdc/rug_on_erasan_after_bolero/qwutils-0.3.0/./src/static_stor/mod.rs
+ ./fuzz_transform/target/release/fuzz_transform /home/cdc/rug_on_erasan_after_bolero/qwutils-0.3.0/./src/static_stor/test.rs
+ ./fuzz_transform/target/release/fuzz_transform /home/cdc/rug_on_erasan_after_bolero/qwutils-0.3.0/./src/macros.rs
+ ./fuzz_transform/target/release/fuzz_transform /home/cdc/rug_on_erasan_after_bolero/qwutils-0.3.0/./src/from_into.rs
+ ./fuzz_transform/target/release/fuzz_transform /home/cdc/rug_on_erasan_after_bolero/qwutils-0.3.0/./src/scoped/macros.rs
+ ./fuzz_transform/target/release/fuzz_transform /home/cdc/rug_on_erasan_after_bolero/qwutils-0.3.0/./src/scoped/mod.rs
+ ./fuzz_transform/target/release/fuzz_transform /home/cdc/rug_on_erasan_after_bolero/qwutils-0.3.0/./src/scoped/imp/interior.rs
+ ./fuzz_transform/target/release/fuzz_transform /home/cdc/rug_on_erasan_after_bolero/qwutils-0.3.0/./src/scoped/imp/scoped.rs
+ ./fuzz_transform/target/release/fuzz_transform /home/cdc/rug_on_erasan_after_bolero/qwutils-0.3.0/./src/scoped/imp/mod.rs
+ ./fuzz_transform/target/release/fuzz_transform /home/cdc/rug_on_erasan_after_bolero/qwutils-0.3.0/./src/rope_vec/mod.rs
+ ./fuzz_transform/target/release/fuzz_transform /home/cdc/rug_on_erasan_after_bolero/qwutils-0.3.0/./src/refc/mod.rs
+ ./fuzz_transform/target/release/fuzz_transform /home/cdc/rug_on_erasan_after_bolero/qwutils-0.3.0/./src/refc/imp.rs
+ ./fuzz_transform/target/release/fuzz_transform /home/cdc/rug_on_erasan_after_bolero/qwutils-0.3.0/./src/lib.rs
+ ./fuzz_transform/target/release/fuzz_transform /home/cdc/rug_on_erasan_after_bolero/qwutils-0.3.0/./src/not_empty.rs
+ ./fuzz_transform/target/release/fuzz_transform /home/cdc/rug_on_erasan_after_bolero/qwutils-0.3.0/./src/if_type.rs
+ ./fuzz_transform/target/release/fuzz_transform /home/cdc/rug_on_erasan_after_bolero/qwutils-0.3.0/./src/imp/tuple.rs
+ ./fuzz_transform/target/release/fuzz_transform /home/cdc/rug_on_erasan_after_bolero/qwutils-0.3.0/./src/imp/range.rs
+ ./fuzz_transform/target/release/fuzz_transform /home/cdc/rug_on_erasan_after_bolero/qwutils-0.3.0/./src/imp/option.rs
+ ./fuzz_transform/target/release/fuzz_transform /home/cdc/rug_on_erasan_after_bolero/qwutils-0.3.0/./src/imp/vec.rs
+ ./fuzz_transform/target/release/fuzz_transform /home/cdc/rug_on_erasan_after_bolero/qwutils-0.3.0/./src/imp/result.rs
+ ./fuzz_transform/target/release/fuzz_transform /home/cdc/rug_on_erasan_after_bolero/qwutils-0.3.0/./src/imp/numext.rs
+ ./fuzz_transform/target/release/fuzz_transform /home/cdc/rug_on_erasan_after_bolero/qwutils-0.3.0/./src/imp/boolext.rs
+ ./fuzz_transform/target/release/fuzz_transform /home/cdc/rug_on_erasan_after_bolero/qwutils-0.3.0/./src/imp/mod.rs
+qwutils . 153 153 0

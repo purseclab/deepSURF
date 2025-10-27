@@ -1,0 +1,16 @@
+[workspace]
+
+[package]
+name = "pnet_packet_fuzz_4937212728684888133"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "pnet_packet_fuzz_4937212728684888133"
+path = "src/pnet_packet_fuzz_4937212728684888133.rs"
+
+[dependencies]
+afl = "=0.15.7"
+home = "=0.5.9"
+pnet_packet = { path = "../../../../pnet_packet-0.26.0/" }
+global_data = { path = "../../../../../../../../code/global_data" }

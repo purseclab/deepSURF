@@ -1,0 +1,16 @@
+[workspace]
+
+[package]
+name = "algorithmica_fuzz_10485517678465726194"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "algorithmica_fuzz_10485517678465726194"
+path = "src/algorithmica_fuzz_10485517678465726194.rs"
+
+[dependencies]
+afl = "=0.15.7"
+home = "=0.5.9"
+algorithmica = { path = "../../../../dataset/erasan_crates/algorithmica-0.1.8" }
+global_data = { path = "../../../../code/global_data" }

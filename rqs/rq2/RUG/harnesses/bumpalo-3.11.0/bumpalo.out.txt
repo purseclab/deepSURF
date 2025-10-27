@@ -1,0 +1,994 @@
+-----------------
+src/alloc.rs alloc::new_layout_err
+deps:{}
+candidates:{}
++alloc::new_layout_err();
++crate::alloc::new_layout_err();
++crate::alloc::new_layout_err();
+-----------------
+src/alloc.rs alloc::handle_alloc_error
+deps:{}
+candidates:{}
+let mut p0 = MaybeUninit::uninit().assume_init(); // core::alloc::Layout
++alloc::handle_alloc_error(p0);
++crate::alloc::handle_alloc_error(p0);
++crate::alloc::handle_alloc_error(p0);
+-----------------
+src/alloc.rs alloc::size_align
+deps:{"alloc::size_align":{"T":["core::marker::Sized"]}}
+candidates:{"alloc::size_align":{}}
++alloc::size_align();
++crate::alloc::size_align();
++crate::alloc::size_align();
+-----------------
+src/lib.rs dealloc_chunk_list
+deps:{}
+candidates:{}
+let mut p0 = MaybeUninit::uninit().assume_init(); // core::ptr::NonNull<ChunkFooter>
++dealloc_chunk_list(p0);
++crate::dealloc_chunk_list(p0);
++crate::dealloc_chunk_list(p0);
+-----------------
+src/lib.rs round_up_to
+deps:{}
+candidates:{}
+let mut p0 = 0usize; // None+usize
+let mut p1 = 0usize; // None+usize
++round_up_to(p0, p1);
++crate::round_up_to(p0, p1);
++crate::round_up_to(p0, p1);
+-----------------
+src/lib.rs round_down_to
+deps:{}
+candidates:{}
+let mut p0 = 0usize; // None+usize
+let mut p1 = 0usize; // None+usize
++round_down_to(p0, p1);
++crate::round_down_to(p0, p1);
++crate::round_down_to(p0, p1);
+-----------------
+src/lib.rs layout_from_size_align
+deps:{}
+candidates:{}
+let mut p0 = 0usize; // None+usize
+let mut p1 = 0usize; // None+usize
++layout_from_size_align(p0, p1);
++crate::layout_from_size_align(p0, p1);
++crate::layout_from_size_align(p0, p1);
+-----------------
+src/lib.rs allocation_size_overflow
+deps:{"allocation_size_overflow":{"T":["core::marker::Sized"]}}
+candidates:{"allocation_size_overflow":{}}
++allocation_size_overflow();
++crate::allocation_size_overflow();
++crate::allocation_size_overflow();
+-----------------
+src/lib.rs abs_diff
+deps:{}
+candidates:{}
+let mut p0 = 0usize; // None+usize
+let mut p1 = 0usize; // None+usize
++abs_diff(p0, p1);
++crate::abs_diff(p0, p1);
++crate::abs_diff(p0, p1);
+-----------------
+src/lib.rs Bump::alloc_with::inner_writer
+deps:{"Bump::alloc_with::inner_writer":{"F":["core::marker::Sized","core::ops::FnOnce"],"T":["core::marker::Sized"]}}
+candidates:{"Bump::alloc_with::inner_writer":{}}
+let mut p0 = MaybeUninit::uninit().assume_init(); // *mut T
+let mut p1 = MaybeUninit::uninit().assume_init(); // F
++Bump::alloc_with::inner_writer(p0, p1);
++crate::Bump::alloc_with::inner_writer(p0, p1);
++<Bump>::alloc_with::inner_writer(p0, p1);
+-----------------
+src/lib.rs Bump::try_alloc_with::inner_writer
+deps:{"Bump::try_alloc_with::inner_writer":{"F":["core::ops::FnOnce","core::marker::Sized"],"T":["core::marker::Sized"]}}
+candidates:{"Bump::try_alloc_with::inner_writer":{}}
+let mut p0 = MaybeUninit::uninit().assume_init(); // *mut T
+let mut p1 = MaybeUninit::uninit().assume_init(); // F
++Bump::try_alloc_with::inner_writer(p0, p1);
++crate::Bump::try_alloc_with::inner_writer(p0, p1);
++<Bump>::try_alloc_with::inner_writer(p0, p1);
+-----------------
+src/lib.rs oom
+deps:{}
+candidates:{}
++oom();
++crate::oom();
++crate::oom();
+-----------------
+src/alloc.rs alloc::UnstableLayoutMethods::padding_needed_for
+deps:{"alloc::UnstableLayoutMethods::padding_needed_for":{"Self":["alloc::UnstableLayoutMethods"]}}
+candidates:{"alloc::UnstableLayoutMethods::padding_needed_for":{"Self":["core::alloc::Layout"]}}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // Self
+let mut p1 = 0usize; // None+usize
++p0.padding_needed_for(p1);
++alloc::UnstableLayoutMethods::padding_needed_for(p0, p1);
++crate::alloc::UnstableLayoutMethods::padding_needed_for(p0, p1);
++crate::alloc::UnstableLayoutMethods::padding_needed_for(p0, p1);
+-----------------
+src/alloc.rs alloc::UnstableLayoutMethods::repeat
+deps:{"alloc::UnstableLayoutMethods::repeat":{"Self":["alloc::UnstableLayoutMethods"]}}
+candidates:{"alloc::UnstableLayoutMethods::repeat":{"Self":["core::alloc::Layout"]}}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // Self
+let mut p1 = 0usize; // None+usize
++p0.repeat(p1);
++alloc::UnstableLayoutMethods::repeat(p0, p1);
++crate::alloc::UnstableLayoutMethods::repeat(p0, p1);
++crate::alloc::UnstableLayoutMethods::repeat(p0, p1);
+-----------------
+src/alloc.rs alloc::UnstableLayoutMethods::array
+deps:{"alloc::UnstableLayoutMethods::array":{"Self":["alloc::UnstableLayoutMethods"],"T":["core::marker::Sized"]}}
+candidates:{"alloc::UnstableLayoutMethods::array":{"Self":["core::alloc::Layout"]}}
+let mut p0 = 0usize; // None+usize
++alloc::UnstableLayoutMethods::array(p0);
++crate::alloc::UnstableLayoutMethods::array(p0);
++crate::alloc::UnstableLayoutMethods::array(p0);
+-----------------
+src/alloc.rs alloc::Alloc::alloc
+deps:{"alloc::Alloc::alloc":{"Self":["alloc::Alloc"]}}
+candidates:{"alloc::Alloc::alloc":{"Self":[]}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // Self
+let mut p1 = MaybeUninit::uninit().assume_init(); // core::alloc::Layout
++p0.alloc(p1);
++alloc::Alloc::alloc(p0, p1);
++crate::alloc::Alloc::alloc(p0, p1);
++crate::alloc::Alloc::alloc(p0, p1);
+-----------------
+src/alloc.rs alloc::Alloc::dealloc
+deps:{"alloc::Alloc::dealloc":{"Self":["alloc::Alloc"]}}
+candidates:{"alloc::Alloc::dealloc":{"Self":[]}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // Self
+let mut p1 = MaybeUninit::uninit().assume_init(); // core::ptr::NonNull<u8>
+let mut p2 = MaybeUninit::uninit().assume_init(); // core::alloc::Layout
++p0.dealloc(p1, p2);
++alloc::Alloc::dealloc(p0, p1, p2);
++crate::alloc::Alloc::dealloc(p0, p1, p2);
++crate::alloc::Alloc::dealloc(p0, p1, p2);
+-----------------
+src/alloc.rs alloc::Alloc::usable_size
+deps:{"alloc::Alloc::usable_size":{"Self":["alloc::Alloc"]}}
+candidates:{"alloc::Alloc::usable_size":{"Self":[]}}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // Self
+let mut p1 = & MaybeUninit::uninit().assume_init(); // core::alloc::Layout
++p0.usable_size(p1);
++alloc::Alloc::usable_size(p0, p1);
++crate::alloc::Alloc::usable_size(p0, p1);
++crate::alloc::Alloc::usable_size(p0, p1);
+-----------------
+src/alloc.rs alloc::Alloc::realloc
+deps:{"alloc::Alloc::realloc":{"Self":["alloc::Alloc"]}}
+candidates:{"alloc::Alloc::realloc":{"Self":[]}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // Self
+let mut p1 = MaybeUninit::uninit().assume_init(); // core::ptr::NonNull<u8>
+let mut p2 = MaybeUninit::uninit().assume_init(); // core::alloc::Layout
+let mut p3 = 0usize; // None+usize
++p0.realloc(p1, p2, p3);
++alloc::Alloc::realloc(p0, p1, p2, p3);
++crate::alloc::Alloc::realloc(p0, p1, p2, p3);
++crate::alloc::Alloc::realloc(p0, p1, p2, p3);
+-----------------
+src/alloc.rs alloc::Alloc::alloc_zeroed
+deps:{"alloc::Alloc::alloc_zeroed":{"Self":["alloc::Alloc"]}}
+candidates:{"alloc::Alloc::alloc_zeroed":{"Self":[]}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // Self
+let mut p1 = MaybeUninit::uninit().assume_init(); // core::alloc::Layout
++p0.alloc_zeroed(p1);
++alloc::Alloc::alloc_zeroed(p0, p1);
++crate::alloc::Alloc::alloc_zeroed(p0, p1);
++crate::alloc::Alloc::alloc_zeroed(p0, p1);
+-----------------
+src/alloc.rs alloc::Alloc::alloc_excess
+deps:{"alloc::Alloc::alloc_excess":{"Self":["alloc::Alloc"]}}
+candidates:{"alloc::Alloc::alloc_excess":{"Self":[]}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // Self
+let mut p1 = MaybeUninit::uninit().assume_init(); // core::alloc::Layout
++p0.alloc_excess(p1);
++alloc::Alloc::alloc_excess(p0, p1);
++crate::alloc::Alloc::alloc_excess(p0, p1);
++crate::alloc::Alloc::alloc_excess(p0, p1);
+-----------------
+src/alloc.rs alloc::Alloc::realloc_excess
+deps:{"alloc::Alloc::realloc_excess":{"Self":["alloc::Alloc"]}}
+candidates:{"alloc::Alloc::realloc_excess":{"Self":[]}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // Self
+let mut p1 = MaybeUninit::uninit().assume_init(); // core::ptr::NonNull<u8>
+let mut p2 = MaybeUninit::uninit().assume_init(); // core::alloc::Layout
+let mut p3 = 0usize; // None+usize
++p0.realloc_excess(p1, p2, p3);
++alloc::Alloc::realloc_excess(p0, p1, p2, p3);
++crate::alloc::Alloc::realloc_excess(p0, p1, p2, p3);
++crate::alloc::Alloc::realloc_excess(p0, p1, p2, p3);
+-----------------
+src/alloc.rs alloc::Alloc::grow_in_place
+deps:{"alloc::Alloc::grow_in_place":{"Self":["alloc::Alloc"]}}
+candidates:{"alloc::Alloc::grow_in_place":{"Self":[]}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // Self
+let mut p1 = MaybeUninit::uninit().assume_init(); // core::ptr::NonNull<u8>
+let mut p2 = MaybeUninit::uninit().assume_init(); // core::alloc::Layout
+let mut p3 = 0usize; // None+usize
++p0.grow_in_place(p1, p2, p3);
++alloc::Alloc::grow_in_place(p0, p1, p2, p3);
++crate::alloc::Alloc::grow_in_place(p0, p1, p2, p3);
++crate::alloc::Alloc::grow_in_place(p0, p1, p2, p3);
+-----------------
+src/alloc.rs alloc::Alloc::shrink_in_place
+deps:{"alloc::Alloc::shrink_in_place":{"Self":["alloc::Alloc"]}}
+candidates:{"alloc::Alloc::shrink_in_place":{"Self":[]}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // Self
+let mut p1 = MaybeUninit::uninit().assume_init(); // core::ptr::NonNull<u8>
+let mut p2 = MaybeUninit::uninit().assume_init(); // core::alloc::Layout
+let mut p3 = 0usize; // None+usize
++p0.shrink_in_place(p1, p2, p3);
++alloc::Alloc::shrink_in_place(p0, p1, p2, p3);
++crate::alloc::Alloc::shrink_in_place(p0, p1, p2, p3);
++crate::alloc::Alloc::shrink_in_place(p0, p1, p2, p3);
+-----------------
+src/alloc.rs alloc::Alloc::alloc_one
+deps:{"alloc::Alloc::alloc_one":{"Self":["core::marker::Sized","alloc::Alloc"],"T":["core::marker::Sized"]}}
+candidates:{"alloc::Alloc::alloc_one":{}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // Self
++p0.alloc_one();
++alloc::Alloc::alloc_one(p0);
++crate::alloc::Alloc::alloc_one(p0);
++crate::alloc::Alloc::alloc_one(p0);
+-----------------
+src/alloc.rs alloc::Alloc::dealloc_one
+deps:{"alloc::Alloc::dealloc_one":{"Self":["core::marker::Sized","alloc::Alloc"],"T":["core::marker::Sized"]}}
+candidates:{"alloc::Alloc::dealloc_one":{}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // Self
+let mut p1 = MaybeUninit::uninit().assume_init(); // core::ptr::NonNull<T>
++p0.dealloc_one(p1);
++alloc::Alloc::dealloc_one(p0, p1);
++crate::alloc::Alloc::dealloc_one(p0, p1);
++crate::alloc::Alloc::dealloc_one(p0, p1);
+-----------------
+src/alloc.rs alloc::Alloc::alloc_array
+deps:{"alloc::Alloc::alloc_array":{"Self":["alloc::Alloc","core::marker::Sized"],"T":["core::marker::Sized"]}}
+candidates:{"alloc::Alloc::alloc_array":{}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // Self
+let mut p1 = 0usize; // None+usize
++p0.alloc_array(p1);
++alloc::Alloc::alloc_array(p0, p1);
++crate::alloc::Alloc::alloc_array(p0, p1);
++crate::alloc::Alloc::alloc_array(p0, p1);
+-----------------
+src/alloc.rs alloc::Alloc::realloc_array
+deps:{"alloc::Alloc::realloc_array":{"Self":["alloc::Alloc","core::marker::Sized"],"T":["core::marker::Sized"]}}
+candidates:{"alloc::Alloc::realloc_array":{}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // Self
+let mut p1 = MaybeUninit::uninit().assume_init(); // core::ptr::NonNull<T>
+let mut p2 = 0usize; // None+usize
+let mut p3 = 0usize; // None+usize
++p0.realloc_array(p1, p2, p3);
++alloc::Alloc::realloc_array(p0, p1, p2, p3);
++crate::alloc::Alloc::realloc_array(p0, p1, p2, p3);
++crate::alloc::Alloc::realloc_array(p0, p1, p2, p3);
+-----------------
+src/alloc.rs alloc::Alloc::dealloc_array
+deps:{"alloc::Alloc::dealloc_array":{"Self":["core::marker::Sized","alloc::Alloc"],"T":["core::marker::Sized"]}}
+candidates:{"alloc::Alloc::dealloc_array":{}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // Self
+let mut p1 = MaybeUninit::uninit().assume_init(); // core::ptr::NonNull<T>
+let mut p2 = 0usize; // None+usize
++p0.dealloc_array(p1, p2);
++alloc::Alloc::dealloc_array(p0, p1, p2);
++crate::alloc::Alloc::dealloc_array(p0, p1, p2);
++crate::alloc::Alloc::dealloc_array(p0, p1, p2);
+-----------------
+src/alloc.rs <core::alloc::Layout as alloc::UnstableLayoutMethods>::padding_needed_for
+deps:{}
+candidates:{}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // core::alloc::Layout
+let mut p1 = 0usize; // None+usize
++p0.padding_needed_for(p1);
++<core::alloc::Layout as alloc::UnstableLayoutMethods>::padding_needed_for(p0, p1);
++crate::<core::alloc::Layout as alloc::UnstableLayoutMethods>::padding_needed_for(p0, p1);
++<core::alloc::Layout>::padding_needed_for(p0, p1);
+-----------------
+src/alloc.rs <core::alloc::Layout as alloc::UnstableLayoutMethods>::repeat
+deps:{}
+candidates:{}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // core::alloc::Layout
+let mut p1 = 0usize; // None+usize
++p0.repeat(p1);
++<core::alloc::Layout as alloc::UnstableLayoutMethods>::repeat(p0, p1);
++crate::<core::alloc::Layout as alloc::UnstableLayoutMethods>::repeat(p0, p1);
++<core::alloc::Layout>::repeat(p0, p1);
+-----------------
+src/alloc.rs <core::alloc::Layout as alloc::UnstableLayoutMethods>::array
+deps:{"<core::alloc::Layout as alloc::UnstableLayoutMethods>::array":{"T":["core::marker::Sized"]}}
+candidates:{"<core::alloc::Layout as alloc::UnstableLayoutMethods>::array":{}}
+let mut p0 = 0usize; // None+usize
++<core::alloc::Layout as alloc::UnstableLayoutMethods>::array(p0);
++crate::<core::alloc::Layout as alloc::UnstableLayoutMethods>::array(p0);
++<core::alloc::Layout>::array(p0);
+-----------------
+src/alloc.rs <alloc::Excess as core::fmt::Debug>::fmt
+deps:{}
+candidates:{}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // alloc::Excess
+let mut p1 = &mut  MaybeUninit::uninit().assume_init(); // core::fmt::Formatter<'_>
++p0.fmt(p1);
++<alloc::Excess as core::fmt::Debug>::fmt(p0, p1);
++crate::<alloc::Excess as core::fmt::Debug>::fmt(p0, p1);
++<alloc::Excess>::fmt(p0, p1);
+-----------------
+src/alloc.rs <alloc::AllocErr as core::clone::Clone>::clone
+deps:{}
+candidates:{}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // alloc::AllocErr
++p0.clone();
++<alloc::AllocErr as core::clone::Clone>::clone(p0);
++crate::<alloc::AllocErr as core::clone::Clone>::clone(p0);
++<alloc::AllocErr>::clone(p0);
+-----------------
+src/alloc.rs <alloc::AllocErr as core::cmp::PartialEq>::eq
+deps:{}
+candidates:{}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // alloc::AllocErr
+let mut p1 = & MaybeUninit::uninit().assume_init(); // alloc::AllocErr
++p0.eq(p1);
++<alloc::AllocErr as core::cmp::PartialEq>::eq(p0, p1);
++crate::<alloc::AllocErr as core::cmp::PartialEq>::eq(p0, p1);
++<alloc::AllocErr>::eq(p0, p1);
+-----------------
+src/alloc.rs <alloc::AllocErr as core::cmp::Eq>::assert_receiver_is_total_eq
+deps:{}
+candidates:{}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // alloc::AllocErr
++p0.assert_receiver_is_total_eq();
++<alloc::AllocErr as core::cmp::Eq>::assert_receiver_is_total_eq(p0);
++crate::<alloc::AllocErr as core::cmp::Eq>::assert_receiver_is_total_eq(p0);
++<alloc::AllocErr>::assert_receiver_is_total_eq(p0);
+-----------------
+src/alloc.rs <alloc::AllocErr as core::fmt::Debug>::fmt
+deps:{}
+candidates:{}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // alloc::AllocErr
+let mut p1 = &mut  MaybeUninit::uninit().assume_init(); // core::fmt::Formatter<'_>
++p0.fmt(p1);
++<alloc::AllocErr as core::fmt::Debug>::fmt(p0, p1);
++crate::<alloc::AllocErr as core::fmt::Debug>::fmt(p0, p1);
++<alloc::AllocErr>::fmt(p0, p1);
+-----------------
+src/alloc.rs <alloc::AllocErr as core::fmt::Display>::fmt
+deps:{}
+candidates:{}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // alloc::AllocErr
+let mut p1 = &mut  MaybeUninit::uninit().assume_init(); // core::fmt::Formatter<'_>
++p0.fmt(p1);
++<alloc::AllocErr as core::fmt::Display>::fmt(p0, p1);
++crate::<alloc::AllocErr as core::fmt::Display>::fmt(p0, p1);
++<alloc::AllocErr>::fmt(p0, p1);
+-----------------
+src/alloc.rs <alloc::CannotReallocInPlace as core::clone::Clone>::clone
+deps:{}
+candidates:{}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // alloc::CannotReallocInPlace
++p0.clone();
++<alloc::CannotReallocInPlace as core::clone::Clone>::clone(p0);
++crate::<alloc::CannotReallocInPlace as core::clone::Clone>::clone(p0);
++<alloc::CannotReallocInPlace>::clone(p0);
+-----------------
+src/alloc.rs <alloc::CannotReallocInPlace as core::cmp::PartialEq>::eq
+deps:{}
+candidates:{}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // alloc::CannotReallocInPlace
+let mut p1 = & MaybeUninit::uninit().assume_init(); // alloc::CannotReallocInPlace
++p0.eq(p1);
++<alloc::CannotReallocInPlace as core::cmp::PartialEq>::eq(p0, p1);
++crate::<alloc::CannotReallocInPlace as core::cmp::PartialEq>::eq(p0, p1);
++<alloc::CannotReallocInPlace>::eq(p0, p1);
+-----------------
+src/alloc.rs <alloc::CannotReallocInPlace as core::cmp::Eq>::assert_receiver_is_total_eq
+deps:{}
+candidates:{}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // alloc::CannotReallocInPlace
++p0.assert_receiver_is_total_eq();
++<alloc::CannotReallocInPlace as core::cmp::Eq>::assert_receiver_is_total_eq(p0);
++crate::<alloc::CannotReallocInPlace as core::cmp::Eq>::assert_receiver_is_total_eq(p0);
++<alloc::CannotReallocInPlace>::assert_receiver_is_total_eq(p0);
+-----------------
+src/alloc.rs <alloc::CannotReallocInPlace as core::fmt::Debug>::fmt
+deps:{}
+candidates:{}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // alloc::CannotReallocInPlace
+let mut p1 = &mut  MaybeUninit::uninit().assume_init(); // core::fmt::Formatter<'_>
++p0.fmt(p1);
++<alloc::CannotReallocInPlace as core::fmt::Debug>::fmt(p0, p1);
++crate::<alloc::CannotReallocInPlace as core::fmt::Debug>::fmt(p0, p1);
++<alloc::CannotReallocInPlace>::fmt(p0, p1);
+-----------------
+src/alloc.rs alloc::CannotReallocInPlace::description
+deps:{}
+candidates:{}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // alloc::CannotReallocInPlace
++p0.description();
++alloc::CannotReallocInPlace::description(p0);
++crate::alloc::CannotReallocInPlace::description(p0);
++<alloc::CannotReallocInPlace>::description(p0);
+-----------------
+src/alloc.rs <alloc::CannotReallocInPlace as core::fmt::Display>::fmt
+deps:{}
+candidates:{}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // alloc::CannotReallocInPlace
+let mut p1 = &mut  MaybeUninit::uninit().assume_init(); // core::fmt::Formatter<'_>
++p0.fmt(p1);
++<alloc::CannotReallocInPlace as core::fmt::Display>::fmt(p0, p1);
++crate::<alloc::CannotReallocInPlace as core::fmt::Display>::fmt(p0, p1);
++<alloc::CannotReallocInPlace>::fmt(p0, p1);
+-----------------
+src/lib.rs <AllocOrInitError<E> as core::clone::Clone>::clone
+deps:{"<AllocOrInitError<E> as core::clone::Clone>::clone":{"E":["core::marker::Sized","core::clone::Clone"]}}
+candidates:{"<AllocOrInitError<E> as core::clone::Clone>::clone":{}}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // AllocOrInitError<E>
++p0.clone();
++<AllocOrInitError<E> as core::clone::Clone>::clone(p0);
++crate::<AllocOrInitError<E> as core::clone::Clone>::clone(p0);
++<AllocOrInitError<E>>::clone(p0);
+-----------------
+src/lib.rs <AllocOrInitError<E> as core::cmp::PartialEq>::eq
+deps:{"<AllocOrInitError<E> as core::cmp::PartialEq>::eq":{"E":["core::marker::Sized","core::cmp::PartialEq"]},"core::cmp::impls::<impl core::cmp::PartialEq<&B> for &A>":{},"core::cmp::impls::<impl core::cmp::PartialEq<&B> for &mut A>":{},"core::cmp::impls::<impl core::cmp::PartialEq<&mut B> for &A>":{},"core::cmp::impls::<impl core::cmp::PartialEq<&mut B> for &mut A>":{}}
+candidates:{"<AllocOrInitError<E> as core::cmp::PartialEq>::eq":{"E":["core::cmp::impls::<impl core::cmp::PartialEq<&mut B> for &A>","core::cmp::impls::<impl core::cmp::PartialEq<&B> for &A>"]},"core::cmp::impls::<impl core::cmp::PartialEq<&B> for &A>":{},"core::cmp::impls::<impl core::cmp::PartialEq<&B> for &mut A>":{},"core::cmp::impls::<impl core::cmp::PartialEq<&mut B> for &A>":{},"core::cmp::impls::<impl core::cmp::PartialEq<&mut B> for &mut A>":{}}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // AllocOrInitError<E>
+let mut p1 = & MaybeUninit::uninit().assume_init(); // AllocOrInitError<E>
++p0.eq(p1);
++<AllocOrInitError<E> as core::cmp::PartialEq>::eq(p0, p1);
++crate::<AllocOrInitError<E> as core::cmp::PartialEq>::eq(p0, p1);
++<AllocOrInitError<E>>::eq(p0, p1);
+-----------------
+src/lib.rs <AllocOrInitError<E> as core::cmp::Eq>::assert_receiver_is_total_eq
+deps:{"<AllocOrInitError<E> as core::cmp::Eq>::assert_receiver_is_total_eq":{"E":["core::cmp::Eq","core::marker::Sized"]}}
+candidates:{"<AllocOrInitError<E> as core::cmp::Eq>::assert_receiver_is_total_eq":{}}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // AllocOrInitError<E>
++p0.assert_receiver_is_total_eq();
++<AllocOrInitError<E> as core::cmp::Eq>::assert_receiver_is_total_eq(p0);
++crate::<AllocOrInitError<E> as core::cmp::Eq>::assert_receiver_is_total_eq(p0);
++<AllocOrInitError<E>>::assert_receiver_is_total_eq(p0);
+-----------------
+src/lib.rs <AllocOrInitError<E> as core::fmt::Debug>::fmt
+deps:{"<AllocOrInitError<E> as core::fmt::Debug>::fmt":{"E":["core::fmt::Debug","core::marker::Sized"]}}
+candidates:{"<AllocOrInitError<E> as core::fmt::Debug>::fmt":{}}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // AllocOrInitError<E>
+let mut p1 = &mut  MaybeUninit::uninit().assume_init(); // core::fmt::Formatter<'_>
++p0.fmt(p1);
++<AllocOrInitError<E> as core::fmt::Debug>::fmt(p0, p1);
++crate::<AllocOrInitError<E> as core::fmt::Debug>::fmt(p0, p1);
++<AllocOrInitError<E>>::fmt(p0, p1);
+-----------------
+src/lib.rs <AllocOrInitError<E> as core::convert::From<alloc::AllocErr>>::from
+deps:{"<AllocOrInitError<E> as core::convert::From<alloc::AllocErr>>::from":{"E":["core::marker::Sized"]}}
+candidates:{"<AllocOrInitError<E> as core::convert::From<alloc::AllocErr>>::from":{}}
+let mut p0 = MaybeUninit::uninit().assume_init(); // alloc::AllocErr
++<AllocOrInitError<E> as core::convert::From<alloc::AllocErr>>::from(p0);
++crate::<AllocOrInitError<E> as core::convert::From<alloc::AllocErr>>::from(p0);
++<AllocOrInitError<E>>::from(p0);
+-----------------
+src/lib.rs <AllocOrInitError<E> as core::fmt::Display>::fmt
+deps:{"<AllocOrInitError<E> as core::fmt::Display>::fmt":{"E":["core::marker::Sized","core::fmt::Display"]}}
+candidates:{"<AllocOrInitError<E> as core::fmt::Display>::fmt":{}}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // AllocOrInitError<E>
+let mut p1 = &mut  MaybeUninit::uninit().assume_init(); // core::fmt::Formatter<'_>
++p0.fmt(p1);
++<AllocOrInitError<E> as core::fmt::Display>::fmt(p0, p1);
++crate::<AllocOrInitError<E> as core::fmt::Display>::fmt(p0, p1);
++<AllocOrInitError<E>>::fmt(p0, p1);
+-----------------
+src/lib.rs <Bump as core::fmt::Debug>::fmt
+deps:{}
+candidates:{}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // Bump
+let mut p1 = &mut  MaybeUninit::uninit().assume_init(); // core::fmt::Formatter<'_>
++p0.fmt(p1);
++<Bump as core::fmt::Debug>::fmt(p0, p1);
++crate::<Bump as core::fmt::Debug>::fmt(p0, p1);
++<Bump>::fmt(p0, p1);
+-----------------
+src/lib.rs <ChunkFooter as core::fmt::Debug>::fmt
+deps:{}
+candidates:{}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // ChunkFooter
+let mut p1 = &mut  MaybeUninit::uninit().assume_init(); // core::fmt::Formatter<'_>
++p0.fmt(p1);
++<ChunkFooter as core::fmt::Debug>::fmt(p0, p1);
++crate::<ChunkFooter as core::fmt::Debug>::fmt(p0, p1);
++<ChunkFooter>::fmt(p0, p1);
+-----------------
+src/lib.rs EmptyChunkFooter::get
+deps:{}
+candidates:{}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // EmptyChunkFooter
++p0.get();
++EmptyChunkFooter::get(p0);
++crate::EmptyChunkFooter::get(p0);
++<EmptyChunkFooter>::get(p0);
+-----------------
+src/lib.rs ChunkFooter::as_raw_parts
+deps:{}
+candidates:{}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // ChunkFooter
++p0.as_raw_parts();
++ChunkFooter::as_raw_parts(p0);
++crate::ChunkFooter::as_raw_parts(p0);
++<ChunkFooter>::as_raw_parts(p0);
+-----------------
+src/lib.rs ChunkFooter::is_empty
+deps:{}
+candidates:{}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // ChunkFooter
++p0.is_empty();
++ChunkFooter::is_empty(p0);
++crate::ChunkFooter::is_empty(p0);
++<ChunkFooter>::is_empty(p0);
+-----------------
+src/lib.rs <Bump as core::default::Default>::default
+deps:{}
+candidates:{}
++<Bump as core::default::Default>::default();
++crate::<Bump as core::default::Default>::default();
++<Bump>::default();
+-----------------
+src/lib.rs <Bump as core::ops::Drop>::drop
+deps:{}
+candidates:{}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // Bump
++p0.drop();
++<Bump as core::ops::Drop>::drop(p0);
++crate::<Bump as core::ops::Drop>::drop(p0);
++<Bump>::drop(p0);
+-----------------
+src/lib.rs <NewChunkMemoryDetails as core::fmt::Debug>::fmt
+deps:{}
+candidates:{}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // NewChunkMemoryDetails
+let mut p1 = &mut  MaybeUninit::uninit().assume_init(); // core::fmt::Formatter<'_>
++p0.fmt(p1);
++<NewChunkMemoryDetails as core::fmt::Debug>::fmt(p0, p1);
++crate::<NewChunkMemoryDetails as core::fmt::Debug>::fmt(p0, p1);
++<NewChunkMemoryDetails>::fmt(p0, p1);
+-----------------
+src/lib.rs <NewChunkMemoryDetails as core::clone::Clone>::clone
+deps:{}
+candidates:{}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // NewChunkMemoryDetails
++p0.clone();
++<NewChunkMemoryDetails as core::clone::Clone>::clone(p0);
++crate::<NewChunkMemoryDetails as core::clone::Clone>::clone(p0);
++<NewChunkMemoryDetails>::clone(p0);
+-----------------
+src/lib.rs Bump::new
+deps:{}
+candidates:{}
++Bump::new();
++crate::Bump::new();
++<Bump>::new();
+-----------------
+src/lib.rs Bump::try_new
+deps:{}
+candidates:{}
++Bump::try_new();
++crate::Bump::try_new();
++<Bump>::try_new();
+-----------------
+src/lib.rs Bump::with_capacity
+deps:{}
+candidates:{}
+let mut p0 = 0usize; // None+usize
++Bump::with_capacity(p0);
++crate::Bump::with_capacity(p0);
++<Bump>::with_capacity(p0);
+-----------------
+src/lib.rs Bump::try_with_capacity
+deps:{}
+candidates:{}
+let mut p0 = 0usize; // None+usize
++Bump::try_with_capacity(p0);
++crate::Bump::try_with_capacity(p0);
++<Bump>::try_with_capacity(p0);
+-----------------
+src/lib.rs Bump::allocation_limit
+deps:{}
+candidates:{}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // Bump
++p0.allocation_limit();
++Bump::allocation_limit(p0);
++crate::Bump::allocation_limit(p0);
++<Bump>::allocation_limit(p0);
+-----------------
+src/lib.rs Bump::set_allocation_limit
+deps:{}
+candidates:{}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // Bump
+let mut p1 = MaybeUninit::uninit().assume_init(); // core::option::Option<usize>
++p0.set_allocation_limit(p1);
++Bump::set_allocation_limit(p0, p1);
++crate::Bump::set_allocation_limit(p0, p1);
++<Bump>::set_allocation_limit(p0, p1);
+-----------------
+src/lib.rs Bump::allocation_limit_remaining
+deps:{}
+candidates:{}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // Bump
++p0.allocation_limit_remaining();
++Bump::allocation_limit_remaining(p0);
++crate::Bump::allocation_limit_remaining(p0);
++<Bump>::allocation_limit_remaining(p0);
+-----------------
+src/lib.rs Bump::chunk_fits_under_limit
+deps:{}
+candidates:{}
+let mut p0 = MaybeUninit::uninit().assume_init(); // core::option::Option<usize>
+let mut p1 = MaybeUninit::uninit().assume_init(); // NewChunkMemoryDetails
++Bump::chunk_fits_under_limit(p0, p1);
++crate::Bump::chunk_fits_under_limit(p0, p1);
++<Bump>::chunk_fits_under_limit(p0, p1);
+-----------------
+src/lib.rs Bump::new_chunk_memory_details
+deps:{}
+candidates:{}
+let mut p0 = MaybeUninit::uninit().assume_init(); // core::option::Option<usize>
+let mut p1 = MaybeUninit::uninit().assume_init(); // core::alloc::Layout
++Bump::new_chunk_memory_details(p0, p1);
++crate::Bump::new_chunk_memory_details(p0, p1);
++<Bump>::new_chunk_memory_details(p0, p1);
+-----------------
+src/lib.rs Bump::new_chunk
+deps:{}
+candidates:{}
+let mut p0 = MaybeUninit::uninit().assume_init(); // NewChunkMemoryDetails
+let mut p1 = MaybeUninit::uninit().assume_init(); // core::alloc::Layout
+let mut p2 = MaybeUninit::uninit().assume_init(); // core::ptr::NonNull<ChunkFooter>
++Bump::new_chunk(p0, p1, p2);
++crate::Bump::new_chunk(p0, p1, p2);
++<Bump>::new_chunk(p0, p1, p2);
+-----------------
+src/lib.rs Bump::reset
+deps:{}
+candidates:{}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // Bump
++p0.reset();
++Bump::reset(p0);
++crate::Bump::reset(p0);
++<Bump>::reset(p0);
+-----------------
+src/lib.rs Bump::alloc
+deps:{"Bump::alloc":{"T":["core::marker::Sized"]}}
+candidates:{"Bump::alloc":{}}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // Bump
+let mut p1 = MaybeUninit::uninit().assume_init(); // T
++p0.alloc(p1);
++Bump::alloc(p0, p1);
++crate::Bump::alloc(p0, p1);
++<Bump>::alloc(p0, p1);
+-----------------
+src/lib.rs Bump::try_alloc
+deps:{"Bump::try_alloc":{"T":["core::marker::Sized"]}}
+candidates:{"Bump::try_alloc":{}}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // Bump
+let mut p1 = MaybeUninit::uninit().assume_init(); // T
++p0.try_alloc(p1);
++Bump::try_alloc(p0, p1);
++crate::Bump::try_alloc(p0, p1);
++<Bump>::try_alloc(p0, p1);
+-----------------
+src/lib.rs Bump::alloc_with
+deps:{"Bump::alloc_with":{"F":["core::marker::Sized","core::ops::FnOnce"],"T":["core::marker::Sized"]}}
+candidates:{"Bump::alloc_with":{}}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // Bump
+let mut p1 = MaybeUninit::uninit().assume_init(); // F
++p0.alloc_with(p1);
++Bump::alloc_with(p0, p1);
++crate::Bump::alloc_with(p0, p1);
++<Bump>::alloc_with(p0, p1);
+-----------------
+src/lib.rs Bump::try_alloc_with
+deps:{"Bump::try_alloc_with":{"F":["core::marker::Sized","core::ops::FnOnce"],"T":["core::marker::Sized"]}}
+candidates:{"Bump::try_alloc_with":{}}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // Bump
+let mut p1 = MaybeUninit::uninit().assume_init(); // F
++p0.try_alloc_with(p1);
++Bump::try_alloc_with(p0, p1);
++crate::Bump::try_alloc_with(p0, p1);
++<Bump>::try_alloc_with(p0, p1);
+-----------------
+src/lib.rs Bump::alloc_try_with
+deps:{"Bump::alloc_try_with":{"E":["core::marker::Sized"],"F":["core::marker::Sized","core::ops::FnOnce"],"T":["core::marker::Sized"]}}
+candidates:{"Bump::alloc_try_with":{}}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // Bump
+let mut p1 = MaybeUninit::uninit().assume_init(); // F
++p0.alloc_try_with(p1);
++Bump::alloc_try_with(p0, p1);
++crate::Bump::alloc_try_with(p0, p1);
++<Bump>::alloc_try_with(p0, p1);
+-----------------
+src/lib.rs Bump::try_alloc_try_with
+deps:{"Bump::try_alloc_try_with":{"E":["core::marker::Sized"],"F":["core::marker::Sized","core::ops::FnOnce"],"T":["core::marker::Sized"]}}
+candidates:{"Bump::try_alloc_try_with":{}}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // Bump
+let mut p1 = MaybeUninit::uninit().assume_init(); // F
++p0.try_alloc_try_with(p1);
++Bump::try_alloc_try_with(p0, p1);
++crate::Bump::try_alloc_try_with(p0, p1);
++<Bump>::try_alloc_try_with(p0, p1);
+-----------------
+src/lib.rs Bump::alloc_slice_copy
+deps:{"Bump::alloc_slice_copy":{"T":["core::marker::Sized","core::marker::Copy"]}}
+candidates:{"Bump::alloc_slice_copy":{}}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // Bump
+let mut p1 = & MaybeUninit::uninit().assume_init(); // [T]
++p0.alloc_slice_copy(p1);
++Bump::alloc_slice_copy(p0, p1);
++crate::Bump::alloc_slice_copy(p0, p1);
++<Bump>::alloc_slice_copy(p0, p1);
+-----------------
+src/lib.rs Bump::alloc_slice_clone
+deps:{"Bump::alloc_slice_clone":{"T":["core::marker::Sized","core::clone::Clone"]}}
+candidates:{"Bump::alloc_slice_clone":{}}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // Bump
+let mut p1 = & MaybeUninit::uninit().assume_init(); // [T]
++p0.alloc_slice_clone(p1);
++Bump::alloc_slice_clone(p0, p1);
++crate::Bump::alloc_slice_clone(p0, p1);
++<Bump>::alloc_slice_clone(p0, p1);
+-----------------
+src/lib.rs Bump::alloc_str
+deps:{}
+candidates:{}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // Bump
+let mut p1 = "sample"; // None+&str
++p0.alloc_str(&p1);
++Bump::alloc_str(p0, &p1);
++crate::Bump::alloc_str(p0, &p1);
++<Bump>::alloc_str(p0, &p1);
+-----------------
+src/lib.rs Bump::alloc_slice_fill_with
+deps:{"Bump::alloc_slice_fill_with":{"F":["core::ops::FnMut","core::marker::Sized"],"T":["core::marker::Sized"]}}
+candidates:{"Bump::alloc_slice_fill_with":{}}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // Bump
+let mut p1 = 0usize; // None+usize
+let mut p2 = MaybeUninit::uninit().assume_init(); // F
++p0.alloc_slice_fill_with(p1, p2);
++Bump::alloc_slice_fill_with(p0, p1, p2);
++crate::Bump::alloc_slice_fill_with(p0, p1, p2);
++<Bump>::alloc_slice_fill_with(p0, p1, p2);
+-----------------
+src/lib.rs Bump::alloc_slice_fill_copy
+deps:{"Bump::alloc_slice_fill_copy":{"T":["core::marker::Copy","core::marker::Sized"]}}
+candidates:{"Bump::alloc_slice_fill_copy":{}}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // Bump
+let mut p1 = 0usize; // None+usize
+let mut p2 = MaybeUninit::uninit().assume_init(); // T
++p0.alloc_slice_fill_copy(p1, p2);
++Bump::alloc_slice_fill_copy(p0, p1, p2);
++crate::Bump::alloc_slice_fill_copy(p0, p1, p2);
++<Bump>::alloc_slice_fill_copy(p0, p1, p2);
+-----------------
+src/lib.rs Bump::alloc_slice_fill_clone
+deps:{"Bump::alloc_slice_fill_clone":{"T":["core::marker::Sized","core::clone::Clone"]}}
+candidates:{"Bump::alloc_slice_fill_clone":{}}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // Bump
+let mut p1 = 0usize; // None+usize
+let mut p2 = & MaybeUninit::uninit().assume_init(); // T
++p0.alloc_slice_fill_clone(p1, p2);
++Bump::alloc_slice_fill_clone(p0, p1, p2);
++crate::Bump::alloc_slice_fill_clone(p0, p1, p2);
++<Bump>::alloc_slice_fill_clone(p0, p1, p2);
+-----------------
+src/lib.rs Bump::alloc_slice_fill_iter
+deps:{"<&mut I as core::iter::ExactSizeIterator>":{},"Bump::alloc_slice_fill_iter":{"<I as core::iter::IntoIterator>::IntoIter":["core::iter::ExactSizeIterator"],"I":["core::marker::Sized","core::iter::IntoIterator"],"T":["core::marker::Sized"]}}
+candidates:{"<&mut I as core::iter::ExactSizeIterator>":{},"Bump::alloc_slice_fill_iter":{"<I as core::iter::IntoIterator>::IntoIter":["core::array::IntoIter<T, N>","core::result::IterMut<'_, T>","core::iter::StepBy<I>","core::slice::RChunksMut<'_, T>","core::iter::Copied<I>","<&mut I as core::iter::ExactSizeIterator>","core::slice::ArrayChunks<'_, T, N>","core::slice::RChunksExactMut<'_, T>","core::ops::RangeInclusive<i16>","core::iter::Enumerate<I>","core::char::ToUppercase","core::str::Bytes<'_>","core::ascii::EscapeDefault","core::slice::ChunksExact<'_, T>","core::char::ToLowercase","core::slice::RChunks<'_, T>","core::slice::ArrayChunksMut<'_, T, N>","core::iter::Skip<I>","core::result::Iter<'_, T>","core::slice::Windows<'_, T>","core::ops::RangeInclusive<u8>","core::iter::Once<T>","core::ops::Range<usize>","core::ops::RangeInclusive<i8>","core::ops::index_range::IndexRange","core::slice::ChunksExactMut<'_, T>","core::ops::Range<u8>","core::iter::Empty<T>","core::slice::IterMut<'_, T>","core::char::EscapeDefault","core::ops::Range<i8>","core::iter::Map<I, F>","core::iter::Cloned<I>","core::ops::Range<i32>","core::ops::Range<u32>","core::ops::Range<isize>","core::iter::Inspect<I, F>","core::option::Item<A>","core::iter::RepeatN<A>","core::option::IterMut<'_, A>","core::iter::Rev<I>","core::option::Iter<'_, A>","core::slice::RChunksExact<'a, T>","core::iter::Take<I>","core::iter::Fuse<I>","core::result::IntoIter<T>","core::ops::Range<i16>","core::option::IntoIter<A>","core::iter::OnceWith<F>","core::slice::ChunksMut<'_, T>","core::slice::Iter<'_, T>","core::iter::ArrayChunks<I, N>","core::slice::Chunks<'_, T>","core::slice::ArrayWindows<'_, T, N>","core::ops::Range<u16>","core::ops::RangeInclusive<u16>","core::char::EscapeUnicode","core::char::EscapeDebug","core::iter::Zip<A, B>","core::iter::Peekable<I>"]}}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // Bump
+let mut p1 = MaybeUninit::uninit().assume_init(); // I
++p0.alloc_slice_fill_iter(p1);
++Bump::alloc_slice_fill_iter(p0, p1);
++crate::Bump::alloc_slice_fill_iter(p0, p1);
++<Bump>::alloc_slice_fill_iter(p0, p1);
+-----------------
+src/lib.rs Bump::alloc_slice_fill_default
+deps:{"Bump::alloc_slice_fill_default":{"T":["core::marker::Sized","core::default::Default"]}}
+candidates:{"Bump::alloc_slice_fill_default":{}}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // Bump
+let mut p1 = 0usize; // None+usize
++p0.alloc_slice_fill_default(p1);
++Bump::alloc_slice_fill_default(p0, p1);
++crate::Bump::alloc_slice_fill_default(p0, p1);
++<Bump>::alloc_slice_fill_default(p0, p1);
+-----------------
+src/lib.rs Bump::alloc_layout
+deps:{}
+candidates:{}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // Bump
+let mut p1 = MaybeUninit::uninit().assume_init(); // core::alloc::Layout
++p0.alloc_layout(p1);
++Bump::alloc_layout(p0, p1);
++crate::Bump::alloc_layout(p0, p1);
++<Bump>::alloc_layout(p0, p1);
+-----------------
+src/lib.rs Bump::try_alloc_layout
+deps:{}
+candidates:{}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // Bump
+let mut p1 = MaybeUninit::uninit().assume_init(); // core::alloc::Layout
++p0.try_alloc_layout(p1);
++Bump::try_alloc_layout(p0, p1);
++crate::Bump::try_alloc_layout(p0, p1);
++<Bump>::try_alloc_layout(p0, p1);
+-----------------
+src/lib.rs Bump::try_alloc_layout_fast
+deps:{}
+candidates:{}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // Bump
+let mut p1 = MaybeUninit::uninit().assume_init(); // core::alloc::Layout
++p0.try_alloc_layout_fast(p1);
++Bump::try_alloc_layout_fast(p0, p1);
++crate::Bump::try_alloc_layout_fast(p0, p1);
++<Bump>::try_alloc_layout_fast(p0, p1);
+-----------------
+src/lib.rs Bump::chunk_capacity
+deps:{}
+candidates:{}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // Bump
++p0.chunk_capacity();
++Bump::chunk_capacity(p0);
++crate::Bump::chunk_capacity(p0);
++<Bump>::chunk_capacity(p0);
+-----------------
+src/lib.rs Bump::alloc_layout_slow
+deps:{}
+candidates:{}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // Bump
+let mut p1 = MaybeUninit::uninit().assume_init(); // core::alloc::Layout
++p0.alloc_layout_slow(p1);
++Bump::alloc_layout_slow(p0, p1);
++crate::Bump::alloc_layout_slow(p0, p1);
++<Bump>::alloc_layout_slow(p0, p1);
+-----------------
+src/lib.rs Bump::iter_allocated_chunks
+deps:{}
+candidates:{}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // Bump
++p0.iter_allocated_chunks();
++Bump::iter_allocated_chunks(p0);
++crate::Bump::iter_allocated_chunks(p0);
++<Bump>::iter_allocated_chunks(p0);
+-----------------
+src/lib.rs Bump::iter_allocated_chunks_raw
+deps:{}
+candidates:{}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // Bump
++p0.iter_allocated_chunks_raw();
++Bump::iter_allocated_chunks_raw(p0);
++crate::Bump::iter_allocated_chunks_raw(p0);
++<Bump>::iter_allocated_chunks_raw(p0);
+-----------------
+src/lib.rs Bump::allocated_bytes
+deps:{}
+candidates:{}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // Bump
++p0.allocated_bytes();
++Bump::allocated_bytes(p0);
++crate::Bump::allocated_bytes(p0);
++<Bump>::allocated_bytes(p0);
+-----------------
+src/lib.rs Bump::is_last_allocation
+deps:{}
+candidates:{}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // Bump
+let mut p1 = MaybeUninit::uninit().assume_init(); // core::ptr::NonNull<u8>
++p0.is_last_allocation(p1);
++Bump::is_last_allocation(p0, p1);
++crate::Bump::is_last_allocation(p0, p1);
++<Bump>::is_last_allocation(p0, p1);
+-----------------
+src/lib.rs Bump::dealloc
+deps:{}
+candidates:{}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // Bump
+let mut p1 = MaybeUninit::uninit().assume_init(); // core::ptr::NonNull<u8>
+let mut p2 = MaybeUninit::uninit().assume_init(); // core::alloc::Layout
++p0.dealloc(p1, p2);
++Bump::dealloc(p0, p1, p2);
++crate::Bump::dealloc(p0, p1, p2);
++<Bump>::dealloc(p0, p1, p2);
+-----------------
+src/lib.rs Bump::shrink
+deps:{}
+candidates:{}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // Bump
+let mut p1 = MaybeUninit::uninit().assume_init(); // core::ptr::NonNull<u8>
+let mut p2 = MaybeUninit::uninit().assume_init(); // core::alloc::Layout
+let mut p3 = MaybeUninit::uninit().assume_init(); // core::alloc::Layout
++p0.shrink(p1, p2, p3);
++Bump::shrink(p0, p1, p2, p3);
++crate::Bump::shrink(p0, p1, p2, p3);
++<Bump>::shrink(p0, p1, p2, p3);
+-----------------
+src/lib.rs Bump::grow
+deps:{}
+candidates:{}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // Bump
+let mut p1 = MaybeUninit::uninit().assume_init(); // core::ptr::NonNull<u8>
+let mut p2 = MaybeUninit::uninit().assume_init(); // core::alloc::Layout
+let mut p3 = MaybeUninit::uninit().assume_init(); // core::alloc::Layout
++p0.grow(p1, p2, p3);
++Bump::grow(p0, p1, p2, p3);
++crate::Bump::grow(p0, p1, p2, p3);
++<Bump>::grow(p0, p1, p2, p3);
+-----------------
+src/lib.rs <ChunkIter<'a> as core::fmt::Debug>::fmt
+'a
+deps:{}
+candidates:{}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // ChunkIter<'a>
+let mut p1 = &mut  MaybeUninit::uninit().assume_init(); // core::fmt::Formatter<'_>
++p0.fmt(p1);
++<ChunkIter<'a> as core::fmt::Debug>::fmt(p0, p1);
++crate::<ChunkIter<'a> as core::fmt::Debug>::fmt(p0, p1);
++<ChunkIter<'a>>::fmt(p0, p1);
+-----------------
+src/lib.rs <ChunkIter<'a> as core::iter::Iterator>::next
+'a
+deps:{}
+candidates:{}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // ChunkIter<'a>
++p0.next();
++<ChunkIter<'a> as core::iter::Iterator>::next(p0);
++crate::<ChunkIter<'a> as core::iter::Iterator>::next(p0);
++<ChunkIter<'a>>::next(p0);
+-----------------
+src/lib.rs <ChunkRawIter<'a> as core::fmt::Debug>::fmt
+'a
+deps:{}
+candidates:{}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // ChunkRawIter<'a>
+let mut p1 = &mut  MaybeUninit::uninit().assume_init(); // core::fmt::Formatter<'_>
++p0.fmt(p1);
++<ChunkRawIter<'a> as core::fmt::Debug>::fmt(p0, p1);
++crate::<ChunkRawIter<'a> as core::fmt::Debug>::fmt(p0, p1);
++<ChunkRawIter<'a>>::fmt(p0, p1);
+-----------------
+src/lib.rs <ChunkRawIter<'_> as core::iter::Iterator>::next
+deps:{}
+candidates:{}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // ChunkRawIter<'_>
++p0.next();
++<ChunkRawIter<'_> as core::iter::Iterator>::next(p0);
++crate::<ChunkRawIter<'_> as core::iter::Iterator>::next(p0);
++<ChunkRawIter<'_>>::next(p0);
+-----------------
+src/lib.rs <&'a Bump as alloc::Alloc>::alloc
+'a
+deps:{}
+candidates:{}
+let mut p0 = &mut  &mut MaybeUninit::uninit().assume_init(); // Bump
+let mut p1 = MaybeUninit::uninit().assume_init(); // core::alloc::Layout
++p0.alloc(p1);
++<&'a Bump as alloc::Alloc>::alloc(p0, p1);
++crate::<&'a Bump as alloc::Alloc>::alloc(p0, p1);
++<&'a Bump>::alloc(p0, p1);
+-----------------
+src/lib.rs <&'a Bump as alloc::Alloc>::dealloc
+'a
+deps:{}
+candidates:{}
+let mut p0 = &mut  &mut MaybeUninit::uninit().assume_init(); // Bump
+let mut p1 = MaybeUninit::uninit().assume_init(); // core::ptr::NonNull<u8>
+let mut p2 = MaybeUninit::uninit().assume_init(); // core::alloc::Layout
++p0.dealloc(p1, p2);
++<&'a Bump as alloc::Alloc>::dealloc(p0, p1, p2);
++crate::<&'a Bump as alloc::Alloc>::dealloc(p0, p1, p2);
++<&'a Bump>::dealloc(p0, p1, p2);
+-----------------
+src/lib.rs <&'a Bump as alloc::Alloc>::realloc
+'a
+deps:{}
+candidates:{}
+let mut p0 = &mut  &mut MaybeUninit::uninit().assume_init(); // Bump
+let mut p1 = MaybeUninit::uninit().assume_init(); // core::ptr::NonNull<u8>
+let mut p2 = MaybeUninit::uninit().assume_init(); // core::alloc::Layout
+let mut p3 = 0usize; // None+usize
++p0.realloc(p1, p2, p3);
++<&'a Bump as alloc::Alloc>::realloc(p0, p1, p2, p3);
++crate::<&'a Bump as alloc::Alloc>::realloc(p0, p1, p2, p3);
++<&'a Bump>::realloc(p0, p1, p2, p3);

@@ -1,0 +1,250 @@
+     Removed 152 files, 71.4MiB total
+   Compiling typenum v1.18.0
+   Compiling semver v1.0.26
+   Compiling home v0.5.5
+   Compiling libc v0.2.175
+   Compiling xdg v2.5.2
+   Compiling global_data v0.1.0 (/home/cdc/deepSURF-sp26-artifacts/artifact_code/global_data)
+   Compiling afl v0.15.7
+   Compiling rustc_version v0.4.1
+   Compiling bitmaps v2.1.0
+   Compiling sized-chunks v0.6.2 (/home/cdc/deepSURF-sp26-artifacts/artifact_data/dataset/rustsan_crates/sized-chunks-0.6.2)
+   Compiling sized-chunks_fuzz_18107269206091153276 v0.1.0 (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#31-sized-chunks/harness)
+warning: unused import: `std::str::FromStr`
+ --> src/sized-chunks_fuzz_18107269206091153276.rs:7:5
+  |
+7 | use std::str::FromStr;
+  |     ^^^^^^^^^^^^^^^^^
+  |
+  = note: `#[warn(unused_imports)]` on by default
+
+warning: unused imports: `DerefMut`, `Deref`, `IndexMut`, `Index`
+ --> src/sized-chunks_fuzz_18107269206091153276.rs:8:16
+  |
+8 | use std::ops::{Deref, DerefMut, Index, IndexMut};
+  |                ^^^^^  ^^^^^^^^  ^^^^^  ^^^^^^^^
+
+warning: the item `TryInto` is imported redundantly
+   --> src/sized-chunks_fuzz_18107269206091153276.rs:224:9
+    |
+224 |     use std::convert::TryInto;
+    |         ^^^^^^^^^^^^^^^^^^^^^
+   --> /rustc/11f32b73e0dc9287e305b5b9980d24aecdc8c17f/library/std/src/prelude/mod.rs:129:13
+    |
+    = note: the item `TryInto` is already defined here
+
+warning: the item `TryInto` is imported redundantly
+   --> src/sized-chunks_fuzz_18107269206091153276.rs:231:9
+    |
+231 |     use std::convert::TryInto;
+    |         ^^^^^^^^^^^^^^^^^^^^^
+   --> /rustc/11f32b73e0dc9287e305b5b9980d24aecdc8c17f/library/std/src/prelude/mod.rs:129:13
+    |
+    = note: the item `TryInto` is already defined here
+
+warning: variable does not need to be mutable
+  --> src/sized-chunks_fuzz_18107269206091153276.rs:34:13
+   |
+34 |         let mut t_0 = _to_u8(GLOBAL_DATA, 8) % 17;
+   |             ----^^^
+   |             |
+   |             help: remove this `mut`
+   |
+   = note: `#[warn(unused_mut)]` on by default
+
+warning: variable does not need to be mutable
+  --> src/sized-chunks_fuzz_18107269206091153276.rs:76:13
+   |
+76 |         let mut t_40 = _to_u8(GLOBAL_DATA, 163) % 17;
+   |             ----^^^^
+   |             |
+   |             help: remove this `mut`
+
+warning: unused variable: `index`
+   --> src/sized-chunks_fuzz_18107269206091153276.rs:111:25
+    |
+111 |                     let index = _to_usize(GLOBAL_DATA, 50 + i as usize);
+    |                         ^^^^^ help: if this is intentional, prefix it with an underscore: `_index`
+    |
+    = note: `#[warn(unused_variables)]` on by default
+
+warning: unused variable: `src_index`
+   --> src/sized-chunks_fuzz_18107269206091153276.rs:133:13
+    |
+133 |         let src_index = _to_usize(GLOBAL_DATA, 300) % main_chunk.len();
+    |             ^^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_src_index`
+
+warning: struct `CustomType1` is never constructed
+  --> src/sized-chunks_fuzz_18107269206091153276.rs:11:8
+   |
+11 | struct CustomType1(String);
+   |        ^^^^^^^^^^^
+   |
+   = note: `#[warn(dead_code)]` on by default
+
+warning: field `0` is never read
+  --> src/sized-chunks_fuzz_18107269206091153276.rs:13:20
+   |
+13 | struct CustomType2(String);
+   |        ----------- ^^^^^^
+   |        |
+   |        field in this struct
+   |
+   = note: `CustomType2` has a derived impl for the trait `Debug`, but this is intentionally ignored during dead code analysis
+help: consider changing the field to be of unit type to suppress this warning while preserving the field numbering, or remove the field
+   |
+13 | struct CustomType2(());
+   |                    ~~
+
+warning: struct `CustomType4` is never constructed
+  --> src/sized-chunks_fuzz_18107269206091153276.rs:15:8
+   |
+15 | struct CustomType4(String);
+   |        ^^^^^^^^^^^
+
+warning: variable `GLOBAL_DATA` should have a snake case name
+  --> src/sized-chunks_fuzz_18107269206091153276.rs:23:13
+   |
+23 |         let GLOBAL_DATA = global_data.first_half;
+   |             ^^^^^^^^^^^ help: convert the identifier to snake case: `global_data`
+   |
+   = note: `#[warn(non_snake_case)]` on by default
+
+warning: variable `GLOBAL_DATA` should have a snake case name
+  --> src/sized-chunks_fuzz_18107269206091153276.rs:30:13
+   |
+30 |         let GLOBAL_DATA = match selector {
+   |             ^^^^^^^^^^^ help: convert the identifier to snake case: `global_data`
+
+warning: variable `GLOBAL_DATA` should have a snake case name
+  --> src/sized-chunks_fuzz_18107269206091153276.rs:44:13
+   |
+44 |         let GLOBAL_DATA = global_data.first_half;
+   |             ^^^^^^^^^^^ help: convert the identifier to snake case: `global_data`
+
+warning: variable `GLOBAL_DATA` should have a snake case name
+  --> src/sized-chunks_fuzz_18107269206091153276.rs:51:13
+   |
+51 |         let GLOBAL_DATA = match selector {
+   |             ^^^^^^^^^^^ help: convert the identifier to snake case: `global_data`
+
+warning: variable `GLOBAL_DATA` should have a snake case name
+  --> src/sized-chunks_fuzz_18107269206091153276.rs:65:13
+   |
+65 |         let GLOBAL_DATA = global_data.first_half;
+   |             ^^^^^^^^^^^ help: convert the identifier to snake case: `global_data`
+
+warning: variable `GLOBAL_DATA` should have a snake case name
+  --> src/sized-chunks_fuzz_18107269206091153276.rs:72:13
+   |
+72 |         let GLOBAL_DATA = match selector {
+   |             ^^^^^^^^^^^ help: convert the identifier to snake case: `global_data`
+
+warning: variable `GLOBAL_DATA` should have a snake case name
+  --> src/sized-chunks_fuzz_18107269206091153276.rs:87:13
+   |
+87 |         let GLOBAL_DATA = global_data.first_half;
+   |             ^^^^^^^^^^^ help: convert the identifier to snake case: `global_data`
+
+warning: `sized-chunks_fuzz_18107269206091153276` (bin "sized-chunks_fuzz_18107269206091153276") generated 18 warnings (run `cargo fix --bin "sized-chunks_fuzz_18107269206091153276"` to apply 6 suggestions)
+    Finished dev [unoptimized + debuginfo] target(s) in 2.84s
+=================================================================
+==1408430==ERROR: AddressSanitizer: stack-buffer-overflow on address 0x7f25629019f0 at pc 0x564924b74ae4 bp 0x7fff719327b0 sp 0x7fff71931f70
+WRITE of size 24 at 0x7f25629019f0 thread T0
+    #0 0x564924b74ae3  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#31-sized-chunks/harness/target/x86_64-unknown-linux-gnu/debug/sized-chunks_fuzz_18107269206091153276+0x96ae3) (BuildId: f12025e8ef2b72a356bce96538d18cc874c5c65c)
+    #1 0x564924ba64a0  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#31-sized-chunks/harness/target/x86_64-unknown-linux-gnu/debug/sized-chunks_fuzz_18107269206091153276+0xc84a0) (BuildId: f12025e8ef2b72a356bce96538d18cc874c5c65c)
+    #2 0x564924bafd1a  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#31-sized-chunks/harness/target/x86_64-unknown-linux-gnu/debug/sized-chunks_fuzz_18107269206091153276+0xd1d1a) (BuildId: f12025e8ef2b72a356bce96538d18cc874c5c65c)
+    #3 0x564924bae991  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#31-sized-chunks/harness/target/x86_64-unknown-linux-gnu/debug/sized-chunks_fuzz_18107269206091153276+0xd0991) (BuildId: f12025e8ef2b72a356bce96538d18cc874c5c65c)
+    #4 0x564924b9fd91  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#31-sized-chunks/harness/target/x86_64-unknown-linux-gnu/debug/sized-chunks_fuzz_18107269206091153276+0xc1d91) (BuildId: f12025e8ef2b72a356bce96538d18cc874c5c65c)
+    #5 0x564924b9fde0  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#31-sized-chunks/harness/target/x86_64-unknown-linux-gnu/debug/sized-chunks_fuzz_18107269206091153276+0xc1de0) (BuildId: f12025e8ef2b72a356bce96538d18cc874c5c65c)
+    #6 0x564924bc9eb0  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#31-sized-chunks/harness/target/x86_64-unknown-linux-gnu/debug/sized-chunks_fuzz_18107269206091153276+0xebeb0) (BuildId: f12025e8ef2b72a356bce96538d18cc874c5c65c)
+    #7 0x564924bafed5  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#31-sized-chunks/harness/target/x86_64-unknown-linux-gnu/debug/sized-chunks_fuzz_18107269206091153276+0xd1ed5) (BuildId: f12025e8ef2b72a356bce96538d18cc874c5c65c)
+    #8 0x7f2563f82d8f  (/lib/x86_64-linux-gnu/libc.so.6+0x29d8f) (BuildId: 490fef8403240c91833978d494d39e537409b92e)
+    #9 0x7f2563f82e3f  (/lib/x86_64-linux-gnu/libc.so.6+0x29e3f) (BuildId: 490fef8403240c91833978d494d39e537409b92e)
+    #10 0x564924aef9c4  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#31-sized-chunks/harness/target/x86_64-unknown-linux-gnu/debug/sized-chunks_fuzz_18107269206091153276+0x119c4) (BuildId: f12025e8ef2b72a356bce96538d18cc874c5c65c)
+
+Address 0x7f25629019f0 is located in stack of thread T0 at offset 6640 in frame
+    #0 0x564924ba00bf  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#31-sized-chunks/harness/target/x86_64-unknown-linux-gnu/debug/sized-chunks_fuzz_18107269206091153276+0xc20bf) (BuildId: f12025e8ef2b72a356bce96538d18cc874c5c65c)
+
+  This frame has 46 object(s):
+    [32, 48) 'iter.i.i.i.i.i'
+    [64, 72) 'bits.i.i.i.i.i'
+    [96, 144) '_2.i.i.i372.i.i.i.i'
+    [176, 200) '_10.i.i.i.i.i'
+    [240, 1792) 'chunk.i.i.i.i.i'
+    [1920, 1968) '_2.i.i.i315.i.i.i.i'
+    [2000, 2048) '_2.i.i.i277.i.i.i.i'
+    [2080, 2128) '_2.i.i.i252.i.i.i.i'
+    [2160, 2208) '_2.i.i.i221.i.i.i.i'
+    [2240, 2256) 'iter.i.i.i.i.i.i'
+    [2272, 2280) 'bits.i.i.i.i.i.i'
+    [2304, 2352) '_11.i.i.i.i.i.i'
+    [2384, 2408) '_91.i.i.i.i.i'
+    [2448, 2472) '_72.i.i.i.i.i'
+    [2512, 2536) '_49.i.i.i.i.i'
+    [2576, 2592) '_18.i.i.i.i.i'
+    [2608, 2656) '_14.i141.i.i.i.i'
+    [2688, 2696) 'insert_size.i.i.i.i.i'
+    [2720, 2744) '_6.i.i120.i.i.i.i'
+    [2784, 2832) '_11.i121.i.i.i.i'
+    [2864, 2872) '_198.i.i.i.i'
+    [2896, 2912) '_195.i.i.i.i'
+    [2928, 2976) '_191.i.i.i.i'
+    [3008, 3016) '_182.i.i.i.i'
+    [3040, 3056) '_179.i.i.i.i'
+    [3072, 3120) '_175.i.i.i.i'
+    [3152, 4696) 'sparse.i.i.i.i'
+    [4832, 4848) '_164.i.i.i.i'
+    [4864, 4880) '_161.i.i.i.i'
+    [4896, 4944) '_157.i.i.i.i'
+    [4976, 4992) '_109.i.i.i.i'
+    [5008, 5032) 'res7.i.i.i.i'
+    [5072, 5073) 'ops.i.i.i.i'
+    [5088, 6640) 'main_chunk.i.i.i.i' <== Memory access at offset 6640 overflows this variable
+    [6768, 6784) '_83.i.i.i.i'
+    [6800, 6824) 'res4.i.i.i.i'
+    [6864, 8416) 'chunk.i.i.i.i'
+    [8544, 8560) '_59.i.i.i.i'
+    [8576, 8600) 'res3.i.i.i.i'
+    [8640, 8656) '_44.i.i.i.i'
+    [8672, 8696) 'res1.i.i.i.i'
+    [8736, 8752) '_35.i.i.i.i'
+    [8768, 8792) 'res.i.i.i.i'
+    [8832, 10384) 'c.i.i.i.i'
+    [10512, 10513) 'i.i.i.i.i'
+    [10528, 10552) 'chunks.i.i.i.i'
+HINT: this may be a false positive if your program uses some custom stack unwind mechanism, swapcontext or vfork
+      (longjmp and C++ exceptions *are* supported)
+SUMMARY: AddressSanitizer: stack-buffer-overflow (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#31-sized-chunks/harness/target/x86_64-unknown-linux-gnu/debug/sized-chunks_fuzz_18107269206091153276+0x96ae3) (BuildId: f12025e8ef2b72a356bce96538d18cc874c5c65c) 
+Shadow bytes around the buggy address:
+  0x7f2562901700: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x7f2562901780: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x7f2562901800: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x7f2562901880: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x7f2562901900: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+=>0x7f2562901980: 00 00 00 00 00 00 00 00 00 00 00 00 00 00[f2]f2
+  0x7f2562901a00: f2 f2 f2 f2 f2 f2 f2 f2 f2 f2 f2 f2 f2 f2 f8 f8
+  0x7f2562901a80: f2 f2 00 00 00 f2 f2 f2 f2 f2 00 00 00 00 00 00
+  0x7f2562901b00: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x7f2562901b80: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x7f2562901c00: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+Shadow byte legend (one shadow byte represents 8 application bytes):
+  Addressable:           00
+  Partially addressable: 01 02 03 04 05 06 07 
+  Heap left redzone:       fa
+  Freed heap region:       fd
+  Stack left redzone:      f1
+  Stack mid redzone:       f2
+  Stack right redzone:     f3
+  Stack after return:      f5
+  Stack use after scope:   f8
+  Global redzone:          f9
+  Global init order:       f6
+  Poisoned by user:        f7
+  Container overflow:      fc
+  Array cookie:            ac
+  Intra object redzone:    bb
+  ASan internal:           fe
+  Left alloca redzone:     ca
+  Right alloca redzone:    cb
+==1408430==ABORTING

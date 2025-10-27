@@ -1,0 +1,16 @@
+[workspace]
+
+[package]
+name = "simple-slab_fuzz_12997837067481994914"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "simple-slab_fuzz_12997837067481994914"
+path = "src/simple-slab_fuzz_12997837067481994914.rs"
+
+[dependencies]
+afl = "=0.15.7"
+home = "=0.5.9"
+simple-slab = { path = "../../../../../../dataset/erasan_crates/simple-slab-0.3.2/" }
+global_data = { path = "../../../../../../code/global_data" }

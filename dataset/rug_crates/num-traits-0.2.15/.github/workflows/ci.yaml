@@ -1,0 +1,71 @@
+name: CI
+on:
+  push:
+    branches:
+      - staging
+      - trying
+
+jobs:
+
+  test:
+    name: Test
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        rust: [
+          1.31.0, # MSRV
+          1.35.0, # has_copysign
+          1.37.0, # has_reverse_bits
+          1.38.0, # has_div_euclid
+          1.44.0, # has_to_int_unchecked
+          1.46.0, # has_leading_trailing_ones
+          stable,
+          beta,
+          nightly,
+        ]
+    steps:
+      - uses: actions/checkout@v3
+      - uses: dtolnay/rust-toolchain@master
+        with:
+          toolchain: ${{ matrix.rust }}
+      - run: cargo build
+        env:
+          # https://github.com/rust-lang/cargo/issues/10303
+          CARGO_NET_GIT_FETCH_WITH_CLI: true
+      - run: ./ci/test_full.sh
+
+  # i586 presents floating point challenges for lack of SSE/SSE2
+  i586:
+    name: Test (i586)
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+          sudo apt-get update
+          sudo apt-get install gcc-multilib
+      - uses: actions/checkout@v3
+      - uses: dtolnay/rust-toolchain@stable
+        with:
+          target: i586-unknown-linux-gnu
+      - run: cargo test --target i586-unknown-linux-gnu --all-features
+
+  # try a target that doesn't have std at all
+  no_std:
+    name: No Std
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: dtolnay/rust-toolchain@stable
+        with:
+          target: thumbv6m-none-eabi
+      - run: cargo build --target thumbv6m-none-eabi --no-default-features
+      - run: cargo build --target thumbv6m-none-eabi --no-default-features --features libm
+
+  fmt:
+    name: Format
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: dtolnay/rust-toolchain@1.62.0
+        with:
+          components: rustfmt
+      - run: cargo fmt --all --check

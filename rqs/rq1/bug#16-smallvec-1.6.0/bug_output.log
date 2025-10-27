@@ -1,0 +1,176 @@
+     Removed 124 files, 55.7MiB total
+   Compiling semver v1.0.26
+   Compiling home v0.5.5
+   Compiling libc v0.2.175
+   Compiling xdg v2.5.2
+   Compiling global_data v0.1.0 (/home/cdc/deepSURF-sp26-artifacts/artifact_code/global_data)
+   Compiling smallvec v1.6.0 (/home/cdc/deepSURF-sp26-artifacts/artifact_data/dataset/erasan_crates/smallvec-1.6.0)
+   Compiling afl v0.15.7
+   Compiling rustc_version v0.4.1
+   Compiling smallvec_fuzz_5912937994556700025 v0.1.0 (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#16-smallvec-1.6.0/harness)
+warning: unused import: `std::str::FromStr`
+ --> src/smallvec_fuzz_5912937994556700025.rs:7:5
+  |
+7 | use std::str::FromStr;
+  |     ^^^^^^^^^^^^^^^^^
+  |
+  = note: `#[warn(unused_imports)]` on by default
+
+warning: unused imports: `DerefMut`, `Deref`, `IndexMut`, `Index`
+ --> src/smallvec_fuzz_5912937994556700025.rs:8:16
+  |
+8 | use std::ops::{Deref, DerefMut, Index, IndexMut};
+  |                ^^^^^  ^^^^^^^^  ^^^^^  ^^^^^^^^
+
+warning: the item `TryInto` is imported redundantly
+   --> src/smallvec_fuzz_5912937994556700025.rs:240:9
+    |
+240 |     use std::convert::TryInto;
+    |         ^^^^^^^^^^^^^^^^^^^^^
+   --> /rustc/11f32b73e0dc9287e305b5b9980d24aecdc8c17f/library/std/src/prelude/mod.rs:129:13
+    |
+    = note: the item `TryInto` is already defined here
+
+warning: the item `TryInto` is imported redundantly
+   --> src/smallvec_fuzz_5912937994556700025.rs:247:9
+    |
+247 |     use std::convert::TryInto;
+    |         ^^^^^^^^^^^^^^^^^^^^^
+   --> /rustc/11f32b73e0dc9287e305b5b9980d24aecdc8c17f/library/std/src/prelude/mod.rs:129:13
+    |
+    = note: the item `TryInto` is already defined here
+
+warning: variable does not need to be mutable
+  --> src/smallvec_fuzz_5912937994556700025.rs:51:13
+   |
+51 |         let mut t_14 = _to_u8(GLOBAL_DATA, 74) % 17;
+   |             ----^^^^
+   |             |
+   |             help: remove this `mut`
+   |
+   = note: `#[warn(unused_mut)]` on by default
+
+warning: variable does not need to be mutable
+  --> src/smallvec_fuzz_5912937994556700025.rs:74:13
+   |
+74 |         let mut t_19 = _to_u8(GLOBAL_DATA, 99) % 17;
+   |             ----^^^^
+   |             |
+   |             help: remove this `mut`
+
+warning: field `0` is never read
+  --> src/smallvec_fuzz_5912937994556700025.rs:13:20
+   |
+13 | struct CustomType1(String);
+   |        ----------- ^^^^^^
+   |        |
+   |        field in this struct
+   |
+   = note: `CustomType1` has derived impls for the traits `Clone` and `Debug`, but these are intentionally ignored during dead code analysis
+   = note: `#[warn(dead_code)]` on by default
+help: consider changing the field to be of unit type to suppress this warning while preserving the field numbering, or remove the field
+   |
+13 | struct CustomType1(());
+   |                    ~~
+
+warning: variable `GLOBAL_DATA` should have a snake case name
+  --> src/smallvec_fuzz_5912937994556700025.rs:22:13
+   |
+22 |         let GLOBAL_DATA = global_data.first_half;
+   |             ^^^^^^^^^^^ help: convert the identifier to snake case: `global_data`
+   |
+   = note: `#[warn(non_snake_case)]` on by default
+
+warning: variable `GLOBAL_DATA` should have a snake case name
+  --> src/smallvec_fuzz_5912937994556700025.rs:29:13
+   |
+29 |         let GLOBAL_DATA = match selector {
+   |             ^^^^^^^^^^^ help: convert the identifier to snake case: `global_data`
+
+warning: variable `GLOBAL_DATA` should have a snake case name
+  --> src/smallvec_fuzz_5912937994556700025.rs:40:13
+   |
+40 |         let GLOBAL_DATA = global_data.first_half;
+   |             ^^^^^^^^^^^ help: convert the identifier to snake case: `global_data`
+
+warning: variable `GLOBAL_DATA` should have a snake case name
+  --> src/smallvec_fuzz_5912937994556700025.rs:47:13
+   |
+47 |         let GLOBAL_DATA = match selector {
+   |             ^^^^^^^^^^^ help: convert the identifier to snake case: `global_data`
+
+warning: variable `GLOBAL_DATA` should have a snake case name
+  --> src/smallvec_fuzz_5912937994556700025.rs:63:13
+   |
+63 |         let GLOBAL_DATA = global_data.first_half;
+   |             ^^^^^^^^^^^ help: convert the identifier to snake case: `global_data`
+
+warning: variable `GLOBAL_DATA` should have a snake case name
+  --> src/smallvec_fuzz_5912937994556700025.rs:70:13
+   |
+70 |         let GLOBAL_DATA = match selector {
+   |             ^^^^^^^^^^^ help: convert the identifier to snake case: `global_data`
+
+warning: variable `GLOBAL_DATA` should have a snake case name
+  --> src/smallvec_fuzz_5912937994556700025.rs:87:13
+   |
+87 |         let GLOBAL_DATA = global_data.first_half;
+   |             ^^^^^^^^^^^ help: convert the identifier to snake case: `global_data`
+
+warning: `smallvec_fuzz_5912937994556700025` (bin "smallvec_fuzz_5912937994556700025") generated 14 warnings (run `cargo fix --bin "smallvec_fuzz_5912937994556700025"` to apply 4 suggestions)
+    Finished dev [unoptimized + debuginfo] target(s) in 3.24s
+=================================================================
+==1389364==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x51b000000d80 at pc 0x559cfbd3b4f2 bp 0x7ffe42d029f0 sp 0x7ffe42d021b0
+WRITE of size 1488 at 0x51b000000d80 thread T0
+    #0 0x559cfbd3b4f1  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#16-smallvec-1.6.0/harness/target/x86_64-unknown-linux-gnu/debug/smallvec_fuzz_5912937994556700025+0x964f1) (BuildId: 699cff61c843f2f92fb3245cf76547f2149b7b9f)
+    #1 0x559cfbd76d63  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#16-smallvec-1.6.0/harness/target/x86_64-unknown-linux-gnu/debug/smallvec_fuzz_5912937994556700025+0xd1d63) (BuildId: 699cff61c843f2f92fb3245cf76547f2149b7b9f)
+    #2 0x559cfbd6de55  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#16-smallvec-1.6.0/harness/target/x86_64-unknown-linux-gnu/debug/smallvec_fuzz_5912937994556700025+0xc8e55) (BuildId: 699cff61c843f2f92fb3245cf76547f2149b7b9f)
+    #3 0x559cfbd7c7ea  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#16-smallvec-1.6.0/harness/target/x86_64-unknown-linux-gnu/debug/smallvec_fuzz_5912937994556700025+0xd77ea) (BuildId: 699cff61c843f2f92fb3245cf76547f2149b7b9f)
+    #4 0x559cfbd7b441  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#16-smallvec-1.6.0/harness/target/x86_64-unknown-linux-gnu/debug/smallvec_fuzz_5912937994556700025+0xd6441) (BuildId: 699cff61c843f2f92fb3245cf76547f2149b7b9f)
+    #5 0x559cfbd662a1  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#16-smallvec-1.6.0/harness/target/x86_64-unknown-linux-gnu/debug/smallvec_fuzz_5912937994556700025+0xc12a1) (BuildId: 699cff61c843f2f92fb3245cf76547f2149b7b9f)
+    #6 0x559cfbd662f0  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#16-smallvec-1.6.0/harness/target/x86_64-unknown-linux-gnu/debug/smallvec_fuzz_5912937994556700025+0xc12f0) (BuildId: 699cff61c843f2f92fb3245cf76547f2149b7b9f)
+    #7 0x559cfbd96980  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#16-smallvec-1.6.0/harness/target/x86_64-unknown-linux-gnu/debug/smallvec_fuzz_5912937994556700025+0xf1980) (BuildId: 699cff61c843f2f92fb3245cf76547f2149b7b9f)
+    #8 0x559cfbd7c9a5  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#16-smallvec-1.6.0/harness/target/x86_64-unknown-linux-gnu/debug/smallvec_fuzz_5912937994556700025+0xd79a5) (BuildId: 699cff61c843f2f92fb3245cf76547f2149b7b9f)
+    #9 0x7fc5e699ed8f  (/lib/x86_64-linux-gnu/libc.so.6+0x29d8f) (BuildId: 490fef8403240c91833978d494d39e537409b92e)
+    #10 0x7fc5e699ee3f  (/lib/x86_64-linux-gnu/libc.so.6+0x29e3f) (BuildId: 490fef8403240c91833978d494d39e537409b92e)
+    #11 0x559cfbcb5df4  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#16-smallvec-1.6.0/harness/target/x86_64-unknown-linux-gnu/debug/smallvec_fuzz_5912937994556700025+0x10df4) (BuildId: 699cff61c843f2f92fb3245cf76547f2149b7b9f)
+
+0x51b000000d80 is located 0 bytes after 1536-byte region [0x51b000000780,0x51b000000d80)
+allocated by thread T0 here:
+    #0 0x559cfbd3d2c5  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#16-smallvec-1.6.0/harness/target/x86_64-unknown-linux-gnu/debug/smallvec_fuzz_5912937994556700025+0x982c5) (BuildId: 699cff61c843f2f92fb3245cf76547f2149b7b9f)
+    #1 0x559cfbd793fd  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#16-smallvec-1.6.0/harness/target/x86_64-unknown-linux-gnu/debug/smallvec_fuzz_5912937994556700025+0xd43fd) (BuildId: 699cff61c843f2f92fb3245cf76547f2149b7b9f)
+    #2 0x559cfbd78d1b  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#16-smallvec-1.6.0/harness/target/x86_64-unknown-linux-gnu/debug/smallvec_fuzz_5912937994556700025+0xd3d1b) (BuildId: 699cff61c843f2f92fb3245cf76547f2149b7b9f)
+
+SUMMARY: AddressSanitizer: heap-buffer-overflow (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#16-smallvec-1.6.0/harness/target/x86_64-unknown-linux-gnu/debug/smallvec_fuzz_5912937994556700025+0x964f1) (BuildId: 699cff61c843f2f92fb3245cf76547f2149b7b9f) 
+Shadow bytes around the buggy address:
+  0x51b000000b00: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x51b000000b80: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x51b000000c00: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x51b000000c80: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x51b000000d00: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+=>0x51b000000d80:[fa]fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+  0x51b000000e00: fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+  0x51b000000e80: fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+  0x51b000000f00: fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+  0x51b000000f80: fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+  0x51b000001000: fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+Shadow byte legend (one shadow byte represents 8 application bytes):
+  Addressable:           00
+  Partially addressable: 01 02 03 04 05 06 07 
+  Heap left redzone:       fa
+  Freed heap region:       fd
+  Stack left redzone:      f1
+  Stack mid redzone:       f2
+  Stack right redzone:     f3
+  Stack after return:      f5
+  Stack use after scope:   f8
+  Global redzone:          f9
+  Global init order:       f6
+  Poisoned by user:        f7
+  Container overflow:      fc
+  Array cookie:            ac
+  Intra object redzone:    bb
+  ASan internal:           fe
+  Left alloca redzone:     ca
+  Right alloca redzone:    cb
+==1389364==ABORTING

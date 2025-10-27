@@ -1,0 +1,16 @@
+[workspace]
+
+[package]
+name = "tokio_fuzz_17930089864439150320"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "tokio_fuzz_17930089864439150320"
+path = "src/tokio_fuzz_17930089864439150320.rs"
+
+[dependencies]
+afl = "=0.15.7"
+home = "=0.5.9"
+global_data = { path = "../../../../../../../../code/global_data" }
+tokio = { path = "../../../../tokio-1.24.1/", features = ["io-util", "rt", "macros"] }

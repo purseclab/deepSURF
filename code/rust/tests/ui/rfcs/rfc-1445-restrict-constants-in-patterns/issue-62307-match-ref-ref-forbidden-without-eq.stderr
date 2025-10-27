@@ -1,0 +1,20 @@
+error: to use a constant of type `B` in a pattern, `B` must be annotated with `#[derive(PartialEq)]`
+  --> $DIR/issue-62307-match-ref-ref-forbidden-without-eq.rs:29:9
+   |
+LL |         RR_B1 => { println!("CLAIM RR0: {:?} matches {:?}", RR_B1, RR_B0); }
+   |         ^^^^^
+   |
+   = note: the traits must be derived, manual `impl`s are not sufficient
+   = note: see https://doc.rust-lang.org/stable/std/marker/trait.StructuralPartialEq.html for details
+
+error: to use a constant of type `B` in a pattern, `B` must be annotated with `#[derive(PartialEq)]`
+  --> $DIR/issue-62307-match-ref-ref-forbidden-without-eq.rs:35:9
+   |
+LL |         RR_B1 => { println!("CLAIM RR1: {:?} matches {:?}", RR_B1, RR_B1); }
+   |         ^^^^^
+   |
+   = note: the traits must be derived, manual `impl`s are not sufficient
+   = note: see https://doc.rust-lang.org/stable/std/marker/trait.StructuralPartialEq.html for details
+
+error: aborting due to 2 previous errors
+

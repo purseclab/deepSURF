@@ -1,0 +1,9 @@
+ ./fuzz_transform/target/release/fuzz_transform /home/cdc/rug_on_erasan_after_bolero/slice-deque-0.3.0/./src/mirrored/linux.rs
+ ./fuzz_transform/target/release/fuzz_transform /home/cdc/rug_on_erasan_after_bolero/slice-deque-0.3.0/./src/mirrored/macos.rs
+ ./fuzz_transform/target/release/fuzz_transform /home/cdc/rug_on_erasan_after_bolero/slice-deque-0.3.0/./src/mirrored/buffer.rs
+ ./fuzz_transform/target/release/fuzz_transform /home/cdc/rug_on_erasan_after_bolero/slice-deque-0.3.0/./src/mirrored/mod.rs
+ ./fuzz_transform/target/release/fuzz_transform /home/cdc/rug_on_erasan_after_bolero/slice-deque-0.3.0/./src/mirrored/winapi.rs
+ ./fuzz_transform/target/release/fuzz_transform /home/cdc/rug_on_erasan_after_bolero/slice-deque-0.3.0/./src/mirrored/sysv.rs
+ ./fuzz_transform/target/release/fuzz_transform /home/cdc/rug_on_erasan_after_bolero/slice-deque-0.3.0/./src/macros.rs
+ ./fuzz_transform/target/release/fuzz_transform /home/cdc/rug_on_erasan_after_bolero/slice-deque-0.3.0/./src/lib.rs
+slice-deque . 77 77 0

@@ -1,0 +1,1 @@
+{"tests_rug_1": {"test_rug": {"rug_fuzz_0": "42"}}, "tests_rug_2": {"test_make_fat_ptr": {"rug_fuzz_0": "0x1000", "rug_fuzz_1": "0x2000", "rug_fuzz_2": "0x3000", "rug_fuzz_3": "0x4000"}}, "tests_rug_3": {"test_round_to_words": {"rug_fuzz_0": "17"}}}

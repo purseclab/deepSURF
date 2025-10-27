@@ -1,0 +1,1479 @@
+/home/cdc/rug_on_erasan_after_bolero/bumpalo-3.11.0//./src/boxed.rs
+/home/cdc/rug_on_erasan_after_bolero/bumpalo-3.11.0//./src/collections/vec.rs
+/home/cdc/rug_on_erasan_after_bolero/bumpalo-3.11.0//./src/collections/str/lossy.rs
+/home/cdc/rug_on_erasan_after_bolero/bumpalo-3.11.0//./src/collections/str/mod.rs
+/home/cdc/rug_on_erasan_after_bolero/bumpalo-3.11.0//./src/collections/collect_in.rs
+/home/cdc/rug_on_erasan_after_bolero/bumpalo-3.11.0//./src/collections/mod.rs
+/home/cdc/rug_on_erasan_after_bolero/bumpalo-3.11.0//./src/collections/string.rs
+/home/cdc/rug_on_erasan_after_bolero/bumpalo-3.11.0//./src/collections/raw_vec.rs
+/home/cdc/rug_on_erasan_after_bolero/bumpalo-3.11.0//./src/alloc.rs
+/home/cdc/rug_on_erasan_after_bolero/bumpalo-3.11.0//./src/lib.rs
+err tests_rug_51 test_rug
+   Compiling bumpalo v3.11.0 (/home/cdc/rug_on_erasan_after_bolero/bumpalo-3.11.0)
+warning: unused import: `super::*`
+   --> src/alloc.rs:704:9
+    |
+704 |     use super::*;
+    |         ^^^^^^^^
+    |
+    = note: `#[warn(unused_imports)]` on by default
+
+warning: unused import: `crate::alloc::Layout`
+   --> src/alloc.rs:705:9
+    |
+705 |     use crate::alloc::Layout;
+    |         ^^^^^^^^^^^^^^^^^^^^
+
+warning: unused import: `crate::alloc::LayoutErr`
+   --> src/alloc.rs:706:9
+    |
+706 |     use crate::alloc::LayoutErr;
+    |         ^^^^^^^^^^^^^^^^^^^^^^^
+
+warning: unused import: `super::*`
+   --> src/alloc.rs:716:9
+    |
+716 |     use super::*;
+    |         ^^^^^^^^
+
+warning: unused import: `core::mem`
+   --> src/alloc.rs:750:9
+    |
+750 |     use core::mem;
+    |         ^^^^^^^^^
+
+warning: unnecessary parentheses around pattern
+   --> src/alloc.rs:858:23
+    |
+858 |             if let Ok((mut rug_fuzz_0)) = <(usize) as arbitrary::Arbitrary>::arbitrary(&mut arbitrary::Unstructured::new(rug_data)){
+    |                       ^              ^
+    |
+    = note: `#[warn(unused_parens)]` on by default
+help: remove these parentheses
+    |
+858 -             if let Ok((mut rug_fuzz_0)) = <(usize) as arbitrary::Arbitrary>::arbitrary(&mut arbitrary::Unstructured::new(rug_data)){
+858 +             if let Ok(mut rug_fuzz_0) = <(usize) as arbitrary::Arbitrary>::arbitrary(&mut arbitrary::Unstructured::new(rug_data)){
+    |
+
+warning: unnecessary parentheses around type
+   --> src/alloc.rs:858:44
+    |
+858 |             if let Ok((mut rug_fuzz_0)) = <(usize) as arbitrary::Arbitrary>::arbitrary(&mut arbitrary::Unstructured::new(rug_data)){
+    |                                            ^     ^
+    |
+help: remove these parentheses
+    |
+858 -             if let Ok((mut rug_fuzz_0)) = <(usize) as arbitrary::Arbitrary>::arbitrary(&mut arbitrary::Unstructured::new(rug_data)){
+858 +             if let Ok((mut rug_fuzz_0)) = <usize as arbitrary::Arbitrary>::arbitrary(&mut arbitrary::Unstructured::new(rug_data)){
+    |
+
+warning: unnecessary parentheses around pattern
+   --> src/alloc.rs:896:23
+    |
+896 |             if let Ok((mut rug_fuzz_0)) = <(usize) as arbitrary::Arbitrary>::arbitrary(&mut arbitrary::Unstructured::new(rug_data)){
+    |                       ^              ^
+    |
+help: remove these parentheses
+    |
+896 -             if let Ok((mut rug_fuzz_0)) = <(usize) as arbitrary::Arbitrary>::arbitrary(&mut arbitrary::Unstructured::new(rug_data)){
+896 +             if let Ok(mut rug_fuzz_0) = <(usize) as arbitrary::Arbitrary>::arbitrary(&mut arbitrary::Unstructured::new(rug_data)){
+    |
+
+warning: unnecessary parentheses around type
+   --> src/alloc.rs:896:44
+    |
+896 |             if let Ok((mut rug_fuzz_0)) = <(usize) as arbitrary::Arbitrary>::arbitrary(&mut arbitrary::Unstructured::new(rug_data)){
+    |                                            ^     ^
+    |
+help: remove these parentheses
+    |
+896 -             if let Ok((mut rug_fuzz_0)) = <(usize) as arbitrary::Arbitrary>::arbitrary(&mut arbitrary::Unstructured::new(rug_data)){
+896 +             if let Ok((mut rug_fuzz_0)) = <usize as arbitrary::Arbitrary>::arbitrary(&mut arbitrary::Unstructured::new(rug_data)){
+    |
+
+warning: unnecessary parentheses around pattern
+   --> src/alloc.rs:955:23
+    |
+955 |             if let Ok((mut rug_fuzz_0)) = <(usize) as arbitrary::Arbitrary>::arbitrary(&mut arbitrary::Unstructured::new(rug_data)){
+    |                       ^              ^
+    |
+help: remove these parentheses
+    |
+955 -             if let Ok((mut rug_fuzz_0)) = <(usize) as arbitrary::Arbitrary>::arbitrary(&mut arbitrary::Unstructured::new(rug_data)){
+955 +             if let Ok(mut rug_fuzz_0) = <(usize) as arbitrary::Arbitrary>::arbitrary(&mut arbitrary::Unstructured::new(rug_data)){
+    |
+
+warning: unnecessary parentheses around type
+   --> src/alloc.rs:955:44
+    |
+955 |             if let Ok((mut rug_fuzz_0)) = <(usize) as arbitrary::Arbitrary>::arbitrary(&mut arbitrary::Unstructured::new(rug_data)){
+    |                                            ^     ^
+    |
+help: remove these parentheses
+    |
+955 -             if let Ok((mut rug_fuzz_0)) = <(usize) as arbitrary::Arbitrary>::arbitrary(&mut arbitrary::Unstructured::new(rug_data)){
+955 +             if let Ok((mut rug_fuzz_0)) = <usize as arbitrary::Arbitrary>::arbitrary(&mut arbitrary::Unstructured::new(rug_data)){
+    |
+
+warning: unused import: `super::*`
+   --> src/alloc.rs:964:9
+    |
+964 |     use super::*;
+    |         ^^^^^^^^
+
+warning: unused import: `super::*`
+    --> src/lib.rs:1686:9
+     |
+1686 |     use super::*;
+     |         ^^^^^^^^
+
+warning: unused import: `super::*`
+    --> src/lib.rs:1725:9
+     |
+1725 |     use super::*;
+     |         ^^^^^^^^
+
+warning: unused import: `super::*`
+    --> src/lib.rs:1737:9
+     |
+1737 |     use super::*;
+     |         ^^^^^^^^
+
+warning: unused import: `super::*`
+    --> src/lib.rs:1748:9
+     |
+1748 |     use super::*;
+     |         ^^^^^^^^
+
+warning: unused import: `AllocErr`
+    --> src/lib.rs:1749:23
+     |
+1749 |     use crate::{Bump, AllocErr};
+     |                       ^^^^^^^^
+
+warning: unnecessary parentheses around pattern
+    --> src/lib.rs:1769:23
+     |
+1769 |             if let Ok((mut rug_fuzz_0)) = <(usize) as arbitrary::Arbitrary>::arbitrary(&mut arbitrary::Unstructured::new(rug_data)){
+     |                       ^              ^
+     |
+help: remove these parentheses
+     |
+1769 -             if let Ok((mut rug_fuzz_0)) = <(usize) as arbitrary::Arbitrary>::arbitrary(&mut arbitrary::Unstructured::new(rug_data)){
+1769 +             if let Ok(mut rug_fuzz_0) = <(usize) as arbitrary::Arbitrary>::arbitrary(&mut arbitrary::Unstructured::new(rug_data)){
+     |
+
+warning: unnecessary parentheses around type
+    --> src/lib.rs:1769:44
+     |
+1769 |             if let Ok((mut rug_fuzz_0)) = <(usize) as arbitrary::Arbitrary>::arbitrary(&mut arbitrary::Unstructured::new(rug_data)){
+     |                                            ^     ^
+     |
+help: remove these parentheses
+     |
+1769 -             if let Ok((mut rug_fuzz_0)) = <(usize) as arbitrary::Arbitrary>::arbitrary(&mut arbitrary::Unstructured::new(rug_data)){
+1769 +             if let Ok((mut rug_fuzz_0)) = <usize as arbitrary::Arbitrary>::arbitrary(&mut arbitrary::Unstructured::new(rug_data)){
+     |
+
+warning: unused imports: `AllocErr`, `EMPTY_CHUNK`, `layout_from_size_align`
+    --> src/lib.rs:1779:23
+     |
+1779 |     use crate::{Bump, layout_from_size_align, AllocErr, EMPTY_CHUNK};
+     |                       ^^^^^^^^^^^^^^^^^^^^^^  ^^^^^^^^  ^^^^^^^^^^^
+
+warning: unnecessary parentheses around pattern
+    --> src/lib.rs:1787:23
+     |
+1787 |             if let Ok((mut rug_fuzz_0)) = <(usize) as arbitrary::Arbitrary>::arbitrary(&mut arbitrary::Unstructured::new(rug_data)){
+     |                       ^              ^
+     |
+help: remove these parentheses
+     |
+1787 -             if let Ok((mut rug_fuzz_0)) = <(usize) as arbitrary::Arbitrary>::arbitrary(&mut arbitrary::Unstructured::new(rug_data)){
+1787 +             if let Ok(mut rug_fuzz_0) = <(usize) as arbitrary::Arbitrary>::arbitrary(&mut arbitrary::Unstructured::new(rug_data)){
+     |
+
+warning: unnecessary parentheses around type
+    --> src/lib.rs:1787:44
+     |
+1787 |             if let Ok((mut rug_fuzz_0)) = <(usize) as arbitrary::Arbitrary>::arbitrary(&mut arbitrary::Unstructured::new(rug_data)){
+     |                                            ^     ^
+     |
+help: remove these parentheses
+     |
+1787 -             if let Ok((mut rug_fuzz_0)) = <(usize) as arbitrary::Arbitrary>::arbitrary(&mut arbitrary::Unstructured::new(rug_data)){
+1787 +             if let Ok((mut rug_fuzz_0)) = <usize as arbitrary::Arbitrary>::arbitrary(&mut arbitrary::Unstructured::new(rug_data)){
+     |
+
+warning: unnecessary parentheses around pattern
+    --> src/lib.rs:1827:23
+     |
+1827 |             if let Ok((mut rug_fuzz_0)) = <(usize) as arbitrary::Arbitrary>::arbitrary(&mut arbitrary::Unstructured::new(rug_data)){
+     |                       ^              ^
+     |
+help: remove these parentheses
+     |
+1827 -             if let Ok((mut rug_fuzz_0)) = <(usize) as arbitrary::Arbitrary>::arbitrary(&mut arbitrary::Unstructured::new(rug_data)){
+1827 +             if let Ok(mut rug_fuzz_0) = <(usize) as arbitrary::Arbitrary>::arbitrary(&mut arbitrary::Unstructured::new(rug_data)){
+     |
+
+warning: unnecessary parentheses around type
+    --> src/lib.rs:1827:44
+     |
+1827 |             if let Ok((mut rug_fuzz_0)) = <(usize) as arbitrary::Arbitrary>::arbitrary(&mut arbitrary::Unstructured::new(rug_data)){
+     |                                            ^     ^
+     |
+help: remove these parentheses
+     |
+1827 -             if let Ok((mut rug_fuzz_0)) = <(usize) as arbitrary::Arbitrary>::arbitrary(&mut arbitrary::Unstructured::new(rug_data)){
+1827 +             if let Ok((mut rug_fuzz_0)) = <usize as arbitrary::Arbitrary>::arbitrary(&mut arbitrary::Unstructured::new(rug_data)){
+     |
+
+warning: unused import: `super::*`
+    --> src/lib.rs:1837:9
+     |
+1837 |     use super::*;
+     |         ^^^^^^^^
+
+warning: unused import: `crate::allocation_size_overflow`
+    --> src/lib.rs:1874:9
+     |
+1874 |     use crate::allocation_size_overflow;
+     |         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+warning: unused import: `crate::round_up_to`
+    --> src/lib.rs:1875:9
+     |
+1875 |     use crate::round_up_to;
+     |         ^^^^^^^^^^^^^^^^^^
+
+warning: unused import: `crate::NewChunkMemoryDetails`
+    --> src/lib.rs:1876:9
+     |
+1876 |     use crate::NewChunkMemoryDetails;
+     |         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+warning: unused import: `crate::DEFAULT_CHUNK_SIZE_WITHOUT_FOOTER`
+    --> src/lib.rs:1877:9
+     |
+1877 |     use crate::DEFAULT_CHUNK_SIZE_WITHOUT_FOOTER;
+     |         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+warning: unused import: `crate::CHUNK_ALIGN`
+    --> src/lib.rs:1878:9
+     |
+1878 |     use crate::CHUNK_ALIGN;
+     |         ^^^^^^^^^^^^^^^^^^
+
+warning: unused import: `crate::OVERHEAD`
+    --> src/lib.rs:1879:9
+     |
+1879 |     use crate::OVERHEAD;
+     |         ^^^^^^^^^^^^^^^
+
+warning: unused import: `crate::PAGE_STRATEGY_CUTOFF`
+    --> src/lib.rs:1880:9
+     |
+1880 |     use crate::PAGE_STRATEGY_CUTOFF;
+     |         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+warning: unused import: `crate::FOOTER_SIZE`
+    --> src/lib.rs:1881:9
+     |
+1881 |     use crate::FOOTER_SIZE;
+     |         ^^^^^^^^^^^^^^^^^^
+
+warning: unused import: `layout_from_size_align`
+    --> src/lib.rs:1904:59
+     |
+1904 |     use crate::{Bump, ChunkFooter, NewChunkMemoryDetails, layout_from_size_align};
+     |                                                           ^^^^^^^^^^^^^^^^^^^^^^
+
+warning: unused import: `super::*`
+    --> src/lib.rs:1933:9
+     |
+1933 |     use super::*;
+     |         ^^^^^^^^
+
+warning: unnecessary parentheses around pattern
+    --> src/lib.rs:1954:23
+     |
+1954 |             if let Ok((mut rug_fuzz_0)) = <(&str) as arbitrary::Arbitrary>::arbitrary(&mut arbitrary::Unstructured::new(rug_data)){
+     |                       ^              ^
+     |
+help: remove these parentheses
+     |
+1954 -             if let Ok((mut rug_fuzz_0)) = <(&str) as arbitrary::Arbitrary>::arbitrary(&mut arbitrary::Unstructured::new(rug_data)){
+1954 +             if let Ok(mut rug_fuzz_0) = <(&str) as arbitrary::Arbitrary>::arbitrary(&mut arbitrary::Unstructured::new(rug_data)){
+     |
+
+warning: unnecessary parentheses around type
+    --> src/lib.rs:1954:44
+     |
+1954 |             if let Ok((mut rug_fuzz_0)) = <(&str) as arbitrary::Arbitrary>::arbitrary(&mut arbitrary::Unstructured::new(rug_data)){
+     |                                            ^    ^
+     |
+help: remove these parentheses
+     |
+1954 -             if let Ok((mut rug_fuzz_0)) = <(&str) as arbitrary::Arbitrary>::arbitrary(&mut arbitrary::Unstructured::new(rug_data)){
+1954 +             if let Ok((mut rug_fuzz_0)) = <&str as arbitrary::Arbitrary>::arbitrary(&mut arbitrary::Unstructured::new(rug_data)){
+     |
+
+warning: unnecessary parentheses around pattern
+    --> src/lib.rs:1973:23
+     |
+1973 |             if let Ok((mut rug_fuzz_0)) = <(&str) as arbitrary::Arbitrary>::arbitrary(&mut arbitrary::Unstructured::new(rug_data)){
+     |                       ^              ^
+     |
+help: remove these parentheses
+     |
+1973 -             if let Ok((mut rug_fuzz_0)) = <(&str) as arbitrary::Arbitrary>::arbitrary(&mut arbitrary::Unstructured::new(rug_data)){
+1973 +             if let Ok(mut rug_fuzz_0) = <(&str) as arbitrary::Arbitrary>::arbitrary(&mut arbitrary::Unstructured::new(rug_data)){
+     |
+
+warning: unnecessary parentheses around type
+    --> src/lib.rs:1973:44
+     |
+1973 |             if let Ok((mut rug_fuzz_0)) = <(&str) as arbitrary::Arbitrary>::arbitrary(&mut arbitrary::Unstructured::new(rug_data)){
+     |                                            ^    ^
+     |
+help: remove these parentheses
+     |
+1973 -             if let Ok((mut rug_fuzz_0)) = <(&str) as arbitrary::Arbitrary>::arbitrary(&mut arbitrary::Unstructured::new(rug_data)){
+1973 +             if let Ok((mut rug_fuzz_0)) = <&str as arbitrary::Arbitrary>::arbitrary(&mut arbitrary::Unstructured::new(rug_data)){
+     |
+
+warning: unused import: `Layout`
+    --> src/lib.rs:1985:23
+     |
+1985 |     use crate::{Bump, Layout};
+     |                       ^^^^^^
+
+warning: unused import: `core::ptr`
+    --> src/lib.rs:1986:9
+     |
+1986 |     use core::ptr;
+     |         ^^^^^^^^^
+
+warning: unnecessary parentheses around pattern
+    --> src/lib.rs:1994:23
+     |
+1994 |             if let Ok((mut rug_fuzz_0)) = <(&str) as arbitrary::Arbitrary>::arbitrary(&mut arbitrary::Unstructured::new(rug_data)){
+     |                       ^              ^
+     |
+help: remove these parentheses
+     |
+1994 -             if let Ok((mut rug_fuzz_0)) = <(&str) as arbitrary::Arbitrary>::arbitrary(&mut arbitrary::Unstructured::new(rug_data)){
+1994 +             if let Ok(mut rug_fuzz_0) = <(&str) as arbitrary::Arbitrary>::arbitrary(&mut arbitrary::Unstructured::new(rug_data)){
+     |
+
+warning: unnecessary parentheses around type
+    --> src/lib.rs:1994:44
+     |
+1994 |             if let Ok((mut rug_fuzz_0)) = <(&str) as arbitrary::Arbitrary>::arbitrary(&mut arbitrary::Unstructured::new(rug_data)){
+     |                                            ^    ^
+     |
+help: remove these parentheses
+     |
+1994 -             if let Ok((mut rug_fuzz_0)) = <(&str) as arbitrary::Arbitrary>::arbitrary(&mut arbitrary::Unstructured::new(rug_data)){
+1994 +             if let Ok((mut rug_fuzz_0)) = <&str as arbitrary::Arbitrary>::arbitrary(&mut arbitrary::Unstructured::new(rug_data)){
+     |
+
+warning: unnecessary parentheses around pattern
+    --> src/lib.rs:2014:23
+     |
+2014 |             if let Ok((mut rug_fuzz_0)) = <(&str) as arbitrary::Arbitrary>::arbitrary(&mut arbitrary::Unstructured::new(rug_data)){
+     |                       ^              ^
+     |
+help: remove these parentheses
+     |
+2014 -             if let Ok((mut rug_fuzz_0)) = <(&str) as arbitrary::Arbitrary>::arbitrary(&mut arbitrary::Unstructured::new(rug_data)){
+2014 +             if let Ok(mut rug_fuzz_0) = <(&str) as arbitrary::Arbitrary>::arbitrary(&mut arbitrary::Unstructured::new(rug_data)){
+     |
+
+warning: unnecessary parentheses around type
+    --> src/lib.rs:2014:44
+     |
+2014 |             if let Ok((mut rug_fuzz_0)) = <(&str) as arbitrary::Arbitrary>::arbitrary(&mut arbitrary::Unstructured::new(rug_data)){
+     |                                            ^    ^
+     |
+help: remove these parentheses
+     |
+2014 -             if let Ok((mut rug_fuzz_0)) = <(&str) as arbitrary::Arbitrary>::arbitrary(&mut arbitrary::Unstructured::new(rug_data)){
+2014 +             if let Ok((mut rug_fuzz_0)) = <&str as arbitrary::Arbitrary>::arbitrary(&mut arbitrary::Unstructured::new(rug_data)){
+     |
+
+warning: unnecessary parentheses around pattern
+    --> src/lib.rs:2034:23
+     |
+2034 |             if let Ok((mut rug_fuzz_0)) = <(&str) as arbitrary::Arbitrary>::arbitrary(&mut arbitrary::Unstructured::new(rug_data)){
+     |                       ^              ^
+     |
+help: remove these parentheses
+     |
+2034 -             if let Ok((mut rug_fuzz_0)) = <(&str) as arbitrary::Arbitrary>::arbitrary(&mut arbitrary::Unstructured::new(rug_data)){
+2034 +             if let Ok(mut rug_fuzz_0) = <(&str) as arbitrary::Arbitrary>::arbitrary(&mut arbitrary::Unstructured::new(rug_data)){
+     |
+
+warning: unnecessary parentheses around type
+    --> src/lib.rs:2034:44
+     |
+2034 |             if let Ok((mut rug_fuzz_0)) = <(&str) as arbitrary::Arbitrary>::arbitrary(&mut arbitrary::Unstructured::new(rug_data)){
+     |                                            ^    ^
+     |
+help: remove these parentheses
+     |
+2034 -             if let Ok((mut rug_fuzz_0)) = <(&str) as arbitrary::Arbitrary>::arbitrary(&mut arbitrary::Unstructured::new(rug_data)){
+2034 +             if let Ok((mut rug_fuzz_0)) = <&str as arbitrary::Arbitrary>::arbitrary(&mut arbitrary::Unstructured::new(rug_data)){
+     |
+
+warning: unused import: `AllocOrInitError`
+    --> src/lib.rs:2045:23
+     |
+2045 |     use crate::{Bump, AllocOrInitError};
+     |                       ^^^^^^^^^^^^^^^^
+
+warning: unnecessary parentheses around pattern
+    --> src/lib.rs:2053:23
+     |
+2053 |             if let Ok((mut rug_fuzz_0)) = <(&str) as arbitrary::Arbitrary>::arbitrary(&mut arbitrary::Unstructured::new(rug_data)){
+     |                       ^              ^
+     |
+help: remove these parentheses
+     |
+2053 -             if let Ok((mut rug_fuzz_0)) = <(&str) as arbitrary::Arbitrary>::arbitrary(&mut arbitrary::Unstructured::new(rug_data)){
+2053 +             if let Ok(mut rug_fuzz_0) = <(&str) as arbitrary::Arbitrary>::arbitrary(&mut arbitrary::Unstructured::new(rug_data)){
+     |
+
+warning: unnecessary parentheses around type
+    --> src/lib.rs:2053:44
+     |
+2053 |             if let Ok((mut rug_fuzz_0)) = <(&str) as arbitrary::Arbitrary>::arbitrary(&mut arbitrary::Unstructured::new(rug_data)){
+     |                                            ^    ^
+     |
+help: remove these parentheses
+     |
+2053 -             if let Ok((mut rug_fuzz_0)) = <(&str) as arbitrary::Arbitrary>::arbitrary(&mut arbitrary::Unstructured::new(rug_data)){
+2053 +             if let Ok((mut rug_fuzz_0)) = <&str as arbitrary::Arbitrary>::arbitrary(&mut arbitrary::Unstructured::new(rug_data)){
+     |
+
+warning: unused import: `super::*`
+    --> src/lib.rs:2063:9
+     |
+2063 |     use super::*;
+     |         ^^^^^^^^
+
+warning: unused import: `core::alloc::Layout`
+    --> src/lib.rs:2065:9
+     |
+2065 |     use core::alloc::Layout;
+     |         ^^^^^^^^^^^^^^^^^^^
+
+warning: unused import: `core::ptr`
+    --> src/lib.rs:2066:9
+     |
+2066 |     use core::ptr;
+     |         ^^^^^^^^^
+
+warning: unused import: `core::slice`
+    --> src/lib.rs:2067:9
+     |
+2067 |     use core::slice;
+     |         ^^^^^^^^^^^
+
+warning: unused import: `super::*`
+    --> src/lib.rs:2083:9
+     |
+2083 |     use super::*;
+     |         ^^^^^^^^
+
+warning: unused imports: `Layout`, `ptr`, `slice`
+    --> src/lib.rs:2084:23
+     |
+2084 |     use crate::{Bump, Layout, ptr, slice};
+     |                       ^^^^^^  ^^^  ^^^^^
+
+warning: unused import: `super::*`
+    --> src/lib.rs:2099:9
+     |
+2099 |     use super::*;
+     |         ^^^^^^^^
+
+warning: unused import: `super::*`
+    --> src/lib.rs:2114:9
+     |
+2114 |     use super::*;
+     |         ^^^^^^^^
+
+warning: unused import: `super::*`
+    --> src/lib.rs:2131:9
+     |
+2131 |     use super::*;
+     |         ^^^^^^^^
+
+warning: unused import: `super::*`
+    --> src/lib.rs:2164:9
+     |
+2164 |     use super::*;
+     |         ^^^^^^^^
+
+warning: unused import: `super::*`
+    --> src/lib.rs:2175:9
+     |
+2175 |     use super::*;
+     |         ^^^^^^^^
+
+warning: unused import: `super::*`
+    --> src/lib.rs:2189:9
+     |
+2189 |     use super::*;
+     |         ^^^^^^^^
+
+warning: unused import: `super::*`
+    --> src/lib.rs:2202:9
+     |
+2202 |     use super::*;
+     |         ^^^^^^^^
+
+warning: unused import: `super::*`
+    --> src/lib.rs:2216:9
+     |
+2216 |     use super::*;
+     |         ^^^^^^^^
+
+warning: unused import: `super::*`
+    --> src/lib.rs:2230:9
+     |
+2230 |     use super::*;
+     |         ^^^^^^^^
+
+warning: unused import: `super::*`
+    --> src/lib.rs:2243:9
+     |
+2243 |     use super::*;
+     |         ^^^^^^^^
+
+warning: unused imports: `DEFAULT_CHUNK_SIZE_WITHOUT_FOOTER`, `FOOTER_SIZE`
+    --> src/lib.rs:2244:23
+     |
+2244 |     use crate::{Bump, DEFAULT_CHUNK_SIZE_WITHOUT_FOOTER, FOOTER_SIZE};
+     |                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^  ^^^^^^^^^^^
+
+warning: unused import: `super::*`
+    --> src/lib.rs:2258:9
+     |
+2258 |     use super::*;
+     |         ^^^^^^^^
+
+warning: unused import: `super::*`
+    --> src/lib.rs:2270:9
+     |
+2270 |     use super::*;
+     |         ^^^^^^^^
+
+warning: unused import: `super::*`
+    --> src/lib.rs:2282:9
+     |
+2282 |     use super::*;
+     |         ^^^^^^^^
+
+warning: unused import: `super::*`
+    --> src/lib.rs:2294:9
+     |
+2294 |     use super::*;
+     |         ^^^^^^^^
+
+warning: unused import: `super::*`
+    --> src/lib.rs:2308:9
+     |
+2308 |     use super::*;
+     |         ^^^^^^^^
+
+warning: unused import: `super::*`
+    --> src/lib.rs:2328:9
+     |
+2328 |     use super::*;
+     |         ^^^^^^^^
+
+warning: unreachable statement
+   --> src/alloc.rs:723:9
+    |
+722 |         crate::alloc::handle_alloc_error(p0);
+    |         ------------------------------------ any code following this expression is unreachable
+723 |         let _rug_ed_tests_rug_2_rrrruuuugggg_test_rug = 0;
+    |         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ unreachable statement
+    |
+    = note: `#[warn(unreachable_code)]` on by default
+
+warning: unreachable statement
+    --> src/lib.rs:1720:9
+     |
+1719 |         oom();
+     |         ----- any code following this expression is unreachable
+1720 |         let _rug_ed_tests_rug_28_rrrruuuugggg_test_oom = 0;
+     |         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ unreachable statement
+
+warning: unused import: `crate::alloc::Alloc`
+    --> src/lib.rs:2329:9
+     |
+2329 |     use crate::alloc::Alloc;
+     |         ^^^^^^^^^^^^^^^^^^^
+
+warning: unused import: `UnstableLayoutMethods`
+   --> src/alloc.rs:947:32
+    |
+947 |     use crate::alloc::{Layout, UnstableLayoutMethods};
+    |                                ^^^^^^^^^^^^^^^^^^^^^
+
+warning: unused variable: `layout`
+   --> src/alloc.rs:753:36
+    |
+753 |         unsafe fn alloc(&mut self, layout: Layout) -> Result<NonNull<u8>, AllocErr> {
+    |                                    ^^^^^^ help: if this is intentional, prefix it with an underscore: `_layout`
+    |
+    = note: `#[warn(unused_variables)]` on by default
+
+warning: unused variable: `ptr`
+   --> src/alloc.rs:757:38
+    |
+757 |         unsafe fn dealloc(&mut self, ptr: NonNull<u8>, layout: Layout) {}
+    |                                      ^^^ help: if this is intentional, prefix it with an underscore: `_ptr`
+
+warning: unused variable: `layout`
+   --> src/alloc.rs:757:56
+    |
+757 |         unsafe fn dealloc(&mut self, ptr: NonNull<u8>, layout: Layout) {}
+    |                                                        ^^^^^^ help: if this is intentional, prefix it with an underscore: `_layout`
+
+warning: unused variable: `layout`
+   --> src/alloc.rs:790:40
+    |
+790 |             unsafe fn alloc(&mut self, layout: Layout) -> Result<NonNull<u8>, AllocErr> {
+    |                                        ^^^^^^ help: if this is intentional, prefix it with an underscore: `_layout`
+
+warning: unused variable: `ptr`
+   --> src/alloc.rs:793:42
+    |
+793 |             unsafe fn dealloc(&mut self, ptr: NonNull<u8>, layout: Layout) {}
+    |                                          ^^^ help: if this is intentional, prefix it with an underscore: `_ptr`
+
+warning: unused variable: `layout`
+   --> src/alloc.rs:793:60
+    |
+793 |             unsafe fn dealloc(&mut self, ptr: NonNull<u8>, layout: Layout) {}
+    |                                                            ^^^^^^ help: if this is intentional, prefix it with an underscore: `_layout`
+
+warning: unused variable: `layout`
+   --> src/alloc.rs:821:40
+    |
+821 |             unsafe fn alloc(&mut self, layout: Layout) -> Result<NonNull<u8>, AllocErr> {
+    |                                        ^^^^^^ help: if this is intentional, prefix it with an underscore: `_layout`
+
+warning: unused variable: `result`
+   --> src/alloc.rs:871:13
+    |
+871 |         let result = allocator.alloc_array::<u32>(n);
+    |             ^^^^^^ help: if this is intentional, prefix it with an underscore: `_result`
+
+warning: unused variable: `layout`
+   --> src/alloc.rs:862:40
+    |
+862 |             unsafe fn alloc(&mut self, layout: Layout) -> Result<NonNull<u8>, AllocErr> {
+    |                                        ^^^^^^ help: if this is intentional, prefix it with an underscore: `_layout`
+
+warning: unused variable: `ptr`
+   --> src/alloc.rs:865:42
+    |
+865 |             unsafe fn dealloc(&mut self, ptr: NonNull<u8>, layout: Layout) {
+    |                                          ^^^ help: if this is intentional, prefix it with an underscore: `_ptr`
+
+warning: unused variable: `layout`
+   --> src/alloc.rs:865:60
+    |
+865 |             unsafe fn dealloc(&mut self, ptr: NonNull<u8>, layout: Layout) {
+    |                                                            ^^^^^^ help: if this is intentional, prefix it with an underscore: `_layout`
+
+warning: unused variable: `layout`
+   --> src/alloc.rs:882:36
+    |
+882 |         unsafe fn alloc(&mut self, layout: Layout) -> Result<NonNull<u8>, AllocErr> {
+    |                                    ^^^^^^ help: if this is intentional, prefix it with an underscore: `_layout`
+
+warning: unused variable: `ptr`
+   --> src/alloc.rs:885:38
+    |
+885 |         unsafe fn dealloc(&mut self, ptr: NonNull<u8>, layout: Layout) {
+    |                                      ^^^ help: if this is intentional, prefix it with an underscore: `_ptr`
+
+warning: unused variable: `layout`
+   --> src/alloc.rs:885:56
+    |
+885 |         unsafe fn dealloc(&mut self, ptr: NonNull<u8>, layout: Layout) {
+    |                                                        ^^^^^^ help: if this is intentional, prefix it with an underscore: `_layout`
+
+warning: unused variable: `bump`
+    --> src/lib.rs:1742:13
+     |
+1742 |         let bump: Bump = Bump::new();
+     |             ^^^^ help: if this is intentional, prefix it with an underscore: `_bump`
+
+warning: variable does not need to be mutable
+   --> src/alloc.rs:737:24
+    |
+737 | ...   if let Ok((mut rug_fuzz_0, mut rug_fuzz_1)) = <(usize, usize) as arbitrary::Arbitrary>::arbitrary(&mut arbitrary::Unstructured::new...
+    |                  ----^^^^^^^^^^
+    |                  |
+    |                  help: remove this `mut`
+    |
+    = note: `#[warn(unused_mut)]` on by default
+
+warning: variable does not need to be mutable
+   --> src/alloc.rs:737:40
+    |
+737 | ...   if let Ok((mut rug_fuzz_0, mut rug_fuzz_1)) = <(usize, usize) as arbitrary::Arbitrary>::arbitrary(&mut arbitrary::Unstructured::new...
+    |                                  ----^^^^^^^^^^
+    |                                  |
+    |                                  help: remove this `mut`
+
+warning: variable does not need to be mutable
+   --> src/alloc.rs:769:24
+    |
+769 | ...   if let Ok((mut rug_fuzz_0, mut rug_fuzz_1, mut rug_fuzz_2, mut rug_fuzz_3)) = <(usize, usize, i32, usize) as arbitrary::Arbitrary>:...
+    |                  ----^^^^^^^^^^
+    |                  |
+    |                  help: remove this `mut`
+
+warning: variable does not need to be mutable
+   --> src/alloc.rs:769:40
+    |
+769 | ...   if let Ok((mut rug_fuzz_0, mut rug_fuzz_1, mut rug_fuzz_2, mut rug_fuzz_3)) = <(usize, usize, i32, usize) as arbitrary::Arbitrary>:...
+    |                                  ----^^^^^^^^^^
+    |                                  |
+    |                                  help: remove this `mut`
+
+warning: variable does not need to be mutable
+   --> src/alloc.rs:769:56
+    |
+769 | ...   if let Ok((mut rug_fuzz_0, mut rug_fuzz_1, mut rug_fuzz_2, mut rug_fuzz_3)) = <(usize, usize, i32, usize) as arbitrary::Arbitrary>:...
+    |                                                  ----^^^^^^^^^^
+    |                                                  |
+    |                                                  help: remove this `mut`
+
+warning: variable does not need to be mutable
+   --> src/alloc.rs:769:72
+    |
+769 | ...   if let Ok((mut rug_fuzz_0, mut rug_fuzz_1, mut rug_fuzz_2, mut rug_fuzz_3)) = <(usize, usize, i32, usize) as arbitrary::Arbitrary>:...
+    |                                                                  ----^^^^^^^^^^
+    |                                                                  |
+    |                                                                  help: remove this `mut`
+
+warning: variable does not need to be mutable
+   --> src/alloc.rs:858:24
+    |
+858 |             if let Ok((mut rug_fuzz_0)) = <(usize) as arbitrary::Arbitrary>::arbitrary(&mut arbitrary::Unstructured::new(rug_data)){
+    |                        ----^^^^^^^^^^
+    |                        |
+    |                        help: remove this `mut`
+
+warning: variable does not need to be mutable
+   --> src/alloc.rs:896:24
+    |
+896 |             if let Ok((mut rug_fuzz_0)) = <(usize) as arbitrary::Arbitrary>::arbitrary(&mut arbitrary::Unstructured::new(rug_data)){
+    |                        ----^^^^^^^^^^
+    |                        |
+    |                        help: remove this `mut`
+
+warning: variable does not need to be mutable
+   --> src/alloc.rs:917:24
+    |
+917 | ...   if let Ok((mut rug_fuzz_0, mut rug_fuzz_1, mut rug_fuzz_2)) = <(usize, usize, usize) as arbitrary::Arbitrary>::arbitrary(&mut arbit...
+    |                  ----^^^^^^^^^^
+    |                  |
+    |                  help: remove this `mut`
+
+warning: variable does not need to be mutable
+   --> src/alloc.rs:917:40
+    |
+917 | ...   if let Ok((mut rug_fuzz_0, mut rug_fuzz_1, mut rug_fuzz_2)) = <(usize, usize, usize) as arbitrary::Arbitrary>::arbitrary(&mut arbit...
+    |                                  ----^^^^^^^^^^
+    |                                  |
+    |                                  help: remove this `mut`
+
+warning: variable does not need to be mutable
+   --> src/alloc.rs:917:56
+    |
+917 | ...   if let Ok((mut rug_fuzz_0, mut rug_fuzz_1, mut rug_fuzz_2)) = <(usize, usize, usize) as arbitrary::Arbitrary>::arbitrary(&mut arbit...
+    |                                                  ----^^^^^^^^^^
+    |                                                  |
+    |                                                  help: remove this `mut`
+
+warning: variable does not need to be mutable
+   --> src/alloc.rs:919:13
+    |
+919 |         let mut p0 = Layout::from_size_align(rug_fuzz_0, rug_fuzz_1).unwrap();
+    |             ----^^
+    |             |
+    |             help: remove this `mut`
+
+warning: variable does not need to be mutable
+   --> src/alloc.rs:920:13
+    |
+920 |         let mut p1 = rug_fuzz_2;
+    |             ----^^
+    |             |
+    |             help: remove this `mut`
+
+warning: variable does not need to be mutable
+   --> src/alloc.rs:936:24
+    |
+936 | ...   if let Ok((mut rug_fuzz_0, mut rug_fuzz_1, mut rug_fuzz_2)) = <(usize, usize, usize) as arbitrary::Arbitrary>::arbitrary(&mut arbit...
+    |                  ----^^^^^^^^^^
+    |                  |
+    |                  help: remove this `mut`
+
+warning: variable does not need to be mutable
+   --> src/alloc.rs:936:40
+    |
+936 | ...   if let Ok((mut rug_fuzz_0, mut rug_fuzz_1, mut rug_fuzz_2)) = <(usize, usize, usize) as arbitrary::Arbitrary>::arbitrary(&mut arbit...
+    |                                  ----^^^^^^^^^^
+    |                                  |
+    |                                  help: remove this `mut`
+
+warning: variable does not need to be mutable
+   --> src/alloc.rs:936:56
+    |
+936 | ...   if let Ok((mut rug_fuzz_0, mut rug_fuzz_1, mut rug_fuzz_2)) = <(usize, usize, usize) as arbitrary::Arbitrary>::arbitrary(&mut arbit...
+    |                                                  ----^^^^^^^^^^
+    |                                                  |
+    |                                                  help: remove this `mut`
+
+warning: variable does not need to be mutable
+   --> src/alloc.rs:955:24
+    |
+955 |             if let Ok((mut rug_fuzz_0)) = <(usize) as arbitrary::Arbitrary>::arbitrary(&mut arbitrary::Unstructured::new(rug_data)){
+    |                        ----^^^^^^^^^^
+    |                        |
+    |                        help: remove this `mut`
+
+warning: variable does not need to be mutable
+    --> src/lib.rs:1658:24
+     |
+1658 | ...   if let Ok((mut rug_fuzz_0, mut rug_fuzz_1)) = <(usize, usize) as arbitrary::Arbitrary>::arbitrary(&mut arbitrary::Unstructured::new...
+     |                  ----^^^^^^^^^^
+     |                  |
+     |                  help: remove this `mut`
+
+warning: variable does not need to be mutable
+    --> src/lib.rs:1658:40
+     |
+1658 | ...   if let Ok((mut rug_fuzz_0, mut rug_fuzz_1)) = <(usize, usize) as arbitrary::Arbitrary>::arbitrary(&mut arbitrary::Unstructured::new...
+     |                                  ----^^^^^^^^^^
+     |                                  |
+     |                                  help: remove this `mut`
+
+warning: variable does not need to be mutable
+    --> src/lib.rs:1660:13
+     |
+1660 |         let mut p0: usize = rug_fuzz_0;
+     |             ----^^
+     |             |
+     |             help: remove this `mut`
+
+warning: variable does not need to be mutable
+    --> src/lib.rs:1661:13
+     |
+1661 |         let mut p1: usize = rug_fuzz_1;
+     |             ----^^
+     |             |
+     |             help: remove this `mut`
+
+warning: variable does not need to be mutable
+    --> src/lib.rs:1676:24
+     |
+1676 | ...   if let Ok((mut rug_fuzz_0, mut rug_fuzz_1)) = <(usize, usize) as arbitrary::Arbitrary>::arbitrary(&mut arbitrary::Unstructured::new...
+     |                  ----^^^^^^^^^^
+     |                  |
+     |                  help: remove this `mut`
+
+warning: variable does not need to be mutable
+    --> src/lib.rs:1676:40
+     |
+1676 | ...   if let Ok((mut rug_fuzz_0, mut rug_fuzz_1)) = <(usize, usize) as arbitrary::Arbitrary>::arbitrary(&mut arbitrary::Unstructured::new...
+     |                                  ----^^^^^^^^^^
+     |                                  |
+     |                                  help: remove this `mut`
+
+warning: variable does not need to be mutable
+    --> src/lib.rs:1678:13
+     |
+1678 |         let mut p0: usize = rug_fuzz_0;
+     |             ----^^
+     |             |
+     |             help: remove this `mut`
+
+warning: variable does not need to be mutable
+    --> src/lib.rs:1679:13
+     |
+1679 |         let mut p1: usize = rug_fuzz_1;
+     |             ----^^
+     |             |
+     |             help: remove this `mut`
+
+warning: variable does not need to be mutable
+    --> src/lib.rs:1705:24
+     |
+1705 | ...   if let Ok((mut rug_fuzz_0, mut rug_fuzz_1)) = <(usize, usize) as arbitrary::Arbitrary>::arbitrary(&mut arbitrary::Unstructured::new...
+     |                  ----^^^^^^^^^^
+     |                  |
+     |                  help: remove this `mut`
+
+warning: variable does not need to be mutable
+    --> src/lib.rs:1705:40
+     |
+1705 | ...   if let Ok((mut rug_fuzz_0, mut rug_fuzz_1)) = <(usize, usize) as arbitrary::Arbitrary>::arbitrary(&mut arbitrary::Unstructured::new...
+     |                                  ----^^^^^^^^^^
+     |                                  |
+     |                                  help: remove this `mut`
+
+warning: variable does not need to be mutable
+    --> src/lib.rs:1707:13
+     |
+1707 |         let mut p0: usize = rug_fuzz_0;
+     |             ----^^
+     |             |
+     |             help: remove this `mut`
+
+warning: variable does not need to be mutable
+    --> src/lib.rs:1708:13
+     |
+1708 |         let mut p1: usize = rug_fuzz_1;
+     |             ----^^
+     |             |
+     |             help: remove this `mut`
+
+warning: variable does not need to be mutable
+    --> src/lib.rs:1769:24
+     |
+1769 |             if let Ok((mut rug_fuzz_0)) = <(usize) as arbitrary::Arbitrary>::arbitrary(&mut arbitrary::Unstructured::new(rug_data)){
+     |                        ----^^^^^^^^^^
+     |                        |
+     |                        help: remove this `mut`
+
+warning: variable does not need to be mutable
+    --> src/lib.rs:1787:24
+     |
+1787 |             if let Ok((mut rug_fuzz_0)) = <(usize) as arbitrary::Arbitrary>::arbitrary(&mut arbitrary::Unstructured::new(rug_data)){
+     |                        ----^^^^^^^^^^
+     |                        |
+     |                        help: remove this `mut`
+
+warning: variable does not need to be mutable
+    --> src/lib.rs:1805:24
+     |
+1805 | ...   if let Ok((mut rug_fuzz_0, mut rug_fuzz_1)) = <(usize, usize) as arbitrary::Arbitrary>::arbitrary(&mut arbitrary::Unstructured::new...
+     |                  ----^^^^^^^^^^
+     |                  |
+     |                  help: remove this `mut`
+
+warning: variable does not need to be mutable
+    --> src/lib.rs:1805:40
+     |
+1805 | ...   if let Ok((mut rug_fuzz_0, mut rug_fuzz_1)) = <(usize, usize) as arbitrary::Arbitrary>::arbitrary(&mut arbitrary::Unstructured::new...
+     |                                  ----^^^^^^^^^^
+     |                                  |
+     |                                  help: remove this `mut`
+
+warning: variable does not need to be mutable
+    --> src/lib.rs:1827:24
+     |
+1827 |             if let Ok((mut rug_fuzz_0)) = <(usize) as arbitrary::Arbitrary>::arbitrary(&mut arbitrary::Unstructured::new(rug_data)){
+     |                        ----^^^^^^^^^^
+     |                        |
+     |                        help: remove this `mut`
+
+warning: variable does not need to be mutable
+    --> src/lib.rs:1829:13
+     |
+1829 |         let mut p0 = Bump::new();
+     |             ----^^
+     |             |
+     |             help: remove this `mut`
+
+warning: variable does not need to be mutable
+    --> src/lib.rs:1830:13
+     |
+1830 |         let mut p1 = Some(rug_fuzz_0);
+     |             ----^^
+     |             |
+     |             help: remove this `mut`
+
+warning: variable does not need to be mutable
+    --> src/lib.rs:1842:13
+     |
+1842 |         let mut p0 = Bump::default();
+     |             ----^^
+     |             |
+     |             help: remove this `mut`
+
+warning: variable does not need to be mutable
+    --> src/lib.rs:1858:24
+     |
+1858 | ...   if let Ok((mut rug_fuzz_0, mut rug_fuzz_1, mut rug_fuzz_2, mut rug_fuzz_3)) = <(usize, usize, usize, usize) as arbitrary::Arbitrary...
+     |                  ----^^^^^^^^^^
+     |                  |
+     |                  help: remove this `mut`
+
+warning: variable does not need to be mutable
+    --> src/lib.rs:1858:40
+     |
+1858 | ...   if let Ok((mut rug_fuzz_0, mut rug_fuzz_1, mut rug_fuzz_2, mut rug_fuzz_3)) = <(usize, usize, usize, usize) as arbitrary::Arbitrary...
+     |                                  ----^^^^^^^^^^
+     |                                  |
+     |                                  help: remove this `mut`
+
+warning: variable does not need to be mutable
+    --> src/lib.rs:1858:56
+     |
+1858 | ...   if let Ok((mut rug_fuzz_0, mut rug_fuzz_1, mut rug_fuzz_2, mut rug_fuzz_3)) = <(usize, usize, usize, usize) as arbitrary::Arbitrary...
+     |                                                  ----^^^^^^^^^^
+     |                                                  |
+     |                                                  help: remove this `mut`
+
+warning: variable does not need to be mutable
+    --> src/lib.rs:1858:72
+     |
+1858 | ...   if let Ok((mut rug_fuzz_0, mut rug_fuzz_1, mut rug_fuzz_2, mut rug_fuzz_3)) = <(usize, usize, usize, usize) as arbitrary::Arbitrary...
+     |                                                                  ----^^^^^^^^^^
+     |                                                                  |
+     |                                                                  help: remove this `mut`
+
+warning: variable does not need to be mutable
+    --> src/lib.rs:1860:13
+     |
+1860 |         let mut p0: Option<usize> = Some(rug_fuzz_0);
+     |             ----^^
+     |             |
+     |             help: remove this `mut`
+
+warning: variable does not need to be mutable
+    --> src/lib.rs:1861:13
+     |
+1861 |         let mut p1: NewChunkMemoryDetails = NewChunkMemoryDetails {
+     |             ----^^
+     |             |
+     |             help: remove this `mut`
+
+warning: variable does not need to be mutable
+    --> src/lib.rs:1889:24
+     |
+1889 | ...   if let Ok((mut rug_fuzz_0, mut rug_fuzz_1, mut rug_fuzz_2, mut rug_fuzz_3)) = <(usize, usize, usize, &str) as arbitrary::Arbitrary>...
+     |                  ----^^^^^^^^^^
+     |                  |
+     |                  help: remove this `mut`
+
+warning: variable does not need to be mutable
+    --> src/lib.rs:1889:40
+     |
+1889 | ...   if let Ok((mut rug_fuzz_0, mut rug_fuzz_1, mut rug_fuzz_2, mut rug_fuzz_3)) = <(usize, usize, usize, &str) as arbitrary::Arbitrary>...
+     |                                  ----^^^^^^^^^^
+     |                                  |
+     |                                  help: remove this `mut`
+
+warning: variable does not need to be mutable
+    --> src/lib.rs:1889:56
+     |
+1889 | ...   if let Ok((mut rug_fuzz_0, mut rug_fuzz_1, mut rug_fuzz_2, mut rug_fuzz_3)) = <(usize, usize, usize, &str) as arbitrary::Arbitrary>...
+     |                                                  ----^^^^^^^^^^
+     |                                                  |
+     |                                                  help: remove this `mut`
+
+warning: variable does not need to be mutable
+    --> src/lib.rs:1889:72
+     |
+1889 | ...   if let Ok((mut rug_fuzz_0, mut rug_fuzz_1, mut rug_fuzz_2, mut rug_fuzz_3)) = <(usize, usize, usize, &str) as arbitrary::Arbitrary>...
+     |                                                                  ----^^^^^^^^^^
+     |                                                                  |
+     |                                                                  help: remove this `mut`
+
+warning: variable does not need to be mutable
+    --> src/lib.rs:1891:13
+     |
+1891 |         let mut p0: core::option::Option<usize> = core::option::Option::Some(rug_fuzz_0);
+     |             ----^^
+     |             |
+     |             help: remove this `mut`
+
+warning: variable does not need to be mutable
+    --> src/lib.rs:1892:13
+     |
+1892 |         let mut p1: core::alloc::Layout = core::alloc::Layout::from_size_align(
+     |             ----^^
+     |             |
+     |             help: remove this `mut`
+
+warning: variable does not need to be mutable
+    --> src/lib.rs:1912:24
+     |
+1912 | ...   if let Ok((mut rug_fuzz_0, mut rug_fuzz_1, mut rug_fuzz_2, mut rug_fuzz_3, mut rug_fuzz_4)) = <(usize, usize, usize, usize, usize) ...
+     |                  ----^^^^^^^^^^
+     |                  |
+     |                  help: remove this `mut`
+
+warning: variable does not need to be mutable
+    --> src/lib.rs:1912:40
+     |
+1912 | ...   if let Ok((mut rug_fuzz_0, mut rug_fuzz_1, mut rug_fuzz_2, mut rug_fuzz_3, mut rug_fuzz_4)) = <(usize, usize, usize, usize, usize) ...
+     |                                  ----^^^^^^^^^^
+     |                                  |
+     |                                  help: remove this `mut`
+
+warning: variable does not need to be mutable
+    --> src/lib.rs:1912:56
+     |
+1912 | ...   if let Ok((mut rug_fuzz_0, mut rug_fuzz_1, mut rug_fuzz_2, mut rug_fuzz_3, mut rug_fuzz_4)) = <(usize, usize, usize, usize, usize) ...
+     |                                                  ----^^^^^^^^^^
+     |                                                  |
+     |                                                  help: remove this `mut`
+
+warning: variable does not need to be mutable
+    --> src/lib.rs:1912:72
+     |
+1912 | ...   if let Ok((mut rug_fuzz_0, mut rug_fuzz_1, mut rug_fuzz_2, mut rug_fuzz_3, mut rug_fuzz_4)) = <(usize, usize, usize, usize, usize) ...
+     |                                                                  ----^^^^^^^^^^
+     |                                                                  |
+     |                                                                  help: remove this `mut`
+
+warning: variable does not need to be mutable
+    --> src/lib.rs:1912:88
+     |
+1912 | ...   if let Ok((mut rug_fuzz_0, mut rug_fuzz_1, mut rug_fuzz_2, mut rug_fuzz_3, mut rug_fuzz_4)) = <(usize, usize, usize, usize, usize) ...
+     |                                                                                  ----^^^^^^^^^^
+     |                                                                                  |
+     |                                                                                  help: remove this `mut`
+
+warning: variable does not need to be mutable
+    --> src/lib.rs:1954:24
+     |
+1954 |             if let Ok((mut rug_fuzz_0)) = <(&str) as arbitrary::Arbitrary>::arbitrary(&mut arbitrary::Unstructured::new(rug_data)){
+     |                        ----^^^^^^^^^^
+     |                        |
+     |                        help: remove this `mut`
+
+warning: variable does not need to be mutable
+    --> src/lib.rs:1956:13
+     |
+1956 |         let mut p0 = Bump::new();
+     |             ----^^
+     |             |
+     |             help: remove this `mut`
+
+warning: variable does not need to be mutable
+    --> src/lib.rs:1957:13
+     |
+1957 |         let mut p1: &str = rug_fuzz_0;
+     |             ----^^
+     |             |
+     |             help: remove this `mut`
+
+warning: variable does not need to be mutable
+    --> src/lib.rs:1973:24
+     |
+1973 |             if let Ok((mut rug_fuzz_0)) = <(&str) as arbitrary::Arbitrary>::arbitrary(&mut arbitrary::Unstructured::new(rug_data)){
+     |                        ----^^^^^^^^^^
+     |                        |
+     |                        help: remove this `mut`
+
+warning: variable does not need to be mutable
+    --> src/lib.rs:1975:13
+     |
+1975 |         let mut p0 = Bump::new();
+     |             ----^^
+     |             |
+     |             help: remove this `mut`
+
+warning: variable does not need to be mutable
+    --> src/lib.rs:1976:13
+     |
+1976 |         let mut p1: &str = rug_fuzz_0;
+     |             ----^^
+     |             |
+     |             help: remove this `mut`
+
+warning: variable does not need to be mutable
+    --> src/lib.rs:1994:24
+     |
+1994 |             if let Ok((mut rug_fuzz_0)) = <(&str) as arbitrary::Arbitrary>::arbitrary(&mut arbitrary::Unstructured::new(rug_data)){
+     |                        ----^^^^^^^^^^
+     |                        |
+     |                        help: remove this `mut`
+
+warning: variable does not need to be mutable
+    --> src/lib.rs:1997:13
+     |
+1997 |         let mut p0 = bump;
+     |             ----^^
+     |             |
+     |             help: remove this `mut`
+
+warning: variable does not need to be mutable
+    --> src/lib.rs:2014:24
+     |
+2014 |             if let Ok((mut rug_fuzz_0)) = <(&str) as arbitrary::Arbitrary>::arbitrary(&mut arbitrary::Unstructured::new(rug_data)){
+     |                        ----^^^^^^^^^^
+     |                        |
+     |                        help: remove this `mut`
+
+warning: variable does not need to be mutable
+    --> src/lib.rs:2017:13
+     |
+2017 |         let mut p0 = bump;
+     |             ----^^
+     |             |
+     |             help: remove this `mut`
+
+warning: variable does not need to be mutable
+    --> src/lib.rs:2018:13
+     |
+2018 |         let mut p1 = || rug_fuzz_0;
+     |             ----^^
+     |             |
+     |             help: remove this `mut`
+
+warning: variable does not need to be mutable
+    --> src/lib.rs:2034:24
+     |
+2034 |             if let Ok((mut rug_fuzz_0)) = <(&str) as arbitrary::Arbitrary>::arbitrary(&mut arbitrary::Unstructured::new(rug_data)){
+     |                        ----^^^^^^^^^^
+     |                        |
+     |                        help: remove this `mut`
+
+warning: variable does not need to be mutable
+    --> src/lib.rs:2036:13
+     |
+2036 |         let mut p0 = Bump::new();
+     |             ----^^
+     |             |
+     |             help: remove this `mut`
+
+warning: variable does not need to be mutable
+    --> src/lib.rs:2037:13
+     |
+2037 |         let mut p1 = || Ok(rug_fuzz_0);
+     |             ----^^
+     |             |
+     |             help: remove this `mut`
+
+warning: variable does not need to be mutable
+    --> src/lib.rs:2053:24
+     |
+2053 |             if let Ok((mut rug_fuzz_0)) = <(&str) as arbitrary::Arbitrary>::arbitrary(&mut arbitrary::Unstructured::new(rug_data)){
+     |                        ----^^^^^^^^^^
+     |                        |
+     |                        help: remove this `mut`
+
+warning: variable does not need to be mutable
+    --> src/lib.rs:2055:13
+     |
+2055 |         let mut p0 = Bump::default();
+     |             ----^^
+     |             |
+     |             help: remove this `mut`
+
+error: lifetime may not live long enough
+    --> src/lib.rs:2056:61
+     |
+2052 |         .for_each(|rug_data| {
+     |                    -------- has type `&'1 [u8]`
+...
+2056 |         let p1 = || -> Result<&'static str, &'static str> { Ok(rug_fuzz_0) };
+     |                                                             ^^^^^^^^^^^^^^ returning this value requires that `'1` must outlive `'static`
+
+warning: variable does not need to be mutable
+    --> src/lib.rs:2074:13
+     |
+2074 |         let mut p0 = Bump::default();
+     |             ----^^
+     |             |
+     |             help: remove this `mut`
+
+warning: variable does not need to be mutable
+    --> src/lib.rs:2075:13
+     |
+2075 |         let mut p1: &[i32] = &[rug_fuzz_0, rug_fuzz_1, rug_fuzz_2];
+     |             ----^^
+     |             |
+     |             help: remove this `mut`
+
+warning: variable does not need to be mutable
+    --> src/lib.rs:2091:13
+     |
+2091 |         let mut p0 = Bump::new();
+     |             ----^^
+     |             |
+     |             help: remove this `mut`
+
+warning: variable does not need to be mutable
+    --> src/lib.rs:2092:13
+     |
+2092 |         let mut p1: &[i32] = &[rug_fuzz_0, rug_fuzz_1, rug_fuzz_2];
+     |             ----^^
+     |             |
+     |             help: remove this `mut`
+
+warning: variable does not need to be mutable
+    --> src/lib.rs:2138:13
+     |
+2138 |         let mut bump = Bump::new();
+     |             ----^^^^
+     |             |
+     |             help: remove this `mut`
+
+warning: variable does not need to be mutable
+    --> src/lib.rs:2139:13
+     |
+2139 |         let mut len = rug_fuzz_0;
+     |             ----^^^
+     |             |
+     |             help: remove this `mut`
+
+warning: variable does not need to be mutable
+    --> src/lib.rs:2140:13
+     |
+2140 |         let mut value = rug_fuzz_1;
+     |             ----^^^^^
+     |             |
+     |             help: remove this `mut`
+
+warning: variable does not need to be mutable
+    --> src/lib.rs:2155:13
+     |
+2155 |         let mut p0 = Bump::new();
+     |             ----^^
+     |             |
+     |             help: remove this `mut`
+
+warning: variable does not need to be mutable
+    --> src/lib.rs:2156:13
+     |
+2156 |         let mut p1: usize = rug_fuzz_0;
+     |             ----^^
+     |             |
+     |             help: remove this `mut`
+
+warning: variable does not need to be mutable
+    --> src/lib.rs:2157:13
+     |
+2157 |         let mut p2: &str = rug_fuzz_1;
+     |             ----^^
+     |             |
+     |             help: remove this `mut`
+
+warning: variable does not need to be mutable
+    --> src/lib.rs:2168:13
+     |
+2168 |         let mut p0 = Bump::new();
+     |             ----^^
+     |             |
+     |             help: remove this `mut`
+
+warning: variable does not need to be mutable
+    --> src/lib.rs:2181:13
+     |
+2181 |         let mut p0 = Bump::default();
+     |             ----^^
+     |             |
+     |             help: remove this `mut`
+
+warning: variable does not need to be mutable
+    --> src/lib.rs:2182:13
+     |
+2182 |         let mut p1: usize = rug_fuzz_0;
+     |             ----^^
+     |             |
+     |             help: remove this `mut`
+
+warning: variable does not need to be mutable
+    --> src/lib.rs:2208:13
+     |
+2208 |         let mut p0 = Bump::default();
+     |             ----^^
+     |             |
+     |             help: remove this `mut`
+
+warning: variable does not need to be mutable
+    --> src/lib.rs:2222:13
+     |
+2222 |         let mut p0 = Bump::default();
+     |             ----^^
+     |             |
+     |             help: remove this `mut`
+
+warning: variable does not need to be mutable
+    --> src/lib.rs:2236:13
+     |
+2236 |         let mut p0 = Bump::with_capacity(rug_fuzz_0);
+     |             ----^^
+     |             |
+     |             help: remove this `mut`
+
+warning: variable does not need to be mutable
+    --> src/lib.rs:2250:13
+     |
+2250 |         let mut p0 = Bump::default();
+     |             ----^^
+     |             |
+     |             help: remove this `mut`
+
+warning: variable does not need to be mutable
+    --> src/lib.rs:2275:13
+     |
+2275 |         let mut p0 = Bump::new();
+     |             ----^^
+     |             |
+     |             help: remove this `mut`
+
+warning: variable does not need to be mutable
+    --> src/lib.rs:2287:13
+     |
+2287 |         let mut p0 = Bump::new();
+     |             ----^^
+     |             |
+     |             help: remove this `mut`
+
+warning: variable does not need to be mutable
+    --> src/lib.rs:2300:13
+     |
+2300 |         let mut p0 = Bump::default();
+     |             ----^^
+     |             |
+     |             help: remove this `mut`
+
+warning: variable does not need to be mutable
+    --> src/lib.rs:2301:13
+     |
+2301 |         let mut p1 = NonNull::<u8>::dangling();
+     |             ----^^
+     |             |
+     |             help: remove this `mut`
+
+warning: variable does not need to be mutable
+    --> src/lib.rs:2317:13
+     |
+2317 |         let mut bump = Bump::default();
+     |             ----^^^^
+     |             |
+     |             help: remove this `mut`
+
+warning: variable does not need to be mutable
+    --> src/lib.rs:2335:13
+     |
+2335 |         let mut p0: Bump = Bump::default();
+     |             ----^^
+     |             |
+     |             help: remove this `mut`
+
+warning: `bumpalo` (lib test) generated 185 warnings
+error: could not compile `bumpalo` due to previous error; 185 warnings emitted
+warning: build failed, waiting for other jobs to finish...
+
+done

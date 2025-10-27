@@ -1,0 +1,1 @@
+Function: TooDee::remove_col

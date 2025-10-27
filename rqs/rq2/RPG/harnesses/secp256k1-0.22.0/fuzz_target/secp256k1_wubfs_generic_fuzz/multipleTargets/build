@@ -1,0 +1,3 @@
+cd /RPG/erasan_dataset/secp256k1-0.22.0/fuzz_target/secp256k1_wubfs_generic_fuzz/multipleTargets
+cargo afl build
+cd -

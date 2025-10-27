@@ -1,0 +1,16 @@
+[workspace]
+
+[package]
+name = "slice-deque_fuzz_15699793873366199038"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "slice-deque_fuzz_15699793873366199038"
+path = "src/slice-deque_fuzz_15699793873366199038.rs"
+
+[dependencies]
+afl = "=0.15.7"
+home = "=0.5.9"
+slice-deque = { path = "../../../../dataset/erasan_crates/slice-deque-0.3.0" }
+global_data = { path = "../../../../code/global_data" }

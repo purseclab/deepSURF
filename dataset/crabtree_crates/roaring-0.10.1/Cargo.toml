@@ -1,0 +1,33 @@
+[package]
+name = "roaring"
+version = "0.10.1"
+rust-version = "1.56.1"
+authors = ["Wim Looman <wim@nemo157.com>", "Kerollmops <kero@meilisearch.com>"]
+description = "https://roaringbitmap.org: A better compressed bitset - pure Rust implementation"
+
+documentation = "https://docs.rs/roaring"
+repository = "https://github.com/RoaringBitmap/roaring-rs"
+
+readme = "README.md"
+keywords = ["roaring", "data-structure", "bitmap"]
+categories = ["data-structures"]
+edition = "2021"
+
+license = "MIT OR Apache-2.0"
+
+[dependencies]
+bytemuck = "1.7.3"
+byteorder = "1.4.3"
+retain_mut = "=0.1.7"
+serde = { version = "1.0.139", optional = true }
+
+[features]
+simd = []
+
+[dev-dependencies]
+proptest = "1.0.0"
+serde_json = "1.0.85"
+bincode = "1.3.3"
+
+[profile.test]
+opt-level = 2

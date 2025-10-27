@@ -1,0 +1,16 @@
+[workspace]
+
+[package]
+name = "rdiff_fuzz_5179060292033157288"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "rdiff_fuzz_5179060292033157288"
+path = "src/rdiff_fuzz_5179060292033157288.rs"
+
+[dependencies]
+afl = "=0.15.7"
+home = "=0.5.9"
+rdiff = { path = "../../../../rdiff-0.1.2/" }
+global_data = { path = "../../../../../../../../code/global_data" }

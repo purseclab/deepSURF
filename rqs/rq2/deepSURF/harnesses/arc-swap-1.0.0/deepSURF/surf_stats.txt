@@ -1,0 +1,81 @@
+
+Total Stats:
+------------------------------------------------------------------------------------------------------------------------------------
+* URAPI Coverage: 0/27 (0.00%).
+* Targets Compiled: 0/68 (0.00%) in [31.04292951s].
+------------------------------------------------------------------------------------------------------------------------------------
+
+Target Stats:
+------------------------------------------------------------------------------------------------------------------------------------
+* URAPIs w/ ≥ 1ft: 0/27 (0.00%).
+* Average Generation Time per Target: 0ns/0 (Na).
+
+* URAPIs w/ ≥ 2ft: 0/27 (0.00%).
+* Average Generation Time per Target: 0ns/0 (Na).
+
+* URAPIs w/ ≥ 3ft: 0/27 (0.00%).
+* Average Generation Time per Target: 0ns/0 (Na).
+
+* URAPIs w/ ≥ 4ft: 0/27 (0.00%).
+* Average Generation Time per Target: 0ns/0 (Na).
+
+* URAPIs w/o any compilable targets: 27/27 (100.00%).
+------------------------------------------------------------------------------------------------------------------------------------
+
+Detailed Results: 
+------------------------------------------------------------------------------------------------------------------------------------
+  URAPI: DefId(0:549 ~ arc_swap[599a]::{impl#11}::load_full),
+    - Compilable Targets (0/3 ~ 0.00%):
+  URAPI: DefId(0:163 ~ arc_swap[599a]::cache::{impl#1}::load),
+    - Compilable Targets (0/2 ~ 0.00%):
+  URAPI: DefId(0:47 ~ arc_swap[599a]::access::{impl#5}::load),
+    - Compilable Targets (0/3 ~ 0.00%):
+  URAPI: DefId(0:538 ~ arc_swap[599a]::{impl#9}::fmt),
+    - Compilable Targets (0/3 ~ 0.00%):
+  URAPI: DefId(0:62 ~ arc_swap[599a]::access::{impl#7}::load),
+    - Compilable Targets (0/1 ~ 0.00%):
+  URAPI: DefId(0:27 ~ arc_swap[599a]::access::{impl#1}::load),
+    - Compilable Targets (0/3 ~ 0.00%):
+  URAPI: DefId(0:151 ~ arc_swap[599a]::cache::{impl#0}::new),
+    - Compilable Targets (0/1 ~ 0.00%):
+  URAPI: DefId(0:512 ~ arc_swap[599a]::{impl#5}::fmt),
+    - Compilable Targets (0/5 ~ 0.00%):
+  URAPI: DefId(0:555 ~ arc_swap[599a]::{impl#11}::rcu),
+    - Compilable Targets (0/3 ~ 0.00%):
+  URAPI: DefId(0:88 ~ arc_swap[599a]::access::{impl#12}::load),
+    - Compilable Targets (0/4 ~ 0.00%):
+  URAPI: DefId(0:530 ~ arc_swap[599a]::{impl#7}::drop),
+    - Compilable Targets (0/3 ~ 0.00%):
+  URAPI: DefId(0:175 ~ arc_swap[599a]::cache::{impl#3}::load),
+    - Compilable Targets (0/2 ~ 0.00%):
+  URAPI: DefId(0:55 ~ arc_swap[599a]::access::{impl#6}::deref),
+    - Compilable Targets (0/1 ~ 0.00%):
+  URAPI: DefId(0:551 ~ arc_swap[599a]::{impl#11}::store),
+    - Compilable Targets (0/3 ~ 0.00%):
+  URAPI: DefId(0:37 ~ arc_swap[599a]::access::{impl#3}::load),
+    - Compilable Targets (0/3 ~ 0.00%):
+  URAPI: DefId(0:75 ~ arc_swap[599a]::access::{impl#10}::deref),
+    - 0 targets generated.
+  URAPI: DefId(0:152 ~ arc_swap[599a]::cache::{impl#0}::arc_swap),
+    - Compilable Targets (0/2 ~ 0.00%):
+  URAPI: DefId(0:534 ~ arc_swap[599a]::{impl#8}::fmt),
+    - Compilable Targets (0/3 ~ 0.00%):
+  URAPI: DefId(0:548 ~ arc_swap[599a]::{impl#11}::into_inner),
+    - Compilable Targets (0/3 ~ 0.00%):
+  URAPI: DefId(0:508 ~ arc_swap[599a]::{impl#4}::fmt),
+    - Compilable Targets (0/5 ~ 0.00%):
+  URAPI: DefId(0:168 ~ arc_swap[599a]::cache::{impl#2}::from),
+    - Compilable Targets (0/1 ~ 0.00%):
+  URAPI: DefId(0:489 ~ arc_swap[599a]::{impl#0}::into_inner),
+    - Compilable Targets (0/5 ~ 0.00%):
+  URAPI: DefId(0:22 ~ arc_swap[599a]::access::{impl#0}::load),
+    - Compilable Targets (0/1 ~ 0.00%):
+  URAPI: DefId(0:153 ~ arc_swap[599a]::cache::{impl#0}::load),
+    - Compilable Targets (0/2 ~ 0.00%):
+  URAPI: DefId(0:552 ~ arc_swap[599a]::{impl#11}::swap),
+    - Compilable Targets (0/3 ~ 0.00%):
+  URAPI: DefId(0:553 ~ arc_swap[599a]::{impl#11}::compare_and_swap),
+    - 0 targets generated.
+  URAPI: DefId(0:550 ~ arc_swap[599a]::{impl#11}::load),
+    - Compilable Targets (0/3 ~ 0.00%):
+------------------------------------------------------------------------------------------------------------------------------------

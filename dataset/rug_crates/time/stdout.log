@@ -1,0 +1,1096 @@
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 1 test
+
+running 7 tests
+test format_description::well_known::iso8601::adt_hack::tests::encoding_roundtrip ... ok
+test tests::clone ... ok
+test tests::debug ... ok
+test format_description::well_known::iso8601::adt_hack::tests::decode_fail ... ok
+test tests::parsing_internals ... ok
+test tests::default ... ok
+test tests::digit_count ... ok
+
+test result: ok. 7 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 541 tests
+test date::add ... ok
+test date::add_std ... ok
+test date::day ... ok
+test date::checked_sub_duration ... ok
+test date::debug ... ok
+test date::from_iso_week_date ... ok
+test date::add_assign ... ok
+test date::add_assign_std ... ok
+test date::checked_add_duration ... ok
+test date::from_julian_day ... ok
+test date::iso_week ... ok
+test date::midnight ... ok
+test date::month ... ok
+test date::next_day ... ok
+test date::ord ... ok
+test date::partial_ord ... ok
+test date::previous_day ... ok
+test date::replace_day ... ok
+test date::regression_check ... ok
+test date::replace_month ... ok
+test date::replace_year ... ok
+test date::saturating_add_duration ... ok
+test date::saturating_sub_duration ... ok
+test date::sub ... ok
+test date::sub_assign ... ok
+test date::sub_self ... ok
+test date::sub_assign_std ... ok
+test date::sub_std ... ok
+test date::to_calendar_date ... ok
+test date::test_sunday_based_week ... ok
+test date::to_iso_week_date ... ok
+test date::test_monday_based_week ... ok
+test date::to_julian_day ... ok
+test date::to_ordinal_date ... ok
+test date::weekday ... ok
+test date::with_hms ... ok
+test date::with_hms_micro ... ok
+test date::with_hms_milli ... ok
+test date::with_hms_nano ... ok
+test date::with_time ... ok
+test date::year ... ok
+test derives::clone ... ok
+test derives::hash ... ok
+test derives::ord ... ok
+test derives::debug ... ok
+test derives::partial_ord ... ok
+test date::weeks_in_year_exhaustive ... ok
+test duration::abs ... ok
+test duration::add ... ok
+test duration::add_assign ... ok
+test duration::add_assign_std ... ok
+test duration::add_std ... ok
+test duration::as_seconds_f32 ... ok
+test duration::arithmetic_regression ... ok
+test duration::as_seconds_f64 ... ok
+test duration::checked_add ... ok
+test duration::checked_div ... ok
+test duration::checked_mul ... ok
+test duration::checked_seconds_f32 ... ok
+test duration::checked_seconds_f64 ... ok
+test duration::checked_sub ... ok
+test duration::days ... ok
+test duration::div_float ... ok
+test duration::display ... ok
+test duration::default ... ok
+test duration::div_float_assign ... ok
+test duration::div ... ok
+test duration::div_int ... ok
+test duration::div_int_assign ... ok
+test duration::float_mul ... ok
+test duration::int_mul ... ok
+test duration::hours ... ok
+test duration::is_negative ... ok
+test duration::is_positive ... ok
+test duration::is_zero ... ok
+test duration::microseconds ... ok
+test duration::milliseconds ... ok
+test duration::minutes ... ok
+test duration::mul_float_assign ... ok
+test duration::mul_float ... ok
+test duration::mul_int_assign ... ok
+test duration::nanoseconds ... ok
+test duration::mul_int ... ok
+test duration::neg ... ok
+test duration::ord ... ok
+test duration::partial_eq ... ok
+test duration::new ... ok
+test duration::partial_eq_std ... ok
+test duration::partial_ord ... ok
+test duration::partial_ord_std ... ok
+test duration::saturating_add ... ok
+test duration::saturating_mul ... ok
+test duration::saturating_seconds_f32 ... ok
+test duration::saturating_seconds_f64 ... ok
+test duration::seconds ... ok
+test duration::saturating_sub ... ok
+test duration::std_add ... ok
+test duration::std_add_assign ... ok
+test duration::std_partial_eq ... ok
+test duration::std_partial_ord ... ok
+test duration::std_sub ... ok
+test duration::seconds_f64 ... ok
+test duration::seconds_f32 ... ok
+test duration::std_sub_assign ... ok
+test duration::std_sub_assign_overflow - should panic ... ok
+test duration::sub ... ok
+test duration::sub_assign ... ok
+test duration::sub_assign_std ... ok
+test duration::sub_std ... ok
+test duration::subsec_microseconds ... ok
+test duration::subsec_milliseconds ... ok
+test duration::subsec_nanoseconds ... ok
+test duration::sum_iter ... ok
+test duration::sum_iter_ref ... ok
+test duration::try_from_std_duration ... ok
+test duration::try_to_std_duration ... ok
+test duration::unit_values ... ok
+test duration::unsigned_abs ... ok
+test duration::whole_days ... ok
+test duration::weeks ... ok
+test duration::whole_hours ... ok
+test duration::whole_microseconds ... ok
+test duration::whole_milliseconds ... ok
+test duration::whole_minutes ... ok
+test duration::whole_nanoseconds ... ok
+test duration::whole_weeks ... ok
+test duration::whole_seconds ... ok
+test error::component_name ... ok
+test error::conversion ... ok
+test error::debug ... ok
+test ext::numerical_duration::arithmetic ... ok
+test ext::numerical_duration::float ... ok
+test error::source ... ok
+test ext::numerical_duration::signed ... ok
+test error::display ... ok
+test ext::numerical_duration::unsigned ... ok
+test ext::numerical_std_duration::arithmetic ... ok
+test ext::numerical_std_duration::float ... ok
+test ext::numerical_std_duration::unsigned ... ok
+test format_description::borrowed_format_item_component_conversions ... ok
+test format_description::borrowed_format_item_compound_conversions ... ok
+test format_description::borrowed_format_item_equality ... ok
+test format_description::owned_format_item_component_conversions ... ok
+test format_description::owned_format_item_compound_conversions ... ok
+test format_description::owned_format_item_equality ... ok
+test formatting::display_odt ... ok
+test formatting::display_date ... ok
+test formatting::display_offset ... ok
+test formatting::display_pdt ... ok
+test formatting::display_time ... ok
+test formatting::first ... ok
+test formatting::format_offset ... ok
+test formatting::format_date ... ok
+test formatting::format_pdt ... ok
+test formatting::ignore ... ok
+test duration::time_fn ... ok
+test formatting::insufficient_type_information ... ok
+test formatting::unix_timestamp ... ok
+test formatting::format_odt ... ok
+test formatting::format_time ... ok
+test formatting::rfc_3339 ... ok
+test formatting::iso_8601 ... ok
+test instant::as_ref ... ok
+test formatting::rfc_2822 ... ok
+test instant::borrow ... ok
+test instant::checked_add ... ok
+test instant::checked_sub ... ok
+test instant::eq_std ... ok
+test instant::from_std ... ok
+test instant::into_inner ... ok
+test instant::ord ... ok
+test instant::partial_ord_std ... ok
+test instant::std_eq ... ok
+test instant::std_partial_ord ... ok
+test instant::std_from ... ok
+test instant::std_sub_assign_duration ... ok
+test instant::std_sub_duration ... ok
+test instant::sub_assign_duration ... ok
+test formatting::failed_write ... ok
+test instant::sub_assign_std_duration ... ok
+test instant::sub_duration ... ok
+test instant::sub_regression ... ok
+test instant::sub_std_duration ... ok
+test macros::backslash_escape ... ok
+test macros::date_coverage ... ok
+test macros::first ... ok
+test macros::format_description_coverage ... ok
+test macros::format_description_version ... ok
+test macros::nested_v1 ... ok
+test macros::nontrivial_string ... ok
+test macros::optional ... ok
+test macros::time_coverage ... ok
+test meta::alignment ... ok
+test meta::size ... ok
+test month::display ... ok
+test month::from_str ... ok
+test month::next ... ok
+test month::previous ... ok
+test month::to_u8 ... ok
+test month::try_from_u8 ... ok
+test instant::add_assign_std_duration ... ok
+test instant::add_std_duration ... ok
+test instant::add_assign_duration ... ok
+test offset_date_time::add_assign_duration ... ok
+test instant::add_duration ... ok
+test offset_date_time::add_assign_std_duration ... ok
+test offset_date_time::add_duration ... ok
+test offset_date_time::add_std_duration ... ok
+test offset_date_time::arithmetic_regression ... ok
+test offset_date_time::checked_add_duration ... ok
+test offset_date_time::checked_sub_duration ... ok
+test offset_date_time::checked_to_offset ... ok
+test instant::elapsed ... ok
+test offset_date_time::date ... ok
+test offset_date_time::day ... ok
+test offset_date_time::eq_std ... ok
+test offset_date_time::from_std ... ok
+test offset_date_time::from_unix_timestamp ... ok
+test offset_date_time::from_unix_timestamp_nanos ... ok
+test instant::std_add_assign_duration ... ok
+test offset_date_time::hash ... ok
+test instant::std_add_duration ... ok
+test offset_date_time::hour ... ok
+test offset_date_time::iso_week ... ok
+test offset_date_time::microsecond ... ok
+test offset_date_time::millisecond ... ok
+test offset_date_time::minute ... ok
+test instant::std_sub ... ok
+test offset_date_time::monday_based_week ... ok
+test offset_date_time::month ... ok
+test instant::sub ... ok
+test offset_date_time::nanosecond ... ok
+test offset_date_time::now_local ... ok
+test offset_date_time::offset ... ok
+test offset_date_time::now_utc ... ok
+test offset_date_time::ord ... ok
+test instant::sub_std ... ok
+test offset_date_time::ord_std ... ok
+test offset_date_time::ordinal ... ok
+test offset_date_time::partial_eq ... ok
+test offset_date_time::partial_ord ... ok
+test offset_date_time::replace_date ... ok
+test offset_date_time::replace_date_time ... ok
+test offset_date_time::replace_day ... ok
+test offset_date_time::replace_hour ... ok
+test offset_date_time::replace_microsecond ... ok
+test offset_date_time::replace_millisecond ... ok
+test offset_date_time::replace_minute ... ok
+test offset_date_time::replace_month ... ok
+test offset_date_time::replace_nanosecond ... ok
+test offset_date_time::replace_offset ... ok
+test offset_date_time::replace_second ... ok
+test offset_date_time::replace_time ... ok
+test offset_date_time::replace_year ... ok
+test offset_date_time::saturating_add_duration ... ok
+test offset_date_time::second ... ok
+test offset_date_time::saturating_sub_duration ... ok
+test offset_date_time::std_add_assign_duration ... ok
+test offset_date_time::std_add_duration ... ok
+test offset_date_time::std_eq ... ok
+test offset_date_time::std_sub ... ok
+test offset_date_time::std_sub_assign_duration ... ok
+test offset_date_time::std_sub_duration ... ok
+test offset_date_time::sub_std_duration ... ok
+test offset_date_time::sub_std ... ok
+test offset_date_time::sunday_based_week ... ok
+test offset_date_time::sub_duration ... ok
+test offset_date_time::std_ord ... ok
+test offset_date_time::to_calendar_date ... ok
+test offset_date_time::sub_assign_duration ... ok
+test offset_date_time::to_hms ... ok
+test offset_date_time::sub_assign_std_duration ... ok
+test offset_date_time::sub_self ... ok
+test offset_date_time::to_iso_week_date ... ok
+test offset_date_time::to_julian_day ... ok
+test offset_date_time::to_offset ... ok
+test offset_date_time::time ... ok
+test offset_date_time::to_ordinal_date ... ok
+test offset_date_time::to_std ... ok
+test offset_date_time::to_offset_panic ... ok
+test offset_date_time::unix_timestamp ... ok
+test offset_date_time::unix_timestamp_nanos ... ok
+test offset_date_time::to_hms_micro ... ok
+test offset_date_time::weekday ... ok
+test offset_date_time::year ... ok
+test offset_date_time::to_hms_milli ... ok
+test offset_date_time::to_hms_nano ... ok
+test parse_format_description::backslash_escape_error ... ok
+test offset_date_time::to_offset_invalid_regression ... ok
+test parse_format_description::empty ... ok
+test parse_format_description::backslash_escape ... ok
+test parse_format_description::error_display ... ok
+test parse_format_description::nested_v1_error ... ok
+test parse_format_description::nested_error ... ok
+test parse_format_description::only_literal ... ok
+test parse_format_description::rfc_3339 ... ok
+test parsed::builder_methods ... ok
+test parse_format_description::first ... ok
+test parsed::component_err ... ok
+test parsed::getters_setters ... ok
+test parse_format_description::optional ... ok
+test parsed::single_item_parse ... ok
+test parse_format_description::simple_component ... ok
+test parsing::iso_8601_error ... ok
+test parsing::iso_8601 ... ok
+test parsing::parse_components ... ok
+test parsing::parse_offset_date_time_err ... ok
+test parsing::parse_first ... ok
+test parsing::parse_primitive_date_time_err ... ok
+test parsing::parse_optional ... ok
+test parsing::parse_offset_err ... ok
+test parsing::parse_offset ... ok
+test parsing::parse_date ... ok
+test parsing::parse_unix_timestamp ... ok
+test parsing::parse_unix_timestamp_err ... ok
+test parsing::parse_time ... ok
+test primitive_date_time::add_assign_duration ... ok
+test parsing::rfc_2822_err ... ok
+test primitive_date_time::add_std_duration ... ok
+test primitive_date_time::add_duration ... ok
+test parse_format_description::errors ... ok
+test parsing::parse_time_err ... ok
+test primitive_date_time::as_hms_micro ... ok
+test primitive_date_time::as_hms_milli ... ok
+test primitive_date_time::as_hms_nano ... ok
+test primitive_date_time::assume_utc ... ok
+test parsing::rfc_2822 ... ok
+test parsing::rfc_3339 ... ok
+test parsing::parse_date_err ... ok
+test primitive_date_time::date ... ok
+test primitive_date_time::checked_add_duration ... ok
+test primitive_date_time::checked_sub_duration ... ok
+test parsing::rfc_3339_err ... ok
+test primitive_date_time::day ... ok
+test primitive_date_time::hour ... ok
+test primitive_date_time::as_hms ... ok
+test primitive_date_time::iso_week ... ok
+test primitive_date_time::add_assign_std_duration ... ok
+test primitive_date_time::microsecond ... ok
+test primitive_date_time::millisecond ... ok
+test primitive_date_time::minute ... ok
+test primitive_date_time::monday_based_week ... ok
+test primitive_date_time::month ... ok
+test primitive_date_time::nanosecond ... ok
+test primitive_date_time::new ... ok
+test primitive_date_time::ord ... ok
+test primitive_date_time::assume_offset ... ok
+test primitive_date_time::ordinal ... ok
+test primitive_date_time::replace_date ... ok
+test primitive_date_time::replace_day ... ok
+test primitive_date_time::replace_hour ... ok
+test primitive_date_time::replace_microsecond ... ok
+test primitive_date_time::replace_millisecond ... ok
+test primitive_date_time::replace_minute ... ok
+test primitive_date_time::replace_month ... ok
+test primitive_date_time::replace_nanosecond ... ok
+test primitive_date_time::replace_second ... ok
+test primitive_date_time::replace_time ... ok
+test primitive_date_time::replace_year ... ok
+test primitive_date_time::saturating_add_duration ... ok
+test primitive_date_time::saturating_sub_duration ... ok
+test primitive_date_time::second ... ok
+test primitive_date_time::sub_assign_duration ... ok
+test primitive_date_time::sub_assign_std_duration ... ok
+test primitive_date_time::sub_datetime ... ok
+test primitive_date_time::sub_duration ... ok
+test primitive_date_time::sub_std_duration ... ok
+test primitive_date_time::sunday_based_week ... ok
+test primitive_date_time::time ... ok
+test primitive_date_time::to_calendar_date ... ok
+test primitive_date_time::to_iso_week_date ... ok
+test primitive_date_time::to_julian_day ... ok
+test primitive_date_time::to_ordinal_date ... ok
+test primitive_date_time::weekday ... ok
+test primitive_date_time::year ... ok
+test parse_format_description::component_with_modifiers ... ok
+test quickcheck_mod::date_yo_roundtrip ... ok
+test quickcheck_mod::date_replace_month ... ok
+test quickcheck_mod::date_replace_year ... ok
+test quickcheck_mod::number_days_from_sunday_roundtrip ... ok
+test quickcheck_mod::month_can_shrink ... ok
+test quickcheck_mod::number_from_sunday_roundtrip ... ok
+test quickcheck_mod::date_can_shrink_year ... ok
+test quickcheck_mod::julian_day_roundtrip ... ok
+test quickcheck_mod::number_days_from_monday_roundtrip ... ok
+test quickcheck_mod::number_from_monday_roundtrip ... ok
+test quickcheck_mod::date_ymd_roundtrip ... ok
+test quickcheck_mod::date_ywd_roundtrip ... ok
+test quickcheck_mod::duration_can_shrink_ns ... ok
+test quickcheck_mod::month_supports_arbitrary ... ok
+test quickcheck_mod::date_replace_day ... ok
+test quickcheck_mod::odt_replace_offset_no_panic ... ok
+test quickcheck_mod::duration_can_shrink_seconds ... ok
+test quickcheck_mod::odt_eq_no_panic ... ok
+test quickcheck_mod::from_julian_day_no_panic ... ok
+test quickcheck_mod::duration_roundtrip ... ok
+test quickcheck_mod::pdt_replace_year ... ok
+test rand::support ... ok
+test quickcheck_mod::weekday_supports_arbitrary ... ok
+test quickcheck_mod::time_roundtrip ... ok
+test quickcheck_mod::weekday_can_shrink ... ok
+test quickcheck_mod::pdt_replace_month ... ok
+test quickcheck_mod::odt_sub_no_panic ... ok
+test quickcheck_mod::unix_timestamp_nanos_roundtrip ... ok
+test quickcheck_mod::date_can_shrink_ordinal ... ok
+test quickcheck_mod::time_can_shrink_hour ... ok
+test serde::date ... ok
+test quickcheck_mod::time_can_shrink_minute ... ok
+test serde::duration ... ok
+test serde::iso8601::serialize_error ... ok
+test quickcheck_mod::odt_to_offset_no_panic ... ok
+test serde::json::duration_json ... ok
+test serde::json::primitive_datetime_json ... ok
+test serde::json::date_json ... ok
+test serde::json::time_json ... ok
+test serde::error_conditions::custom_serialize_io_error ... ok
+test quickcheck_mod::pdt_replace_day ... ok
+test quickcheck_mod::time_replace_hour ... ok
+test serde::month ... ok
+test serde::iso8601::deserialize_error ... ok
+test serde::month_error ... ok
+test quickcheck_mod::time_sub_time_no_panic ... ok
+test serde::iso8601::serialize ... ok
+test serde::offset_date_time ... ok
+test quickcheck_mod::offset_date_time_can_shrink_year ... ok
+test serde::json::weekday_json ... ok
+test serde::macros::custom_serialize_bad_type_error ... ok
+test serde::primitive_date_time_partial ... ok
+test serde::macros::versioning ... ok
+test serde::duration_error ... ok
+test quickcheck_mod::utc_offset_roundtrip ... ok
+test quickcheck_mod::offset_date_time_roundtrip ... ok
+test serde::date_error ... ok
+test serde::duration_partial ... ok
+test serde::json::offset_datetime_json ... ok
+test quickcheck_mod::time_can_shrink_second ... ok
+test serde::offset_date_time_error ... ok
+test quickcheck_mod::utc_offset_can_shrink ... ok
+test serde::json::month_json ... ok
+test quickcheck_mod::primitive_date_time_roundtrip ... ok
+test serde::macros::nested ... ok
+test serde::rfc3339::issue_479 ... ok
+test serde::rfc3339::parse_json ... ok
+test serde::primitive_date_time ... ok
+test serde::rfc2822::parse_json ... ok
+test serde::time_partial ... ok
+test serde::time ... ok
+test serde::time_error ... ok
+test serde::rfc3339::serialize_deserialize ... ok
+test serde::primitive_date_time_error ... ok
+test serde::timestamps::serialize_timestamp ... ok
+test serde::utc_offset_partial ... ok
+test serde::utc_offset ... ok
+test serde::weekday ... ok
+test serde::date_partial ... ok
+test serde::macros::custom_serialize ... ok
+test serde::macros::custom_serialize_error ... ok
+test time::add_assign_duration ... ok
+test time::add_assign_std_duration ... ok
+test quickcheck_mod::time_can_shrink_nanosecond ... ok
+test quickcheck_mod::unix_timestamp_roundtrip ... ok
+test time::add_std_duration ... ok
+test time::add_duration ... ok
+test time::as_hms_milli ... ok
+test quickcheck_mod::odt_ord_no_panic ... ok
+test quickcheck_mod::primitive_date_time_can_shrink_ordinal ... ok
+test time::from_hms ... ok
+test time::from_hms_micro ... ok
+test time::as_hms_nano ... ok
+test serde::weekday_error ... ok
+test serde::utc_offset_error ... ok
+test serde::offset_date_time_partial ... ok
+test time::from_hms_milli ... ok
+test time::from_hms_nano ... ok
+test time::hour ... ok
+test serde_helpers::timestamp_error ... ok
+test serde_helpers::rfc2822_error ... ok
+test time::issue_481 ... ok
+test time::as_hms ... ok
+test quickcheck_mod::primitive_date_time_can_shrink_year ... ok
+test quickcheck_mod::primitive_date_time_can_shrink_hour ... ok
+test time::as_hms_micro ... ok
+test serde_helpers::rfc3339_error ... ok
+test time::minute ... ok
+test serde_helpers::success ... ok
+test time::microsecond ... ok
+test quickcheck_mod::offset_date_time_can_shrink_minute ... ok
+test time::millisecond ... ok
+test time::ordering ... ok
+test time::replace_hour ... ok
+test time::nanosecond ... ok
+test time::replace_minute ... ok
+test time::replace_microsecond ... ok
+test time::replace_nanosecond ... ok
+test serde::rfc2822::serialize_deserialize ... ok
+test time::replace_second ... ok
+test time::replace_millisecond ... ok
+test time::sub_assign_duration ... ok
+test time::sub_assign_std_duration ... ok
+test time::sub_duration ... ok
+test time::sub_std_duration ... ok
+test quickcheck_mod::offset_date_time_can_shrink_second ... ok
+test time::sub_time ... ok
+test utc_offset::as_hms ... ok
+test utc_offset::current_local_offset ... ok
+test utc_offset::from_hms ... ok
+test utc_offset::from_whole_seconds ... ok
+test utc_offset::is_negative ... ok
+test utc_offset::is_positive ... ok
+test time::second ... ok
+test utc_offset::is_utc ... ok
+test utc_offset::neg ... ok
+test utc_offset::minutes_past_hour ... ok
+test quickcheck_mod::offset_date_time_can_shrink_hour ... ok
+test utc_offset::seconds_past_minute ... ok
+test quickcheck_mod::primitive_date_time_can_shrink_nanosecond ... ok
+test utc_offset::utc_is_zero ... ok
+test utc_offset::whole_minutes ... ok
+test quickcheck_mod::offset_date_time_can_shrink_ordinal ... ok
+test utc_offset::whole_seconds ... ok
+test utc_offset::local_offset_error_when_multithreaded ... ok
+test util::days_in_year ... ok
+test utc_offset::local_offset_at ... ok
+test utc_offset::whole_hours ... ok
+test util::days_in_year_month ... ok
+test util::local_offset_soundness ... ok
+test weekday::display ... ok
+test util::weeks_in_year ... ok
+test weekday::from_str ... ok
+test quickcheck_mod::primitive_date_time_can_shrink_minute ... ok
+test weekday::next ... ok
+test weekday::number_days_from_monday ... ok
+test weekday::nth_next ... ok
+test weekday::number_days_from_sunday ... ok
+test weekday::number_from_monday ... ok
+test weekday::number_from_sunday ... ok
+test weekday::previous ... ok
+test quickcheck_mod::primitive_date_time_can_shrink_second ... ok
+test util::is_leap_year ... ok
+test quickcheck_mod::offset_date_time_can_shrink_offset ... ok
+test quickcheck_mod::offset_date_time_can_shrink_nanosecond ... ok
+
+test result: ok. 541 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.02s
+
+
+running 272 tests
+test src/date.rs - date::Date::from_iso_week_date (line 131) ... ok
+test src/date.rs - date::Date::checked_add (line 557) ... ok
+test src/date.rs - date::Date::to_julian_day (line 537) ... ok
+test src/date.rs - date::Date::monday_based_week (line 368) ... ok
+test src/date.rs - date::Date::iso_week (line 337) ... ok
+test src/date.rs - date::Date::with_hms (line 848) ... ok
+test src/date.rs - date::Date::with_hms_nano (line 907) ... ok
+test src/date.rs - date::Date::midnight (line 825) ... ok
+test src/date.rs - date::Date::from_ordinal_date (line 106) ... ok
+test src/date.rs - date::Date::from_iso_week_date (line 124) ... ok
+test src/date.rs - date::Date::with_hms_milli (line 867) ... ok
+test src/date.rs - date::Date::next_day (line 467) ... ok
+test src/duration.rs - duration::Duration::DAY (line 232) ... ok
+test src/date.rs - date::Date::checked_add (line 572) ... ok
+test src/duration.rs - duration::Duration (line 1064) ... ok
+test src/date.rs - date::Date::year (line 233) ... ok
+test src/date.rs - date::Date::month (line 245) ... ok
+test src/date.rs - date::Date::saturating_sub (line 689) ... ok
+test src/duration.rs - duration::Duration::is_zero (line 256) ... ok
+test src/date.rs - date::Date::to_calendar_date (line 381) ... ok
+test src/date.rs - date::Date::day (line 259) ... ok
+test src/date.rs - date::Date::from_calendar_date (line 73) ... ok
+test src/date.rs - date::Date::with_hms_micro (line 887) ... ok
+test src/duration.rs - duration::Duration::MICROSECOND (line 192) ... ok
+test src/date.rs - date::Date::to_iso_week_date (line 406) ... ok
+test src/date.rs - date::Date::from_ordinal_date (line 112) ... ok
+test src/date.rs - date::Date::saturating_add (line 664) ... ok
+test src/date.rs - date::Date::ordinal (line 313) ... ok
+test src/date.rs - date::Date::replace_day (line 793) ... ok
+test src/date.rs - date::Date::to_ordinal_date (line 396) ... ok
+test src/date.rs - date::Date::parse (line 958) ... ok
+test src/duration.rs - duration::Duration::as_seconds_f64 (line 737) ... ok
+test src/duration.rs - duration::Duration::ZERO (line 176) ... ok
+test src/duration.rs - duration::Duration::as_seconds_f32 (line 748) ... ok
+test src/date.rs - date::Date::weekday (line 434) ... ok
+test src/date.rs - date::Date::checked_sub (line 602) ... ok
+test src/duration.rs - duration::Duration::is_negative (line 267) ... ok
+test src/duration.rs - duration::Duration::is_positive (line 279) ... ok
+test src/date.rs - date::Date::replace_month (line 772) ... ok
+test src/duration.rs - duration::Duration::WEEK (line 240) ... ok
+test src/duration.rs - duration::Duration::checked_div (line 912) ... ok
+test src/duration.rs - duration::Duration::MINUTE (line 216) ... ok
+test src/date.rs - date::Date::sunday_based_week (line 353) ... ok
+test src/date.rs - date::Date::replace_year (line 731) ... ok
+test src/date.rs - date::Date::saturating_add (line 649) ... ok
+test src/date.rs - date::Date::with_time (line 835) ... ok
+test src/date.rs - date::Date::from_calendar_date (line 79) ... ok
+test src/duration.rs - duration::Duration::checked_mul (line 890) ... ok
+test src/duration.rs - duration::Duration::checked_seconds_f64 (line 559) ... ok
+test src/duration.rs - duration::Duration::checked_seconds_f32 (line 586) ... ok
+test src/duration.rs - duration::Duration::checked_add (line 842) ... ok
+test src/duration.rs - duration::Duration::HOUR (line 224) ... ok
+test src/duration.rs - duration::Duration::checked_sub (line 866) ... ok
+test src/duration.rs - duration::Duration::SECOND (line 208) ... ok
+test src/date.rs - date::Date::saturating_sub (line 704) ... ok
+test src/date.rs - date::Date::previous_day (line 500) ... ok
+test src/duration.rs - duration::Duration::days (line 388) ... ok
+test src/duration.rs - duration::Duration::MILLISECOND (line 200) ... ok
+test src/duration.rs - duration::Duration::abs (line 295) ... ok
+test src/date.rs - date::Date::checked_sub (line 617) ... ok
+test src/duration.rs - duration::Duration::hours (line 402) ... ok
+test src/duration.rs - duration::Duration::NANOSECOND (line 184) ... ok
+test src/date.rs - date::Date::from_julian_day (line 174) ... ok
+test src/date.rs - date::Date::format (line 941) ... ok
+test src/duration.rs - duration::Duration::minutes (line 416) ... ok
+test src/duration.rs - duration::Duration::new (line 345) ... ok
+test src/duration.rs - duration::Duration::saturating_seconds_f32 (line 523) ... ok
+test src/duration.rs - duration::Duration::nanoseconds (line 641) ... ok
+test src/duration.rs - duration::Duration::saturating_mul (line 1012) ... ok
+test src/duration.rs - duration::Duration::saturating_seconds_f64 (line 486) ... ok
+test src/duration.rs - duration::Duration::saturating_add (line 932) ... ok
+test src/duration.rs - duration::Duration::milliseconds (line 611) ... ok
+test src/duration.rs - duration::Duration::microseconds (line 626) ... ok
+test src/duration.rs - duration::Duration::seconds_f32 (line 461) ... ok
+test src/duration.rs - duration::Duration::saturating_sub (line 972) ... ok
+test src/duration.rs - duration::Duration::seconds (line 429) ... ok
+test src/duration.rs - duration::Duration::subsec_microseconds (line 803) ... ok
+test src/duration.rs - duration::Duration::seconds_f64 (line 439) ... ok
+test src/duration.rs - duration::Duration::subsec_nanoseconds (line 829) ... ok
+test src/duration.rs - duration::Duration::subsec_milliseconds (line 775) ... ok
+test src/offset_date_time.rs - offset_date_time::OffsetDateTime::from_unix_timestamp (line 128) ... ok
+test src/month.rs - month::Month::next (line 80) ... ok
+test src/instant.rs - instant::Instant::into_inner (line 105) ... ok
+test src/ext.rs - ext::NumericalDuration (line 38) ... ok
+test src/duration.rs - duration::Duration::whole_minutes (line 711) ... ok
+test src/duration.rs - duration::Duration::whole_nanoseconds (line 814) ... ok
+test src/ext.rs - ext::NumericalDuration (line 52) ... ok
+test src/offset_date_time.rs - offset_date_time::OffsetDateTime::checked_sub (line 641) ... ok
+test src/duration.rs - duration::Duration::weeks (line 374) ... ok
+test src/offset_date_time.rs - offset_date_time::OffsetDateTime::date (line 218) ... ok
+test src/duration.rs - duration::Duration::whole_milliseconds (line 759) ... ok
+test src/duration.rs - duration::Duration::whole_microseconds (line 787) ... ok
+test src/offset_date_time.rs - offset_date_time::OffsetDateTime::checked_to_offset (line 103) ... ok
+test src/duration.rs - duration::Duration::whole_days (line 685) ... ok
+test src/duration.rs - duration::Duration::whole_seconds (line 724) ... ok
+test src/offset_date_time.rs - offset_date_time::OffsetDateTime::checked_add (line 621) ... ok
+test src/ext.rs - ext::NumericalStdDuration (line 156) ... ok
+test src/offset_date_time.rs - offset_date_time::OffsetDateTime::from_unix_timestamp_nanos (line 160) ... ok
+test src/ext.rs - ext::NumericalStdDuration (line 171) ... ok
+test src/offset_date_time.rs - offset_date_time::OffsetDateTime::monday_based_week (line 353) ... ok
+test src/instant.rs - instant::Instant::now (line 36) ... ok
+test src/offset_date_time.rs - offset_date_time::OffsetDateTime::now_local (line 59) ... ok
+test src/instant.rs - instant::Instant::elapsed (line 47) ... ok
+test src/offset_date_time.rs - offset_date_time::OffsetDateTime::microsecond (line 588) ... ok
+test src/offset_date_time.rs - offset_date_time::OffsetDateTime::UNIX_EPOCH (line 35) ... ok
+test src/offset_date_time.rs - offset_date_time::OffsetDateTime::minute (line 536) ... ok
+test src/macros.rs - macros::datetime (line 34) ... ok
+test src/duration.rs - duration::Duration::whole_weeks (line 672) ... ok
+test src/ext.rs - ext::NumericalDuration (line 24) ... ok
+test src/format_description/well_known/rfc3339.rs - format_description::well_known::rfc3339::Rfc3339 (line 18) ... ok
+test src/macros.rs - macros::date (line 9) ... ok
+test src/instant.rs - instant::Instant::checked_add (line 64) ... ok
+test src/offset_date_time.rs - offset_date_time::OffsetDateTime::millisecond (line 575) ... ok
+test src/format_description/well_known/iso8601.rs - format_description::well_known::iso8601::Iso8601 (line 35) ... ok
+test src/format_description/well_known/rfc2822.rs - format_description::well_known::rfc2822::Rfc2822 (line 18) ... ok
+test src/offset_date_time.rs - offset_date_time::OffsetDateTime::day (line 287) ... ok
+test src/offset_date_time.rs - offset_date_time::OffsetDateTime::hour (line 518) ... ok
+test src/format_description/well_known/rfc2822.rs - format_description::well_known::rfc2822::Rfc2822 (line 8) ... ok
+test src/month.rs - month::Month::previous (line 57) ... ok
+test src/duration.rs - duration::Duration::unsigned_abs (line 311) ... ok
+test src/offset_date_time.rs - offset_date_time::OffsetDateTime::from_unix_timestamp (line 144) ... ok
+test src/macros.rs - macros::time (line 109) ... ok
+test src/macros.rs - macros::format_description (line 59) ... ok
+test src/instant.rs - instant::Instant::checked_sub (line 85) ... ok
+test src/duration.rs - duration::Duration::whole_hours (line 698) ... ok
+test src/offset_date_time.rs - offset_date_time::OffsetDateTime::iso_week (line 323) ... ok
+test src/format_description/well_known/rfc3339.rs - format_description::well_known::rfc3339::Rfc3339 (line 8) ... ok
+test src/offset_date_time.rs - offset_date_time::OffsetDateTime::format (line 992) ... ok
+test src/macros.rs - macros::offset (line 82) ... ok
+test src/offset_date_time.rs - offset_date_time::OffsetDateTime::month (line 268) ... ok
+test src/offset_date_time.rs - offset_date_time::OffsetDateTime::nanosecond (line 604) ... ok
+test src/offset_date_time.rs - offset_date_time::OffsetDateTime::now_utc (line 45) ... ok
+test src/offset_date_time.rs - offset_date_time::OffsetDateTime::replace_date (line 790) ... ok
+test src/offset_date_time.rs - offset_date_time::OffsetDateTime::offset (line 182) ... ok
+test src/offset_date_time.rs - offset_date_time::OffsetDateTime::ordinal (line 305) ... ok
+test src/offset_date_time.rs - offset_date_time::OffsetDateTime::replace_date_time (line 809) ... ok
+test src/offset_date_time.rs - offset_date_time::OffsetDateTime::replace_microsecond (line 945) ... ok
+test src/offset_date_time.rs - offset_date_time::OffsetDateTime::replace_day (line 871) ... ok
+test src/offset_date_time.rs - offset_date_time::OffsetDateTime::parse (line 1015) ... ok
+test src/offset_date_time.rs - offset_date_time::OffsetDateTime::replace_minute (line 900) ... ok
+test src/offset_date_time.rs - offset_date_time::OffsetDateTime::replace_millisecond (line 928) ... ok
+test src/offset_date_time.rs - offset_date_time::OffsetDateTime::replace_hour (line 886) ... ok
+test src/offset_date_time.rs - offset_date_time::OffsetDateTime::replace_nanosecond (line 962) ... ok
+test src/offset_date_time.rs - offset_date_time::OffsetDateTime::replace_offset (line 827) ... ok
+test src/offset_date_time.rs - offset_date_time::OffsetDateTime::replace_month (line 856) ... ok
+test src/offset_date_time.rs - offset_date_time::OffsetDateTime::replace_time (line 767) ... ok
+test src/offset_date_time.rs - offset_date_time::OffsetDateTime::replace_year (line 841) ... ok
+test src/offset_date_time.rs - offset_date_time::OffsetDateTime::replace_second (line 914) ... ok
+test src/offset_date_time.rs - offset_date_time::OffsetDateTime::saturating_sub (line 712) ... ok
+test src/offset_date_time.rs - offset_date_time::OffsetDateTime::sunday_based_week (line 338) ... ok
+test src/offset_date_time.rs - offset_date_time::OffsetDateTime::second (line 554) ... ok
+test src/offset_date_time.rs - offset_date_time::OffsetDateTime::saturating_add (line 663) ... ok
+test src/offset_date_time.rs - offset_date_time::OffsetDateTime::to_hms_nano (line 499) ... ok
+test src/offset_date_time.rs - offset_date_time::OffsetDateTime::to_julian_day (line 439) ... ok
+test src/offset_date_time.rs - offset_date_time::OffsetDateTime::to_hms_milli (line 465) ... ok
+test src/offset_date_time.rs - offset_date_time::OffsetDateTime::time (line 234) ... ok
+test src/offset_date_time.rs - offset_date_time::OffsetDateTime::to_hms_micro (line 482) ... ok
+test src/offset_date_time.rs - offset_date_time::OffsetDateTime::to_hms (line 454) ... ok
+test src/offset_date_time.rs - offset_date_time::OffsetDateTime::unix_timestamp_nanos (line 204) ... ok
+test src/primitive_date_time.rs - primitive_date_time::PrimitiveDateTime::as_hms (line 310) ... ok
+test src/offset_date_time.rs - offset_date_time::OffsetDateTime::to_calendar_date (line 366) ... ok
+test src/primitive_date_time.rs - primitive_date_time::PrimitiveDateTime::as_hms_milli (line 321) ... ok
+test src/serde/mod.rs - serde::format_description (line 100) - compile ... ok
+test src/offset_date_time.rs - offset_date_time::OffsetDateTime::to_ordinal_date (line 380) ... ok
+test src/offset_date_time.rs - offset_date_time::OffsetDateTime::year (line 251) ... ok
+test src/primitive_date_time.rs - primitive_date_time::PrimitiveDateTime::microsecond (line 417) ... ok
+test src/offset_date_time.rs - offset_date_time::OffsetDateTime::weekday (line 423) ... ok
+test src/serde/mod.rs - serde::format_description (line 52) - compile ... ok
+test src/offset_date_time.rs - offset_date_time::OffsetDateTime::to_offset (line 73) ... ok
+test src/serde/mod.rs - serde::format_description (line 71) - compile ... ok
+test src/primitive_date_time.rs - primitive_date_time::PrimitiveDateTime::date (line 99) ... ok
+test src/primitive_date_time.rs - primitive_date_time::PrimitiveDateTime::MAX (line 60) ... ok
+test src/offset_date_time.rs - offset_date_time::OffsetDateTime::to_iso_week_date (line 393) ... ok
+test src/primitive_date_time.rs - primitive_date_time::PrimitiveDateTime::hour (line 365) ... ok
+test src/primitive_date_time.rs - primitive_date_time::PrimitiveDateTime::assume_utc (line 472) ... ok
+test src/primitive_date_time.rs - primitive_date_time::PrimitiveDateTime::month (line 132) ... ok
+test src/primitive_date_time.rs - primitive_date_time::PrimitiveDateTime::millisecond (line 404) ... ok
+test src/primitive_date_time.rs - primitive_date_time::PrimitiveDateTime::replace_date (line 596) ... ok
+test src/primitive_date_time.rs - primitive_date_time::PrimitiveDateTime::day (line 146) ... ok
+test src/primitive_date_time.rs - primitive_date_time::PrimitiveDateTime::checked_add (line 487) ... ok
+test src/primitive_date_time.rs - primitive_date_time::PrimitiveDateTime::as_hms_nano (line 349) ... ok
+test src/primitive_date_time.rs - primitive_date_time::PrimitiveDateTime::nanosecond (line 433) ... ok
+test src/primitive_date_time.rs - primitive_date_time::PrimitiveDateTime::MIN (line 31) ... ok
+test src/primitive_date_time.rs - primitive_date_time::PrimitiveDateTime::minute (line 378) ... ok
+test src/primitive_date_time.rs - primitive_date_time::PrimitiveDateTime::assume_offset (line 450) ... ok
+test src/primitive_date_time.rs - primitive_date_time::PrimitiveDateTime::ordinal (line 159) ... ok
+test src/primitive_date_time.rs - primitive_date_time::PrimitiveDateTime::monday_based_week (line 203) ... ok
+test src/offset_date_time.rs - offset_date_time::OffsetDateTime::unix_timestamp (line 193) ... ok
+test src/primitive_date_time.rs - primitive_date_time::PrimitiveDateTime::iso_week (line 172) ... ok
+test src/primitive_date_time.rs - primitive_date_time::PrimitiveDateTime::as_hms_micro (line 335) ... ok
+test src/primitive_date_time.rs - primitive_date_time::PrimitiveDateTime::replace_day (line 642) ... ok
+test src/primitive_date_time.rs - primitive_date_time::PrimitiveDateTime::new (line 84) ... ok
+test src/primitive_date_time.rs - primitive_date_time::PrimitiveDateTime::replace_hour (line 658) ... ok
+test src/primitive_date_time.rs - primitive_date_time::PrimitiveDateTime::checked_sub (line 507) ... ok
+test src/primitive_date_time.rs - primitive_date_time::PrimitiveDateTime::parse (line 790) ... ok
+test src/primitive_date_time.rs - primitive_date_time::PrimitiveDateTime::format (line 770) ... ok
+test src/quickcheck.rs - quickcheck (line 5) ... ok
+test src/primitive_date_time.rs - primitive_date_time::PrimitiveDateTime::replace_microsecond (line 721) ... ok
+test src/primitive_date_time.rs - primitive_date_time::PrimitiveDateTime::replace_millisecond (line 703) ... ok
+test src/primitive_date_time.rs - primitive_date_time::PrimitiveDateTime::replace_second (line 688) ... ok
+test src/primitive_date_time.rs - primitive_date_time::PrimitiveDateTime::replace_minute (line 673) ... ok
+test src/primitive_date_time.rs - primitive_date_time::PrimitiveDateTime::replace_month (line 626) ... ok
+test src/primitive_date_time.rs - primitive_date_time::PrimitiveDateTime::replace_nanosecond (line 739) ... ok
+test src/primitive_date_time.rs - primitive_date_time::PrimitiveDateTime::replace_year (line 610) ... ok
+test src/primitive_date_time.rs - primitive_date_time::PrimitiveDateTime::replace_time (line 582) ... ok
+test src/primitive_date_time.rs - primitive_date_time::PrimitiveDateTime::second (line 391) ... ok
+test src/primitive_date_time.rs - primitive_date_time::PrimitiveDateTime::saturating_sub (line 553) ... ok
+test src/primitive_date_time.rs - primitive_date_time::PrimitiveDateTime::saturating_add (line 529) ... ok
+test src/util.rs - util::days_in_year_month (line 19) ... ok
+test src/primitive_date_time.rs - primitive_date_time::PrimitiveDateTime::to_calendar_date (line 216) ... ok
+test src/primitive_date_time.rs - primitive_date_time::PrimitiveDateTime::to_iso_week_date (line 240) ... ok
+test src/primitive_date_time.rs - primitive_date_time::PrimitiveDateTime::to_julian_day (line 295) ... ok
+test src/primitive_date_time.rs - primitive_date_time::PrimitiveDateTime::sunday_based_week (line 188) ... ok
+test src/primitive_date_time.rs - primitive_date_time::PrimitiveDateTime::year (line 120) ... ok
+test src/primitive_date_time.rs - primitive_date_time::PrimitiveDateTime::weekday (line 270) ... ok
+test src/primitive_date_time.rs - primitive_date_time::PrimitiveDateTime::time (line 109) ... ok
+test src/primitive_date_time.rs - primitive_date_time::PrimitiveDateTime::to_ordinal_date (line 230) ... ok
+test src/time.rs - time::Time::MIDNIGHT (line 49) ... ok
+test src/time.rs - time::Time::as_hms_micro (line 233) ... ok
+test src/time.rs - time::Time::add (line 695) ... ok
+test src/time.rs - time::Time::as_hms_milli (line 217) ... ok
+test src/time.rs - time::Time::as_hms (line 206) ... ok
+test src/time.rs - time::Time::from_hms (line 96) ... ok
+test src/time.rs - time::Time::as_hms_nano (line 252) ... ok
+test src/time.rs - time::Time::add (line 679) ... ok
+test src/time.rs - time::Time::from_hms (line 91) ... ok
+test src/time.rs - time::Time::from_hms_micro (line 143) ... ok
+test src/time.rs - time::Time::from_hms_milli (line 111) ... ok
+test src/time.rs - time::Time::from_hms_nano (line 180) ... ok
+test src/time.rs - time::Time::from_hms_micro (line 148) ... ok
+test src/time.rs - time::Time::from_hms_nano (line 175) ... ok
+test src/time.rs - time::Time::millisecond (line 307) ... ok
+test src/utc_offset.rs - utc_offset::UtcOffset::minutes_past_hour (line 172) ... ok
+test src/time.rs - time::Time::hour (line 268) ... ok
+test src/utc_offset.rs - utc_offset::UtcOffset::current_local_offset (line 268) ... ok
+test src/utc_offset.rs - utc_offset::UtcOffset::is_negative (line 238) ... ok
+test src/time.rs - time::Time::minute (line 281) ... ok
+test src/time.rs - time::Time::replace_hour (line 464) ... ok
+test src/utc_offset.rs - utc_offset::UtcOffset::is_utc (line 214) ... ok
+test src/time.rs - time::Time::replace_millisecond (line 527) ... ok
+test src/time.rs - time::Time::microsecond (line 320) ... ok
+test src/time.rs - time::Time::sub (line 713) ... ok
+test src/utc_offset.rs - utc_offset::UtcOffset::from_whole_seconds (line 114) ... ok
+test src/time.rs - time::Time::nanosecond (line 333) ... ok
+test src/time.rs - time::Time::from_hms_milli (line 116) ... ok
+test src/time.rs - time::Time::second (line 294) ... ok
+test src/time.rs - time::Time::replace_microsecond (line 551) ... ok
+test src/utc_offset.rs - utc_offset::UtcOffset::local_offset_at (line 253) ... ok
+test src/utc_offset.rs - utc_offset::UtcOffset::from_hms (line 79) ... ok
+test src/time.rs - time::Time::sub (line 729) ... ok
+test src/utc_offset.rs - utc_offset::UtcOffset::is_positive (line 226) ... ok
+test src/time.rs - time::Time::replace_second (line 506) ... ok
+test src/utc_offset.rs - utc_offset::UtcOffset::UTC (line 37) ... ok
+test src/utc_offset.rs - utc_offset::UtcOffset::as_hms (line 136) ... ok
+test src/time.rs - time::Time::parse (line 630) ... ok
+test src/time.rs - time::Time::replace_minute (line 485) ... ok
+test src/time.rs - time::Time::replace_nanosecond (line 575) ... ok
+test src/time.rs - time::Time::sub (line 748) ... ok
+test src/time.rs - time::Time::format (line 610) ... ok
+test src/utc_offset.rs - utc_offset::UtcOffset::seconds_past_minute (line 200) ... ok
+test src/utc_offset.rs - utc_offset::UtcOffset::parse (line 314) ... ok
+test src/utc_offset.rs - utc_offset::UtcOffset::whole_hours (line 148) ... ok
+test src/weekday.rs - weekday::Weekday::nth_next (line 71) ... ok
+test src/utc_offset.rs - utc_offset::UtcOffset::format (line 297) ... ok
+test src/utc_offset.rs - utc_offset::UtcOffset::whole_minutes (line 160) ... ok
+test src/utc_offset.rs - utc_offset::UtcOffset::whole_seconds (line 184) ... ok
+test src/weekday.rs - weekday::Weekday::next (line 53) ... ok
+test src/weekday.rs - weekday::Weekday::number_days_from_sunday (line 124) ... ok
+test src/weekday.rs - weekday::Weekday::number_days_from_monday (line 114) ... ok
+test src/weekday.rs - weekday::Weekday::number_from_sunday (line 104) ... ok
+test src/weekday.rs - weekday::Weekday::previous (line 35) ... ok
+test src/weekday.rs - weekday::Weekday::number_from_monday (line 93) ... ok
+
+test result: ok. 272 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 3.41s
+
+test run_with_all_features ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 3.84s
+
+
+running 245 tests
+test src/duration.rs - duration::Duration::MINUTE (line 216) ... ok
+test src/duration.rs - duration::Duration::HOUR (line 224) ... ok
+test src/duration.rs - duration::Duration::MILLISECOND (line 200) ... ok
+test src/date.rs - date::Date::from_iso_week_date (line 131) ... ok
+test src/date.rs - date::Date::checked_sub (line 602) ... ok
+test src/date.rs - date::Date::saturating_sub (line 704) ... ok
+test src/date.rs - date::Date::next_day (line 467) ... ok
+test src/date.rs - date::Date::from_ordinal_date (line 112) ... ok
+test src/duration.rs - duration::Duration::MICROSECOND (line 192) ... ok
+test src/date.rs - date::Date::from_calendar_date (line 73) ... ok
+test src/date.rs - date::Date::day (line 259) ... ok
+test src/date.rs - date::Date::with_hms_nano (line 907) ... ok
+test src/date.rs - date::Date::from_iso_week_date (line 124) ... ok
+test src/date.rs - date::Date::monday_based_week (line 368) ... ok
+test src/date.rs - date::Date::ordinal (line 313) ... ok
+test src/duration.rs - duration::Duration (line 1064) ... ok
+test src/date.rs - date::Date::to_ordinal_date (line 396) ... ok
+test src/date.rs - date::Date::year (line 233) ... ok
+test src/date.rs - date::Date::to_iso_week_date (line 406) ... ok
+test src/date.rs - date::Date::with_hms_micro (line 887) ... ok
+test src/date.rs - date::Date::with_hms (line 848) ... ok
+test src/date.rs - date::Date::to_julian_day (line 537) ... ok
+test src/date.rs - date::Date::iso_week (line 337) ... ok
+test src/date.rs - date::Date::checked_add (line 572) ... ok
+test src/duration.rs - duration::Duration::NANOSECOND (line 184) ... ok
+test src/date.rs - date::Date::saturating_add (line 664) ... ok
+test src/date.rs - date::Date::sunday_based_week (line 353) ... ok
+test src/duration.rs - duration::Duration::SECOND (line 208) ... ok
+test src/date.rs - date::Date::to_calendar_date (line 381) ... ok
+test src/date.rs - date::Date::midnight (line 825) ... ok
+test src/date.rs - date::Date::checked_add (line 557) ... ok
+test src/duration.rs - duration::Duration::checked_div (line 912) ... ok
+test src/duration.rs - duration::Duration::as_seconds_f32 (line 748) ... ok
+test src/date.rs - date::Date::with_time (line 835) ... ok
+test src/duration.rs - duration::Duration::checked_seconds_f64 (line 559) ... ok
+test src/date.rs - date::Date::saturating_sub (line 689) ... ok
+test src/duration.rs - duration::Duration::DAY (line 232) ... ok
+test src/date.rs - date::Date::from_calendar_date (line 79) ... ok
+test src/date.rs - date::Date::saturating_add (line 649) ... ok
+test src/date.rs - date::Date::replace_month (line 772) ... ok
+test src/date.rs - date::Date::from_ordinal_date (line 106) ... ok
+test src/date.rs - date::Date::with_hms_milli (line 867) ... ok
+test src/date.rs - date::Date::month (line 245) ... ok
+test src/date.rs - date::Date::checked_sub (line 617) ... ok
+test src/date.rs - date::Date::replace_day (line 793) ... ok
+test src/date.rs - date::Date::replace_year (line 731) ... ok
+test src/duration.rs - duration::Duration::WEEK (line 240) ... ok
+test src/duration.rs - duration::Duration::checked_add (line 842) ... ok
+test src/date.rs - date::Date::weekday (line 434) ... ok
+test src/date.rs - date::Date::from_julian_day (line 174) ... ok
+test src/duration.rs - duration::Duration::is_negative (line 267) ... ok
+test src/duration.rs - duration::Duration::ZERO (line 176) ... ok
+test src/duration.rs - duration::Duration::is_zero (line 256) ... ok
+test src/date.rs - date::Date::previous_day (line 500) ... ok
+test src/duration.rs - duration::Duration::days (line 388) ... ok
+test src/duration.rs - duration::Duration::is_positive (line 279) ... ok
+test src/duration.rs - duration::Duration::checked_mul (line 890) ... ok
+test src/duration.rs - duration::Duration::checked_sub (line 866) ... ok
+test src/duration.rs - duration::Duration::hours (line 402) ... ok
+test src/duration.rs - duration::Duration::checked_seconds_f32 (line 586) ... ok
+test src/duration.rs - duration::Duration::milliseconds (line 611) ... ok
+test src/duration.rs - duration::Duration::as_seconds_f64 (line 737) ... ok
+test src/duration.rs - duration::Duration::microseconds (line 626) ... ok
+test src/duration.rs - duration::Duration::abs (line 295) ... ok
+test src/duration.rs - duration::Duration::minutes (line 416) ... ok
+test src/duration.rs - duration::Duration::saturating_seconds_f64 (line 486) ... ok
+test src/duration.rs - duration::Duration::new (line 345) ... ok
+test src/duration.rs - duration::Duration::nanoseconds (line 641) ... ok
+test src/duration.rs - duration::Duration::saturating_add (line 932) ... ok
+test src/duration.rs - duration::Duration::saturating_mul (line 1012) ... ok
+test src/duration.rs - duration::Duration::saturating_seconds_f32 (line 523) ... ok
+test src/duration.rs - duration::Duration::seconds_f64 (line 439) ... ok
+test src/duration.rs - duration::Duration::seconds_f32 (line 461) ... ok
+test src/month.rs - month::Month::previous (line 57) ... ok
+test src/duration.rs - duration::Duration::subsec_microseconds (line 803) ... ok
+test src/duration.rs - duration::Duration::seconds (line 429) ... ok
+test src/duration.rs - duration::Duration::subsec_milliseconds (line 775) ... ok
+test src/duration.rs - duration::Duration::saturating_sub (line 972) ... ok
+test src/duration.rs - duration::Duration::subsec_nanoseconds (line 829) ... ok
+test src/duration.rs - duration::Duration::weeks (line 374) ... ok
+test src/month.rs - month::Month::next (line 80) ... ok
+test src/duration.rs - duration::Duration::whole_minutes (line 711) ... ok
+test src/duration.rs - duration::Duration::whole_hours (line 698) ... ok
+test src/offset_date_time.rs - offset_date_time::OffsetDateTime::millisecond (line 575) ... ok
+test src/duration.rs - duration::Duration::whole_nanoseconds (line 814) ... ok
+test src/instant.rs - instant::Instant::into_inner (line 105) ... ok
+test src/duration.rs - duration::Duration::unsigned_abs (line 311) ... ok
+test src/instant.rs - instant::Instant::checked_add (line 64) ... ok
+test src/offset_date_time.rs - offset_date_time::OffsetDateTime::date (line 218) ... ok
+test src/duration.rs - duration::Duration::whole_seconds (line 724) ... ok
+test src/ext.rs - ext::NumericalDuration (line 38) ... ok
+test src/ext.rs - ext::NumericalDuration (line 52) ... ok
+test src/instant.rs - instant::Instant::elapsed (line 47) ... ok
+test src/instant.rs - instant::Instant::now (line 36) ... ok
+test src/duration.rs - duration::Duration::whole_days (line 685) ... ok
+test src/offset_date_time.rs - offset_date_time::OffsetDateTime::checked_sub (line 641) ... ok
+test src/offset_date_time.rs - offset_date_time::OffsetDateTime::microsecond (line 588) ... ok
+test src/duration.rs - duration::Duration::whole_milliseconds (line 759) ... ok
+test src/instant.rs - instant::Instant::checked_sub (line 85) ... ok
+test src/ext.rs - ext::NumericalStdDuration (line 156) ... ok
+test src/offset_date_time.rs - offset_date_time::OffsetDateTime::hour (line 518) ... ok
+test src/duration.rs - duration::Duration::whole_weeks (line 672) ... ok
+test src/offset_date_time.rs - offset_date_time::OffsetDateTime::day (line 287) ... ok
+test src/ext.rs - ext::NumericalDuration (line 24) ... ok
+test src/offset_date_time.rs - offset_date_time::OffsetDateTime::monday_based_week (line 353) ... ok
+test src/offset_date_time.rs - offset_date_time::OffsetDateTime::iso_week (line 323) ... ok
+test src/offset_date_time.rs - offset_date_time::OffsetDateTime::from_unix_timestamp_nanos (line 160) ... ok
+test src/offset_date_time.rs - offset_date_time::OffsetDateTime::UNIX_EPOCH (line 35) ... ok
+test src/offset_date_time.rs - offset_date_time::OffsetDateTime::from_unix_timestamp (line 144) ... ok
+test src/duration.rs - duration::Duration::whole_microseconds (line 787) ... ok
+test src/offset_date_time.rs - offset_date_time::OffsetDateTime::minute (line 536) ... ok
+test src/offset_date_time.rs - offset_date_time::OffsetDateTime::checked_to_offset (line 103) ... ok
+test src/offset_date_time.rs - offset_date_time::OffsetDateTime::from_unix_timestamp (line 128) ... ok
+test src/ext.rs - ext::NumericalStdDuration (line 171) ... ok
+test src/offset_date_time.rs - offset_date_time::OffsetDateTime::replace_date_time (line 809) ... ok
+test src/offset_date_time.rs - offset_date_time::OffsetDateTime::month (line 268) ... ok
+test src/offset_date_time.rs - offset_date_time::OffsetDateTime::nanosecond (line 604) ... ok
+test src/offset_date_time.rs - offset_date_time::OffsetDateTime::replace_date (line 790) ... ok
+test src/offset_date_time.rs - offset_date_time::OffsetDateTime::replace_millisecond (line 928) ... ok
+test src/offset_date_time.rs - offset_date_time::OffsetDateTime::checked_add (line 621) ... ok
+test src/offset_date_time.rs - offset_date_time::OffsetDateTime::ordinal (line 305) ... ok
+test src/offset_date_time.rs - offset_date_time::OffsetDateTime::replace_day (line 871) ... ok
+test src/offset_date_time.rs - offset_date_time::OffsetDateTime::replace_hour (line 886) ... ok
+test src/offset_date_time.rs - offset_date_time::OffsetDateTime::now_utc (line 45) ... ok
+test src/offset_date_time.rs - offset_date_time::OffsetDateTime::offset (line 182) ... ok
+test src/offset_date_time.rs - offset_date_time::OffsetDateTime::replace_microsecond (line 945) ... ok
+test src/offset_date_time.rs - offset_date_time::OffsetDateTime::replace_minute (line 900) ... ok
+test src/offset_date_time.rs - offset_date_time::OffsetDateTime::replace_month (line 856) ... ok
+test src/offset_date_time.rs - offset_date_time::OffsetDateTime::replace_nanosecond (line 962) ... ok
+test src/offset_date_time.rs - offset_date_time::OffsetDateTime::replace_time (line 767) ... ok
+test src/offset_date_time.rs - offset_date_time::OffsetDateTime::replace_offset (line 827) ... ok
+test src/offset_date_time.rs - offset_date_time::OffsetDateTime::sunday_based_week (line 338) ... ok
+test src/offset_date_time.rs - offset_date_time::OffsetDateTime::replace_second (line 914) ... ok
+test src/offset_date_time.rs - offset_date_time::OffsetDateTime::replace_year (line 841) ... ok
+test src/offset_date_time.rs - offset_date_time::OffsetDateTime::to_calendar_date (line 366) ... ok
+test src/offset_date_time.rs - offset_date_time::OffsetDateTime::second (line 554) ... ok
+test src/offset_date_time.rs - offset_date_time::OffsetDateTime::to_hms (line 454) ... ok
+test src/offset_date_time.rs - offset_date_time::OffsetDateTime::saturating_add (line 663) ... ok
+test src/offset_date_time.rs - offset_date_time::OffsetDateTime::saturating_sub (line 712) ... ok
+test src/offset_date_time.rs - offset_date_time::OffsetDateTime::unix_timestamp (line 193) ... ok
+test src/offset_date_time.rs - offset_date_time::OffsetDateTime::to_hms_micro (line 482) ... ok
+test src/offset_date_time.rs - offset_date_time::OffsetDateTime::time (line 234) ... ok
+test src/offset_date_time.rs - offset_date_time::OffsetDateTime::to_iso_week_date (line 393) ... ok
+test src/offset_date_time.rs - offset_date_time::OffsetDateTime::to_hms_milli (line 465) ... ok
+test src/offset_date_time.rs - offset_date_time::OffsetDateTime::to_hms_nano (line 499) ... ok
+test src/offset_date_time.rs - offset_date_time::OffsetDateTime::to_julian_day (line 439) ... ok
+test src/offset_date_time.rs - offset_date_time::OffsetDateTime::unix_timestamp_nanos (line 204) ... ok
+test src/offset_date_time.rs - offset_date_time::OffsetDateTime::year (line 251) ... ok
+test src/offset_date_time.rs - offset_date_time::OffsetDateTime::to_offset (line 73) ... ok
+test src/offset_date_time.rs - offset_date_time::OffsetDateTime::to_ordinal_date (line 380) ... ok
+test src/offset_date_time.rs - offset_date_time::OffsetDateTime::weekday (line 423) ... ok
+test src/primitive_date_time.rs - primitive_date_time::PrimitiveDateTime::as_hms (line 310) ... ok
+test src/primitive_date_time.rs - primitive_date_time::PrimitiveDateTime::MIN (line 31) ... ok
+test src/primitive_date_time.rs - primitive_date_time::PrimitiveDateTime::microsecond (line 417) ... ok
+test src/primitive_date_time.rs - primitive_date_time::PrimitiveDateTime::MAX (line 60) ... ok
+test src/primitive_date_time.rs - primitive_date_time::PrimitiveDateTime::day (line 146) ... ok
+test src/primitive_date_time.rs - primitive_date_time::PrimitiveDateTime::assume_utc (line 472) ... ok
+test src/primitive_date_time.rs - primitive_date_time::PrimitiveDateTime::as_hms_nano (line 349) ... ok
+test src/primitive_date_time.rs - primitive_date_time::PrimitiveDateTime::new (line 84) ... ok
+test src/primitive_date_time.rs - primitive_date_time::PrimitiveDateTime::as_hms_milli (line 321) ... ok
+test src/primitive_date_time.rs - primitive_date_time::PrimitiveDateTime::minute (line 378) ... ok
+test src/primitive_date_time.rs - primitive_date_time::PrimitiveDateTime::assume_offset (line 450) ... ok
+test src/primitive_date_time.rs - primitive_date_time::PrimitiveDateTime::replace_nanosecond (line 739) ... ok
+test src/primitive_date_time.rs - primitive_date_time::PrimitiveDateTime::date (line 99) ... ok
+test src/primitive_date_time.rs - primitive_date_time::PrimitiveDateTime::iso_week (line 172) ... ok
+test src/primitive_date_time.rs - primitive_date_time::PrimitiveDateTime::monday_based_week (line 203) ... ok
+test src/primitive_date_time.rs - primitive_date_time::PrimitiveDateTime::ordinal (line 159) ... ok
+test src/primitive_date_time.rs - primitive_date_time::PrimitiveDateTime::as_hms_micro (line 335) ... ok
+test src/primitive_date_time.rs - primitive_date_time::PrimitiveDateTime::hour (line 365) ... ok
+test src/primitive_date_time.rs - primitive_date_time::PrimitiveDateTime::month (line 132) ... ok
+test src/primitive_date_time.rs - primitive_date_time::PrimitiveDateTime::millisecond (line 404) ... ok
+test src/primitive_date_time.rs - primitive_date_time::PrimitiveDateTime::nanosecond (line 433) ... ok
+test src/primitive_date_time.rs - primitive_date_time::PrimitiveDateTime::sunday_based_week (line 188) ... ok
+test src/primitive_date_time.rs - primitive_date_time::PrimitiveDateTime::replace_day (line 642) ... ok
+test src/primitive_date_time.rs - primitive_date_time::PrimitiveDateTime::replace_date (line 596) ... ok
+test src/primitive_date_time.rs - primitive_date_time::PrimitiveDateTime::to_calendar_date (line 216) ... ok
+test src/primitive_date_time.rs - primitive_date_time::PrimitiveDateTime::replace_time (line 582) ... ok
+test src/primitive_date_time.rs - primitive_date_time::PrimitiveDateTime::replace_hour (line 658) ... ok
+test src/primitive_date_time.rs - primitive_date_time::PrimitiveDateTime::checked_sub (line 507) ... ok
+test src/primitive_date_time.rs - primitive_date_time::PrimitiveDateTime::replace_millisecond (line 703) ... ok
+test src/primitive_date_time.rs - primitive_date_time::PrimitiveDateTime::time (line 109) ... ok
+test src/primitive_date_time.rs - primitive_date_time::PrimitiveDateTime::saturating_sub (line 553) ... ok
+test src/primitive_date_time.rs - primitive_date_time::PrimitiveDateTime::saturating_add (line 529) ... ok
+test src/primitive_date_time.rs - primitive_date_time::PrimitiveDateTime::replace_month (line 626) ... ok
+test src/primitive_date_time.rs - primitive_date_time::PrimitiveDateTime::to_julian_day (line 295) ... ok
+test src/primitive_date_time.rs - primitive_date_time::PrimitiveDateTime::checked_add (line 487) ... ok
+test src/primitive_date_time.rs - primitive_date_time::PrimitiveDateTime::second (line 391) ... ok
+test src/primitive_date_time.rs - primitive_date_time::PrimitiveDateTime::replace_second (line 688) ... ok
+test src/primitive_date_time.rs - primitive_date_time::PrimitiveDateTime::replace_year (line 610) ... ok
+test src/primitive_date_time.rs - primitive_date_time::PrimitiveDateTime::replace_microsecond (line 721) ... ok
+test src/primitive_date_time.rs - primitive_date_time::PrimitiveDateTime::replace_minute (line 673) ... ok
+test src/primitive_date_time.rs - primitive_date_time::PrimitiveDateTime::to_iso_week_date (line 240) ... ok
+test src/primitive_date_time.rs - primitive_date_time::PrimitiveDateTime::to_ordinal_date (line 230) ... ok
+test src/primitive_date_time.rs - primitive_date_time::PrimitiveDateTime::weekday (line 270) ... ok
+test src/primitive_date_time.rs - primitive_date_time::PrimitiveDateTime::year (line 120) ... ok
+test src/time.rs - time::Time::add (line 679) ... ok
+test src/time.rs - time::Time::MIDNIGHT (line 49) ... ok
+test src/time.rs - time::Time::from_hms_nano (line 180) ... ok
+test src/time.rs - time::Time::from_hms_milli (line 111) ... ok
+test src/time.rs - time::Time::add (line 695) ... ok
+test src/time.rs - time::Time::from_hms_micro (line 143) ... ok
+test src/time.rs - time::Time::from_hms (line 96) ... ok
+test src/time.rs - time::Time::as_hms (line 206) ... ok
+test src/time.rs - time::Time::from_hms (line 91) ... ok
+test src/time.rs - time::Time::hour (line 268) ... ok
+test src/time.rs - time::Time::from_hms_milli (line 116) ... ok
+test src/time.rs - time::Time::from_hms_nano (line 175) ... ok
+test src/time.rs - time::Time::from_hms_micro (line 148) ... ok
+test src/time.rs - time::Time::as_hms_milli (line 217) ... ok
+test src/time.rs - time::Time::replace_millisecond (line 527) ... ok
+test src/time.rs - time::Time::as_hms_micro (line 233) ... ok
+test src/time.rs - time::Time::as_hms_nano (line 252) ... ok
+test src/time.rs - time::Time::millisecond (line 307) ... ok
+test src/time.rs - time::Time::sub (line 713) ... ok
+test src/time.rs - time::Time::microsecond (line 320) ... ok
+test src/time.rs - time::Time::replace_hour (line 464) ... ok
+test src/time.rs - time::Time::nanosecond (line 333) ... ok
+test src/weekday.rs - weekday::Weekday::next (line 53) ... ok
+test src/time.rs - time::Time::minute (line 281) ... ok
+test src/utc_offset.rs - utc_offset::UtcOffset::is_negative (line 238) ... ok
+test src/weekday.rs - weekday::Weekday::number_days_from_monday (line 114) ... ok
+test src/weekday.rs - weekday::Weekday::number_from_sunday (line 104) ... ok
+test src/time.rs - time::Time::replace_second (line 506) ... ok
+test src/time.rs - time::Time::replace_microsecond (line 551) ... ok
+test src/util.rs - util::days_in_year_month (line 19) ... ok
+test src/time.rs - time::Time::second (line 294) ... ok
+test src/time.rs - time::Time::sub (line 729) ... ok
+test src/utc_offset.rs - utc_offset::UtcOffset::as_hms (line 136) ... ok
+test src/weekday.rs - weekday::Weekday::number_days_from_sunday (line 124) ... ok
+test src/time.rs - time::Time::sub (line 748) ... ok
+test src/weekday.rs - weekday::Weekday::nth_next (line 71) ... ok
+test src/utc_offset.rs - utc_offset::UtcOffset::from_hms (line 79) ... ok
+test src/utc_offset.rs - utc_offset::UtcOffset::UTC (line 37) ... ok
+test src/weekday.rs - weekday::Weekday::previous (line 35) ... ok
+test src/utc_offset.rs - utc_offset::UtcOffset::whole_seconds (line 184) ... ok
+test src/utc_offset.rs - utc_offset::UtcOffset::whole_hours (line 148) ... ok
+test src/weekday.rs - weekday::Weekday::number_from_monday (line 93) ... ok
+test src/time.rs - time::Time::replace_minute (line 485) ... ok
+test src/time.rs - time::Time::replace_nanosecond (line 575) ... ok
+test src/utc_offset.rs - utc_offset::UtcOffset::seconds_past_minute (line 200) ... ok
+test src/utc_offset.rs - utc_offset::UtcOffset::is_positive (line 226) ... ok
+test src/utc_offset.rs - utc_offset::UtcOffset::from_whole_seconds (line 114) ... ok
+test src/utc_offset.rs - utc_offset::UtcOffset::minutes_past_hour (line 172) ... ok
+test src/utc_offset.rs - utc_offset::UtcOffset::is_utc (line 214) ... ok
+test src/utc_offset.rs - utc_offset::UtcOffset::whole_minutes (line 160) ... ok
+
+test result: ok. 245 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 1.27s
+

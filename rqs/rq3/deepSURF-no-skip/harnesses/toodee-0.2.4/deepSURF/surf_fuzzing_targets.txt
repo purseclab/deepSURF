@@ -1,0 +1,407 @@
+SURF: Generated Targets to be Fuzzed
+------------------------------------------------------------------------------------------------------------------------------------
+  StableURAPI: view::/home/cdc/SURF/ablation_deepSURF_noskip/toodee-0.2.4/src/toodee.rs::182,
+    - URAPI: DefId(0:302 ~ toodee[604e]::toodee::{impl#5}::view),
+    - Macro-expanded: false,
+    - LLM-improved: false,
+    - Fuzzing Targets:
+      * toodee_fuzz_17921677077284445291
+      * toodee_fuzz_555877914944344635
+  StableURAPI: nth::/home/cdc/SURF/ablation_deepSURF_noskip/toodee-0.2.4/src/iter.rs::171,
+    - URAPI: DefId(0:37 ~ toodee[604e]::iter::{impl#4}::nth),
+    - Macro-expanded: false,
+    - LLM-improved: false,
+    - Fuzzing Targets:
+      * toodee_fuzz_17546178483008163448
+      * toodee_fuzz_11898468744786802996
+      * toodee_fuzz_26092503406991670
+      * toodee_fuzz_4510436643361759442
+  StableURAPI: nth::/home/cdc/SURF/ablation_deepSURF_noskip/toodee-0.2.4/src/iter.rs::60,
+    - URAPI: DefId(0:18 ~ toodee[604e]::iter::{impl#0}::nth),
+    - Macro-expanded: false,
+    - LLM-improved: false,
+    - Fuzzing Targets:
+      * toodee_fuzz_347557406229760741
+      * toodee_fuzz_2597358213197947859
+      * toodee_fuzz_11258572692277616945
+      * toodee_fuzz_10440360767382470950
+  StableURAPI: next_back::/home/cdc/SURF/ablation_deepSURF_noskip/toodee-0.2.4/src/iter.rs::442,
+    - URAPI: DefId(0:91 ~ toodee[604e]::iter::{impl#15}::next_back),
+    - Macro-expanded: false,
+    - LLM-improved: false,
+    - Fuzzing Targets:
+      * toodee_fuzz_7601556681144904628
+      * toodee_fuzz_3484117947063724817
+      * toodee_fuzz_14845570421688555118
+      * toodee_fuzz_6084458564330801672
+  StableURAPI: col::/home/cdc/SURF/ablation_deepSURF_noskip/toodee-0.2.4/src/view.rs::143,
+    - URAPI: DefId(0:123 ~ toodee[604e]::view::{impl#1}::col),
+    - Macro-expanded: false,
+    - LLM-improved: false,
+    - Fuzzing Targets:
+      * toodee_fuzz_10266039092538814793
+      * toodee_fuzz_1771646068392946231
+      * toodee_fuzz_12907758452918948506
+      * toodee_fuzz_5660272671754602893
+  StableURAPI: index::/home/cdc/SURF/ablation_deepSURF_noskip/toodee-0.2.4/src/view.rs::210,
+    - URAPI: DefId(0:135 ~ toodee[604e]::view::{impl#3}::index),
+    - Macro-expanded: false,
+    - LLM-improved: false,
+    - Fuzzing Targets:
+      * toodee_fuzz_6860837592474164970
+      * toodee_fuzz_3352626005733260334
+      * toodee_fuzz_1250016990296522836
+      * toodee_fuzz_10042081196395050013
+  StableURAPI: remove_col::/home/cdc/SURF/ablation_deepSURF_noskip/toodee-0.2.4/src/toodee.rs::784,
+    - URAPI: DefId(0:340 ~ toodee[604e]::toodee::{impl#7}::remove_col),
+    - Macro-expanded: false,
+    - LLM-improved: false,
+    - Fuzzing Targets:
+      * toodee_fuzz_872634724659507157
+      * toodee_fuzz_10262246936339903575
+  StableURAPI: next::/home/cdc/SURF/ablation_deepSURF_noskip/toodee-0.2.4/src/toodee.rs::974,
+    - URAPI: DefId(0:391 ~ toodee[604e]::toodee::{impl#21}::next),
+    - Macro-expanded: false,
+    - LLM-improved: false,
+    - Fuzzing Targets:
+      * toodee_fuzz_4557178836988584211
+      * toodee_fuzz_16574138880523466468
+      * toodee_fuzz_15872554122551155130
+      * toodee_fuzz_15126807231049094677
+  StableURAPI: view::/home/cdc/SURF/ablation_deepSURF_noskip/toodee-0.2.4/src/view.rs::113,
+    - URAPI: DefId(0:121 ~ toodee[604e]::view::{impl#1}::view),
+    - Macro-expanded: false,
+    - LLM-improved: false,
+    - Fuzzing Targets:
+      * toodee_fuzz_1520497512656819297
+      * toodee_fuzz_16087476159059393318
+      * toodee_fuzz_11452010844405045666
+      * toodee_fuzz_6189341694535667706
+  StableURAPI: index::/home/cdc/SURF/ablation_deepSURF_noskip/toodee-0.2.4/src/view.rs::528,
+    - URAPI: DefId(0:170 ~ toodee[604e]::view::{impl#8}::index),
+    - Macro-expanded: false,
+    - LLM-improved: false,
+    - Fuzzing Targets:
+      * toodee_fuzz_503420346411542303
+      * toodee_fuzz_6340521018692534472
+      * toodee_fuzz_4213822607315015236
+  StableURAPI: next_back::/home/cdc/SURF/ablation_deepSURF_noskip/toodee-0.2.4/src/iter.rs::313,
+    - URAPI: DefId(0:66 ~ toodee[604e]::iter::{impl#10}::next_back),
+    - Macro-expanded: false,
+    - LLM-improved: false,
+    - Fuzzing Targets:
+      * toodee_fuzz_3892411855069634122
+      * toodee_fuzz_154231365773012531
+      * toodee_fuzz_18021943519004947356
+      * toodee_fuzz_16392563738466338233
+  StableURAPI: push_row::/home/cdc/SURF/ablation_deepSURF_noskip/toodee-0.2.4/src/toodee.rs::658,
+    - URAPI: DefId(0:332 ~ toodee[604e]::toodee::{impl#7}::push_row),
+    - Macro-expanded: false,
+    - LLM-improved: false,
+    - Fuzzing Targets:
+      * toodee_fuzz_16110357219471934011
+      * toodee_fuzz_14151248305991259105
+  StableURAPI: next_back::/home/cdc/SURF/ablation_deepSURF_noskip/toodee-0.2.4/src/iter.rs::80,
+    - URAPI: DefId(0:23 ~ toodee[604e]::iter::{impl#1}::next_back),
+    - Macro-expanded: false,
+    - LLM-improved: false,
+    - Fuzzing Targets:
+      * toodee_fuzz_7841943831907653807
+      * toodee_fuzz_11410619174233194463
+      * toodee_fuzz_15078576155732773085
+      * toodee_fuzz_9192862234561492577
+  StableURAPI: next_back::/home/cdc/SURF/ablation_deepSURF_noskip/toodee-0.2.4/src/iter.rs::191,
+    - URAPI: DefId(0:42 ~ toodee[604e]::iter::{impl#5}::next_back),
+    - Macro-expanded: false,
+    - LLM-improved: false,
+    - Fuzzing Targets:
+      * toodee_fuzz_17741224723973956979
+      * toodee_fuzz_1156998684846642157
+      * toodee_fuzz_5776358749151445165
+      * toodee_fuzz_2026909437658886782
+  StableURAPI: next::/home/cdc/SURF/ablation_deepSURF_noskip/toodee-0.2.4/src/iter.rs::391,
+    - URAPI: DefId(0:83 ~ toodee[604e]::iter::{impl#14}::next),
+    - Macro-expanded: false,
+    - LLM-improved: false,
+    - Fuzzing Targets:
+      * toodee_fuzz_4754585929428134934
+      * toodee_fuzz_9006285366408838861
+      * toodee_fuzz_4875904109148124921
+      * toodee_fuzz_1856000313336197706
+  StableURAPI: nth_back::/home/cdc/SURF/ablation_deepSURF_noskip/toodee-0.2.4/src/iter.rs::98,
+    - URAPI: DefId(0:24 ~ toodee[604e]::iter::{impl#1}::nth_back),
+    - Macro-expanded: false,
+    - LLM-improved: false,
+    - Fuzzing Targets:
+      * toodee_fuzz_17521979382961869024
+      * toodee_fuzz_8300231648443384789
+      * toodee_fuzz_12499944452156313041
+      * toodee_fuzz_15024477397181238262
+  StableURAPI: index_mut::/home/cdc/SURF/ablation_deepSURF_noskip/toodee-0.2.4/src/toodee.rs::128,
+    - URAPI: DefId(0:296 ~ toodee[604e]::toodee::{impl#4}::index_mut),
+    - Macro-expanded: false,
+    - LLM-improved: false,
+    - Fuzzing Targets:
+      * toodee_fuzz_5343152567326726659
+      * toodee_fuzz_7685720606509383912
+  StableURAPI: insert_row::/home/cdc/SURF/ablation_deepSURF_noskip/toodee-0.2.4/src/toodee.rs::669,
+    - URAPI: DefId(0:334 ~ toodee[604e]::toodee::{impl#7}::insert_row),
+    - Macro-expanded: false,
+    - LLM-improved: false,
+    - Fuzzing Targets:
+      * toodee_fuzz_14784252774365274744
+      * toodee_fuzz_12198009328625723202
+  StableURAPI: col_mut::/home/cdc/SURF/ablation_deepSURF_noskip/toodee-0.2.4/src/view.rs::422,
+    - URAPI: DefId(0:157 ~ toodee[604e]::view::{impl#6}::col_mut),
+    - Macro-expanded: false,
+    - LLM-improved: false,
+    - Fuzzing Targets:
+      * toodee_fuzz_3925447843657550150
+      * toodee_fuzz_4865430345207377729
+      * toodee_fuzz_919520943860704777
+  StableURAPI: view_mut::/home/cdc/SURF/ablation_deepSURF_noskip/toodee-0.2.4/src/toodee.rs::263,
+    - URAPI: DefId(0:309 ~ toodee[604e]::toodee::{impl#6}::view_mut),
+    - Macro-expanded: false,
+    - LLM-improved: false,
+    - Fuzzing Targets:
+      * toodee_fuzz_9793623194109483778
+      * toodee_fuzz_8792996380315457759
+  StableURAPI: next::/home/cdc/SURF/ablation_deepSURF_noskip/toodee-0.2.4/src/iter.rs::26,
+    - URAPI: DefId(0:15 ~ toodee[604e]::iter::{impl#0}::next),
+    - Macro-expanded: false,
+    - LLM-improved: false,
+    - Fuzzing Targets:
+      * toodee_fuzz_9379054959454087932
+      * toodee_fuzz_12956360694425697456
+      * toodee_fuzz_15075918848614797920
+      * toodee_fuzz_4281620314930689797
+  StableURAPI: last::/home/cdc/SURF/ablation_deepSURF_noskip/toodee-0.2.4/src/iter.rs::184,
+    - URAPI: DefId(0:38 ~ toodee[604e]::iter::{impl#4}::last),
+    - Macro-expanded: false,
+    - LLM-improved: false,
+    - Fuzzing Targets:
+      * toodee_fuzz_7470675788530968140
+      * toodee_fuzz_3483433333924306635
+      * toodee_fuzz_7121666610972853491
+      * toodee_fuzz_11045466902218921687
+  StableURAPI: swap_rows::/home/cdc/SURF/ablation_deepSURF_noskip/toodee-0.2.4/src/toodee.rs::338,
+    - URAPI: DefId(0:314 ~ toodee[604e]::toodee::{impl#6}::swap_rows),
+    - Macro-expanded: false,
+    - LLM-improved: false,
+    - Fuzzing Targets:
+      * toodee_fuzz_7706386555192007398
+      * toodee_fuzz_17314746270239737958
+  StableURAPI: index::/home/cdc/SURF/ablation_deepSURF_noskip/toodee-0.2.4/src/view.rs::197,
+    - URAPI: DefId(0:130 ~ toodee[604e]::view::{impl#2}::index),
+    - Macro-expanded: false,
+    - LLM-improved: false,
+    - Fuzzing Targets:
+      * toodee_fuzz_640046042759054628
+      * toodee_fuzz_15743363066591541889
+      * toodee_fuzz_537958945957173982
+      * toodee_fuzz_9302565728091268715
+  StableURAPI: index::/home/cdc/SURF/ablation_deepSURF_noskip/toodee-0.2.4/src/toodee.rs::88,
+    - URAPI: DefId(0:290 ~ toodee[604e]::toodee::{impl#2}::index),
+    - Macro-expanded: false,
+    - LLM-improved: false,
+    - Fuzzing Targets:
+      * toodee_fuzz_11387604720056080169
+      * toodee_fuzz_18302736697801659649
+  StableURAPI: index_mut::/home/cdc/SURF/ablation_deepSURF_noskip/toodee-0.2.4/src/toodee.rs::109,
+    - URAPI: DefId(0:293 ~ toodee[604e]::toodee::{impl#3}::index_mut),
+    - Macro-expanded: false,
+    - LLM-improved: false,
+    - Fuzzing Targets:
+      * toodee_fuzz_1462566055301293201
+      * toodee_fuzz_15195081088437660578
+  StableURAPI: index::/home/cdc/SURF/ablation_deepSURF_noskip/toodee-0.2.4/src/view.rs::517,
+    - URAPI: DefId(0:165 ~ toodee[604e]::view::{impl#7}::index),
+    - Macro-expanded: false,
+    - LLM-improved: false,
+    - Fuzzing Targets:
+      * toodee_fuzz_543899382380417968
+      * toodee_fuzz_3161605772101626469
+      * toodee_fuzz_2091564786462492403
+  StableURAPI: last::/home/cdc/SURF/ablation_deepSURF_noskip/toodee-0.2.4/src/iter.rs::435,
+    - URAPI: DefId(0:87 ~ toodee[604e]::iter::{impl#14}::last),
+    - Macro-expanded: false,
+    - LLM-improved: false,
+    - Fuzzing Targets:
+      * toodee_fuzz_10624907976173078834
+      * toodee_fuzz_7691226103766591202
+      * toodee_fuzz_9509713345229209572
+      * toodee_fuzz_3639831062231178506
+  StableURAPI: next_back::/home/cdc/SURF/ablation_deepSURF_noskip/toodee-0.2.4/src/toodee.rs::985,
+    - URAPI: DefId(0:396 ~ toodee[604e]::toodee::{impl#22}::next_back),
+    - Macro-expanded: false,
+    - LLM-improved: false,
+    - Fuzzing Targets:
+      * toodee_fuzz_14293191695508145233
+      * toodee_fuzz_5428218084417723539
+      * toodee_fuzz_16083089001760278045
+      * toodee_fuzz_18076018027255947284
+  StableURAPI: nth::/home/cdc/SURF/ablation_deepSURF_noskip/toodee-0.2.4/src/iter.rs::293,
+    - URAPI: DefId(0:61 ~ toodee[604e]::iter::{impl#9}::nth),
+    - Macro-expanded: false,
+    - LLM-improved: false,
+    - Fuzzing Targets:
+      * toodee_fuzz_2138523013993331364
+      * toodee_fuzz_4389937520628654540
+      * toodee_fuzz_9991014827223781044
+      * toodee_fuzz_2198713812829365237
+  StableURAPI: view_mut::/home/cdc/SURF/ablation_deepSURF_noskip/toodee-0.2.4/src/view.rs::391,
+    - URAPI: DefId(0:155 ~ toodee[604e]::view::{impl#6}::view_mut),
+    - Macro-expanded: false,
+    - LLM-improved: false,
+    - Fuzzing Targets:
+      * toodee_fuzz_5329575348399950634
+      * toodee_fuzz_14994446887325050465
+      * toodee_fuzz_17874482603309836291
+  StableURAPI: col::/home/cdc/SURF/ablation_deepSURF_noskip/toodee-0.2.4/src/view.rs::339,
+    - URAPI: DefId(0:149 ~ toodee[604e]::view::{impl#5}::col),
+    - Macro-expanded: false,
+    - LLM-improved: false,
+    - Fuzzing Targets:
+      * toodee_fuzz_16034019318562207872
+      * toodee_fuzz_16157677984213079467
+      * toodee_fuzz_10607359883806468914
+  StableURAPI: pop_col::/home/cdc/SURF/ablation_deepSURF_noskip/toodee-0.2.4/src/toodee.rs::746,
+    - URAPI: DefId(0:337 ~ toodee[604e]::toodee::{impl#7}::pop_col),
+    - Macro-expanded: false,
+    - LLM-improved: false,
+    - Fuzzing Targets:
+      * toodee_fuzz_4893045723833924897
+      * toodee_fuzz_17586151240270103232
+  StableURAPI: nth_back::/home/cdc/SURF/ablation_deepSURF_noskip/toodee-0.2.4/src/iter.rs::461,
+    - URAPI: DefId(0:92 ~ toodee[604e]::iter::{impl#15}::nth_back),
+    - Macro-expanded: false,
+    - LLM-improved: false,
+    - Fuzzing Targets:
+      * toodee_fuzz_581107349793616356
+      * toodee_fuzz_1624776331493435485
+      * toodee_fuzz_1045790220218272802
+      * toodee_fuzz_14821192637607635983
+  StableURAPI: last::/home/cdc/SURF/ablation_deepSURF_noskip/toodee-0.2.4/src/iter.rs::306,
+    - URAPI: DefId(0:62 ~ toodee[604e]::iter::{impl#9}::last),
+    - Macro-expanded: false,
+    - LLM-improved: false,
+    - Fuzzing Targets:
+      * toodee_fuzz_765273026235002508
+      * toodee_fuzz_6837274227089615062
+      * toodee_fuzz_9211749730644409470
+      * toodee_fuzz_15289259621227662867
+  StableURAPI: nth::/home/cdc/SURF/ablation_deepSURF_noskip/toodee-0.2.4/src/iter.rs::422,
+    - URAPI: DefId(0:86 ~ toodee[604e]::iter::{impl#14}::nth),
+    - Macro-expanded: false,
+    - LLM-improved: false,
+    - Fuzzing Targets:
+      * toodee_fuzz_6620797865885092094
+      * toodee_fuzz_12562160647962377385
+      * toodee_fuzz_11490879123783952806
+      * toodee_fuzz_6636419046920150291
+  StableURAPI: col_mut::/home/cdc/SURF/ablation_deepSURF_noskip/toodee-0.2.4/src/toodee.rs::293,
+    - URAPI: DefId(0:311 ~ toodee[604e]::toodee::{impl#6}::col_mut),
+    - Macro-expanded: false,
+    - LLM-improved: false,
+    - Fuzzing Targets:
+      * toodee_fuzz_15757249408141109004
+      * toodee_fuzz_7054436975664712183
+  StableURAPI: drop::/home/cdc/SURF/ablation_deepSURF_noskip/toodee-0.2.4/src/toodee.rs::994,
+    - URAPI: DefId(0:402 ~ toodee[604e]::toodee::{impl#24}::drop),
+    - Macro-expanded: false,
+    - LLM-improved: false,
+    - Fuzzing Targets:
+      * toodee_fuzz_1140816890585470177
+      * toodee_fuzz_7773152812963994330
+      * toodee_fuzz_877148114838209635
+      * toodee_fuzz_13077116790450601879
+  StableURAPI: index_mut::/home/cdc/SURF/ablation_deepSURF_noskip/toodee-0.2.4/src/view.rs::539,
+    - URAPI: DefId(0:174 ~ toodee[604e]::view::{impl#9}::index_mut),
+    - Macro-expanded: false,
+    - LLM-improved: false,
+    - Fuzzing Targets:
+      * toodee_fuzz_11143266842895088168
+      * toodee_fuzz_158813062488971039
+      * toodee_fuzz_11785511524367405331
+  StableURAPI: next::/home/cdc/SURF/ablation_deepSURF_noskip/toodee-0.2.4/src/iter.rs::263,
+    - URAPI: DefId(0:58 ~ toodee[604e]::iter::{impl#9}::next),
+    - Macro-expanded: false,
+    - LLM-improved: false,
+    - Fuzzing Targets:
+      * toodee_fuzz_7334034407952447964
+      * toodee_fuzz_2169689177379771186
+      * toodee_fuzz_11831702141408799040
+      * toodee_fuzz_12398518200245740149
+  StableURAPI: index::/home/cdc/SURF/ablation_deepSURF_noskip/toodee-0.2.4/src/toodee.rs::69,
+    - URAPI: DefId(0:286 ~ toodee[604e]::toodee::{impl#1}::index),
+    - Macro-expanded: false,
+    - LLM-improved: false,
+    - Fuzzing Targets:
+      * toodee_fuzz_15457921755998110157
+      * toodee_fuzz_15337517221538330123
+  StableURAPI: new::/home/cdc/SURF/ablation_deepSURF_noskip/toodee-0.2.4/src/view.rs::251,
+    - URAPI: DefId(0:139 ~ toodee[604e]::view::{impl#4}::new),
+    - Macro-expanded: false,
+    - LLM-improved: false,
+    - Fuzzing Targets:
+      * toodee_fuzz_13905759435898088798
+  StableURAPI: next::/home/cdc/SURF/ablation_deepSURF_noskip/toodee-0.2.4/src/iter.rs::136,
+    - URAPI: DefId(0:34 ~ toodee[604e]::iter::{impl#4}::next),
+    - Macro-expanded: false,
+    - LLM-improved: false,
+    - Fuzzing Targets:
+      * toodee_fuzz_2092378170149048866
+      * toodee_fuzz_6680127706948198481
+      * toodee_fuzz_5798735070312449540
+      * toodee_fuzz_11967064961922086410
+  StableURAPI: nth_back::/home/cdc/SURF/ablation_deepSURF_noskip/toodee-0.2.4/src/iter.rs::330,
+    - URAPI: DefId(0:67 ~ toodee[604e]::iter::{impl#10}::nth_back),
+    - Macro-expanded: false,
+    - LLM-improved: false,
+    - Fuzzing Targets:
+      * toodee_fuzz_13633078556279565736
+      * toodee_fuzz_3838590532118101743
+      * toodee_fuzz_14970496963191162766
+      * toodee_fuzz_18378997775372387472
+  StableURAPI: nth_back::/home/cdc/SURF/ablation_deepSURF_noskip/toodee-0.2.4/src/iter.rs::211,
+    - URAPI: DefId(0:43 ~ toodee[604e]::iter::{impl#5}::nth_back),
+    - Macro-expanded: false,
+    - LLM-improved: false,
+    - Fuzzing Targets:
+      * toodee_fuzz_12050048417222659461
+      * toodee_fuzz_4402171057265050913
+      * toodee_fuzz_12094558397904852200
+      * toodee_fuzz_15581119540057188284
+  StableURAPI: index_mut::/home/cdc/SURF/ablation_deepSURF_noskip/toodee-0.2.4/src/view.rs::549,
+    - URAPI: DefId(0:178 ~ toodee[604e]::view::{impl#10}::index_mut),
+    - Macro-expanded: false,
+    - LLM-improved: false,
+    - Fuzzing Targets:
+      * toodee_fuzz_18413180873320063546
+      * toodee_fuzz_17214265446956260145
+      * toodee_fuzz_832613546299789532
+  StableURAPI: swap_rows::/home/cdc/SURF/ablation_deepSURF_noskip/toodee-0.2.4/src/view.rs::456,
+    - URAPI: DefId(0:158 ~ toodee[604e]::view::{impl#6}::swap_rows),
+    - Macro-expanded: false,
+    - LLM-improved: false,
+    - Fuzzing Targets:
+      * toodee_fuzz_12353062978382612833
+      * toodee_fuzz_6329471542629077094
+      * toodee_fuzz_15160624652744957020
+  StableURAPI: col::/home/cdc/SURF/ablation_deepSURF_noskip/toodee-0.2.4/src/toodee.rs::212,
+    - URAPI: DefId(0:304 ~ toodee[604e]::toodee::{impl#5}::col),
+    - Macro-expanded: false,
+    - LLM-improved: false,
+    - Fuzzing Targets:
+      * toodee_fuzz_14993610363335679434
+      * toodee_fuzz_9848558221535308181
+  StableURAPI: last::/home/cdc/SURF/ablation_deepSURF_noskip/toodee-0.2.4/src/iter.rs::73,
+    - URAPI: DefId(0:19 ~ toodee[604e]::iter::{impl#0}::last),
+    - Macro-expanded: false,
+    - LLM-improved: false,
+    - Fuzzing Targets:
+      * toodee_fuzz_7929682960433579509
+      * toodee_fuzz_14605234300945487375
+      * toodee_fuzz_3870854975299969182
+      * toodee_fuzz_9550011441600542777
+------------------------------------------------------------------------------------------------------------------------------------

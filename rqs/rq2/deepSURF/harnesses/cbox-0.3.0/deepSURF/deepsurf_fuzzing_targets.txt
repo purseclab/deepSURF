@@ -1,0 +1,73 @@
+deepSURF: Generated Targets to be Fuzzed
+------------------------------------------------------------------------------------------------------------------------------------
+  StableURAPI: fmt::/home/cdc/SURF/deepSURF-big-experiment-harnesses/cbox-0.3.0/src/lib.rs::182,
+    - URAPI: DefId(0:99 ~ cbox[c4ed]::{impl#16}::fmt),
+    - Macro-expanded: false,
+    - LLM-improved: false,
+    - Fuzzing Targets:
+      * cbox_fuzz_17301003630593907584
+      * cbox_fuzz_2852943083114743847
+  StableURAPI: clone::/home/cdc/SURF/deepSURF-big-experiment-harnesses/cbox-0.3.0/src/lib.rs::168,
+    - URAPI: DefId(0:95 ~ cbox[c4ed]::{impl#14}::clone),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * cbox_fuzz_16161567212278754138_deepseek-r1_turn2
+      * cbox_fuzz_3599342397136144904_deepseek-r1_turn3
+  StableURAPI: deref::/home/cdc/SURF/deepSURF-big-experiment-harnesses/cbox-0.3.0/src/lib.rs::160,
+    - URAPI: DefId(0:93 ~ cbox[c4ed]::{impl#13}::deref),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * cbox_fuzz_16161567212278754138_deepseek-r1_turn2
+      * cbox_fuzz_763649734304016333_deepseek-r1_turn4
+      * cbox_fuzz_3599342397136144904_deepseek-r1_turn3
+  StableURAPI: deref_mut::/home/cdc/SURF/deepSURF-big-experiment-harnesses/cbox-0.3.0/src/lib.rs::199,
+    - URAPI: DefId(0:109 ~ cbox[c4ed]::{impl#19}::deref_mut),
+    - Macro-expanded: false,
+    - LLM-improved: false,
+    - Fuzzing Targets:
+      * cbox_fuzz_1058203820562404647
+      * cbox_fuzz_13972585102122587355
+  StableURAPI: deref::/home/cdc/SURF/deepSURF-big-experiment-harnesses/cbox-0.3.0/src/lib.rs::189,
+    - URAPI: DefId(0:103 ~ cbox[c4ed]::{impl#17}::deref),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * cbox_fuzz_763649734304016333_deepseek-r1_turn4
+  StableURAPI: as_semi::/home/cdc/SURF/deepSURF-big-experiment-harnesses/cbox-0.3.0/src/lib.rs::134,
+    - URAPI: DefId(0:83 ~ cbox[c4ed]::{impl#11}::as_semi),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * cbox_fuzz_16161567212278754138_deepseek-r1_turn2
+      * cbox_fuzz_763649734304016333_deepseek-r1_turn4
+  StableURAPI: drop::/home/cdc/SURF/deepSURF-big-experiment-harnesses/cbox-0.3.0/src/lib.rs::61,
+    - URAPI: DefId(0:44 ~ cbox[c4ed]::{impl#2}::drop),
+    - Macro-expanded: false,
+    - LLM-improved: false,
+    - Fuzzing Targets:
+      * cbox_fuzz_3477905265024873531
+      * cbox_fuzz_1388031521638298196
+  StableURAPI: from::/home/cdc/SURF/deepSURF-big-experiment-harnesses/cbox-0.3.0/src/lib.rs::148,
+    - URAPI: DefId(0:89 ~ cbox[c4ed]::{impl#12}::from),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * cbox_fuzz_763649734304016333_deepseek-r1_turn4
+      * cbox_fuzz_16161567212278754138_deepseek-r1_turn2
+      * cbox_fuzz_3599342397136144904_deepseek-r1_turn3
+  StableURAPI: as_semi_mut::/home/cdc/SURF/deepSURF-big-experiment-harnesses/cbox-0.3.0/src/lib.rs::140,
+    - URAPI: DefId(0:85 ~ cbox[c4ed]::{impl#11}::as_semi_mut),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * cbox_fuzz_16161567212278754138_deepseek-r1_turn2
+  StableURAPI: fmt::/home/cdc/SURF/deepSURF-big-experiment-harnesses/cbox-0.3.0/src/lib.rs::177,
+    - URAPI: DefId(0:97 ~ cbox[c4ed]::{impl#15}::fmt),
+    - Macro-expanded: false,
+    - LLM-improved: false,
+    - Fuzzing Targets:
+      * cbox_fuzz_12666098790633401095
+      * cbox_fuzz_17589016483673457936
+------------------------------------------------------------------------------------------------------------------------------------

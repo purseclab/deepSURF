@@ -1,0 +1,72 @@
+/home/cdc/rug_on_erasan_after_bolero/cbox-0.3.0//./src/lib.rs
+err tests_rug_11 test_rug
+   Compiling libc v0.2.159
+   Compiling cfg-if v1.0.0
+   Compiling memchr v2.7.4
+   Compiling adler v1.0.2
+   Compiling gimli v0.27.3
+   Compiling either v1.15.0
+   Compiling rustc-demangle v0.1.24
+   Compiling lazy_static v1.5.0
+   Compiling pretty-hex v0.3.0
+   Compiling arbitrary v1.4.1
+   Compiling zerocopy v0.8.25
+   Compiling anyhow v1.0.98
+   Compiling backtrace v0.3.68
+   Compiling miniz_oxide v0.7.4
+   Compiling object v0.31.1
+   Compiling getrandom v0.2.16
+   Compiling rand_core v0.6.4
+   Compiling bolero-generator v0.8.0
+   Compiling ppv-lite86 v0.2.21
+   Compiling addr2line v0.20.0
+   Compiling rand_chacha v0.3.1
+   Compiling rand v0.8.5
+   Compiling bolero-engine v0.8.1
+   Compiling bolero v0.8.0
+   Compiling cbox v0.3.0 (/home/cdc/rug_on_erasan_after_bolero/cbox-0.3.0)
+error[E0425]: cannot find value `text` in this scope
+   --> src/lib.rs:296:40
+    |
+296 |         <CSemiBox<'static, str>>::from(text);
+    |                                        ^^^^ not found in this scope
+
+warning: unused import: `std::ffi::CStr`
+   --> src/lib.rs:285:9
+    |
+285 |     use std::ffi::CStr;
+    |         ^^^^^^^^^^^^^^
+    |
+    = note: `#[warn(unused_imports)]` on by default
+
+warning: unnecessary parentheses around pattern
+   --> src/lib.rs:293:23
+    |
+293 |             if let Ok((mut rug_fuzz_0_ext)) = <([u8; 6]) as arbitrary::Arbitrary>::arbitrary(&mut arbitrary::Unstructured::new(rug_data)){
+    |                       ^                  ^
+    |
+    = note: `#[warn(unused_parens)]` on by default
+help: remove these parentheses
+    |
+293 -             if let Ok((mut rug_fuzz_0_ext)) = <([u8; 6]) as arbitrary::Arbitrary>::arbitrary(&mut arbitrary::Unstructured::new(rug_data)){
+293 +             if let Ok(mut rug_fuzz_0_ext) = <([u8; 6]) as arbitrary::Arbitrary>::arbitrary(&mut arbitrary::Unstructured::new(rug_data)){
+    |
+
+warning: unused import: `super::*`
+   --> src/lib.rs:302:9
+    |
+302 |     use super::*;
+    |         ^^^^^^^^
+
+warning: unused import: `CStr`
+   --> src/lib.rs:304:23
+    |
+304 |     use crate::{CBox, CStr, str};
+    |                       ^^^^
+
+For more information about this error, try `rustc --explain E0425`.
+warning: `cbox` (lib test) generated 4 warnings
+error: could not compile `cbox` due to previous error; 4 warnings emitted
+warning: build failed, waiting for other jobs to finish...
+
+done

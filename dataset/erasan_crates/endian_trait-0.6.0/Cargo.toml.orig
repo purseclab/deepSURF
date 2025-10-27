@@ -1,0 +1,39 @@
+[package]
+name = "endian_trait"
+version = "0.6.0"
+authors = [
+	"myrrlyn <myrrlyn@outlook.com>",
+]
+license = "MIT"
+description = "A trait for Endianness conversions that can be implemented on most types"
+readme = "README.md"
+keywords = [
+	"endian",
+]
+repository = "https://gitlab.com/myrrlyn/endian_trait"
+exclude = [
+	"Justfile",
+]
+
+[dependencies.endian_trait_derive]
+path = "endian_trait_derive"
+version = "0.6.0"
+
+[features]
+arrays = []
+
+[workspace]
+members = [
+	"endian_trait_derive",
+]
+
+[badges.gitlab]
+repository = "myrrlyn/endian_trait"
+branch = "master"
+
+[badges.maintenance]
+status = "passively-maintained"
+
+[badges.travis-ci]
+repository = "myrrlyn/endian_trait"
+branch = "master"

@@ -1,0 +1,112 @@
+deepSURF: Generated Targets to be Fuzzed
+------------------------------------------------------------------------------------------------------------------------------------
+  StableURAPI: next::/home/cdc/SURF/erasan_dataset/simple-slab-0.3.2/src/lib.rs::170,
+    - URAPI: Slab::with_capacity,
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * llm_only_target_6_deepseek-r1_turn2
+      * llm_only_target_5_deepseek-r1_turn1
+      * llm_only_target_3_deepseek-r1_turn2
+      * llm_only_target_4_deepseek-r1_turn1
+      * llm_only_target_11_deepseek-r1_turn2
+      * llm_only_target_7_deepseek-r1_turn2
+      * llm_only_target_9_deepseek-r1_turn3
+      * llm_only_target_2_deepseek-r1_turn2
+      * llm_only_target_8_deepseek-r1_turn1
+      * llm_only_target_1_deepseek-r1_turn2
+  StableURAPI: with_capacity::/home/cdc/SURF/erasan_dataset/simple-slab-0.3.2/src/lib.rs::43,
+    - URAPI: Slab::with_capacity,
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * llm_only_target_4_deepseek-r1_turn1
+      * llm_only_target_10_deepseek-r1_turn3
+      * llm_only_target_9_deepseek-r1_turn3
+      * llm_only_target_1_deepseek-r1_turn2
+      * llm_only_target_6_deepseek-r1_turn2
+      * llm_only_target_8_deepseek-r1_turn1
+      * llm_only_target_11_deepseek-r1_turn2
+      * llm_only_target_7_deepseek-r1_turn2
+      * llm_only_target_5_deepseek-r1_turn1
+      * llm_only_target_3_deepseek-r1_turn2
+      * llm_only_target_2_deepseek-r1_turn2
+      * llm_only_target_0_deepseek-r1_turn2
+  StableURAPI: new::/home/cdc/SURF/erasan_dataset/simple-slab-0.3.2/src/lib.rs::36,
+    - URAPI: Slab::with_capacity,
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * llm_only_target_3_deepseek-r1_turn2
+      * llm_only_target_7_deepseek-r1_turn2
+      * llm_only_target_4_deepseek-r1_turn1
+      * llm_only_target_8_deepseek-r1_turn1
+      * llm_only_target_5_deepseek-r1_turn1
+      * llm_only_target_9_deepseek-r1_turn3
+      * llm_only_target_2_deepseek-r1_turn2
+      * llm_only_target_1_deepseek-r1_turn2
+      * llm_only_target_6_deepseek-r1_turn2
+      * llm_only_target_10_deepseek-r1_turn3
+      * llm_only_target_0_deepseek-r1_turn2
+  StableURAPI: insert::/home/cdc/SURF/erasan_dataset/simple-slab-0.3.2/src/lib.rs::66,
+    - URAPI: Slab::with_capacity,
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * llm_only_target_1_deepseek-r1_turn2
+      * llm_only_target_9_deepseek-r1_turn3
+      * llm_only_target_0_deepseek-r1_turn2
+      * llm_only_target_11_deepseek-r1_turn2
+      * llm_only_target_2_deepseek-r1_turn2
+      * llm_only_target_10_deepseek-r1_turn3
+      * llm_only_target_4_deepseek-r1_turn1
+      * llm_only_target_6_deepseek-r1_turn2
+      * llm_only_target_8_deepseek-r1_turn1
+      * llm_only_target_3_deepseek-r1_turn2
+      * llm_only_target_7_deepseek-r1_turn2
+      * llm_only_target_5_deepseek-r1_turn1
+  StableURAPI: remove::/home/cdc/SURF/erasan_dataset/simple-slab-0.3.2/src/lib.rs::83,
+    - URAPI: Slab::with_capacity,
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * llm_only_target_11_deepseek-r1_turn2
+      * llm_only_target_9_deepseek-r1_turn3
+      * llm_only_target_0_deepseek-r1_turn2
+      * llm_only_target_7_deepseek-r1_turn2
+      * llm_only_target_3_deepseek-r1_turn2
+      * llm_only_target_2_deepseek-r1_turn2
+      * llm_only_target_6_deepseek-r1_turn2
+      * llm_only_target_10_deepseek-r1_turn3
+      * llm_only_target_1_deepseek-r1_turn2
+      * llm_only_target_8_deepseek-r1_turn1
+      * llm_only_target_4_deepseek-r1_turn1
+      * llm_only_target_5_deepseek-r1_turn1
+  StableURAPI: index::/home/cdc/SURF/erasan_dataset/simple-slab-0.3.2/src/lib.rs::162,
+    - URAPI: <&Slab<T> as std::iter::IntoIterator>::into_iter,
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * llm_only_target_9_deepseek-r1_turn3
+      * llm_only_target_4_deepseek-r1_turn1
+      * llm_only_target_8_deepseek-r1_turn1
+      * llm_only_target_1_deepseek-r1_turn2
+      * llm_only_target_0_deepseek-r1_turn2
+  StableURAPI: next::/home/cdc/SURF/erasan_dataset/simple-slab-0.3.2/src/lib.rs::185,
+    - URAPI: Slab::with_capacity,
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * llm_only_target_2_deepseek-r1_turn2
+      * llm_only_target_0_deepseek-r1_turn2
+      * llm_only_target_10_deepseek-r1_turn3
+      * llm_only_target_5_deepseek-r1_turn1
+      * llm_only_target_8_deepseek-r1_turn1
+      * llm_only_target_7_deepseek-r1_turn2
+      * llm_only_target_11_deepseek-r1_turn2
+      * llm_only_target_6_deepseek-r1_turn2
+      * llm_only_target_4_deepseek-r1_turn1
+      * llm_only_target_1_deepseek-r1_turn2
+      * llm_only_target_3_deepseek-r1_turn2
+      * llm_only_target_9_deepseek-r1_turn3
+------------------------------------------------------------------------------------------------------------------------------------

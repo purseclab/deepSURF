@@ -1,0 +1,57 @@
+SURF: Generated Targets to be Fuzzed
+------------------------------------------------------------------------------------------------------------------------------------
+  StableURAPI: new::/home/cdc/deepSURF/dataset/erasan_crates/simple-slab-0.3.2/src/lib.rs::36,
+    - URAPI: DefId(0:29 ~ simple_slab[f134]::{impl#0}::new),
+    - Macro-expanded: false,
+    - LLM-improved: false,
+    - Fuzzing Targets:
+      * simple-slab_fuzz_5070387978274134065
+  StableURAPI: next::/home/cdc/deepSURF/dataset/erasan_crates/simple-slab-0.3.2/src/lib.rs::170,
+    - URAPI: DefId(0:48 ~ simple_slab[f134]::{impl#3}::next),
+    - Macro-expanded: false,
+    - LLM-improved: false,
+    - Fuzzing Targets:
+      * simple-slab_fuzz_8177924954517317608
+      * simple-slab_fuzz_3243419813255316833
+  StableURAPI: next::/home/cdc/deepSURF/dataset/erasan_crates/simple-slab-0.3.2/src/lib.rs::185,
+    - URAPI: DefId(0:53 ~ simple_slab[f134]::{impl#4}::next),
+    - Macro-expanded: false,
+    - LLM-improved: false,
+    - Fuzzing Targets:
+      * simple-slab_fuzz_12068423700292363854
+      * simple-slab_fuzz_15656352198242415618
+  StableURAPI: with_capacity::/home/cdc/deepSURF/dataset/erasan_crates/simple-slab-0.3.2/src/lib.rs::43,
+    - URAPI: DefId(0:30 ~ simple_slab[f134]::{impl#0}::with_capacity),
+    - Macro-expanded: false,
+    - LLM-improved: false,
+    - Fuzzing Targets:
+      * simple-slab_fuzz_2400436080016481593
+  StableURAPI: drop::/home/cdc/deepSURF/dataset/erasan_crates/simple-slab-0.3.2/src/lib.rs::148,
+    - URAPI: DefId(0:39 ~ simple_slab[f134]::{impl#1}::drop),
+    - Macro-expanded: false,
+    - LLM-improved: false,
+    - Fuzzing Targets:
+      * simple-slab_fuzz_9290769884765058164
+      * simple-slab_fuzz_7444962498856210082
+  StableURAPI: index::/home/cdc/deepSURF/dataset/erasan_crates/simple-slab-0.3.2/src/lib.rs::162,
+    - URAPI: DefId(0:43 ~ simple_slab[f134]::{impl#2}::index),
+    - Macro-expanded: false,
+    - LLM-improved: false,
+    - Fuzzing Targets:
+      * simple-slab_fuzz_5917977109900640383
+      * simple-slab_fuzz_1364335167447169481
+  StableURAPI: remove::/home/cdc/deepSURF/dataset/erasan_crates/simple-slab-0.3.2/src/lib.rs::83,
+    - URAPI: DefId(0:32 ~ simple_slab[f134]::{impl#0}::remove),
+    - Macro-expanded: false,
+    - LLM-improved: false,
+    - Fuzzing Targets:
+      * simple-slab_fuzz_9597818736481166061
+      * simple-slab_fuzz_2782251637814556681
+  StableURAPI: insert::/home/cdc/deepSURF/dataset/erasan_crates/simple-slab-0.3.2/src/lib.rs::66,
+    - URAPI: DefId(0:31 ~ simple_slab[f134]::{impl#0}::insert),
+    - Macro-expanded: false,
+    - LLM-improved: false,
+    - Fuzzing Targets:
+      * simple-slab_fuzz_7938921954373647968
+      * simple-slab_fuzz_2524545333482081621
+------------------------------------------------------------------------------------------------------------------------------------

@@ -1,0 +1,872 @@
+deepSURF: Generated Targets to be Fuzzed
+------------------------------------------------------------------------------------------------------------------------------------
+  StableURAPI: from::/home/cdc/SURF/deepSURF-big-experiment-harnesses/stackvector-1.0.8/src/lib.rs::825,
+    - URAPI: DefId(0:202 ~ stackvector[4fac]::{impl#33}::partial_cmp),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * stackvector_fuzz_12454574599783436662_deepseek-r1_turn4
+      * stackvector_fuzz_12170256754748610967_deepseek-r1_turn2
+      * stackvector_fuzz_16536871174633610602_deepseek-r1_turn3
+  StableURAPI: remove::/home/cdc/SURF/deepSURF-big-experiment-harnesses/stackvector-1.0.8/src/lib.rs::517,
+    - URAPI: DefId(0:172 ~ stackvector[4fac]::{impl#24}::pop),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * stackvector_fuzz_6219935527035397465_deepseek-r1_turn5
+      * stackvector_fuzz_16072014814531661224_deepseek-r1_turn4
+      * stackvector_fuzz_12301739073432993420_deepseek-r1_turn2
+      * stackvector_fuzz_9103181089637150195_deepseek-r1_turn4
+      * stackvector_fuzz_18185331441861852835_deepseek-r1_turn2
+      * stackvector_fuzz_5490813715254529195_deepseek-r1_turn2
+      * stackvector_fuzz_7072258762224172952_deepseek-r1_turn2
+  StableURAPI: from_elem::/home/cdc/SURF/deepSURF-big-experiment-harnesses/stackvector-1.0.8/src/lib.rs::734,
+    - URAPI: DefId(0:196 ~ stackvector[4fac]::{impl#31}::eq),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * stackvector_fuzz_10105978568407124955_deepseek-r1_turn4
+      * stackvector_fuzz_4601805490335329973_deepseek-r1_turn4
+      * stackvector_fuzz_8293999904045853434_deepseek-r1_turn3
+      * stackvector_fuzz_12301739073432993420_deepseek-r1_turn2
+      * stackvector_fuzz_18272984422029028442_deepseek-r1_turn4
+      * stackvector_fuzz_2829301437877528848_deepseek-r1_turn3
+      * stackvector_fuzz_18185331441861852835_deepseek-r1_turn2
+      * stackvector_fuzz_11466254899731805805_deepseek-r1_turn1
+      * stackvector_fuzz_7072258762224172952_deepseek-r1_turn2
+      * stackvector_fuzz_6840235604862057545_deepseek-r1_turn1
+      * stackvector_fuzz_4877859684024786830_deepseek-r1_turn2
+      * stackvector_fuzz_3602557064392514011_deepseek-r1_turn6
+      * stackvector_fuzz_1133352418763092150_deepseek-r1_turn3
+      * stackvector_fuzz_17753621277411082194_deepseek-r1_turn2
+      * stackvector_fuzz_5929116001263052728_deepseek-r1_turn2
+      * stackvector_fuzz_6387818281162796865_deepseek-r1_turn4
+      * stackvector_fuzz_14285429922058602946_deepseek-r1_turn3
+      * stackvector_fuzz_5509731358067848097_deepseek-r1_turn4
+      * stackvector_fuzz_13743587477177064166_deepseek-r1_turn3
+      * stackvector_fuzz_16513364586304621835_deepseek-r1_turn2
+      * stackvector_fuzz_14919117556697046749_deepseek-r1_turn2
+      * stackvector_fuzz_3200656313481632611_deepseek-r1_turn2
+      * stackvector_fuzz_10439201340568467309_deepseek-r1_turn2
+      * stackvector_fuzz_9103181089637150195_deepseek-r1_turn4
+      * stackvector_fuzz_5716750430718252371_deepseek-r1_turn5
+      * stackvector_fuzz_12717357009445087991_deepseek-r1_turn2
+      * stackvector_fuzz_17818598323662664873_deepseek-r1_turn4
+      * stackvector_fuzz_6219935527035397465_deepseek-r1_turn5
+      * stackvector_fuzz_13737676511509076796_deepseek-r1_turn2
+      * stackvector_fuzz_12454574599783436662_deepseek-r1_turn4
+      * stackvector_fuzz_12896298206679703210_deepseek-r1_turn2
+      * stackvector_fuzz_3887645148066974827_deepseek-r1_turn2
+      * stackvector_fuzz_13522714354933573887_deepseek-r1_turn2
+      * stackvector_fuzz_1346266121783157790_deepseek-r1_turn3
+      * stackvector_fuzz_17213920727556802103_deepseek-r1_turn5
+      * stackvector_fuzz_15387621949502429022_deepseek-r1_turn4
+      * stackvector_fuzz_8765947824577245476_deepseek-r1_turn3
+      * stackvector_fuzz_5490813715254529195_deepseek-r1_turn2
+      * stackvector_fuzz_5361011160446671523_deepseek-r1_turn2
+      * stackvector_fuzz_16327940949246405587_deepseek-r1_turn3
+  StableURAPI: next_back::/home/cdc/SURF/deepSURF-big-experiment-harnesses/stackvector-1.0.8/src/lib.rs::228,
+    - URAPI: DefId(0:62 ~ stackvector[4fac]::{impl#5}::next_back),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * stackvector_fuzz_16327940949246405587_deepseek-r1_turn3
+      * stackvector_fuzz_18185331441861852835_deepseek-r1_turn2
+  StableURAPI: swap_remove::/home/cdc/SURF/deepSURF-big-experiment-harnesses/stackvector-1.0.8/src/lib.rs::501,
+    - URAPI: DefId(0:105 ~ stackvector[4fac]::{impl#10}::clear),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * stackvector_fuzz_10105978568407124955_deepseek-r1_turn4
+      * stackvector_fuzz_10439201340568467309_deepseek-r1_turn2
+      * stackvector_fuzz_3602557064392514011_deepseek-r1_turn6
+      * stackvector_fuzz_17753621277411082194_deepseek-r1_turn2
+      * stackvector_fuzz_1133352418763092150_deepseek-r1_turn3
+      * stackvector_fuzz_7072258762224172952_deepseek-r1_turn2
+      * stackvector_fuzz_5509731358067848097_deepseek-r1_turn4
+      * stackvector_fuzz_11466254899731805805_deepseek-r1_turn1
+      * stackvector_fuzz_17818598323662664873_deepseek-r1_turn4
+      * stackvector_fuzz_6387818281162796865_deepseek-r1_turn4
+      * stackvector_fuzz_16536871174633610602_deepseek-r1_turn3
+      * stackvector_fuzz_14919117556697046749_deepseek-r1_turn2
+      * stackvector_fuzz_1346266121783157790_deepseek-r1_turn3
+      * stackvector_fuzz_2829301437877528848_deepseek-r1_turn3
+      * stackvector_fuzz_8293999904045853434_deepseek-r1_turn3
+      * stackvector_fuzz_386141492030817416_deepseek-r1_turn2
+      * stackvector_fuzz_12717357009445087991_deepseek-r1_turn2
+      * stackvector_fuzz_12896298206679703210_deepseek-r1_turn2
+      * stackvector_fuzz_14285429922058602946_deepseek-r1_turn3
+      * stackvector_fuzz_3200656313481632611_deepseek-r1_turn2
+      * stackvector_fuzz_18272984422029028442_deepseek-r1_turn4
+      * stackvector_fuzz_17213920727556802103_deepseek-r1_turn5
+      * stackvector_fuzz_17878145677878894249_deepseek-r1_turn2
+  StableURAPI: push::/home/cdc/SURF/deepSURF-big-experiment-harnesses/stackvector-1.0.8/src/lib.rs::444,
+    - URAPI: DefId(0:105 ~ stackvector[4fac]::{impl#10}::clear),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * stackvector_fuzz_386141492030817416_deepseek-r1_turn2
+      * stackvector_fuzz_13737676511509076796_deepseek-r1_turn2
+      * stackvector_fuzz_16536871174633610602_deepseek-r1_turn3
+      * stackvector_fuzz_14919117556697046749_deepseek-r1_turn2
+      * stackvector_fuzz_15387621949502429022_deepseek-r1_turn4
+      * stackvector_fuzz_10439201340568467309_deepseek-r1_turn2
+      * stackvector_fuzz_5361011160446671523_deepseek-r1_turn2
+      * stackvector_fuzz_18272984422029028442_deepseek-r1_turn4
+      * stackvector_fuzz_17878145677878894249_deepseek-r1_turn2
+      * stackvector_fuzz_17818598323662664873_deepseek-r1_turn4
+      * stackvector_fuzz_7072258762224172952_deepseek-r1_turn2
+      * stackvector_fuzz_4601805490335329973_deepseek-r1_turn4
+      * stackvector_fuzz_11466254899731805805_deepseek-r1_turn1
+      * stackvector_fuzz_17753621277411082194_deepseek-r1_turn2
+      * stackvector_fuzz_6219935527035397465_deepseek-r1_turn5
+      * stackvector_fuzz_10105978568407124955_deepseek-r1_turn4
+      * stackvector_fuzz_2426776491125694_deepseek-r1_turn4
+      * stackvector_fuzz_6840235604862057545_deepseek-r1_turn1
+      * stackvector_fuzz_5379527204253546599_deepseek-r1_turn2
+      * stackvector_fuzz_3887645148066974827_deepseek-r1_turn2
+      * stackvector_fuzz_16513364586304621835_deepseek-r1_turn2
+      * stackvector_fuzz_5509731358067848097_deepseek-r1_turn4
+      * stackvector_fuzz_18185331441861852835_deepseek-r1_turn2
+      * stackvector_fuzz_12301739073432993420_deepseek-r1_turn2
+      * stackvector_fuzz_14285429922058602946_deepseek-r1_turn3
+      * stackvector_fuzz_2829301437877528848_deepseek-r1_turn3
+      * stackvector_fuzz_207653652943302108_deepseek-r1_turn2
+      * stackvector_fuzz_1346266121783157790_deepseek-r1_turn3
+      * stackvector_fuzz_12170256754748610967_deepseek-r1_turn2
+      * stackvector_fuzz_16072014814531661224_deepseek-r1_turn4
+      * stackvector_fuzz_5716750430718252371_deepseek-r1_turn5
+      * stackvector_fuzz_8720342702680450058_deepseek-r1_turn1
+      * stackvector_fuzz_1133352418763092150_deepseek-r1_turn3
+      * stackvector_fuzz_13522714354933573887_deepseek-r1_turn2
+      * stackvector_fuzz_3602557064392514011_deepseek-r1_turn6
+      * stackvector_fuzz_8293999904045853434_deepseek-r1_turn3
+      * stackvector_fuzz_9103181089637150195_deepseek-r1_turn4
+      * stackvector_fuzz_8765947824577245476_deepseek-r1_turn3
+      * stackvector_fuzz_13743587477177064166_deepseek-r1_turn3
+      * stackvector_fuzz_12896298206679703210_deepseek-r1_turn2
+      * stackvector_fuzz_6225612722303663924_deepseek-r1_turn2
+      * stackvector_fuzz_12454574599783436662_deepseek-r1_turn4
+      * stackvector_fuzz_6387818281162796865_deepseek-r1_turn4
+      * stackvector_fuzz_17213920727556802103_deepseek-r1_turn5
+      * stackvector_fuzz_12717357009445087991_deepseek-r1_turn2
+      * stackvector_fuzz_5929116001263052728_deepseek-r1_turn2
+      * stackvector_fuzz_3200656313481632611_deepseek-r1_turn2
+      * stackvector_fuzz_4877859684024786830_deepseek-r1_turn2
+      * stackvector_fuzz_16327940949246405587_deepseek-r1_turn3
+  StableURAPI: into_inner::/home/cdc/SURF/deepSURF-big-experiment-harnesses/stackvector-1.0.8/src/lib.rs::593,
+    - URAPI: DefId(0:208 ~ stackvector[4fac]::{impl#35}::hash),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * stackvector_fuzz_17213920727556802103_deepseek-r1_turn5
+      * stackvector_fuzz_8765947824577245476_deepseek-r1_turn3
+      * stackvector_fuzz_12170256754748610967_deepseek-r1_turn2
+      * stackvector_fuzz_6219935527035397465_deepseek-r1_turn5
+      * stackvector_fuzz_2426776491125694_deepseek-r1_turn4
+      * stackvector_fuzz_6387818281162796865_deepseek-r1_turn4
+  StableURAPI: new::/home/cdc/SURF/deepSURF-big-experiment-harnesses/stackvector-1.0.8/src/lib.rs::303,
+    - URAPI: DefId(0:105 ~ stackvector[4fac]::{impl#10}::clear),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * stackvector_fuzz_5509731358067848097_deepseek-r1_turn4
+      * stackvector_fuzz_6225612722303663924_deepseek-r1_turn2
+      * stackvector_fuzz_18272984422029028442_deepseek-r1_turn4
+      * stackvector_fuzz_18185331441861852835_deepseek-r1_turn2
+      * stackvector_fuzz_12301739073432993420_deepseek-r1_turn2
+      * stackvector_fuzz_17753621277411082194_deepseek-r1_turn2
+      * stackvector_fuzz_13522714354933573887_deepseek-r1_turn2
+      * stackvector_fuzz_16072014814531661224_deepseek-r1_turn4
+      * stackvector_fuzz_5361011160446671523_deepseek-r1_turn2
+      * stackvector_fuzz_16513364586304621835_deepseek-r1_turn2
+      * stackvector_fuzz_9103181089637150195_deepseek-r1_turn4
+      * stackvector_fuzz_2426776491125694_deepseek-r1_turn4
+      * stackvector_fuzz_11466254899731805805_deepseek-r1_turn1
+      * stackvector_fuzz_2829301437877528848_deepseek-r1_turn3
+      * stackvector_fuzz_8765947824577245476_deepseek-r1_turn3
+      * stackvector_fuzz_4601805490335329973_deepseek-r1_turn4
+      * stackvector_fuzz_14919117556697046749_deepseek-r1_turn2
+      * stackvector_fuzz_15387621949502429022_deepseek-r1_turn4
+      * stackvector_fuzz_10105978568407124955_deepseek-r1_turn4
+      * stackvector_fuzz_12717357009445087991_deepseek-r1_turn2
+      * stackvector_fuzz_3602557064392514011_deepseek-r1_turn6
+      * stackvector_fuzz_12896298206679703210_deepseek-r1_turn2
+      * stackvector_fuzz_3887645148066974827_deepseek-r1_turn2
+      * stackvector_fuzz_5379527204253546599_deepseek-r1_turn2
+      * stackvector_fuzz_8293999904045853434_deepseek-r1_turn3
+      * stackvector_fuzz_12170256754748610967_deepseek-r1_turn2
+      * stackvector_fuzz_17213920727556802103_deepseek-r1_turn5
+      * stackvector_fuzz_5716750430718252371_deepseek-r1_turn5
+      * stackvector_fuzz_14285429922058602946_deepseek-r1_turn3
+      * stackvector_fuzz_1346266121783157790_deepseek-r1_turn3
+      * stackvector_fuzz_13737676511509076796_deepseek-r1_turn2
+      * stackvector_fuzz_5929116001263052728_deepseek-r1_turn2
+      * stackvector_fuzz_10439201340568467309_deepseek-r1_turn2
+      * stackvector_fuzz_4877859684024786830_deepseek-r1_turn2
+      * stackvector_fuzz_17818598323662664873_deepseek-r1_turn4
+      * stackvector_fuzz_7072258762224172952_deepseek-r1_turn2
+      * stackvector_fuzz_207653652943302108_deepseek-r1_turn2
+      * stackvector_fuzz_13743587477177064166_deepseek-r1_turn3
+      * stackvector_fuzz_16327940949246405587_deepseek-r1_turn3
+      * stackvector_fuzz_12454574599783436662_deepseek-r1_turn4
+      * stackvector_fuzz_17878145677878894249_deepseek-r1_turn2
+      * stackvector_fuzz_1133352418763092150_deepseek-r1_turn3
+      * stackvector_fuzz_6219935527035397465_deepseek-r1_turn5
+      * stackvector_fuzz_386141492030817416_deepseek-r1_turn2
+      * stackvector_fuzz_6840235604862057545_deepseek-r1_turn1
+  StableURAPI: truncate::/home/cdc/SURF/deepSURF-big-experiment-harnesses/stackvector-1.0.8/src/lib.rs::470,
+    - URAPI: DefId(0:105 ~ stackvector[4fac]::{impl#10}::clear),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * stackvector_fuzz_17878145677878894249_deepseek-r1_turn2
+      * stackvector_fuzz_16327940949246405587_deepseek-r1_turn3
+      * stackvector_fuzz_16536871174633610602_deepseek-r1_turn3
+      * stackvector_fuzz_17818598323662664873_deepseek-r1_turn4
+      * stackvector_fuzz_4877859684024786830_deepseek-r1_turn2
+      * stackvector_fuzz_17213920727556802103_deepseek-r1_turn5
+      * stackvector_fuzz_9103181089637150195_deepseek-r1_turn4
+      * stackvector_fuzz_16072014814531661224_deepseek-r1_turn4
+      * stackvector_fuzz_8293999904045853434_deepseek-r1_turn3
+      * stackvector_fuzz_8765947824577245476_deepseek-r1_turn3
+      * stackvector_fuzz_12301739073432993420_deepseek-r1_turn2
+      * stackvector_fuzz_16513364586304621835_deepseek-r1_turn2
+      * stackvector_fuzz_14919117556697046749_deepseek-r1_turn2
+      * stackvector_fuzz_5490813715254529195_deepseek-r1_turn2
+      * stackvector_fuzz_18272984422029028442_deepseek-r1_turn4
+      * stackvector_fuzz_6219935527035397465_deepseek-r1_turn5
+      * stackvector_fuzz_2829301437877528848_deepseek-r1_turn3
+      * stackvector_fuzz_12454574599783436662_deepseek-r1_turn4
+      * stackvector_fuzz_13743587477177064166_deepseek-r1_turn3
+      * stackvector_fuzz_7072258762224172952_deepseek-r1_turn2
+      * stackvector_fuzz_13522714354933573887_deepseek-r1_turn2
+      * stackvector_fuzz_14285429922058602946_deepseek-r1_turn3
+      * stackvector_fuzz_8720342702680450058_deepseek-r1_turn1
+      * stackvector_fuzz_17753621277411082194_deepseek-r1_turn2
+      * stackvector_fuzz_11466254899731805805_deepseek-r1_turn1
+      * stackvector_fuzz_1133352418763092150_deepseek-r1_turn3
+      * stackvector_fuzz_5379527204253546599_deepseek-r1_turn2
+      * stackvector_fuzz_12170256754748610967_deepseek-r1_turn2
+      * stackvector_fuzz_3602557064392514011_deepseek-r1_turn6
+      * stackvector_fuzz_5716750430718252371_deepseek-r1_turn5
+      * stackvector_fuzz_5929116001263052728_deepseek-r1_turn2
+      * stackvector_fuzz_3200656313481632611_deepseek-r1_turn2
+      * stackvector_fuzz_3887645148066974827_deepseek-r1_turn2
+      * stackvector_fuzz_12717357009445087991_deepseek-r1_turn2
+      * stackvector_fuzz_207653652943302108_deepseek-r1_turn2
+      * stackvector_fuzz_6225612722303663924_deepseek-r1_turn2
+      * stackvector_fuzz_2426776491125694_deepseek-r1_turn4
+      * stackvector_fuzz_1346266121783157790_deepseek-r1_turn3
+      * stackvector_fuzz_5361011160446671523_deepseek-r1_turn2
+      * stackvector_fuzz_4601805490335329973_deepseek-r1_turn4
+      * stackvector_fuzz_10105978568407124955_deepseek-r1_turn4
+      * stackvector_fuzz_6840235604862057545_deepseek-r1_turn1
+  StableURAPI: retain::/home/cdc/SURF/deepSURF-big-experiment-harnesses/stackvector-1.0.8/src/lib.rs::610,
+    - URAPI: DefId(0:541 ~ stackvector[4fac]::{impl#91}::index_mut),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * stackvector_fuzz_10439201340568467309_deepseek-r1_turn2
+      * stackvector_fuzz_17213920727556802103_deepseek-r1_turn5
+      * stackvector_fuzz_2426776491125694_deepseek-r1_turn4
+      * stackvector_fuzz_3602557064392514011_deepseek-r1_turn6
+      * stackvector_fuzz_12301739073432993420_deepseek-r1_turn2
+  StableURAPI: from_vec::/home/cdc/SURF/deepSURF-big-experiment-harnesses/stackvector-1.0.8/src/lib.rs::325,
+    - URAPI: DefId(0:105 ~ stackvector[4fac]::{impl#10}::clear),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * stackvector_fuzz_5509731358067848097_deepseek-r1_turn4
+      * stackvector_fuzz_16072014814531661224_deepseek-r1_turn4
+      * stackvector_fuzz_17213920727556802103_deepseek-r1_turn5
+      * stackvector_fuzz_3602557064392514011_deepseek-r1_turn6
+      * stackvector_fuzz_3887645148066974827_deepseek-r1_turn2
+      * stackvector_fuzz_1346266121783157790_deepseek-r1_turn3
+      * stackvector_fuzz_1133352418763092150_deepseek-r1_turn3
+      * stackvector_fuzz_4877859684024786830_deepseek-r1_turn2
+      * stackvector_fuzz_9103181089637150195_deepseek-r1_turn4
+      * stackvector_fuzz_18185331441861852835_deepseek-r1_turn2
+      * stackvector_fuzz_12717357009445087991_deepseek-r1_turn2
+      * stackvector_fuzz_6219935527035397465_deepseek-r1_turn5
+      * stackvector_fuzz_386141492030817416_deepseek-r1_turn2
+      * stackvector_fuzz_207653652943302108_deepseek-r1_turn2
+      * stackvector_fuzz_15387621949502429022_deepseek-r1_turn4
+      * stackvector_fuzz_7072258762224172952_deepseek-r1_turn2
+      * stackvector_fuzz_8765947824577245476_deepseek-r1_turn3
+      * stackvector_fuzz_18272984422029028442_deepseek-r1_turn4
+      * stackvector_fuzz_6387818281162796865_deepseek-r1_turn4
+      * stackvector_fuzz_10439201340568467309_deepseek-r1_turn2
+      * stackvector_fuzz_5361011160446671523_deepseek-r1_turn2
+      * stackvector_fuzz_17878145677878894249_deepseek-r1_turn2
+      * stackvector_fuzz_2829301437877528848_deepseek-r1_turn3
+      * stackvector_fuzz_10105978568407124955_deepseek-r1_turn4
+      * stackvector_fuzz_14919117556697046749_deepseek-r1_turn2
+      * stackvector_fuzz_13522714354933573887_deepseek-r1_turn2
+      * stackvector_fuzz_8293999904045853434_deepseek-r1_turn3
+      * stackvector_fuzz_5929116001263052728_deepseek-r1_turn2
+  StableURAPI: index_mut::/home/cdc/SURF/deepSURF-big-experiment-harnesses/stackvector-1.0.8/src/lib.rs::837,
+    - URAPI: DefId(0:541 ~ stackvector[4fac]::{impl#91}::index_mut),
+    - Macro-expanded: true,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * stackvector_fuzz_3602557064392514011_deepseek-r1_turn6
+      * stackvector_fuzz_12301739073432993420_deepseek-r1_turn2
+  StableURAPI: eq::/home/cdc/SURF/deepSURF-big-experiment-harnesses/stackvector-1.0.8/src/lib.rs::958,
+    - URAPI: DefId(0:196 ~ stackvector[4fac]::{impl#31}::eq),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * stackvector_fuzz_10105978568407124955_deepseek-r1_turn4
+      * stackvector_fuzz_4601805490335329973_deepseek-r1_turn4
+      * stackvector_fuzz_12301739073432993420_deepseek-r1_turn2
+      * stackvector_fuzz_3602557064392514011_deepseek-r1_turn6
+  StableURAPI: cmp::/home/cdc/SURF/deepSURF-big-experiment-harnesses/stackvector-1.0.8/src/lib.rs::980,
+    - URAPI: DefId(0:196 ~ stackvector[4fac]::{impl#31}::eq),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * stackvector_fuzz_8720342702680450058_deepseek-r1_turn1
+      * stackvector_fuzz_8293999904045853434_deepseek-r1_turn3
+      * stackvector_fuzz_10105978568407124955_deepseek-r1_turn4
+      * stackvector_fuzz_13737676511509076796_deepseek-r1_turn2
+      * stackvector_fuzz_16072014814531661224_deepseek-r1_turn4
+  StableURAPI: write_all::/home/cdc/SURF/deepSURF-big-experiment-harnesses/stackvector-1.0.8/src/lib.rs::805,
+    - URAPI: DefId(0:153 ~ stackvector[4fac]::{impl#19}::write_all),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * stackvector_fuzz_17753621277411082194_deepseek-r1_turn2
+  StableURAPI: deref::/home/cdc/SURF/deepSURF-big-experiment-harnesses/stackvector-1.0.8/src/lib.rs::752,
+    - URAPI: DefId(0:152 ~ stackvector[4fac]::{impl#19}::write),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * stackvector_fuzz_8720342702680450058_deepseek-r1_turn1
+      * stackvector_fuzz_13737676511509076796_deepseek-r1_turn2
+      * stackvector_fuzz_16072014814531661224_deepseek-r1_turn4
+      * stackvector_fuzz_4601805490335329973_deepseek-r1_turn4
+      * stackvector_fuzz_6219935527035397465_deepseek-r1_turn5
+      * stackvector_fuzz_5490813715254529195_deepseek-r1_turn2
+      * stackvector_fuzz_12896298206679703210_deepseek-r1_turn2
+      * stackvector_fuzz_6840235604862057545_deepseek-r1_turn1
+      * stackvector_fuzz_6225612722303663924_deepseek-r1_turn2
+      * stackvector_fuzz_1346266121783157790_deepseek-r1_turn3
+      * stackvector_fuzz_12301739073432993420_deepseek-r1_turn2
+      * stackvector_fuzz_3602557064392514011_deepseek-r1_turn6
+      * stackvector_fuzz_12454574599783436662_deepseek-r1_turn4
+      * stackvector_fuzz_5716750430718252371_deepseek-r1_turn5
+      * stackvector_fuzz_5929116001263052728_deepseek-r1_turn2
+      * stackvector_fuzz_5509731358067848097_deepseek-r1_turn4
+      * stackvector_fuzz_12717357009445087991_deepseek-r1_turn2
+      * stackvector_fuzz_13743587477177064166_deepseek-r1_turn3
+  StableURAPI: partial_cmp::/home/cdc/SURF/deepSURF-big-experiment-harnesses/stackvector-1.0.8/src/lib.rs::973,
+    - URAPI: DefId(0:196 ~ stackvector[4fac]::{impl#31}::eq),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * stackvector_fuzz_17213920727556802103_deepseek-r1_turn5
+      * stackvector_fuzz_16072014814531661224_deepseek-r1_turn4
+      * stackvector_fuzz_12301739073432993420_deepseek-r1_turn2
+      * stackvector_fuzz_2426776491125694_deepseek-r1_turn4
+      * stackvector_fuzz_13737676511509076796_deepseek-r1_turn2
+      * stackvector_fuzz_12717357009445087991_deepseek-r1_turn2
+      * stackvector_fuzz_17753621277411082194_deepseek-r1_turn2
+      * stackvector_fuzz_18185331441861852835_deepseek-r1_turn2
+      * stackvector_fuzz_16327940949246405587_deepseek-r1_turn3
+      * stackvector_fuzz_3602557064392514011_deepseek-r1_turn6
+      * stackvector_fuzz_16536871174633610602_deepseek-r1_turn3
+      * stackvector_fuzz_9103181089637150195_deepseek-r1_turn4
+      * stackvector_fuzz_1133352418763092150_deepseek-r1_turn3
+      * stackvector_fuzz_10105978568407124955_deepseek-r1_turn4
+      * stackvector_fuzz_5716750430718252371_deepseek-r1_turn5
+      * stackvector_fuzz_12896298206679703210_deepseek-r1_turn2
+      * stackvector_fuzz_12454574599783436662_deepseek-r1_turn4
+      * stackvector_fuzz_2829301437877528848_deepseek-r1_turn3
+      * stackvector_fuzz_5379527204253546599_deepseek-r1_turn2
+      * stackvector_fuzz_6219935527035397465_deepseek-r1_turn5
+  StableURAPI: resize::/home/cdc/SURF/deepSURF-big-experiment-harnesses/stackvector-1.0.8/src/lib.rs::717,
+    - URAPI: DefId(0:129 ~ stackvector[4fac]::{impl#12}::resize),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * stackvector_fuzz_17213920727556802103_deepseek-r1_turn5
+      * stackvector_fuzz_6387818281162796865_deepseek-r1_turn4
+  StableURAPI: index::/home/cdc/SURF/deepSURF-big-experiment-harnesses/stackvector-1.0.8/src/lib.rs::837,
+    - URAPI: DefId(0:130 ~ stackvector[4fac]::{impl#12}::from_elem),
+    - Macro-expanded: true,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * stackvector_fuzz_5509731358067848097_deepseek-r1_turn4
+      * stackvector_fuzz_11466254899731805805_deepseek-r1_turn1
+      * stackvector_fuzz_10439201340568467309_deepseek-r1_turn2
+      * stackvector_fuzz_13522714354933573887_deepseek-r1_turn2
+      * stackvector_fuzz_16327940949246405587_deepseek-r1_turn3
+      * stackvector_fuzz_2426776491125694_deepseek-r1_turn4
+      * stackvector_fuzz_18272984422029028442_deepseek-r1_turn4
+      * stackvector_fuzz_6225612722303663924_deepseek-r1_turn2
+      * stackvector_fuzz_17753621277411082194_deepseek-r1_turn2
+      * stackvector_fuzz_3602557064392514011_deepseek-r1_turn6
+      * stackvector_fuzz_5716750430718252371_deepseek-r1_turn5
+      * stackvector_fuzz_8293999904045853434_deepseek-r1_turn3
+  StableURAPI: into_iter::/home/cdc/SURF/deepSURF-big-experiment-harnesses/stackvector-1.0.8/src/lib.rs::1057,
+    - URAPI: DefId(0:240 ~ stackvector[4fac]::{impl#42}::into_iter),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * stackvector_fuzz_13522714354933573887_deepseek-r1_turn2
+      * stackvector_fuzz_14285429922058602946_deepseek-r1_turn3
+      * stackvector_fuzz_17213920727556802103_deepseek-r1_turn5
+      * stackvector_fuzz_4877859684024786830_deepseek-r1_turn2
+  StableURAPI: insert::/home/cdc/SURF/deepSURF-big-experiment-harnesses/stackvector-1.0.8/src/lib.rs::531,
+    - URAPI: DefId(0:105 ~ stackvector[4fac]::{impl#10}::clear),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * stackvector_fuzz_13743587477177064166_deepseek-r1_turn3
+      * stackvector_fuzz_12301739073432993420_deepseek-r1_turn2
+      * stackvector_fuzz_12717357009445087991_deepseek-r1_turn2
+      * stackvector_fuzz_6840235604862057545_deepseek-r1_turn1
+      * stackvector_fuzz_10439201340568467309_deepseek-r1_turn2
+      * stackvector_fuzz_5361011160446671523_deepseek-r1_turn2
+      * stackvector_fuzz_7072258762224172952_deepseek-r1_turn2
+      * stackvector_fuzz_2829301437877528848_deepseek-r1_turn3
+      * stackvector_fuzz_15387621949502429022_deepseek-r1_turn4
+      * stackvector_fuzz_1133352418763092150_deepseek-r1_turn3
+      * stackvector_fuzz_13737676511509076796_deepseek-r1_turn2
+      * stackvector_fuzz_16072014814531661224_deepseek-r1_turn4
+      * stackvector_fuzz_9103181089637150195_deepseek-r1_turn4
+      * stackvector_fuzz_12170256754748610967_deepseek-r1_turn2
+      * stackvector_fuzz_2426776491125694_deepseek-r1_turn4
+      * stackvector_fuzz_5379527204253546599_deepseek-r1_turn2
+      * stackvector_fuzz_6219935527035397465_deepseek-r1_turn5
+      * stackvector_fuzz_5490813715254529195_deepseek-r1_turn2
+      * stackvector_fuzz_17818598323662664873_deepseek-r1_turn4
+      * stackvector_fuzz_4877859684024786830_deepseek-r1_turn2
+      * stackvector_fuzz_5929116001263052728_deepseek-r1_turn2
+      * stackvector_fuzz_12454574599783436662_deepseek-r1_turn4
+      * stackvector_fuzz_16536871174633610602_deepseek-r1_turn3
+      * stackvector_fuzz_8765947824577245476_deepseek-r1_turn3
+      * stackvector_fuzz_6225612722303663924_deepseek-r1_turn2
+      * stackvector_fuzz_17878145677878894249_deepseek-r1_turn2
+      * stackvector_fuzz_11466254899731805805_deepseek-r1_turn1
+      * stackvector_fuzz_16327940949246405587_deepseek-r1_turn3
+      * stackvector_fuzz_17213920727556802103_deepseek-r1_turn5
+      * stackvector_fuzz_3887645148066974827_deepseek-r1_turn2
+      * stackvector_fuzz_5716750430718252371_deepseek-r1_turn5
+      * stackvector_fuzz_3602557064392514011_deepseek-r1_turn6
+      * stackvector_fuzz_13522714354933573887_deepseek-r1_turn2
+      * stackvector_fuzz_18185331441861852835_deepseek-r1_turn2
+      * stackvector_fuzz_3200656313481632611_deepseek-r1_turn2
+      * stackvector_fuzz_14919117556697046749_deepseek-r1_turn2
+      * stackvector_fuzz_5509731358067848097_deepseek-r1_turn4
+      * stackvector_fuzz_386141492030817416_deepseek-r1_turn2
+      * stackvector_fuzz_1346266121783157790_deepseek-r1_turn3
+      * stackvector_fuzz_207653652943302108_deepseek-r1_turn2
+      * stackvector_fuzz_6387818281162796865_deepseek-r1_turn4
+  StableURAPI: default::/home/cdc/SURF/deepSURF-big-experiment-harnesses/stackvector-1.0.8/src/lib.rs::931,
+    - URAPI: DefId(0:146 ~ stackvector[4fac]::{impl#17}::borrow),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * stackvector_fuzz_17818598323662664873_deepseek-r1_turn4
+      * stackvector_fuzz_8765947824577245476_deepseek-r1_turn3
+  StableURAPI: hash::/home/cdc/SURF/deepSURF-big-experiment-harnesses/stackvector-1.0.8/src/lib.rs::986,
+    - URAPI: DefId(0:208 ~ stackvector[4fac]::{impl#35}::hash),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * stackvector_fuzz_2426776491125694_deepseek-r1_turn4
+      * stackvector_fuzz_17213920727556802103_deepseek-r1_turn5
+  StableURAPI: dedup::/home/cdc/SURF/deepSURF-big-experiment-harnesses/stackvector-1.0.8/src/lib.rs::624,
+    - URAPI: DefId(0:196 ~ stackvector[4fac]::{impl#31}::eq),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * stackvector_fuzz_10105978568407124955_deepseek-r1_turn4
+      * stackvector_fuzz_12301739073432993420_deepseek-r1_turn2
+      * stackvector_fuzz_3602557064392514011_deepseek-r1_turn6
+      * stackvector_fuzz_17818598323662664873_deepseek-r1_turn4
+      * stackvector_fuzz_17213920727556802103_deepseek-r1_turn5
+      * stackvector_fuzz_3200656313481632611_deepseek-r1_turn2
+      * stackvector_fuzz_6219935527035397465_deepseek-r1_turn5
+  StableURAPI: insert_from_slice::/home/cdc/SURF/deepSURF-big-experiment-harnesses/stackvector-1.0.8/src/lib.rs::688,
+    - URAPI: DefId(0:208 ~ stackvector[4fac]::{impl#35}::hash),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * stackvector_fuzz_5490813715254529195_deepseek-r1_turn2
+      * stackvector_fuzz_17213920727556802103_deepseek-r1_turn5
+      * stackvector_fuzz_2426776491125694_deepseek-r1_turn4
+  StableURAPI: drain::/home/cdc/SURF/deepSURF-big-experiment-harnesses/stackvector-1.0.8/src/lib.rs::431,
+    - URAPI: DefId(0:196 ~ stackvector[4fac]::{impl#31}::eq),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * stackvector_fuzz_18185331441861852835_deepseek-r1_turn2
+      * stackvector_fuzz_13737676511509076796_deepseek-r1_turn2
+      * stackvector_fuzz_13522714354933573887_deepseek-r1_turn2
+      * stackvector_fuzz_2426776491125694_deepseek-r1_turn4
+      * stackvector_fuzz_16513364586304621835_deepseek-r1_turn2
+      * stackvector_fuzz_10105978568407124955_deepseek-r1_turn4
+      * stackvector_fuzz_6225612722303663924_deepseek-r1_turn2
+      * stackvector_fuzz_14919117556697046749_deepseek-r1_turn2
+      * stackvector_fuzz_12717357009445087991_deepseek-r1_turn2
+      * stackvector_fuzz_16327940949246405587_deepseek-r1_turn3
+      * stackvector_fuzz_12170256754748610967_deepseek-r1_turn2
+      * stackvector_fuzz_8293999904045853434_deepseek-r1_turn3
+      * stackvector_fuzz_6219935527035397465_deepseek-r1_turn5
+      * stackvector_fuzz_3887645148066974827_deepseek-r1_turn2
+      * stackvector_fuzz_17753621277411082194_deepseek-r1_turn2
+      * stackvector_fuzz_5929116001263052728_deepseek-r1_turn2
+      * stackvector_fuzz_386141492030817416_deepseek-r1_turn2
+      * stackvector_fuzz_5379527204253546599_deepseek-r1_turn2
+      * stackvector_fuzz_6387818281162796865_deepseek-r1_turn4
+      * stackvector_fuzz_11466254899731805805_deepseek-r1_turn1
+      * stackvector_fuzz_12896298206679703210_deepseek-r1_turn2
+      * stackvector_fuzz_10439201340568467309_deepseek-r1_turn2
+      * stackvector_fuzz_207653652943302108_deepseek-r1_turn2
+      * stackvector_fuzz_14285429922058602946_deepseek-r1_turn3
+      * stackvector_fuzz_15387621949502429022_deepseek-r1_turn4
+      * stackvector_fuzz_8765947824577245476_deepseek-r1_turn3
+      * stackvector_fuzz_16072014814531661224_deepseek-r1_turn4
+      * stackvector_fuzz_3602557064392514011_deepseek-r1_turn6
+      * stackvector_fuzz_5509731358067848097_deepseek-r1_turn4
+      * stackvector_fuzz_5490813715254529195_deepseek-r1_turn2
+      * stackvector_fuzz_9103181089637150195_deepseek-r1_turn4
+      * stackvector_fuzz_12454574599783436662_deepseek-r1_turn4
+      * stackvector_fuzz_2829301437877528848_deepseek-r1_turn3
+      * stackvector_fuzz_17213920727556802103_deepseek-r1_turn5
+      * stackvector_fuzz_5716750430718252371_deepseek-r1_turn5
+      * stackvector_fuzz_13743587477177064166_deepseek-r1_turn3
+  StableURAPI: write::/home/cdc/SURF/deepSURF-big-experiment-harnesses/stackvector-1.0.8/src/lib.rs::799,
+    - URAPI: DefId(0:152 ~ stackvector[4fac]::{impl#19}::write),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * stackvector_fuzz_12896298206679703210_deepseek-r1_turn2
+  StableURAPI: from_slice::/home/cdc/SURF/deepSURF-big-experiment-harnesses/stackvector-1.0.8/src/lib.rs::672,
+    - URAPI: DefId(0:152 ~ stackvector[4fac]::{impl#19}::write),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * stackvector_fuzz_4601805490335329973_deepseek-r1_turn4
+      * stackvector_fuzz_13737676511509076796_deepseek-r1_turn2
+      * stackvector_fuzz_8293999904045853434_deepseek-r1_turn3
+      * stackvector_fuzz_17213920727556802103_deepseek-r1_turn5
+      * stackvector_fuzz_12896298206679703210_deepseek-r1_turn2
+      * stackvector_fuzz_16327940949246405587_deepseek-r1_turn3
+      * stackvector_fuzz_17753621277411082194_deepseek-r1_turn2
+      * stackvector_fuzz_12301739073432993420_deepseek-r1_turn2
+      * stackvector_fuzz_2426776491125694_deepseek-r1_turn4
+      * stackvector_fuzz_18185331441861852835_deepseek-r1_turn2
+      * stackvector_fuzz_16513364586304621835_deepseek-r1_turn2
+      * stackvector_fuzz_5490813715254529195_deepseek-r1_turn2
+      * stackvector_fuzz_4877859684024786830_deepseek-r1_turn2
+      * stackvector_fuzz_17818598323662664873_deepseek-r1_turn4
+      * stackvector_fuzz_3200656313481632611_deepseek-r1_turn2
+      * stackvector_fuzz_11466254899731805805_deepseek-r1_turn1
+  StableURAPI: extend::/home/cdc/SURF/deepSURF-big-experiment-harnesses/stackvector-1.0.8/src/lib.rs::896,
+    - URAPI: DefId(0:196 ~ stackvector[4fac]::{impl#31}::eq),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * stackvector_fuzz_14919117556697046749_deepseek-r1_turn2
+      * stackvector_fuzz_18272984422029028442_deepseek-r1_turn4
+      * stackvector_fuzz_6219935527035397465_deepseek-r1_turn5
+      * stackvector_fuzz_10105978568407124955_deepseek-r1_turn4
+      * stackvector_fuzz_3602557064392514011_deepseek-r1_turn6
+      * stackvector_fuzz_1346266121783157790_deepseek-r1_turn3
+      * stackvector_fuzz_5716750430718252371_deepseek-r1_turn5
+      * stackvector_fuzz_5379527204253546599_deepseek-r1_turn2
+      * stackvector_fuzz_16072014814531661224_deepseek-r1_turn4
+  StableURAPI: next::/home/cdc/SURF/deepSURF-big-experiment-harnesses/stackvector-1.0.8/src/lib.rs::216,
+    - URAPI: DefId(0:152 ~ stackvector[4fac]::{impl#19}::write),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * stackvector_fuzz_13743587477177064166_deepseek-r1_turn3
+      * stackvector_fuzz_18185331441861852835_deepseek-r1_turn2
+      * stackvector_fuzz_6225612722303663924_deepseek-r1_turn2
+      * stackvector_fuzz_10439201340568467309_deepseek-r1_turn2
+      * stackvector_fuzz_15387621949502429022_deepseek-r1_turn4
+      * stackvector_fuzz_12717357009445087991_deepseek-r1_turn2
+      * stackvector_fuzz_11466254899731805805_deepseek-r1_turn1
+      * stackvector_fuzz_386141492030817416_deepseek-r1_turn2
+      * stackvector_fuzz_8765947824577245476_deepseek-r1_turn3
+      * stackvector_fuzz_13522714354933573887_deepseek-r1_turn2
+      * stackvector_fuzz_12454574599783436662_deepseek-r1_turn4
+      * stackvector_fuzz_16072014814531661224_deepseek-r1_turn4
+      * stackvector_fuzz_5929116001263052728_deepseek-r1_turn2
+      * stackvector_fuzz_207653652943302108_deepseek-r1_turn2
+      * stackvector_fuzz_14919117556697046749_deepseek-r1_turn2
+      * stackvector_fuzz_12896298206679703210_deepseek-r1_turn2
+      * stackvector_fuzz_17753621277411082194_deepseek-r1_turn2
+      * stackvector_fuzz_2829301437877528848_deepseek-r1_turn3
+      * stackvector_fuzz_5716750430718252371_deepseek-r1_turn5
+  StableURAPI: pop::/home/cdc/SURF/deepSURF-big-experiment-harnesses/stackvector-1.0.8/src/lib.rs::454,
+    - URAPI: DefId(0:105 ~ stackvector[4fac]::{impl#10}::clear),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * stackvector_fuzz_12170256754748610967_deepseek-r1_turn2
+      * stackvector_fuzz_14285429922058602946_deepseek-r1_turn3
+      * stackvector_fuzz_3200656313481632611_deepseek-r1_turn2
+      * stackvector_fuzz_1133352418763092150_deepseek-r1_turn3
+      * stackvector_fuzz_2426776491125694_deepseek-r1_turn4
+      * stackvector_fuzz_5509731358067848097_deepseek-r1_turn4
+      * stackvector_fuzz_17213920727556802103_deepseek-r1_turn5
+      * stackvector_fuzz_5929116001263052728_deepseek-r1_turn2
+      * stackvector_fuzz_7072258762224172952_deepseek-r1_turn2
+      * stackvector_fuzz_4601805490335329973_deepseek-r1_turn4
+      * stackvector_fuzz_1346266121783157790_deepseek-r1_turn3
+      * stackvector_fuzz_5379527204253546599_deepseek-r1_turn2
+      * stackvector_fuzz_11466254899731805805_deepseek-r1_turn1
+      * stackvector_fuzz_6219935527035397465_deepseek-r1_turn5
+      * stackvector_fuzz_5716750430718252371_deepseek-r1_turn5
+      * stackvector_fuzz_12301739073432993420_deepseek-r1_turn2
+      * stackvector_fuzz_5361011160446671523_deepseek-r1_turn2
+      * stackvector_fuzz_13743587477177064166_deepseek-r1_turn3
+      * stackvector_fuzz_12896298206679703210_deepseek-r1_turn2
+      * stackvector_fuzz_6840235604862057545_deepseek-r1_turn1
+      * stackvector_fuzz_12717357009445087991_deepseek-r1_turn2
+      * stackvector_fuzz_207653652943302108_deepseek-r1_turn2
+      * stackvector_fuzz_16327940949246405587_deepseek-r1_turn3
+      * stackvector_fuzz_386141492030817416_deepseek-r1_turn2
+      * stackvector_fuzz_8765947824577245476_deepseek-r1_turn3
+      * stackvector_fuzz_16536871174633610602_deepseek-r1_turn3
+      * stackvector_fuzz_15387621949502429022_deepseek-r1_turn4
+      * stackvector_fuzz_17818598323662664873_deepseek-r1_turn4
+      * stackvector_fuzz_14919117556697046749_deepseek-r1_turn2
+      * stackvector_fuzz_9103181089637150195_deepseek-r1_turn4
+      * stackvector_fuzz_6225612722303663924_deepseek-r1_turn2
+      * stackvector_fuzz_16513364586304621835_deepseek-r1_turn2
+      * stackvector_fuzz_8293999904045853434_deepseek-r1_turn3
+      * stackvector_fuzz_3887645148066974827_deepseek-r1_turn2
+      * stackvector_fuzz_5490813715254529195_deepseek-r1_turn2
+      * stackvector_fuzz_4877859684024786830_deepseek-r1_turn2
+      * stackvector_fuzz_18185331441861852835_deepseek-r1_turn2
+      * stackvector_fuzz_13522714354933573887_deepseek-r1_turn2
+      * stackvector_fuzz_2829301437877528848_deepseek-r1_turn3
+      * stackvector_fuzz_10105978568407124955_deepseek-r1_turn4
+      * stackvector_fuzz_17878145677878894249_deepseek-r1_turn2
+      * stackvector_fuzz_13737676511509076796_deepseek-r1_turn2
+  StableURAPI: from_iter::/home/cdc/SURF/deepSURF-big-experiment-harnesses/stackvector-1.0.8/src/lib.rs::888,
+    - URAPI: DefId(0:105 ~ stackvector[4fac]::{impl#10}::clear),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * stackvector_fuzz_13743587477177064166_deepseek-r1_turn3
+      * stackvector_fuzz_10439201340568467309_deepseek-r1_turn2
+      * stackvector_fuzz_12717357009445087991_deepseek-r1_turn2
+      * stackvector_fuzz_15387621949502429022_deepseek-r1_turn4
+      * stackvector_fuzz_16513364586304621835_deepseek-r1_turn2
+      * stackvector_fuzz_18272984422029028442_deepseek-r1_turn4
+      * stackvector_fuzz_14285429922058602946_deepseek-r1_turn3
+      * stackvector_fuzz_6219935527035397465_deepseek-r1_turn5
+      * stackvector_fuzz_6225612722303663924_deepseek-r1_turn2
+      * stackvector_fuzz_5379527204253546599_deepseek-r1_turn2
+      * stackvector_fuzz_13522714354933573887_deepseek-r1_turn2
+      * stackvector_fuzz_4601805490335329973_deepseek-r1_turn4
+      * stackvector_fuzz_17753621277411082194_deepseek-r1_turn2
+      * stackvector_fuzz_2829301437877528848_deepseek-r1_turn3
+      * stackvector_fuzz_12170256754748610967_deepseek-r1_turn2
+      * stackvector_fuzz_4877859684024786830_deepseek-r1_turn2
+      * stackvector_fuzz_14919117556697046749_deepseek-r1_turn2
+      * stackvector_fuzz_386141492030817416_deepseek-r1_turn2
+      * stackvector_fuzz_17878145677878894249_deepseek-r1_turn2
+      * stackvector_fuzz_8765947824577245476_deepseek-r1_turn3
+      * stackvector_fuzz_16072014814531661224_deepseek-r1_turn4
+      * stackvector_fuzz_5929116001263052728_deepseek-r1_turn2
+      * stackvector_fuzz_12454574599783436662_deepseek-r1_turn4
+      * stackvector_fuzz_6387818281162796865_deepseek-r1_turn4
+      * stackvector_fuzz_5509731358067848097_deepseek-r1_turn4
+      * stackvector_fuzz_207653652943302108_deepseek-r1_turn2
+      * stackvector_fuzz_1133352418763092150_deepseek-r1_turn3
+  StableURAPI: next_back::/home/cdc/SURF/deepSURF-big-experiment-harnesses/stackvector-1.0.8/src/lib.rs::1038,
+    - URAPI: DefId(0:183 ~ stackvector[4fac]::{impl#27}::fmt),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * stackvector_fuzz_17213920727556802103_deepseek-r1_turn5
+  StableURAPI: as_ref::/home/cdc/SURF/deepSURF-big-experiment-harnesses/stackvector-1.0.8/src/lib.rs::770,
+    - URAPI: DefId(0:143 ~ stackvector[4fac]::{impl#16}::as_mut),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * stackvector_fuzz_6219935527035397465_deepseek-r1_turn5
+  StableURAPI: dedup_by::/home/cdc/SURF/deepSURF-big-experiment-harnesses/stackvector-1.0.8/src/lib.rs::629,
+    - URAPI: DefId(0:116 ~ stackvector[4fac]::{impl#10}::dedup_by),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * stackvector_fuzz_1133352418763092150_deepseek-r1_turn3
+      * stackvector_fuzz_17213920727556802103_deepseek-r1_turn5
+  StableURAPI: insert_many::/home/cdc/SURF/deepSURF-big-experiment-harnesses/stackvector-1.0.8/src/lib.rs::543,
+    - URAPI: DefId(0:108 ~ stackvector[4fac]::{impl#10}::insert_many),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * stackvector_fuzz_5361011160446671523_deepseek-r1_turn2
+  StableURAPI: deref_mut::/home/cdc/SURF/deepSURF-big-experiment-harnesses/stackvector-1.0.8/src/lib.rs::761,
+    - URAPI: DefId(0:89 ~ stackvector[4fac]::{impl#10}::from_vec),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * stackvector_fuzz_3602557064392514011_deepseek-r1_turn6
+      * stackvector_fuzz_12454574599783436662_deepseek-r1_turn4
+  StableURAPI: from_buf_and_len::/home/cdc/SURF/deepSURF-big-experiment-harnesses/stackvector-1.0.8/src/lib.rs::375,
+    - URAPI: DefId(0:92 ~ stackvector[4fac]::{impl#10}::from_buf_and_len),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * stackvector_fuzz_17818598323662664873_deepseek-r1_turn4
+      * stackvector_fuzz_2426776491125694_deepseek-r1_turn4
+      * stackvector_fuzz_3200656313481632611_deepseek-r1_turn2
+      * stackvector_fuzz_13737676511509076796_deepseek-r1_turn2
+      * stackvector_fuzz_5490813715254529195_deepseek-r1_turn2
+      * stackvector_fuzz_8720342702680450058_deepseek-r1_turn1
+      * stackvector_fuzz_17753621277411082194_deepseek-r1_turn2
+      * stackvector_fuzz_6840235604862057545_deepseek-r1_turn1
+      * stackvector_fuzz_12301739073432993420_deepseek-r1_turn2
+      * stackvector_fuzz_16536871174633610602_deepseek-r1_turn3
+      * stackvector_fuzz_18185331441861852835_deepseek-r1_turn2
+      * stackvector_fuzz_17213920727556802103_deepseek-r1_turn5
+      * stackvector_fuzz_16327940949246405587_deepseek-r1_turn3
+      * stackvector_fuzz_11466254899731805805_deepseek-r1_turn1
+  StableURAPI: as_mut_slice::/home/cdc/SURF/deepSURF-big-experiment-harnesses/stackvector-1.0.8/src/lib.rs::491,
+    - URAPI: DefId(0:105 ~ stackvector[4fac]::{impl#10}::clear),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * stackvector_fuzz_14285429922058602946_deepseek-r1_turn3
+      * stackvector_fuzz_13737676511509076796_deepseek-r1_turn2
+      * stackvector_fuzz_17213920727556802103_deepseek-r1_turn5
+      * stackvector_fuzz_5361011160446671523_deepseek-r1_turn2
+      * stackvector_fuzz_386141492030817416_deepseek-r1_turn2
+      * stackvector_fuzz_6840235604862057545_deepseek-r1_turn1
+      * stackvector_fuzz_2829301437877528848_deepseek-r1_turn3
+      * stackvector_fuzz_14919117556697046749_deepseek-r1_turn2
+      * stackvector_fuzz_12170256754748610967_deepseek-r1_turn2
+      * stackvector_fuzz_3200656313481632611_deepseek-r1_turn2
+      * stackvector_fuzz_16513364586304621835_deepseek-r1_turn2
+      * stackvector_fuzz_5379527204253546599_deepseek-r1_turn2
+      * stackvector_fuzz_8765947824577245476_deepseek-r1_turn3
+      * stackvector_fuzz_12301739073432993420_deepseek-r1_turn2
+      * stackvector_fuzz_13743587477177064166_deepseek-r1_turn3
+      * stackvector_fuzz_17878145677878894249_deepseek-r1_turn2
+      * stackvector_fuzz_12717357009445087991_deepseek-r1_turn2
+  StableURAPI: into_vec::/home/cdc/SURF/deepSURF-big-experiment-harnesses/stackvector-1.0.8/src/lib.rs::588,
+    - URAPI: DefId(0:196 ~ stackvector[4fac]::{impl#31}::eq),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * stackvector_fuzz_3602557064392514011_deepseek-r1_turn6
+      * stackvector_fuzz_12170256754748610967_deepseek-r1_turn2
+      * stackvector_fuzz_5716750430718252371_deepseek-r1_turn5
+      * stackvector_fuzz_12454574599783436662_deepseek-r1_turn4
+      * stackvector_fuzz_10105978568407124955_deepseek-r1_turn4
+      * stackvector_fuzz_17753621277411082194_deepseek-r1_turn2
+      * stackvector_fuzz_5509731358067848097_deepseek-r1_turn4
+  StableURAPI: clone::/home/cdc/SURF/deepSURF-big-experiment-harnesses/stackvector-1.0.8/src/lib.rs::945,
+    - URAPI: DefId(0:116 ~ stackvector[4fac]::{impl#10}::dedup_by),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * stackvector_fuzz_1133352418763092150_deepseek-r1_turn3
+      * stackvector_fuzz_5379527204253546599_deepseek-r1_turn2
+      * stackvector_fuzz_15387621949502429022_deepseek-r1_turn4
+      * stackvector_fuzz_12717357009445087991_deepseek-r1_turn2
+      * stackvector_fuzz_6219935527035397465_deepseek-r1_turn5
+      * stackvector_fuzz_17213920727556802103_deepseek-r1_turn5
+      * stackvector_fuzz_3602557064392514011_deepseek-r1_turn6
+  StableURAPI: as_slice::/home/cdc/SURF/deepSURF-big-experiment-harnesses/stackvector-1.0.8/src/lib.rs::483,
+    - URAPI: DefId(0:105 ~ stackvector[4fac]::{impl#10}::clear),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * stackvector_fuzz_8765947824577245476_deepseek-r1_turn3
+      * stackvector_fuzz_11466254899731805805_deepseek-r1_turn1
+      * stackvector_fuzz_16072014814531661224_deepseek-r1_turn4
+      * stackvector_fuzz_1133352418763092150_deepseek-r1_turn3
+      * stackvector_fuzz_6387818281162796865_deepseek-r1_turn4
+      * stackvector_fuzz_13737676511509076796_deepseek-r1_turn2
+      * stackvector_fuzz_13522714354933573887_deepseek-r1_turn2
+      * stackvector_fuzz_16327940949246405587_deepseek-r1_turn3
+      * stackvector_fuzz_5490813715254529195_deepseek-r1_turn2
+      * stackvector_fuzz_16513364586304621835_deepseek-r1_turn2
+      * stackvector_fuzz_9103181089637150195_deepseek-r1_turn4
+      * stackvector_fuzz_386141492030817416_deepseek-r1_turn2
+      * stackvector_fuzz_17878145677878894249_deepseek-r1_turn2
+      * stackvector_fuzz_14919117556697046749_deepseek-r1_turn2
+      * stackvector_fuzz_16536871174633610602_deepseek-r1_turn3
+      * stackvector_fuzz_2426776491125694_deepseek-r1_turn4
+      * stackvector_fuzz_3602557064392514011_deepseek-r1_turn6
+      * stackvector_fuzz_6219935527035397465_deepseek-r1_turn5
+      * stackvector_fuzz_17213920727556802103_deepseek-r1_turn5
+      * stackvector_fuzz_13743587477177064166_deepseek-r1_turn3
+      * stackvector_fuzz_15387621949502429022_deepseek-r1_turn4
+      * stackvector_fuzz_18185331441861852835_deepseek-r1_turn2
+      * stackvector_fuzz_5716750430718252371_deepseek-r1_turn5
+      * stackvector_fuzz_4601805490335329973_deepseek-r1_turn4
+      * stackvector_fuzz_1346266121783157790_deepseek-r1_turn3
+      * stackvector_fuzz_5361011160446671523_deepseek-r1_turn2
+      * stackvector_fuzz_10105978568407124955_deepseek-r1_turn4
+      * stackvector_fuzz_12896298206679703210_deepseek-r1_turn2
+      * stackvector_fuzz_17818598323662664873_deepseek-r1_turn4
+      * stackvector_fuzz_6840235604862057545_deepseek-r1_turn1
+      * stackvector_fuzz_3887645148066974827_deepseek-r1_turn2
+      * stackvector_fuzz_5379527204253546599_deepseek-r1_turn2
+      * stackvector_fuzz_207653652943302108_deepseek-r1_turn2
+      * stackvector_fuzz_12301739073432993420_deepseek-r1_turn2
+      * stackvector_fuzz_2829301437877528848_deepseek-r1_turn3
+      * stackvector_fuzz_3200656313481632611_deepseek-r1_turn2
+      * stackvector_fuzz_7072258762224172952_deepseek-r1_turn2
+  StableURAPI: clear::/home/cdc/SURF/deepSURF-big-experiment-harnesses/stackvector-1.0.8/src/lib.rs::509,
+    - URAPI: DefId(0:105 ~ stackvector[4fac]::{impl#10}::clear),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * stackvector_fuzz_386141492030817416_deepseek-r1_turn2
+      * stackvector_fuzz_17753621277411082194_deepseek-r1_turn2
+      * stackvector_fuzz_13743587477177064166_deepseek-r1_turn3
+      * stackvector_fuzz_6387818281162796865_deepseek-r1_turn4
+      * stackvector_fuzz_17878145677878894249_deepseek-r1_turn2
+      * stackvector_fuzz_1346266121783157790_deepseek-r1_turn3
+      * stackvector_fuzz_14285429922058602946_deepseek-r1_turn3
+      * stackvector_fuzz_6219935527035397465_deepseek-r1_turn5
+  StableURAPI: next::/home/cdc/SURF/deepSURF-big-experiment-harnesses/stackvector-1.0.8/src/lib.rs::1016,
+    - URAPI: DefId(0:234 ~ stackvector[4fac]::{impl#41}::into_iter),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * stackvector_fuzz_4877859684024786830_deepseek-r1_turn2
+  StableURAPI: extend_from_slice::/home/cdc/SURF/deepSURF-big-experiment-harnesses/stackvector-1.0.8/src/lib.rs::704,
+    - URAPI: DefId(0:152 ~ stackvector[4fac]::{impl#19}::write),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * stackvector_fuzz_12896298206679703210_deepseek-r1_turn2
+      * stackvector_fuzz_2426776491125694_deepseek-r1_turn4
+      * stackvector_fuzz_11466254899731805805_deepseek-r1_turn1
+      * stackvector_fuzz_13737676511509076796_deepseek-r1_turn2
+      * stackvector_fuzz_5490813715254529195_deepseek-r1_turn2
+      * stackvector_fuzz_8720342702680450058_deepseek-r1_turn1
+      * stackvector_fuzz_12301739073432993420_deepseek-r1_turn2
+      * stackvector_fuzz_17818598323662664873_deepseek-r1_turn4
+      * stackvector_fuzz_6840235604862057545_deepseek-r1_turn1
+      * stackvector_fuzz_17213920727556802103_deepseek-r1_turn5
+  StableURAPI: dedup_by_key::/home/cdc/SURF/deepSURF-big-experiment-harnesses/stackvector-1.0.8/src/lib.rs::660,
+    - URAPI: DefId(0:114 ~ stackvector[4fac]::{impl#10}::dedup),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * stackvector_fuzz_6225612722303663924_deepseek-r1_turn2
+      * stackvector_fuzz_3200656313481632611_deepseek-r1_turn2
+  StableURAPI: as_mut::/home/cdc/SURF/deepSURF-big-experiment-harnesses/stackvector-1.0.8/src/lib.rs::777,
+    - URAPI: DefId(0:143 ~ stackvector[4fac]::{impl#16}::as_mut),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * stackvector_fuzz_6219935527035397465_deepseek-r1_turn5
+------------------------------------------------------------------------------------------------------------------------------------

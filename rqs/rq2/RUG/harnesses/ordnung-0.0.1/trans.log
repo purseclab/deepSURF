@@ -1,0 +1,4 @@
+ ./fuzz_transform/target/release/fuzz_transform /home/cdc/rug_on_erasan_after_bolero/ordnung-0.0.1/./src/lib.rs
+err ordnung-0.0.1 /home/cdc/rug_on_erasan_after_bolero/ordnung-0.0.1/./src/lib.rs tests_rug_35
+ ./fuzz_transform/target/release/fuzz_transform /home/cdc/rug_on_erasan_after_bolero/ordnung-0.0.1/./src/compact.rs
+ordnung . 32 33 0

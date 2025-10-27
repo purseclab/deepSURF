@@ -1,0 +1,4 @@
+ ./fuzz_transform/target/release/fuzz_transform /home/cdc/rug_on_erasan_after_bolero/endian_trait-0.6.0/./src/lib.rs
+ ./fuzz_transform/target/release/fuzz_transform /home/cdc/rug_on_erasan_after_bolero/endian_trait-0.6.0/./src/arrays.rs
+ ./fuzz_transform/target/release/fuzz_transform /home/cdc/rug_on_erasan_after_bolero/endian_trait-0.6.0/./src/slices.rs
+endian_trait . 60 60 0

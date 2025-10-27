@@ -1,0 +1,130 @@
+-----------------
+src/lib.rs Slab::<T>::new
+deps:{"Slab::<T>::new":{"T":["std::marker::Sized"]}}
+candidates:{"Slab::<T>::new":{"T":["RUG_ANY"]}}
++Slab::<T>::new();
++crate::Slab::<T>::new();
++<Slab<T>>::new();
+-----------------
+src/lib.rs Slab::<T>::with_capacity
+deps:{"Slab::<T>::with_capacity":{"T":["std::marker::Sized"]}}
+candidates:{"Slab::<T>::with_capacity":{"T":["RUG_ANY"]}}
+let mut p0 = 0usize; // None+usize
++Slab::<T>::with_capacity(p0);
++crate::Slab::<T>::with_capacity(p0);
++<Slab<T>>::with_capacity(p0);
+-----------------
+src/lib.rs Slab::<T>::insert
+deps:{"Slab::<T>::insert":{"T":["std::marker::Sized"]}}
+candidates:{"Slab::<T>::insert":{"T":["RUG_ANY"]}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // Slab<T>
+let mut p1 = MaybeUninit::uninit().assume_init(); // T
++p0.insert(p1);
++Slab::<T>::insert(p0, p1);
++crate::Slab::<T>::insert(p0, p1);
++<Slab<T>>::insert(p0, p1);
+-----------------
+src/lib.rs Slab::<T>::remove
+deps:{"Slab::<T>::remove":{"T":["std::marker::Sized"]}}
+candidates:{"Slab::<T>::remove":{"T":["RUG_ANY"]}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // Slab<T>
+let mut p1 = 0usize; // None+usize
++p0.remove(p1);
++Slab::<T>::remove(p0, p1);
++crate::Slab::<T>::remove(p0, p1);
++<Slab<T>>::remove(p0, p1);
+-----------------
+src/lib.rs Slab::<T>::len
+deps:{"Slab::<T>::len":{"T":["std::marker::Sized"]}}
+candidates:{"Slab::<T>::len":{"T":["RUG_ANY"]}}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // Slab<T>
++p0.len();
++Slab::<T>::len(p0);
++crate::Slab::<T>::len(p0);
++<Slab<T>>::len(p0);
+-----------------
+src/lib.rs Slab::<T>::iter
+deps:{"Slab::<T>::iter":{"T":["std::marker::Sized"]}}
+candidates:{"Slab::<T>::iter":{"T":["RUG_ANY"]}}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // Slab<T>
++p0.iter();
++Slab::<T>::iter(p0);
++crate::Slab::<T>::iter(p0);
++<Slab<T>>::iter(p0);
+-----------------
+src/lib.rs Slab::<T>::iter_mut
+deps:{"Slab::<T>::iter_mut":{"T":["std::marker::Sized"]}}
+candidates:{"Slab::<T>::iter_mut":{"T":["RUG_ANY"]}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // Slab<T>
++p0.iter_mut();
++Slab::<T>::iter_mut(p0);
++crate::Slab::<T>::iter_mut(p0);
++<Slab<T>>::iter_mut(p0);
+-----------------
+src/lib.rs Slab::<T>::reallocate
+deps:{"Slab::<T>::reallocate":{"T":["std::marker::Sized"]}}
+candidates:{"Slab::<T>::reallocate":{"T":["RUG_ANY"]}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // Slab<T>
++p0.reallocate();
++Slab::<T>::reallocate(p0);
++crate::Slab::<T>::reallocate(p0);
++<Slab<T>>::reallocate(p0);
+-----------------
+src/lib.rs <Slab<T> as std::ops::Drop>::drop
+deps:{"<Slab<T> as std::ops::Drop>::drop":{"T":["std::marker::Sized"]}}
+candidates:{"<Slab<T> as std::ops::Drop>::drop":{"T":["RUG_ANY"]}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // Slab<T>
++p0.drop();
++<Slab<T> as std::ops::Drop>::drop(p0);
++crate::<Slab<T> as std::ops::Drop>::drop(p0);
++<Slab<T>>::drop(p0);
+-----------------
+src/lib.rs <Slab<T> as std::ops::Index<usize>>::index
+deps:{"<Slab<T> as std::ops::Index<usize>>::index":{"T":["std::marker::Sized"]}}
+candidates:{"<Slab<T> as std::ops::Index<usize>>::index":{"T":["RUG_ANY"]}}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // Slab<T>
+let mut p1 = 0usize; // None+usize
++p0.index(p1);
++<Slab<T> as std::ops::Index<usize>>::index(p0, p1);
++crate::<Slab<T> as std::ops::Index<usize>>::index(p0, p1);
++<Slab<T>>::index(p0, p1);
+-----------------
+src/lib.rs <SlabIter<'a, T> as std::iter::Iterator>::next
+'a
+deps:{"<SlabIter<'a, T> as std::iter::Iterator>::next":{"T":["std::marker::Sized"]}}
+candidates:{"<SlabIter<'a, T> as std::iter::Iterator>::next":{"T":["RUG_ANY"]}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // SlabIter<'a, T>
++p0.next();
++<SlabIter<'a, T> as std::iter::Iterator>::next(p0);
++crate::<SlabIter<'a, T> as std::iter::Iterator>::next(p0);
++<SlabIter<'a, T>>::next(p0);
+-----------------
+src/lib.rs <SlabMutIter<'a, T> as std::iter::Iterator>::next
+'a
+deps:{"<SlabMutIter<'a, T> as std::iter::Iterator>::next":{"T":["std::marker::Sized"]}}
+candidates:{"<SlabMutIter<'a, T> as std::iter::Iterator>::next":{"T":["RUG_ANY"]}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // SlabMutIter<'a, T>
++p0.next();
++<SlabMutIter<'a, T> as std::iter::Iterator>::next(p0);
++crate::<SlabMutIter<'a, T> as std::iter::Iterator>::next(p0);
++<SlabMutIter<'a, T>>::next(p0);
+-----------------
+src/lib.rs <&'a Slab<T> as std::iter::IntoIterator>::into_iter
+'a
+deps:{"<&'a Slab<T> as std::iter::IntoIterator>::into_iter":{"T":["std::marker::Sized"]}}
+candidates:{"<&'a Slab<T> as std::iter::IntoIterator>::into_iter":{"T":["RUG_ANY"]}}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // Slab<T>
++p0.into_iter();
++<&'a Slab<T> as std::iter::IntoIterator>::into_iter(p0);
++crate::<&'a Slab<T> as std::iter::IntoIterator>::into_iter(p0);
++<&'a Slab<T>>::into_iter(p0);
+-----------------
+src/lib.rs <&'a mut Slab<T> as std::iter::IntoIterator>::into_iter
+'a
+deps:{"<&'a mut Slab<T> as std::iter::IntoIterator>::into_iter":{"T":["std::marker::Sized"]}}
+candidates:{"<&'a mut Slab<T> as std::iter::IntoIterator>::into_iter":{"T":["RUG_ANY"]}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // Slab<T>
++p0.into_iter();
++<&'a mut Slab<T> as std::iter::IntoIterator>::into_iter(p0);
++crate::<&'a mut Slab<T> as std::iter::IntoIterator>::into_iter(p0);
++<&'a mut Slab<T>>::into_iter(p0);

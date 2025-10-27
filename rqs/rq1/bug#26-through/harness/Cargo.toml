@@ -1,0 +1,16 @@
+[workspace]
+
+[package]
+name = "through_fuzz_15186921809571911366"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "through_fuzz_15186921809571911366"
+path = "src/through_fuzz_15186921809571911366.rs"
+
+[dependencies]
+afl = "=0.15.7"
+home = "=0.5.9"
+through = { path = "../../../../dataset/erasan_crates/through-0.1.0" }
+global_data = { path = "../../../../code/global_data" }

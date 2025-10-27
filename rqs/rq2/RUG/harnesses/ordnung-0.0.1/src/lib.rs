@@ -1,0 +1,841 @@
+//! # Ordnung
+//!
+//! Fast, vector-based map implementation that preserves insertion order.
+//!
+//! + Map is implemented as a binary tree over a `Vec` for storage, with only
+//!   two extra words per entry for book-keeping on 64-bit architectures.
+//! + A fast hash function with good random distribution is used to balance the
+//!   tree. Ordnung makes no guarantees that the tree will be perfectly
+//!   balanced, but key lookup should be approaching `O(log n)` in most cases.
+//! + Tree traversal is always breadth-first and happens over a single
+//!   continuous block of memory, which makes it cache friendly.
+//! + Iterating over all entries is always `O(n)`, same as `Vec<(K, V)>`.
+//! + There are no buckets, so there is no need to re-bucket things when growing
+//!   the map.
+//!
+//! ## When should you use this?
+//!
+//! + You need to preserve insertion order of the map.
+//! + Iterating over the map is very performance sensitive.
+//! + Your average map has fewer than 100 entries.
+//! + You have no a priori knowledge about the final size of the map when you
+//!   start creating it.
+//! + Removing items from the map is very, very rare.
+#![cfg_attr(not(test), no_std)]
+extern crate alloc;
+use core::{mem, slice, fmt};
+use core::borrow::Borrow;
+use core::num::NonZeroU32;
+use core::iter::FromIterator;
+use core::cell::Cell;
+use core::hash::{Hash, Hasher};
+use core::ops::Index;
+pub mod compact;
+pub use compact::Vec;
+#[inline]
+fn hash_key<H: Hash>(hash: H) -> u64 {
+    let mut hasher = ahash::AHasher::default();
+    hash.hash(&mut hasher);
+    hasher.finish()
+}
+#[derive(Clone)]
+struct Node<K, V> {
+    pub key: K,
+    pub hash: u64,
+    pub value: V,
+    pub left: Cell<Option<NonZeroU32>>,
+    pub right: Cell<Option<NonZeroU32>>,
+}
+impl<K, V> fmt::Debug for Node<K, V>
+where
+    K: fmt::Debug,
+    V: fmt::Debug,
+{
+    fn fmt(&self, f: &mut fmt::Formatter) -> fmt::Result {
+        fmt::Debug::fmt(&(&self.key, &self.value, self.left.get(), self.right.get()), f)
+    }
+}
+impl<K, V> PartialEq for Node<K, V>
+where
+    K: PartialEq,
+    V: PartialEq,
+{
+    fn eq(&self, other: &Self) -> bool {
+        self.hash == other.hash && self.key == other.key && self.value == other.value
+    }
+}
+impl<K, V> Node<K, V> {
+    #[inline]
+    const fn new(key: K, value: V, hash: u64) -> Self {
+        Node {
+            key,
+            hash,
+            value,
+            left: Cell::new(None),
+            right: Cell::new(None),
+        }
+    }
+}
+unsafe impl<K: Sync, V: Sync> Sync for Node<K, V> {}
+/// A binary tree implementation of a string -> `JsonValue` map. You normally don't
+/// have to interact with instances of `Object`, much more likely you will be
+/// using the `JsonValue::Object` variant, which wraps around this struct.
+#[derive(Debug, Clone)]
+pub struct Map<K, V> {
+    store: Vec<Node<K, V>>,
+}
+enum FindResult<'find> {
+    Hit(usize),
+    Miss(Option<&'find Cell<Option<NonZeroU32>>>),
+}
+use FindResult::*;
+impl<K, V> Map<K, V>
+where
+    K: Hash + Eq,
+{
+    /// Create a new `Map`.
+    #[inline]
+    pub fn new() -> Self {
+        Map { store: Vec::new() }
+    }
+    /// Create a `Map` with a given capacity
+    #[inline]
+    pub fn with_capacity(capacity: usize) -> Self {
+        Map {
+            store: Vec::with_capacity(capacity),
+        }
+    }
+    /// Inserts a key-value pair into the map.
+    ///
+    /// If the map did not have this key present, `None` is returned.
+    ///
+    /// If the map did have this key present, the value is updated, and the old
+    /// value is returned. The key is not updated, though; this matters for
+    /// types that can be `==` without being identical.
+    ///
+    /// # Examples
+    ///
+    /// ```rust
+    /// use ordnung::Map;
+    ///
+    /// let mut map = Map::new();
+    /// assert_eq!(map.insert(37, "a"), None);
+    /// assert_eq!(map.is_empty(), false);
+    ///
+    /// map.insert(37, "b");
+    /// assert_eq!(map.insert(37, "c"), Some("b"));
+    /// assert_eq!(map[&37], "c");
+    /// ```
+    pub fn insert(&mut self, key: K, value: V) -> Option<V> {
+        let hash = hash_key(&key);
+        match self.find(&key, hash) {
+            Hit(idx) => {
+                unsafe {
+                    let slot = &mut self.store.get_unchecked_mut(idx).value;
+                    Some(core::mem::replace(slot, value))
+                }
+            }
+            Miss(parent) => {
+                if let Some(parent) = parent {
+                    parent.set(NonZeroU32::new(self.store.len() as u32));
+                }
+                self.store.push(Node::new(key, value, hash));
+                None
+            }
+        }
+    }
+    /// Returns a reference to the value corresponding to the key.
+    ///
+    /// The key may be any borrowed form of the map's key type, but `Hash` and
+    /// `Eq` on the borrowed form must match those for the key type.
+    ///
+    /// # Examples
+    ///
+    /// ```rust
+    /// use ordnung::Map;
+    ///
+    /// let mut map = Map::new();
+    /// map.insert(1, "a");
+    /// assert_eq!(map.get(&1), Some(&"a"));
+    /// assert_eq!(map.get(&2), None);
+    /// ```
+    pub fn get<Q>(&self, key: &Q) -> Option<&V>
+    where
+        K: Borrow<Q>,
+        Q: Hash + Eq + ?Sized,
+    {
+        let hash = hash_key(key);
+        match self.find(key, hash) {
+            Hit(idx) => Some(unsafe { &self.store.get_unchecked(idx).value }),
+            Miss(_) => None,
+        }
+    }
+    /// Returns `true` if the map contains a value for the specified key.
+    ///
+    /// The key may be any borrowed form of the map's key type, but `Hash` and
+    /// `Eq` on the borrowed form must match those for the key type.
+    ///
+    /// # Examples
+    ///
+    /// ```rust
+    /// use ordnung::Map;
+    ///
+    /// let mut map = Map::new();
+    /// map.insert(1, "a");
+    /// assert_eq!(map.contains_key(&1), true);
+    /// assert_eq!(map.contains_key(&2), false);
+    /// ```
+    pub fn contains_key<Q>(&self, key: &Q) -> bool
+    where
+        K: Borrow<Q>,
+        Q: Hash + Eq + ?Sized,
+    {
+        let hash = hash_key(key);
+        match self.find(key, hash) {
+            Hit(_) => true,
+            Miss(_) => false,
+        }
+    }
+    /// Returns a mutable reference to the value corresponding to the key.
+    ///
+    /// The key may be any borrowed form of the map's key type, but Hash and Eq
+    /// on the borrowed form must match those for the key type.
+    ///
+    /// # Examples
+    ///
+    /// ```rust
+    /// use ordnung::Map;
+    ///
+    /// let mut map = Map::new();
+    /// map.insert(1, "a");
+    /// if let Some(x) = map.get_mut(&1) {
+    ///     *x = "b";
+    /// }
+    /// assert_eq!(map[&1], "b");
+    /// ```
+    pub fn get_mut<Q>(&mut self, key: &Q) -> Option<&mut V>
+    where
+        K: Borrow<Q>,
+        Q: Hash + Eq + ?Sized,
+    {
+        let hash = hash_key(key);
+        match self.find(key, hash) {
+            Hit(idx) => Some(unsafe { &mut self.store.get_unchecked_mut(idx).value }),
+            Miss(_) => None,
+        }
+    }
+    /// Get a mutable reference to entry at key. Inserts a new entry by
+    /// calling `F` if absent.
+    pub fn get_or_insert<F>(&mut self, key: K, fill: F) -> &mut V
+    where
+        F: FnOnce() -> V,
+    {
+        let key = key.into();
+        let hash = hash_key(&key);
+        match self.find(&key, hash) {
+            Hit(idx) => &mut self.store[idx].value,
+            Miss(parent) => {
+                let idx = self.store.len();
+                if let Some(parent) = parent {
+                    parent.set(NonZeroU32::new(self.store.len() as u32));
+                }
+                self.store.push(Node::new(key, fill(), hash));
+                &mut self.store[idx].value
+            }
+        }
+    }
+    /// Removes a key from the map, returning the value at the key if the key
+    /// was previously in the map.
+    ///
+    /// The key may be any borrowed form of the map's key type, but `Hash` and
+    /// `Eq` on the borrowed form must match those for the key type.
+    ///
+    /// # Examples
+    ///
+    /// ```rust
+    /// use ordnung::Map;
+    ///
+    /// let mut map = Map::new();
+    /// map.insert(1, "a");
+    /// assert_eq!(map.remove(&1), Some("a"));
+    /// assert_eq!(map.remove(&1), None);
+    /// ```
+    pub fn remove<Q>(&mut self, key: &Q) -> Option<V>
+    where
+        K: Borrow<Q>,
+        Q: Hash + Eq + ?Sized,
+    {
+        let hash = hash_key(key);
+        let index = match self.find(key, hash) {
+            Hit(idx) => idx,
+            Miss(_) => return None,
+        };
+        let mut removed = None;
+        let capacity = self.store.len();
+        let old = mem::replace(&mut self.store, Vec::with_capacity(capacity));
+        for (i, Node { key, value, hash, .. }) in old.into_iter().enumerate() {
+            if i == index {
+                removed = Some(value);
+            } else {
+                if let Miss(Some(parent)) = self.find(key.borrow(), hash) {
+                    parent.set(NonZeroU32::new(self.store.len() as u32));
+                }
+                self.store.push(Node::new(key, value, hash));
+            }
+        }
+        removed
+    }
+    /// Returns the number of elements in the map.
+    #[inline]
+    pub fn len(&self) -> usize {
+        self.store.len()
+    }
+    /// Returns `true` if the map contains no elements.
+    #[inline]
+    pub fn is_empty(&self) -> bool {
+        self.store.is_empty()
+    }
+    /// Clears the map, removing all key-value pairs. Keeps the allocated memory for reuse.
+    #[inline]
+    pub fn clear(&mut self) {
+        self.store.clear();
+    }
+    #[inline]
+    fn find<Q: ?Sized>(&self, key: &Q, hash: u64) -> FindResult
+    where
+        K: Borrow<Q>,
+        Q: Eq,
+    {
+        if self.len() == 0 {
+            return Miss(None);
+        }
+        let mut idx = 0;
+        loop {
+            let node = unsafe { self.store.get_unchecked(idx) };
+            if hash == node.hash && key == node.key.borrow() {
+                return Hit(idx);
+            } else if hash < node.hash {
+                match node.left.get() {
+                    Some(i) => idx = i.get() as usize,
+                    None => return Miss(Some(&node.left)),
+                }
+            } else {
+                match node.right.get() {
+                    Some(i) => idx = i.get() as usize,
+                    None => return Miss(Some(&node.right)),
+                }
+            }
+        }
+    }
+    /// An iterator visiting all key-value pairs in insertion order.
+    /// The iterator element type is `(&K, &V)`.
+    ///
+    /// # Examples
+    ///
+    /// ```rust
+    /// use ordnung::Map;
+    ///
+    /// let mut map = Map::new();
+    /// map.insert("a", 1);
+    /// map.insert("b", 2);
+    /// map.insert("c", 3);
+    ///
+    /// let entries: Vec<_> = map.iter().collect();
+    ///
+    /// assert_eq!(
+    ///     entries,
+    ///     &[
+    ///         (&"a", &1),
+    ///         (&"b", &2),
+    ///         (&"c", &3),
+    ///     ],
+    /// );
+    /// ```
+    #[inline]
+    pub fn iter(&self) -> Iter<K, V> {
+        Iter { inner: self.store.iter() }
+    }
+    /// An iterator visiting all key-value pairs in insertion order, with
+    /// mutable references to the values. The iterator element type is
+    /// (&K, &mut V).
+    ///
+    /// # Examples
+    ///
+    /// ```rust
+    /// use ordnung::Map;
+    ///
+    /// let mut map = Map::new();
+    /// map.insert("a", 1);
+    /// map.insert("b", 2);
+    /// map.insert("c", 3);
+    ///
+    /// // Update all values
+    /// for (_, val) in map.iter_mut() {
+    ///     *val *= 2;
+    /// }
+    ///
+    /// // Check if values are doubled
+    /// let entries: Vec<_> = map.iter().collect();
+    ///
+    /// assert_eq!(
+    ///     entries,
+    ///     &[
+    ///         (&"a", &2),
+    ///         (&"b", &4),
+    ///         (&"c", &6),
+    ///     ],
+    /// );
+    /// ```
+    #[inline]
+    pub fn iter_mut(&mut self) -> IterMut<K, V> {
+        IterMut {
+            inner: self.store.iter_mut(),
+        }
+    }
+}
+impl<K, Q: ?Sized, V> Index<&Q> for Map<K, V>
+where
+    K: Eq + Hash + Borrow<Q>,
+    Q: Eq + Hash,
+{
+    type Output = V;
+    /// Returns a reference to the value corresponding to the supplied key.
+    ///
+    /// # Panics
+    ///
+    /// Panics if the key is not present in the HashMap.
+    fn index(&self, key: &Q) -> &V {
+        self.get(key).expect("Key not found in Map")
+    }
+}
+impl<'json, IK, IV, K, V> FromIterator<(IK, IV)> for Map<K, V>
+where
+    IK: Into<K>,
+    IV: Into<V>,
+    K: Hash + Eq,
+{
+    fn from_iter<I>(iter: I) -> Self
+    where
+        I: IntoIterator<Item = (IK, IV)>,
+    {
+        let iter = iter.into_iter();
+        let mut map = Map::with_capacity(iter.size_hint().0);
+        for (key, value) in iter {
+            map.insert(key.into(), value.into());
+        }
+        map
+    }
+}
+impl<K, V> PartialEq for Map<K, V>
+where
+    K: Hash + Eq,
+    V: PartialEq,
+{
+    fn eq(&self, other: &Self) -> bool {
+        if self.len() != other.len() {
+            return false;
+        }
+        for &Node { ref key, ref value, hash, .. } in self.store.iter() {
+            if let Hit(idx) = other.find(key, hash) {
+                if &other.store[idx].value == value {
+                    continue;
+                }
+            }
+            return false;
+        }
+        true
+    }
+}
+/// An iterator over the entries of a `Map`.
+///
+/// This struct is created by the [`iter`](./struct.Map.html#method.iter)
+/// method on [`Map`](./struct.Map.html). See its documentation for more.
+pub struct Iter<'a, K, V> {
+    inner: slice::Iter<'a, Node<K, V>>,
+}
+/// A mutable iterator over the entries of a `Map`.
+///
+/// This struct is created by the [`iter_mut`](./struct.Map.html#method.iter_mut)
+/// method on [`Map`](./struct.Map.html). See its documentation for more.
+pub struct IterMut<'a, K, V> {
+    inner: slice::IterMut<'a, Node<K, V>>,
+}
+impl<K, V> Iter<'_, K, V> {
+    /// Create an empty iterator that always returns `None`
+    pub fn empty() -> Self {
+        Iter { inner: [].iter() }
+    }
+}
+impl<'i, K, V> Iterator for Iter<'i, K, V> {
+    type Item = (&'i K, &'i V);
+    #[inline]
+    fn next(&mut self) -> Option<Self::Item> {
+        self.inner.next().map(|node| (&node.key, &node.value))
+    }
+}
+impl<K, V> DoubleEndedIterator for Iter<'_, K, V> {
+    #[inline]
+    fn next_back(&mut self) -> Option<Self::Item> {
+        self.inner.next_back().map(|node| (&node.key, &node.value))
+    }
+}
+impl<K, V> ExactSizeIterator for Iter<'_, K, V> {
+    fn len(&self) -> usize {
+        self.inner.len()
+    }
+}
+impl<K, V> IterMut<'_, K, V> {
+    /// Create an empty iterator that always returns `None`
+    pub fn empty() -> Self {
+        IterMut { inner: [].iter_mut() }
+    }
+}
+impl<'a, K, V> Iterator for IterMut<'a, K, V> {
+    type Item = (&'a K, &'a mut V);
+    #[inline]
+    fn next(&mut self) -> Option<Self::Item> {
+        self.inner.next().map(|node| (&node.key, &mut node.value))
+    }
+}
+impl<K, V> DoubleEndedIterator for IterMut<'_, K, V> {
+    #[inline]
+    fn next_back(&mut self) -> Option<Self::Item> {
+        self.inner.next_back().map(|node| (&node.key, &mut node.value))
+    }
+}
+impl<K, V> ExactSizeIterator for IterMut<'_, K, V> {
+    fn len(&self) -> usize {
+        self.inner.len()
+    }
+}
+#[cfg(test)]
+mod tests {
+    use super::Map;
+    #[test]
+    fn empty() {
+        let map: Map<&str, u64> = Map::new();
+        assert_eq!(map.get("foo"), None);
+        assert_eq!(map.len(), 0);
+        assert_eq!(map.is_empty(), true);
+    }
+    #[test]
+    fn simple() {
+        let mut map: Map<&str, u64> = Map::new();
+        map.insert("foo", 42);
+        assert_eq!(map.get("foo"), Some(& 42));
+        assert_eq!(map.len(), 1);
+        assert_eq!(map.is_empty(), false);
+    }
+}
+#[cfg(test)]
+mod tests_rug_26 {
+    use super::*;
+    use core::hash::Hash;
+    struct SampleHash;
+    impl Hash for SampleHash {
+        fn hash<H>(&self, _state: &mut H)
+        where
+            H: core::hash::Hasher,
+        {
+            unimplemented!()
+        }
+    }
+    #[test]
+    fn test_rug() {
+        let _rug_st_tests_rug_26_rrrruuuugggg_test_rug = 0;
+        let p0 = SampleHash;
+        crate::hash_key(p0);
+        let _rug_ed_tests_rug_26_rrrruuuugggg_test_rug = 0;
+    }
+}
+#[cfg(test)]
+mod tests_rug_28 {
+    use super::*;
+    use crate::Node;
+    use std::cell::Cell;
+    #[test]
+    fn test_rug() {
+
+    extern crate bolero;
+    extern crate arbitrary;
+    bolero::check!()
+        .for_each(|rug_data| {
+            if let Ok((mut rug_fuzz_0, mut rug_fuzz_1, mut rug_fuzz_2)) = <(u32, &str, u64) as arbitrary::Arbitrary>::arbitrary(&mut arbitrary::Unstructured::new(rug_data)){
+
+        let mut p0: u32 = rug_fuzz_0;
+        let mut p1: String = String::from(rug_fuzz_1);
+        let mut p2: u64 = rug_fuzz_2;
+        Node::<u32, String>::new(p0, p1, p2);
+             }
+});    }
+}
+#[cfg(test)]
+mod tests_rug_29 {
+    use super::*;
+    use crate::Map;
+    #[test]
+    fn test_rug() {
+        let _rug_st_tests_rug_29_rrrruuuugggg_test_rug = 0;
+        let map: Map<u32, &str> = Map::new();
+        let _rug_ed_tests_rug_29_rrrruuuugggg_test_rug = 0;
+    }
+}
+#[cfg(test)]
+mod tests_rug_30 {
+    use super::*;
+    use crate::Map;
+    #[test]
+    fn test_with_capacity() {
+
+    extern crate bolero;
+    extern crate arbitrary;
+    bolero::check!()
+        .for_each(|rug_data| {
+            if let Ok((mut rug_fuzz_0)) = <(usize) as arbitrary::Arbitrary>::arbitrary(&mut arbitrary::Unstructured::new(rug_data)){
+
+        let capacity: usize = rug_fuzz_0;
+        let _ = Map::<i32, String>::with_capacity(capacity);
+             }
+});    }
+}
+#[cfg(test)]
+mod tests_rug_31 {
+    use super::*;
+    use crate::Map;
+    use std::num::NonZeroU32;
+    #[test]
+    fn test_insert() {
+
+    extern crate bolero;
+    extern crate arbitrary;
+    bolero::check!()
+        .for_each(|rug_data| {
+            if let Ok((mut rug_fuzz_0, mut rug_fuzz_1)) = <(i32, &str) as arbitrary::Arbitrary>::arbitrary(&mut arbitrary::Unstructured::new(rug_data)){
+
+        let mut p0 = Map::<i32, &str>::new();
+        let mut p1: i32 = rug_fuzz_0;
+        let mut p2: &str = rug_fuzz_1;
+        debug_assert_eq!(p0.insert(p1, p2), None);
+             }
+});    }
+}
+#[cfg(test)]
+mod tests_rug_32 {
+    use super::*;
+    use crate::{Map, hash_key};
+    #[test]
+    fn test_rug() {
+
+    extern crate bolero;
+    extern crate arbitrary;
+    bolero::check!()
+        .for_each(|rug_data| {
+            if let Ok((mut rug_fuzz_0, mut rug_fuzz_1, mut rug_fuzz_2)) = <(i32, &str, i32) as arbitrary::Arbitrary>::arbitrary(&mut arbitrary::Unstructured::new(rug_data)){
+
+        let mut map = Map::new();
+        map.insert(rug_fuzz_0, rug_fuzz_1);
+        let key = rug_fuzz_2;
+        <Map<i32, &str>>::get(&map, &key);
+             }
+});    }
+}
+#[cfg(test)]
+mod tests_rug_33 {
+    use super::*;
+    use crate::Map;
+    #[test]
+    fn test_contains_key() {
+
+    extern crate bolero;
+    extern crate arbitrary;
+    bolero::check!()
+        .for_each(|rug_data| {
+            if let Ok((mut rug_fuzz_0, mut rug_fuzz_1, mut rug_fuzz_2, mut rug_fuzz_3)) = <(i32, &str, i32, i32) as arbitrary::Arbitrary>::arbitrary(&mut arbitrary::Unstructured::new(rug_data)){
+
+        let mut map = Map::new();
+        map.insert(rug_fuzz_0, rug_fuzz_1);
+        let key = &rug_fuzz_2;
+        debug_assert_eq!(map.contains_key(key), true);
+        debug_assert_eq!(map.contains_key(& rug_fuzz_3), false);
+             }
+});    }
+}
+#[cfg(test)]
+mod tests_rug_34 {
+    use super::*;
+    use crate::Map;
+    #[test]
+    fn test_rug() {
+
+    extern crate bolero;
+    extern crate arbitrary;
+    bolero::check!()
+        .for_each(|rug_data| {
+            if let Ok((mut rug_fuzz_0, mut rug_fuzz_1, mut rug_fuzz_2)) = <(u64, &str, u64) as arbitrary::Arbitrary>::arbitrary(&mut arbitrary::Unstructured::new(rug_data)){
+
+        let mut map = Map::<u64, &str>::new();
+        map.insert(rug_fuzz_0, rug_fuzz_1);
+        let key = rug_fuzz_2;
+        let result = Map::<u64, &str>::get_mut(&mut map, &key);
+             }
+});    }
+}
+#[cfg(test)]
+mod tests_rug_35 {
+    use super::*;
+    use crate::{Map, Node, hash_key, Hit, Miss};
+    use core::hash::Hash;
+    use core::cmp::Eq;
+    use core::marker::Sized;
+    use core::ops::FnOnce;
+    #[test]
+    fn test_rug() {
+        let mut p0: Map<u32, String> = Map::<u32, String>::new();
+        let mut p1: u32 = 42;
+        let mut p2: fn() -> String = || String::from("default");
+        p0.get_or_insert(p1, p2);
+    }
+}
+#[cfg(test)]
+mod tests_rug_36 {
+    use super::*;
+    use crate::Map;
+    #[test]
+    fn test_rug() {
+
+    extern crate bolero;
+    extern crate arbitrary;
+    bolero::check!()
+        .for_each(|rug_data| {
+            if let Ok((mut rug_fuzz_0, mut rug_fuzz_1, mut rug_fuzz_2)) = <(u32, &str, u32) as arbitrary::Arbitrary>::arbitrary(&mut arbitrary::Unstructured::new(rug_data)){
+
+        let mut p0 = Map::<u32, &str>::new();
+        p0.insert(rug_fuzz_0, rug_fuzz_1);
+        let mut p1 = &rug_fuzz_2;
+        p0.remove(p1);
+             }
+});    }
+}
+#[cfg(test)]
+mod tests_rug_37 {
+    use super::*;
+    use crate::Map;
+    #[test]
+    fn test_rug() {
+        let _rug_st_tests_rug_37_rrrruuuugggg_test_rug = 0;
+        let mut p0: Map<usize, &str> = Map::new();
+        Map::<usize, &str>::len(&p0);
+        let _rug_ed_tests_rug_37_rrrruuuugggg_test_rug = 0;
+    }
+}
+#[cfg(test)]
+mod tests_rug_38 {
+    use super::*;
+    use crate::Map;
+    #[test]
+    fn test_rug() {
+        let _rug_st_tests_rug_38_rrrruuuugggg_test_rug = 0;
+        let mut p0: Map<i32, &str> = Map::new();
+        debug_assert_eq!(< Map < i32, & str > > ::is_empty(& p0), true);
+        let _rug_ed_tests_rug_38_rrrruuuugggg_test_rug = 0;
+    }
+}
+#[cfg(test)]
+mod tests_rug_39 {
+    use super::*;
+    use crate::Map;
+    #[test]
+    fn test_rug() {
+        let _rug_st_tests_rug_39_rrrruuuugggg_test_rug = 0;
+        let mut p0: Map<i32, String> = Map::new();
+        Map::<i32, String>::clear(&mut p0);
+        let _rug_ed_tests_rug_39_rrrruuuugggg_test_rug = 0;
+    }
+}
+#[cfg(test)]
+mod tests_rug_40 {
+    use super::*;
+    use std::collections::HashMap;
+    #[test]
+    fn test_rug() {
+
+    extern crate bolero;
+    extern crate arbitrary;
+    bolero::check!()
+        .for_each(|rug_data| {
+            if let Ok((mut rug_fuzz_0, mut rug_fuzz_1, mut rug_fuzz_2, mut rug_fuzz_3, mut rug_fuzz_4, mut rug_fuzz_5)) = <(i32, &str, i32, &str, i32, u64) as arbitrary::Arbitrary>::arbitrary(&mut arbitrary::Unstructured::new(rug_data)){
+
+        let mut map: Map<i32, &str> = Map::new();
+        map.insert(rug_fuzz_0, rug_fuzz_1);
+        map.insert(rug_fuzz_2, rug_fuzz_3);
+        let key_to_find = rug_fuzz_4;
+        let hash_val = rug_fuzz_5;
+        map.find(&key_to_find, hash_val);
+             }
+});    }
+}
+#[cfg(test)]
+mod tests_rug_41 {
+    use super::*;
+    use crate::Map;
+    #[test]
+    fn test_rug() {
+
+    extern crate bolero;
+    extern crate arbitrary;
+    bolero::check!()
+        .for_each(|rug_data| {
+            if let Ok((mut rug_fuzz_0, mut rug_fuzz_1, mut rug_fuzz_2, mut rug_fuzz_3, mut rug_fuzz_4, mut rug_fuzz_5)) = <(&str, i32, &str, i32, &str, i32) as arbitrary::Arbitrary>::arbitrary(&mut arbitrary::Unstructured::new(rug_data)){
+
+        let mut map: Map<&str, i32> = Map::new();
+        map.insert(rug_fuzz_0, rug_fuzz_1);
+        map.insert(rug_fuzz_2, rug_fuzz_3);
+        map.insert(rug_fuzz_4, rug_fuzz_5);
+        let p0 = &map;
+        p0.iter();
+             }
+});    }
+}
+#[cfg(test)]
+mod tests_rug_42 {
+    use super::*;
+    use crate::{Map, IterMut};
+    #[test]
+    fn test_rug() {
+
+    extern crate bolero;
+    extern crate arbitrary;
+    bolero::check!()
+        .for_each(|rug_data| {
+            if let Ok((mut rug_fuzz_0, mut rug_fuzz_1, mut rug_fuzz_2, mut rug_fuzz_3, mut rug_fuzz_4, mut rug_fuzz_5)) = <(&str, i32, &str, i32, &str, i32) as arbitrary::Arbitrary>::arbitrary(&mut arbitrary::Unstructured::new(rug_data)){
+
+        let mut p0: Map<&str, i32> = Map::new();
+        p0.insert(rug_fuzz_0, rug_fuzz_1);
+        p0.insert(rug_fuzz_2, rug_fuzz_3);
+        p0.insert(rug_fuzz_4, rug_fuzz_5);
+        <Map<&str, i32>>::iter_mut(&mut p0);
+             }
+});    }
+}
+#[cfg(test)]
+mod tests_rug_46 {
+    use super::*;
+    use crate::Iter;
+    #[test]
+    fn test_empty() {
+        let _rug_st_tests_rug_46_rrrruuuugggg_test_empty = 0;
+        let empty_iter: Iter<'_, String, i32> = Iter::empty();
+        let _rug_ed_tests_rug_46_rrrruuuugggg_test_empty = 0;
+    }
+}
+#[cfg(test)]
+mod tests_rug_50 {
+    use super::*;
+    use crate::IterMut;
+    #[test]
+    fn test_rug() {
+        let _rug_st_tests_rug_50_rrrruuuugggg_test_rug = 0;
+        let iterator: IterMut<'_, i32, &str> = IterMut::<'_, i32, &str>::empty();
+        let _rug_ed_tests_rug_50_rrrruuuugggg_test_rug = 0;
+    }
+}

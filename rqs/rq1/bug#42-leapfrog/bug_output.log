@@ -1,0 +1,285 @@
+     Removed 199 files, 121.1MiB total
+   Compiling proc-macro2 v1.0.101
+   Compiling unicode-ident v1.0.19
+   Compiling semver v1.0.26
+   Compiling home v0.5.5
+   Compiling serde v1.0.219
+   Compiling libc v0.2.175
+   Compiling xdg v2.5.2
+   Compiling atomic v0.5.3
+   Compiling global_data v0.1.0 (/home/cdc/deepSURF-sp26-artifacts/artifact_code/global_data)
+   Compiling afl v0.15.7
+   Compiling rustc_version v0.4.1
+   Compiling quote v1.0.40
+   Compiling syn v2.0.106
+   Compiling serde_derive v1.0.219
+   Compiling leapfrog v0.2.1 (/home/cdc/deepSURF-sp26-artifacts/artifact_data/dataset/crabtree_crates/leapfrog-0.2.1)
+warning: the feature `const_fn_trait_bound` has been stable since 1.61.0 and no longer requires an attribute to enable
+   --> /home/cdc/deepSURF-sp26-artifacts/artifact_data/dataset/crabtree_crates/leapfrog-0.2.1/src/lib.rs:134:12
+    |
+134 | #![feature(const_fn_trait_bound)]
+    |            ^^^^^^^^^^^^^^^^^^^^
+    |
+    = note: `#[warn(stable_features)]` on by default
+
+warning: variable does not need to be mutable
+   --> /home/cdc/deepSURF-sp26-artifacts/artifact_data/dataset/crabtree_crates/leapfrog-0.2.1/src/hashmap.rs:471:17
+    |
+471 |             let mut cell = Self::get_cell_mut(buckets, index, size_mask);
+    |                 ----^^^^
+    |                 |
+    |                 help: remove this `mut`
+    |
+    = note: `#[warn(unused_mut)]` on by default
+
+warning: variable does not need to be mutable
+   --> /home/cdc/deepSURF-sp26-artifacts/artifact_data/dataset/crabtree_crates/leapfrog-0.2.1/src/hashmap.rs:492:17
+    |
+492 |             let mut cell = Self::get_cell_mut(buckets, index, size_mask);
+    |                 ----^^^^
+    |                 |
+    |                 help: remove this `mut`
+
+warning: `leapfrog` (lib) generated 3 warnings (run `cargo fix --lib -p leapfrog` to apply 2 suggestions)
+   Compiling leapfrog_fuzz_9596873930702142430 v0.1.0 (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#42-leapfrog/harness)
+warning: unused import: `leapfrog::*`
+ --> src/leapfrog_fuzz_9596873930702142430.rs:5:5
+  |
+5 | use leapfrog::*;
+  |     ^^^^^^^^^^^
+  |
+  = note: `#[warn(unused_imports)]` on by default
+
+warning: unused import: `std::str::FromStr`
+ --> src/leapfrog_fuzz_9596873930702142430.rs:8:5
+  |
+8 | use std::str::FromStr;
+  |     ^^^^^^^^^^^^^^^^^
+
+warning: unused imports: `DerefMut`, `Deref`, `IndexMut`, `Index`
+ --> src/leapfrog_fuzz_9596873930702142430.rs:9:16
+  |
+9 | use std::ops::{Deref, DerefMut, Index, IndexMut};
+  |                ^^^^^  ^^^^^^^^  ^^^^^  ^^^^^^^^
+
+warning: the item `TryInto` is imported redundantly
+   --> src/leapfrog_fuzz_9596873930702142430.rs:353:9
+    |
+353 |     use std::convert::TryInto;
+    |         ^^^^^^^^^^^^^^^^^^^^^
+   --> /rustc/11f32b73e0dc9287e305b5b9980d24aecdc8c17f/library/std/src/prelude/mod.rs:129:13
+    |
+    = note: the item `TryInto` is already defined here
+
+warning: the item `TryInto` is imported redundantly
+   --> src/leapfrog_fuzz_9596873930702142430.rs:360:9
+    |
+360 |     use std::convert::TryInto;
+    |         ^^^^^^^^^^^^^^^^^^^^^
+   --> /rustc/11f32b73e0dc9287e305b5b9980d24aecdc8c17f/library/std/src/prelude/mod.rs:129:13
+    |
+    = note: the item `TryInto` is already defined here
+
+warning: variable does not need to be mutable
+  --> src/leapfrog_fuzz_9596873930702142430.rs:94:13
+   |
+94 |         let mut t_23 = _to_u8(GLOBAL_DATA, 127) % 17;
+   |             ----^^^^
+   |             |
+   |             help: remove this `mut`
+   |
+   = note: `#[warn(unused_mut)]` on by default
+
+warning: unused variable: `GLOBAL_DATA`
+   --> src/leapfrog_fuzz_9596873930702142430.rs:155:13
+    |
+155 |         let GLOBAL_DATA = match selector{
+    |             ^^^^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_GLOBAL_DATA`
+    |
+    = note: `#[warn(unused_variables)]` on by default
+
+warning: variable does not need to be mutable
+   --> src/leapfrog_fuzz_9596873930702142430.rs:172:13
+    |
+172 |         let mut t_15 = _to_u8(GLOBAL_DATA, 77) % 17;
+    |             ----^^^^
+    |             |
+    |             help: remove this `mut`
+
+warning: unused variable: `GLOBAL_DATA`
+   --> src/leapfrog_fuzz_9596873930702142430.rs:191:13
+    |
+191 |         let GLOBAL_DATA = match selector{
+    |             ^^^^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_GLOBAL_DATA`
+
+warning: variable does not need to be mutable
+   --> src/leapfrog_fuzz_9596873930702142430.rs:256:33
+    |
+256 |                     if let Some(mut v) = map.get_mut(&key) {
+    |                                 ----^
+    |                                 |
+    |                                 help: remove this `mut`
+
+warning: struct `CustomType1` is never constructed
+  --> src/leapfrog_fuzz_9596873930702142430.rs:13:8
+   |
+13 | struct CustomType1(String);
+   |        ^^^^^^^^^^^
+   |
+   = note: `#[warn(dead_code)]` on by default
+
+warning: struct `CustomType4` is never constructed
+  --> src/leapfrog_fuzz_9596873930702142430.rs:14:8
+   |
+14 | struct CustomType4(String);
+   |        ^^^^^^^^^^^
+
+warning: field `0` is never read
+  --> src/leapfrog_fuzz_9596873930702142430.rs:15:20
+   |
+15 | struct CustomType3(String);
+   |        ----------- ^^^^^^
+   |        |
+   |        field in this struct
+   |
+help: consider changing the field to be of unit type to suppress this warning while preserving the field numbering, or remove the field
+   |
+15 | struct CustomType3(());
+   |                    ~~
+
+warning: variable `GLOBAL_DATA` should have a snake case name
+  --> src/leapfrog_fuzz_9596873930702142430.rs:22:13
+   |
+22 |         let GLOBAL_DATA = global_data.first_half;
+   |             ^^^^^^^^^^^ help: convert the identifier to snake case: `global_data`
+   |
+   = note: `#[warn(non_snake_case)]` on by default
+
+warning: variable `GLOBAL_DATA` should have a snake case name
+  --> src/leapfrog_fuzz_9596873930702142430.rs:34:13
+   |
+34 |         let GLOBAL_DATA = global_data.first_half;
+   |             ^^^^^^^^^^^ help: convert the identifier to snake case: `global_data`
+
+warning: variable `GLOBAL_DATA` should have a snake case name
+  --> src/leapfrog_fuzz_9596873930702142430.rs:41:13
+   |
+41 |         let GLOBAL_DATA = match selector{
+   |             ^^^^^^^^^^^ help: convert the identifier to snake case: `global_data`
+
+warning: variable `GLOBAL_DATA` should have a snake case name
+  --> src/leapfrog_fuzz_9596873930702142430.rs:51:13
+   |
+51 |         let GLOBAL_DATA = global_data.first_half;
+   |             ^^^^^^^^^^^ help: convert the identifier to snake case: `global_data`
+
+warning: variable `GLOBAL_DATA` should have a snake case name
+  --> src/leapfrog_fuzz_9596873930702142430.rs:58:13
+   |
+58 |         let GLOBAL_DATA = match selector{
+   |             ^^^^^^^^^^^ help: convert the identifier to snake case: `global_data`
+
+warning: variable `GLOBAL_DATA` should have a snake case name
+  --> src/leapfrog_fuzz_9596873930702142430.rs:68:13
+   |
+68 |         let GLOBAL_DATA = global_data.first_half;
+   |             ^^^^^^^^^^^ help: convert the identifier to snake case: `global_data`
+
+warning: variable `GLOBAL_DATA` should have a snake case name
+  --> src/leapfrog_fuzz_9596873930702142430.rs:83:13
+   |
+83 |         let GLOBAL_DATA = global_data.first_half;
+   |             ^^^^^^^^^^^ help: convert the identifier to snake case: `global_data`
+
+warning: variable `GLOBAL_DATA` should have a snake case name
+  --> src/leapfrog_fuzz_9596873930702142430.rs:90:13
+   |
+90 |         let GLOBAL_DATA = match selector{
+   |             ^^^^^^^^^^^ help: convert the identifier to snake case: `global_data`
+
+warning: variable `GLOBAL_DATA` should have a snake case name
+   --> src/leapfrog_fuzz_9596873930702142430.rs:105:13
+    |
+105 |         let GLOBAL_DATA = global_data.first_half;
+    |             ^^^^^^^^^^^ help: convert the identifier to snake case: `global_data`
+
+warning: variable `GLOBAL_DATA` should have a snake case name
+   --> src/leapfrog_fuzz_9596873930702142430.rs:112:13
+    |
+112 |         let GLOBAL_DATA = match selector{
+    |             ^^^^^^^^^^^ help: convert the identifier to snake case: `global_data`
+
+warning: variable `GLOBAL_DATA` should have a snake case name
+   --> src/leapfrog_fuzz_9596873930702142430.rs:128:13
+    |
+128 |         let GLOBAL_DATA = global_data.first_half;
+    |             ^^^^^^^^^^^ help: convert the identifier to snake case: `global_data`
+
+warning: variable `GLOBAL_DATA` should have a snake case name
+   --> src/leapfrog_fuzz_9596873930702142430.rs:135:13
+    |
+135 |         let GLOBAL_DATA = match selector{
+    |             ^^^^^^^^^^^ help: convert the identifier to snake case: `global_data`
+
+warning: variable `GLOBAL_DATA` should have a snake case name
+   --> src/leapfrog_fuzz_9596873930702142430.rs:148:13
+    |
+148 |         let GLOBAL_DATA = global_data.first_half;
+    |             ^^^^^^^^^^^ help: convert the identifier to snake case: `global_data`
+
+warning: variable `GLOBAL_DATA` should have a snake case name
+   --> src/leapfrog_fuzz_9596873930702142430.rs:155:13
+    |
+155 |         let GLOBAL_DATA = match selector{
+    |             ^^^^^^^^^^^ help: convert the identifier to snake case: `global_data`
+
+warning: variable `GLOBAL_DATA` should have a snake case name
+   --> src/leapfrog_fuzz_9596873930702142430.rs:167:13
+    |
+167 |         let GLOBAL_DATA = global_data.first_half;
+    |             ^^^^^^^^^^^ help: convert the identifier to snake case: `global_data`
+
+warning: variable `GLOBAL_DATA` should have a snake case name
+   --> src/leapfrog_fuzz_9596873930702142430.rs:184:13
+    |
+184 |         let GLOBAL_DATA = global_data.first_half;
+    |             ^^^^^^^^^^^ help: convert the identifier to snake case: `global_data`
+
+warning: variable `GLOBAL_DATA` should have a snake case name
+   --> src/leapfrog_fuzz_9596873930702142430.rs:191:13
+    |
+191 |         let GLOBAL_DATA = match selector{
+    |             ^^^^^^^^^^^ help: convert the identifier to snake case: `global_data`
+
+warning: variable `GLOBAL_DATA` should have a snake case name
+   --> src/leapfrog_fuzz_9596873930702142430.rs:208:13
+    |
+208 |         let GLOBAL_DATA = global_data.first_half;
+    |             ^^^^^^^^^^^ help: convert the identifier to snake case: `global_data`
+
+warning: `leapfrog_fuzz_9596873930702142430` (bin "leapfrog_fuzz_9596873930702142430") generated 31 warnings (run `cargo fix --bin "leapfrog_fuzz_9596873930702142430"` to apply 8 suggestions)
+    Finished dev [unoptimized + debuginfo] target(s) in 7.18s
+Removed value: None
+AddressSanitizer:DEADLYSIGNAL
+=================================================================
+==1421594==ERROR: AddressSanitizer: SEGV on unknown address (pc 0x5588985663e2 bp 0x000000000000 sp 0x7fff3c99c720 T0)
+==1421594==The signal is caused by a READ memory access.
+==1421594==Hint: this fault was caused by a dereference of a high value address (see register values below).  Disassemble the provided pc to learn which register was used.
+    #0 0x5588985663e2  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#42-leapfrog/harness/target/x86_64-unknown-linux-gnu/debug/leapfrog_fuzz_9596873930702142430+0x123e2) (BuildId: f1fe6763ad68bf3377ad8e8acb760979183d32bc)
+    #1 0x5588985ec04b  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#42-leapfrog/harness/target/x86_64-unknown-linux-gnu/debug/leapfrog_fuzz_9596873930702142430+0x9804b) (BuildId: f1fe6763ad68bf3377ad8e8acb760979183d32bc)
+    #2 0x55889861cf7c  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#42-leapfrog/harness/target/x86_64-unknown-linux-gnu/debug/leapfrog_fuzz_9596873930702142430+0xc8f7c) (BuildId: f1fe6763ad68bf3377ad8e8acb760979183d32bc)
+    #3 0x558898621fb5  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#42-leapfrog/harness/target/x86_64-unknown-linux-gnu/debug/leapfrog_fuzz_9596873930702142430+0xcdfb5) (BuildId: f1fe6763ad68bf3377ad8e8acb760979183d32bc)
+    #4 0x5588986165a7  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#42-leapfrog/harness/target/x86_64-unknown-linux-gnu/debug/leapfrog_fuzz_9596873930702142430+0xc25a7) (BuildId: f1fe6763ad68bf3377ad8e8acb760979183d32bc)
+    #5 0x55889862948a  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#42-leapfrog/harness/target/x86_64-unknown-linux-gnu/debug/leapfrog_fuzz_9596873930702142430+0xd548a) (BuildId: f1fe6763ad68bf3377ad8e8acb760979183d32bc)
+    #6 0x558898627ee1  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#42-leapfrog/harness/target/x86_64-unknown-linux-gnu/debug/leapfrog_fuzz_9596873930702142430+0xd3ee1) (BuildId: f1fe6763ad68bf3377ad8e8acb760979183d32bc)
+    #7 0x558898615691  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#42-leapfrog/harness/target/x86_64-unknown-linux-gnu/debug/leapfrog_fuzz_9596873930702142430+0xc1691) (BuildId: f1fe6763ad68bf3377ad8e8acb760979183d32bc)
+    #8 0x5588986156e0  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#42-leapfrog/harness/target/x86_64-unknown-linux-gnu/debug/leapfrog_fuzz_9596873930702142430+0xc16e0) (BuildId: f1fe6763ad68bf3377ad8e8acb760979183d32bc)
+    #9 0x558898643620  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#42-leapfrog/harness/target/x86_64-unknown-linux-gnu/debug/leapfrog_fuzz_9596873930702142430+0xef620) (BuildId: f1fe6763ad68bf3377ad8e8acb760979183d32bc)
+    #10 0x558898629645  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#42-leapfrog/harness/target/x86_64-unknown-linux-gnu/debug/leapfrog_fuzz_9596873930702142430+0xd5645) (BuildId: f1fe6763ad68bf3377ad8e8acb760979183d32bc)
+    #11 0x7ff1e3211d8f  (/lib/x86_64-linux-gnu/libc.so.6+0x29d8f) (BuildId: 490fef8403240c91833978d494d39e537409b92e)
+    #12 0x7ff1e3211e3f  (/lib/x86_64-linux-gnu/libc.so.6+0x29e3f) (BuildId: 490fef8403240c91833978d494d39e537409b92e)
+    #13 0x558898565554  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#42-leapfrog/harness/target/x86_64-unknown-linux-gnu/debug/leapfrog_fuzz_9596873930702142430+0x11554) (BuildId: f1fe6763ad68bf3377ad8e8acb760979183d32bc)
+
+AddressSanitizer can not provide additional info.
+SUMMARY: AddressSanitizer: SEGV (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#42-leapfrog/harness/target/x86_64-unknown-linux-gnu/debug/leapfrog_fuzz_9596873930702142430+0x123e2) (BuildId: f1fe6763ad68bf3377ad8e8acb760979183d32bc) 
+==1421594==ABORTING

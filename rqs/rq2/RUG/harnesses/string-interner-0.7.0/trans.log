@@ -1,0 +1,5 @@
+ ./fuzz_transform/target/release/fuzz_transform /home/cdc/rug_on_erasan_after_bolero/string-interner-0.7.0/./src/benches.rs
+ ./fuzz_transform/target/release/fuzz_transform /home/cdc/rug_on_erasan_after_bolero/string-interner-0.7.0/./src/serde_impl.rs
+ ./fuzz_transform/target/release/fuzz_transform /home/cdc/rug_on_erasan_after_bolero/string-interner-0.7.0/./src/tests.rs
+ ./fuzz_transform/target/release/fuzz_transform /home/cdc/rug_on_erasan_after_bolero/string-interner-0.7.0/./src/lib.rs
+string-interner . 13 13 0

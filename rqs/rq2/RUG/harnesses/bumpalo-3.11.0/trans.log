@@ -1,0 +1,14 @@
+ ./fuzz_transform/target/release/fuzz_transform /home/cdc/erasan_dataset_2/bumpalo-3.11.0/./src/boxed.rs
+ ./fuzz_transform/target/release/fuzz_transform /home/cdc/erasan_dataset_2/bumpalo-3.11.0/./src/collections/vec.rs
+ ./fuzz_transform/target/release/fuzz_transform /home/cdc/erasan_dataset_2/bumpalo-3.11.0/./src/collections/str/lossy.rs
+ ./fuzz_transform/target/release/fuzz_transform /home/cdc/erasan_dataset_2/bumpalo-3.11.0/./src/collections/str/mod.rs
+ ./fuzz_transform/target/release/fuzz_transform /home/cdc/erasan_dataset_2/bumpalo-3.11.0/./src/collections/collect_in.rs
+ ./fuzz_transform/target/release/fuzz_transform /home/cdc/erasan_dataset_2/bumpalo-3.11.0/./src/collections/mod.rs
+ ./fuzz_transform/target/release/fuzz_transform /home/cdc/erasan_dataset_2/bumpalo-3.11.0/./src/collections/string.rs
+ ./fuzz_transform/target/release/fuzz_transform /home/cdc/erasan_dataset_2/bumpalo-3.11.0/./src/collections/raw_vec.rs
+ ./fuzz_transform/target/release/fuzz_transform /home/cdc/erasan_dataset_2/bumpalo-3.11.0/./src/alloc.rs
+err bumpalo-3.11.0 /home/cdc/erasan_dataset_2/bumpalo-3.11.0/./src/alloc.rs tests_rug_11
+err bumpalo-3.11.0 /home/cdc/erasan_dataset_2/bumpalo-3.11.0/./src/alloc.rs tests_rug_12
+ ./fuzz_transform/target/release/fuzz_transform /home/cdc/erasan_dataset_2/bumpalo-3.11.0/./src/lib.rs
+err bumpalo-3.11.0 /home/cdc/erasan_dataset_2/bumpalo-3.11.0/./src/lib.rs tests_rug_58
+bumpalo . 51 54 0

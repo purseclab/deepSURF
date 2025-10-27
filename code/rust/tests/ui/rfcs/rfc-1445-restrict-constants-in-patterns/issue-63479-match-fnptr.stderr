@@ -1,0 +1,14 @@
+error: function pointers and raw pointers not derived from integers in patterns behave unpredictably and should not be relied upon. See https://github.com/rust-lang/rust/issues/70861 for details.
+  --> $DIR/issue-63479-match-fnptr.rs:32:7
+   |
+LL |     B(TEST) => println!("matched"),
+   |       ^^^^
+
+error: function pointers and raw pointers not derived from integers in patterns behave unpredictably and should not be relied upon. See https://github.com/rust-lang/rust/issues/70861 for details.
+  --> $DIR/issue-63479-match-fnptr.rs:37:5
+   |
+LL |     TEST2 => println!("matched"),
+   |     ^^^^^
+
+error: aborting due to 2 previous errors
+

@@ -1,0 +1,485 @@
+deepSURF: Generated Targets to be Fuzzed
+------------------------------------------------------------------------------------------------------------------------------------
+  StableURAPI: set_payload::/home/cdc/SURF/deepSURF-big-experiment-harnesses/pnet_packet-0.26.0/src/out/gre.rs::1028,
+    - URAPI: DefId(0:842 ~ pnet_packet[d3e1]::gre::{impl#1}::set_payload),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * pnet_packet_fuzz_2044501637519807661_deepseek-r1_turn2
+  StableURAPI: populate::/home/cdc/SURF/deepSURF-big-experiment-harnesses/pnet_packet-0.26.0/src/out/gre.rs::438,
+    - URAPI: DefId(0:767 ~ pnet_packet[d3e1]::gre::{impl#1}::populate),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * pnet_packet_fuzz_2044501637519807661_deepseek-r1_turn2
+      * pnet_packet_fuzz_15329232841247413831_deepseek-r1_turn3
+      * pnet_packet_fuzz_5131167242462323654_deepseek-r1_turn2
+  StableURAPI: populate::/home/cdc/SURF/deepSURF-big-experiment-harnesses/pnet_packet-0.26.0/src/out/icmp.rs::755,
+    - URAPI: DefId(0:1326 ~ pnet_packet[d3e1]::icmp::echo_reply::{impl#5}::populate),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * pnet_packet_fuzz_15722733297570982448_deepseek-r1_turn2
+  StableURAPI: populate::/home/cdc/SURF/deepSURF-big-experiment-harnesses/pnet_packet-0.26.0/src/out/arp.rs::404,
+    - URAPI: DefId(0:290 ~ pnet_packet[d3e1]::arp::{impl#5}::populate),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * pnet_packet_fuzz_5131167242462323654_deepseek-r1_turn2
+  StableURAPI: populate::/home/cdc/SURF/deepSURF-big-experiment-harnesses/pnet_packet-0.26.0/src/out/ipv6.rs::1204,
+    - URAPI: DefId(0:3837 ~ pnet_packet[d3e1]::ipv6::{impl#14}::populate),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * pnet_packet_fuzz_14513616530867602059_deepseek-r1_turn5
+  StableURAPI: populate::/home/cdc/SURF/deepSURF-big-experiment-harnesses/pnet_packet-0.26.0/src/out/icmpv6.rs::4572,
+    - URAPI: DefId(0:2852 ~ pnet_packet[d3e1]::icmpv6::ndp::{impl#63}::populate),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * pnet_packet_fuzz_4304590215552261932_deepseek-r1_turn3
+  StableURAPI: populate::/home/cdc/SURF/deepSURF-big-experiment-harnesses/pnet_packet-0.26.0/src/out/icmp.rs::218,
+    - URAPI: DefId(0:1188 ~ pnet_packet[d3e1]::icmp::{impl#5}::populate),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * pnet_packet_fuzz_14543272710845930615_deepseek-r1_turn4
+      * pnet_packet_fuzz_11590011619420993293_deepseek-r1_turn3
+      * pnet_packet_fuzz_6989229617861967191_deepseek-r1_turn4
+      * pnet_packet_fuzz_5131167242462323654_deepseek-r1_turn2
+      * pnet_packet_fuzz_10297997944971972234_deepseek-r1_turn4
+  StableURAPI: populate::/home/cdc/SURF/deepSURF-big-experiment-harnesses/pnet_packet-0.26.0/src/out/icmpv6.rs::3608,
+    - URAPI: DefId(0:2693 ~ pnet_packet[d3e1]::icmpv6::ndp::{impl#51}::populate),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * pnet_packet_fuzz_14019198176736709026_deepseek-r1_turn3
+  StableURAPI: populate::/home/cdc/SURF/deepSURF-big-experiment-harnesses/pnet_packet-0.26.0/src/out/icmp.rs::2289,
+    - URAPI: DefId(0:1679 ~ pnet_packet[d3e1]::icmp::time_exceeded::{impl#1}::populate),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * pnet_packet_fuzz_11562080560837752712_deepseek-r1_turn2
+  StableURAPI: set_payload::/home/cdc/SURF/deepSURF-big-experiment-harnesses/pnet_packet-0.26.0/src/out/ipv4.rs::998,
+    - URAPI: DefId(0:3400 ~ pnet_packet[d3e1]::ipv4::{impl#3}::set_payload),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * pnet_packet_fuzz_9771585314779162671_deepseek-r1_turn4
+      * pnet_packet_fuzz_10297997944971972234_deepseek-r1_turn4
+      * pnet_packet_fuzz_15329232841247413831_deepseek-r1_turn3
+      * pnet_packet_fuzz_14543272710845930615_deepseek-r1_turn4
+  StableURAPI: set_payload::/home/cdc/SURF/deepSURF-big-experiment-harnesses/pnet_packet-0.26.0/src/out/udp.rs::289,
+    - URAPI: DefId(0:4616 ~ pnet_packet[d3e1]::udp::{impl#1}::set_payload),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * pnet_packet_fuzz_5514096391890472782_deepseek-r1_turn4
+      * pnet_packet_fuzz_2914112639123794018_deepseek-r1_turn4
+      * pnet_packet_fuzz_11562080560837752712_deepseek-r1_turn2
+      * pnet_packet_fuzz_7808083687530344502_deepseek-r1_turn3
+      * pnet_packet_fuzz_14567768368971878885_deepseek-r1_turn2
+      * pnet_packet_fuzz_9771585314779162671_deepseek-r1_turn4
+      * pnet_packet_fuzz_4619776147881325350_deepseek-r1_turn3
+      * pnet_packet_fuzz_6989229617861967191_deepseek-r1_turn4
+  StableURAPI: set_payload::/home/cdc/SURF/deepSURF-big-experiment-harnesses/pnet_packet-0.26.0/src/out/icmp.rs::1943,
+    - URAPI: DefId(0:1586 ~ pnet_packet[d3e1]::icmp::destination_unreachable::{impl#1}::set_payload),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * pnet_packet_fuzz_9771585314779162671_deepseek-r1_turn4
+  StableURAPI: populate::/home/cdc/SURF/deepSURF-big-experiment-harnesses/pnet_packet-0.26.0/src/out/ipv6.rs::1989,
+    - URAPI: DefId(0:4030 ~ pnet_packet[d3e1]::ipv6::{impl#38}::populate),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * pnet_packet_fuzz_13904578910162686521_deepseek-r1_turn3
+  StableURAPI: set_unused::/home/cdc/SURF/deepSURF-big-experiment-harnesses/pnet_packet-0.26.0/src/out/gre.rs::1717,
+    - URAPI: DefId(0:1011 ~ pnet_packet[d3e1]::gre::{impl#25}::set_unused),
+    - Macro-expanded: false,
+    - LLM-improved: false,
+    - Fuzzing Targets:
+      * pnet_packet_fuzz_3184623475365325316
+      * pnet_packet_fuzz_15512904500542381415
+  StableURAPI: populate::/home/cdc/SURF/deepSURF-big-experiment-harnesses/pnet_packet-0.26.0/src/out/icmpv6.rs::1256,
+    - URAPI: DefId(0:2276 ~ pnet_packet[d3e1]::icmpv6::ndp::{impl#15}::populate),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * pnet_packet_fuzz_7808083687530344502_deepseek-r1_turn3
+  StableURAPI: populate::/home/cdc/SURF/deepSURF-big-experiment-harnesses/pnet_packet-0.26.0/src/out/gre.rs::1398,
+    - URAPI: DefId(0:926 ~ pnet_packet[d3e1]::gre::{impl#13}::populate),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * pnet_packet_fuzz_5131167242462323654_deepseek-r1_turn2
+  StableURAPI: set_unused::/home/cdc/SURF/deepSURF-big-experiment-harnesses/pnet_packet-0.26.0/src/out/gre.rs::1430,
+    - URAPI: DefId(0:929 ~ pnet_packet[d3e1]::gre::{impl#13}::set_unused),
+    - Macro-expanded: false,
+    - LLM-improved: false,
+    - Fuzzing Targets:
+      * pnet_packet_fuzz_8680089326114835144
+      * pnet_packet_fuzz_7741278584444771304
+  StableURAPI: set_data::/home/cdc/SURF/deepSURF-big-experiment-harnesses/pnet_packet-0.26.0/src/out/ipv4.rs::1606,
+    - URAPI: DefId(0:3509 ~ pnet_packet[d3e1]::ipv4::{impl#15}::set_data),
+    - Macro-expanded: false,
+    - LLM-improved: false,
+    - Fuzzing Targets:
+      * pnet_packet_fuzz_12281725077455697391
+      * pnet_packet_fuzz_8727641996272082690
+  StableURAPI: set_payload::/home/cdc/SURF/deepSURF-big-experiment-harnesses/pnet_packet-0.26.0/src/out/icmp.rs::314,
+    - URAPI: DefId(0:1201 ~ pnet_packet[d3e1]::icmp::{impl#5}::set_payload),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * pnet_packet_fuzz_10297997944971972234_deepseek-r1_turn4
+      * pnet_packet_fuzz_13600686400754027533_deepseek-r1_turn4
+  StableURAPI: populate::/home/cdc/SURF/deepSURF-big-experiment-harnesses/pnet_packet-0.26.0/src/out/icmpv6.rs::1919,
+    - URAPI: DefId(0:2403 ~ pnet_packet[d3e1]::icmpv6::ndp::{impl#27}::populate),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * pnet_packet_fuzz_1591313384708960398_deepseek-r1_turn3
+  StableURAPI: set_payload::/home/cdc/SURF/deepSURF-big-experiment-harnesses/pnet_packet-0.26.0/src/out/icmpv6.rs::2211,
+    - URAPI: DefId(0:2438 ~ pnet_packet[d3e1]::icmpv6::ndp::{impl#27}::set_payload),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * pnet_packet_fuzz_1591313384708960398_deepseek-r1_turn3
+  StableURAPI: populate::/home/cdc/SURF/deepSURF-big-experiment-harnesses/pnet_packet-0.26.0/src/out/icmp.rs::1817,
+    - URAPI: DefId(0:1571 ~ pnet_packet[d3e1]::icmp::destination_unreachable::{impl#1}::populate),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * pnet_packet_fuzz_15329232841247413831_deepseek-r1_turn3
+  StableURAPI: populate::/home/cdc/SURF/deepSURF-big-experiment-harnesses/pnet_packet-0.26.0/src/out/vlan.rs::205,
+    - URAPI: DefId(0:4748 ~ pnet_packet[d3e1]::vlan::{impl#3}::populate),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * pnet_packet_fuzz_11590011619420993293_deepseek-r1_turn3
+  StableURAPI: set_routing::/home/cdc/SURF/deepSURF-big-experiment-harnesses/pnet_packet-0.26.0/src/out/gre.rs::1008,
+    - URAPI: DefId(0:840 ~ pnet_packet[d3e1]::gre::{impl#1}::set_routing),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * pnet_packet_fuzz_14543272710845930615_deepseek-r1_turn4
+      * pnet_packet_fuzz_2044501637519807661_deepseek-r1_turn2
+  StableURAPI: set_payload::/home/cdc/SURF/deepSURF-big-experiment-harnesses/pnet_packet-0.26.0/src/out/tcp.rs::705,
+    - URAPI: DefId(0:4315 ~ pnet_packet[d3e1]::tcp::{impl#1}::set_payload),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * pnet_packet_fuzz_11590011619420993293_deepseek-r1_turn3
+      * pnet_packet_fuzz_4304590215552261932_deepseek-r1_turn3
+      * pnet_packet_fuzz_6557587313727191870_deepseek-r1_turn4
+  StableURAPI: set_payload::/home/cdc/SURF/deepSURF-big-experiment-harnesses/pnet_packet-0.26.0/src/out/icmpv6.rs::5101,
+    - URAPI: DefId(0:2917 ~ pnet_packet[d3e1]::icmpv6::ndp::{impl#63}::set_payload),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * pnet_packet_fuzz_14567768368971878885_deepseek-r1_turn2
+  StableURAPI: set_data::/home/cdc/SURF/deepSURF-big-experiment-harnesses/pnet_packet-0.26.0/src/out/ipv6.rs::1666,
+    - URAPI: DefId(0:3946 ~ pnet_packet[d3e1]::ipv6::{impl#26}::set_data),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * pnet_packet_fuzz_5514096391890472782_deepseek-r1_turn4
+      * pnet_packet_fuzz_1935049756553246233_deepseek-r1_turn4
+  StableURAPI: set_payload::/home/cdc/SURF/deepSURF-big-experiment-harnesses/pnet_packet-0.26.0/src/out/icmp.rs::2413,
+    - URAPI: DefId(0:1694 ~ pnet_packet[d3e1]::icmp::time_exceeded::{impl#1}::set_payload),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * pnet_packet_fuzz_13600686400754027533_deepseek-r1_turn4
+  StableURAPI: populate::/home/cdc/SURF/deepSURF-big-experiment-harnesses/pnet_packet-0.26.0/src/out/icmp.rs::1283,
+    - URAPI: DefId(0:1447 ~ pnet_packet[d3e1]::icmp::echo_request::{impl#5}::populate),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * pnet_packet_fuzz_6989229617861967191_deepseek-r1_turn4
+  StableURAPI: set_data::/home/cdc/SURF/deepSURF-big-experiment-harnesses/pnet_packet-0.26.0/src/out/icmpv6.rs::866,
+    - URAPI: DefId(0:2183 ~ pnet_packet[d3e1]::icmpv6::ndp::{impl#3}::set_data),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * pnet_packet_fuzz_4619776147881325350_deepseek-r1_turn3
+      * pnet_packet_fuzz_4304590215552261932_deepseek-r1_turn3
+      * pnet_packet_fuzz_13699462923152619909_deepseek-r1_turn5
+  StableURAPI: set_sequence::/home/cdc/SURF/deepSURF-big-experiment-harnesses/pnet_packet-0.26.0/src/out/gre.rs::971,
+    - URAPI: DefId(0:836 ~ pnet_packet[d3e1]::gre::{impl#1}::set_sequence),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * pnet_packet_fuzz_2044501637519807661_deepseek-r1_turn2
+  StableURAPI: set_options::/home/cdc/SURF/deepSURF-big-experiment-harnesses/pnet_packet-0.26.0/src/out/tcp.rs::688,
+    - URAPI: DefId(0:4313 ~ pnet_packet[d3e1]::tcp::{impl#1}::set_options),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * pnet_packet_fuzz_12398722329352874293_deepseek-r1_turn5
+      * pnet_packet_fuzz_13904578910162686521_deepseek-r1_turn3
+      * pnet_packet_fuzz_5131167242462323654_deepseek-r1_turn2
+      * pnet_packet_fuzz_15722733297570982448_deepseek-r1_turn2
+      * pnet_packet_fuzz_7808083687530344502_deepseek-r1_turn3
+  StableURAPI: set_payload::/home/cdc/SURF/deepSURF-big-experiment-harnesses/pnet_packet-0.26.0/src/out/icmpv6.rs::1458,
+    - URAPI: DefId(0:2303 ~ pnet_packet[d3e1]::icmpv6::ndp::{impl#15}::set_payload),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * pnet_packet_fuzz_14567768368971878885_deepseek-r1_turn2
+      * pnet_packet_fuzz_4304590215552261932_deepseek-r1_turn3
+  StableURAPI: set_payload::/home/cdc/SURF/deepSURF-big-experiment-harnesses/pnet_packet-0.26.0/src/out/arp.rs::927,
+    - URAPI: DefId(0:362 ~ pnet_packet[d3e1]::arp::{impl#5}::set_payload),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * pnet_packet_fuzz_13600686400754027533_deepseek-r1_turn4
+      * pnet_packet_fuzz_14543272710845930615_deepseek-r1_turn4
+  StableURAPI: populate::/home/cdc/SURF/deepSURF-big-experiment-harnesses/pnet_packet-0.26.0/src/out/ipv4.rs::512,
+    - URAPI: DefId(0:3340 ~ pnet_packet[d3e1]::ipv4::{impl#3}::populate),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * pnet_packet_fuzz_11590011619420993293_deepseek-r1_turn3
+      * pnet_packet_fuzz_6989229617861967191_deepseek-r1_turn4
+      * pnet_packet_fuzz_9771585314779162671_deepseek-r1_turn4
+  StableURAPI: set_options::/home/cdc/SURF/deepSURF-big-experiment-harnesses/pnet_packet-0.26.0/src/out/ipv4.rs::981,
+    - URAPI: DefId(0:3398 ~ pnet_packet[d3e1]::ipv4::{impl#3}::set_options),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * pnet_packet_fuzz_6557587313727191870_deepseek-r1_turn4
+  StableURAPI: set_key::/home/cdc/SURF/deepSURF-big-experiment-harnesses/pnet_packet-0.26.0/src/out/gre.rs::936,
+    - URAPI: DefId(0:832 ~ pnet_packet[d3e1]::gre::{impl#1}::set_key),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * pnet_packet_fuzz_13699462923152619909_deepseek-r1_turn5
+      * pnet_packet_fuzz_2044501637519807661_deepseek-r1_turn2
+  StableURAPI: set_options::/home/cdc/SURF/deepSURF-big-experiment-harnesses/pnet_packet-0.26.0/src/out/icmpv6.rs::2193,
+    - URAPI: DefId(0:2436 ~ pnet_packet[d3e1]::icmpv6::ndp::{impl#27}::set_options),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * pnet_packet_fuzz_1591313384708960398_deepseek-r1_turn3
+  StableURAPI: set_checksum::/home/cdc/SURF/deepSURF-big-experiment-harnesses/pnet_packet-0.26.0/src/out/gre.rs::873,
+    - URAPI: DefId(0:824 ~ pnet_packet[d3e1]::gre::{impl#1}::set_checksum),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * pnet_packet_fuzz_2044501637519807661_deepseek-r1_turn2
+  StableURAPI: set_length::/home/cdc/SURF/deepSURF-big-experiment-harnesses/pnet_packet-0.26.0/src/out/ipv4.rs::1590,
+    - URAPI: DefId(0:3507 ~ pnet_packet[d3e1]::ipv4::{impl#15}::set_length),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * pnet_packet_fuzz_6557587313727191870_deepseek-r1_turn4
+  StableURAPI: populate::/home/cdc/SURF/deepSURF-big-experiment-harnesses/pnet_packet-0.26.0/src/out/icmpv6.rs::2722,
+    - URAPI: DefId(0:2540 ~ pnet_packet[d3e1]::icmpv6::ndp::{impl#39}::populate),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * pnet_packet_fuzz_7808083687530344502_deepseek-r1_turn3
+      * pnet_packet_fuzz_4619776147881325350_deepseek-r1_turn3
+  StableURAPI: set_offset::/home/cdc/SURF/deepSURF-big-experiment-harnesses/pnet_packet-0.26.0/src/out/gre.rs::903,
+    - URAPI: DefId(0:828 ~ pnet_packet[d3e1]::gre::{impl#1}::set_offset),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * pnet_packet_fuzz_2044501637519807661_deepseek-r1_turn2
+  StableURAPI: set_options::/home/cdc/SURF/deepSURF-big-experiment-harnesses/pnet_packet-0.26.0/src/out/icmpv6.rs::5082,
+    - URAPI: DefId(0:2915 ~ pnet_packet[d3e1]::icmpv6::ndp::{impl#63}::set_options),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * pnet_packet_fuzz_11815541622841198300_deepseek-r1_turn3
+  StableURAPI: set_payload::/home/cdc/SURF/deepSURF-big-experiment-harnesses/pnet_packet-0.26.0/src/out/vlan.rs::328,
+    - URAPI: DefId(0:4763 ~ pnet_packet[d3e1]::vlan::{impl#3}::set_payload),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * pnet_packet_fuzz_14543272710845930615_deepseek-r1_turn4
+  StableURAPI: set_options::/home/cdc/SURF/deepSURF-big-experiment-harnesses/pnet_packet-0.26.0/src/out/icmpv6.rs::3069,
+    - URAPI: DefId(0:2584 ~ pnet_packet[d3e1]::icmpv6::ndp::{impl#39}::set_options),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * pnet_packet_fuzz_4619776147881325350_deepseek-r1_turn3
+  StableURAPI: set_payload::/home/cdc/SURF/deepSURF-big-experiment-harnesses/pnet_packet-0.26.0/src/out/icmp.rs::1427,
+    - URAPI: DefId(0:1464 ~ pnet_packet[d3e1]::icmp::echo_request::{impl#5}::set_payload),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * pnet_packet_fuzz_10297997944971972234_deepseek-r1_turn4
+  StableURAPI: populate::/home/cdc/SURF/deepSURF-big-experiment-harnesses/pnet_packet-0.26.0/src/out/icmpv6.rs::807,
+    - URAPI: DefId(0:2175 ~ pnet_packet[d3e1]::icmpv6::ndp::{impl#3}::populate),
+    - Macro-expanded: false,
+    - LLM-improved: false,
+    - Fuzzing Targets:
+      * pnet_packet_fuzz_9065154765162408099
+      * pnet_packet_fuzz_3962605256299866225
+      * pnet_packet_fuzz_10031078553328861880
+      * pnet_packet_fuzz_350823289942228867
+  StableURAPI: set_payload::/home/cdc/SURF/deepSURF-big-experiment-harnesses/pnet_packet-0.26.0/src/out/icmpv6.rs::3087,
+    - URAPI: DefId(0:2586 ~ pnet_packet[d3e1]::icmpv6::ndp::{impl#39}::set_payload),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * pnet_packet_fuzz_4619776147881325350_deepseek-r1_turn3
+  StableURAPI: populate::/home/cdc/SURF/deepSURF-big-experiment-harnesses/pnet_packet-0.26.0/src/out/icmpv6.rs::258,
+    - URAPI: DefId(0:2042 ~ pnet_packet[d3e1]::icmpv6::{impl#5}::populate),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * pnet_packet_fuzz_6989229617861967191_deepseek-r1_turn4
+      * pnet_packet_fuzz_15329232841247413831_deepseek-r1_turn3
+      * pnet_packet_fuzz_11562080560837752712_deepseek-r1_turn2
+  StableURAPI: populate::/home/cdc/SURF/deepSURF-big-experiment-harnesses/pnet_packet-0.26.0/src/out/ipv6.rs::410,
+    - URAPI: DefId(0:3699 ~ pnet_packet[d3e1]::ipv6::{impl#1}::populate),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * pnet_packet_fuzz_9771585314779162671_deepseek-r1_turn4
+  StableURAPI: populate::/home/cdc/SURF/deepSURF-big-experiment-harnesses/pnet_packet-0.26.0/src/out/gre.rs::1681,
+    - URAPI: DefId(0:1008 ~ pnet_packet[d3e1]::gre::{impl#25}::populate),
+    - Macro-expanded: false,
+    - LLM-improved: false,
+    - Fuzzing Targets:
+      * pnet_packet_fuzz_4750638506587801412
+      * pnet_packet_fuzz_15284926193276255398
+      * pnet_packet_fuzz_5913823610091629888
+      * pnet_packet_fuzz_11125726205384466834
+  StableURAPI: populate::/home/cdc/SURF/deepSURF-big-experiment-harnesses/pnet_packet-0.26.0/src/out/ipv6.rs::1569,
+    - URAPI: DefId(0:3934 ~ pnet_packet[d3e1]::ipv6::{impl#26}::populate),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * pnet_packet_fuzz_1935049756553246233_deepseek-r1_turn4
+  StableURAPI: populate::/home/cdc/SURF/deepSURF-big-experiment-harnesses/pnet_packet-0.26.0/src/out/ethernet.rs::270,
+    - URAPI: DefId(0:530 ~ pnet_packet[d3e1]::ethernet::{impl#1}::populate),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * pnet_packet_fuzz_12398722329352874293_deepseek-r1_turn5
+      * pnet_packet_fuzz_11562080560837752712_deepseek-r1_turn2
+  StableURAPI: set_length::/home/cdc/SURF/deepSURF-big-experiment-harnesses/pnet_packet-0.26.0/src/out/tcp.rs::1149,
+    - URAPI: DefId(0:4420 ~ pnet_packet[d3e1]::tcp::{impl#13}::set_length),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * pnet_packet_fuzz_2914112639123794018_deepseek-r1_turn4
+      * pnet_packet_fuzz_13699462923152619909_deepseek-r1_turn5
+      * pnet_packet_fuzz_6557587313727191870_deepseek-r1_turn4
+  StableURAPI: set_payload::/home/cdc/SURF/deepSURF-big-experiment-harnesses/pnet_packet-0.26.0/src/out/ethernet.rs::529,
+    - URAPI: DefId(0:566 ~ pnet_packet[d3e1]::ethernet::{impl#1}::set_payload),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * pnet_packet_fuzz_5131167242462323654_deepseek-r1_turn2
+      * pnet_packet_fuzz_10297997944971972234_deepseek-r1_turn4
+      * pnet_packet_fuzz_6557587313727191870_deepseek-r1_turn4
+      * pnet_packet_fuzz_14543272710845930615_deepseek-r1_turn4
+      * pnet_packet_fuzz_13904578910162686521_deepseek-r1_turn3
+      * pnet_packet_fuzz_13600686400754027533_deepseek-r1_turn4
+  StableURAPI: populate::/home/cdc/SURF/deepSURF-big-experiment-harnesses/pnet_packet-0.26.0/src/out/tcp.rs::383,
+    - URAPI: DefId(0:4282 ~ pnet_packet[d3e1]::tcp::{impl#1}::populate),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * pnet_packet_fuzz_2914112639123794018_deepseek-r1_turn4
+  StableURAPI: set_options::/home/cdc/SURF/deepSURF-big-experiment-harnesses/pnet_packet-0.26.0/src/out/ipv6.rs::1263,
+    - URAPI: DefId(0:3845 ~ pnet_packet[d3e1]::ipv6::{impl#14}::set_options),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * pnet_packet_fuzz_5514096391890472782_deepseek-r1_turn4
+  StableURAPI: set_payload::/home/cdc/SURF/deepSURF-big-experiment-harnesses/pnet_packet-0.26.0/src/out/ipv6.rs::891,
+    - URAPI: DefId(0:3753 ~ pnet_packet[d3e1]::ipv6::{impl#1}::set_payload),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * pnet_packet_fuzz_1935049756553246233_deepseek-r1_turn4
+      * pnet_packet_fuzz_13904578910162686521_deepseek-r1_turn3
+      * pnet_packet_fuzz_5514096391890472782_deepseek-r1_turn4
+      * pnet_packet_fuzz_14513616530867602059_deepseek-r1_turn5
+      * pnet_packet_fuzz_9771585314779162671_deepseek-r1_turn4
+      * pnet_packet_fuzz_6557587313727191870_deepseek-r1_turn4
+      * pnet_packet_fuzz_7808083687530344502_deepseek-r1_turn3
+  StableURAPI: populate::/home/cdc/SURF/deepSURF-big-experiment-harnesses/pnet_packet-0.26.0/src/out/tcp.rs::1061,
+    - URAPI: DefId(0:4408 ~ pnet_packet[d3e1]::tcp::{impl#13}::populate),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * pnet_packet_fuzz_2914112639123794018_deepseek-r1_turn4
+      * pnet_packet_fuzz_6557587313727191870_deepseek-r1_turn4
+  StableURAPI: set_payload::/home/cdc/SURF/deepSURF-big-experiment-harnesses/pnet_packet-0.26.0/src/out/icmpv6.rs::354,
+    - URAPI: DefId(0:2055 ~ pnet_packet[d3e1]::icmpv6::{impl#5}::set_payload),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * pnet_packet_fuzz_4304590215552261932_deepseek-r1_turn3
+      * pnet_packet_fuzz_1591313384708960398_deepseek-r1_turn3
+      * pnet_packet_fuzz_14567768368971878885_deepseek-r1_turn2
+      * pnet_packet_fuzz_6989229617861967191_deepseek-r1_turn4
+  StableURAPI: populate::/home/cdc/SURF/deepSURF-big-experiment-harnesses/pnet_packet-0.26.0/src/out/ipv4.rs::1461,
+    - URAPI: DefId(0:3491 ~ pnet_packet[d3e1]::ipv4::{impl#15}::populate),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * pnet_packet_fuzz_12398722329352874293_deepseek-r1_turn5
+  StableURAPI: set_options::/home/cdc/SURF/deepSURF-big-experiment-harnesses/pnet_packet-0.26.0/src/out/icmpv6.rs::1440,
+    - URAPI: DefId(0:2301 ~ pnet_packet[d3e1]::icmpv6::ndp::{impl#15}::set_options),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * pnet_packet_fuzz_13921007672043033646_deepseek-r1_turn3
+  StableURAPI: set_payload::/home/cdc/SURF/deepSURF-big-experiment-harnesses/pnet_packet-0.26.0/src/out/icmp.rs::899,
+    - URAPI: DefId(0:1343 ~ pnet_packet[d3e1]::icmp::echo_reply::{impl#5}::set_payload),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * pnet_packet_fuzz_15722733297570982448_deepseek-r1_turn2
+  StableURAPI: set_payload::/home/cdc/SURF/deepSURF-big-experiment-harnesses/pnet_packet-0.26.0/src/out/ipv6.rs::2100,
+    - URAPI: DefId(0:4042 ~ pnet_packet[d3e1]::ipv6::{impl#38}::set_payload),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * pnet_packet_fuzz_2914112639123794018_deepseek-r1_turn4
+      * pnet_packet_fuzz_1935049756553246233_deepseek-r1_turn4
+      * pnet_packet_fuzz_13904578910162686521_deepseek-r1_turn3
+      * pnet_packet_fuzz_5514096391890472782_deepseek-r1_turn4
+      * pnet_packet_fuzz_13600686400754027533_deepseek-r1_turn4
+      * pnet_packet_fuzz_4304590215552261932_deepseek-r1_turn3
+      * pnet_packet_fuzz_14513616530867602059_deepseek-r1_turn5
+      * pnet_packet_fuzz_4619776147881325350_deepseek-r1_turn3
+      * pnet_packet_fuzz_14543272710845930615_deepseek-r1_turn4
+  StableURAPI: set_payload::/home/cdc/SURF/deepSURF-big-experiment-harnesses/pnet_packet-0.26.0/src/out/icmpv6.rs::3990,
+    - URAPI: DefId(0:2741 ~ pnet_packet[d3e1]::icmpv6::ndp::{impl#51}::set_payload),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * pnet_packet_fuzz_14567768368971878885_deepseek-r1_turn2
+  StableURAPI: set_data::/home/cdc/SURF/deepSURF-big-experiment-harnesses/pnet_packet-0.26.0/src/out/tcp.rs::1165,
+    - URAPI: DefId(0:4422 ~ pnet_packet[d3e1]::tcp::{impl#13}::set_data),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * pnet_packet_fuzz_13600686400754027533_deepseek-r1_turn4
+      * pnet_packet_fuzz_10297997944971972234_deepseek-r1_turn4
+      * pnet_packet_fuzz_2914112639123794018_deepseek-r1_turn4
+      * pnet_packet_fuzz_4619776147881325350_deepseek-r1_turn3
+      * pnet_packet_fuzz_14543272710845930615_deepseek-r1_turn4
+  StableURAPI: populate::/home/cdc/SURF/deepSURF-big-experiment-harnesses/pnet_packet-0.26.0/src/out/udp.rs::185,
+    - URAPI: DefId(0:4607 ~ pnet_packet[d3e1]::udp::{impl#1}::populate),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * pnet_packet_fuzz_14543272710845930615_deepseek-r1_turn4
+  StableURAPI: set_options::/home/cdc/SURF/deepSURF-big-experiment-harnesses/pnet_packet-0.26.0/src/out/icmpv6.rs::3972,
+    - URAPI: DefId(0:2739 ~ pnet_packet[d3e1]::icmpv6::ndp::{impl#51}::set_options),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * pnet_packet_fuzz_4937212728684888133_deepseek-r1_turn3
+------------------------------------------------------------------------------------------------------------------------------------

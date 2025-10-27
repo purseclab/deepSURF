@@ -1,0 +1,16 @@
+[workspace]
+
+[package]
+name = "leapfrog_fuzz_9596873930702142430"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "leapfrog_fuzz_9596873930702142430"
+path = "src/leapfrog_fuzz_9596873930702142430.rs"
+
+[dependencies]
+afl = "=0.15.7"
+home = "=0.5.9"
+global_data = { path = "../../../../code/global_data" }
+leapfrog = { path = "../../../../dataset/crabtree_crates/leapfrog-0.2.1" }

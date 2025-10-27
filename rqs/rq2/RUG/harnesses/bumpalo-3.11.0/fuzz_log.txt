@@ -1,0 +1,18 @@
+bumpalo-3.11.0/ bumpalo {'alloc::tests_rug_13::test_alloc_array': 'alloc__tests_rug_13__test_alloc_array', 'alloc::tests_rug_15::test_rug': 'alloc__tests_rug_15__test_rug', 'alloc::tests_rug_17::test_repeat': 'alloc__tests_rug_17__test_repeat', 'alloc::tests_rug_16::test_padding_needed_for': 'alloc__tests_rug_16__test_padding_needed_for', 'alloc::tests_rug_18::test_array': 'alloc__tests_rug_18__test_array', 'alloc::tests_rug_3::test_rug': 'alloc__tests_rug_3__test_rug', 'alloc::tests_rug_8::test_realloc_excess': 'alloc__tests_rug_8__test_realloc_excess', 'tests_rug_21::test_round_up_to': 'tests_rug_21__test_round_up_to', 'tests_rug_22::test_round_down_to': 'tests_rug_22__test_round_down_to', 'tests_rug_25::test_rug': 'tests_rug_25__test_rug', 'tests_rug_37::test_with_capacity': 'tests_rug_37__test_with_capacity', 'tests_rug_38::test_try_with_capacity': 'tests_rug_38__test_try_with_capacity', 'tests_rug_39::test_allocation_limit': 'tests_rug_39__test_allocation_limit', 'tests_rug_40::test_rug': 'tests_rug_40__test_rug', 'tests_rug_42::test_rug': 'tests_rug_42__test_rug', 'tests_rug_43::test_rug': 'tests_rug_43__test_rug', 'tests_rug_44::test_rug': 'tests_rug_44__test_rug', 'tests_rug_46::test_rug': 'tests_rug_46__test_rug', 'tests_rug_47::test_rug': 'tests_rug_47__test_rug', 'tests_rug_48::test_rug': 'tests_rug_48__test_rug', 'tests_rug_49::test_try_alloc_with': 'tests_rug_49__test_try_alloc_with', 'tests_rug_50::test_rug': 'tests_rug_50__test_rug', 'tests_rug_52::test_rug': 'tests_rug_52__test_rug', 'tests_rug_53::test_rug': 'tests_rug_53__test_rug', 'tests_rug_54::test_alloc_str': 'tests_rug_54__test_alloc_str', 'tests_rug_55::test_rug': 'tests_rug_55__test_rug', 'tests_rug_56::test_alloc_slice_fill_copy': 'tests_rug_56__test_alloc_slice_fill_copy', 'tests_rug_57::test_rug': 'tests_rug_57__test_rug', 'tests_rug_59::test_rug': 'tests_rug_59__test_rug', 'tests_rug_63::test_chunk_capacity': 'tests_rug_63__test_chunk_capacity', 'tests_rug_64::test_rug': 'tests_rug_64__test_rug', 'tests_rug_69::test_rug': 'tests_rug_69__test_rug'}
+timeout or err alloc::tests_rug_13::test_alloc_array
+timeout or err alloc::tests_rug_15::test_rug
+timeout or err alloc::tests_rug_3::test_rug
+timeout or err tests_rug_21::test_round_up_to
+timeout or err tests_rug_22::test_round_down_to
+timeout or err tests_rug_25::test_rug
+timeout or err tests_rug_40::test_rug
+timeout or err tests_rug_42::test_rug
+timeout or err tests_rug_46::test_rug
+timeout or err tests_rug_47::test_rug
+timeout or err tests_rug_48::test_rug
+timeout or err tests_rug_49::test_try_alloc_with
+timeout or err tests_rug_50::test_rug
+timeout or err tests_rug_52::test_rug
+timeout or err tests_rug_53::test_rug
+timeout or err tests_rug_54::test_alloc_str
+bumpalo-3.11.0/ done

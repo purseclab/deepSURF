@@ -1,0 +1,99 @@
+secp256k1::SecretKey::display_secret (&key::SecretKey) -> secret::DisplaySecret { }
+secp256k1::SecretKey::as_ptr (&key::SecretKey) -> *const u8 { }
+secp256k1::SecretKey::as_mut_ptr (&mut key::SecretKey) -> *mut u8 { MUTATE }
+secp256k1::SecretKey::len (&key::SecretKey) -> usize { }
+secp256k1::SecretKey::is_empty (&key::SecretKey) -> bool { }
+secp256k1::SecretKey::from_slice (&[u8]) -> std::result::Result<key::SecretKey, Error> { UNSAFE}
+secp256k1::SecretKey::from_keypair (&key::KeyPair) -> key::SecretKey { UNSAFE}
+secp256k1::SecretKey::secret_bytes (&key::SecretKey) -> [u8; 32] { }
+secp256k1::SecretKey::negate_assign (&mut key::SecretKey) -> () { UNSAFEMUTATE }
+secp256k1::SecretKey::add_assign (&mut key::SecretKey, &[u8]) -> std::result::Result<(), Error> { UNSAFEMUTATE }
+secp256k1::SecretKey::mul_assign (&mut key::SecretKey, &[u8]) -> std::result::Result<(), Error> { UNSAFEMUTATE }
+secp256k1::SignOnlyPreallocated::deallocate (*mut u8, usize) -> () { MUTATE }
+secp256k1::VerifyOnlyPreallocated::deallocate (*mut u8, usize) -> () { MUTATE }
+secp256k1::KeyPair::display_secret (&key::KeyPair) -> secret::DisplaySecret { }
+secp256k1::KeyPair::as_ptr (&key::KeyPair) -> *const secp256k1_sys::KeyPair { GETRAWPTR }
+secp256k1::KeyPair::as_mut_ptr (&mut key::KeyPair) -> *mut secp256k1_sys::KeyPair { GETRAWPTR MUTATE }
+secp256k1::KeyPair::from_secret_key (&Secp256k1<C>, key::SecretKey) -> key::KeyPair { UNSAFEGETRAWPTR }
+secp256k1::KeyPair::from_seckey_slice (&Secp256k1<C>, &[u8]) -> std::result::Result<key::KeyPair, Error> { UNSAFEGETRAWPTR }
+secp256k1::KeyPair::from_seckey_str (&Secp256k1<C>, &str) -> std::result::Result<key::KeyPair, Error> { }
+secp256k1::KeyPair::secret_bytes (&key::KeyPair) -> [u8; 32] { }
+secp256k1::KeyPair::tweak_add_assign (&mut key::KeyPair, &Secp256k1<C>, &[u8]) -> std::result::Result<(), Error> { UNSAFEGETRAWPTR MUTATE }
+secp256k1::KeyPair::public_key (&key::KeyPair) -> key::XOnlyPublicKey { }
+secp256k1::Secp256k1::gen_new () -> Secp256k1<C> { UNSAFE}
+secp256k1::Secp256k1::new () -> Secp256k1<context::alloc_only::All> { }
+secp256k1::Secp256k1::signing_only () -> Secp256k1<context::alloc_only::SignOnly> { }
+secp256k1::Secp256k1::verification_only () -> Secp256k1<context::alloc_only::VerifyOnly> { }
+secp256k1::Secp256k1::preallocate_size () -> usize { }
+secp256k1::Secp256k1::from_raw_all (*mut secp256k1_sys::Context) -> std::mem::ManuallyDrop<Secp256k1<context::AllPreallocated>> { UNSAFEMUTATE }
+secp256k1::Secp256k1::preallocate_signing_size () -> usize { }
+secp256k1::Secp256k1::from_raw_signining_only (*mut secp256k1_sys::Context) -> std::mem::ManuallyDrop<Secp256k1<context::SignOnlyPreallocated>> { UNSAFEMUTATE }
+secp256k1::Secp256k1::preallocate_verification_size () -> usize { }
+secp256k1::Secp256k1::from_raw_verification_only (*mut secp256k1_sys::Context) -> std::mem::ManuallyDrop<Secp256k1<context::VerifyOnlyPreallocated>> { UNSAFEMUTATE }
+secp256k1::Secp256k1::sign (&Secp256k1<C>, &Message, &key::SecretKey) -> ecdsa::Signature { }
+secp256k1::Secp256k1::sign_ecdsa (&Secp256k1<C>, &Message, &key::SecretKey) -> ecdsa::Signature { UNSAFEGETRAWPTR }
+secp256k1::Secp256k1::sign_grind_r (&Secp256k1<C>, &Message, &key::SecretKey, usize) -> ecdsa::Signature { }
+secp256k1::Secp256k1::sign_ecdsa_grind_r (&Secp256k1<C>, &Message, &key::SecretKey, usize) -> ecdsa::Signature { }
+secp256k1::Secp256k1::sign_low_r (&Secp256k1<C>, &Message, &key::SecretKey) -> ecdsa::Signature { }
+secp256k1::Secp256k1::sign_ecdsa_low_r (&Secp256k1<C>, &Message, &key::SecretKey) -> ecdsa::Signature { }
+secp256k1::Secp256k1::verify (&Secp256k1<C>, &Message, &ecdsa::Signature, &key::PublicKey) -> std::result::Result<(), Error> { }
+secp256k1::Secp256k1::verify_ecdsa (&Secp256k1<C>, &Message, &ecdsa::Signature, &key::PublicKey) -> std::result::Result<(), Error> { UNSAFE}
+secp256k1::Secp256k1::schnorrsig_sign_no_aux_rand (&Secp256k1<C>, &Message, &key::KeyPair) -> schnorr::Signature { }
+secp256k1::Secp256k1::sign_schnorr_no_aux_rand (&Secp256k1<C>, &Message, &key::KeyPair) -> schnorr::Signature { }
+secp256k1::Secp256k1::schnorrsig_verify (&Secp256k1<C>, &schnorr::Signature, &Message, &key::XOnlyPublicKey) -> std::result::Result<(), Error> { }
+secp256k1::Secp256k1::verify_schnorr (&Secp256k1<C>, &schnorr::Signature, &Message, &key::XOnlyPublicKey) -> std::result::Result<(), Error> { UNSAFE}
+secp256k1::Secp256k1::ctx (&Secp256k1<C>) -> &*mut secp256k1_sys::Context { }
+secp256k1::Secp256k1::preallocate_size_gen () -> usize { }
+secp256k1::AllPreallocated::deallocate (*mut u8, usize) -> () { MUTATE }
+secp256k1::ecdh::SharedSecret::display_secret (&ecdh::SharedSecret) -> secret::DisplaySecret { }
+secp256k1::ecdh::SharedSecret::new (&key::PublicKey, &key::SecretKey) -> ecdh::SharedSecret { UNSAFE}
+secp256k1::ecdh::SharedSecret::secret_bytes (&ecdh::SharedSecret) -> [u8; 32] { }
+secp256k1::XOnlyPublicKey::as_ptr (&key::XOnlyPublicKey) -> *const secp256k1_sys::XOnlyPublicKey { GETRAWPTR }
+secp256k1::XOnlyPublicKey::as_mut_ptr (&mut key::XOnlyPublicKey) -> *mut secp256k1_sys::XOnlyPublicKey { GETRAWPTR MUTATE }
+secp256k1::XOnlyPublicKey::from_keypair (&key::KeyPair) -> key::XOnlyPublicKey { UNSAFEGETRAWPTR }
+secp256k1::XOnlyPublicKey::from_slice (&[u8]) -> std::result::Result<key::XOnlyPublicKey, Error> { UNSAFEGETRAWPTR }
+secp256k1::XOnlyPublicKey::serialize (&key::XOnlyPublicKey) -> [u8; 32] { UNSAFE}
+secp256k1::XOnlyPublicKey::tweak_add_assign (&mut key::XOnlyPublicKey, &Secp256k1<V>, &[u8]) -> std::result::Result<key::Parity, Error> { UNSAFEGETRAWPTR MUTATE }
+secp256k1::XOnlyPublicKey::tweak_add_check (&key::XOnlyPublicKey, &Secp256k1<V>, &key::XOnlyPublicKey, key::Parity, [u8; 32]) -> bool { UNSAFEGETRAWPTR }
+secp256k1::SignOnly::deallocate (*mut u8, usize) -> () { UNSAFEMUTATE }
+secp256k1::PublicKey::as_ptr (&key::PublicKey) -> *const secp256k1_sys::PublicKey { GETRAWPTR }
+secp256k1::PublicKey::as_mut_ptr (&mut key::PublicKey) -> *mut secp256k1_sys::PublicKey { GETRAWPTR MUTATE }
+secp256k1::PublicKey::from_secret_key (&Secp256k1<C>, &key::SecretKey) -> key::PublicKey { UNSAFEGETRAWPTR }
+secp256k1::PublicKey::from_slice (&[u8]) -> std::result::Result<key::PublicKey, Error> { UNSAFEGETRAWPTR }
+secp256k1::PublicKey::from_keypair (&key::KeyPair) -> key::PublicKey { UNSAFEGETRAWPTR }
+secp256k1::PublicKey::serialize (&key::PublicKey) -> [u8; 33] { UNSAFEGETRAWPTR }
+secp256k1::PublicKey::serialize_uncompressed (&key::PublicKey) -> [u8; 65] { UNSAFEGETRAWPTR }
+secp256k1::PublicKey::negate_assign (&mut key::PublicKey, &Secp256k1<C>) -> () { UNSAFEGETRAWPTR MUTATE }
+secp256k1::PublicKey::add_exp_assign (&mut key::PublicKey, &Secp256k1<C>, &[u8]) -> std::result::Result<(), Error> { UNSAFEGETRAWPTR MUTATE }
+secp256k1::PublicKey::mul_assign (&mut key::PublicKey, &Secp256k1<C>, &[u8]) -> std::result::Result<(), Error> { UNSAFEGETRAWPTR MUTATE }
+secp256k1::PublicKey::combine (&key::PublicKey, &key::PublicKey) -> std::result::Result<key::PublicKey, Error> { }
+secp256k1::VerifyOnly::deallocate (*mut u8, usize) -> () { UNSAFEMUTATE }
+secp256k1::All::deallocate (*mut u8, usize) -> () { UNSAFEMUTATE }
+secp256k1::Parity::to_u8 (key::Parity) -> u8 { }
+secp256k1::Parity::to_i32 (key::Parity) -> i32 { }
+secp256k1::Parity::from_u8 (u8) -> std::result::Result<key::Parity, key::InvalidParityValue> { }
+secp256k1::Parity::from_i32 (i32) -> std::result::Result<key::Parity, key::InvalidParityValue> { }
+secp256k1::ecdsa::SerializedSignature::capacity (&ecdsa::SerializedSignature) -> usize { }
+secp256k1::ecdsa::SerializedSignature::len (&ecdsa::SerializedSignature) -> usize { }
+secp256k1::ecdsa::SerializedSignature::to_signature (&ecdsa::SerializedSignature) -> std::result::Result<ecdsa::Signature, Error> { }
+secp256k1::ecdsa::SerializedSignature::from_signature (&ecdsa::Signature) -> ecdsa::SerializedSignature { }
+secp256k1::ecdsa::SerializedSignature::is_empty (&ecdsa::SerializedSignature) -> bool { }
+secp256k1::ecdsa::Signature::from_der (&[u8]) -> std::result::Result<ecdsa::Signature, Error> { UNSAFEGETRAWPTR }
+secp256k1::ecdsa::Signature::from_compact (&[u8]) -> std::result::Result<ecdsa::Signature, Error> { UNSAFEGETRAWPTR }
+secp256k1::ecdsa::Signature::from_der_lax (&[u8]) -> std::result::Result<ecdsa::Signature, Error> { UNSAFEGETRAWPTR }
+secp256k1::ecdsa::Signature::normalize_s (&mut ecdsa::Signature) -> () { UNSAFEMUTATE }
+secp256k1::ecdsa::Signature::as_ptr (&ecdsa::Signature) -> *const secp256k1_sys::Signature { GETRAWPTR }
+secp256k1::ecdsa::Signature::as_mut_ptr (&mut ecdsa::Signature) -> *mut secp256k1_sys::Signature { GETRAWPTR MUTATE }
+secp256k1::ecdsa::Signature::serialize_der (&ecdsa::Signature) -> ecdsa::SerializedSignature { UNSAFEGETRAWPTR }
+secp256k1::ecdsa::Signature::serialize_compact (&ecdsa::Signature) -> [u8; 64] { UNSAFE}
+secp256k1::schnorr::Signature::as_ptr (&schnorr::Signature) -> *const u8 { }
+secp256k1::schnorr::Signature::as_mut_ptr (&mut schnorr::Signature) -> *mut u8 { MUTATE }
+secp256k1::schnorr::Signature::len (&schnorr::Signature) -> usize { }
+secp256k1::schnorr::Signature::is_empty (&schnorr::Signature) -> bool { }
+secp256k1::schnorr::Signature::from_slice (&[u8]) -> std::result::Result<schnorr::Signature, Error> { }
+secp256k1::Message::as_ptr (&Message) -> *const u8 { }
+secp256k1::Message::as_mut_ptr (&mut Message) -> *mut u8 { MUTATE }
+secp256k1::Message::len (&Message) -> usize { }
+secp256k1::Message::is_empty (&Message) -> bool { }
+secp256k1::Message::from_slice (&[u8]) -> std::result::Result<Message, Error> { }
+secp256k1::ecdh::shared_secret_point () { }

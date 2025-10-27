@@ -1,0 +1,580 @@
+-----------------
+src/lib.rs Endian::to_be
+deps:{"Endian::to_be":{"Self":["Endian"]}}
+candidates:{"Endian::to_be":{"Self":[]}}
+let mut p0 = MaybeUninit::uninit().assume_init(); // Self
++p0.to_be();
++Endian::to_be(p0);
++crate::Endian::to_be(p0);
++crate::Endian::to_be(p0);
+-----------------
+src/lib.rs Endian::to_le
+deps:{"Endian::to_le":{"Self":["Endian"]}}
+candidates:{"Endian::to_le":{"Self":[]}}
+let mut p0 = MaybeUninit::uninit().assume_init(); // Self
++p0.to_le();
++Endian::to_le(p0);
++crate::Endian::to_le(p0);
++crate::Endian::to_le(p0);
+-----------------
+src/lib.rs Endian::from_be
+deps:{"Endian::from_be":{"Self":["Endian"]}}
+candidates:{"Endian::from_be":{"Self":[]}}
+let mut p0 = MaybeUninit::uninit().assume_init(); // Self
++p0.from_be();
++Endian::from_be(p0);
++crate::Endian::from_be(p0);
++crate::Endian::from_be(p0);
+-----------------
+src/lib.rs Endian::from_le
+deps:{"Endian::from_le":{"Self":["Endian"]}}
+candidates:{"Endian::from_le":{"Self":[]}}
+let mut p0 = MaybeUninit::uninit().assume_init(); // Self
++p0.from_le();
++Endian::from_le(p0);
++crate::Endian::from_le(p0);
++crate::Endian::from_le(p0);
+-----------------
+src/lib.rs <bool as Endian>::from_be
+deps:{}
+candidates:{}
+let mut p0 = true; // None+bool
++p0.from_be();
++<bool as Endian>::from_be(p0);
++crate::<bool as Endian>::from_be(p0);
++<bool>::from_be(p0);
+-----------------
+src/lib.rs <bool as Endian>::from_le
+deps:{}
+candidates:{}
+let mut p0 = true; // None+bool
++p0.from_le();
++<bool as Endian>::from_le(p0);
++crate::<bool as Endian>::from_le(p0);
++<bool>::from_le(p0);
+-----------------
+src/lib.rs <bool as Endian>::to_be
+deps:{}
+candidates:{}
+let mut p0 = true; // None+bool
++p0.to_be();
++<bool as Endian>::to_be(p0);
++crate::<bool as Endian>::to_be(p0);
++<bool>::to_be(p0);
+-----------------
+src/lib.rs <bool as Endian>::to_le
+deps:{}
+candidates:{}
+let mut p0 = true; // None+bool
++p0.to_le();
++<bool as Endian>::to_le(p0);
++crate::<bool as Endian>::to_le(p0);
++<bool>::to_le(p0);
+-----------------
+src/lib.rs <char as Endian>::from_be
+deps:{}
+candidates:{}
+let mut p0 = 'a'; // None+char
++p0.from_be();
++<char as Endian>::from_be(p0);
++crate::<char as Endian>::from_be(p0);
++<char>::from_be(p0);
+-----------------
+src/lib.rs <char as Endian>::from_le
+deps:{}
+candidates:{}
+let mut p0 = 'a'; // None+char
++p0.from_le();
++<char as Endian>::from_le(p0);
++crate::<char as Endian>::from_le(p0);
++<char>::from_le(p0);
+-----------------
+src/lib.rs <char as Endian>::to_be
+deps:{}
+candidates:{}
+let mut p0 = 'a'; // None+char
++p0.to_be();
++<char as Endian>::to_be(p0);
++crate::<char as Endian>::to_be(p0);
++<char>::to_be(p0);
+-----------------
+src/lib.rs <char as Endian>::to_le
+deps:{}
+candidates:{}
+let mut p0 = 'a'; // None+char
++p0.to_le();
++<char as Endian>::to_le(p0);
++crate::<char as Endian>::to_le(p0);
++<char>::to_le(p0);
+-----------------
+src/lib.rs <i8 as Endian>::from_be
+deps:{}
+candidates:{}
+let mut p0 = 0i8; // None+i8
++p0.from_be();
++<i8 as Endian>::from_be(p0);
++crate::<i8 as Endian>::from_be(p0);
++<i8>::from_be(p0);
+-----------------
+src/lib.rs <i8 as Endian>::from_le
+deps:{}
+candidates:{}
+let mut p0 = 0i8; // None+i8
++p0.from_le();
++<i8 as Endian>::from_le(p0);
++crate::<i8 as Endian>::from_le(p0);
++<i8>::from_le(p0);
+-----------------
+src/lib.rs <i8 as Endian>::to_be
+deps:{}
+candidates:{}
+let mut p0 = 0i8; // None+i8
++p0.to_be();
++<i8 as Endian>::to_be(p0);
++crate::<i8 as Endian>::to_be(p0);
++<i8>::to_be(p0);
+-----------------
+src/lib.rs <i8 as Endian>::to_le
+deps:{}
+candidates:{}
+let mut p0 = 0i8; // None+i8
++p0.to_le();
++<i8 as Endian>::to_le(p0);
++crate::<i8 as Endian>::to_le(p0);
++<i8>::to_le(p0);
+-----------------
+src/lib.rs <u8 as Endian>::from_be
+deps:{}
+candidates:{}
+let mut p0 = 0u8; // None+u8
++p0.from_be();
++<u8 as Endian>::from_be(p0);
++crate::<u8 as Endian>::from_be(p0);
++<u8>::from_be(p0);
+-----------------
+src/lib.rs <u8 as Endian>::from_le
+deps:{}
+candidates:{}
+let mut p0 = 0u8; // None+u8
++p0.from_le();
++<u8 as Endian>::from_le(p0);
++crate::<u8 as Endian>::from_le(p0);
++<u8>::from_le(p0);
+-----------------
+src/lib.rs <u8 as Endian>::to_be
+deps:{}
+candidates:{}
+let mut p0 = 0u8; // None+u8
++p0.to_be();
++<u8 as Endian>::to_be(p0);
++crate::<u8 as Endian>::to_be(p0);
++<u8>::to_be(p0);
+-----------------
+src/lib.rs <u8 as Endian>::to_le
+deps:{}
+candidates:{}
+let mut p0 = 0u8; // None+u8
++p0.to_le();
++<u8 as Endian>::to_le(p0);
++crate::<u8 as Endian>::to_le(p0);
++<u8>::to_le(p0);
+-----------------
+src/lib.rs <i16 as Endian>::from_be
+deps:{}
+candidates:{}
+let mut p0 = 0i16; // None+i16
++p0.from_be();
++<i16 as Endian>::from_be(p0);
++crate::<i16 as Endian>::from_be(p0);
++<i16>::from_be(p0);
+-----------------
+src/lib.rs <i16 as Endian>::from_le
+deps:{}
+candidates:{}
+let mut p0 = 0i16; // None+i16
++p0.from_le();
++<i16 as Endian>::from_le(p0);
++crate::<i16 as Endian>::from_le(p0);
++<i16>::from_le(p0);
+-----------------
+src/lib.rs <i16 as Endian>::to_be
+deps:{}
+candidates:{}
+let mut p0 = 0i16; // None+i16
++p0.to_be();
++<i16 as Endian>::to_be(p0);
++crate::<i16 as Endian>::to_be(p0);
++<i16>::to_be(p0);
+-----------------
+src/lib.rs <i16 as Endian>::to_le
+deps:{}
+candidates:{}
+let mut p0 = 0i16; // None+i16
++p0.to_le();
++<i16 as Endian>::to_le(p0);
++crate::<i16 as Endian>::to_le(p0);
++<i16>::to_le(p0);
+-----------------
+src/lib.rs <u16 as Endian>::from_be
+deps:{}
+candidates:{}
+let mut p0 = 0u16; // None+u16
++p0.from_be();
++<u16 as Endian>::from_be(p0);
++crate::<u16 as Endian>::from_be(p0);
++<u16>::from_be(p0);
+-----------------
+src/lib.rs <u16 as Endian>::from_le
+deps:{}
+candidates:{}
+let mut p0 = 0u16; // None+u16
++p0.from_le();
++<u16 as Endian>::from_le(p0);
++crate::<u16 as Endian>::from_le(p0);
++<u16>::from_le(p0);
+-----------------
+src/lib.rs <u16 as Endian>::to_be
+deps:{}
+candidates:{}
+let mut p0 = 0u16; // None+u16
++p0.to_be();
++<u16 as Endian>::to_be(p0);
++crate::<u16 as Endian>::to_be(p0);
++<u16>::to_be(p0);
+-----------------
+src/lib.rs <u16 as Endian>::to_le
+deps:{}
+candidates:{}
+let mut p0 = 0u16; // None+u16
++p0.to_le();
++<u16 as Endian>::to_le(p0);
++crate::<u16 as Endian>::to_le(p0);
++<u16>::to_le(p0);
+-----------------
+src/lib.rs <i32 as Endian>::from_be
+deps:{}
+candidates:{}
+let mut p0 = 0i32; // None+i32
++p0.from_be();
++<i32 as Endian>::from_be(p0);
++crate::<i32 as Endian>::from_be(p0);
++<i32>::from_be(p0);
+-----------------
+src/lib.rs <i32 as Endian>::from_le
+deps:{}
+candidates:{}
+let mut p0 = 0i32; // None+i32
++p0.from_le();
++<i32 as Endian>::from_le(p0);
++crate::<i32 as Endian>::from_le(p0);
++<i32>::from_le(p0);
+-----------------
+src/lib.rs <i32 as Endian>::to_be
+deps:{}
+candidates:{}
+let mut p0 = 0i32; // None+i32
++p0.to_be();
++<i32 as Endian>::to_be(p0);
++crate::<i32 as Endian>::to_be(p0);
++<i32>::to_be(p0);
+-----------------
+src/lib.rs <i32 as Endian>::to_le
+deps:{}
+candidates:{}
+let mut p0 = 0i32; // None+i32
++p0.to_le();
++<i32 as Endian>::to_le(p0);
++crate::<i32 as Endian>::to_le(p0);
++<i32>::to_le(p0);
+-----------------
+src/lib.rs <u32 as Endian>::from_be
+deps:{}
+candidates:{}
+let mut p0 = 0u32; // None+u32
++p0.from_be();
++<u32 as Endian>::from_be(p0);
++crate::<u32 as Endian>::from_be(p0);
++<u32>::from_be(p0);
+-----------------
+src/lib.rs <u32 as Endian>::from_le
+deps:{}
+candidates:{}
+let mut p0 = 0u32; // None+u32
++p0.from_le();
++<u32 as Endian>::from_le(p0);
++crate::<u32 as Endian>::from_le(p0);
++<u32>::from_le(p0);
+-----------------
+src/lib.rs <u32 as Endian>::to_be
+deps:{}
+candidates:{}
+let mut p0 = 0u32; // None+u32
++p0.to_be();
++<u32 as Endian>::to_be(p0);
++crate::<u32 as Endian>::to_be(p0);
++<u32>::to_be(p0);
+-----------------
+src/lib.rs <u32 as Endian>::to_le
+deps:{}
+candidates:{}
+let mut p0 = 0u32; // None+u32
++p0.to_le();
++<u32 as Endian>::to_le(p0);
++crate::<u32 as Endian>::to_le(p0);
++<u32>::to_le(p0);
+-----------------
+src/lib.rs <i64 as Endian>::from_be
+deps:{}
+candidates:{}
+let mut p0 = 0i64; // None+i64
++p0.from_be();
++<i64 as Endian>::from_be(p0);
++crate::<i64 as Endian>::from_be(p0);
++<i64>::from_be(p0);
+-----------------
+src/lib.rs <i64 as Endian>::from_le
+deps:{}
+candidates:{}
+let mut p0 = 0i64; // None+i64
++p0.from_le();
++<i64 as Endian>::from_le(p0);
++crate::<i64 as Endian>::from_le(p0);
++<i64>::from_le(p0);
+-----------------
+src/lib.rs <i64 as Endian>::to_be
+deps:{}
+candidates:{}
+let mut p0 = 0i64; // None+i64
++p0.to_be();
++<i64 as Endian>::to_be(p0);
++crate::<i64 as Endian>::to_be(p0);
++<i64>::to_be(p0);
+-----------------
+src/lib.rs <i64 as Endian>::to_le
+deps:{}
+candidates:{}
+let mut p0 = 0i64; // None+i64
++p0.to_le();
++<i64 as Endian>::to_le(p0);
++crate::<i64 as Endian>::to_le(p0);
++<i64>::to_le(p0);
+-----------------
+src/lib.rs <u64 as Endian>::from_be
+deps:{}
+candidates:{}
+let mut p0 = 0u64; // None+u64
++p0.from_be();
++<u64 as Endian>::from_be(p0);
++crate::<u64 as Endian>::from_be(p0);
++<u64>::from_be(p0);
+-----------------
+src/lib.rs <u64 as Endian>::from_le
+deps:{}
+candidates:{}
+let mut p0 = 0u64; // None+u64
++p0.from_le();
++<u64 as Endian>::from_le(p0);
++crate::<u64 as Endian>::from_le(p0);
++<u64>::from_le(p0);
+-----------------
+src/lib.rs <u64 as Endian>::to_be
+deps:{}
+candidates:{}
+let mut p0 = 0u64; // None+u64
++p0.to_be();
++<u64 as Endian>::to_be(p0);
++crate::<u64 as Endian>::to_be(p0);
++<u64>::to_be(p0);
+-----------------
+src/lib.rs <u64 as Endian>::to_le
+deps:{}
+candidates:{}
+let mut p0 = 0u64; // None+u64
++p0.to_le();
++<u64 as Endian>::to_le(p0);
++crate::<u64 as Endian>::to_le(p0);
++<u64>::to_le(p0);
+-----------------
+src/lib.rs <i128 as Endian>::from_be
+deps:{}
+candidates:{}
+let mut p0 = 0i128; // None+i128
++p0.from_be();
++<i128 as Endian>::from_be(p0);
++crate::<i128 as Endian>::from_be(p0);
++<i128>::from_be(p0);
+-----------------
+src/lib.rs <i128 as Endian>::from_le
+deps:{}
+candidates:{}
+let mut p0 = 0i128; // None+i128
++p0.from_le();
++<i128 as Endian>::from_le(p0);
++crate::<i128 as Endian>::from_le(p0);
++<i128>::from_le(p0);
+-----------------
+src/lib.rs <i128 as Endian>::to_be
+deps:{}
+candidates:{}
+let mut p0 = 0i128; // None+i128
++p0.to_be();
++<i128 as Endian>::to_be(p0);
++crate::<i128 as Endian>::to_be(p0);
++<i128>::to_be(p0);
+-----------------
+src/lib.rs <i128 as Endian>::to_le
+deps:{}
+candidates:{}
+let mut p0 = 0i128; // None+i128
++p0.to_le();
++<i128 as Endian>::to_le(p0);
++crate::<i128 as Endian>::to_le(p0);
++<i128>::to_le(p0);
+-----------------
+src/lib.rs <u128 as Endian>::from_be
+deps:{}
+candidates:{}
+let mut p0 = 0u128; // None+u128
++p0.from_be();
++<u128 as Endian>::from_be(p0);
++crate::<u128 as Endian>::from_be(p0);
++<u128>::from_be(p0);
+-----------------
+src/lib.rs <u128 as Endian>::from_le
+deps:{}
+candidates:{}
+let mut p0 = 0u128; // None+u128
++p0.from_le();
++<u128 as Endian>::from_le(p0);
++crate::<u128 as Endian>::from_le(p0);
++<u128>::from_le(p0);
+-----------------
+src/lib.rs <u128 as Endian>::to_be
+deps:{}
+candidates:{}
+let mut p0 = 0u128; // None+u128
++p0.to_be();
++<u128 as Endian>::to_be(p0);
++crate::<u128 as Endian>::to_be(p0);
++<u128>::to_be(p0);
+-----------------
+src/lib.rs <u128 as Endian>::to_le
+deps:{}
+candidates:{}
+let mut p0 = 0u128; // None+u128
++p0.to_le();
++<u128 as Endian>::to_le(p0);
++crate::<u128 as Endian>::to_le(p0);
++<u128>::to_le(p0);
+-----------------
+src/lib.rs <f32 as Endian>::from_be
+deps:{}
+candidates:{}
+let mut p0 = 0f32; // None+f32
++p0.from_be();
++<f32 as Endian>::from_be(p0);
++crate::<f32 as Endian>::from_be(p0);
++<f32>::from_be(p0);
+-----------------
+src/lib.rs <f32 as Endian>::from_le
+deps:{}
+candidates:{}
+let mut p0 = 0f32; // None+f32
++p0.from_le();
++<f32 as Endian>::from_le(p0);
++crate::<f32 as Endian>::from_le(p0);
++<f32>::from_le(p0);
+-----------------
+src/lib.rs <f32 as Endian>::to_be
+deps:{}
+candidates:{}
+let mut p0 = 0f32; // None+f32
++p0.to_be();
++<f32 as Endian>::to_be(p0);
++crate::<f32 as Endian>::to_be(p0);
++<f32>::to_be(p0);
+-----------------
+src/lib.rs <f32 as Endian>::to_le
+deps:{}
+candidates:{}
+let mut p0 = 0f32; // None+f32
++p0.to_le();
++<f32 as Endian>::to_le(p0);
++crate::<f32 as Endian>::to_le(p0);
++<f32>::to_le(p0);
+-----------------
+src/lib.rs <f64 as Endian>::from_be
+deps:{}
+candidates:{}
+let mut p0 = 0f64; // None+f64
++p0.from_be();
++<f64 as Endian>::from_be(p0);
++crate::<f64 as Endian>::from_be(p0);
++<f64>::from_be(p0);
+-----------------
+src/lib.rs <f64 as Endian>::from_le
+deps:{}
+candidates:{}
+let mut p0 = 0f64; // None+f64
++p0.from_le();
++<f64 as Endian>::from_le(p0);
++crate::<f64 as Endian>::from_le(p0);
++<f64>::from_le(p0);
+-----------------
+src/lib.rs <f64 as Endian>::to_be
+deps:{}
+candidates:{}
+let mut p0 = 0f64; // None+f64
++p0.to_be();
++<f64 as Endian>::to_be(p0);
++crate::<f64 as Endian>::to_be(p0);
++<f64>::to_be(p0);
+-----------------
+src/lib.rs <f64 as Endian>::to_le
+deps:{}
+candidates:{}
+let mut p0 = 0f64; // None+f64
++p0.to_le();
++<f64 as Endian>::to_le(p0);
++crate::<f64 as Endian>::to_le(p0);
++<f64>::to_le(p0);
+-----------------
+src/slices.rs slices::<impl Endian for &'a mut [T]>::from_be
+'a
+deps:{"slices::<impl Endian for &'a mut [T]>::from_be":{"T":["std::marker::Sized","Endian"]}}
+candidates:{"slices::<impl Endian for &'a mut [T]>::from_be":{"T":[]}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // [T]
++p0.from_be();
++slices::<impl Endian for &'a mut [T]>::from_be(p0);
++crate::slices::<impl Endian for &'a mut [T]>::from_be(p0);
++<&'a mut [T]>::from_be(p0);
+-----------------
+src/slices.rs slices::<impl Endian for &'a mut [T]>::from_le
+'a
+deps:{"slices::<impl Endian for &'a mut [T]>::from_le":{"T":["Endian","std::marker::Sized"]}}
+candidates:{"slices::<impl Endian for &'a mut [T]>::from_le":{"T":[]}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // [T]
++p0.from_le();
++slices::<impl Endian for &'a mut [T]>::from_le(p0);
++crate::slices::<impl Endian for &'a mut [T]>::from_le(p0);
++<&'a mut [T]>::from_le(p0);
+-----------------
+src/slices.rs slices::<impl Endian for &'a mut [T]>::to_be
+'a
+deps:{"slices::<impl Endian for &'a mut [T]>::to_be":{"T":["std::marker::Sized","Endian"]}}
+candidates:{"slices::<impl Endian for &'a mut [T]>::to_be":{"T":[]}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // [T]
++p0.to_be();
++slices::<impl Endian for &'a mut [T]>::to_be(p0);
++crate::slices::<impl Endian for &'a mut [T]>::to_be(p0);
++<&'a mut [T]>::to_be(p0);
+-----------------
+src/slices.rs slices::<impl Endian for &'a mut [T]>::to_le
+'a
+deps:{"slices::<impl Endian for &'a mut [T]>::to_le":{"T":["Endian","std::marker::Sized"]}}
+candidates:{"slices::<impl Endian for &'a mut [T]>::to_le":{"T":[]}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // [T]
++p0.to_le();
++slices::<impl Endian for &'a mut [T]>::to_le(p0);
++crate::slices::<impl Endian for &'a mut [T]>::to_le(p0);
++<&'a mut [T]>::to_le(p0);

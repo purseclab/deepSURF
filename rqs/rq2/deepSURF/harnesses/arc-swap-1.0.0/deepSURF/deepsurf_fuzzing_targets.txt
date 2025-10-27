@@ -1,0 +1,193 @@
+deepSURF: Generated Targets to be Fuzzed
+------------------------------------------------------------------------------------------------------------------------------------
+  StableURAPI: store::/home/cdc/SURF/deepSURF-big-experiment-harnesses/arc-swap-1.0.0/src/lib.rs::447,
+    - URAPI: DefId(0:534 ~ arc_swap[599a]::{impl#8}::fmt),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * arc-swap_fuzz_14938393723112986887_deepseek-r1_turn4
+      * arc-swap_fuzz_10272780927298694378_deepseek-r1_turn5
+      * arc-swap_fuzz_2771187666905714009_deepseek-r1_turn5
+      * arc-swap_fuzz_11677976954618066484_deepseek-r1_turn2
+      * arc-swap_fuzz_4559517233501286651_deepseek-r1_turn3
+      * arc-swap_fuzz_17095977883110004252_deepseek-r1_turn3
+      * arc-swap_fuzz_3951001589409176987_deepseek-r1_turn5
+      * arc-swap_fuzz_15931023786423348127_deepseek-r1_turn5
+      * arc-swap_fuzz_15299012714667181133_deepseek-r1_turn5
+      * arc-swap_fuzz_10419781274600462251_deepseek-r1_turn5
+      * arc-swap_fuzz_8618517671779219665_deepseek-r1_turn5
+      * arc-swap_fuzz_11076107894103806551_deepseek-r1_turn4
+      * arc-swap_fuzz_18237732187100875680_deepseek-r1_turn5
+  StableURAPI: into_inner::/home/cdc/SURF/deepSURF-big-experiment-harnesses/arc-swap-1.0.0/src/lib.rs::374,
+    - URAPI: DefId(0:489 ~ arc_swap[599a]::{impl#0}::into_inner),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * arc-swap_fuzz_10419781274600462251_deepseek-r1_turn5
+  StableURAPI: rcu::/home/cdc/SURF/deepSURF-big-experiment-harnesses/arc-swap-1.0.0/src/lib.rs::592,
+    - URAPI: DefId(0:555 ~ arc_swap[599a]::{impl#11}::rcu),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * arc-swap_fuzz_2771187666905714009_deepseek-r1_turn5
+      * arc-swap_fuzz_11677976954618066484_deepseek-r1_turn2
+      * arc-swap_fuzz_18237732187100875680_deepseek-r1_turn5
+      * arc-swap_fuzz_10272780927298694378_deepseek-r1_turn5
+      * arc-swap_fuzz_17095977883110004252_deepseek-r1_turn3
+  StableURAPI: into_inner::/home/cdc/SURF/deepSURF-big-experiment-harnesses/arc-swap-1.0.0/src/lib.rs::172,
+    - URAPI: DefId(0:489 ~ arc_swap[599a]::{impl#0}::into_inner),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * arc-swap_fuzz_10419781274600462251_deepseek-r1_turn5
+      * arc-swap_fuzz_8618517671779219665_deepseek-r1_turn5
+  StableURAPI: deref::/home/cdc/SURF/deepSURF-big-experiment-harnesses/arc-swap-1.0.0/src/access.rs::232,
+    - URAPI: DefId(0:550 ~ arc_swap[599a]::{impl#11}::load),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * arc-swap_fuzz_10272780927298694378_deepseek-r1_turn5
+      * arc-swap_fuzz_11076107894103806551_deepseek-r1_turn4
+      * arc-swap_fuzz_15931023786423348127_deepseek-r1_turn5
+      * arc-swap_fuzz_8618517671779219665_deepseek-r1_turn5
+      * arc-swap_fuzz_14938393723112986887_deepseek-r1_turn4
+      * arc-swap_fuzz_18237732187100875680_deepseek-r1_turn5
+      * arc-swap_fuzz_15299012714667181133_deepseek-r1_turn5
+      * arc-swap_fuzz_10419781274600462251_deepseek-r1_turn5
+      * arc-swap_fuzz_17095977883110004252_deepseek-r1_turn3
+  StableURAPI: load_full::/home/cdc/SURF/deepSURF-big-experiment-harnesses/arc-swap-1.0.0/src/lib.rs::389,
+    - URAPI: DefId(0:534 ~ arc_swap[599a]::{impl#8}::fmt),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * arc-swap_fuzz_15299012714667181133_deepseek-r1_turn5
+      * arc-swap_fuzz_4559517233501286651_deepseek-r1_turn3
+      * arc-swap_fuzz_17095977883110004252_deepseek-r1_turn3
+      * arc-swap_fuzz_15931023786423348127_deepseek-r1_turn5
+      * arc-swap_fuzz_11076107894103806551_deepseek-r1_turn4
+      * arc-swap_fuzz_14938393723112986887_deepseek-r1_turn4
+      * arc-swap_fuzz_2771187666905714009_deepseek-r1_turn5
+      * arc-swap_fuzz_18237732187100875680_deepseek-r1_turn5
+      * arc-swap_fuzz_3951001589409176987_deepseek-r1_turn5
+      * arc-swap_fuzz_4597662361423560632_deepseek-r1_turn6
+      * arc-swap_fuzz_10419781274600462251_deepseek-r1_turn5
+      * arc-swap_fuzz_10272780927298694378_deepseek-r1_turn5
+  StableURAPI: load::/home/cdc/SURF/deepSURF-big-experiment-harnesses/arc-swap-1.0.0/src/access.rs::285,
+    - URAPI: DefId(0:550 ~ arc_swap[599a]::{impl#11}::load),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * arc-swap_fuzz_17095977883110004252_deepseek-r1_turn3
+      * arc-swap_fuzz_10272780927298694378_deepseek-r1_turn5
+      * arc-swap_fuzz_14938393723112986887_deepseek-r1_turn4
+      * arc-swap_fuzz_18237732187100875680_deepseek-r1_turn5
+      * arc-swap_fuzz_10419781274600462251_deepseek-r1_turn5
+      * arc-swap_fuzz_8618517671779219665_deepseek-r1_turn5
+      * arc-swap_fuzz_11076107894103806551_deepseek-r1_turn4
+      * arc-swap_fuzz_15931023786423348127_deepseek-r1_turn5
+      * arc-swap_fuzz_15299012714667181133_deepseek-r1_turn5
+  StableURAPI: compare_and_swap::/home/cdc/SURF/deepSURF-big-experiment-harnesses/arc-swap-1.0.0/src/lib.rs::482,
+    - URAPI: DefId(0:534 ~ arc_swap[599a]::{impl#8}::fmt),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * arc-swap_fuzz_17095977883110004252_deepseek-r1_turn3
+      * arc-swap_fuzz_15931023786423348127_deepseek-r1_turn5
+      * arc-swap_fuzz_11677976954618066484_deepseek-r1_turn2
+      * arc-swap_fuzz_18237732187100875680_deepseek-r1_turn5
+      * arc-swap_fuzz_3951001589409176987_deepseek-r1_turn5
+      * arc-swap_fuzz_15299012714667181133_deepseek-r1_turn5
+      * arc-swap_fuzz_10419781274600462251_deepseek-r1_turn5
+      * arc-swap_fuzz_4559517233501286651_deepseek-r1_turn3
+      * arc-swap_fuzz_10272780927298694378_deepseek-r1_turn5
+      * arc-swap_fuzz_11076107894103806551_deepseek-r1_turn4
+      * arc-swap_fuzz_2771187666905714009_deepseek-r1_turn5
+      * arc-swap_fuzz_8618517671779219665_deepseek-r1_turn5
+      * arc-swap_fuzz_14938393723112986887_deepseek-r1_turn4
+      * arc-swap_fuzz_4597662361423560632_deepseek-r1_turn6
+  StableURAPI: load::/home/cdc/SURF/deepSURF-big-experiment-harnesses/arc-swap-1.0.0/src/lib.rs::439,
+    - URAPI: DefId(0:534 ~ arc_swap[599a]::{impl#8}::fmt),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * arc-swap_fuzz_10272780927298694378_deepseek-r1_turn5
+      * arc-swap_fuzz_11076107894103806551_deepseek-r1_turn4
+      * arc-swap_fuzz_18237732187100875680_deepseek-r1_turn5
+      * arc-swap_fuzz_2771187666905714009_deepseek-r1_turn5
+      * arc-swap_fuzz_8618517671779219665_deepseek-r1_turn5
+      * arc-swap_fuzz_3951001589409176987_deepseek-r1_turn5
+      * arc-swap_fuzz_11677976954618066484_deepseek-r1_turn2
+      * arc-swap_fuzz_14938393723112986887_deepseek-r1_turn4
+      * arc-swap_fuzz_15931023786423348127_deepseek-r1_turn5
+      * arc-swap_fuzz_4559517233501286651_deepseek-r1_turn3
+      * arc-swap_fuzz_15299012714667181133_deepseek-r1_turn5
+      * arc-swap_fuzz_10419781274600462251_deepseek-r1_turn5
+      * arc-swap_fuzz_4597662361423560632_deepseek-r1_turn6
+  StableURAPI: deref::/home/cdc/SURF/deepSURF-big-experiment-harnesses/arc-swap-1.0.0/src/access.rs::162,
+    - URAPI: DefId(0:55 ~ arc_swap[599a]::access::{impl#6}::deref),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * arc-swap_fuzz_17095977883110004252_deepseek-r1_turn3
+  StableURAPI: load::/home/cdc/SURF/deepSURF-big-experiment-harnesses/arc-swap-1.0.0/src/cache.rs::112,
+    - URAPI: DefId(0:550 ~ arc_swap[599a]::{impl#11}::load),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * arc-swap_fuzz_11076107894103806551_deepseek-r1_turn4
+      * arc-swap_fuzz_4597662361423560632_deepseek-r1_turn6
+      * arc-swap_fuzz_15931023786423348127_deepseek-r1_turn5
+      * arc-swap_fuzz_14938393723112986887_deepseek-r1_turn4
+      * arc-swap_fuzz_2771187666905714009_deepseek-r1_turn5
+      * arc-swap_fuzz_17095977883110004252_deepseek-r1_turn3
+      * arc-swap_fuzz_3951001589409176987_deepseek-r1_turn5
+      * arc-swap_fuzz_15299012714667181133_deepseek-r1_turn5
+      * arc-swap_fuzz_8618517671779219665_deepseek-r1_turn5
+      * arc-swap_fuzz_10419781274600462251_deepseek-r1_turn5
+      * arc-swap_fuzz_18237732187100875680_deepseek-r1_turn5
+  StableURAPI: swap::/home/cdc/SURF/deepSURF-big-experiment-harnesses/arc-swap-1.0.0/src/lib.rs::454,
+    - URAPI: DefId(0:534 ~ arc_swap[599a]::{impl#8}::fmt),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * arc-swap_fuzz_4559517233501286651_deepseek-r1_turn3
+      * arc-swap_fuzz_18237732187100875680_deepseek-r1_turn5
+      * arc-swap_fuzz_4597662361423560632_deepseek-r1_turn6
+      * arc-swap_fuzz_8618517671779219665_deepseek-r1_turn5
+      * arc-swap_fuzz_15931023786423348127_deepseek-r1_turn5
+      * arc-swap_fuzz_17095977883110004252_deepseek-r1_turn3
+      * arc-swap_fuzz_11677976954618066484_deepseek-r1_turn2
+      * arc-swap_fuzz_14938393723112986887_deepseek-r1_turn4
+      * arc-swap_fuzz_10272780927298694378_deepseek-r1_turn5
+      * arc-swap_fuzz_15299012714667181133_deepseek-r1_turn5
+      * arc-swap_fuzz_3951001589409176987_deepseek-r1_turn5
+      * arc-swap_fuzz_10419781274600462251_deepseek-r1_turn5
+  StableURAPI: new::/home/cdc/SURF/deepSURF-big-experiment-harnesses/arc-swap-1.0.0/src/cache.rs::94,
+    - URAPI: DefId(0:550 ~ arc_swap[599a]::{impl#11}::load),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * arc-swap_fuzz_10419781274600462251_deepseek-r1_turn5
+      * arc-swap_fuzz_15931023786423348127_deepseek-r1_turn5
+      * arc-swap_fuzz_14938393723112986887_deepseek-r1_turn4
+      * arc-swap_fuzz_3951001589409176987_deepseek-r1_turn5
+      * arc-swap_fuzz_4597662361423560632_deepseek-r1_turn6
+      * arc-swap_fuzz_2771187666905714009_deepseek-r1_turn5
+      * arc-swap_fuzz_8618517671779219665_deepseek-r1_turn5
+      * arc-swap_fuzz_17095977883110004252_deepseek-r1_turn3
+      * arc-swap_fuzz_15299012714667181133_deepseek-r1_turn5
+      * arc-swap_fuzz_11076107894103806551_deepseek-r1_turn4
+      * arc-swap_fuzz_18237732187100875680_deepseek-r1_turn5
+  StableURAPI: load::/home/cdc/SURF/deepSURF-big-experiment-harnesses/arc-swap-1.0.0/src/cache.rs::232,
+    - URAPI: DefId(0:153 ~ arc_swap[599a]::cache::{impl#0}::load),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * arc-swap_fuzz_3951001589409176987_deepseek-r1_turn5
+  StableURAPI: load::/home/cdc/SURF/deepSURF-big-experiment-harnesses/arc-swap-1.0.0/src/access.rs::201,
+    - URAPI: DefId(0:55 ~ arc_swap[599a]::access::{impl#6}::deref),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * arc-swap_fuzz_17095977883110004252_deepseek-r1_turn3
+------------------------------------------------------------------------------------------------------------------------------------

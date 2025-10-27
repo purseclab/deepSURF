@@ -1,0 +1,252 @@
+     Removed 139 files, 55.0MiB total
+   Compiling semver v1.0.26
+   Compiling libc v0.2.175
+   Compiling home v0.5.5
+   Compiling void v1.0.2
+   Compiling xdg v2.5.2
+   Compiling global_data v0.1.0 (/home/cdc/deepSURF-sp26-artifacts/artifact_code/global_data)
+   Compiling unreachable v1.0.0
+   Compiling smallvec v0.6.3 (/home/cdc/deepSURF-sp26-artifacts/artifact_data/dataset/rustsan_crates/smallvec-0.6.3)
+   Compiling afl v0.15.7
+warning: use of deprecated function `std::mem::uninitialized`: use `mem::MaybeUninit` instead
+   --> /home/cdc/deepSURF-sp26-artifacts/artifact_data/dataset/rustsan_crates/smallvec-0.6.3/lib.rs:398:54
+    |
+398 |                 data: SmallVecData::from_inline(mem::uninitialized()),
+    |                                                      ^^^^^^^^^^^^^
+    |
+    = note: `#[warn(deprecated)]` on by default
+
+warning: use of deprecated function `std::mem::uninitialized`: use `mem::MaybeUninit` instead
+   --> /home/cdc/deepSURF-sp26-artifacts/artifact_data/dataset/rustsan_crates/smallvec-0.6.3/lib.rs:439:68
+    |
+439 |                 let mut data = SmallVecData::<A>::from_inline(mem::uninitialized());
+    |                                                                    ^^^^^^^^^^^^^
+
+warning: use of deprecated function `std::mem::uninitialized`: use `mem::MaybeUninit` instead
+   --> /home/cdc/deepSURF-sp26-artifacts/artifact_data/dataset/rustsan_crates/smallvec-0.6.3/lib.rs:602:60
+    |
+602 |                 self.data = SmallVecData::from_inline(mem::uninitialized());
+    |                                                            ^^^^^^^^^^^^^
+
+warning: use of deprecated function `std::mem::uninitialized`: use `mem::MaybeUninit` instead
+   --> /home/cdc/deepSURF-sp26-artifacts/artifact_data/dataset/rustsan_crates/smallvec-0.6.3/lib.rs:664:60
+    |
+664 |                 self.data = SmallVecData::from_inline(mem::uninitialized());
+    |                                                            ^^^^^^^^^^^^^
+
+warning: `smallvec` (lib) generated 4 warnings
+   Compiling rustc_version v0.4.1
+   Compiling smallvec_fuzz_2942584205497819784 v0.1.0 (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#29-smallvec-0.6.3/harness)
+warning: unused import: `std::str::FromStr`
+ --> src/smallvec_fuzz_2942584205497819784.rs:7:5
+  |
+7 | use std::str::FromStr;
+  |     ^^^^^^^^^^^^^^^^^
+  |
+  = note: `#[warn(unused_imports)]` on by default
+
+warning: unused imports: `DerefMut`, `Deref`, `IndexMut`, `Index`
+ --> src/smallvec_fuzz_2942584205497819784.rs:8:16
+  |
+8 | use std::ops::{Deref, DerefMut, Index, IndexMut};
+  |                ^^^^^  ^^^^^^^^  ^^^^^  ^^^^^^^^
+
+warning: the item `TryInto` is imported redundantly
+   --> src/smallvec_fuzz_2942584205497819784.rs:240:9
+    |
+240 |     use std::convert::TryInto;
+    |         ^^^^^^^^^^^^^^^^^^^^^
+   --> /rustc/11f32b73e0dc9287e305b5b9980d24aecdc8c17f/library/std/src/prelude/mod.rs:129:13
+    |
+    = note: the item `TryInto` is already defined here
+
+warning: the item `TryInto` is imported redundantly
+   --> src/smallvec_fuzz_2942584205497819784.rs:247:9
+    |
+247 |     use std::convert::TryInto;
+    |         ^^^^^^^^^^^^^^^^^^^^^
+   --> /rustc/11f32b73e0dc9287e305b5b9980d24aecdc8c17f/library/std/src/prelude/mod.rs:129:13
+    |
+    = note: the item `TryInto` is already defined here
+
+warning: variable does not need to be mutable
+  --> src/smallvec_fuzz_2942584205497819784.rs:31:13
+   |
+31 |         let mut t_6 = _to_u8(GLOBAL_DATA, 49) % 17;
+   |             ----^^^
+   |             |
+   |             help: remove this `mut`
+   |
+   = note: `#[warn(unused_mut)]` on by default
+
+warning: variable does not need to be mutable
+  --> src/smallvec_fuzz_2942584205497819784.rs:77:13
+   |
+77 |         let mut t_15 = _to_u8(GLOBAL_DATA, 98) % 17;
+   |             ----^^^^
+   |             |
+   |             help: remove this `mut`
+
+warning: variable does not need to be mutable
+   --> src/smallvec_fuzz_2942584205497819784.rs:105:21
+    |
+105 |                 let mut t_19 = _to_u8(GLOBAL_DATA, 115) % 17;
+    |                     ----^^^^
+    |                     |
+    |                     help: remove this `mut`
+
+warning: field `0` is never read
+  --> src/smallvec_fuzz_2942584205497819784.rs:11:20
+   |
+11 | struct CustomType1(String);
+   |        ----------- ^^^^^^
+   |        |
+   |        field in this struct
+   |
+   = note: `CustomType1` has derived impls for the traits `Clone` and `Debug`, but these are intentionally ignored during dead code analysis
+   = note: `#[warn(dead_code)]` on by default
+help: consider changing the field to be of unit type to suppress this warning while preserving the field numbering, or remove the field
+   |
+11 | struct CustomType1(());
+   |                    ~~
+
+warning: variable `GLOBAL_DATA` should have a snake case name
+  --> src/smallvec_fuzz_2942584205497819784.rs:20:13
+   |
+20 |         let GLOBAL_DATA = global_data.first_half;
+   |             ^^^^^^^^^^^ help: convert the identifier to snake case: `global_data`
+   |
+   = note: `#[warn(non_snake_case)]` on by default
+
+warning: variable `GLOBAL_DATA` should have a snake case name
+  --> src/smallvec_fuzz_2942584205497819784.rs:27:13
+   |
+27 |         let GLOBAL_DATA = match selector {
+   |             ^^^^^^^^^^^ help: convert the identifier to snake case: `global_data`
+
+warning: variable `GLOBAL_DATA` should have a snake case name
+  --> src/smallvec_fuzz_2942584205497819784.rs:41:13
+   |
+41 |         let GLOBAL_DATA = global_data.first_half;
+   |             ^^^^^^^^^^^ help: convert the identifier to snake case: `global_data`
+
+warning: variable `GLOBAL_DATA` should have a snake case name
+  --> src/smallvec_fuzz_2942584205497819784.rs:48:13
+   |
+48 |         let GLOBAL_DATA = match selector {
+   |             ^^^^^^^^^^^ help: convert the identifier to snake case: `global_data`
+
+warning: variable `GLOBAL_DATA` should have a snake case name
+  --> src/smallvec_fuzz_2942584205497819784.rs:66:13
+   |
+66 |         let GLOBAL_DATA = global_data.first_half;
+   |             ^^^^^^^^^^^ help: convert the identifier to snake case: `global_data`
+
+warning: variable `GLOBAL_DATA` should have a snake case name
+  --> src/smallvec_fuzz_2942584205497819784.rs:73:13
+   |
+73 |         let GLOBAL_DATA = match selector {
+   |             ^^^^^^^^^^^ help: convert the identifier to snake case: `global_data`
+
+warning: variable `GLOBAL_DATA` should have a snake case name
+  --> src/smallvec_fuzz_2942584205497819784.rs:90:13
+   |
+90 |         let GLOBAL_DATA = global_data.first_half;
+   |             ^^^^^^^^^^^ help: convert the identifier to snake case: `global_data`
+
+warning: `smallvec_fuzz_2942584205497819784` (bin "smallvec_fuzz_2942584205497819784") generated 15 warnings (run `cargo fix --bin "smallvec_fuzz_2942584205497819784"` to apply 5 suggestions)
+    Finished dev [unoptimized + debuginfo] target(s) in 2.73s
+thread 'main' panicked at /home/cdc/deepSURF-sp26-artifacts/artifact_data/dataset/rustsan_crates/smallvec-0.6.3/lib.rs:345:18:
+entered unreachable code
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+thread 'main' panicked at /home/cdc/deepSURF-sp26-artifacts/artifact_data/dataset/rustsan_crates/smallvec-0.6.3/lib.rs:338:18:
+entered unreachable code
+stack backtrace:
+   0:     0x5622bb997946 - std::backtrace_rs::backtrace::libunwind::trace::h844e806e1fba5714
+                               at /rustc/11f32b73e0dc9287e305b5b9980d24aecdc8c17f/library/std/src/../../backtrace/src/backtrace/libunwind.rs:104:5
+   1:     0x5622bb997946 - std::backtrace_rs::backtrace::trace_unsynchronized::h370d9bc6e08e1ad4
+                               at /rustc/11f32b73e0dc9287e305b5b9980d24aecdc8c17f/library/std/src/../../backtrace/src/backtrace/mod.rs:66:5
+   2:     0x5622bb997946 - std::sys_common::backtrace::_print_fmt::h5a76bed91c1a6785
+                               at /rustc/11f32b73e0dc9287e305b5b9980d24aecdc8c17f/library/std/src/sys_common/backtrace.rs:68:5
+   3:     0x5622bb997946 - <std::sys_common::backtrace::_print::DisplayBacktrace as core::fmt::Display>::fmt::h0d7c32bf461d7ffe
+                               at /rustc/11f32b73e0dc9287e305b5b9980d24aecdc8c17f/library/std/src/sys_common/backtrace.rs:44:22
+   4:     0x5622bb9b6290 - core::fmt::rt::Argument::fmt::hf27321652463a5a5
+                               at /rustc/11f32b73e0dc9287e305b5b9980d24aecdc8c17f/library/core/src/fmt/rt.rs:142:9
+   5:     0x5622bb9b6290 - core::fmt::write::ha63b5e044fedf034
+                               at /rustc/11f32b73e0dc9287e305b5b9980d24aecdc8c17f/library/core/src/fmt/mod.rs:1120:17
+   6:     0x5622bb995adf - std::io::Write::write_fmt::h0630f8018bef0217
+                               at /rustc/11f32b73e0dc9287e305b5b9980d24aecdc8c17f/library/std/src/io/mod.rs:1846:15
+   7:     0x5622bb997724 - std::sys_common::backtrace::_print::h8d9096ced8e4883c
+                               at /rustc/11f32b73e0dc9287e305b5b9980d24aecdc8c17f/library/std/src/sys_common/backtrace.rs:47:5
+   8:     0x5622bb997724 - std::sys_common::backtrace::print::h123dbd17bf0eb7a1
+                               at /rustc/11f32b73e0dc9287e305b5b9980d24aecdc8c17f/library/std/src/sys_common/backtrace.rs:34:9
+   9:     0x5622bb998c87 - std::panicking::default_hook::{{closure}}::hadb8daa1dcda954f
+  10:     0x5622bb9989e9 - std::panicking::default_hook::h8e040ff60ad33519
+                               at /rustc/11f32b73e0dc9287e305b5b9980d24aecdc8c17f/library/std/src/panicking.rs:292:9
+  11:     0x5622bb999138 - std::panicking::rust_panic_with_hook::h0da099ccc9df6ce3
+                               at /rustc/11f32b73e0dc9287e305b5b9980d24aecdc8c17f/library/std/src/panicking.rs:781:13
+  12:     0x5622bb96af45 - std::panicking::begin_panic::{{closure}}::h787e3b1ff456345e
+                               at /rustc/11f32b73e0dc9287e305b5b9980d24aecdc8c17f/library/std/src/panicking.rs:689:9
+  13:     0x5622bb96ac81 - std::sys_common::backtrace::__rust_end_short_backtrace::h5e64cb5ef74a4b5e
+                               at /rustc/11f32b73e0dc9287e305b5b9980d24aecdc8c17f/library/std/src/sys_common/backtrace.rs:171:18
+  14:     0x5622bb8b7c0e - std::panicking::begin_panic::h120fb120bfc6393e
+                               at /rustc/11f32b73e0dc9287e305b5b9980d24aecdc8c17f/library/std/src/panicking.rs:688:12
+  15:     0x5622bb97489d - smallvec::SmallVecData<A>::heap::ha5b9afc00ff29762
+                               at /home/cdc/deepSURF-sp26-artifacts/artifact_data/dataset/rustsan_crates/smallvec-0.6.3/lib.rs:338:18
+  16:     0x5622bb97489d - <smallvec::SmallVec<A> as core::ops::drop::Drop>::drop::hb1ef83ec2e192251
+                               at /home/cdc/deepSURF-sp26-artifacts/artifact_data/dataset/rustsan_crates/smallvec-0.6.3/lib.rs:1193:34
+  17:     0x5622bb97489d - core::ptr::drop_in_place<smallvec::SmallVec<[smallvec_fuzz_2942584205497819784::CustomType1; 24]>>::h3f372c21d6678a92
+                               at /rustc/11f32b73e0dc9287e305b5b9980d24aecdc8c17f/library/core/src/ptr/mod.rs:507:1
+  18:     0x5622bb973d39 - smallvec_fuzz_2942584205497819784::main::{{closure}}::h742cc6264810caf8
+                               at /home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#29-smallvec-0.6.3/harness/src/smallvec_fuzz_2942584205497819784.rs:171:5
+  19:     0x5622bb973d39 - afl::fuzz::{{closure}}::h2c18951171849fae
+                               at /home/cdc/.cargo/registry/src/index.crates.io-6f17d22bba15001f/afl-0.15.7/src/lib.rs:106:13
+  20:     0x5622bb973d39 - core::ops::function::FnOnce::call_once::h606ca134fbd7f471
+                               at /rustc/11f32b73e0dc9287e305b5b9980d24aecdc8c17f/library/core/src/ops/function.rs:250:5
+  21:     0x5622bb973d39 - <core::panic::unwind_safe::AssertUnwindSafe<F> as core::ops::function::FnOnce<()>>::call_once::h32cbb07d7b1548b2
+                               at /rustc/11f32b73e0dc9287e305b5b9980d24aecdc8c17f/library/core/src/panic/unwind_safe.rs:272:9
+  22:     0x5622bb973d39 - std::panicking::try::do_call::he321da9b652174be
+                               at /rustc/11f32b73e0dc9287e305b5b9980d24aecdc8c17f/library/std/src/panicking.rs:554:40
+  23:     0x5622bb9788cb - __rust_try
+  24:     0x5622bb977322 - std::panicking::try::h6b9f78654a41b5d6
+                               at /rustc/11f32b73e0dc9287e305b5b9980d24aecdc8c17f/library/std/src/panicking.rs:518:19
+  25:     0x5622bb977322 - std::panic::catch_unwind::h633f4c521e4e6792
+                               at /rustc/11f32b73e0dc9287e305b5b9980d24aecdc8c17f/library/std/src/panic.rs:142:14
+  26:     0x5622bb977322 - afl::fuzz::h887894667e50b0a3
+                               at /home/cdc/.cargo/registry/src/index.crates.io-6f17d22bba15001f/afl-0.15.7/src/lib.rs:105:25
+  27:     0x5622bb977322 - smallvec_fuzz_2942584205497819784::main::h4898f839aa75d8ed
+                               at /home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#29-smallvec-0.6.3/harness/src/smallvec_fuzz_2942584205497819784.rs:86:5
+  28:     0x5622bb96aca2 - core::ops::function::FnOnce::call_once::h4de04c72991fb5c8
+                               at /rustc/11f32b73e0dc9287e305b5b9980d24aecdc8c17f/library/core/src/ops/function.rs:250:5
+  29:     0x5622bb96aca2 - std::sys_common::backtrace::__rust_begin_short_backtrace::h929de7f2dfd68e56
+                               at /rustc/11f32b73e0dc9287e305b5b9980d24aecdc8c17f/library/std/src/sys_common/backtrace.rs:155:18
+  30:     0x5622bb96acf1 - std::rt::lang_start::{{closure}}::hadc61381168a7668
+                               at /rustc/11f32b73e0dc9287e305b5b9980d24aecdc8c17f/library/std/src/rt.rs:166:18
+  31:     0x5622bb992a61 - core::ops::function::impls::<impl core::ops::function::FnOnce<A> for &F>::call_once::hd4fda9a85652ef40
+                               at /rustc/11f32b73e0dc9287e305b5b9980d24aecdc8c17f/library/core/src/ops/function.rs:284:13
+  32:     0x5622bb992a61 - std::panicking::try::do_call::h8f0ba21d4f010db4
+                               at /rustc/11f32b73e0dc9287e305b5b9980d24aecdc8c17f/library/std/src/panicking.rs:554:40
+  33:     0x5622bb992a61 - std::panicking::try::h96cb817e7bcdc5d4
+                               at /rustc/11f32b73e0dc9287e305b5b9980d24aecdc8c17f/library/std/src/panicking.rs:518:19
+  34:     0x5622bb992a61 - std::panic::catch_unwind::h3fa4c8b96ea97138
+                               at /rustc/11f32b73e0dc9287e305b5b9980d24aecdc8c17f/library/std/src/panic.rs:142:14
+  35:     0x5622bb992a61 - std::rt::lang_start_internal::{{closure}}::hfccc5115c447827b
+                               at /rustc/11f32b73e0dc9287e305b5b9980d24aecdc8c17f/library/std/src/rt.rs:148:48
+  36:     0x5622bb992a61 - std::panicking::try::do_call::h609f7e312d48746f
+                               at /rustc/11f32b73e0dc9287e305b5b9980d24aecdc8c17f/library/std/src/panicking.rs:554:40
+  37:     0x5622bb992a61 - std::panicking::try::he6893893cd9ee76f
+                               at /rustc/11f32b73e0dc9287e305b5b9980d24aecdc8c17f/library/std/src/panicking.rs:518:19
+  38:     0x5622bb992a61 - std::panic::catch_unwind::h138d2a6d35c2d2cf
+                               at /rustc/11f32b73e0dc9287e305b5b9980d24aecdc8c17f/library/std/src/panic.rs:142:14
+  39:     0x5622bb992a61 - std::rt::lang_start_internal::hd1132dfff4140512
+                               at /rustc/11f32b73e0dc9287e305b5b9980d24aecdc8c17f/library/std/src/rt.rs:148:20
+  40:     0x5622bb978a86 - main
+  41:     0x7febe45ddd90 - <unknown>
+  42:     0x7febe45dde40 - __libc_start_main
+  43:     0x5622bb8ba8d5 - _start
+  44:                0x0 - <unknown>
+thread 'main' panicked at library/core/src/panicking.rs:163:5:
+panic in a destructor during cleanup
+thread caused non-unwinding panic. aborting.
+./replay_crash.sh: line 7: 1405200 Done                    cat ../crash_input
+     1405201 Aborted                 | target/x86_64-unknown-linux-gnu/debug/smallvec_fuzz_2942584205497819784

@@ -1,0 +1,2 @@
+ ./fuzz_transform/target/release/fuzz_transform /home/cdc/rug_on_erasan_after_bolero/through/./src/lib.rs
+through . 1 1 0

@@ -1,0 +1,20 @@
+[package]
+name = "qwutils"
+version = "0.3.0"
+
+authors = ["qwertz19281 <dellen903@gmail.com>"]
+edition = "2018"
+
+description = "some utilities"
+license = "MIT OR Apache-2.0"
+
+repository = "https://github.com/qwertz19281/rust_utils"
+readme = "README.md"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+boolinator = "2.4"
+
+[dev-dependencies]
+lazy_static = "1.4"

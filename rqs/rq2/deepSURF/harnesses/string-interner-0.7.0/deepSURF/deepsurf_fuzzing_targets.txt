@@ -1,0 +1,22 @@
+deepSURF: Generated Targets to be Fuzzed
+------------------------------------------------------------------------------------------------------------------------------------
+  StableURAPI: from_iter::/home/cdc/SURF/deepSURF-big-experiment-harnesses/string-interner-0.7.0/src/lib.rs::417,
+    - URAPI: DefId(0:121 ~ string_interner[7a4f]::{impl#12}::from_iter),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * string-interner_fuzz_8720510365416328440_deepseek-r1_turn3
+  StableURAPI: get_or_intern::/home/cdc/SURF/deepSURF-big-experiment-harnesses/string-interner-0.7.0/src/lib.rs::316,
+    - URAPI: DefId(0:103 ~ string_interner[7a4f]::{impl#11}::get_or_intern),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * string-interner_fuzz_17577896022174365111_deepseek-r1_turn2
+      * string-interner_fuzz_8720510365416328440_deepseek-r1_turn3
+  StableURAPI: from_usize::/home/cdc/SURF/deepSURF-big-experiment-harnesses/string-interner-0.7.0/src/lib.rs::123,
+    - URAPI: DefId(0:63 ~ string_interner[7a4f]::{impl#0}::from_usize),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * string-interner_fuzz_17577896022174365111_deepseek-r1_turn2
+------------------------------------------------------------------------------------------------------------------------------------

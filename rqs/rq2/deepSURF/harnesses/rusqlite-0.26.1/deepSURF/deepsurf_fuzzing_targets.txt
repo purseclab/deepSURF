@@ -1,0 +1,1047 @@
+deepSURF: Generated Targets to be Fuzzed
+------------------------------------------------------------------------------------------------------------------------------------
+  StableURAPI: commit::/home/cdc/SURF/deepSURF-big-experiment-harnesses/rusqlite-0.26.1/src/transaction.rs::185,
+    - URAPI: DefId(0:603 ~ rusqlite[8877]::transaction::{impl#0}::commit),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * rusqlite_fuzz_10357925701960576690_deepseek-r1_turn4
+      * rusqlite_fuzz_11659230840788413241_deepseek-r1_turn6
+      * rusqlite_fuzz_16567295868750089767_deepseek-r1_turn5
+      * rusqlite_fuzz_6304470279047077875_deepseek-r1_turn5
+      * rusqlite_fuzz_5115498555793899015_deepseek-r1_turn6
+      * rusqlite_fuzz_1706704689413529980_deepseek-r1_turn4
+      * rusqlite_fuzz_10252964377864275959_deepseek-r1_turn5
+      * rusqlite_fuzz_15065957108424003493_deepseek-r1_turn3
+      * rusqlite_fuzz_13258355100420326526_deepseek-r1_turn5
+      * rusqlite_fuzz_14306385021394128370_deepseek-r1_turn4
+      * rusqlite_fuzz_15648045394580602649_deepseek-r1_turn5
+      * rusqlite_fuzz_13190717095507946307_deepseek-r1_turn5
+      * rusqlite_fuzz_17272032651547189299_deepseek-r1_turn4
+      * rusqlite_fuzz_12923795775880503925_deepseek-r1_turn6
+      * rusqlite_fuzz_17419806684545202254_deepseek-r1_turn3
+      * rusqlite_fuzz_10365423276941111418_deepseek-r1_turn4
+      * rusqlite_fuzz_10165467311953390070_deepseek-r1_turn6
+      * rusqlite_fuzz_11367218998323447541_deepseek-r1_turn3
+      * rusqlite_fuzz_15849535207006544158_deepseek-r1_turn5
+      * rusqlite_fuzz_6542749198875314019_deepseek-r1_turn5
+      * rusqlite_fuzz_18138798661975417833_deepseek-r1_turn5
+      * rusqlite_fuzz_9174874665649661397_deepseek-r1_turn3
+      * rusqlite_fuzz_16692162419235050871_deepseek-r1_turn3
+      * rusqlite_fuzz_4474088279540666994_deepseek-r1_turn2
+      * rusqlite_fuzz_18303384782548388908_deepseek-r1_turn6
+  StableURAPI: parameter_name::/home/cdc/SURF/deepSURF-big-experiment-harnesses/rusqlite-0.26.1/src/statement.rs::542,
+    - URAPI: DefId(0:553 ~ rusqlite[8877]::statement::{impl#0}::parameter_name),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * rusqlite_fuzz_10357925701960576690_deepseek-r1_turn4
+  StableURAPI: get_raw::/home/cdc/SURF/deepSURF-big-experiment-harnesses/rusqlite-0.26.1/src/row.rs::361,
+    - URAPI: DefId(0:596 ~ rusqlite[8877]::transaction::{impl#0}::new_unchecked),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * rusqlite_fuzz_17272032651547189299_deepseek-r1_turn4
+  StableURAPI: raw_execute::/home/cdc/SURF/deepSURF-big-experiment-harnesses/rusqlite-0.26.1/src/statement.rs::656,
+    - URAPI: DefId(0:562 ~ rusqlite[8877]::statement::{impl#0}::raw_execute),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * rusqlite_fuzz_16692162419235050871_deepseek-r1_turn3
+      * rusqlite_fuzz_10357925701960576690_deepseek-r1_turn4
+      * rusqlite_fuzz_17272032651547189299_deepseek-r1_turn4
+      * rusqlite_fuzz_6542749198875314019_deepseek-r1_turn5
+      * rusqlite_fuzz_15849535207006544158_deepseek-r1_turn5
+      * rusqlite_fuzz_9174874665649661397_deepseek-r1_turn3
+      * rusqlite_fuzz_7540104343075682740_deepseek-r1_turn3
+      * rusqlite_fuzz_4474088279540666994_deepseek-r1_turn2
+  StableURAPI: query_row_named::/home/cdc/SURF/deepSURF-big-experiment-harnesses/rusqlite-0.26.1/src/statement.rs::480,
+    - URAPI: DefId(0:548 ~ rusqlite[8877]::statement::{impl#0}::query_row_named),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * rusqlite_fuzz_13190717095507946307_deepseek-r1_turn5
+  StableURAPI: execute_named::/home/cdc/SURF/deepSURF-big-experiment-harnesses/rusqlite-0.26.1/src/lib.rs::568,
+    - URAPI: DefId(0:569 ~ rusqlite[8877]::statement::{impl#0}::get_status),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * rusqlite_fuzz_6876110719251169775_deepseek-r1_turn3
+  StableURAPI: rollback::/home/cdc/SURF/deepSURF-big-experiment-harnesses/rusqlite-0.26.1/src/transaction.rs::330,
+    - URAPI: DefId(0:630 ~ rusqlite[8877]::transaction::{impl#3}::rollback),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * rusqlite_fuzz_6542749198875314019_deepseek-r1_turn5
+      * rusqlite_fuzz_12923795775880503925_deepseek-r1_turn6
+      * rusqlite_fuzz_6304470279047077875_deepseek-r1_turn5
+      * rusqlite_fuzz_9174874665649661397_deepseek-r1_turn3
+      * rusqlite_fuzz_13258355100420326526_deepseek-r1_turn5
+      * rusqlite_fuzz_10165467311953390070_deepseek-r1_turn6
+      * rusqlite_fuzz_3367748654034018327_deepseek-r1_turn6
+      * rusqlite_fuzz_13339624173744360096_deepseek-r1_turn6
+      * rusqlite_fuzz_5115498555793899015_deepseek-r1_turn6
+      * rusqlite_fuzz_15888147835300043452_deepseek-r1_turn3
+      * rusqlite_fuzz_10365423276941111418_deepseek-r1_turn4
+      * rusqlite_fuzz_16548864798179868294_deepseek-r1_turn3
+      * rusqlite_fuzz_12445100841051341615_deepseek-r1_turn3
+      * rusqlite_fuzz_6876110719251169775_deepseek-r1_turn3
+      * rusqlite_fuzz_17393861872593363319_deepseek-r1_turn3
+  StableURAPI: get_raw_checked::/home/cdc/SURF/deepSURF-big-experiment-harnesses/rusqlite-0.26.1/src/row.rs::354,
+    - URAPI: DefId(0:478 ~ rusqlite[8877]::row::{impl#10}::idx),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * rusqlite_fuzz_5115498555793899015_deepseek-r1_turn6
+  StableURAPI: execute::/home/cdc/SURF/deepSURF-big-experiment-harnesses/rusqlite-0.26.1/src/statement.rs::84,
+    - URAPI: DefId(0:643 ~ rusqlite[8877]::transaction::{impl#6}::savepoint),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * rusqlite_fuzz_17419806684545202254_deepseek-r1_turn3
+      * rusqlite_fuzz_3367748654034018327_deepseek-r1_turn6
+      * rusqlite_fuzz_4474088279540666994_deepseek-r1_turn2
+      * rusqlite_fuzz_13339624173744360096_deepseek-r1_turn6
+      * rusqlite_fuzz_10165467311953390070_deepseek-r1_turn6
+      * rusqlite_fuzz_10252964377864275959_deepseek-r1_turn5
+      * rusqlite_fuzz_17393861872593363319_deepseek-r1_turn3
+      * rusqlite_fuzz_12445100841051341615_deepseek-r1_turn3
+      * rusqlite_fuzz_13190717095507946307_deepseek-r1_turn5
+      * rusqlite_fuzz_11659230840788413241_deepseek-r1_turn6
+      * rusqlite_fuzz_15648045394580602649_deepseek-r1_turn5
+      * rusqlite_fuzz_16567295868750089767_deepseek-r1_turn5
+      * rusqlite_fuzz_16548864798179868294_deepseek-r1_turn3
+      * rusqlite_fuzz_10980350294055038318_deepseek-r1_turn5
+      * rusqlite_fuzz_12923795775880503925_deepseek-r1_turn6
+      * rusqlite_fuzz_11367218998323447541_deepseek-r1_turn3
+      * rusqlite_fuzz_15888147835300043452_deepseek-r1_turn3
+      * rusqlite_fuzz_13993123350600316118_deepseek-r1_turn3
+  StableURAPI: transaction::/home/cdc/SURF/deepSURF-big-experiment-harnesses/rusqlite-0.26.1/src/transaction.rs::404,
+    - URAPI: DefId(0:640 ~ rusqlite[8877]::transaction::{impl#6}::transaction),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * rusqlite_fuzz_13993123350600316118_deepseek-r1_turn3
+      * rusqlite_fuzz_17419806684545202254_deepseek-r1_turn3
+      * rusqlite_fuzz_18138798661975417833_deepseek-r1_turn5
+      * rusqlite_fuzz_16548864798179868294_deepseek-r1_turn3
+      * rusqlite_fuzz_12445100841051341615_deepseek-r1_turn3
+      * rusqlite_fuzz_15888147835300043452_deepseek-r1_turn3
+      * rusqlite_fuzz_10980350294055038318_deepseek-r1_turn5
+      * rusqlite_fuzz_12923795775880503925_deepseek-r1_turn6
+      * rusqlite_fuzz_14306385021394128370_deepseek-r1_turn4
+      * rusqlite_fuzz_15849535207006544158_deepseek-r1_turn5
+      * rusqlite_fuzz_13190717095507946307_deepseek-r1_turn5
+      * rusqlite_fuzz_17272032651547189299_deepseek-r1_turn4
+      * rusqlite_fuzz_6876110719251169775_deepseek-r1_turn3
+      * rusqlite_fuzz_10252964377864275959_deepseek-r1_turn5
+      * rusqlite_fuzz_5115498555793899015_deepseek-r1_turn6
+      * rusqlite_fuzz_11367218998323447541_deepseek-r1_turn3
+      * rusqlite_fuzz_6542749198875314019_deepseek-r1_turn5
+      * rusqlite_fuzz_15065957108424003493_deepseek-r1_turn3
+      * rusqlite_fuzz_6304470279047077875_deepseek-r1_turn5
+      * rusqlite_fuzz_16692162419235050871_deepseek-r1_turn3
+      * rusqlite_fuzz_7540104343075682740_deepseek-r1_turn3
+      * rusqlite_fuzz_10365423276941111418_deepseek-r1_turn4
+      * rusqlite_fuzz_13258355100420326526_deepseek-r1_turn5
+      * rusqlite_fuzz_10357925701960576690_deepseek-r1_turn4
+      * rusqlite_fuzz_11659230840788413241_deepseek-r1_turn6
+      * rusqlite_fuzz_10165467311953390070_deepseek-r1_turn6
+  StableURAPI: drop::/home/cdc/SURF/deepSURF-big-experiment-harnesses/rusqlite-0.26.1/src/transaction.rs::371,
+    - URAPI: DefId(0:638 ~ rusqlite[8877]::transaction::{impl#5}::drop),
+    - Macro-expanded: false,
+    - LLM-improved: false,
+    - Fuzzing Targets:
+      * rusqlite_fuzz_12895102765163007940
+      * rusqlite_fuzz_5836493307954320307
+      * rusqlite_fuzz_11105991455372048979
+      * rusqlite_fuzz_3246265905939336003
+  StableURAPI: get_ref_unwrap::/home/cdc/SURF/deepSURF-big-experiment-harnesses/rusqlite-0.26.1/src/row.rs::347,
+    - URAPI: DefId(0:476 ~ rusqlite[8877]::row::{impl#9}::idx),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * rusqlite_fuzz_13339624173744360096_deepseek-r1_turn6
+      * rusqlite_fuzz_10165467311953390070_deepseek-r1_turn6
+      * rusqlite_fuzz_5115498555793899015_deepseek-r1_turn6
+  StableURAPI: savepoint_with_name::/home/cdc/SURF/deepSURF-big-experiment-harnesses/rusqlite-0.26.1/src/transaction.rs::497,
+    - URAPI: DefId(0:2312 ~ rusqlite[8877]::{impl#38}::extend),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * rusqlite_fuzz_5115498555793899015_deepseek-r1_turn6
+      * rusqlite_fuzz_10365423276941111418_deepseek-r1_turn4
+      * rusqlite_fuzz_13339624173744360096_deepseek-r1_turn6
+  StableURAPI: busy_timeout::/home/cdc/SURF/deepSURF-big-experiment-harnesses/rusqlite-0.26.1/src/busy.rs::27,
+    - URAPI: DefId(0:97 ~ rusqlite[8877]::busy::{impl#0}::busy_timeout),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * rusqlite_fuzz_16692162419235050871_deepseek-r1_turn3
+  StableURAPI: rollback::/home/cdc/SURF/deepSURF-big-experiment-harnesses/rusqlite-0.26.1/src/transaction.rs::197,
+    - URAPI: DefId(0:605 ~ rusqlite[8877]::transaction::{impl#0}::rollback),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * rusqlite_fuzz_5115498555793899015_deepseek-r1_turn6
+      * rusqlite_fuzz_6304470279047077875_deepseek-r1_turn5
+      * rusqlite_fuzz_17419806684545202254_deepseek-r1_turn3
+      * rusqlite_fuzz_11659230840788413241_deepseek-r1_turn6
+      * rusqlite_fuzz_14306385021394128370_deepseek-r1_turn4
+      * rusqlite_fuzz_16567295868750089767_deepseek-r1_turn5
+  StableURAPI: column_index::/home/cdc/SURF/deepSURF-big-experiment-harnesses/rusqlite-0.26.1/src/column.rs::116,
+    - URAPI: DefId(0:164 ~ rusqlite[8877]::column::{impl#1}::column_index),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * rusqlite_fuzz_3367748654034018327_deepseek-r1_turn6
+  StableURAPI: savepoint::/home/cdc/SURF/deepSURF-big-experiment-harnesses/rusqlite-0.26.1/src/transaction.rs::159,
+    - URAPI: DefId(0:598 ~ rusqlite[8877]::transaction::{impl#0}::savepoint),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * rusqlite_fuzz_15888147835300043452_deepseek-r1_turn3
+      * rusqlite_fuzz_9174874665649661397_deepseek-r1_turn3
+      * rusqlite_fuzz_11659230840788413241_deepseek-r1_turn6
+      * rusqlite_fuzz_1706704689413529980_deepseek-r1_turn4
+      * rusqlite_fuzz_6304470279047077875_deepseek-r1_turn5
+      * rusqlite_fuzz_10165467311953390070_deepseek-r1_turn6
+      * rusqlite_fuzz_10365423276941111418_deepseek-r1_turn4
+      * rusqlite_fuzz_13993123350600316118_deepseek-r1_turn3
+      * rusqlite_fuzz_13190717095507946307_deepseek-r1_turn5
+      * rusqlite_fuzz_7540104343075682740_deepseek-r1_turn3
+      * rusqlite_fuzz_3367748654034018327_deepseek-r1_turn6
+      * rusqlite_fuzz_15065957108424003493_deepseek-r1_turn3
+      * rusqlite_fuzz_18138798661975417833_deepseek-r1_turn5
+      * rusqlite_fuzz_13258355100420326526_deepseek-r1_turn5
+      * rusqlite_fuzz_17272032651547189299_deepseek-r1_turn4
+      * rusqlite_fuzz_12923795775880503925_deepseek-r1_turn6
+      * rusqlite_fuzz_6876110719251169775_deepseek-r1_turn3
+      * rusqlite_fuzz_11367218998323447541_deepseek-r1_turn3
+      * rusqlite_fuzz_18303384782548388908_deepseek-r1_turn6
+  StableURAPI: next::/home/cdc/SURF/deepSURF-big-experiment-harnesses/rusqlite-0.26.1/src/lib.rs::968,
+    - URAPI: DefId(0:944 ~ rusqlite[8877]::{impl#5}::next),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * rusqlite_fuzz_18303384782548388908_deepseek-r1_turn6
+      * rusqlite_fuzz_12923795775880503925_deepseek-r1_turn6
+      * rusqlite_fuzz_15065957108424003493_deepseek-r1_turn3
+      * rusqlite_fuzz_10357925701960576690_deepseek-r1_turn4
+      * rusqlite_fuzz_5115498555793899015_deepseek-r1_turn6
+      * rusqlite_fuzz_6542749198875314019_deepseek-r1_turn5
+      * rusqlite_fuzz_3367748654034018327_deepseek-r1_turn6
+      * rusqlite_fuzz_10252964377864275959_deepseek-r1_turn5
+      * rusqlite_fuzz_13339624173744360096_deepseek-r1_turn6
+      * rusqlite_fuzz_15849535207006544158_deepseek-r1_turn5
+      * rusqlite_fuzz_15888147835300043452_deepseek-r1_turn3
+      * rusqlite_fuzz_13258355100420326526_deepseek-r1_turn5
+      * rusqlite_fuzz_15648045394580602649_deepseek-r1_turn5
+      * rusqlite_fuzz_10365423276941111418_deepseek-r1_turn4
+      * rusqlite_fuzz_13190717095507946307_deepseek-r1_turn5
+      * rusqlite_fuzz_6304470279047077875_deepseek-r1_turn5
+      * rusqlite_fuzz_16567295868750089767_deepseek-r1_turn5
+      * rusqlite_fuzz_16548864798179868294_deepseek-r1_turn3
+      * rusqlite_fuzz_17272032651547189299_deepseek-r1_turn4
+      * rusqlite_fuzz_6876110719251169775_deepseek-r1_turn3
+      * rusqlite_fuzz_16692162419235050871_deepseek-r1_turn3
+  StableURAPI: next::/home/cdc/SURF/deepSURF-big-experiment-harnesses/rusqlite-0.26.1/src/row.rs::37,
+    - URAPI: DefId(0:388 ~ rusqlite[8877]::row::{impl#0}::next),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * rusqlite_fuzz_18138798661975417833_deepseek-r1_turn5
+      * rusqlite_fuzz_16692162419235050871_deepseek-r1_turn3
+      * rusqlite_fuzz_10165467311953390070_deepseek-r1_turn6
+      * rusqlite_fuzz_17393861872593363319_deepseek-r1_turn3
+      * rusqlite_fuzz_10980350294055038318_deepseek-r1_turn5
+      * rusqlite_fuzz_3367748654034018327_deepseek-r1_turn6
+      * rusqlite_fuzz_13258355100420326526_deepseek-r1_turn5
+      * rusqlite_fuzz_13339624173744360096_deepseek-r1_turn6
+      * rusqlite_fuzz_11367218998323447541_deepseek-r1_turn3
+      * rusqlite_fuzz_11659230840788413241_deepseek-r1_turn6
+      * rusqlite_fuzz_15849535207006544158_deepseek-r1_turn5
+      * rusqlite_fuzz_9174874665649661397_deepseek-r1_turn3
+      * rusqlite_fuzz_15888147835300043452_deepseek-r1_turn3
+      * rusqlite_fuzz_12445100841051341615_deepseek-r1_turn3
+      * rusqlite_fuzz_13190717095507946307_deepseek-r1_turn5
+      * rusqlite_fuzz_7540104343075682740_deepseek-r1_turn3
+      * rusqlite_fuzz_15065957108424003493_deepseek-r1_turn3
+      * rusqlite_fuzz_17272032651547189299_deepseek-r1_turn4
+      * rusqlite_fuzz_4474088279540666994_deepseek-r1_turn2
+      * rusqlite_fuzz_5115498555793899015_deepseek-r1_turn6
+      * rusqlite_fuzz_17419806684545202254_deepseek-r1_turn3
+      * rusqlite_fuzz_16567295868750089767_deepseek-r1_turn5
+      * rusqlite_fuzz_10252964377864275959_deepseek-r1_turn5
+      * rusqlite_fuzz_10365423276941111418_deepseek-r1_turn4
+      * rusqlite_fuzz_1706704689413529980_deepseek-r1_turn4
+      * rusqlite_fuzz_18303384782548388908_deepseek-r1_turn6
+      * rusqlite_fuzz_6542749198875314019_deepseek-r1_turn5
+  StableURAPI: query::/home/cdc/SURF/deepSURF-big-experiment-harnesses/rusqlite-0.26.1/src/statement.rs::223,
+    - URAPI: DefId(0:643 ~ rusqlite[8877]::transaction::{impl#6}::savepoint),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * rusqlite_fuzz_15648045394580602649_deepseek-r1_turn5
+      * rusqlite_fuzz_5115498555793899015_deepseek-r1_turn6
+      * rusqlite_fuzz_1706704689413529980_deepseek-r1_turn4
+      * rusqlite_fuzz_10252964377864275959_deepseek-r1_turn5
+      * rusqlite_fuzz_13258355100420326526_deepseek-r1_turn5
+      * rusqlite_fuzz_18138798661975417833_deepseek-r1_turn5
+      * rusqlite_fuzz_15888147835300043452_deepseek-r1_turn3
+      * rusqlite_fuzz_15065957108424003493_deepseek-r1_turn3
+      * rusqlite_fuzz_17419806684545202254_deepseek-r1_turn3
+      * rusqlite_fuzz_10980350294055038318_deepseek-r1_turn5
+      * rusqlite_fuzz_16692162419235050871_deepseek-r1_turn3
+      * rusqlite_fuzz_17393861872593363319_deepseek-r1_turn3
+      * rusqlite_fuzz_15849535207006544158_deepseek-r1_turn5
+      * rusqlite_fuzz_13190717095507946307_deepseek-r1_turn5
+      * rusqlite_fuzz_10357925701960576690_deepseek-r1_turn4
+      * rusqlite_fuzz_6876110719251169775_deepseek-r1_turn3
+      * rusqlite_fuzz_14306385021394128370_deepseek-r1_turn4
+      * rusqlite_fuzz_18303384782548388908_deepseek-r1_turn6
+      * rusqlite_fuzz_11659230840788413241_deepseek-r1_turn6
+      * rusqlite_fuzz_16548864798179868294_deepseek-r1_turn3
+      * rusqlite_fuzz_12445100841051341615_deepseek-r1_turn3
+      * rusqlite_fuzz_4474088279540666994_deepseek-r1_turn2
+      * rusqlite_fuzz_9174874665649661397_deepseek-r1_turn3
+      * rusqlite_fuzz_10365423276941111418_deepseek-r1_turn4
+      * rusqlite_fuzz_10165467311953390070_deepseek-r1_turn6
+      * rusqlite_fuzz_13339624173744360096_deepseek-r1_turn6
+      * rusqlite_fuzz_16567295868750089767_deepseek-r1_turn5
+  StableURAPI: raw_bind_parameter::/home/cdc/SURF/deepSURF-big-experiment-harnesses/rusqlite-0.26.1/src/statement.rs::631,
+    - URAPI: DefId(0:560 ~ rusqlite[8877]::statement::{impl#0}::raw_bind_parameter),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * rusqlite_fuzz_9758399699309783974
+      * rusqlite_fuzz_1706704689413529980_deepseek-r1_turn4
+      * rusqlite_fuzz_13258355100420326526_deepseek-r1_turn5
+      * rusqlite_fuzz_13369315838752150046
+      * rusqlite_fuzz_10813266446549885928
+      * rusqlite_fuzz_7540104343075682740_deepseek-r1_turn3
+      * rusqlite_fuzz_10357925701960576690_deepseek-r1_turn4
+      * rusqlite_fuzz_16259440386170294502
+      * rusqlite_fuzz_3367748654034018327_deepseek-r1_turn6
+      * rusqlite_fuzz_17272032651547189299_deepseek-r1_turn4
+      * rusqlite_fuzz_9174874665649661397_deepseek-r1_turn3
+  StableURAPI: reset_status::/home/cdc/SURF/deepSURF-big-experiment-harnesses/rusqlite-0.26.1/src/statement.rs::795,
+    - URAPI: DefId(0:570 ~ rusqlite[8877]::statement::{impl#0}::reset_status),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * rusqlite_fuzz_17419806684545202254_deepseek-r1_turn3
+  StableURAPI: execute::/home/cdc/SURF/deepSURF-big-experiment-harnesses/rusqlite-0.26.1/src/lib.rs::542,
+    - URAPI: DefId(0:643 ~ rusqlite[8877]::transaction::{impl#6}::savepoint),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * rusqlite_fuzz_14306385021394128370_deepseek-r1_turn4
+      * rusqlite_fuzz_10165467311953390070_deepseek-r1_turn6
+      * rusqlite_fuzz_6542749198875314019_deepseek-r1_turn5
+      * rusqlite_fuzz_17419806684545202254_deepseek-r1_turn3
+      * rusqlite_fuzz_10357925701960576690_deepseek-r1_turn4
+      * rusqlite_fuzz_3367748654034018327_deepseek-r1_turn6
+      * rusqlite_fuzz_12445100841051341615_deepseek-r1_turn3
+      * rusqlite_fuzz_1706704689413529980_deepseek-r1_turn4
+      * rusqlite_fuzz_18303384782548388908_deepseek-r1_turn6
+      * rusqlite_fuzz_10365423276941111418_deepseek-r1_turn4
+      * rusqlite_fuzz_15888147835300043452_deepseek-r1_turn3
+      * rusqlite_fuzz_13993123350600316118_deepseek-r1_turn3
+      * rusqlite_fuzz_16567295868750089767_deepseek-r1_turn5
+      * rusqlite_fuzz_18138798661975417833_deepseek-r1_turn5
+      * rusqlite_fuzz_13258355100420326526_deepseek-r1_turn5
+      * rusqlite_fuzz_6304470279047077875_deepseek-r1_turn5
+      * rusqlite_fuzz_12923795775880503925_deepseek-r1_turn6
+      * rusqlite_fuzz_15065957108424003493_deepseek-r1_turn3
+  StableURAPI: __bind_in::/home/cdc/SURF/deepSURF-big-experiment-harnesses/rusqlite-0.26.1/src/params.rs::199,
+    - URAPI: DefId(0:1305 ~ rusqlite[8877]::params::{impl#87}::__bind_in),
+    - Macro-expanded: true,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * rusqlite_fuzz_15849535207006544158_deepseek-r1_turn5
+  StableURAPI: finalize::/home/cdc/SURF/deepSURF-big-experiment-harnesses/rusqlite-0.26.1/src/statement.rs::496,
+    - URAPI: DefId(0:551 ~ rusqlite[8877]::statement::{impl#0}::finalize),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * rusqlite_fuzz_15648045394580602649_deepseek-r1_turn5
+  StableURAPI: pragma_update_and_check::/home/cdc/SURF/deepSURF-big-experiment-harnesses/rusqlite-0.26.1/src/pragma.rs::269,
+    - URAPI: DefId(0:331 ~ rusqlite[8877]::pragma::{impl#2}::pragma_update_and_check),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * rusqlite_fuzz_12847949628901230266
+      * rusqlite_fuzz_6542749198875314019
+      * rusqlite_fuzz_6542749198875314019_deepseek-r1_turn5
+      * rusqlite_fuzz_10336274635736215657
+      * rusqlite_fuzz_13682355593252713464
+  StableURAPI: commit::/home/cdc/SURF/deepSURF-big-experiment-harnesses/rusqlite-0.26.1/src/transaction.rs::312,
+    - URAPI: DefId(0:628 ~ rusqlite[8877]::transaction::{impl#3}::commit),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * rusqlite_fuzz_15648045394580602649_deepseek-r1_turn5
+      * rusqlite_fuzz_17393861872593363319_deepseek-r1_turn3
+      * rusqlite_fuzz_5115498555793899015_deepseek-r1_turn6
+      * rusqlite_fuzz_16548864798179868294_deepseek-r1_turn3
+      * rusqlite_fuzz_1706704689413529980_deepseek-r1_turn4
+      * rusqlite_fuzz_15065957108424003493_deepseek-r1_turn3
+      * rusqlite_fuzz_17272032651547189299_deepseek-r1_turn4
+      * rusqlite_fuzz_16692162419235050871_deepseek-r1_turn3
+      * rusqlite_fuzz_3367748654034018327_deepseek-r1_turn6
+      * rusqlite_fuzz_7540104343075682740_deepseek-r1_turn3
+      * rusqlite_fuzz_16567295868750089767_deepseek-r1_turn5
+      * rusqlite_fuzz_13339624173744360096_deepseek-r1_turn6
+      * rusqlite_fuzz_18303384782548388908_deepseek-r1_turn6
+      * rusqlite_fuzz_4474088279540666994_deepseek-r1_turn2
+      * rusqlite_fuzz_10357925701960576690_deepseek-r1_turn4
+      * rusqlite_fuzz_6876110719251169775_deepseek-r1_turn3
+      * rusqlite_fuzz_11367218998323447541_deepseek-r1_turn3
+      * rusqlite_fuzz_9174874665649661397_deepseek-r1_turn3
+      * rusqlite_fuzz_12445100841051341615_deepseek-r1_turn3
+      * rusqlite_fuzz_18138798661975417833_deepseek-r1_turn5
+      * rusqlite_fuzz_12923795775880503925_deepseek-r1_turn6
+      * rusqlite_fuzz_11659230840788413241_deepseek-r1_turn6
+      * rusqlite_fuzz_10252964377864275959_deepseek-r1_turn5
+      * rusqlite_fuzz_10365423276941111418_deepseek-r1_turn4
+      * rusqlite_fuzz_15849535207006544158_deepseek-r1_turn5
+      * rusqlite_fuzz_6304470279047077875_deepseek-r1_turn5
+  StableURAPI: drop::/home/cdc/SURF/deepSURF-big-experiment-harnesses/rusqlite-0.26.1/src/transaction.rs::243,
+    - URAPI: DefId(0:614 ~ rusqlite[8877]::transaction::{impl#2}::drop),
+    - Macro-expanded: false,
+    - LLM-improved: false,
+    - Fuzzing Targets:
+      * rusqlite_fuzz_9174874665649661397
+      * rusqlite_fuzz_16783710667706225260
+      * rusqlite_fuzz_2006257039350389713
+      * rusqlite_fuzz_13607100223320362770
+  StableURAPI: insert::/home/cdc/SURF/deepSURF-big-experiment-harnesses/rusqlite-0.26.1/src/statement.rs::127,
+    - URAPI: DefId(0:1305 ~ rusqlite[8877]::params::{impl#87}::__bind_in),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * rusqlite_fuzz_15849535207006544158_deepseek-r1_turn5
+      * rusqlite_fuzz_16692162419235050871_deepseek-r1_turn3
+      * rusqlite_fuzz_15648045394580602649_deepseek-r1_turn5
+      * rusqlite_fuzz_4474088279540666994_deepseek-r1_turn2
+  StableURAPI: query_row::/home/cdc/SURF/deepSURF-big-experiment-harnesses/rusqlite-0.26.1/src/lib.rs::614,
+    - URAPI: DefId(0:551 ~ rusqlite[8877]::statement::{impl#0}::finalize),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * rusqlite_fuzz_15648045394580602649_deepseek-r1_turn5
+      * rusqlite_fuzz_11367218998323447541_deepseek-r1_turn3
+      * rusqlite_fuzz_1706704689413529980_deepseek-r1_turn4
+      * rusqlite_fuzz_6542749198875314019_deepseek-r1_turn5
+      * rusqlite_fuzz_3367748654034018327_deepseek-r1_turn6
+      * rusqlite_fuzz_13993123350600316118_deepseek-r1_turn3
+  StableURAPI: db_config::/home/cdc/SURF/deepSURF-big-experiment-harnesses/rusqlite-0.26.1/src/config.rs::80,
+    - URAPI: DefId(0:195 ~ rusqlite[8877]::config::{impl#0}::db_config),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * rusqlite_fuzz_10357925701960576690_deepseek-r1_turn4
+  StableURAPI: open_in_memory_with_flags_and_vfs::/home/cdc/SURF/deepSURF-big-experiment-harnesses/rusqlite-0.26.1/src/lib.rs::453,
+    - URAPI: DefId(0:906 ~ rusqlite[8877]::{impl#3}::open_in_memory_with_flags_and_vfs),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * rusqlite_fuzz_16692162419235050871_deepseek-r1_turn3
+      * rusqlite_fuzz_6304470279047077875_deepseek-r1_turn5
+      * rusqlite_fuzz_12445100841051341615_deepseek-r1_turn3
+      * rusqlite_fuzz_15849535207006544158_deepseek-r1_turn5
+      * rusqlite_fuzz_1706704689413529980_deepseek-r1_turn4
+      * rusqlite_fuzz_11367218998323447541_deepseek-r1_turn3
+      * rusqlite_fuzz_10980350294055038318_deepseek-r1_turn5
+  StableURAPI: pragma_query::/home/cdc/SURF/deepSURF-big-experiment-harnesses/rusqlite-0.26.1/src/pragma.rs::186,
+    - URAPI: DefId(0:324 ~ rusqlite[8877]::pragma::{impl#2}::pragma_query),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * rusqlite_fuzz_5327971451169577230
+      * rusqlite_fuzz_14091872570678981962
+      * rusqlite_fuzz_13993123350600316118_deepseek-r1_turn3
+      * rusqlite_fuzz_13993123350600316118
+      * rusqlite_fuzz_18321054881818275469
+  StableURAPI: savepoint::/home/cdc/SURF/deepSURF-big-experiment-harnesses/rusqlite-0.26.1/src/transaction.rs::485,
+    - URAPI: DefId(0:643 ~ rusqlite[8877]::transaction::{impl#6}::savepoint),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * rusqlite_fuzz_6876110719251169775_deepseek-r1_turn3
+      * rusqlite_fuzz_12445100841051341615_deepseek-r1_turn3
+      * rusqlite_fuzz_16548864798179868294_deepseek-r1_turn3
+      * rusqlite_fuzz_10252964377864275959_deepseek-r1_turn5
+      * rusqlite_fuzz_15888147835300043452_deepseek-r1_turn3
+      * rusqlite_fuzz_6542749198875314019_deepseek-r1_turn5
+      * rusqlite_fuzz_13993123350600316118_deepseek-r1_turn3
+      * rusqlite_fuzz_14306385021394128370_deepseek-r1_turn4
+  StableURAPI: prepare::/home/cdc/SURF/deepSURF-big-experiment-harnesses/rusqlite-0.26.1/src/lib.rs::704,
+    - URAPI: DefId(0:929 ~ rusqlite[8877]::{impl#3}::prepare),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * rusqlite_fuzz_17272032651547189299_deepseek-r1_turn4
+      * rusqlite_fuzz_18138798661975417833_deepseek-r1_turn5
+      * rusqlite_fuzz_11659230840788413241_deepseek-r1_turn6
+      * rusqlite_fuzz_16548864798179868294_deepseek-r1_turn3
+      * rusqlite_fuzz_5115498555793899015_deepseek-r1_turn6
+      * rusqlite_fuzz_6876110719251169775_deepseek-r1_turn3
+      * rusqlite_fuzz_6542749198875314019_deepseek-r1_turn5
+      * rusqlite_fuzz_11367218998323447541_deepseek-r1_turn3
+      * rusqlite_fuzz_13258355100420326526_deepseek-r1_turn5
+      * rusqlite_fuzz_12923795775880503925_deepseek-r1_turn6
+      * rusqlite_fuzz_15648045394580602649_deepseek-r1_turn5
+      * rusqlite_fuzz_13339624173744360096_deepseek-r1_turn6
+      * rusqlite_fuzz_14306385021394128370_deepseek-r1_turn4
+      * rusqlite_fuzz_16692162419235050871_deepseek-r1_turn3
+      * rusqlite_fuzz_17419806684545202254_deepseek-r1_turn3
+      * rusqlite_fuzz_13993123350600316118_deepseek-r1_turn3
+      * rusqlite_fuzz_17393861872593363319_deepseek-r1_turn3
+      * rusqlite_fuzz_10357925701960576690_deepseek-r1_turn4
+      * rusqlite_fuzz_7540104343075682740_deepseek-r1_turn3
+      * rusqlite_fuzz_4474088279540666994_deepseek-r1_turn2
+      * rusqlite_fuzz_3367748654034018327_deepseek-r1_turn6
+      * rusqlite_fuzz_10980350294055038318_deepseek-r1_turn5
+      * rusqlite_fuzz_6304470279047077875_deepseek-r1_turn5
+      * rusqlite_fuzz_10252964377864275959_deepseek-r1_turn5
+      * rusqlite_fuzz_13190717095507946307_deepseek-r1_turn5
+      * rusqlite_fuzz_10365423276941111418_deepseek-r1_turn4
+      * rusqlite_fuzz_18303384782548388908_deepseek-r1_turn6
+      * rusqlite_fuzz_16567295868750089767_deepseek-r1_turn5
+      * rusqlite_fuzz_15849535207006544158_deepseek-r1_turn5
+      * rusqlite_fuzz_12445100841051341615_deepseek-r1_turn3
+      * rusqlite_fuzz_1706704689413529980_deepseek-r1_turn4
+      * rusqlite_fuzz_15888147835300043452_deepseek-r1_turn3
+      * rusqlite_fuzz_9174874665649661397_deepseek-r1_turn3
+      * rusqlite_fuzz_10165467311953390070_deepseek-r1_turn6
+      * rusqlite_fuzz_15065957108424003493_deepseek-r1_turn3
+  StableURAPI: drop::/home/cdc/SURF/deepSURF-big-experiment-harnesses/rusqlite-0.26.1/src/statement.rs::845,
+    - URAPI: DefId(0:576 ~ rusqlite[8877]::statement::{impl#2}::drop),
+    - Macro-expanded: false,
+    - LLM-improved: false,
+    - Fuzzing Targets:
+      * rusqlite_fuzz_15589029696308394645
+      * rusqlite_fuzz_3463322498941092853
+      * rusqlite_fuzz_5369253860693893574
+      * rusqlite_fuzz_4474088279540666994
+  StableURAPI: pragma::/home/cdc/SURF/deepSURF-big-experiment-harnesses/rusqlite-0.26.1/src/pragma.rs::215,
+    - URAPI: DefId(0:326 ~ rusqlite[8877]::pragma::{impl#2}::pragma),
+    - Macro-expanded: false,
+    - LLM-improved: false,
+    - Fuzzing Targets:
+      * rusqlite_fuzz_14151487278701186370
+      * rusqlite_fuzz_5178370451866432695
+      * rusqlite_fuzz_12070985253212303630
+      * rusqlite_fuzz_17935802521909350883
+  StableURAPI: new::/home/cdc/SURF/deepSURF-big-experiment-harnesses/rusqlite-0.26.1/src/transaction.rs::274,
+    - URAPI: DefId(0:620 ~ rusqlite[8877]::transaction::{impl#3}::new),
+    - Macro-expanded: false,
+    - LLM-improved: false,
+    - Fuzzing Targets:
+      * rusqlite_fuzz_17277026869193917314
+      * rusqlite_fuzz_6660911690412533725
+      * rusqlite_fuzz_13458445953420572115
+      * rusqlite_fuzz_8218476115353413478
+  StableURAPI: open::/home/cdc/SURF/deepSURF-big-experiment-harnesses/rusqlite-0.26.1/src/lib.rs::369,
+    - URAPI: DefId(0:896 ~ rusqlite[8877]::{impl#3}::open),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * rusqlite_fuzz_14306385021394128370_deepseek-r1_turn4
+      * rusqlite_fuzz_1706704689413529980_deepseek-r1_turn4
+      * rusqlite_fuzz_13993123350600316118_deepseek-r1_turn3
+      * rusqlite_fuzz_9174874665649661397_deepseek-r1_turn3
+  StableURAPI: prepare_cached::/home/cdc/SURF/deepSURF-big-experiment-harnesses/rusqlite-0.26.1/src/cache.rs::38,
+    - URAPI: DefId(0:118 ~ rusqlite[8877]::cache::{impl#0}::prepare_cached),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * rusqlite_fuzz_6876110719251169775_deepseek-r1_turn3
+      * rusqlite_fuzz_15065957108424003493_deepseek-r1_turn3
+      * rusqlite_fuzz_6304470279047077875_deepseek-r1_turn5
+      * rusqlite_fuzz_3367748654034018327_deepseek-r1_turn6
+      * rusqlite_fuzz_4474088279540666994_deepseek-r1_turn2
+      * rusqlite_fuzz_13339624173744360096_deepseek-r1_turn6
+      * rusqlite_fuzz_10980350294055038318_deepseek-r1_turn5
+      * rusqlite_fuzz_15648045394580602649_deepseek-r1_turn5
+      * rusqlite_fuzz_13190717095507946307_deepseek-r1_turn5
+      * rusqlite_fuzz_10252964377864275959_deepseek-r1_turn5
+      * rusqlite_fuzz_1706704689413529980_deepseek-r1_turn4
+  StableURAPI: get::/home/cdc/SURF/deepSURF-big-experiment-harnesses/rusqlite-0.26.1/src/row.rs::280,
+    - URAPI: DefId(0:1662 ~ rusqlite[8877]::params::{impl#189}::__bind_in),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * rusqlite_fuzz_18303384782548388908_deepseek-r1_turn6
+      * rusqlite_fuzz_9174874665649661397_deepseek-r1_turn3
+      * rusqlite_fuzz_7540104343075682740_deepseek-r1_turn3
+      * rusqlite_fuzz_17419806684545202254_deepseek-r1_turn3
+      * rusqlite_fuzz_13258355100420326526_deepseek-r1_turn5
+      * rusqlite_fuzz_3367748654034018327_deepseek-r1_turn6
+      * rusqlite_fuzz_13190717095507946307_deepseek-r1_turn5
+      * rusqlite_fuzz_1706704689413529980_deepseek-r1_turn4
+      * rusqlite_fuzz_10980350294055038318_deepseek-r1_turn5
+      * rusqlite_fuzz_4474088279540666994_deepseek-r1_turn2
+      * rusqlite_fuzz_18138798661975417833_deepseek-r1_turn5
+      * rusqlite_fuzz_10252964377864275959_deepseek-r1_turn5
+      * rusqlite_fuzz_10165467311953390070_deepseek-r1_turn6
+      * rusqlite_fuzz_11659230840788413241_deepseek-r1_turn6
+  StableURAPI: query_map::/home/cdc/SURF/deepSURF-big-experiment-harnesses/rusqlite-0.26.1/src/statement.rs::293,
+    - URAPI: DefId(0:1305 ~ rusqlite[8877]::params::{impl#87}::__bind_in),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * rusqlite_fuzz_15849535207006544158_deepseek-r1_turn5
+      * rusqlite_fuzz_11367218998323447541_deepseek-r1_turn3
+      * rusqlite_fuzz_1706704689413529980_deepseek-r1_turn4
+      * rusqlite_fuzz_6304470279047077875_deepseek-r1_turn5
+  StableURAPI: query_named::/home/cdc/SURF/deepSURF-big-experiment-harnesses/rusqlite-0.26.1/src/statement.rs::243,
+    - URAPI: DefId(0:416 ~ rusqlite[8877]::row::{impl#3}::next),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * rusqlite_fuzz_11367218998323447541_deepseek-r1_turn3
+  StableURAPI: next::/home/cdc/SURF/deepSURF-big-experiment-harnesses/rusqlite-0.26.1/src/lib.rs::990,
+    - URAPI: DefId(0:948 ~ rusqlite[8877]::{impl#6}::next),
+    - Macro-expanded: false,
+    - LLM-improved: false,
+    - Fuzzing Targets:
+      * rusqlite_fuzz_7051263376646873208
+      * rusqlite_fuzz_16351080453339714933
+      * rusqlite_fuzz_4640728699879886973
+      * rusqlite_fuzz_16461839562500751049
+  StableURAPI: version::/home/cdc/SURF/deepSURF-big-experiment-harnesses/rusqlite-0.26.1/src/version.rs::17,
+    - URAPI: DefId(0:824 ~ rusqlite[8877]::version::version),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * rusqlite_fuzz_15065957108424003493_deepseek-r1_turn3
+  StableURAPI: open_with_flags_and_vfs::/home/cdc/SURF/deepSURF-big-experiment-harnesses/rusqlite-0.26.1/src/lib.rs::415,
+    - URAPI: DefId(0:902 ~ rusqlite[8877]::{impl#3}::open_with_flags_and_vfs),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * rusqlite_fuzz_12923795775880503925_deepseek-r1_turn6
+      * rusqlite_fuzz_10252964377864275959_deepseek-r1_turn5
+  StableURAPI: last_insert_rowid::/home/cdc/SURF/deepSURF-big-experiment-harnesses/rusqlite-0.26.1/src/lib.rs::582,
+    - URAPI: DefId(0:916 ~ rusqlite[8877]::{impl#3}::last_insert_rowid),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * rusqlite_fuzz_15849535207006544158_deepseek-r1_turn5
+      * rusqlite_fuzz_10980350294055038318_deepseek-r1_turn5
+      * rusqlite_fuzz_12923795775880503925_deepseek-r1_turn6
+      * rusqlite_fuzz_14306385021394128370_deepseek-r1_turn4
+      * rusqlite_fuzz_15065957108424003493_deepseek-r1_turn3
+      * rusqlite_fuzz_10357925701960576690_deepseek-r1_turn4
+      * rusqlite_fuzz_9174874665649661397_deepseek-r1_turn3
+  StableURAPI: finish::/home/cdc/SURF/deepSURF-big-experiment-harnesses/rusqlite-0.26.1/src/transaction.rs::213,
+    - URAPI: DefId(0:607 ~ rusqlite[8877]::transaction::{impl#0}::finish),
+    - Macro-expanded: false,
+    - LLM-improved: false,
+    - Fuzzing Targets:
+      * rusqlite_fuzz_18303384782548388908
+      * rusqlite_fuzz_2585166828415365182
+      * rusqlite_fuzz_5120935307130350631
+      * rusqlite_fuzz_491101221682830812
+  StableURAPI: from_iter::/home/cdc/.cargo/registry/src/index.crates.io-6f17d22bba15001f/bitflags-1.3.2/src/lib.rs::350,
+    - URAPI: DefId(0:551 ~ rusqlite[8877]::statement::{impl#0}::finalize),
+    - Macro-expanded: true,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * rusqlite_fuzz_1706704689413529980_deepseek-r1_turn4
+      * rusqlite_fuzz_6542749198875314019_deepseek-r1_turn5
+      * rusqlite_fuzz_15648045394580602649_deepseek-r1_turn5
+  StableURAPI: parameter_index::/home/cdc/SURF/deepSURF-big-experiment-harnesses/rusqlite-0.26.1/src/statement.rs::520,
+    - URAPI: DefId(0:552 ~ rusqlite[8877]::statement::{impl#0}::parameter_index),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * rusqlite_fuzz_13339624173744360096_deepseek-r1_turn6
+  StableURAPI: pragma_update::/home/cdc/SURF/deepSURF-big-experiment-harnesses/rusqlite-0.26.1/src/pragma.rs::247,
+    - URAPI: DefId(0:329 ~ rusqlite[8877]::pragma::{impl#2}::pragma_update),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * rusqlite_fuzz_3367748654034018327_deepseek-r1_turn6
+      * rusqlite_fuzz_16994029556116132615
+      * rusqlite_fuzz_9174874665649661397_deepseek-r1_turn3
+      * rusqlite_fuzz_12923795775880503925_deepseek-r1_turn6
+      * rusqlite_fuzz_8694204436700690199
+      * rusqlite_fuzz_6304470279047077875_deepseek-r1_turn5
+      * rusqlite_fuzz_9621479707312451691
+      * rusqlite_fuzz_10165467311953390070_deepseek-r1_turn6
+      * rusqlite_fuzz_1706704689413529980_deepseek-r1_turn4
+      * rusqlite_fuzz_7493121694840647337
+      * rusqlite_fuzz_16548864798179868294_deepseek-r1_turn3
+  StableURAPI: transaction_with_behavior::/home/cdc/SURF/deepSURF-big-experiment-harnesses/rusqlite-0.26.1/src/transaction.rs::416,
+    - URAPI: DefId(0:641 ~ rusqlite[8877]::transaction::{impl#6}::transaction_with_behavior),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * rusqlite_fuzz_15648045394580602649_deepseek-r1_turn5
+      * rusqlite_fuzz_4474088279540666994_deepseek-r1_turn2
+      * rusqlite_fuzz_13993123350600316118_deepseek-r1_turn3
+      * rusqlite_fuzz_1706704689413529980_deepseek-r1_turn4
+      * rusqlite_fuzz_10357925701960576690_deepseek-r1_turn4
+      * rusqlite_fuzz_18303384782548388908_deepseek-r1_turn6
+      * rusqlite_fuzz_9174874665649661397_deepseek-r1_turn3
+      * rusqlite_fuzz_15888147835300043452_deepseek-r1_turn3
+      * rusqlite_fuzz_15065957108424003493_deepseek-r1_turn3
+      * rusqlite_fuzz_3367748654034018327_deepseek-r1_turn6
+      * rusqlite_fuzz_16567295868750089767_deepseek-r1_turn5
+      * rusqlite_fuzz_17393861872593363319_deepseek-r1_turn3
+      * rusqlite_fuzz_10252964377864275959_deepseek-r1_turn5
+  StableURAPI: get_unwrap::/home/cdc/SURF/deepSURF-big-experiment-harnesses/rusqlite-0.26.1/src/row.rs::260,
+    - URAPI: DefId(0:476 ~ rusqlite[8877]::row::{impl#9}::idx),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * rusqlite_fuzz_10165467311953390070_deepseek-r1_turn6
+      * rusqlite_fuzz_17393861872593363319_deepseek-r1_turn3
+      * rusqlite_fuzz_16692162419235050871_deepseek-r1_turn3
+  StableURAPI: new::/home/cdc/SURF/deepSURF-big-experiment-harnesses/rusqlite-0.26.1/src/transaction.rs::106,
+    - URAPI: DefId(0:595 ~ rusqlite[8877]::transaction::{impl#0}::new),
+    - Macro-expanded: false,
+    - LLM-improved: false,
+    - Fuzzing Targets:
+      * rusqlite_fuzz_17455926547278325120
+      * rusqlite_fuzz_16567295868750089767
+      * rusqlite_fuzz_14011536174044260552
+      * rusqlite_fuzz_12099013318629446229
+  StableURAPI: finish::/home/cdc/SURF/deepSURF-big-experiment-harnesses/rusqlite-0.26.1/src/transaction.rs::341,
+    - URAPI: DefId(0:631 ~ rusqlite[8877]::transaction::{impl#3}::finish),
+    - Macro-expanded: false,
+    - LLM-improved: false,
+    - Fuzzing Targets:
+      * rusqlite_fuzz_10765711168721850138
+      * rusqlite_fuzz_11954459892943682272
+      * rusqlite_fuzz_9028477670433776341
+      * rusqlite_fuzz_15613377224788740867
+  StableURAPI: fmt::/home/cdc/SURF/deepSURF-big-experiment-harnesses/rusqlite-0.26.1/src/statement.rs::828,
+    - URAPI: DefId(0:574 ~ rusqlite[8877]::statement::{impl#1}::fmt),
+    - Macro-expanded: false,
+    - LLM-improved: false,
+    - Fuzzing Targets:
+      * rusqlite_fuzz_13582652999343541926
+      * rusqlite_fuzz_12962659554441541781
+      * rusqlite_fuzz_828134452694340424
+      * rusqlite_fuzz_17506934217887935464
+  StableURAPI: query_map_named::/home/cdc/SURF/deepSURF-big-experiment-harnesses/rusqlite-0.26.1/src/statement.rs::320,
+    - URAPI: DefId(0:529 ~ rusqlite[8877]::statement::{impl#0}::query_map_named),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * rusqlite_fuzz_6304470279047077875_deepseek-r1_turn5
+  StableURAPI: column_name::/home/cdc/SURF/deepSURF-big-experiment-harnesses/rusqlite-0.26.1/src/column.rs::93,
+    - URAPI: DefId(0:162 ~ rusqlite[8877]::column::{impl#1}::column_name),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * rusqlite_fuzz_17419806684545202254_deepseek-r1_turn3
+  StableURAPI: is_autocommit::/home/cdc/SURF/deepSURF-big-experiment-harnesses/rusqlite-0.26.1/src/lib.rs::906,
+    - URAPI: DefId(0:937 ~ rusqlite[8877]::{impl#3}::is_autocommit),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * rusqlite_fuzz_15065957108424003493_deepseek-r1_turn3
+      * rusqlite_fuzz_16692162419235050871_deepseek-r1_turn3
+  StableURAPI: close::/home/cdc/SURF/deepSURF-big-experiment-harnesses/rusqlite-0.26.1/src/lib.rs::718,
+    - URAPI: DefId(0:930 ~ rusqlite[8877]::{impl#3}::close),
+    - Macro-expanded: false,
+    - LLM-improved: false,
+    - Fuzzing Targets:
+      * rusqlite_fuzz_5778422235176949304
+      * rusqlite_fuzz_10575559936402793094
+      * rusqlite_fuzz_3058667444169388227
+      * rusqlite_fuzz_10841974901790040329
+  StableURAPI: drop::/home/cdc/SURF/deepSURF-big-experiment-harnesses/rusqlite-0.26.1/src/cache.rs::92,
+    - URAPI: DefId(0:136 ~ rusqlite[8877]::cache::{impl#3}::drop),
+    - Macro-expanded: false,
+    - LLM-improved: false,
+    - Fuzzing Targets:
+      * rusqlite_fuzz_4584380785286817290
+      * rusqlite_fuzz_17408044094500110453
+      * rusqlite_fuzz_13301910629946163260
+      * rusqlite_fuzz_15628968612274388839
+  StableURAPI: version_number::/home/cdc/SURF/deepSURF-big-experiment-harnesses/rusqlite-0.26.1/src/version.rs::9,
+    - URAPI: DefId(0:823 ~ rusqlite[8877]::version::version_number),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * rusqlite_fuzz_18138798661975417833_deepseek-r1_turn5
+  StableURAPI: open_in_memory::/home/cdc/SURF/deepSURF-big-experiment-harnesses/rusqlite-0.26.1/src/lib.rs::380,
+    - URAPI: DefId(0:898 ~ rusqlite[8877]::{impl#3}::open_in_memory),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * rusqlite_fuzz_18138798661975417833_deepseek-r1_turn5
+      * rusqlite_fuzz_16548864798179868294_deepseek-r1_turn3
+      * rusqlite_fuzz_14306385021394128370_deepseek-r1_turn4
+      * rusqlite_fuzz_1706704689413529980_deepseek-r1_turn4
+      * rusqlite_fuzz_7540104343075682740_deepseek-r1_turn3
+      * rusqlite_fuzz_6304470279047077875_deepseek-r1_turn5
+      * rusqlite_fuzz_9174874665649661397_deepseek-r1_turn3
+      * rusqlite_fuzz_17393861872593363319_deepseek-r1_turn3
+      * rusqlite_fuzz_15065957108424003493_deepseek-r1_turn3
+      * rusqlite_fuzz_11367218998323447541_deepseek-r1_turn3
+      * rusqlite_fuzz_12445100841051341615_deepseek-r1_turn3
+      * rusqlite_fuzz_13258355100420326526_deepseek-r1_turn5
+      * rusqlite_fuzz_10365423276941111418_deepseek-r1_turn4
+      * rusqlite_fuzz_10980350294055038318_deepseek-r1_turn5
+      * rusqlite_fuzz_13190717095507946307_deepseek-r1_turn5
+      * rusqlite_fuzz_13993123350600316118_deepseek-r1_turn3
+      * rusqlite_fuzz_10252964377864275959_deepseek-r1_turn5
+      * rusqlite_fuzz_15888147835300043452_deepseek-r1_turn3
+  StableURAPI: unchecked_transaction::/home/cdc/SURF/deepSURF-big-experiment-harnesses/rusqlite-0.26.1/src/transaction.rs::454,
+    - URAPI: DefId(0:642 ~ rusqlite[8877]::transaction::{impl#6}::unchecked_transaction),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * rusqlite_fuzz_12445100841051341615_deepseek-r1_turn3
+  StableURAPI: new_unchecked::/home/cdc/SURF/deepSURF-big-experiment-harnesses/rusqlite-0.26.1/src/transaction.rs::116,
+    - URAPI: DefId(0:596 ~ rusqlite[8877]::transaction::{impl#0}::new_unchecked),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * rusqlite_fuzz_17272032651547189299_deepseek-r1_turn4
+  StableURAPI: parameter_count::/home/cdc/SURF/deepSURF-big-experiment-harnesses/rusqlite-0.26.1/src/statement.rs::588,
+    - URAPI: DefId(0:559 ~ rusqlite[8877]::statement::{impl#0}::parameter_count),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * rusqlite_fuzz_13339624173744360096_deepseek-r1_turn6
+      * rusqlite_fuzz_3367748654034018327_deepseek-r1_turn6
+  StableURAPI: interrupt::/home/cdc/SURF/deepSURF-big-experiment-harnesses/rusqlite-0.26.1/src/lib.rs::1086,
+    - URAPI: DefId(0:958 ~ rusqlite[8877]::{impl#10}::interrupt),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * rusqlite_fuzz_18303384782548388908_deepseek-r1_turn6
+      * rusqlite_fuzz_10165467311953390070_deepseek-r1_turn6
+      * rusqlite_fuzz_17419806684545202254_deepseek-r1_turn3
+      * rusqlite_fuzz_12923795775880503925_deepseek-r1_turn6
+      * rusqlite_fuzz_15065957108424003493_deepseek-r1_turn3
+      * rusqlite_fuzz_15888147835300043452_deepseek-r1_turn3
+      * rusqlite_fuzz_16692162419235050871_deepseek-r1_turn3
+      * rusqlite_fuzz_1706704689413529980_deepseek-r1_turn4
+      * rusqlite_fuzz_10980350294055038318_deepseek-r1_turn5
+      * rusqlite_fuzz_18138798661975417833_deepseek-r1_turn5
+      * rusqlite_fuzz_10357925701960576690_deepseek-r1_turn4
+      * rusqlite_fuzz_6304470279047077875_deepseek-r1_turn5
+      * rusqlite_fuzz_16567295868750089767_deepseek-r1_turn5
+      * rusqlite_fuzz_3367748654034018327_deepseek-r1_turn6
+      * rusqlite_fuzz_9174874665649661397_deepseek-r1_turn3
+      * rusqlite_fuzz_11659230840788413241_deepseek-r1_turn6
+  StableURAPI: open_in_memory_with_flags::/home/cdc/SURF/deepSURF-big-experiment-harnesses/rusqlite-0.26.1/src/lib.rs::438,
+    - URAPI: DefId(0:905 ~ rusqlite[8877]::{impl#3}::open_in_memory_with_flags),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * rusqlite_fuzz_18303384782548388908_deepseek-r1_turn6
+      * rusqlite_fuzz_11367218998323447541_deepseek-r1_turn3
+      * rusqlite_fuzz_13339624173744360096_deepseek-r1_turn6
+      * rusqlite_fuzz_6542749198875314019_deepseek-r1_turn5
+      * rusqlite_fuzz_9174874665649661397_deepseek-r1_turn3
+      * rusqlite_fuzz_18138798661975417833_deepseek-r1_turn5
+      * rusqlite_fuzz_16692162419235050871_deepseek-r1_turn3
+      * rusqlite_fuzz_16567295868750089767_deepseek-r1_turn5
+      * rusqlite_fuzz_17393861872593363319_deepseek-r1_turn3
+      * rusqlite_fuzz_10252964377864275959_deepseek-r1_turn5
+      * rusqlite_fuzz_6304470279047077875_deepseek-r1_turn5
+      * rusqlite_fuzz_5115498555793899015_deepseek-r1_turn6
+      * rusqlite_fuzz_10165467311953390070_deepseek-r1_turn6
+      * rusqlite_fuzz_10980350294055038318_deepseek-r1_turn5
+      * rusqlite_fuzz_17419806684545202254_deepseek-r1_turn3
+      * rusqlite_fuzz_13993123350600316118_deepseek-r1_turn3
+      * rusqlite_fuzz_3367748654034018327_deepseek-r1_turn6
+      * rusqlite_fuzz_7540104343075682740_deepseek-r1_turn3
+      * rusqlite_fuzz_15648045394580602649_deepseek-r1_turn5
+      * rusqlite_fuzz_16548864798179868294_deepseek-r1_turn3
+      * rusqlite_fuzz_17272032651547189299_deepseek-r1_turn4
+      * rusqlite_fuzz_12445100841051341615_deepseek-r1_turn3
+      * rusqlite_fuzz_15065957108424003493_deepseek-r1_turn3
+      * rusqlite_fuzz_6876110719251169775_deepseek-r1_turn3
+      * rusqlite_fuzz_1706704689413529980_deepseek-r1_turn4
+      * rusqlite_fuzz_4474088279540666994_deepseek-r1_turn2
+      * rusqlite_fuzz_10365423276941111418_deepseek-r1_turn4
+      * rusqlite_fuzz_10357925701960576690_deepseek-r1_turn4
+      * rusqlite_fuzz_15888147835300043452_deepseek-r1_turn3
+      * rusqlite_fuzz_13258355100420326526_deepseek-r1_turn5
+      * rusqlite_fuzz_11659230840788413241_deepseek-r1_turn6
+      * rusqlite_fuzz_13190717095507946307_deepseek-r1_turn5
+  StableURAPI: idx::/home/cdc/SURF/deepSURF-big-experiment-harnesses/rusqlite-0.26.1/src/row.rs::402,
+    - URAPI: DefId(0:478 ~ rusqlite[8877]::row::{impl#10}::idx),
+    - Macro-expanded: false,
+    - LLM-improved: false,
+    - Fuzzing Targets:
+      * rusqlite_fuzz_16138635281942172449
+      * rusqlite_fuzz_3971687327336571432
+      * rusqlite_fuzz_5115498555793899015
+      * rusqlite_fuzz_16248124119729635163
+  StableURAPI: execute_batch::/home/cdc/SURF/deepSURF-big-experiment-harnesses/rusqlite-0.26.1/src/lib.rs::477,
+    - URAPI: DefId(0:907 ~ rusqlite[8877]::{impl#3}::execute_batch),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * rusqlite_fuzz_10365423276941111418_deepseek-r1_turn4
+      * rusqlite_fuzz_6876110719251169775_deepseek-r1_turn3
+      * rusqlite_fuzz_18303384782548388908_deepseek-r1_turn6
+      * rusqlite_fuzz_17393861872593363319_deepseek-r1_turn3
+      * rusqlite_fuzz_17272032651547189299_deepseek-r1_turn4
+      * rusqlite_fuzz_5115498555793899015_deepseek-r1_turn6
+      * rusqlite_fuzz_1706704689413529980_deepseek-r1_turn4
+      * rusqlite_fuzz_13190717095507946307_deepseek-r1_turn5
+      * rusqlite_fuzz_18138798661975417833_deepseek-r1_turn5
+      * rusqlite_fuzz_10252964377864275959_deepseek-r1_turn5
+      * rusqlite_fuzz_10357925701960576690_deepseek-r1_turn4
+      * rusqlite_fuzz_9174874665649661397_deepseek-r1_turn3
+      * rusqlite_fuzz_6304470279047077875_deepseek-r1_turn5
+      * rusqlite_fuzz_3367748654034018327_deepseek-r1_turn6
+      * rusqlite_fuzz_6542749198875314019_deepseek-r1_turn5
+      * rusqlite_fuzz_15648045394580602649_deepseek-r1_turn5
+      * rusqlite_fuzz_10980350294055038318_deepseek-r1_turn5
+      * rusqlite_fuzz_11367218998323447541_deepseek-r1_turn3
+  StableURAPI: column_names::/home/cdc/SURF/deepSURF-big-experiment-harnesses/rusqlite-0.26.1/src/column.rs::32,
+    - URAPI: DefId(0:159 ~ rusqlite[8877]::column::{impl#1}::column_names),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * rusqlite_fuzz_3367748654034018327_deepseek-r1_turn6
+  StableURAPI: get_status::/home/cdc/SURF/deepSURF-big-experiment-harnesses/rusqlite-0.26.1/src/statement.rs::788,
+    - URAPI: DefId(0:569 ~ rusqlite[8877]::statement::{impl#0}::get_status),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * rusqlite_fuzz_6876110719251169775_deepseek-r1_turn3
+  StableURAPI: column_count::/home/cdc/SURF/deepSURF-big-experiment-harnesses/rusqlite-0.26.1/src/column.rs::49,
+    - URAPI: DefId(0:160 ~ rusqlite[8877]::column::{impl#1}::column_count),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * rusqlite_fuzz_13258355100420326526_deepseek-r1_turn5
+  StableURAPI: open_with_flags::/home/cdc/SURF/deepSURF-big-experiment-harnesses/rusqlite-0.26.1/src/lib.rs::395,
+    - URAPI: DefId(0:643 ~ rusqlite[8877]::transaction::{impl#6}::savepoint),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * rusqlite_fuzz_14306385021394128370_deepseek-r1_turn4
+      * rusqlite_fuzz_10252964377864275959_deepseek-r1_turn5
+      * rusqlite_fuzz_16548864798179868294_deepseek-r1_turn3
+      * rusqlite_fuzz_15888147835300043452_deepseek-r1_turn3
+      * rusqlite_fuzz_15065957108424003493_deepseek-r1_turn3
+      * rusqlite_fuzz_13993123350600316118_deepseek-r1_turn3
+      * rusqlite_fuzz_1706704689413529980_deepseek-r1_turn4
+      * rusqlite_fuzz_16692162419235050871_deepseek-r1_turn3
+      * rusqlite_fuzz_17272032651547189299_deepseek-r1_turn4
+      * rusqlite_fuzz_18138798661975417833_deepseek-r1_turn5
+      * rusqlite_fuzz_10365423276941111418_deepseek-r1_turn4
+      * rusqlite_fuzz_13190717095507946307_deepseek-r1_turn5
+      * rusqlite_fuzz_7540104343075682740_deepseek-r1_turn3
+      * rusqlite_fuzz_10980350294055038318_deepseek-r1_turn5
+      * rusqlite_fuzz_11367218998323447541_deepseek-r1_turn3
+  StableURAPI: get_ref::/home/cdc/SURF/deepSURF-big-experiment-harnesses/rusqlite-0.26.1/src/row.rs::323,
+    - URAPI: DefId(0:643 ~ rusqlite[8877]::transaction::{impl#6}::savepoint),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * rusqlite_fuzz_18138798661975417833_deepseek-r1_turn5
+      * rusqlite_fuzz_18303384782548388908_deepseek-r1_turn6
+      * rusqlite_fuzz_10365423276941111418_deepseek-r1_turn4
+      * rusqlite_fuzz_7540104343075682740_deepseek-r1_turn3
+      * rusqlite_fuzz_16692162419235050871_deepseek-r1_turn3
+      * rusqlite_fuzz_12445100841051341615_deepseek-r1_turn3
+      * rusqlite_fuzz_16567295868750089767_deepseek-r1_turn5
+      * rusqlite_fuzz_10165467311953390070_deepseek-r1_turn6
+      * rusqlite_fuzz_11659230840788413241_deepseek-r1_turn6
+      * rusqlite_fuzz_5115498555793899015_deepseek-r1_turn6
+      * rusqlite_fuzz_3367748654034018327_deepseek-r1_turn6
+      * rusqlite_fuzz_15888147835300043452_deepseek-r1_turn3
+  StableURAPI: idx::/home/cdc/SURF/deepSURF-big-experiment-harnesses/rusqlite-0.26.1/src/row.rs::391,
+    - URAPI: DefId(0:476 ~ rusqlite[8877]::row::{impl#9}::idx),
+    - Macro-expanded: false,
+    - LLM-improved: false,
+    - Fuzzing Targets:
+      * rusqlite_fuzz_10165467311953390070
+      * rusqlite_fuzz_13737202265080443742
+      * rusqlite_fuzz_1979702421728538986
+      * rusqlite_fuzz_2412263837386699164
+  StableURAPI: set_db_config::/home/cdc/SURF/deepSURF-big-experiment-harnesses/rusqlite-0.26.1/src/config.rs::109,
+    - URAPI: DefId(0:196 ~ rusqlite[8877]::config::{impl#0}::set_db_config),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * rusqlite_fuzz_1706704689413529980_deepseek-r1_turn4
+  StableURAPI: savepoint::/home/cdc/SURF/deepSURF-big-experiment-harnesses/rusqlite-0.26.1/src/transaction.rs::286,
+    - URAPI: DefId(0:623 ~ rusqlite[8877]::transaction::{impl#3}::savepoint),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * rusqlite_fuzz_7540104343075682740_deepseek-r1_turn3
+  StableURAPI: next::/home/cdc/SURF/deepSURF-big-experiment-harnesses/rusqlite-0.26.1/src/row.rs::154,
+    - URAPI: DefId(0:1305 ~ rusqlite[8877]::params::{impl#87}::__bind_in),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * rusqlite_fuzz_15849535207006544158_deepseek-r1_turn5
+      * rusqlite_fuzz_15065957108424003493_deepseek-r1_turn3
+      * rusqlite_fuzz_6304470279047077875_deepseek-r1_turn5
+      * rusqlite_fuzz_11367218998323447541_deepseek-r1_turn3
+  StableURAPI: drop::/home/cdc/SURF/deepSURF-big-experiment-harnesses/rusqlite-0.26.1/src/row.rs::108,
+    - URAPI: DefId(0:405 ~ rusqlite[8877]::row::{impl#2}::drop),
+    - Macro-expanded: false,
+    - LLM-improved: false,
+    - Fuzzing Targets:
+      * rusqlite_fuzz_7540104343075682740
+  StableURAPI: pragma_query_value::/home/cdc/SURF/deepSURF-big-experiment-harnesses/rusqlite-0.26.1/src/pragma.rs::168,
+    - URAPI: DefId(0:321 ~ rusqlite[8877]::pragma::{impl#2}::pragma_query_value),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * rusqlite_fuzz_16548864798179868294_deepseek-r1_turn3
+      * rusqlite_fuzz_16548864798179868294
+      * rusqlite_fuzz_3367748654034018327_deepseek-r1_turn6
+      * rusqlite_fuzz_1711686084007466323
+      * rusqlite_fuzz_6481709747474457567
+      * rusqlite_fuzz_11027336211298195787
+  StableURAPI: query_row::/home/cdc/SURF/deepSURF-big-experiment-harnesses/rusqlite-0.26.1/src/statement.rs::449,
+    - URAPI: DefId(0:2312 ~ rusqlite[8877]::{impl#38}::extend),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * rusqlite_fuzz_10365423276941111418_deepseek-r1_turn4
+      * rusqlite_fuzz_13190717095507946307_deepseek-r1_turn5
+      * rusqlite_fuzz_12923795775880503925_deepseek-r1_turn6
+      * rusqlite_fuzz_13993123350600316118_deepseek-r1_turn3
+  StableURAPI: savepoint_with_name::/home/cdc/SURF/deepSURF-big-experiment-harnesses/rusqlite-0.26.1/src/transaction.rs::292,
+    - URAPI: DefId(0:164 ~ rusqlite[8877]::column::{impl#1}::column_index),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * rusqlite_fuzz_3367748654034018327_deepseek-r1_turn6
+      * rusqlite_fuzz_6304470279047077875_deepseek-r1_turn5
+  StableURAPI: savepoint_with_name::/home/cdc/SURF/deepSURF-big-experiment-harnesses/rusqlite-0.26.1/src/transaction.rs::165,
+    - URAPI: DefId(0:643 ~ rusqlite[8877]::transaction::{impl#6}::savepoint),
+    - Macro-expanded: false,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * rusqlite_fuzz_4474088279540666994_deepseek-r1_turn2
+      * rusqlite_fuzz_16692162419235050871_deepseek-r1_turn3
+      * rusqlite_fuzz_12445100841051341615_deepseek-r1_turn3
+      * rusqlite_fuzz_16548864798179868294_deepseek-r1_turn3
+      * rusqlite_fuzz_15648045394580602649_deepseek-r1_turn5
+      * rusqlite_fuzz_10357925701960576690_deepseek-r1_turn4
+      * rusqlite_fuzz_17393861872593363319_deepseek-r1_turn3
+      * rusqlite_fuzz_15888147835300043452_deepseek-r1_turn3
+      * rusqlite_fuzz_15849535207006544158_deepseek-r1_turn5
+      * rusqlite_fuzz_15065957108424003493_deepseek-r1_turn3
+      * rusqlite_fuzz_16567295868750089767_deepseek-r1_turn5
+  StableURAPI: extend::/home/cdc/.cargo/registry/src/index.crates.io-6f17d22bba15001f/bitflags-1.3.2/src/lib.rs::350,
+    - URAPI: DefId(0:2312 ~ rusqlite[8877]::{impl#38}::extend),
+    - Macro-expanded: true,
+    - LLM-improved: true,
+    - Fuzzing Targets:
+      * rusqlite_fuzz_10365423276941111418_deepseek-r1_turn4
+------------------------------------------------------------------------------------------------------------------------------------

@@ -1,0 +1,45 @@
+language: rust
+rust:
+- stable
+- beta
+- nightly
+sudo: false
+os:
+- linux
+cache:
+  directories:
+  - "$HOME/.cargo"
+  - target
+matrix:
+  fast_finish: true
+  allow_failures:
+  - rust: nightly
+  - rust: nightly
+    env: CARGO_FEATURES="unstable"
+  include:
+  - rust: nightly
+    env: CARGO_FEATURES="unstable"
+env:
+  matrix:
+  - CARGO_FEATURES=
+  global:
+  - secure: "G/Apg7wEof/s6NgY1i1WndyyvHMDwF2MSx9p78Xwcruwq5Z7P4phG0GGQ2RtrzsyPPHeQCpGncMjVl4GDUzCvU8wZ4XnEj9PrT/ieMS5gFAlloMZa0zZll74Y9+wwrtZjNaEap96/RHrS/+TPUosqsOcRNCqslP294SSt1KrR+TR0kDXPhLOH3aExfQvK4NNOJvVFnhcdygbXmOcWytBu2K013BJF3aNB6YEmhm6E6SiJcDsPObitp0vNix38N8LOng/+COWAiTEYY8utk/qfHb2PByN6z+aFCkbZtHRD7k/tSAwgK8fWfhFU+OepqKsXaKjbfL/yWpfoxRs7HaLEsplGj2y3w5Hjk40tFA+hUXdNkeKozhwL5e9NVpEh7hfMH9XyQQZGxNa5YliedyRQ4onbklZqsj42X/KBLr78ofoKxzAFS8kPTVcWs9TeLRzxR6uugiRdJz4tCLmw23nb14lotird1PH1Dh+hlBnCes1zwoecTtoQPZ6rMgpHGS4QBtw1DcfiBpNBdJMQG3pTgQ70K9e1Spxu4D42OskuXyvhgIZYwbR1PPXbw3BoEXN/DIxttLUroLyyQOTHj+4N9uKfyntO8vhugjFbRa2cd/Qdxm6F6BmbgthvrZP31vBq4+EZZbz5Of7qIzeB6RonZSbd6YB71l+7NmuD2XW030="
+  - secure: "IyzKHw2z6uxPqXHiBMSOhTLvsLtPRvzXpXRXR/GFfTJfcP8JyCEq/YG5e0UH8IsOCVqU5ltybfGAoy7dzo2gwyP/Z3UeC7fLUa1kql6V//zDk/4LM6F2CZDvxr7Gt7Ru2IZwb3ny7Z7+QkNbVoRXKSsrnd2NPTRhzuHtCVg5GR66gl3qCkiu4KPdUfxxSEYccD6T+kGKNgC/zi+Kr0lBc9EDRezeMIgp+1CrYFXdslCRph4Cx8VN0+r0nluJx5738x6fxAEc9RHRe2dg/3PRJPVVWQMC1F71nShDPWUXT9MVfu9dR2l3AuOXpztvtepDiawcRPpsdyD4h1KKf7r+jcqJChmFuk5hhrbn9k0ttzHi8B3Jocb21BoKzTA2BwXKH6zCcZcelB26w3y41g5lJ0OXD5KtKNSritUt9QZhsPkiaPorrB0LMFnVU3z4ozspoHsS0DqdJIhparLREj2F24zlFML0NfhPRWzG05XGAHPbEmPXVhJDdCKeZeZcEfHvwB7HznEPeKrsKgZh/uFKadt3zH2mFfwCJzs/Ic14mfGyUQlL72US6KMxsRuEXsSvYZV8YGoiPkJCCrdjJfgddwSVs/zI7/MXCREU9+Etfk3LDOorAoR3r9qM/XbgLXQT3Y9pWFGJ2EWEtuHSQZg0uCa7p7srGb3YnccyAJVo3Qg="
+before_script:
+- curl -L https://github.com/arcnmx/ci/archive/0.1.tar.gz | tar -xzC $HOME && . $HOME/ci-0.1/src
+script:
+- cargo test
+- cargo build
+deploy:
+  provider: script
+  script: 'true'
+  on:
+    tags: true
+    all_branches: true
+    condition: "$TRAVIS_RUST_VERSION = stable"
+before_deploy:
+- cargo doc
+- cargo package
+after_deploy:
+- cargo pages-publish
+- cargo publish

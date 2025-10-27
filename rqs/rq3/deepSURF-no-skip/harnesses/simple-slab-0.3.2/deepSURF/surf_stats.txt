@@ -1,0 +1,57 @@
+
+Total Stats:
+------------------------------------------------------------------------------------------------------------------------------------
+* URAPI Coverage: 8/8 (100.00%).
+* Targets Compiled: 14/18 (77.78%) in [39.409688238s].
+------------------------------------------------------------------------------------------------------------------------------------
+
+Target Stats:
+------------------------------------------------------------------------------------------------------------------------------------
+* URAPIs w/ ≥ 1ft: 8/8 (100.00%).
+* Average Generation Time per Target: 125.508300009s/8 (15.688537501s).
+
+* URAPIs w/ ≥ 2ft: 6/8 (75.00%).
+* Average Generation Time per Target: 180.25302047s/6 (30.042170078s).
+
+* URAPIs w/ ≥ 3ft: 0/8 (0.00%).
+* Average Generation Time per Target: 0ns/0 (Na).
+
+* URAPIs w/ ≥ 4ft: 0/8 (0.00%).
+* Average Generation Time per Target: 0ns/0 (Na).
+
+* URAPIs w/o any compilable targets: 0/8 (0.00%).
+------------------------------------------------------------------------------------------------------------------------------------
+
+Detailed Results: 
+------------------------------------------------------------------------------------------------------------------------------------
+  URAPI: DefId(0:39 ~ simple_slab[bb81]::{impl#1}::drop),
+    - Compilable Targets (2/2 ~ 100.00%):
+        * simple-slab_fuzz_12262590058837114080 [14.498945718s]
+        * simple-slab_fuzz_3843021432813208120 [31.853906069s]
+  URAPI: DefId(0:43 ~ simple_slab[bb81]::{impl#2}::index),
+    - Compilable Targets (2/2 ~ 100.00%):
+        * simple-slab_fuzz_7250861895740451939 [14.428384784s]
+        * simple-slab_fuzz_14651413359152999810 [23.921004034s]
+  URAPI: DefId(0:48 ~ simple_slab[bb81]::{impl#3}::next),
+    - Compilable Targets (2/4 ~ 50.00%):
+        * simple-slab_fuzz_11125944248378378767 [19.458259684s]
+        * simple-slab_fuzz_14668477236485893747 [35.297252414s]
+  URAPI: DefId(0:31 ~ simple_slab[bb81]::{impl#0}::insert),
+    - Compilable Targets (2/2 ~ 100.00%):
+        * simple-slab_fuzz_17632678771809484846 [14.124873644s]
+        * simple-slab_fuzz_1224126031309289137 [23.491336294s]
+  URAPI: DefId(0:29 ~ simple_slab[bb81]::{impl#0}::new),
+    - Compilable Targets (1/1 ~ 100.00%):
+        * simple-slab_fuzz_12171604173921280369 [14.475106373s]
+  URAPI: DefId(0:53 ~ simple_slab[bb81]::{impl#4}::next),
+    - Compilable Targets (2/4 ~ 50.00%):
+        * simple-slab_fuzz_14369565143762262345 [19.542513811s]
+        * simple-slab_fuzz_6807561978874229564 [35.297530887s]
+  URAPI: DefId(0:30 ~ simple_slab[bb81]::{impl#0}::with_capacity),
+    - Compilable Targets (1/1 ~ 100.00%):
+        * simple-slab_fuzz_12997837067481994914 [14.491658282s]
+  URAPI: DefId(0:32 ~ simple_slab[bb81]::{impl#0}::remove),
+    - Compilable Targets (2/2 ~ 100.00%):
+        * simple-slab_fuzz_9361458073122351307 [14.488557713s]
+        * simple-slab_fuzz_12193479008650704656 [30.391990772s]
+------------------------------------------------------------------------------------------------------------------------------------

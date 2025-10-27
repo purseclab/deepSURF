@@ -1,0 +1,433 @@
+     Removed 131 files, 53.7MiB total
+   Compiling semver v1.0.26
+   Compiling home v0.5.5
+   Compiling libc v0.2.175
+   Compiling xdg v2.5.2
+   Compiling smallvec v0.2.1
+   Compiling global_data v0.1.0 (/home/cdc/deepSURF-sp26-artifacts/artifact_code/global_data)
+   Compiling afl v0.15.7
+   Compiling insert_many v0.1.1 (/home/cdc/deepSURF-sp26-artifacts/artifact_data/dataset/erasan_crates/insert_many-0.1.1)
+   Compiling rustc_version v0.4.1
+   Compiling insert_many_fuzz_14351955148426915674 v0.1.0 (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#14-insert_many/harness)
+warning: unused import: `std::str::FromStr`
+ --> src/insert_many_fuzz_14351955148426915674.rs:7:5
+  |
+7 | use std::str::FromStr;
+  |     ^^^^^^^^^^^^^^^^^
+  |
+  = note: `#[warn(unused_imports)]` on by default
+
+warning: unused imports: `DerefMut`, `Deref`, `IndexMut`, `Index`
+ --> src/insert_many_fuzz_14351955148426915674.rs:8:16
+  |
+8 | use std::ops::{Deref, DerefMut, Index, IndexMut};
+  |                ^^^^^  ^^^^^^^^  ^^^^^  ^^^^^^^^
+
+warning: the item `TryInto` is imported redundantly
+   --> src/insert_many_fuzz_14351955148426915674.rs:330:9
+    |
+330 |     use std::convert::TryInto;
+    |         ^^^^^^^^^^^^^^^^^^^^^
+   --> /rustc/11f32b73e0dc9287e305b5b9980d24aecdc8c17f/library/std/src/prelude/mod.rs:129:13
+    |
+    = note: the item `TryInto` is already defined here
+
+warning: the item `TryInto` is imported redundantly
+   --> src/insert_many_fuzz_14351955148426915674.rs:337:9
+    |
+337 |     use std::convert::TryInto;
+    |         ^^^^^^^^^^^^^^^^^^^^^
+   --> /rustc/11f32b73e0dc9287e305b5b9980d24aecdc8c17f/library/std/src/prelude/mod.rs:129:13
+    |
+    = note: the item `TryInto` is already defined here
+
+warning: variable does not need to be mutable
+  --> src/insert_many_fuzz_14351955148426915674.rs:30:7
+   |
+30 |         let mut t_133 = _to_u8(GLOBAL_DATA, 577) % 17;
+   |             ----^^^^^
+   |             |
+   |             help: remove this `mut`
+   |
+   = note: `#[warn(unused_mut)]` on by default
+
+warning: variable does not need to be mutable
+  --> src/insert_many_fuzz_14351955148426915674.rs:76:7
+   |
+76 |         let mut t_138 = _to_u8(GLOBAL_DATA, 602) % 17;
+   |             ----^^^^^
+   |             |
+   |             help: remove this `mut`
+
+warning: variable does not need to be mutable
+  --> src/insert_many_fuzz_14351955148426915674.rs:90:7
+   |
+90 |         let mut t_0 = _to_u8(GLOBAL_DATA, 0) % 33;
+   |             ----^^^
+   |             |
+   |             help: remove this `mut`
+
+warning: variable does not need to be mutable
+  --> src/insert_many_fuzz_14351955148426915674.rs:93:7
+   |
+93 |         let mut t_2 = _to_u8(GLOBAL_DATA, 1) % 17;
+   |             ----^^^
+   |             |
+   |             help: remove this `mut`
+
+warning: variable does not need to be mutable
+  --> src/insert_many_fuzz_14351955148426915674.rs:98:7
+   |
+98 |         let mut t_6 = _to_u8(GLOBAL_DATA, 18) % 17;
+   |             ----^^^
+   |             |
+   |             help: remove this `mut`
+
+warning: variable does not need to be mutable
+   --> src/insert_many_fuzz_14351955148426915674.rs:103:7
+    |
+103 |         let mut t_10 = _to_u8(GLOBAL_DATA, 35) % 17;
+    |             ----^^^^
+    |             |
+    |             help: remove this `mut`
+
+warning: variable does not need to be mutable
+   --> src/insert_many_fuzz_14351955148426915674.rs:108:7
+    |
+108 |         let mut t_14 = _to_u8(GLOBAL_DATA, 52) % 17;
+    |             ----^^^^
+    |             |
+    |             help: remove this `mut`
+
+warning: variable does not need to be mutable
+   --> src/insert_many_fuzz_14351955148426915674.rs:113:7
+    |
+113 |         let mut t_18 = _to_u8(GLOBAL_DATA, 69) % 17;
+    |             ----^^^^
+    |             |
+    |             help: remove this `mut`
+
+warning: variable does not need to be mutable
+   --> src/insert_many_fuzz_14351955148426915674.rs:118:7
+    |
+118 |         let mut t_22 = _to_u8(GLOBAL_DATA, 86) % 17;
+    |             ----^^^^
+    |             |
+    |             help: remove this `mut`
+
+warning: variable does not need to be mutable
+   --> src/insert_many_fuzz_14351955148426915674.rs:123:7
+    |
+123 |         let mut t_26 = _to_u8(GLOBAL_DATA, 103) % 17;
+    |             ----^^^^
+    |             |
+    |             help: remove this `mut`
+
+warning: variable does not need to be mutable
+   --> src/insert_many_fuzz_14351955148426915674.rs:128:7
+    |
+128 |         let mut t_30 = _to_u8(GLOBAL_DATA, 120) % 17;
+    |             ----^^^^
+    |             |
+    |             help: remove this `mut`
+
+warning: variable does not need to be mutable
+   --> src/insert_many_fuzz_14351955148426915674.rs:133:7
+    |
+133 |         let mut t_34 = _to_u8(GLOBAL_DATA, 137) % 17;
+    |             ----^^^^
+    |             |
+    |             help: remove this `mut`
+
+warning: variable does not need to be mutable
+   --> src/insert_many_fuzz_14351955148426915674.rs:138:7
+    |
+138 |         let mut t_38 = _to_u8(GLOBAL_DATA, 154) % 17;
+    |             ----^^^^
+    |             |
+    |             help: remove this `mut`
+
+warning: variable does not need to be mutable
+   --> src/insert_many_fuzz_14351955148426915674.rs:143:7
+    |
+143 |         let mut t_42 = _to_u8(GLOBAL_DATA, 171) % 17;
+    |             ----^^^^
+    |             |
+    |             help: remove this `mut`
+
+warning: variable does not need to be mutable
+   --> src/insert_many_fuzz_14351955148426915674.rs:148:7
+    |
+148 |         let mut t_46 = _to_u8(GLOBAL_DATA, 188) % 17;
+    |             ----^^^^
+    |             |
+    |             help: remove this `mut`
+
+warning: variable does not need to be mutable
+   --> src/insert_many_fuzz_14351955148426915674.rs:153:7
+    |
+153 |         let mut t_50 = _to_u8(GLOBAL_DATA, 205) % 17;
+    |             ----^^^^
+    |             |
+    |             help: remove this `mut`
+
+warning: variable does not need to be mutable
+   --> src/insert_many_fuzz_14351955148426915674.rs:158:7
+    |
+158 |         let mut t_54 = _to_u8(GLOBAL_DATA, 222) % 17;
+    |             ----^^^^
+    |             |
+    |             help: remove this `mut`
+
+warning: variable does not need to be mutable
+   --> src/insert_many_fuzz_14351955148426915674.rs:163:7
+    |
+163 |         let mut t_58 = _to_u8(GLOBAL_DATA, 239) % 17;
+    |             ----^^^^
+    |             |
+    |             help: remove this `mut`
+
+warning: variable does not need to be mutable
+   --> src/insert_many_fuzz_14351955148426915674.rs:168:7
+    |
+168 |         let mut t_62 = _to_u8(GLOBAL_DATA, 256) % 17;
+    |             ----^^^^
+    |             |
+    |             help: remove this `mut`
+
+warning: variable does not need to be mutable
+   --> src/insert_many_fuzz_14351955148426915674.rs:173:7
+    |
+173 |         let mut t_66 = _to_u8(GLOBAL_DATA, 273) % 17;
+    |             ----^^^^
+    |             |
+    |             help: remove this `mut`
+
+warning: variable does not need to be mutable
+   --> src/insert_many_fuzz_14351955148426915674.rs:178:7
+    |
+178 |         let mut t_70 = _to_u8(GLOBAL_DATA, 290) % 17;
+    |             ----^^^^
+    |             |
+    |             help: remove this `mut`
+
+warning: variable does not need to be mutable
+   --> src/insert_many_fuzz_14351955148426915674.rs:183:7
+    |
+183 |         let mut t_74 = _to_u8(GLOBAL_DATA, 307) % 17;
+    |             ----^^^^
+    |             |
+    |             help: remove this `mut`
+
+warning: variable does not need to be mutable
+   --> src/insert_many_fuzz_14351955148426915674.rs:188:7
+    |
+188 |         let mut t_78 = _to_u8(GLOBAL_DATA, 324) % 17;
+    |             ----^^^^
+    |             |
+    |             help: remove this `mut`
+
+warning: variable does not need to be mutable
+   --> src/insert_many_fuzz_14351955148426915674.rs:193:7
+    |
+193 |         let mut t_82 = _to_u8(GLOBAL_DATA, 341) % 17;
+    |             ----^^^^
+    |             |
+    |             help: remove this `mut`
+
+warning: variable does not need to be mutable
+   --> src/insert_many_fuzz_14351955148426915674.rs:198:7
+    |
+198 |         let mut t_86 = _to_u8(GLOBAL_DATA, 358) % 17;
+    |             ----^^^^
+    |             |
+    |             help: remove this `mut`
+
+warning: variable does not need to be mutable
+   --> src/insert_many_fuzz_14351955148426915674.rs:203:7
+    |
+203 |         let mut t_90 = _to_u8(GLOBAL_DATA, 375) % 17;
+    |             ----^^^^
+    |             |
+    |             help: remove this `mut`
+
+warning: variable does not need to be mutable
+   --> src/insert_many_fuzz_14351955148426915674.rs:208:7
+    |
+208 |         let mut t_94 = _to_u8(GLOBAL_DATA, 392) % 17;
+    |             ----^^^^
+    |             |
+    |             help: remove this `mut`
+
+warning: variable does not need to be mutable
+   --> src/insert_many_fuzz_14351955148426915674.rs:213:7
+    |
+213 |         let mut t_98 = _to_u8(GLOBAL_DATA, 409) % 17;
+    |             ----^^^^
+    |             |
+    |             help: remove this `mut`
+
+warning: variable does not need to be mutable
+   --> src/insert_many_fuzz_14351955148426915674.rs:218:7
+    |
+218 |         let mut t_102 = _to_u8(GLOBAL_DATA, 426) % 17;
+    |             ----^^^^^
+    |             |
+    |             help: remove this `mut`
+
+warning: variable does not need to be mutable
+   --> src/insert_many_fuzz_14351955148426915674.rs:223:7
+    |
+223 |         let mut t_106 = _to_u8(GLOBAL_DATA, 443) % 17;
+    |             ----^^^^^
+    |             |
+    |             help: remove this `mut`
+
+warning: variable does not need to be mutable
+   --> src/insert_many_fuzz_14351955148426915674.rs:228:7
+    |
+228 |         let mut t_110 = _to_u8(GLOBAL_DATA, 460) % 17;
+    |             ----^^^^^
+    |             |
+    |             help: remove this `mut`
+
+warning: variable does not need to be mutable
+   --> src/insert_many_fuzz_14351955148426915674.rs:233:7
+    |
+233 |         let mut t_114 = _to_u8(GLOBAL_DATA, 477) % 17;
+    |             ----^^^^^
+    |             |
+    |             help: remove this `mut`
+
+warning: variable does not need to be mutable
+   --> src/insert_many_fuzz_14351955148426915674.rs:238:7
+    |
+238 |         let mut t_118 = _to_u8(GLOBAL_DATA, 494) % 17;
+    |             ----^^^^^
+    |             |
+    |             help: remove this `mut`
+
+warning: variable does not need to be mutable
+   --> src/insert_many_fuzz_14351955148426915674.rs:243:7
+    |
+243 |         let mut t_122 = _to_u8(GLOBAL_DATA, 511) % 17;
+    |             ----^^^^^
+    |             |
+    |             help: remove this `mut`
+
+warning: variable does not need to be mutable
+   --> src/insert_many_fuzz_14351955148426915674.rs:248:7
+    |
+248 |         let mut t_126 = _to_u8(GLOBAL_DATA, 528) % 17;
+    |             ----^^^^^
+    |             |
+    |             help: remove this `mut`
+
+warning: variable does not need to be mutable
+   --> src/insert_many_fuzz_14351955148426915674.rs:255:7
+    |
+255 |         let mut t_130 = &mut t_1;
+    |             ----^^^^^
+    |             |
+    |             help: remove this `mut`
+
+warning: variable does not need to be mutable
+   --> src/insert_many_fuzz_14351955148426915674.rs:257:7
+    |
+257 |         let mut t_142 = _to_u8(GLOBAL_DATA, 619) % 17;
+    |             ----^^^^^
+    |             |
+    |             help: remove this `mut`
+
+warning: field `0` is never read
+  --> src/insert_many_fuzz_14351955148426915674.rs:10:20
+   |
+10 | struct CustomType0(String);
+   |        ----------- ^^^^^^
+   |        |
+   |        field in this struct
+   |
+   = note: `#[warn(dead_code)]` on by default
+help: consider changing the field to be of unit type to suppress this warning while preserving the field numbering, or remove the field
+   |
+10 | struct CustomType0(());
+   |                    ~~
+
+warning: variable `GLOBAL_DATA` should have a snake case name
+  --> src/insert_many_fuzz_14351955148426915674.rs:19:7
+   |
+19 |         let GLOBAL_DATA = global_data.first_half;
+   |             ^^^^^^^^^^^ help: convert the identifier to snake case: `global_data`
+   |
+   = note: `#[warn(non_snake_case)]` on by default
+
+warning: variable `GLOBAL_DATA` should have a snake case name
+  --> src/insert_many_fuzz_14351955148426915674.rs:26:7
+   |
+26 |         let GLOBAL_DATA = match selector{
+   |             ^^^^^^^^^^^ help: convert the identifier to snake case: `global_data`
+
+warning: variable `GLOBAL_DATA` should have a snake case name
+  --> src/insert_many_fuzz_14351955148426915674.rs:43:7
+   |
+43 |         let GLOBAL_DATA = global_data.first_half;
+   |             ^^^^^^^^^^^ help: convert the identifier to snake case: `global_data`
+
+warning: variable `GLOBAL_DATA` should have a snake case name
+  --> src/insert_many_fuzz_14351955148426915674.rs:50:7
+   |
+50 |         let GLOBAL_DATA = match selector{
+   |             ^^^^^^^^^^^ help: convert the identifier to snake case: `global_data`
+
+warning: variable `GLOBAL_DATA` should have a snake case name
+  --> src/insert_many_fuzz_14351955148426915674.rs:65:7
+   |
+65 |         let GLOBAL_DATA = global_data.first_half;
+   |             ^^^^^^^^^^^ help: convert the identifier to snake case: `global_data`
+
+warning: variable `GLOBAL_DATA` should have a snake case name
+  --> src/insert_many_fuzz_14351955148426915674.rs:72:7
+   |
+72 |         let GLOBAL_DATA = match selector{
+   |             ^^^^^^^^^^^ help: convert the identifier to snake case: `global_data`
+
+warning: variable `GLOBAL_DATA` should have a snake case name
+  --> src/insert_many_fuzz_14351955148426915674.rs:89:7
+   |
+89 |         let GLOBAL_DATA = global_data.first_half;
+   |             ^^^^^^^^^^^ help: convert the identifier to snake case: `global_data`
+
+warning: `insert_many_fuzz_14351955148426915674` (bin "insert_many_fuzz_14351955148426915674") generated 49 warnings (run `cargo fix --bin "insert_many_fuzz_14351955148426915674"` to apply 39 suggestions)
+    Finished dev [unoptimized + debuginfo] target(s) in 3.04s
+thread 'main' panicked at src/insert_many_fuzz_14351955148426915674.rs:22:24:
+attempt to add with overflow
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+=================================================================
+==1387209==ERROR: AddressSanitizer: attempting double-free on 0x502000000030 in thread T0:
+    #0 0x5595373cf716  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#14-insert_many/harness/target/x86_64-unknown-linux-gnu/debug/insert_many_fuzz_14351955148426915674+0x96716) (BuildId: 974deac6a490a317d76a7e8c0ab8bcefc6a4b7e6)
+    #1 0x559537408ad7  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#14-insert_many/harness/target/x86_64-unknown-linux-gnu/debug/insert_many_fuzz_14351955148426915674+0xcfad7) (BuildId: 974deac6a490a317d76a7e8c0ab8bcefc6a4b7e6)
+    #2 0x55953740bfba  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#14-insert_many/harness/target/x86_64-unknown-linux-gnu/debug/insert_many_fuzz_14351955148426915674+0xd2fba) (BuildId: 974deac6a490a317d76a7e8c0ab8bcefc6a4b7e6)
+    #3 0x55953740ac31  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#14-insert_many/harness/target/x86_64-unknown-linux-gnu/debug/insert_many_fuzz_14351955148426915674+0xd1c31) (BuildId: 974deac6a490a317d76a7e8c0ab8bcefc6a4b7e6)
+    #4 0x5595373f8dc1  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#14-insert_many/harness/target/x86_64-unknown-linux-gnu/debug/insert_many_fuzz_14351955148426915674+0xbfdc1) (BuildId: 974deac6a490a317d76a7e8c0ab8bcefc6a4b7e6)
+    #5 0x5595373f8e10  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#14-insert_many/harness/target/x86_64-unknown-linux-gnu/debug/insert_many_fuzz_14351955148426915674+0xbfe10) (BuildId: 974deac6a490a317d76a7e8c0ab8bcefc6a4b7e6)
+    #6 0x559537425ff0  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#14-insert_many/harness/target/x86_64-unknown-linux-gnu/debug/insert_many_fuzz_14351955148426915674+0xecff0) (BuildId: 974deac6a490a317d76a7e8c0ab8bcefc6a4b7e6)
+    #7 0x55953740c175  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#14-insert_many/harness/target/x86_64-unknown-linux-gnu/debug/insert_many_fuzz_14351955148426915674+0xd3175) (BuildId: 974deac6a490a317d76a7e8c0ab8bcefc6a4b7e6)
+    #8 0x7fb96eb5bd8f  (/lib/x86_64-linux-gnu/libc.so.6+0x29d8f) (BuildId: 490fef8403240c91833978d494d39e537409b92e)
+    #9 0x7fb96eb5be3f  (/lib/x86_64-linux-gnu/libc.so.6+0x29e3f) (BuildId: 490fef8403240c91833978d494d39e537409b92e)
+    #10 0x559537348e04  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#14-insert_many/harness/target/x86_64-unknown-linux-gnu/debug/insert_many_fuzz_14351955148426915674+0xfe04) (BuildId: 974deac6a490a317d76a7e8c0ab8bcefc6a4b7e6)
+
+0x502000000030 is located 0 bytes inside of 1-byte region [0x502000000030,0x502000000031)
+freed by thread T0 here:
+    #0 0x5595373cf716  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#14-insert_many/harness/target/x86_64-unknown-linux-gnu/debug/insert_many_fuzz_14351955148426915674+0x96716) (BuildId: 974deac6a490a317d76a7e8c0ab8bcefc6a4b7e6)
+    #1 0x559537408ad7  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#14-insert_many/harness/target/x86_64-unknown-linux-gnu/debug/insert_many_fuzz_14351955148426915674+0xcfad7) (BuildId: 974deac6a490a317d76a7e8c0ab8bcefc6a4b7e6)
+    #2 0x55953740bfba  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#14-insert_many/harness/target/x86_64-unknown-linux-gnu/debug/insert_many_fuzz_14351955148426915674+0xd2fba) (BuildId: 974deac6a490a317d76a7e8c0ab8bcefc6a4b7e6)
+    #3 0x5595373f8dc1  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#14-insert_many/harness/target/x86_64-unknown-linux-gnu/debug/insert_many_fuzz_14351955148426915674+0xbfdc1) (BuildId: 974deac6a490a317d76a7e8c0ab8bcefc6a4b7e6)
+
+previously allocated by thread T0 here:
+    #0 0x5595373cf9be  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#14-insert_many/harness/target/x86_64-unknown-linux-gnu/debug/insert_many_fuzz_14351955148426915674+0x969be) (BuildId: 974deac6a490a317d76a7e8c0ab8bcefc6a4b7e6)
+    #1 0x5595373f95a6  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#14-insert_many/harness/target/x86_64-unknown-linux-gnu/debug/insert_many_fuzz_14351955148426915674+0xc05a6) (BuildId: 974deac6a490a317d76a7e8c0ab8bcefc6a4b7e6)
+    #2 0x55953740bfba  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#14-insert_many/harness/target/x86_64-unknown-linux-gnu/debug/insert_many_fuzz_14351955148426915674+0xd2fba) (BuildId: 974deac6a490a317d76a7e8c0ab8bcefc6a4b7e6)
+    #3 0x5595373f8dc1  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#14-insert_many/harness/target/x86_64-unknown-linux-gnu/debug/insert_many_fuzz_14351955148426915674+0xbfdc1) (BuildId: 974deac6a490a317d76a7e8c0ab8bcefc6a4b7e6)
+
+SUMMARY: AddressSanitizer: double-free (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#14-insert_many/harness/target/x86_64-unknown-linux-gnu/debug/insert_many_fuzz_14351955148426915674+0x96716) (BuildId: 974deac6a490a317d76a7e8c0ab8bcefc6a4b7e6) 
+==1387209==ABORTING

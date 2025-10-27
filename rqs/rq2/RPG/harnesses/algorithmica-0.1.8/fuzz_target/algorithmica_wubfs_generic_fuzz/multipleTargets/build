@@ -1,0 +1,3 @@
+cd /RPG/erasan_dataset/algorithmica-0.1.8/fuzz_target/algorithmica_wubfs_generic_fuzz/multipleTargets
+cargo afl build
+cd -

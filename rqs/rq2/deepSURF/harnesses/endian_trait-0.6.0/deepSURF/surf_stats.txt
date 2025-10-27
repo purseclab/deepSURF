@@ -1,0 +1,51 @@
+
+Total Stats:
+------------------------------------------------------------------------------------------------------------------------------------
+* URAPI Coverage: 8/8 (100.00%).
+* Targets Compiled: 8/8 (100.00%) in [19.67578201s].
+------------------------------------------------------------------------------------------------------------------------------------
+
+Target Stats:
+------------------------------------------------------------------------------------------------------------------------------------
+* URAPIs w/ ≥ 1ft: 8/8 (100.00%).
+* Average Generation Time per Target: 102.173711589s/8 (12.771713948s).
+
+* URAPIs w/ ≥ 2ft: 0/8 (0.00%).
+* Average Generation Time per Target: 0ns/0 (Na).
+
+* URAPIs w/ ≥ 3ft: 0/8 (0.00%).
+* Average Generation Time per Target: 0ns/0 (Na).
+
+* URAPIs w/ ≥ 4ft: 0/8 (0.00%).
+* Average Generation Time per Target: 0ns/0 (Na).
+
+* URAPIs w/o any compilable targets: 0/8 (0.00%).
+------------------------------------------------------------------------------------------------------------------------------------
+
+Detailed Results: 
+------------------------------------------------------------------------------------------------------------------------------------
+  URAPI: DefId(0:29 ~ endian_trait[144d]::slices::{impl#0}::from_le),
+    - Compilable Targets (1/1 ~ 100.00%):
+        * endian_trait_fuzz_7198618591775168066 [12.794724224s]
+  URAPI: DefId(0:31 ~ endian_trait[144d]::slices::{impl#0}::to_le),
+    - Compilable Targets (1/1 ~ 100.00%):
+        * endian_trait_fuzz_8194725623679328941 [12.728385105s]
+  URAPI: DefId(0:19 ~ endian_trait[144d]::{impl#1}::from_le),
+    - Compilable Targets (1/1 ~ 100.00%):
+        * endian_trait_fuzz_10599687100305832593 [12.891639664s]
+  URAPI: DefId(0:30 ~ endian_trait[144d]::slices::{impl#0}::to_be),
+    - Compilable Targets (1/1 ~ 100.00%):
+        * endian_trait_fuzz_12993474063626015632 [12.822859275s]
+  URAPI: DefId(0:18 ~ endian_trait[144d]::{impl#1}::from_be),
+    - Compilable Targets (1/1 ~ 100.00%):
+        * endian_trait_fuzz_13871411903278500544 [12.639028866s]
+  URAPI: DefId(0:20 ~ endian_trait[144d]::{impl#1}::to_be),
+    - Compilable Targets (1/1 ~ 100.00%):
+        * endian_trait_fuzz_15160447695257319408 [12.81363058s]
+  URAPI: DefId(0:28 ~ endian_trait[144d]::slices::{impl#0}::from_be),
+    - Compilable Targets (1/1 ~ 100.00%):
+        * endian_trait_fuzz_15821067514151991614 [12.705320091s]
+  URAPI: DefId(0:21 ~ endian_trait[144d]::{impl#1}::to_le),
+    - Compilable Targets (1/1 ~ 100.00%):
+        * endian_trait_fuzz_11734115245080417199 [12.778123784s]
+------------------------------------------------------------------------------------------------------------------------------------

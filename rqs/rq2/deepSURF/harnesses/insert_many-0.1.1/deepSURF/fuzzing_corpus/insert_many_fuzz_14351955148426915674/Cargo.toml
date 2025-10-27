@@ -1,0 +1,16 @@
+[workspace]
+
+[package]
+name = "insert_many_fuzz_14351955148426915674"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "insert_many_fuzz_14351955148426915674"
+path = "src/insert_many_fuzz_14351955148426915674.rs"
+
+[dependencies]
+afl = "=0.15.7"
+home = "=0.5.9"
+insert_many = { path = "../../../../insert_many-0.1.1/" }
+global_data = { path = "../../../../../../../../code/global_data" }

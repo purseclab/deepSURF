@@ -1,0 +1,16 @@
+[workspace]
+
+[package]
+name = "lru_fuzz_8979391178022244986"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "lru_fuzz_8979391178022244986"
+path = "src/lru_fuzz_8979391178022244986.rs"
+
+[dependencies]
+afl = "=0.15.7"
+home = "=0.5.9"
+lru = { path = "../../../../lru-0.6.6/" }
+global_data = { path = "../../../../../../../../code/global_data" }

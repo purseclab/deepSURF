@@ -1,0 +1,383 @@
+     Removed 177 files, 73.9MiB total
+   Compiling semver-parser v0.7.0
+   Compiling semver v1.0.26
+   Compiling libc v0.2.175
+   Compiling home v0.5.5
+   Compiling xdg v2.5.2
+   Compiling stable_deref_trait v1.2.0
+   Compiling global_data v0.1.0 (/home/cdc/deepSURF-sp26-artifacts/artifact_code/global_data)
+   Compiling afl v0.15.7
+   Compiling semver v0.9.0
+   Compiling rustc_version v0.2.3
+   Compiling scratchpad v1.3.0 (/home/cdc/deepSURF-sp26-artifacts/artifact_data/dataset/rustsan_crates/scratchpad-1.3.0)
+   Compiling rustc_version v0.4.1
+warning: trait objects without an explicit `dyn` are deprecated
+    --> /home/cdc/deepSURF-sp26-artifacts/artifact_data/dataset/rustsan_crates/scratchpad-1.3.0/src/traits.rs:1003:30
+     |
+1003 |         F: for<'a> FnMut(&'a SliceSource<T>);
+     |                              ^^^^^^^^^^^^^^
+     |
+     = warning: this is accepted in the current edition (Rust 2015) but is a hard error in Rust 2021!
+     = note: for more information, see <https://doc.rust-lang.org/nightly/edition-guide/rust-2021/warnings-promoted-to-error.html>
+     = note: `#[warn(bare_trait_objects)]` on by default
+help: use `dyn`
+     |
+1003 |         F: for<'a> FnMut(&'a dyn SliceSource<T>);
+     |                              +++
+
+warning: trait objects without an explicit `dyn` are deprecated
+    --> /home/cdc/deepSURF-sp26-artifacts/artifact_data/dataset/rustsan_crates/scratchpad-1.3.0/src/traits.rs:1014:30
+     |
+1014 |         F: for<'a> FnMut(&'a SliceSource<T>),
+     |                              ^^^^^^^^^^^^^^
+     |
+     = warning: this is accepted in the current edition (Rust 2015) but is a hard error in Rust 2021!
+     = note: for more information, see <https://doc.rust-lang.org/nightly/edition-guide/rust-2021/warnings-promoted-to-error.html>
+help: use `dyn`
+     |
+1014 |         F: for<'a> FnMut(&'a dyn SliceSource<T>),
+     |                              +++
+
+warning: trait objects without an explicit `dyn` are deprecated
+    --> /home/cdc/deepSURF-sp26-artifacts/artifact_data/dataset/rustsan_crates/scratchpad-1.3.0/src/traits.rs:1029:30
+     |
+1029 |         F: for<'a> FnMut(&'a SliceSource<T>),
+     |                              ^^^^^^^^^^^^^^
+     |
+     = warning: this is accepted in the current edition (Rust 2015) but is a hard error in Rust 2021!
+     = note: for more information, see <https://doc.rust-lang.org/nightly/edition-guide/rust-2021/warnings-promoted-to-error.html>
+help: use `dyn`
+     |
+1029 |         F: for<'a> FnMut(&'a dyn SliceSource<T>),
+     |                              +++
+
+warning: trait objects without an explicit `dyn` are deprecated
+    --> /home/cdc/deepSURF-sp26-artifacts/artifact_data/dataset/rustsan_crates/scratchpad-1.3.0/src/traits.rs:1045:30
+     |
+1045 |         F: for<'a> FnMut(&'a SliceSource<T>),
+     |                              ^^^^^^^^^^^^^^
+     |
+     = warning: this is accepted in the current edition (Rust 2015) but is a hard error in Rust 2021!
+     = note: for more information, see <https://doc.rust-lang.org/nightly/edition-guide/rust-2021/warnings-promoted-to-error.html>
+help: use `dyn`
+     |
+1045 |         F: for<'a> FnMut(&'a dyn SliceSource<T>),
+     |                              +++
+
+warning: trait objects without an explicit `dyn` are deprecated
+    --> /home/cdc/deepSURF-sp26-artifacts/artifact_data/dataset/rustsan_crates/scratchpad-1.3.0/src/traits.rs:1061:30
+     |
+1061 |         F: for<'a> FnMut(&'a SliceSource<T>),
+     |                              ^^^^^^^^^^^^^^
+     |
+     = warning: this is accepted in the current edition (Rust 2015) but is a hard error in Rust 2021!
+     = note: for more information, see <https://doc.rust-lang.org/nightly/edition-guide/rust-2021/warnings-promoted-to-error.html>
+help: use `dyn`
+     |
+1061 |         F: for<'a> FnMut(&'a dyn SliceSource<T>),
+     |                              +++
+
+warning: trait objects without an explicit `dyn` are deprecated
+    --> /home/cdc/deepSURF-sp26-artifacts/artifact_data/dataset/rustsan_crates/scratchpad-1.3.0/src/traits.rs:1077:30
+     |
+1077 |         F: for<'a> FnMut(&'a SliceSource<T>),
+     |                              ^^^^^^^^^^^^^^
+     |
+     = warning: this is accepted in the current edition (Rust 2015) but is a hard error in Rust 2021!
+     = note: for more information, see <https://doc.rust-lang.org/nightly/edition-guide/rust-2021/warnings-promoted-to-error.html>
+help: use `dyn`
+     |
+1077 |         F: for<'a> FnMut(&'a dyn SliceSource<T>),
+     |                              +++
+
+warning: trait objects without an explicit `dyn` are deprecated
+    --> /home/cdc/deepSURF-sp26-artifacts/artifact_data/dataset/rustsan_crates/scratchpad-1.3.0/src/traits.rs:1093:30
+     |
+1093 |         F: for<'a> FnMut(&'a SliceSource<T>),
+     |                              ^^^^^^^^^^^^^^
+     |
+     = warning: this is accepted in the current edition (Rust 2015) but is a hard error in Rust 2021!
+     = note: for more information, see <https://doc.rust-lang.org/nightly/edition-guide/rust-2021/warnings-promoted-to-error.html>
+help: use `dyn`
+     |
+1093 |         F: for<'a> FnMut(&'a dyn SliceSource<T>),
+     |                              +++
+
+warning: trait objects without an explicit `dyn` are deprecated
+    --> /home/cdc/deepSURF-sp26-artifacts/artifact_data/dataset/rustsan_crates/scratchpad-1.3.0/src/traits.rs:1254:38
+     |
+1254 |                 F: for<'a> FnMut(&'a SliceSource<T>)
+     |                                      ^^^^^^^^^^^^^^
+...
+1330 | generate_tuple_trait_impls!(T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11,);
+     | ------------------------------------------------------------------------------ in this macro invocation
+     |
+     = warning: this is accepted in the current edition (Rust 2015) but is a hard error in Rust 2021!
+     = note: for more information, see <https://doc.rust-lang.org/nightly/edition-guide/rust-2021/warnings-promoted-to-error.html>
+     = note: this warning originates in the macro `generate_tuple_trait_impls` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+warning: trait objects without an explicit `dyn` are deprecated
+    --> /home/cdc/deepSURF-sp26-artifacts/artifact_data/dataset/rustsan_crates/scratchpad-1.3.0/src/traits.rs:1272:38
+     |
+1272 |                 F: for<'a> FnMut(&'a SliceSource<T>)
+     |                                      ^^^^^^^^^^^^^^
+...
+1330 | generate_tuple_trait_impls!(T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11,);
+     | ------------------------------------------------------------------------------ in this macro invocation
+     |
+     = warning: this is accepted in the current edition (Rust 2015) but is a hard error in Rust 2021!
+     = note: for more information, see <https://doc.rust-lang.org/nightly/edition-guide/rust-2021/warnings-promoted-to-error.html>
+     = note: this warning originates in the macro `generate_tuple_trait_impls` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+warning: unused return value of `Box::<T>::from_raw` that must be used
+   --> /home/cdc/deepSURF-sp26-artifacts/artifact_data/dataset/rustsan_crates/scratchpad-1.3.0/src/traits.rs:910:13
+    |
+910 | /             Box::from_raw((*Box::into_raw(self)).as_element_slice_mut()
+911 | |                 as *mut [<T as SliceLike>::Element]
+912 | |                 as *mut [ManuallyDrop<<T as SliceLike>::Element>]);
+    | |__________________________________________________________________^
+    |
+    = note: call `drop(Box::from_raw(ptr))` if you intend to drop the `Box`
+    = note: `#[warn(unused_must_use)]` on by default
+help: use `let _ = ...` to ignore the resulting value
+    |
+910 |             let _ = Box::from_raw((*Box::into_raw(self)).as_element_slice_mut()
+    |             +++++++
+
+warning: unused return value of `Box::<T>::from_raw` that must be used
+    --> /home/cdc/deepSURF-sp26-artifacts/artifact_data/dataset/rustsan_crates/scratchpad-1.3.0/src/traits.rs:1184:13
+     |
+1184 |             Box::from_raw(Box::into_raw(self) as *mut [ManuallyDrop<U>]);
+     |             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+     |
+     = note: call `drop(Box::from_raw(ptr))` if you intend to drop the `Box`
+help: use `let _ = ...` to ignore the resulting value
+     |
+1184 |             let _ = Box::from_raw(Box::into_raw(self) as *mut [ManuallyDrop<U>]);
+     |             +++++++
+
+warning: `scratchpad` (lib) generated 33 warnings (22 duplicates) (run `cargo fix --lib -p scratchpad` to apply 7 suggestions)
+   Compiling scratchpad_fuzz_10065014139744667447 v0.1.0 (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#35-scratchpad/harness)
+warning: unused import: `std::str::FromStr`
+ --> src/scratchpad_fuzz_10065014139744667447.rs:7:5
+  |
+7 | use std::str::FromStr;
+  |     ^^^^^^^^^^^^^^^^^
+  |
+  = note: `#[warn(unused_imports)]` on by default
+
+warning: unused imports: `DerefMut`, `Deref`, `IndexMut`, `Index`
+ --> src/scratchpad_fuzz_10065014139744667447.rs:8:16
+  |
+8 | use std::ops::{Deref, DerefMut, Index, IndexMut};
+  |                ^^^^^  ^^^^^^^^  ^^^^^  ^^^^^^^^
+
+warning: the item `TryInto` is imported redundantly
+   --> src/scratchpad_fuzz_10065014139744667447.rs:245:9
+    |
+245 |     use std::convert::TryInto;
+    |         ^^^^^^^^^^^^^^^^^^^^^
+   --> /rustc/11f32b73e0dc9287e305b5b9980d24aecdc8c17f/library/std/src/prelude/mod.rs:129:13
+    |
+    = note: the item `TryInto` is already defined here
+
+warning: the item `TryInto` is imported redundantly
+   --> src/scratchpad_fuzz_10065014139744667447.rs:252:9
+    |
+252 |     use std::convert::TryInto;
+    |         ^^^^^^^^^^^^^^^^^^^^^
+   --> /rustc/11f32b73e0dc9287e305b5b9980d24aecdc8c17f/library/std/src/prelude/mod.rs:129:13
+    |
+    = note: the item `TryInto` is already defined here
+
+warning: unused import: `scratchpad`
+ --> src/scratchpad_fuzz_10065014139744667447.rs:5:5
+  |
+5 | use scratchpad::*;
+  |     ^^^^^^^^^^
+
+warning: unused variable: `GLOBAL_DATA`
+  --> src/scratchpad_fuzz_10065014139744667447.rs:23:13
+   |
+23 |         let GLOBAL_DATA = match selector {
+   |             ^^^^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_GLOBAL_DATA`
+   |
+   = note: `#[warn(unused_variables)]` on by default
+
+warning: variable does not need to be mutable
+   --> src/scratchpad_fuzz_10065014139744667447.rs:113:13
+    |
+113 |         let mut t_72 = _to_u8(GLOBAL_DATA, 122) % 17;
+    |             ----^^^^
+    |             |
+    |             help: remove this `mut`
+    |
+    = note: `#[warn(unused_mut)]` on by default
+
+warning: variable does not need to be mutable
+   --> src/scratchpad_fuzz_10065014139744667447.rs:118:13
+    |
+118 |         let mut t_76 = _to_u8(GLOBAL_DATA, 139) % 17;
+    |             ----^^^^
+    |             |
+    |             help: remove this `mut`
+
+warning: variable `GLOBAL_DATA` should have a snake case name
+  --> src/scratchpad_fuzz_10065014139744667447.rs:16:13
+   |
+16 |         let GLOBAL_DATA = global_data.first_half;
+   |             ^^^^^^^^^^^ help: convert the identifier to snake case: `global_data`
+   |
+   = note: `#[warn(non_snake_case)]` on by default
+
+warning: variable `GLOBAL_DATA` should have a snake case name
+  --> src/scratchpad_fuzz_10065014139744667447.rs:23:13
+   |
+23 |         let GLOBAL_DATA = match selector {
+   |             ^^^^^^^^^^^ help: convert the identifier to snake case: `global_data`
+
+warning: variable `GLOBAL_DATA` should have a snake case name
+  --> src/scratchpad_fuzz_10065014139744667447.rs:31:13
+   |
+31 |         let GLOBAL_DATA = global_data.first_half;
+   |             ^^^^^^^^^^^ help: convert the identifier to snake case: `global_data`
+
+warning: variable `GLOBAL_DATA` should have a snake case name
+  --> src/scratchpad_fuzz_10065014139744667447.rs:38:13
+   |
+38 |         let GLOBAL_DATA = match selector {
+   |             ^^^^^^^^^^^ help: convert the identifier to snake case: `global_data`
+
+warning: variable `GLOBAL_DATA` should have a snake case name
+  --> src/scratchpad_fuzz_10065014139744667447.rs:47:13
+   |
+47 |         let GLOBAL_DATA = global_data.first_half;
+   |             ^^^^^^^^^^^ help: convert the identifier to snake case: `global_data`
+
+warning: variable `GLOBAL_DATA` should have a snake case name
+  --> src/scratchpad_fuzz_10065014139744667447.rs:54:13
+   |
+54 |         let GLOBAL_DATA = match selector {
+   |             ^^^^^^^^^^^ help: convert the identifier to snake case: `global_data`
+
+warning: variable `GLOBAL_DATA` should have a snake case name
+  --> src/scratchpad_fuzz_10065014139744667447.rs:65:13
+   |
+65 |         let GLOBAL_DATA = global_data.first_half;
+   |             ^^^^^^^^^^^ help: convert the identifier to snake case: `global_data`
+
+warning: variable `GLOBAL_DATA` should have a snake case name
+  --> src/scratchpad_fuzz_10065014139744667447.rs:72:13
+   |
+72 |         let GLOBAL_DATA = match selector {
+   |             ^^^^^^^^^^^ help: convert the identifier to snake case: `global_data`
+
+warning: variable `GLOBAL_DATA` should have a snake case name
+  --> src/scratchpad_fuzz_10065014139744667447.rs:88:13
+   |
+88 |         let GLOBAL_DATA = global_data.first_half;
+   |             ^^^^^^^^^^^ help: convert the identifier to snake case: `global_data`
+
+warning: variable `GLOBAL_DATA` should have a snake case name
+  --> src/scratchpad_fuzz_10065014139744667447.rs:95:13
+   |
+95 |         let GLOBAL_DATA = match selector {
+   |             ^^^^^^^^^^^ help: convert the identifier to snake case: `global_data`
+
+warning: variable `GLOBAL_DATA` should have a snake case name
+   --> src/scratchpad_fuzz_10065014139744667447.rs:110:13
+    |
+110 |         let GLOBAL_DATA = global_data.first_half;
+    |             ^^^^^^^^^^^ help: convert the identifier to snake case: `global_data`
+
+warning: unused `Result` that must be used
+   --> src/scratchpad_fuzz_10065014139744667447.rs:157:25
+    |
+157 |                         t_80.mark_back();
+    |                         ^^^^^^^^^^^^^^^^
+    |
+    = note: this `Result` may be an `Err` variant, which should be handled
+    = note: `#[warn(unused_must_use)]` on by default
+help: use `let _ = ...` to ignore the resulting value
+    |
+157 |                         let _ = t_80.mark_back();
+    |                         +++++++
+
+warning: unused `Result` that must be used
+   --> src/scratchpad_fuzz_10065014139744667447.rs:162:21
+    |
+162 |                     t_81.mark_back();
+    |                     ^^^^^^^^^^^^^^^^
+    |
+    = note: this `Result` may be an `Err` variant, which should be handled
+help: use `let _ = ...` to ignore the resulting value
+    |
+162 |                     let _ = t_81.mark_back();
+    |                     +++++++
+
+warning: unused `Result` that must be used
+   --> src/scratchpad_fuzz_10065014139744667447.rs:175:9
+    |
+175 |         t_81.mark_back();
+    |         ^^^^^^^^^^^^^^^^
+    |
+    = note: this `Result` may be an `Err` variant, which should be handled
+help: use `let _ = ...` to ignore the resulting value
+    |
+175 |         let _ = t_81.mark_back();
+    |         +++++++
+
+warning: `scratchpad_fuzz_10065014139744667447` (bin "scratchpad_fuzz_10065014139744667447") generated 22 warnings (run `cargo fix --bin "scratchpad_fuzz_10065014139744667447"` to apply 5 suggestions)
+    Finished dev [unoptimized + debuginfo] target(s) in 3.11s
+=================================================================
+==1412785==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x503000000120 at pc 0x55fd286ac9b1 bp 0x7ffd08d5bb70 sp 0x7ffd08d5bb68
+WRITE of size 16 at 0x503000000120 thread T0
+    #0 0x55fd286ac9b0  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#35-scratchpad/harness/target/x86_64-unknown-linux-gnu/debug/scratchpad_fuzz_10065014139744667447+0xce9b0) (BuildId: 0f7a9d2401717d38560248a28ac540b753113b6d)
+    #1 0x55fd286b476a  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#35-scratchpad/harness/target/x86_64-unknown-linux-gnu/debug/scratchpad_fuzz_10065014139744667447+0xd676a) (BuildId: 0f7a9d2401717d38560248a28ac540b753113b6d)
+    #2 0x55fd286b33c1  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#35-scratchpad/harness/target/x86_64-unknown-linux-gnu/debug/scratchpad_fuzz_10065014139744667447+0xd53c1) (BuildId: 0f7a9d2401717d38560248a28ac540b753113b6d)
+    #3 0x55fd286a4be1  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#35-scratchpad/harness/target/x86_64-unknown-linux-gnu/debug/scratchpad_fuzz_10065014139744667447+0xc6be1) (BuildId: 0f7a9d2401717d38560248a28ac540b753113b6d)
+    #4 0x55fd286a4c30  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#35-scratchpad/harness/target/x86_64-unknown-linux-gnu/debug/scratchpad_fuzz_10065014139744667447+0xc6c30) (BuildId: 0f7a9d2401717d38560248a28ac540b753113b6d)
+    #5 0x55fd286ce7a0  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#35-scratchpad/harness/target/x86_64-unknown-linux-gnu/debug/scratchpad_fuzz_10065014139744667447+0xf07a0) (BuildId: 0f7a9d2401717d38560248a28ac540b753113b6d)
+    #6 0x55fd286b4925  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#35-scratchpad/harness/target/x86_64-unknown-linux-gnu/debug/scratchpad_fuzz_10065014139744667447+0xd6925) (BuildId: 0f7a9d2401717d38560248a28ac540b753113b6d)
+    #7 0x7f538ec2ed8f  (/lib/x86_64-linux-gnu/libc.so.6+0x29d8f) (BuildId: 490fef8403240c91833978d494d39e537409b92e)
+    #8 0x7f538ec2ee3f  (/lib/x86_64-linux-gnu/libc.so.6+0x29e3f) (BuildId: 490fef8403240c91833978d494d39e537409b92e)
+    #9 0x55fd285eeb64  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#35-scratchpad/harness/target/x86_64-unknown-linux-gnu/debug/scratchpad_fuzz_10065014139744667447+0x10b64) (BuildId: 0f7a9d2401717d38560248a28ac540b753113b6d)
+
+0x503000000120 is located 0 bytes after 32-byte region [0x503000000100,0x503000000120)
+allocated by thread T0 here:
+    #0 0x55fd28676175  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#35-scratchpad/harness/target/x86_64-unknown-linux-gnu/debug/scratchpad_fuzz_10065014139744667447+0x98175) (BuildId: 0f7a9d2401717d38560248a28ac540b753113b6d)
+    #1 0x55fd286b0e61  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#35-scratchpad/harness/target/x86_64-unknown-linux-gnu/debug/scratchpad_fuzz_10065014139744667447+0xd2e61) (BuildId: 0f7a9d2401717d38560248a28ac540b753113b6d)
+
+SUMMARY: AddressSanitizer: heap-buffer-overflow (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#35-scratchpad/harness/target/x86_64-unknown-linux-gnu/debug/scratchpad_fuzz_10065014139744667447+0xce9b0) (BuildId: 0f7a9d2401717d38560248a28ac540b753113b6d) 
+Shadow bytes around the buggy address:
+  0x502ffffffe80: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x502fffffff00: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x502fffffff80: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x503000000000: fa fa 00 00 00 fa fa fa fd fd fd fd fa fa fd fd
+  0x503000000080: fd fd fa fa 00 00 00 00 fa fa fd fd fd fd fa fa
+=>0x503000000100: 00 00 00 00[fa]fa fd fd fd fa fa fa fa fa fa fa
+  0x503000000180: fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+  0x503000000200: fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+  0x503000000280: fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+  0x503000000300: fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+  0x503000000380: fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+Shadow byte legend (one shadow byte represents 8 application bytes):
+  Addressable:           00
+  Partially addressable: 01 02 03 04 05 06 07 
+  Heap left redzone:       fa
+  Freed heap region:       fd
+  Stack left redzone:      f1
+  Stack mid redzone:       f2
+  Stack right redzone:     f3
+  Stack after return:      f5
+  Stack use after scope:   f8
+  Global redzone:          f9
+  Global init order:       f6
+  Poisoned by user:        f7
+  Container overflow:      fc
+  Array cookie:            ac
+  Intra object redzone:    bb
+  ASan internal:           fe
+  Left alloca redzone:     ca
+  Right alloca redzone:    cb
+==1412785==ABORTING

@@ -1,0 +1,21 @@
+ ./fuzz_transform/target/release/fuzz_transform /home/cdc/rug_on_erasan_after_bolero/arc-swap-1.0.0/./src/access.rs
+ ./fuzz_transform/target/release/fuzz_transform /home/cdc/rug_on_erasan_after_bolero/arc-swap-1.0.0/./src/docs/internal.rs
+ ./fuzz_transform/target/release/fuzz_transform /home/cdc/rug_on_erasan_after_bolero/arc-swap-1.0.0/./src/docs/patterns.rs
+ ./fuzz_transform/target/release/fuzz_transform /home/cdc/rug_on_erasan_after_bolero/arc-swap-1.0.0/./src/docs/performance.rs
+ ./fuzz_transform/target/release/fuzz_transform /home/cdc/rug_on_erasan_after_bolero/arc-swap-1.0.0/./src/docs/limitations.rs
+ ./fuzz_transform/target/release/fuzz_transform /home/cdc/rug_on_erasan_after_bolero/arc-swap-1.0.0/./src/docs/mod.rs
+ ./fuzz_transform/target/release/fuzz_transform /home/cdc/rug_on_erasan_after_bolero/arc-swap-1.0.0/./src/debt.rs
+ ./fuzz_transform/target/release/fuzz_transform /home/cdc/rug_on_erasan_after_bolero/arc-swap-1.0.0/./src/compile_fail_tests.rs
+ ./fuzz_transform/target/release/fuzz_transform /home/cdc/rug_on_erasan_after_bolero/arc-swap-1.0.0/./src/ref_cnt.rs
+err arc-swap-1.0.0 /home/cdc/rug_on_erasan_after_bolero/arc-swap-1.0.0/./src/ref_cnt.rs tests_rug_69
+ ./fuzz_transform/target/release/fuzz_transform /home/cdc/rug_on_erasan_after_bolero/arc-swap-1.0.0/./src/as_raw.rs
+ ./fuzz_transform/target/release/fuzz_transform /home/cdc/rug_on_erasan_after_bolero/arc-swap-1.0.0/./src/cache.rs
+ ./fuzz_transform/target/release/fuzz_transform /home/cdc/rug_on_erasan_after_bolero/arc-swap-1.0.0/./src/lib.rs
+ ./fuzz_transform/target/release/fuzz_transform /home/cdc/rug_on_erasan_after_bolero/arc-swap-1.0.0/./src/gen_lock.rs
+ ./fuzz_transform/target/release/fuzz_transform /home/cdc/rug_on_erasan_after_bolero/arc-swap-1.0.0/./src/weak.rs
+ ./fuzz_transform/target/release/fuzz_transform /home/cdc/rug_on_erasan_after_bolero/arc-swap-1.0.0/./src/strategy/hybrid.rs
+ ./fuzz_transform/target/release/fuzz_transform /home/cdc/rug_on_erasan_after_bolero/arc-swap-1.0.0/./src/strategy/mod.rs
+ ./fuzz_transform/target/release/fuzz_transform /home/cdc/rug_on_erasan_after_bolero/arc-swap-1.0.0/./src/strategy/gen_lock.rs
+ ./fuzz_transform/target/release/fuzz_transform /home/cdc/rug_on_erasan_after_bolero/arc-swap-1.0.0/./src/strategy/rw_lock.rs
+ ./fuzz_transform/target/release/fuzz_transform /home/cdc/rug_on_erasan_after_bolero/arc-swap-1.0.0/./src/strategy/experimental.rs
+arc-swap . 21 22 0

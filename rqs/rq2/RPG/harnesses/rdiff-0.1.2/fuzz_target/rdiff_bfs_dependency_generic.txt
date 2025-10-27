@@ -1,0 +1,4 @@
+[S] rdiff::Diff::new ==[ImmutBorrowedRef->DirectCall]=> rdiff::Diff::inserts-0
+[S] rdiff::Diff::new ==[ImmutBorrowedRef->DirectCall]=> rdiff::Diff::deletes-0
+[S] rdiff::Diff::new ==[ImmutBorrowedRef->DirectCall]=> rdiff::Diff::is_empty-0
+[S] rdiff::Diff::new ==[ImmutBorrowedRef->DirectCall]=> rdiff::Diff::apply_to_string-0

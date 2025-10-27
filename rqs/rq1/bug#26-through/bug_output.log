@@ -1,0 +1,112 @@
+     Removed 124 files, 51.2MiB total
+   Compiling semver v1.0.26
+   Compiling libc v0.2.175
+   Compiling home v0.5.5
+   Compiling xdg v2.5.2
+   Compiling through v0.1.0 (/home/cdc/deepSURF-sp26-artifacts/artifact_data/dataset/erasan_crates/through-0.1.0)
+   Compiling global_data v0.1.0 (/home/cdc/deepSURF-sp26-artifacts/artifact_code/global_data)
+   Compiling afl v0.15.7
+   Compiling rustc_version v0.4.1
+   Compiling through_fuzz_15186921809571911366 v0.1.0 (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#26-through/harness)
+warning: unused import: `through::*`
+ --> src/through_fuzz_15186921809571911366.rs:5:5
+  |
+5 | use through::*;
+  |     ^^^^^^^^^^
+  |
+  = note: `#[warn(unused_imports)]` on by default
+
+warning: unused import: `std::str::FromStr`
+ --> src/through_fuzz_15186921809571911366.rs:7:5
+  |
+7 | use std::str::FromStr;
+  |     ^^^^^^^^^^^^^^^^^
+
+warning: unused imports: `DerefMut`, `Deref`, `IndexMut`, `Index`
+ --> src/through_fuzz_15186921809571911366.rs:8:16
+  |
+8 | use std::ops::{Deref, DerefMut, Index, IndexMut};
+  |                ^^^^^  ^^^^^^^^  ^^^^^  ^^^^^^^^
+
+warning: the item `TryInto` is imported redundantly
+   --> src/through_fuzz_15186921809571911366.rs:154:9
+    |
+154 |     use std::convert::TryInto;
+    |         ^^^^^^^^^^^^^^^^^^^^^
+   --> /rustc/11f32b73e0dc9287e305b5b9980d24aecdc8c17f/library/std/src/prelude/mod.rs:129:13
+    |
+    = note: the item `TryInto` is already defined here
+
+warning: the item `TryInto` is imported redundantly
+   --> src/through_fuzz_15186921809571911366.rs:161:9
+    |
+161 |     use std::convert::TryInto;
+    |         ^^^^^^^^^^^^^^^^^^^^^
+   --> /rustc/11f32b73e0dc9287e305b5b9980d24aecdc8c17f/library/std/src/prelude/mod.rs:129:13
+    |
+    = note: the item `TryInto` is already defined here
+
+warning: variable does not need to be mutable
+  --> src/through_fuzz_15186921809571911366.rs:26:9
+   |
+26 |     let mut t_5 = _to_u8(GLOBAL_DATA, 25) % 17;
+   |         ----^^^
+   |         |
+   |         help: remove this `mut`
+   |
+   = note: `#[warn(unused_mut)]` on by default
+
+warning: variable `GLOBAL_DATA` should have a snake case name
+  --> src/through_fuzz_15186921809571911366.rs:15:9
+   |
+15 |     let GLOBAL_DATA = global_data.first_half;
+   |         ^^^^^^^^^^^ help: convert the identifier to snake case: `global_data`
+   |
+   = note: `#[warn(non_snake_case)]` on by default
+
+warning: variable `GLOBAL_DATA` should have a snake case name
+  --> src/through_fuzz_15186921809571911366.rs:22:9
+   |
+22 |     let GLOBAL_DATA = match selector {
+   |         ^^^^^^^^^^^ help: convert the identifier to snake case: `global_data`
+
+warning: variable `GLOBAL_DATA` should have a snake case name
+  --> src/through_fuzz_15186921809571911366.rs:54:17
+   |
+54 |             let GLOBAL_DATA = if data_source == 0 { fh } else { sh };
+   |                 ^^^^^^^^^^^ help: convert the identifier to snake case: `global_data`
+
+warning: `through_fuzz_15186921809571911366` (bin "through_fuzz_15186921809571911366") generated 9 warnings (run `cargo fix --bin "through_fuzz_15186921809571911366"` to apply 4 suggestions)
+    Finished dev [unoptimized + debuginfo] target(s) in 2.43s
+thread 'main' panicked at src/through_fuzz_15186921809571911366.rs:18:20:
+attempt to add with overflow
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+=================================================================
+==1401982==ERROR: AddressSanitizer: attempting double-free on 0x502000000030 in thread T0:
+    #0 0x55f46da899f6  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#26-through/harness/target/x86_64-unknown-linux-gnu/debug/through_fuzz_15186921809571911366+0x969f6) (BuildId: a36ba317b2fdf55db7a97a29345b6f6c87ab51ac)
+    #1 0x55f46dab7d36  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#26-through/harness/target/x86_64-unknown-linux-gnu/debug/through_fuzz_15186921809571911366+0xc4d36) (BuildId: a36ba317b2fdf55db7a97a29345b6f6c87ab51ac)
+    #2 0x55f46dabaf6a  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#26-through/harness/target/x86_64-unknown-linux-gnu/debug/through_fuzz_15186921809571911366+0xc7f6a) (BuildId: a36ba317b2fdf55db7a97a29345b6f6c87ab51ac)
+    #3 0x55f46daba0e1  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#26-through/harness/target/x86_64-unknown-linux-gnu/debug/through_fuzz_15186921809571911366+0xc70e1) (BuildId: a36ba317b2fdf55db7a97a29345b6f6c87ab51ac)
+    #4 0x55f46dab30a1  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#26-through/harness/target/x86_64-unknown-linux-gnu/debug/through_fuzz_15186921809571911366+0xc00a1) (BuildId: a36ba317b2fdf55db7a97a29345b6f6c87ab51ac)
+    #5 0x55f46dab30f0  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#26-through/harness/target/x86_64-unknown-linux-gnu/debug/through_fuzz_15186921809571911366+0xc00f0) (BuildId: a36ba317b2fdf55db7a97a29345b6f6c87ab51ac)
+    #6 0x55f46dad5100  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#26-through/harness/target/x86_64-unknown-linux-gnu/debug/through_fuzz_15186921809571911366+0xe2100) (BuildId: a36ba317b2fdf55db7a97a29345b6f6c87ab51ac)
+    #7 0x55f46dabb125  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#26-through/harness/target/x86_64-unknown-linux-gnu/debug/through_fuzz_15186921809571911366+0xc8125) (BuildId: a36ba317b2fdf55db7a97a29345b6f6c87ab51ac)
+    #8 0x7f52f9721d8f  (/lib/x86_64-linux-gnu/libc.so.6+0x29d8f) (BuildId: 490fef8403240c91833978d494d39e537409b92e)
+    #9 0x7f52f9721e3f  (/lib/x86_64-linux-gnu/libc.so.6+0x29e3f) (BuildId: 490fef8403240c91833978d494d39e537409b92e)
+    #10 0x55f46da03454  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#26-through/harness/target/x86_64-unknown-linux-gnu/debug/through_fuzz_15186921809571911366+0x10454) (BuildId: a36ba317b2fdf55db7a97a29345b6f6c87ab51ac)
+
+0x502000000030 is located 0 bytes inside of 1-byte region [0x502000000030,0x502000000031)
+freed by thread T0 here:
+    #0 0x55f46da899f6  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#26-through/harness/target/x86_64-unknown-linux-gnu/debug/through_fuzz_15186921809571911366+0x969f6) (BuildId: a36ba317b2fdf55db7a97a29345b6f6c87ab51ac)
+    #1 0x55f46dab7baf  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#26-through/harness/target/x86_64-unknown-linux-gnu/debug/through_fuzz_15186921809571911366+0xc4baf) (BuildId: a36ba317b2fdf55db7a97a29345b6f6c87ab51ac)
+    #2 0x55f46dabaf6a  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#26-through/harness/target/x86_64-unknown-linux-gnu/debug/through_fuzz_15186921809571911366+0xc7f6a) (BuildId: a36ba317b2fdf55db7a97a29345b6f6c87ab51ac)
+    #3 0x55f46dab30a1  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#26-through/harness/target/x86_64-unknown-linux-gnu/debug/through_fuzz_15186921809571911366+0xc00a1) (BuildId: a36ba317b2fdf55db7a97a29345b6f6c87ab51ac)
+
+previously allocated by thread T0 here:
+    #0 0x55f46da89c9e  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#26-through/harness/target/x86_64-unknown-linux-gnu/debug/through_fuzz_15186921809571911366+0x96c9e) (BuildId: a36ba317b2fdf55db7a97a29345b6f6c87ab51ac)
+    #1 0x55f46dab398f  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#26-through/harness/target/x86_64-unknown-linux-gnu/debug/through_fuzz_15186921809571911366+0xc098f) (BuildId: a36ba317b2fdf55db7a97a29345b6f6c87ab51ac)
+    #2 0x55f46dabaf6a  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#26-through/harness/target/x86_64-unknown-linux-gnu/debug/through_fuzz_15186921809571911366+0xc7f6a) (BuildId: a36ba317b2fdf55db7a97a29345b6f6c87ab51ac)
+    #3 0x55f46dab30a1  (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#26-through/harness/target/x86_64-unknown-linux-gnu/debug/through_fuzz_15186921809571911366+0xc00a1) (BuildId: a36ba317b2fdf55db7a97a29345b6f6c87ab51ac)
+
+SUMMARY: AddressSanitizer: double-free (/home/cdc/deepSURF-sp26-artifacts/claims/claim1/rq1/bug#26-through/harness/target/x86_64-unknown-linux-gnu/debug/through_fuzz_15186921809571911366+0x969f6) (BuildId: a36ba317b2fdf55db7a97a29345b6f6c87ab51ac) 
+==1401982==ABORTING

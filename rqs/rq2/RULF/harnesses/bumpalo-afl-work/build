@@ -1,0 +1,3 @@
+cd /home/cdc/afl_fast_work/bumpalo-afl-work
+cargo afl build
+cd -

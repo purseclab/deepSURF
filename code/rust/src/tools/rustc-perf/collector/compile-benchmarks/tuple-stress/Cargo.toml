@@ -1,0 +1,7 @@
+[package]
+name = "tuple-stress"
+version = "0.1.0"
+
+[dependencies]
+
+[workspace]

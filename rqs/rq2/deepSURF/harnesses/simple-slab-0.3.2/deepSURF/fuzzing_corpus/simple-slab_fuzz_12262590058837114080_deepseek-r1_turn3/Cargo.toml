@@ -1,0 +1,16 @@
+[workspace]
+
+[package]
+name = "simple-slab_fuzz_12262590058837114080"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "simple-slab_fuzz_12262590058837114080"
+path = "src/simple-slab_fuzz_12262590058837114080.rs"
+
+[dependencies]
+afl = "=0.15.7"
+home = "=0.5.9"
+simple-slab = { path = "../../../../simple-slab-0.3.2/" }
+global_data = { path = "../../../../../../../../code/global_data" }

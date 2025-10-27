@@ -1,0 +1,50 @@
+
+Total Stats:
+------------------------------------------------------------------------------------------------------------------------------------
+* Total URAPI Coverage: 59/72 (81.94%).
+* LLM URAPI Coverage: 59/72 (81.94%).
+* Total Targets (including targets directly imported from SURF): 24 in [14660.396579608s].
+* URAPIs w/ Custom Functionality: 65/72 (90.28%).
+------------------------------------------------------------------------------------------------------------------------------------
+
+Redundant-Targets:
+------------------------------------------------------------------------------------------------------------------------------------
+  * smallvec_fuzz_2037629717084267188_deepseek-r1_turn4
+  * smallvec_fuzz_324923234979950759_deepseek-r1_turn1
+------------------------------------------------------------------------------------------------------------------------------------
+
+Targeted-URAPI-Miss-Targets:
+------------------------------------------------------------------------------------------------------------------------------------
+  * smallvec_fuzz_11355806102229861459_deepseek-r1_turn4
+  * smallvec_fuzz_324923234979950759_deepseek-r1_turn1
+  * smallvec_fuzz_2037629717084267188_deepseek-r1_turn4
+  * smallvec_fuzz_10252632004264338043_deepseek-r1_turn4
+------------------------------------------------------------------------------------------------------------------------------------
+
+Targets For Fuzzing:
+  - [Skip]: Set of Fuzzing Targets = Total-Targets - Redundant-Targets
+------------------------------------------------------------------------------------------------------------------------------------
+Count: 22
+  * smallvec_fuzz_12212000893444962502_deepseek-r1_turn3
+  * smallvec_fuzz_7822603767723429935_deepseek-r1_turn2
+  * smallvec_fuzz_12700042627407671243_deepseek-r1_turn3
+  * smallvec_fuzz_16719147141621808480_deepseek-r1_turn4
+  * smallvec_fuzz_10537628340773677687_deepseek-r1_turn2
+  * smallvec_fuzz_10850385206740570736_deepseek-r1_turn2
+  * smallvec_fuzz_18132052891640876642_deepseek-r1_turn4
+  * smallvec_fuzz_9598759913339538120_deepseek-r1_turn2
+  * smallvec_fuzz_15071847972162276441_deepseek-r1_turn5
+  * smallvec_fuzz_6754920747930500621_deepseek-r1_turn2
+  * smallvec_fuzz_10252632004264338043_deepseek-r1_turn4
+  * smallvec_fuzz_8158052555694883938_deepseek-r1_turn5
+  * smallvec_fuzz_13328458228548570875_deepseek-r1_turn5
+  * smallvec_fuzz_13595418408166831891_deepseek-r1_turn1
+  * smallvec_fuzz_15045915685978164276_deepseek-r1_turn2
+  * smallvec_fuzz_4853832892238740096_deepseek-r1_turn1
+  * smallvec_fuzz_9296323306840541596_deepseek-r1_turn6
+  * smallvec_fuzz_14435603497211031989_deepseek-r1_turn5
+  * smallvec_fuzz_10832631325589572707_deepseek-r1_turn3
+  * smallvec_fuzz_16074290017104980949_deepseek-r1_turn2
+  * smallvec_fuzz_10777056780330120222_deepseek-r1_turn3
+  * smallvec_fuzz_11355806102229861459_deepseek-r1_turn4
+------------------------------------------------------------------------------------------------------------------------------------

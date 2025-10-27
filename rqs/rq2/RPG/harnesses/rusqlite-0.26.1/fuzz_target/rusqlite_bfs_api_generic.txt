@@ -1,0 +1,37 @@
+rusqlite::OptionalExtension::optional (std::result::Result<T, error::Error>) -> std::result::Result<std::option::Option<T>, error::Error> { DROP }
+rusqlite::Connection::open_in_memory () -> std::result::Result<Connection, error::Error> { }
+rusqlite::Connection::open_in_memory_with_flags (OpenFlags) -> std::result::Result<Connection, error::Error> { }
+rusqlite::Connection::open_in_memory_with_flags_and_vfs (OpenFlags, &str) -> std::result::Result<Connection, error::Error> { }
+rusqlite::Rows::next (&mut row::Rows) -> std::result::Result<std::option::Option<&row::Row>, error::Error> { MUTATE }
+rusqlite::Rows::as_ref (&row::Rows) -> std::option::Option<&statement::Statement> { }
+rusqlite::Statement::column_names (&statement::Statement) -> std::vec::Vec<&str> { DROP }
+rusqlite::Statement::column_count (&statement::Statement) -> usize { }
+rusqlite::Statement::column_name (&statement::Statement, usize) -> std::result::Result<&str, error::Error> { }
+rusqlite::Statement::column_index (&statement::Statement, &str) -> std::result::Result<usize, error::Error> { }
+rusqlite::Statement::finalize (statement::Statement) -> std::result::Result<(), error::Error> { DROP }
+rusqlite::Statement::parameter_index (&statement::Statement, &str) -> std::result::Result<std::option::Option<usize>, error::Error> { }
+rusqlite::Statement::parameter_name (&statement::Statement, usize) -> std::option::Option<&str> { }
+rusqlite::Statement::parameter_count (&statement::Statement) -> usize { }
+rusqlite::Statement::raw_execute (&mut statement::Statement) -> std::result::Result<usize, error::Error> { MUTATE }
+rusqlite::Statement::raw_query (&mut statement::Statement) -> row::Rows { MUTATE }
+rusqlite::OpenFlags::empty () -> OpenFlags { }
+rusqlite::OpenFlags::all () -> OpenFlags { }
+rusqlite::OpenFlags::bits (&OpenFlags) -> i32 { }
+rusqlite::OpenFlags::from_bits (i32) -> std::option::Option<OpenFlags> { }
+rusqlite::OpenFlags::from_bits_truncate (i32) -> OpenFlags { }
+rusqlite::OpenFlags::from_bits_unchecked (i32) -> OpenFlags { UNSAFE}
+rusqlite::OpenFlags::is_empty (&OpenFlags) -> bool { }
+rusqlite::OpenFlags::is_all (&OpenFlags) -> bool { }
+rusqlite::OpenFlags::intersects (&OpenFlags, OpenFlags) -> bool { }
+rusqlite::OpenFlags::contains (&OpenFlags, OpenFlags) -> bool { }
+rusqlite::OpenFlags::insert (&mut OpenFlags, OpenFlags) -> () { MUTATE }
+rusqlite::OpenFlags::remove (&mut OpenFlags, OpenFlags) -> () { MUTATE }
+rusqlite::OpenFlags::toggle (&mut OpenFlags, OpenFlags) -> () { MUTATE }
+rusqlite::OpenFlags::set (&mut OpenFlags, OpenFlags, bool) -> () { MUTATE }
+rusqlite::OpenFlags::intersection (OpenFlags, OpenFlags) -> OpenFlags { }
+rusqlite::OpenFlags::union (OpenFlags, OpenFlags) -> OpenFlags { }
+rusqlite::OpenFlags::difference (OpenFlags, OpenFlags) -> OpenFlags { }
+rusqlite::OpenFlags::symmetric_difference (OpenFlags, OpenFlags) -> OpenFlags { }
+rusqlite::OpenFlags::complement (OpenFlags) -> OpenFlags { }
+rusqlite::bypass_sqlite_version_check () { }
+rusqlite::bypass_sqlite_initialization () { }

@@ -1,0 +1,22 @@
+[package]
+name = "ordnung"
+version = "0.0.1"
+authors = ["Maciej Hirsz <hello@maciej.codes>"]
+description = "Fast, vector-based map implementation that preserves insertion order."
+edition = "2018"
+license = "MIT OR Apache-2.0"
+readme = "./README.md"
+documentation = "https://docs.rs/ordnung"
+repository = "https://github.com/maciejhirsz/ordnung"
+
+[dependencies]
+ahash = "0.3.2"
+
+[dev-dependencies]
+fnv = "1.0.6"
+rustc-hash = "1.0"
+
+[profile.bench]
+lto = 'fat'
+debug-assertions = false
+codegen-units = 1

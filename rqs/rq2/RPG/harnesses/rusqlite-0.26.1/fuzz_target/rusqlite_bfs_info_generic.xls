@@ -1,0 +1,2 @@
+Crate	Total API	Unsafe API	GETRAWPTR API	Drop API	Mutate API	Generic API	Total Edge	Unsafe Edge	Target Num	Covered API	Covered Unsafe API	Covered Edge	Covered Unsafe Edge	Generation Time
+rusqlite	37	3	0	3	7	18	165	17	3	4	0	5	0	525

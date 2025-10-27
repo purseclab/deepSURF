@@ -1,0 +1,20 @@
+CoveredUnsafeLines / TotalUnsafeLines = 16/16 = 1
+
+CoveredUnsafeLines: 16
+Lines:
+simple-slab-0.3.2/src/lib.rs:136
+simple-slab-0.3.2/src/lib.rs:137
+simple-slab-0.3.2/src/lib.rs:151
+simple-slab-0.3.2/src/lib.rs:152
+simple-slab-0.3.2/src/lib.rs:156
+simple-slab-0.3.2/src/lib.rs:164
+simple-slab-0.3.2/src/lib.rs:175
+simple-slab-0.3.2/src/lib.rs:186
+simple-slab-0.3.2/src/lib.rs:45
+simple-slab-0.3.2/src/lib.rs:70
+simple-slab-0.3.2/src/lib.rs:71
+simple-slab-0.3.2/src/lib.rs:92
+simple-slab-0.3.2/src/lib.rs:93
+simple-slab-0.3.2/src/lib.rs:95
+simple-slab-0.3.2/src/lib.rs:96
+simple-slab-0.3.2/src/lib.rs:98

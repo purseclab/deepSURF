@@ -1,0 +1,43 @@
+[package]
+name = "string-interner"
+version = "0.7.0"
+authors = [ "Robbepop",]
+license = "MIT/Apache-2.0"
+readme = "README.md"
+repository = "https://github.com/robbepop/string-interner"
+documentation = "https://docs.rs/string-interner"
+keywords = [ "interner", "intern", "string", "str", "symbol",]
+description = "An efficient string interning data structure with minimal memory-footprint\nand fast access to the underlying contents.\n"
+categories = [ "data-structures",]
+
+[dependencies]
+bolero = "0.8.0"
+arbitrary = "1.3.2"
+
+[dev-dependencies]
+fnv = "1.0.0"
+serde_json = "1.0.0"
+lazy_static = "1.0.0"
+
+[features]
+default = [ "serde_support",]
+bench = []
+serde_support = [ "serde",]
+
+[dependencies.serde]
+version = "1.0.0"
+optional = true
+
+[badges.travis-ci]
+repository = "Robbepop/string-interner"
+
+[badges.appveyor]
+repository = "Robbepop/string-interner"
+branch = "master"
+service = "github"
+
+[profile.fuzz]
+inherits = "dev"
+opt-level = 1
+incremental = false
+codegen-units = 1

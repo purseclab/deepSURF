@@ -1,0 +1,1 @@
+{"tests_rug_3": {"test_rug": {"rug_fuzz_0": "0", "rug_fuzz_1": "0", "rug_fuzz_2": "\"example\""}}, "tests_rug_4": {"test_rug": {"rug_fuzz_0": "0"}}, "tests_rug_5": {"test_rug": {"rug_fuzz_0": "42"}}, "tests_rug_10": {"test_index": {"rug_fuzz_0": "0"}}, "tests_rug_11": {"test_rug": {"rug_fuzz_0": "0"}}, "tests_rug_14": {"test_into_iter": {"rug_fuzz_0": "42", "rug_fuzz_1": "99"}}}

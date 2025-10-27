@@ -1,0 +1,95 @@
+
+Total Stats:
+------------------------------------------------------------------------------------------------------------------------------------
+* Total URAPI Coverage: 34/35 (97.14%).
+* LLM URAPI Coverage: 32/35 (91.43%).
+* Total Targets (including targets directly imported from SURF): 71 in [22311.961565568s].
+* URAPIs w/ Custom Functionality: 27/35 (77.14%).
+------------------------------------------------------------------------------------------------------------------------------------
+
+Redundant-Targets:
+------------------------------------------------------------------------------------------------------------------------------------
+  * ordnung_fuzz_4626330795837807190_deepseek-r1_turn4
+  * ordnung_fuzz_9717396599201456613_deepseek-r1_turn4
+------------------------------------------------------------------------------------------------------------------------------------
+
+Targeted-URAPI-Miss-Targets:
+------------------------------------------------------------------------------------------------------------------------------------
+  * ordnung_fuzz_4626330795837807190_deepseek-r1_turn4
+  * ordnung_fuzz_9717396599201456613_deepseek-r1_turn4
+------------------------------------------------------------------------------------------------------------------------------------
+
+Targets For Fuzzing:
+  - [CondSkip]: Set of Fuzzing Targets = Total-Targets - Redundant-Targets
+------------------------------------------------------------------------------------------------------------------------------------
+Count: 69
+  * ordnung_fuzz_1690856634060613010
+  * ordnung_fuzz_5919779975222961398_deepseek-r1_turn4
+  * ordnung_fuzz_5562480640968356404
+  * ordnung_fuzz_9717396599201456613
+  * ordnung_fuzz_3045486232113922482
+  * ordnung_fuzz_13774075210064561847
+  * ordnung_fuzz_17576986483672503411
+  * ordnung_fuzz_8358946810026507024
+  * ordnung_fuzz_7502271027440090316
+  * ordnung_fuzz_7033178757393932653
+  * ordnung_fuzz_6866931038910001367
+  * ordnung_fuzz_10518793896994029608_deepseek-r1_turn2
+  * ordnung_fuzz_3550027939828841270
+  * ordnung_fuzz_15306818488258980832
+  * ordnung_fuzz_4595143463991116858
+  * ordnung_fuzz_11161409928727437432
+  * ordnung_fuzz_2831786650124753240_deepseek-r1_turn3
+  * ordnung_fuzz_16740769172684317311
+  * ordnung_fuzz_16872856222451450411
+  * ordnung_fuzz_15327361566803001203
+  * ordnung_fuzz_14840329788940279341
+  * ordnung_fuzz_5488253838481606001_deepseek-r1_turn4
+  * ordnung_fuzz_2291334754498557282
+  * ordnung_fuzz_18067900193864275011
+  * ordnung_fuzz_7396325385487896387
+  * ordnung_fuzz_8975832481913739855
+  * ordnung_fuzz_14169868846944646384
+  * ordnung_fuzz_11935504339247952014
+  * ordnung_fuzz_660891620703362441
+  * ordnung_fuzz_17339657262016291439
+  * ordnung_fuzz_11384666102445921762
+  * ordnung_fuzz_1298210752879524462
+  * ordnung_fuzz_11182581103592631499
+  * ordnung_fuzz_7502271027440090316_deepseek-r1_turn3
+  * ordnung_fuzz_3023367479046018220
+  * ordnung_fuzz_6866931038910001367_deepseek-r1_turn2
+  * ordnung_fuzz_8140283983262046676
+  * ordnung_fuzz_4626330795837807190
+  * ordnung_fuzz_12868584546599400538
+  * ordnung_fuzz_9147955864268570892
+  * ordnung_fuzz_616064569139682175_deepseek-r1_turn3
+  * ordnung_fuzz_14634377063851175709
+  * ordnung_fuzz_10925546337475036799
+  * ordnung_fuzz_6444110355677405621
+  * ordnung_fuzz_10578924928580918328_deepseek-r1_turn1
+  * ordnung_fuzz_10518793896994029608
+  * ordnung_fuzz_5226531150727180424
+  * ordnung_fuzz_12812416779689677864
+  * ordnung_fuzz_744034702618605048
+  * ordnung_fuzz_11805938811472383936
+  * ordnung_fuzz_2441042188619738604
+  * ordnung_fuzz_3578600570617507353_deepseek-r1_turn3
+  * ordnung_fuzz_11391544532552742976
+  * ordnung_fuzz_5150518976445801913
+  * ordnung_fuzz_12812416779689677864_deepseek-r1_turn3
+  * ordnung_fuzz_8477326523758764223_deepseek-r1_turn3
+  * ordnung_fuzz_9222392898233083810_deepseek-r1_turn3
+  * ordnung_fuzz_2441042188619738604_deepseek-r1_turn2
+  * ordnung_fuzz_7673811023581565595_deepseek-r1_turn4
+  * ordnung_fuzz_8607670814411989838_deepseek-r1_turn2
+  * ordnung_fuzz_11805938811472383936_deepseek-r1_turn2
+  * ordnung_fuzz_6444110355677405621_deepseek-r1_turn2
+  * ordnung_fuzz_15394167525673924699_deepseek-r1_turn3
+  * ordnung_fuzz_12216669250280782931_deepseek-r1_turn3
+  * ordnung_fuzz_660891620703362441_deepseek-r1_turn5
+  * ordnung_fuzz_7314867924087404185_deepseek-r1_turn3
+  * ordnung_fuzz_1244843919555516119_deepseek-r1_turn4
+  * ordnung_fuzz_3802983911341353616_deepseek-r1_turn4
+  * ordnung_fuzz_14169868846944646384_deepseek-r1_turn2
+------------------------------------------------------------------------------------------------------------------------------------
