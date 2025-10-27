@@ -22,7 +22,7 @@ set -Eeuo pipefail
 
 # -------- Config (overridable via env) --------
 CRATE_PATH="algorithmica-0.1.8"
-CORPUS_ROOT="${CORPUS_ROOT:-$HOME/deepSURF/rqs/rq2/deepSURF/harnesses/$CRATE_PATH/deepSURF/fuzz/fuzzing_corpus/}"
+CORPUS_ROOT="${CORPUS_ROOT:-$HOME/deepSURF/dataset/erasan_crates/$CRATE_PATH/deepSURF/fuzz/fuzzing_corpus/}"
 LOG_FILE="${LOG_FILE:-$CORPUS_ROOT/fuzz.log}"
 FUZZING_TIME="${FUZZING_TIME:-60}"         # seconds total
 INIT_DELAY="${INIT_DELAY:-0.2}"            # delay between tmux session launches

@@ -1,5 +1,5 @@
 /target
-/Cargo.lock
+#/Cargo.lock #Changed by gandrout to avoid dependencies to edition2024
 /config.stamp
 /Makefile
 /config.mk

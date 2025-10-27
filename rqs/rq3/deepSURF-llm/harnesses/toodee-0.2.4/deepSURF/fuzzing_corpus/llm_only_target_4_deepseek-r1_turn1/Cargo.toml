@@ -12,5 +12,5 @@ path = "src/llm_only_target_4.rs"
 [dependencies]
 afl = "=0.15.7"
 home = "=0.5.9"
-toodee = { path = "../../../../../../../../dataset/erasan_crates/toodee-0.2.4/" }
+toodee = { path = "../../../../toodee-0.2.4/" }
 global_data = { path = "../../../../../../../../code/global_data" }

@@ -13,4 +13,4 @@ path = "src/simple-slab_fuzz_3843021432813208120.rs"
 afl = "=0.15.7"
 home = "=0.5.9"
 global_data = { path = "../../../../../../../../code/global_data" }
-simple-slab = { path = "../../../../../../../../dataset/erasan_crates/simple-slab-0.3.2/" }
+simple-slab = { path = "../../../../simple-slab-0.3.2/" }

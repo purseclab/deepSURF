@@ -13,4 +13,4 @@ path = "src/smallvec_fuzz_16719147141621808480.rs"
 afl = "=0.15.7"
 home = "=0.5.9"
 global_data = { path = "../../../../../../../../code/global_data" }
-smallvec = { path = "../../../../../../../../dataset/erasan_crates/smallvec-1.6.0/" }
+smallvec = { path = "../../../../smallvec-1.6.0/" }

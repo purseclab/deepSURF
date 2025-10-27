@@ -12,5 +12,5 @@ path = "src/llm_only_target_9.rs"
 [dependencies]
 afl = "=0.15.7"
 home = "=0.5.9"
-simple-slab = { path = "../../../../../../../../dataset/erasan_crates/simple-slab-0.3.2/" }
+simple-slab = { path = "../../../../simple-slab-0.3.2/" }
 global_data = { path = "../../../../../../../../code/global_data" }

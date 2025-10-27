@@ -13,4 +13,4 @@ path = "src/toodee_fuzz_4865430345207377729.rs"
 afl = "=0.15.7"
 home = "=0.5.9"
 global_data = { path = "../../../../../../../../code/global_data" }
-toodee = { path = "../../../../../../../../dataset/erasan_crates/toodee-0.2.4/" }
+toodee = { path = "../../../../toodee-0.2.4/" }
