@@ -176,3 +176,18 @@ _Bug type codes_: DF = double free, HBOF/SBOF = heap/stack buffer overflow, UAF 
 - Each research question subdirectory includes a dedicated README explaining its contents.
 
 ---
+
+
+## How to Cite Our Paper
+
+```
+@inproceedings{gandrout2026deepsurf,
+  author    = {Georgios C. Androutsopoulos and Antonio Bianchi},
+  title     = {deepSURF: Detecting Memory Safety Vulnerabilities in Rust Through Fuzzing LLM-Augmented Harnesses},
+  booktitle = {In Proceedings of the IEEE Symposium on Security & Privacy (S&P)},
+  year      = {2026},
+  note      = {To appear}
+}
+```
+
+---
