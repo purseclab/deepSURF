@@ -10,6 +10,18 @@ deepSURF received all three Artifact Evaluation badges (Available, Functional, R
 
 > **Note:** This repository’s layout differs slightly from the AE package and includes newer code plus extended results. We will continue to publish updates here, including bug fixes, new features, and additional experimental results.
 
+### How to Cite
+
+```
+@inproceedings{gandrout2026deepsurf,
+  author    = {Georgios C. Androutsopoulos and Antonio Bianchi},
+  title     = {deepSURF: Detecting Memory Safety Vulnerabilities in Rust Through Fuzzing LLM-Augmented Harnesses},
+  booktitle = {In Proceedings of the IEEE Symposium on Security & Privacy (S&P)},
+  year      = {2026},
+  note      = {To appear}
+}
+```
+
 ---
 
 ## Repository Layout
@@ -175,19 +187,5 @@ _Bug type codes_: DF = double free, HBOF/SBOF = heap/stack buffer overflow, UAF 
 
 - Each research question subdirectory includes a dedicated README explaining its contents.
 
----
-
-
-## How to Cite Our Paper
-
-```
-@inproceedings{gandrout2026deepsurf,
-  author    = {Georgios C. Androutsopoulos and Antonio Bianchi},
-  title     = {deepSURF: Detecting Memory Safety Vulnerabilities in Rust Through Fuzzing LLM-Augmented Harnesses},
-  booktitle = {In Proceedings of the IEEE Symposium on Security & Privacy (S&P)},
-  year      = {2026},
-  note      = {To appear}
-}
-```
 
 ---
