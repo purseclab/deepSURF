@@ -1,7 +1,7 @@
 //! Type context book-keeping.
 
 #![allow(rustc::usage_of_ty_tykind)]
-#![allow(unused_imports)]
+
 pub mod tls;
 
 pub use rustc_type_ir::lift::Lift;
@@ -50,7 +50,7 @@ use rustc_data_structures::unord::UnordSet;
 use rustc_errors::{
     Applicability, Diag, DiagCtxtHandle, ErrorGuaranteed, LintDiagnostic, MultiSpan,
 };
-use rustc_hir::{self as hir, OwnerId};
+use rustc_hir as hir;
 use rustc_hir::def::DefKind;
 use rustc_hir::def_id::{CrateNum, DefId, LocalDefId, LOCAL_CRATE};
 use rustc_hir::definitions::Definitions;
@@ -87,7 +87,6 @@ use std::iter;
 use std::marker::PhantomData;
 use std::mem;
 use std::ops::{Bound, Deref};
-
 
 #[allow(rustc::usage_of_ty_tykind)]
 impl<'tcx> Interner for TyCtxt<'tcx> {
@@ -1469,6 +1468,7 @@ impl<'tcx> TyCtxt<'tcx> {
         let common_types = CommonTypes::new(&interners, s, &untracked);
         let common_lifetimes = CommonLifetimes::new(&interners);
         let common_consts = CommonConsts::new(&interners, &common_types, s, &untracked);
+
         GlobalCtxt {
             sess: s,
             crate_types,

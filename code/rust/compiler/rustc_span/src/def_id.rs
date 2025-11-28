@@ -115,16 +115,6 @@ impl DefPathHash {
     }
 }
 
-impl Serialize for DefPathHash {
-    fn serialize<S>(&self, serializer: S) -> Result<S::Ok, S::Error>
-    where
-        S: Serializer,
-    {
-        // Just serialize the inner Fingerprint
-        self.0.serialize(serializer)
-    }
-}
-
 impl Default for DefPathHash {
     fn default() -> Self {
         DefPathHash(Fingerprint::ZERO)

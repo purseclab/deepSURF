@@ -2398,7 +2398,6 @@ impl<'a: 'ast, 'b, 'ast, 'tcx> LateResolutionVisitor<'a, 'b, 'ast, 'tcx> {
     }
 
     fn resolve_item(&mut self, item: &'ast Item) {
-        
         let mod_inner_docs =
             matches!(item.kind, ItemKind::Mod(..)) && rustdoc::inner_docs(&item.attrs);
         if !mod_inner_docs && !matches!(item.kind, ItemKind::Impl(..) | ItemKind::Use(..)) {

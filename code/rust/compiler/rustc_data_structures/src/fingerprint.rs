@@ -2,7 +2,6 @@ use crate::stable_hasher::impl_stable_traits_for_trivial_type;
 use crate::stable_hasher::{Hash64, StableHasher, StableHasherResult};
 use rustc_serialize::{Decodable, Decoder, Encodable, Encoder};
 use std::hash::{Hash, Hasher};
-use serde::ser::{Serialize, Serializer};
 
 #[cfg(test)]
 mod tests;
@@ -13,17 +12,6 @@ pub struct Fingerprint(u64, u64);
 
 pub trait FingerprintComponent {
     fn as_u64(&self) -> u64;
-}
-
-impl Serialize for Fingerprint {
-    fn serialize<S>(&self, serializer: S) -> Result<S::Ok, S::Error>
-    where
-        S: Serializer,
-    {
-        // Serialize Fingerprint as a tuple (u64, u64).
-        let Fingerprint(hi, lo) = *self;
-        (hi, lo).serialize(serializer)
-    }
 }
 
 impl FingerprintComponent for Hash64 {
