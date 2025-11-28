@@ -48,7 +48,18 @@ deepSURF received all three Artifact Evaluation badges (Available, Functional, R
   - Harness generation: ≥ 10 CPU cores, ≥ 64 GB RAM, ≥ 100 GB free disk.
   - Fuzzing: depends on the number of harnesses under test and the fuzzing configuration.
 - **LLM access:** Provide your own OpenRouter API key to generate fuzz harnesses.
-  
+
+
+---
+
+
+## Compiler Baseline
+
+deepSURF is built on **rustc 1.81.0-dev** at commit `a9c8887c7d548abc6c3e87f7d6fa02a0e95880bd`.
+
+All compiler modifications introduced by deepSURF are contained in [`compiler.diff`](./compiler.diff).
+
+
 ---
 
 ## Build
