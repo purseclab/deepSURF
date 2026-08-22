@@ -13,12 +13,16 @@ deepSURF received all three Artifact Evaluation badges (Available, Functional, R
 ### How to Cite
 
 ```
-@inproceedings{gandrout2026deepsurf,
-  author    = {Georgios C. Androutsopoulos and Antonio Bianchi},
-  title     = {deepSURF: Detecting Memory Safety Vulnerabilities in Rust Through Fuzzing LLM-Augmented Harnesses},
-  booktitle = {In Proceedings of the IEEE Symposium on Security & Privacy (S&P)},
-  year      = {2026},
-  note      = {To appear}
+@inproceedings{androutsopoulos2026deepsurf,
+  author = {Androutsopoulos, Georgios C. and Bianchi, Antonio},
+  title = {deepSURF: Detecting Memory Safety Vulnerabilities in Rust Through Fuzzing LLM-Augmented Harnesses},
+  booktitle = {2026 IEEE Symposium on Security and Privacy (SP)},
+  year = {2026},
+  pages = {3796--3815},
+  doi = {10.1109/SP63933.2026.00060},
+  publisher = {IEEE Computer Society},
+  address = {Los Alamitos, CA, USA},
+  month = {May}
 }
 ```
 
